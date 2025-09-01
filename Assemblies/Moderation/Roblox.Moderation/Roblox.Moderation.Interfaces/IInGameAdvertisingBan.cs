@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Moderation.Interfacespublic {
-    interface IInGameAdvertisingBan
+using System;
+namespace Roblox.Moderation.Interfaces {
+    public interface IInGameAdvertisingBan
 
 {
 	bool IsDeveloperBanned(long userId);

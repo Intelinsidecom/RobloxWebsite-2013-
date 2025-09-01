@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 	/// Key: "Action.BuidlersClubOnlyUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyUpgradeNow => "AmÃ©liorer maintenant";
+	public override string ActionBuidlersClubOnlyUpgradeNow => "Améliorer maintenant";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubOnly"
@@ -42,7 +44,7 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyUpgradeNow()
 	{
-		return "AmÃ©liorer maintenant";
+		return "Améliorer maintenant";
 	}
 
 	/// <summary>
@@ -51,12 +53,12 @@ internal class BuildersClubResources_fr_fr : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"Il s'agit d'un objet premium rÃ©servÃ© aux membres {bcRequirementName}.";
+		return $"Il s'agit d'un objet premium réservé aux membres {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "Il s'agit d'un objet premium rÃ©servÃ© aux membres {bcRequirementName}.";
+		return "Il s'agit d'un objet premium réservé aux membres {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()

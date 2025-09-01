@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -6,8 +6,11 @@ using System.Net.Sockets;
 using Roblox.Amazon.Sqs;
 using Roblox.Configuration;
 using Roblox.EventLog;
-using Roblox.Platform.Moderation.Properties;
+using Roblox.Moderation.Properties;
 using Roblox.TrackingQueue;
+using Roblox.Moderation.Interfaces; 
+using System.Security.Cryptography; 
+
 namespace Roblox.Moderation {
     /// <summary>
 
@@ -30,7 +33,7 @@ internal abstract class ModerationTaskConsumerBase : ModerationTaskClientBase<IT
 
 	private readonly ISqsOpenTaskFactory _SqsOpenTaskFactory;
 
-	private readonly Random _Rand;
+	private readonly RandomNumberGenerator _rng = RandomNumberGenerator.Create();
 
 	internal virtual ICollection<ISqsConsumerWithReceipt> ConsumerWithReceipts { get; }
 
@@ -46,7 +49,6 @@ internal abstract class ModerationTaskConsumerBase : ModerationTaskClientBase<IT
 		_Settings = sqsSettings ?? throw new ArgumentNullException("sqsSettings");
 		_TrackingQueueConsumerFactory = trackingQueueConsumerFactory ?? throw new ArgumentNullException("trackingQueueConsumerFactory");
 		_SqsOpenTaskFactory = sqsOpenTaskFactory ?? throw new ArgumentNullException("sqsOpenTaskFactory");
-		_Rand = new Random();
 		ConsumerWithReceipts = new List<ISqsConsumerWithReceipt>();
 		MonitorSqsQueueSettingsChanges();
 	}
@@ -130,7 +132,9 @@ internal abstract class ModerationTaskConsumerBase : ModerationTaskClientBase<IT
 
 	internal virtual double NextDouble()
 	{
-		return _Rand.NextDouble();
+		byte[] randomNumber = new byte[4];
+		_rng.GetBytes(randomNumber);
+		return (double)BitConverter.ToUInt32(randomNumber, 0) / uint.MaxValue;
 	}
 
 	internal virtual ISqsOpenTask GetNextMessage(ITaskQueueIdentifier queueIdentifier, string worker)

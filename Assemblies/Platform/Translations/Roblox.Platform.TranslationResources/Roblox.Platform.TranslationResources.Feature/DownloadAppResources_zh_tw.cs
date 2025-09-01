@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
@@ -11,63 +13,63 @@ internal class DownloadAppResources_zh_tw : DownloadAppResources_en_us, IDownloa
 	/// button label
 	/// English String: "Continue in App"
 	/// </summary>
-	public override string ActionContinueInApp => "åœ¨ App ç¹¼çºŒ";
+	public override string ActionContinueInApp => "在 App 繼續";
 
 	/// <summary>
 	/// Key: "Action.ContinueInBrowser"
 	/// button label
 	/// English String: "Continue in browser"
 	/// </summary>
-	public override string ActionContinueInBrowser => "åœ¨ç€è¦½å™¨ç¹¼çºŒ";
+	public override string ActionContinueInBrowser => "在瀏覽器繼續";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Button that takes the user to the game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "çŽ©";
+	public override string ActionPlay => "玩";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForAndroid"
 	/// heading for the page
 	/// English String: "Roblox for Android"
 	/// </summary>
-	public override string HeadingRobloxForAndroid => "Android ç‰ˆæœ¬ Roblox";
+	public override string HeadingRobloxForAndroid => "Android 版本 Roblox";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForIos"
 	/// heading for page
 	/// English String: "Roblox for iOS"
 	/// </summary>
-	public override string HeadingRobloxForIos => "iOS ç‰ˆæœ¬ Roblox";
+	public override string HeadingRobloxForIos => "iOS 版本 Roblox";
 
 	/// <summary>
 	/// Key: "Label.PlayGamesInMobile"
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "åœ¨æˆ‘å€‘çš„è¡Œå‹•è£ç½® App çŽ© Robloxï¼";
+	public override string LabelPlayGamesInMobile => "在我們的行動裝置 App 玩 Roblox！";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
 	/// The user is being encouraged to play on the native mobile Android app
 	/// English String: "Play Roblox in our Android app!"
 	/// </summary>
-	public override string MessageAppBumpAndroidDevice => "åœ¨æˆ‘å€‘çš„ Android App çŽ© Robloxï¼";
+	public override string MessageAppBumpAndroidDevice => "在我們的 Android App 玩 Roblox！";
 
 	/// <summary>
 	/// Key: "Message.AppBumperUpsell"
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "æ•¸ç™¾è¬æ¬¾çŽ©å®¶å‰µä½œçš„éŠæˆ²ç­‰æ‚¨ä¾†çŽ©";
+	public override string MessageAppBumperUpsell => "數百萬款玩家創作的遊戲等您來玩";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "åœ¨æˆ‘å€‘çš„ iOS App çŽ© Robloxï¼";
+	public override string MessageAppBumpIOSDevice => "在我們的 iOS App 玩 Roblox！";
 
 	public DownloadAppResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -76,32 +78,32 @@ internal class DownloadAppResources_zh_tw : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForActionContinueInApp()
 	{
-		return "åœ¨ App ç¹¼çºŒ";
+		return "在 App 繼續";
 	}
 
 	protected override string _GetTemplateForActionContinueInBrowser()
 	{
-		return "åœ¨ç€è¦½å™¨ç¹¼çºŒ";
+		return "在瀏覽器繼續";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "çŽ©";
+		return "玩";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForAndroid()
 	{
-		return "Android ç‰ˆæœ¬ Roblox";
+		return "Android 版本 Roblox";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForIos()
 	{
-		return "iOS ç‰ˆæœ¬ Roblox";
+		return "iOS 版本 Roblox";
 	}
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "åœ¨æˆ‘å€‘çš„è¡Œå‹•è£ç½® App çŽ© Robloxï¼";
+		return "在我們的行動裝置 App 玩 Roblox！";
 	}
 
 	/// <summary>
@@ -111,27 +113,27 @@ internal class DownloadAppResources_zh_tw : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} å‰‡è©•è«–";
+		return $"{reviewCount} 則評論";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} å‰‡è©•è«–";
+		return "{reviewCount} 則評論";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
 	{
-		return "åœ¨æˆ‘å€‘çš„ Android App çŽ© Robloxï¼";
+		return "在我們的 Android App 玩 Roblox！";
 	}
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "æ•¸ç™¾è¬æ¬¾çŽ©å®¶å‰µä½œçš„éŠæˆ²ç­‰æ‚¨ä¾†çŽ©";
+		return "數百萬款玩家創作的遊戲等您來玩";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "åœ¨æˆ‘å€‘çš„ iOS App çŽ© Robloxï¼";
+		return "在我們的 iOS App 玩 Roblox！";
 	}
 }
 

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderationpublic {
-    interface IModeratorActionsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
+    public interface IModeratorActionsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -11,3 +13,5 @@
 
 
 }
+
+

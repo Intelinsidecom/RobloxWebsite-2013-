@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-namespace Roblox.Platform.Games.Clientpublic {
-    class Location
+namespace Roblox.Platform.Games.Client {
+    public class Location
 
 {
 	[JsonConverter(typeof(StringEnumConverter))]

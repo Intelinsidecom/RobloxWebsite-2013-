@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Platform.Games.Clientpublic {
-    class RankedServer
+using System;
+namespace Roblox.Platform.Games.Client {
+    public class RankedServer
 
 {
 	public string Ip { get; set; }

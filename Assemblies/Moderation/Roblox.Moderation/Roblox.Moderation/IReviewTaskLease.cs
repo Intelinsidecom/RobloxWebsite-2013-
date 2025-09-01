@@ -1,5 +1,5 @@
-﻿using System;
-namespace Roblox.Moderationpublic {
+using System;
+namespace Roblox.Moderation {
     interface IReviewTaskLease
 
 {

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface ICaptchaResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface ICaptchaResources : ITranslationResources
 
 {
 	/// <summary>
@@ -26,3 +28,5 @@
 
 
 }
+
+

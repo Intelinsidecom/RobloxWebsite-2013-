@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class CreditCardExpiringModalResources_en_us : TranslationResourcesBase, ICreditCardExpiringModalResources, ITranslationResources
 
 {
@@ -110,3 +110,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

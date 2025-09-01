@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlaceThumbnailsResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PlaceThumbnailsResources_ja_jp : PlaceThumbnailsResources_en_us, 
 	/// The button text that user confirm for leaving to Youtube
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueToVideo => "ç¶šã‘ã¦ãƒ“ãƒ‡ã‚ªã¸";
+	public override string ActionContinueToVideo => "続けてビデオへ";
 
 	/// <summary>
 	/// Key: "Description.LeaveRobloxForYouTube"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "You are about to leave Roblox to view a video on YouTube."
 	/// </summary>
-	public override string DescriptionLeaveRobloxForYouTube => "Robloxã‚’çµ‚äº†ã—ã¦YouTubeã§å‹•ç”»ã‚’è¦‹ã‚ˆã†ã¨ã—ã¦ã„ã¾ã™ã€‚";
+	public override string DescriptionLeaveRobloxForYouTube => "Robloxを終了してYouTubeで動画を見ようとしています。";
 
 	/// <summary>
 	/// Key: "Description.YouTubeIsNotRoblox"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "YouTube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionYouTubeIsNotRoblox => "YouTubeã¯Roblox.comã®ã‚µã‚¤ãƒˆã®ä¸€éƒ¨ã§ãªã„ãŸã‚ã€åˆ¥ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã§ç®¡ç†ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+	public override string DescriptionYouTubeIsNotRoblox => "YouTubeはRoblox.comのサイトの一部でないため、別のプライバシーポリシーで管理されています。";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// The title of the dialog that will show up when user is leaving Roblox to Youtube
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "Robloxã‚’çµ‚äº†ã—ã¦ã„ã¾ã™";
+	public override string HeadingLeavingRoblox => "Robloxを終了しています";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "æ¬¡ã¸";
+	public override string LabelNext => "次へ";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "å‰ã¸";
+	public override string LabelPrevious => "前へ";
 
 	public PlaceThumbnailsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -53,32 +55,32 @@ internal class PlaceThumbnailsResources_ja_jp : PlaceThumbnailsResources_en_us, 
 
 	protected override string _GetTemplateForActionContinueToVideo()
 	{
-		return "ç¶šã‘ã¦ãƒ“ãƒ‡ã‚ªã¸";
+		return "続けてビデオへ";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveRobloxForYouTube()
 	{
-		return "Robloxã‚’çµ‚äº†ã—ã¦YouTubeã§å‹•ç”»ã‚’è¦‹ã‚ˆã†ã¨ã—ã¦ã„ã¾ã™ã€‚";
+		return "Robloxを終了してYouTubeで動画を見ようとしています。";
 	}
 
 	protected override string _GetTemplateForDescriptionYouTubeIsNotRoblox()
 	{
-		return "YouTubeã¯Roblox.comã®ã‚µã‚¤ãƒˆã®ä¸€éƒ¨ã§ãªã„ãŸã‚ã€åˆ¥ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼ã§ç®¡ç†ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+		return "YouTubeはRoblox.comのサイトの一部でないため、別のプライバシーポリシーで管理されています。";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "Robloxã‚’çµ‚äº†ã—ã¦ã„ã¾ã™";
+		return "Robloxを終了しています";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "æ¬¡ã¸";
+		return "次へ";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "å‰ã¸";
+		return "前へ";
 	}
 }
 

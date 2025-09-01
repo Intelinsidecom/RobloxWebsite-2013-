@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Roblox.ContentFilterApi.Client;
 using Roblox.Platform.Core;
-using Roblox.Platform.Moderation.Interfaces;
-namespace Roblox.Moderation.Implementationinternal {
+using Roblox.Moderation.Interfaces;
+namespace Roblox.Moderation.Implementation {
     class WhitelistEntry : IWhitelistEntry
 
 {

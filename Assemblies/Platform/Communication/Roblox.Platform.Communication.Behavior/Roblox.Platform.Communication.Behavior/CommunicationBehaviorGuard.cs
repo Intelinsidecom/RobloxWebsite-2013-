@@ -1,13 +1,16 @@
 using System;
 using System.Linq;
 using Roblox.EventLog;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
 using Roblox.Instrumentation;
+using Roblox.Platform.Communication.Behavior;
 using Roblox.Platform.Communication.Behavior.EventStreaming;
 using Roblox.Platform.Communication.Behavior.Properties;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
 using Roblox.Platform.Infractions;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter;
+using Roblox.Platform.TextFilter.Client;
+using PlatformTextFilterModerationCategory = Roblox.Platform.TextFilter.Client.ModerationCategory;
 
 namespace Roblox.Platform.Communication.Behavior;
 
@@ -86,7 +89,7 @@ public class CommunicationBehaviorGuard : ICommunicationBehaviorGuard
 				UserId = filterLiveTextRequest.Author.Id,
 				IsUnder13 = filterLiveTextRequest.Author.IsUnder13,
 				Source = filterLiveTextRequest.TextUsage,
-				Reasons = string.Join(",", filterTextResult.TriggeredModerationCategories.Select((int x) => (ModerationCategory)x).ToArray()),
+				Reasons = string.Join(",", filterTextResult.TriggeredModerationCategories.Select((int x) => (Roblox.Platform.TextFilter.Client.ModerationCategory)x).ToArray()),
 				IsFullyModerated = (filterTextResult.ModerationLevel == 3)
 			};
 			_EventStreamer.Stream(eventArgs);
@@ -136,3 +139,5 @@ public class CommunicationBehaviorGuard : ICommunicationBehaviorGuard
 		}
 	}
 }
+
+ 

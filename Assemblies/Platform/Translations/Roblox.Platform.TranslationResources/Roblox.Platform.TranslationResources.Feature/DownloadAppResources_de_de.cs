@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
@@ -32,21 +34,21 @@ internal class DownloadAppResources_de_de : DownloadAppResources_en_us, IDownloa
 	/// heading for the page
 	/// English String: "Roblox for Android"
 	/// </summary>
-	public override string HeadingRobloxForAndroid => "Roblox fÃ¼r Android";
+	public override string HeadingRobloxForAndroid => "Roblox für Android";
 
 	/// <summary>
 	/// Key: "Heading.RobloxForIos"
 	/// heading for page
 	/// English String: "Roblox for iOS"
 	/// </summary>
-	public override string HeadingRobloxForIos => "Roblox fÃ¼r iOS";
+	public override string HeadingRobloxForIos => "Roblox für iOS";
 
 	/// <summary>
 	/// Key: "Label.PlayGamesInMobile"
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Spiele Roblox in unserer App fÃ¼r MobilgerÃ¤te!";
+	public override string LabelPlayGamesInMobile => "Spiele Roblox in unserer App für Mobilgeräte!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
@@ -91,17 +93,17 @@ internal class DownloadAppResources_de_de : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForHeadingRobloxForAndroid()
 	{
-		return "Roblox fÃ¼r Android";
+		return "Roblox für Android";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxForIos()
 	{
-		return "Roblox fÃ¼r iOS";
+		return "Roblox für iOS";
 	}
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Spiele Roblox in unserer App fÃ¼r MobilgerÃ¤te!";
+		return "Spiele Roblox in unserer App für Mobilgeräte!";
 	}
 
 	/// <summary>

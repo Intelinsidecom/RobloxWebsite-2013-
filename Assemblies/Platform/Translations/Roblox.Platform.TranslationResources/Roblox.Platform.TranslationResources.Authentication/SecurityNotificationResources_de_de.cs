@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SecurityNotificationResources_en_us to provide locale specific translations where possible,
@@ -23,12 +25,12 @@ internal class SecurityNotificationResources_de_de : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationText(string aTagStartWithHref, string emailMailToLink, string hrefEnd, string emailText, string aTagEnd)
 	{
-		return $"Aus SicherheitsgrÃ¼nden wurde dein Roblox-Passwort zurÃ¼ckgesetzt. Um wieder auf dein Konto zuzugreifen, gib bitte deine E-Mail-Adresse oder Telefonnummer ein und klicke auf die SchaltflÃ¤che â€žSendenâ€œ auf dieser Seite. Wenn deinem Konto keine E-Mail-Adresse oder Telefonnummer zugeordnet ist, wende dich an den Roblox-Kundendienst unter {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
+		return $"Aus Sicherheitsgründen wurde dein Roblox-Passwort zurückgesetzt. Um wieder auf dein Konto zuzugreifen, gib bitte deine E-Mail-Adresse oder Telefonnummer ein und klicke auf die Schaltfläche „Senden“ auf dieser Seite. Wenn deinem Konto keine E-Mail-Adresse oder Telefonnummer zugeordnet ist, wende dich an den Roblox-Kundendienst unter {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationText()
 	{
-		return "Aus SicherheitsgrÃ¼nden wurde dein Roblox-Passwort zurÃ¼ckgesetzt. Um wieder auf dein Konto zuzugreifen, gib bitte deine E-Mail-Adresse oder Telefonnummer ein und klicke auf die SchaltflÃ¤che â€žSendenâ€œ auf dieser Seite. Wenn deinem Konto keine E-Mail-Adresse oder Telefonnummer zugeordnet ist, wende dich an den Roblox-Kundendienst unter {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
+		return "Aus Sicherheitsgründen wurde dein Roblox-Passwort zurückgesetzt. Um wieder auf dein Konto zuzugreifen, gib bitte deine E-Mail-Adresse oder Telefonnummer ein und klicke auf die Schaltfläche „Senden“ auf dieser Seite. Wenn deinem Konto keine E-Mail-Adresse oder Telefonnummer zugeordnet ist, wende dich an den Roblox-Kundendienst unter {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd}.";
 	}
 
 	/// <summary>
@@ -37,12 +39,12 @@ internal class SecurityNotificationResources_de_de : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationTextWarning(string startSpan, string endSpan)
 	{
-		return $"Bitte wÃ¤hlen Sie ein Passwort, das {startSpan}brandneu{endSpan} und fÃ¼r Roblox {startSpan}einzigartig{endSpan} ist. Verwende dieses Passwort nicht auf anderen Websites. Dies ist der beste Weg, um zu verhindern, dass dein Roblox-Konto gefÃ¤hrdet wird.";
+		return $"Bitte wählen Sie ein Passwort, das {startSpan}brandneu{endSpan} und für Roblox {startSpan}einzigartig{endSpan} ist. Verwende dieses Passwort nicht auf anderen Websites. Dies ist der beste Weg, um zu verhindern, dass dein Roblox-Konto gefährdet wird.";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationTextWarning()
 	{
-		return "Bitte wÃ¤hlen Sie ein Passwort, das {startSpan}brandneu{endSpan} und fÃ¼r Roblox {startSpan}einzigartig{endSpan} ist. Verwende dieses Passwort nicht auf anderen Websites. Dies ist der beste Weg, um zu verhindern, dass dein Roblox-Konto gefÃ¤hrdet wird.";
+		return "Bitte wählen Sie ein Passwort, das {startSpan}brandneu{endSpan} und für Roblox {startSpan}einzigartig{endSpan} ist. Verwende dieses Passwort nicht auf anderen Websites. Dies ist der beste Weg, um zu verhindern, dass dein Roblox-Konto gefährdet wird.";
 	}
 
 	protected override string _GetTemplateForHeadingImportant()

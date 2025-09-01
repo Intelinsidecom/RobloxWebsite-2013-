@@ -1,4 +1,4 @@
-﻿namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     class ExternallyAuthorizedPrincipal<TId> : IExternallyAuthorizedPrincipal<TId> where TId : struct
 
 {

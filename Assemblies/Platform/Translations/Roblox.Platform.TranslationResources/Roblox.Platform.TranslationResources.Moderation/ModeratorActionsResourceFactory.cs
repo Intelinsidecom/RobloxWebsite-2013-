@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderationinternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
     static class ModeratorActionsResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

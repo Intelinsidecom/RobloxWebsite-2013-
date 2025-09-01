@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides GameSortsResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class GameSortsResources_ja_jp : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Adventure"
 	/// English String: "Adventure"
 	/// </summary>
-	public override string LabelAdventure => "ã‚¢ãƒ‰ãƒ™ãƒ³ãƒãƒ£ãƒ¼";
+	public override string LabelAdventure => "アドベンチャー";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -22,211 +24,211 @@ internal class GameSortsResources_ja_jp : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Contest"
 	/// English String: "Contest"
 	/// </summary>
-	public override string LabelContest => "ã‚³ãƒ³ãƒ†ã‚¹ãƒˆ";
+	public override string LabelContest => "コンテスト";
 
 	/// <summary>
 	/// Key: "Label.ContinuePlaying"
 	/// English String: "Continue Playing"
 	/// </summary>
-	public override string LabelContinuePlaying => "ãƒ—ãƒ¬ã‚¤ã‚’ç¶šã‘ã‚‹";
+	public override string LabelContinuePlaying => "プレイを続ける";
 
 	/// <summary>
 	/// Key: "Label.Experimental"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelExperimental => "ãŠã™ã™ã‚";
+	public override string LabelExperimental => "おすすめ";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "ãŠæ°—ã«å…¥ã‚Š";
+	public override string LabelFavorites => "お気に入り";
 
 	/// <summary>
 	/// Key: "Label.Featured"
 	/// English String: "Featured Rthro"
 	/// </summary>
-	public override string LabelFeatured => "æ³¨ç›®ã®Rthro";
+	public override string LabelFeatured => "注目のRthro";
 
 	/// <summary>
 	/// Key: "Label.Fighting"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelFighting => "æ ¼é—˜";
+	public override string LabelFighting => "格闘";
 
 	/// <summary>
 	/// Key: "Label.FriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFriendActivity => "å‹é”ã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£";
+	public override string LabelFriendActivity => "友達のアクティビティ";
 
 	/// <summary>
 	/// Key: "Label.FriendsPlaying"
 	/// English String: "Friends Playing"
 	/// </summary>
-	public override string LabelFriendsPlaying => "å‹é”ãŒãƒ—ãƒ¬ã‚¤ä¸­";
+	public override string LabelFriendsPlaying => "友達がプレイ中";
 
 	/// <summary>
 	/// Key: "Label.GamesForYou"
 	/// English String: "Games for You"
 	/// </summary>
-	public override string LabelGamesForYou => "ã‚ãªãŸã«ãŠã™ã™ã‚ã®ã‚²ãƒ¼ãƒ ";
+	public override string LabelGamesForYou => "あなたにおすすめのゲーム";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string LabelMoreResultsFor => "ã•ã‚‰ã«çµæžœã‚’è¡¨ç¤ºã™ã‚‹";
+	public override string LabelMoreResultsFor => "さらに結果を表示する";
 
 	/// <summary>
 	/// Key: "Label.MostEngaging"
 	/// English String: "Most Engaging"
 	/// </summary>
-	public override string LabelMostEngaging => "ã¿ã‚“ãªãŒå¤¢ä¸­ã®ã‚²ãƒ¼ãƒ ";
+	public override string LabelMostEngaging => "みんなが夢中のゲーム";
 
 	/// <summary>
 	/// Key: "Label.MyFavorite"
 	/// English String: "My Favorite"
 	/// </summary>
-	public override string LabelMyFavorite => "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
+	public override string LabelMyFavorite => "あなたのお気に入り";
 
 	/// <summary>
 	/// Key: "Label.MyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string LabelMyFavorites => "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
+	public override string LabelMyFavorites => "あなたのお気に入り";
 
 	/// <summary>
 	/// Key: "Label.MyRecent"
 	/// English String: "My Recent"
 	/// </summary>
-	public override string LabelMyRecent => "æœ€è¿‘ã®ãƒ—ãƒ¬ã‚¤";
+	public override string LabelMyRecent => "最近のプレイ";
 
 	/// <summary>
 	/// Key: "Label.Obby"
 	/// English String: "Obby"
 	/// </summary>
-	public override string LabelObby => "ã‚ªãƒ¼ãƒ“ãƒ¼ï¼ˆéšœå®³ç‰©ï¼‰";
+	public override string LabelObby => "オービー（障害物）";
 
 	/// <summary>
 	/// Key: "Label.PersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelPersonalizedByLiked => "ã€Œã„ã„ã­ã€ã—ãŸãŸã‚";
+	public override string LabelPersonalizedByLiked => "「いいね」したため";
 
 	/// <summary>
 	/// Key: "Label.PersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelPersonalServer => "ãƒ‘ãƒ¼ã‚½ãƒŠãƒ«ã‚µãƒ¼ãƒãƒ¼";
+	public override string LabelPersonalServer => "パーソナルサーバー";
 
 	/// <summary>
 	/// Key: "Label.PlayersLove"
 	/// English String: "Players Love"
 	/// </summary>
-	public override string LabelPlayersLove => "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«å¤§äººæ°—";
+	public override string LabelPlayersLove => "プレイヤーに大人気";
 
 	/// <summary>
 	/// Key: "Label.Popular"
 	/// English String: "Popular"
 	/// </summary>
-	public override string LabelPopular => "äººæ°—";
+	public override string LabelPopular => "人気";
 
 	/// <summary>
 	/// Key: "Label.PopularInVr"
 	/// English String: "Popular in VR"
 	/// </summary>
-	public override string LabelPopularInVr => "VRã§äººæ°—";
+	public override string LabelPopularInVr => "VRで人気";
 
 	/// <summary>
 	/// Key: "Label.PopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelPopularNearYou => "ã‚ãªãŸã®å‘¨ã‚Šã§äººæ°—";
+	public override string LabelPopularNearYou => "あなたの周りで人気";
 
 	/// <summary>
 	/// Key: "Label.PopularWorldwide"
 	/// English String: "Popular Worldwide"
 	/// </summary>
-	public override string LabelPopularWorldwide => "ä¸–ç•Œä¸­ã§äººæ°—";
+	public override string LabelPopularWorldwide => "世界中で人気";
 
 	/// <summary>
 	/// Key: "Label.Purchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelPurchased => "è³¼å…¥æ¸ˆã¿";
+	public override string LabelPurchased => "購入済み";
 
 	/// <summary>
 	/// Key: "Label.Roleplay"
 	/// English String: "Roleplay"
 	/// </summary>
-	public override string LabelRoleplay => "ãƒ­ãƒ¼ãƒ«ãƒ—ãƒ¬ã‚¤";
+	public override string LabelRoleplay => "ロールプレイ";
 
 	/// <summary>
 	/// Key: "Label.Simulator"
 	/// English String: "Simulator"
 	/// </summary>
-	public override string LabelSimulator => "ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚¿";
+	public override string LabelSimulator => "シミュレータ";
 
 	/// <summary>
 	/// Key: "Label.SuggestedGames"
 	/// English String: "Suggested Games"
 	/// </summary>
-	public override string LabelSuggestedGames => "ãŠã™ã™ã‚ã‚²ãƒ¼ãƒ ";
+	public override string LabelSuggestedGames => "おすすめゲーム";
 
 	/// <summary>
 	/// Key: "Label.TopFavorite"
 	/// English String: "Top Favorite"
 	/// </summary>
-	public override string LabelTopFavorite => "å¤§äººæ°—";
+	public override string LabelTopFavorite => "大人気";
 
 	/// <summary>
 	/// Key: "Label.TopGrossing"
 	/// English String: "Top Earning"
 	/// </summary>
-	public override string LabelTopGrossing => "åŽç›Šãƒˆãƒƒãƒ—";
+	public override string LabelTopGrossing => "収益トップ";
 
 	/// <summary>
 	/// Key: "Label.TopPaid"
 	/// English String: "Top Paid"
 	/// </summary>
-	public override string LabelTopPaid => "åŽå…¥ãƒˆãƒƒãƒ—";
+	public override string LabelTopPaid => "収入トップ";
 
 	/// <summary>
 	/// Key: "Label.TopRated"
 	/// English String: "Top Rated"
 	/// </summary>
-	public override string LabelTopRated => "é«˜è©•ä¾¡";
+	public override string LabelTopRated => "高評価";
 
 	/// <summary>
 	/// Key: "Label.TopResult"
 	/// English String: "Top Result"
 	/// </summary>
-	public override string LabelTopResult => "ä¸Šä½ã®çµæžœ";
+	public override string LabelTopResult => "上位の結果";
 
 	/// <summary>
 	/// Key: "Label.TopRetaining"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelTopRetaining => "ãŠã™ã™ã‚";
+	public override string LabelTopRetaining => "おすすめ";
 
 	/// <summary>
 	/// Key: "Label.Tycoon"
 	/// English String: "Tycoon"
 	/// </summary>
-	public override string LabelTycoon => "ã‚¿ã‚¤ã‚¯ãƒ¼ãƒ³";
+	public override string LabelTycoon => "タイクーン";
 
 	/// <summary>
 	/// Key: "Label.UpAndComing"
 	/// English String: "Up-and-Coming"
 	/// </summary>
-	public override string LabelUpAndComing => "è©±é¡Œã®æ–°ä½œã‚²ãƒ¼ãƒ ";
+	public override string LabelUpAndComing => "話題の新作ゲーム";
 
 	/// <summary>
 	/// Key: "MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string MoreResultsFor => "ã•ã‚‰ã«çµæžœã‚’è¡¨ç¤ºã™ã‚‹";
+	public override string MoreResultsFor => "さらに結果を表示する";
 
 	public GameSortsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -235,7 +237,7 @@ internal class GameSortsResources_ja_jp : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelAdventure()
 	{
-		return "ã‚¢ãƒ‰ãƒ™ãƒ³ãƒãƒ£ãƒ¼";
+		return "アドベンチャー";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -245,97 +247,97 @@ internal class GameSortsResources_ja_jp : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelContest()
 	{
-		return "ã‚³ãƒ³ãƒ†ã‚¹ãƒˆ";
+		return "コンテスト";
 	}
 
 	protected override string _GetTemplateForLabelContinuePlaying()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ã‚’ç¶šã‘ã‚‹";
+		return "プレイを続ける";
 	}
 
 	protected override string _GetTemplateForLabelExperimental()
 	{
-		return "ãŠã™ã™ã‚";
+		return "おすすめ";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "ãŠæ°—ã«å…¥ã‚Š";
+		return "お気に入り";
 	}
 
 	protected override string _GetTemplateForLabelFeatured()
 	{
-		return "æ³¨ç›®ã®Rthro";
+		return "注目のRthro";
 	}
 
 	protected override string _GetTemplateForLabelFighting()
 	{
-		return "æ ¼é—˜";
+		return "格闘";
 	}
 
 	protected override string _GetTemplateForLabelFriendActivity()
 	{
-		return "å‹é”ã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£";
+		return "友達のアクティビティ";
 	}
 
 	protected override string _GetTemplateForLabelFriendsPlaying()
 	{
-		return "å‹é”ãŒãƒ—ãƒ¬ã‚¤ä¸­";
+		return "友達がプレイ中";
 	}
 
 	protected override string _GetTemplateForLabelGamesForYou()
 	{
-		return "ã‚ãªãŸã«ãŠã™ã™ã‚ã®ã‚²ãƒ¼ãƒ ";
+		return "あなたにおすすめのゲーム";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "ã•ã‚‰ã«çµæžœã‚’è¡¨ç¤ºã™ã‚‹";
+		return "さらに結果を表示する";
 	}
 
 	protected override string _GetTemplateForLabelMostEngaging()
 	{
-		return "ã¿ã‚“ãªãŒå¤¢ä¸­ã®ã‚²ãƒ¼ãƒ ";
+		return "みんなが夢中のゲーム";
 	}
 
 	protected override string _GetTemplateForLabelMyFavorite()
 	{
-		return "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
+		return "あなたのお気に入り";
 	}
 
 	protected override string _GetTemplateForLabelMyFavorites()
 	{
-		return "ã‚ãªãŸã®ãŠæ°—ã«å…¥ã‚Š";
+		return "あなたのお気に入り";
 	}
 
 	protected override string _GetTemplateForLabelMyRecent()
 	{
-		return "æœ€è¿‘ã®ãƒ—ãƒ¬ã‚¤";
+		return "最近のプレイ";
 	}
 
 	protected override string _GetTemplateForLabelObby()
 	{
-		return "ã‚ªãƒ¼ãƒ“ãƒ¼ï¼ˆéšœå®³ç‰©ï¼‰";
+		return "オービー（障害物）";
 	}
 
 	protected override string _GetTemplateForLabelPersonalizedByLiked()
 	{
-		return "ã€Œã„ã„ã­ã€ã—ãŸãŸã‚";
+		return "「いいね」したため";
 	}
 
 	protected override string _GetTemplateForLabelPersonalServer()
 	{
-		return "ãƒ‘ãƒ¼ã‚½ãƒŠãƒ«ã‚µãƒ¼ãƒãƒ¼";
+		return "パーソナルサーバー";
 	}
 
 	protected override string _GetTemplateForLabelPlayersLove()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«å¤§äººæ°—";
+		return "プレイヤーに大人気";
 	}
 
 	protected override string _GetTemplateForLabelPopular()
 	{
-		return "äººæ°—";
+		return "人気";
 	}
 
 	/// <summary>
@@ -344,92 +346,92 @@ internal class GameSortsResources_ja_jp : GameSortsResources_en_us, IGameSortsRe
 	/// </summary>
 	public override string LabelPopularInCountry(string CountryName)
 	{
-		return $"{CountryName} ã§äººæ°—";
+		return $"{CountryName} で人気";
 	}
 
 	protected override string _GetTemplateForLabelPopularInCountry()
 	{
-		return "{CountryName} ã§äººæ°—";
+		return "{CountryName} で人気";
 	}
 
 	protected override string _GetTemplateForLabelPopularInVr()
 	{
-		return "VRã§äººæ°—";
+		return "VRで人気";
 	}
 
 	protected override string _GetTemplateForLabelPopularNearYou()
 	{
-		return "ã‚ãªãŸã®å‘¨ã‚Šã§äººæ°—";
+		return "あなたの周りで人気";
 	}
 
 	protected override string _GetTemplateForLabelPopularWorldwide()
 	{
-		return "ä¸–ç•Œä¸­ã§äººæ°—";
+		return "世界中で人気";
 	}
 
 	protected override string _GetTemplateForLabelPurchased()
 	{
-		return "è³¼å…¥æ¸ˆã¿";
+		return "購入済み";
 	}
 
 	protected override string _GetTemplateForLabelRoleplay()
 	{
-		return "ãƒ­ãƒ¼ãƒ«ãƒ—ãƒ¬ã‚¤";
+		return "ロールプレイ";
 	}
 
 	protected override string _GetTemplateForLabelSimulator()
 	{
-		return "ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚¿";
+		return "シミュレータ";
 	}
 
 	protected override string _GetTemplateForLabelSuggestedGames()
 	{
-		return "ãŠã™ã™ã‚ã‚²ãƒ¼ãƒ ";
+		return "おすすめゲーム";
 	}
 
 	protected override string _GetTemplateForLabelTopFavorite()
 	{
-		return "å¤§äººæ°—";
+		return "大人気";
 	}
 
 	protected override string _GetTemplateForLabelTopGrossing()
 	{
-		return "åŽç›Šãƒˆãƒƒãƒ—";
+		return "収益トップ";
 	}
 
 	protected override string _GetTemplateForLabelTopPaid()
 	{
-		return "åŽå…¥ãƒˆãƒƒãƒ—";
+		return "収入トップ";
 	}
 
 	protected override string _GetTemplateForLabelTopRated()
 	{
-		return "é«˜è©•ä¾¡";
+		return "高評価";
 	}
 
 	protected override string _GetTemplateForLabelTopResult()
 	{
-		return "ä¸Šä½ã®çµæžœ";
+		return "上位の結果";
 	}
 
 	protected override string _GetTemplateForLabelTopRetaining()
 	{
-		return "ãŠã™ã™ã‚";
+		return "おすすめ";
 	}
 
 	protected override string _GetTemplateForLabelTycoon()
 	{
-		return "ã‚¿ã‚¤ã‚¯ãƒ¼ãƒ³";
+		return "タイクーン";
 	}
 
 	protected override string _GetTemplateForLabelUpAndComing()
 	{
-		return "è©±é¡Œã®æ–°ä½œã‚²ãƒ¼ãƒ ";
+		return "話題の新作ゲーム";
 	}
 
 	protected override string _GetTemplateForMoreResultsFor()
 	{
-		return "ã•ã‚‰ã«çµæžœã‚’è¡¨ç¤ºã™ã‚‹";
+		return "さらに結果を表示する";
 	}
 }
 

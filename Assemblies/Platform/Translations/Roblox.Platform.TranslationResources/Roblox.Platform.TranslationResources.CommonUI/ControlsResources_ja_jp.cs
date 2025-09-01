@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -10,59 +12,59 @@ internal class ControlsResources_ja_jp : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "åŒæ„ã™ã‚‹";
+	public override string ActionAccept => "同意する";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "åŒæ„ã™ã‚‹";
+	public override string ActionAgree => "同意する";
 
 	/// <summary>
 	/// Key: "Action.Allow"
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "è¨±å¯";
+	public override string ActionAllow => "許可";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "æˆ»ã‚‹";
+	public override string ActionBack => "戻る";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "ç¢ºå®š";
+	public override string ActionConfirm => "確定";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "å‰Šé™¤";
+	public override string ActionDelete => "削除";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "ç ´æ£„";
+	public override string ActionDiscard => "破棄";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "ã„ã„ãˆ";
+	public override string ActionNo => "いいえ";
 
 	/// <summary>
 	/// Key: "Action.OK"
@@ -74,130 +76,130 @@ internal class ControlsResources_ja_jp : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "ä¿å­˜";
+	public override string ActionSave => "保存";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "é€ä¿¡ã™ã‚‹";
+	public override string ActionSubmit => "送信する";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "ã¯ã„";
+	public override string ActionYes => "はい";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string BirthdaypickerLabelDate => "æ—¥ä»˜";
+	public override string BirthdaypickerLabelDate => "日付";
 
 	/// <summary>
 	/// Key: "Label.April"
 	/// English String: "April"
 	/// </summary>
-	public override string LabelApril => "4æœˆ";
+	public override string LabelApril => "4月";
 
 	/// <summary>
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "8æœˆ";
+	public override string LabelAugust => "8月";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "æ—¥";
+	public override string LabelDay => "日";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "12æœˆ";
+	public override string LabelDecember => "12月";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "2æœˆ";
+	public override string LabelFebruary => "2月";
 
 	/// <summary>
 	/// Key: "Label.January"
 	/// English String: "January"
 	/// </summary>
-	public override string LabelJanuary => "1æœˆ";
+	public override string LabelJanuary => "1月";
 
 	/// <summary>
 	/// Key: "Label.July"
 	/// English String: "July"
 	/// </summary>
-	public override string LabelJuly => "7æœˆ";
+	public override string LabelJuly => "7月";
 
 	/// <summary>
 	/// Key: "Label.June"
 	/// English String: "June"
 	/// </summary>
-	public override string LabelJune => "6æœˆ";
+	public override string LabelJune => "6月";
 
 	/// <summary>
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "3æœˆ";
+	public override string LabelMarch => "3月";
 
 	/// <summary>
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "5æœˆ";
+	public override string LabelMay => "5月";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "æœˆ";
+	public override string LabelMonth => "月";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "æ¬¡ã¸";
+	public override string LabelNext => "次へ";
 
 	/// <summary>
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "11æœˆ";
+	public override string LabelNovember => "11月";
 
 	/// <summary>
 	/// Key: "Label.October"
 	/// English String: "October"
 	/// </summary>
-	public override string LabelOctober => "10æœˆ";
+	public override string LabelOctober => "10月";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "å‰ã¸";
+	public override string LabelPrevious => "前へ";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "9æœˆ";
+	public override string LabelSeptember => "9月";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "å¹´";
+	public override string LabelYear => "年";
 
 	public ControlsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -206,47 +208,47 @@ internal class ControlsResources_ja_jp : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "åŒæ„ã™ã‚‹";
+		return "同意する";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "åŒæ„ã™ã‚‹";
+		return "同意する";
 	}
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "è¨±å¯";
+		return "許可";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "æˆ»ã‚‹";
+		return "戻る";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "ç¢ºå®š";
+		return "確定";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "å‰Šé™¤";
+		return "削除";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "ç ´æ£„";
+		return "破棄";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "ã„ã„ãˆ";
+		return "いいえ";
 	}
 
 	protected override string _GetTemplateForActionOK()
@@ -256,32 +258,32 @@ internal class ControlsResources_ja_jp : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "ä¿å­˜";
+		return "保存";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "é€ä¿¡ã™ã‚‹";
+		return "送信する";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "ã¯ã„";
+		return "はい";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
 	{
-		return "æ—¥ä»˜";
+		return "日付";
 	}
 
 	protected override string _GetTemplateForLabelApril()
 	{
-		return "4æœˆ";
+		return "4月";
 	}
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "8æœˆ";
+		return "8月";
 	}
 
 	/// <summary>
@@ -291,87 +293,87 @@ internal class ControlsResources_ja_jp : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"{currentPage}ãƒšãƒ¼ã‚¸";
+		return $"{currentPage}ページ";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "{currentPage}ãƒšãƒ¼ã‚¸";
+		return "{currentPage}ページ";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "æ—¥";
+		return "日";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "12æœˆ";
+		return "12月";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "2æœˆ";
+		return "2月";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
 	{
-		return "1æœˆ";
+		return "1月";
 	}
 
 	protected override string _GetTemplateForLabelJuly()
 	{
-		return "7æœˆ";
+		return "7月";
 	}
 
 	protected override string _GetTemplateForLabelJune()
 	{
-		return "6æœˆ";
+		return "6月";
 	}
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "3æœˆ";
+		return "3月";
 	}
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "5æœˆ";
+		return "5月";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "æœˆ";
+		return "月";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "æ¬¡ã¸";
+		return "次へ";
 	}
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "11æœˆ";
+		return "11月";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
 	{
-		return "10æœˆ";
+		return "10月";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "å‰ã¸";
+		return "前へ";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "9æœˆ";
+		return "9月";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "å¹´";
+		return "年";
 	}
 }
 

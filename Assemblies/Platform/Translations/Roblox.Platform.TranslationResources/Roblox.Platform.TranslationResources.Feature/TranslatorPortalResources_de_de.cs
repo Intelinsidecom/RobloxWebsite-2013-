@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslatorPortalResources_en_us to provide locale specific translations where possible,
@@ -17,20 +19,20 @@ internal class TranslatorPortalResources_de_de : TranslatorPortalResources_en_us
 	/// button text
 	/// English String: "Translate"
 	/// </summary>
-	public override string ActionTranslate => "Ãœbersetzen";
+	public override string ActionTranslate => "Übersetzen";
 
 	/// <summary>
 	/// Key: "Heading.DownloadTranslationContributionReport"
 	/// modal window heading
 	/// English String: "Download Translation Contribution Report"
 	/// </summary>
-	public override string HeadingDownloadTranslationContributionReport => "Ãœbersetzer-Beitragsbericht herunterladen";
+	public override string HeadingDownloadTranslationContributionReport => "Übersetzer-Beitragsbericht herunterladen";
 
 	/// <summary>
 	/// Key: "Heading.TranslatorPortal"
 	/// English String: "Translator Portal"
 	/// </summary>
-	public override string HeadingTranslatorPortal => "Ãœbersetzungsportal";
+	public override string HeadingTranslatorPortal => "Übersetzungsportal";
 
 	/// <summary>
 	/// Key: "Label.Creator"
@@ -110,7 +112,7 @@ internal class TranslatorPortalResources_de_de : TranslatorPortalResources_en_us
 	/// Key: "Label.Translator"
 	/// English String: "Translator"
 	/// </summary>
-	public override string LabelTranslator => "Ãœbersetzer";
+	public override string LabelTranslator => "Übersetzer";
 
 	public TranslatorPortalResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -124,17 +126,17 @@ internal class TranslatorPortalResources_de_de : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForActionTranslate()
 	{
-		return "Ãœbersetzen";
+		return "Übersetzen";
 	}
 
 	protected override string _GetTemplateForHeadingDownloadTranslationContributionReport()
 	{
-		return "Ãœbersetzer-Beitragsbericht herunterladen";
+		return "Übersetzer-Beitragsbericht herunterladen";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatorPortal()
 	{
-		return "Ãœbersetzungsportal";
+		return "Übersetzungsportal";
 	}
 
 	protected override string _GetTemplateForLabelCreator()
@@ -201,12 +203,12 @@ internal class TranslatorPortalResources_de_de : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelLanguageNotSupportedByGame(string languageName)
 	{
-		return $"{languageName} wird von diesem Spiel nicht unterstÃ¼tzt";
+		return $"{languageName} wird von diesem Spiel nicht unterstützt";
 	}
 
 	protected override string _GetTemplateForLabelLanguageNotSupportedByGame()
 	{
-		return "{languageName} wird von diesem Spiel nicht unterstÃ¼tzt";
+		return "{languageName} wird von diesem Spiel nicht unterstützt";
 	}
 
 	protected override string _GetTemplateForLabelOrderBy()
@@ -260,17 +262,17 @@ internal class TranslatorPortalResources_de_de : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelTranslationProgress(string translatedEntriesCount, string totalEntriesCount)
 	{
-		return $"Ãœbersetzungsfortschritt ({translatedEntriesCount}/{totalEntriesCount})";
+		return $"Übersetzungsfortschritt ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslationProgress()
 	{
-		return "Ãœbersetzungsfortschritt ({translatedEntriesCount}/{totalEntriesCount})";
+		return "Übersetzungsfortschritt ({translatedEntriesCount}/{totalEntriesCount})";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "Ãœbersetzer";
+		return "Übersetzer";
 	}
 }
 

@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.CommonUI;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.CommonUI;
+namespace Roblox.Platform.TranslationResources {
     class CommonUIResources : ICommonUIResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -41,3 +42,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+

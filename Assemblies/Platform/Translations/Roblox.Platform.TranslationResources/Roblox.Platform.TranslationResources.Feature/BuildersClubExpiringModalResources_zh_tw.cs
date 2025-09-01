@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -11,42 +13,42 @@ internal class BuildersClubExpiringModalResources_zh_tw : BuildersClubExpiringMo
 	/// button text
 	/// English String: "No, thanks."
 	/// </summary>
-	public override string ActionNoThanks => "ä¸ç”¨ï¼Œè¬è¬ã€‚";
+	public override string ActionNoThanks => "不用，謝謝。";
 
 	/// <summary>
 	/// Key: "Action.WantToRenew"
 	/// button text
 	/// English String: "I Want To Renew!"
 	/// </summary>
-	public override string ActionWantToRenew => "æˆ‘æƒ³çºŒè¨‚ï¼";
+	public override string ActionWantToRenew => "我想續訂！";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpired"
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼åˆ°æœŸäº†ï¼";
+	public override string DescriptionBuildersClubExpired => "糟糕，您的 Builders Club 會員資格到期了！";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨æ˜Žå¤©åˆ°æœŸï¼";
+	public override string DescriptionBuildersClubExpiringOneDay => "糟糕，您的 Builders Club 會員資格將在明天到期！";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨ä»Šå¤©åˆ°æœŸï¼";
+	public override string DescriptionBuildersClubExpiringToday => "糟糕，您的 Builders Club 會員資格將在今天到期！";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "åˆ¥éŒ¯éŽæ©Ÿæœƒï¼Œç¾åœ¨å°±çºŒè¨‚å§ï¼";
+	public override string HeadingDontMissRenewNow => "別錯過機會，現在就續訂吧！";
 
 	public BuildersClubExpiringModalResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -55,22 +57,22 @@ internal class BuildersClubExpiringModalResources_zh_tw : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionNoThanks()
 	{
-		return "ä¸ç”¨ï¼Œè¬è¬ã€‚";
+		return "不用，謝謝。";
 	}
 
 	protected override string _GetTemplateForActionWantToRenew()
 	{
-		return "æˆ‘æƒ³çºŒè¨‚ï¼";
+		return "我想續訂！";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼åˆ°æœŸäº†ï¼";
+		return "糟糕，您的 Builders Club 會員資格到期了！";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨æ˜Žå¤©åˆ°æœŸï¼";
+		return "糟糕，您的 Builders Club 會員資格將在明天到期！";
 	}
 
 	/// <summary>
@@ -80,22 +82,22 @@ internal class BuildersClubExpiringModalResources_zh_tw : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨ {numDays} å¤©å¾Œåˆ°æœŸï¼";
+		return $"糟糕，您的 Builders Club 會員資格將在 {numDays} 天後到期！";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨ {numDays} å¤©å¾Œåˆ°æœŸï¼";
+		return "糟糕，您的 Builders Club 會員資格將在 {numDays} 天後到期！";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "ç³Ÿç³•ï¼Œæ‚¨çš„ Builders Club æœƒå“¡è³‡æ ¼å°‡åœ¨ä»Šå¤©åˆ°æœŸï¼";
+		return "糟糕，您的 Builders Club 會員資格將在今天到期！";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "åˆ¥éŒ¯éŽæ©Ÿæœƒï¼Œç¾åœ¨å°±çºŒè¨‚å§ï¼";
+		return "別錯過機會，現在就續訂吧！";
 	}
 }
 

@@ -1,6 +1,8 @@
-﻿using Roblox.TranslationResources.CommonUI;
-namespace Roblox.Platform.TranslationResourcespublic {
-    interface ICommonUIResources : ITranslationResourcesNamespacesGroup
+﻿using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.CommonUI;
+namespace Roblox.Platform.TranslationResources {
+    public interface ICommonUIResources : ITranslationResourcesNamespacesGroup
 
 {
 	IControlsResources Controls { get; }
@@ -12,3 +14,5 @@ namespace Roblox.Platform.TranslationResourcespublic {
 
 
 }
+
+

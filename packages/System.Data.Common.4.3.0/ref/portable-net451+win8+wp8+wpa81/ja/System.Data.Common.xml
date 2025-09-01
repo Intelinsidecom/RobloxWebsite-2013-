@@ -892,7 +892,7 @@
       <returns>取得する列。</returns>
       <param name="ordinal">取得する列。</param>
       <typeparam name="T">指定された列の値を型として同期的に取得します。</typeparam>
-      <exception cref="T:System.InvalidOperationException">データの取得中、接続は破棄されるか、または閉じられます。<see cref="T:System.Data.SqlClient.SqlDataReader" /> は、データの取得時に閉じます。読み取ることのできるデータはありません (たとえば、最初の <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> は呼び出されなかったか、false を返しました)。以前に読み取られた列をシーケンシャル モードで読み取ろうとしました。非同期操作が進行中でした。シーケンシャル モードで実行中、これはすべての Get* メソッドに適用されます。ストリームの読み取り中に呼び出すことができるためです。</exception>
+      <exception cref="T:System.InvalidOperationException">データの取得中、接続は破棄されるか、または閉じられます。<see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> は、データの取得時に閉じます。読み取ることのできるデータはありません (たとえば、最初の <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> は呼び出されなかったか、false を返しました)。以前に読み取られた列をシーケンシャル モードで読み取ろうとしました。非同期操作が進行中でした。シーケンシャル モードで実行中、これはすべての Get* メソッドに適用されます。ストリームの読み取り中に呼び出すことができるためです。</exception>
       <exception cref="T:System.IndexOutOfRangeException">存在しない列を読み取ろうとしています。</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> は SQL Server によって返される型を一致させたり、キャストできません。</exception>
@@ -1034,7 +1034,7 @@
       <returns>
         <see cref="T:System.Data.Common.DbDataReader" /> が閉じている場合は true。それ以外の場合は false。</returns>
       <exception cref="T:System.InvalidOperationException">
-        <see cref="T:System.Data.SqlClient.SqlDataReader" /> が閉じています。</exception>
+        <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> が閉じています。</exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

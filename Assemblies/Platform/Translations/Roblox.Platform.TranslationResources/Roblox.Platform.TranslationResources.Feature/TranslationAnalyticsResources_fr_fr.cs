@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 	/// button text to download report
 	/// English String: "Download"
 	/// </summary>
-	public override string ActionDownload => "TÃ©lÃ©chargement";
+	public override string ActionDownload => "Téléchargement";
 
 	/// <summary>
 	/// Key: "Action.Request"
@@ -24,7 +26,7 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 	/// Key: "Description.ReportHint"
 	/// English String: "Please note: Once requested, downloads may take a few minutes to prepare."
 	/// </summary>
-	public override string DescriptionReportHint => "Ã€ noter : une fois la demande faite, les tÃ©lÃ©chargements peuvent prendre du temps Ã  la prÃ©paration.";
+	public override string DescriptionReportHint => "À noter : une fois la demande faite, les téléchargements peuvent prendre du temps à la préparation.";
 
 	/// <summary>
 	/// Key: "Heading.TranslationAnalytics"
@@ -45,19 +47,19 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 	/// label for date selection dropdown
 	/// English String: "Select Date Range"
 	/// </summary>
-	public override string LabelSelectDates => "SÃ©lectionner la pÃ©riode";
+	public override string LabelSelectDates => "Sélectionner la période";
 
 	/// <summary>
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "Un problÃ¨me est survenu lors de ta requÃªte. RÃ©essaie plus tard.";
+	public override string MessageGenericError => "Un problème est survenu lors de ta requête. Réessaie plus tard.";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
 	/// English String: "You do not have sufficient permission to download this report."
 	/// </summary>
-	public override string MessagePermissionError => "Tu n'as pas les permissions nÃ©cessaire pour tÃ©lÃ©charger ce compte rendu.";
+	public override string MessagePermissionError => "Tu n'as pas les permissions nécessaire pour télécharger ce compte rendu.";
 
 	public TranslationAnalyticsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -66,7 +68,7 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForActionDownload()
 	{
-		return "TÃ©lÃ©chargement";
+		return "Téléchargement";
 	}
 
 	protected override string _GetTemplateForActionRequest()
@@ -76,7 +78,7 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForDescriptionReportHint()
 	{
-		return "Ã€ noter : une fois la demande faite, les tÃ©lÃ©chargements peuvent prendre du temps Ã  la prÃ©paration.";
+		return "À noter : une fois la demande faite, les téléchargements peuvent prendre du temps à la préparation.";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationAnalytics()
@@ -91,17 +93,17 @@ internal class TranslationAnalyticsResources_fr_fr : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForLabelSelectDates()
 	{
-		return "SÃ©lectionner la pÃ©riode";
+		return "Sélectionner la période";
 	}
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "Un problÃ¨me est survenu lors de ta requÃªte. RÃ©essaie plus tard.";
+		return "Un problème est survenu lors de ta requête. Réessaie plus tard.";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()
 	{
-		return "Tu n'as pas les permissions nÃ©cessaire pour tÃ©lÃ©charger ce compte rendu.";
+		return "Tu n'as pas les permissions nécessaire pour télécharger ce compte rendu.";
 	}
 }
 

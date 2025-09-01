@@ -1,5 +1,6 @@
 using System;
 using Roblox.Entities;
+using Roblox;
 
 namespace Roblox.Platform.IpAddresses;
 

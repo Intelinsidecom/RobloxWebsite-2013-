@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Properties;
@@ -196,3 +196,4 @@ public class AccountProductPremiumFeatureMappingDAL
 		return EntityHelper.GetDataEntityIDCollection<int>(new DbInfo(_DbConnectionString_AccountManagement, "[dbo].[AccountProductPremiumFeatureMappings_GetAllIDs]", queryParameters));
 	}
 }
+

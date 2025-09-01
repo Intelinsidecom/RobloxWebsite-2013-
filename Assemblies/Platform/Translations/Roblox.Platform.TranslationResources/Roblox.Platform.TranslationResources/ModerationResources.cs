@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.Moderation;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Moderation;
+namespace Roblox.Platform.TranslationResources {
     class ModerationResources : IModerationResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -29,3 +30,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+

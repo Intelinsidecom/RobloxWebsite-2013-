@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+namespace Roblox.Platform.TranslationResources.Purchasing {
     class PurchaseDialogResources_en_us : TranslationResourcesBase, IPurchaseDialogResources, ITranslationResources
 
 {
@@ -648,3 +648,4 @@ namespace Roblox.Platform.TranslationResources.Purchasinginternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RixtyPinResources_en_us to provide locale specific translations where possible,
@@ -22,13 +24,13 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Action.MoreBCOptions"
 	/// English String: "More Builders Club Options"
 	/// </summary>
-	public override string ActionMoreBCOptions => "Weitere â€žBuilders Clubâ€œ-Optionen";
+	public override string ActionMoreBCOptions => "Weitere „Builders Club“-Optionen";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "EinlÃ¶sen";
+	public override string ActionRedeem => "Einlösen";
 
 	/// <summary>
 	/// Key: "Heading.AlreadyHaveCredit"
@@ -46,7 +48,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Heading.GetRobuxOrBcWithRixty"
 	/// English String: "Get Robux or Builders Club with Rixty"
 	/// </summary>
-	public override string HeadingGetRobuxOrBcWithRixty => "Hol dir Robux oder werde â€žBuilders Clubâ€œ-Mitglied mit Rixty";
+	public override string HeadingGetRobuxOrBcWithRixty => "Hol dir Robux oder werde „Builders Club“-Mitglied mit Rixty";
 
 	/// <summary>
 	/// Key: "Heading.GetRobuxWithRixty"
@@ -58,7 +60,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Heading.HowToUse"
 	/// English String: "How to Use"
 	/// </summary>
-	public override string HeadingHowToUse => "So funktioniertâ€™s";
+	public override string HeadingHowToUse => "So funktioniert’s";
 
 	/// <summary>
 	/// Key: "Heading.PayWithRixty"
@@ -70,7 +72,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Heading.RedeemRixtyCards"
 	/// English String: "Redeem Rixty Cards"
 	/// </summary>
-	public override string HeadingRedeemRixtyCards => "Rixty-Karten einlÃ¶sen";
+	public override string HeadingRedeemRixtyCards => "Rixty-Karten einlösen";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveAccount"
@@ -101,7 +103,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.FortyFiveDaysBC"
 	/// English String: "45 Day Builders Club Extension - $10.00 (Existing BC members only)"
 	/// </summary>
-	public override string LabelFortyFiveDaysBC => "45 Tage VerlÃ¤ngerung fÃ¼r Builders Club - 10,00\u00a0$ (Nur fÃ¼r bestehende BC-Mitglieder.)";
+	public override string LabelFortyFiveDaysBC => "45 Tage Verlängerung für Builders Club - 10,00\u00a0$ (Nur für bestehende BC-Mitglieder.)";
 
 	/// <summary>
 	/// Key: "Label.InstructionForCombineCards"
@@ -149,7 +151,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.WhySpendCredit"
 	/// English String: "Spend your Roblox credit on Robux and Builders Club!"
 	/// </summary>
-	public override string LabelWhySpendCredit => "Gib dein Roblox-Guthaben fÃ¼r Robux und Builders Club aus!";
+	public override string LabelWhySpendCredit => "Gib dein Roblox-Guthaben für Robux und Builders Club aus!";
 
 	/// <summary>
 	/// Key: "Label.YourBalance"
@@ -179,13 +181,13 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Message.PinAlreadyRedeemed"
 	/// English String: "PIN already redeemed"
 	/// </summary>
-	public override string MessagePinAlreadyRedeemed => "PIN bereits eingelÃ¶st";
+	public override string MessagePinAlreadyRedeemed => "PIN bereits eingelöst";
 
 	/// <summary>
 	/// Key: "Message.RixtyUnavailable"
 	/// English String: "Currently unavailable. Please try again later."
 	/// </summary>
-	public override string MessageRixtyUnavailable => "Derzeit nicht verfÃ¼gbar. Bitte versuche es spÃ¤ter erneut.";
+	public override string MessageRixtyUnavailable => "Derzeit nicht verfügbar. Bitte versuche es später erneut.";
 
 	/// <summary>
 	/// Key: "Message.Success"
@@ -197,7 +199,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Message.SuccessfulRedemption"
 	/// English String: "You have successfully redeemed your PIN!"
 	/// </summary>
-	public override string MessageSuccessfulRedemption => "Du hast deine PIN eingelÃ¶st!";
+	public override string MessageSuccessfulRedemption => "Du hast deine PIN eingelöst!";
 
 	public RixtyPinResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -216,12 +218,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForActionMoreBCOptions()
 	{
-		return "Weitere â€žBuilders Clubâ€œ-Optionen";
+		return "Weitere „Builders Club“-Optionen";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "EinlÃ¶sen";
+		return "Einlösen";
 	}
 
 	/// <summary>
@@ -230,12 +232,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobux(string lineBreak)
 	{
-		return $"Mit Rixty kannst du Bargeld und MÃ¼nzen verwenden, um Robux zu kaufen und â€žBuilders Clubâ€œ-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
+		return $"Mit Rixty kannst du Bargeld und Münzen verwenden, um Robux zu kaufen und „Builders Club“-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobux()
 	{
-		return "Mit Rixty kannst du Bargeld und MÃ¼nzen verwenden, um Robux zu kaufen und â€žBuilders Clubâ€œ-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
+		return "Mit Rixty kannst du Bargeld und Münzen verwenden, um Robux zu kaufen und „Builders Club“-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
 	}
 
 	/// <summary>
@@ -244,12 +246,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobuxAndPremium(string lineBreak)
 	{
-		return $"Mit Rixty kannst du Bargeld und Coins verwenden, um Robux zu kaufen und â€žBuilders Clubâ€œ-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
+		return $"Mit Rixty kannst du Bargeld und Coins verwenden, um Robux zu kaufen und „Builders Club“-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobuxAndPremium()
 	{
-		return "Mit Rixty kannst du Bargeld und Coins verwenden, um Robux zu kaufen und â€žBuilders Clubâ€œ-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
+		return "Mit Rixty kannst du Bargeld und Coins verwenden, um Robux zu kaufen und „Builders Club“-Mitglied zu werden.{lineBreak}Keine Kreditkarte? Kein Problem!";
 	}
 
 	protected override string _GetTemplateForHeadingAlreadyHaveCredit()
@@ -264,7 +266,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForHeadingGetRobuxOrBcWithRixty()
 	{
-		return "Hol dir Robux oder werde â€žBuilders Clubâ€œ-Mitglied mit Rixty";
+		return "Hol dir Robux oder werde „Builders Club“-Mitglied mit Rixty";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobuxWithRixty()
@@ -274,7 +276,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForHeadingHowToUse()
 	{
-		return "So funktioniertâ€™s";
+		return "So funktioniert’s";
 	}
 
 	protected override string _GetTemplateForHeadingPayWithRixty()
@@ -284,7 +286,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForHeadingRedeemRixtyCards()
 	{
-		return "Rixty-Karten einlÃ¶sen";
+		return "Rixty-Karten einlösen";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveAccount()
@@ -299,12 +301,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuildersClubExtensionExisting(string numberOfDays, string cost)
 	{
-		return $"{numberOfDays} Tage VerlÃ¤ngerung fÃ¼r Builders Club - {cost} (Nur fÃ¼r bestehende BC-Mitglieder.)";
+		return $"{numberOfDays} Tage Verlängerung für Builders Club - {cost} (Nur für bestehende BC-Mitglieder.)";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExtensionExisting()
 	{
-		return "{numberOfDays} Tage VerlÃ¤ngerung fÃ¼r Builders Club - {cost} (Nur fÃ¼r bestehende BC-Mitglieder.)";
+		return "{numberOfDays} Tage Verlängerung für Builders Club - {cost} (Nur für bestehende BC-Mitglieder.)";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubImage()
@@ -334,12 +336,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuyRobuxWithRixty(string robuxAmount, string currencyAmount)
 	{
-		return $"{robuxAmount} Robux fÃ¼r {currencyAmount}";
+		return $"{robuxAmount} Robux für {currencyAmount}";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobuxWithRixty()
 	{
-		return "{robuxAmount} Robux fÃ¼r {currencyAmount}";
+		return "{robuxAmount} Robux für {currencyAmount}";
 	}
 
 	protected override string _GetTemplateForLabelEnterPin()
@@ -354,7 +356,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForLabelFortyFiveDaysBC()
 	{
-		return "45 Tage VerlÃ¤ngerung fÃ¼r Builders Club - 10,00\u00a0$ (Nur fÃ¼r bestehende BC-Mitglieder.)";
+		return "45 Tage Verlängerung für Builders Club - 10,00\u00a0$ (Nur für bestehende BC-Mitglieder.)";
 	}
 
 	/// <summary>
@@ -363,12 +365,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelGetPhysicalRixtyCard(string startLink, string endLink)
 	{
-		return $"{startLink}Geh zu einem Laden in deiner NÃ¤he{endLink} und kaufe eine Rixty-Karte.";
+		return $"{startLink}Geh zu einem Laden in deiner Nähe{endLink} und kaufe eine Rixty-Karte.";
 	}
 
 	protected override string _GetTemplateForLabelGetPhysicalRixtyCard()
 	{
-		return "{startLink}Geh zu einem Laden in deiner NÃ¤he{endLink} und kaufe eine Rixty-Karte.";
+		return "{startLink}Geh zu einem Laden in deiner Nähe{endLink} und kaufe eine Rixty-Karte.";
 	}
 
 	protected override string _GetTemplateForLabelInstructionForCombineCards()
@@ -408,7 +410,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForLabelWhySpendCredit()
 	{
-		return "Gib dein Roblox-Guthaben fÃ¼r Robux und Builders Club aus!";
+		return "Gib dein Roblox-Guthaben für Robux und Builders Club aus!";
 	}
 
 	protected override string _GetTemplateForLabelYourBalance()
@@ -433,12 +435,12 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForMessagePinAlreadyRedeemed()
 	{
-		return "PIN bereits eingelÃ¶st";
+		return "PIN bereits eingelöst";
 	}
 
 	protected override string _GetTemplateForMessageRixtyUnavailable()
 	{
-		return "Derzeit nicht verfÃ¼gbar. Bitte versuche es spÃ¤ter erneut.";
+		return "Derzeit nicht verfügbar. Bitte versuche es später erneut.";
 	}
 
 	protected override string _GetTemplateForMessageSuccess()
@@ -448,7 +450,7 @@ internal class RixtyPinResources_de_de : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForMessageSuccessfulRedemption()
 	{
-		return "Du hast deine PIN eingelÃ¶st!";
+		return "Du hast deine PIN eingelöst!";
 	}
 }
 

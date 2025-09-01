@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
@@ -40,15 +42,15 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
+	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "La lingua selezionata non Ã¨ pienamente supportata da roblox.com, anche se alcuni giochi potrebbero usarla.";
+	public override string DescriptionUnsupportedLanguage => "La lingua selezionata non è pienamente supportata da roblox.com, anche se alcuni giochi potrebbero usarla.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
@@ -108,7 +110,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "Configura localitÃ ";
+	public override string LabelConfigurePlace => "Configura località";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
@@ -168,7 +170,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Non trovi piÃ¹ \"I miei Feed\"? Guarda nel menu laterale";
+	public override string LabelFindMyFeed => "Non trovi più \"I miei Feed\"? Guarda nel menu laterale";
 
 	/// <summary>
 	/// Key: "Label.Help"
@@ -207,7 +209,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "Statistiche localitÃ ";
+	public override string LabelPlaceStatistics => "Statistiche località";
 
 	/// <summary>
 	/// Key: "Label.Players"
@@ -419,37 +421,37 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"Vuoi acquistare l'accesso alla localitÃ : {placeName} da {creatorName} per {robux}?";
+		return $"Vuoi acquistare l'accesso alla località: {placeName} da {creatorName} per {robux}?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "Vuoi acquistare l'accesso alla localitÃ : {placeName} da {creatorName} per {robux}?";
+		return "Vuoi acquistare l'accesso alla località: {placeName} da {creatorName} per {robux}?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "Â©2018 Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
+		return "©2018 Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"Â©{copyrightYear} Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
+		return $"©{copyrightYear} Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "Â©{copyrightYear} Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
+		return "©{copyrightYear} Roblox Corporation. Roblox, il logo Roblox e Powering Imagination sono alcuni dei nostri marchi registrati e marchi di fatto negli Stati Uniti e in altri Paesi.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "La lingua selezionata non Ã¨ pienamente supportata da roblox.com, anche se alcuni giochi potrebbero usarla.";
+		return "La lingua selezionata non è pienamente supportata da roblox.com, anche se alcuni giochi potrebbero usarla.";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"La lingua {userLanguage} non Ã¨ attualmente disponibile su roblox.com. I contenuti di gioco saranno in lingua {platformLanguage}, e roblox.com Ã¨ stato impostato in lingua inglese.";
+		return $"La lingua {userLanguage} non è attualmente disponibile su roblox.com. I contenuti di gioco saranno in lingua {platformLanguage}, e roblox.com è stato impostato in lingua inglese.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "La lingua {userLanguage} non Ã¨ attualmente disponibile su roblox.com. I contenuti di gioco saranno in lingua {platformLanguage}, e roblox.com Ã¨ stato impostato in lingua inglese.";
+		return "La lingua {userLanguage} non è attualmente disponibile su roblox.com. I contenuti di gioco saranno in lingua {platformLanguage}, e roblox.com è stato impostato in lingua inglese.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
@@ -508,7 +510,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "Configura localitÃ ";
+		return "Configura località";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
@@ -553,7 +555,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Non trovi piÃ¹ \"I miei Feed\"? Guarda nel menu laterale";
+		return "Non trovi più \"I miei Feed\"? Guarda nel menu laterale";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
@@ -583,7 +585,7 @@ internal class FeaturesResources_it_it : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "Statistiche localitÃ ";
+		return "Statistiche località";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()

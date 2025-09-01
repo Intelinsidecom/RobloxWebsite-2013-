@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
@@ -16,19 +18,19 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "Les paramÃ¨tres suivants seront rÃ©initialisÃ©s\u00a0:";
+	public override string DescriptionResetFollowing => "Les paramètres suivants seront réinitialisés\u00a0:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "Tu es sur le point de rÃ©tablir ton compte Ã  un Ã©tat antÃ©rieur.\nPour continuer, tu dois dÃ©finir un nouveau mot de passe.";
+	public override string DescriptionRevertAccount => "Tu es sur le point de rétablir ton compte à un état antérieur.\nPour continuer, tu dois définir un nouveau mot de passe.";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "RÃ©initialiser le mot de passe";
+	public override string HeadingAccountRecovery => "Réinitialiser le mot de passe";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
@@ -40,7 +42,7 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 	/// Key: "HeadingRevertAccount"
 	/// English String: "Revert Account"
 	/// </summary>
-	public override string HeadingRevertAccount => "RÃ©tablir le compte";
+	public override string HeadingRevertAccount => "Rétablir le compte";
 
 	/// <summary>
 	/// Key: "LabelConfirmNewPassword"
@@ -70,19 +72,19 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "VÃ©rification en 2\u00a0Ã©tapes";
+	public override string LabelTwoStepVerification => "Vérification en 2\u00a0étapes";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "La vÃ©rification en 2\u00a0Ã©tapes sera par consÃ©quent dÃ©sactivÃ©e.";
+	public override string MessageDisableTwoStepVerification => "La vérification en 2\u00a0étapes sera par conséquent désactivée.";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "Ton adresse e-mail va Ãªtre remplacÃ©e par une adresse non vÃ©rifiÃ©e.";
+	public override string MessageRevertToUnverifiedEmail => "Ton adresse e-mail va être remplacée par une adresse non vérifiée.";
 
 	public AccountRecoveryResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -96,17 +98,17 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "Les paramÃ¨tres suivants seront rÃ©initialisÃ©s\u00a0:";
+		return "Les paramètres suivants seront réinitialisés\u00a0:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "Tu es sur le point de rÃ©tablir ton compte Ã  un Ã©tat antÃ©rieur.\nPour continuer, tu dois dÃ©finir un nouveau mot de passe.";
+		return "Tu es sur le point de rétablir ton compte à un état antérieur.\nPour continuer, tu dois définir un nouveau mot de passe.";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "RÃ©initialiser le mot de passe";
+		return "Réinitialiser le mot de passe";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
@@ -116,7 +118,7 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForHeadingRevertAccount()
 	{
-		return "RÃ©tablir le compte";
+		return "Rétablir le compte";
 	}
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
@@ -141,7 +143,7 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "VÃ©rification en 2\u00a0Ã©tapes";
+		return "Vérification en 2\u00a0étapes";
 	}
 
 	/// <summary>
@@ -150,17 +152,17 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"Choisissez un nouveau mot de passe. Il ne doit {styleFront}pas{styleEnd} Ãªtre identique Ã  l'ancien.";
+		return $"Choisissez un nouveau mot de passe. Il ne doit {styleFront}pas{styleEnd} être identique à l'ancien.";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "Choisissez un nouveau mot de passe. Il ne doit {styleFront}pas{styleEnd} Ãªtre identique Ã  l'ancien.";
+		return "Choisissez un nouveau mot de passe. Il ne doit {styleFront}pas{styleEnd} être identique à l'ancien.";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "La vÃ©rification en 2\u00a0Ã©tapes sera par consÃ©quent dÃ©sactivÃ©e.";
+		return "La vérification en 2\u00a0étapes sera par conséquent désactivée.";
 	}
 
 	/// <summary>
@@ -179,7 +181,7 @@ internal class AccountRecoveryResources_fr_fr : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "Ton adresse e-mail va Ãªtre remplacÃ©e par une adresse non vÃ©rifiÃ©e.";
+		return "Ton adresse e-mail va être remplacée par une adresse non vérifiée.";
 	}
 }
 

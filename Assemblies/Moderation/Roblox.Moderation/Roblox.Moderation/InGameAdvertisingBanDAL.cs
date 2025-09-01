@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
-using Roblox.Platform.Moderation.Properties;
-namespace Roblox.Moderationinternal {
+using Roblox.Moderation.Properties;
+namespace Roblox.Moderation {
     class InGameAdvertisingBanDAL
 
 {
@@ -110,3 +110,4 @@ namespace Roblox.Moderationinternal {
 
 
 }
+

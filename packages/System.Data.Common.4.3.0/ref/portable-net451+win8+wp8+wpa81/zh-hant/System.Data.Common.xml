@@ -843,7 +843,7 @@
       <returns>要擷取的資料行。</returns>
       <param name="ordinal">要擷取的資料行。</param>
       <typeparam name="T">同步取得指定之資料行的值做為型別。</typeparam>
-      <exception cref="T:System.InvalidOperationException">在資料擷取期間，連線中斷或關閉。<see cref="T:System.Data.SqlClient.SqlDataReader" />在資料擷取期間已關閉。沒有可供讀取的資料 (例如，第一個 <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> 沒有被呼叫，或傳回 false)。嘗試在循序模式下讀取先前讀取的資料行。有進行中的非同步作業。當在循序模式中執行時，此適用於所有 Get* 方法，因為在讀取資料流時可能會呼叫它們。</exception>
+      <exception cref="T:System.InvalidOperationException">在資料擷取期間，連線中斷或關閉。<see cref="T:Microsoft.Data.SqlClient.SqlDataReader" />在資料擷取期間已關閉。沒有可供讀取的資料 (例如，第一個 <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> 沒有被呼叫，或傳回 false)。嘗試在循序模式下讀取先前讀取的資料行。有進行中的非同步作業。當在循序模式中執行時，此適用於所有 Get* 方法，因為在讀取資料流時可能會呼叫它們。</exception>
       <exception cref="T:System.IndexOutOfRangeException">嘗試讀取不存在的資料行。</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" />不符合 SQL Server 傳回的型別或無法轉換。</exception>
@@ -980,7 +980,7 @@
       <summary>取得值，指出 <see cref="T:System.Data.Common.DbDataReader" /> 是否關閉。</summary>
       <returns>如果 <see cref="T:System.Data.Common.DbDataReader" /> 關閉，則為 true，否則為 false。</returns>
       <exception cref="T:System.InvalidOperationException">
-        <see cref="T:System.Data.SqlClient.SqlDataReader" /> 已經關閉。</exception>
+        <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> 已經關閉。</exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

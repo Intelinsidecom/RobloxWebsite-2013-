@@ -1,15 +1,14 @@
-﻿using Roblox.EphemeralCounters.Client;
-namespace Roblox.Platform.EphemeralCountersinternal {
-    abstract class EphemeralCounterBase
-
+using Roblox.Platform.EphemeralCounters.Client;
+namespace Roblox.Platform.EphemeralCounters
 {
-	protected readonly EphemeralCountersClient Client;
+    abstract class EphemeralCounterBase
+    {
+        protected readonly EphemeralCountersClient Client;
 
-	protected EphemeralCounterBase(EphemeralCountersClient client)
-	{
-		Client = client;
-	}
-}
-
+        protected EphemeralCounterBase(EphemeralCountersClient client)
+        {
+            Client = client;
+        }
+    }
 
 }

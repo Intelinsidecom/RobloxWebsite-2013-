@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
@@ -132,3 +132,4 @@ public class CountryCurrencyDAL
 		return EntityHelper.GetDataEntityIDCollection<int>(new DbInfo(ConnectionString, "[dbo].[CountryCurrencies_GetCountryCurrencyIDsByCountryTypeID_Paged]", queryParameters));
 	}
 }
+

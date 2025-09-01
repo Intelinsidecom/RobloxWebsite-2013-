@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// button label
 	/// English String: "Continue in App"
 	/// </summary>
-	public override string ActionContinueInApp => "Continuar en la aplicaciÃ³n";
+	public override string ActionContinueInApp => "Continuar en la aplicación";
 
 	/// <summary>
 	/// Key: "Action.ContinueInBrowser"
@@ -46,28 +48,28 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Â¡Juega Roblox en nuestra aplicaciÃ³n para mÃ³vil!";
+	public override string LabelPlayGamesInMobile => "¡Juega Roblox en nuestra aplicación para móvil!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
 	/// The user is being encouraged to play on the native mobile Android app
 	/// English String: "Play Roblox in our Android app!"
 	/// </summary>
-	public override string MessageAppBumpAndroidDevice => "Â¡Juega Roblox en nuestra aplicaciÃ³n para Android!";
+	public override string MessageAppBumpAndroidDevice => "¡Juega Roblox en nuestra aplicación para Android!";
 
 	/// <summary>
 	/// Key: "Message.AppBumperUpsell"
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "Millones de juegos generados por jugadores como tÃº";
+	public override string MessageAppBumperUpsell => "Millones de juegos generados por jugadores como tú";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "Â¡Juega Roblox en nuestra aplicaciÃ³n para iOS!";
+	public override string MessageAppBumpIOSDevice => "¡Juega Roblox en nuestra aplicación para iOS!";
 
 	public DownloadAppResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -76,7 +78,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForActionContinueInApp()
 	{
-		return "Continuar en la aplicaciÃ³n";
+		return "Continuar en la aplicación";
 	}
 
 	protected override string _GetTemplateForActionContinueInBrowser()
@@ -101,7 +103,7 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para mÃ³vil!";
+		return "¡Juega Roblox en nuestra aplicación para móvil!";
 	}
 
 	/// <summary>
@@ -111,27 +113,27 @@ internal class DownloadAppResources_es_es : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} reseÃ±as";
+		return $"{reviewCount} reseñas";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} reseÃ±as";
+		return "{reviewCount} reseñas";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
 	{
-		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para Android!";
+		return "¡Juega Roblox en nuestra aplicación para Android!";
 	}
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "Millones de juegos generados por jugadores como tÃº";
+		return "Millones de juegos generados por jugadores como tú";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "Â¡Juega Roblox en nuestra aplicaciÃ³n para iOS!";
+		return "¡Juega Roblox en nuestra aplicación para iOS!";
 	}
 }
 

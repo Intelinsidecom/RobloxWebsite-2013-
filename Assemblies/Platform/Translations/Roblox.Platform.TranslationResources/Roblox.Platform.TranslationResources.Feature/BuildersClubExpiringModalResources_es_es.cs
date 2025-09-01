@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -18,35 +20,35 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 	/// button text
 	/// English String: "I Want To Renew!"
 	/// </summary>
-	public override string ActionWantToRenew => "Â¡Quiero renovar!";
+	public override string ActionWantToRenew => "¡Quiero renovar!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpired"
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club ha caducado!";
+	public override string DescriptionBuildersClubExpired => "¡Oh, no! ¡Tu suscripción al Builders Club ha caducado!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en un dÃ­a!";
+	public override string DescriptionBuildersClubExpiringOneDay => "¡Oh, no! ¡Tu suscripción al Builders Club caduca en un día!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca hoy!";
+	public override string DescriptionBuildersClubExpiringToday => "¡Oh, no! ¡Tu suscripción al Builders Club caduca hoy!";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "Â¡No te pierdas nada! Â¡Renueva ya!";
+	public override string HeadingDontMissRenewNow => "¡No te pierdas nada! ¡Renueva ya!";
 
 	public BuildersClubExpiringModalResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -60,17 +62,17 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionWantToRenew()
 	{
-		return "Â¡Quiero renovar!";
+		return "¡Quiero renovar!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club ha caducado!";
+		return "¡Oh, no! ¡Tu suscripción al Builders Club ha caducado!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en un dÃ­a!";
+		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca en un día!";
 	}
 
 	/// <summary>
@@ -80,22 +82,22 @@ internal class BuildersClubExpiringModalResources_es_es : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en {numDays} dÃ­as!";
+		return $"¡Oh, no! ¡Tu suscripción al Builders Club caduca en {numDays} días!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca en {numDays} dÃ­as!";
+		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca en {numDays} días!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "Â¡Oh, no! Â¡Tu suscripciÃ³n al Builders Club caduca hoy!";
+		return "¡Oh, no! ¡Tu suscripción al Builders Club caduca hoy!";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "Â¡No te pierdas nada! Â¡Renueva ya!";
+		return "¡No te pierdas nada! ¡Renueva ya!";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -24,7 +26,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "Ä°zin ver";
+	public override string ActionAllow => "İzin ver";
 
 	/// <summary>
 	/// Key: "Action.Back"
@@ -36,14 +38,14 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Ä°ptal Et";
+	public override string ActionCancel => "İptal Et";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "DoÄŸrula";
+	public override string ActionConfirm => "Doğrula";
 
 	/// <summary>
 	/// Key: "Action.Delete"
@@ -56,13 +58,13 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "VazgeÃ§";
+	public override string ActionDiscard => "Vazgeç";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "HayÄ±r";
+	public override string ActionNo => "Hayır";
 
 	/// <summary>
 	/// Key: "Action.OK"
@@ -80,7 +82,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "GÃ¶nder";
+	public override string ActionSubmit => "Gönder";
 
 	/// <summary>
 	/// Key: "Action.Yes"
@@ -104,26 +106,26 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "AÄŸustos";
+	public override string LabelAugust => "Ağustos";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "GÃ¼n";
+	public override string LabelDay => "Gün";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "AralÄ±k";
+	public override string LabelDecember => "Aralık";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "Åžubat";
+	public override string LabelFebruary => "Şubat";
 
 	/// <summary>
 	/// Key: "Label.January"
@@ -153,7 +155,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "MayÄ±s";
+	public override string LabelMay => "Mayıs";
 
 	/// <summary>
 	/// Key: "Label.Month"
@@ -172,7 +174,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "KasÄ±m";
+	public override string LabelNovember => "Kasım";
 
 	/// <summary>
 	/// Key: "Label.October"
@@ -184,20 +186,20 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "Ã–nceki";
+	public override string LabelPrevious => "Önceki";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "EylÃ¼l";
+	public override string LabelSeptember => "Eylül";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "YÄ±l";
+	public override string LabelYear => "Yıl";
 
 	public ControlsResources_tr_tr(TranslationResourceState state)
 		: base(state)
@@ -216,7 +218,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "Ä°zin ver";
+		return "İzin ver";
 	}
 
 	protected override string _GetTemplateForActionBack()
@@ -226,12 +228,12 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Ä°ptal Et";
+		return "İptal Et";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "DoÄŸrula";
+		return "Doğrula";
 	}
 
 	protected override string _GetTemplateForActionDelete()
@@ -241,12 +243,12 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "VazgeÃ§";
+		return "Vazgeç";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "HayÄ±r";
+		return "Hayır";
 	}
 
 	protected override string _GetTemplateForActionOK()
@@ -261,7 +263,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "GÃ¶nder";
+		return "Gönder";
 	}
 
 	protected override string _GetTemplateForActionYes()
@@ -281,7 +283,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "AÄŸustos";
+		return "Ağustos";
 	}
 
 	/// <summary>
@@ -301,17 +303,17 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "GÃ¼n";
+		return "Gün";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "AralÄ±k";
+		return "Aralık";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "Åžubat";
+		return "Şubat";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
@@ -336,7 +338,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "MayÄ±s";
+		return "Mayıs";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
@@ -351,7 +353,7 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "KasÄ±m";
+		return "Kasım";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
@@ -361,17 +363,17 @@ internal class ControlsResources_tr_tr : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "Ã–nceki";
+		return "Önceki";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "EylÃ¼l";
+		return "Eylül";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "YÄ±l";
+		return "Yıl";
 	}
 }
 

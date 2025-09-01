@@ -1,6 +1,9 @@
-﻿using Roblox.TranslationResources.Authentication;
-namespace Roblox.Platform.TranslationResourcespublic {
-    interface IAuthenticationResources : ITranslationResourcesNamespacesGroup
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Authentication;
+namespace Roblox.Platform.TranslationResources
+{
+    public interface IAuthenticationResources : ITranslationResourcesNamespacesGroup
 
 {
 	IAccountRecoveryResources AccountRecovery { get; }

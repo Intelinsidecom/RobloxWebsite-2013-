@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class PolicyGroupDatacenter
+namespace Roblox.Platform.Games.Client {
+    public class PolicyGroupDatacenter
 
 {
 	public int Id { get; set; }

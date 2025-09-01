@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using Roblox.Agents;
 using Roblox.Moderation;
-using Roblox.Platform.Assets;
-using Roblox.Platform.Membership;
-using Roblox.Platform.Membership.Core;
-namespace Roblox.Moderationpublic {
+using Roblox.Platform.AssetsCore;
+using Roblox.Platform.MembershipCore;
+namespace Roblox.Moderation {
     static class Extensions
 
 {
@@ -38,7 +37,7 @@ namespace Roblox.Moderationpublic {
 	}
 
 	[Obsolete("use AssetModerationStatusChecker instead.")]
-	public static AssetModerationStatus GetModerationStatus(this IAsset asset)
+	public static AssetModerationStatus GetModerationStatus(this IAssetIdentifier asset)
 	{
 		if (asset == null)
 		{
@@ -80,28 +79,28 @@ namespace Roblox.Moderationpublic {
 		return sellBanEntity.Expiration <= DateTime.Now;
 	}
 
-	public static void AddToWhitelist(this IUser user)
+	public static void AddToWhitelist(this IUserIdentifier user)
 	{
-		user.VerifyIsNotNull();
+		if (user == null) throw new ArgumentNullException("user");
 		if (WatchDogWhitelistedPlaceCreator.GetByCreatorID(user.Id) == null)
 		{
 			WatchDogWhitelistedPlaceCreator.CreateNew(user.Id);
 		}
 	}
 
-	public static void RemoveFromWhitelist(this IUser user)
+	public static void RemoveFromWhitelist(this IUserIdentifier user)
 	{
-		user.VerifyIsNotNull();
+		if (user == null) throw new ArgumentNullException("user");
 		WatchDogWhitelistedPlaceCreator.GetByCreatorID(user.Id)?.Delete();
 	}
 
-	public static bool IsInWhitelist(this IUser user)
+	public static bool IsInWhitelist(this IUserIdentifier user)
 	{
-		user.VerifyIsNotNull();
+		if (user == null) throw new ArgumentNullException("user");
 		return WatchDogWhitelistedPlaceCreator.GetByCreatorID(user.Id) != null;
 	}
 
-	public static string GetValue(this PunishmentType punishmentType)
+	public static string GetValue(this PunishmentTypeEnum punishmentType)
 	{
 		Roblox.Moderation.PunishmentType punishmentTypeEntity = Roblox.Moderation.PunishmentType.Get((byte)punishmentType);
 		if (punishmentTypeEntity == null)

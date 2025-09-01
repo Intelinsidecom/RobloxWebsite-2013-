@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides VIPServerResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "AÃ±adir";
+	public override string ActionAdd => "Añadir";
 
 	/// <summary>
 	/// Key: "Action.AddPlayers"
 	/// English String: "Add Players"
 	/// </summary>
-	public override string ActionAddPlayers => "AÃ±adir jugadores";
+	public override string ActionAddPlayers => "Añadir jugadores";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -82,7 +84,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// Key: "Heading.ConfigureVipServer"
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string HeadingConfigureVipServer => "ConfiguraciÃ³n del servidor VIP";
+	public override string HeadingConfigureVipServer => "Configuración del servidor VIP";
 
 	/// <summary>
 	/// Key: "Heading.RemovePlayer"
@@ -142,7 +144,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// Key: "Label.On"
 	/// English String: "On"
 	/// </summary>
-	public override string LabelOn => "SÃ­";
+	public override string LabelOn => "Sí";
 
 	/// <summary>
 	/// Key: "Label.PickEnemyClan"
@@ -172,7 +174,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// Key: "Label.SubscriptionStatus"
 	/// English String: "Subscription Status"
 	/// </summary>
-	public override string LabelSubscriptionStatus => "Estado de la suscripciÃ³n";
+	public override string LabelSubscriptionStatus => "Estado de la suscripción";
 
 	/// <summary>
 	/// Key: "Label.VIPServerLink"
@@ -199,12 +201,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "AÃ±adir";
+		return "Añadir";
 	}
 
 	protected override string _GetTemplateForActionAddPlayers()
 	{
-		return "AÃ±adir jugadores";
+		return "Añadir jugadores";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -259,7 +261,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 
 	protected override string _GetTemplateForHeadingConfigureVipServer()
 	{
-		return "ConfiguraciÃ³n del servidor VIP";
+		return "Configuración del servidor VIP";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePlayer()
@@ -278,12 +280,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelChangeNameBodyMessage(string name, string creator, string date)
 	{
-		return $"Â¿Seguro que quieres cancelar los pagos futuros para tu servidor VIP {name} de {creator}? Si los cancelas, tu servidor VIP se desactivarÃ¡ el {date}.";
+		return $"¿Seguro que quieres cancelar los pagos futuros para tu servidor VIP {name} de {creator}? Si los cancelas, tu servidor VIP se desactivará el {date}.";
 	}
 
 	protected override string _GetTemplateForLabelChangeNameBodyMessage()
 	{
-		return "Â¿Seguro que quieres cancelar los pagos futuros para tu servidor VIP {name} de {creator}? Si los cancelas, tu servidor VIP se desactivarÃ¡ el {date}.";
+		return "¿Seguro que quieres cancelar los pagos futuros para tu servidor VIP {name} de {creator}? Si los cancelas, tu servidor VIP se desactivará el {date}.";
 	}
 
 	protected override string _GetTemplateForLabelChangeNamePlaceholder()
@@ -323,7 +325,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 
 	protected override string _GetTemplateForLabelOn()
 	{
-		return "SÃ­";
+		return "Sí";
 	}
 
 	protected override string _GetTemplateForLabelPickEnemyClan()
@@ -337,12 +339,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRemovePlayerBodyMessage(string name)
 	{
-		return $"Â¿Seguro que quieres eliminar a {name} de tu servidor VIP? Ya no podrÃ¡ unirse a Ã©l.";
+		return $"¿Seguro que quieres eliminar a {name} de tu servidor VIP? Ya no podrá unirse a él.";
 	}
 
 	protected override string _GetTemplateForLabelRemovePlayerBodyMessage()
 	{
-		return "Â¿Seguro que quieres eliminar a {name} de tu servidor VIP? Ya no podrÃ¡ unirse a Ã©l.";
+		return "¿Seguro que quieres eliminar a {name} de tu servidor VIP? Ya no podrá unirse a él.";
 	}
 
 	/// <summary>
@@ -351,12 +353,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageConfirmation(string name, string creator)
 	{
-		return $"Â¿Seguro que quieres activar los pagos futuros para tu servidor VIP {name} de {creator}?";
+		return $"¿Seguro que quieres activar los pagos futuros para tu servidor VIP {name} de {creator}?";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageConfirmation()
 	{
-		return "Â¿Seguro que quieres activar los pagos futuros para tu servidor VIP {name} de {creator}?";
+		return "¿Seguro que quieres activar los pagos futuros para tu servidor VIP {name} de {creator}?";
 	}
 
 	/// <summary>
@@ -365,12 +367,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageStart(string date)
 	{
-		return $"Este servidor VIP empezarÃ¡ a renovarse cada mes por {date} hasta que lo canceles.";
+		return $"Este servidor VIP empezará a renovarse cada mes por {date} hasta que lo canceles.";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageStart()
 	{
-		return "Este servidor VIP empezarÃ¡ a renovarse cada mes por {date} hasta que lo canceles.";
+		return "Este servidor VIP empezará a renovarse cada mes por {date} hasta que lo canceles.";
 	}
 
 	protected override string _GetTemplateForLabelSearchForPlayers()
@@ -389,12 +391,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelServerExpirationDate(string date)
 	{
-		return $"Tu servidor VIP caducÃ³ el {date}";
+		return $"Tu servidor VIP caducó el {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerExpirationDate()
 	{
-		return "Tu servidor VIP caducÃ³ el {date}";
+		return "Tu servidor VIP caducó el {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerMembers()
@@ -408,12 +410,12 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 	/// </summary>
 	public override string LabelSubscriptionChargeDate(string date)
 	{
-		return $"Se te cobrarÃ¡ nuevamente el {date}";
+		return $"Se te cobrará nuevamente el {date}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionChargeDate()
 	{
-		return "Se te cobrarÃ¡ nuevamente el {date}";
+		return "Se te cobrará nuevamente el {date}";
 	}
 
 	/// <summary>
@@ -432,7 +434,7 @@ internal class VIPServerResources_es_es : VIPServerResources_en_us, IVIPServerRe
 
 	protected override string _GetTemplateForLabelSubscriptionStatus()
 	{
-		return "Estado de la suscripciÃ³n";
+		return "Estado de la suscripción";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerLink()

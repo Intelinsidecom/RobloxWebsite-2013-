@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class RobloxProductsResources_ja_jp : RobloxProductsResources_en_us, IR
 	/// Key: "Heading.Sorry"
 	/// English String: "Sorry"
 	/// </summary>
-	public override string HeadingSorry => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“";
+	public override string HeadingSorry => "申し訳ありません";
 
 	/// <summary>
 	/// Key: "Message.BuyRobuxToCustomizeAvatar"
 	/// English String: "Buy Robux to customize your avatar and get items in game!"
 	/// </summary>
-	public override string MessageBuyRobuxToCustomizeAvatar => "Robuxã‚’è²·ã£ã¦ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ãŸã‚Šã€ã‚²ãƒ¼ãƒ å†…ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼";
+	public override string MessageBuyRobuxToCustomizeAvatar => "Robuxを買ってアバターをカスタマイズしたり、ゲーム内アイテムをゲットしよう！";
 
 	/// <summary>
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "Robuxè³¼å…¥ã¯ä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string MessageTryAgainLater => "Robux購入は一時的に無効になっています。後でもう一度お試しください。";
 
 	public RobloxProductsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class RobloxProductsResources_ja_jp : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingSorry()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“";
+		return "申し訳ありません";
 	}
 
 	protected override string _GetTemplateForMessageBuyRobuxToCustomizeAvatar()
 	{
-		return "Robuxã‚’è²·ã£ã¦ã‚¢ãƒã‚¿ãƒ¼ã‚’ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã—ãŸã‚Šã€ã‚²ãƒ¼ãƒ å†…ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼";
+		return "Robuxを買ってアバターをカスタマイズしたり、ゲーム内アイテムをゲットしよう！";
 	}
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "Robuxè³¼å…¥ã¯ä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ãªã£ã¦ã„ã¾ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "Robux購入は一時的に無効になっています。後でもう一度お試しください。";
 	}
 }
 

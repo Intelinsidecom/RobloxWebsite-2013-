@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CatalogResources_en_us to provide locale specific translations where possible,
@@ -46,13 +48,13 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Description.Dialog.AddGearBody"
 	/// English String: "To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)"
 	/// </summary>
-	public override string DescriptionDialogAddGearBody => "Pour ajouter de l'Ã©quipement Ã  ton jeu, sÃ©lectionnes un objet du catalogue et cliques sur le bouton Ajouter au jeu. L'objet sera alors autorisÃ© dans le jeu et tu recevras une commission pour chaque exemplaire vendu depuis la page de ton jeu. Seul l'Ã©quipement Ã  vendre peut Ãªtre ajoutÃ©.";
+	public override string DescriptionDialogAddGearBody => "Pour ajouter de l'équipement à ton jeu, sélectionnes un objet du catalogue et cliques sur le bouton Ajouter au jeu. L'objet sera alors autorisé dans le jeu et tu recevras une commission pour chaque exemplaire vendu depuis la page de ton jeu. Seul l'équipement à vendre peut être ajouté.";
 
 	/// <summary>
 	/// Key: "Heading.CatalogCategory"
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCatalogCategory => "CatÃ©gorie";
+	public override string HeadingCatalogCategory => "Catégorie";
 
 	/// <summary>
 	/// Key: "Heading.CatalogPage"
@@ -127,7 +129,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.CategoryAttributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelCategoryAttributes => "CaractÃ©ristiques";
+	public override string LabelCategoryAttributes => "Caractéristiques";
 
 	/// <summary>
 	/// Key: "Label.CategoryType"
@@ -146,7 +148,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.Dialog.AddGearTitle"
 	/// English String: "Add Gear to Your Game"
 	/// </summary>
-	public override string LabelDialogAddGearTitle => "Ajouter de l'Ã©quipement Ã  ton jeu";
+	public override string LabelDialogAddGearTitle => "Ajouter de l'équipement à ton jeu";
 
 	/// <summary>
 	/// Key: "Label.Emotes"
@@ -179,19 +181,19 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.Filter.ByTime"
 	/// English String: "By Time"
 	/// </summary>
-	public override string LabelFilterByTime => "Par durÃ©e";
+	public override string LabelFilterByTime => "Par durée";
 
 	/// <summary>
 	/// Key: "Label.Filter.Category"
 	/// English String: "Category"
 	/// </summary>
-	public override string LabelFilterCategory => "CatÃ©gorie";
+	public override string LabelFilterCategory => "Catégorie";
 
 	/// <summary>
 	/// Key: "Label.Filter.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelFilterCreator => "CrÃ©ateur";
+	public override string LabelFilterCreator => "Créateur";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filter"
@@ -239,7 +241,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.Filter.PriceTo"
 	/// English String: "To"
 	/// </summary>
-	public override string LabelFilterPriceTo => "Ã€";
+	public override string LabelFilterPriceTo => "À";
 
 	/// <summary>
 	/// Key: "Label.Filter.Show"
@@ -378,7 +380,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAccessoryShoulder"
 	/// English String: "Shoulder"
 	/// </summary>
-	public override string LabelAccessoryShoulder => "Ã‰paules";
+	public override string LabelAccessoryShoulder => "Épaules";
 
 	/// <summary>
 	/// Key: "LabelAccessoryWaist"
@@ -402,13 +404,13 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAllCategories"
 	/// English String: "All Categories"
 	/// </summary>
-	public override string LabelAllCategories => "Toutes les catÃ©gories";
+	public override string LabelAllCategories => "Toutes les catégories";
 
 	/// <summary>
 	/// Key: "LabelAllClothing"
 	/// English String: "All Clothing"
 	/// </summary>
-	public override string LabelAllClothing => "Tous les vÃªtements";
+	public override string LabelAllClothing => "Tous les vêtements";
 
 	/// <summary>
 	/// Key: "LabelAllCollectibles"
@@ -420,7 +422,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAllCreators"
 	/// English String: "All Creators"
 	/// </summary>
-	public override string LabelAllCreators => "Tous les crÃ©ateurs";
+	public override string LabelAllCreators => "Tous les créateurs";
 
 	/// <summary>
 	/// Key: "LabelAllCurrency"
@@ -474,7 +476,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string LabelClothing => "VÃªtements";
+	public override string LabelClothing => "Vêtements";
 
 	/// <summary>
 	/// Key: "LabelCollectibleAccessories"
@@ -492,7 +494,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelCollectibleGear"
 	/// English String: "Collectible Gear"
 	/// </summary>
-	public override string LabelCollectibleGear => "Ã‰quipement de collection";
+	public override string LabelCollectibleGear => "Équipement de collection";
 
 	/// <summary>
 	/// Key: "LabelCollectibles"
@@ -534,7 +536,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelFeaturedGear"
 	/// English String: "Featured Gear"
 	/// </summary>
-	public override string LabelFeaturedGear => "Ã‰quipement en vedette";
+	public override string LabelFeaturedGear => "Équipement en vedette";
 
 	/// <summary>
 	/// Key: "LabelFeaturedPackages"
@@ -552,13 +554,13 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "Ã‰quipement";
+	public override string LabelGear => "Équipement";
 
 	/// <summary>
 	/// Key: "LabelGearAll"
 	/// English String: "All Gear"
 	/// </summary>
-	public override string LabelGearAll => "Tout l'Ã©quipement";
+	public override string LabelGearAll => "Tout l'équipement";
 
 	/// <summary>
 	/// Key: "LabelGearBuilding"
@@ -576,7 +578,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGearMelee"
 	/// English String: "Melee"
 	/// </summary>
-	public override string LabelGearMelee => "Corps-Ã -corps";
+	public override string LabelGearMelee => "Corps-à-corps";
 
 	/// <summary>
 	/// Key: "LabelGearMusical"
@@ -606,7 +608,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGearRanged"
 	/// English String: "Ranged"
 	/// </summary>
-	public override string LabelGearRanged => "Ã€ distance";
+	public override string LabelGearRanged => "À distance";
 
 	/// <summary>
 	/// Key: "LabelGearSocial"
@@ -642,7 +644,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreFantasy"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreFantasy => "MÃ©diÃ©val";
+	public override string LabelGenreFantasy => "Médiéval";
 
 	/// <summary>
 	/// Key: "LabelGenreFighting"
@@ -672,7 +674,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreMedieval"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreMedieval => "MÃ©diÃ©val";
+	public override string LabelGenreMedieval => "Médiéval";
 
 	/// <summary>
 	/// Key: "LabelGenreMilitary"
@@ -702,7 +704,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreRPG"
 	/// English String: "RPG"
 	/// </summary>
-	public override string LabelGenreRPG => "Jeu de rÃ´le";
+	public override string LabelGenreRPG => "Jeu de rôle";
 
 	/// <summary>
 	/// Key: "LabelGenreScary"
@@ -756,13 +758,13 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelHeads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "TÃªtes";
+	public override string LabelHeads => "Têtes";
 
 	/// <summary>
 	/// Key: "LabelMostFavorited"
 	/// English String: "Most Favorited"
 	/// </summary>
-	public override string LabelMostFavorited => "PrÃ©fÃ©rÃ©s des joueurs";
+	public override string LabelMostFavorited => "Préférés des joueurs";
 
 	/// <summary>
 	/// Key: "LabelNoResellers"
@@ -774,7 +776,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelOffSale"
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffSale => "Plus Ã  vendre";
+	public override string LabelOffSale => "Plus à vendre";
 
 	/// <summary>
 	/// Key: "LabelPackages"
@@ -798,13 +800,13 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "Semaine derniÃ¨re";
+	public override string LabelPastWeek => "Semaine dernière";
 
 	/// <summary>
 	/// Key: "LabelPriceHighFirst"
 	/// English String: "Price (High to Low)"
 	/// </summary>
-	public override string LabelPriceHighFirst => "Prix (dÃ©croissant)";
+	public override string LabelPriceHighFirst => "Prix (décroissant)";
 
 	/// <summary>
 	/// Key: "LabelPriceLowFirst"
@@ -816,7 +818,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelRecentlyUpdated"
 	/// English String: "Recently Updated"
 	/// </summary>
-	public override string LabelRecentlyUpdated => "Mis Ã  jour rÃ©cemment";
+	public override string LabelRecentlyUpdated => "Mis à jour récemment";
 
 	/// <summary>
 	/// Key: "LabelRelevance"
@@ -858,32 +860,32 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// Key: "Response.GenericError"
 	/// English String: "An error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "Une erreur est survenue. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseGenericError => "Une erreur est survenue. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Response.NoItemsFound"
 	/// English String: "No items found."
 	/// </summary>
-	public override string ResponseNoItemsFound => "Aucun objet trouvÃ©.";
+	public override string ResponseNoItemsFound => "Aucun objet trouvé.";
 
 	/// <summary>
 	/// Key: "Response.NoSaleItemsFromSearch"
 	/// English String: "Your search did not find items for sale. Unavailable items displayed below."
 	/// </summary>
-	public override string ResponseNoSaleItemsFromSearch => "Ta recherche n'a permis de trouver aucun objet Ã  vendre. Les objets indisponibles sont affichÃ©s ci-dessous.";
+	public override string ResponseNoSaleItemsFromSearch => "Ta recherche n'a permis de trouver aucun objet à vendre. Les objets indisponibles sont affichés ci-dessous.";
 
 	/// <summary>
 	/// Key: "Response.TemporarilyUnavailable"
 	/// English String: "Catalog temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string ResponseTemporarilyUnavailable => "Le catalogue est temporairement indisponible. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseTemporarilyUnavailable => "Le catalogue est temporairement indisponible. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Response.Throttled"
 	/// Shown to users when they have made too many requests in a minute and are being throttled.
 	/// English String: "You're going too fast! Try again in a minute."
 	/// </summary>
-	public override string ResponseThrottled => "Tu vas trop vite ! RÃ©essaie dans une minute.";
+	public override string ResponseThrottled => "Tu vas trop vite ! Réessaie dans une minute.";
 
 	public CatalogResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -922,12 +924,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForDescriptionDialogAddGearBody()
 	{
-		return "Pour ajouter de l'Ã©quipement Ã  ton jeu, sÃ©lectionnes un objet du catalogue et cliques sur le bouton Ajouter au jeu. L'objet sera alors autorisÃ© dans le jeu et tu recevras une commission pour chaque exemplaire vendu depuis la page de ton jeu. Seul l'Ã©quipement Ã  vendre peut Ãªtre ajoutÃ©.";
+		return "Pour ajouter de l'équipement à ton jeu, sélectionnes un objet du catalogue et cliques sur le bouton Ajouter au jeu. L'objet sera alors autorisé dans le jeu et tu recevras une commission pour chaque exemplaire vendu depuis la page de ton jeu. Seul l'équipement à vendre peut être ajouté.";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogCategory()
 	{
-		return "CatÃ©gorie";
+		return "Catégorie";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogPage()
@@ -975,12 +977,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreSelectedText(string genreCount)
 	{
-		return $"Genre\u00a0: {genreCount} sÃ©lectionnÃ©(s)";
+		return $"Genre\u00a0: {genreCount} sélectionné(s)";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreSelectedText()
 	{
-		return "Genre\u00a0: {genreCount} sÃ©lectionnÃ©(s)";
+		return "Genre\u00a0: {genreCount} sélectionné(s)";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGroup()
@@ -1022,12 +1024,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbResultsCount(string startNumber, string endNumber, string resultsCount)
 	{
-		return $"{startNumber} - {endNumber} sur {resultsCount}\u00a0rÃ©sultats";
+		return $"{startNumber} - {endNumber} sur {resultsCount}\u00a0résultats";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbResultsCount()
 	{
-		return "{startNumber} - {endNumber} sur {resultsCount}\u00a0rÃ©sultats";
+		return "{startNumber} - {endNumber} sur {resultsCount}\u00a0résultats";
 	}
 
 	protected override string _GetTemplateForLabelBundle()
@@ -1072,7 +1074,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelCategoryAttributes()
 	{
-		return "CaractÃ©ristiques";
+		return "Caractéristiques";
 	}
 
 	protected override string _GetTemplateForLabelCategoryType()
@@ -1087,7 +1089,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelDialogAddGearTitle()
 	{
-		return "Ajouter de l'Ã©quipement Ã  ton jeu";
+		return "Ajouter de l'équipement à ton jeu";
 	}
 
 	protected override string _GetTemplateForLabelEmotes()
@@ -1126,17 +1128,17 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelFilterByTime()
 	{
-		return "Par durÃ©e";
+		return "Par durée";
 	}
 
 	protected override string _GetTemplateForLabelFilterCategory()
 	{
-		return "CatÃ©gorie";
+		return "Catégorie";
 	}
 
 	protected override string _GetTemplateForLabelFilterCreator()
 	{
-		return "CrÃ©ateur";
+		return "Créateur";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilter()
@@ -1176,7 +1178,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelFilterPriceTo()
 	{
-		return "Ã€";
+		return "À";
 	}
 
 	protected override string _GetTemplateForLabelFilterShow()
@@ -1286,7 +1288,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAccessoryShoulder()
 	{
-		return "Ã‰paules";
+		return "Épaules";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryWaist()
@@ -1306,12 +1308,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAllCategories()
 	{
-		return "Toutes les catÃ©gories";
+		return "Toutes les catégories";
 	}
 
 	protected override string _GetTemplateForLabelAllClothing()
 	{
-		return "Tous les vÃªtements";
+		return "Tous les vêtements";
 	}
 
 	protected override string _GetTemplateForLabelAllCollectibles()
@@ -1321,7 +1323,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAllCreators()
 	{
-		return "Tous les crÃ©ateurs";
+		return "Tous les créateurs";
 	}
 
 	protected override string _GetTemplateForLabelAllCurrency()
@@ -1366,7 +1368,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelClothing()
 	{
-		return "VÃªtements";
+		return "Vêtements";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleAccessories()
@@ -1381,7 +1383,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelCollectibleGear()
 	{
-		return "Ã‰quipement de collection";
+		return "Équipement de collection";
 	}
 
 	protected override string _GetTemplateForLabelCollectibles()
@@ -1416,7 +1418,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelFeaturedGear()
 	{
-		return "Ã‰quipement en vedette";
+		return "Équipement en vedette";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedPackages()
@@ -1431,12 +1433,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "Ã‰quipement";
+		return "Équipement";
 	}
 
 	protected override string _GetTemplateForLabelGearAll()
 	{
-		return "Tout l'Ã©quipement";
+		return "Tout l'équipement";
 	}
 
 	protected override string _GetTemplateForLabelGearBuilding()
@@ -1451,7 +1453,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGearMelee()
 	{
-		return "Corps-Ã -corps";
+		return "Corps-à-corps";
 	}
 
 	protected override string _GetTemplateForLabelGearMusical()
@@ -1476,7 +1478,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGearRanged()
 	{
-		return "Ã€ distance";
+		return "À distance";
 	}
 
 	protected override string _GetTemplateForLabelGearSocial()
@@ -1506,7 +1508,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreFantasy()
 	{
-		return "MÃ©diÃ©val";
+		return "Médiéval";
 	}
 
 	protected override string _GetTemplateForLabelGenreFighting()
@@ -1531,7 +1533,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreMedieval()
 	{
-		return "MÃ©diÃ©val";
+		return "Médiéval";
 	}
 
 	protected override string _GetTemplateForLabelGenreMilitary()
@@ -1556,7 +1558,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreRPG()
 	{
-		return "Jeu de rÃ´le";
+		return "Jeu de rôle";
 	}
 
 	protected override string _GetTemplateForLabelGenreScary()
@@ -1601,12 +1603,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "TÃªtes";
+		return "Têtes";
 	}
 
 	protected override string _GetTemplateForLabelMostFavorited()
 	{
-		return "PrÃ©fÃ©rÃ©s des joueurs";
+		return "Préférés des joueurs";
 	}
 
 	protected override string _GetTemplateForLabelNoResellers()
@@ -1616,7 +1618,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "Plus Ã  vendre";
+		return "Plus à vendre";
 	}
 
 	protected override string _GetTemplateForLabelPackages()
@@ -1636,12 +1638,12 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "Semaine derniÃ¨re";
+		return "Semaine dernière";
 	}
 
 	protected override string _GetTemplateForLabelPriceHighFirst()
 	{
-		return "Prix (dÃ©croissant)";
+		return "Prix (décroissant)";
 	}
 
 	protected override string _GetTemplateForLabelPriceLowFirst()
@@ -1651,7 +1653,7 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelRecentlyUpdated()
 	{
-		return "Mis Ã  jour rÃ©cemment";
+		return "Mis à jour récemment";
 	}
 
 	protected override string _GetTemplateForLabelRelevance()
@@ -1686,27 +1688,27 @@ internal class CatalogResources_fr_fr : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "Une erreur est survenue. Veuillez rÃ©essayer plus tard.";
+		return "Une erreur est survenue. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForResponseNoItemsFound()
 	{
-		return "Aucun objet trouvÃ©.";
+		return "Aucun objet trouvé.";
 	}
 
 	protected override string _GetTemplateForResponseNoSaleItemsFromSearch()
 	{
-		return "Ta recherche n'a permis de trouver aucun objet Ã  vendre. Les objets indisponibles sont affichÃ©s ci-dessous.";
+		return "Ta recherche n'a permis de trouver aucun objet à vendre. Les objets indisponibles sont affichés ci-dessous.";
 	}
 
 	protected override string _GetTemplateForResponseTemporarilyUnavailable()
 	{
-		return "Le catalogue est temporairement indisponible. Veuillez rÃ©essayer plus tard.";
+		return "Le catalogue est temporairement indisponible. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForResponseThrottled()
 	{
-		return "Tu vas trop vite ! RÃ©essaie dans une minute.";
+		return "Tu vas trop vite ! Réessaie dans une minute.";
 	}
 }
 

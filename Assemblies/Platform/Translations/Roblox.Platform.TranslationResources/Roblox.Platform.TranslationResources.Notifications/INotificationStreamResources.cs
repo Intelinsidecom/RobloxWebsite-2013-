@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
-    interface INotificationStreamResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
+    public interface INotificationStreamResources : ITranslationResources
 
 {
 	/// <summary>
@@ -205,3 +207,5 @@
 
 
 }
+
+

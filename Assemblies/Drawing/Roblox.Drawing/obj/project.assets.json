@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Magick.NET-Q8-AnyCPU/14.7.0": {
+      "Magick.NET-Q8-AnyCPU/14.8.1": {
         "type": "package",
         "dependencies": {
-          "Magick.NET.Core": "14.7.0"
+          "Magick.NET.Core": "14.8.1"
         },
         "compile": {
           "lib/netstandard20/Magick.NET-Q8-AnyCPU.dll": {
@@ -55,7 +55,7 @@
           }
         }
       },
-      "Magick.NET.Core/14.7.0": {
+      "Magick.NET.Core/14.8.1": {
         "type": "package",
         "compile": {
           "lib/netstandard20/Magick.NET.Core.dll": {
@@ -204,18 +204,15 @@
     }
   },
   "libraries": {
-    "Magick.NET-Q8-AnyCPU/14.7.0": {
-      "sha512": "JQiOjOPXJar57Ew5YeD28zE1pbHpSKBYYQZBNkqhvXbLxCcTmu8djfVLKkqTcTAxFX/Mcj14j2RB+ORkCYD9Jw==",
+    "Magick.NET-Q8-AnyCPU/14.8.1": {
+      "sha512": "Q8+Y2ht0w015IIgomYVUJl45uYIEUmG1fTQ/cwL9iHsQ5z6TBofLAkGD2trOpPEHQlpHK9qD837bN34Ak8VS1g==",
       "type": "package",
-      "path": "magick.net-q8-anycpu/14.7.0",
+      "path": "magick.net-q8-anycpu/14.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Magick.NET.icon.png",
-        "Notice.linux-musl.txt",
-        "Notice.linux.txt",
-        "Notice.osx.txt",
-        "Notice.win.txt",
+        "Notice.txt",
         "build/netstandard20/Magick.NET-Q8-AnyCPU.targets",
         "buildTransitive/netstandard20/Magick.NET-Q8-AnyCPU.targets",
         "docs/Readme.md",
@@ -223,7 +220,7 @@
         "lib/net8.0/Magick.NET-Q8-AnyCPU.xml",
         "lib/netstandard20/Magick.NET-Q8-AnyCPU.dll",
         "lib/netstandard20/Magick.NET-Q8-AnyCPU.xml",
-        "magick.net-q8-anycpu.14.7.0.nupkg.sha512",
+        "magick.net-q8-anycpu.14.8.1.nupkg.sha512",
         "magick.net-q8-anycpu.nuspec",
         "runtimes/linux-arm64/native/Magick.Native-Q8-arm64.dll.so",
         "runtimes/linux-musl-x64/native/Magick.Native-Q8-x64.dll.so",
@@ -235,10 +232,10 @@
         "runtimes/win-x86/native/Magick.Native-Q8-x86.dll"
       ]
     },
-    "Magick.NET.Core/14.7.0": {
-      "sha512": "eXNEgZwUQ+QerJgIoAe9BlFolm3RzQ0k677AK5PLiLh701XQX1p878mt+jEQYJD58Jwcayto1UtFvtvnChyGyg==",
+    "Magick.NET.Core/14.8.1": {
+      "sha512": "XkfFOOpak9Rsj6El18x3z+4Gr/W71uDQvoHz3WvEfZUUh32G2X6HC+r1VzR/DgUssvsbkDLr5a82/QCf7Xrbxw==",
       "type": "package",
-      "path": "magick.net.core/14.7.0",
+      "path": "magick.net.core/14.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -249,7 +246,7 @@
         "lib/net8.0/Magick.NET.Core.xml",
         "lib/netstandard20/Magick.NET.Core.dll",
         "lib/netstandard20/Magick.NET.Core.xml",
-        "magick.net.core.14.7.0.nupkg.sha512",
+        "magick.net.core.14.8.1.nupkg.sha512",
         "magick.net.core.nuspec"
       ]
     },
@@ -434,7 +431,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Magick.NET-Q8-AnyCPU >= 14.7.0",
+      "Magick.NET-Q8-AnyCPU >= 14.8.1",
       "Roblox.Configuration >= 1.0.0",
       "Roblox.EventLog >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 7.0.0"
@@ -500,7 +497,7 @@
         "dependencies": {
           "Magick.NET-Q8-AnyCPU": {
             "target": "Package",
-            "version": "[14.7.0, )"
+            "version": "[14.8.1, )"
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
@@ -510,67 +507,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-6hgw-6x87-578x",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-9ccg-6pjw-x645",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-cjc8-g9w8-chfw",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    },
-    {
-      "code": "NU1901",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-fh55-q5pj-pxgw",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-mxvv-97wh-cfmm",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Magick.NET-Q8-AnyCPU' 14.7.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qp29-wxp5-wh82",
-      "libraryId": "Magick.NET-Q8-AnyCPU",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.7.2"
-      ]
-    }
-  ]
+  }
 }

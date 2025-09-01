@@ -1,5 +1,5 @@
-﻿using System;
-namespace Roblox.Moderationpublic {
+using System;
+namespace Roblox.Moderation {
     abstract class ModerationReviewTaskLeaseBase<TEntityFactory, TEntity> : IReviewTaskLease_Internal, IReviewTaskLease where TEntityFactory : IReviewTaskLeaseEntityFactory<TEntity> where TEntity : IReviewTaskLeaseEntity
 
 {

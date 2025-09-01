@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -25,7 +27,7 @@ internal class BuildersClubExpiringModalResources_fr_fr : BuildersClubExpiringMo
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "Oh non\u00a0! Votre abonnement au Builders Club a expirÃ©\u00a0!";
+	public override string DescriptionBuildersClubExpired => "Oh non\u00a0! Votre abonnement au Builders Club a expiré\u00a0!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
@@ -65,7 +67,7 @@ internal class BuildersClubExpiringModalResources_fr_fr : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "Oh non\u00a0! Votre abonnement au Builders Club a expirÃ©\u00a0!";
+		return "Oh non\u00a0! Votre abonnement au Builders Club a expiré\u00a0!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()

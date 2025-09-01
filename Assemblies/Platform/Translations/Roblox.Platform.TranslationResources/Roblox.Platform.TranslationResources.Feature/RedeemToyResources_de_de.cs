@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RedeemToyResources_en_us to provide locale specific translations where possible,
@@ -25,7 +27,7 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "SchlieÃŸen";
+	public override string ActionClose => "Schließen";
 
 	/// <summary>
 	/// Key: "Action.ContinueVideo"
@@ -46,7 +48,7 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// link text
 	/// English String: "How to redeem"
 	/// </summary>
-	public override string ActionHowToRedeem => "So funktioniert das EinlÃ¶sen";
+	public override string ActionHowToRedeem => "So funktioniert das Einlösen";
 
 	/// <summary>
 	/// Key: "Action.Login"
@@ -60,14 +62,14 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "EinlÃ¶sen";
+	public override string ActionRedeem => "Einlösen";
 
 	/// <summary>
 	/// Key: "Action.RedeemAnotherItem"
 	/// button text
 	/// English String: "Redeem Another Item"
 	/// </summary>
-	public override string ActionRedeemAnotherItem => "Weiteren Artikel einlÃ¶sen";
+	public override string ActionRedeemAnotherItem => "Weiteren Artikel einlösen";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
@@ -88,28 +90,28 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// modal description text warning user that they are leaving Roblox main site
 	/// English String: "You are about to leave Roblox to view a video on Youtube. Youtube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionLeavingRoblox => "Du verlÃ¤sst jetzt Roblox, um dir ein Video auf YouTube anzusehen. YouTube gehÃ¶rt nicht zu Roblox.com und unterliegt seiner eigenen Datenschutzrichtlinie.";
+	public override string DescriptionLeavingRoblox => "Du verlässt jetzt Roblox, um dir ein Video auf YouTube anzusehen. YouTube gehört nicht zu Roblox.com und unterliegt seiner eigenen Datenschutzrichtlinie.";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.Success"
 	/// modal heading
 	/// English String: "Successfully Redeemed"
 	/// </summary>
-	public override string HeadingDialogSuccess => "Erfolgreich eingelÃ¶st";
+	public override string HeadingDialogSuccess => "Erfolgreich eingelöst";
 
 	/// <summary>
 	/// Key: "Heading.RedeemVirtualItem"
 	/// page heading
 	/// English String: "Redeem Roblox Virtual Item"
 	/// </summary>
-	public override string HeadingRedeemVirtualItem => "Virtuellen Roblox-Artikel einlÃ¶sen";
+	public override string HeadingRedeemVirtualItem => "Virtuellen Roblox-Artikel einlösen";
 
 	/// <summary>
 	/// Key: "Heading.YoureLeavingRoblox"
 	/// modal heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingYoureLeavingRoblox => "Du verlÃ¤sst jetzt Roblox.";
+	public override string HeadingYoureLeavingRoblox => "Du verlässt jetzt Roblox.";
 
 	/// <summary>
 	/// Key: "Label.EnterToyCode"
@@ -123,21 +125,21 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// error message
 	/// English String: "Invalid code, please try again."
 	/// </summary>
-	public override string ResponseInvalidCodeTryAgain => "UngÃ¼ltiger Code. Bitte versuche es erneut.";
+	public override string ResponseInvalidCodeTryAgain => "Ungültiger Code. Bitte versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredToRedeem"
 	/// error message
 	/// English String: "You must be logged in to your Roblox account to redeem the code for your virtual item!"
 	/// </summary>
-	public override string ResponseLoginRequiredToRedeem => "Du musst bei deinem Roblox-Konto angemeldet sein, um den Code fÃ¼r deinen virtuellen Artikel einlÃ¶sen zu kÃ¶nnen!";
+	public override string ResponseLoginRequiredToRedeem => "Du musst bei deinem Roblox-Konto angemeldet sein, um den Code für deinen virtuellen Artikel einlösen zu können!";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your item."
 	/// </summary>
-	public override string ResponseRedeemSuccess => "Du hast deinen Artikel eingelÃ¶st.";
+	public override string ResponseRedeemSuccess => "Du hast deinen Artikel eingelöst.";
 
 	public RedeemToyResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -156,7 +158,7 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "SchlieÃŸen";
+		return "Schließen";
 	}
 
 	protected override string _GetTemplateForActionContinueVideo()
@@ -171,7 +173,7 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionHowToRedeem()
 	{
-		return "So funktioniert das EinlÃ¶sen";
+		return "So funktioniert das Einlösen";
 	}
 
 	protected override string _GetTemplateForActionLogin()
@@ -181,12 +183,12 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "EinlÃ¶sen";
+		return "Einlösen";
 	}
 
 	protected override string _GetTemplateForActionRedeemAnotherItem()
 	{
-		return "Weiteren Artikel einlÃ¶sen";
+		return "Weiteren Artikel einlösen";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
@@ -206,32 +208,32 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 	/// </summary>
 	public override string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName)
 	{
-		return $"Du hast {spanTagStart}{itemName}{spanTagEnd} ({itemType}) von {creatorName} eingelÃ¶st.";
+		return $"Du hast {spanTagStart}{itemName}{spanTagEnd} ({itemType}) von {creatorName} eingelöst.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSuccess()
 	{
-		return "Du hast {spanTagStart}{itemName}{spanTagEnd} ({itemType}) von {creatorName} eingelÃ¶st.";
+		return "Du hast {spanTagStart}{itemName}{spanTagEnd} ({itemType}) von {creatorName} eingelöst.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeavingRoblox()
 	{
-		return "Du verlÃ¤sst jetzt Roblox, um dir ein Video auf YouTube anzusehen. YouTube gehÃ¶rt nicht zu Roblox.com und unterliegt seiner eigenen Datenschutzrichtlinie.";
+		return "Du verlässt jetzt Roblox, um dir ein Video auf YouTube anzusehen. YouTube gehört nicht zu Roblox.com und unterliegt seiner eigenen Datenschutzrichtlinie.";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSuccess()
 	{
-		return "Erfolgreich eingelÃ¶st";
+		return "Erfolgreich eingelöst";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemVirtualItem()
 	{
-		return "Virtuellen Roblox-Artikel einlÃ¶sen";
+		return "Virtuellen Roblox-Artikel einlösen";
 	}
 
 	protected override string _GetTemplateForHeadingYoureLeavingRoblox()
 	{
-		return "Du verlÃ¤sst jetzt Roblox.";
+		return "Du verlässt jetzt Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelEnterToyCode()
@@ -241,17 +243,17 @@ internal class RedeemToyResources_de_de : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForResponseInvalidCodeTryAgain()
 	{
-		return "UngÃ¼ltiger Code. Bitte versuche es erneut.";
+		return "Ungültiger Code. Bitte versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredToRedeem()
 	{
-		return "Du musst bei deinem Roblox-Konto angemeldet sein, um den Code fÃ¼r deinen virtuellen Artikel einlÃ¶sen zu kÃ¶nnen!";
+		return "Du musst bei deinem Roblox-Konto angemeldet sein, um den Code für deinen virtuellen Artikel einlösen zu können!";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "Du hast deinen Artikel eingelÃ¶st.";
+		return "Du hast deinen Artikel eingelöst.";
 	}
 }
 

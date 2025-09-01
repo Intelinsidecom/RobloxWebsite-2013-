@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class BuildersClubResources_zh_cjv : BuildersClubResources_en_us, IBuil
 	/// Key: "Action.BuidlersClubOnlyCancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyCancel => "å–æ¶ˆ";
+	public override string ActionBuidlersClubOnlyCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.BuidlersClubOnlyUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyUpgradeNow => "ç«‹å³å‡çº§";
+	public override string ActionBuidlersClubOnlyUpgradeNow => "立即升级";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubOnly"
 	/// English String: "Builders Club Only"
 	/// </summary>
-	public override string HeadingBuildersClubOnly => "ä»…é™ Builders Club";
+	public override string HeadingBuildersClubOnly => "仅限 Builders Club";
 
 	/// <summary>
 	/// Key: "Label.BuidlersClubOnlyClose"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelBuidlersClubOnlyClose => "å…³é—­";
+	public override string LabelBuidlersClubOnlyClose => "关闭";
 
 	public BuildersClubResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -37,12 +39,12 @@ internal class BuildersClubResources_zh_cjv : BuildersClubResources_en_us, IBuil
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyUpgradeNow()
 	{
-		return "ç«‹å³å‡çº§";
+		return "立即升级";
 	}
 
 	/// <summary>
@@ -51,22 +53,22 @@ internal class BuildersClubResources_zh_cjv : BuildersClubResources_en_us, IBuil
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"æ­¤é«˜çº§ç‰©å“ä»…é™ {bcRequirementName} ä¼šå‘˜è´­ä¹°ã€‚";
+		return $"此高级物品仅限 {bcRequirementName} 会员购买。";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "æ­¤é«˜çº§ç‰©å“ä»…é™ {bcRequirementName} ä¼šå‘˜è´­ä¹°ã€‚";
+		return "此高级物品仅限 {bcRequirementName} 会员购买。";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
 	{
-		return "ä»…é™ Builders Club";
+		return "仅限 Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelBuidlersClubOnlyClose()
 	{
-		return "å…³é—­";
+		return "关闭";
 	}
 }
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class PlayerSearchResultsResources_en_us : TranslationResourcesBase, IPlayerSearchResultsResources, ITranslationResources
 
 {
@@ -294,3 +294,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

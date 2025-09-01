@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
@@ -18,14 +20,14 @@ internal class CaptchaResources_es_es : CaptchaResources_en_us, ICaptchaResource
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToVerify => "Error temporal. IntÃ©ntalo de nuevo en unos minutos.";
+	public override string ResponseCaptchaErrorFailedToVerify => "Error temporal. Inténtalo de nuevo en unos minutos.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorVerifyFailed"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes"
 	/// </summary>
-	public override string ResponseCaptchaErrorVerifyFailed => "Error temporal. IntÃ©ntalo de nuevo en unos minutos";
+	public override string ResponseCaptchaErrorVerifyFailed => "Error temporal. Inténtalo de nuevo en unos minutos";
 
 	public CaptchaResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -39,12 +41,12 @@ internal class CaptchaResources_es_es : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToVerify()
 	{
-		return "Error temporal. IntÃ©ntalo de nuevo en unos minutos.";
+		return "Error temporal. Inténtalo de nuevo en unos minutos.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorVerifyFailed()
 	{
-		return "Error temporal. IntÃ©ntalo de nuevo en unos minutos";
+		return "Error temporal. Inténtalo de nuevo en unos minutos";
 	}
 }
 

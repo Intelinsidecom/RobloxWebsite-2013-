@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
@@ -111,7 +113,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// button label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelActionButtonYes => "SÃ¬";
+	public override string LabelActionButtonYes => "Sì";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyPassword"
@@ -167,7 +169,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "Con questa impostazione controlli chi puÃ² trovarti tramite il numero di telefono che hai fornito.";
+	public override string LabelToolTipWhoCanFindMeByPhone => "Con questa impostazione controlli chi può trovarti tramite il numero di telefono che hai fornito.";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -179,26 +181,26 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "Chi puÃ² trovarmi tramite il mio numero di telefono?";
+	public override string LabelWhoCanFindMeByPhone => "Chi può trovarmi tramite il mio numero di telefono?";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred, try again later."
 	/// </summary>
-	public override string MessageDefaultError => "Si Ã¨ verificato un errore. Riprova piÃ¹ tardi.";
+	public override string MessageDefaultError => "Si è verificato un errore. Riprova più tardi.";
 
 	/// <summary>
 	/// Key: "Message.EmailForUsernameSuccessBody"
 	/// success message
 	/// English String: "An email with your username(s) has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailForUsernameSuccessBody => "Se il tuo indirizzo e-mail Ã¨ stato giÃ  salvato sul tuo account, riceverai un'e-mail con il tuo/i tuoi nome/i utente.";
+	public override string MessageEmailForUsernameSuccessBody => "Se il tuo indirizzo e-mail è stato già salvato sul tuo account, riceverai un'e-mail con il tuo/i tuoi nome/i utente.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessBody"
 	/// English String: "An email with instructions has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailSuccessBody => "Se il tuo indirizzo e-mail Ã¨ stato giÃ  salvato sul tuo account, riceverai un'e-mail con le istruzioni.";
+	public override string MessageEmailSuccessBody => "Se il tuo indirizzo e-mail è stato già salvato sul tuo account, riceverai un'e-mail con le istruzioni.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessTitle"
@@ -210,7 +212,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "Message.EnterCode"
 	/// English String: "A code was sent to your phone if it was previously verified on your account. Please enter it below"
 	/// </summary>
-	public override string MessageEnterCode => "Se il tuo numero di telefono Ã¨ giÃ  stato verificato sul tuo account, riceverai un codice. Inseriscilo qui sotto";
+	public override string MessageEnterCode => "Se il tuo numero di telefono è già stato verificato sul tuo account, riceverai un codice. Inseriscilo qui sotto";
 
 	/// <summary>
 	/// Key: "Message.EnterCodeSentToEmail"
@@ -223,7 +225,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "Message.PhoneForUsernameSuccessBody"
 	/// English String: "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account."
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessBody => "Se il numero di telefono Ã¨ giÃ  stato verificato sul tuo account, ti abbiamo inviato un SMS con i tuoi nomi utente.";
+	public override string MessagePhoneForUsernameSuccessBody => "Se il numero di telefono è già stato verificato sul tuo account, ti abbiamo inviato un SMS con i tuoi nomi utente.";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessTitle"
@@ -235,7 +237,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageAccountDoesNotHaveAnEmail"
 	/// English String: "There is no email linked to this account"
 	/// </summary>
-	public override string MessageAccountDoesNotHaveAnEmail => "Non c'Ã¨ alcun indirizzo e-mail collegato a questo account";
+	public override string MessageAccountDoesNotHaveAnEmail => "Non c'è alcun indirizzo e-mail collegato a questo account";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByEmail"
@@ -255,7 +257,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageAccountRecoveryUnknownError"
 	/// English String: "System error. Account could not be restored to this state."
 	/// </summary>
-	public override string MessageAccountRecoveryUnknownError => "Errore di sistema. Lo stato dell'account non puÃ² essere ripristinato.";
+	public override string MessageAccountRecoveryUnknownError => "Errore di sistema. Lo stato dell'account non può essere ripristinato.";
 
 	/// <summary>
 	/// Key: "MessageCaptchaError"
@@ -279,13 +281,13 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageFloodCheckedError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageFloodCheckedError => "Troppi tentativi. Riprova piÃ¹ tardi.";
+	public override string MessageFloodCheckedError => "Troppi tentativi. Riprova più tardi.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordFeatureDisabled"
 	/// English String: "Feature temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageForgotPasswordFeatureDisabled => "Funzione temporaneamente disattivata. Riprova piÃ¹ tardi.";
+	public override string MessageForgotPasswordFeatureDisabled => "Funzione temporaneamente disattivata. Riprova più tardi.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordSuccess"
@@ -309,7 +311,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageInvalidTicket"
 	/// English String: "We couldn't load this security ticket."
 	/// </summary>
-	public override string MessageInvalidTicket => "Non Ã¨ stato possibile caricare questo ticket di sicurezza.";
+	public override string MessageInvalidTicket => "Non è stato possibile caricare questo ticket di sicurezza.";
 
 	/// <summary>
 	/// Key: "MessageInvalidUserNameOrEmail"
@@ -333,13 +335,13 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageOldUsernameError"
 	/// English String: "It looks like you are trying to log in with a username that has changed. Please log in with your new username."
 	/// </summary>
-	public override string MessageOldUsernameError => "Stai cercando di accedere con un nome utente che Ã¨ stato modificato. Usa il nuovo nome utente.";
+	public override string MessageOldUsernameError => "Stai cercando di accedere con un nome utente che è stato modificato. Usa il nuovo nome utente.";
 
 	/// <summary>
 	/// Key: "MessagePasswordCannotBeUsed"
 	/// English String: "Sorry, that password cannot be used."
 	/// </summary>
-	public override string MessagePasswordCannotBeUsed => "Spiacenti, quella password non puÃ² essere usata.";
+	public override string MessagePasswordCannotBeUsed => "Spiacenti, quella password non può essere usata.";
 
 	/// <summary>
 	/// Key: "MessagePasswordsDoNotMatch"
@@ -394,13 +396,13 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// Key: "Response.UpdatePasswordFlooded"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseUpdatePasswordFlooded => "Troppi tentativi. Riprova piÃ¹ tardi.";
+	public override string ResponseUpdatePasswordFlooded => "Troppi tentativi. Riprova più tardi.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordIncorrect"
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseUpdatePasswordIncorrect => "La tua password attuale non Ã¨ corretta. La password non Ã¨ cambiata.";
+	public override string ResponseUpdatePasswordIncorrect => "La tua password attuale non è corretta. La password non è cambiata.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordInputMissing"
@@ -461,12 +463,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionChangePasswordEmailHtmlBody1(string userName, string lineBreak, string actionLink)
 	{
-		return $"Abbiamo notato che Ã¨ cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:{lineBreak} {actionLink} {lineBreak}{lineBreak}Se, invece, la modifica della password Roblox Ã¨ stata intenzionale, non devi fare nient'altro! La password Ã¨ giÃ  stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
+		return $"Abbiamo notato che è cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:{lineBreak} {actionLink} {lineBreak}{lineBreak}Se, invece, la modifica della password Roblox è stata intenzionale, non devi fare nient'altro! La password è già stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionChangePasswordEmailHtmlBody1()
 	{
-		return "Abbiamo notato che Ã¨ cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:{lineBreak} {actionLink} {lineBreak}{lineBreak}Se, invece, la modifica della password Roblox Ã¨ stata intenzionale, non devi fare nient'altro! La password Ã¨ giÃ  stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
+		return "Abbiamo notato che è cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:{lineBreak} {actionLink} {lineBreak}{lineBreak}Se, invece, la modifica della password Roblox è stata intenzionale, non devi fare nient'altro! La password è già stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToResetPassword()
@@ -486,12 +488,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailBodyPlainText(string userName, string urlWithTicket)
 	{
-		return $"Abbiamo notato che Ã¨ cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:\n{urlWithTicket}\n\nSe, invece, la modifica della password Roblox Ã¨ stata intenzionale, non devi fare nient'altro! La password Ã¨ giÃ  stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
+		return $"Abbiamo notato che è cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:\n{urlWithTicket}\n\nSe, invece, la modifica della password Roblox è stata intenzionale, non devi fare nient'altro! La password è già stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailBodyPlainText()
 	{
-		return "Abbiamo notato che Ã¨ cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:\n{urlWithTicket}\n\nSe, invece, la modifica della password Roblox Ã¨ stata intenzionale, non devi fare nient'altro! La password Ã¨ giÃ  stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
+		return "Abbiamo notato che è cambiata la password del tuo account Roblox: {userName}. Se non era tua intenzione cambiarla, o se pensi che sia stata cambiata per sbaglio da qualcun altro, fai clic su questo link per annullare l'azione:\n{urlWithTicket}\n\nSe, invece, la modifica della password Roblox è stata intenzionale, non devi fare nient'altro! La password è già stata reimpostata. Non rispondere a questo messaggio. Per qualsiasi domanda, vai alla pagina di aiuto di Roblox (https://www.roblox.com/help).";
 	}
 
 	/// <summary>
@@ -536,12 +538,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailHtmlBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string aTagWithStartHref, string resetPasswordUrl, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul pulsante sottostante per procedere.{lineBreak}Il pulsante rimarrÃ  attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Reimposta password{buttonEnd}{aTagEnd}";
+		return $"Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul pulsante sottostante per procedere.{lineBreak}Il pulsante rimarrà attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Reimposta password{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailHtmlBody()
 	{
-		return "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul pulsante sottostante per procedere.{lineBreak}Il pulsante rimarrÃ  attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Reimposta password{buttonEnd}{aTagEnd}";
+		return "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul pulsante sottostante per procedere.{lineBreak}Il pulsante rimarrà attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}Reimposta password{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -551,12 +553,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailPlainBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string resetPasswordUrl)
 	{
-		return $"Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul link sottostante oppure copialo e incollalo in un browser Web per procedere.{lineBreak}Il link rimarrÃ  attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return $"Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul link sottostante oppure copialo e incollalo in un browser Web per procedere.{lineBreak}Il link rimarrà attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailPlainBody()
 	{
-		return "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul link sottostante oppure copialo e incollalo in un browser Web per procedere.{lineBreak}Il link rimarrÃ  attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return "Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account Roblox: {emailOrUsername}{lineBreak}{lineBreak}Se sei stato tu a inviarla, fai clic sul link sottostante oppure copialo e incollalo in un browser Web per procedere.{lineBreak}Il link rimarrà attivo per {passwordResetTicketHours} ore e {passwordResetTicketMinutes} minuti. Se non desideri reimpostare la password, ignora questo messaggio.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailSubject()
@@ -591,7 +593,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForLabelActionButtonYes()
 	{
-		return "SÃ¬";
+		return "Sì";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyPassword()
@@ -636,7 +638,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "Con questa impostazione controlli chi puÃ² trovarti tramite il numero di telefono che hai fornito.";
+		return "Con questa impostazione controlli chi può trovarti tramite il numero di telefono che hai fornito.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -646,7 +648,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "Chi puÃ² trovarmi tramite il mio numero di telefono?";
+		return "Chi può trovarmi tramite il mio numero di telefono?";
 	}
 
 	/// <summary>
@@ -665,17 +667,17 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "Si Ã¨ verificato un errore. Riprova piÃ¹ tardi.";
+		return "Si è verificato un errore. Riprova più tardi.";
 	}
 
 	protected override string _GetTemplateForMessageEmailForUsernameSuccessBody()
 	{
-		return "Se il tuo indirizzo e-mail Ã¨ stato giÃ  salvato sul tuo account, riceverai un'e-mail con il tuo/i tuoi nome/i utente.";
+		return "Se il tuo indirizzo e-mail è stato già salvato sul tuo account, riceverai un'e-mail con il tuo/i tuoi nome/i utente.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessBody()
 	{
-		return "Se il tuo indirizzo e-mail Ã¨ stato giÃ  salvato sul tuo account, riceverai un'e-mail con le istruzioni.";
+		return "Se il tuo indirizzo e-mail è stato già salvato sul tuo account, riceverai un'e-mail con le istruzioni.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessTitle()
@@ -685,7 +687,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageEnterCode()
 	{
-		return "Se il tuo numero di telefono Ã¨ giÃ  stato verificato sul tuo account, riceverai un codice. Inseriscilo qui sotto";
+		return "Se il tuo numero di telefono è già stato verificato sul tuo account, riceverai un codice. Inseriscilo qui sotto";
 	}
 
 	protected override string _GetTemplateForMessageEnterCodeSentToEmail()
@@ -695,7 +697,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessBody()
 	{
-		return "Se il numero di telefono Ã¨ giÃ  stato verificato sul tuo account, ti abbiamo inviato un SMS con i tuoi nomi utente.";
+		return "Se il numero di telefono è già stato verificato sul tuo account, ti abbiamo inviato un SMS con i tuoi nomi utente.";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessTitle()
@@ -705,7 +707,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageAccountDoesNotHaveAnEmail()
 	{
-		return "Non c'Ã¨ alcun indirizzo e-mail collegato a questo account";
+		return "Non c'è alcun indirizzo e-mail collegato a questo account";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByEmail()
@@ -720,7 +722,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageAccountRecoveryUnknownError()
 	{
-		return "Errore di sistema. Lo stato dell'account non puÃ² essere ripristinato.";
+		return "Errore di sistema. Lo stato dell'account non può essere ripristinato.";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaError()
@@ -740,12 +742,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageFloodCheckedError()
 	{
-		return "Troppi tentativi. Riprova piÃ¹ tardi.";
+		return "Troppi tentativi. Riprova più tardi.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordFeatureDisabled()
 	{
-		return "Funzione temporaneamente disattivata. Riprova piÃ¹ tardi.";
+		return "Funzione temporaneamente disattivata. Riprova più tardi.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordSuccess()
@@ -765,7 +767,7 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageInvalidTicket()
 	{
-		return "Non Ã¨ stato possibile caricare questo ticket di sicurezza.";
+		return "Non è stato possibile caricare questo ticket di sicurezza.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUserNameOrEmail()
@@ -785,12 +787,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageOldUsernameError()
 	{
-		return "Stai cercando di accedere con un nome utente che Ã¨ stato modificato. Usa il nuovo nome utente.";
+		return "Stai cercando di accedere con un nome utente che è stato modificato. Usa il nuovo nome utente.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordCannotBeUsed()
 	{
-		return "Spiacenti, quella password non puÃ² essere usata.";
+		return "Spiacenti, quella password non può essere usata.";
 	}
 
 	/// <summary>
@@ -863,12 +865,12 @@ internal class ResetPasswordResources_it_it : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForResponseUpdatePasswordFlooded()
 	{
-		return "Troppi tentativi. Riprova piÃ¹ tardi.";
+		return "Troppi tentativi. Riprova più tardi.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordIncorrect()
 	{
-		return "La tua password attuale non Ã¨ corretta. La password non Ã¨ cambiata.";
+		return "La tua password attuale non è corretta. La password non è cambiata.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordInputMissing()

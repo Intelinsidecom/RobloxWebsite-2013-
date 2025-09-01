@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class RedeemToyResources_en_us : TranslationResourcesBase, IRedeemToyResources, ITranslationResources
 
 {
@@ -350,3 +350,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

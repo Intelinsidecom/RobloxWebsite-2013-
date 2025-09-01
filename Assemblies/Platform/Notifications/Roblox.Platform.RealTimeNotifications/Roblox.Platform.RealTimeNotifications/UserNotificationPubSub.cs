@@ -1,5 +1,6 @@
-﻿using Roblox.Redis;
-namespace Roblox.Platform.RealTimeNotificationsinternal {
+using Roblox.Redis;
+namespace Roblox.Platform.RealTimeNotifications
+{
     class UserNotificationPubSub : RedisPubSub<long, UserNotification>
 
 {
@@ -28,6 +29,5 @@ namespace Roblox.Platform.RealTimeNotificationsinternal {
 		throw new PubSubChannelNameParseException("Not a valid UserNotificationPubSub Channel Name: '" + channelName + "'");
 	}
 }
-
 
 }

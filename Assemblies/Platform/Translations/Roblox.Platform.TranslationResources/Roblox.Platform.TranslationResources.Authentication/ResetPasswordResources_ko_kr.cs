@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
@@ -10,312 +12,312 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.EmailToResetPassword"
 	/// English String: "Use email to reset password"
 	/// </summary>
-	public override string ActionEmailToResetPassword => "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”";
+	public override string ActionEmailToResetPassword => "비밀번호 재설정하려면 이메일을 사용하세요";
 
 	/// <summary>
 	/// Key: "Action.EmailToRetriveUsername"
 	/// English String: "Use email to retrieve username"
 	/// </summary>
-	public override string ActionEmailToRetriveUsername => "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”";
+	public override string ActionEmailToRetriveUsername => "사용자 이름을 찾으려면 이메일을 사용하세요";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// OK
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "í™•ì¸";
+	public override string ActionOk => "확인";
 
 	/// <summary>
 	/// Key: "Action.PhoneToResetPassword"
 	/// English String: "Use phone number to reset password"
 	/// </summary>
-	public override string ActionPhoneToResetPassword => "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
+	public override string ActionPhoneToResetPassword => "비밀번호를 재설정하려면 전화번호를 사용하세요";
 
 	/// <summary>
 	/// Key: "Action.PhoneToRetriveUsername"
 	/// English String: "Use phone number to retrieve username"
 	/// </summary>
-	public override string ActionPhoneToRetriveUsername => "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
+	public override string ActionPhoneToRetriveUsername => "사용자 이름을 찾으려면 전화번호를 사용하세요";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "ì¸ì¦";
+	public override string ActionVerify => "인증";
 
 	/// <summary>
 	/// Key: "Description.EmailToResetPassword"
 	/// English String: "Enter your email to reset your password."
 	/// </summary>
-	public override string DescriptionEmailToResetPassword => "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì´ë©”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string DescriptionEmailToResetPassword => "비밀번호를 재설정하려면 이메일을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Description.EmailToRetriveUsername"
 	/// English String: "Enter your email to retrieve your username."
 	/// </summary>
-	public override string DescriptionEmailToRetriveUsername => "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì´ë©”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string DescriptionEmailToRetriveUsername => "사용자 이름을 찾으려면 이메일을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Description.PasswordChangeEmail.Subject"
 	/// email subject to change password
 	/// English String: "Roblox Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordChangeEmailSubject => "Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
+	public override string DescriptionPasswordChangeEmailSubject => "Roblox 비밀번호 재설정";
 
 	/// <summary>
 	/// Key: "Description.PasswordResetEmail.Subject"
 	/// Subject for password reset email
 	/// English String: "Roblox Account Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordResetEmailSubject => "Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
+	public override string DescriptionPasswordResetEmailSubject => "Roblox 계정 비밀번호 재설정";
 
 	/// <summary>
 	/// Key: "Description.PhoneToResetPassword"
 	/// English String: "Enter your phone number to reset your password."
 	/// </summary>
-	public override string DescriptionPhoneToResetPassword => "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string DescriptionPhoneToResetPassword => "비밀번호를 재설정하려면 전화번호를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Description.PhoneToRetriveUsername"
 	/// English String: "Enter your phone number to retrieve your username."
 	/// </summary>
-	public override string DescriptionPhoneToRetriveUsername => "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string DescriptionPhoneToRetriveUsername => "사용자 이름을 찾으려면 전화번호를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Heading.VerifyCode"
 	/// verify code heading
 	/// English String: "Verify Code"
 	/// </summary>
-	public override string HeadingVerifyCode => "ì½”ë“œ ì¸ì¦";
+	public override string HeadingVerifyCode => "코드 인증";
 
 	/// <summary>
 	/// Key: "Heading.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingVerifyPhone => "ì „í™”ë²ˆí˜¸ ì¸ì¦";
+	public override string HeadingVerifyPhone => "전화번호 인증";
 
 	/// <summary>
 	/// Key: "HeadingForgetPasswordOrUsername"
 	/// English String: "Forgot Password or Username"
 	/// </summary>
-	public override string HeadingForgetPasswordOrUsername => "ë¹„ë°€ë²ˆí˜¸ ë˜ëŠ” ì‚¬ìš©ìž ì´ë¦„ ë¶„ì‹¤";
+	public override string HeadingForgetPasswordOrUsername => "비밀번호 또는 사용자 이름 분실";
 
 	/// <summary>
 	/// Key: "Label.ActionButtonYes"
 	/// button label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelActionButtonYes => "ì˜ˆ";
+	public override string LabelActionButtonYes => "예";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyPassword"
 	/// English String: "Forgot My Password"
 	/// </summary>
-	public override string LabelForgetMyPassword => "ë‚´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠì—ˆìŠµë‹ˆë‹¤";
+	public override string LabelForgetMyPassword => "내 비밀번호를 잊었습니다";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyUsername"
 	/// English String: "Forgot My Username"
 	/// </summary>
-	public override string LabelForgetMyUsername => "ë‚´ ì‚¬ìš©ìž ì´ë¦„ì„ ìžŠì—ˆìŠµë‹ˆë‹¤";
+	public override string LabelForgetMyUsername => "내 사용자 이름을 잊었습니다";
 
 	/// <summary>
 	/// Key: "Label.InvalidEmail"
 	/// English String: "Invalid email"
 	/// </summary>
-	public override string LabelInvalidEmail => "ìœ íš¨í•˜ì§€ ì•Šì€ ì´ë©”ì¼";
+	public override string LabelInvalidEmail => "유효하지 않은 이메일";
 
 	/// <summary>
 	/// Key: "Label.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string LabelInvalidPhoneNumber => "ìœ íš¨í•˜ì§€ ì•Šì€ ì „í™”ë²ˆí˜¸";
+	public override string LabelInvalidPhoneNumber => "유효하지 않은 전화번호";
 
 	/// <summary>
 	/// Key: "Label.NeutralButtonOk"
 	/// ok button label
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelNeutralButtonOk => "í™•ì¸";
+	public override string LabelNeutralButtonOk => "확인";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// label
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ë¹„ë°€ë²ˆí˜¸";
+	public override string LabelPassword => "비밀번호";
 
 	/// <summary>
 	/// Key: "Label.ResendCode"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string LabelResendCode => "ì½”ë“œ ìž¬ì „ì†¡";
+	public override string LabelResendCode => "코드 재전송";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "ì œì¶œ";
+	public override string LabelSubmit => "제출";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "ìž…ë ¥í•˜ì‹  ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì—¬ íšŒì›ë‹˜ì„ ì°¾ì„ ìˆ˜ ìžˆëŠ” ì‚¬ìš©ìžë¥¼ ì„¤ì •í•©ë‹ˆë‹¤.";
+	public override string LabelToolTipWhoCanFindMeByPhone => "입력하신 전화번호를 사용하여 회원님을 찾을 수 있는 사용자를 설정합니다.";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ì‚¬ìš©ìž ì´ë¦„";
+	public override string LabelUsername => "사용자 이름";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "ëˆ„ê°€ ë‚´ ì „í™”ë²ˆí˜¸ë¡œ ë‚˜ë¥¼ ì°¾ì„ ìˆ˜ ìžˆë‚˜ìš”?";
+	public override string LabelWhoCanFindMeByPhone => "누가 내 전화번호로 나를 찾을 수 있나요?";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred, try again later."
 	/// </summary>
-	public override string MessageDefaultError => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessageDefaultError => "오류가 발생했어요. 나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Message.EmailForUsernameSuccessBody"
 	/// success message
 	/// English String: "An email with your username(s) has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailForUsernameSuccessBody => "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì €ìž¥ëœ ì´ë©”ì¼ ì£¼ì†Œë¡œ ì‚¬ìš©ìž ì´ë¦„ì´ í¬í•¨ëœ ë©”ì¼ì´ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+	public override string MessageEmailForUsernameSuccessBody => "계정에서 사전에 저장된 이메일 주소로 사용자 이름이 포함된 메일이 발송되었어요.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessBody"
 	/// English String: "An email with instructions has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailSuccessBody => "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì €ìž¥ëœ ì´ë©”ì¼ ì£¼ì†Œë¡œ ì§€ì¹¨ì´ í¬í•¨ëœ ë©”ì¼ì´ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+	public override string MessageEmailSuccessBody => "계정에서 사전에 저장된 이메일 주소로 지침이 포함된 메일이 발송되었어요.";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessTitle"
 	/// English String: "Email Sent"
 	/// </summary>
-	public override string MessageEmailSuccessTitle => "ì´ë©”ì¼ ì „ì†¡ ì™„ë£Œ";
+	public override string MessageEmailSuccessTitle => "이메일 전송 완료";
 
 	/// <summary>
 	/// Key: "Message.EnterCode"
 	/// English String: "A code was sent to your phone if it was previously verified on your account. Please enter it below"
 	/// </summary>
-	public override string MessageEnterCode => "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì¸ì¦ëœ íœ´ëŒ€í°ìœ¼ë¡œ ì½”ë“œê°€ ì „ì†¡ë˜ì—ˆì–´ìš”. ì•„ëž˜ì— ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string MessageEnterCode => "계정에서 사전에 인증된 휴대폰으로 코드가 전송되었어요. 아래에 코드를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Message.EnterCodeSentToEmail"
 	/// Enter the code we just sent to your email.
 	/// English String: "Enter the code we just sent to your email."
 	/// </summary>
-	public override string MessageEnterCodeSentToEmail => "ì´ë©”ì¼ë¡œ ë°©ê¸ˆ ë°œì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string MessageEnterCodeSentToEmail => "이메일로 방금 발송된 코드를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessBody"
 	/// English String: "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account."
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessBody => "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì¸ì¦ëœ ì „í™”ë²ˆí˜¸ë¡œ ì‚¬ìš©ìž ì´ë¦„ì´ í¬í•¨ëœ SMSê°€ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+	public override string MessagePhoneForUsernameSuccessBody => "계정에서 사전에 인증된 전화번호로 사용자 이름이 포함된 SMS가 발송되었어요.";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessTitle"
 	/// English String: "SMS Sent"
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessTitle => "SMS ì „ì†¡ ì™„ë£Œ";
+	public override string MessagePhoneForUsernameSuccessTitle => "SMS 전송 완료";
 
 	/// <summary>
 	/// Key: "MessageAccountDoesNotHaveAnEmail"
 	/// English String: "There is no email linked to this account"
 	/// </summary>
-	public override string MessageAccountDoesNotHaveAnEmail => "ë³¸ ê³„ì •ì— ì—°ê²°ëœ ì´ë©”ì¼ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string MessageAccountDoesNotHaveAnEmail => "본 계정에 연결된 이메일이 존재하지 않습니다.";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByEmail"
 	/// No account found. Please use a different email.
 	/// English String: "No account found. Please use a different email."
 	/// </summary>
-	public override string MessageAccountNotFoundByEmail => "ê³„ì •ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”.";
+	public override string MessageAccountNotFoundByEmail => "계정을 찾을 수 없습니다. 다른 이메일을 사용하세요.";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByPhone"
 	/// No account found. Please use a different phone number.
 	/// English String: "No account found. Please use a different phone number."
 	/// </summary>
-	public override string MessageAccountNotFoundByPhone => "ê³„ì •ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”.";
+	public override string MessageAccountNotFoundByPhone => "계정을 찾을 수 없습니다. 다른 전화번호를 사용하세요.";
 
 	/// <summary>
 	/// Key: "MessageAccountRecoveryUnknownError"
 	/// English String: "System error. Account could not be restored to this state."
 	/// </summary>
-	public override string MessageAccountRecoveryUnknownError => "ì‹œìŠ¤í…œ ì˜¤ë¥˜. ê³„ì •ì„ ë³¸ ìƒíƒœë¡œ ë³µêµ¬í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+	public override string MessageAccountRecoveryUnknownError => "시스템 오류. 계정을 본 상태로 복구하지 못했습니다.";
 
 	/// <summary>
 	/// Key: "MessageCaptchaError"
 	/// English String: "We need to make sure you're not a robot!"
 	/// </summary>
-	public override string MessageCaptchaError => "ë¡œë´‡ì´ ì•„ë‹˜ì„ í™•ì¸í•´ì•¼ í•©ë‹ˆë‹¤!";
+	public override string MessageCaptchaError => "로봇이 아님을 확인해야 합니다!";
 
 	/// <summary>
 	/// Key: "MessageCaptchaFailError"
 	/// English String: "The words you typed didn't match the picture. Please try again."
 	/// </summary>
-	public override string MessageCaptchaFailError => "ìž…ë ¥í•œ ë‹¨ì–´ê°€ ì‚¬ì§„ê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessageCaptchaFailError => "입력한 단어가 사진과 일치하지 않습니다. 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "MessageCredentialsError"
 	/// English String: "Your username or password is incorrect. Please check them and try again."
 	/// </summary>
-	public override string MessageCredentialsError => "ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. í™•ì¸ í›„ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessageCredentialsError => "사용자 이름 또는 비밀번호가 일치하지 않습니다. 확인 후 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "MessageFloodCheckedError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageFloodCheckedError => "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessageFloodCheckedError => "시도 가능 횟수를 초과하였습니다. 나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordFeatureDisabled"
 	/// English String: "Feature temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageForgotPasswordFeatureDisabled => "ì¼ì‹œì  ê¸°ëŠ¥ ë¹„í™œì„±í™”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessageForgotPasswordFeatureDisabled => "일시적 기능 비활성화. 나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordSuccess"
 	/// English String: "Check your email for login instructions"
 	/// </summary>
-	public override string MessageForgotPasswordSuccess => "ë¡œê·¸ì¸ ì•ˆë‚´ë¥¼ ìœ„í•´ ì´ë©”ì¼ì„ í™•ì¸í•˜ì„¸ìš”.";
+	public override string MessageForgotPasswordSuccess => "로그인 안내를 위해 이메일을 확인하세요.";
 
 	/// <summary>
 	/// Key: "MessageInvalidAccountStatus"
 	/// English String: "Account status prevents resetting password"
 	/// </summary>
-	public override string MessageInvalidAccountStatus => "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •ì´ ë¶ˆê°€ëŠ¥í•œ ê³„ì • ìƒíƒœ";
+	public override string MessageInvalidAccountStatus => "비밀번호 재설정이 불가능한 계정 상태";
 
 	/// <summary>
 	/// Key: "MessageInvalidPassword"
 	/// English String: "Invalid password"
 	/// </summary>
-	public override string MessageInvalidPassword => "ìœ íš¨í•˜ì§€ ì•Šì€ ë¹„ë°€ë²ˆí˜¸";
+	public override string MessageInvalidPassword => "유효하지 않은 비밀번호";
 
 	/// <summary>
 	/// Key: "MessageInvalidTicket"
 	/// English String: "We couldn't load this security ticket."
 	/// </summary>
-	public override string MessageInvalidTicket => "ë³´ì•ˆ í‹°ì¼“ì„ ë¶ˆëŸ¬ì˜¤ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+	public override string MessageInvalidTicket => "보안 티켓을 불러오지 못했습니다.";
 
 	/// <summary>
 	/// Key: "MessageInvalidUserNameOrEmail"
 	/// English String: "Invalid username, or no email exists"
 	/// </summary>
-	public override string MessageInvalidUserNameOrEmail => "ìœ íš¨í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ì´ë©”ì¼";
+	public override string MessageInvalidUserNameOrEmail => "유효하지 않은 사용자 이름 또는 존재하지 않는 이메일";
 
 	/// <summary>
 	/// Key: "MessageMobileResetPasswordSuccess"
@@ -327,92 +329,92 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// Key: "MessageNoAccountsLinkedToEmail"
 	/// English String: "There are no accounts linked to this email address"
 	/// </summary>
-	public override string MessageNoAccountsLinkedToEmail => "ë³¸ ì´ë©”ì¼ ì£¼ì†Œì— ì—°ê²°ëœ ê³„ì •ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string MessageNoAccountsLinkedToEmail => "본 이메일 주소에 연결된 계정이 존재하지 않습니다.";
 
 	/// <summary>
 	/// Key: "MessageOldUsernameError"
 	/// English String: "It looks like you are trying to log in with a username that has changed. Please log in with your new username."
 	/// </summary>
-	public override string MessageOldUsernameError => "ë³€ê²½ ì „ ì‚¬ìš©ìž ì´ë¦„ìœ¼ë¡œ ë¡œê·¸ì¸ì„ ì‹œë„í•˜ì…¨êµ°ìš”. ë³€ê²½ëœ ì‚¬ìš©ìž ì´ë¦„ìœ¼ë¡œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
+	public override string MessageOldUsernameError => "변경 전 사용자 이름으로 로그인을 시도하셨군요. 변경된 사용자 이름으로 로그인하세요.";
 
 	/// <summary>
 	/// Key: "MessagePasswordCannotBeUsed"
 	/// English String: "Sorry, that password cannot be used."
 	/// </summary>
-	public override string MessagePasswordCannotBeUsed => "ì£„ì†¡í•©ë‹ˆë‹¤. ì´ ë¹„ë°€ë²ˆí˜¸ëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string MessagePasswordCannotBeUsed => "죄송합니다. 이 비밀번호는 사용할 수 없습니다.";
 
 	/// <summary>
 	/// Key: "MessagePasswordsDoNotMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string MessagePasswordsDoNotMatch => "ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤";
+	public override string MessagePasswordsDoNotMatch => "비밀번호가 일치하지 않습니다";
 
 	/// <summary>
 	/// Key: "MessageSamlUnauthenticated"
 	/// English String: "You must log in to Roblox to finish authenticating."
 	/// </summary>
-	public override string MessageSamlUnauthenticated => "ì¸ì¦ì„ ì™„ë£Œí•˜ë ¤ë©´ Robloxì— ë¡œê·¸ì¸í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string MessageSamlUnauthenticated => "인증을 완료하려면 Roblox에 로그인해야 합니다.";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string MessageUnknownError => "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜";
+	public override string MessageUnknownError => "알 수 없는 오류";
 
 	/// <summary>
 	/// Key: "MessageUnknownSystemError"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string MessageUnknownSystemError => "ì‹œìŠ¤í…œ ì˜¤ë¥˜. ë¡œê·¸ì¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ì„¸ìš”.";
+	public override string MessageUnknownSystemError => "시스템 오류. 로그인 화면으로 돌아가세요.";
 
 	/// <summary>
 	/// Key: "Placeholder.Email"
 	/// English String: "Email"
 	/// </summary>
-	public override string PlaceholderEmail => "ì´ë©”ì¼";
+	public override string PlaceholderEmail => "이메일";
 
 	/// <summary>
 	/// Key: "Placeholder.PhoneNumber"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string PlaceholderPhoneNumber => "ì „í™”ë²ˆí˜¸";
+	public override string PlaceholderPhoneNumber => "전화번호";
 
 	/// <summary>
 	/// Key: "Response.PasswordResetSuccess"
 	/// Password reset success! Please login again.
 	/// English String: "Password reset success! Please login again."
 	/// </summary>
-	public override string ResponsePasswordResetSuccess => "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ì™„ë£Œ! ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
+	public override string ResponsePasswordResetSuccess => "비밀번호 재설정 완료! 다시 로그인하세요.";
 
 	/// <summary>
 	/// Key: "Response.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string ResponseSuccess => "ì„±ê³µ";
+	public override string ResponseSuccess => "성공";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordFlooded"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseUpdatePasswordFlooded => "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string ResponseUpdatePasswordFlooded => "시도 가능 횟수를 초과했습니다. 나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordIncorrect"
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseUpdatePasswordIncorrect => "ìž…ë ¥í•˜ì‹  ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•Šì•„ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë³€ê²½í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+	public override string ResponseUpdatePasswordIncorrect => "입력하신 비밀번호가 일치하지 않아 비밀번호를 변경하지 못했습니다.";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordInputMissing"
 	/// English String: "Must include new password and confirm password"
 	/// </summary>
-	public override string ResponseUpdatePasswordInputMissing => "ìƒˆ ë¹„ë°€ë²ˆí˜¸ ë° ìž¬í™•ì¸ ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤";
+	public override string ResponseUpdatePasswordInputMissing => "새 비밀번호 및 재확인 비밀번호를 입력해야 합니다";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordMismatch"
 	/// English String: "Your new password and confirm password must match"
 	/// </summary>
-	public override string ResponseUpdatePasswordMismatch => "ìƒˆ ë¹„ë°€ë²ˆí˜¸ì™€ ìž¬í™•ì¸ ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤";
+	public override string ResponseUpdatePasswordMismatch => "새 비밀번호와 재확인 비밀번호가 일치해야 합니다";
 
 	public ResetPasswordResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -421,37 +423,37 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionEmailToResetPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”";
+		return "비밀번호 재설정하려면 이메일을 사용하세요";
 	}
 
 	protected override string _GetTemplateForActionEmailToRetriveUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”";
+		return "사용자 이름을 찾으려면 이메일을 사용하세요";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForActionPhoneToResetPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
+		return "비밀번호를 재설정하려면 전화번호를 사용하세요";
 	}
 
 	protected override string _GetTemplateForActionPhoneToRetriveUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”";
+		return "사용자 이름을 찾으려면 전화번호를 사용하세요";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "ì¸ì¦";
+		return "인증";
 	}
 
 	/// <summary>
@@ -461,22 +463,22 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionChangePasswordEmailHtmlBody1(string userName, string lineBreak, string actionLink)
 	{
-		return $"{userName} ë‹˜ì˜ Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤. ë³€ê²½ ì˜ë„ê°€ ì—†ìœ¼ì…¨ê±°ë‚˜ ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ ì‹¤ìˆ˜ë¡œ ë³€ê²½í•œ ê²ƒì´ë¼ë©´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•´ ë³€ê²½ì„ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤:{lineBreak} {actionLink} {lineBreak}{lineBreak}ë³€ê²½ëœ ë¹„ë°€ë²ˆí˜¸ì— ë§Œì¡±í•˜ì‹ ë‹¤ë©´ ê·¸ëƒ¥ ë³€ê²½ëœ ìƒíƒœë¡œ ë‘ì‹œë©´ ë©ë‹ˆë‹¤! ë³¸ ë©”ì‹œì§€ì— íšŒì‹ í•˜ì§€ ë§ˆì„¸ìš”. ë¬¸ì˜ ì‚¬í•­ì´ ìžˆìœ¼ì‹  ê²½ìš° Roblox ë„ì›€ë§ íŽ˜ì´ì§€(https://www.roblox.com/help)ë¥¼ ì°¸ê³ í•˜ì„¸ìš”.";
+		return $"{userName} 님의 Roblox 계정 비밀번호가 변경되었습니다. 변경 의도가 없으셨거나 다른 누군가가 실수로 변경한 것이라면 아래 링크를 클릭해 변경을 취소할 수 있습니다:{lineBreak} {actionLink} {lineBreak}{lineBreak}변경된 비밀번호에 만족하신다면 그냥 변경된 상태로 두시면 됩니다! 본 메시지에 회신하지 마세요. 문의 사항이 있으신 경우 Roblox 도움말 페이지(https://www.roblox.com/help)를 참고하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionChangePasswordEmailHtmlBody1()
 	{
-		return "{userName} ë‹˜ì˜ Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤. ë³€ê²½ ì˜ë„ê°€ ì—†ìœ¼ì…¨ê±°ë‚˜ ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ ì‹¤ìˆ˜ë¡œ ë³€ê²½í•œ ê²ƒì´ë¼ë©´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•´ ë³€ê²½ì„ ì·¨ì†Œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤:{lineBreak} {actionLink} {lineBreak}{lineBreak}ë³€ê²½ëœ ë¹„ë°€ë²ˆí˜¸ì— ë§Œì¡±í•˜ì‹ ë‹¤ë©´ ê·¸ëƒ¥ ë³€ê²½ëœ ìƒíƒœë¡œ ë‘ì‹œë©´ ë©ë‹ˆë‹¤! ë³¸ ë©”ì‹œì§€ì— íšŒì‹ í•˜ì§€ ë§ˆì„¸ìš”. ë¬¸ì˜ ì‚¬í•­ì´ ìžˆìœ¼ì‹  ê²½ìš° Roblox ë„ì›€ë§ íŽ˜ì´ì§€(https://www.roblox.com/help)ë¥¼ ì°¸ê³ í•˜ì„¸ìš”.";
+		return "{userName} 님의 Roblox 계정 비밀번호가 변경되었습니다. 변경 의도가 없으셨거나 다른 누군가가 실수로 변경한 것이라면 아래 링크를 클릭해 변경을 취소할 수 있습니다:{lineBreak} {actionLink} {lineBreak}{lineBreak}변경된 비밀번호에 만족하신다면 그냥 변경된 상태로 두시면 됩니다! 본 메시지에 회신하지 마세요. 문의 사항이 있으신 경우 Roblox 도움말 페이지(https://www.roblox.com/help)를 참고하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToResetPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì´ë©”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "비밀번호를 재설정하려면 이메일을 입력하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToRetriveUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì´ë©”ì¼ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "사용자 이름을 찾으려면 이메일을 입력하세요.";
 	}
 
 	/// <summary>
@@ -486,12 +488,12 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailBodyPlainText(string userName, string urlWithTicket)
 	{
-		return $"{userName} ë‹˜ì˜ Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤. ë³€ê²½ ì˜ë„ê°€ ì—†ìœ¼ì…¨ê±°ë‚˜ ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ ì‹¤ìˆ˜ë¡œ ë³€ê²½í•œ ê²ƒì´ë¼ë©´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•´ ë³€ê²½ì„ ì·¨ì†Œí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n{urlWithTicket}\n\në³€ê²½ëœ ë¹„ë°€ë²ˆí˜¸ì— ë§Œì¡±í•˜ì‹ ë‹¤ë©´ ê·¸ëƒ¥ ë³€ê²½ëœ ìƒíƒœë¡œ ë‘ì‹œë©´ ë©ë‹ˆë‹¤! ë³¸ ë©”ì‹œì§€ì— íšŒì‹ í•˜ì§€ ë§ˆì„¸ìš”. ë¬¸ì˜ ì‚¬í•­ì´ ìžˆìœ¼ì‹  ê²½ìš° Roblox ë„ì›€ë§ íŽ˜ì´ì§€(https://www.roblox.com/help)ë¥¼ ì°¸ê³ í•˜ì„¸ìš”.";
+		return $"{userName} 님의 Roblox 계정 비밀번호가 변경되었습니다. 변경 의도가 없으셨거나 다른 누군가가 실수로 변경한 것이라면 아래 링크를 클릭해 변경을 취소하실 수 있습니다.\n{urlWithTicket}\n\n변경된 비밀번호에 만족하신다면 그냥 변경된 상태로 두시면 됩니다! 본 메시지에 회신하지 마세요. 문의 사항이 있으신 경우 Roblox 도움말 페이지(https://www.roblox.com/help)를 참고하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailBodyPlainText()
 	{
-		return "{userName} ë‹˜ì˜ Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ê°€ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤. ë³€ê²½ ì˜ë„ê°€ ì—†ìœ¼ì…¨ê±°ë‚˜ ë‹¤ë¥¸ ëˆ„êµ°ê°€ê°€ ì‹¤ìˆ˜ë¡œ ë³€ê²½í•œ ê²ƒì´ë¼ë©´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•´ ë³€ê²½ì„ ì·¨ì†Œí•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n{urlWithTicket}\n\në³€ê²½ëœ ë¹„ë°€ë²ˆí˜¸ì— ë§Œì¡±í•˜ì‹ ë‹¤ë©´ ê·¸ëƒ¥ ë³€ê²½ëœ ìƒíƒœë¡œ ë‘ì‹œë©´ ë©ë‹ˆë‹¤! ë³¸ ë©”ì‹œì§€ì— íšŒì‹ í•˜ì§€ ë§ˆì„¸ìš”. ë¬¸ì˜ ì‚¬í•­ì´ ìžˆìœ¼ì‹  ê²½ìš° Roblox ë„ì›€ë§ íŽ˜ì´ì§€(https://www.roblox.com/help)ë¥¼ ì°¸ê³ í•˜ì„¸ìš”.";
+		return "{userName} 님의 Roblox 계정 비밀번호가 변경되었습니다. 변경 의도가 없으셨거나 다른 누군가가 실수로 변경한 것이라면 아래 링크를 클릭해 변경을 취소하실 수 있습니다.\n{urlWithTicket}\n\n변경된 비밀번호에 만족하신다면 그냥 변경된 상태로 두시면 됩니다! 본 메시지에 회신하지 마세요. 문의 사항이 있으신 경우 Roblox 도움말 페이지(https://www.roblox.com/help)를 참고하세요.";
 	}
 
 	/// <summary>
@@ -501,17 +503,17 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailFrom(string fromEmailAddress)
 	{
-		return $"\"Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •\" {fromEmailAddress}";
+		return $"\"Roblox 비밀번호 재설정\" {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailFrom()
 	{
-		return "\"Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •\" {fromEmailAddress}";
+		return "\"Roblox 비밀번호 재설정\" {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailSubject()
 	{
-		return "Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
+		return "Roblox 비밀번호 재설정";
 	}
 
 	/// <summary>
@@ -521,12 +523,12 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •{escapeLiteralEnd} {fromEmailAddress}";
+		return $"{escapeLiteralStart}Roblox 비밀번호 재설정{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailFrom()
 	{
-		return "{escapeLiteralStart}Roblox ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •{escapeLiteralEnd} {fromEmailAddress}";
+		return "{escapeLiteralStart}Roblox 비밀번호 재설정{escapeLiteralEnd} {fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -536,12 +538,12 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailHtmlBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string aTagWithStartHref, string resetPasswordUrl, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"Roblox ê³„ì •: {emailOrUsername}ì˜ ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}ì´ ìš”ì²­ì„ ì œì¶œí•˜ì…¨ë‹¤ë©´, ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ ì§„í–‰í•˜ì„¸ìš”.{lineBreak}ë³¸ ë§í¬ëŠ” {passwordResetTicketHours}ì‹œê°„, {passwordResetTicketMinutes}ë¶„ ë™ì•ˆ í™œì„±í™”ë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ê³  ì‹¶ì§€ ì•Šë‹¤ë©´, ë³¸ ì•Œë¦¼ì„ ë¬´ì‹œí•˜ì„¸ìš”.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •{buttonEnd}{aTagEnd}";
+		return $"Roblox 계정: {emailOrUsername}의 비밀번호 재설정 요청을 받았습니다.{lineBreak}{lineBreak}이 요청을 제출하셨다면, 아래 버튼을 클릭해 진행하세요.{lineBreak}본 링크는 {passwordResetTicketHours}시간, {passwordResetTicketMinutes}분 동안 활성화됩니다. 비밀번호를 재설정하고 싶지 않다면, 본 알림을 무시하세요.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}비밀번호 재설정{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailHtmlBody()
 	{
-		return "Roblox ê³„ì •: {emailOrUsername}ì˜ ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}ì´ ìš”ì²­ì„ ì œì¶œí•˜ì…¨ë‹¤ë©´, ì•„ëž˜ ë²„íŠ¼ì„ í´ë¦­í•´ ì§„í–‰í•˜ì„¸ìš”.{lineBreak}ë³¸ ë§í¬ëŠ” {passwordResetTicketHours}ì‹œê°„, {passwordResetTicketMinutes}ë¶„ ë™ì•ˆ í™œì„±í™”ë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ê³  ì‹¶ì§€ ì•Šë‹¤ë©´, ë³¸ ì•Œë¦¼ì„ ë¬´ì‹œí•˜ì„¸ìš”.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •{buttonEnd}{aTagEnd}";
+		return "Roblox 계정: {emailOrUsername}의 비밀번호 재설정 요청을 받았습니다.{lineBreak}{lineBreak}이 요청을 제출하셨다면, 아래 버튼을 클릭해 진행하세요.{lineBreak}본 링크는 {passwordResetTicketHours}시간, {passwordResetTicketMinutes}분 동안 활성화됩니다. 비밀번호를 재설정하고 싶지 않다면, 본 알림을 무시하세요.{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}비밀번호 재설정{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -551,102 +553,102 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string DescriptionPasswordResetEmailPlainBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string resetPasswordUrl)
 	{
-		return $"Roblox ê³„ì •: {emailOrUsername}ì˜ ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}ë³¸ ìš”ì²­ì„ ì œì¶œí•˜ì…¨ë‹¤ë©´, ìž¬ì„¤ì • ì§„í–‰ì„ ìœ„í•´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•˜ê±°ë‚˜ ì•„ëž˜ ì£¼ì†Œë¥¼ ì›¹ë¸Œë¼ìš°ì €ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”.{lineBreak}ë³¸ ë§í¬ëŠ” {passwordResetTicketHours}ì‹œê°„, {passwordResetTicketMinutes}ë¶„ ë™ì•ˆ í™œì„±í™”ë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ê³  ì‹¶ì§€ ì•Šë‹¤ë©´, ë³¸ ì•Œë¦¼ì„ ë¬´ì‹œí•˜ì„¸ìš”.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return $"Roblox 계정: {emailOrUsername}의 비밀번호 재설정 요청을 받았습니다.{lineBreak}{lineBreak}본 요청을 제출하셨다면, 재설정 진행을 위해 아래 링크를 클릭하거나 아래 주소를 웹브라우저에 붙여넣으세요.{lineBreak}본 링크는 {passwordResetTicketHours}시간, {passwordResetTicketMinutes}분 동안 활성화됩니다. 비밀번호를 재설정하고 싶지 않다면, 본 알림을 무시하세요.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailPlainBody()
 	{
-		return "Roblox ê³„ì •: {emailOrUsername}ì˜ ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì„ ë°›ì•˜ìŠµë‹ˆë‹¤.{lineBreak}{lineBreak}ë³¸ ìš”ì²­ì„ ì œì¶œí•˜ì…¨ë‹¤ë©´, ìž¬ì„¤ì • ì§„í–‰ì„ ìœ„í•´ ì•„ëž˜ ë§í¬ë¥¼ í´ë¦­í•˜ê±°ë‚˜ ì•„ëž˜ ì£¼ì†Œë¥¼ ì›¹ë¸Œë¼ìš°ì €ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”.{lineBreak}ë³¸ ë§í¬ëŠ” {passwordResetTicketHours}ì‹œê°„, {passwordResetTicketMinutes}ë¶„ ë™ì•ˆ í™œì„±í™”ë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ê³  ì‹¶ì§€ ì•Šë‹¤ë©´, ë³¸ ì•Œë¦¼ì„ ë¬´ì‹œí•˜ì„¸ìš”.{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return "Roblox 계정: {emailOrUsername}의 비밀번호 재설정 요청을 받았습니다.{lineBreak}{lineBreak}본 요청을 제출하셨다면, 재설정 진행을 위해 아래 링크를 클릭하거나 아래 주소를 웹브라우저에 붙여넣으세요.{lineBreak}본 링크는 {passwordResetTicketHours}시간, {passwordResetTicketMinutes}분 동안 활성화됩니다. 비밀번호를 재설정하고 싶지 않다면, 본 알림을 무시하세요.{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailSubject()
 	{
-		return "Roblox ê³„ì • ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •";
+		return "Roblox 계정 비밀번호 재설정";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToResetPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž¬ì„¤ì •í•˜ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "비밀번호를 재설정하려면 전화번호를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToRetriveUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì„ ì°¾ìœ¼ë ¤ë©´ ì „í™”ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "사용자 이름을 찾으려면 전화번호를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyCode()
 	{
-		return "ì½”ë“œ ì¸ì¦";
+		return "코드 인증";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyPhone()
 	{
-		return "ì „í™”ë²ˆí˜¸ ì¸ì¦";
+		return "전화번호 인증";
 	}
 
 	protected override string _GetTemplateForHeadingForgetPasswordOrUsername()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ ë˜ëŠ” ì‚¬ìš©ìž ì´ë¦„ ë¶„ì‹¤";
+		return "비밀번호 또는 사용자 이름 분실";
 	}
 
 	protected override string _GetTemplateForLabelActionButtonYes()
 	{
-		return "ì˜ˆ";
+		return "예";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyPassword()
 	{
-		return "ë‚´ ë¹„ë°€ë²ˆí˜¸ë¥¼ ìžŠì—ˆìŠµë‹ˆë‹¤";
+		return "내 비밀번호를 잊었습니다";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyUsername()
 	{
-		return "ë‚´ ì‚¬ìš©ìž ì´ë¦„ì„ ìžŠì—ˆìŠµë‹ˆë‹¤";
+		return "내 사용자 이름을 잊었습니다";
 	}
 
 	protected override string _GetTemplateForLabelInvalidEmail()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì´ë©”ì¼";
+		return "유효하지 않은 이메일";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPhoneNumber()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì „í™”ë²ˆí˜¸";
+		return "유효하지 않은 전화번호";
 	}
 
 	protected override string _GetTemplateForLabelNeutralButtonOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸";
+		return "비밀번호";
 	}
 
 	protected override string _GetTemplateForLabelResendCode()
 	{
-		return "ì½”ë“œ ìž¬ì „ì†¡";
+		return "코드 재전송";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "ì œì¶œ";
+		return "제출";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "ìž…ë ¥í•˜ì‹  ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì—¬ íšŒì›ë‹˜ì„ ì°¾ì„ ìˆ˜ ìžˆëŠ” ì‚¬ìš©ìžë¥¼ ì„¤ì •í•©ë‹ˆë‹¤.";
+		return "입력하신 전화번호를 사용하여 회원님을 찾을 수 있는 사용자를 설정합니다.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„";
+		return "사용자 이름";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "ëˆ„ê°€ ë‚´ ì „í™”ë²ˆí˜¸ë¡œ ë‚˜ë¥¼ ì°¾ì„ ìˆ˜ ìžˆë‚˜ìš”?";
+		return "누가 내 전화번호로 나를 찾을 수 있나요?";
 	}
 
 	/// <summary>
@@ -655,122 +657,122 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessageCantSendEmailWarning(string styleStart, string styleEnd)
 	{
-		return $"ê³„ì •ì„ ë§Œë“¤ì—ˆì„ ë•Œ {styleStart}ì‹¤ì œ ì´ë©”ì¼ ì£¼ì†Œ{styleEnd}ë¥¼ ì œê³µí•˜ì§€ ì•Šì•˜ë‹¤ë©´ ì´ë©”ì¼ì„ ë³´ë‚¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return $"계정을 만들었을 때 {styleStart}실제 이메일 주소{styleEnd}를 제공하지 않았다면 이메일을 보낼 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForMessageCantSendEmailWarning()
 	{
-		return "ê³„ì •ì„ ë§Œë“¤ì—ˆì„ ë•Œ {styleStart}ì‹¤ì œ ì´ë©”ì¼ ì£¼ì†Œ{styleEnd}ë¥¼ ì œê³µí•˜ì§€ ì•Šì•˜ë‹¤ë©´ ì´ë©”ì¼ì„ ë³´ë‚¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "계정을 만들었을 때 {styleStart}실제 이메일 주소{styleEnd}를 제공하지 않았다면 이메일을 보낼 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "오류가 발생했어요. 나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageEmailForUsernameSuccessBody()
 	{
-		return "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì €ìž¥ëœ ì´ë©”ì¼ ì£¼ì†Œë¡œ ì‚¬ìš©ìž ì´ë¦„ì´ í¬í•¨ëœ ë©”ì¼ì´ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+		return "계정에서 사전에 저장된 이메일 주소로 사용자 이름이 포함된 메일이 발송되었어요.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessBody()
 	{
-		return "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì €ìž¥ëœ ì´ë©”ì¼ ì£¼ì†Œë¡œ ì§€ì¹¨ì´ í¬í•¨ëœ ë©”ì¼ì´ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+		return "계정에서 사전에 저장된 이메일 주소로 지침이 포함된 메일이 발송되었어요.";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessTitle()
 	{
-		return "ì´ë©”ì¼ ì „ì†¡ ì™„ë£Œ";
+		return "이메일 전송 완료";
 	}
 
 	protected override string _GetTemplateForMessageEnterCode()
 	{
-		return "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì¸ì¦ëœ íœ´ëŒ€í°ìœ¼ë¡œ ì½”ë“œê°€ ì „ì†¡ë˜ì—ˆì–´ìš”. ì•„ëž˜ì— ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "계정에서 사전에 인증된 휴대폰으로 코드가 전송되었어요. 아래에 코드를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForMessageEnterCodeSentToEmail()
 	{
-		return "ì´ë©”ì¼ë¡œ ë°©ê¸ˆ ë°œì†¡ëœ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "이메일로 방금 발송된 코드를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessBody()
 	{
-		return "ê³„ì •ì—ì„œ ì‚¬ì „ì— ì¸ì¦ëœ ì „í™”ë²ˆí˜¸ë¡œ ì‚¬ìš©ìž ì´ë¦„ì´ í¬í•¨ëœ SMSê°€ ë°œì†¡ë˜ì—ˆì–´ìš”.";
+		return "계정에서 사전에 인증된 전화번호로 사용자 이름이 포함된 SMS가 발송되었어요.";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessTitle()
 	{
-		return "SMS ì „ì†¡ ì™„ë£Œ";
+		return "SMS 전송 완료";
 	}
 
 	protected override string _GetTemplateForMessageAccountDoesNotHaveAnEmail()
 	{
-		return "ë³¸ ê³„ì •ì— ì—°ê²°ëœ ì´ë©”ì¼ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "본 계정에 연결된 이메일이 존재하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByEmail()
 	{
-		return "ê³„ì •ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì´ë©”ì¼ì„ ì‚¬ìš©í•˜ì„¸ìš”.";
+		return "계정을 찾을 수 없습니다. 다른 이메일을 사용하세요.";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByPhone()
 	{
-		return "ê³„ì •ì„ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‹¤ë¥¸ ì „í™”ë²ˆí˜¸ë¥¼ ì‚¬ìš©í•˜ì„¸ìš”.";
+		return "계정을 찾을 수 없습니다. 다른 전화번호를 사용하세요.";
 	}
 
 	protected override string _GetTemplateForMessageAccountRecoveryUnknownError()
 	{
-		return "ì‹œìŠ¤í…œ ì˜¤ë¥˜. ê³„ì •ì„ ë³¸ ìƒíƒœë¡œ ë³µêµ¬í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+		return "시스템 오류. 계정을 본 상태로 복구하지 못했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaError()
 	{
-		return "ë¡œë´‡ì´ ì•„ë‹˜ì„ í™•ì¸í•´ì•¼ í•©ë‹ˆë‹¤!";
+		return "로봇이 아님을 확인해야 합니다!";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaFailError()
 	{
-		return "ìž…ë ¥í•œ ë‹¨ì–´ê°€ ì‚¬ì§„ê³¼ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "입력한 단어가 사진과 일치하지 않습니다. 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageCredentialsError()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. í™•ì¸ í›„ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "사용자 이름 또는 비밀번호가 일치하지 않습니다. 확인 후 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageFloodCheckedError()
 	{
-		return "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "시도 가능 횟수를 초과하였습니다. 나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordFeatureDisabled()
 	{
-		return "ì¼ì‹œì  ê¸°ëŠ¥ ë¹„í™œì„±í™”. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "일시적 기능 비활성화. 나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordSuccess()
 	{
-		return "ë¡œê·¸ì¸ ì•ˆë‚´ë¥¼ ìœ„í•´ ì´ë©”ì¼ì„ í™•ì¸í•˜ì„¸ìš”.";
+		return "로그인 안내를 위해 이메일을 확인하세요.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAccountStatus()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì •ì´ ë¶ˆê°€ëŠ¥í•œ ê³„ì • ìƒíƒœ";
+		return "비밀번호 재설정이 불가능한 계정 상태";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPassword()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ë¹„ë°€ë²ˆí˜¸";
+		return "유효하지 않은 비밀번호";
 	}
 
 	protected override string _GetTemplateForMessageInvalidTicket()
 	{
-		return "ë³´ì•ˆ í‹°ì¼“ì„ ë¶ˆëŸ¬ì˜¤ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+		return "보안 티켓을 불러오지 못했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUserNameOrEmail()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ì¡´ìž¬í•˜ì§€ ì•ŠëŠ” ì´ë©”ì¼";
+		return "유효하지 않은 사용자 이름 또는 존재하지 않는 이메일";
 	}
 
 	protected override string _GetTemplateForMessageMobileResetPasswordSuccess()
@@ -780,17 +782,17 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 
 	protected override string _GetTemplateForMessageNoAccountsLinkedToEmail()
 	{
-		return "ë³¸ ì´ë©”ì¼ ì£¼ì†Œì— ì—°ê²°ëœ ê³„ì •ì´ ì¡´ìž¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "본 이메일 주소에 연결된 계정이 존재하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForMessageOldUsernameError()
 	{
-		return "ë³€ê²½ ì „ ì‚¬ìš©ìž ì´ë¦„ìœ¼ë¡œ ë¡œê·¸ì¸ì„ ì‹œë„í•˜ì…¨êµ°ìš”. ë³€ê²½ëœ ì‚¬ìš©ìž ì´ë¦„ìœ¼ë¡œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
+		return "변경 전 사용자 이름으로 로그인을 시도하셨군요. 변경된 사용자 이름으로 로그인하세요.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordCannotBeUsed()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ì´ ë¹„ë°€ë²ˆí˜¸ëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "죄송합니다. 이 비밀번호는 사용할 수 없습니다.";
 	}
 
 	/// <summary>
@@ -799,37 +801,37 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string MessagePasswordResetTicketExpired(string expirationHour, string expirationMinute)
 	{
-		return $"ì£„ì†¡í•©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì€ ë°œê¸‰ìœ¼ë¡œë¶€í„° {expirationHour}ì‹œê°„, {expirationMinute}ë¶„ í›„ì— ë§Œë£Œë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • í‹°ì¼“ì„ ë‹¤ì‹œ ìš”ì²­í•˜ì„¸ìš”.";
+		return $"죄송합니다. 비밀번호 재설정 요청은 발급으로부터 {expirationHour}시간, {expirationMinute}분 후에 만료됩니다. 비밀번호 재설정 티켓을 다시 요청하세요.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordResetTicketExpired()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ìš”ì²­ì€ ë°œê¸‰ìœ¼ë¡œë¶€í„° {expirationHour}ì‹œê°„, {expirationMinute}ë¶„ í›„ì— ë§Œë£Œë©ë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • í‹°ì¼“ì„ ë‹¤ì‹œ ìš”ì²­í•˜ì„¸ìš”.";
+		return "죄송합니다. 비밀번호 재설정 요청은 발급으로부터 {expirationHour}시간, {expirationMinute}분 후에 만료됩니다. 비밀번호 재설정 티켓을 다시 요청하세요.";
 	}
 
 	protected override string _GetTemplateForMessagePasswordsDoNotMatch()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤";
+		return "비밀번호가 일치하지 않습니다";
 	}
 
 	protected override string _GetTemplateForMessageSamlUnauthenticated()
 	{
-		return "ì¸ì¦ì„ ì™„ë£Œí•˜ë ¤ë©´ Robloxì— ë¡œê·¸ì¸í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "인증을 완료하려면 Roblox에 로그인해야 합니다.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜";
+		return "알 수 없는 오류";
 	}
 
 	protected override string _GetTemplateForMessageUnknownSystemError()
 	{
-		return "ì‹œìŠ¤í…œ ì˜¤ë¥˜. ë¡œê·¸ì¸ í™”ë©´ìœ¼ë¡œ ëŒì•„ê°€ì„¸ìš”.";
+		return "시스템 오류. 로그인 화면으로 돌아가세요.";
 	}
 
 	protected override string _GetTemplateForPlaceholderEmail()
 	{
-		return "ì´ë©”ì¼";
+		return "이메일";
 	}
 
 	/// <summary>
@@ -838,47 +840,47 @@ internal class ResetPasswordResources_ko_kr : ResetPasswordResources_en_us, IRes
 	/// </summary>
 	public override string PlaceholderEnterCode(string codeLength)
 	{
-		return $"ì½”ë“œ ìž…ë ¥ ({codeLength}ìžë¦¬)";
+		return $"코드 입력 ({codeLength}자리)";
 	}
 
 	protected override string _GetTemplateForPlaceholderEnterCode()
 	{
-		return "ì½”ë“œ ìž…ë ¥ ({codeLength}ìžë¦¬)";
+		return "코드 입력 ({codeLength}자리)";
 	}
 
 	protected override string _GetTemplateForPlaceholderPhoneNumber()
 	{
-		return "ì „í™”ë²ˆí˜¸";
+		return "전화번호";
 	}
 
 	protected override string _GetTemplateForResponsePasswordResetSuccess()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ ìž¬ì„¤ì • ì™„ë£Œ! ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì„¸ìš”.";
+		return "비밀번호 재설정 완료! 다시 로그인하세요.";
 	}
 
 	protected override string _GetTemplateForResponseSuccess()
 	{
-		return "ì„±ê³µ";
+		return "성공";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordFlooded()
 	{
-		return "ì‹œë„ ê°€ëŠ¥ íšŸìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "시도 가능 횟수를 초과했습니다. 나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordIncorrect()
 	{
-		return "ìž…ë ¥í•˜ì‹  ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•Šì•„ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë³€ê²½í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+		return "입력하신 비밀번호가 일치하지 않아 비밀번호를 변경하지 못했습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordInputMissing()
 	{
-		return "ìƒˆ ë¹„ë°€ë²ˆí˜¸ ë° ìž¬í™•ì¸ ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤";
+		return "새 비밀번호 및 재확인 비밀번호를 입력해야 합니다";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordMismatch()
 	{
-		return "ìƒˆ ë¹„ë°€ë²ˆí˜¸ì™€ ìž¬í™•ì¸ ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤";
+		return "새 비밀번호와 재확인 비밀번호가 일치해야 합니다";
 	}
 }
 

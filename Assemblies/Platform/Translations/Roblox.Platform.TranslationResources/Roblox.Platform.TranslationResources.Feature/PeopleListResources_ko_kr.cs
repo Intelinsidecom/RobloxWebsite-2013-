@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PeopleListResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PeopleListResources_ko_kr : PeopleListResources_en_us, IPeopleLis
 	/// Purchase game and play
 	/// English String: "Buy to Play"
 	/// </summary>
-	public override string ActionBuy => "êµ¬ìž…í•˜ì—¬ í”Œë ˆì´";
+	public override string ActionBuy => "구입하여 플레이";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// Join game with friends
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "ì°¸ê°€";
+	public override string ActionJoin => "참가";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// View game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "ìžì„¸ížˆ ë³´ê¸°";
+	public override string ActionViewDetails => "자세히 보기";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "ì¹œêµ¬";
+	public override string HeadingFriends => "친구";
 
 	/// <summary>
 	/// Key: "Heading.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string HeadingSeeAll => "ì „ì²´ ë³´ê¸°";
+	public override string HeadingSeeAll => "전체 보기";
 
 	/// <summary>
 	/// Key: "Label.ViewProfile"
 	/// Go to Profile page and view
 	/// English String: "View Profile"
 	/// </summary>
-	public override string LabelViewProfile => "í”„ë¡œí•„ ë³´ê¸°";
+	public override string LabelViewProfile => "프로필 보기";
 
 	public PeopleListResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -53,27 +55,27 @@ internal class PeopleListResources_ko_kr : PeopleListResources_en_us, IPeopleLis
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "êµ¬ìž…í•˜ì—¬ í”Œë ˆì´";
+		return "구입하여 플레이";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "ì°¸ê°€";
+		return "참가";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "ìžì„¸ížˆ ë³´ê¸°";
+		return "자세히 보기";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "ì¹œêµ¬";
+		return "친구";
 	}
 
 	protected override string _GetTemplateForHeadingSeeAll()
 	{
-		return "ì „ì²´ ë³´ê¸°";
+		return "전체 보기";
 	}
 
 	/// <summary>
@@ -83,17 +85,17 @@ internal class PeopleListResources_ko_kr : PeopleListResources_en_us, IPeopleLis
 	/// </summary>
 	public override string LabelChat(string username)
 	{
-		return $"{username}ë‹˜ê³¼ ì±„íŒ…";
+		return $"{username}님과 채팅";
 	}
 
 	protected override string _GetTemplateForLabelChat()
 	{
-		return "{username}ë‹˜ê³¼ ì±„íŒ…";
+		return "{username}님과 채팅";
 	}
 
 	protected override string _GetTemplateForLabelViewProfile()
 	{
-		return "í”„ë¡œí•„ ë³´ê¸°";
+		return "프로필 보기";
 	}
 }
 

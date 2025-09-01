@@ -1,12 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using Roblox.Amazon.Sqs;
 using Roblox.Configuration;
 using Roblox.EventLog;
-using Roblox.Platform.Moderation.Properties;
+using Roblox.Moderation.Properties;
 using Roblox.TrackingQueue;
+using Roblox.Moderation.Interfaces;
+
 namespace Roblox.Moderation {
     /// <summary>
 

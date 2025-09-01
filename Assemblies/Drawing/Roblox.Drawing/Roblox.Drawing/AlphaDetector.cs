@@ -14,11 +14,50 @@ namespace Roblox.Drawing;
 /// </summary>
 public class AlphaDetector
 {
+	private const int MaxImageSizeBytes = 10 * 1024 * 1024; // 10MB
+	private const int MaxImageDimension = 8192; // Max width/height in pixels
 	private readonly ILogger _Logger;
 
 	public AlphaDetector(ILogger logger)
 	{
 		_Logger = logger ?? throw new ArgumentNullException("logger");
+	}
+
+	private static void ValidateImageInput(byte[] inputImageData)
+	{
+		if (inputImageData == null)
+			throw new ArgumentNullException(nameof(inputImageData));
+		
+		if (inputImageData.Length > MaxImageSizeBytes)
+			throw new ArgumentException($"Image size exceeds maximum allowed size of {MaxImageSizeBytes} bytes");
+	}
+
+	private static void ValidateImageInput(Stream inputImageStream)
+	{
+		if (inputImageStream == null)
+			throw new ArgumentNullException(nameof(inputImageStream));
+		
+		if (inputImageStream.Length > MaxImageSizeBytes)
+			throw new ArgumentException($"Image size exceeds maximum allowed size of {MaxImageSizeBytes} bytes");
+	}
+
+	private static void ValidateImageInput(string inputImagePath)
+	{
+		if (string.IsNullOrEmpty(inputImagePath))
+			throw new ArgumentNullException(nameof(inputImagePath));
+		
+		var fileInfo = new FileInfo(inputImagePath);
+		if (!fileInfo.Exists)
+			throw new FileNotFoundException("Image file not found", inputImagePath);
+		
+		if (fileInfo.Length > MaxImageSizeBytes)
+			throw new ArgumentException($"Image size exceeds maximum allowed size of {MaxImageSizeBytes} bytes");
+	}
+
+	private static void ValidateImageDimensions(MagickImage img)
+	{
+		if (img.Width > MaxImageDimension || img.Height > MaxImageDimension)
+			throw new ArgumentException($"Image dimensions exceed maximum allowed size of {MaxImageDimension}x{MaxImageDimension} pixels");
 	}
 
 	/// <summary>
@@ -28,13 +67,14 @@ public class AlphaDetector
 	/// </summary>
 	public bool HasAlpha(byte[] inputImageData, bool useImageMagick = true)
 	{
-		//IL_0004: Unknown result type (might be due to invalid IL or missing references)
-		//IL_000a: Expected O, but got Unknown
+		ValidateImageInput(inputImageData);
+		
 		if (useImageMagick)
 		{
 			MagickImage img = new MagickImage(inputImageData);
 			try
 			{
+				ValidateImageDimensions(img);
 				return HasAlpha(img);
 			}
 			finally
@@ -54,13 +94,14 @@ public class AlphaDetector
 	/// </summary>
 	public bool HasAlpha(Stream inputImageStream, bool useImageMagick = true)
 	{
-		//IL_0004: Unknown result type (might be due to invalid IL or missing references)
-		//IL_000a: Expected O, but got Unknown
+		ValidateImageInput(inputImageStream);
+		
 		if (useImageMagick)
 		{
 			MagickImage img = new MagickImage(inputImageStream);
 			try
 			{
+				ValidateImageDimensions(img);
 				return HasAlpha(img);
 			}
 			finally
@@ -79,13 +120,14 @@ public class AlphaDetector
 	/// </summary>
 	public bool HasAlpha(string inputImagePath, bool useImageMagick = true)
 	{
-		//IL_0004: Unknown result type (might be due to invalid IL or missing references)
-		//IL_000a: Expected O, but got Unknown
+		ValidateImageInput(inputImagePath);
+		
 		if (useImageMagick)
 		{
 			MagickImage img = new MagickImage(inputImagePath);
 			try
 			{
+				ValidateImageDimensions(img);
 				return HasAlpha(img);
 			}
 			finally

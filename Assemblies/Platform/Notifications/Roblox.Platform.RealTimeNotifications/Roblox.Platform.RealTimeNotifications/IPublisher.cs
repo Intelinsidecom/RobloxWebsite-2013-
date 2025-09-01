@@ -1,9 +1,7 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface IPublisher<TKeyInput, TPublishMessage>
-
+namespace Roblox.Platform.RealTimeNotifications
 {
-	long Publish(TKeyInput key, TPublishMessage message);
-}
-
-
+    public interface IPublisher<TKeyInput, TPublishMessage>
+    {
+        long Publish(TKeyInput key, TPublishMessage message);
+    }
 }

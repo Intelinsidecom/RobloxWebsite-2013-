@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslationRolesResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 	/// Key: "Description.TranslatorTooltip"
 	/// English String: "Add translators by username or user ID. You can also add a specific role set from a Group you own as translators. Users with translator access will be able to view game content and provide translations."
 	/// </summary>
-	public override string DescriptionTranslatorTooltip => "Adicione tradutores pelo nome de usuÃ¡rio ou ID de usuÃ¡rio. VocÃª tambÃ©m pode adicionar um conjunto de funÃ§Ãµes especÃ­fico de um grupo que pertenÃ§a a vocÃª como tradutores. UsuÃ¡rios com acesso de tradutores poderÃ£o ver o conteÃºdo do jogo e fornecer traduÃ§Ãµes.";
+	public override string DescriptionTranslatorTooltip => "Adicione tradutores pelo nome de usuário ou ID de usuário. Você também pode adicionar um conjunto de funções específico de um grupo que pertença a você como tradutores. Usuários com acesso de tradutores poderão ver o conteúdo do jogo e fornecer traduções.";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteTranslator"
@@ -46,13 +48,13 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 	/// Key: "Label.EnterUserIdPlaceholder"
 	/// English String: "Enter Translator's UserID"
 	/// </summary>
-	public override string LabelEnterUserIdPlaceholder => "Insira a ID de usuÃ¡rio do tradutor";
+	public override string LabelEnterUserIdPlaceholder => "Insira a ID de usuário do tradutor";
 
 	/// <summary>
 	/// Key: "Label.EnterUsernamePlaceholder"
 	/// English String: "Enter Translator's Username"
 	/// </summary>
-	public override string LabelEnterUsernamePlaceholder => "Insira o nome de usuÃ¡rio do tradutor";
+	public override string LabelEnterUsernamePlaceholder => "Insira o nome de usuário do tradutor";
 
 	/// <summary>
 	/// Key: "Label.EntireGroup"
@@ -82,7 +84,7 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 	/// Key: "Label.PublicGroup"
 	/// English String: "Public Group"
 	/// </summary>
-	public override string LabelPublicGroup => "Grupo pÃºblico";
+	public override string LabelPublicGroup => "Grupo público";
 
 	/// <summary>
 	/// Key: "Label.RemoveUser"
@@ -94,86 +96,86 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 	/// Key: "Label.SelectGroupRole"
 	/// English String: "Select Group Role"
 	/// </summary>
-	public override string LabelSelectGroupRole => "Selecionar funÃ§Ã£o do grupo";
+	public override string LabelSelectGroupRole => "Selecionar função do grupo";
 
 	/// <summary>
 	/// Key: "Label.TranslatorsTooltip"
 	/// English String: "Users and groups with translator access will be able to view game content and provide translations."
 	/// </summary>
-	public override string LabelTranslatorsTooltip => "UsuÃ¡rios e grupos com acesso de tradutores poderÃ£o ver o conteÃºdo do jogo e fornecer traduÃ§Ãµes.";
+	public override string LabelTranslatorsTooltip => "Usuários e grupos com acesso de tradutores poderão ver o conteúdo do jogo e fornecer traduções.";
 
 	/// <summary>
 	/// Key: "Label.UserId"
 	/// English String: "User ID"
 	/// </summary>
-	public override string LabelUserId => "ID de usuÃ¡rio";
+	public override string LabelUserId => "ID de usuário";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "Nome de usuÃ¡rio";
+	public override string LabelUsername => "Nome de usuário";
 
 	/// <summary>
 	/// Key: "Label.Users"
 	/// English String: "Users"
 	/// </summary>
-	public override string LabelUsers => "UsuÃ¡rios";
+	public override string LabelUsers => "Usuários";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorGroupID"
 	/// English String: "Please enter Group ID of the group you like to add as translator"
 	/// </summary>
-	public override string MessageEnterTranslatorGroupID => "Insira a ID de grupo do grupo que vocÃª quer adicionar como tradutor";
+	public override string MessageEnterTranslatorGroupID => "Insira a ID de grupo do grupo que você quer adicionar como tradutor";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorUserId"
 	/// English String: "Please enter a translator's User ID"
 	/// </summary>
-	public override string MessageEnterTranslatorUserId => "Insira a ID de usuÃ¡rio de um tradutor";
+	public override string MessageEnterTranslatorUserId => "Insira a ID de usuário de um tradutor";
 
 	/// <summary>
 	/// Key: "Message.EnterTranslatorUsername"
 	/// English String: "Please enter a translator's username"
 	/// </summary>
-	public override string MessageEnterTranslatorUsername => "Insira o nome de usuÃ¡rio de um tradutor";
+	public override string MessageEnterTranslatorUsername => "Insira o nome de usuário de um tradutor";
 
 	/// <summary>
 	/// Key: "Message.GroupAlreadyAdded"
 	/// English String: "The group is already added."
 	/// </summary>
-	public override string MessageGroupAlreadyAdded => "O grupo jÃ¡ foi adicionado.";
+	public override string MessageGroupAlreadyAdded => "O grupo já foi adicionado.";
 
 	/// <summary>
 	/// Key: "Message.GroupAlreadyAddedWithRoleset"
 	/// English String: "Group with specified role set is already added. "
 	/// </summary>
-	public override string MessageGroupAlreadyAddedWithRoleset => "Grupo com conjunto de funÃ§Ãµes especÃ­fico jÃ¡ adicionado. ";
+	public override string MessageGroupAlreadyAddedWithRoleset => "Grupo com conjunto de funções específico já adicionado. ";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroup"
 	/// English String: "Group not found. Please check Group ID entered."
 	/// </summary>
-	public override string MessageInvalidGroup => "Grupo nÃ£o encontrado. Confira o nome de usuÃ¡rio ou ID de grupo inseridos.";
+	public override string MessageInvalidGroup => "Grupo não encontrado. Confira o nome de usuário ou ID de grupo inseridos.";
 
 	/// <summary>
 	/// Key: "Message.RolesServerError"
 	/// This error message is shown when we are unable to show information to the user. We ask them to refresh or try again later because our services might be down.
 	/// English String: "Unable to retrieve data. Please refresh or try again later."
 	/// </summary>
-	public override string MessageRolesServerError => "ImpossÃ­vel recuperar dados. Atualize ou tente novamente mais tarde.";
+	public override string MessageRolesServerError => "Impossível recuperar dados. Atualize ou tente novamente mais tarde.";
 
 	/// <summary>
 	/// Key: "Message.UserAlreadyAdded"
 	/// English String: "This user is already added"
 	/// </summary>
-	public override string MessageUserAlreadyAdded => "O usuÃ¡rio jÃ¡ foi adicionado";
+	public override string MessageUserAlreadyAdded => "O usuário já foi adicionado";
 
 	/// <summary>
 	/// Key: "Message.UserNotFound"
 	/// English String: "User not found. Please check Username or User ID entered."
 	/// </summary>
-	public override string MessageUserNotFound => "UsuÃ¡rio nÃ£o encontrado. Confira o nome de usuÃ¡rio ou ID de usuÃ¡rio inseridos.";
+	public override string MessageUserNotFound => "Usuário não encontrado. Confira o nome de usuário ou ID de usuário inseridos.";
 
 	public TranslationRolesResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -187,7 +189,7 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 
 	protected override string _GetTemplateForDescriptionTranslatorTooltip()
 	{
-		return "Adicione tradutores pelo nome de usuÃ¡rio ou ID de usuÃ¡rio. VocÃª tambÃ©m pode adicionar um conjunto de funÃ§Ãµes especÃ­fico de um grupo que pertenÃ§a a vocÃª como tradutores. UsuÃ¡rios com acesso de tradutores poderÃ£o ver o conteÃºdo do jogo e fornecer traduÃ§Ãµes.";
+		return "Adicione tradutores pelo nome de usuário ou ID de usuário. Você também pode adicionar um conjunto de funções específico de um grupo que pertença a você como tradutores. Usuários com acesso de tradutores poderão ver o conteúdo do jogo e fornecer traduções.";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteTranslator()
@@ -212,12 +214,12 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 
 	protected override string _GetTemplateForLabelEnterUserIdPlaceholder()
 	{
-		return "Insira a ID de usuÃ¡rio do tradutor";
+		return "Insira a ID de usuário do tradutor";
 	}
 
 	protected override string _GetTemplateForLabelEnterUsernamePlaceholder()
 	{
-		return "Insira o nome de usuÃ¡rio do tradutor";
+		return "Insira o nome de usuário do tradutor";
 	}
 
 	protected override string _GetTemplateForLabelEntireGroup()
@@ -242,7 +244,7 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 
 	protected override string _GetTemplateForLabelPublicGroup()
 	{
-		return "Grupo pÃºblico";
+		return "Grupo público";
 	}
 
 	protected override string _GetTemplateForLabelRemoveUser()
@@ -256,82 +258,82 @@ internal class TranslationRolesResources_pt_br : TranslationRolesResources_en_us
 	/// </summary>
 	public override string LabelRolesetName(string rolesetName)
 	{
-		return $"FunÃ§Ã£o: {rolesetName}";
+		return $"Função: {rolesetName}";
 	}
 
 	protected override string _GetTemplateForLabelRolesetName()
 	{
-		return "FunÃ§Ã£o: {rolesetName}";
+		return "Função: {rolesetName}";
 	}
 
 	protected override string _GetTemplateForLabelSelectGroupRole()
 	{
-		return "Selecionar funÃ§Ã£o do grupo";
+		return "Selecionar função do grupo";
 	}
 
 	protected override string _GetTemplateForLabelTranslatorsTooltip()
 	{
-		return "UsuÃ¡rios e grupos com acesso de tradutores poderÃ£o ver o conteÃºdo do jogo e fornecer traduÃ§Ãµes.";
+		return "Usuários e grupos com acesso de tradutores poderão ver o conteúdo do jogo e fornecer traduções.";
 	}
 
 	protected override string _GetTemplateForLabelUserId()
 	{
-		return "ID de usuÃ¡rio";
+		return "ID de usuário";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "Nome de usuÃ¡rio";
+		return "Nome de usuário";
 	}
 
 	protected override string _GetTemplateForLabelUsers()
 	{
-		return "UsuÃ¡rios";
+		return "Usuários";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorGroupID()
 	{
-		return "Insira a ID de grupo do grupo que vocÃª quer adicionar como tradutor";
+		return "Insira a ID de grupo do grupo que você quer adicionar como tradutor";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorUserId()
 	{
-		return "Insira a ID de usuÃ¡rio de um tradutor";
+		return "Insira a ID de usuário de um tradutor";
 	}
 
 	protected override string _GetTemplateForMessageEnterTranslatorUsername()
 	{
-		return "Insira o nome de usuÃ¡rio de um tradutor";
+		return "Insira o nome de usuário de um tradutor";
 	}
 
 	protected override string _GetTemplateForMessageGroupAlreadyAdded()
 	{
-		return "O grupo jÃ¡ foi adicionado.";
+		return "O grupo já foi adicionado.";
 	}
 
 	protected override string _GetTemplateForMessageGroupAlreadyAddedWithRoleset()
 	{
-		return "Grupo com conjunto de funÃ§Ãµes especÃ­fico jÃ¡ adicionado. ";
+		return "Grupo com conjunto de funções específico já adicionado. ";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroup()
 	{
-		return "Grupo nÃ£o encontrado. Confira o nome de usuÃ¡rio ou ID de grupo inseridos.";
+		return "Grupo não encontrado. Confira o nome de usuário ou ID de grupo inseridos.";
 	}
 
 	protected override string _GetTemplateForMessageRolesServerError()
 	{
-		return "ImpossÃ­vel recuperar dados. Atualize ou tente novamente mais tarde.";
+		return "Impossível recuperar dados. Atualize ou tente novamente mais tarde.";
 	}
 
 	protected override string _GetTemplateForMessageUserAlreadyAdded()
 	{
-		return "O usuÃ¡rio jÃ¡ foi adicionado";
+		return "O usuário já foi adicionado";
 	}
 
 	protected override string _GetTemplateForMessageUserNotFound()
 	{
-		return "UsuÃ¡rio nÃ£o encontrado. Confira o nome de usuÃ¡rio ou ID de usuÃ¡rio inseridos.";
+		return "Usuário não encontrado. Confira o nome de usuário ou ID de usuário inseridos.";
 	}
 }
 

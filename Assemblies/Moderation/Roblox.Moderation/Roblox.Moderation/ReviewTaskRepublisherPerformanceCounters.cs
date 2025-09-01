@@ -1,10 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using Roblox.Instrumentation;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationinternal {
-    class ReviewTaskRepublisherPerformanceCounters : IReviewTaskRepublisherPerformanceCounters
+using Roblox.Localization.Core;
+using Roblox.Moderation; 
+using Roblox.Moderation.Interfaces; 
 
+namespace Roblox.Moderation
+{
+    class ReviewTaskRepublisherPerformanceCounters : IReviewTaskRepublisherPerformanceCounters
 {
 	private const string _PerformanceCategory = "Roblox.Platform.Moderation.ReviewTaskRepublisher";
 
@@ -50,6 +53,4 @@ namespace Roblox.Moderationinternal {
 		return $"taskType:{taskType.ToString()}_locale:{locale}";
 	}
 }
-
-
 }

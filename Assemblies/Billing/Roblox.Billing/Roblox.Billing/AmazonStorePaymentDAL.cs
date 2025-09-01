@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Common.Properties;
 using Roblox.Data;
@@ -156,10 +156,10 @@ public class AmazonStorePaymentDAL
 	}
 
 	/// <summary>
-	/// Builds an <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> from the given <see cref="T:System.Data.SqlClient.SqlDataReader" />.
+	/// Builds an <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> from the given <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" />.
 	/// </summary>
-	/// <param name="reader">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> to build the <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> from.</param>
-	/// <returns>A <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> built from the given <see cref="T:System.Data.SqlClient.SqlDataReader" />.</returns>
+	/// <param name="reader">The <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> to build the <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> from.</param>
+	/// <returns>A <see cref="T:Roblox.Billing.AmazonStorePaymentDAL" /> built from the given <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" />.</returns>
 	private static AmazonStorePaymentDAL GetDALFromReader(SqlDataReader reader)
 	{
 		AmazonStorePaymentDAL dal = new AmazonStorePaymentDAL
@@ -235,3 +235,4 @@ public class AmazonStorePaymentDAL
 		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(_DbConnectionString, "[dbo].[AmazonStorePayments_GetAmazonStorePaymentIDsByAmazonReceiptIDHash_Paged]", queryParameters));
 	}
 }
+

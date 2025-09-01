@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class AssetTypesResources_en_us : TranslationResourcesBase, IAssetTypesResources, ITranslationResources
 
 {
@@ -1089,3 +1089,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

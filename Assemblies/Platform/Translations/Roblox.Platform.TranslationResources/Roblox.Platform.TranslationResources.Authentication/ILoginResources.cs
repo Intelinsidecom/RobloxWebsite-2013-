@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface ILoginResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface ILoginResources : ITranslationResources
 
 {
 	/// <summary>
@@ -441,3 +443,5 @@
 
 
 }
+
+

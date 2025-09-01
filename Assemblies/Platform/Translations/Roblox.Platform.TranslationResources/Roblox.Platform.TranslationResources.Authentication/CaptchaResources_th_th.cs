@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class CaptchaResources_th_th : CaptchaResources_en_us, ICaptchaResource
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "à¸à¸£\u0e38à¸“à¸²à¸›\u0e49à¸­à¸™ Captcha";
+	public override string ResponseCaptchaNotEnteredError => "กร\u0e38ณาป\u0e49อน Captcha";
 
 	public CaptchaResources_th_th(TranslationResourceState state)
 		: base(state)
@@ -19,7 +21,7 @@ internal class CaptchaResources_th_th : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "à¸à¸£\u0e38à¸“à¸²à¸›\u0e49à¸­à¸™ Captcha";
+		return "กร\u0e38ณาป\u0e49อน Captcha";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RobloxCreditResources_en_us to provide locale specific translations where possible,
@@ -10,37 +12,37 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Action.ConvertToRobux"
 	/// English String: "Convert To Robux"
 	/// </summary>
-	public override string ActionConvertToRobux => "Robuxã«æ›ç®—ã™ã‚‹";
+	public override string ActionConvertToRobux => "Robuxに換算する";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "å¼•ãæ›ãˆã‚‹";
+	public override string ActionRedeem => "引き換える";
 
 	/// <summary>
 	/// Key: "Heading.GetRobux"
 	/// English String: "Get Robux"
 	/// </summary>
-	public override string HeadingGetRobux => "Robuxã‚’ã‚²ãƒƒãƒˆ";
+	public override string HeadingGetRobux => "Robuxをゲット";
 
 	/// <summary>
 	/// Key: "Heading.RobloxCredit"
 	/// English String: "Roblox credit"
 	/// </summary>
-	public override string HeadingRobloxCredit => "Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆ";
+	public override string HeadingRobloxCredit => "Robloxクレジット";
 
 	/// <summary>
 	/// Key: "Message.FailedDebitRobloxCredit"
 	/// English String: "There has been an issue processing your Roblox credit. Please try again later!"
 	/// </summary>
-	public override string MessageFailedDebitRobloxCredit => "ãŠæŒã¡ã®Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã®å‡¦ç†ã§å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ï¼";
+	public override string MessageFailedDebitRobloxCredit => "お持ちのRobloxクレジットの処理で問題が発生しました。後でもう一度お試しください！";
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
-	public override string MessageFailedGrantingRobux => "Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’å…¥ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€Robuxä»˜ä¸Žã®å‡¦ç†ã§å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚Robuxã‚’å—ã‘å–ã‚‹ã«ã¯ã€ã‚«ã‚¹ã‚¿ãƒžãƒ¼ã‚µãƒãƒ¼ãƒˆã«ã”é€£çµ¡ãã ã•ã„ã€‚";
+	public override string MessageFailedGrantingRobux => "Robloxクレジットを入れました。しかし、Robux付与の処理で問題が発生しました。Robuxを受け取るには、カスタマーサポートにご連絡ください。";
 
 	public RobloxCreditResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -49,12 +51,12 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForActionConvertToRobux()
 	{
-		return "Robuxã«æ›ç®—ã™ã‚‹";
+		return "Robuxに換算する";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "å¼•ãæ›ãˆã‚‹";
+		return "引き換える";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRedeemCreditForRobux(string balance, string robuxAmount)
 	{
-		return $"ãŠæŒã¡ã®{balance} Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’{robuxAmount} ã«å¼•ãæ›ãˆã‚‹";
+		return $"お持ちの{balance} Robloxクレジットを{robuxAmount} に引き換える";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRedeemCreditForRobux()
 	{
-		return "ãŠæŒã¡ã®{balance} Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’{robuxAmount} ã«å¼•ãæ›ãˆã‚‹";
+		return "お持ちの{balance} Robloxクレジットを{robuxAmount} に引き換える";
 	}
 
 	/// <summary>
@@ -78,22 +80,22 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRobloxCreditToRobuxRedemption(string balance, string iconRobux, string robuxAmount)
 	{
-		return $"ãŠæŒã¡ã®{balance} Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’ {iconRobux} {robuxAmount} ã«å¼•ãæ›ãˆã‚‹";
+		return $"お持ちの{balance} Robloxクレジットを {iconRobux} {robuxAmount} に引き換える";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRobloxCreditToRobuxRedemption()
 	{
-		return "ãŠæŒã¡ã®{balance} Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’ {iconRobux} {robuxAmount} ã«å¼•ãæ›ãˆã‚‹";
+		return "お持ちの{balance} Robloxクレジットを {iconRobux} {robuxAmount} に引き換える";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobux()
 	{
-		return "Robuxã‚’ã‚²ãƒƒãƒˆ";
+		return "Robuxをゲット";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxCredit()
 	{
-		return "Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆ";
+		return "Robloxクレジット";
 	}
 
 	/// <summary>
@@ -103,22 +105,22 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string LabelCurrentBalance(string balance)
 	{
-		return $"ç¾åœ¨ã®æ®‹é«˜: ${balance}";
+		return $"現在の残高: ${balance}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentBalance()
 	{
-		return "ç¾åœ¨ã®æ®‹é«˜: ${balance}";
+		return "現在の残高: ${balance}";
 	}
 
 	protected override string _GetTemplateForMessageFailedDebitRobloxCredit()
 	{
-		return "ãŠæŒã¡ã®Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã®å‡¦ç†ã§å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ï¼";
+		return "お持ちのRobloxクレジットの処理で問題が発生しました。後でもう一度お試しください！";
 	}
 
 	protected override string _GetTemplateForMessageFailedGrantingRobux()
 	{
-		return "Robloxã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚’å…¥ã‚Œã¾ã—ãŸã€‚ã—ã‹ã—ã€Robuxä»˜ä¸Žã®å‡¦ç†ã§å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚Robuxã‚’å—ã‘å–ã‚‹ã«ã¯ã€ã‚«ã‚¹ã‚¿ãƒžãƒ¼ã‚µãƒãƒ¼ãƒˆã«ã”é€£çµ¡ãã ã•ã„ã€‚";
+		return "Robloxクレジットを入れました。しかし、Robux付与の処理で問題が発生しました。Robuxを受け取るには、カスタマーサポートにご連絡ください。";
 	}
 
 	/// <summary>
@@ -127,12 +129,12 @@ internal class RobloxCreditResources_ja_jp : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string MessageRobloxCreditToRobuxRedemptionConfirmation(string robuxAmount)
 	{
-		return $"{robuxAmount} Robuxã®å¼•ãæ›ãˆã«æˆåŠŸã—ã¾ã—ãŸï¼";
+		return $"{robuxAmount} Robuxの引き換えに成功しました！";
 	}
 
 	protected override string _GetTemplateForMessageRobloxCreditToRobuxRedemptionConfirmation()
 	{
-		return "{robuxAmount} Robuxã®å¼•ãæ›ãˆã«æˆåŠŸã—ã¾ã—ãŸï¼";
+		return "{robuxAmount} Robuxの引き換えに成功しました！";
 	}
 }
 

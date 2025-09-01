@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class GameGearOptionsDisplayResources_es_es : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "Se permiten todos los gÃ©neros";
+	public override string LabelAllGenreAllowed => "Se permiten todos los géneros";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
@@ -25,7 +27,7 @@ internal class GameGearOptionsDisplayResources_es_es : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "Se permiten todos los gÃ©neros";
+		return "Se permiten todos los géneros";
 	}
 
 	/// <summary>

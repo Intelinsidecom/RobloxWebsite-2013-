@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.FloodCheckers</AssemblyName>
@@ -10,7 +10,10 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <!-- Exclude the minimal Settings.cs under project subfolder; use the full Settings.cs in Roblox.FloodCheckers.Properties -->
+    <Compile Remove="Roblox.FloodCheckers\Properties\Settings.cs" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
     <Reference Include="System.Core" />
@@ -19,11 +22,12 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\\Roblox.FloodCheckers.Core\\Roblox.FloodCheckers.Core.csproj" />
-    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj" />
-    <ProjectReference Include="..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
-    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj" />
-    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
+    <ProjectReference Include="..\Roblox.FloodCheckers.Core\Roblox.FloodCheckers.Core.csproj" />
+    <ProjectReference Include="..\..\Events\Roblox.EventLog\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj" />
+    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\..\Common\Roblox.Common\Roblox.Common.csproj" />
+    <ProjectReference Include="..\..\Platform\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj" />
   </ItemGroup>
 </Project>

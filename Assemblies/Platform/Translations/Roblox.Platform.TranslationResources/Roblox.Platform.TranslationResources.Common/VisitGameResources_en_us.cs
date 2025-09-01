@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class VisitGameResources_en_us : TranslationResourcesBase, IVisitGameResources, ITranslationResources
 
 {
@@ -1477,3 +1477,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

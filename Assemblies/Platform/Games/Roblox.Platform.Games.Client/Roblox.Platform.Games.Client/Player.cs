@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class Player
+namespace Roblox.Platform.Games.Client {
+    public class Player
 
 {
 	public long Id { get; }

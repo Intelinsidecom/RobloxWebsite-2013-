@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides GameSortsResources_en_us to provide locale specific translations where possible,
@@ -70,7 +72,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.GamesForYou"
 	/// English String: "Games for You"
 	/// </summary>
-	public override string LabelGamesForYou => "Jogos para vocÃª";
+	public override string LabelGamesForYou => "Jogos para você";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
@@ -112,7 +114,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.PersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelPersonalizedByLiked => "Porque vocÃª curtiu";
+	public override string LabelPersonalizedByLiked => "Porque você curtiu";
 
 	/// <summary>
 	/// Key: "Label.PersonalServer"
@@ -142,7 +144,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.PopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelPopularNearYou => "Popular perto de vocÃª";
+	public override string LabelPopularNearYou => "Popular perto de você";
 
 	/// <summary>
 	/// Key: "Label.PopularWorldwide"
@@ -196,7 +198,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.TopRated"
 	/// English String: "Top Rated"
 	/// </summary>
-	public override string LabelTopRated => "Melhor avaliaÃ§Ã£o";
+	public override string LabelTopRated => "Melhor avaliação";
 
 	/// <summary>
 	/// Key: "Label.TopResult"
@@ -220,7 +222,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.UpAndComing"
 	/// English String: "Up-and-Coming"
 	/// </summary>
-	public override string LabelUpAndComing => "RevelaÃ§Ãµes";
+	public override string LabelUpAndComing => "Revelações";
 
 	/// <summary>
 	/// Key: "MoreResultsFor"
@@ -285,7 +287,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelGamesForYou()
 	{
-		return "Jogos para vocÃª";
+		return "Jogos para você";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
@@ -320,7 +322,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPersonalizedByLiked()
 	{
-		return "Porque vocÃª curtiu";
+		return "Porque você curtiu";
 	}
 
 	protected override string _GetTemplateForLabelPersonalServer()
@@ -359,7 +361,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelPopularNearYou()
 	{
-		return "Popular perto de vocÃª";
+		return "Popular perto de você";
 	}
 
 	protected override string _GetTemplateForLabelPopularWorldwide()
@@ -404,7 +406,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelTopRated()
 	{
-		return "Melhor avaliaÃ§Ã£o";
+		return "Melhor avaliação";
 	}
 
 	protected override string _GetTemplateForLabelTopResult()
@@ -424,7 +426,7 @@ internal class GameSortsResources_pt_br : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelUpAndComing()
 	{
-		return "RevelaÃ§Ãµes";
+		return "Revelações";
 	}
 
 	protected override string _GetTemplateForMoreResultsFor()

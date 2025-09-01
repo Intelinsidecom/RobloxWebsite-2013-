@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
@@ -10,31 +12,31 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.CashOutSubmit"
 	/// English String: "Cash Out"
 	/// </summary>
-	public override string CashOutFormCashOutSubmit => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆ";
+	public override string CashOutFormCashOutSubmit => "キャッシュアウト";
 
 	/// <summary>
 	/// Key: "CashOutForm.EmailAddressLabel"
 	/// English String: "Email Address"
 	/// </summary>
-	public override string CashOutFormEmailAddressLabel => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
+	public override string CashOutFormEmailAddressLabel => "メールアドレス";
 
 	/// <summary>
 	/// Key: "CashOutForm.ExchangeRateLabel"
 	/// English String: "Exchange Rate"
 	/// </summary>
-	public override string CashOutFormExchangeRateLabel => "äº¤æ›ãƒ¬ãƒ¼ãƒˆ";
+	public override string CashOutFormExchangeRateLabel => "交換レート";
 
 	/// <summary>
 	/// Key: "CashOutForm.FirstNameLabel"
 	/// English String: "First Name"
 	/// </summary>
-	public override string CashOutFormFirstNameLabel => "ä¸‹ã®åå‰";
+	public override string CashOutFormFirstNameLabel => "下の名前";
 
 	/// <summary>
 	/// Key: "CashOutForm.LastNameLabel"
 	/// English String: "Last Name"
 	/// </summary>
-	public override string CashOutFormLastNameLabel => "è‹—å­—";
+	public override string CashOutFormLastNameLabel => "苗字";
 
 	/// <summary>
 	/// Key: "CashOutForm.Robux"
@@ -46,127 +48,127 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.RobuxAmountLabel"
 	/// English String: "Robux Amount"
 	/// </summary>
-	public override string CashOutFormRobuxAmountLabel => "Robuxé¡";
+	public override string CashOutFormRobuxAmountLabel => "Robux額";
 
 	/// <summary>
 	/// Key: "CashOutForm.YouGetLabel"
 	/// English String: "You get up to:"
 	/// </summary>
-	public override string CashOutFormYouGetLabel => "ç²å¾—:";
+	public override string CashOutFormYouGetLabel => "獲得:";
 
 	/// <summary>
 	/// Key: "Label.PasswordLabel"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPasswordLabel => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+	public override string LabelPasswordLabel => "パスワード";
 
 	/// <summary>
 	/// Key: "Label.PasswordPlaceholder"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelPasswordPlaceholder => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
+	public override string LabelPasswordPlaceholder => "アカウントのパスワードの認証";
 
 	/// <summary>
 	/// Key: "PageHeader.Description"
 	/// English String: "Create games, earn money."
 	/// </summary>
-	public override string PageHeaderDescription => "ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ãŠé‡‘ã‚’ç¨¼ã”ã†ã€‚";
+	public override string PageHeaderDescription => "ゲームを制作してお金を稼ごう。";
 
 	/// <summary>
 	/// Key: "PageHeader.Title"
 	/// English String: "Developer Exchange"
 	/// </summary>
-	public override string PageHeaderTitle => "ãƒ‡ãƒ™ãƒ­ãƒƒãƒ‘ãƒ¼ã‚¨ã‚¯ã‚¹ãƒã‚§ãƒ³ã‚¸";
+	public override string PageHeaderTitle => "デベロッパーエクスチェンジ";
 
 	/// <summary>
 	/// Key: "Response.CannotLoadExchangeRate"
 	/// English String: "Sorry, we were unable to load the current exchange rate. Please try again."
 	/// </summary>
-	public override string ResponseCannotLoadExchangeRate => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã®äº¤æ›ãƒ¬ãƒ¼ãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseCannotLoadExchangeRate => "申し訳ありません。現在の交換レートを読み込めませんでした。もう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.CurrencyOperationUnavailable"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseCurrencyOperationUnavailable => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseCurrencyOperationUnavailable => "申し訳ありません。問題が発生しました。もう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.FirstNameRequiredErrorMessage"
 	/// English String: "Please enter your first name."
 	/// </summary>
-	public override string ResponseFirstNameRequiredErrorMessage => "ä¸‹ã®åå‰ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚";
+	public override string ResponseFirstNameRequiredErrorMessage => "下の名前を入力して下さい。";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCredentials"
 	/// English String: "Invalid password."
 	/// </summary>
-	public override string ResponseIncorrectCredentials => "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€‚";
+	public override string ResponseIncorrectCredentials => "無効なパスワード。";
 
 	/// <summary>
 	/// Key: "Response.InsufficientFunds"
 	/// English String: "You do not have enough Robux to complete this transaction."
 	/// </summary>
-	public override string ResponseInsufficientFunds => "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã“ã®å–å¼•ã‚’å®Œäº†ã§ãã¾ã›ã‚“ã€‚";
+	public override string ResponseInsufficientFunds => "Robuxが不足しているためこの取引を完了できません。";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmailErrorMessage"
 	/// English String: "Please enter a valid email address."
 	/// </summary>
-	public override string ResponseInvalidEmailErrorMessage => "æœ‰åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+	public override string ResponseInvalidEmailErrorMessage => "有効なメールアドレスを入力してください。";
 
 	/// <summary>
 	/// Key: "Response.LastNameRequiredErrorMessage"
 	/// English String: "Please enter your last name."
 	/// </summary>
-	public override string ResponseLastNameRequiredErrorMessage => "è‹—å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+	public override string ResponseLastNameRequiredErrorMessage => "苗字を入力してください。";
 
 	/// <summary>
 	/// Key: "Response.RobuxAmountIsBelowMinimumCashoutThreshold"
 	/// English String: "Robux amount below minimum cash out threshold."
 	/// </summary>
-	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robuxé¡ãŒæœ€ä½Žã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆé¡ä»¥ä¸‹ã§ã™ã€‚";
+	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robux額が最低キャッシュアウト額以下です。";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseUnknownError => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseUnknownError => "申し訳ありません。問題が発生しました。もう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.UserBalanceDoesNotHaveMoreRobuxThanMinimumCashout"
 	/// English String: "You cannot cash out for less than the minimum amount."
 	/// </summary>
-	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "æœ€ä½Žé¡ä»¥ä¸‹ã‚’ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "最低額以下をキャッシュアウトすることはできません。";
 
 	/// <summary>
 	/// Key: "Response.UserCannotCashout"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserCannotCashout => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+	public override string ResponseUserCannotCashout => "申し訳ありません。現在、キャッシュアウトする権限がありません。";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã«ã¯ã€Roblox Premiumã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ãŒå¿…è¦ã§ã™ã€‚";
+	public override string ResponseUserDoesNotHavePremium => "キャッシュアウトするには、Roblox Premiumのサブスクリプション契約が必要です。";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã«ã¯èªè¨¼æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "キャッシュアウトするには認証済みのメールアドレスが必要です。";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
 	/// English String: "You need to provide your first and last name."
 	/// </summary>
-	public override string ResponseUserMustProvideFirstAndLastName => "è‹—å­—ã¨ä¸‹ã®åå‰ã®å…¥åŠ›ãŒå¿…è¦ã§ã™ã€‚";
+	public override string ResponseUserMustProvideFirstAndLastName => "苗字と下の名前の入力が必要です。";
 
 	/// <summary>
 	/// Key: "Response.UserNotEligibleError"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserNotEligibleError => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+	public override string ResponseUserNotEligibleError => "申し訳ありません。現在、キャッシュアウトする権限がありません。";
 
 	public DevexCashOutResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -175,7 +177,7 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormCashOutSubmit()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆ";
+		return "キャッシュアウト";
 	}
 
 	/// <summary>
@@ -184,32 +186,32 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"æ”¯æ‰•ã„ã®æ‰‹ç¶šãã‚’å§‹ã‚ã‚‹ã«ã¯ã€ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚ä»¥ä¸‹ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯Roblox DevExãƒãƒ¼ã‚¿ãƒ«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ä¸€è‡´ã—ã¦ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ã«é–¢ã—ã¦ãƒ˜ãƒ«ãƒ—ãŒå¿…è¦ãªå ´åˆã¯ã€{linkStart}ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸ã‚’è¦‹ã¦ãã ã•ã„ã€‚{linkEnd}";
+		return $"支払いの手続きを始めるには、このフォームを完了してください。以下のアドレスはRoblox DevExポータルアカウントのアドレスと一致していなければなりません。このフォームに関してヘルプが必要な場合は、{linkStart}ヘルプページを見てください。{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "æ”¯æ‰•ã„ã®æ‰‹ç¶šãã‚’å§‹ã‚ã‚‹ã«ã¯ã€ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ã‚’å®Œäº†ã—ã¦ãã ã•ã„ã€‚ä»¥ä¸‹ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¯Roblox DevExãƒãƒ¼ã‚¿ãƒ«ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ä¸€è‡´ã—ã¦ã„ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚ã“ã®ãƒ•ã‚©ãƒ¼ãƒ ã«é–¢ã—ã¦ãƒ˜ãƒ«ãƒ—ãŒå¿…è¦ãªå ´åˆã¯ã€{linkStart}ãƒ˜ãƒ«ãƒ—ãƒšãƒ¼ã‚¸ã‚’è¦‹ã¦ãã ã•ã„ã€‚{linkEnd}";
+		return "支払いの手続きを始めるには、このフォームを完了してください。以下のアドレスはRoblox DevExポータルアカウントのアドレスと一致していなければなりません。このフォームに関してヘルプが必要な場合は、{linkStart}ヘルプページを見てください。{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
 	{
-		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
+		return "メールアドレス";
 	}
 
 	protected override string _GetTemplateForCashOutFormExchangeRateLabel()
 	{
-		return "äº¤æ›ãƒ¬ãƒ¼ãƒˆ";
+		return "交換レート";
 	}
 
 	protected override string _GetTemplateForCashOutFormFirstNameLabel()
 	{
-		return "ä¸‹ã®åå‰";
+		return "下の名前";
 	}
 
 	protected override string _GetTemplateForCashOutFormLastNameLabel()
 	{
-		return "è‹—å­—";
+		return "苗字";
 	}
 
 	protected override string _GetTemplateForCashOutFormRobux()
@@ -219,7 +221,7 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormRobuxAmountLabel()
 	{
-		return "Robuxé¡";
+		return "Robux額";
 	}
 
 	/// <summary>
@@ -228,112 +230,112 @@ internal class DevexCashOutResources_ja_jp : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormTermsOfService(string linkStart, string linkEnd)
 	{
-		return $"{linkStart}åˆ©ç”¨è¦ç´„{linkEnd}ã‚’ã™ã§ã«èª­ã¿åŒæ„ã—ã¾ã™";
+		return $"{linkStart}利用規約{linkEnd}をすでに読み同意します";
 	}
 
 	protected override string _GetTemplateForCashOutFormTermsOfService()
 	{
-		return "{linkStart}åˆ©ç”¨è¦ç´„{linkEnd}ã‚’ã™ã§ã«èª­ã¿åŒæ„ã—ã¾ã™";
+		return "{linkStart}利用規約{linkEnd}をすでに読み同意します";
 	}
 
 	protected override string _GetTemplateForCashOutFormYouGetLabel()
 	{
-		return "ç²å¾—:";
+		return "獲得:";
 	}
 
 	protected override string _GetTemplateForLabelPasswordLabel()
 	{
-		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+		return "パスワード";
 	}
 
 	protected override string _GetTemplateForLabelPasswordPlaceholder()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®èªè¨¼";
+		return "アカウントのパスワードの認証";
 	}
 
 	protected override string _GetTemplateForPageHeaderDescription()
 	{
-		return "ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ãŠé‡‘ã‚’ç¨¼ã”ã†ã€‚";
+		return "ゲームを制作してお金を稼ごう。";
 	}
 
 	protected override string _GetTemplateForPageHeaderTitle()
 	{
-		return "ãƒ‡ãƒ™ãƒ­ãƒƒãƒ‘ãƒ¼ã‚¨ã‚¯ã‚¹ãƒã‚§ãƒ³ã‚¸";
+		return "デベロッパーエクスチェンジ";
 	}
 
 	protected override string _GetTemplateForResponseCannotLoadExchangeRate()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã®äº¤æ›ãƒ¬ãƒ¼ãƒˆã‚’èª­ã¿è¾¼ã‚ã¾ã›ã‚“ã§ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "申し訳ありません。現在の交換レートを読み込めませんでした。もう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseCurrencyOperationUnavailable()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "申し訳ありません。問題が発生しました。もう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseFirstNameRequiredErrorMessage()
 	{
-		return "ä¸‹ã®åå‰ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚";
+		return "下の名前を入力して下さい。";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
 	{
-		return "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€‚";
+		return "無効なパスワード。";
 	}
 
 	protected override string _GetTemplateForResponseInsufficientFunds()
 	{
-		return "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã“ã®å–å¼•ã‚’å®Œäº†ã§ãã¾ã›ã‚“ã€‚";
+		return "Robuxが不足しているためこの取引を完了できません。";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmailErrorMessage()
 	{
-		return "æœ‰åŠ¹ãªãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+		return "有効なメールアドレスを入力してください。";
 	}
 
 	protected override string _GetTemplateForResponseLastNameRequiredErrorMessage()
 	{
-		return "è‹—å­—ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+		return "苗字を入力してください。";
 	}
 
 	protected override string _GetTemplateForResponseRobuxAmountIsBelowMinimumCashoutThreshold()
 	{
-		return "Robuxé¡ãŒæœ€ä½Žã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆé¡ä»¥ä¸‹ã§ã™ã€‚";
+		return "Robux額が最低キャッシュアウト額以下です。";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "申し訳ありません。問題が発生しました。もう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout()
 	{
-		return "æœ€ä½Žé¡ä»¥ä¸‹ã‚’ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+		return "最低額以下をキャッシュアウトすることはできません。";
 	}
 
 	protected override string _GetTemplateForResponseUserCannotCashout()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "申し訳ありません。現在、キャッシュアウトする権限がありません。";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã«ã¯ã€Roblox Premiumã®ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„ãŒå¿…è¦ã§ã™ã€‚";
+		return "キャッシュアウトするには、Roblox Premiumのサブスクリプション契約が必要です。";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹ã«ã¯èªè¨¼æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
+		return "キャッシュアウトするには認証済みのメールアドレスが必要です。";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()
 	{
-		return "è‹—å­—ã¨ä¸‹ã®åå‰ã®å…¥åŠ›ãŒå¿…è¦ã§ã™ã€‚";
+		return "苗字と下の名前の入力が必要です。";
 	}
 
 	protected override string _GetTemplateForResponseUserNotEligibleError()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ã€‚ç¾åœ¨ã€ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "申し訳ありません。現在、キャッシュアウトする権限がありません。";
 	}
 }
 

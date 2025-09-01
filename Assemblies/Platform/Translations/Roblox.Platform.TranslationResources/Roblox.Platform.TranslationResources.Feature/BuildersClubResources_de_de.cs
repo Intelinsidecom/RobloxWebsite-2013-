@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -22,13 +24,13 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 	/// Key: "Heading.BuildersClubOnly"
 	/// English String: "Builders Club Only"
 	/// </summary>
-	public override string HeadingBuildersClubOnly => "Nur fÃ¼r â€žBuilders Clubâ€œ-Mitglieder";
+	public override string HeadingBuildersClubOnly => "Nur für „Builders Club“-Mitglieder";
 
 	/// <summary>
 	/// Key: "Label.BuidlersClubOnlyClose"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelBuidlersClubOnlyClose => "SchlieÃŸen";
+	public override string LabelBuidlersClubOnlyClose => "Schließen";
 
 	public BuildersClubResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -51,22 +53,22 @@ internal class BuildersClubResources_de_de : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"Dies ist ein Premium-Artikel, der nur fÃ¼r unsere {bcRequirementName}-Mitglieder verfÃ¼gbar ist.";
+		return $"Dies ist ein Premium-Artikel, der nur für unsere {bcRequirementName}-Mitglieder verfügbar ist.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "Dies ist ein Premium-Artikel, der nur fÃ¼r unsere {bcRequirementName}-Mitglieder verfÃ¼gbar ist.";
+		return "Dies ist ein Premium-Artikel, der nur für unsere {bcRequirementName}-Mitglieder verfügbar ist.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
 	{
-		return "Nur fÃ¼r â€žBuilders Clubâ€œ-Mitglieder";
+		return "Nur für „Builders Club“-Mitglieder";
 	}
 
 	protected override string _GetTemplateForLabelBuidlersClubOnlyClose()
 	{
-		return "SchlieÃŸen";
+		return "Schließen";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class RobloxProductsResources_fr_fr : RobloxProductsResources_en_us, IR
 	/// Key: "Heading.Sorry"
 	/// English String: "Sorry"
 	/// </summary>
-	public override string HeadingSorry => "DÃ©solÃ©";
+	public override string HeadingSorry => "Désolé";
 
 	/// <summary>
 	/// Key: "Message.BuyRobuxToCustomizeAvatar"
 	/// English String: "Buy Robux to customize your avatar and get items in game!"
 	/// </summary>
-	public override string MessageBuyRobuxToCustomizeAvatar => "AchÃ¨te des Robux pour personnaliser ton avatar et obtenir des objets en jeu\u00a0!";
+	public override string MessageBuyRobuxToCustomizeAvatar => "Achète des Robux pour personnaliser ton avatar et obtenir des objets en jeu\u00a0!";
 
 	/// <summary>
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "Les achats de Robux sont temporairement dÃ©sactivÃ©s. RÃ©essaye plus tard.";
+	public override string MessageTryAgainLater => "Les achats de Robux sont temporairement désactivés. Réessaye plus tard.";
 
 	public RobloxProductsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class RobloxProductsResources_fr_fr : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingSorry()
 	{
-		return "DÃ©solÃ©";
+		return "Désolé";
 	}
 
 	protected override string _GetTemplateForMessageBuyRobuxToCustomizeAvatar()
 	{
-		return "AchÃ¨te des Robux pour personnaliser ton avatar et obtenir des objets en jeu\u00a0!";
+		return "Achète des Robux pour personnaliser ton avatar et obtenir des objets en jeu\u00a0!";
 	}
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "Les achats de Robux sont temporairement dÃ©sactivÃ©s. RÃ©essaye plus tard.";
+		return "Les achats de Robux sont temporairement désactivés. Réessaye plus tard.";
 	}
 }
 

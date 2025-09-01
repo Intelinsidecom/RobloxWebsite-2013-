@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
 
@@ -95,3 +95,4 @@ internal class ModeratorStatisticsDAL
 		dbHelper.ExecuteSQLNonQuery("[dbo].[ModeratorStatisticsV2_UpdateInsertModeratorStatisticsV2ByDate]", CommandType.StoredProcedure);
 	}
 }
+

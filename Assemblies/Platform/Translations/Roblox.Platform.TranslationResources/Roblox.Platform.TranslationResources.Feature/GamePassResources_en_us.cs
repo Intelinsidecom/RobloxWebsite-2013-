@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class GamePassResources_en_us : TranslationResourcesBase, IGamePassResources, ITranslationResources
 
 {
@@ -87,3 +87,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

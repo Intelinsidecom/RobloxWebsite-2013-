@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
@@ -10,85 +12,85 @@ internal class CreatePlaceProductPromotionResources_ko_kr : CreatePlaceProductPr
 	/// Key: "Label.AddToGame"
 	/// English String: "Add to Game"
 	/// </summary>
-	public override string LabelAddToGame => "ê²Œìž„ì— ì¶”ê°€";
+	public override string LabelAddToGame => "게임에 추가";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "ì·¨ì†Œ";
+	public override string LabelCancel => "취소";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "ì˜¤ë¥˜";
+	public override string LabelError => "오류";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccured"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccured => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string LabelErrorOccured => "오류가 발생했어요. 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
+	public override string LabelNotForSale => "판매 중인 아이템이 아닙니다.";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "í™•ì¸";
+	public override string LabelOk => "확인";
 
 	/// <summary>
 	/// Key: "Label.PromoteOnYourGame"
 	/// English String: "Promote on your Game"
 	/// </summary>
-	public override string LabelPromoteOnYourGame => "íšŒì›ë‹˜ì˜ ê²Œìž„ì—ì„œ í™ë³´í•˜ê¸°";
+	public override string LabelPromoteOnYourGame => "회원님의 게임에서 홍보하기";
 
 	/// <summary>
 	/// Key: "Label.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string LabelRent => "ë¹Œë¦¬ê¸°";
+	public override string LabelRent => "빌리기";
 
 	/// <summary>
 	/// Key: "Label.SelectGroup"
 	/// English String: "Select Group"
 	/// </summary>
-	public override string LabelSelectGroup => "ê·¸ë£¹ ì„ íƒ";
+	public override string LabelSelectGroup => "그룹 선택";
 
 	/// <summary>
 	/// Key: "Label.SelectNone"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelSelectNone => "ì—†ìŒ";
+	public override string LabelSelectNone => "없음";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGame"
 	/// English String: "Select Your Game"
 	/// </summary>
-	public override string LabelSelectYourGame => "ê²Œìž„ ì„ íƒ";
+	public override string LabelSelectYourGame => "게임 선택";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGameSemicolon"
 	/// English String: "Select Your Game:"
 	/// </summary>
-	public override string LabelSelectYourGameSemicolon => "ê²Œìž„ ì„ íƒ:";
+	public override string LabelSelectYourGameSemicolon => "게임 선택:";
 
 	/// <summary>
 	/// Key: "Label.SorryWeCouldnt"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorryWeCouldnt => "ì£„ì†¡í•©ë‹ˆë‹¤. í•´ë‹¹ ì•„ì´í…œì„ ê²Œìž„ì—ì„œ ì‚­ì œí•  ìˆ˜ ì—†ì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string LabelSorryWeCouldnt => "죄송합니다. 해당 아이템을 게임에서 삭제할 수 없어요. 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "ì™„ë£Œ!";
+	public override string LabelSuccess => "완료!";
 
 	public CreatePlaceProductPromotionResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -97,72 +99,72 @@ internal class CreatePlaceProductPromotionResources_ko_kr : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelAddToGame()
 	{
-		return "ê²Œìž„ì— ì¶”ê°€";
+		return "게임에 추가";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "ì˜¤ë¥˜";
+		return "오류";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccured()
 	{
-		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "오류가 발생했어요. 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
+		return "판매 중인 아이템이 아닙니다.";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForLabelPromoteOnYourGame()
 	{
-		return "íšŒì›ë‹˜ì˜ ê²Œìž„ì—ì„œ í™ë³´í•˜ê¸°";
+		return "회원님의 게임에서 홍보하기";
 	}
 
 	protected override string _GetTemplateForLabelRent()
 	{
-		return "ë¹Œë¦¬ê¸°";
+		return "빌리기";
 	}
 
 	protected override string _GetTemplateForLabelSelectGroup()
 	{
-		return "ê·¸ë£¹ ì„ íƒ";
+		return "그룹 선택";
 	}
 
 	protected override string _GetTemplateForLabelSelectNone()
 	{
-		return "ì—†ìŒ";
+		return "없음";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGame()
 	{
-		return "ê²Œìž„ ì„ íƒ";
+		return "게임 선택";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGameSemicolon()
 	{
-		return "ê²Œìž„ ì„ íƒ:";
+		return "게임 선택:";
 	}
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. í•´ë‹¹ ì•„ì´í…œì„ ê²Œìž„ì—ì„œ ì‚­ì œí•  ìˆ˜ ì—†ì–´ìš”. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "죄송합니다. 해당 아이템을 게임에서 삭제할 수 없어요. 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "ì™„ë£Œ!";
+		return "완료!";
 	}
 
 	/// <summary>
@@ -171,12 +173,12 @@ internal class CreatePlaceProductPromotionResources_ko_kr : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ë©´, ì¶”ê°€í•œ ìž¥ë¹„ëŠ” ê²Œìž„ íŽ˜ì´ì§€ì— í‘œì‹œë˜ê³  ìžë™ì ìœ¼ë¡œ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ëˆ„êµ°ê°€ íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ ë³¸ ìž¥ë¹„ë¥¼ êµ¬ìž…í•˜ë©´ íšŒì›ë‹˜ì€ {affiliateSaleTotal} Robuxë¥¼ íšë“í•  ìˆ˜ ìžˆì–´ìš”!";
+		return $"게임에 장비를 추가하면, 추가한 장비는 게임 페이지에 표시되고 자동적으로 게임에서 사용할 수 있습니다. 누군가 회원님의 게임 페이지에서 본 장비를 구입하면 회원님은 {affiliateSaleTotal} Robux를 획득할 수 있어요!";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "ê²Œìž„ì— ìž¥ë¹„ë¥¼ ì¶”ê°€í•˜ë©´, ì¶”ê°€í•œ ìž¥ë¹„ëŠ” ê²Œìž„ íŽ˜ì´ì§€ì— í‘œì‹œë˜ê³  ìžë™ì ìœ¼ë¡œ ê²Œìž„ì—ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ëˆ„êµ°ê°€ íšŒì›ë‹˜ì˜ ê²Œìž„ íŽ˜ì´ì§€ì—ì„œ ë³¸ ìž¥ë¹„ë¥¼ êµ¬ìž…í•˜ë©´ íšŒì›ë‹˜ì€ {affiliateSaleTotal} Robuxë¥¼ íšë“í•  ìˆ˜ ìžˆì–´ìš”!";
+		return "게임에 장비를 추가하면, 추가한 장비는 게임 페이지에 표시되고 자동적으로 게임에서 사용할 수 있습니다. 누군가 회원님의 게임 페이지에서 본 장비를 구입하면 회원님은 {affiliateSaleTotal} Robux를 획득할 수 있어요!";
 	}
 }
 

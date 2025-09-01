@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
@@ -168,7 +170,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging inâ€¦"
+	/// English String: "Logging in…"
 	/// </summary>
 	public override string LabelLoggingInSpinnerText => "Accesso in corso...";
 
@@ -232,7 +234,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// You can start playing right now, in guest mode!
 	/// English String: "You can start playing right now, in guest mode!"
 	/// </summary>
-	public override string LabelStartPlaying => "Puoi iniziare a giocare subito, in modalitÃ  ospite!";
+	public override string LabelStartPlaying => "Puoi iniziare a giocare subito, in modalità ospite!";
 
 	/// <summary>
 	/// Key: "Label.UnverifiedEmailInstructions"
@@ -293,7 +295,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// An unknown error occurred. Please try again.
 	/// English String: "An unknown error occurred. Please try again."
 	/// </summary>
-	public override string MessageUnknownErrorTryAgain => "Si Ã¨ verificato un errore imprevisto. Riprova.";
+	public override string MessageUnknownErrorTryAgain => "Si è verificato un errore imprevisto. Riprova.";
 
 	/// <summary>
 	/// Key: "Message.UsernameAndPasswordRequired"
@@ -313,7 +315,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// Account has been locked. Please request a password reset.
 	/// English String: "Account has been locked. Please request a password reset."
 	/// </summary>
-	public override string ResponseAccountLockedRequestReset => "L'account Ã¨ stato bloccato. Richiedi di reimpostare la password.";
+	public override string ResponseAccountLockedRequestReset => "L'account è stato bloccato. Richiedi di reimpostare la password.";
 
 	/// <summary>
 	/// Key: "Response.AccountNotFound"
@@ -327,7 +329,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// error message displayed when user attempts to log in with an email that is linked to multiple accounts
 	/// English String: "Your email is associated with more than 1 username. Please login with your username."
 	/// </summary>
-	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "Il tuo indirizzo e-mail Ã¨ associato a piÃ¹ di un nome utente. Accedi con il tuo nome utente.";
+	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "Il tuo indirizzo e-mail è associato a più di un nome utente. Accedi con il tuo nome utente.";
 
 	/// <summary>
 	/// Key: "Response.EmailSent"
@@ -361,7 +363,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// error message shown when user attempts to login with method other than username and an error occurred
 	/// English String: "Something went wrong. Please login with your username."
 	/// </summary>
-	public override string ResponseLoginWithUsername => "Qualcosa Ã¨ andato storto. Accedi con il tuo nome utente.";
+	public override string ResponseLoginWithUsername => "Qualcosa è andato storto. Accedi con il tuo nome utente.";
 
 	/// <summary>
 	/// Key: "Response.PasswordNotProvided"
@@ -374,7 +376,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Response.TooManyAttemptsPleaseWait"
 	/// English String: "Too many attempts. Please wait a bit."
 	/// </summary>
-	public override string ResponseTooManyAttemptsPleaseWait => "Troppi tentativi. Riprova piÃ¹ tardi.";
+	public override string ResponseTooManyAttemptsPleaseWait => "Troppi tentativi. Riprova più tardi.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
@@ -394,14 +396,14 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// error message shown when user attempts to login with unverified email
 	/// English String: "Your email is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedEmailLoginWithUsername => "Il tuo indirizzo e-mail non Ã¨ stato verificato. Accedi con il tuo nome utente.";
+	public override string ResponseUnverifiedEmailLoginWithUsername => "Il tuo indirizzo e-mail non è stato verificato. Accedi con il tuo nome utente.";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedPhoneLoginWithUsername"
 	/// error message shown when user attempts to login with an unverified phone number
 	/// English String: "Your phone is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedPhoneLoginWithUsername => "Il tuo numero di telefono non Ã¨ stato verificato. Accedi con il tuo nome utente.";
+	public override string ResponseUnverifiedPhoneLoginWithUsername => "Il tuo numero di telefono non è stato verificato. Accedi con il tuo nome utente.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotProvided"
@@ -427,7 +429,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "WeChat.RealNameNotVerified"
 	/// English String: "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit https://jiazhang.qq.com/zk/home.html"
 	/// </summary>
-	public override string WeChatRealNameNotVerified => "L'identitÃ  associata al tuo account WeChat non Ã¨ stata verificata. Riprova utilizzando un account WeChat verificato. Vai su https://jiazhang.qq.com/zk/home.html";
+	public override string WeChatRealNameNotVerified => "L'identità associata al tuo account WeChat non è stata verificata. Riprova utilizzando un account WeChat verificato. Vai su https://jiazhang.qq.com/zk/home.html";
 
 	public LoginResources_it_it(TranslationResourceState state)
 		: base(state)
@@ -616,7 +618,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelStartPlaying()
 	{
-		return "Puoi iniziare a giocare subito, in modalitÃ  ospite!";
+		return "Puoi iniziare a giocare subito, in modalità ospite!";
 	}
 
 	protected override string _GetTemplateForLabelUnverifiedEmailInstructions()
@@ -661,7 +663,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForMessageUnknownErrorTryAgain()
 	{
-		return "Si Ã¨ verificato un errore imprevisto. Riprova.";
+		return "Si è verificato un errore imprevisto. Riprova.";
 	}
 
 	protected override string _GetTemplateForMessageUsernameAndPasswordRequired()
@@ -676,7 +678,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseAccountLockedRequestReset()
 	{
-		return "L'account Ã¨ stato bloccato. Richiedi di reimpostare la password.";
+		return "L'account è stato bloccato. Richiedi di reimpostare la password.";
 	}
 
 	protected override string _GetTemplateForResponseAccountNotFound()
@@ -686,7 +688,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseEmailLinkedToMultipleAccountsLoginWithUsername()
 	{
-		return "Il tuo indirizzo e-mail Ã¨ associato a piÃ¹ di un nome utente. Accedi con il tuo nome utente.";
+		return "Il tuo indirizzo e-mail è associato a più di un nome utente. Accedi con il tuo nome utente.";
 	}
 
 	protected override string _GetTemplateForResponseEmailSent()
@@ -711,7 +713,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseLoginWithUsername()
 	{
-		return "Qualcosa Ã¨ andato storto. Accedi con il tuo nome utente.";
+		return "Qualcosa è andato storto. Accedi con il tuo nome utente.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordNotProvided()
@@ -721,7 +723,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseTooManyAttemptsPleaseWait()
 	{
-		return "Troppi tentativi. Riprova piÃ¹ tardi.";
+		return "Troppi tentativi. Riprova più tardi.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
@@ -736,12 +738,12 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseUnverifiedEmailLoginWithUsername()
 	{
-		return "Il tuo indirizzo e-mail non Ã¨ stato verificato. Accedi con il tuo nome utente.";
+		return "Il tuo indirizzo e-mail non è stato verificato. Accedi con il tuo nome utente.";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedPhoneLoginWithUsername()
 	{
-		return "Il tuo numero di telefono non Ã¨ stato verificato. Accedi con il tuo nome utente.";
+		return "Il tuo numero di telefono non è stato verificato. Accedi con il tuo nome utente.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotProvided()
@@ -760,12 +762,12 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string ResponseWeChatNotRealNameVerified(string url)
 	{
-		return $"L'identitÃ  associata al tuo account WeChat non Ã¨ stata verificata. Riprova utilizzando un account WeChat verificato. Vai su {url}";
+		return $"L'identità associata al tuo account WeChat non è stata verificata. Riprova utilizzando un account WeChat verificato. Vai su {url}";
 	}
 
 	protected override string _GetTemplateForResponseWeChatNotRealNameVerified()
 	{
-		return "L'identitÃ  associata al tuo account WeChat non Ã¨ stata verificata. Riprova utilizzando un account WeChat verificato. Vai su {url}";
+		return "L'identità associata al tuo account WeChat non è stata verificata. Riprova utilizzando un account WeChat verificato. Vai su {url}";
 	}
 
 	protected override string _GetTemplateForWeChatAntiAddictionText()
@@ -775,7 +777,7 @@ internal class LoginResources_it_it : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForWeChatRealNameNotVerified()
 	{
-		return "L'identitÃ  associata al tuo account WeChat non Ã¨ stata verificata. Riprova utilizzando un account WeChat verificato. Vai su https://jiazhang.qq.com/zk/home.html";
+		return "L'identità associata al tuo account WeChat non è stata verificata. Riprova utilizzando un account WeChat verificato. Vai su https://jiazhang.qq.com/zk/home.html";
 	}
 }
 

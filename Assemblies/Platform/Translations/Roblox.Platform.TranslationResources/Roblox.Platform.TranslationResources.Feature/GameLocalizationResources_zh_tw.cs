@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLocalizationResources_en_us to provide locale specific translations where possible,
@@ -11,219 +13,219 @@ internal class GameLocalizationResources_zh_tw : GameLocalizationResources_en_us
 	/// The label for the cancel button
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Clear"
 	/// The label for the clear button
 	/// English String: "Clear"
 	/// </summary>
-	public override string ActionClear => "æ¸…é™¤";
+	public override string ActionClear => "清除";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// The label for the confirm button
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "ç¢ºèª";
+	public override string ActionConfirm => "確認";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// The label for the save button
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "å„²å­˜";
+	public override string ActionSave => "儲存";
 
 	/// <summary>
 	/// Key: "Description.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string DescriptionContentModerationError => "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚è«‹æª¢æŸ¥å…§å®¹æ˜¯å¦é­åˆ°éŽæ¿¾ï¼Œç„¶å¾Œé‡æ–°å˜—è©¦ã€‚";
+	public override string DescriptionContentModerationError => "錯誤：無法儲存。請檢查內容是否遭到過濾，然後重新嘗試。";
 
 	/// <summary>
 	/// Key: "Description.GeneralError"
 	/// The error text for all the other backend error codes
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string DescriptionGeneralError => "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚";
+	public override string DescriptionGeneralError => "錯誤：無法儲存。";
 
 	/// <summary>
 	/// Key: "Description.NonSourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "If no translations are provided, users will see the source language values."
 	/// </summary>
-	public override string DescriptionNonSourceLanguageForm => "è‹¥æœªæä¾›ç¿»è­¯ï¼Œä½¿ç”¨è€…å°‡æœƒçœ‹è¦‹æºèªžè¨€å€¼ã€‚";
+	public override string DescriptionNonSourceLanguageForm => "若未提供翻譯，使用者將會看見源語言值。";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "You have unsaved changes. Are you sure you want to switch language?"
 	/// </summary>
-	public override string DescriptionSave => "æ‚¨æœ‰æœªå„²å­˜çš„è®Šæ›´ã€‚ç¢ºå®šåˆ‡æ›èªžè¨€ï¼Ÿ";
+	public override string DescriptionSave => "您有未儲存的變更。確定切換語言？";
 
 	/// <summary>
 	/// Key: "Description.SaveSuccess"
 	/// The feedback for user when saving has succeeded
 	/// English String: "Name and Description saved."
 	/// </summary>
-	public override string DescriptionSaveSuccess => "åç¨±èˆ‡èªªæ˜Žå·²å„²å­˜ã€‚";
+	public override string DescriptionSaveSuccess => "名稱與說明已儲存。";
 
 	/// <summary>
 	/// Key: "Description.SourceLanguageForm"
 	/// The info shown to user when they are viewing the name and description in the source language
 	/// English String: "Source language values are shown as a reference. They can only be viewed here."
 	/// </summary>
-	public override string DescriptionSourceLanguageForm => "é¡¯ç¤ºçš„æºèªžè¨€å€¼ç‚ºåƒè€ƒç”¨ï¼Œåªå¯ä»¥åœ¨æ­¤è™•æª¢è¦–ã€‚";
+	public override string DescriptionSourceLanguageForm => "顯示的源語言值為參考用，只可以在此處檢視。";
 
 	/// <summary>
 	/// Key: "Heading.Clear"
 	/// The modal title for clear confirmation modal
 	/// English String: "Clear Values"
 	/// </summary>
-	public override string HeadingClear => "æ¸…é™¤å€¼";
+	public override string HeadingClear => "清除值";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureLocalization"
 	/// page heading
 	/// English String: "Configure Localization"
 	/// </summary>
-	public override string HeadingConfigureLocalization => "æœ¬åœ°åŒ–è¨­å®š";
+	public override string HeadingConfigureLocalization => "本地化設定";
 
 	/// <summary>
 	/// Key: "Heading.GameNameDescriptionTranslations"
 	/// The header for the game info section in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string HeadingGameNameDescriptionTranslations => "éŠæˆ²åç¨±èˆ‡èªªæ˜Žç¿»è­¯";
+	public override string HeadingGameNameDescriptionTranslations => "遊戲名稱與說明翻譯";
 
 	/// <summary>
 	/// Key: "Heading.Save"
 	/// The content for unsaved changes warning modal
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingSave => "æœªå„²å­˜è®Šæ›´";
+	public override string HeadingSave => "未儲存變更";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// The label for the game name input field
 	/// English String: "Description: "
 	/// </summary>
-	public override string LabelDescription => "èªªæ˜Žï¼š";
+	public override string LabelDescription => "說明：";
 
 	/// <summary>
 	/// Key: "Label.GameDescriptionPlaceholder"
 	/// The placeholder for the game description input field
 	/// English String: "Enter game description here"
 	/// </summary>
-	public override string LabelGameDescriptionPlaceholder => "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²èªªæ˜Ž";
+	public override string LabelGameDescriptionPlaceholder => "於此處輸入遊戲說明";
 
 	/// <summary>
 	/// Key: "Label.GameInfo"
 	/// The label for the game info sub tab in localization tab
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelGameInfo => "éŠæˆ²è³‡è¨Š";
+	public override string LabelGameInfo => "遊戲資訊";
 
 	/// <summary>
 	/// Key: "Label.GameNameDescriptionTranslations"
 	/// The label for the game info tab in localization page
 	/// English String: "Game Name and Description Translations"
 	/// </summary>
-	public override string LabelGameNameDescriptionTranslations => "éŠæˆ²åç¨±èˆ‡èªªæ˜Žç¿»è­¯";
+	public override string LabelGameNameDescriptionTranslations => "遊戲名稱與說明翻譯";
 
 	/// <summary>
 	/// Key: "Label.GameNamePlaceholder"
 	/// The placeholder for the game name input field
 	/// English String: "Enter game name here (required)"
 	/// </summary>
-	public override string LabelGameNamePlaceholder => "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²åç¨±ï¼ˆå¿…å¡«ï¼‰";
+	public override string LabelGameNamePlaceholder => "於此處輸入遊戲名稱（必填）";
 
 	/// <summary>
 	/// Key: "Label.GameTitlePlaceholder"
 	/// placeholder text for entering game title in a text input
 	/// English String: "Enter game name here"
 	/// </summary>
-	public override string LabelGameTitlePlaceholder => "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²åç¨±";
+	public override string LabelGameTitlePlaceholder => "於此處輸入遊戲名稱";
 
 	/// <summary>
 	/// Key: "Label.Localization"
 	/// The label for localization tab and its header in configure game page
 	/// English String: "Localization"
 	/// </summary>
-	public override string LabelLocalization => "æœ¬åœ°åŒ–";
+	public override string LabelLocalization => "本地化";
 
 	/// <summary>
 	/// Key: "Label.Name"
 	/// The label for the game name input field
 	/// English String: "Name: "
 	/// </summary>
-	public override string LabelName => "åç¨±ï¼š ";
+	public override string LabelName => "名稱： ";
 
 	/// <summary>
 	/// Key: "Label.SupportedLanguages"
 	/// The label for the supported languages sub tab in localization tab
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string LabelSupportedLanguages => "æ”¯æ´èªžè¨€";
+	public override string LabelSupportedLanguages => "支援語言";
 
 	/// <summary>
 	/// Key: "Label.TabGameInfo"
 	/// English String: "Game Info"
 	/// </summary>
-	public override string LabelTabGameInfo => "éŠæˆ²è³‡è¨Š";
+	public override string LabelTabGameInfo => "遊戲資訊";
 
 	/// <summary>
 	/// Key: "Label.TabLanguages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelTabLanguages => "èªžè¨€";
+	public override string LabelTabLanguages => "語言";
 
 	/// <summary>
 	/// Key: "Label.TabReports"
 	/// English String: "Reports"
 	/// </summary>
-	public override string LabelTabReports => "èˆ‰å ±";
+	public override string LabelTabReports => "舉報";
 
 	/// <summary>
 	/// Key: "Label.TabSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelTabSettings => "è¨­å®š";
+	public override string LabelTabSettings => "設定";
 
 	/// <summary>
 	/// Key: "Label.TabTranslators"
 	/// English String: "Translators"
 	/// </summary>
-	public override string LabelTabTranslators => "è­¯è€…";
+	public override string LabelTabTranslators => "譯者";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Game Title (or Name) field label, corresponding text area editable by game developer
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "æ¨™é¡Œ";
+	public override string LabelTitle => "標題";
 
 	/// <summary>
 	/// Key: "Response.ContentModerationError"
 	/// The error text when user's input does not pass the backend text filter
 	/// English String: "Error: Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚è«‹æª¢æŸ¥å…§å®¹æ˜¯å¦é­åˆ°éŽæ¿¾ï¼Œç„¶å¾Œé‡æ–°å˜—è©¦ã€‚";
+	public override string ResponseContentModerationError => "錯誤：無法儲存。請檢查內容是否遭到過濾，然後重新嘗試。";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "éŒ¯èª¤ï¼šç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string ResponseGeneralError => "錯誤：發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.GeneralSaveError"
 	/// The error text for all the other backend error code during save
 	/// English String: "Error: Could not save."
 	/// </summary>
-	public override string ResponseGeneralSaveError => "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚";
+	public override string ResponseGeneralSaveError => "錯誤：無法儲存。";
 
 	public GameLocalizationResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -232,22 +234,22 @@ internal class GameLocalizationResources_zh_tw : GameLocalizationResources_en_us
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionClear()
 	{
-		return "æ¸…é™¤";
+		return "清除";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "ç¢ºèª";
+		return "確認";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "å„²å­˜";
+		return "儲存";
 	}
 
 	/// <summary>
@@ -257,152 +259,152 @@ internal class GameLocalizationResources_zh_tw : GameLocalizationResources_en_us
 	/// </summary>
 	public override string DescriptionClear(string languageName)
 	{
-		return $"ç¢ºå®šæ¸…é™¤{languageName}ç¿»è­¯ï¼Ÿä½¿ç”¨è€…å°‡æœƒçœ‹åˆ°éŠæˆ²æºèªžè¨€çš„åç¨±å’Œèªªæ˜Žã€‚";
+		return $"確定清除{languageName}翻譯？使用者將會看到遊戲源語言的名稱和說明。";
 	}
 
 	protected override string _GetTemplateForDescriptionClear()
 	{
-		return "ç¢ºå®šæ¸…é™¤{languageName}ç¿»è­¯ï¼Ÿä½¿ç”¨è€…å°‡æœƒçœ‹åˆ°éŠæˆ²æºèªžè¨€çš„åç¨±å’Œèªªæ˜Žã€‚";
+		return "確定清除{languageName}翻譯？使用者將會看到遊戲源語言的名稱和說明。";
 	}
 
 	protected override string _GetTemplateForDescriptionContentModerationError()
 	{
-		return "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚è«‹æª¢æŸ¥å…§å®¹æ˜¯å¦é­åˆ°éŽæ¿¾ï¼Œç„¶å¾Œé‡æ–°å˜—è©¦ã€‚";
+		return "錯誤：無法儲存。請檢查內容是否遭到過濾，然後重新嘗試。";
 	}
 
 	protected override string _GetTemplateForDescriptionGeneralError()
 	{
-		return "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚";
+		return "錯誤：無法儲存。";
 	}
 
 	protected override string _GetTemplateForDescriptionNonSourceLanguageForm()
 	{
-		return "è‹¥æœªæä¾›ç¿»è­¯ï¼Œä½¿ç”¨è€…å°‡æœƒçœ‹è¦‹æºèªžè¨€å€¼ã€‚";
+		return "若未提供翻譯，使用者將會看見源語言值。";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "æ‚¨æœ‰æœªå„²å­˜çš„è®Šæ›´ã€‚ç¢ºå®šåˆ‡æ›èªžè¨€ï¼Ÿ";
+		return "您有未儲存的變更。確定切換語言？";
 	}
 
 	protected override string _GetTemplateForDescriptionSaveSuccess()
 	{
-		return "åç¨±èˆ‡èªªæ˜Žå·²å„²å­˜ã€‚";
+		return "名稱與說明已儲存。";
 	}
 
 	protected override string _GetTemplateForDescriptionSourceLanguageForm()
 	{
-		return "é¡¯ç¤ºçš„æºèªžè¨€å€¼ç‚ºåƒè€ƒç”¨ï¼Œåªå¯ä»¥åœ¨æ­¤è™•æª¢è¦–ã€‚";
+		return "顯示的源語言值為參考用，只可以在此處檢視。";
 	}
 
 	protected override string _GetTemplateForHeadingClear()
 	{
-		return "æ¸…é™¤å€¼";
+		return "清除值";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureLocalization()
 	{
-		return "æœ¬åœ°åŒ–è¨­å®š";
+		return "本地化設定";
 	}
 
 	protected override string _GetTemplateForHeadingGameNameDescriptionTranslations()
 	{
-		return "éŠæˆ²åç¨±èˆ‡èªªæ˜Žç¿»è­¯";
+		return "遊戲名稱與說明翻譯";
 	}
 
 	protected override string _GetTemplateForHeadingSave()
 	{
-		return "æœªå„²å­˜è®Šæ›´";
+		return "未儲存變更";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "èªªæ˜Žï¼š";
+		return "說明：";
 	}
 
 	protected override string _GetTemplateForLabelGameDescriptionPlaceholder()
 	{
-		return "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²èªªæ˜Ž";
+		return "於此處輸入遊戲說明";
 	}
 
 	protected override string _GetTemplateForLabelGameInfo()
 	{
-		return "éŠæˆ²è³‡è¨Š";
+		return "遊戲資訊";
 	}
 
 	protected override string _GetTemplateForLabelGameNameDescriptionTranslations()
 	{
-		return "éŠæˆ²åç¨±èˆ‡èªªæ˜Žç¿»è­¯";
+		return "遊戲名稱與說明翻譯";
 	}
 
 	protected override string _GetTemplateForLabelGameNamePlaceholder()
 	{
-		return "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²åç¨±ï¼ˆå¿…å¡«ï¼‰";
+		return "於此處輸入遊戲名稱（必填）";
 	}
 
 	protected override string _GetTemplateForLabelGameTitlePlaceholder()
 	{
-		return "æ–¼æ­¤è™•è¼¸å…¥éŠæˆ²åç¨±";
+		return "於此處輸入遊戲名稱";
 	}
 
 	protected override string _GetTemplateForLabelLocalization()
 	{
-		return "æœ¬åœ°åŒ–";
+		return "本地化";
 	}
 
 	protected override string _GetTemplateForLabelName()
 	{
-		return "åç¨±ï¼š ";
+		return "名稱： ";
 	}
 
 	protected override string _GetTemplateForLabelSupportedLanguages()
 	{
-		return "æ”¯æ´èªžè¨€";
+		return "支援語言";
 	}
 
 	protected override string _GetTemplateForLabelTabGameInfo()
 	{
-		return "éŠæˆ²è³‡è¨Š";
+		return "遊戲資訊";
 	}
 
 	protected override string _GetTemplateForLabelTabLanguages()
 	{
-		return "èªžè¨€";
+		return "語言";
 	}
 
 	protected override string _GetTemplateForLabelTabReports()
 	{
-		return "èˆ‰å ±";
+		return "舉報";
 	}
 
 	protected override string _GetTemplateForLabelTabSettings()
 	{
-		return "è¨­å®š";
+		return "設定";
 	}
 
 	protected override string _GetTemplateForLabelTabTranslators()
 	{
-		return "è­¯è€…";
+		return "譯者";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "æ¨™é¡Œ";
+		return "標題";
 	}
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚è«‹æª¢æŸ¥å…§å®¹æ˜¯å¦é­åˆ°éŽæ¿¾ï¼Œç„¶å¾Œé‡æ–°å˜—è©¦ã€‚";
+		return "錯誤：無法儲存。請檢查內容是否遭到過濾，然後重新嘗試。";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "éŒ¯èª¤ï¼šç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "錯誤：發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseGeneralSaveError()
 	{
-		return "éŒ¯èª¤ï¼šç„¡æ³•å„²å­˜ã€‚";
+		return "錯誤：無法儲存。";
 	}
 }
 

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-namespace Roblox.Platform.Games.Clientpublic {
-    interface IGamesAuthority
+namespace Roblox.Platform.Games.Client {
+    public interface IGamesAuthority
 
 {
 	void Close(long placeId, CloseGameReasonType closeGameReasonType, int[] excludedMatchmakingContextIds = null, ReplacementConfiguration replacementConfiguration = null);

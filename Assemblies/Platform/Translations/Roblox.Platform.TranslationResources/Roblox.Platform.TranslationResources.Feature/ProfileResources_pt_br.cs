@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
@@ -518,6 +520,11 @@ internal class ProfileResources_pt_br : ProfileResources_en_us, IProfileResource
 	public ProfileResources_pt_br(TranslationResourceState state)
 		: base(state)
 	{
+	}
+
+	public new string GetFullContentNamespaceName()
+	{
+		return "Feature.Profile";
 	}
 
 	protected override string _GetTemplateForActionAccept()

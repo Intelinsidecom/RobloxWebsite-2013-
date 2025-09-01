@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RobloxCreditResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "EinlÃ¶sen";
+	public override string ActionRedeem => "Einlösen";
 
 	/// <summary>
 	/// Key: "Heading.GetRobux"
@@ -34,11 +36,11 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Message.FailedDebitRobloxCredit"
 	/// English String: "There has been an issue processing your Roblox credit. Please try again later!"
 	/// </summary>
-	public override string MessageFailedDebitRobloxCredit => "Bei der Verarbeitung deines Roblox-Guthabens ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut!";
+	public override string MessageFailedDebitRobloxCredit => "Bei der Verarbeitung deines Roblox-Guthabens ist ein Problem aufgetreten. Bitte versuche es später erneut!";
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
 	public override string MessageFailedGrantingRobux => "Wir haben deine Roblox-Credits gutgeschrieben, aber bei der Verarbeitung deines Robux-Zuschusses ist ein Fehler aufgetreten. Wende dich bitte an den Kundendienst, um deine Robux zu erhalten.";
 
@@ -54,7 +56,7 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "EinlÃ¶sen";
+		return "Einlösen";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRedeemCreditForRobux(string balance, string robuxAmount)
 	{
-		return $"LÃ¶se dein {balance} Roblox-Guthaben in {robuxAmount} ein";
+		return $"Löse dein {balance} Roblox-Guthaben in {robuxAmount} ein";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRedeemCreditForRobux()
 	{
-		return "LÃ¶se dein {balance} Roblox-Guthaben in {robuxAmount} ein";
+		return "Löse dein {balance} Roblox-Guthaben in {robuxAmount} ein";
 	}
 
 	/// <summary>
@@ -78,12 +80,12 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRobloxCreditToRobuxRedemption(string balance, string iconRobux, string robuxAmount)
 	{
-		return $"LÃ¶se dein {balance} Roblox-Guthaben in {iconRobux} {robuxAmount} ein";
+		return $"Löse dein {balance} Roblox-Guthaben in {iconRobux} {robuxAmount} ein";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRobloxCreditToRobuxRedemption()
 	{
-		return "LÃ¶se dein {balance} Roblox-Guthaben in {iconRobux} {robuxAmount} ein";
+		return "Löse dein {balance} Roblox-Guthaben in {iconRobux} {robuxAmount} ein";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobux()
@@ -113,7 +115,7 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForMessageFailedDebitRobloxCredit()
 	{
-		return "Bei der Verarbeitung deines Roblox-Guthabens ist ein Problem aufgetreten. Bitte versuche es spÃ¤ter erneut!";
+		return "Bei der Verarbeitung deines Roblox-Guthabens ist ein Problem aufgetreten. Bitte versuche es später erneut!";
 	}
 
 	protected override string _GetTemplateForMessageFailedGrantingRobux()
@@ -127,12 +129,12 @@ internal class RobloxCreditResources_de_de : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string MessageRobloxCreditToRobuxRedemptionConfirmation(string robuxAmount)
 	{
-		return $"Du hast {robuxAmount} Robux erfolgreich eingelÃ¶st!";
+		return $"Du hast {robuxAmount} Robux erfolgreich eingelöst!";
 	}
 
 	protected override string _GetTemplateForMessageRobloxCreditToRobuxRedemptionConfirmation()
 	{
-		return "Du hast {robuxAmount} Robux erfolgreich eingelÃ¶st!";
+		return "Du hast {robuxAmount} Robux erfolgreich eingelöst!";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ItemModelResources_en_us to provide locale specific translations where possible,
@@ -10,127 +12,127 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.AmazonExclusiveItem"
 	/// English String: "This is an Amazon exclusive item."
 	/// </summary>
-	public override string LabelAmazonExclusiveItem => "æ­¤ç‚º Amazon é™å®šé“å…·ã€‚";
+	public override string LabelAmazonExclusiveItem => "此為 Amazon 限定道具。";
 
 	/// <summary>
 	/// Key: "Label.AudioAssetBlockedCopyright"
 	/// English String: "This audio asset has been blocked due to copyright violations.\n"
 	/// </summary>
-	public override string LabelAudioAssetBlockedCopyright => "å› ä¾µçŠ¯è‘—ä½œæ¬Šï¼Œæ­¤éŸ³è¨Šç´ æå·²è¢«å°éŽ–ã€‚\n";
+	public override string LabelAudioAssetBlockedCopyright => "因侵犯著作權，此音訊素材已被封鎖。\n";
 
 	/// <summary>
 	/// Key: "Label.GooglePlayExclusiveItem"
 	/// English String: "This is a Google Play exclusive item."
 	/// </summary>
-	public override string LabelGooglePlayExclusiveItem => "æ­¤ç‚º Google Play é™å®šé“å…·ã€‚";
+	public override string LabelGooglePlayExclusiveItem => "此為 Google Play 限定道具。";
 
 	/// <summary>
 	/// Key: "Label.IosDeviceExclusiveItem"
 	/// English String: "This is an iOS exclusive item."
 	/// </summary>
-	public override string LabelIosDeviceExclusiveItem => "æ­¤ç‚º iOS é™å®šé“å…·ã€‚";
+	public override string LabelIosDeviceExclusiveItem => "此為 iOS 限定道具。";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailableInventory"
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailableInventory => "æ­¤é“å…·åœ¨æ‚¨çš„é“å…·æ¬„ã€‚";
+	public override string LabelItemAvailableInventory => "此道具在您的道具欄。";
 
 	/// <summary>
 	/// Key: "Label.ItemHasBeenModerated"
 	/// English String: "This item has been moderated."
 	/// </summary>
-	public override string LabelItemHasBeenModerated => "æ­¤é“å…·é­åˆ°éŽæ¿¾ã€‚";
+	public override string LabelItemHasBeenModerated => "此道具遭到過濾。";
 
 	/// <summary>
 	/// Key: "Label.ItemNoLongerForSale"
 	/// English String: "This item is no longer for sale."
 	/// </summary>
-	public override string LabelItemNoLongerForSale => "æ­¤é“å…·å·²åœæ­¢è²©è³£ã€‚";
+	public override string LabelItemNoLongerForSale => "此道具已停止販賣。";
 
 	/// <summary>
 	/// Key: "Label.ItemNotCurrentlyForSale"
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotCurrentlyForSale => "æ­¤é“å…·ç›®å‰ç‚ºéžè³£å“ã€‚";
+	public override string LabelItemNotCurrentlyForSale => "此道具目前為非賣品。";
 
 	/// <summary>
 	/// Key: "Label.MobileDeviceExclusiveItem"
 	/// English String: "This is a mobile exclusive item."
 	/// </summary>
-	public override string LabelMobileDeviceExclusiveItem => "æ­¤ç‚ºè¡Œå‹•è£ç½®é™å®šé“å…·ã€‚";
+	public override string LabelMobileDeviceExclusiveItem => "此為行動裝置限定道具。";
 
 	/// <summary>
 	/// Key: "Label.NoDescriptionAvailable"
 	/// English String: "No description available."
 	/// </summary>
-	public override string LabelNoDescriptionAvailable => "æ²’æœ‰èªªæ˜Žã€‚";
+	public override string LabelNoDescriptionAvailable => "沒有說明。";
 
 	/// <summary>
 	/// Key: "Label.NoOneCurrentlySelling"
 	/// English String: "There is no one currently selling this item."
 	/// </summary>
-	public override string LabelNoOneCurrentlySelling => "ç›®å‰æ²’æœ‰äººè²©è³£æ­¤é“å…·ã€‚";
+	public override string LabelNoOneCurrentlySelling => "目前沒有人販賣此道具。";
 
 	/// <summary>
 	/// Key: "Label.NoOtherSellers"
 	/// English String: "No other sellers."
 	/// </summary>
-	public override string LabelNoOtherSellers => "ç„¡å…¶ä»–è³£å®¶ã€‚";
+	public override string LabelNoOtherSellers => "無其他賣家。";
 
 	/// <summary>
 	/// Key: "Label.NotAvailable"
 	/// English String: "N/A"
 	/// </summary>
-	public override string LabelNotAvailable => "ç„¡";
+	public override string LabelNotAvailable => "無";
 
 	/// <summary>
 	/// Key: "Label.PurchasingTemporarilyUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string LabelPurchasingTemporarilyUnavailable => "æš«æ™‚ç„¡æ³•è³¼è²·ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string LabelPurchasingTemporarilyUnavailable => "暫時無法購買，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Label.Resellers"
 	/// English String: "Resellers"
 	/// </summary>
-	public override string LabelResellers => "è½‰è³£è€…";
+	public override string LabelResellers => "轉賣者";
 
 	/// <summary>
 	/// Key: "Label.RobloxAsset"
 	/// English String: "Roblox Asset"
 	/// </summary>
-	public override string LabelRobloxAsset => "Roblox ç´ æ";
+	public override string LabelRobloxAsset => "Roblox 素材";
 
 	/// <summary>
 	/// Key: "Label.TakeOff"
 	/// English String: "Take Off"
 	/// </summary>
-	public override string LabelTakeOff => "è„«ä¸‹";
+	public override string LabelTakeOff => "脫下";
 
 	/// <summary>
 	/// Key: "Label.ToInstallOpenStudio"
 	/// English String: "To install, open this page in Roblox Studio."
 	/// </summary>
-	public override string LabelToInstallOpenStudio => "è‹¥è¦å®‰è£ï¼Œè«‹åœ¨ Roblox Studio é–‹å•Ÿæ­¤é é¢ã€‚";
+	public override string LabelToInstallOpenStudio => "若要安裝，請在 Roblox Studio 開啟此頁面。";
 
 	/// <summary>
 	/// Key: "Label.Wear"
 	/// English String: "Wear"
 	/// </summary>
-	public override string LabelWear => "ç©¿æˆ´";
+	public override string LabelWear => "穿戴";
 
 	/// <summary>
 	/// Key: "Label.XboxOneExclusiveItem"
 	/// English String: "This is a Xbox One exclusive item."
 	/// </summary>
-	public override string LabelXboxOneExclusiveItem => "æ­¤ç‚º Xbox One é™å®šé“å…·ã€‚";
+	public override string LabelXboxOneExclusiveItem => "此為 Xbox One 限定道具。";
 
 	/// <summary>
 	/// Key: "Label.YouAreSelling"
 	/// English String: "You are selling this item."
 	/// </summary>
-	public override string LabelYouAreSelling => "æ‚¨æ­£åœ¨è²©è³£æ­¤é“å…·ã€‚";
+	public override string LabelYouAreSelling => "您正在販賣此道具。";
 
 	public ItemModelResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -139,7 +141,7 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelAmazonExclusiveItem()
 	{
-		return "æ­¤ç‚º Amazon é™å®šé“å…·ã€‚";
+		return "此為 Amazon 限定道具。";
 	}
 
 	/// <summary>
@@ -162,17 +164,17 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelAssetOptionRental(string assetOption)
 	{
-		return $"{assetOption}ç§Ÿç”¨";
+		return $"{assetOption}租用";
 	}
 
 	protected override string _GetTemplateForLabelAssetOptionRental()
 	{
-		return "{assetOption}ç§Ÿç”¨";
+		return "{assetOption}租用";
 	}
 
 	protected override string _GetTemplateForLabelAudioAssetBlockedCopyright()
 	{
-		return "å› ä¾µçŠ¯è‘—ä½œæ¬Šï¼Œæ­¤éŸ³è¨Šç´ æå·²è¢«å°éŽ–ã€‚\n";
+		return "因侵犯著作權，此音訊素材已被封鎖。\n";
 	}
 
 	/// <summary>
@@ -181,12 +183,12 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelBcRequirementExclusiveItem(string bcRequirementName)
 	{
-		return $"{bcRequirementName} é™å®šé“å…·ã€‚";
+		return $"{bcRequirementName} 限定道具。";
 	}
 
 	protected override string _GetTemplateForLabelBcRequirementExclusiveItem()
 	{
-		return "{bcRequirementName} é™å®šé“å…·ã€‚";
+		return "{bcRequirementName} 限定道具。";
 	}
 
 	/// <summary>
@@ -195,42 +197,42 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelExpiresRentalTime(string rentalTime)
 	{
-		return $"æœ‰æ•ˆæœŸé™ï¼š{rentalTime}ã€‚";
+		return $"有效期限：{rentalTime}。";
 	}
 
 	protected override string _GetTemplateForLabelExpiresRentalTime()
 	{
-		return "æœ‰æ•ˆæœŸé™ï¼š{rentalTime}ã€‚";
+		return "有效期限：{rentalTime}。";
 	}
 
 	protected override string _GetTemplateForLabelGooglePlayExclusiveItem()
 	{
-		return "æ­¤ç‚º Google Play é™å®šé“å…·ã€‚";
+		return "此為 Google Play 限定道具。";
 	}
 
 	protected override string _GetTemplateForLabelIosDeviceExclusiveItem()
 	{
-		return "æ­¤ç‚º iOS é™å®šé“å…·ã€‚";
+		return "此為 iOS 限定道具。";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailableInventory()
 	{
-		return "æ­¤é“å…·åœ¨æ‚¨çš„é“å…·æ¬„ã€‚";
+		return "此道具在您的道具欄。";
 	}
 
 	protected override string _GetTemplateForLabelItemHasBeenModerated()
 	{
-		return "æ­¤é“å…·é­åˆ°éŽæ¿¾ã€‚";
+		return "此道具遭到過濾。";
 	}
 
 	protected override string _GetTemplateForLabelItemNoLongerForSale()
 	{
-		return "æ­¤é“å…·å·²åœæ­¢è²©è³£ã€‚";
+		return "此道具已停止販賣。";
 	}
 
 	protected override string _GetTemplateForLabelItemNotCurrentlyForSale()
 	{
-		return "æ­¤é“å…·ç›®å‰ç‚ºéžè³£å“ã€‚";
+		return "此道具目前為非賣品。";
 	}
 
 	/// <summary>
@@ -239,22 +241,22 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelLimitedQuantity(string amount)
 	{
-		return $"é™é‡ï¼š{amount}";
+		return $"限量：{amount}";
 	}
 
 	protected override string _GetTemplateForLabelLimitedQuantity()
 	{
-		return "é™é‡ï¼š{amount}";
+		return "限量：{amount}";
 	}
 
 	public override string LabelMetaDescriptionCatalog(string assetName, string assetTypeLabel)
 	{
-		return $"ä»¥ {assetName} å’Œå…¶å®ƒé“å…·è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ã€‚æ··æ­{assetTypeLabel}èˆ‡å…¶å®ƒé“å…·ï¼Œå‰µé€ å‡ºç¨ä¸€ç„¡äºŒçš„è™›æ“¬äººå¶ï¼";
+		return $"以 {assetName} 和其它道具自訂您的虛擬人偶。混搭{assetTypeLabel}與其它道具，創造出獨一無二的虛擬人偶！";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionCatalog()
 	{
-		return "ä»¥ {assetName} å’Œå…¶å®ƒé“å…·è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ã€‚æ··æ­{assetTypeLabel}èˆ‡å…¶å®ƒé“å…·ï¼Œå‰µé€ å‡ºç¨ä¸€ç„¡äºŒçš„è™›æ“¬äººå¶ï¼";
+		return "以 {assetName} 和其它道具自訂您的虛擬人偶。混搭{assetTypeLabel}與其它道具，創造出獨一無二的虛擬人偶！";
 	}
 
 	/// <summary>
@@ -263,12 +265,12 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibrary(string assetName, string assetTypeLabel)
 	{
-		return $"ä½¿ç”¨ {assetName} åŠå…¶å®ƒ{assetTypeLabel}å‰µä½œèº«æ­·å…¶å¢ƒçš„éŠæˆ²å’Œé«”é©—ã€‚å¾žçœ¾å¤šçš„æ¨¡åž‹ã€è²¼èŠ±ã€æ¨¡çµ„ã€å¤–æŽ›ç¨‹å¼æˆ–éŸ³è¨Šé¸é …ä¸­ï¼Œå°‡æ‚¨çš„æƒ³åƒåŠ›åŒ–ç‚ºç¾å¯¦ã€‚";
+		return $"使用 {assetName} 及其它{assetTypeLabel}創作身歷其境的遊戲和體驗。從眾多的模型、貼花、模組、外掛程式或音訊選項中，將您的想像力化為現實。";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibrary()
 	{
-		return "ä½¿ç”¨ {assetName} åŠå…¶å®ƒ{assetTypeLabel}å‰µä½œèº«æ­·å…¶å¢ƒçš„éŠæˆ²å’Œé«”é©—ã€‚å¾žçœ¾å¤šçš„æ¨¡åž‹ã€è²¼èŠ±ã€æ¨¡çµ„ã€å¤–æŽ›ç¨‹å¼æˆ–éŸ³è¨Šé¸é …ä¸­ï¼Œå°‡æ‚¨çš„æƒ³åƒåŠ›åŒ–ç‚ºç¾å¯¦ã€‚";
+		return "使用 {assetName} 及其它{assetTypeLabel}創作身歷其境的遊戲和體驗。從眾多的模型、貼花、模組、外掛程式或音訊選項中，將您的想像力化為現實。";
 	}
 
 	/// <summary>
@@ -278,37 +280,37 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibraryV2(string assetName)
 	{
-		return $"ä½¿ç”¨{assetName} åŠå„ç¨®ç´ æå‰µä½œèº«æ­·å…¶å¢ƒçš„éŠæˆ²å’Œé«”é©—ã€‚å¾žçœ¾å¤šçš„æ¨¡åž‹ã€è²¼èŠ±ã€æ¨¡çµ„ã€å¤–æŽ›ç¨‹å¼æˆ–éŸ³è¨Šé¸é …ä¸­ï¼Œå°‡æ‚¨çš„æƒ³åƒåŠ›åŒ–ç‚ºç¾å¯¦ã€‚";
+		return $"使用{assetName} 及各種素材創作身歷其境的遊戲和體驗。從眾多的模型、貼花、模組、外掛程式或音訊選項中，將您的想像力化為現實。";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibraryV2()
 	{
-		return "ä½¿ç”¨{assetName} åŠå„ç¨®ç´ æå‰µä½œèº«æ­·å…¶å¢ƒçš„éŠæˆ²å’Œé«”é©—ã€‚å¾žçœ¾å¤šçš„æ¨¡åž‹ã€è²¼èŠ±ã€æ¨¡çµ„ã€å¤–æŽ›ç¨‹å¼æˆ–éŸ³è¨Šé¸é …ä¸­ï¼Œå°‡æ‚¨çš„æƒ³åƒåŠ›åŒ–ç‚ºç¾å¯¦ã€‚";
+		return "使用{assetName} 及各種素材創作身歷其境的遊戲和體驗。從眾多的模型、貼花、模組、外掛程式或音訊選項中，將您的想像力化為現實。";
 	}
 
 	protected override string _GetTemplateForLabelMobileDeviceExclusiveItem()
 	{
-		return "æ­¤ç‚ºè¡Œå‹•è£ç½®é™å®šé“å…·ã€‚";
+		return "此為行動裝置限定道具。";
 	}
 
 	protected override string _GetTemplateForLabelNoDescriptionAvailable()
 	{
-		return "æ²’æœ‰èªªæ˜Žã€‚";
+		return "沒有說明。";
 	}
 
 	protected override string _GetTemplateForLabelNoOneCurrentlySelling()
 	{
-		return "ç›®å‰æ²’æœ‰äººè²©è³£æ­¤é“å…·ã€‚";
+		return "目前沒有人販賣此道具。";
 	}
 
 	protected override string _GetTemplateForLabelNoOtherSellers()
 	{
-		return "ç„¡å…¶ä»–è³£å®¶ã€‚";
+		return "無其他賣家。";
 	}
 
 	protected override string _GetTemplateForLabelNotAvailable()
 	{
-		return "ç„¡";
+		return "無";
 	}
 
 	/// <summary>
@@ -317,27 +319,27 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelPriceChangedFrom(string robuxAmount)
 	{
-		return $"åƒ¹æ ¼å·²å¾ž {robuxAmount} è®Šæ›´";
+		return $"價格已從 {robuxAmount} 變更";
 	}
 
 	protected override string _GetTemplateForLabelPriceChangedFrom()
 	{
-		return "åƒ¹æ ¼å·²å¾ž {robuxAmount} è®Šæ›´";
+		return "價格已從 {robuxAmount} 變更";
 	}
 
 	protected override string _GetTemplateForLabelPurchasingTemporarilyUnavailable()
 	{
-		return "æš«æ™‚ç„¡æ³•è³¼è²·ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "暫時無法購買，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForLabelResellers()
 	{
-		return "è½‰è³£è€…";
+		return "轉賣者";
 	}
 
 	protected override string _GetTemplateForLabelRobloxAsset()
 	{
-		return "Roblox ç´ æ";
+		return "Roblox 素材";
 	}
 
 	/// <summary>
@@ -346,12 +348,12 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelSeeMoreResellers(string resellers)
 	{
-		return $"æŸ¥çœ‹æ›´å¤š{resellers}";
+		return $"查看更多{resellers}";
 	}
 
 	protected override string _GetTemplateForLabelSeeMoreResellers()
 	{
-		return "æŸ¥çœ‹æ›´å¤š{resellers}";
+		return "查看更多{resellers}";
 	}
 
 	/// <summary>
@@ -370,27 +372,27 @@ internal class ItemModelResources_zh_tw : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelTakeOff()
 	{
-		return "è„«ä¸‹";
+		return "脫下";
 	}
 
 	protected override string _GetTemplateForLabelToInstallOpenStudio()
 	{
-		return "è‹¥è¦å®‰è£ï¼Œè«‹åœ¨ Roblox Studio é–‹å•Ÿæ­¤é é¢ã€‚";
+		return "若要安裝，請在 Roblox Studio 開啟此頁面。";
 	}
 
 	protected override string _GetTemplateForLabelWear()
 	{
-		return "ç©¿æˆ´";
+		return "穿戴";
 	}
 
 	protected override string _GetTemplateForLabelXboxOneExclusiveItem()
 	{
-		return "æ­¤ç‚º Xbox One é™å®šé“å…·ã€‚";
+		return "此為 Xbox One 限定道具。";
 	}
 
 	protected override string _GetTemplateForLabelYouAreSelling()
 	{
-		return "æ‚¨æ­£åœ¨è²©è³£æ­¤é“å…·ã€‚";
+		return "您正在販賣此道具。";
 	}
 }
 

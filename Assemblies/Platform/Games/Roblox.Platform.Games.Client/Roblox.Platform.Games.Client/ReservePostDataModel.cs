@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.Games.Clientpublic {
-    class ReservePostDataModel
+using System.Collections.Generic;
+namespace Roblox.Platform.Games.Client {
+    public class ReservePostDataModel
 
 {
 	public IEnumerable<long> PreferredPlayerIds { get; set; }

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IAssetTypesResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IAssetTypesResources : ITranslationResources
 
 {
 	/// <summary>
@@ -446,3 +448,5 @@
 
 
 }
+
+

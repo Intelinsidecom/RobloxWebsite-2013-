@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface ISocialMetaTagsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface ISocialMetaTagsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -82,3 +84,5 @@
 
 
 }
+
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Featureinternal {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     static class AvatarResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

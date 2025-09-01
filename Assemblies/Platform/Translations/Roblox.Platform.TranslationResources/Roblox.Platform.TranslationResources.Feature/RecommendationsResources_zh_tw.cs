@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RecommendationsResources_en_us to provide locale specific translations where possible,
@@ -11,59 +13,59 @@ internal class RecommendationsResources_zh_tw : RecommendationsResources_en_us, 
 	/// Button used to buy an item in exchange for in-game money.
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "è³¼è²·";
+	public override string ActionBuy => "購買";
 
 	/// <summary>
 	/// Key: "Action.Get"
 	/// Button used to buy an item for free.
 	/// English String: "Get"
 	/// </summary>
-	public override string ActionGet => "é ˜å–";
+	public override string ActionGet => "領取";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// Button used to see all items
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string ActionSeeAll => "查看全部";
 
 	/// <summary>
 	/// Key: "Heading.RecommendationsTitle"
 	/// heading for inventory page recommendations section.
 	/// English String: "Recommendations"
 	/// </summary>
-	public override string HeadingRecommendationsTitle => "æŽ¨è–¦";
+	public override string HeadingRecommendationsTitle => "推薦";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedItems"
 	/// heading for Item page recommendations section.
 	/// English String: "Recommended items"
 	/// </summary>
-	public override string HeadingRecommendedItems => "æŽ¨è–¦çš„é“å…·";
+	public override string HeadingRecommendedItems => "推薦的道具";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedTitle"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string HeadingRecommendedTitle => "æŽ¨è–¦";
+	public override string HeadingRecommendedTitle => "推薦";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "å…è²»";
+	public override string LabelFree => "免費";
 
 	/// <summary>
 	/// Key: "Label.NoReSellers"
 	/// English String: "No Resellers"
 	/// </summary>
-	public override string LabelNoReSellers => "æ²’æœ‰äººè½‰è³£";
+	public override string LabelNoReSellers => "沒有人轉賣";
 
 	/// <summary>
 	/// Key: "Label.OffSale"
 	/// English String: "Off sale"
 	/// </summary>
-	public override string LabelOffSale => "ä¸‹æž¶";
+	public override string LabelOffSale => "下架";
 
 	public RecommendationsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -72,22 +74,22 @@ internal class RecommendationsResources_zh_tw : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è³¼è²·";
+		return "購買";
 	}
 
 	protected override string _GetTemplateForActionGet()
 	{
-		return "é ˜å–";
+		return "領取";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "查看全部";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendationsTitle()
 	{
-		return "æŽ¨è–¦";
+		return "推薦";
 	}
 
 	/// <summary>
@@ -96,22 +98,22 @@ internal class RecommendationsResources_zh_tw : RecommendationsResources_en_us, 
 	/// </summary>
 	public override string HeadingRecommended(string recommendedItem)
 	{
-		return $"æŽ¨è–¦çš„{recommendedItem}";
+		return $"推薦的{recommendedItem}";
 	}
 
 	protected override string _GetTemplateForHeadingRecommended()
 	{
-		return "æŽ¨è–¦çš„{recommendedItem}";
+		return "推薦的{recommendedItem}";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendedItems()
 	{
-		return "æŽ¨è–¦çš„é“å…·";
+		return "推薦的道具";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendedTitle()
 	{
-		return "æŽ¨è–¦";
+		return "推薦";
 	}
 
 	/// <summary>
@@ -121,12 +123,12 @@ internal class RecommendationsResources_zh_tw : RecommendationsResources_en_us, 
 	/// </summary>
 	public override string LabelByCreator(string styleBegin, string styleEnd, string creator)
 	{
-		return $"{styleBegin}å‰µä½œè€…ï¼š{styleEnd}{creator}";
+		return $"{styleBegin}創作者：{styleEnd}{creator}";
 	}
 
 	protected override string _GetTemplateForLabelByCreator()
 	{
-		return "{styleBegin}å‰µä½œè€…ï¼š{styleEnd}{creator}";
+		return "{styleBegin}創作者：{styleEnd}{creator}";
 	}
 
 	/// <summary>
@@ -136,27 +138,27 @@ internal class RecommendationsResources_zh_tw : RecommendationsResources_en_us, 
 	/// </summary>
 	public override string LabelByCreatorLink(string linkStart, string creator, string linkEnd)
 	{
-		return $"å‰µä½œè€…ï¼š{linkStart}{creator}{linkEnd}";
+		return $"創作者：{linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelByCreatorLink()
 	{
-		return "å‰µä½œè€…ï¼š{linkStart}{creator}{linkEnd}";
+		return "創作者：{linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "å…è²»";
+		return "免費";
 	}
 
 	protected override string _GetTemplateForLabelNoReSellers()
 	{
-		return "æ²’æœ‰äººè½‰è³£";
+		return "沒有人轉賣";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "ä¸‹æž¶";
+		return "下架";
 	}
 }
 

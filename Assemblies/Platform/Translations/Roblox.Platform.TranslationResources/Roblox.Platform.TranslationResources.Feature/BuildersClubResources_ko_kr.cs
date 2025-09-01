@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// Key: "Action.BuidlersClubOnlyCancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyCancel => "ì·¨ì†Œ";
+	public override string ActionBuidlersClubOnlyCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.BuidlersClubOnlyUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionBuidlersClubOnlyUpgradeNow => "ì—…ê·¸ë ˆì´ë“œ";
+	public override string ActionBuidlersClubOnlyUpgradeNow => "업그레이드";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubOnly"
 	/// English String: "Builders Club Only"
 	/// </summary>
-	public override string HeadingBuildersClubOnly => "Builders Club ì „ìš©";
+	public override string HeadingBuildersClubOnly => "Builders Club 전용";
 
 	/// <summary>
 	/// Key: "Label.BuidlersClubOnlyClose"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelBuidlersClubOnlyClose => "ë‹«ê¸°";
+	public override string LabelBuidlersClubOnlyClose => "닫기";
 
 	public BuildersClubResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -37,12 +39,12 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionBuidlersClubOnlyUpgradeNow()
 	{
-		return "ì—…ê·¸ë ˆì´ë“œ";
+		return "업그레이드";
 	}
 
 	/// <summary>
@@ -51,22 +53,22 @@ internal class BuildersClubResources_ko_kr : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"{bcRequirementName} ë©¤ë²„ë§Œ ì´ìš© ê°€ëŠ¥í•œ í”„ë¦¬ë¯¸ì—„ ì•„ì´í…œìž…ë‹ˆë‹¤.";
+		return $"{bcRequirementName} 멤버만 이용 가능한 프리미엄 아이템입니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "{bcRequirementName} ë©¤ë²„ë§Œ ì´ìš© ê°€ëŠ¥í•œ í”„ë¦¬ë¯¸ì—„ ì•„ì´í…œìž…ë‹ˆë‹¤.";
+		return "{bcRequirementName} 멤버만 이용 가능한 프리미엄 아이템입니다.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()
 	{
-		return "Builders Club ì „ìš©";
+		return "Builders Club 전용";
 	}
 
 	protected override string _GetTemplateForLabelBuidlersClubOnlyClose()
 	{
-		return "ë‹«ê¸°";
+		return "닫기";
 	}
 }
 

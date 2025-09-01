@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides SocialMetaTagsResources_en_us to provide locale specific translations where possible,
@@ -11,42 +13,42 @@ internal class SocialMetaTagsResources_ko_kr : SocialMetaTagsResources_en_us, IS
 	/// description shown on Facebook or Twitter when shared
 	/// English String: "Create anything you can imagine with Roblox's free and immersive creation engine. Start creating games today!"
 	/// </summary>
-	public override string DescriptionDevelopLanding => "Robloxê°€ ë¬´ë£Œë¡œ ì œê³µí•˜ëŠ” ëª°ìž…í˜• ìƒì„± ì—”ì§„ì„ ì‚¬ìš©í•´ ìƒìƒí•˜ëŠ” ëª¨ë“  ê²ƒì„ ë§Œë“¤ì–´ ë³¼ ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ ê²Œìž„ì„ ë§Œë“¤ì–´ë³´ì„¸ìš”!";
+	public override string DescriptionDevelopLanding => "Roblox가 무료로 제공하는 몰입형 생성 엔진을 사용해 상상하는 모든 것을 만들어 볼 수 있어요. 지금 게임을 만들어보세요!";
 
 	/// <summary>
 	/// Key: "Description.GamesPage"
 	/// description shown when Games page is shared on Facebook or Twitter
 	/// English String: "Play millions of free games on your smartphone, tablet, computer, Xbox One, Oculus Rift, and more."
 	/// </summary>
-	public override string DescriptionGamesPage => "ìŠ¤ë§ˆíŠ¸í°, íƒœë¸”ë¦¿, ì»´í“¨í„°, Xbox One, Oculus Rift ë“±ì—ì„œ ìˆ˜ë§Žì€ ê²Œìž„ì„ ë¬´ë£Œë¡œ í”Œë ˆì´í•˜ì„¸ìš”.";
+	public override string DescriptionGamesPage => "스마트폰, 태블릿, 컴퓨터, Xbox One, Oculus Rift 등에서 수많은 게임을 무료로 플레이하세요.";
 
 	/// <summary>
 	/// Key: "Description.Roblox"
 	/// description shown on Facebook or Twitter when Roblox landing page is shared
 	/// English String: "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of players across an infinite variety of immersive, user-generated 3D worlds."
 	/// </summary>
-	public override string DescriptionRoblox => "RobloxëŠ” ì°¨ì„¸ëŒ€ ì—”í„°í…Œì¸ë¨¼íŠ¸ì˜ ì„ ë‘ ì£¼ìžìž…ë‹ˆë‹¤. ìˆ˜ë°±ë§Œ ëª…ì˜ í”Œë ˆì´ì–´ì™€ í•¨ê»˜ ë‹¤ì–‘í•˜ê³  í¥ë¯¸ì§„ì§„í•œ ì‚¬ìš©ìž ì œìž‘ 3D ì„¸ìƒì—ì„œ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ì¹˜ë©´ì„œ ê²Œìž„ì„ ê°œë°œí•˜ê³  ì¦ê²¨ë³´ì„¸ìš”. ";
+	public override string DescriptionRoblox => "Roblox는 차세대 엔터테인먼트의 선두 주자입니다. 수백만 명의 플레이어와 함께 다양하고 흥미진진한 사용자 제작 3D 세상에서 상상의 나래를 펼치면서 게임을 개발하고 즐겨보세요. ";
 
 	/// <summary>
 	/// Key: "Label.CatalogPage"
 	/// Description shown when the catalog page is shared on Facebook or Twitter
 	/// English String: "Customize your avatar with a never-ending variety of clothing options, accessories, gear, and more!"
 	/// </summary>
-	public override string LabelCatalogPage => "ì…€ ìˆ˜ ì—†ì´ ë§Žì€ ë³µìž¥, ìž¥ì‹ êµ¬, ìž¥ë¹„ ë“±ìœ¼ë¡œ ë‚˜ë§Œì˜ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”!";
+	public override string LabelCatalogPage => "셀 수 없이 많은 복장, 장신구, 장비 등으로 나만의 아바타를 마음껏 꾸며보세요!";
 
 	/// <summary>
 	/// Key: "Label.CatalogPageTItle"
 	/// title
 	/// English String: "Roblox Catalog"
 	/// </summary>
-	public override string LabelCatalogPageTItle => "Roblox ì¹´íƒˆë¡œê·¸";
+	public override string LabelCatalogPageTItle => "Roblox 카탈로그";
 
 	/// <summary>
 	/// Key: "Label.GamesPageTitle"
 	/// title for social meta tag fro games page
 	/// English String: "Roblox Games"
 	/// </summary>
-	public override string LabelGamesPageTitle => "Roblox ê²Œìž„";
+	public override string LabelGamesPageTitle => "Roblox 게임";
 
 	public SocialMetaTagsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -55,62 +57,62 @@ internal class SocialMetaTagsResources_ko_kr : SocialMetaTagsResources_en_us, IS
 
 	protected override string _GetTemplateForDescriptionDevelopLanding()
 	{
-		return "Robloxê°€ ë¬´ë£Œë¡œ ì œê³µí•˜ëŠ” ëª°ìž…í˜• ìƒì„± ì—”ì§„ì„ ì‚¬ìš©í•´ ìƒìƒí•˜ëŠ” ëª¨ë“  ê²ƒì„ ë§Œë“¤ì–´ ë³¼ ìˆ˜ ìžˆì–´ìš”. ì§€ê¸ˆ ê²Œìž„ì„ ë§Œë“¤ì–´ë³´ì„¸ìš”!";
+		return "Roblox가 무료로 제공하는 몰입형 생성 엔진을 사용해 상상하는 모든 것을 만들어 볼 수 있어요. 지금 게임을 만들어보세요!";
 	}
 
 	/// <summary>
 	/// Key: "Description.FavoritesPage"
 	/// social meta tag
-	/// English String: "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
+	/// English String: "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
 	/// </summary>
 	public override string DescriptionFavoritesPage(string userName)
 	{
-		return $"{userName}ì˜ ì¦ê²¨ì°¾ê¸°ë¥¼ ë°©ë¬¸í•´ {userName}ë‹˜ì´ ì¢‹ì•„í•˜ëŠ” ìž¥ì†Œ, ìž¥ì‹ êµ¬ ë“± ë‹¤ì–‘í•œ ì•„ì´í…œì„ êµ¬ê²½í•´ë³´ì„¸ìš”. ë˜í•œ ì‚¬ìš©ìžê°€ ê²Œìž„ì—ì„œ ì¦ê²¨ ì‚¬ìš©í•˜ëŠ” ìž¥ë¹„ë¥¼ ì‚´íŽ´ë³´ê³  í•œ ë²ˆ êµ¬ìž…í•´ë³´ì„¸ìš”!";
+		return $"{userName}의 즐겨찾기를 방문해 {userName}님이 좋아하는 장소, 장신구 등 다양한 아이템을 구경해보세요. 또한 사용자가 게임에서 즐겨 사용하는 장비를 살펴보고 한 번 구입해보세요!";
 	}
 
 	protected override string _GetTemplateForDescriptionFavoritesPage()
 	{
-		return "{userName}ì˜ ì¦ê²¨ì°¾ê¸°ë¥¼ ë°©ë¬¸í•´ {userName}ë‹˜ì´ ì¢‹ì•„í•˜ëŠ” ìž¥ì†Œ, ìž¥ì‹ êµ¬ ë“± ë‹¤ì–‘í•œ ì•„ì´í…œì„ êµ¬ê²½í•´ë³´ì„¸ìš”. ë˜í•œ ì‚¬ìš©ìžê°€ ê²Œìž„ì—ì„œ ì¦ê²¨ ì‚¬ìš©í•˜ëŠ” ìž¥ë¹„ë¥¼ ì‚´íŽ´ë³´ê³  í•œ ë²ˆ êµ¬ìž…í•´ë³´ì„¸ìš”!";
+		return "{userName}의 즐겨찾기를 방문해 {userName}님이 좋아하는 장소, 장신구 등 다양한 아이템을 구경해보세요. 또한 사용자가 게임에서 즐겨 사용하는 장비를 살펴보고 한 번 구입해보세요!";
 	}
 
 	/// <summary>
 	/// Key: "Description.GamePage"
 	/// The game description which shows on social media, when shared
-	/// English String: "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
+	/// English String: "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
 	/// </summary>
 	public override string DescriptionGamePage(string gameName, string gameDescription)
 	{
-		return $"Robloxì—ì„œ ì œìž‘ëœ ìˆ˜ë°±ë§Œ ê°œì˜  ì‚¬ìš©ìž ì œìž‘ 3D ì½˜í…ì¸  ì¤‘ í•˜ë‚˜ì¸ {gameName}ì„(ë¥¼) ì‚´íŽ´ë³´ì„¸ìš”. {gameDescription}";
+		return $"Roblox에서 제작된 수백만 개의  사용자 제작 3D 콘텐츠 중 하나인 {gameName}을(를) 살펴보세요. {gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamePage()
 	{
-		return "Robloxì—ì„œ ì œìž‘ëœ ìˆ˜ë°±ë§Œ ê°œì˜  ì‚¬ìš©ìž ì œìž‘ 3D ì½˜í…ì¸  ì¤‘ í•˜ë‚˜ì¸ {gameName}ì„(ë¥¼) ì‚´íŽ´ë³´ì„¸ìš”. {gameDescription}";
+		return "Roblox에서 제작된 수백만 개의  사용자 제작 3D 콘텐츠 중 하나인 {gameName}을(를) 살펴보세요. {gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamesPage()
 	{
-		return "ìŠ¤ë§ˆíŠ¸í°, íƒœë¸”ë¦¿, ì»´í“¨í„°, Xbox One, Oculus Rift ë“±ì—ì„œ ìˆ˜ë§Žì€ ê²Œìž„ì„ ë¬´ë£Œë¡œ í”Œë ˆì´í•˜ì„¸ìš”.";
+		return "스마트폰, 태블릿, 컴퓨터, Xbox One, Oculus Rift 등에서 수많은 게임을 무료로 플레이하세요.";
 	}
 
 	/// <summary>
 	/// Key: "Description.InventoryPage"
 	/// social meta tag
-	/// English String: "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more."
+	/// English String: "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more."
 	/// </summary>
 	public override string DescriptionInventoryPage(string userName1, string userName2)
 	{
-		return $"{userName1}ë‹˜ì˜ ì¸ë²¤í† ë¦¬ë¥¼ ë°©ë¬¸í•´ ë©‹ì§„ ìˆ˜ì§‘ ì•„ì´í…œì„ êµ¬ê²½í•´ë³´ì„¸ìš”. ê²Œìž„íŒ¨ìŠ¤ë„ ì‚´íŽ´ë³´ê³  í•œ ë²ˆ êµ¬ìž…í•´ë³´ì„¸ìš”! {userName2}ë‹˜ì˜ ëª¨ìž, ì…”ì¸ , ìž¥ë¹„ ë“±ì˜ ì»¬ë ‰ì…˜ì„ êµ¬ê²½í•˜ì„¸ìš”.";
+		return $"{userName1}님의 인벤토리를 방문해 멋진 수집 아이템을 구경해보세요. 게임패스도 살펴보고 한 번 구입해보세요! {userName2}님의 모자, 셔츠, 장비 등의 컬렉션을 구경하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionInventoryPage()
 	{
-		return "{userName1}ë‹˜ì˜ ì¸ë²¤í† ë¦¬ë¥¼ ë°©ë¬¸í•´ ë©‹ì§„ ìˆ˜ì§‘ ì•„ì´í…œì„ êµ¬ê²½í•´ë³´ì„¸ìš”. ê²Œìž„íŒ¨ìŠ¤ë„ ì‚´íŽ´ë³´ê³  í•œ ë²ˆ êµ¬ìž…í•´ë³´ì„¸ìš”! {userName2}ë‹˜ì˜ ëª¨ìž, ì…”ì¸ , ìž¥ë¹„ ë“±ì˜ ì»¬ë ‰ì…˜ì„ êµ¬ê²½í•˜ì„¸ìš”.";
+		return "{userName1}님의 인벤토리를 방문해 멋진 수집 아이템을 구경해보세요. 게임패스도 살펴보고 한 번 구입해보세요! {userName2}님의 모자, 셔츠, 장비 등의 컬렉션을 구경하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionRoblox()
 	{
-		return "RobloxëŠ” ì°¨ì„¸ëŒ€ ì—”í„°í…Œì¸ë¨¼íŠ¸ì˜ ì„ ë‘ ì£¼ìžìž…ë‹ˆë‹¤. ìˆ˜ë°±ë§Œ ëª…ì˜ í”Œë ˆì´ì–´ì™€ í•¨ê»˜ ë‹¤ì–‘í•˜ê³  í¥ë¯¸ì§„ì§„í•œ ì‚¬ìš©ìž ì œìž‘ 3D ì„¸ìƒì—ì„œ ìƒìƒì˜ ë‚˜ëž˜ë¥¼ íŽ¼ì¹˜ë©´ì„œ ê²Œìž„ì„ ê°œë°œí•˜ê³  ì¦ê²¨ë³´ì„¸ìš”. ";
+		return "Roblox는 차세대 엔터테인먼트의 선두 주자입니다. 수백만 명의 플레이어와 함께 다양하고 흥미진진한 사용자 제작 3D 세상에서 상상의 나래를 펼치면서 게임을 개발하고 즐겨보세요. ";
 	}
 
 	/// <summary>
@@ -120,27 +122,27 @@ internal class SocialMetaTagsResources_ko_kr : SocialMetaTagsResources_en_us, IS
 	/// </summary>
 	public override string DescriptionUserProfilePage(string userName1, string userName2)
 	{
-		return $"{userName1}ë‹˜ì€ ë¬´í•œí•œ ê°€ëŠ¥ì„±ìœ¼ë¡œ ê°€ë“í•œ Roblox ì„¸ìƒì„ ì¦ê¸°ê³  íƒí—˜í•˜ë©° ì½˜í…ì¸ ë¥¼ ë§Œë“œëŠ” ë§Žì€ ì‚¬ìš©ìž ì¤‘ í•˜ë‚˜ì˜ˆìš”. Robloxì—ì„œ {userName2}ë‹˜ê³¼ í•¨ê»˜í•˜ì„¸ìš”!";
+		return $"{userName1}님은 무한한 가능성으로 가득한 Roblox 세상을 즐기고 탐험하며 콘텐츠를 만드는 많은 사용자 중 하나예요. Roblox에서 {userName2}님과 함께하세요!";
 	}
 
 	protected override string _GetTemplateForDescriptionUserProfilePage()
 	{
-		return "{userName1}ë‹˜ì€ ë¬´í•œí•œ ê°€ëŠ¥ì„±ìœ¼ë¡œ ê°€ë“í•œ Roblox ì„¸ìƒì„ ì¦ê¸°ê³  íƒí—˜í•˜ë©° ì½˜í…ì¸ ë¥¼ ë§Œë“œëŠ” ë§Žì€ ì‚¬ìš©ìž ì¤‘ í•˜ë‚˜ì˜ˆìš”. Robloxì—ì„œ {userName2}ë‹˜ê³¼ í•¨ê»˜í•˜ì„¸ìš”!";
+		return "{userName1}님은 무한한 가능성으로 가득한 Roblox 세상을 즐기고 탐험하며 콘텐츠를 만드는 많은 사용자 중 하나예요. Roblox에서 {userName2}님과 함께하세요!";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPage()
 	{
-		return "ì…€ ìˆ˜ ì—†ì´ ë§Žì€ ë³µìž¥, ìž¥ì‹ êµ¬, ìž¥ë¹„ ë“±ìœ¼ë¡œ ë‚˜ë§Œì˜ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”!";
+		return "셀 수 없이 많은 복장, 장신구, 장비 등으로 나만의 아바타를 마음껏 꾸며보세요!";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPageTItle()
 	{
-		return "Roblox ì¹´íƒˆë¡œê·¸";
+		return "Roblox 카탈로그";
 	}
 
 	protected override string _GetTemplateForLabelGamesPageTitle()
 	{
-		return "Roblox ê²Œìž„";
+		return "Roblox 게임";
 	}
 
 	/// <summary>
@@ -150,12 +152,12 @@ internal class SocialMetaTagsResources_ko_kr : SocialMetaTagsResources_en_us, IS
 	/// </summary>
 	public override string LabelUserProfile(string userName)
 	{
-		return $"{userName}ë‹˜ì˜ í”„ë¡œí•„";
+		return $"{userName}님의 프로필";
 	}
 
 	protected override string _GetTemplateForLabelUserProfile()
 	{
-		return "{userName}ë‹˜ì˜ í”„ë¡œí•„";
+		return "{userName}님의 프로필";
 	}
 }
 

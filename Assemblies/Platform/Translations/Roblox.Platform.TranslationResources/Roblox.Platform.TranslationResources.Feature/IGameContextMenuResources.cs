@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IGameContextMenuResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IGameContextMenuResources : ITranslationResources
 
 {
 	/// <summary>
@@ -97,3 +99,5 @@
 
 
 }
+
+

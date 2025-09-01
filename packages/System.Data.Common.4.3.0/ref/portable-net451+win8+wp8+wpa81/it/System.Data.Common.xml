@@ -824,7 +824,7 @@
       <returns>Colonna da recuperare.</returns>
       <param name="ordinal">Colonna da recuperare.</param>
       <typeparam name="T">Ottiene in modo sincrono il valore della colonna specificata sotto forma di tipo.</typeparam>
-      <exception cref="T:System.InvalidOperationException">La connessione viene eliminata o chiusa durante il richiamo dei dati.<see cref="T:System.Data.SqlClient.SqlDataReader" /> viene chiuso durante il richiamo dei dati.Non sono disponibili dati pronti per essere letti (ad esempio, il primo <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> non è stato chiamato, o è stato restituito false).Ha tentato di leggere una colonna letta in precedenza in modalità sequenziale.Operazione asincrona in corso.Si applica a tutti i metodi Get* durante l'esecuzione in modalità sequenziale, in quanto possono essere chiamati durante la lettura di un flusso.</exception>
+      <exception cref="T:System.InvalidOperationException">La connessione viene eliminata o chiusa durante il richiamo dei dati.<see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> viene chiuso durante il richiamo dei dati.Non sono disponibili dati pronti per essere letti (ad esempio, il primo <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> non è stato chiamato, o è stato restituito false).Ha tentato di leggere una colonna letta in precedenza in modalità sequenziale.Operazione asincrona in corso.Si applica a tutti i metodi Get* durante l'esecuzione in modalità sequenziale, in quanto possono essere chiamati durante la lettura di un flusso.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Tentativo di leggere una colonna che non esiste.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> non corrisponde al tipo restituito da SQL Server o non è possibile eseguire il cast.</exception>
@@ -959,7 +959,7 @@
     <member name="P:System.Data.Common.DbDataReader.IsClosed">
       <summary>Ottiene un valore che indica se la classe <see cref="T:System.Data.Common.DbDataReader" /> è chiusa.</summary>
       <returns>true se l'oggetto <see cref="T:System.Data.Common.DbDataReader" /> è chiuso. In caso contrario, false.</returns>
-      <exception cref="T:System.InvalidOperationException">La classe <see cref="T:System.Data.SqlClient.SqlDataReader" /> è chiusa. </exception>
+      <exception cref="T:System.InvalidOperationException">La classe <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> è chiusa. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

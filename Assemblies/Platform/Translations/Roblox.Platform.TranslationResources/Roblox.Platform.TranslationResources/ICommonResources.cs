@@ -1,6 +1,8 @@
-﻿using Roblox.TranslationResources.Common;
-namespace Roblox.Platform.TranslationResourcespublic {
-    interface ICommonResources : ITranslationResourcesNamespacesGroup
+﻿using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Common;
+namespace Roblox.Platform.TranslationResources {
+    public interface ICommonResources : ITranslationResourcesNamespacesGroup
 
 {
 	IAlertsAndOptionsResources AlertsAndOptions { get; }
@@ -28,3 +30,5 @@ namespace Roblox.Platform.TranslationResourcespublic {
 
 
 }
+
+

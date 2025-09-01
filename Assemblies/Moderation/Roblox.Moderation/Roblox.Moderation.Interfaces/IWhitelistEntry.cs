@@ -1,17 +1,15 @@
-﻿namespace Roblox.Moderation.Interfacespublic {
-    interface IWhitelistEntry
-
+namespace Roblox.Moderation.Interfaces
 {
-	CategoryType CategoryType { get; }
+    public interface IWhitelistEntry
+    {
+        CategoryType CategoryType { get; }
 
-	long CategoryTargetId { get; }
+        long CategoryTargetId { get; }
 
-	string Value { get; }
+        string Value { get; }
 
-	void Delete();
+        void Delete();
 
-	void Update(string categoryType, long categoryTargetId, string value);
-}
-
-
+        void Update(string categoryType, long categoryTargetId, string value);
+    }
 }

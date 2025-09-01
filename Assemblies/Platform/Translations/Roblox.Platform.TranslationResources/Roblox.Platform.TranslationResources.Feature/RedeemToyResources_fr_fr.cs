@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RedeemToyResources_en_us to provide locale specific translations where possible,
@@ -32,7 +34,7 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueVideo => "Continuer vers la vidÃ©o";
+	public override string ActionContinueVideo => "Continuer vers la vidéo";
 
 	/// <summary>
 	/// Key: "Action.HavePromoCode"
@@ -88,14 +90,14 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 	/// modal description text warning user that they are leaving Roblox main site
 	/// English String: "You are about to leave Roblox to view a video on Youtube. Youtube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionLeavingRoblox => "Vous Ãªtes sur le point de quitter Roblox pour visionner une vidÃ©o sur YouTube. YouTube ne fait pas partie du site web Roblox.com et dispose de sa propre politique de confidentialitÃ©.";
+	public override string DescriptionLeavingRoblox => "Vous êtes sur le point de quitter Roblox pour visionner une vidéo sur YouTube. YouTube ne fait pas partie du site web Roblox.com et dispose de sa propre politique de confidentialité.";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.Success"
 	/// modal heading
 	/// English String: "Successfully Redeemed"
 	/// </summary>
-	public override string HeadingDialogSuccess => "Activation rÃ©ussie";
+	public override string HeadingDialogSuccess => "Activation réussie";
 
 	/// <summary>
 	/// Key: "Heading.RedeemVirtualItem"
@@ -123,21 +125,21 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 	/// error message
 	/// English String: "Invalid code, please try again."
 	/// </summary>
-	public override string ResponseInvalidCodeTryAgain => "Code non valide, veuillez rÃ©essayer.";
+	public override string ResponseInvalidCodeTryAgain => "Code non valide, veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredToRedeem"
 	/// error message
 	/// English String: "You must be logged in to your Roblox account to redeem the code for your virtual item!"
 	/// </summary>
-	public override string ResponseLoginRequiredToRedeem => "Vous devez Ãªtre connectÃ©(e) Ã  votre compte Roblox afin d'activer le code de votre objet virtuel\u00a0!";
+	public override string ResponseLoginRequiredToRedeem => "Vous devez être connecté(e) à votre compte Roblox afin d'activer le code de votre objet virtuel\u00a0!";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your item."
 	/// </summary>
-	public override string ResponseRedeemSuccess => "Votre objet a bien Ã©tÃ© activÃ©.";
+	public override string ResponseRedeemSuccess => "Votre objet a bien été activé.";
 
 	public RedeemToyResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -161,7 +163,7 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionContinueVideo()
 	{
-		return "Continuer vers la vidÃ©o";
+		return "Continuer vers la vidéo";
 	}
 
 	protected override string _GetTemplateForActionHavePromoCode()
@@ -206,22 +208,22 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 	/// </summary>
 	public override string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName)
 	{
-		return $"Vous avez activÃ© l'objet {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName}.";
+		return $"Vous avez activé l'objet {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName}.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSuccess()
 	{
-		return "Vous avez activÃ© l'objet {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName}.";
+		return "Vous avez activé l'objet {spanTagStart}{itemName}{spanTagEnd} ({itemType}) de {creatorName}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeavingRoblox()
 	{
-		return "Vous Ãªtes sur le point de quitter Roblox pour visionner une vidÃ©o sur YouTube. YouTube ne fait pas partie du site web Roblox.com et dispose de sa propre politique de confidentialitÃ©.";
+		return "Vous êtes sur le point de quitter Roblox pour visionner une vidéo sur YouTube. YouTube ne fait pas partie du site web Roblox.com et dispose de sa propre politique de confidentialité.";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSuccess()
 	{
-		return "Activation rÃ©ussie";
+		return "Activation réussie";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemVirtualItem()
@@ -241,17 +243,17 @@ internal class RedeemToyResources_fr_fr : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForResponseInvalidCodeTryAgain()
 	{
-		return "Code non valide, veuillez rÃ©essayer.";
+		return "Code non valide, veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredToRedeem()
 	{
-		return "Vous devez Ãªtre connectÃ©(e) Ã  votre compte Roblox afin d'activer le code de votre objet virtuel\u00a0!";
+		return "Vous devez être connecté(e) à votre compte Roblox afin d'activer le code de votre objet virtuel\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "Votre objet a bien Ã©tÃ© activÃ©.";
+		return "Votre objet a bien été activé.";
 	}
 }
 

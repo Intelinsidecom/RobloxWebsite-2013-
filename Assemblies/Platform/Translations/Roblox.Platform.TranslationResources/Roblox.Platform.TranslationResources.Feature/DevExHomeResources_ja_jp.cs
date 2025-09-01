@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevExHomeResources_en_us to provide locale specific translations where possible,
@@ -10,91 +12,91 @@ internal class DevExHomeResources_ja_jp : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetActionCancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string GetActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string GetActionCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "GetActionCashOut"
 	/// English String: "Cash Out"
 	/// </summary>
-	public override string GetActionCashOut => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆ";
+	public override string GetActionCashOut => "キャッシュアウト";
 
 	/// <summary>
 	/// Key: "GetActionGetObc"
 	/// English String: "Get OBC Now"
 	/// </summary>
-	public override string GetActionGetObc => "ä»Šã™ãOBCã‚’ã‚²ãƒƒãƒˆ";
+	public override string GetActionGetObc => "今すぐOBCをゲット";
 
 	/// <summary>
 	/// Key: "GetActionUpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string GetActionUpgradeMembership => "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
+	public override string GetActionUpgradeMembership => "メンバーシップをアップグレード";
 
 	/// <summary>
 	/// Key: "GetActionVerify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string GetActionVerify => "èªè¨¼";
+	public override string GetActionVerify => "認証";
 
 	/// <summary>
 	/// Key: "GetActionVerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string GetActionVerifyEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
+	public override string GetActionVerifyEmail => "メールアドレスを認証";
 
 	/// <summary>
 	/// Key: "GetActionVerifyNow"
 	/// English String: "Verify Now"
 	/// </summary>
-	public override string GetActionVerifyNow => "ä»Šã™ãèªè¨¼";
+	public override string GetActionVerifyNow => "今すぐ認証";
 
 	/// <summary>
 	/// Key: "GetActionVisitDevEx"
 	/// English String: "Visit DevEx"
 	/// </summary>
-	public override string GetActionVisitDevEx => "DevExã«ã‚¢ã‚¯ã‚»ã‚¹";
+	public override string GetActionVisitDevEx => "DevExにアクセス";
 
 	/// <summary>
 	/// Key: "GetLabelAlmostReady"
 	/// English String: "You're almost ready!"
 	/// </summary>
-	public override string GetLabelAlmostReady => "ã‚ã¨å°‘ã—ã§ã™ï¼";
+	public override string GetLabelAlmostReady => "あと少しです！";
 
 	/// <summary>
 	/// Key: "GetLabelBuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string GetLabelBuilderClubForCash => "Robuxã‚’ç¾é‡‘ã«äº¤æ›ã™ã‚‹ã«ã¯ã€Outrageous Builders ClubãŒå¿…è¦ã§ã™ã€‚";
+	public override string GetLabelBuilderClubForCash => "Robuxを現金に交換するには、Outrageous Builders Clubが必要です。";
 
 	/// <summary>
 	/// Key: "GetLabelBuildersCludForCashout"
 	/// English String: "You need Outrageous Builders Club to Cash Out."
 	/// </summary>
-	public override string GetLabelBuildersCludForCashout => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã«ã¯ã€Outrageous Builders ClubãŒå¿…è¦ã§ã™ã€‚";
+	public override string GetLabelBuildersCludForCashout => "キャッシュアウトには、Outrageous Builders Clubが必要です。";
 
 	/// <summary>
 	/// Key: "GetLabelCurrentExchangeRate"
 	/// English String: "Current Exchange Rates"
 	/// </summary>
-	public override string GetLabelCurrentExchangeRate => "ç¾åœ¨ã®äº¤æ›ãƒ¬ãƒ¼ãƒˆ";
+	public override string GetLabelCurrentExchangeRate => "現在の交換レート";
 
 	/// <summary>
 	/// Key: "GetLabelNeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string GetLabelNeedVerifiedEmail => "DevExã‚’ä½¿ã†ã«ã¯èªè¨¼æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
+	public override string GetLabelNeedVerifiedEmail => "DevExを使うには認証済みのメールアドレスが必要です。";
 
 	/// <summary>
 	/// Key: "GetLabelNotEligible"
 	/// English String: "You are not eligible currently."
 	/// </summary>
-	public override string GetLabelNotEligible => "ç¾åœ¨ã€æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+	public override string GetLabelNotEligible => "現在、権限がありません。";
 
 	/// <summary>
 	/// Key: "GetLabelNotEnoughRobuxForCashout"
 	/// English String: "You don't have enough Robux to Cash Out."
 	/// </summary>
-	public override string GetLabelNotEnoughRobuxForCashout => "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã§ãã¾ã›ã‚“ã€‚";
+	public override string GetLabelNotEnoughRobuxForCashout => "Robuxが不足しているためキャッシュアウトできません。";
 
 	/// <summary>
 	/// Key: "GetLabelRobux"
@@ -106,19 +108,19 @@ internal class DevExHomeResources_ja_jp : DevExHomeResources_en_us, IDevExHomeRe
 	/// Key: "GetLabelTradingRobux"
 	/// English String: "You're on your way to trading Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobux => "ã‚‚ã†ã™ãRobuxã‚’ç¾é‡‘ã¨äº¤æ›ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ï¼";
+	public override string GetLabelTradingRobux => "もうすぐRobuxを現金と交換できるようになります！";
 
 	/// <summary>
 	/// Key: "GetLabelTradingRobuxCash"
 	/// English String: "You're almost there! You almost qualify to trade your Robux for cash!"
 	/// </summary>
-	public override string GetLabelTradingRobuxCash => "ã‚‚ã†å°‘ã—ã§ã™ï¼ã‚ã¨å°‘ã—ã§Robuxã‚’ç¾é‡‘ã¨äº¤æ›ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ï¼";
+	public override string GetLabelTradingRobuxCash => "もう少しです！あと少しでRobuxを現金と交換できるようになります！";
 
 	/// <summary>
 	/// Key: "GetLabelVerifiedEmailForCashout"
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
-	public override string GetLabelVerifiedEmailForCashout => "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
+	public override string GetLabelVerifiedEmailForCashout => "キャッシュアウトする前に、メールアドレスの認証が必要です。";
 
 	public DevExHomeResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -127,77 +129,77 @@ internal class DevExHomeResources_ja_jp : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetActionCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForGetActionCashOut()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆ";
+		return "キャッシュアウト";
 	}
 
 	protected override string _GetTemplateForGetActionGetObc()
 	{
-		return "ä»Šã™ãOBCã‚’ã‚²ãƒƒãƒˆ";
+		return "今すぐOBCをゲット";
 	}
 
 	protected override string _GetTemplateForGetActionUpgradeMembership()
 	{
-		return "ãƒ¡ãƒ³ãƒãƒ¼ã‚·ãƒƒãƒ—ã‚’ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
+		return "メンバーシップをアップグレード";
 	}
 
 	protected override string _GetTemplateForGetActionVerify()
 	{
-		return "èªè¨¼";
+		return "認証";
 	}
 
 	protected override string _GetTemplateForGetActionVerifyEmail()
 	{
-		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’èªè¨¼";
+		return "メールアドレスを認証";
 	}
 
 	protected override string _GetTemplateForGetActionVerifyNow()
 	{
-		return "ä»Šã™ãèªè¨¼";
+		return "今すぐ認証";
 	}
 
 	protected override string _GetTemplateForGetActionVisitDevEx()
 	{
-		return "DevExã«ã‚¢ã‚¯ã‚»ã‚¹";
+		return "DevExにアクセス";
 	}
 
 	protected override string _GetTemplateForGetLabelAlmostReady()
 	{
-		return "ã‚ã¨å°‘ã—ã§ã™ï¼";
+		return "あと少しです！";
 	}
 
 	protected override string _GetTemplateForGetLabelBuilderClubForCash()
 	{
-		return "Robuxã‚’ç¾é‡‘ã«äº¤æ›ã™ã‚‹ã«ã¯ã€Outrageous Builders ClubãŒå¿…è¦ã§ã™ã€‚";
+		return "Robuxを現金に交換するには、Outrageous Builders Clubが必要です。";
 	}
 
 	protected override string _GetTemplateForGetLabelBuildersCludForCashout()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã«ã¯ã€Outrageous Builders ClubãŒå¿…è¦ã§ã™ã€‚";
+		return "キャッシュアウトには、Outrageous Builders Clubが必要です。";
 	}
 
 	protected override string _GetTemplateForGetLabelCurrentExchangeRate()
 	{
-		return "ç¾åœ¨ã®äº¤æ›ãƒ¬ãƒ¼ãƒˆ";
+		return "現在の交換レート";
 	}
 
 	protected override string _GetTemplateForGetLabelNeedVerifiedEmail()
 	{
-		return "DevExã‚’ä½¿ã†ã«ã¯èªè¨¼æ¸ˆã¿ã®ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒå¿…è¦ã§ã™ã€‚";
+		return "DevExを使うには認証済みのメールアドレスが必要です。";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEligible()
 	{
-		return "ç¾åœ¨ã€æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "現在、権限がありません。";
 	}
 
 	protected override string _GetTemplateForGetLabelNotEnoughRobuxForCashout()
 	{
-		return "RobuxãŒä¸è¶³ã—ã¦ã„ã‚‹ãŸã‚ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã§ãã¾ã›ã‚“ã€‚";
+		return "Robuxが不足しているためキャッシュアウトできません。";
 	}
 
 	protected override string _GetTemplateForGetLabelRobux()
@@ -207,17 +209,17 @@ internal class DevExHomeResources_ja_jp : DevExHomeResources_en_us, IDevExHomeRe
 
 	protected override string _GetTemplateForGetLabelTradingRobux()
 	{
-		return "ã‚‚ã†ã™ãRobuxã‚’ç¾é‡‘ã¨äº¤æ›ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ï¼";
+		return "もうすぐRobuxを現金と交換できるようになります！";
 	}
 
 	protected override string _GetTemplateForGetLabelTradingRobuxCash()
 	{
-		return "ã‚‚ã†å°‘ã—ã§ã™ï¼ã‚ã¨å°‘ã—ã§Robuxã‚’ç¾é‡‘ã¨äº¤æ›ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ï¼";
+		return "もう少しです！あと少しでRobuxを現金と交換できるようになります！";
 	}
 
 	protected override string _GetTemplateForGetLabelVerifiedEmailForCashout()
 	{
-		return "ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚¢ã‚¦ãƒˆã™ã‚‹å‰ã«ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ãŒå¿…è¦ã§ã™ã€‚";
+		return "キャッシュアウトする前に、メールアドレスの認証が必要です。";
 	}
 }
 

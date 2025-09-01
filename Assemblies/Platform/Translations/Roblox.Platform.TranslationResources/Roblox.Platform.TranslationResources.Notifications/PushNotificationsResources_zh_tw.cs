@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides PushNotificationsResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// You have a been invited to a VIP server!
 	/// English String: "You have a been invited to a VIP server!"
 	/// </summary>
-	public override string MessageAddedToPrivateServerWhiteListDefault => "æ‚¨å·²å—é‚€åˆ° VIP ä¼ºæœå™¨ï¼";
+	public override string MessageAddedToPrivateServerWhiteListDefault => "您已受邀到 VIP 伺服器！";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Body"
 	/// New activity on Roblox!
 	/// English String: "New activity on Roblox!"
 	/// </summary>
-	public override string MessageDefaultSystemMessageBody => "Roblox æœ‰æ–°æ´»å‹•ï¼";
+	public override string MessageDefaultSystemMessageBody => "Roblox 有新活動！";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Title"
@@ -32,49 +34,49 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// Your friend request has been accepted!
 	/// English String: "Your friend request has been accepted!"
 	/// </summary>
-	public override string MessageFriendRequestAcceptedDefault => "æ‚¨çš„å¥½å‹é‚€è«‹å·²è¢«æŽ¥å—ï¼";
+	public override string MessageFriendRequestAcceptedDefault => "您的好友邀請已被接受！";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestReceived.Default"
 	/// You have a new friend request!
 	/// English String: "You have a new friend request!"
 	/// </summary>
-	public override string MessageFriendRequestReceivedDefault => "æ‚¨æœ‰æ–°çš„å¥½å‹é‚€è«‹ï¼";
+	public override string MessageFriendRequestReceivedDefault => "您有新的好友邀請！";
 
 	/// <summary>
 	/// Key: "Message.NewChatMessage.Default"
 	/// You have a new chat message.
 	/// English String: "You have a new chat message."
 	/// </summary>
-	public override string MessageNewChatMessageDefault => "æ‚¨æœ‰æ–°çš„èŠå¤©è¨Šæ¯ã€‚";
+	public override string MessageNewChatMessageDefault => "您有新的聊天訊息。";
 
 	/// <summary>
 	/// Key: "Message.PartyInvitation.Default"
 	/// You are invited to a party!
 	/// English String: "You are invited to a party!"
 	/// </summary>
-	public override string MessagePartyInvitationDefault => "æ‚¨è¢«é‚€è«‹åŠ å…¥éšŠä¼ï¼";
+	public override string MessagePartyInvitationDefault => "您被邀請加入隊伍！";
 
 	/// <summary>
 	/// Key: "Message.PartyMembersJoined.Default"
 	/// A new member joined your party!
 	/// English String: "A new member joined your party!"
 	/// </summary>
-	public override string MessagePartyMembersJoinedDefault => "æœ‰æ–°æˆå“¡åŠ å…¥æ‚¨çš„éšŠä¼ï¼";
+	public override string MessagePartyMembersJoinedDefault => "有新成員加入您的隊伍！";
 
 	/// <summary>
 	/// Key: "Message.PrivateMessageReceived.Default"
 	/// You have a new private message.
 	/// English String: "You have a new private message."
 	/// </summary>
-	public override string MessagePrivateMessageReceivedDefault => "æ‚¨æœ‰æ–°çš„ç§äººè¨Šæ¯ã€‚";
+	public override string MessagePrivateMessageReceivedDefault => "您有新的私人訊息。";
 
 	/// <summary>
 	/// Key: "Message.TeamCreateInvitation.Default"
 	/// A user invites another user to contribute to a team create game.
 	/// English String: "You are invited to edit a game!"
 	/// </summary>
-	public override string MessageTeamCreateInvitationDefault => "æ‚¨è¢«é‚€è«‹ä¸€èµ·ç·¨è¼¯éŠæˆ²ï¼";
+	public override string MessageTeamCreateInvitationDefault => "您被邀請一起編輯遊戲！";
 
 	public PushNotificationsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -88,22 +90,22 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageAddedToPrivateServerWhiteListAddedToWhiteListMessage(string vipInviter, string server, string place)
 	{
-		return $"{vipInviter} å·²å°‡æ‚¨åŠ å…¥ {place} çš„ {server} VIP ä¼ºæœå™¨ï¼";
+		return $"{vipInviter} 已將您加入 {place} 的 {server} VIP 伺服器！";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListAddedToWhiteListMessage()
 	{
-		return "{vipInviter} å·²å°‡æ‚¨åŠ å…¥ {place} çš„ {server} VIP ä¼ºæœå™¨ï¼";
+		return "{vipInviter} 已將您加入 {place} 的 {server} VIP 伺服器！";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListDefault()
 	{
-		return "æ‚¨å·²å—é‚€åˆ° VIP ä¼ºæœå™¨ï¼";
+		return "您已受邀到 VIP 伺服器！";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageBody()
 	{
-		return "Roblox æœ‰æ–°æ´»å‹•ï¼";
+		return "Roblox 有新活動！";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageTitle()
@@ -118,17 +120,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestAcceptedAcceptedMessage(string friend)
 	{
-		return $"{friend} å·²æŽ¥å—æ‚¨çš„å¥½å‹é‚€è«‹ï¼";
+		return $"{friend} 已接受您的好友邀請！";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedAcceptedMessage()
 	{
-		return "{friend} å·²æŽ¥å—æ‚¨çš„å¥½å‹é‚€è«‹ï¼";
+		return "{friend} 已接受您的好友邀請！";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDefault()
 	{
-		return "æ‚¨çš„å¥½å‹é‚€è«‹å·²è¢«æŽ¥å—ï¼";
+		return "您的好友邀請已被接受！";
 	}
 
 	/// <summary>
@@ -138,17 +140,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedCompleteMessage(string friend)
 	{
-		return $"æ‚¨å·²èˆ‡ {friend} æˆç‚ºå¥½å‹ï¼";
+		return $"您已與 {friend} 成為好友！";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedCompleteMessage()
 	{
-		return "æ‚¨å·²èˆ‡ {friend} æˆç‚ºå¥½å‹ï¼";
+		return "您已與 {friend} 成為好友！";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedDefault()
 	{
-		return "æ‚¨æœ‰æ–°çš„å¥½å‹é‚€è«‹ï¼";
+		return "您有新的好友邀請！";
 	}
 
 	/// <summary>
@@ -158,17 +160,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedNewRequestMessage(string friend)
 	{
-		return $"{friend} å‘æ‚¨å‚³é€å¥½å‹é‚€è«‹ï¼";
+		return $"{friend} 向您傳送好友邀請！";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedNewRequestMessage()
 	{
-		return "{friend} å‘æ‚¨å‚³é€å¥½å‹é‚€è«‹ï¼";
+		return "{friend} 向您傳送好友邀請！";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageDefault()
 	{
-		return "æ‚¨æœ‰æ–°çš„èŠå¤©è¨Šæ¯ã€‚";
+		return "您有新的聊天訊息。";
 	}
 
 	/// <summary>
@@ -178,12 +180,12 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageNewChatMessageReceivedGroupMessage(string senderUserName, string conversationTitle, string messageContent)
 	{
-		return $"{senderUserName} å° {conversationTitle}ï¼š{messageContent}";
+		return $"{senderUserName} 對 {conversationTitle}：{messageContent}";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageReceivedGroupMessage()
 	{
-		return "{senderUserName} å° {conversationTitle}ï¼š{messageContent}";
+		return "{senderUserName} 對 {conversationTitle}：{messageContent}";
 	}
 
 	/// <summary>
@@ -193,17 +195,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageNewChatMessageReceivedMessage(string friend, string message)
 	{
-		return $"{friend}ï¼š{message}";
+		return $"{friend}：{message}";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageReceivedMessage()
 	{
-		return "{friend}ï¼š{message}";
+		return "{friend}：{message}";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationDefault()
 	{
-		return "æ‚¨è¢«é‚€è«‹åŠ å…¥éšŠä¼ï¼";
+		return "您被邀請加入隊伍！";
 	}
 
 	/// <summary>
@@ -213,12 +215,12 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter} é‚€è«‹æ‚¨åŠ å…¥éšŠä¼ï¼";
+		return $"{partyInviter} 邀請您加入隊伍！";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationPartyMessage()
 	{
-		return "{partyInviter} é‚€è«‹æ‚¨åŠ å…¥éšŠä¼ï¼";
+		return "{partyInviter} 邀請您加入隊伍！";
 	}
 
 	/// <summary>
@@ -228,17 +230,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationXBoxPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter} é‚€è«‹æ‚¨åŠ å…¥ Xbox éšŠä¼ï¼";
+		return $"{partyInviter} 邀請您加入 Xbox 隊伍！";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationXBoxPartyMessage()
 	{
-		return "{partyInviter} é‚€è«‹æ‚¨åŠ å…¥ Xbox éšŠä¼ï¼";
+		return "{partyInviter} 邀請您加入 Xbox 隊伍！";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedDefault()
 	{
-		return "æœ‰æ–°æˆå“¡åŠ å…¥æ‚¨çš„éšŠä¼ï¼";
+		return "有新成員加入您的隊伍！";
 	}
 
 	/// <summary>
@@ -248,17 +250,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyMembersJoinedJoinMessage(string partyInvitee)
 	{
-		return $"{partyInvitee} å·²åŠ å…¥æ‚¨çš„éšŠä¼ï¼";
+		return $"{partyInvitee} 已加入您的隊伍！";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedJoinMessage()
 	{
-		return "{partyInvitee} å·²åŠ å…¥æ‚¨çš„éšŠä¼ï¼";
+		return "{partyInvitee} 已加入您的隊伍！";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedDefault()
 	{
-		return "æ‚¨æœ‰æ–°çš„ç§äººè¨Šæ¯ã€‚";
+		return "您有新的私人訊息。";
 	}
 
 	/// <summary>
@@ -268,12 +270,12 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePrivateMessageReceivedMessageReceived(string messageSender)
 	{
-		return $"{messageSender} å‘æ‚¨å‚³é€æ–°çš„ç§äººè¨Šæ¯ã€‚";
+		return $"{messageSender} 向您傳送新的私人訊息。";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedMessageReceived()
 	{
-		return "{messageSender} å‘æ‚¨å‚³é€æ–°çš„ç§äººè¨Šæ¯ã€‚";
+		return "{messageSender} 向您傳送新的私人訊息。";
 	}
 
 	/// <summary>
@@ -282,17 +284,17 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageTeamCreateInvitation(string inviter, string gameName)
 	{
-		return $"{inviter}é‚€è«‹æ‚¨ç·¨è¼¯æ­¤éŠæˆ²ï¼š{gameName}ï¼";
+		return $"{inviter}邀請您編輯此遊戲：{gameName}！";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitation()
 	{
-		return "{inviter}é‚€è«‹æ‚¨ç·¨è¼¯æ­¤éŠæˆ²ï¼š{gameName}ï¼";
+		return "{inviter}邀請您編輯此遊戲：{gameName}！";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitationDefault()
 	{
-		return "æ‚¨è¢«é‚€è«‹ä¸€èµ·ç·¨è¼¯éŠæˆ²ï¼";
+		return "您被邀請一起編輯遊戲！";
 	}
 
 	/// <summary>
@@ -301,12 +303,12 @@ internal class PushNotificationsResources_zh_tw : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagesPlayTogether(string actorUsername, string universeName)
 	{
-		return $"{actorUsername} é¸æ“‡äº†ä¸€èµ·çŽ©çš„éŠæˆ²ï¼šã€Œ{universeName}ã€";
+		return $"{actorUsername} 選擇了一起玩的遊戲：「{universeName}」";
 	}
 
 	protected override string _GetTemplateForMessagesPlayTogether()
 	{
-		return "{actorUsername} é¸æ“‡äº†ä¸€èµ·çŽ©çš„éŠæˆ²ï¼šã€Œ{universeName}ã€";
+		return "{actorUsername} 選擇了一起玩的遊戲：「{universeName}」";
 	}
 }
 

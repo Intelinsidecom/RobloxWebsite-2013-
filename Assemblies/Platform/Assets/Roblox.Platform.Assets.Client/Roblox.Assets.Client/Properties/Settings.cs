@@ -1,4 +1,4 @@
-namespace Roblox.Platform.Assets.Client.Properties
+namespace Roblox.Assets.Client.Properties
 {
 	public class Settings
 	{

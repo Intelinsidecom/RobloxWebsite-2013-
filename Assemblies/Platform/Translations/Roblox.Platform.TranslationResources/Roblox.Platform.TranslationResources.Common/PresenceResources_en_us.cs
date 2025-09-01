@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class PresenceResources_en_us : TranslationResourcesBase, IPresenceResources, ITranslationResources
 
 {
@@ -123,3 +123,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class RobloxProductsResources_zh_tw : RobloxProductsResources_en_us, IR
 	/// Key: "Heading.Sorry"
 	/// English String: "Sorry"
 	/// </summary>
-	public override string HeadingSorry => "å°ä¸èµ·";
+	public override string HeadingSorry => "對不起";
 
 	/// <summary>
 	/// Key: "Message.BuyRobuxToCustomizeAvatar"
 	/// English String: "Buy Robux to customize your avatar and get items in game!"
 	/// </summary>
-	public override string MessageBuyRobuxToCustomizeAvatar => "è³¼è²· Robux è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ï¼Œå–å¾—éŠæˆ²é“å…·ï¼";
+	public override string MessageBuyRobuxToCustomizeAvatar => "購買 Robux 自訂您的虛擬人偶，取得遊戲道具！";
 
 	/// <summary>
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "Robux è³¼è²·æš«æ™‚åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageTryAgainLater => "Robux 購買暫時停用，請稍後再試。";
 
 	public RobloxProductsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class RobloxProductsResources_zh_tw : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForHeadingSorry()
 	{
-		return "å°ä¸èµ·";
+		return "對不起";
 	}
 
 	protected override string _GetTemplateForMessageBuyRobuxToCustomizeAvatar()
 	{
-		return "è³¼è²· Robux è‡ªè¨‚æ‚¨çš„è™›æ“¬äººå¶ï¼Œå–å¾—éŠæˆ²é“å…·ï¼";
+		return "購買 Robux 自訂您的虛擬人偶，取得遊戲道具！";
 	}
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "Robux è³¼è²·æš«æ™‚åœç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Robux 購買暫時停用，請稍後再試。";
 	}
 }
 

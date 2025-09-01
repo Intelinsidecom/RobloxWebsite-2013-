@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.Communication;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Communication;
+namespace Roblox.Platform.TranslationResources {
     class CommunicationResources : ICommunicationResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -29,3 +30,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+

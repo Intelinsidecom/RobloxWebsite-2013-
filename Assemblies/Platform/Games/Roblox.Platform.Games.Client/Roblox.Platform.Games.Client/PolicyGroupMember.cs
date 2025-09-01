@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class PolicyGroupMember
+namespace Roblox.Platform.Games.Client {
+    public class PolicyGroupMember
 
 {
 	public long Id { get; set; }

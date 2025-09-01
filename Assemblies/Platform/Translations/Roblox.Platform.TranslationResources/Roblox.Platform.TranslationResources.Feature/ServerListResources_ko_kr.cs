@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
@@ -11,101 +13,101 @@ internal class ServerListResources_ko_kr : ServerListResources_en_us, IServerLis
 	/// Configure server
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigureServer => "êµ¬ì„±";
+	public override string ActionConfigureServer => "구성";
 
 	/// <summary>
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
+	public override string ActionLoadMore => "더 불러오기";
 
 	/// <summary>
 	/// Key: "Heading.OtherServers"
 	/// English String: "Other Servers"
 	/// </summary>
-	public override string HeadingOtherServers => "ê¸°íƒ€ ì„œë²„";
+	public override string HeadingOtherServers => "기타 서버";
 
 	/// <summary>
 	/// Key: "Heading.RunningServers"
 	/// English String: "All Running Servers"
 	/// </summary>
-	public override string HeadingRunningServers => "ê°€ë™ ì¤‘ì¸ ëª¨ë“  ì„œë²„";
+	public override string HeadingRunningServers => "가동 중인 모든 서버";
 
 	/// <summary>
 	/// Key: "Heading.ServersMyFriendsAreIn"
 	/// English String: "Servers My Friends Are In"
 	/// </summary>
-	public override string HeadingServersMyFriendsAreIn => "ë‚´ ì¹œêµ¬ê°€ ìžˆëŠ” ì„œë²„";
+	public override string HeadingServersMyFriendsAreIn => "내 친구가 있는 서버";
 
 	/// <summary>
 	/// Key: "Label.Inactive"
 	/// English String: "Inactive."
 	/// </summary>
-	public override string LabelInactive => "ë¹„í™œì„±.";
+	public override string LabelInactive => "비활성.";
 
 	/// <summary>
 	/// Key: "Label.InsufficientFunds"
 	/// English String: "This Server has been deactivated. We were not able to process the recurring payment due to insufficient funds in your account."
 	/// </summary>
-	public override string LabelInsufficientFunds => "ì„œë²„ê°€ ë¹„í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. íšŒì›ë‹˜ ê³„ì •ì˜ ìž”ê³ ê°€ ë¶€ì¡±í•˜ì—¬ ìžë™ ì´ì²´ë¥¼ í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ";
+	public override string LabelInsufficientFunds => "서버가 비활성화되었습니다. 회원님 계정의 잔고가 부족하여 자동 이체를 하지 못했습니다. ";
 
 	/// <summary>
 	/// Key: "Label.MyVipServer"
 	/// English String: "My VIP Server"
 	/// </summary>
-	public override string LabelMyVipServer => "ë‚´ VIP ì„œë²„";
+	public override string LabelMyVipServer => "내 VIP 서버";
 
 	/// <summary>
 	/// Key: "Label.NoServersFound"
 	/// No Servers Found.
 	/// English String: "No Servers Found."
 	/// </summary>
-	public override string LabelNoServersFound => "ì„œë²„ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ.";
+	public override string LabelNoServersFound => "서버를 찾을 수 없음.";
 
 	/// <summary>
 	/// Key: "Label.NoVipServers"
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "VIP ì„œë²„ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ.";
+	public override string LabelNoVipServers => "VIP 서버 인스턴스를 찾을 수 없음.";
 
 	/// <summary>
 	/// Key: "Label.PaymentCancelled"
 	/// English String: "Payment Cancelled"
 	/// </summary>
-	public override string LabelPaymentCancelled => "ê²°ì œ ì·¨ì†Œë¨";
+	public override string LabelPaymentCancelled => "결제 취소됨";
 
 	/// <summary>
 	/// Key: "Label.PlacesNotLoading"
 	/// The list of places failed to load for some unknown reason.
 	/// English String: "Sorry, something went wrong loading places."
 	/// </summary>
-	public override string LabelPlacesNotLoading => "ì£„ì†¡í•©ë‹ˆë‹¤. ìž¥ì†Œë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ì¤‘ì— ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+	public override string LabelPlacesNotLoading => "죄송합니다. 장소를 불러오는 중에 오류가 발생했어요.";
 
 	/// <summary>
 	/// Key: "Label.ServerListJoin"
 	/// English String: "Join"
 	/// </summary>
-	public override string LabelServerListJoin => "ì°¸ê°€";
+	public override string LabelServerListJoin => "참가";
 
 	/// <summary>
 	/// Key: "Label.ServerListRenew"
 	/// English String: "Renew"
 	/// </summary>
-	public override string LabelServerListRenew => "ê°±ì‹ ";
+	public override string LabelServerListRenew => "갱신";
 
 	/// <summary>
 	/// Key: "Label.ShutDownServer"
 	/// User chooses to close their game server.
 	/// English String: "Shut Down This Server"
 	/// </summary>
-	public override string LabelShutDownServer => "ì„œë²„ ì¢…ë£Œ";
+	public override string LabelShutDownServer => "서버 종료";
 
 	/// <summary>
 	/// Key: "Label.SlowGame"
 	/// English String: "Slow Game"
 	/// </summary>
-	public override string LabelSlowGame => "ì„œë²„ ëŠë¦¼";
+	public override string LabelSlowGame => "서버 느림";
 
 	public ServerListResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -114,27 +116,27 @@ internal class ServerListResources_ko_kr : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForActionConfigureServer()
 	{
-		return "êµ¬ì„±";
+		return "구성";
 	}
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
+		return "더 불러오기";
 	}
 
 	protected override string _GetTemplateForHeadingOtherServers()
 	{
-		return "ê¸°íƒ€ ì„œë²„";
+		return "기타 서버";
 	}
 
 	protected override string _GetTemplateForHeadingRunningServers()
 	{
-		return "ê°€ë™ ì¤‘ì¸ ëª¨ë“  ì„œë²„";
+		return "가동 중인 모든 서버";
 	}
 
 	protected override string _GetTemplateForHeadingServersMyFriendsAreIn()
 	{
-		return "ë‚´ ì¹œêµ¬ê°€ ìžˆëŠ” ì„œë²„";
+		return "내 친구가 있는 서버";
 	}
 
 	/// <summary>
@@ -143,67 +145,67 @@ internal class ServerListResources_ko_kr : ServerListResources_en_us, IServerLis
 	/// </summary>
 	public override string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers)
 	{
-		return $"{currentPlayers} / {maximumAllowedPlayers}ëª… (ìµœëŒ€)";
+		return $"{currentPlayers} / {maximumAllowedPlayers}명 (최대)";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlayerCount()
 	{
-		return "{currentPlayers} / {maximumAllowedPlayers}ëª… (ìµœëŒ€)";
+		return "{currentPlayers} / {maximumAllowedPlayers}명 (최대)";
 	}
 
 	protected override string _GetTemplateForLabelInactive()
 	{
-		return "ë¹„í™œì„±.";
+		return "비활성.";
 	}
 
 	protected override string _GetTemplateForLabelInsufficientFunds()
 	{
-		return "ì„œë²„ê°€ ë¹„í™œì„±í™”ë˜ì—ˆìŠµë‹ˆë‹¤. íšŒì›ë‹˜ ê³„ì •ì˜ ìž”ê³ ê°€ ë¶€ì¡±í•˜ì—¬ ìžë™ ì´ì²´ë¥¼ í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ";
+		return "서버가 비활성화되었습니다. 회원님 계정의 잔고가 부족하여 자동 이체를 하지 못했습니다. ";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServer()
 	{
-		return "ë‚´ VIP ì„œë²„";
+		return "내 VIP 서버";
 	}
 
 	protected override string _GetTemplateForLabelNoServersFound()
 	{
-		return "ì„œë²„ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ.";
+		return "서버를 찾을 수 없음.";
 	}
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "VIP ì„œë²„ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŒ.";
+		return "VIP 서버 인스턴스를 찾을 수 없음.";
 	}
 
 	protected override string _GetTemplateForLabelPaymentCancelled()
 	{
-		return "ê²°ì œ ì·¨ì†Œë¨";
+		return "결제 취소됨";
 	}
 
 	protected override string _GetTemplateForLabelPlacesNotLoading()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ìž¥ì†Œë¥¼ ë¶ˆëŸ¬ì˜¤ëŠ” ì¤‘ì— ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+		return "죄송합니다. 장소를 불러오는 중에 오류가 발생했어요.";
 	}
 
 	protected override string _GetTemplateForLabelServerListJoin()
 	{
-		return "ì°¸ê°€";
+		return "참가";
 	}
 
 	protected override string _GetTemplateForLabelServerListRenew()
 	{
-		return "ê°±ì‹ ";
+		return "갱신";
 	}
 
 	protected override string _GetTemplateForLabelShutDownServer()
 	{
-		return "ì„œë²„ ì¢…ë£Œ";
+		return "서버 종료";
 	}
 
 	protected override string _GetTemplateForLabelSlowGame()
 	{
-		return "ì„œë²„ ëŠë¦¼";
+		return "서버 느림";
 	}
 }
 

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
-    interface IRedeemGameCardResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
+    public interface IRedeemGameCardResources : ITranslationResources
 
 {
 	/// <summary>
@@ -291,3 +293,5 @@
 
 
 }
+
+

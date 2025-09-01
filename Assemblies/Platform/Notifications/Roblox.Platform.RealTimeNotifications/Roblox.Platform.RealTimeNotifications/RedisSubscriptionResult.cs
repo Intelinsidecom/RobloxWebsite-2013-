@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using StackExchange.Redis;
-namespace Roblox.Platform.RealTimeNotificationsinternal {
+namespace Roblox.Platform.RealTimeNotifications
+{
     class RedisSubscriptionResult : ISubscriptionResult
 
 {
@@ -23,6 +24,5 @@ namespace Roblox.Platform.RealTimeNotificationsinternal {
 		_CallbackAction = callbackAction;
 	}
 }
-
 
 }

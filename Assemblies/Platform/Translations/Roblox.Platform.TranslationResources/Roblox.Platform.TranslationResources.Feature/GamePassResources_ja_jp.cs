@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class GamePassResources_ja_jp : GamePassResources_en_us, IGamePassResou
 	/// Key: "Action.AddPass"
 	/// English String: "Add Pass"
 	/// </summary>
-	public override string ActionAddPass => "ãƒ‘ã‚¹ã‚’è¿½åŠ ";
+	public override string ActionAddPass => "パスを追加";
 
 	/// <summary>
 	/// Key: "Heading.PassesForThisGame"
 	/// English String: "Passes"
 	/// </summary>
-	public override string HeadingPassesForThisGame => "ãƒ‘ã‚¹";
+	public override string HeadingPassesForThisGame => "パス";
 
 	/// <summary>
 	/// Key: "Label.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string LabelBuy => "è²·ã†";
+	public override string LabelBuy => "買う";
 
 	/// <summary>
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "æ‰€æœ‰ã—ã¦ã„ã¾ã™";
+	public override string LabelOwned => "所有しています";
 
 	public GamePassResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -37,22 +39,22 @@ internal class GamePassResources_ja_jp : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForActionAddPass()
 	{
-		return "ãƒ‘ã‚¹ã‚’è¿½åŠ ";
+		return "パスを追加";
 	}
 
 	protected override string _GetTemplateForHeadingPassesForThisGame()
 	{
-		return "ãƒ‘ã‚¹";
+		return "パス";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
 	{
-		return "è²·ã†";
+		return "買う";
 	}
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "æ‰€æœ‰ã—ã¦ã„ã¾ã™";
+		return "所有しています";
 	}
 }
 

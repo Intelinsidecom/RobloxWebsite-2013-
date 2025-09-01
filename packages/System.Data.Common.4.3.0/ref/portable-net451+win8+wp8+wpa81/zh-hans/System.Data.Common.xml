@@ -854,7 +854,7 @@
       <returns>要检索的列。</returns>
       <param name="ordinal">要检索的列。</param>
       <typeparam name="T">同步获取作为类型的指定列的值。</typeparam>
-      <exception cref="T:System.InvalidOperationException">连接中断或在数据检索期间已关闭。数据检索期间<see cref="T:System.Data.SqlClient.SqlDataReader" /> 处于关闭状态。没有可读取的就绪数据 (例如，第一个 <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> 未被调用或返回错误)。按顺序模式尝试读取上一步骤中读取的列。没有正在进行的异步操作。以顺序模式运行时，这适用于所有 Get* 方法，读取流时也可对其进行调用。</exception>
+      <exception cref="T:System.InvalidOperationException">连接中断或在数据检索期间已关闭。数据检索期间<see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> 处于关闭状态。没有可读取的就绪数据 (例如，第一个 <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> 未被调用或返回错误)。按顺序模式尝试读取上一步骤中读取的列。没有正在进行的异步操作。以顺序模式运行时，这适用于所有 Get* 方法，读取流时也可对其进行调用。</exception>
       <exception cref="T:System.IndexOutOfRangeException">尝试读取不存在的列。</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> 与 SQL Server 返回的类型不匹配或无法进行转换。</exception>
@@ -990,7 +990,7 @@
       <summary>获取一个值，该值指示 <see cref="T:System.Data.Common.DbDataReader" /> 是否已关闭。</summary>
       <returns>如果 <see cref="T:System.Data.Common.DbDataReader" /> 已关闭，则为 true；否则为 false。</returns>
       <exception cref="T:System.InvalidOperationException">
-        <see cref="T:System.Data.SqlClient.SqlDataReader" /> 是关闭的。</exception>
+        <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> 是关闭的。</exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

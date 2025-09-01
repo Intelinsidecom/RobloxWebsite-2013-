@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class GameSortsResources_en_us : TranslationResourcesBase, IGameSortsResources, ITranslationResources
 
 {
@@ -600,3 +600,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

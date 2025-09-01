@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class SocialMetaTagsResources_en_us : TranslationResourcesBase, ISocialMetaTagsResources, ITranslationResources
 
 {
@@ -218,3 +218,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

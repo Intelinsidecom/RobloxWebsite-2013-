@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
@@ -10,127 +12,127 @@ internal class GameLeaderboardResources_ja_jp : GameLeaderboardResources_en_us, 
 	/// Key: "Heading.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string HeadingClans => "ã‚¯ãƒ©ãƒ³";
+	public override string HeadingClans => "クラン";
 
 	/// <summary>
 	/// Key: "Heading.Players"
 	/// English String: "Players"
 	/// </summary>
-	public override string HeadingPlayers => "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼";
+	public override string HeadingPlayers => "プレイヤー";
 
 	/// <summary>
 	/// Key: "Label.AllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "é€šç®—";
+	public override string LabelAllTime => "通算";
 
 	/// <summary>
 	/// Key: "Label.Clan"
 	/// English String: "Clan"
 	/// </summary>
-	public override string LabelClan => "ã‚¯ãƒ©ãƒ³";
+	public override string LabelClan => "クラン";
 
 	/// <summary>
 	/// Key: "Label.Clans"
 	/// English String: "Clans"
 	/// </summary>
-	public override string LabelClans => "ã‚¯ãƒ©ãƒ³";
+	public override string LabelClans => "クラン";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoading"
 	/// English String: "Error loading rows..."
 	/// </summary>
-	public override string LabelErrorLoading => "åˆ—ã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ...";
+	public override string LabelErrorLoading => "列の読み込み中にエラーが発生しました...";
 
 	/// <summary>
 	/// Key: "Label.ErrorLoadingRows"
 	/// English String: "Error loading rows."
 	/// </summary>
-	public override string LabelErrorLoadingRows => "åˆ—ã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+	public override string LabelErrorLoadingRows => "列の読み込み中にエラーが発生しました。";
 
 	/// <summary>
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "ã‚ãªãŸã¯ã€ã“ã®æœŸé–“ä¸­ã¯ã¾ã ãƒ©ãƒ³ã‚¯ã‚¤ãƒ³ã—ã¦ã„ã¾ã›ã‚“ã€‚ãƒã‚¤ãƒ³ãƒˆã‚’ç¨¼ã”ã†ï¼";
+	public override string LabelGoGetPoints => "あなたは、この期間中はまだランクインしていません。ポイントを稼ごう！";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "ãƒªãƒ¼ãƒ€ãƒ¼";
+	public override string LabelLeader => "リーダー";
 
 	/// <summary>
 	/// Key: "Label.Loading"
 	/// English String: "Loading..."
 	/// </summary>
-	public override string LabelLoading => "èª­ã¿è¾¼ã¿ä¸­...";
+	public override string LabelLoading => "読み込み中...";
 
 	/// <summary>
 	/// Key: "Label.NoResults"
 	/// English String: "No results found"
 	/// </summary>
-	public override string LabelNoResults => "çµæžœãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
+	public override string LabelNoResults => "結果が見つかりませんでした";
 
 	/// <summary>
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "æ‰€æœ‰è€…";
+	public override string LabelOwner => "所有者";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
 	/// English String: "Past Month"
 	/// </summary>
-	public override string LabelPastMonth => "å…ˆæœˆ";
+	public override string LabelPastMonth => "先月";
 
 	/// <summary>
 	/// Key: "Label.PastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "å…ˆé€±";
+	public override string LabelPastWeek => "先週";
 
 	/// <summary>
 	/// Key: "Label.Points"
 	/// English String: "Points"
 	/// </summary>
-	public override string LabelPoints => "ãƒã‚¤ãƒ³ãƒˆ";
+	public override string LabelPoints => "ポイント";
 
 	/// <summary>
 	/// Key: "Label.PrimaryGroup"
 	/// English String: "Primary Group"
 	/// </summary>
-	public override string LabelPrimaryGroup => "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—";
+	public override string LabelPrimaryGroup => "メイングループ";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "ãƒ©ãƒ³ã‚¯";
+	public override string LabelRank => "ランク";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
+	public override string LabelSeeMore => "もっと見る";
 
 	/// <summary>
 	/// Key: "Label.Today"
 	/// English String: "Today"
 	/// </summary>
-	public override string LabelToday => "ä»Šæ—¥";
+	public override string LabelToday => "今日";
 
 	/// <summary>
 	/// Key: "Label.UpdatedOneHour"
 	/// English String: "Updated approx. 1 hour ago"
 	/// </summary>
-	public override string LabelUpdatedOneHour => "ç´„1æ™‚é–“å‰ã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+	public override string LabelUpdatedOneHour => "約1時間前にアップデート済み";
 
 	/// <summary>
 	/// Key: "Label.UpdatedTenMinutes"
 	/// English String: "Updated approx. 10 minutes ago"
 	/// </summary>
-	public override string LabelUpdatedTenMinutes => "ç´„10åˆ†å‰ã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+	public override string LabelUpdatedTenMinutes => "約10分前にアップデート済み";
 
 	public GameLeaderboardResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -139,107 +141,107 @@ internal class GameLeaderboardResources_ja_jp : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForHeadingClans()
 	{
-		return "ã‚¯ãƒ©ãƒ³";
+		return "クラン";
 	}
 
 	protected override string _GetTemplateForHeadingPlayers()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼";
+		return "プレイヤー";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "é€šç®—";
+		return "通算";
 	}
 
 	protected override string _GetTemplateForLabelClan()
 	{
-		return "ã‚¯ãƒ©ãƒ³";
+		return "クラン";
 	}
 
 	protected override string _GetTemplateForLabelClans()
 	{
-		return "ã‚¯ãƒ©ãƒ³";
+		return "クラン";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoading()
 	{
-		return "åˆ—ã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ...";
+		return "列の読み込み中にエラーが発生しました...";
 	}
 
 	protected override string _GetTemplateForLabelErrorLoadingRows()
 	{
-		return "åˆ—ã®èª­ã¿è¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+		return "列の読み込み中にエラーが発生しました。";
 	}
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "ã‚ãªãŸã¯ã€ã“ã®æœŸé–“ä¸­ã¯ã¾ã ãƒ©ãƒ³ã‚¯ã‚¤ãƒ³ã—ã¦ã„ã¾ã›ã‚“ã€‚ãƒã‚¤ãƒ³ãƒˆã‚’ç¨¼ã”ã†ï¼";
+		return "あなたは、この期間中はまだランクインしていません。ポイントを稼ごう！";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "ãƒªãƒ¼ãƒ€ãƒ¼";
+		return "リーダー";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
 	{
-		return "èª­ã¿è¾¼ã¿ä¸­...";
+		return "読み込み中...";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "çµæžœãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ";
+		return "結果が見つかりませんでした";
 	}
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "æ‰€æœ‰è€…";
+		return "所有者";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
 	{
-		return "å…ˆæœˆ";
+		return "先月";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "å…ˆé€±";
+		return "先週";
 	}
 
 	protected override string _GetTemplateForLabelPoints()
 	{
-		return "ãƒã‚¤ãƒ³ãƒˆ";
+		return "ポイント";
 	}
 
 	protected override string _GetTemplateForLabelPrimaryGroup()
 	{
-		return "ãƒ¡ã‚¤ãƒ³ã‚°ãƒ«ãƒ¼ãƒ—";
+		return "メイングループ";
 	}
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "ãƒ©ãƒ³ã‚¯";
+		return "ランク";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "ã‚‚ã£ã¨è¦‹ã‚‹";
+		return "もっと見る";
 	}
 
 	protected override string _GetTemplateForLabelToday()
 	{
-		return "ä»Šæ—¥";
+		return "今日";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedOneHour()
 	{
-		return "ç´„1æ™‚é–“å‰ã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+		return "約1時間前にアップデート済み";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedTenMinutes()
 	{
-		return "ç´„10åˆ†å‰ã«ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+		return "約10分前にアップデート済み";
 	}
 }
 

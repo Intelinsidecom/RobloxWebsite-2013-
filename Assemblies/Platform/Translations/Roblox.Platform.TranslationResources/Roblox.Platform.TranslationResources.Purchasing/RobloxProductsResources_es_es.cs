@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
@@ -22,7 +24,7 @@ internal class RobloxProductsResources_es_es : RobloxProductsResources_en_us, IR
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "Las compras con Robux estÃ¡n desactivadas temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageTryAgainLater => "Las compras con Robux están desactivadas temporalmente. Inténtalo de nuevo más tarde.";
 
 	public RobloxProductsResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -41,7 +43,7 @@ internal class RobloxProductsResources_es_es : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "Las compras con Robux estÃ¡n desactivadas temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Las compras con Robux están desactivadas temporalmente. Inténtalo de nuevo más tarde.";
 	}
 }
 

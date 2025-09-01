@@ -1,9 +1,13 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationinternal {
-    class ReviewTaskRepublisherFactory : IReviewTaskRepublisherFactory
+using Roblox.Localization.Core;
+using Roblox.Moderation.Interfaces; 
+
+namespace Roblox.Moderation
+{
+    public class ReviewTaskRepublisherFactory : IReviewTaskRepublisherFactory
 
 {
 	private readonly Func<int> _GetMaximumNumberOfOpenTasksToRepublish;

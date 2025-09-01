@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class GamePassResources_ko_kr : GamePassResources_en_us, IGamePassResou
 	/// Key: "Action.AddPass"
 	/// English String: "Add Pass"
 	/// </summary>
-	public override string ActionAddPass => "íŒ¨ìŠ¤ ì¶”ê°€";
+	public override string ActionAddPass => "패스 추가";
 
 	/// <summary>
 	/// Key: "Heading.PassesForThisGame"
 	/// English String: "Passes"
 	/// </summary>
-	public override string HeadingPassesForThisGame => "ê²Œìž„íŒ¨ìŠ¤";
+	public override string HeadingPassesForThisGame => "게임패스";
 
 	/// <summary>
 	/// Key: "Label.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string LabelBuy => "êµ¬ë§¤";
+	public override string LabelBuy => "구매";
 
 	/// <summary>
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "ë³´ìœ í•¨";
+	public override string LabelOwned => "보유함";
 
 	public GamePassResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -37,22 +39,22 @@ internal class GamePassResources_ko_kr : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForActionAddPass()
 	{
-		return "íŒ¨ìŠ¤ ì¶”ê°€";
+		return "패스 추가";
 	}
 
 	protected override string _GetTemplateForHeadingPassesForThisGame()
 	{
-		return "ê²Œìž„íŒ¨ìŠ¤";
+		return "게임패스";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
 	{
-		return "êµ¬ë§¤";
+		return "구매";
 	}
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "ë³´ìœ í•¨";
+		return "보유함";
 	}
 }
 

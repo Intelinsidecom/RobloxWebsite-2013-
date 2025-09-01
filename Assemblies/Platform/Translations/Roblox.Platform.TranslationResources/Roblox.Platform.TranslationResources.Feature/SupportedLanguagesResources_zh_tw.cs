@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides SupportedLanguagesResources_en_us to provide locale specific translations where possible,
@@ -10,187 +12,187 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 	/// Key: "Action.Clear"
 	/// English String: "Clear"
 	/// </summary>
-	public override string ActionClear => "æ¸…é™¤";
+	public override string ActionClear => "清除";
 
 	/// <summary>
 	/// Key: "Description.AutomaticTextCapture"
 	/// The tooltip content for Automatic Text Capture toggle button
 	/// English String: "Automatically capture text from game UI while users play"
 	/// </summary>
-	public override string DescriptionAutomaticTextCapture => "åœ¨éŠçŽ©æœŸé–“è‡ªå‹•å¾žéŠæˆ² UI æ“·å–æ–‡å­—";
+	public override string DescriptionAutomaticTextCapture => "在遊玩期間自動從遊戲 UI 擷取文字";
 
 	/// <summary>
 	/// Key: "Description.ClearTableWarning"
 	/// English String: "All entries that have been automatically captured and have no translations will be cleared from your table. Note: All applicable text will be recaptured automatically."
 	/// </summary>
-	public override string DescriptionClearTableWarning => "æ‰€æœ‰è‡ªå‹•æ“·å–ä¸¦æœªç¿»è­¯çš„æ¢ç›®å°‡æœƒè¢«æ¸…é™¤ã€‚æ³¨æ„ï¼šæ‰€æœ‰é©ç”¨æ–‡å­—å°‡æœƒé‡æ–°è¢«è‡ªå‹•æ“·å–ã€‚";
+	public override string DescriptionClearTableWarning => "所有自動擷取並未翻譯的條目將會被清除。注意：所有適用文字將會重新被自動擷取。";
 
 	/// <summary>
 	/// Key: "Description.UseTranslatedContent"
 	/// The tooltip content for Use Translated Contente toggle button
 	/// English String: "Enable translated content in game"
 	/// </summary>
-	public override string DescriptionUseTranslatedContent => "åœ¨éŠæˆ²å…§å•Ÿç”¨å·²ç¿»è­¯å…§å®¹";
+	public override string DescriptionUseTranslatedContent => "在遊戲內啟用已翻譯內容";
 
 	/// <summary>
 	/// Key: "Heading.AreYouSureToClear"
 	/// modal heading
 	/// English String: "Are you sure you want to clear entries?"
 	/// </summary>
-	public override string HeadingAreYouSureToClear => "ç¢ºå®šæ¸…é™¤æ¢ç›®ï¼Ÿ";
+	public override string HeadingAreYouSureToClear => "確定清除條目？";
 
 	/// <summary>
 	/// Key: "Heading.InGameContentTranslations"
 	/// The header for in game content translations section
 	/// English String: "In Game Content Translations"
 	/// </summary>
-	public override string HeadingInGameContentTranslations => "éŠæˆ²å…§å®¹ç¿»è­¯";
+	public override string HeadingInGameContentTranslations => "遊戲內容翻譯";
 
 	/// <summary>
 	/// Key: "Label.AutomaticTextCapture"
 	/// The label for toggle button that is used to enable/disable automatic text scraping for a game
 	/// English String: "Automatic Text Capture: "
 	/// </summary>
-	public override string LabelAutomaticTextCapture => "è‡ªå‹•æ–‡å­—æ“·å–ï¼š";
+	public override string LabelAutomaticTextCapture => "自動文字擷取：";
 
 	/// <summary>
 	/// Key: "Label.ClearTableEntries"
 	/// English String: "Clear untranslated auto-captured strings"
 	/// </summary>
-	public override string LabelClearTableEntries => "æ¸…é™¤ä½ç¿»è­¯çš„è‡ªå‹•æ“·å–å­—ä¸²";
+	public override string LabelClearTableEntries => "清除位翻譯的自動擷取字串";
 
 	/// <summary>
 	/// Key: "Label.CrowdsourceEnabled"
 	/// Table header for the column which will display the toggle button that can by used by the user to turn on/off crowdsource translation for each language
 	/// English String: "Crowdsource Enabled"
 	/// </summary>
-	public override string LabelCrowdsourceEnabled => "å·²å•Ÿç”¨çœ¾åŒ…";
+	public override string LabelCrowdsourceEnabled => "已啟用眾包";
 
 	/// <summary>
 	/// Key: "Label.EnableAutoUITextCapture"
 	/// The label for the checkbox used to turn on/off automatic UI text captrue feature
 	/// English String: "Enable Auto UI Text Capture"
 	/// </summary>
-	public override string LabelEnableAutoUITextCapture => "å•Ÿç”¨è‡ªå‹• UI æ–‡å­—æ“·å–";
+	public override string LabelEnableAutoUITextCapture => "啟用自動 UI 文字擷取";
 
 	/// <summary>
 	/// Key: "Label.InProgress"
 	/// supported language status for beta support in selected language
 	/// English String: "In Progress"
 	/// </summary>
-	public override string LabelInProgress => "é€²è¡Œä¸­";
+	public override string LabelInProgress => "進行中";
 
 	/// <summary>
 	/// Key: "Label.Language"
 	/// Table header for the column which will display the name of each language
 	/// English String: "Language"
 	/// </summary>
-	public override string LabelLanguage => "èªžè¨€";
+	public override string LabelLanguage => "語言";
 
 	/// <summary>
 	/// Key: "Label.Languages"
 	/// The heading for supported languages tab
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelLanguages => "èªžè¨€";
+	public override string LabelLanguages => "語言";
 
-	public override string LabelNotSpecified => "ï¼œæœªæŒ‡å®šï¼ž";
+	public override string LabelNotSpecified => "＜未指定＞";
 
 	/// <summary>
 	/// Key: "Label.NotSupported"
 	/// Label for language support status: not supported
 	/// English String: "Not supported"
 	/// </summary>
-	public override string LabelNotSupported => "æœªæ”¯æ´";
+	public override string LabelNotSupported => "未支援";
 
 	/// <summary>
 	/// Key: "Label.ShowMoreLanguages"
 	/// Text for the link that user can click to display more languages in the table
 	/// English String: "Show more languages..."
 	/// </summary>
-	public override string LabelShowMoreLanguages => "é¡¯ç¤ºæ›´å¤šèªžè¨€â€¦";
+	public override string LabelShowMoreLanguages => "顯示更多語言…";
 
 	/// <summary>
 	/// Key: "Label.SourceLanguage"
 	/// The label for section which displays user's current source language
 	/// English String: "Source Language"
 	/// </summary>
-	public override string LabelSourceLanguage => "æºèªžè¨€";
+	public override string LabelSourceLanguage => "源語言";
 
 	/// <summary>
 	/// Key: "Label.Supported"
 	/// Label for language support status: supported
 	/// English String: "Supported"
 	/// </summary>
-	public override string LabelSupported => "å·²æ”¯æ´";
+	public override string LabelSupported => "已支援";
 
 	/// <summary>
 	/// Key: "Label.SupportedBeta"
 	/// Label for language support status: supported (beta)
 	/// English String: "Supported (beta)"
 	/// </summary>
-	public override string LabelSupportedBeta => "å·²æ”¯æ´ï¼ˆBeta æ¸¬è©¦ï¼‰";
+	public override string LabelSupportedBeta => "已支援（Beta 測試）";
 
 	/// <summary>
 	/// Key: "Label.SupportedStatus"
 	/// Table header for the column which will display the current support status for each language
 	/// English String: "Supported Status"
 	/// </summary>
-	public override string LabelSupportedStatus => "æ”¯æ´ç‹€æ…‹";
+	public override string LabelSupportedStatus => "支援狀態";
 
 	/// <summary>
 	/// Key: "Label.UseTranslatedContent"
 	/// The label for toggle button that is used to enable/disable whether translated strings should be used in game
 	/// English String: "Use Translated Content: "
 	/// </summary>
-	public override string LabelUseTranslatedContent => "ä½¿ç”¨å·²ç¿»è­¯çš„å…§å®¹ï¼š";
+	public override string LabelUseTranslatedContent => "使用已翻譯的內容：";
 
 	/// <summary>
 	/// Key: "Message.ClearTableSuccess"
 	/// English String: "Confirmed. Please note that this process may take several minutes."
 	/// </summary>
-	public override string MessageClearTableSuccess => "å·²ç¢ºèªï¼Œä½œæ¥­å°‡æ–¼å¹¾åˆ†é˜å¾Œå®Œæˆã€‚";
+	public override string MessageClearTableSuccess => "已確認，作業將於幾分鐘後完成。";
 
 	/// <summary>
 	/// Key: "Message.UpdateFail"
 	/// The text of the system feedback which is displayed when the request to persist a change to a status of a language returns an error
 	/// English String: "An error has occurred, please try again later!"
 	/// </summary>
-	public override string MessageUpdateFail => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageUpdateFail => "發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Message.UpdateSuccess"
 	/// The text of the system feedback which is displayed when the request to persist a change to a status of a language returns successfully
 	/// English String: "Changes saved successfully"
 	/// </summary>
-	public override string MessageUpdateSuccess => "æˆåŠŸå„²å­˜è®Šæ›´";
+	public override string MessageUpdateSuccess => "成功儲存變更";
 
 	/// <summary>
 	/// Key: "Message.Updating"
 	/// The text of the system feedback which is displayed when persisting a change to a status of a language
 	/// English String: "Updating..."
 	/// </summary>
-	public override string MessageUpdating => "æ­£åœ¨æ›´æ–°â€¦";
+	public override string MessageUpdating => "正在更新…";
 
 	/// <summary>
 	/// Key: "Message.WaitAndTryAgain"
 	/// English String: "Too many attempts. Please wait before trying to clear again."
 	/// </summary>
-	public override string MessageWaitAndTryAgain => "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageWaitAndTryAgain => "嘗試次數過多，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "éŒ¯èª¤ï¼šç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string ResponseGeneralError => "錯誤：發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.SaveConfiguration"
 	/// The feedback message for user when a configuration setting change cannot be saved
 	/// English String: "Error: Could not change setting. Please try again."
 	/// </summary>
-	public override string ResponseSaveConfiguration => "éŒ¯èª¤ï¼šç„¡æ³•è®Šæ›´è¨­å®šï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+	public override string ResponseSaveConfiguration => "錯誤：無法變更設定，請重新嘗試。";
 
 	public SupportedLanguagesResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -199,17 +201,17 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 
 	protected override string _GetTemplateForActionClear()
 	{
-		return "æ¸…é™¤";
+		return "清除";
 	}
 
 	protected override string _GetTemplateForDescriptionAutomaticTextCapture()
 	{
-		return "åœ¨éŠçŽ©æœŸé–“è‡ªå‹•å¾žéŠæˆ² UI æ“·å–æ–‡å­—";
+		return "在遊玩期間自動從遊戲 UI 擷取文字";
 	}
 
 	protected override string _GetTemplateForDescriptionClearTableWarning()
 	{
-		return "æ‰€æœ‰è‡ªå‹•æ“·å–ä¸¦æœªç¿»è­¯çš„æ¢ç›®å°‡æœƒè¢«æ¸…é™¤ã€‚æ³¨æ„ï¼šæ‰€æœ‰é©ç”¨æ–‡å­—å°‡æœƒé‡æ–°è¢«è‡ªå‹•æ“·å–ã€‚";
+		return "所有自動擷取並未翻譯的條目將會被清除。注意：所有適用文字將會重新被自動擷取。";
 	}
 
 	/// <summary>
@@ -219,12 +221,12 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 	/// </summary>
 	public override string DescriptionCrowdsourceEnabled(string lineBreak)
 	{
-		return $"é–‹å•Ÿï¼šå•Ÿç”¨çœ¾åŒ…ï¼ˆè­¯è€…å¯ä»¥çœ‹åˆ°ä¸¦ç¿»è­¯éŠæˆ²å­—ä¸²ï¼‰{lineBreak}é—œé–‰ï¼šåœç”¨çœ¾åŒ…ï¼ˆè­¯è€…ç„¡æ³•çœ‹åˆ°æˆ–ç¿»è­¯éŠæˆ²å­—ä¸²ï¼‰";
+		return $"開啟：啟用眾包（譯者可以看到並翻譯遊戲字串）{lineBreak}關閉：停用眾包（譯者無法看到或翻譯遊戲字串）";
 	}
 
 	protected override string _GetTemplateForDescriptionCrowdsourceEnabled()
 	{
-		return "é–‹å•Ÿï¼šå•Ÿç”¨çœ¾åŒ…ï¼ˆè­¯è€…å¯ä»¥çœ‹åˆ°ä¸¦ç¿»è­¯éŠæˆ²å­—ä¸²ï¼‰{lineBreak}é—œé–‰ï¼šåœç”¨çœ¾åŒ…ï¼ˆè­¯è€…ç„¡æ³•çœ‹åˆ°æˆ–ç¿»è­¯éŠæˆ²å­—ä¸²ï¼‰";
+		return "開啟：啟用眾包（譯者可以看到並翻譯遊戲字串）{lineBreak}關閉：停用眾包（譯者無法看到或翻譯遊戲字串）";
 	}
 
 	/// <summary>
@@ -234,12 +236,12 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 	/// </summary>
 	public override string DescriptionLocalizationStatus(string lineBreak)
 	{
-		return $"ç¶ è‰²æ©«æ¢ï¼šå·²æ ¸å‡†çš„å­—ä¸²æ¯”ä¾‹{lineBreak}è—è‰²æ©«æ¢ï¼šå·²ç¿»è­¯çš„å­—ä¸²æ¯”ä¾‹";
+		return $"綠色橫條：已核准的字串比例{lineBreak}藍色橫條：已翻譯的字串比例";
 	}
 
 	protected override string _GetTemplateForDescriptionLocalizationStatus()
 	{
-		return "ç¶ è‰²æ©«æ¢ï¼šå·²æ ¸å‡†çš„å­—ä¸²æ¯”ä¾‹{lineBreak}è—è‰²æ©«æ¢ï¼šå·²ç¿»è­¯çš„å­—ä¸²æ¯”ä¾‹";
+		return "綠色橫條：已核准的字串比例{lineBreak}藍色橫條：已翻譯的字串比例";
 	}
 
 	/// <summary>
@@ -249,62 +251,62 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 	/// </summary>
 	public override string DescriptionSupportedStatus(string lineBreak)
 	{
-		return $"æ”¯æ´ç‹€æ…‹ä»£è¡¨è©²èªžè¨€æ˜¯å¦åˆ—åœ¨éŠæˆ²è©³ç´°è³‡æ–™é é¢ã€‚{lineBreak}å·²æ”¯æ´ - å·²åˆ—å…¥{lineBreak}é€²è¡Œä¸­ - ä½œç‚ºBeta æ¸¬è©¦åˆ—å…¥{lineBreak}æœªæ”¯æ´ - æœªåˆ—å…¥";
+		return $"支援狀態代表該語言是否列在遊戲詳細資料頁面。{lineBreak}已支援 - 已列入{lineBreak}進行中 - 作為Beta 測試列入{lineBreak}未支援 - 未列入";
 	}
 
 	protected override string _GetTemplateForDescriptionSupportedStatus()
 	{
-		return "æ”¯æ´ç‹€æ…‹ä»£è¡¨è©²èªžè¨€æ˜¯å¦åˆ—åœ¨éŠæˆ²è©³ç´°è³‡æ–™é é¢ã€‚{lineBreak}å·²æ”¯æ´ - å·²åˆ—å…¥{lineBreak}é€²è¡Œä¸­ - ä½œç‚ºBeta æ¸¬è©¦åˆ—å…¥{lineBreak}æœªæ”¯æ´ - æœªåˆ—å…¥";
+		return "支援狀態代表該語言是否列在遊戲詳細資料頁面。{lineBreak}已支援 - 已列入{lineBreak}進行中 - 作為Beta 測試列入{lineBreak}未支援 - 未列入";
 	}
 
 	protected override string _GetTemplateForDescriptionUseTranslatedContent()
 	{
-		return "åœ¨éŠæˆ²å…§å•Ÿç”¨å·²ç¿»è­¯å…§å®¹";
+		return "在遊戲內啟用已翻譯內容";
 	}
 
 	protected override string _GetTemplateForHeadingAreYouSureToClear()
 	{
-		return "ç¢ºå®šæ¸…é™¤æ¢ç›®ï¼Ÿ";
+		return "確定清除條目？";
 	}
 
 	protected override string _GetTemplateForHeadingInGameContentTranslations()
 	{
-		return "éŠæˆ²å…§å®¹ç¿»è­¯";
+		return "遊戲內容翻譯";
 	}
 
 	protected override string _GetTemplateForLabelAutomaticTextCapture()
 	{
-		return "è‡ªå‹•æ–‡å­—æ“·å–ï¼š";
+		return "自動文字擷取：";
 	}
 
 	protected override string _GetTemplateForLabelClearTableEntries()
 	{
-		return "æ¸…é™¤ä½ç¿»è­¯çš„è‡ªå‹•æ“·å–å­—ä¸²";
+		return "清除位翻譯的自動擷取字串";
 	}
 
 	protected override string _GetTemplateForLabelCrowdsourceEnabled()
 	{
-		return "å·²å•Ÿç”¨çœ¾åŒ…";
+		return "已啟用眾包";
 	}
 
 	protected override string _GetTemplateForLabelEnableAutoUITextCapture()
 	{
-		return "å•Ÿç”¨è‡ªå‹• UI æ–‡å­—æ“·å–";
+		return "啟用自動 UI 文字擷取";
 	}
 
 	protected override string _GetTemplateForLabelInProgress()
 	{
-		return "é€²è¡Œä¸­";
+		return "進行中";
 	}
 
 	protected override string _GetTemplateForLabelLanguage()
 	{
-		return "èªžè¨€";
+		return "語言";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
 	{
-		return "èªžè¨€";
+		return "語言";
 	}
 
 	/// <summary>
@@ -314,87 +316,87 @@ internal class SupportedLanguagesResources_zh_tw : SupportedLanguagesResources_e
 	/// </summary>
 	public override string LabelLocalizationStatus(string lineBreak, string stringCount)
 	{
-		return $"æœ¬åœ°åŒ–ç‹€æ…‹{lineBreak}ï¼ˆ{stringCount} å€‹å­—ä¸²ï¼‰";
+		return $"本地化狀態{lineBreak}（{stringCount} 個字串）";
 	}
 
 	protected override string _GetTemplateForLabelLocalizationStatus()
 	{
-		return "æœ¬åœ°åŒ–ç‹€æ…‹{lineBreak}ï¼ˆ{stringCount} å€‹å­—ä¸²ï¼‰";
+		return "本地化狀態{lineBreak}（{stringCount} 個字串）";
 	}
 
 	protected override string _GetTemplateForLabelNotSpecified()
 	{
-		return "ï¼œæœªæŒ‡å®šï¼ž";
+		return "＜未指定＞";
 	}
 
 	protected override string _GetTemplateForLabelNotSupported()
 	{
-		return "æœªæ”¯æ´";
+		return "未支援";
 	}
 
 	protected override string _GetTemplateForLabelShowMoreLanguages()
 	{
-		return "é¡¯ç¤ºæ›´å¤šèªžè¨€â€¦";
+		return "顯示更多語言…";
 	}
 
 	protected override string _GetTemplateForLabelSourceLanguage()
 	{
-		return "æºèªžè¨€";
+		return "源語言";
 	}
 
 	protected override string _GetTemplateForLabelSupported()
 	{
-		return "å·²æ”¯æ´";
+		return "已支援";
 	}
 
 	protected override string _GetTemplateForLabelSupportedBeta()
 	{
-		return "å·²æ”¯æ´ï¼ˆBeta æ¸¬è©¦ï¼‰";
+		return "已支援（Beta 測試）";
 	}
 
 	protected override string _GetTemplateForLabelSupportedStatus()
 	{
-		return "æ”¯æ´ç‹€æ…‹";
+		return "支援狀態";
 	}
 
 	protected override string _GetTemplateForLabelUseTranslatedContent()
 	{
-		return "ä½¿ç”¨å·²ç¿»è­¯çš„å…§å®¹ï¼š";
+		return "使用已翻譯的內容：";
 	}
 
 	protected override string _GetTemplateForMessageClearTableSuccess()
 	{
-		return "å·²ç¢ºèªï¼Œä½œæ¥­å°‡æ–¼å¹¾åˆ†é˜å¾Œå®Œæˆã€‚";
+		return "已確認，作業將於幾分鐘後完成。";
 	}
 
 	protected override string _GetTemplateForMessageUpdateFail()
 	{
-		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForMessageUpdateSuccess()
 	{
-		return "æˆåŠŸå„²å­˜è®Šæ›´";
+		return "成功儲存變更";
 	}
 
 	protected override string _GetTemplateForMessageUpdating()
 	{
-		return "æ­£åœ¨æ›´æ–°â€¦";
+		return "正在更新…";
 	}
 
 	protected override string _GetTemplateForMessageWaitAndTryAgain()
 	{
-		return "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "嘗試次數過多，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "éŒ¯èª¤ï¼šç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "錯誤：發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseSaveConfiguration()
 	{
-		return "éŒ¯èª¤ï¼šç„¡æ³•è®Šæ›´è¨­å®šï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+		return "錯誤：無法變更設定，請重新嘗試。";
 	}
 }
 

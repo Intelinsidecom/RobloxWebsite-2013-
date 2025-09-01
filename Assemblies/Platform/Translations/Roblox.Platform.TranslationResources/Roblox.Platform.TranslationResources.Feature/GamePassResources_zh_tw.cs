@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class GamePassResources_zh_tw : GamePassResources_en_us, IGamePassResou
 	/// Key: "Action.AddPass"
 	/// English String: "Add Pass"
 	/// </summary>
-	public override string ActionAddPass => "æ–°å¢žéŠæˆ²è­‰";
+	public override string ActionAddPass => "新增遊戲證";
 
 	/// <summary>
 	/// Key: "Heading.PassesForThisGame"
 	/// English String: "Passes"
 	/// </summary>
-	public override string HeadingPassesForThisGame => "éŠæˆ²è­‰";
+	public override string HeadingPassesForThisGame => "遊戲證";
 
 	/// <summary>
 	/// Key: "Label.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string LabelBuy => "è³¼è²·";
+	public override string LabelBuy => "購買";
 
 	/// <summary>
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "å·²æ“æœ‰";
+	public override string LabelOwned => "已擁有";
 
 	public GamePassResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -37,22 +39,22 @@ internal class GamePassResources_zh_tw : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForActionAddPass()
 	{
-		return "æ–°å¢žéŠæˆ²è­‰";
+		return "新增遊戲證";
 	}
 
 	protected override string _GetTemplateForHeadingPassesForThisGame()
 	{
-		return "éŠæˆ²è­‰";
+		return "遊戲證";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
 	{
-		return "è³¼è²·";
+		return "購買";
 	}
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "å·²æ“æœ‰";
+		return "已擁有";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
@@ -168,7 +170,7 @@ internal class LoginResources_id_id : LoginResources_en_us, ILoginResources, ITr
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging inâ€¦"
+	/// English String: "Logging in…"
 	/// </summary>
 	public override string LabelLoggingInSpinnerText => "Masuk...";
 

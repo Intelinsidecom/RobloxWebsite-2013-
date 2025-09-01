@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides WebUtilResources_en_us to provide locale specific translations where possible,
@@ -101,12 +103,12 @@ internal class WebUtilResources_pt_br : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelMonth(string month)
 	{
-		return $"{month} mÃªs";
+		return $"{month} mês";
 	}
 
 	protected override string _GetTemplateForGetLabelMonth()
 	{
-		return "{month} mÃªs";
+		return "{month} mês";
 	}
 
 	/// <summary>

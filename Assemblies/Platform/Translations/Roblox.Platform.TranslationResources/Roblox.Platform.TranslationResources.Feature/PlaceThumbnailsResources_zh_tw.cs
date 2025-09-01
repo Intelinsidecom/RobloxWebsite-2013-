@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlaceThumbnailsResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PlaceThumbnailsResources_zh_tw : PlaceThumbnailsResources_en_us, 
 	/// The button text that user confirm for leaving to Youtube
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueToVideo => "å‰å¾€å½±ç‰‡";
+	public override string ActionContinueToVideo => "前往影片";
 
 	/// <summary>
 	/// Key: "Description.LeaveRobloxForYouTube"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "You are about to leave Roblox to view a video on YouTube."
 	/// </summary>
-	public override string DescriptionLeaveRobloxForYouTube => "æ‚¨å³å°‡é›¢é–‹ Robloxï¼Œä¸¦å‰å¾€ YouTube è§€çœ‹å½±ç‰‡ã€‚";
+	public override string DescriptionLeaveRobloxForYouTube => "您即將離開 Roblox，並前往 YouTube 觀看影片。";
 
 	/// <summary>
 	/// Key: "Description.YouTubeIsNotRoblox"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "YouTube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionYouTubeIsNotRoblox => "YouTubeä¸å±¬æ–¼Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+	public override string DescriptionYouTubeIsNotRoblox => "YouTube不屬於Roblox.com，受單獨的隱私權政策管理。";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// The title of the dialog that will show up when user is leaving Roblox to Youtube
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "æ‚¨å³å°‡é›¢é–‹ Roblox";
+	public override string HeadingLeavingRoblox => "您即將離開 Roblox";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "ä¸‹ä¸€å€‹";
+	public override string LabelNext => "下一個";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "ä¸Šä¸€å€‹";
+	public override string LabelPrevious => "上一個";
 
 	public PlaceThumbnailsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -53,32 +55,32 @@ internal class PlaceThumbnailsResources_zh_tw : PlaceThumbnailsResources_en_us, 
 
 	protected override string _GetTemplateForActionContinueToVideo()
 	{
-		return "å‰å¾€å½±ç‰‡";
+		return "前往影片";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveRobloxForYouTube()
 	{
-		return "æ‚¨å³å°‡é›¢é–‹ Robloxï¼Œä¸¦å‰å¾€ YouTube è§€çœ‹å½±ç‰‡ã€‚";
+		return "您即將離開 Roblox，並前往 YouTube 觀看影片。";
 	}
 
 	protected override string _GetTemplateForDescriptionYouTubeIsNotRoblox()
 	{
-		return "YouTubeä¸å±¬æ–¼Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+		return "YouTube不屬於Roblox.com，受單獨的隱私權政策管理。";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "æ‚¨å³å°‡é›¢é–‹ Roblox";
+		return "您即將離開 Roblox";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "ä¸‹ä¸€å€‹";
+		return "下一個";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "ä¸Šä¸€å€‹";
+		return "上一個";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GroupsResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Action.AuditLog"
 	/// English String: "Audit Log"
 	/// </summary>
-	public override string ActionAuditLog => "Registro de auditorÃ­a";
+	public override string ActionAuditLog => "Registro de auditoría";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -150,115 +152,115 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Action.UpgradeToJoin"
 	/// English String: "Upgrade to Join"
 	/// </summary>
-	public override string ActionUpgradeToJoin => "Mejorar suscripciÃ³n para unirse";
+	public override string ActionUpgradeToJoin => "Mejorar suscripción para unirse";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "SÃ­";
+	public override string ActionYes => "Sí";
 
 	/// <summary>
 	/// Key: "Description.ClothingRevenue"
 	/// English String: "Groups have the ability to create and sell official shirts, pants, and t-shirts! All revenue goes to group funds."
 	/// </summary>
-	public override string DescriptionClothingRevenue => "Los grupos pueden crear y vender camisas, pantalones y camisetas oficiales. Todos los ingresos de la venta se depositarÃ¡n en los fondos del grupo.";
+	public override string DescriptionClothingRevenue => "Los grupos pueden crear y vender camisas, pantalones y camisetas oficiales. Todos los ingresos de la venta se depositarán en los fondos del grupo.";
 
 	/// <summary>
 	/// Key: "Description.DeleteAllPostsByUser"
 	/// English String: "Also delete all posts by this user."
 	/// </summary>
-	public override string DescriptionDeleteAllPostsByUser => "Esta acciÃ³n eliminarÃ¡ todos los mensajes publicados por este usuario.";
+	public override string DescriptionDeleteAllPostsByUser => "Esta acción eliminará todos los mensajes publicados por este usuario.";
 
 	/// <summary>
 	/// Key: "Description.ExileUserWarning"
 	/// English String: "Are you sure you want to exile this user?"
 	/// </summary>
-	public override string DescriptionExileUserWarning => "Â¿Seguro que quieres expulsar a este usuario?";
+	public override string DescriptionExileUserWarning => "¿Seguro que quieres expulsar a este usuario?";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupAsOwnerWarning"
 	/// English String: "This will leave the group ownerless."
 	/// </summary>
-	public override string DescriptionLeaveGroupAsOwnerWarning => "Esta acciÃ³n dejarÃ¡ el grupo sin dueÃ±o.";
+	public override string DescriptionLeaveGroupAsOwnerWarning => "Esta acción dejará el grupo sin dueño.";
 
 	/// <summary>
 	/// Key: "Description.LeaveGroupWarning"
 	/// English String: "Are you sure you want to leave this group?"
 	/// </summary>
-	public override string DescriptionLeaveGroupWarning => "Â¿Seguro que quieres salir de este grupo?";
+	public override string DescriptionLeaveGroupWarning => "¿Seguro que quieres salir de este grupo?";
 
 	/// <summary>
 	/// Key: "Description.MakePrimaryGroupWarning"
 	/// English String: "Are you sure you want to make this your primary group?"
 	/// </summary>
-	public override string DescriptionMakePrimaryGroupWarning => "Â¿Seguro que quieres convertirlo en tu grupo principal?";
+	public override string DescriptionMakePrimaryGroupWarning => "¿Seguro que quieres convertirlo en tu grupo principal?";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroups"
 	/// English String: "Upgrade to Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroups => "Mejora tu suscripciÃ³n al Builders Club para unirte a mÃ¡s grupos.";
+	public override string DescriptionNoneMaxGroups => "Mejora tu suscripción al Builders Club para unirte a más grupos.";
 
 	/// <summary>
 	/// Key: "Description.NoneMaxGroupsPremium"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionNoneMaxGroupsPremium => "Mejora tu suscripciÃ³n a Roblox Premium para unirte a mÃ¡s grupos.";
+	public override string DescriptionNoneMaxGroupsPremium => "Mejora tu suscripción a Roblox Premium para unirte a más grupos.";
 
 	/// <summary>
 	/// Key: "Description.noneMaxGroupsPremiumText"
 	/// English String: "Upgrade to Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionnoneMaxGroupsPremiumText => "Mejora tu suscripciÃ³n a Roblox Premium para unirte a mÃ¡s grupos.";
+	public override string DescriptionnoneMaxGroupsPremiumText => "Mejora tu suscripción a Roblox Premium para unirte a más grupos.";
 
 	/// <summary>
 	/// Key: "Description.ObcMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionObcMaxGroups => "Te has unido al nÃºmero mÃ¡ximo de grupos.";
+	public override string DescriptionObcMaxGroups => "Te has unido al número máximo de grupos.";
 
 	/// <summary>
 	/// Key: "Description.OtherBcMaxGroups"
 	/// English String: "Upgrade your Builders Club to join more groups."
 	/// </summary>
-	public override string DescriptionOtherBcMaxGroups => "Mejora tu suscripciÃ³n de Builders Club para unirte a mÃ¡s grupos.";
+	public override string DescriptionOtherBcMaxGroups => "Mejora tu suscripción de Builders Club para unirte a más grupos.";
 
 	/// <summary>
 	/// Key: "Description.otherPremiumMaxGroupsText"
 	/// English String: "Upgrade your Roblox Premium to join more groups."
 	/// </summary>
-	public override string DescriptionotherPremiumMaxGroupsText => "Mejora tu suscripciÃ³n de Roblox Premium para unirte a mÃ¡s grupos.";
+	public override string DescriptionotherPremiumMaxGroupsText => "Mejora tu suscripción de Roblox Premium para unirte a más grupos.";
 
 	/// <summary>
 	/// Key: "Description.PremiumMaxGroups"
 	/// English String: "You have joined the maximum number of groups."
 	/// </summary>
-	public override string DescriptionPremiumMaxGroups => "Te has unido al nÃºmero mÃ¡ximo de grupos.";
+	public override string DescriptionPremiumMaxGroups => "Te has unido al número máximo de grupos.";
 
 	/// <summary>
 	/// Key: "Description.PurchaseBody"
 	/// English String: "Would you like to create this group for"
 	/// </summary>
-	public override string DescriptionPurchaseBody => "Â¿Quieres crear este grupo por";
+	public override string DescriptionPurchaseBody => "¿Quieres crear este grupo por";
 
 	/// <summary>
 	/// Key: "Description.RemovePrimaryGroupWarning"
 	/// English String: "Are you sure you want to remove your primary group?"
 	/// </summary>
-	public override string DescriptionRemovePrimaryGroupWarning => "Â¿Seguro que quieres eliminar tu grupo principal?";
+	public override string DescriptionRemovePrimaryGroupWarning => "¿Seguro que quieres eliminar tu grupo principal?";
 
 	/// <summary>
 	/// Key: "Description.ReportAbuseDescription"
 	/// English String: "What would you like to report?"
 	/// </summary>
-	public override string DescriptionReportAbuseDescription => "Â¿QuÃ© quieres denunciar?";
+	public override string DescriptionReportAbuseDescription => "¿Qué quieres denunciar?";
 
 	/// <summary>
 	/// Key: "Description.WallPrivacySettings"
 	/// English String: "Your privacy settings do not allow you to post to group walls. Click here to adjust these settings."
 	/// </summary>
-	public override string DescriptionWallPrivacySettings => "Tu configuraciÃ³n de privacidad no te permite publicar en el muro del grupo. Haz clic aquÃ­ para modificar los parÃ¡metros.";
+	public override string DescriptionWallPrivacySettings => "Tu configuración de privacidad no te permite publicar en el muro del grupo. Haz clic aquí para modificar los parámetros.";
 
 	/// <summary>
 	/// Key: "Heading.About"
@@ -288,7 +290,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Heading.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string HeadingDescription => "DescripciÃ³n";
+	public override string HeadingDescription => "Descripción";
 
 	/// <summary>
 	/// Key: "Heading.Enemies"
@@ -318,7 +320,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Heading.GroupPurchase"
 	/// English String: "Group Purchase Confirmation"
 	/// </summary>
-	public override string HeadingGroupPurchase => "ConfirmaciÃ³n de compra de grupo";
+	public override string HeadingGroupPurchase => "Confirmación de compra de grupo";
 
 	/// <summary>
 	/// Key: "Heading.GroupShout"
@@ -350,7 +352,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Selection option for what to report when reporting something in a group
 	/// English String: "Name or Description"
 	/// </summary>
-	public override string HeadingNameOrDescription => "Nombre o descripciÃ³n";
+	public override string HeadingNameOrDescription => "Nombre o descripción";
 
 	/// <summary>
 	/// Key: "Heading.Payouts"
@@ -386,7 +388,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "ConfiguraciÃ³n";
+	public override string HeadingSettings => "Configuración";
 
 	/// <summary>
 	/// Key: "Heading.Shout"
@@ -435,7 +437,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.AddGroupPlace"
 	/// English String: "Add Group Place"
 	/// </summary>
-	public override string LabelAddGroupPlace => "AÃ±adir un lugar de grupo";
+	public override string LabelAddGroupPlace => "Añadir un lugar de grupo";
 
 	/// <summary>
 	/// Key: "Label.AdjustCurrencyAmounts"
@@ -478,13 +480,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.CancelClanInvite"
 	/// English String: "Cancel Clan Invite"
 	/// </summary>
-	public override string LabelCancelClanInvite => "Cancelar invitaciÃ³n del clan";
+	public override string LabelCancelClanInvite => "Cancelar invitación del clan";
 
 	/// <summary>
 	/// Key: "Label.ChangeDescription"
 	/// English String: "Change Description"
 	/// </summary>
-	public override string LabelChangeDescription => "Cambiar descripciÃ³n";
+	public override string LabelChangeDescription => "Cambiar descripción";
 
 	/// <summary>
 	/// Key: "Label.ChangeOwner"
@@ -568,13 +570,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.CreateGroupBuildersClubTooltip"
 	/// English String: "Creating a group requires a Builders Club membership."
 	/// </summary>
-	public override string LabelCreateGroupBuildersClubTooltip => "Para crear un nuevo grupo se requiere la suscripciÃ³n al Builders Club.";
+	public override string LabelCreateGroupBuildersClubTooltip => "Para crear un nuevo grupo se requiere la suscripción al Builders Club.";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDescription"
 	/// English String: "Description (optional)"
 	/// </summary>
-	public override string LabelCreateGroupDescription => "DescripciÃ³n (opcional)";
+	public override string LabelCreateGroupDescription => "Descripción (opcional)";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupDeveloperProduct"
@@ -592,7 +594,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.CreateGroupFee"
 	/// English String: "Group Creation Fee"
 	/// </summary>
-	public override string LabelCreateGroupFee => "Cuota de creaciÃ³n de grupo";
+	public override string LabelCreateGroupFee => "Cuota de creación de grupo";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupName"
@@ -604,7 +606,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.CreateGroupPremiumTooltip"
 	/// English String: "Creating a group requires a Roblox Premium membership."
 	/// </summary>
-	public override string LabelCreateGroupPremiumTooltip => "Para crear un grupo se requiere la suscripciÃ³n a Roblox Premium.";
+	public override string LabelCreateGroupPremiumTooltip => "Para crear un grupo se requiere la suscripción a Roblox Premium.";
 
 	/// <summary>
 	/// Key: "Label.CreateGroupTooltip"
@@ -664,7 +666,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.DeletePost"
 	/// English String: "Delete Post"
 	/// </summary>
-	public override string LabelDeletePost => "Eliminar publicaciÃ³n";
+	public override string LabelDeletePost => "Eliminar publicación";
 
 	/// <summary>
 	/// Key: "Label.Funds"
@@ -718,13 +720,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.ManualApproval"
 	/// English String: "Manual Approval"
 	/// </summary>
-	public override string LabelManualApproval => "AprobaciÃ³n manual";
+	public override string LabelManualApproval => "Aprobación manual";
 
 	/// <summary>
 	/// Key: "Label.ModerateDiscussion"
 	/// English String: "Moderate Discussion"
 	/// </summary>
-	public override string LabelModerateDiscussion => "Moderar discusiÃ³n";
+	public override string LabelModerateDiscussion => "Moderar discusión";
 
 	/// <summary>
 	/// Key: "Label.NoAllies"
@@ -748,13 +750,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.NoMembersInRole"
 	/// English String: "No group members are in this role."
 	/// </summary>
-	public override string LabelNoMembersInRole => "No hay miembros del grupo que desempeÃ±an esta funciÃ³n.";
+	public override string LabelNoMembersInRole => "No hay miembros del grupo que desempeñan esta función.";
 
 	/// <summary>
 	/// Key: "Label.NoOne"
 	/// English String: "No One!"
 	/// </summary>
-	public override string LabelNoOne => "Â¡Nadie!";
+	public override string LabelNoOne => "¡Nadie!";
 
 	/// <summary>
 	/// Key: "Label.NoStoreItems"
@@ -766,7 +768,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.NoWallPosts"
 	/// English String: "Nobody has said anything yet..."
 	/// </summary>
-	public override string LabelNoWallPosts => "Nadie ha dicho nada todavÃ­a...";
+	public override string LabelNoWallPosts => "Nadie ha dicho nada todavía...";
 
 	/// <summary>
 	/// Key: "Label.OnlyBcCanJoin"
@@ -778,7 +780,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Label.OnlyPremiumCanJoin"
 	/// English String: "Only users with membership can join"
 	/// </summary>
-	public override string LabelOnlyPremiumCanJoin => "Solo los usuarios con una suscripciÃ³n pueden unirse";
+	public override string LabelOnlyPremiumCanJoin => "Solo los usuarios con una suscripción pueden unirse";
 
 	/// <summary>
 	/// Key: "Label.PrivateGroup"
@@ -792,7 +794,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// If group is open for anyone to join
 	/// English String: "Public"
 	/// </summary>
-	public override string LabelPublicGroup => "PÃºblico";
+	public override string LabelPublicGroup => "Público";
 
 	/// <summary>
 	/// Key: "Label.PublishPlace"
@@ -889,7 +891,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Displayed in the group wall area when we cannot successfully load wall posts
 	/// English String: "Wall posts are temporarily unavailable, please check back later."
 	/// </summary>
-	public override string LabelWallPostsUnavailable => "La publicaciones del muro no estÃ¡n disponibles temporalmente. IntÃ©ntalo mÃ¡s tarde.";
+	public override string LabelWallPostsUnavailable => "La publicaciones del muro no están disponibles temporalmente. Inténtalo más tarde.";
 
 	/// <summary>
 	/// Key: "Label.Warning"
@@ -919,7 +921,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.CannotClaimGroupWithOwner"
 	/// English String: "This group already has an owner."
 	/// </summary>
-	public override string MessageCannotClaimGroupWithOwner => "Este grupo ya tiene dueÃ±o.";
+	public override string MessageCannotClaimGroupWithOwner => "Este grupo ya tiene dueño.";
 
 	/// <summary>
 	/// Key: "Message.ChangeOwnerEmpty"
@@ -949,7 +951,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.DeleteWallPostError"
 	/// English String: "Unable to delete wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostError => "No se ha podido eliminar la publicaciÃ³n del muro.";
+	public override string MessageDeleteWallPostError => "No se ha podido eliminar la publicación del muro.";
 
 	/// <summary>
 	/// Key: "Message.DeleteWallPostsByUserError"
@@ -961,19 +963,19 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.DeleteWallPostSuccess"
 	/// English String: "Successfully deleted wall post."
 	/// </summary>
-	public override string MessageDeleteWallPostSuccess => "Se ha eliminado la publicaciÃ³n del muro correctamente.";
+	public override string MessageDeleteWallPostSuccess => "Se ha eliminado la publicación del muro correctamente.";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLong"
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLong => "La descripciÃ³n es demasiado larga.";
+	public override string MessageDescriptionTooLong => "La descripción es demasiado larga.";
 
 	/// <summary>
 	/// Key: "Message.DuplicateName"
 	/// English String: "Name is already taken. Please try another."
 	/// </summary>
-	public override string MessageDuplicateName => "El nombre ya estÃ¡ en uso. Intenta con otro.";
+	public override string MessageDuplicateName => "El nombre ya está en uso. Intenta con otro.";
 
 	/// <summary>
 	/// Key: "Message.ExileUserError"
@@ -985,7 +987,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.FeatureDisabled"
 	/// English String: "The feature is disabled."
 	/// </summary>
-	public override string MessageFeatureDisabled => "La funciÃ³n estÃ¡ desactivada.";
+	public override string MessageFeatureDisabled => "La función está desactivada.";
 
 	/// <summary>
 	/// Key: "Message.GetGroupRelationshipsError"
@@ -1003,20 +1005,20 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.GroupCreationDisabled"
 	/// English String: "Group creation is currently disabled."
 	/// </summary>
-	public override string MessageGroupCreationDisabled => "La creaciÃ³n de grupo estÃ¡ desactivada en este momento.";
+	public override string MessageGroupCreationDisabled => "La creación de grupo está desactivada en este momento.";
 
 	/// <summary>
 	/// Key: "Message.GroupIconInvalid"
 	/// English String: "Icon is missing or invalid."
 	/// </summary>
-	public override string MessageGroupIconInvalid => "Falta el icono o no es vÃ¡lido.";
+	public override string MessageGroupIconInvalid => "Falta el icono o no es válido.";
 
 	/// <summary>
 	/// Key: "Message.GroupMembershipsUnavailableError"
 	/// Error displayed on group details view when the system is in read-only mode for maintenance and you try to perform an action.
 	/// English String: "The group membership system is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessageGroupMembershipsUnavailableError => "El sistema de suscripciÃ³n de grupo no estÃ¡ disponible temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageGroupMembershipsUnavailableError => "El sistema de suscripción de grupo no está disponible temporalmente. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.InsufficientFunds"
@@ -1028,13 +1030,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.InsufficientGroupSpace"
 	/// English String: "You are already in the maximum number of groups."
 	/// </summary>
-	public override string MessageInsufficientGroupSpace => "Ya te has unido al nÃºmero mÃ¡ximo de grupos.";
+	public override string MessageInsufficientGroupSpace => "Ya te has unido al número máximo de grupos.";
 
 	/// <summary>
 	/// Key: "Message.InsufficientMembership"
 	/// English String: "You do not have the builders club membership necessary to join this group."
 	/// </summary>
-	public override string MessageInsufficientMembership => "No tienes la suscripciÃ³n al Builders Club necesaria para unirte a este grupo.";
+	public override string MessageInsufficientMembership => "No tienes la suscripción al Builders Club necesaria para unirte a este grupo.";
 
 	/// <summary>
 	/// Key: "Message.InsufficientPermission"
@@ -1058,31 +1060,31 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.InvalidAmount"
 	/// English String: "The amount is invalid."
 	/// </summary>
-	public override string MessageInvalidAmount => "La cantidad no es vÃ¡lida.";
+	public override string MessageInvalidAmount => "La cantidad no es válida.";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroup"
 	/// English String: "Group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroup => "El grupo no es vÃ¡lido o no existe.";
+	public override string MessageInvalidGroup => "El grupo no es válido o no existe.";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupIcon"
 	/// English String: "The group icon is invalid."
 	/// </summary>
-	public override string MessageInvalidGroupIcon => "El icono del grupo no es vÃ¡lido.";
+	public override string MessageInvalidGroupIcon => "El icono del grupo no es válido.";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupId"
 	/// English String: "The group is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupId => "El grupo no es vÃ¡lido o no existe.";
+	public override string MessageInvalidGroupId => "El grupo no es válido o no existe.";
 
 	/// <summary>
 	/// Key: "Message.InvalidGroupWallPostId"
 	/// English String: "The group wall post id is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidGroupWallPostId => "El ID de la publicaciÃ³n en el muro del grupo no es vÃ¡lido o no existe.";
+	public override string MessageInvalidGroupWallPostId => "El ID de la publicación en el muro del grupo no es válido o no existe.";
 
 	/// <summary>
 	/// Key: "Message.InvalidIds"
@@ -1100,55 +1102,55 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.InvalidMembership"
 	/// English String: "User must have builders club membership."
 	/// </summary>
-	public override string MessageInvalidMembership => "El usuario debe tener una suscripciÃ³n al Builders Club.";
+	public override string MessageInvalidMembership => "El usuario debe tener una suscripción al Builders Club.";
 
 	/// <summary>
 	/// Key: "Message.InvalidName"
 	/// English String: "The name is invalid."
 	/// </summary>
-	public override string MessageInvalidName => "El nombre no es vÃ¡lido.";
+	public override string MessageInvalidName => "El nombre no es válido.";
 
 	/// <summary>
 	/// Key: "Message.InvalidPaginationParameters"
 	/// English String: "Invalid or missing pagination parameters."
 	/// </summary>
-	public override string MessageInvalidPaginationParameters => "ParÃ¡metros de paginaciÃ³n no vÃ¡lidos o faltantes.";
+	public override string MessageInvalidPaginationParameters => "Parámetros de paginación no válidos o faltantes.";
 
 	/// <summary>
 	/// Key: "Message.InvalidPayoutType"
 	/// English String: "Invalid payout type."
 	/// </summary>
-	public override string MessageInvalidPayoutType => "Tipo de pago no vÃ¡lido.";
+	public override string MessageInvalidPayoutType => "Tipo de pago no válido.";
 
 	/// <summary>
 	/// Key: "Message.InvalidRecipient"
 	/// English String: "The recipient is invalid."
 	/// </summary>
-	public override string MessageInvalidRecipient => "El destinatario no es vÃ¡lido.";
+	public override string MessageInvalidRecipient => "El destinatario no es válido.";
 
 	/// <summary>
 	/// Key: "Message.InvalidRelationshipType"
 	/// English String: "Group relationship type is invalid."
 	/// </summary>
-	public override string MessageInvalidRelationshipType => "El tipo de relaciÃ³n del grupo no es vÃ¡lido.";
+	public override string MessageInvalidRelationshipType => "El tipo de relación del grupo no es válido.";
 
 	/// <summary>
 	/// Key: "Message.InvalidRoleSetId"
 	/// English String: "The roleset is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidRoleSetId => "Los roles no son vÃ¡lidos o no existen.";
+	public override string MessageInvalidRoleSetId => "Los roles no son válidos o no existen.";
 
 	/// <summary>
 	/// Key: "Message.InvalidUser"
 	/// English String: "The user is invalid or does not exist."
 	/// </summary>
-	public override string MessageInvalidUser => "El usuario no es vÃ¡lido o no existe.";
+	public override string MessageInvalidUser => "El usuario no es válido o no existe.";
 
 	/// <summary>
 	/// Key: "Message.InvalidWallPostContent"
 	/// English String: "Your post was empty, white space, or more than 500 characters."
 	/// </summary>
-	public override string MessageInvalidWallPostContent => "Tu publicaciÃ³n estÃ¡ vacÃ­a, contiene solo espacios en blanco o excede los 500 caracteres.";
+	public override string MessageInvalidWallPostContent => "Tu publicación está vacía, contiene solo espacios en blanco o excede los 500 caracteres.";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupError"
@@ -1160,7 +1162,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.JoinGroupPendingSuccess"
 	/// English String: "Requested to join group, your request is pending."
 	/// </summary>
-	public override string MessageJoinGroupPendingSuccess => "La solicitud para unirse al grupo ha sido recibida y estÃ¡ pendiente.";
+	public override string MessageJoinGroupPendingSuccess => "La solicitud para unirse al grupo ha sido recibida y está pendiente.";
 
 	/// <summary>
 	/// Key: "Message.JoinGroupSuccess"
@@ -1196,13 +1198,13 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.LoadGroupMembershipsError"
 	/// English String: "Unable to load user membership information."
 	/// </summary>
-	public override string MessageLoadGroupMembershipsError => "No se ha podido cargar la informaciÃ³n de la suscripciÃ³n del usuario.";
+	public override string MessageLoadGroupMembershipsError => "No se ha podido cargar la información de la suscripción del usuario.";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupMetadataError"
 	/// English String: "Unable to load group info."
 	/// </summary>
-	public override string MessageLoadGroupMetadataError => "No se ha podido cargar la informaciÃ³n del grupo.";
+	public override string MessageLoadGroupMetadataError => "No se ha podido cargar la información del grupo.";
 
 	/// <summary>
 	/// Key: "Message.LoadGroupStoreItemsError"
@@ -1214,7 +1216,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.LoadUserGroupMembershipError"
 	/// English String: "Unable to load group member information."
 	/// </summary>
-	public override string MessageLoadUserGroupMembershipError => "No se ha podido cargar la informaciÃ³n del miembro del grupo.";
+	public override string MessageLoadUserGroupMembershipError => "No se ha podido cargar la información del miembro del grupo.";
 
 	/// <summary>
 	/// Key: "Message.LoadWallPostsError"
@@ -1232,7 +1234,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.MaxGroups"
 	/// English String: "User is in maximum number of groups."
 	/// </summary>
-	public override string MessageMaxGroups => "El usuario se ha unido al nÃºmero mÃ¡ximo de grupos.";
+	public override string MessageMaxGroups => "El usuario se ha unido al número máximo de grupos.";
 
 	/// <summary>
 	/// Key: "Message.MissingGroupIcon"
@@ -1250,7 +1252,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.NameInvalid"
 	/// English String: "Name is missing or has invalid characters."
 	/// </summary>
-	public override string MessageNameInvalid => "Falta el nombre o los caracteres no son vÃ¡lidos.";
+	public override string MessageNameInvalid => "Falta el nombre o los caracteres no son válidos.";
 
 	/// <summary>
 	/// Key: "Message.NameModerated"
@@ -1298,19 +1300,19 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.SearchTermCharactersLimit"
 	/// English String: "The search term needs to be between 2 and 50 characters"
 	/// </summary>
-	public override string MessageSearchTermCharactersLimit => "El tÃ©rmino de bÃºsqueda debe tener entre 2 y 50 caracteres";
+	public override string MessageSearchTermCharactersLimit => "El término de búsqueda debe tener entre 2 y 50 caracteres";
 
 	/// <summary>
 	/// Key: "Message.SearchTermEmptyError"
 	/// English String: "Search term is empty"
 	/// </summary>
-	public override string MessageSearchTermEmptyError => "El campo de bÃºsqueda estÃ¡ vacÃ­o";
+	public override string MessageSearchTermEmptyError => "El campo de búsqueda está vacío";
 
 	/// <summary>
 	/// Key: "Message.SearchTermFilteredError"
 	/// English String: "Search term was filtered"
 	/// </summary>
-	public override string MessageSearchTermFilteredError => "Se ha moderado el campo de bÃºsqueda";
+	public override string MessageSearchTermFilteredError => "Se ha moderado el campo de búsqueda";
 
 	/// <summary>
 	/// Key: "Message.SendGroupShoutError"
@@ -1322,25 +1324,25 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.SendPostError"
 	/// English String: "Unable to send post."
 	/// </summary>
-	public override string MessageSendPostError => "No se ha podido enviar la publicaciÃ³n.";
+	public override string MessageSendPostError => "No se ha podido enviar la publicación.";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttempts"
 	/// English String: "Too many attempts to join the group. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttempts => "Demasiados intentos para unirte al grupo. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageTooManyAttempts => "Demasiados intentos para unirte al grupo. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.TooManyAttemptsToClaimGroups"
 	/// English String: "Too many attempts to claim groups. Please try again later."
 	/// </summary>
-	public override string MessageTooManyAttemptsToClaimGroups => "Demasiados intentos para reclamar el grupo. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageTooManyAttemptsToClaimGroups => "Demasiados intentos para reclamar el grupo. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.TooManyGroups"
 	/// English String: "You have reached the group capacity. Please leave a group before creating a new one."
 	/// </summary>
-	public override string MessageTooManyGroups => "Has llegado a la cantidad mÃ¡xima de grupos. Tienes que salir de un grupo para crear uno nuevo.";
+	public override string MessageTooManyGroups => "Has llegado a la cantidad máxima de grupos. Tienes que salir de un grupo para crear uno nuevo.";
 
 	/// <summary>
 	/// Key: "Message.TooManyIds"
@@ -1352,7 +1354,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.TooManyPosts"
 	/// English String: "You are posting too fast, please try again in a few minutes."
 	/// </summary>
-	public override string MessageTooManyPosts => "EstÃ¡s publicando demasiado rÃ¡pido. IntÃ©ntalo de nuevo en unos minutos.";
+	public override string MessageTooManyPosts => "Estás publicando demasiado rápido. Inténtalo de nuevo en unos minutos.";
 
 	/// <summary>
 	/// Key: "Message.TooManyRequests"
@@ -1364,7 +1366,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.UnauthorizedForPostStatus"
 	/// English String: "You are not authorized to set the status of this group."
 	/// </summary>
-	public override string MessageUnauthorizedForPostStatus => "No tienes autorizaciÃ³n para establecer el estado de este grupo.";
+	public override string MessageUnauthorizedForPostStatus => "No tienes autorización para establecer el estado de este grupo.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedForViewGroupPayouts"
@@ -1376,7 +1378,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.UnauthorizedToClaimGroup"
 	/// English String: "You are not authorized to claim this group."
 	/// </summary>
-	public override string MessageUnauthorizedToClaimGroup => "No tienes autorizaciÃ³n para reclamar este grupo.";
+	public override string MessageUnauthorizedToClaimGroup => "No tienes autorización para reclamar este grupo.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToManageMember"
@@ -1388,7 +1390,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// Key: "Message.UnauthorizedToViewRolesetPermissions"
 	/// English String: "You are not authorized to view permissions for this roleset."
 	/// </summary>
-	public override string MessageUnauthorizedToViewRolesetPermissions => "No tienes autorizaciÃ³n para ver los permisos de estos roles.";
+	public override string MessageUnauthorizedToViewRolesetPermissions => "No tienes autorización para ver los permisos de estos roles.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedToViewWall"
@@ -1420,7 +1422,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForActionAuditLog()
 	{
-		return "Registro de auditorÃ­a";
+		return "Registro de auditoría";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -1530,97 +1532,97 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForActionUpgradeToJoin()
 	{
-		return "Mejorar suscripciÃ³n para unirse";
+		return "Mejorar suscripción para unirse";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "SÃ­";
+		return "Sí";
 	}
 
 	protected override string _GetTemplateForDescriptionClothingRevenue()
 	{
-		return "Los grupos pueden crear y vender camisas, pantalones y camisetas oficiales. Todos los ingresos de la venta se depositarÃ¡n en los fondos del grupo.";
+		return "Los grupos pueden crear y vender camisas, pantalones y camisetas oficiales. Todos los ingresos de la venta se depositarán en los fondos del grupo.";
 	}
 
 	protected override string _GetTemplateForDescriptionDeleteAllPostsByUser()
 	{
-		return "Esta acciÃ³n eliminarÃ¡ todos los mensajes publicados por este usuario.";
+		return "Esta acción eliminará todos los mensajes publicados por este usuario.";
 	}
 
 	protected override string _GetTemplateForDescriptionExileUserWarning()
 	{
-		return "Â¿Seguro que quieres expulsar a este usuario?";
+		return "¿Seguro que quieres expulsar a este usuario?";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupAsOwnerWarning()
 	{
-		return "Esta acciÃ³n dejarÃ¡ el grupo sin dueÃ±o.";
+		return "Esta acción dejará el grupo sin dueño.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveGroupWarning()
 	{
-		return "Â¿Seguro que quieres salir de este grupo?";
+		return "¿Seguro que quieres salir de este grupo?";
 	}
 
 	protected override string _GetTemplateForDescriptionMakePrimaryGroupWarning()
 	{
-		return "Â¿Seguro que quieres convertirlo en tu grupo principal?";
+		return "¿Seguro que quieres convertirlo en tu grupo principal?";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroups()
 	{
-		return "Mejora tu suscripciÃ³n al Builders Club para unirte a mÃ¡s grupos.";
+		return "Mejora tu suscripción al Builders Club para unirte a más grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoneMaxGroupsPremium()
 	{
-		return "Mejora tu suscripciÃ³n a Roblox Premium para unirte a mÃ¡s grupos.";
+		return "Mejora tu suscripción a Roblox Premium para unirte a más grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionnoneMaxGroupsPremiumText()
 	{
-		return "Mejora tu suscripciÃ³n a Roblox Premium para unirte a mÃ¡s grupos.";
+		return "Mejora tu suscripción a Roblox Premium para unirte a más grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionObcMaxGroups()
 	{
-		return "Te has unido al nÃºmero mÃ¡ximo de grupos.";
+		return "Te has unido al número máximo de grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionOtherBcMaxGroups()
 	{
-		return "Mejora tu suscripciÃ³n de Builders Club para unirte a mÃ¡s grupos.";
+		return "Mejora tu suscripción de Builders Club para unirte a más grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionotherPremiumMaxGroupsText()
 	{
-		return "Mejora tu suscripciÃ³n de Roblox Premium para unirte a mÃ¡s grupos.";
+		return "Mejora tu suscripción de Roblox Premium para unirte a más grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionPremiumMaxGroups()
 	{
-		return "Te has unido al nÃºmero mÃ¡ximo de grupos.";
+		return "Te has unido al número máximo de grupos.";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseBody()
 	{
-		return "Â¿Quieres crear este grupo por";
+		return "¿Quieres crear este grupo por";
 	}
 
 	protected override string _GetTemplateForDescriptionRemovePrimaryGroupWarning()
 	{
-		return "Â¿Seguro que quieres eliminar tu grupo principal?";
+		return "¿Seguro que quieres eliminar tu grupo principal?";
 	}
 
 	protected override string _GetTemplateForDescriptionReportAbuseDescription()
 	{
-		return "Â¿QuÃ© quieres denunciar?";
+		return "¿Qué quieres denunciar?";
 	}
 
 	protected override string _GetTemplateForDescriptionWallPrivacySettings()
 	{
-		return "Tu configuraciÃ³n de privacidad no te permite publicar en el muro del grupo. Haz clic aquÃ­ para modificar los parÃ¡metros.";
+		return "Tu configuración de privacidad no te permite publicar en el muro del grupo. Haz clic aquí para modificar los parámetros.";
 	}
 
 	protected override string _GetTemplateForHeadingAbout()
@@ -1659,7 +1661,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForHeadingDescription()
 	{
-		return "DescripciÃ³n";
+		return "Descripción";
 	}
 
 	protected override string _GetTemplateForHeadingEnemies()
@@ -1684,7 +1686,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForHeadingGroupPurchase()
 	{
-		return "ConfirmaciÃ³n de compra de grupo";
+		return "Confirmación de compra de grupo";
 	}
 
 	protected override string _GetTemplateForHeadingGroupShout()
@@ -1709,7 +1711,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForHeadingNameOrDescription()
 	{
-		return "Nombre o descripciÃ³n";
+		return "Nombre o descripción";
 	}
 
 	protected override string _GetTemplateForHeadingPayouts()
@@ -1739,7 +1741,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "ConfiguraciÃ³n";
+		return "Configuración";
 	}
 
 	protected override string _GetTemplateForHeadingShout()
@@ -1779,7 +1781,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelAddGroupPlace()
 	{
-		return "AÃ±adir un lugar de grupo";
+		return "Añadir un lugar de grupo";
 	}
 
 	protected override string _GetTemplateForLabelAdjustCurrencyAmounts()
@@ -1814,12 +1816,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelCancelClanInvite()
 	{
-		return "Cancelar invitaciÃ³n del clan";
+		return "Cancelar invitación del clan";
 	}
 
 	protected override string _GetTemplateForLabelChangeDescription()
 	{
-		return "Cambiar descripciÃ³n";
+		return "Cambiar descripción";
 	}
 
 	protected override string _GetTemplateForLabelChangeOwner()
@@ -1889,12 +1891,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelCreateGroupBuildersClubTooltip()
 	{
-		return "Para crear un nuevo grupo se requiere la suscripciÃ³n al Builders Club.";
+		return "Para crear un nuevo grupo se requiere la suscripción al Builders Club.";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDescription()
 	{
-		return "DescripciÃ³n (opcional)";
+		return "Descripción (opcional)";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupDeveloperProduct()
@@ -1909,7 +1911,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelCreateGroupFee()
 	{
-		return "Cuota de creaciÃ³n de grupo";
+		return "Cuota de creación de grupo";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupName()
@@ -1919,7 +1921,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelCreateGroupPremiumTooltip()
 	{
-		return "Para crear un grupo se requiere la suscripciÃ³n a Roblox Premium.";
+		return "Para crear un grupo se requiere la suscripción a Roblox Premium.";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroupTooltip()
@@ -1969,7 +1971,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelDeletePost()
 	{
-		return "Eliminar publicaciÃ³n";
+		return "Eliminar publicación";
 	}
 
 	protected override string _GetTemplateForLabelFunds()
@@ -2028,7 +2030,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelManualApproval()
 	{
-		return "AprobaciÃ³n manual";
+		return "Aprobación manual";
 	}
 
 	/// <summary>
@@ -2037,12 +2039,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelMaxGroupsTooltip(string maxGroups)
 	{
-		return $"Puedes unirte a un mÃ¡ximo de {maxGroups} grupos a la vez.";
+		return $"Puedes unirte a un máximo de {maxGroups} grupos a la vez.";
 	}
 
 	protected override string _GetTemplateForLabelMaxGroupsTooltip()
 	{
-		return "Puedes unirte a un mÃ¡ximo de {maxGroups} grupos a la vez.";
+		return "Puedes unirte a un máximo de {maxGroups} grupos a la vez.";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
@@ -2052,7 +2054,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelModerateDiscussion()
 	{
-		return "Moderar discusiÃ³n";
+		return "Moderar discusión";
 	}
 
 	protected override string _GetTemplateForLabelNoAllies()
@@ -2072,12 +2074,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelNoMembersInRole()
 	{
-		return "No hay miembros del grupo que desempeÃ±an esta funciÃ³n.";
+		return "No hay miembros del grupo que desempeñan esta función.";
 	}
 
 	protected override string _GetTemplateForLabelNoOne()
 	{
-		return "Â¡Nadie!";
+		return "¡Nadie!";
 	}
 
 	/// <summary>
@@ -2086,12 +2088,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string LabelNoResults(string searchTerm)
 	{
-		return $"NingÃºn resultado para \"{searchTerm}\"";
+		return $"Ningún resultado para \"{searchTerm}\"";
 	}
 
 	protected override string _GetTemplateForLabelNoResults()
 	{
-		return "NingÃºn resultado para \"{searchTerm}\"";
+		return "Ningún resultado para \"{searchTerm}\"";
 	}
 
 	protected override string _GetTemplateForLabelNoStoreItems()
@@ -2101,7 +2103,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelNoWallPosts()
 	{
-		return "Nadie ha dicho nada todavÃ­a...";
+		return "Nadie ha dicho nada todavía...";
 	}
 
 	protected override string _GetTemplateForLabelOnlyBcCanJoin()
@@ -2111,7 +2113,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelOnlyPremiumCanJoin()
 	{
-		return "Solo los usuarios con una suscripciÃ³n pueden unirse";
+		return "Solo los usuarios con una suscripción pueden unirse";
 	}
 
 	protected override string _GetTemplateForLabelPrivateGroup()
@@ -2121,7 +2123,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelPublicGroup()
 	{
-		return "PÃºblico";
+		return "Público";
 	}
 
 	protected override string _GetTemplateForLabelPublishPlace()
@@ -2201,7 +2203,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForLabelWallPostsUnavailable()
 	{
-		return "La publicaciones del muro no estÃ¡n disponibles temporalmente. IntÃ©ntalo mÃ¡s tarde.";
+		return "La publicaciones del muro no están disponibles temporalmente. Inténtalo más tarde.";
 	}
 
 	protected override string _GetTemplateForLabelWarning()
@@ -2257,12 +2259,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageAddGroupPlace(string actor, string game)
 	{
-		return $"{actor} ha aÃ±adido el juego {game} como juego del grupo";
+		return $"{actor} ha añadido el juego {game} como juego del grupo";
 	}
 
 	protected override string _GetTemplateForMessageAddGroupPlace()
 	{
-		return "{actor} ha aÃ±adido el juego {game} como juego del grupo";
+		return "{actor} ha añadido el juego {game} como juego del grupo";
 	}
 
 	/// <summary>
@@ -2342,17 +2344,17 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageCancelClanInvite(string actor, string user)
 	{
-		return $"{actor} ha cancelado la invitaciÃ³n de {user} al clan";
+		return $"{actor} ha cancelado la invitación de {user} al clan";
 	}
 
 	protected override string _GetTemplateForMessageCancelClanInvite()
 	{
-		return "{actor} ha cancelado la invitaciÃ³n de {user} al clan";
+		return "{actor} ha cancelado la invitación de {user} al clan";
 	}
 
 	protected override string _GetTemplateForMessageCannotClaimGroupWithOwner()
 	{
-		return "Este grupo ya tiene dueÃ±o.";
+		return "Este grupo ya tiene dueño.";
 	}
 
 	/// <summary>
@@ -2361,12 +2363,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageChangeDescription(string actor, string newDescription)
 	{
-		return $"{actor} ha cambiado la descripciÃ³n a \"{newDescription}\"";
+		return $"{actor} ha cambiado la descripción a \"{newDescription}\"";
 	}
 
 	protected override string _GetTemplateForMessageChangeDescription()
 	{
-		return "{actor} ha cambiado la descripciÃ³n a \"{newDescription}\"";
+		return "{actor} ha cambiado la descripción a \"{newDescription}\"";
 	}
 
 	/// <summary>
@@ -2703,17 +2705,17 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageDeletePost(string actor, string postDesc, string user)
 	{
-		return $"{actor} ha eliminado la publicaciÃ³n \"{postDesc}\" de {user}";
+		return $"{actor} ha eliminado la publicación \"{postDesc}\" de {user}";
 	}
 
 	protected override string _GetTemplateForMessageDeletePost()
 	{
-		return "{actor} ha eliminado la publicaciÃ³n \"{postDesc}\" de {user}";
+		return "{actor} ha eliminado la publicación \"{postDesc}\" de {user}";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostError()
 	{
-		return "No se ha podido eliminar la publicaciÃ³n del muro.";
+		return "No se ha podido eliminar la publicación del muro.";
 	}
 
 	protected override string _GetTemplateForMessageDeleteWallPostsByUserError()
@@ -2723,17 +2725,17 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageDeleteWallPostSuccess()
 	{
-		return "Se ha eliminado la publicaciÃ³n del muro correctamente.";
+		return "Se ha eliminado la publicación del muro correctamente.";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionTooLong()
 	{
-		return "La descripciÃ³n es demasiado larga.";
+		return "La descripción es demasiado larga.";
 	}
 
 	protected override string _GetTemplateForMessageDuplicateName()
 	{
-		return "El nombre ya estÃ¡ en uso. Intenta con otro.";
+		return "El nombre ya está en uso. Intenta con otro.";
 	}
 
 	protected override string _GetTemplateForMessageExileUserError()
@@ -2743,7 +2745,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageFeatureDisabled()
 	{
-		return "La funciÃ³n estÃ¡ desactivada.";
+		return "La función está desactivada.";
 	}
 
 	protected override string _GetTemplateForMessageGetGroupRelationshipsError()
@@ -2758,12 +2760,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageGroupCreationDisabled()
 	{
-		return "La creaciÃ³n de grupo estÃ¡ desactivada en este momento.";
+		return "La creación de grupo está desactivada en este momento.";
 	}
 
 	protected override string _GetTemplateForMessageGroupIconInvalid()
 	{
-		return "Falta el icono o no es vÃ¡lido.";
+		return "Falta el icono o no es válido.";
 	}
 
 	/// <summary>
@@ -2782,7 +2784,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageGroupMembershipsUnavailableError()
 	{
-		return "El sistema de suscripciÃ³n de grupo no estÃ¡ disponible temporalmente. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "El sistema de suscripción de grupo no está disponible temporalmente. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
@@ -2792,12 +2794,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageInsufficientGroupSpace()
 	{
-		return "Ya te has unido al nÃºmero mÃ¡ximo de grupos.";
+		return "Ya te has unido al número máximo de grupos.";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientMembership()
 	{
-		return "No tienes la suscripciÃ³n al Builders Club necesaria para unirte a este grupo.";
+		return "No tienes la suscripción al Builders Club necesaria para unirte a este grupo.";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientPermission()
@@ -2817,27 +2819,27 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageInvalidAmount()
 	{
-		return "La cantidad no es vÃ¡lida.";
+		return "La cantidad no es válida.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroup()
 	{
-		return "El grupo no es vÃ¡lido o no existe.";
+		return "El grupo no es válido o no existe.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupIcon()
 	{
-		return "El icono del grupo no es vÃ¡lido.";
+		return "El icono del grupo no es válido.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupId()
 	{
-		return "El grupo no es vÃ¡lido o no existe.";
+		return "El grupo no es válido o no existe.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidGroupWallPostId()
 	{
-		return "El ID de la publicaciÃ³n en el muro del grupo no es vÃ¡lido o no existe.";
+		return "El ID de la publicación en el muro del grupo no es válido o no existe.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidIds()
@@ -2852,47 +2854,47 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageInvalidMembership()
 	{
-		return "El usuario debe tener una suscripciÃ³n al Builders Club.";
+		return "El usuario debe tener una suscripción al Builders Club.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidName()
 	{
-		return "El nombre no es vÃ¡lido.";
+		return "El nombre no es válido.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPaginationParameters()
 	{
-		return "ParÃ¡metros de paginaciÃ³n no vÃ¡lidos o faltantes.";
+		return "Parámetros de paginación no válidos o faltantes.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPayoutType()
 	{
-		return "Tipo de pago no vÃ¡lido.";
+		return "Tipo de pago no válido.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRecipient()
 	{
-		return "El destinatario no es vÃ¡lido.";
+		return "El destinatario no es válido.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRelationshipType()
 	{
-		return "El tipo de relaciÃ³n del grupo no es vÃ¡lido.";
+		return "El tipo de relación del grupo no es válido.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidRoleSetId()
 	{
-		return "Los roles no son vÃ¡lidos o no existen.";
+		return "Los roles no son válidos o no existen.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUser()
 	{
-		return "El usuario no es vÃ¡lido o no existe.";
+		return "El usuario no es válido o no existe.";
 	}
 
 	protected override string _GetTemplateForMessageInvalidWallPostContent()
 	{
-		return "Tu publicaciÃ³n estÃ¡ vacÃ­a, contiene solo espacios en blanco o excede los 500 caracteres.";
+		return "Tu publicación está vacía, contiene solo espacios en blanco o excede los 500 caracteres.";
 	}
 
 	/// <summary>
@@ -2916,7 +2918,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageJoinGroupPendingSuccess()
 	{
-		return "La solicitud para unirse al grupo ha sido recibida y estÃ¡ pendiente.";
+		return "La solicitud para unirse al grupo ha sido recibida y está pendiente.";
 	}
 
 	protected override string _GetTemplateForMessageJoinGroupSuccess()
@@ -2960,12 +2962,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageLoadGroupMembershipsError()
 	{
-		return "No se ha podido cargar la informaciÃ³n de la suscripciÃ³n del usuario.";
+		return "No se ha podido cargar la información de la suscripción del usuario.";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupMetadataError()
 	{
-		return "No se ha podido cargar la informaciÃ³n del grupo.";
+		return "No se ha podido cargar la información del grupo.";
 	}
 
 	protected override string _GetTemplateForMessageLoadGroupStoreItemsError()
@@ -2975,7 +2977,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageLoadUserGroupMembershipError()
 	{
-		return "No se ha podido cargar la informaciÃ³n del miembro del grupo.";
+		return "No se ha podido cargar la información del miembro del grupo.";
 	}
 
 	protected override string _GetTemplateForMessageLoadWallPostsError()
@@ -3004,7 +3006,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageMaxGroups()
 	{
-		return "El usuario se ha unido al nÃºmero mÃ¡ximo de grupos.";
+		return "El usuario se ha unido al número máximo de grupos.";
 	}
 
 	protected override string _GetTemplateForMessageMissingGroupIcon()
@@ -3019,7 +3021,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageNameInvalid()
 	{
-		return "Falta el nombre o los caracteres no son vÃ¡lidos.";
+		return "Falta el nombre o los caracteres no son válidos.";
 	}
 
 	protected override string _GetTemplateForMessageNameModerated()
@@ -3101,17 +3103,17 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageSearchTermCharactersLimit()
 	{
-		return "El tÃ©rmino de bÃºsqueda debe tener entre 2 y 50 caracteres";
+		return "El término de búsqueda debe tener entre 2 y 50 caracteres";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermEmptyError()
 	{
-		return "El campo de bÃºsqueda estÃ¡ vacÃ­o";
+		return "El campo de búsqueda está vacío";
 	}
 
 	protected override string _GetTemplateForMessageSearchTermFilteredError()
 	{
-		return "Se ha moderado el campo de bÃºsqueda";
+		return "Se ha moderado el campo de búsqueda";
 	}
 
 	/// <summary>
@@ -3135,7 +3137,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageSendPostError()
 	{
-		return "No se ha podido enviar la publicaciÃ³n.";
+		return "No se ha podido enviar la publicación.";
 	}
 
 	/// <summary>
@@ -3154,17 +3156,17 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageTooManyAttempts()
 	{
-		return "Demasiados intentos para unirte al grupo. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Demasiados intentos para unirte al grupo. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyAttemptsToClaimGroups()
 	{
-		return "Demasiados intentos para reclamar el grupo. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Demasiados intentos para reclamar el grupo. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyGroups()
 	{
-		return "Has llegado a la cantidad mÃ¡xima de grupos. Tienes que salir de un grupo para crear uno nuevo.";
+		return "Has llegado a la cantidad máxima de grupos. Tienes que salir de un grupo para crear uno nuevo.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyIds()
@@ -3174,7 +3176,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageTooManyPosts()
 	{
-		return "EstÃ¡s publicando demasiado rÃ¡pido. IntÃ©ntalo de nuevo en unos minutos.";
+		return "Estás publicando demasiado rápido. Inténtalo de nuevo en unos minutos.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyRequests()
@@ -3184,7 +3186,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageUnauthorizedForPostStatus()
 	{
-		return "No tienes autorizaciÃ³n para establecer el estado de este grupo.";
+		return "No tienes autorización para establecer el estado de este grupo.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedForViewGroupPayouts()
@@ -3194,7 +3196,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageUnauthorizedToClaimGroup()
 	{
-		return "No tienes autorizaciÃ³n para reclamar este grupo.";
+		return "No tienes autorización para reclamar este grupo.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToManageMember()
@@ -3204,7 +3206,7 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewRolesetPermissions()
 	{
-		return "No tienes autorizaciÃ³n para ver los permisos de estos roles.";
+		return "No tienes autorización para ver los permisos de estos roles.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedToViewWall()
@@ -3237,12 +3239,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUpdateAsset(string actor, string version, string item)
 	{
-		return $"{actor} ha creado una nueva versiÃ³n {version} del recurso {item}";
+		return $"{actor} ha creado una nueva versión {version} del recurso {item}";
 	}
 
 	protected override string _GetTemplateForMessageUpdateAsset()
 	{
-		return "{actor} ha creado una nueva versiÃ³n {version} del recurso {item}";
+		return "{actor} ha creado una nueva versión {version} del recurso {item}";
 	}
 
 	/// <summary>
@@ -3251,12 +3253,12 @@ internal class GroupsResources_es_es : GroupsResources_en_us, IGroupsResources, 
 	/// </summary>
 	public override string MessageUpdateAssetRevert(string actor, string item, string version, string oldVersion)
 	{
-		return $"{actor} ha revertido el recurso {item} de la versiÃ³n {version} a {oldVersion}";
+		return $"{actor} ha revertido el recurso {item} de la versión {version} a {oldVersion}";
 	}
 
 	protected override string _GetTemplateForMessageUpdateAssetRevert()
 	{
-		return "{actor} ha revertido el recurso {item} de la versiÃ³n {version} a {oldVersion}";
+		return "{actor} ha revertido el recurso {item} de la versión {version} a {oldVersion}";
 	}
 
 	protected override string _GetTemplateForMessageUserNotInGroup()

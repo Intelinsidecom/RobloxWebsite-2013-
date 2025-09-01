@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslatorPortalResources_en_us to provide locale specific translations where possible,
@@ -10,107 +12,107 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// Key: "Action.Reports"
 	/// English String: "Reports"
 	/// </summary>
-	public override string ActionReports => "å ±å‘Š";
+	public override string ActionReports => "報告";
 
 	/// <summary>
 	/// Key: "Action.Translate"
 	/// button text
 	/// English String: "Translate"
 	/// </summary>
-	public override string ActionTranslate => "ç¿»è­¯";
+	public override string ActionTranslate => "翻譯";
 
 	/// <summary>
 	/// Key: "Heading.DownloadTranslationContributionReport"
 	/// modal window heading
 	/// English String: "Download Translation Contribution Report"
 	/// </summary>
-	public override string HeadingDownloadTranslationContributionReport => "ä¸‹è¼‰ç¿»è­¯è²¢ç»å ±å‘Š";
+	public override string HeadingDownloadTranslationContributionReport => "下載翻譯貢獻報告";
 
 	/// <summary>
 	/// Key: "Heading.TranslatorPortal"
 	/// English String: "Translator Portal"
 	/// </summary>
-	public override string HeadingTranslatorPortal => "è­¯è€…å¹³å°";
+	public override string HeadingTranslatorPortal => "譯者平台";
 
 	/// <summary>
 	/// Key: "Label.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelCreator => "å‰µä½œè€…";
+	public override string LabelCreator => "創作者";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "éŠæˆ²åç¨±";
+	public override string LabelGameName => "遊戲名稱";
 
 	/// <summary>
 	/// Key: "Label.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelGames => "éŠæˆ²";
+	public override string LabelGames => "遊戲";
 
 	/// <summary>
 	/// Key: "Label.OrderBy"
 	/// English String: "Order By"
 	/// </summary>
-	public override string LabelOrderBy => "æŽ’åºæ–¹å¼ï¼š";
+	public override string LabelOrderBy => "排序方式：";
 
 	/// <summary>
 	/// Key: "Label.OrderByAlphabetical"
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelOrderByAlphabetical => "ä¾å­—æ¯æŽ’åº";
+	public override string LabelOrderByAlphabetical => "依字母排序";
 
 	/// <summary>
 	/// Key: "Label.OrderByFavorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelOrderByFavorites => "å˜´æ„›";
+	public override string LabelOrderByFavorites => "嘴愛";
 
 	/// <summary>
 	/// Key: "Label.OrderByGameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelOrderByGameName => "éŠæˆ²åç¨±";
+	public override string LabelOrderByGameName => "遊戲名稱";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgress"
 	/// English String: "Progress"
 	/// </summary>
-	public override string LabelOrderByProgress => "é€²åº¦";
+	public override string LabelOrderByProgress => "進度";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgressAsc"
 	/// translation percent progress of a game
 	/// English String: "Progress (Low to High)"
 	/// </summary>
-	public override string LabelOrderByProgressAsc => "é€²åº¦ï¼ˆç”±ä½Žåˆ°é«˜ï¼‰";
+	public override string LabelOrderByProgressAsc => "進度（由低到高）";
 
 	/// <summary>
 	/// Key: "Label.OrderByProgressDesc"
 	/// translation percent progress of a game
 	/// English String: "Progress (High to Low)"
 	/// </summary>
-	public override string LabelOrderByProgressDesc => "é€²åº¦ï¼ˆç”±é«˜åˆ°ä½Žï¼‰";
+	public override string LabelOrderByProgressDesc => "進度（由高到低）";
 
 	/// <summary>
 	/// Key: "Label.Search"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearch => "æœå°‹";
+	public override string LabelSearch => "搜尋";
 
 	/// <summary>
 	/// Key: "Label.SortBy"
 	/// English String: "Sort By"
 	/// </summary>
-	public override string LabelSortBy => "æŽ’åºæ–¹å¼";
+	public override string LabelSortBy => "排序方式";
 
 	/// <summary>
 	/// Key: "Label.Translator"
 	/// English String: "Translator"
 	/// </summary>
-	public override string LabelTranslator => "è­¯è€…";
+	public override string LabelTranslator => "譯者";
 
 	public TranslatorPortalResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -119,27 +121,27 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 
 	protected override string _GetTemplateForActionReports()
 	{
-		return "å ±å‘Š";
+		return "報告";
 	}
 
 	protected override string _GetTemplateForActionTranslate()
 	{
-		return "ç¿»è­¯";
+		return "翻譯";
 	}
 
 	protected override string _GetTemplateForHeadingDownloadTranslationContributionReport()
 	{
-		return "ä¸‹è¼‰ç¿»è­¯è²¢ç»å ±å‘Š";
+		return "下載翻譯貢獻報告";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatorPortal()
 	{
-		return "è­¯è€…å¹³å°";
+		return "譯者平台";
 	}
 
 	protected override string _GetTemplateForLabelCreator()
 	{
-		return "å‰µä½œè€…";
+		return "創作者";
 	}
 
 	/// <summary>
@@ -148,22 +150,22 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelGameCreator(string linkStart, string creatorName, string linkEnd)
 	{
-		return $"å‰µä½œè€…ï¼š{linkStart}{creatorName}{linkEnd}";
+		return $"創作者：{linkStart}{creatorName}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelGameCreator()
 	{
-		return "å‰µä½œè€…ï¼š{linkStart}{creatorName}{linkEnd}";
+		return "創作者：{linkStart}{creatorName}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "éŠæˆ²åç¨±";
+		return "遊戲名稱";
 	}
 
 	protected override string _GetTemplateForLabelGames()
 	{
-		return "éŠæˆ²";
+		return "遊戲";
 	}
 
 	/// <summary>
@@ -173,12 +175,12 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelGroupName(string groupName)
 	{
-		return $"ç¾¤çµ„ï¼š{groupName}";
+		return $"群組：{groupName}";
 	}
 
 	protected override string _GetTemplateForLabelGroupName()
 	{
-		return "ç¾¤çµ„ï¼š{groupName}";
+		return "群組：{groupName}";
 	}
 
 	/// <summary>
@@ -187,12 +189,12 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelGroupRole(string role, string groupName)
 	{
-		return $"{groupName} çš„ {role}";
+		return $"{groupName} 的 {role}";
 	}
 
 	protected override string _GetTemplateForLabelGroupRole()
 	{
-		return "{groupName} çš„ {role}";
+		return "{groupName} 的 {role}";
 	}
 
 	/// <summary>
@@ -201,57 +203,57 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelLanguageNotSupportedByGame(string languageName)
 	{
-		return $"æ­¤éŠæˆ²ä¸æ”¯æ´{languageName}";
+		return $"此遊戲不支援{languageName}";
 	}
 
 	protected override string _GetTemplateForLabelLanguageNotSupportedByGame()
 	{
-		return "æ­¤éŠæˆ²ä¸æ”¯æ´{languageName}";
+		return "此遊戲不支援{languageName}";
 	}
 
 	protected override string _GetTemplateForLabelOrderBy()
 	{
-		return "æŽ’åºæ–¹å¼ï¼š";
+		return "排序方式：";
 	}
 
 	protected override string _GetTemplateForLabelOrderByAlphabetical()
 	{
-		return "ä¾å­—æ¯æŽ’åº";
+		return "依字母排序";
 	}
 
 	protected override string _GetTemplateForLabelOrderByFavorites()
 	{
-		return "å˜´æ„›";
+		return "嘴愛";
 	}
 
 	protected override string _GetTemplateForLabelOrderByGameName()
 	{
-		return "éŠæˆ²åç¨±";
+		return "遊戲名稱";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgress()
 	{
-		return "é€²åº¦";
+		return "進度";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgressAsc()
 	{
-		return "é€²åº¦ï¼ˆç”±ä½Žåˆ°é«˜ï¼‰";
+		return "進度（由低到高）";
 	}
 
 	protected override string _GetTemplateForLabelOrderByProgressDesc()
 	{
-		return "é€²åº¦ï¼ˆç”±é«˜åˆ°ä½Žï¼‰";
+		return "進度（由高到低）";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
 	{
-		return "æœå°‹";
+		return "搜尋";
 	}
 
 	protected override string _GetTemplateForLabelSortBy()
 	{
-		return "æŽ’åºæ–¹å¼";
+		return "排序方式";
 	}
 
 	/// <summary>
@@ -260,17 +262,17 @@ internal class TranslatorPortalResources_zh_tw : TranslatorPortalResources_en_us
 	/// </summary>
 	public override string LabelTranslationProgress(string translatedEntriesCount, string totalEntriesCount)
 	{
-		return $"ç¿»è­¯é€²åº¦ï¼ˆ{translatedEntriesCount}/{totalEntriesCount}ï¼‰";
+		return $"翻譯進度（{translatedEntriesCount}/{totalEntriesCount}）";
 	}
 
 	protected override string _GetTemplateForLabelTranslationProgress()
 	{
-		return "ç¿»è­¯é€²åº¦ï¼ˆ{translatedEntriesCount}/{totalEntriesCount}ï¼‰";
+		return "翻譯進度（{translatedEntriesCount}/{totalEntriesCount}）";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "è­¯è€…";
+		return "譯者";
 	}
 }
 

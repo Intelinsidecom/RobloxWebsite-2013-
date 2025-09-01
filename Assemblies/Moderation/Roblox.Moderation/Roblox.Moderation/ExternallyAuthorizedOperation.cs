@@ -1,4 +1,4 @@
-﻿namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     enum ExternallyAuthorizedOperation
 
 {

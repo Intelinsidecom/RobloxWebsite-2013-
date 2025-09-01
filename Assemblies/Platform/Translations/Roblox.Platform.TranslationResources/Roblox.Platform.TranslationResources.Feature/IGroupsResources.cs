@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IGroupsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IGroupsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -1701,3 +1703,5 @@
 
 
 }
+
+

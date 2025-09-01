@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using System.Collections.Concurrent;
 namespace Roblox.Platform.TranslationResources {
     /// <summary>

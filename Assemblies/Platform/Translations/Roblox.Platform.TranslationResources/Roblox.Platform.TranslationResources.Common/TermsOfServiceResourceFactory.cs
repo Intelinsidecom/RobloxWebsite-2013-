@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Commoninternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     static class TermsOfServiceResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

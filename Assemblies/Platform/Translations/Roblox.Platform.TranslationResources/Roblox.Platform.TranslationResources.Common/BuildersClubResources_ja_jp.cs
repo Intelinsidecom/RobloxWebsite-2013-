@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -215,5 +217,4 @@ internal class BuildersClubResources_ja_jp : BuildersClubResources_en_us, IBuild
 		return "ã¯ã„";
 	}
 }
-
-
+}

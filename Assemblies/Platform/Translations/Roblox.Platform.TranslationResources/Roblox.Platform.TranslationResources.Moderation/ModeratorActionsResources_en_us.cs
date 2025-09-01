@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Moderationinternal {
+namespace Roblox.Platform.TranslationResources.Moderation {
     class ModeratorActionsResources_en_us : TranslationResourcesBase, IModeratorActionsResources, ITranslationResources
 
 {
@@ -40,3 +40,4 @@ namespace Roblox.Platform.TranslationResources.Moderationinternal {
 
 
 }
+

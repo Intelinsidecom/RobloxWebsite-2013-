@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationpublic {
-    interface IReviewTaskRepublishResult<out TTask> where TTask : IReviewTask
+using System.Collections.Generic;
+using Roblox.Localization.Core;
+namespace Roblox.Moderation {
+    public interface IReviewTaskRepublishResult<out TTask> where TTask : IReviewTask
 
 {
 	/// <summary>

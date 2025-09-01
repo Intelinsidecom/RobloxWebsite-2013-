@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IContactUpsellResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IContactUpsellResources : ITranslationResources
 
 {
 	/// <summary>
@@ -488,3 +490,5 @@
 
 
 }
+
+

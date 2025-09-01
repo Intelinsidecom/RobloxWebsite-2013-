@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePageResources_en_us to provide locale specific translations where possible,
@@ -46,7 +48,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results For"
 	/// </summary>
-	public override string LabelMoreResultsFor => "Mehr Ergebnisse fÃ¼r";
+	public override string LabelMoreResultsFor => "Mehr Ergebnisse für";
 
 	/// <summary>
 	/// Key: "Label.SponsoredAd"
@@ -131,7 +133,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFilterFriendActivity => "FreundesaktivitÃ¤t";
+	public override string LabelFilterFriendActivity => "Freundesaktivität";
 
 	/// <summary>
 	/// Key: "LabelFilterGenre"
@@ -185,7 +187,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterPersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelFilterPersonalServer => "PersÃ¶nlicher Server";
+	public override string LabelFilterPersonalServer => "Persönlicher Server";
 
 	/// <summary>
 	/// Key: "LabelFilterPopular"
@@ -287,7 +289,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelShowingResultsFor"
 	/// English String: "Showing results for"
 	/// </summary>
-	public override string LabelShowingResultsFor => "Zeige Treffer fÃ¼r";
+	public override string LabelShowingResultsFor => "Zeige Treffer für";
 
 	public GamePageResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -326,7 +328,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "Mehr Ergebnisse fÃ¼r";
+		return "Mehr Ergebnisse für";
 	}
 
 	protected override string _GetTemplateForLabelSponsoredAd()
@@ -424,7 +426,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterFriendActivity()
 	{
-		return "FreundesaktivitÃ¤t";
+		return "Freundesaktivität";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
@@ -469,7 +471,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterPersonalServer()
 	{
-		return "PersÃ¶nlicher Server";
+		return "Persönlicher Server";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopular()
@@ -582,7 +584,7 @@ internal class GamePageResources_de_de : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelShowingResultsFor()
 	{
-		return "Zeige Treffer fÃ¼r";
+		return "Zeige Treffer für";
 	}
 }
 

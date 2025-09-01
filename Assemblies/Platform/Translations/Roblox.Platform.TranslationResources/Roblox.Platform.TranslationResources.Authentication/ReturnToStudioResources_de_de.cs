@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
@@ -18,19 +20,19 @@ internal class ReturnToStudioResources_de_de : ReturnToStudioResources_en_us, IR
 	/// Open studio
 	/// English String: "Open Studio"
 	/// </summary>
-	public override string ActionOpenStudio => "Studio Ã¶ffnen";
+	public override string ActionOpenStudio => "Studio öffnen";
 
 	/// <summary>
 	/// Key: "Description.OpeningStudio"
 	/// English String: "Opening Roblox Studio now..."
 	/// </summary>
-	public override string DescriptionOpeningStudio => "Roblox Studio wird geÃ¶ffnet\u00a0...";
+	public override string DescriptionOpeningStudio => "Roblox Studio wird geöffnet\u00a0...";
 
 	/// <summary>
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "Sollte Studio sich nicht Ã¶ffnen, klicke hier, um Hilfe zu erhalten.";
+	public override string LabelStudioHelp => "Sollte Studio sich nicht öffnen, klicke hier, um Hilfe zu erhalten.";
 
 	public ReturnToStudioResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -44,7 +46,7 @@ internal class ReturnToStudioResources_de_de : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForActionOpenStudio()
 	{
-		return "Studio Ã¶ffnen";
+		return "Studio öffnen";
 	}
 
 	/// <summary>
@@ -64,7 +66,7 @@ internal class ReturnToStudioResources_de_de : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
 	{
-		return "Roblox Studio wird geÃ¶ffnet\u00a0...";
+		return "Roblox Studio wird geöffnet\u00a0...";
 	}
 
 	/// <summary>
@@ -74,12 +76,12 @@ internal class ReturnToStudioResources_de_de : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionOpenStudioSuggestion(string username)
 	{
-		return $"MÃ¶chtest Du Studio als {username} Ã¶ffnen?";
+		return $"Möchtest Du Studio als {username} öffnen?";
 	}
 
 	protected override string _GetTemplateForDescriptionOpenStudioSuggestion()
 	{
-		return "MÃ¶chtest Du Studio als {username} Ã¶ffnen?";
+		return "Möchtest Du Studio als {username} öffnen?";
 	}
 
 	/// <summary>
@@ -99,7 +101,7 @@ internal class ReturnToStudioResources_de_de : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "Sollte Studio sich nicht Ã¶ffnen, klicke hier, um Hilfe zu erhalten.";
+		return "Sollte Studio sich nicht öffnen, klicke hier, um Hilfe zu erhalten.";
 	}
 }
 

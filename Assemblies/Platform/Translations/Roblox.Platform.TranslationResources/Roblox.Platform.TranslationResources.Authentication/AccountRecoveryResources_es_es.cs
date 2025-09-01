@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
@@ -16,19 +18,19 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "Esto restablecerÃ¡ las configuraciones siguientes:";
+	public override string DescriptionResetFollowing => "Esto restablecerá las configuraciones siguientes:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "Vas a revertir tu cuenta a un estado anterior.\nPara revertir tu cuenta debes fijar una nueva contraseÃ±a.";
+	public override string DescriptionRevertAccount => "Vas a revertir tu cuenta a un estado anterior.\nPara revertir tu cuenta debes fijar una nueva contraseña.";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "Restablecer contraseÃ±a";
+	public override string HeadingAccountRecovery => "Restablecer contraseña";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
@@ -46,43 +48,43 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 	/// Key: "LabelConfirmNewPassword"
 	/// English String: "Confirm New Password"
 	/// </summary>
-	public override string LabelConfirmNewPassword => "Confirmar contraseÃ±a nueva";
+	public override string LabelConfirmNewPassword => "Confirmar contraseña nueva";
 
 	/// <summary>
 	/// Key: "LabelEmail"
 	/// English String: "Email"
 	/// </summary>
-	public override string LabelEmail => "Correo electrÃ³nico";
+	public override string LabelEmail => "Correo electrónico";
 
 	/// <summary>
 	/// Key: "LabelNewPassword"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelNewPassword => "ContraseÃ±a nueva";
+	public override string LabelNewPassword => "Contraseña nueva";
 
 	/// <summary>
 	/// Key: "LabelPassword"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ContraseÃ±a";
+	public override string LabelPassword => "Contraseña";
 
 	/// <summary>
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "VerificaciÃ³n en dos pasos";
+	public override string LabelTwoStepVerification => "Verificación en dos pasos";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "Esto desactivarÃ¡ la verificaciÃ³n en dos pasos.";
+	public override string MessageDisableTwoStepVerification => "Esto desactivará la verificación en dos pasos.";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "Vas a revertir tu correo electrÃ³nico a un correo electrÃ³nico no verificado.";
+	public override string MessageRevertToUnverifiedEmail => "Vas a revertir tu correo electrónico a un correo electrónico no verificado.";
 
 	public AccountRecoveryResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -96,17 +98,17 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "Esto restablecerÃ¡ las configuraciones siguientes:";
+		return "Esto restablecerá las configuraciones siguientes:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "Vas a revertir tu cuenta a un estado anterior.\nPara revertir tu cuenta debes fijar una nueva contraseÃ±a.";
+		return "Vas a revertir tu cuenta a un estado anterior.\nPara revertir tu cuenta debes fijar una nueva contraseña.";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "Restablecer contraseÃ±a";
+		return "Restablecer contraseña";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
@@ -121,27 +123,27 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
 	{
-		return "Confirmar contraseÃ±a nueva";
+		return "Confirmar contraseña nueva";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "Correo electrÃ³nico";
+		return "Correo electrónico";
 	}
 
 	protected override string _GetTemplateForLabelNewPassword()
 	{
-		return "ContraseÃ±a nueva";
+		return "Contraseña nueva";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ContraseÃ±a";
+		return "Contraseña";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "VerificaciÃ³n en dos pasos";
+		return "Verificación en dos pasos";
 	}
 
 	/// <summary>
@@ -150,17 +152,17 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"Crea una contraseÃ±a nueva. {styleFront}No{styleEnd} uses tu contraseÃ±a anterior.";
+		return $"Crea una contraseña nueva. {styleFront}No{styleEnd} uses tu contraseña anterior.";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "Crea una contraseÃ±a nueva. {styleFront}No{styleEnd} uses tu contraseÃ±a anterior.";
+		return "Crea una contraseña nueva. {styleFront}No{styleEnd} uses tu contraseña anterior.";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "Esto desactivarÃ¡ la verificaciÃ³n en dos pasos.";
+		return "Esto desactivará la verificación en dos pasos.";
 	}
 
 	/// <summary>
@@ -169,17 +171,17 @@ internal class AccountRecoveryResources_es_es : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"{styleFront}No{styleEnd} uses tu contraseÃ±a anterior.";
+		return $"{styleFront}No{styleEnd} uses tu contraseña anterior.";
 	}
 
 	protected override string _GetTemplateForMessageDontUseOldPassword()
 	{
-		return "{styleFront}No{styleEnd} uses tu contraseÃ±a anterior.";
+		return "{styleFront}No{styleEnd} uses tu contraseña anterior.";
 	}
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "Vas a revertir tu correo electrÃ³nico a un correo electrÃ³nico no verificado.";
+		return "Vas a revertir tu correo electrónico a un correo electrónico no verificado.";
 	}
 }
 

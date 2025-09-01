@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides PurchaseDialogResources_en_us to provide locale specific translations where possible,
@@ -10,55 +12,55 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// Key: "Action.BuyAccess"
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "ã‚¢ã‚¯ã‚»ã‚¹ã‚’è²·ã†";
+	public override string ActionBuyAccess => "アクセスを買う";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now"
 	/// </summary>
-	public override string ActionBuyNow => "ä»Šã™ãè²·ã†";
+	public override string ActionBuyNow => "今すぐ買う";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robuxã‚’è²·ã†";
+	public override string ActionBuyRobux => "Robuxを買う";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "è¨­å®šã™ã‚‹";
+	public override string ActionConfigure => "設定する";
 
 	/// <summary>
 	/// Key: "Action.Continue"
 	/// English String: "Continue"
 	/// </summary>
-	public override string ActionContinue => "ç¶šã‘ã‚‹";
+	public override string ActionContinue => "続ける";
 
 	/// <summary>
 	/// Key: "Action.Customize"
 	/// English String: "Customize"
 	/// </summary>
-	public override string ActionCustomize => "ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º";
+	public override string ActionCustomize => "カスタマイズ";
 
 	/// <summary>
 	/// Key: "Action.GetNow"
 	/// English String: "Get Now"
 	/// </summary>
-	public override string ActionGetNow => "ä»Šã™ãã‚²ãƒƒãƒˆ";
+	public override string ActionGetNow => "今すぐゲット";
 
 	/// <summary>
 	/// Key: "Action.NotNow"
 	/// English String: "Not Now"
 	/// </summary>
-	public override string ActionNotNow => "ã‚ã¨ã§";
+	public override string ActionNotNow => "あとで";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -70,67 +72,67 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// Key: "Action.RentNow"
 	/// English String: "Rent Now"
 	/// </summary>
-	public override string ActionRentNow => "ä»Šã™ããƒ¬ãƒ³ã‚¿ãƒ«ã™ã‚‹";
+	public override string ActionRentNow => "今すぐレンタルする";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†";
+	public override string HeadingBuyItem => "アイテムを買う";
 
 	/// <summary>
 	/// Key: "Heading.ErrorOccured"
 	/// English String: "Error Occured"
 	/// </summary>
-	public override string HeadingErrorOccured => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+	public override string HeadingErrorOccured => "エラーが発生しました";
 
 	/// <summary>
 	/// Key: "Heading.GetItem"
 	/// English String: "Get Item"
 	/// </summary>
-	public override string HeadingGetItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚²ãƒƒãƒˆ";
+	public override string HeadingGetItem => "アイテムをゲット";
 
 	/// <summary>
 	/// Key: "Heading.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingInsufficientFunds => "è³‡é‡‘ãŒè¶³ã‚Šã¾ã›ã‚“";
+	public override string HeadingInsufficientFunds => "資金が足りません";
 
 	/// <summary>
 	/// Key: "Heading.PriceChanged"
 	/// English String: "Item Price Has Changed"
 	/// </summary>
-	public override string HeadingPriceChanged => "ã‚¢ã‚¤ãƒ†ãƒ ã®ä¾¡æ ¼ãŒå¤‰ã‚ã‚Šã¾ã—ãŸ";
+	public override string HeadingPriceChanged => "アイテムの価格が変わりました";
 
 	/// <summary>
 	/// Key: "Heading.PurchaseComplete"
 	/// English String: "Purchase Complete"
 	/// </summary>
-	public override string HeadingPurchaseComplete => "è³¼å…¥å®Œäº†";
+	public override string HeadingPurchaseComplete => "購入完了";
 
 	/// <summary>
 	/// Key: "Heading.RentItem"
 	/// English String: "Rent Item"
 	/// </summary>
-	public override string HeadingRentItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãƒ¬ãƒ³ã‚¿ãƒ«ã™ã‚‹";
+	public override string HeadingRentItem => "アイテムをレンタルする";
 
 	/// <summary>
 	/// Key: "Label.AgreeAndPay"
 	/// English String: "Agree and Pay"
 	/// </summary>
-	public override string LabelAgreeAndPay => "åŒæ„ã—ã¦æ”¯æ‰•ã†";
+	public override string LabelAgreeAndPay => "同意して支払う";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "ç„¡æ–™";
+	public override string LabelFree => "無料";
 
 	/// <summary>
 	/// Key: "Message.PurchasingUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessagePurchasingUnavailable => "ä¸€æ™‚çš„ã«è³¼å…¥ãŒåˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string MessagePurchasingUnavailable => "一時的に購入が利用できません。後でもう一度お試しください。";
 
 	public PurchaseDialogResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -139,47 +141,47 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "ã‚¢ã‚¯ã‚»ã‚¹ã‚’è²·ã†";
+		return "アクセスを買う";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "ä»Šã™ãè²·ã†";
+		return "今すぐ買う";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robuxã‚’è²·ã†";
+		return "Robuxを買う";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "è¨­å®šã™ã‚‹";
+		return "設定する";
 	}
 
 	protected override string _GetTemplateForActionContinue()
 	{
-		return "ç¶šã‘ã‚‹";
+		return "続ける";
 	}
 
 	protected override string _GetTemplateForActionCustomize()
 	{
-		return "ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º";
+		return "カスタマイズ";
 	}
 
 	protected override string _GetTemplateForActionGetNow()
 	{
-		return "ä»Šã™ãã‚²ãƒƒãƒˆ";
+		return "今すぐゲット";
 	}
 
 	protected override string _GetTemplateForActionNotNow()
 	{
-		return "ã‚ã¨ã§";
+		return "あとで";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -189,52 +191,52 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 
 	protected override string _GetTemplateForActionRentNow()
 	{
-		return "ä»Šã™ããƒ¬ãƒ³ã‚¿ãƒ«ã™ã‚‹";
+		return "今すぐレンタルする";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†";
+		return "アイテムを買う";
 	}
 
 	protected override string _GetTemplateForHeadingErrorOccured()
 	{
-		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+		return "エラーが発生しました";
 	}
 
 	protected override string _GetTemplateForHeadingGetItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚²ãƒƒãƒˆ";
+		return "アイテムをゲット";
 	}
 
 	protected override string _GetTemplateForHeadingInsufficientFunds()
 	{
-		return "è³‡é‡‘ãŒè¶³ã‚Šã¾ã›ã‚“";
+		return "資金が足りません";
 	}
 
 	protected override string _GetTemplateForHeadingPriceChanged()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã®ä¾¡æ ¼ãŒå¤‰ã‚ã‚Šã¾ã—ãŸ";
+		return "アイテムの価格が変わりました";
 	}
 
 	protected override string _GetTemplateForHeadingPurchaseComplete()
 	{
-		return "è³¼å…¥å®Œäº†";
+		return "購入完了";
 	}
 
 	protected override string _GetTemplateForHeadingRentItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãƒ¬ãƒ³ã‚¿ãƒ«ã™ã‚‹";
+		return "アイテムをレンタルする";
 	}
 
 	protected override string _GetTemplateForLabelAgreeAndPay()
 	{
-		return "åŒæ„ã—ã¦æ”¯æ‰•ã†";
+		return "同意して支払う";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "ç„¡æ–™";
+		return "無料";
 	}
 
 	/// <summary>
@@ -243,12 +245,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageBalanceAfter(string robuxBalance)
 	{
-		return $"å–å¼•å¾Œã®æ®‹é«˜ã¯{robuxBalance}ã«ãªã‚Šã¾ã™";
+		return $"取引後の残高は{robuxBalance}になります";
 	}
 
 	protected override string _GetTemplateForMessageBalanceAfter()
 	{
-		return "å–å¼•å¾Œã®æ®‹é«˜ã¯{robuxBalance}ã«ãªã‚Šã¾ã™";
+		return "取引後の残高は{robuxBalance}になります";
 	}
 
 	/// <summary>
@@ -257,12 +259,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageInsufficientFunds(string robux)
 	{
-		return $"ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†ã«ã¯ã€ã‚ã¨{robux}ãŒå¿…è¦ã§ã™ã€‚";
+		return $"このアイテムを買うには、あと{robux}が必要です。";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†ã«ã¯ã€ã‚ã¨{robux}ãŒå¿…è¦ã§ã™ã€‚";
+		return "このアイテムを買うには、あと{robux}が必要です。";
 	}
 
 	/// <summary>
@@ -271,12 +273,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePriceChanged(string robuxBefore, string robuxAfter)
 	{
-		return $"ã‚·ãƒ§ãƒƒãƒ”ãƒ³ã‚°ä¸­ã«ã€ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ä¾¡æ ¼ãŒ{robuxBefore}ã‹ã‚‰{robuxAfter}ã«å¤‰ã‚ã‚Šã¾ã—ãŸã€‚";
+		return $"ショッピング中に、このアイテムの価格が{robuxBefore}から{robuxAfter}に変わりました。";
 	}
 
 	protected override string _GetTemplateForMessagePriceChanged()
 	{
-		return "ã‚·ãƒ§ãƒƒãƒ”ãƒ³ã‚°ä¸­ã«ã€ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ä¾¡æ ¼ãŒ{robuxBefore}ã‹ã‚‰{robuxAfter}ã«å¤‰ã‚ã‚Šã¾ã—ãŸã€‚";
+		return "ショッピング中に、このアイテムの価格が{robuxBefore}から{robuxAfter}に変わりました。";
 	}
 
 	/// <summary>
@@ -285,12 +287,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuy(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{robux}ã§è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」を{robux}で購入しますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuy()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{robux}ã§è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」を{robux}で購入しますか？";
 	}
 
 	/// <summary>
@@ -299,12 +301,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuyAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{robux}で購入しますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuyAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§è³¼å…¥ã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{robux}で購入しますか？";
 	}
 
 	/// <summary>
@@ -313,12 +315,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFree(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{freeTextStart}ç„¡æ–™{freeTextEnd}ã§ã‚²ãƒƒãƒˆã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」を{freeTextStart}無料{freeTextEnd}でゲットしますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFree()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{freeTextStart}ç„¡æ–™{freeTextEnd}ã§ã‚²ãƒƒãƒˆã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」を{freeTextStart}無料{freeTextEnd}でゲットしますか？";
 	}
 
 	/// <summary>
@@ -327,12 +329,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFreeAccess(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{freeTextStart}ç„¡æ–™{freeTextEnd}ã§ã‚²ãƒƒãƒˆã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{freeTextStart}無料{freeTextEnd}でゲットしますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFreeAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{freeTextStart}ç„¡æ–™{freeTextEnd}ã§ã‚²ãƒƒãƒˆã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{freeTextStart}無料{freeTextEnd}でゲットしますか？";
 	}
 
 	/// <summary>
@@ -341,12 +343,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRent(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」を{robux}でレンタルしますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptRent()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」を{robux}でレンタルしますか？";
 	}
 
 	/// <summary>
@@ -355,17 +357,17 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRentAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã™ã‹ï¼Ÿ";
+		return $"{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{robux}でレンタルしますか？";
 	}
 
 	protected override string _GetTemplateForMessagePromptRentAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetType} ã€Œ{assetName}ã€ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã™ã‹ï¼Ÿ";
+		return "{seller}さんが作成した{assetType} 「{assetName}」へのアクセスを{robux}でレンタルしますか？";
 	}
 
 	protected override string _GetTemplateForMessagePurchasingUnavailable()
 	{
-		return "ä¸€æ™‚çš„ã«è³¼å…¥ãŒåˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "一時的に購入が利用できません。後でもう一度お試しください。";
 	}
 
 	/// <summary>
@@ -374,12 +376,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquired(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§å–å¾—ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}を{robux}で取得しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquired()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§å–å¾—ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}を{robux}で取得しました。";
 	}
 
 	/// <summary>
@@ -388,12 +390,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquiredAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§å–å¾—ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で取得しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquiredAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§å–å¾—ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で取得しました。";
 	}
 
 	/// <summary>
@@ -402,12 +404,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBought(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§è³¼å…¥ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}を{robux}で購入しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBought()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§è³¼å…¥ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}を{robux}で購入しました。";
 	}
 
 	/// <summary>
@@ -416,12 +418,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBoughtAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§è³¼å…¥ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で購入しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBoughtAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§è³¼å…¥ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で購入しました。";
 	}
 
 	/// <summary>
@@ -430,12 +432,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewed(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§æ›´æ–°ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}を{robux}で更新しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewed()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§æ›´æ–°ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}を{robux}で更新しました。";
 	}
 
 	/// <summary>
@@ -444,12 +446,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§æ›´æ–°ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で更新しました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewedAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§æ›´æ–°ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}で更新しました。";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRented(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}を{robux}でレンタルしました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRented()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}を{robux}でレンタルしました。";
 	}
 
 	/// <summary>
@@ -472,12 +474,12 @@ internal class PurchaseDialogResources_ja_jp : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRentedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã—ãŸã€‚";
+		return $"{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}でレンタルしました。";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRentedAccess()
 	{
-		return "{seller}ã•ã‚“ãŒä½œæˆã—ãŸ{assetName} {assetType}ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’{robux}ã§ãƒ¬ãƒ³ã‚¿ãƒ«ã—ã¾ã—ãŸã€‚";
+		return "{seller}さんが作成した{assetName} {assetType}へのアクセスを{robux}でレンタルしました。";
 	}
 }
 

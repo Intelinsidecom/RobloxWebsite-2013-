@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Platform.Games.Clientpublic {
-    class ReservationResult
+using System;
+namespace Roblox.Platform.Games.Client {
+    public class ReservationResult
 
 {
 	public GameConnection GameConnection { get; set; }

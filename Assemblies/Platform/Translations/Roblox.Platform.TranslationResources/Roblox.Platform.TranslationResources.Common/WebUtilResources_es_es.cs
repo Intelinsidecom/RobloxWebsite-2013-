@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides WebUtilResources_en_us to provide locale specific translations where possible,
@@ -17,12 +19,12 @@ internal class WebUtilResources_es_es : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelDay(string day)
 	{
-		return $"{day}\u00a0dÃ­a";
+		return $"{day}\u00a0día";
 	}
 
 	protected override string _GetTemplateForGetLabelDay()
 	{
-		return "{day}\u00a0dÃ­a";
+		return "{day}\u00a0día";
 	}
 
 	/// <summary>
@@ -31,12 +33,12 @@ internal class WebUtilResources_es_es : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelDays(string days)
 	{
-		return $"{days}\u00a0dÃ­as";
+		return $"{days}\u00a0días";
 	}
 
 	protected override string _GetTemplateForGetLabelDays()
 	{
-		return "{days}\u00a0dÃ­as";
+		return "{days}\u00a0días";
 	}
 
 	/// <summary>
@@ -200,12 +202,12 @@ internal class WebUtilResources_es_es : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelYear(string year)
 	{
-		return $"{year}\u00a0aÃ±o";
+		return $"{year}\u00a0año";
 	}
 
 	protected override string _GetTemplateForGetLabelYear()
 	{
-		return "{year}\u00a0aÃ±o";
+		return "{year}\u00a0año";
 	}
 
 	/// <summary>
@@ -214,12 +216,12 @@ internal class WebUtilResources_es_es : WebUtilResources_en_us, IWebUtilResource
 	/// </summary>
 	public override string GetLabelYears(string years)
 	{
-		return $"{years}\u00a0aÃ±os";
+		return $"{years}\u00a0años";
 	}
 
 	protected override string _GetTemplateForGetLabelYears()
 	{
-		return "{years}\u00a0aÃ±os";
+		return "{years}\u00a0años";
 	}
 }
 

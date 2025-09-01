@@ -1,5 +1,5 @@
-﻿using Roblox.Entities;
-namespace Roblox.Moderation.Entitiesinternal {
+using Roblox.Entities;
+namespace Roblox.Moderation.Entities {
     interface IModerationLocaleEntity : IUpdateableEntity<int>, IEntity<int>
 
 {

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePassResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class GamePassResources_es_es : GamePassResources_en_us, IGamePassResou
 	/// Key: "Action.AddPass"
 	/// English String: "Add Pass"
 	/// </summary>
-	public override string ActionAddPass => "AÃ±adir pase";
+	public override string ActionAddPass => "Añadir pase";
 
 	/// <summary>
 	/// Key: "Heading.PassesForThisGame"
@@ -37,7 +39,7 @@ internal class GamePassResources_es_es : GamePassResources_en_us, IGamePassResou
 
 	protected override string _GetTemplateForActionAddPass()
 	{
-		return "AÃ±adir pase";
+		return "Añadir pase";
 	}
 
 	protected override string _GetTemplateForHeadingPassesForThisGame()

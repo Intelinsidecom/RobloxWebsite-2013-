@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -10,59 +12,59 @@ internal class ControlsResources_vi_vn : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "Äá»“ng Ã½";
+	public override string ActionAccept => "Đồng ý";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "Äá»“ng Ã½";
+	public override string ActionAgree => "Đồng ý";
 
 	/// <summary>
 	/// Key: "Action.Allow"
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "Cho phÃ©p";
+	public override string ActionAllow => "Cho phép";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "Quay láº¡i";
+	public override string ActionBack => "Quay lại";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Há»§y";
+	public override string ActionCancel => "Hủy";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "XÃ¡c nháº­n";
+	public override string ActionConfirm => "Xác nhận";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "XÃ³a";
+	public override string ActionDelete => "Xóa";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "Há»§y bá»";
+	public override string ActionDiscard => "Hủy bỏ";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "KhÃ´ng";
+	public override string ActionNo => "Không";
 
 	/// <summary>
 	/// Key: "Action.OK"
@@ -74,130 +76,130 @@ internal class ControlsResources_vi_vn : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "LÆ°u";
+	public override string ActionSave => "Lưu";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "Gá»­i";
+	public override string ActionSubmit => "Gửi";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "CÃ³";
+	public override string ActionYes => "Có";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string BirthdaypickerLabelDate => "NgÃ y thÃ¡ng";
+	public override string BirthdaypickerLabelDate => "Ngày tháng";
 
 	/// <summary>
 	/// Key: "Label.April"
 	/// English String: "April"
 	/// </summary>
-	public override string LabelApril => "ThÃ¡ng 4";
+	public override string LabelApril => "Tháng 4";
 
 	/// <summary>
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "ThÃ¡ng 8";
+	public override string LabelAugust => "Tháng 8";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "NgÃ y";
+	public override string LabelDay => "Ngày";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "ThÃ¡ng 12";
+	public override string LabelDecember => "Tháng 12";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "ThÃ¡ng 2";
+	public override string LabelFebruary => "Tháng 2";
 
 	/// <summary>
 	/// Key: "Label.January"
 	/// English String: "January"
 	/// </summary>
-	public override string LabelJanuary => "ThÃ¡ng 1";
+	public override string LabelJanuary => "Tháng 1";
 
 	/// <summary>
 	/// Key: "Label.July"
 	/// English String: "July"
 	/// </summary>
-	public override string LabelJuly => "ThÃ¡ng 7";
+	public override string LabelJuly => "Tháng 7";
 
 	/// <summary>
 	/// Key: "Label.June"
 	/// English String: "June"
 	/// </summary>
-	public override string LabelJune => "ThÃ¡ng 6";
+	public override string LabelJune => "Tháng 6";
 
 	/// <summary>
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "ThÃ¡ng 3";
+	public override string LabelMarch => "Tháng 3";
 
 	/// <summary>
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "ThÃ¡ng 5";
+	public override string LabelMay => "Tháng 5";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "ThÃ¡ng";
+	public override string LabelMonth => "Tháng";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "Tiáº¿p theo";
+	public override string LabelNext => "Tiếp theo";
 
 	/// <summary>
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "ThÃ¡ng 11";
+	public override string LabelNovember => "Tháng 11";
 
 	/// <summary>
 	/// Key: "Label.October"
 	/// English String: "October"
 	/// </summary>
-	public override string LabelOctober => "ThÃ¡ng 10";
+	public override string LabelOctober => "Tháng 10";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "TrÆ°á»›c";
+	public override string LabelPrevious => "Trước";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "ThÃ¡ng 9";
+	public override string LabelSeptember => "Tháng 9";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "NÄƒm";
+	public override string LabelYear => "Năm";
 
 	public ControlsResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -206,47 +208,47 @@ internal class ControlsResources_vi_vn : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "Äá»“ng Ã½";
+		return "Đồng ý";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "Äá»“ng Ã½";
+		return "Đồng ý";
 	}
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "Cho phÃ©p";
+		return "Cho phép";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "Quay láº¡i";
+		return "Quay lại";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Há»§y";
+		return "Hủy";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "XÃ¡c nháº­n";
+		return "Xác nhận";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "XÃ³a";
+		return "Xóa";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "Há»§y bá»";
+		return "Hủy bỏ";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "KhÃ´ng";
+		return "Không";
 	}
 
 	protected override string _GetTemplateForActionOK()
@@ -256,32 +258,32 @@ internal class ControlsResources_vi_vn : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "LÆ°u";
+		return "Lưu";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "Gá»­i";
+		return "Gửi";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "CÃ³";
+		return "Có";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
 	{
-		return "NgÃ y thÃ¡ng";
+		return "Ngày tháng";
 	}
 
 	protected override string _GetTemplateForLabelApril()
 	{
-		return "ThÃ¡ng 4";
+		return "Tháng 4";
 	}
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "ThÃ¡ng 8";
+		return "Tháng 8";
 	}
 
 	/// <summary>
@@ -301,77 +303,77 @@ internal class ControlsResources_vi_vn : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "NgÃ y";
+		return "Ngày";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "ThÃ¡ng 12";
+		return "Tháng 12";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "ThÃ¡ng 2";
+		return "Tháng 2";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
 	{
-		return "ThÃ¡ng 1";
+		return "Tháng 1";
 	}
 
 	protected override string _GetTemplateForLabelJuly()
 	{
-		return "ThÃ¡ng 7";
+		return "Tháng 7";
 	}
 
 	protected override string _GetTemplateForLabelJune()
 	{
-		return "ThÃ¡ng 6";
+		return "Tháng 6";
 	}
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "ThÃ¡ng 3";
+		return "Tháng 3";
 	}
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "ThÃ¡ng 5";
+		return "Tháng 5";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "ThÃ¡ng";
+		return "Tháng";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "Tiáº¿p theo";
+		return "Tiếp theo";
 	}
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "ThÃ¡ng 11";
+		return "Tháng 11";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
 	{
-		return "ThÃ¡ng 10";
+		return "Tháng 10";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "TrÆ°á»›c";
+		return "Trước";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "ThÃ¡ng 9";
+		return "Tháng 9";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "NÄƒm";
+		return "Năm";
 	}
 }
 

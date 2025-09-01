@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderation {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
     /// <summary>
 
 /// This class overrides ModeratorActionsResources_en_us to provide locale specific translations where possible,

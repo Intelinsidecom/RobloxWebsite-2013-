@@ -1,4 +1,4 @@
-using System.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 
 namespace Roblox.Entities.Mssql;
 
@@ -19,3 +19,4 @@ public static class SqlParameterFactory
 		return SqlParameterSerializerCache<T>.Default.GetSqlParametersForGetOrCreate(queryParametersObject);
 	}
 }
+

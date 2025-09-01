@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -183,3 +183,4 @@ public class GroupRelationshipRequestDAL
 		return RobloxDatabase.RobloxGroups.GetCount<int>("GroupRelationshipRequestsV2_GetTotalNumberOfGroupRelationshipRequestsV2ByGroupIDAndTypeID", queryParameters);
 	}
 }
+

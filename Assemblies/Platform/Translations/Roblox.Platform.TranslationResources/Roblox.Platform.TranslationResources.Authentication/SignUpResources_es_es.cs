@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
@@ -25,7 +27,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// button label for capitalized words for Log In
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "Iniciar sesiÃ³n";
+	public override string ActionLogInCapitalized => "Iniciar sesión";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
@@ -38,7 +40,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "RegÃ­strate";
+	public override string ActionSignUp => "Regístrate";
 
 	public override string ActionSignupAndSync => "Registrarse y sincronizar";
 
@@ -53,7 +55,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// instructions for linking account on signup page for FB based account
 	/// English String: "To link to an existing Roblox account, sign in and link them on the account settings page."
 	/// </summary>
-	public override string DescriptionAccountLinkingWarning => "Para vincular la cuenta a una existente de Roblox, inicia sesiÃ³n y ve a la pÃ¡gina de configuraciÃ³n de la cuenta.";
+	public override string DescriptionAccountLinkingWarning => "Para vincular la cuenta a una existente de Roblox, inicia sesión y ve a la página de configuración de la cuenta.";
 
 	/// <summary>
 	/// Key: "Description.NoRealName"
@@ -66,19 +68,19 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Description.PrivacyPolicy"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string DescriptionPrivacyPolicy => "PolÃ­tica de privacidad";
+	public override string DescriptionPrivacyPolicy => "Política de privacidad";
 
 	/// <summary>
 	/// Key: "Description.TermsOfService"
 	/// English String: "Terms of Service"
 	/// </summary>
-	public override string DescriptionTermsOfService => "TÃ©rminos de servicio";
+	public override string DescriptionTermsOfService => "Términos de servicio";
 
 	/// <summary>
 	/// Key: "GuestSignUpAB.Action.SignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string GuestSignUpABActionSignUp => "RegÃ­strate";
+	public override string GuestSignUpABActionSignUp => "Regístrate";
 
 	/// <summary>
 	/// Key: "Heading.ConnectFacebook"
@@ -99,14 +101,14 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// heading for login container
 	/// English String: "Log in and start having fun!"
 	/// </summary>
-	public override string HeadingLoginHaveFun => "Â¡Inicia sesiÃ³n y diviÃ©rtete!";
+	public override string HeadingLoginHaveFun => "¡Inicia sesión y diviértete!";
 
 	/// <summary>
 	/// Key: "Heading.SignupHaveFun"
 	/// signup form heading
 	/// English String: "Sign up and start having fun!"
 	/// </summary>
-	public override string HeadingSignupHaveFun => "Â¡RegÃ­strate y diviÃ©rtete!";
+	public override string HeadingSignupHaveFun => "¡Regístrate y diviértete!";
 
 	/// <summary>
 	/// Key: "Label.About"
@@ -119,14 +121,14 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "Â¿Ya tienes una cuenta de Roblox?";
+	public override string LabelAlreadyHaveRobloxAccount => "¿Ya tienes una cuenta de Roblox?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "Â¿Ya te has registrado?";
+	public override string LabelAlreadyRegistered => "¿Ya te has registrado?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
@@ -145,13 +147,13 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.ConfirmPassword"
 	/// English String: "Confirm password"
 	/// </summary>
-	public override string LabelConfirmPassword => "Confirmar contraseÃ±a";
+	public override string LabelConfirmPassword => "Confirmar contraseña";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "DÃ­a";
+	public override string LabelDay => "Día";
 
 	/// <summary>
 	/// Key: "Label.DesiredUsername"
@@ -164,7 +166,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "Tu cuenta de Facebook no estÃ¡ vinculada a ninguna cuenta de Roblox. RegÃ­strate para obtener una cuenta de Roblox.";
+	public override string LabelFacebookNotLinked => "Tu cuenta de Facebook no está vinculada a ninguna cuenta de Roblox. Regístrate para obtener una cuenta de Roblox.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
@@ -216,13 +218,13 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ContraseÃ±a";
+	public override string LabelPassword => "Contraseña";
 
 	/// <summary>
 	/// Key: "Label.PasswordRequirements"
 	/// English String: "Password (min length 8)"
 	/// </summary>
-	public override string LabelPasswordRequirements => "ContraseÃ±a (longitud mÃ­nima: 8)";
+	public override string LabelPasswordRequirements => "Contraseña (longitud mínima: 8)";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
@@ -242,7 +244,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.PleaseAgreeToTerms"
 	/// English String: "Please agree to our Terms of Use and Privacy Policy."
 	/// </summary>
-	public override string LabelPleaseAgreeToTerms => "Por favor, acepta nuestros tÃ©rminos de uso y nuestra polÃ­tica de privacidad.";
+	public override string LabelPleaseAgreeToTerms => "Por favor, acepta nuestros términos de uso y nuestra política de privacidad.";
 
 	/// <summary>
 	/// Key: "Label.Required"
@@ -256,7 +258,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// sign up button text
 	/// English String: "Sign Up and Play!"
 	/// </summary>
-	public override string LabelSignupButtonText => "Â¡RegÃ­strate y juega!";
+	public override string LabelSignupButtonText => "¡Regístrate y juega!";
 
 	/// <summary>
 	/// Key: "Label.SignUpWith"
@@ -268,14 +270,14 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// [facebook button]
 	/// English String: "or sign up with"
 	/// </summary>
-	public override string LabelSignUpWith => "o inicia sesiÃ³n con";
+	public override string LabelSignUpWith => "o inicia sesión con";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "TÃ©rminos de uso";
+	public override string LabelTermsOfUse => "Términos de uso";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -288,7 +290,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// label
 	/// English String: "3-20 alphanumeric characters, no spaces."
 	/// </summary>
-	public override string LabelUsernameCharacterLimit => "Entre 3 y 20 caracteres alfanumÃ©ricos sin espacios.";
+	public override string LabelUsernameCharacterLimit => "Entre 3 y 20 caracteres alfanuméricos sin espacios.";
 
 	/// <summary>
 	/// Key: "Label.UsernameHint"
@@ -307,13 +309,13 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.Year"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "AÃ±o";
+	public override string LabelYear => "Año";
 
 	/// <summary>
 	/// Key: "Message.Password.MinLength"
 	/// English String: "Min length 8"
 	/// </summary>
-	public override string MessagePasswordMinLength => "Longitud mÃ­nima: 8";
+	public override string MessagePasswordMinLength => "Longitud mínima: 8";
 
 	/// <summary>
 	/// Key: "Message.Username.NoRealNameUse"
@@ -338,7 +340,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.BirthdayInvalid"
 	/// English String: "This birthday is invalid."
 	/// </summary>
-	public override string ResponseBirthdayInvalid => "Esta fecha de nacimiento no es vÃ¡lida.";
+	public override string ResponseBirthdayInvalid => "Esta fecha de nacimiento no es válida.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayMustBeSetFirst"
@@ -358,7 +360,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// validation error message
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "Completa el desafÃ­o Captcha";
+	public override string ResponseCaptchaNotEnteredError => "Completa el desafío Captcha";
 
 	/// <summary>
 	/// Key: "Response.FacebookConnectionError"
@@ -371,19 +373,19 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.FacebookLoginAge"
 	/// English String: "Facebook login can only be used by users above 13."
 	/// </summary>
-	public override string ResponseFacebookLoginAge => "Solo los usuarios mayores de 13 aÃ±os pueden iniciar sesiÃ³n con Facebook.";
+	public override string ResponseFacebookLoginAge => "Solo los usuarios mayores de 13 años pueden iniciar sesión con Facebook.";
 
 	/// <summary>
 	/// Key: "Response.InvalidBirthday"
 	/// English String: "Invalid birthday."
 	/// </summary>
-	public override string ResponseInvalidBirthday => "Fecha de nacimiento no vÃ¡lida.";
+	public override string ResponseInvalidBirthday => "Fecha de nacimiento no válida.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string ResponseInvalidEmail => "DirecciÃ³n de correo electrÃ³nico no vÃ¡lida.";
+	public override string ResponseInvalidEmail => "Dirección de correo electrónico no válida.";
 
 	/// <summary>
 	/// Key: "Response.JavaScriptRequired"
@@ -396,39 +398,39 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "Crea una contraseÃ±a mÃ¡s complicada.";
+	public override string ResponsePasswordComplexity => "Crea una contraseña más complicada.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
 	/// validation message for password confirmation
 	/// English String: "Please enter a password confirmation."
 	/// </summary>
-	public override string ResponsePasswordConfirmation => "Introduce la confirmaciÃ³n de la contraseÃ±a.";
+	public override string ResponsePasswordConfirmation => "Introduce la confirmación de la contraseña.";
 
 	/// <summary>
 	/// Key: "Response.PasswordContainsUsernameError"
 	/// error when passsword has username in it
 	/// English String: "Password shouldn't match username."
 	/// </summary>
-	public override string ResponsePasswordContainsUsernameError => "La contraseÃ±a y el nombre de usuario no pueden coincidir.";
+	public override string ResponsePasswordContainsUsernameError => "La contraseña y el nombre de usuario no pueden coincidir.";
 
 	/// <summary>
 	/// Key: "Response.PasswordMismatch"
 	/// English String: "Passwords do not match."
 	/// </summary>
-	public override string ResponsePasswordMismatch => "Las contraseÃ±as no coinciden.";
+	public override string ResponsePasswordMismatch => "Las contraseñas no coinciden.";
 
 	/// <summary>
 	/// Key: "Response.PasswordWrongShort"
 	/// English String: "Passwords must be at least 8 characters long."
 	/// </summary>
-	public override string ResponsePasswordWrongShort => "La contraseÃ±a debe tener al menos 8 caracteres.";
+	public override string ResponsePasswordWrongShort => "La contraseña debe tener al menos 8 caracteres.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterPassword"
 	/// English String: "Please enter a password."
 	/// </summary>
-	public override string ResponsePleaseEnterPassword => "Introduce una contraseÃ±a.";
+	public override string ResponsePleaseEnterPassword => "Introduce una contraseña.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterUsername"
@@ -455,38 +457,38 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Too many accounts use this email error message
 	/// English String: "Too many accounts use this email."
 	/// </summary>
-	public override string ResponseTooManyAccountsWithSameEmailError => "Hay demasiadas cuentas asociadas a este correo electrÃ³nico.";
+	public override string ResponseTooManyAccountsWithSameEmailError => "Hay demasiadas cuentas asociadas a este correo electrónico.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "Lo sentimos, se ha producido un error desconocido. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string ResponseUnknownError => "Lo sentimos, se ha producido un error desconocido. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
 	/// error showing which characters are allowed for username
 	/// English String: "Usernames may only contain letters, numbers, and _."
 	/// </summary>
-	public override string ResponseUsernameAllowedCharactersError => "Los nombres solo pueden contener letras, nÃºmeros y _.";
+	public override string ResponseUsernameAllowedCharactersError => "Los nombres solo pueden contener letras, números y _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "Ese nombre de usuario ya estÃ¡ en uso.";
+	public override string ResponseUsernameAlreadyInUse => "Ese nombre de usuario ya está en uso.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "Ese nombre de usuario no estÃ¡ permitido. IntÃ©ntalo con otro.";
+	public override string ResponseUsernameExplicit => "Ese nombre de usuario no está permitido. Inténtalo con otro.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
 	/// English String: "Please enter a valid username."
 	/// </summary>
-	public override string ResponseUsernameInvalid => "Introduce un nombre de usuario vÃ¡lido.";
+	public override string ResponseUsernameInvalid => "Introduce un nombre de usuario válido.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidCharacters"
@@ -510,27 +512,27 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Response.UsernameNotAvailable"
 	/// English String: "Username not available. Please try again."
 	/// </summary>
-	public override string ResponseUsernameNotAvailable => "Nombre de usuario no disponible. IntÃ©ntalo de nuevo.";
+	public override string ResponseUsernameNotAvailable => "Nombre de usuario no disponible. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Response.UsernameOrPasswordIncorrect"
 	/// Your username or password is incorrect
 	/// English String: "Your username or password is incorrect."
 	/// </summary>
-	public override string ResponseUsernameOrPasswordIncorrect => "Nombre de usuario o contraseÃ±a incorrectos.";
+	public override string ResponseUsernameOrPasswordIncorrect => "Nombre de usuario o contraseña incorrectos.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePasswordRequired"
 	/// Username and Password are required error message
 	/// English String: "Username and Password are required."
 	/// </summary>
-	public override string ResponseUsernamePasswordRequired => "Es necesario especificar el nombre de usuario y la contraseÃ±a.";
+	public override string ResponseUsernamePasswordRequired => "Es necesario especificar el nombre de usuario y la contraseña.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePrivateInfo"
 	/// English String: "Username might contain private information."
 	/// </summary>
-	public override string ResponseUsernamePrivateInfo => "El nombre de usuario podrÃ­a contener informaciÃ³n privada.";
+	public override string ResponseUsernamePrivateInfo => "El nombre de usuario podría contener información privada.";
 
 	/// <summary>
 	/// Key: "Response.UsernameRequired"
@@ -568,7 +570,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "Iniciar sesiÃ³n";
+		return "Iniciar sesión";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
@@ -578,7 +580,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "RegÃ­strate";
+		return "Regístrate";
 	}
 
 	protected override string _GetTemplateForActionSignupAndSync()
@@ -593,7 +595,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForDescriptionAccountLinkingWarning()
 	{
-		return "Para vincular la cuenta a una existente de Roblox, inicia sesiÃ³n y ve a la pÃ¡gina de configuraciÃ³n de la cuenta.";
+		return "Para vincular la cuenta a una existente de Roblox, inicia sesión y ve a la página de configuración de la cuenta.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoRealName()
@@ -603,7 +605,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForDescriptionPrivacyPolicy()
 	{
-		return "PolÃ­tica de privacidad";
+		return "Política de privacidad";
 	}
 
 	/// <summary>
@@ -613,22 +615,22 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string DescriptionSignUpAgreement(string spanStart, string spanEnd, string termsOfUseLink, string privacyPolicyLink)
 	{
-		return $"Al hacer clic en {spanStart}RegÃ­strate{spanEnd}, aceptas los {termsOfUseLink} y la {privacyPolicyLink}.";
+		return $"Al hacer clic en {spanStart}Regístrate{spanEnd}, aceptas los {termsOfUseLink} y la {privacyPolicyLink}.";
 	}
 
 	protected override string _GetTemplateForDescriptionSignUpAgreement()
 	{
-		return "Al hacer clic en {spanStart}RegÃ­strate{spanEnd}, aceptas los {termsOfUseLink} y la {privacyPolicyLink}.";
+		return "Al hacer clic en {spanStart}Regístrate{spanEnd}, aceptas los {termsOfUseLink} y la {privacyPolicyLink}.";
 	}
 
 	protected override string _GetTemplateForDescriptionTermsOfService()
 	{
-		return "TÃ©rminos de servicio";
+		return "Términos de servicio";
 	}
 
 	protected override string _GetTemplateForGuestSignUpABActionSignUp()
 	{
-		return "RegÃ­strate";
+		return "Regístrate";
 	}
 
 	protected override string _GetTemplateForHeadingConnectFacebook()
@@ -658,12 +660,12 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForHeadingLoginHaveFun()
 	{
-		return "Â¡Inicia sesiÃ³n y diviÃ©rtete!";
+		return "¡Inicia sesión y diviértete!";
 	}
 
 	protected override string _GetTemplateForHeadingSignupHaveFun()
 	{
-		return "Â¡RegÃ­strate y diviÃ©rtete!";
+		return "¡Regístrate y diviértete!";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
@@ -673,12 +675,12 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "Â¿Ya tienes una cuenta de Roblox?";
+		return "¿Ya tienes una cuenta de Roblox?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "Â¿Ya te has registrado?";
+		return "¿Ya te has registrado?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
@@ -693,12 +695,12 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelConfirmPassword()
 	{
-		return "Confirmar contraseÃ±a";
+		return "Confirmar contraseña";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "DÃ­a";
+		return "Día";
 	}
 
 	protected override string _GetTemplateForLabelDesiredUsername()
@@ -708,7 +710,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "Tu cuenta de Facebook no estÃ¡ vinculada a ninguna cuenta de Roblox. RegÃ­strate para obtener una cuenta de Roblox.";
+		return "Tu cuenta de Facebook no está vinculada a ninguna cuenta de Roblox. Regístrate para obtener una cuenta de Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
@@ -748,12 +750,12 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ContraseÃ±a";
+		return "Contraseña";
 	}
 
 	protected override string _GetTemplateForLabelPasswordRequirements()
 	{
-		return "ContraseÃ±a (longitud mÃ­nima: 8)";
+		return "Contraseña (longitud mínima: 8)";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
@@ -768,7 +770,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelPleaseAgreeToTerms()
 	{
-		return "Por favor, acepta nuestros tÃ©rminos de uso y nuestra polÃ­tica de privacidad.";
+		return "Por favor, acepta nuestros términos de uso y nuestra política de privacidad.";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
@@ -778,17 +780,17 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelSignupButtonText()
 	{
-		return "Â¡RegÃ­strate y juega!";
+		return "¡Regístrate y juega!";
 	}
 
 	protected override string _GetTemplateForLabelSignUpWith()
 	{
-		return "o inicia sesiÃ³n con";
+		return "o inicia sesión con";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "TÃ©rminos de uso";
+		return "Términos de uso";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -798,7 +800,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelUsernameCharacterLimit()
 	{
-		return "Entre 3 y 20 caracteres alfanumÃ©ricos sin espacios.";
+		return "Entre 3 y 20 caracteres alfanuméricos sin espacios.";
 	}
 
 	protected override string _GetTemplateForLabelUsernameHint()
@@ -813,12 +815,12 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "AÃ±o";
+		return "Año";
 	}
 
 	protected override string _GetTemplateForMessagePasswordMinLength()
 	{
-		return "Longitud mÃ­nima: 8";
+		return "Longitud mínima: 8";
 	}
 
 	protected override string _GetTemplateForMessageUsernameNoRealNameUse()
@@ -838,7 +840,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
 	{
-		return "Esta fecha de nacimiento no es vÃ¡lida.";
+		return "Esta fecha de nacimiento no es válida.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayMustBeSetFirst()
@@ -853,7 +855,7 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "Completa el desafÃ­o Captcha";
+		return "Completa el desafío Captcha";
 	}
 
 	protected override string _GetTemplateForResponseFacebookConnectionError()
@@ -863,17 +865,17 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseFacebookLoginAge()
 	{
-		return "Solo los usuarios mayores de 13 aÃ±os pueden iniciar sesiÃ³n con Facebook.";
+		return "Solo los usuarios mayores de 13 años pueden iniciar sesión con Facebook.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidBirthday()
 	{
-		return "Fecha de nacimiento no vÃ¡lida.";
+		return "Fecha de nacimiento no válida.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmail()
 	{
-		return "DirecciÃ³n de correo electrÃ³nico no vÃ¡lida.";
+		return "Dirección de correo electrónico no válida.";
 	}
 
 	protected override string _GetTemplateForResponseJavaScriptRequired()
@@ -883,32 +885,32 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "Crea una contraseÃ±a mÃ¡s complicada.";
+		return "Crea una contraseña más complicada.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
 	{
-		return "Introduce la confirmaciÃ³n de la contraseÃ±a.";
+		return "Introduce la confirmación de la contraseña.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordContainsUsernameError()
 	{
-		return "La contraseÃ±a y el nombre de usuario no pueden coincidir.";
+		return "La contraseña y el nombre de usuario no pueden coincidir.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordMismatch()
 	{
-		return "Las contraseÃ±as no coinciden.";
+		return "Las contraseñas no coinciden.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordWrongShort()
 	{
-		return "La contraseÃ±a debe tener al menos 8 caracteres.";
+		return "La contraseña debe tener al menos 8 caracteres.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterPassword()
 	{
-		return "Introduce una contraseÃ±a.";
+		return "Introduce una contraseña.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterUsername()
@@ -928,32 +930,32 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseTooManyAccountsWithSameEmailError()
 	{
-		return "Hay demasiadas cuentas asociadas a este correo electrÃ³nico.";
+		return "Hay demasiadas cuentas asociadas a este correo electrónico.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Lo sentimos, se ha producido un error desconocido. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Lo sentimos, se ha producido un error desconocido. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
 	{
-		return "Los nombres solo pueden contener letras, nÃºmeros y _.";
+		return "Los nombres solo pueden contener letras, números y _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "Ese nombre de usuario ya estÃ¡ en uso.";
+		return "Ese nombre de usuario ya está en uso.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "Ese nombre de usuario no estÃ¡ permitido. IntÃ©ntalo con otro.";
+		return "Ese nombre de usuario no está permitido. Inténtalo con otro.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
 	{
-		return "Introduce un nombre de usuario vÃ¡lido.";
+		return "Introduce un nombre de usuario válido.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidCharacters()
@@ -973,22 +975,22 @@ internal class SignUpResources_es_es : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
 	{
-		return "Nombre de usuario no disponible. IntÃ©ntalo de nuevo.";
+		return "Nombre de usuario no disponible. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameOrPasswordIncorrect()
 	{
-		return "Nombre de usuario o contraseÃ±a incorrectos.";
+		return "Nombre de usuario o contraseña incorrectos.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePasswordRequired()
 	{
-		return "Es necesario especificar el nombre de usuario y la contraseÃ±a.";
+		return "Es necesario especificar el nombre de usuario y la contraseña.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePrivateInfo()
 	{
-		return "El nombre de usuario podrÃ­a contener informaciÃ³n privada.";
+		return "El nombre de usuario podría contener información privada.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameRequired()

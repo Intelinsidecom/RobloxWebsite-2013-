@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Marketing.Properties;
@@ -73,3 +73,4 @@ public class UserBrowserTrackerDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_UserBrowserTrackerDAL, "UserBrowserTrackers_GetUserBrowserTrackerByID", queryParameters), BuildDAL);
 	}
 }
+

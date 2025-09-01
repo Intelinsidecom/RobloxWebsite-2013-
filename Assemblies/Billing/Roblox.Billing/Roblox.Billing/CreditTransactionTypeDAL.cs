@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Common.Properties;
 using Roblox.Data;
@@ -97,3 +97,4 @@ public class CreditTransactionTypeDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_CreditTransactionTypeDAL, "[dbo].[CreditTransactionTypes_GetCreditTransactionTypeByValue]", queryParameters), BuildDAL);
 	}
 }
+

@@ -1,5 +1,5 @@
-using System;
-using System.Data.SqlClient;
+﻿using System;
+using Microsoft.Data.SqlClient;
 using Roblox.Platform.Assets.Entities;
 
 namespace Roblox.Platform.Assets;
@@ -162,3 +162,4 @@ internal class Alias : IAlias
 		return true;
 	}
 }
+

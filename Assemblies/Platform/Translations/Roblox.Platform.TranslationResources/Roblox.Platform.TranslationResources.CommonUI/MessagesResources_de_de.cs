@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "ZurÃ¼ck zur vorherigen Seite";
+	public override string ActionPreviousPage => "Zurück zur vorherigen Seite";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "ZurÃ¼ck zum HauptmenÃ¼";
+	public override string ActionReturnHome => "Zurück zum Hauptmenü";
 
 	/// <summary>
 	/// Key: "Label.Error"
@@ -73,13 +75,13 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "BenÃ¶tigte Cookies";
+	public override string MessageEssentialCookies => "Benötigte Cookies";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "Diese Cookies sind fÃ¼r die FunktionalitÃ¤t der Seite notwendig, zum Beispiel fÃ¼r die Benutzerauthentifizierung, zur Sicherung des Systems oder zum Speichern von Cookie-Vorlieben.";
+	public override string MessageEssentialCookiesDescription => "Diese Cookies sind für die Funktionalität der Seite notwendig, zum Beispiel für die Benutzerauthentifizierung, zur Sicherung des Systems oder zum Speichern von Cookie-Vorlieben.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -117,7 +119,7 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "Du hast nicht die nÃ¶tigen Rechte, um diese Seite anzuzeigen";
+	public override string ResponseAccessDeniedDescription => "Du hast nicht die nötigen Rechte, um diese Seite anzuzeigen";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
@@ -186,7 +188,7 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
+	public override string ResponseUnexpectedError => "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuche es später erneut.";
 
 	public MessagesResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -195,12 +197,12 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "ZurÃ¼ck zur vorherigen Seite";
+		return "Zurück zur vorherigen Seite";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "ZurÃ¼ck zum HauptmenÃ¼";
+		return "Zurück zum Hauptmenü";
 	}
 
 	/// <summary>
@@ -210,12 +212,12 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox benutzt Cookies, um Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darÃ¼ber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
+		return $"Roblox benutzt Cookies, um Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darüber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox benutzt Cookies, um Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darÃ¼ber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
+		return "Roblox benutzt Cookies, um Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darüber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
 	}
 
 	/// <summary>
@@ -280,12 +282,12 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox verwendet Cookies, um deine Nutzungserfahrung zu verbessern. Weitere Informationen, darunter auch Hinweise, wie du deine Einwilligung zurÃ¼ckziehen und die Verwendung von Cookies bei Roblox verwalten kannst, findest du in unseren {startLink}Datenschutz- und Cookie-Richtlinien{endLink}.";
+		return $"Roblox verwendet Cookies, um deine Nutzungserfahrung zu verbessern. Weitere Informationen, darunter auch Hinweise, wie du deine Einwilligung zurückziehen und die Verwendung von Cookies bei Roblox verwalten kannst, findest du in unseren {startLink}Datenschutz- und Cookie-Richtlinien{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox verwendet Cookies, um deine Nutzungserfahrung zu verbessern. Weitere Informationen, darunter auch Hinweise, wie du deine Einwilligung zurÃ¼ckziehen und die Verwendung von Cookies bei Roblox verwalten kannst, findest du in unseren {startLink}Datenschutz- und Cookie-Richtlinien{endLink}.";
+		return "Roblox verwendet Cookies, um deine Nutzungserfahrung zu verbessern. Weitere Informationen, darunter auch Hinweise, wie du deine Einwilligung zurückziehen und die Verwendung von Cookies bei Roblox verwalten kannst, findest du in unseren {startLink}Datenschutz- und Cookie-Richtlinien{endLink}.";
 	}
 
 	/// <summary>
@@ -294,12 +296,12 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox benutzt Cookies, um die Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darÃ¼ber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
+		return $"Roblox benutzt Cookies, um die Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darüber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox benutzt Cookies, um die Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darÃ¼ber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
+		return "Roblox benutzt Cookies, um die Inhalte zu personalisieren, Funktionen sozialer Medien anzubieten und den Datenverkehr auf unserer Website zu analysieren. Sieh dir unsere {startLink2}Datenschutz- und Cookie-Richtlinien{endLink2} an, um mehr darüber zu erfahren, wie wir Cookies einsetzen und wie du die {startLink}Cookie-Einstellungen anpassen{endLink} kannst.";
 	}
 
 	/// <summary>
@@ -308,22 +310,22 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"Bitte wÃ¤hle aus, ob diese Seite wie unten beschrieben Cookies benutzen darf. Du kannst mehr darÃ¼ber erfahren, wie diese Seite Cookies und damit verbundene Technologien benutzt, indem du dir unsere {startLink}Datenschutzrichtlinien{endLink} durchliest.";
+		return $"Bitte wähle aus, ob diese Seite wie unten beschrieben Cookies benutzen darf. Du kannst mehr darüber erfahren, wie diese Seite Cookies und damit verbundene Technologien benutzt, indem du dir unsere {startLink}Datenschutzrichtlinien{endLink} durchliest.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "Bitte wÃ¤hle aus, ob diese Seite wie unten beschrieben Cookies benutzen darf. Du kannst mehr darÃ¼ber erfahren, wie diese Seite Cookies und damit verbundene Technologien benutzt, indem du dir unsere {startLink}Datenschutzrichtlinien{endLink} durchliest.";
+		return "Bitte wähle aus, ob diese Seite wie unten beschrieben Cookies benutzen darf. Du kannst mehr darüber erfahren, wie diese Seite Cookies und damit verbundene Technologien benutzt, indem du dir unsere {startLink}Datenschutzrichtlinien{endLink} durchliest.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "BenÃ¶tigte Cookies";
+		return "Benötigte Cookies";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "Diese Cookies sind fÃ¼r die FunktionalitÃ¤t der Seite notwendig, zum Beispiel fÃ¼r die Benutzerauthentifizierung, zur Sicherung des Systems oder zum Speichern von Cookie-Vorlieben.";
+		return "Diese Cookies sind für die Funktionalität der Seite notwendig, zum Beispiel für die Benutzerauthentifizierung, zur Sicherung des Systems oder zum Speichern von Cookie-Vorlieben.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -353,7 +355,7 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "Du hast nicht die nÃ¶tigen Rechte, um diese Seite anzuzeigen";
+		return "Du hast nicht die nötigen Rechte, um diese Seite anzuzeigen";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
@@ -403,7 +405,7 @@ internal class MessagesResources_de_de : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuche es spÃ¤ter erneut.";
+		return "Es ist ein unerwarteter Fehler aufgetreten. Bitte versuche es später erneut.";
 	}
 }
 

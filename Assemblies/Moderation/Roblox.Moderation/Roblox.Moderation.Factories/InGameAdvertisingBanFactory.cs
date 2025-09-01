@@ -1,7 +1,7 @@
-﻿using System;
-using Roblox.Platform.Moderation.Interfaces;
-namespace Roblox.Moderation.Factoriespublic {
-    class InGameAdvertisingBanFactory : IInGameAdvertisingBan
+using System;
+using Roblox.Moderation.Interfaces;
+namespace Roblox.Moderation.Factories {
+    public class InGameAdvertisingBanFactory : IInGameAdvertisingBan
 
 {
 	public bool IsDeveloperBanned(long userId)

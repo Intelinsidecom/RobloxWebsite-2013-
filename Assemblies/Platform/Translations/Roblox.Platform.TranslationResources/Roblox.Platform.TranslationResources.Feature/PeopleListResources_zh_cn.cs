@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PeopleListResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PeopleListResources_zh_cn : PeopleListResources_en_us, IPeopleLis
 	/// Purchase game and play
 	/// English String: "Buy to Play"
 	/// </summary>
-	public override string ActionBuy => "è´­ä¹°ä»¥å¼€å§‹æ¸¸æˆ";
+	public override string ActionBuy => "购买以开始游戏";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// Join game with friends
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "åŠ å…¥";
+	public override string ActionJoin => "加入";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// View game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "æŸ¥çœ‹è¯¦æƒ…";
+	public override string ActionViewDetails => "查看详情";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "å¥½å‹";
+	public override string HeadingFriends => "好友";
 
 	/// <summary>
 	/// Key: "Heading.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string HeadingSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string HeadingSeeAll => "查看全部";
 
 	/// <summary>
 	/// Key: "Label.ViewProfile"
 	/// Go to Profile page and view
 	/// English String: "View Profile"
 	/// </summary>
-	public override string LabelViewProfile => "æŸ¥çœ‹ä¸ªäººèµ„æ–™";
+	public override string LabelViewProfile => "查看个人资料";
 
 	public PeopleListResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -53,27 +55,27 @@ internal class PeopleListResources_zh_cn : PeopleListResources_en_us, IPeopleLis
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è´­ä¹°ä»¥å¼€å§‹æ¸¸æˆ";
+		return "购买以开始游戏";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "åŠ å…¥";
+		return "加入";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "æŸ¥çœ‹è¯¦æƒ…";
+		return "查看详情";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "å¥½å‹";
+		return "好友";
 	}
 
 	protected override string _GetTemplateForHeadingSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "查看全部";
 	}
 
 	/// <summary>
@@ -83,17 +85,17 @@ internal class PeopleListResources_zh_cn : PeopleListResources_en_us, IPeopleLis
 	/// </summary>
 	public override string LabelChat(string username)
 	{
-		return $"ä¸Žâ€œ{username}\"èŠå¤©";
+		return $"与“{username}\"聊天";
 	}
 
 	protected override string _GetTemplateForLabelChat()
 	{
-		return "ä¸Žâ€œ{username}\"èŠå¤©";
+		return "与“{username}\"聊天";
 	}
 
 	protected override string _GetTemplateForLabelViewProfile()
 	{
-		return "æŸ¥çœ‹ä¸ªäººèµ„æ–™";
+		return "查看个人资料";
 	}
 }
 

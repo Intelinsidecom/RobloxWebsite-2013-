@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FriendsResources_en_us to provide locale specific translations where possible,
@@ -88,7 +90,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "Sin conexiÃ³n";
+	public override string LabelOffline => "Sin conexión";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -126,7 +128,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.ActionNotAllowedError"
 	/// English String: "Action not allowed"
 	/// </summary>
-	public override string MessageActionNotAllowedError => "AcciÃ³n no permitida.";
+	public override string MessageActionNotAllowedError => "Acción no permitida.";
 
 	/// <summary>
 	/// Key: "Message.AlreadyExistsError"
@@ -138,13 +140,13 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.CurrentInvalidParametersError"
 	/// English String: "Invalid parameters."
 	/// </summary>
-	public override string MessageCurrentInvalidParametersError => "ParÃ¡metros no vÃ¡lidos.";
+	public override string MessageCurrentInvalidParametersError => "Parámetros no válidos.";
 
 	/// <summary>
 	/// Key: "Message.CurrentUserFriendsLimitExceededError"
 	/// English String: "You have reached the maximum number of Friends. Please remove a Friend before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageCurrentUserFriendsLimitExceededError => "Has alcanzado la cantidad mÃ¡xima de amigos. Elimina a un amigo antes de aceptar mÃ¡s solicitudes de amistad.";
+	public override string MessageCurrentUserFriendsLimitExceededError => "Has alcanzado la cantidad máxima de amigos. Elimina a un amigo antes de aceptar más solicitudes de amistad.";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
@@ -156,7 +158,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.FloodLimitExceededError"
 	/// English String: "You are performing this action too often. Please wait a minute and try again."
 	/// </summary>
-	public override string MessageFloodLimitExceededError => "EstÃ¡s llevando a cabo esta acciÃ³n demasiado a menudo. Espera un minuto e intÃ©ntalo de nuevo.";
+	public override string MessageFloodLimitExceededError => "Estás llevando a cabo esta acción demasiado a menudo. Espera un minuto e inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Message.FollowerTabTooltip"
@@ -186,19 +188,19 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.ForMaxFriendsError"
 	/// English String: "Unable to process Request.You currently have the max number of Friends allowed. "
 	/// </summary>
-	public override string MessageForMaxFriendsError => "No se ha podido procesar la solicitud. En este momento tienes la mÃ¡xima cantidad de amigos permitida. ";
+	public override string MessageForMaxFriendsError => "No se ha podido procesar la solicitud. En este momento tienes la máxima cantidad de amigos permitida. ";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsFooter"
 	/// English String: "Unfriend someone before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageForMaxFriendsFooter => "Cancela la amistad con alguien antes de aceptar mÃ¡s solicitudes de amistad.";
+	public override string MessageForMaxFriendsFooter => "Cancela la amistad con alguien antes de aceptar más solicitudes de amistad.";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsError"
 	/// English String: "Unable to process Request. That user currently has the max number of Friends allowed."
 	/// </summary>
-	public override string MessageForMaxRequestsError => "No se ha podido procesar la solicitud. Ese usuario tiene la mÃ¡xima cantidad de amigos permitida.";
+	public override string MessageForMaxRequestsError => "No se ha podido procesar la solicitud. Ese usuario tiene la máxima cantidad de amigos permitida.";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsFooter"
@@ -216,7 +218,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.FriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageFriendsLimitExceededError => "LÃ­mite de amigos excedido.";
+	public override string MessageFriendsLimitExceededError => "Límite de amigos excedido.";
 
 	/// <summary>
 	/// Key: "Message.FriendsTabTooltip"
@@ -228,13 +230,13 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.NotRecipientError"
 	/// English String: "You are not the recipient of this friend request."
 	/// </summary>
-	public override string MessageNotRecipientError => "TÃº no eres el destinatario de esta solicitud de amistad.";
+	public override string MessageNotRecipientError => "Tú no eres el destinatario de esta solicitud de amistad.";
 
 	/// <summary>
 	/// Key: "Message.OtherUserFriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageOtherUserFriendsLimitExceededError => "LÃ­mite de amigos excedido.";
+	public override string MessageOtherUserFriendsLimitExceededError => "Límite de amigos excedido.";
 
 	/// <summary>
 	/// Key: "Message.RequestsTabTooltip"
@@ -246,7 +248,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.RobloxIsMoreFunWithFriends"
 	/// English String: "Roblox is more fun with friends!"
 	/// </summary>
-	public override string MessageRobloxIsMoreFunWithFriends => "Â¡Roblox es mÃ¡s divertido con amigos!";
+	public override string MessageRobloxIsMoreFunWithFriends => "¡Roblox es más divertido con amigos!";
 
 	/// <summary>
 	/// Key: "Message.SelfFollowingAttemptError"
@@ -264,19 +266,19 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// Key: "Message.SystemUnavailableError"
 	/// English String: "Friends and Followers system is unavailable."
 	/// </summary>
-	public override string MessageSystemUnavailableError => "El sistema de amigos y seguidores no estÃ¡ disponible.";
+	public override string MessageSystemUnavailableError => "El sistema de amigos y seguidores no está disponible.";
 
 	/// <summary>
 	/// Key: "Message.UnblockUserPinLockedError"
 	/// English String: "Pin is locked."
 	/// </summary>
-	public override string MessageUnblockUserPinLockedError => "El PIN estÃ¡ bloqueado.";
+	public override string MessageUnblockUserPinLockedError => "El PIN está bloqueado.";
 
 	/// <summary>
 	/// Key: "Message.UserBlockedError"
 	/// English String: "User is blocked"
 	/// </summary>
-	public override string MessageUserBlockedError => "El usuario estÃ¡ bloqueado.";
+	public override string MessageUserBlockedError => "El usuario está bloqueado.";
 
 	/// <summary>
 	/// Key: "Message.UserHasNotPassedCaptchaError"
@@ -396,17 +398,17 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string LabelNearbyUpsell(string startSpan, string endSpan)
 	{
-		return $"No tienes solicitudes de amistad pendientes. Para agregar amigos, prueba la funciÃ³n {startSpan}Cerca{endSpan}.";
+		return $"No tienes solicitudes de amistad pendientes. Para agregar amigos, prueba la función {startSpan}Cerca{endSpan}.";
 	}
 
 	protected override string _GetTemplateForLabelNearbyUpsell()
 	{
-		return "No tienes solicitudes de amistad pendientes. Para agregar amigos, prueba la funciÃ³n {startSpan}Cerca{endSpan}.";
+		return "No tienes solicitudes de amistad pendientes. Para agregar amigos, prueba la función {startSpan}Cerca{endSpan}.";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "Sin conexiÃ³n";
+		return "Sin conexión";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -436,7 +438,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageActionNotAllowedError()
 	{
-		return "AcciÃ³n no permitida.";
+		return "Acción no permitida.";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyExistsError()
@@ -446,12 +448,12 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageCurrentInvalidParametersError()
 	{
-		return "ParÃ¡metros no vÃ¡lidos.";
+		return "Parámetros no válidos.";
 	}
 
 	protected override string _GetTemplateForMessageCurrentUserFriendsLimitExceededError()
 	{
-		return "Has alcanzado la cantidad mÃ¡xima de amigos. Elimina a un amigo antes de aceptar mÃ¡s solicitudes de amistad.";
+		return "Has alcanzado la cantidad máxima de amigos. Elimina a un amigo antes de aceptar más solicitudes de amistad.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
@@ -461,7 +463,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageFloodLimitExceededError()
 	{
-		return "EstÃ¡s llevando a cabo esta acciÃ³n demasiado a menudo. Espera un minuto e intÃ©ntalo de nuevo.";
+		return "Estás llevando a cabo esta acción demasiado a menudo. Espera un minuto e inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForMessageFollowerTabTooltip()
@@ -486,17 +488,17 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageForMaxFriendsError()
 	{
-		return "No se ha podido procesar la solicitud. En este momento tienes la mÃ¡xima cantidad de amigos permitida. ";
+		return "No se ha podido procesar la solicitud. En este momento tienes la máxima cantidad de amigos permitida. ";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsFooter()
 	{
-		return "Cancela la amistad con alguien antes de aceptar mÃ¡s solicitudes de amistad.";
+		return "Cancela la amistad con alguien antes de aceptar más solicitudes de amistad.";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsError()
 	{
-		return "No se ha podido procesar la solicitud. Ese usuario tiene la mÃ¡xima cantidad de amigos permitida.";
+		return "No se ha podido procesar la solicitud. Ese usuario tiene la máxima cantidad de amigos permitida.";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsFooter()
@@ -511,7 +513,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageFriendsLimitExceededError()
 	{
-		return "LÃ­mite de amigos excedido.";
+		return "Límite de amigos excedido.";
 	}
 
 	protected override string _GetTemplateForMessageFriendsTabTooltip()
@@ -521,12 +523,12 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageNotRecipientError()
 	{
-		return "TÃº no eres el destinatario de esta solicitud de amistad.";
+		return "Tú no eres el destinatario de esta solicitud de amistad.";
 	}
 
 	protected override string _GetTemplateForMessageOtherUserFriendsLimitExceededError()
 	{
-		return "LÃ­mite de amigos excedido.";
+		return "Límite de amigos excedido.";
 	}
 
 	protected override string _GetTemplateForMessageRequestsTabTooltip()
@@ -536,7 +538,7 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageRobloxIsMoreFunWithFriends()
 	{
-		return "Â¡Roblox es mÃ¡s divertido con amigos!";
+		return "¡Roblox es más divertido con amigos!";
 	}
 
 	protected override string _GetTemplateForMessageSelfFollowingAttemptError()
@@ -551,17 +553,17 @@ internal class FriendsResources_es_es : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForMessageSystemUnavailableError()
 	{
-		return "El sistema de amigos y seguidores no estÃ¡ disponible.";
+		return "El sistema de amigos y seguidores no está disponible.";
 	}
 
 	protected override string _GetTemplateForMessageUnblockUserPinLockedError()
 	{
-		return "El PIN estÃ¡ bloqueado.";
+		return "El PIN está bloqueado.";
 	}
 
 	protected override string _GetTemplateForMessageUserBlockedError()
 	{
-		return "El usuario estÃ¡ bloqueado.";
+		return "El usuario está bloqueado.";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNotPassedCaptchaError()

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    enum CloseGameReasonType
+namespace Roblox.Platform.Games.Client {
+    public enum CloseGameReasonType
 
 {
 	Roblox,

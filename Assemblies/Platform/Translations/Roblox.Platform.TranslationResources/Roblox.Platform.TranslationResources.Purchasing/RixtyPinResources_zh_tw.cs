@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RixtyPinResources_en_us to provide locale specific translations where possible,
@@ -10,73 +12,73 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now"
 	/// </summary>
-	public override string ActionBuyNow => "ç¾åœ¨è³¼è²·";
+	public override string ActionBuyNow => "現在購買";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "è³¼è²· Robux";
+	public override string ActionBuyRobux => "購買 Robux";
 
 	/// <summary>
 	/// Key: "Action.MoreBCOptions"
 	/// English String: "More Builders Club Options"
 	/// </summary>
-	public override string ActionMoreBCOptions => "æ›´å¤š Builders Club é¸é …";
+	public override string ActionMoreBCOptions => "更多 Builders Club 選項";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "å…Œæ›";
+	public override string ActionRedeem => "兌換";
 
 	/// <summary>
 	/// Key: "Heading.AlreadyHaveCredit"
 	/// English String: "You have Roblox Credit!"
 	/// </summary>
-	public override string HeadingAlreadyHaveCredit => "æ‚¨æœ‰ Roblox é»žæ•¸ï¼";
+	public override string HeadingAlreadyHaveCredit => "您有 Roblox 點數！";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobuxUsingRixty"
 	/// English String: "Buy Robux using Rixty"
 	/// </summary>
-	public override string HeadingBuyRobuxUsingRixty => "ä»¥ Rixty è³¼è²· Robux";
+	public override string HeadingBuyRobuxUsingRixty => "以 Rixty 購買 Robux";
 
 	/// <summary>
 	/// Key: "Heading.GetRobuxOrBcWithRixty"
 	/// English String: "Get Robux or Builders Club with Rixty"
 	/// </summary>
-	public override string HeadingGetRobuxOrBcWithRixty => "ä»¥ Rixty å–å¾— Robux æˆ– Builders Club";
+	public override string HeadingGetRobuxOrBcWithRixty => "以 Rixty 取得 Robux 或 Builders Club";
 
 	/// <summary>
 	/// Key: "Heading.GetRobuxWithRixty"
 	/// English String: "Get Robux with Rixty"
 	/// </summary>
-	public override string HeadingGetRobuxWithRixty => "ä»¥ Rixty å–å¾— Robux";
+	public override string HeadingGetRobuxWithRixty => "以 Rixty 取得 Robux";
 
 	/// <summary>
 	/// Key: "Heading.HowToUse"
 	/// English String: "How to Use"
 	/// </summary>
-	public override string HeadingHowToUse => "ä½¿ç”¨èªªæ˜Ž";
+	public override string HeadingHowToUse => "使用說明";
 
 	/// <summary>
 	/// Key: "Heading.PayWithRixty"
 	/// English String: "Pay with Rixty"
 	/// </summary>
-	public override string HeadingPayWithRixty => "ä»¥ Rixty ä»˜æ¬¾";
+	public override string HeadingPayWithRixty => "以 Rixty 付款";
 
 	/// <summary>
 	/// Key: "Heading.RedeemRixtyCards"
 	/// English String: "Redeem Rixty Cards"
 	/// </summary>
-	public override string HeadingRedeemRixtyCards => "å…Œæ› Rixty é»žæ•¸å¡";
+	public override string HeadingRedeemRixtyCards => "兌換 Rixty 點數卡";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveAccount"
 	/// English String: "I already have a Rixty account"
 	/// </summary>
-	public override string LabelAlreadyHaveAccount => "æˆ‘æœ‰ Rixty å¸³è™Ÿ";
+	public override string LabelAlreadyHaveAccount => "我有 Rixty 帳號";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubImage"
@@ -89,49 +91,49 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.EnterPin"
 	/// English String: "Enter PIN:"
 	/// </summary>
-	public override string LabelEnterPin => "è¼¸å…¥ PINï¼š";
+	public override string LabelEnterPin => "輸入 PIN：";
 
 	/// <summary>
 	/// Key: "Label.EnterPinImage"
 	/// English String: "Enter Your PIN"
 	/// </summary>
-	public override string LabelEnterPinImage => "è¼¸å…¥æ‚¨çš„ PIN";
+	public override string LabelEnterPinImage => "輸入您的 PIN";
 
 	/// <summary>
 	/// Key: "Label.FortyFiveDaysBC"
 	/// English String: "45 Day Builders Club Extension - $10.00 (Existing BC members only)"
 	/// </summary>
-	public override string LabelFortyFiveDaysBC => "45 å¤© Builders Club çºŒç´„ï¼š$10.00ï¼ˆé™ Builders Club æœƒå“¡ï¼‰";
+	public override string LabelFortyFiveDaysBC => "45 天 Builders Club 續約：$10.00（限 Builders Club 會員）";
 
 	/// <summary>
 	/// Key: "Label.InstructionForCombineCards"
 	/// English String: "Combine cards for more Roblox credit."
 	/// </summary>
-	public override string LabelInstructionForCombineCards => "åˆä½µé»žæ•¸å¡ï¼Œå–å¾—æ›´å¤š Roblox é»žæ•¸ã€‚";
+	public override string LabelInstructionForCombineCards => "合併點數卡，取得更多 Roblox 點數。";
 
 	/// <summary>
 	/// Key: "Label.InstructionForEnterPin"
 	/// English String: "Enter your Rixty PIN."
 	/// </summary>
-	public override string LabelInstructionForEnterPin => "è¼¸å…¥æ‚¨çš„ Rixty PINã€‚";
+	public override string LabelInstructionForEnterPin => "輸入您的 Rixty PIN。";
 
 	/// <summary>
 	/// Key: "Label.OrUppercase"
 	/// English String: "OR"
 	/// </summary>
-	public override string LabelOrUppercase => "æˆ–";
+	public override string LabelOrUppercase => "或";
 
 	/// <summary>
 	/// Key: "Label.PinImageText"
 	/// English String: "Your PIN is on your receipt"
 	/// </summary>
-	public override string LabelPinImageText => "æ‚¨çš„ PIN åœ¨æ‚¨çš„æ”¶æ“šä¸Š";
+	public override string LabelPinImageText => "您的 PIN 在您的收據上";
 
 	/// <summary>
 	/// Key: "Label.RixtyLogo"
 	/// English String: "Rixty Logo"
 	/// </summary>
-	public override string LabelRixtyLogo => "Rixty æ¨™èªŒ";
+	public override string LabelRixtyLogo => "Rixty 標誌";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -143,61 +145,61 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// Key: "Label.ThirtyDaysBC"
 	/// English String: "30 Days of Builders Club - $10.00"
 	/// </summary>
-	public override string LabelThirtyDaysBC => "30 å¤© Builders Clubï¼š$10.00";
+	public override string LabelThirtyDaysBC => "30 天 Builders Club：$10.00";
 
 	/// <summary>
 	/// Key: "Label.WhySpendCredit"
 	/// English String: "Spend your Roblox credit on Robux and Builders Club!"
 	/// </summary>
-	public override string LabelWhySpendCredit => "æ‚¨å¯ä»¥å°‡ Roblox é»žæ•¸ç”¨åœ¨ Robux å’Œ Builders Clubï¼";
+	public override string LabelWhySpendCredit => "您可以將 Roblox 點數用在 Robux 和 Builders Club！";
 
 	/// <summary>
 	/// Key: "Label.YourBalance"
 	/// English String: "Your Balance:"
 	/// </summary>
-	public override string LabelYourBalance => "æ‚¨çš„é¤˜é¡ï¼š";
+	public override string LabelYourBalance => "您的餘額：";
 
 	/// <summary>
 	/// Key: "Message.AnErrorOccurred"
 	/// English String: "An error occurred"
 	/// </summary>
-	public override string MessageAnErrorOccurred => "ç™¼ç”ŸéŒ¯èª¤";
+	public override string MessageAnErrorOccurred => "發生錯誤";
 
 	/// <summary>
 	/// Key: "Message.Failure"
 	/// English String: "Failure"
 	/// </summary>
-	public override string MessageFailure => "å¤±æ•—";
+	public override string MessageFailure => "失敗";
 
 	/// <summary>
 	/// Key: "Message.Loading"
 	/// English String: "Loading"
 	/// </summary>
-	public override string MessageLoading => "æ­£åœ¨è¼‰å…¥";
+	public override string MessageLoading => "正在載入";
 
 	/// <summary>
 	/// Key: "Message.PinAlreadyRedeemed"
 	/// English String: "PIN already redeemed"
 	/// </summary>
-	public override string MessagePinAlreadyRedeemed => "PIN å·²å…Œæ›";
+	public override string MessagePinAlreadyRedeemed => "PIN 已兌換";
 
 	/// <summary>
 	/// Key: "Message.RixtyUnavailable"
 	/// English String: "Currently unavailable. Please try again later."
 	/// </summary>
-	public override string MessageRixtyUnavailable => "ç›®å‰ç„¡æ³•ä½¿ç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageRixtyUnavailable => "目前無法使用，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Message.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string MessageSuccess => "æˆåŠŸ";
+	public override string MessageSuccess => "成功";
 
 	/// <summary>
 	/// Key: "Message.SuccessfulRedemption"
 	/// English String: "You have successfully redeemed your PIN!"
 	/// </summary>
-	public override string MessageSuccessfulRedemption => "æˆåŠŸå…Œæ› PIN ï¼";
+	public override string MessageSuccessfulRedemption => "成功兌換 PIN ！";
 
 	public RixtyPinResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -206,22 +208,22 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "ç¾åœ¨è³¼è²·";
+		return "現在購買";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "è³¼è²· Robux";
+		return "購買 Robux";
 	}
 
 	protected override string _GetTemplateForActionMoreBCOptions()
 	{
-		return "æ›´å¤š Builders Club é¸é …";
+		return "更多 Builders Club 選項";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "å…Œæ›";
+		return "兌換";
 	}
 
 	/// <summary>
@@ -230,12 +232,12 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobux(string lineBreak)
 	{
-		return $"æœ‰äº† Rixtyï¼Œæ‚¨å°±å¯ä»¥ä½¿ç”¨ç¾é‡‘èˆ‡ç¡¬å¹£è³¼è²· Robux èˆ‡ Builders Clubã€‚{lineBreak}æ²’æœ‰ä¿¡ç”¨å¡å—Žï¼Ÿæ²’å•é¡Œ";
+		return $"有了 Rixty，您就可以使用現金與硬幣購買 Robux 與 Builders Club。{lineBreak}沒有信用卡嗎？沒問題";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobux()
 	{
-		return "æœ‰äº† Rixtyï¼Œæ‚¨å°±å¯ä»¥ä½¿ç”¨ç¾é‡‘èˆ‡ç¡¬å¹£è³¼è²· Robux èˆ‡ Builders Clubã€‚{lineBreak}æ²’æœ‰ä¿¡ç”¨å¡å—Žï¼Ÿæ²’å•é¡Œ";
+		return "有了 Rixty，您就可以使用現金與硬幣購買 Robux 與 Builders Club。{lineBreak}沒有信用卡嗎？沒問題";
 	}
 
 	/// <summary>
@@ -244,52 +246,52 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string DescriptionUseCashForRobuxAndPremium(string lineBreak)
 	{
-		return $"æœ‰äº† Rixtyï¼Œæ‚¨å°±å¯ä»¥ä½¿ç”¨ç¾é‡‘èˆ‡ç¡¬å¹£è³¼è²· Robux èˆ‡ Builders Clubã€‚{lineBreak}æ²’æœ‰ä¿¡ç”¨å¡å—Žï¼Ÿæ²’å•é¡Œ";
+		return $"有了 Rixty，您就可以使用現金與硬幣購買 Robux 與 Builders Club。{lineBreak}沒有信用卡嗎？沒問題";
 	}
 
 	protected override string _GetTemplateForDescriptionUseCashForRobuxAndPremium()
 	{
-		return "æœ‰äº† Rixtyï¼Œæ‚¨å°±å¯ä»¥ä½¿ç”¨ç¾é‡‘èˆ‡ç¡¬å¹£è³¼è²· Robux èˆ‡ Builders Clubã€‚{lineBreak}æ²’æœ‰ä¿¡ç”¨å¡å—Žï¼Ÿæ²’å•é¡Œ";
+		return "有了 Rixty，您就可以使用現金與硬幣購買 Robux 與 Builders Club。{lineBreak}沒有信用卡嗎？沒問題";
 	}
 
 	protected override string _GetTemplateForHeadingAlreadyHaveCredit()
 	{
-		return "æ‚¨æœ‰ Roblox é»žæ•¸ï¼";
+		return "您有 Roblox 點數！";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobuxUsingRixty()
 	{
-		return "ä»¥ Rixty è³¼è²· Robux";
+		return "以 Rixty 購買 Robux";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobuxOrBcWithRixty()
 	{
-		return "ä»¥ Rixty å–å¾— Robux æˆ– Builders Club";
+		return "以 Rixty 取得 Robux 或 Builders Club";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobuxWithRixty()
 	{
-		return "ä»¥ Rixty å–å¾— Robux";
+		return "以 Rixty 取得 Robux";
 	}
 
 	protected override string _GetTemplateForHeadingHowToUse()
 	{
-		return "ä½¿ç”¨èªªæ˜Ž";
+		return "使用說明";
 	}
 
 	protected override string _GetTemplateForHeadingPayWithRixty()
 	{
-		return "ä»¥ Rixty ä»˜æ¬¾";
+		return "以 Rixty 付款";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemRixtyCards()
 	{
-		return "å…Œæ› Rixty é»žæ•¸å¡";
+		return "兌換 Rixty 點數卡";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveAccount()
 	{
-		return "æˆ‘æœ‰ Rixty å¸³è™Ÿ";
+		return "我有 Rixty 帳號";
 	}
 
 	/// <summary>
@@ -299,12 +301,12 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuildersClubExtensionExisting(string numberOfDays, string cost)
 	{
-		return $"{numberOfDays} å¤© Builders Club çºŒç´„ï¼š{cost}ï¼ˆé™ BC æœƒå“¡ï¼‰";
+		return $"{numberOfDays} 天 Builders Club 續約：{cost}（限 BC 會員）";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExtensionExisting()
 	{
-		return "{numberOfDays} å¤© Builders Club çºŒç´„ï¼š{cost}ï¼ˆé™ BC æœƒå“¡ï¼‰";
+		return "{numberOfDays} 天 Builders Club 續約：{cost}（限 BC 會員）";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubImage()
@@ -319,12 +321,12 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuildersClubOffer(string numberOfDays, string cost)
 	{
-		return $"{numberOfDays} å¤© Builders Club çºŒç´„ï¼š{cost}";
+		return $"{numberOfDays} 天 Builders Club 續約：{cost}";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubOffer()
 	{
-		return "{numberOfDays} å¤© Builders Club çºŒç´„ï¼š{cost}";
+		return "{numberOfDays} 天 Builders Club 續約：{cost}";
 	}
 
 	/// <summary>
@@ -334,27 +336,27 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelBuyRobuxWithRixty(string robuxAmount, string currencyAmount)
 	{
-		return $"ä»¥ {currencyAmount} è³¼è²· {robuxAmount} Robux";
+		return $"以 {currencyAmount} 購買 {robuxAmount} Robux";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobuxWithRixty()
 	{
-		return "ä»¥ {currencyAmount} è³¼è²· {robuxAmount} Robux";
+		return "以 {currencyAmount} 購買 {robuxAmount} Robux";
 	}
 
 	protected override string _GetTemplateForLabelEnterPin()
 	{
-		return "è¼¸å…¥ PINï¼š";
+		return "輸入 PIN：";
 	}
 
 	protected override string _GetTemplateForLabelEnterPinImage()
 	{
-		return "è¼¸å…¥æ‚¨çš„ PIN";
+		return "輸入您的 PIN";
 	}
 
 	protected override string _GetTemplateForLabelFortyFiveDaysBC()
 	{
-		return "45 å¤© Builders Club çºŒç´„ï¼š$10.00ï¼ˆé™ Builders Club æœƒå“¡ï¼‰";
+		return "45 天 Builders Club 續約：$10.00（限 Builders Club 會員）";
 	}
 
 	/// <summary>
@@ -363,37 +365,37 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 	/// </summary>
 	public override string LabelGetPhysicalRixtyCard(string startLink, string endLink)
 	{
-		return $"{startLink}å‰å¾€å•†å®¶{endLink}è³¼è²· Rixty é»žæ•¸å¡ã€‚";
+		return $"{startLink}前往商家{endLink}購買 Rixty 點數卡。";
 	}
 
 	protected override string _GetTemplateForLabelGetPhysicalRixtyCard()
 	{
-		return "{startLink}å‰å¾€å•†å®¶{endLink}è³¼è²· Rixty é»žæ•¸å¡ã€‚";
+		return "{startLink}前往商家{endLink}購買 Rixty 點數卡。";
 	}
 
 	protected override string _GetTemplateForLabelInstructionForCombineCards()
 	{
-		return "åˆä½µé»žæ•¸å¡ï¼Œå–å¾—æ›´å¤š Roblox é»žæ•¸ã€‚";
+		return "合併點數卡，取得更多 Roblox 點數。";
 	}
 
 	protected override string _GetTemplateForLabelInstructionForEnterPin()
 	{
-		return "è¼¸å…¥æ‚¨çš„ Rixty PINã€‚";
+		return "輸入您的 Rixty PIN。";
 	}
 
 	protected override string _GetTemplateForLabelOrUppercase()
 	{
-		return "æˆ–";
+		return "或";
 	}
 
 	protected override string _GetTemplateForLabelPinImageText()
 	{
-		return "æ‚¨çš„ PIN åœ¨æ‚¨çš„æ”¶æ“šä¸Š";
+		return "您的 PIN 在您的收據上";
 	}
 
 	protected override string _GetTemplateForLabelRixtyLogo()
 	{
-		return "Rixty æ¨™èªŒ";
+		return "Rixty 標誌";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -403,52 +405,52 @@ internal class RixtyPinResources_zh_tw : RixtyPinResources_en_us, IRixtyPinResou
 
 	protected override string _GetTemplateForLabelThirtyDaysBC()
 	{
-		return "30 å¤© Builders Clubï¼š$10.00";
+		return "30 天 Builders Club：$10.00";
 	}
 
 	protected override string _GetTemplateForLabelWhySpendCredit()
 	{
-		return "æ‚¨å¯ä»¥å°‡ Roblox é»žæ•¸ç”¨åœ¨ Robux å’Œ Builders Clubï¼";
+		return "您可以將 Roblox 點數用在 Robux 和 Builders Club！";
 	}
 
 	protected override string _GetTemplateForLabelYourBalance()
 	{
-		return "æ‚¨çš„é¤˜é¡ï¼š";
+		return "您的餘額：";
 	}
 
 	protected override string _GetTemplateForMessageAnErrorOccurred()
 	{
-		return "ç™¼ç”ŸéŒ¯èª¤";
+		return "發生錯誤";
 	}
 
 	protected override string _GetTemplateForMessageFailure()
 	{
-		return "å¤±æ•—";
+		return "失敗";
 	}
 
 	protected override string _GetTemplateForMessageLoading()
 	{
-		return "æ­£åœ¨è¼‰å…¥";
+		return "正在載入";
 	}
 
 	protected override string _GetTemplateForMessagePinAlreadyRedeemed()
 	{
-		return "PIN å·²å…Œæ›";
+		return "PIN 已兌換";
 	}
 
 	protected override string _GetTemplateForMessageRixtyUnavailable()
 	{
-		return "ç›®å‰ç„¡æ³•ä½¿ç”¨ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "目前無法使用，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForMessageSuccess()
 	{
-		return "æˆåŠŸ";
+		return "成功";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfulRedemption()
 	{
-		return "æˆåŠŸå…Œæ› PIN ï¼";
+		return "成功兌換 PIN ！";
 	}
 }
 

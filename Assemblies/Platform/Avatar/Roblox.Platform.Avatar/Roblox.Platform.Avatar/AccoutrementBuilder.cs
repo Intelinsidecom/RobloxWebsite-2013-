@@ -1,5 +1,5 @@
-using System;
-using System.Data.SqlClient;
+﻿using System;
+using Microsoft.Data.SqlClient;
 using Roblox.Avatar.Client;
 
 namespace Roblox.Platform.Avatar;
@@ -31,3 +31,4 @@ internal class AccoutrementBuilder : IAccoutrementBuilder
 		}
 	}
 }
+

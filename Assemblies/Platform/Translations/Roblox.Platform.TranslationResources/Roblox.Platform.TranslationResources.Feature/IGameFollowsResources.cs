@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IGameFollowsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IGameFollowsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -68,3 +70,5 @@
 
 
 }
+
+

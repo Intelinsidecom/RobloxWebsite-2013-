@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 namespace Roblox.Platform.TranslationResources {
     /// <summary>
 

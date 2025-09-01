@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Roblox.Platform.Core;
-namespace Roblox.Moderation.Entitiesinternal {
+namespace Roblox.Moderation.Entities {
     interface IModerationLocaleEntityFactory : IDomainFactory<ModerationDomainFactories>, IDomainObject<ModerationDomainFactories>
 
 {

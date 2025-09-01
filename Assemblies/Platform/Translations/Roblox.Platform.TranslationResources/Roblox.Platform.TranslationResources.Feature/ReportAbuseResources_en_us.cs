@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class ReportAbuseResources_en_us : TranslationResourcesBase, IReportAbuseResources, ITranslationResources
 
 {
@@ -879,3 +879,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

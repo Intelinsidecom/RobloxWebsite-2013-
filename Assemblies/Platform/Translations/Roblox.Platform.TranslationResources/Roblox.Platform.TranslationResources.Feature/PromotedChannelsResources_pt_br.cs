@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
@@ -39,14 +41,14 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 	/// The heading of the social media panel on the game details page
 	/// English String: "Social Media"
 	/// </summary>
-	public override string HeadingSocialMedia => "MÃ­dia social";
+	public override string HeadingSocialMedia => "Mídia social";
 
 	/// <summary>
 	/// Key: "Label.Title"
 	/// Placeholder text for inputting a title for a social link.
 	/// English String: "Title"
 	/// </summary>
-	public override string LabelTitle => "TÃ­tulo";
+	public override string LabelTitle => "Título";
 
 	/// <summary>
 	/// Key: "Label.Url"
@@ -60,49 +62,49 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 	/// The error message displayed when the user does not have permission to the group they are trying to add.
 	/// English String: "You do not have permission to configure this group."
 	/// </summary>
-	public override string MessageNoGroupPermission => "VocÃª nÃ£o tem permissÃ£o para configurar este grupo.";
+	public override string MessageNoGroupPermission => "Você não tem permissão para configurar este grupo.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkInvalidError"
 	/// The error message displayed when a social link attempts to be saved but no longer exists.
 	/// English String: "The social link no longer exists."
 	/// </summary>
-	public override string MessageSocialLinkInvalidError => "O link social nÃ£o existe mais.";
+	public override string MessageSocialLinkInvalidError => "O link social não existe mais.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinkRemoved"
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "O link de mÃ­dia social foi excluÃ­do.";
+	public override string MessageSocialLinkRemoved => "O link de mídia social foi excluído.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "Links sociais nÃ£o podem ser editados no momento.";
+	public override string MessageSocialLinksEditDisabledError => "Links sociais não podem ser editados no momento.";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
 	/// The error message displayed when the title input is empty.
 	/// English String: "The title cannot be empty."
 	/// </summary>
-	public override string MessageTitleEmptyError => "O tÃ­tulo nÃ£o pode ficar vazio.";
+	public override string MessageTitleEmptyError => "O título não pode ficar vazio.";
 
 	/// <summary>
 	/// Key: "Message.TitleModeratedError"
 	/// The error message displayed when a title is moderated while being edited.
 	/// English String: "The title has been moderated, please try something else."
 	/// </summary>
-	public override string MessageTitleModeratedError => "O tÃ­tulo foi moderado. Tente algo diferente.";
+	public override string MessageTitleModeratedError => "O título foi moderado. Tente algo diferente.";
 
 	/// <summary>
 	/// Key: "Message.UnauthorizedError"
 	/// The error message displayed when an action is attempted against a social link but the user does not have permission to edit social links.
 	/// English String: "You do not have permission to update social links."
 	/// </summary>
-	public override string MessageUnauthorizedError => "VocÃª nÃ£o tem permissÃ£o para atualizar links sociais.";
+	public override string MessageUnauthorizedError => "Você não tem permissão para atualizar links sociais.";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
@@ -116,14 +118,14 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 	/// The error message displayed when the url input is empty.
 	/// English String: "The url cannot be empty."
 	/// </summary>
-	public override string MessageUrlEmptyError => "A url nÃ£o pode ficar vazia.";
+	public override string MessageUrlEmptyError => "A url não pode ficar vazia.";
 
 	/// <summary>
 	/// Key: "Message.UrlSocialMediaTypeMismatchError"
 	/// The error message displayed when the url input is not a valid url for the social media type selected.
 	/// English String: "The url must match the social media type."
 	/// </summary>
-	public override string MessageUrlSocialMediaTypeMismatchError => "A url deve conferir com o tipo de mÃ­dia social.";
+	public override string MessageUrlSocialMediaTypeMismatchError => "A url deve conferir com o tipo de mídia social.";
 
 	public PromotedChannelsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -152,7 +154,7 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForHeadingSocialMedia()
 	{
-		return "MÃ­dia social";
+		return "Mídia social";
 	}
 
 	/// <summary>
@@ -162,17 +164,17 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"VocÃª pode adicionar atÃ© {socialLinkLimit} links sociais.";
+		return $"Você pode adicionar até {socialLinkLimit} links sociais.";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "VocÃª pode adicionar atÃ© {socialLinkLimit} links sociais.";
+		return "Você pode adicionar até {socialLinkLimit} links sociais.";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
 	{
-		return "TÃ­tulo";
+		return "Título";
 	}
 
 	protected override string _GetTemplateForLabelUrl()
@@ -182,17 +184,17 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageNoGroupPermission()
 	{
-		return "VocÃª nÃ£o tem permissÃ£o para configurar este grupo.";
+		return "Você não tem permissão para configurar este grupo.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkInvalidError()
 	{
-		return "O link social nÃ£o existe mais.";
+		return "O link social não existe mais.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "O link de mÃ­dia social foi excluÃ­do.";
+		return "O link de mídia social foi excluído.";
 	}
 
 	/// <summary>
@@ -212,7 +214,7 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "Links sociais nÃ£o podem ser editados no momento.";
+		return "Links sociais não podem ser editados no momento.";
 	}
 
 	/// <summary>
@@ -222,27 +224,27 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"ImpossÃ­vel ter mais de um link de mÃ­dia social do {socialMediaType}.";
+		return $"Impossível ter mais de um link de mídia social do {socialMediaType}.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "ImpossÃ­vel ter mais de um link de mÃ­dia social do {socialMediaType}.";
+		return "Impossível ter mais de um link de mídia social do {socialMediaType}.";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()
 	{
-		return "O tÃ­tulo nÃ£o pode ficar vazio.";
+		return "O título não pode ficar vazio.";
 	}
 
 	protected override string _GetTemplateForMessageTitleModeratedError()
 	{
-		return "O tÃ­tulo foi moderado. Tente algo diferente.";
+		return "O título foi moderado. Tente algo diferente.";
 	}
 
 	protected override string _GetTemplateForMessageUnauthorizedError()
 	{
-		return "VocÃª nÃ£o tem permissÃ£o para atualizar links sociais.";
+		return "Você não tem permissão para atualizar links sociais.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
@@ -252,12 +254,12 @@ internal class PromotedChannelsResources_pt_br : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageUrlEmptyError()
 	{
-		return "A url nÃ£o pode ficar vazia.";
+		return "A url não pode ficar vazia.";
 	}
 
 	protected override string _GetTemplateForMessageUrlSocialMediaTypeMismatchError()
 	{
-		return "A url deve conferir com o tipo de mÃ­dia social.";
+		return "A url deve conferir com o tipo de mídia social.";
 	}
 }
 

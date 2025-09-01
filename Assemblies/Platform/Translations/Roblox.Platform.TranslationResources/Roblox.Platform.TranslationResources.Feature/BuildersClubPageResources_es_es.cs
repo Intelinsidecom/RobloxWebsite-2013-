@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPageResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// description in small text about the disclaimer for signing bonus
 	/// English String: "* Signing bonus is for first time membership purchase only."
 	/// </summary>
-	public override string DescriptionSigningBonusDesclaimer => "* El bonus se otorgarÃ¡ solamente con la compra de la primera suscripciÃ³n.";
+	public override string DescriptionSigningBonusDesclaimer => "* El bonus se otorgará solamente con la compra de la primera suscripción.";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubUpgrade"
@@ -95,7 +97,7 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// label - asterisk is used to show some terms message
 	/// English String: "Signing Bonus*"
 	/// </summary>
-	public override string LabelBenefitTypeSigningBonus => "Bonus de suscripciÃ³n*";
+	public override string LabelBenefitTypeSigningBonus => "Bonus de suscripción*";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeTradeSystem"
@@ -130,7 +132,7 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Membership:"
 	/// </summary>
-	public override string LabelMembership => "SuscripciÃ³n:";
+	public override string LabelMembership => "Suscripción:";
 
 	/// <summary>
 	/// Key: "Label.Monthly"
@@ -172,17 +174,17 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string DescriptionDowngradeWarning(string currentRenewalDays, string daysCreditCount)
 	{
-		return $"Esta compra convertirÃ¡ los {currentRenewalDays} dÃ­as restantes de tu suscripciÃ³n actual en {daysCreditCount} dÃ­as de la nueva suscripciÃ³n. Esos dÃ­as se aÃ±adirÃ¡n a tu nueva suscripciÃ³n.";
+		return $"Esta compra convertirá los {currentRenewalDays} días restantes de tu suscripción actual en {daysCreditCount} días de la nueva suscripción. Esos días se añadirán a tu nueva suscripción.";
 	}
 
 	protected override string _GetTemplateForDescriptionDowngradeWarning()
 	{
-		return "Esta compra convertirÃ¡ los {currentRenewalDays} dÃ­as restantes de tu suscripciÃ³n actual en {daysCreditCount} dÃ­as de la nueva suscripciÃ³n. Esos dÃ­as se aÃ±adirÃ¡n a tu nueva suscripciÃ³n.";
+		return "Esta compra convertirá los {currentRenewalDays} días restantes de tu suscripción actual en {daysCreditCount} días de la nueva suscripción. Esos días se añadirán a tu nueva suscripción.";
 	}
 
 	protected override string _GetTemplateForDescriptionSigningBonusDesclaimer()
 	{
-		return "* El bonus se otorgarÃ¡ solamente con la compra de la primera suscripciÃ³n.";
+		return "* El bonus se otorgará solamente con la compra de la primera suscripción.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubUpgrade()
@@ -242,7 +244,7 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeSigningBonus()
 	{
-		return "Bonus de suscripciÃ³n*";
+		return "Bonus de suscripción*";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeTradeSystem()
@@ -262,12 +264,12 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelCurrentMembership(string currentPremiumFeatureName)
 	{
-		return $"SuscripciÃ³n actual: {currentPremiumFeatureName}";
+		return $"Suscripción actual: {currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentMembership()
 	{
-		return "SuscripciÃ³n actual: {currentPremiumFeatureName}";
+		return "Suscripción actual: {currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelEverySixMonths()
@@ -297,7 +299,7 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "SuscripciÃ³n:";
+		return "Suscripción:";
 	}
 
 	protected override string _GetTemplateForLabelMonthly()
@@ -312,12 +314,12 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelNewMembership(string newPremiumFeatureName)
 	{
-		return $"Nueva suscripciÃ³n: {newPremiumFeatureName}";
+		return $"Nueva suscripción: {newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNewMembership()
 	{
-		return "Nueva suscripciÃ³n: {newPremiumFeatureName}";
+		return "Nueva suscripción: {newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNo()
@@ -337,12 +339,12 @@ internal class BuildersClubPageResources_es_es : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelRenewsDate(string renewalDate)
 	{
-		return $"RenovaciÃ³n: {renewalDate}";
+		return $"Renovación: {renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelRenewsDate()
 	{
-		return "RenovaciÃ³n: {renewalDate}";
+		return "Renovación: {renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelYourCurrentPlan()

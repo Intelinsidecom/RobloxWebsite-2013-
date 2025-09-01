@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -131,3 +131,4 @@ public class XboxLiveAccountDAL
 		return RobloxDatabase.RobloxXboxLiveAccounts.GetIDCollection<int>("XboxLiveAccounts_GetXboxLiveAccountIDsByXboxLiveGamerTagHash", queryParameters);
 	}
 }
+

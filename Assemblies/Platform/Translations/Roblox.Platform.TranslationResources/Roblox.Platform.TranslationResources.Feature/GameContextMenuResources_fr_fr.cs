@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameContextMenuResources_en_us to provide locale specific translations where possible,
@@ -60,7 +62,7 @@ internal class GameContextMenuResources_fr_fr : GameContextMenuResources_en_us, 
 	/// Key: "LabelDeveloperStats"
 	/// English String: "Developer Stats"
 	/// </summary>
-	public override string LabelDeveloperStats => "Statistiques de dÃ©veloppeur";
+	public override string LabelDeveloperStats => "Statistiques de développeur";
 
 	/// <summary>
 	/// Key: "LabelEdit"
@@ -145,7 +147,7 @@ internal class GameContextMenuResources_fr_fr : GameContextMenuResources_en_us, 
 
 	protected override string _GetTemplateForLabelDeveloperStats()
 	{
-		return "Statistiques de dÃ©veloppeur";
+		return "Statistiques de développeur";
 	}
 
 	protected override string _GetTemplateForLabelEdit()

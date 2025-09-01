@@ -1,7 +1,9 @@
-﻿using System;
-using Roblox.TranslationResources.Authentication;
-namespace Roblox.Platform.TranslationResourcesinternal {
-    class AuthenticationResources : IAuthenticationResources, ITranslationResourcesNamespacesGroup
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Authentication;
+namespace Roblox.Platform.TranslationResources
+{
+    internal class AuthenticationResources : IAuthenticationResources, ITranslationResourcesNamespacesGroup
 
 {
 	private readonly Lazy<IAccountRecoveryResources> _IAccountRecoveryResources;

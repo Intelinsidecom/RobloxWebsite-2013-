@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -151,3 +151,4 @@ public class UserFeedDAL
 		return Database.GetIDCollection<long>("UserFeedsV2_GetUserFeedV2IDsByUserID_Paged", queryParameters);
 	}
 }
+

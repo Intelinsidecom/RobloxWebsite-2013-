@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class CommentsResources_en_us : TranslationResourcesBase, ICommentsResources, ITranslationResources
 
 {
@@ -477,3 +477,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

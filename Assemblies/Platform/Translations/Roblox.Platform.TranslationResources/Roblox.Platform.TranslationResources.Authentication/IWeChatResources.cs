@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface IWeChatResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface IWeChatResources : ITranslationResources
 
 {
 	/// <summary>
@@ -12,3 +14,5 @@
 
 
 }
+
+

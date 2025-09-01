@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
@@ -11,26 +13,26 @@ internal class ReturnToStudioResources_ja_jp : ReturnToStudioResources_en_us, IR
 	/// Logout the current user
 	/// English String: "Switch Accounts"
 	/// </summary>
-	public override string ActionLogout => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®åˆ‡ã‚Šæ›¿ãˆ";
+	public override string ActionLogout => "アカウントの切り替え";
 
 	/// <summary>
 	/// Key: "Action.OpenStudio"
 	/// Open studio
 	/// English String: "Open Studio"
 	/// </summary>
-	public override string ActionOpenStudio => "Studioã‚’é–‹ã";
+	public override string ActionOpenStudio => "Studioを開く";
 
 	/// <summary>
 	/// Key: "Description.OpeningStudio"
 	/// English String: "Opening Roblox Studio now..."
 	/// </summary>
-	public override string DescriptionOpeningStudio => "Roblox Studioã‚’é–‹ã„ã¦ã„ã¾ã™...";
+	public override string DescriptionOpeningStudio => "Roblox Studioを開いています...";
 
 	/// <summary>
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "StudioãŒé–‹ã‹ãªã„å ´åˆã¯ã€ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãƒ˜ãƒ«ãƒ—ã‚’ç¢ºèªã—ã¦ãã ã•ã„";
+	public override string LabelStudioHelp => "Studioが開かない場合は、こちらをクリックしてヘルプを確認してください";
 
 	public ReturnToStudioResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -39,12 +41,12 @@ internal class ReturnToStudioResources_ja_jp : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForActionLogout()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®åˆ‡ã‚Šæ›¿ãˆ";
+		return "アカウントの切り替え";
 	}
 
 	protected override string _GetTemplateForActionOpenStudio()
 	{
-		return "Studioã‚’é–‹ã";
+		return "Studioを開く";
 	}
 
 	/// <summary>
@@ -54,17 +56,17 @@ internal class ReturnToStudioResources_ja_jp : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"{username} ã§Studioã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™";
+		return $"{username} でStudioにログインします";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "{username} ã§Studioã«ãƒ­ã‚°ã‚¤ãƒ³ã—ã¾ã™";
+		return "{username} でStudioにログインします";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
 	{
-		return "Roblox Studioã‚’é–‹ã„ã¦ã„ã¾ã™...";
+		return "Roblox Studioを開いています...";
 	}
 
 	/// <summary>
@@ -74,12 +76,12 @@ internal class ReturnToStudioResources_ja_jp : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionOpenStudioSuggestion(string username)
 	{
-		return $"{username} ã§Studioã‚’é–‹ãã¾ã™ã‹ï¼Ÿ";
+		return $"{username} でStudioを開きますか？";
 	}
 
 	protected override string _GetTemplateForDescriptionOpenStudioSuggestion()
 	{
-		return "{username} ã§Studioã‚’é–‹ãã¾ã™ã‹ï¼Ÿ";
+		return "{username} でStudioを開きますか？";
 	}
 
 	/// <summary>
@@ -89,17 +91,17 @@ internal class ReturnToStudioResources_ja_jp : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string HeadingGreeting(string username)
 	{
-		return $"ã“ã‚“ã«ã¡ã¯ã€{username}ã•ã‚“ï¼";
+		return $"こんにちは、{username}さん！";
 	}
 
 	protected override string _GetTemplateForHeadingGreeting()
 	{
-		return "ã“ã‚“ã«ã¡ã¯ã€{username}ã•ã‚“ï¼";
+		return "こんにちは、{username}さん！";
 	}
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "StudioãŒé–‹ã‹ãªã„å ´åˆã¯ã€ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãƒ˜ãƒ«ãƒ—ã‚’ç¢ºèªã—ã¦ãã ã•ã„";
+		return "Studioが開かない場合は、こちらをクリックしてヘルプを確認してください";
 	}
 }
 

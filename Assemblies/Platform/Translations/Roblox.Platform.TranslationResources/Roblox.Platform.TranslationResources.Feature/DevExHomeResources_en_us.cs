@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class DevExHomeResources_en_us : TranslationResourcesBase, IDevExHomeResources, ITranslationResources
 
 {
@@ -312,3 +312,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

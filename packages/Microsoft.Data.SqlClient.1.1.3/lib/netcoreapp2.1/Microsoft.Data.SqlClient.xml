@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <doc>
     <assembly>
         <name>Microsoft.Data.SqlClient</name>
@@ -2972,7 +2972,7 @@ In this example, a <xref=Microsoft.Data.SqlClient.SqlDataReader> is used to copy
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance,
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[BulkCopy.Single#1](~/../sqlclient/doc/samples/SqlBulkCopy_Single.cs#1)]
 ]]></format>
@@ -3010,7 +3010,7 @@ Note that the source data does not have to be located on SQL Server; you can use
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[BulkCopy.Single#1](~/../sqlclient/doc/samples/SqlBulkCopy_Single.cs#1)]
 ]]></format>
@@ -3099,7 +3099,7 @@ The source data does not have to be located on SQL Server; you can use any data 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance,
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ConnectionString#1](~/../sqlclient/doc/samples/SqlBulkCopy_ConnectionString.cs#1)]
 ]]></format>
@@ -3158,7 +3158,7 @@ added because of primary key constraint violations.
 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to
-demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement
+demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement
 to copy the data.
 
 [!code-csharp[SqlBulkCopy.KeepIdentity#1](~/../sqlclient/doc/samples/SqlBulkCopy_KeepIdentity.cs#1)]
@@ -3196,7 +3196,7 @@ works with a transaction, see [Transaction and Bulk Copy Operations](~/docs/fram
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance,
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.BatchSize#1](~/../sqlclient/doc/samples/SqlBulkCopy_BatchSize.cs#1)]
 ]]></format>
@@ -3225,7 +3225,7 @@ The source data does not have to be located on SQL Server; you can use any data 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.Timeout#1](~/../sqlclient/doc/samples/SqlBulkCopy_Timeout.cs#1)]
 ]]></format>
@@ -3302,7 +3302,7 @@ be located on SQL Server; you can use any data source that can be read to an <xr
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance,
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 [!code-csharp[SqlBulkCopy.Single#1](~/../sqlclient/doc/samples/SqlBulkCopy_Single.cs#1)]
 ]]></format>
 			</remarks>
@@ -3334,7 +3334,7 @@ Note that the source data does not have to be located on SQL Server; you can use
 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to
-demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT`
+demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT`
 statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.NotifyAfter#1](~/../sqlclient/doc/samples/SqlBulkCopy_NotifyAfter.cs#1)]
@@ -3374,7 +3374,7 @@ SQL Server; you can use any data source that can be read to an <xref:System.Data
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier
-and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.NotifyAfter#1](~/../sqlclient/doc/samples/SqlBulkCopy_NotifyAfter.cs#1)]
 ]]></format>
@@ -3397,7 +3397,7 @@ Note that open <xref:Microsoft.Data.SqlClient.SqlBulkCopy> instances are closed 
 The following example uses the same <xref:Microsoft.Data.SqlClient.SqlBulkCopy> instance to add sales orders and their associated details to two destination tables. Because the **AdventureWorks** sales order tables are large, the sample reads only orders placed by a certain account number and bulk copies those orders and details to the destination tables. The <xref:Microsoft.Data.SqlClient.SqlBulkCopy.Close> method is used only after both bulk copy operations are complete.
 
 > [!IMPORTANT]
->  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+>  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.OrdersDetails#1](~/../sqlclient/doc/samples/SqlBulkCopy_OrdersDetails.cs#1)]
 ]]></format>
@@ -3455,7 +3455,7 @@ The following console application demonstrates how to bulk load data from a <xre
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided
 to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ConnectionString#1](~/../sqlclient/doc/samples/SqlBulkCopy_ConnectionString.cs#1)]
 ]]></format>
@@ -3491,7 +3491,7 @@ In this example, a <xref:System.Data.DataTable> is created at run time and is th
 
 > [!IMPORTANT]
 >  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
-This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.DataTable#1](~/../sqlclient/doc/samples/SqlBulkCopy_DataTable.cs#1)]
 ]]></format>
@@ -3540,14 +3540,14 @@ In this example, a <xref:System.Data.DataTable> is created at run time and three
 The <xref:Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> method is called with a `DataRowState.Unchanged` `rowState` argument, so only the two unchanged rows are bulk copied to the destination.
 
 > [!IMPORTANT]
-> This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+> This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.DataRowState#1](~/../sqlclient/doc/samples/SqlBulkCopy_DataRowState.cs#1)]
 ]]></format>
 			</remarks>
         </member>
         <member name="M:Microsoft.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.DataRow[])">
-            <param name="rows">An array of <see cref="T:System.Data.DataRow" /> objects that will be copied to the destination table.</param><summary>Copies all rows from the supplied <see cref="T:System.Data.DataRow" /> array to a destination table specified by the <see cref="P:Microsoft.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary><remarks>
+            <param name="rows">An array of <see cref="T:System.Data.DataRow" /> objects that will be copied to the destination table.</param><summary>Copies all rows from the supplied <see cref="T:System.Data.DataRow" /> array to a destination table specified by the <see cref="P:Microsoft.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:Microsoft.Data.SqlClient.SqlBulkCopy" /> object.</summary><remarks>
 				<format type="text/markdown"><![CDATA[  
 		
 ## Remarks  
@@ -3561,7 +3561,7 @@ The following console application demonstrates how to bulk load data from a <xre
 In this example, a <xref:System.Data.DataTable> is created at run time. A single row is selected from the <xref:System.Data.DataTable> to copy to the destination table.  
 
 > [!IMPORTANT]
->  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+>  This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.RowArray#1](~/../sqlclient/doc/samples/SqlBulkCopy_RowArray.cs#1)]
 
@@ -4147,7 +4147,7 @@ destination matches the number of columns in the source, and each destination co
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMapping#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMapping.cs#1)]
 ]]></format>
@@ -4175,7 +4175,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingDestinationColumn#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingDestinationColumn.cs#1)]
 ]]></format>
@@ -4203,7 +4203,7 @@ column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingDestinationOrdinal#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingDestinationOrdinal.cs#1)]
 ]]></format>
@@ -4231,7 +4231,7 @@ column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingDestinationColumn#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingDestinationColumn.cs#1)]
 ]]></format>
@@ -4259,7 +4259,7 @@ bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingDestinationOrdinal#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingDestinationOrdinal.cs#1)]
 ]]></format>
@@ -4286,7 +4286,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance,
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMapping#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMapping.cs#1)]
 ]]></format>
@@ -4310,7 +4310,7 @@ column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a
-Transact-SQL `INSERT … SELECT` statement to copy the data.
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMapping#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMapping.cs#1)]
 ]]></format>
@@ -4334,7 +4334,7 @@ column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and
-faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingOrdinalName#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingOrdinalName.cs#1)]
 ]]></format>
@@ -4358,7 +4358,7 @@ a column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). This code is
 provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to
-use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingNameOrdinal#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingNameOrdinal.cs#1)]
 ]]></format>
@@ -4382,7 +4382,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md).
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier
-and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.
+and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.
 
 [!code-csharp[SqlBulkCopy.ColumnMappingOrdinal#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingOrdinal.cs#1)]
 ]]></format>
@@ -4412,7 +4412,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to 
-use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingCollection#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingCollection.cs#1)]
 
@@ -4434,7 +4434,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, 
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMapping#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMapping.cs)]
 
@@ -4458,7 +4458,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, 
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingCollection#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingCollection.cs#1)]
 
@@ -4481,7 +4481,7 @@ column map for the bulk copy.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a 
-Transact-SQL `INSERT … SELECT` statement to copy the data.  
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy_ColumnMappingIndexColName#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingIndexColName.cs#1)]
 
@@ -4504,7 +4504,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, 
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingColNameIndex#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingColNameIndex.cs#1)]
 
@@ -4527,7 +4527,7 @@ Although the number of columns in the destination matches the number of columns 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a 
-Transact-SQL `INSERT … SELECT` statement to copy the data.  
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingCollectionOrdinal#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingCollectionOrdinal.cs#1)]
 
@@ -4554,7 +4554,7 @@ The <xref:Microsoft.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Clear%2A> 
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a 
-Transact-SQL `INSERT … SELECT` statement to copy the data.  
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingOrdersDetails#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingOrdersDetails.cs#1)]
 
@@ -4603,7 +4603,7 @@ mapping and then adds the appropriate mappings for the second bulk copy operatio
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a 
-Transact-SQL `INSERT … SELECT` statement to copy the data.  
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingRemove#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingRemove.cs#1)]
 
@@ -4633,7 +4633,7 @@ Both bulk copies include a mapping for the **SalesOrderID**, so rather than clea
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, it is easier and faster to use a 
-Transact-SQL `INSERT … SELECT` statement to copy the data.  
+Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.ColumnMappingRemoveAt#1](~/../sqlclient/doc/samples/SqlBulkCopy_ColumnMappingRemoveAt.cs#1)]
 
@@ -4659,7 +4659,7 @@ primary key violations.
 > [!IMPORTANT]
 > This sample will not run unless you have created the work tables as described in [Bulk Copy Example Setup](~/docs/framework/data/adonet/sql/bulk-copy-example-setup.md). 
 This code is provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are in the same SQL Server instance, 
-it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+it is easier and faster to use a Transact-SQL `INSERT â€¦ SELECT` statement to copy the data.  
 
 [!code-csharp[SqlBulkCopy.KeepIdentity#1](~/../sqlclient/doc/samples/SqlBulkCopy_KeepIdentity.cs)]
 
@@ -19427,3 +19427,4 @@ Use the <xref:Microsoft.Data.SqlTypes.SqlFileStream.CanWrite%2A> property to det
         </member>
     </members>
 </doc>
+

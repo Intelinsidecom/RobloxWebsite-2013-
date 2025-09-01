@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameContextMenuResources_en_us to provide locale specific translations where possible,
@@ -10,93 +12,93 @@ internal class GameContextMenuResources_zh_cjv : GameContextMenuResources_en_us,
 	/// Key: "ActionDialogAccept"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionDialogAccept => "æ˜¯";
+	public override string ActionDialogAccept => "是";
 
 	/// <summary>
 	/// Key: "ActionDialogDecline"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionDialogDecline => "å¦";
+	public override string ActionDialogDecline => "否";
 
 	/// <summary>
 	/// Key: "ActionDialogOk"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogOk => "å¥½";
+	public override string ActionDialogOk => "好";
 
 	/// <summary>
 	/// Key: "Label.ConfigureLocalization"
 	/// The label in context menu that will direct game owner to configure localization page
 	/// English String: "Configure Localization"
 	/// </summary>
-	public override string LabelConfigureLocalization => "é…ç½®æœ¬åœ°åŒ–";
+	public override string LabelConfigureLocalization => "配置本地化";
 
 	/// <summary>
 	/// Key: "Label.TranslateThisGame"
 	/// The label in context menu that will direct translators for a game to crowdsource translation page
 	/// English String: "Translate this Game"
 	/// </summary>
-	public override string LabelTranslateThisGame => "ç¿»è¯‘æ­¤æ¸¸æˆ";
+	public override string LabelTranslateThisGame => "翻译此游戏";
 
 	/// <summary>
 	/// Key: "LabelAddToProfile"
 	/// English String: "Add to profile"
 	/// </summary>
-	public override string LabelAddToProfile => "æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+	public override string LabelAddToProfile => "添加至个人资料";
 
 	/// <summary>
 	/// Key: "LabelConfigureGame"
 	/// English String: "Configure this Game"
 	/// </summary>
-	public override string LabelConfigureGame => "é…ç½®æ­¤æ¸¸æˆ";
+	public override string LabelConfigureGame => "配置此游戏";
 
 	/// <summary>
 	/// Key: "LabelConfigurePlace"
 	/// English String: "Configure this Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "é…ç½®æ­¤åœºæ™¯";
+	public override string LabelConfigurePlace => "配置此场景";
 
 	/// <summary>
 	/// Key: "LabelDeveloperStats"
 	/// English String: "Developer Stats"
 	/// </summary>
-	public override string LabelDeveloperStats => "å¼€å‘è€…ç»Ÿè®¡èµ„æ–™";
+	public override string LabelDeveloperStats => "开发者统计资料";
 
 	/// <summary>
 	/// Key: "LabelEdit"
 	/// English String: "Edit"
 	/// </summary>
-	public override string LabelEdit => "ç¼–è¾‘";
+	public override string LabelEdit => "编辑";
 
 	/// <summary>
 	/// Key: "LabelRemoveFromProfile"
 	/// English String: "Remove from Profile"
 	/// </summary>
-	public override string LabelRemoveFromProfile => "ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+	public override string LabelRemoveFromProfile => "从个人资料移除";
 
 	/// <summary>
 	/// Key: "LabelServerError"
 	/// English String: "An Error Occured"
 	/// </summary>
-	public override string LabelServerError => "å‘ç”Ÿé”™è¯¯";
+	public override string LabelServerError => "发生错误";
 
 	/// <summary>
 	/// Key: "LabelShutDownAllServers"
 	/// English String: "Shut Down All Servers"
 	/// </summary>
-	public override string LabelShutDownAllServers => "å…³é—­æ‰€æœ‰æœåŠ¡å™¨";
+	public override string LabelShutDownAllServers => "关闭所有服务器";
 
 	/// <summary>
 	/// Key: "LabelShutDownServersWarning"
 	/// English String: "Are you sure you want to shut down all servers for this place?"
 	/// </summary>
-	public override string LabelShutDownServersWarning => "æ˜¯å¦ç¡®å®šè¦å…³é—­æ­¤åœºæ™¯çš„æ‰€æœ‰æœåŠ¡å™¨ï¼Ÿ";
+	public override string LabelShutDownServersWarning => "是否确定要关闭此场景的所有服务器？";
 
 	/// <summary>
 	/// Key: "MessageServerShutDownError"
 	/// English String: "Could not shut down servers."
 	/// </summary>
-	public override string MessageServerShutDownError => "æ— æ³•å…³é—­æœåŠ¡å™¨ã€‚";
+	public override string MessageServerShutDownError => "无法关闭服务器。";
 
 	public GameContextMenuResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -105,77 +107,77 @@ internal class GameContextMenuResources_zh_cjv : GameContextMenuResources_en_us,
 
 	protected override string _GetTemplateForActionDialogAccept()
 	{
-		return "æ˜¯";
+		return "是";
 	}
 
 	protected override string _GetTemplateForActionDialogDecline()
 	{
-		return "å¦";
+		return "否";
 	}
 
 	protected override string _GetTemplateForActionDialogOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelConfigureLocalization()
 	{
-		return "é…ç½®æœ¬åœ°åŒ–";
+		return "配置本地化";
 	}
 
 	protected override string _GetTemplateForLabelTranslateThisGame()
 	{
-		return "ç¿»è¯‘æ­¤æ¸¸æˆ";
+		return "翻译此游戏";
 	}
 
 	protected override string _GetTemplateForLabelAddToProfile()
 	{
-		return "æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+		return "添加至个人资料";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "é…ç½®æ­¤æ¸¸æˆ";
+		return "配置此游戏";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "é…ç½®æ­¤åœºæ™¯";
+		return "配置此场景";
 	}
 
 	protected override string _GetTemplateForLabelDeveloperStats()
 	{
-		return "å¼€å‘è€…ç»Ÿè®¡èµ„æ–™";
+		return "开发者统计资料";
 	}
 
 	protected override string _GetTemplateForLabelEdit()
 	{
-		return "ç¼–è¾‘";
+		return "编辑";
 	}
 
 	protected override string _GetTemplateForLabelRemoveFromProfile()
 	{
-		return "ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+		return "从个人资料移除";
 	}
 
 	protected override string _GetTemplateForLabelServerError()
 	{
-		return "å‘ç”Ÿé”™è¯¯";
+		return "发生错误";
 	}
 
 	protected override string _GetTemplateForLabelShutDownAllServers()
 	{
-		return "å…³é—­æ‰€æœ‰æœåŠ¡å™¨";
+		return "关闭所有服务器";
 	}
 
 	protected override string _GetTemplateForLabelShutDownServersWarning()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦å…³é—­æ­¤åœºæ™¯çš„æ‰€æœ‰æœåŠ¡å™¨ï¼Ÿ";
+		return "是否确定要关闭此场景的所有服务器？";
 	}
 
 	protected override string _GetTemplateForMessageServerShutDownError()
 	{
-		return "æ— æ³•å…³é—­æœåŠ¡å™¨ã€‚";
+		return "无法关闭服务器。";
 	}
 }
 

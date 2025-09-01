@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides PushNotificationsResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// You have a been invited to a VIP server!
 	/// English String: "You have a been invited to a VIP server!"
 	/// </summary>
-	public override string MessageAddedToPrivateServerWhiteListDefault => "Â¡Te han invitado a unirte a un servidor VIP!";
+	public override string MessageAddedToPrivateServerWhiteListDefault => "¡Te han invitado a unirte a un servidor VIP!";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Body"
 	/// New activity on Roblox!
 	/// English String: "New activity on Roblox!"
 	/// </summary>
-	public override string MessageDefaultSystemMessageBody => "Â¡Nueva actividad en Roblox!";
+	public override string MessageDefaultSystemMessageBody => "¡Nueva actividad en Roblox!";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Title"
@@ -32,14 +34,14 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// Your friend request has been accepted!
 	/// English String: "Your friend request has been accepted!"
 	/// </summary>
-	public override string MessageFriendRequestAcceptedDefault => "Â¡Tu solicitud de amistad ha sido aceptada!";
+	public override string MessageFriendRequestAcceptedDefault => "¡Tu solicitud de amistad ha sido aceptada!";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestReceived.Default"
 	/// You have a new friend request!
 	/// English String: "You have a new friend request!"
 	/// </summary>
-	public override string MessageFriendRequestReceivedDefault => "Â¡Tienes una nueva solicitud de amistad!";
+	public override string MessageFriendRequestReceivedDefault => "¡Tienes una nueva solicitud de amistad!";
 
 	/// <summary>
 	/// Key: "Message.NewChatMessage.Default"
@@ -53,14 +55,14 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// You are invited to a party!
 	/// English String: "You are invited to a party!"
 	/// </summary>
-	public override string MessagePartyInvitationDefault => "Â¡Te han invitado a unirte a un equipo!";
+	public override string MessagePartyInvitationDefault => "¡Te han invitado a unirte a un equipo!";
 
 	/// <summary>
 	/// Key: "Message.PartyMembersJoined.Default"
 	/// A new member joined your party!
 	/// English String: "A new member joined your party!"
 	/// </summary>
-	public override string MessagePartyMembersJoinedDefault => "Â¡Un nuevo miembro se ha unido a tu equipo!";
+	public override string MessagePartyMembersJoinedDefault => "¡Un nuevo miembro se ha unido a tu equipo!";
 
 	/// <summary>
 	/// Key: "Message.PrivateMessageReceived.Default"
@@ -74,7 +76,7 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// A user invites another user to contribute to a team create game.
 	/// English String: "You are invited to edit a game!"
 	/// </summary>
-	public override string MessageTeamCreateInvitationDefault => "Â¡Te han invitado a editar un juego!";
+	public override string MessageTeamCreateInvitationDefault => "¡Te han invitado a editar un juego!";
 
 	public PushNotificationsResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -88,22 +90,22 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageAddedToPrivateServerWhiteListAddedToWhiteListMessage(string vipInviter, string server, string place)
 	{
-		return $"Â¡{vipInviter} te ha aÃ±adido a su servidor VIP {server} en {place}!";
+		return $"¡{vipInviter} te ha añadido a su servidor VIP {server} en {place}!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListAddedToWhiteListMessage()
 	{
-		return "Â¡{vipInviter} te ha aÃ±adido a su servidor VIP {server} en {place}!";
+		return "¡{vipInviter} te ha añadido a su servidor VIP {server} en {place}!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListDefault()
 	{
-		return "Â¡Te han invitado a unirte a un servidor VIP!";
+		return "¡Te han invitado a unirte a un servidor VIP!";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageBody()
 	{
-		return "Â¡Nueva actividad en Roblox!";
+		return "¡Nueva actividad en Roblox!";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageTitle()
@@ -118,17 +120,17 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestAcceptedAcceptedMessage(string friend)
 	{
-		return $"Â¡{friend} ha aceptado tu solicitud de amistad!";
+		return $"¡{friend} ha aceptado tu solicitud de amistad!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedAcceptedMessage()
 	{
-		return "Â¡{friend} ha aceptado tu solicitud de amistad!";
+		return "¡{friend} ha aceptado tu solicitud de amistad!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDefault()
 	{
-		return "Â¡Tu solicitud de amistad ha sido aceptada!";
+		return "¡Tu solicitud de amistad ha sido aceptada!";
 	}
 
 	/// <summary>
@@ -138,17 +140,17 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedCompleteMessage(string friend)
 	{
-		return $"Â¡Has hecho amistad con {friend}!";
+		return $"¡Has hecho amistad con {friend}!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedCompleteMessage()
 	{
-		return "Â¡Has hecho amistad con {friend}!";
+		return "¡Has hecho amistad con {friend}!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedDefault()
 	{
-		return "Â¡Tienes una nueva solicitud de amistad!";
+		return "¡Tienes una nueva solicitud de amistad!";
 	}
 
 	/// <summary>
@@ -158,12 +160,12 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedNewRequestMessage(string friend)
 	{
-		return $"Â¡{friend} te ha enviado una solicitud de amistad!";
+		return $"¡{friend} te ha enviado una solicitud de amistad!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedNewRequestMessage()
 	{
-		return "Â¡{friend} te ha enviado una solicitud de amistad!";
+		return "¡{friend} te ha enviado una solicitud de amistad!";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageDefault()
@@ -203,7 +205,7 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessagePartyInvitationDefault()
 	{
-		return "Â¡Te han invitado a unirte a un equipo!";
+		return "¡Te han invitado a unirte a un equipo!";
 	}
 
 	/// <summary>
@@ -213,12 +215,12 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationPartyMessage(string partyInviter)
 	{
-		return $"Â¡{partyInviter} te ha invitado a unirte a un equipo!";
+		return $"¡{partyInviter} te ha invitado a unirte a un equipo!";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationPartyMessage()
 	{
-		return "Â¡{partyInviter} te ha invitado a unirte a un equipo!";
+		return "¡{partyInviter} te ha invitado a unirte a un equipo!";
 	}
 
 	/// <summary>
@@ -228,17 +230,17 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationXBoxPartyMessage(string partyInviter)
 	{
-		return $"Â¡{partyInviter} te ha invitado a unirte a un equipo en Xbox!";
+		return $"¡{partyInviter} te ha invitado a unirte a un equipo en Xbox!";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationXBoxPartyMessage()
 	{
-		return "Â¡{partyInviter} te ha invitado a unirte a un equipo en Xbox!";
+		return "¡{partyInviter} te ha invitado a unirte a un equipo en Xbox!";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedDefault()
 	{
-		return "Â¡Un nuevo miembro se ha unido a tu equipo!";
+		return "¡Un nuevo miembro se ha unido a tu equipo!";
 	}
 
 	/// <summary>
@@ -248,12 +250,12 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyMembersJoinedJoinMessage(string partyInvitee)
 	{
-		return $"Â¡{partyInvitee} se ha unido a tu equipo!";
+		return $"¡{partyInvitee} se ha unido a tu equipo!";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedJoinMessage()
 	{
-		return "Â¡{partyInvitee} se ha unido a tu equipo!";
+		return "¡{partyInvitee} se ha unido a tu equipo!";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedDefault()
@@ -292,7 +294,7 @@ internal class PushNotificationsResources_es_es : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessageTeamCreateInvitationDefault()
 	{
-		return "Â¡Te han invitado a editar un juego!";
+		return "¡Te han invitado a editar un juego!";
 	}
 
 	/// <summary>

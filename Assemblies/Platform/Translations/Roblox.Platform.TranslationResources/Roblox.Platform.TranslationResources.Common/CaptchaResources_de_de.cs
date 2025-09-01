@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
@@ -11,21 +13,21 @@ internal class CaptchaResources_de_de : CaptchaResources_en_us, ICaptchaResource
 	/// Displayed when we fail to load captcha javascript from a third party provider. This has been known to occur in FireFox when "block trackers" is enabled - we need to let the user know that it might be due to their browser without implying that we are intentionally forcing them to turn off their ad/content blockers.
 	/// English String: "We need to verify that you are human. Please disable your browser blocker or try a different browser."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToLoad => "Wir mÃ¼ssen Ã¼berprÃ¼fen, ob du ein Mensch bist. Bitte deaktiviere die Blockierung der AktivitÃ¤tenverfolgung in deinem Browser oder versuche es mit einem anderen Browser.";
+	public override string ResponseCaptchaErrorFailedToLoad => "Wir müssen überprüfen, ob du ein Mensch bist. Bitte deaktiviere die Blockierung der Aktivitätenverfolgung in deinem Browser oder versuche es mit einem anderen Browser.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorFailedToVerify"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes."
 	/// </summary>
-	public override string ResponseCaptchaErrorFailedToVerify => "VorÃ¼bergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
+	public override string ResponseCaptchaErrorFailedToVerify => "Vorübergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaErrorVerifyFailed"
 	/// Displayed if the user successfully solves a captcha bit is still unable to proceed. Should rarely be shown.
 	/// English String: "Temporary error. Please try again in a few minutes"
 	/// </summary>
-	public override string ResponseCaptchaErrorVerifyFailed => "VorÃ¼bergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
+	public override string ResponseCaptchaErrorVerifyFailed => "Vorübergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
 
 	public CaptchaResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -34,17 +36,17 @@ internal class CaptchaResources_de_de : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToLoad()
 	{
-		return "Wir mÃ¼ssen Ã¼berprÃ¼fen, ob du ein Mensch bist. Bitte deaktiviere die Blockierung der AktivitÃ¤tenverfolgung in deinem Browser oder versuche es mit einem anderen Browser.";
+		return "Wir müssen überprüfen, ob du ein Mensch bist. Bitte deaktiviere die Blockierung der Aktivitätenverfolgung in deinem Browser oder versuche es mit einem anderen Browser.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorFailedToVerify()
 	{
-		return "VorÃ¼bergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
+		return "Vorübergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaErrorVerifyFailed()
 	{
-		return "VorÃ¼bergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
+		return "Vorübergehender Fehler. Bitte versuche es in einigen Minuten erneut.";
 	}
 }
 

@@ -1,7 +1,8 @@
 using System;
 using Roblox.Economy.Common;
+using Roblox.Platform.Marketplace.Client.Models;
 
-namespace Roblox.Marketplace.Client
+namespace Roblox.Platform.Marketplace.Client.Interfaces
 {
     public interface IMarketplaceAuthority
     {

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Communication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Communication {
     /// <summary>
 
 /// This class overrides CommonEmailResources_en_us to provide locale specific translations where possible,

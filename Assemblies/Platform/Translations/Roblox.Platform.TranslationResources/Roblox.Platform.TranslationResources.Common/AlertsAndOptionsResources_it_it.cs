@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
@@ -63,7 +65,7 @@ internal class AlertsAndOptionsResources_it_it : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue}Â Robux"
+	/// English String: "{robuxValue} Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{

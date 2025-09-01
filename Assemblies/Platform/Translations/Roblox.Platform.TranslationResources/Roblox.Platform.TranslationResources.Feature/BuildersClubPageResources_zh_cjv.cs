@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPageResources_en_us to provide locale specific translations where possible,
@@ -11,154 +13,154 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// description in small text about the disclaimer for signing bonus
 	/// English String: "* Signing bonus is for first time membership purchase only."
 	/// </summary>
-	public override string DescriptionSigningBonusDesclaimer => "*é¢å¤–æ³¨å†Œå¥–åŠ±ä»…é™é¦–æ¬¡ä¼šå‘˜è´­ä¹°ã€‚";
+	public override string DescriptionSigningBonusDesclaimer => "*额外注册奖励仅限首次会员购买。";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubUpgrade"
 	/// page heading
 	/// English String: "Upgrade to Roblox Builders Club"
 	/// </summary>
-	public override string HeadingBuildersClubUpgrade => "å‡çº§è‡³ Roblox Builders Club";
+	public override string HeadingBuildersClubUpgrade => "升级至 Roblox Builders Club";
 
 	/// <summary>
 	/// Key: "Label.Annual"
 	/// label
 	/// English String: "Annual"
 	/// </summary>
-	public override string LabelAnnual => "æ¯å¹´";
+	public override string LabelAnnual => "每年";
 
 	/// <summary>
 	/// Key: "Label.Annually"
 	/// label
 	/// English String: "Annually"
 	/// </summary>
-	public override string LabelAnnually => "æ¯å¹´";
+	public override string LabelAnnually => "每年";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeAdFree"
 	/// label
 	/// English String: "Ad Free"
 	/// </summary>
-	public override string LabelBenefitTypeAdFree => "æ— å¹¿å‘Š";
+	public override string LabelBenefitTypeAdFree => "无广告";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBCBetaFeatures"
 	/// Label. Note: BC is acronym of Builders Club
 	/// English String: "BC Beta Features"
 	/// </summary>
-	public override string LabelBenefitTypeBCBetaFeatures => "BC Beta ç‰ˆåŠŸèƒ½";
+	public override string LabelBenefitTypeBCBetaFeatures => "BC Beta 版功能";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBonusGear"
 	/// label
 	/// English String: "Bonus Gear"
 	/// </summary>
-	public override string LabelBenefitTypeBonusGear => "é¢å¤–å¥–åŠ±è£…å¤‡";
+	public override string LabelBenefitTypeBonusGear => "额外奖励装备";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeCreateGroups"
 	/// label
 	/// English String: "Create Groups"
 	/// </summary>
-	public override string LabelBenefitTypeCreateGroups => "åˆ›å»ºç¾¤ç»„";
+	public override string LabelBenefitTypeCreateGroups => "创建群组";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeDailyRobux"
 	/// label
 	/// English String: "Daily Robux"
 	/// </summary>
-	public override string LabelBenefitTypeDailyRobux => "æ¯æ—¥ Robux";
+	public override string LabelBenefitTypeDailyRobux => "每日 Robux";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeJoinGroups"
 	/// label
 	/// English String: "Join Groups"
 	/// </summary>
-	public override string LabelBenefitTypeJoinGroups => "åŠ å…¥ç¾¤ç»„";
+	public override string LabelBenefitTypeJoinGroups => "加入群组";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypePaidAccess"
 	/// label
 	/// English String: "Paid Access"
 	/// </summary>
-	public override string LabelBenefitTypePaidAccess => "ä»˜è´¹é€šè¡Œè¯";
+	public override string LabelBenefitTypePaidAccess => "付费通行证";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeSellStuff"
 	/// label
 	/// English String: "Sell Stuff"
 	/// </summary>
-	public override string LabelBenefitTypeSellStuff => "å‡ºå”®ç‰©å“";
+	public override string LabelBenefitTypeSellStuff => "出售物品";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeSigningBonus"
 	/// label - asterisk is used to show some terms message
 	/// English String: "Signing Bonus*"
 	/// </summary>
-	public override string LabelBenefitTypeSigningBonus => "æ³¨å†Œé¢å¤–å¥–åŠ±*";
+	public override string LabelBenefitTypeSigningBonus => "注册额外奖励*";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeTradeSystem"
 	/// label
 	/// English String: "Trade System"
 	/// </summary>
-	public override string LabelBenefitTypeTradeSystem => "äº¤æ˜“ç³»ç»Ÿ";
+	public override string LabelBenefitTypeTradeSystem => "交易系统";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeVirtualHat"
 	/// label
 	/// English String: "Virtual Hat"
 	/// </summary>
-	public override string LabelBenefitTypeVirtualHat => "è™šæ‹Ÿå¸½å­";
+	public override string LabelBenefitTypeVirtualHat => "虚拟帽子";
 
 	/// <summary>
 	/// Key: "Label.EverySixMonths"
 	/// label
 	/// English String: "Every 6 Months"
 	/// </summary>
-	public override string LabelEverySixMonths => "æ¯ 6 ä¸ªæœˆ";
+	public override string LabelEverySixMonths => "每 6 个月";
 
 	/// <summary>
 	/// Key: "Label.Lifetime"
 	/// label
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "ç»ˆèº«";
+	public override string LabelLifetime => "终身";
 
 	/// <summary>
 	/// Key: "Label.Membership"
 	/// label
 	/// English String: "Membership:"
 	/// </summary>
-	public override string LabelMembership => "ä¼šå‘˜èµ„æ ¼ï¼š";
+	public override string LabelMembership => "会员资格：";
 
 	/// <summary>
 	/// Key: "Label.Monthly"
 	/// label
 	/// English String: "Monthly"
 	/// </summary>
-	public override string LabelMonthly => "æ¯æœˆ";
+	public override string LabelMonthly => "每月";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// label
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "å¦";
+	public override string LabelNo => "否";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// label
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "æ— ";
+	public override string LabelNone => "无";
 
 	/// <summary>
 	/// Key: "Label.YourCurrentPlan"
 	/// label
 	/// English String: "Your Current Plan"
 	/// </summary>
-	public override string LabelYourCurrentPlan => "ä½ çš„å½“å‰æ–¹æ¡ˆ";
+	public override string LabelYourCurrentPlan => "你的当前方案";
 
 	public BuildersClubPageResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -172,87 +174,87 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// </summary>
 	public override string DescriptionDowngradeWarning(string currentRenewalDays, string daysCreditCount)
 	{
-		return $"æ­¤è´­ä¹°ä¼šå°†ä½ å½“å‰å‰©ä½™çš„ {currentRenewalDays} å¤©ä¼šå‘˜èµ„æ ¼è½¬æ¢ä¸º {daysCreditCount} å¤©çš„æ–°ä¼šå‘˜èµ„æ ¼ã€‚è¿™äº›å¤©æ•°å°†è¢«æ·»åŠ è‡³ä½ çš„æ–°ä¼šå‘˜èµ„æ ¼ä¸­ã€‚";
+		return $"此购买会将你当前剩余的 {currentRenewalDays} 天会员资格转换为 {daysCreditCount} 天的新会员资格。这些天数将被添加至你的新会员资格中。";
 	}
 
 	protected override string _GetTemplateForDescriptionDowngradeWarning()
 	{
-		return "æ­¤è´­ä¹°ä¼šå°†ä½ å½“å‰å‰©ä½™çš„ {currentRenewalDays} å¤©ä¼šå‘˜èµ„æ ¼è½¬æ¢ä¸º {daysCreditCount} å¤©çš„æ–°ä¼šå‘˜èµ„æ ¼ã€‚è¿™äº›å¤©æ•°å°†è¢«æ·»åŠ è‡³ä½ çš„æ–°ä¼šå‘˜èµ„æ ¼ä¸­ã€‚";
+		return "此购买会将你当前剩余的 {currentRenewalDays} 天会员资格转换为 {daysCreditCount} 天的新会员资格。这些天数将被添加至你的新会员资格中。";
 	}
 
 	protected override string _GetTemplateForDescriptionSigningBonusDesclaimer()
 	{
-		return "*é¢å¤–æ³¨å†Œå¥–åŠ±ä»…é™é¦–æ¬¡ä¼šå‘˜è´­ä¹°ã€‚";
+		return "*额外注册奖励仅限首次会员购买。";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubUpgrade()
 	{
-		return "å‡çº§è‡³ Roblox Builders Club";
+		return "升级至 Roblox Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelAnnual()
 	{
-		return "æ¯å¹´";
+		return "每年";
 	}
 
 	protected override string _GetTemplateForLabelAnnually()
 	{
-		return "æ¯å¹´";
+		return "每年";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeAdFree()
 	{
-		return "æ— å¹¿å‘Š";
+		return "无广告";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBCBetaFeatures()
 	{
-		return "BC Beta ç‰ˆåŠŸèƒ½";
+		return "BC Beta 版功能";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBonusGear()
 	{
-		return "é¢å¤–å¥–åŠ±è£…å¤‡";
+		return "额外奖励装备";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeCreateGroups()
 	{
-		return "åˆ›å»ºç¾¤ç»„";
+		return "创建群组";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeDailyRobux()
 	{
-		return "æ¯æ—¥ Robux";
+		return "每日 Robux";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeJoinGroups()
 	{
-		return "åŠ å…¥ç¾¤ç»„";
+		return "加入群组";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypePaidAccess()
 	{
-		return "ä»˜è´¹é€šè¡Œè¯";
+		return "付费通行证";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeSellStuff()
 	{
-		return "å‡ºå”®ç‰©å“";
+		return "出售物品";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeSigningBonus()
 	{
-		return "æ³¨å†Œé¢å¤–å¥–åŠ±*";
+		return "注册额外奖励*";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeTradeSystem()
 	{
-		return "äº¤æ˜“ç³»ç»Ÿ";
+		return "交易系统";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeVirtualHat()
 	{
-		return "è™šæ‹Ÿå¸½å­";
+		return "虚拟帽子";
 	}
 
 	/// <summary>
@@ -262,17 +264,17 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// </summary>
 	public override string LabelCurrentMembership(string currentPremiumFeatureName)
 	{
-		return $"å½“å‰ä¼šå‘˜èµ„æ ¼ï¼š{currentPremiumFeatureName}";
+		return $"当前会员资格：{currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentMembership()
 	{
-		return "å½“å‰ä¼šå‘˜èµ„æ ¼ï¼š{currentPremiumFeatureName}";
+		return "当前会员资格：{currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelEverySixMonths()
 	{
-		return "æ¯ 6 ä¸ªæœˆ";
+		return "每 6 个月";
 	}
 
 	/// <summary>
@@ -282,27 +284,27 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// </summary>
 	public override string LabelExpiresDate(string expirationDate)
 	{
-		return $"å¤±æ•ˆæ—¥æœŸï¼š{expirationDate}";
+		return $"失效日期：{expirationDate}";
 	}
 
 	protected override string _GetTemplateForLabelExpiresDate()
 	{
-		return "å¤±æ•ˆæ—¥æœŸï¼š{expirationDate}";
+		return "失效日期：{expirationDate}";
 	}
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "ç»ˆèº«";
+		return "终身";
 	}
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "ä¼šå‘˜èµ„æ ¼ï¼š";
+		return "会员资格：";
 	}
 
 	protected override string _GetTemplateForLabelMonthly()
 	{
-		return "æ¯æœˆ";
+		return "每月";
 	}
 
 	/// <summary>
@@ -312,22 +314,22 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// </summary>
 	public override string LabelNewMembership(string newPremiumFeatureName)
 	{
-		return $"æ–°ä¼šå‘˜èµ„æ ¼ï¼š{newPremiumFeatureName}";
+		return $"新会员资格：{newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNewMembership()
 	{
-		return "æ–°ä¼šå‘˜èµ„æ ¼ï¼š{newPremiumFeatureName}";
+		return "新会员资格：{newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "å¦";
+		return "否";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "æ— ";
+		return "无";
 	}
 
 	/// <summary>
@@ -337,17 +339,17 @@ internal class BuildersClubPageResources_zh_cjv : BuildersClubPageResources_en_u
 	/// </summary>
 	public override string LabelRenewsDate(string renewalDate)
 	{
-		return $"ç»­è®¢æ—¥æœŸï¼š{renewalDate}";
+		return $"续订日期：{renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelRenewsDate()
 	{
-		return "ç»­è®¢æ—¥æœŸï¼š{renewalDate}";
+		return "续订日期：{renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelYourCurrentPlan()
 	{
-		return "ä½ çš„å½“å‰æ–¹æ¡ˆ";
+		return "你的当前方案";
 	}
 }
 

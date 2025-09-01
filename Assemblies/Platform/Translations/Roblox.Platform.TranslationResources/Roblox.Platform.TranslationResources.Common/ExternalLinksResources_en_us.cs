@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class ExternalLinksResources_en_us : TranslationResourcesBase, IExternalLinksResources, ITranslationResources
 
 {
@@ -107,3 +107,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
@@ -10,49 +12,49 @@ internal class EngagementPayoutResources_ja_jp : EngagementPayoutResources_en_us
 	/// Key: "Description.EngagementRobuxEarned"
 	/// English String: "Engagement Robux Earned"
 	/// </summary>
-	public override string DescriptionEngagementRobuxEarned => "ç²å¾—ã—ãŸã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆRobux";
+	public override string DescriptionEngagementRobuxEarned => "獲得したエンゲージメントRobux";
 
 	/// <summary>
 	/// Key: "Description.EngagementScore"
 	/// English String: "Engagement Score"
 	/// </summary>
-	public override string DescriptionEngagementScore => "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã‚¹ã‚³ã‚¢";
+	public override string DescriptionEngagementScore => "エンゲージメントスコア";
 
 	/// <summary>
 	/// Key: "Heading.EngagementPayout"
 	/// English String: "Engagement and Payout"
 	/// </summary>
-	public override string HeadingEngagementPayout => "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã¨ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
+	public override string HeadingEngagementPayout => "エンゲージメントとペイアウト";
 
 	/// <summary>
 	/// Key: "Label.Custom"
 	/// English String: "Custom"
 	/// </summary>
-	public override string LabelCustom => "ã‚«ã‚¹ã‚¿ãƒ ";
+	public override string LabelCustom => "カスタム";
 
 	/// <summary>
 	/// Key: "Label.EngagementBasedPayout"
 	/// English String: "Engagement based payout"
 	/// </summary>
-	public override string LabelEngagementBasedPayout => "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã«ã‚ˆã‚‹ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
+	public override string LabelEngagementBasedPayout => "エンゲージメントによるペイアウト";
 
 	/// <summary>
 	/// Key: "Label.EngagementScore"
 	/// English String: "Engagement score"
 	/// </summary>
-	public override string LabelEngagementScore => "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã‚¹ã‚³ã‚¢";
+	public override string LabelEngagementScore => "エンゲージメントスコア";
 
 	/// <summary>
 	/// Key: "Label.Monthly"
 	/// English String: "Monthly"
 	/// </summary>
-	public override string LabelMonthly => "æœˆé–“";
+	public override string LabelMonthly => "月間";
 
 	/// <summary>
 	/// Key: "Label.Weekly"
 	/// English String: "Weekly"
 	/// </summary>
-	public override string LabelWeekly => "é€±é–“";
+	public override string LabelWeekly => "週間";
 
 	public EngagementPayoutResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -61,42 +63,42 @@ internal class EngagementPayoutResources_ja_jp : EngagementPayoutResources_en_us
 
 	protected override string _GetTemplateForDescriptionEngagementRobuxEarned()
 	{
-		return "ç²å¾—ã—ãŸã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆRobux";
+		return "獲得したエンゲージメントRobux";
 	}
 
 	protected override string _GetTemplateForDescriptionEngagementScore()
 	{
-		return "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã‚¹ã‚³ã‚¢";
+		return "エンゲージメントスコア";
 	}
 
 	protected override string _GetTemplateForHeadingEngagementPayout()
 	{
-		return "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã¨ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
+		return "エンゲージメントとペイアウト";
 	}
 
 	protected override string _GetTemplateForLabelCustom()
 	{
-		return "ã‚«ã‚¹ã‚¿ãƒ ";
+		return "カスタム";
 	}
 
 	protected override string _GetTemplateForLabelEngagementBasedPayout()
 	{
-		return "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã«ã‚ˆã‚‹ãƒšã‚¤ã‚¢ã‚¦ãƒˆ";
+		return "エンゲージメントによるペイアウト";
 	}
 
 	protected override string _GetTemplateForLabelEngagementScore()
 	{
-		return "ã‚¨ãƒ³ã‚²ãƒ¼ã‚¸ãƒ¡ãƒ³ãƒˆã‚¹ã‚³ã‚¢";
+		return "エンゲージメントスコア";
 	}
 
 	protected override string _GetTemplateForLabelMonthly()
 	{
-		return "æœˆé–“";
+		return "月間";
 	}
 
 	protected override string _GetTemplateForLabelWeekly()
 	{
-		return "é€±é–“";
+		return "週間";
 	}
 }
 

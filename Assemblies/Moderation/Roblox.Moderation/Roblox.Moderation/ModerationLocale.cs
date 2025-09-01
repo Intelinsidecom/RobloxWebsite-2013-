@@ -1,7 +1,7 @@
-﻿using System;
-using Roblox.Platform.Localization.Core;
-using Roblox.Platform.Moderation.Entities;
-namespace Roblox.Moderationinternal {
+using System;
+using Roblox.Localization.Core;
+using Roblox.Moderation.Entities;
+namespace Roblox.Moderation {
     class ModerationLocale : IModerationLocale
 
 {

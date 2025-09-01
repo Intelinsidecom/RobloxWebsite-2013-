@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides PurchaseDialogResources_en_us to provide locale specific translations where possible,
@@ -10,127 +12,127 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// Key: "Action.BuyAccess"
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "ì´ìš©ê¶Œ êµ¬ë§¤";
+	public override string ActionBuyAccess => "이용권 구매";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
 	/// English String: "Buy Now"
 	/// </summary>
-	public override string ActionBuyNow => "ì§€ê¸ˆ êµ¬ë§¤";
+	public override string ActionBuyNow => "지금 구매";
 
 	/// <summary>
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robux êµ¬ë§¤";
+	public override string ActionBuyRobux => "Robux 구매";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "êµ¬ì„±";
+	public override string ActionConfigure => "구성";
 
 	/// <summary>
 	/// Key: "Action.Continue"
 	/// English String: "Continue"
 	/// </summary>
-	public override string ActionContinue => "ê³„ì†";
+	public override string ActionContinue => "계속";
 
 	/// <summary>
 	/// Key: "Action.Customize"
 	/// English String: "Customize"
 	/// </summary>
-	public override string ActionCustomize => "ì‚¬ìš©ìž ì •ì˜";
+	public override string ActionCustomize => "사용자 정의";
 
 	/// <summary>
 	/// Key: "Action.GetNow"
 	/// English String: "Get Now"
 	/// </summary>
-	public override string ActionGetNow => "ì§€ê¸ˆ íšë“";
+	public override string ActionGetNow => "지금 획득";
 
 	/// <summary>
 	/// Key: "Action.NotNow"
 	/// English String: "Not Now"
 	/// </summary>
-	public override string ActionNotNow => "ë‚˜ì¤‘ì—";
+	public override string ActionNotNow => "나중에";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "í™•ì¸";
+	public override string ActionOk => "확인";
 
 	/// <summary>
 	/// Key: "Action.RentNow"
 	/// English String: "Rent Now"
 	/// </summary>
-	public override string ActionRentNow => "ì§€ê¸ˆ ë¹Œë¦¬ê¸°";
+	public override string ActionRentNow => "지금 빌리기";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "ì•„ì´í…œ êµ¬ë§¤";
+	public override string HeadingBuyItem => "아이템 구매";
 
 	/// <summary>
 	/// Key: "Heading.ErrorOccured"
 	/// English String: "Error Occured"
 	/// </summary>
-	public override string HeadingErrorOccured => "ì˜¤ë¥˜ ë°œìƒ";
+	public override string HeadingErrorOccured => "오류 발생";
 
 	/// <summary>
 	/// Key: "Heading.GetItem"
 	/// English String: "Get Item"
 	/// </summary>
-	public override string HeadingGetItem => "ì•„ì´í…œ íšë“";
+	public override string HeadingGetItem => "아이템 획득";
 
 	/// <summary>
 	/// Key: "Heading.InsufficientFunds"
 	/// English String: "Insufficient Funds"
 	/// </summary>
-	public override string HeadingInsufficientFunds => "ìž”ì•¡ ë¶€ì¡±";
+	public override string HeadingInsufficientFunds => "잔액 부족";
 
 	/// <summary>
 	/// Key: "Heading.PriceChanged"
 	/// English String: "Item Price Has Changed"
 	/// </summary>
-	public override string HeadingPriceChanged => "ì•„ì´í…œ ê°€ê²© ë³€ë™ë¨";
+	public override string HeadingPriceChanged => "아이템 가격 변동됨";
 
 	/// <summary>
 	/// Key: "Heading.PurchaseComplete"
 	/// English String: "Purchase Complete"
 	/// </summary>
-	public override string HeadingPurchaseComplete => "êµ¬ë§¤ ì™„ë£Œ";
+	public override string HeadingPurchaseComplete => "구매 완료";
 
 	/// <summary>
 	/// Key: "Heading.RentItem"
 	/// English String: "Rent Item"
 	/// </summary>
-	public override string HeadingRentItem => "ì•„ì´í…œ ë¹Œë¦¬ê¸°";
+	public override string HeadingRentItem => "아이템 빌리기";
 
 	/// <summary>
 	/// Key: "Label.AgreeAndPay"
 	/// English String: "Agree and Pay"
 	/// </summary>
-	public override string LabelAgreeAndPay => "ë™ì˜ ë° ê²°ì œ";
+	public override string LabelAgreeAndPay => "동의 및 결제";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "ë¬´ë£Œ";
+	public override string LabelFree => "무료";
 
 	/// <summary>
 	/// Key: "Message.PurchasingUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessagePurchasingUnavailable => "ì¼ì‹œì ìœ¼ë¡œ êµ¬ë§¤ ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string MessagePurchasingUnavailable => "일시적으로 구매 불가. 나중에 다시 시도하세요.";
 
 	public PurchaseDialogResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -139,102 +141,102 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "ì´ìš©ê¶Œ êµ¬ë§¤";
+		return "이용권 구매";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
 	{
-		return "ì§€ê¸ˆ êµ¬ë§¤";
+		return "지금 구매";
 	}
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robux êµ¬ë§¤";
+		return "Robux 구매";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "êµ¬ì„±";
+		return "구성";
 	}
 
 	protected override string _GetTemplateForActionContinue()
 	{
-		return "ê³„ì†";
+		return "계속";
 	}
 
 	protected override string _GetTemplateForActionCustomize()
 	{
-		return "ì‚¬ìš©ìž ì •ì˜";
+		return "사용자 정의";
 	}
 
 	protected override string _GetTemplateForActionGetNow()
 	{
-		return "ì§€ê¸ˆ íšë“";
+		return "지금 획득";
 	}
 
 	protected override string _GetTemplateForActionNotNow()
 	{
-		return "ë‚˜ì¤‘ì—";
+		return "나중에";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForActionRentNow()
 	{
-		return "ì§€ê¸ˆ ë¹Œë¦¬ê¸°";
+		return "지금 빌리기";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "ì•„ì´í…œ êµ¬ë§¤";
+		return "아이템 구매";
 	}
 
 	protected override string _GetTemplateForHeadingErrorOccured()
 	{
-		return "ì˜¤ë¥˜ ë°œìƒ";
+		return "오류 발생";
 	}
 
 	protected override string _GetTemplateForHeadingGetItem()
 	{
-		return "ì•„ì´í…œ íšë“";
+		return "아이템 획득";
 	}
 
 	protected override string _GetTemplateForHeadingInsufficientFunds()
 	{
-		return "ìž”ì•¡ ë¶€ì¡±";
+		return "잔액 부족";
 	}
 
 	protected override string _GetTemplateForHeadingPriceChanged()
 	{
-		return "ì•„ì´í…œ ê°€ê²© ë³€ë™ë¨";
+		return "아이템 가격 변동됨";
 	}
 
 	protected override string _GetTemplateForHeadingPurchaseComplete()
 	{
-		return "êµ¬ë§¤ ì™„ë£Œ";
+		return "구매 완료";
 	}
 
 	protected override string _GetTemplateForHeadingRentItem()
 	{
-		return "ì•„ì´í…œ ë¹Œë¦¬ê¸°";
+		return "아이템 빌리기";
 	}
 
 	protected override string _GetTemplateForLabelAgreeAndPay()
 	{
-		return "ë™ì˜ ë° ê²°ì œ";
+		return "동의 및 결제";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "ë¬´ë£Œ";
+		return "무료";
 	}
 
 	/// <summary>
@@ -243,12 +245,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageBalanceAfter(string robuxBalance)
 	{
-		return $"ë³¸ ê±°ëž˜ í›„ íšŒì›ë‹˜ì˜ ìž”ì•¡ì€ {robuxBalance}ìž…ë‹ˆë‹¤.";
+		return $"본 거래 후 회원님의 잔액은 {robuxBalance}입니다.";
 	}
 
 	protected override string _GetTemplateForMessageBalanceAfter()
 	{
-		return "ë³¸ ê±°ëž˜ í›„ íšŒì›ë‹˜ì˜ ìž”ì•¡ì€ {robuxBalance}ìž…ë‹ˆë‹¤.";
+		return "본 거래 후 회원님의 잔액은 {robuxBalance}입니다.";
 	}
 
 	/// <summary>
@@ -257,12 +259,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageInsufficientFunds(string robux)
 	{
-		return $"{robux}ì´(ê°€) ë” ìžˆì–´ì•¼ ë³¸ ì•„ì´í…œì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.";
+		return $"{robux}이(가) 더 있어야 본 아이템을 구매할 수 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageInsufficientFunds()
 	{
-		return "{robux}ì´(ê°€) ë” ìžˆì–´ì•¼ ë³¸ ì•„ì´í…œì„ êµ¬ë§¤í•  ìˆ˜ ìžˆì–´ìš”.";
+		return "{robux}이(가) 더 있어야 본 아이템을 구매할 수 있어요.";
 	}
 
 	/// <summary>
@@ -271,12 +273,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePriceChanged(string robuxBefore, string robuxAfter)
 	{
-		return $"íšŒì›ë‹˜ì´ ì‡¼í•‘í•˜ëŠ” ë™ì•ˆ ì•„ì´í…œì˜ ê°€ê²©ì´ {robuxBefore}ì—ì„œ {robuxAfter}(ìœ¼)ë¡œ ë³€ê²½ë˜ì—ˆì–´ìš”.";
+		return $"회원님이 쇼핑하는 동안 아이템의 가격이 {robuxBefore}에서 {robuxAfter}(으)로 변경되었어요.";
 	}
 
 	protected override string _GetTemplateForMessagePriceChanged()
 	{
-		return "íšŒì›ë‹˜ì´ ì‡¼í•‘í•˜ëŠ” ë™ì•ˆ ì•„ì´í…œì˜ ê°€ê²©ì´ {robuxBefore}ì—ì„œ {robuxAfter}(ìœ¼)ë¡œ ë³€ê²½ë˜ì—ˆì–´ìš”.";
+		return "회원님이 쇼핑하는 동안 아이템의 가격이 {robuxBefore}에서 {robuxAfter}(으)로 변경되었어요.";
 	}
 
 	/// <summary>
@@ -285,12 +287,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuy(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetType}: \"{assetName}\"ì„(ë¥¼) {robux}ì— êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님이 판매하는 {assetType}: \"{assetName}\"을(를) {robux}에 구매하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuy()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetType}: \"{assetName}\"ì„(ë¥¼) {robux}ì— êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님이 판매하는 {assetType}: \"{assetName}\"을(를) {robux}에 구매하시겠습니까?";
 	}
 
 	/// <summary>
@@ -299,12 +301,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuyAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {robux}ì— êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님이 판매하는 {assetType}: \"{assetName}\" 이용권을 {robux}에 구매하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuyAccess()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {robux}ì— êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님이 판매하는 {assetType}: \"{assetName}\" 이용권을 {robux}에 구매하시겠습니까?";
 	}
 
 	/// <summary>
@@ -313,12 +315,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFree(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"{seller}ë‹˜ì˜ {assetType}: \"{assetName}\"ì„(ë¥¼) {freeTextStart}ë¬´ë£Œ{freeTextEnd}ë¡œ íšë“í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님의 {assetType}: \"{assetName}\"을(를) {freeTextStart}무료{freeTextEnd}로 획득하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFree()
 	{
-		return "{seller}ë‹˜ì˜ {assetType}: \"{assetName}\"ì„(ë¥¼) {freeTextStart}ë¬´ë£Œ{freeTextEnd}ë¡œ íšë“í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님의 {assetType}: \"{assetName}\"을(를) {freeTextStart}무료{freeTextEnd}로 획득하시겠습니까?";
 	}
 
 	/// <summary>
@@ -327,12 +329,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFreeAccess(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"{seller}ë‹˜ì˜ {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {freeTextStart}ë¬´ë£Œ{freeTextEnd}ë¡œ íšë“í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님의 {assetType}: \"{assetName}\" 이용권을 {freeTextStart}무료{freeTextEnd}로 획득하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFreeAccess()
 	{
-		return "{seller}ë‹˜ì˜ {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {freeTextStart}ë¬´ë£Œ{freeTextEnd}ë¡œ íšë“í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님의 {assetType}: \"{assetName}\" 이용권을 {freeTextStart}무료{freeTextEnd}로 획득하시겠습니까?";
 	}
 
 	/// <summary>
@@ -341,12 +343,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRent(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetType}: \"{assetName}\"ì„(ë¥¼) {robux}ì— ë¹Œë¦¬ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님이 대여하는 {assetType}: \"{assetName}\"을(를) {robux}에 빌리시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptRent()
 	{
-		return "{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetType}: \"{assetName}\"ì„(ë¥¼) {robux}ì— ë¹Œë¦¬ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님이 대여하는 {assetType}: \"{assetName}\"을(를) {robux}에 빌리시겠습니까?";
 	}
 
 	/// <summary>
@@ -355,17 +357,17 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRentAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {robux}ì— ë¹Œë¦¬ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return $"{seller}님이 대여하는 {assetType}: \"{assetName}\" 이용권을 {robux}에 빌리시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePromptRentAccess()
 	{
-		return "{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetType}: \"{assetName}\" ì´ìš©ê¶Œì„ {robux}ì— ë¹Œë¦¬ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "{seller}님이 대여하는 {assetType}: \"{assetName}\" 이용권을 {robux}에 빌리시겠습니까?";
 	}
 
 	protected override string _GetTemplateForMessagePurchasingUnavailable()
 	{
-		return "ì¼ì‹œì ìœ¼ë¡œ êµ¬ë§¤ ë¶ˆê°€. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "일시적으로 구매 불가. 나중에 다시 시도하세요.";
 	}
 
 	/// <summary>
@@ -374,12 +376,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquired(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— íšë“í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 획득했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquired()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— íšë“í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 획득했습니다.";
 	}
 
 	/// <summary>
@@ -388,12 +390,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquiredAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— íšë“í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 획득했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquiredAccess()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— íšë“í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 획득했습니다.";
 	}
 
 	/// <summary>
@@ -402,12 +404,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBought(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— êµ¬ë§¤í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 구매했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBought()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— êµ¬ë§¤í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 구매했습니다.";
 	}
 
 	/// <summary>
@@ -416,12 +418,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBoughtAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— êµ¬ë§¤í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 구매했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBoughtAccess()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— êµ¬ë§¤í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 구매했습니다.";
 	}
 
 	/// <summary>
@@ -430,12 +432,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewed(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— ê°±ì‹ í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 갱신했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewed()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— ê°±ì‹ í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}을(를) {robux}에 갱신했습니다.";
 	}
 
 	/// <summary>
@@ -444,12 +446,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— ê°±ì‹ í–ˆìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 갱신했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewedAccess()
 	{
-		return "{seller}ë‹˜ì´ íŒë§¤í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— ê°±ì‹ í–ˆìŠµë‹ˆë‹¤.";
+		return "{seller}님이 판매하는 {assetName} {assetType}의 이용권을 {robux}에 갱신했습니다.";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRented(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— ë¹Œë ¸ìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 대여하는 {assetName} {assetType}을(를) {robux}에 빌렸습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRented()
 	{
-		return "{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetName} {assetType}ì„(ë¥¼) {robux}ì— ë¹Œë ¸ìŠµë‹ˆë‹¤.";
+		return "{seller}님이 대여하는 {assetName} {assetType}을(를) {robux}에 빌렸습니다.";
 	}
 
 	/// <summary>
@@ -472,12 +474,12 @@ internal class PurchaseDialogResources_ko_kr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRentedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— ë¹Œë ¸ìŠµë‹ˆë‹¤.";
+		return $"{seller}님이 대여하는 {assetName} {assetType}의 이용권을 {robux}에 빌렸습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRentedAccess()
 	{
-		return "{seller}ë‹˜ì´ ëŒ€ì—¬í•˜ëŠ” {assetName} {assetType}ì˜ ì´ìš©ê¶Œì„ {robux}ì— ë¹Œë ¸ìŠµë‹ˆë‹¤.";
+		return "{seller}님이 대여하는 {assetName} {assetType}의 이용권을 {robux}에 빌렸습니다.";
 	}
 }
 

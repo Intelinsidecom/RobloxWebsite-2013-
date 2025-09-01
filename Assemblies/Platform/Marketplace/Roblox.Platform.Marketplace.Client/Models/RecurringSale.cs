@@ -1,4 +1,4 @@
-namespace Roblox.Marketplace.Client
+namespace Roblox.Platform.Marketplace.Client.Models
 {
     public class RecurringSale
     {

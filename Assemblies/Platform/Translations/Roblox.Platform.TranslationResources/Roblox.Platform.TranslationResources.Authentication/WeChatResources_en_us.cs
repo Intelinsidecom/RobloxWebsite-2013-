@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class WeChatResources_en_us : TranslationResourcesBase, IWeChatResources, ITranslationResources
 
 {
@@ -41,3 +41,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

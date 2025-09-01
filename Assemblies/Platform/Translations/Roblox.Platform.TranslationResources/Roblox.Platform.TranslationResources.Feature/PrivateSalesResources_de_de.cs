@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
@@ -22,7 +24,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 	/// Key: "Heading.Resellers"
 	/// English String: "Resellers"
 	/// </summary>
-	public override string HeadingResellers => "WiederverkÃ¤ufer";
+	public override string HeadingResellers => "Wiederverkäufer";
 
 	/// <summary>
 	/// Key: "Label.AveragePrice"
@@ -59,7 +61,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "Fehler beim Laden der Preistabelle und der WiederverkÃ¤ufer. Versuch es erneut";
+	public override string LabelResaleDataLoadFailure => "Fehler beim Laden der Preistabelle und der Wiederverkäufer. Versuch es erneut";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
@@ -71,7 +73,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.Volume"
 	/// English String: "Volume"
 	/// </summary>
-	public override string LabelVolume => "LautstÃ¤rke";
+	public override string LabelVolume => "Lautstärke";
 
 	/// <summary>
 	/// Key: "Message.NoOneSelling"
@@ -96,7 +98,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForHeadingResellers()
 	{
-		return "WiederverkÃ¤ufer";
+		return "Wiederverkäufer";
 	}
 
 	protected override string _GetTemplateForLabelAveragePrice()
@@ -126,7 +128,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "Fehler beim Laden der Preistabelle und der WiederverkÃ¤ufer. Versuch es erneut";
+		return "Fehler beim Laden der Preistabelle und der Wiederverkäufer. Versuch es erneut";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
@@ -136,7 +138,7 @@ internal class PrivateSalesResources_de_de : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelVolume()
 	{
-		return "LautstÃ¤rke";
+		return "Lautstärke";
 	}
 
 	/// <summary>

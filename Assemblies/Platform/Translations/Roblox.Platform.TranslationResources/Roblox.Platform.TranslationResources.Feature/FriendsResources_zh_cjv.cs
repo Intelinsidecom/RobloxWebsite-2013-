@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FriendsResources_en_us to provide locale specific translations where possible,
@@ -10,285 +12,285 @@ internal class FriendsResources_zh_cjv : FriendsResources_en_us, IFriendsResourc
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "æŽ¥å—";
+	public override string ActionAccept => "接受";
 
 	/// <summary>
 	/// Key: "Action.FindFriends"
 	/// English String: "Find Friends"
 	/// </summary>
-	public override string ActionFindFriends => "æŸ¥æ‰¾å¥½å‹";
+	public override string ActionFindFriends => "查找好友";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "å…³æ³¨";
+	public override string ActionFollow => "关注";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "å¿½ç•¥";
+	public override string ActionIgnore => "忽略";
 
 	/// <summary>
 	/// Key: "Action.IgnoreAll"
 	/// English String: "Ignore All"
 	/// </summary>
-	public override string ActionIgnoreAll => "å…¨éƒ¨å¿½ç•¥";
+	public override string ActionIgnoreAll => "全部忽略";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "å–æ¶ˆå…³æ³¨";
+	public override string ActionUnfollow => "取消关注";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "åˆ é™¤å¥½å‹";
+	public override string ActionUnfriend => "删除好友";
 
 	/// <summary>
 	/// Key: "Heading.MyFriends"
 	/// English String: "My Friends"
 	/// </summary>
-	public override string HeadingMyFriends => "æˆ‘çš„å¥½å‹";
+	public override string HeadingMyFriends => "我的好友";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelErrorTitle => "é”™è¯¯";
+	public override string LabelErrorTitle => "错误";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "ç²‰ä¸";
+	public override string LabelFollowers => "粉丝";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "å…³æ³¨ä¸­";
+	public override string LabelFollowing => "关注中";
 
 	/// <summary>
 	/// Key: "Label.FriendRequests"
 	/// English String: "Friend Requests"
 	/// </summary>
-	public override string LabelFriendRequests => "å¥½å‹é‚€è¯·";
+	public override string LabelFriendRequests => "好友邀请";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "å¥½å‹";
+	public override string LabelFriends => "好友";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ç¦»çº¿";
+	public override string LabelOffline => "离线";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "Ok"
 	/// </summary>
-	public override string LabelOk => "å¥½";
+	public override string LabelOk => "好";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "åœ¨çº¿";
+	public override string LabelOnline => "在线";
 
 	/// <summary>
 	/// Key: "Label.Requests"
 	/// English String: "Requests"
 	/// </summary>
-	public override string LabelRequests => "è¯·æ±‚";
+	public override string LabelRequests => "请求";
 
 	/// <summary>
 	/// Key: "Label.SearchFriends"
 	/// When user doesn't have any friends.
 	/// English String: "Search for Friends"
 	/// </summary>
-	public override string LabelSearchFriends => "æœç´¢å¥½å‹";
+	public override string LabelSearchFriends => "搜索好友";
 
 	/// <summary>
 	/// Key: "Label.Unfollowed"
 	/// Unfollowed
 	/// English String: "Unfollowed"
 	/// </summary>
-	public override string LabelUnfollowed => "å·²å–æ¶ˆå…³æ³¨";
+	public override string LabelUnfollowed => "已取消关注";
 
 	/// <summary>
 	/// Key: "Message.ActionNotAllowedError"
 	/// English String: "Action not allowed"
 	/// </summary>
-	public override string MessageActionNotAllowedError => "æ­¤æ“ä½œä¸å…è®¸";
+	public override string MessageActionNotAllowedError => "此操作不允许";
 
 	/// <summary>
 	/// Key: "Message.AlreadyExistsError"
 	/// English String: "Already exists."
 	/// </summary>
-	public override string MessageAlreadyExistsError => "å·²å­˜åœ¨ã€‚";
+	public override string MessageAlreadyExistsError => "已存在。";
 
 	/// <summary>
 	/// Key: "Message.CurrentInvalidParametersError"
 	/// English String: "Invalid parameters."
 	/// </summary>
-	public override string MessageCurrentInvalidParametersError => "å‚æ•°æ— æ•ˆã€‚";
+	public override string MessageCurrentInvalidParametersError => "参数无效。";
 
 	/// <summary>
 	/// Key: "Message.CurrentUserFriendsLimitExceededError"
 	/// English String: "You have reached the maximum number of Friends. Please remove a Friend before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageCurrentUserFriendsLimitExceededError => "ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚è¯·å…ˆç§»é™¤ä¸€ä½å¥½å‹ï¼Œæ‰èƒ½æŽ¥å—æ›´å¤šå¥½å‹é‚€è¯·ã€‚";
+	public override string MessageCurrentUserFriendsLimitExceededError => "你的好友人数已达上限。请先移除一位好友，才能接受更多好友邀请。";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error ocurred."
 	/// </summary>
-	public override string MessageDefaultError => "å‘ç”Ÿé”™è¯¯ã€‚";
+	public override string MessageDefaultError => "发生错误。";
 
 	/// <summary>
 	/// Key: "Message.FloodLimitExceededError"
 	/// English String: "You are performing this action too often. Please wait a minute and try again."
 	/// </summary>
-	public override string MessageFloodLimitExceededError => "ä½ æ‰§è¡Œæ­¤æ“ä½œçš„æ¬¡æ•°å¤ªè¿‡é¢‘ç¹ã€‚è¯·ç¨ç­‰ä¸€åˆ†é’ŸåŽå†é‡è¯•ã€‚";
+	public override string MessageFloodLimitExceededError => "你执行此操作的次数太过频繁。请稍等一分钟后再重试。";
 
 	/// <summary>
 	/// Key: "Message.FollowerTabTooltip"
 	/// English String: "People who have chosen to follow your activity."
 	/// </summary>
-	public override string MessageFollowerTabTooltip => "é€‰æ‹©å…³æ³¨ä½ çš„ç”¨æˆ·ã€‚";
+	public override string MessageFollowerTabTooltip => "选择关注你的用户。";
 
 	/// <summary>
 	/// Key: "Message.FollowingTabTooltip"
 	/// English String: "People whose activity you have chosen to follow."
 	/// </summary>
-	public override string MessageFollowingTabTooltip => "ä½ é€‰æ‹©å…³æ³¨çš„ç”¨æˆ·ã€‚";
+	public override string MessageFollowingTabTooltip => "你选择关注的用户。";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralError"
 	/// English String: "Something went wrong."
 	/// </summary>
-	public override string MessageForGeneralError => "å‘ç”Ÿé”™è¯¯ã€‚";
+	public override string MessageForGeneralError => "发生错误。";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralFooter"
 	/// English String: "Please check back in few minutes."
 	/// </summary>
-	public override string MessageForGeneralFooter => "è¯·è¿‡å‡ åˆ†é’Ÿå†å›žæ¥æŸ¥çœ‹ã€‚";
+	public override string MessageForGeneralFooter => "请过几分钟再回来查看。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsError"
 	/// English String: "Unable to process Request.You currently have the max number of Friends allowed. "
 	/// </summary>
-	public override string MessageForMaxFriendsError => "æ— æ³•å¤„ç†é‚€è¯·ã€‚ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
+	public override string MessageForMaxFriendsError => "无法处理邀请。你的好友人数已达上限。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsFooter"
 	/// English String: "Unfriend someone before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageForMaxFriendsFooter => "è¯·å…ˆå’Œä¸€äº›äººè§£é™¤å¥½å‹å…³ç³»ï¼Œæ‰èƒ½æŽ¥å—æ›´å¤šå¥½å‹é‚€è¯·ã€‚";
+	public override string MessageForMaxFriendsFooter => "请先和一些人解除好友关系，才能接受更多好友邀请。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsError"
 	/// English String: "Unable to process Request. That user currently has the max number of Friends allowed."
 	/// </summary>
-	public override string MessageForMaxRequestsError => "æ— æ³•å¤„ç†é‚€è¯·ã€‚è¯¥ç”¨æˆ·çš„å¥½å‹äººæ•°å·²è¾¾å…è®¸çš„ä¸Šé™ã€‚";
+	public override string MessageForMaxRequestsError => "无法处理邀请。该用户的好友人数已达允许的上限。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsFooter"
 	/// English String: "You can not accept their Friend Request until they remove a Friend."
 	/// </summary>
-	public override string MessageForMaxRequestsFooter => "å¯¹æ–¹å¿…é¡»ç§»é™¤ä¸€ä½å¥½å‹ï¼Œä½ æ‰èƒ½æŽ¥å—æ­¤å¥½å‹é‚€è¯·ã€‚";
+	public override string MessageForMaxRequestsFooter => "对方必须移除一位好友，你才能接受此好友邀请。";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestNotExistError"
 	/// English String: "Friend request does not exist"
 	/// </summary>
-	public override string MessageFriendRequestNotExistError => "å¥½å‹é‚€è¯·ä¸å­˜åœ¨";
+	public override string MessageFriendRequestNotExistError => "好友邀请不存在";
 
 	/// <summary>
 	/// Key: "Message.FriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageFriendsLimitExceededError => "è¶…è¿‡å¥½å‹äººæ•°ä¸Šé™ã€‚";
+	public override string MessageFriendsLimitExceededError => "超过好友人数上限。";
 
 	/// <summary>
 	/// Key: "Message.FriendsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageFriendsTabTooltip => "å¥½å‹å…³ç³»æ˜¯ç”±ä¸¤ä½ Roblox ç”¨æˆ·äº’ç›¸åŒæ„å¥½å‹é‚€è¯·è€Œå»ºç«‹ã€‚";
+	public override string MessageFriendsTabTooltip => "好友关系是由两位 Roblox 用户互相同意好友邀请而建立。";
 
 	/// <summary>
 	/// Key: "Message.NotRecipientError"
 	/// English String: "You are not the recipient of this friend request."
 	/// </summary>
-	public override string MessageNotRecipientError => "ä½ ä¸æ˜¯æ­¤å¥½å‹é‚€è¯·çš„æŽ¥æ”¶äººã€‚";
+	public override string MessageNotRecipientError => "你不是此好友邀请的接收人。";
 
 	/// <summary>
 	/// Key: "Message.OtherUserFriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageOtherUserFriendsLimitExceededError => "è¶…è¿‡å¥½å‹äººæ•°ä¸Šé™ã€‚";
+	public override string MessageOtherUserFriendsLimitExceededError => "超过好友人数上限。";
 
 	/// <summary>
 	/// Key: "Message.RequestsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageRequestsTabTooltip => "å¥½å‹å…³ç³»æ˜¯ç”±ä¸¤ä½ Roblox ç”¨æˆ·äº’ç›¸åŒæ„å¥½å‹é‚€è¯·è€Œå»ºç«‹ã€‚";
+	public override string MessageRequestsTabTooltip => "好友关系是由两位 Roblox 用户互相同意好友邀请而建立。";
 
 	/// <summary>
 	/// Key: "Message.RobloxIsMoreFunWithFriends"
 	/// English String: "Roblox is more fun with friends!"
 	/// </summary>
-	public override string MessageRobloxIsMoreFunWithFriends => "å’Œå¥½å‹ä¸€èµ·çŽ© Roblox æ›´å¼€å¿ƒï¼";
+	public override string MessageRobloxIsMoreFunWithFriends => "和好友一起玩 Roblox 更开心！";
 
 	/// <summary>
 	/// Key: "Message.SelfFollowingAttemptError"
 	/// English String: "You cannot follow yourself."
 	/// </summary>
-	public override string MessageSelfFollowingAttemptError => "ä½ ä¸èƒ½å…³æ³¨è‡ªå·±ã€‚";
+	public override string MessageSelfFollowingAttemptError => "你不能关注自己。";
 
 	/// <summary>
 	/// Key: "Message.SelfFriendingAttemptError"
 	/// English String: "You cannot be friends with yourself."
 	/// </summary>
-	public override string MessageSelfFriendingAttemptError => "ä½ ä¸èƒ½ä¸Žè‡ªå·±æˆä¸ºå¥½å‹ã€‚";
+	public override string MessageSelfFriendingAttemptError => "你不能与自己成为好友。";
 
 	/// <summary>
 	/// Key: "Message.SystemUnavailableError"
 	/// English String: "Friends and Followers system is unavailable."
 	/// </summary>
-	public override string MessageSystemUnavailableError => "å¥½å‹å’Œå…³æ³¨è€…ç³»ç»Ÿä¸å¯ç”¨ã€‚";
+	public override string MessageSystemUnavailableError => "好友和关注者系统不可用。";
 
 	/// <summary>
 	/// Key: "Message.UnblockUserPinLockedError"
 	/// English String: "Pin is locked."
 	/// </summary>
-	public override string MessageUnblockUserPinLockedError => "Pin è¢«é”å®šã€‚";
+	public override string MessageUnblockUserPinLockedError => "Pin 被锁定。";
 
 	/// <summary>
 	/// Key: "Message.UserBlockedError"
 	/// English String: "User is blocked"
 	/// </summary>
-	public override string MessageUserBlockedError => "ç”¨æˆ·è¢«å±è”½";
+	public override string MessageUserBlockedError => "用户被屏蔽";
 
 	/// <summary>
 	/// Key: "Message.UserHasNotPassedCaptchaError"
 	/// English String: "You need to pass Captcha."
 	/// </summary>
-	public override string MessageUserHasNotPassedCaptchaError => "ä½ éœ€è¦é€šè¿‡éªŒè¯ç æµ‹è¯•ã€‚";
+	public override string MessageUserHasNotPassedCaptchaError => "你需要通过验证码测试。";
 
 	/// <summary>
 	/// Key: "Message.UsersAreNotInSameGameError"
 	/// English String: "Users need to be in the same game."
 	/// </summary>
-	public override string MessageUsersAreNotInSameGameError => "ç”¨æˆ·éœ€è¦åœ¨åŒä¸€æ¸¸æˆä¸­ã€‚";
+	public override string MessageUsersAreNotInSameGameError => "用户需要在同一游戏中。";
 
 	public FriendsResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -297,37 +299,37 @@ internal class FriendsResources_zh_cjv : FriendsResources_en_us, IFriendsResourc
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "æŽ¥å—";
+		return "接受";
 	}
 
 	protected override string _GetTemplateForActionFindFriends()
 	{
-		return "æŸ¥æ‰¾å¥½å‹";
+		return "查找好友";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "å…³æ³¨";
+		return "关注";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "å¿½ç•¥";
+		return "忽略";
 	}
 
 	protected override string _GetTemplateForActionIgnoreAll()
 	{
-		return "å…¨éƒ¨å¿½ç•¥";
+		return "全部忽略";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "å–æ¶ˆå…³æ³¨";
+		return "取消关注";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "åˆ é™¤å¥½å‹";
+		return "删除好友";
 	}
 
 	/// <summary>
@@ -337,17 +339,17 @@ internal class FriendsResources_zh_cjv : FriendsResources_en_us, IFriendsResourc
 	/// </summary>
 	public override string DescriptionSearchFriends(string startLink, string endLink)
 	{
-		return $"è½»æŒ‰ä¸Šæ–¹æ”¾å¤§é•œå›¾æ ‡ï¼Œé€šè¿‡æœç´¢ç”¨æˆ·æˆ–{startLink}åŠ å…¥æ¸¸æˆ{endLink}æ¥è®¤è¯†æ›´å¤šçš„æœ‹å‹ã€‚";
+		return $"轻按上方放大镜图标，通过搜索用户或{startLink}加入游戏{endLink}来认识更多的朋友。";
 	}
 
 	protected override string _GetTemplateForDescriptionSearchFriends()
 	{
-		return "è½»æŒ‰ä¸Šæ–¹æ”¾å¤§é•œå›¾æ ‡ï¼Œé€šè¿‡æœç´¢ç”¨æˆ·æˆ–{startLink}åŠ å…¥æ¸¸æˆ{endLink}æ¥è®¤è¯†æ›´å¤šçš„æœ‹å‹ã€‚";
+		return "轻按上方放大镜图标，通过搜索用户或{startLink}加入游戏{endLink}来认识更多的朋友。";
 	}
 
 	protected override string _GetTemplateForHeadingMyFriends()
 	{
-		return "æˆ‘çš„å¥½å‹";
+		return "我的好友";
 	}
 
 	/// <summary>
@@ -356,37 +358,37 @@ internal class FriendsResources_zh_cjv : FriendsResources_en_us, IFriendsResourc
 	/// </summary>
 	public override string HeadingUsersFriends(string username)
 	{
-		return $"â€œ{username}â€çš„å¥½å‹";
+		return $"“{username}”的好友";
 	}
 
 	protected override string _GetTemplateForHeadingUsersFriends()
 	{
-		return "â€œ{username}â€çš„å¥½å‹";
+		return "“{username}”的好友";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
 	{
-		return "é”™è¯¯";
+		return "错误";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "ç²‰ä¸";
+		return "粉丝";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "å…³æ³¨ä¸­";
+		return "关注中";
 	}
 
 	protected override string _GetTemplateForLabelFriendRequests()
 	{
-		return "å¥½å‹é‚€è¯·";
+		return "好友邀请";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "å¥½å‹";
+		return "好友";
 	}
 
 	/// <summary>
@@ -396,182 +398,182 @@ internal class FriendsResources_zh_cjv : FriendsResources_en_us, IFriendsResourc
 	/// </summary>
 	public override string LabelNearbyUpsell(string startSpan, string endSpan)
 	{
-		return $"ä½ æ²¡æœ‰å¾…å¤„ç†çš„å¥½å‹é‚€è¯·ã€‚è‹¥è¦æ·»åŠ å¥½å‹ï¼Œè¯·æŸ¥çœ‹{startSpan}é™„è¿‘{endSpan}ã€‚";
+		return $"你没有待处理的好友邀请。若要添加好友，请查看{startSpan}附近{endSpan}。";
 	}
 
 	protected override string _GetTemplateForLabelNearbyUpsell()
 	{
-		return "ä½ æ²¡æœ‰å¾…å¤„ç†çš„å¥½å‹é‚€è¯·ã€‚è‹¥è¦æ·»åŠ å¥½å‹ï¼Œè¯·æŸ¥çœ‹{startSpan}é™„è¿‘{endSpan}ã€‚";
+		return "你没有待处理的好友邀请。若要添加好友，请查看{startSpan}附近{endSpan}。";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ç¦»çº¿";
+		return "离线";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "åœ¨çº¿";
+		return "在线";
 	}
 
 	protected override string _GetTemplateForLabelRequests()
 	{
-		return "è¯·æ±‚";
+		return "请求";
 	}
 
 	protected override string _GetTemplateForLabelSearchFriends()
 	{
-		return "æœç´¢å¥½å‹";
+		return "搜索好友";
 	}
 
 	protected override string _GetTemplateForLabelUnfollowed()
 	{
-		return "å·²å–æ¶ˆå…³æ³¨";
+		return "已取消关注";
 	}
 
 	protected override string _GetTemplateForMessageActionNotAllowedError()
 	{
-		return "æ­¤æ“ä½œä¸å…è®¸";
+		return "此操作不允许";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyExistsError()
 	{
-		return "å·²å­˜åœ¨ã€‚";
+		return "已存在。";
 	}
 
 	protected override string _GetTemplateForMessageCurrentInvalidParametersError()
 	{
-		return "å‚æ•°æ— æ•ˆã€‚";
+		return "参数无效。";
 	}
 
 	protected override string _GetTemplateForMessageCurrentUserFriendsLimitExceededError()
 	{
-		return "ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚è¯·å…ˆç§»é™¤ä¸€ä½å¥½å‹ï¼Œæ‰èƒ½æŽ¥å—æ›´å¤šå¥½å‹é‚€è¯·ã€‚";
+		return "你的好友人数已达上限。请先移除一位好友，才能接受更多好友邀请。";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "å‘ç”Ÿé”™è¯¯ã€‚";
+		return "发生错误。";
 	}
 
 	protected override string _GetTemplateForMessageFloodLimitExceededError()
 	{
-		return "ä½ æ‰§è¡Œæ­¤æ“ä½œçš„æ¬¡æ•°å¤ªè¿‡é¢‘ç¹ã€‚è¯·ç¨ç­‰ä¸€åˆ†é’ŸåŽå†é‡è¯•ã€‚";
+		return "你执行此操作的次数太过频繁。请稍等一分钟后再重试。";
 	}
 
 	protected override string _GetTemplateForMessageFollowerTabTooltip()
 	{
-		return "é€‰æ‹©å…³æ³¨ä½ çš„ç”¨æˆ·ã€‚";
+		return "选择关注你的用户。";
 	}
 
 	protected override string _GetTemplateForMessageFollowingTabTooltip()
 	{
-		return "ä½ é€‰æ‹©å…³æ³¨çš„ç”¨æˆ·ã€‚";
+		return "你选择关注的用户。";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralError()
 	{
-		return "å‘ç”Ÿé”™è¯¯ã€‚";
+		return "发生错误。";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralFooter()
 	{
-		return "è¯·è¿‡å‡ åˆ†é’Ÿå†å›žæ¥æŸ¥çœ‹ã€‚";
+		return "请过几分钟再回来查看。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsError()
 	{
-		return "æ— æ³•å¤„ç†é‚€è¯·ã€‚ä½ çš„å¥½å‹äººæ•°å·²è¾¾ä¸Šé™ã€‚";
+		return "无法处理邀请。你的好友人数已达上限。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsFooter()
 	{
-		return "è¯·å…ˆå’Œä¸€äº›äººè§£é™¤å¥½å‹å…³ç³»ï¼Œæ‰èƒ½æŽ¥å—æ›´å¤šå¥½å‹é‚€è¯·ã€‚";
+		return "请先和一些人解除好友关系，才能接受更多好友邀请。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsError()
 	{
-		return "æ— æ³•å¤„ç†é‚€è¯·ã€‚è¯¥ç”¨æˆ·çš„å¥½å‹äººæ•°å·²è¾¾å…è®¸çš„ä¸Šé™ã€‚";
+		return "无法处理邀请。该用户的好友人数已达允许的上限。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsFooter()
 	{
-		return "å¯¹æ–¹å¿…é¡»ç§»é™¤ä¸€ä½å¥½å‹ï¼Œä½ æ‰èƒ½æŽ¥å—æ­¤å¥½å‹é‚€è¯·ã€‚";
+		return "对方必须移除一位好友，你才能接受此好友邀请。";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestNotExistError()
 	{
-		return "å¥½å‹é‚€è¯·ä¸å­˜åœ¨";
+		return "好友邀请不存在";
 	}
 
 	protected override string _GetTemplateForMessageFriendsLimitExceededError()
 	{
-		return "è¶…è¿‡å¥½å‹äººæ•°ä¸Šé™ã€‚";
+		return "超过好友人数上限。";
 	}
 
 	protected override string _GetTemplateForMessageFriendsTabTooltip()
 	{
-		return "å¥½å‹å…³ç³»æ˜¯ç”±ä¸¤ä½ Roblox ç”¨æˆ·äº’ç›¸åŒæ„å¥½å‹é‚€è¯·è€Œå»ºç«‹ã€‚";
+		return "好友关系是由两位 Roblox 用户互相同意好友邀请而建立。";
 	}
 
 	protected override string _GetTemplateForMessageNotRecipientError()
 	{
-		return "ä½ ä¸æ˜¯æ­¤å¥½å‹é‚€è¯·çš„æŽ¥æ”¶äººã€‚";
+		return "你不是此好友邀请的接收人。";
 	}
 
 	protected override string _GetTemplateForMessageOtherUserFriendsLimitExceededError()
 	{
-		return "è¶…è¿‡å¥½å‹äººæ•°ä¸Šé™ã€‚";
+		return "超过好友人数上限。";
 	}
 
 	protected override string _GetTemplateForMessageRequestsTabTooltip()
 	{
-		return "å¥½å‹å…³ç³»æ˜¯ç”±ä¸¤ä½ Roblox ç”¨æˆ·äº’ç›¸åŒæ„å¥½å‹é‚€è¯·è€Œå»ºç«‹ã€‚";
+		return "好友关系是由两位 Roblox 用户互相同意好友邀请而建立。";
 	}
 
 	protected override string _GetTemplateForMessageRobloxIsMoreFunWithFriends()
 	{
-		return "å’Œå¥½å‹ä¸€èµ·çŽ© Roblox æ›´å¼€å¿ƒï¼";
+		return "和好友一起玩 Roblox 更开心！";
 	}
 
 	protected override string _GetTemplateForMessageSelfFollowingAttemptError()
 	{
-		return "ä½ ä¸èƒ½å…³æ³¨è‡ªå·±ã€‚";
+		return "你不能关注自己。";
 	}
 
 	protected override string _GetTemplateForMessageSelfFriendingAttemptError()
 	{
-		return "ä½ ä¸èƒ½ä¸Žè‡ªå·±æˆä¸ºå¥½å‹ã€‚";
+		return "你不能与自己成为好友。";
 	}
 
 	protected override string _GetTemplateForMessageSystemUnavailableError()
 	{
-		return "å¥½å‹å’Œå…³æ³¨è€…ç³»ç»Ÿä¸å¯ç”¨ã€‚";
+		return "好友和关注者系统不可用。";
 	}
 
 	protected override string _GetTemplateForMessageUnblockUserPinLockedError()
 	{
-		return "Pin è¢«é”å®šã€‚";
+		return "Pin 被锁定。";
 	}
 
 	protected override string _GetTemplateForMessageUserBlockedError()
 	{
-		return "ç”¨æˆ·è¢«å±è”½";
+		return "用户被屏蔽";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNotPassedCaptchaError()
 	{
-		return "ä½ éœ€è¦é€šè¿‡éªŒè¯ç æµ‹è¯•ã€‚";
+		return "你需要通过验证码测试。";
 	}
 
 	protected override string _GetTemplateForMessageUsersAreNotInSameGameError()
 	{
-		return "ç”¨æˆ·éœ€è¦åœ¨åŒä¸€æ¸¸æˆä¸­ã€‚";
+		return "用户需要在同一游戏中。";
 	}
 }
 

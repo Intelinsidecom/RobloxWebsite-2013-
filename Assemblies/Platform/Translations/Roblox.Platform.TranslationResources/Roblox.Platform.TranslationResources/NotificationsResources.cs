@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.Notifications;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Notifications;
+namespace Roblox.Platform.TranslationResources {
     class NotificationsResources : INotificationsResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -41,3 +42,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+

@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationpublic {
-    interface IReviewTaskDequeuerProvider<out TTask> where TTask : IReviewTask
+using Roblox.Localization.Core;
+namespace Roblox.Moderation {
+    public interface IReviewTaskDequeuerProvider<out TTask> where TTask : IReviewTask
 
 {
 	/// <summary>

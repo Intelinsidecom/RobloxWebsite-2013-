@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -125,3 +125,4 @@ internal class UsersAuditEntriesMetaDataDAL
 		return RobloxDatabase.RobloxUsersAudit.GetIDCollection<long>("UsersAuditEntriesMetaDataV2_GetUsersAuditEntriesMetaDataV2IDsByUserIDAndUsersAuditEntriesMetaDataTypeID", queryParameters);
 	}
 }
+

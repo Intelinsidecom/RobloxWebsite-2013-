@@ -1,5 +1,5 @@
-﻿using System.ComponentModel;
-namespace Roblox.Moderationpublic {
+using System.ComponentModel;
+namespace Roblox.Moderation {
     enum PunishmentReason
 
 {

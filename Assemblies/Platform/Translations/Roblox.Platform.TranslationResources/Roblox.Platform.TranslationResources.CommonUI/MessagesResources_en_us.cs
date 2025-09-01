@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+namespace Roblox.Platform.TranslationResources.CommonUI {
     class MessagesResources_en_us : TranslationResourcesBase, IMessagesResources, ITranslationResources
 
 {
@@ -554,3 +554,4 @@ namespace Roblox.Platform.TranslationResources.CommonUIinternal {
 
 
 }
+

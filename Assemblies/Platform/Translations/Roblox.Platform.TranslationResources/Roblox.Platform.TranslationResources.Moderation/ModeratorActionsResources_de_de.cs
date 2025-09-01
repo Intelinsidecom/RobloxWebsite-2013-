@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderation {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
     /// <summary>
 
 /// This class overrides ModeratorActionsResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class ModeratorActionsResources_de_de : ModeratorActionsResources_en_us
 	/// Key: "Label.ScrubText"
 	/// English String: "[ Content Deleted ]"
 	/// </summary>
-	public override string LabelScrubText => "[ Inhalt gelÃ¶scht ]";
+	public override string LabelScrubText => "[ Inhalt gelöscht ]";
 
 	public ModeratorActionsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -19,7 +21,7 @@ internal class ModeratorActionsResources_de_de : ModeratorActionsResources_en_us
 
 	protected override string _GetTemplateForLabelScrubText()
 	{
-		return "[ Inhalt gelÃ¶scht ]";
+		return "[ Inhalt gelöscht ]";
 	}
 }
 

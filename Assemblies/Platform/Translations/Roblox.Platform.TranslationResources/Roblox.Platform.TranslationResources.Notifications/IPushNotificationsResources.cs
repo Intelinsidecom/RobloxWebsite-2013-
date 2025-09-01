@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
-    interface IPushNotificationsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
+    public interface IPushNotificationsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -157,3 +159,5 @@
 
 
 }
+
+

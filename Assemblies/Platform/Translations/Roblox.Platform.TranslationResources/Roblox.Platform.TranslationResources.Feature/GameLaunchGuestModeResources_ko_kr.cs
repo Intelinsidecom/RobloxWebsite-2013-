@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLaunchGuestModeResources_en_us to provide locale specific translations where possible,
@@ -11,91 +13,91 @@ internal class GameLaunchGuestModeResources_ko_kr : GameLaunchGuestModeResources
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "ë‹«ê¸°";
+	public override string ActionDialogClose => "닫기";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Login"
 	/// button text
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionDialogLogin => "ë¡œê·¸ì¸";
+	public override string ActionDialogLogin => "로그인";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Ok"
 	/// button text
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogOk => "í™•ì¸";
+	public override string ActionDialogOk => "확인";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUp"
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionDialogSignUp => "íšŒì›ê°€ìž…";
+	public override string ActionDialogSignUp => "회원가입";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUpNow"
 	/// button text
 	/// English String: "Sign up now!"
 	/// </summary>
-	public override string ActionDialogSignUpNow => "ì§€ê¸ˆ íšŒì›ê°€ìž…í•˜ì„¸ìš”!";
+	public override string ActionDialogSignUpNow => "지금 회원가입하세요!";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpOrLogin"
 	/// modal body text
 	/// English String: "To play games, chat with friends, or customize your avatar, you'll need an account. Sign up for a free account or log in to play now."
 	/// </summary>
-	public override string DescriptionDialogSignUpOrLogin => "ê³„ì •ì´ ìžˆì–´ì•¼ ê²Œìž„, ì±„íŒ…, ì•„ë°”íƒ€ ê¾¸ë¯¸ê¸°ë¥¼ ì¦ê¸¸ ìˆ˜ ìžˆì–´ìš”. íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ê±°ë‚˜ ê³„ì •ì´ ìžˆìœ¼ì‹  ë¶„ì€ ë¡œê·¸ì¸í•˜ì—¬ ì§€ê¸ˆ ê²Œìž„ì„ ì¦ê²¨ë³´ì„¸ìš”!";
+	public override string DescriptionDialogSignUpOrLogin => "계정이 있어야 게임, 채팅, 아바타 꾸미기를 즐길 수 있어요. 회원가입(무료)하거나 계정이 있으신 분은 로그인하여 지금 게임을 즐겨보세요!";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpTodayOneDayRemaining"
 	/// description text
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than a day left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogSignUpTodayOneDayRemaining => "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. ê²ŒìŠ¤íŠ¸ ëª¨ë“œ ì´ìš©ì´ 24ì‹œê°„ ë‚´ì— ë§Œë£Œë˜ë‹ˆ íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì„¸ìš”.";
+	public override string DescriptionDialogSignUpTodayOneDayRemaining => "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 게스트 모드 이용이 24시간 내에 만료되니 회원가입(무료)하세요.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.TrialOver"
 	/// description
 	/// English String: "Your trial period has ended. Please sign up to play games - it's free!"
 	/// </summary>
-	public override string DescriptionDialogTrialOver => "ì²´í—˜ ê¸°ê°„ì´ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì‹œê³  ê²Œìž„ì„ ê³„ì† ì¦ê²¨ë³´ì„¸ìš”!";
+	public override string DescriptionDialogTrialOver => "체험 기간이 종료되었습니다. 회원가입(무료)하시고 게임을 계속 즐겨보세요!";
 
 	/// <summary>
 	/// Key: "Description.Dialog.YouArePlayingOneDayRemaining"
 	/// description
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have 1 gameplay left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogYouArePlayingOneDayRemaining => "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. 1ë²ˆ í”Œë ˆì´í•œ í›„ì—ëŠ” íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string DescriptionDialogYouArePlayingOneDayRemaining => "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 1번 플레이한 후에는 회원가입(무료)을 해야 합니다.";
 
 	/// <summary>
 	/// Key: "Heading.ChooseAvatar"
 	/// modal heading
 	/// English String: "Choose Your Avatar"
 	/// </summary>
-	public override string HeadingChooseAvatar => "ì•„ë°”íƒ€ë¥¼ ì„ íƒí•˜ì„¸ìš”";
+	public override string HeadingChooseAvatar => "아바타를 선택하세요";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpOrLogin"
 	/// modal heading
 	/// English String: "Sign up for a free account or log in!"
 	/// </summary>
-	public override string HeadingDialogSignUpOrLogin => "íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í†µí•´ ê³„ì •ì„ ë§Œë“¤ê±°ë‚˜ ë¡œê·¸ì¸í•˜ì„¸ìš”!";
+	public override string HeadingDialogSignUpOrLogin => "회원가입(무료)을 통해 계정을 만들거나 로그인하세요!";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpToday"
 	/// modal heading
 	/// English String: "Sign Up Today!"
 	/// </summary>
-	public override string HeadingDialogSignUpToday => "ì§€ê¸ˆ íšŒì›ê°€ìž…í•˜ì„¸ìš”!";
+	public override string HeadingDialogSignUpToday => "지금 회원가입하세요!";
 
 	/// <summary>
 	/// Key: "Label.HaveAccount"
 	/// label
 	/// English String: "I have an account"
 	/// </summary>
-	public override string LabelHaveAccount => "ê³„ì •ì´ ìžˆìŠµë‹ˆë‹¤";
+	public override string LabelHaveAccount => "계정이 있습니다";
 
 	public GameLaunchGuestModeResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -104,37 +106,37 @@ internal class GameLaunchGuestModeResources_ko_kr : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "ë‹«ê¸°";
+		return "닫기";
 	}
 
 	protected override string _GetTemplateForActionDialogLogin()
 	{
-		return "ë¡œê·¸ì¸";
+		return "로그인";
 	}
 
 	protected override string _GetTemplateForActionDialogOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUp()
 	{
-		return "íšŒì›ê°€ìž…";
+		return "회원가입";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUpNow()
 	{
-		return "ì§€ê¸ˆ íšŒì›ê°€ìž…í•˜ì„¸ìš”!";
+		return "지금 회원가입하세요!";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpOrLogin()
 	{
-		return "ê³„ì •ì´ ìžˆì–´ì•¼ ê²Œìž„, ì±„íŒ…, ì•„ë°”íƒ€ ê¾¸ë¯¸ê¸°ë¥¼ ì¦ê¸¸ ìˆ˜ ìžˆì–´ìš”. íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ê±°ë‚˜ ê³„ì •ì´ ìžˆìœ¼ì‹  ë¶„ì€ ë¡œê·¸ì¸í•˜ì—¬ ì§€ê¸ˆ ê²Œìž„ì„ ì¦ê²¨ë³´ì„¸ìš”!";
+		return "계정이 있어야 게임, 채팅, 아바타 꾸미기를 즐길 수 있어요. 회원가입(무료)하거나 계정이 있으신 분은 로그인하여 지금 게임을 즐겨보세요!";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodayOneDayRemaining()
 	{
-		return "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. ê²ŒìŠ¤íŠ¸ ëª¨ë“œ ì´ìš©ì´ 24ì‹œê°„ ë‚´ì— ë§Œë£Œë˜ë‹ˆ íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì„¸ìš”.";
+		return "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 게스트 모드 이용이 24시간 내에 만료되니 회원가입(무료)하세요.";
 	}
 
 	/// <summary>
@@ -144,22 +146,22 @@ internal class GameLaunchGuestModeResources_ko_kr : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogSignUpTodaySomeDaysRemaining(string numDays)
 	{
-		return $"ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. ê²ŒìŠ¤íŠ¸ ëª¨ë“œ ì´ìš©ì´ {numDays}ë‚´ì— ë§Œë£Œë˜ë‹ˆ íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì„¸ìš”.";
+		return $"게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 게스트 모드 이용이 {numDays}내에 만료되니 회원가입(무료)하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodaySomeDaysRemaining()
 	{
-		return "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. ê²ŒìŠ¤íŠ¸ ëª¨ë“œ ì´ìš©ì´ {numDays}ë‚´ì— ë§Œë£Œë˜ë‹ˆ íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì„¸ìš”.";
+		return "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 게스트 모드 이용이 {numDays}내에 만료되니 회원가입(무료)하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogTrialOver()
 	{
-		return "ì²´í—˜ ê¸°ê°„ì´ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. íšŒì›ê°€ìž…(ë¬´ë£Œ)í•˜ì‹œê³  ê²Œìž„ì„ ê³„ì† ì¦ê²¨ë³´ì„¸ìš”!";
+		return "체험 기간이 종료되었습니다. 회원가입(무료)하시고 게임을 계속 즐겨보세요!";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingOneDayRemaining()
 	{
-		return "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. 1ë²ˆ í”Œë ˆì´í•œ í›„ì—ëŠ” íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. 1번 플레이한 후에는 회원가입(무료)을 해야 합니다.";
 	}
 
 	/// <summary>
@@ -169,32 +171,32 @@ internal class GameLaunchGuestModeResources_ko_kr : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogYouArePlayingSomeDaysRemaining(string numDays)
 	{
-		return $"ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. {numDays}ì¼ í”Œë ˆì´í•œ í›„ì—ëŠ” íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return $"게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. {numDays}일 플레이한 후에는 회원가입(무료)을 해야 합니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingSomeDaysRemaining()
 	{
-		return "ê²ŒìŠ¤íŠ¸ ëª¨ë“œë¡œ í”Œë ˆì´ ì¤‘ìž…ë‹ˆë‹¤. Robloxì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ë ¤ë©´ ê³„ì •ì„ ë§Œë“¤ì–´ì•¼ í•´ìš”. {numDays}ì¼ í”Œë ˆì´í•œ í›„ì—ëŠ” íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "게스트 모드로 플레이 중입니다. Roblox의 모든 기능을 사용하려면 계정을 만들어야 해요. {numDays}일 플레이한 후에는 회원가입(무료)을 해야 합니다.";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAvatar()
 	{
-		return "ì•„ë°”íƒ€ë¥¼ ì„ íƒí•˜ì„¸ìš”";
+		return "아바타를 선택하세요";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpOrLogin()
 	{
-		return "íšŒì›ê°€ìž…(ë¬´ë£Œ)ì„ í†µí•´ ê³„ì •ì„ ë§Œë“¤ê±°ë‚˜ ë¡œê·¸ì¸í•˜ì„¸ìš”!";
+		return "회원가입(무료)을 통해 계정을 만들거나 로그인하세요!";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpToday()
 	{
-		return "ì§€ê¸ˆ íšŒì›ê°€ìž…í•˜ì„¸ìš”!";
+		return "지금 회원가입하세요!";
 	}
 
 	protected override string _GetTemplateForLabelHaveAccount()
 	{
-		return "ê³„ì •ì´ ìžˆìŠµë‹ˆë‹¤";
+		return "계정이 있습니다";
 	}
 }
 

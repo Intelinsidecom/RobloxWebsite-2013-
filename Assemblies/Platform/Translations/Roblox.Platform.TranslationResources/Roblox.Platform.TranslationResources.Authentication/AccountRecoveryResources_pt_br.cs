@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
@@ -16,13 +18,13 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "Isto reiniciarÃ¡ as seguintes configuraÃ§Ãµes:";
+	public override string DescriptionResetFollowing => "Isto reiniciará as seguintes configurações:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "VocÃª estÃ¡ prestes a reverter sua conta para um estado anterior.\nPara reverter sua conta vocÃª precisa enviar uma nova senha.";
+	public override string DescriptionRevertAccount => "Você está prestes a reverter sua conta para um estado anterior.\nPara reverter sua conta você precisa enviar uma nova senha.";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
@@ -70,19 +72,19 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "VerificaÃ§Ã£o de 2 passos";
+	public override string LabelTwoStepVerification => "Verificação de 2 passos";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "Isto desabilitarÃ¡ a verificaÃ§Ã£o de 2 passos.";
+	public override string MessageDisableTwoStepVerification => "Isto desabilitará a verificação de 2 passos.";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "VocÃª estÃ¡ revertendo seu e-mail para um e-mail nÃ£o verificado.";
+	public override string MessageRevertToUnverifiedEmail => "Você está revertendo seu e-mail para um e-mail não verificado.";
 
 	public AccountRecoveryResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -96,12 +98,12 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "Isto reiniciarÃ¡ as seguintes configuraÃ§Ãµes:";
+		return "Isto reiniciará as seguintes configurações:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "VocÃª estÃ¡ prestes a reverter sua conta para um estado anterior.\nPara reverter sua conta vocÃª precisa enviar uma nova senha.";
+		return "Você está prestes a reverter sua conta para um estado anterior.\nPara reverter sua conta você precisa enviar uma nova senha.";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
@@ -141,7 +143,7 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "VerificaÃ§Ã£o de 2 passos";
+		return "Verificação de 2 passos";
 	}
 
 	/// <summary>
@@ -150,17 +152,17 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"Crie uma nova senha. {styleFront}NÃ£o{styleEnd} use a sua senha anterior.";
+		return $"Crie uma nova senha. {styleFront}Não{styleEnd} use a sua senha anterior.";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "Crie uma nova senha. {styleFront}NÃ£o{styleEnd} use a sua senha anterior.";
+		return "Crie uma nova senha. {styleFront}Não{styleEnd} use a sua senha anterior.";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "Isto desabilitarÃ¡ a verificaÃ§Ã£o de 2 passos.";
+		return "Isto desabilitará a verificação de 2 passos.";
 	}
 
 	/// <summary>
@@ -169,17 +171,17 @@ internal class AccountRecoveryResources_pt_br : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"{styleFront}NÃ£o{styleEnd} use a sua senha anterior.";
+		return $"{styleFront}Não{styleEnd} use a sua senha anterior.";
 	}
 
 	protected override string _GetTemplateForMessageDontUseOldPassword()
 	{
-		return "{styleFront}NÃ£o{styleEnd} use a sua senha anterior.";
+		return "{styleFront}Não{styleEnd} use a sua senha anterior.";
 	}
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "VocÃª estÃ¡ revertendo seu e-mail para um e-mail nÃ£o verificado.";
+		return "Você está revertendo seu e-mail para um e-mail não verificado.";
 	}
 }
 

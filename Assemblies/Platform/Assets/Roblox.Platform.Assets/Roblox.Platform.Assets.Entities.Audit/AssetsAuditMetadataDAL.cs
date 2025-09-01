@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
@@ -120,3 +120,4 @@ internal class AssetsAuditMetadataDAL
 		return RobloxDatabase.RobloxAssetsAudit.GetIDCollection<long>("AssetsAuditMetadata_GetAssetsAuditMetadataIDsByAssetIDAndAssetChangeTypeID", queryParameters);
 	}
 }
+

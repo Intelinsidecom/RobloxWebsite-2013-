@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
@@ -46,7 +48,7 @@ internal class DownloadAppResources_fr_fr : DownloadAppResources_en_us, IDownloa
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Jouez Ã  des jeux Roblox sur notre application mobile!";
+	public override string LabelPlayGamesInMobile => "Jouez à des jeux Roblox sur notre application mobile!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
@@ -60,14 +62,14 @@ internal class DownloadAppResources_fr_fr : DownloadAppResources_en_us, IDownloa
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "Des millions de jeux crÃ©Ã©s par d'autres joueurs";
+	public override string MessageAppBumperUpsell => "Des millions de jeux créés par d'autres joueurs";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
 	/// The user is being encouraged to play on the native mobile iOS app
 	/// English String: "Play Roblox in our iOS app!"
 	/// </summary>
-	public override string MessageAppBumpIOSDevice => "Jouez Ã  des jeux Roblox sur notre application iOS!";
+	public override string MessageAppBumpIOSDevice => "Jouez à des jeux Roblox sur notre application iOS!";
 
 	public DownloadAppResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -101,7 +103,7 @@ internal class DownloadAppResources_fr_fr : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Jouez Ã  des jeux Roblox sur notre application mobile!";
+		return "Jouez à des jeux Roblox sur notre application mobile!";
 	}
 
 	/// <summary>
@@ -111,12 +113,12 @@ internal class DownloadAppResources_fr_fr : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount}\u00a0Ã©valuations";
+		return $"{reviewCount}\u00a0évaluations";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount}\u00a0Ã©valuations";
+		return "{reviewCount}\u00a0évaluations";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
@@ -126,12 +128,12 @@ internal class DownloadAppResources_fr_fr : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "Des millions de jeux crÃ©Ã©s par d'autres joueurs";
+		return "Des millions de jeux créés par d'autres joueurs";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()
 	{
-		return "Jouez Ã  des jeux Roblox sur notre application iOS!";
+		return "Jouez à des jeux Roblox sur notre application iOS!";
 	}
 }
 

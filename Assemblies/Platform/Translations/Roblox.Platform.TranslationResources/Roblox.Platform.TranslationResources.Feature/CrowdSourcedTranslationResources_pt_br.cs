@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CrowdSourcedTranslationResources_en_us to provide locale specific translations where possible,
@@ -28,7 +30,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// Key: "Action.Dialog.DiscardChanges"
 	/// English String: "Discard Changes"
 	/// </summary>
-	public override string ActionDialogDiscardChanges => "Descartar alteraÃ§Ãµes";
+	public override string ActionDialogDiscardChanges => "Descartar alterações";
 
 	/// <summary>
 	/// Key: "Action.DownloadCSV"
@@ -68,13 +70,13 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// description for no content case
 	/// English String: "No source content found for this game. You can enable Auto-Scraping or manually upload content from Developer Studio to view and manage translations here."
 	/// </summary>
-	public override string DescriptionNoContent => "Nenhum conteÃºdo original encontrado para este jogo. VocÃª pode habilitar Auto-Scraping ou importar conteÃºdo manualmente do Developer Studio para ver e gerenciar traduÃ§Ãµes aqui.";
+	public override string DescriptionNoContent => "Nenhum conteúdo original encontrado para este jogo. Você pode habilitar Auto-Scraping ou importar conteúdo manualmente do Developer Studio para ver e gerenciar traduções aqui.";
 
 	/// <summary>
 	/// Key: "Description.NoContentDeveloper"
 	/// English String: "No source content found for this game. Please contact the Developer if you think this is an error."
 	/// </summary>
-	public override string DescriptionNoContentDeveloper => "Nenhum conteÃºdo fonte encontrado para este jogo. Contate o desenvolvedor se vocÃª acha que isto Ã© um erro.";
+	public override string DescriptionNoContentDeveloper => "Nenhum conteúdo fonte encontrado para este jogo. Contate o desenvolvedor se você acha que isto é um erro.";
 
 	/// <summary>
 	/// Key: "Description.NoEntriesFound"
@@ -87,33 +89,33 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// Key: "Description.UnsavedChanges"
 	/// English String: "You have unsaved changes. Do you want to proceed?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "VocÃª possui alteraÃ§Ãµes nÃ£o salvas. Deseja continuar?";
+	public override string DescriptionUnsavedChanges => "Você possui alterações não salvas. Deseja continuar?";
 
 	/// <summary>
 	/// Key: "Example.EnterTranslationHere"
 	/// placeholder text
 	/// English String: "Enter Translation Here"
 	/// </summary>
-	public override string ExampleEnterTranslationHere => "Insira a traduÃ§Ã£o aqui";
+	public override string ExampleEnterTranslationHere => "Insira a tradução aqui";
 
 	/// <summary>
 	/// Key: "Heading.AddTranslationEntry"
 	/// English String: "Add a Translation Entry"
 	/// </summary>
-	public override string HeadingAddTranslationEntry => "Adicione uma traduÃ§Ã£o";
+	public override string HeadingAddTranslationEntry => "Adicione uma tradução";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.UnsavedChanges"
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingDialogUnsavedChanges => "AlteraÃ§Ãµes nÃ£o salvas";
+	public override string HeadingDialogUnsavedChanges => "Alterações não salvas";
 
 	/// <summary>
 	/// Key: "Heading.ManageTranslations"
 	/// heading for the page
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "Gerenciar traduÃ§Ãµes";
+	public override string HeadingManageTranslations => "Gerenciar traduções";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteEntry"
@@ -126,25 +128,25 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// heading for section
 	/// English String: "No Content"
 	/// </summary>
-	public override string HeadingNoContent => "Sem conteÃºdo";
+	public override string HeadingNoContent => "Sem conteúdo";
 
 	/// <summary>
 	/// Key: "Heading.TranslationHistory"
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "HistÃ³rico de traduÃ§Ã£o";
+	public override string HeadingTranslationHistory => "Histórico de tradução";
 
 	/// <summary>
 	/// Key: "Label.ActionIrreversibleWarning"
 	/// English String: "Please note that this action is irreversible."
 	/// </summary>
-	public override string LabelActionIrreversibleWarning => "Saiba que esta aÃ§Ã£o Ã© irreversÃ­vel.";
+	public override string LabelActionIrreversibleWarning => "Saiba que esta ação é irreversível.";
 
 	/// <summary>
 	/// Key: "Label.CompletedTranslations"
 	/// English String: "Completed Translations:"
 	/// </summary>
-	public override string LabelCompletedTranslations => "TraduÃ§Ãµes completadas:";
+	public override string LabelCompletedTranslations => "Traduções completadas:";
 
 	/// <summary>
 	/// Key: "Label.Context"
@@ -170,7 +172,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// Key: "Label.FollowingTranslationsDeleted"
 	/// English String: "The following translations will be deleted."
 	/// </summary>
-	public override string LabelFollowingTranslationsDeleted => "As seguintes traduÃ§Ãµes serÃ£o excluÃ­das.";
+	public override string LabelFollowingTranslationsDeleted => "As seguintes traduções serão excluídas.";
 
 	/// <summary>
 	/// Key: "Label.Key"
@@ -184,7 +186,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// form label
 	/// English String: "Last Modified:"
 	/// </summary>
-	public override string LabelLastModified => "Ãšltima modificaÃ§Ã£o:";
+	public override string LabelLastModified => "Última modificação:";
 
 	/// <summary>
 	/// Key: "Label.LocationsInGame"
@@ -196,14 +198,14 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// Key: "Label.MoreInformation"
 	/// English String: "More Information"
 	/// </summary>
-	public override string LabelMoreInformation => "Mais informaÃ§Ãµes";
+	public override string LabelMoreInformation => "Mais informações";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// placeholder label for a required field
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "NecessÃ¡rio";
+	public override string LabelRequired => "Necessário";
 
 	/// <summary>
 	/// Key: "Label.SearchPlaceholder"
@@ -224,14 +226,14 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// sort type label
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelSortingAlphabetical => "AlfabÃ©tico";
+	public override string LabelSortingAlphabetical => "Alfabético";
 
 	/// <summary>
 	/// Key: "Label.Sorting.UntranslatedFirst"
 	/// sorting label
 	/// English String: "Untranslated First"
 	/// </summary>
-	public override string LabelSortingUntranslatedFirst => "NÃ£o traduzido primeiro";
+	public override string LabelSortingUntranslatedFirst => "Não traduzido primeiro";
 
 	/// <summary>
 	/// Key: "Label.SourceText"
@@ -257,7 +259,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// Key: "Label.TranslationCleared"
 	/// English String: "Translation cleared"
 	/// </summary>
-	public override string LabelTranslationCleared => "TraduÃ§Ã£o excluÃ­da";
+	public override string LabelTranslationCleared => "Tradução excluída";
 
 	/// <summary>
 	/// Key: "Label.Translator"
@@ -271,44 +273,44 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 	/// tooltip help text
 	/// English String: "Untranslated"
 	/// </summary>
-	public override string LabelUntranslated => "NÃ£o traduzido";
+	public override string LabelUntranslated => "Não traduzido";
 
 	/// <summary>
 	/// Key: "Response.AccessDenied"
 	/// message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "VocÃª nÃ£o tem permissÃ£o para acessar esta pÃ¡gina";
+	public override string ResponseAccessDenied => "Você não tem permissão para acessar esta página";
 
 	/// <summary>
 	/// Key: "Response.NoContextAvailable"
 	/// English String: "No context available"
 	/// </summary>
-	public override string ResponseNoContextAvailable => "Nenhum contexto disponÃ­vel";
+	public override string ResponseNoContextAvailable => "Nenhum contexto disponível";
 
 	/// <summary>
 	/// Key: "Response.NoExampleAvailable"
 	/// English String: "No example available"
 	/// </summary>
-	public override string ResponseNoExampleAvailable => "Nenhum exemplo disponÃ­vel";
+	public override string ResponseNoExampleAvailable => "Nenhum exemplo disponível";
 
 	/// <summary>
 	/// Key: "Response.NoGameLocationsAvailable"
 	/// English String: "No game locations have been auto-scraped."
 	/// </summary>
-	public override string ResponseNoGameLocationsAvailable => "Nenhum local do jogo sofreu â€œAuto-Scrapingâ€.";
+	public override string ResponseNoGameLocationsAvailable => "Nenhum local do jogo sofreu “Auto-Scraping”.";
 
 	/// <summary>
 	/// Key: "Response.NoKeyAvailable"
 	/// English String: "No key available"
 	/// </summary>
-	public override string ResponseNoKeyAvailable => "Nenhuma chave disponÃ­vel";
+	public override string ResponseNoKeyAvailable => "Nenhuma chave disponível";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationHistory"
 	/// English String: "No translation history available."
 	/// </summary>
-	public override string ResponseNoTranslationHistory => "Nenhum histÃ³rico de traduÃ§Ã£o disponÃ­vel.";
+	public override string ResponseNoTranslationHistory => "Nenhum histórico de tradução disponível.";
 
 	/// <summary>
 	/// Key: "Response.ProblemDeletingEntry"
@@ -338,7 +340,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForActionDialogDiscardChanges()
 	{
-		return "Descartar alteraÃ§Ãµes";
+		return "Descartar alterações";
 	}
 
 	protected override string _GetTemplateForActionDownloadCSV()
@@ -368,12 +370,12 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForDescriptionNoContent()
 	{
-		return "Nenhum conteÃºdo original encontrado para este jogo. VocÃª pode habilitar Auto-Scraping ou importar conteÃºdo manualmente do Developer Studio para ver e gerenciar traduÃ§Ãµes aqui.";
+		return "Nenhum conteúdo original encontrado para este jogo. Você pode habilitar Auto-Scraping ou importar conteúdo manualmente do Developer Studio para ver e gerenciar traduções aqui.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContentDeveloper()
 	{
-		return "Nenhum conteÃºdo fonte encontrado para este jogo. Contate o desenvolvedor se vocÃª acha que isto Ã© um erro.";
+		return "Nenhum conteúdo fonte encontrado para este jogo. Contate o desenvolvedor se você acha que isto é um erro.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoEntriesFound()
@@ -383,27 +385,27 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "VocÃª possui alteraÃ§Ãµes nÃ£o salvas. Deseja continuar?";
+		return "Você possui alterações não salvas. Deseja continuar?";
 	}
 
 	protected override string _GetTemplateForExampleEnterTranslationHere()
 	{
-		return "Insira a traduÃ§Ã£o aqui";
+		return "Insira a tradução aqui";
 	}
 
 	protected override string _GetTemplateForHeadingAddTranslationEntry()
 	{
-		return "Adicione uma traduÃ§Ã£o";
+		return "Adicione uma tradução";
 	}
 
 	protected override string _GetTemplateForHeadingDialogUnsavedChanges()
 	{
-		return "AlteraÃ§Ãµes nÃ£o salvas";
+		return "Alterações não salvas";
 	}
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "Gerenciar traduÃ§Ãµes";
+		return "Gerenciar traduções";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteEntry()
@@ -413,22 +415,22 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForHeadingNoContent()
 	{
-		return "Sem conteÃºdo";
+		return "Sem conteúdo";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "HistÃ³rico de traduÃ§Ã£o";
+		return "Histórico de tradução";
 	}
 
 	protected override string _GetTemplateForLabelActionIrreversibleWarning()
 	{
-		return "Saiba que esta aÃ§Ã£o Ã© irreversÃ­vel.";
+		return "Saiba que esta ação é irreversível.";
 	}
 
 	protected override string _GetTemplateForLabelCompletedTranslations()
 	{
-		return "TraduÃ§Ãµes completadas:";
+		return "Traduções completadas:";
 	}
 
 	protected override string _GetTemplateForLabelContext()
@@ -448,7 +450,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelFollowingTranslationsDeleted()
 	{
-		return "As seguintes traduÃ§Ãµes serÃ£o excluÃ­das.";
+		return "As seguintes traduções serão excluídas.";
 	}
 
 	protected override string _GetTemplateForLabelKey()
@@ -458,7 +460,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelLastModified()
 	{
-		return "Ãšltima modificaÃ§Ã£o:";
+		return "Última modificação:";
 	}
 
 	protected override string _GetTemplateForLabelLocationsInGame()
@@ -468,7 +470,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelMoreInformation()
 	{
-		return "Mais informaÃ§Ãµes";
+		return "Mais informações";
 	}
 
 	/// <summary>
@@ -487,7 +489,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "NecessÃ¡rio";
+		return "Necessário";
 	}
 
 	protected override string _GetTemplateForLabelSearchPlaceholder()
@@ -502,12 +504,12 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelSortingAlphabetical()
 	{
-		return "AlfabÃ©tico";
+		return "Alfabético";
 	}
 
 	protected override string _GetTemplateForLabelSortingUntranslatedFirst()
 	{
-		return "NÃ£o traduzido primeiro";
+		return "Não traduzido primeiro";
 	}
 
 	protected override string _GetTemplateForLabelSourceText()
@@ -527,7 +529,7 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelTranslationCleared()
 	{
-		return "TraduÃ§Ã£o excluÃ­da";
+		return "Tradução excluída";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
@@ -537,37 +539,37 @@ internal class CrowdSourcedTranslationResources_pt_br : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForLabelUntranslated()
 	{
-		return "NÃ£o traduzido";
+		return "Não traduzido";
 	}
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "VocÃª nÃ£o tem permissÃ£o para acessar esta pÃ¡gina";
+		return "Você não tem permissão para acessar esta página";
 	}
 
 	protected override string _GetTemplateForResponseNoContextAvailable()
 	{
-		return "Nenhum contexto disponÃ­vel";
+		return "Nenhum contexto disponível";
 	}
 
 	protected override string _GetTemplateForResponseNoExampleAvailable()
 	{
-		return "Nenhum exemplo disponÃ­vel";
+		return "Nenhum exemplo disponível";
 	}
 
 	protected override string _GetTemplateForResponseNoGameLocationsAvailable()
 	{
-		return "Nenhum local do jogo sofreu â€œAuto-Scrapingâ€.";
+		return "Nenhum local do jogo sofreu “Auto-Scraping”.";
 	}
 
 	protected override string _GetTemplateForResponseNoKeyAvailable()
 	{
-		return "Nenhuma chave disponÃ­vel";
+		return "Nenhuma chave disponível";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationHistory()
 	{
-		return "Nenhum histÃ³rico de traduÃ§Ã£o disponÃ­vel.";
+		return "Nenhum histórico de tradução disponível.";
 	}
 
 	protected override string _GetTemplateForResponseProblemDeletingEntry()

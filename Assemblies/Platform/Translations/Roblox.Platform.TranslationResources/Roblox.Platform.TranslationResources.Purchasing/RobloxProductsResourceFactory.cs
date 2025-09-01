@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     static class RobloxProductsResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Roblox;
 
 namespace Roblox.Platform.Email.Entities;
 

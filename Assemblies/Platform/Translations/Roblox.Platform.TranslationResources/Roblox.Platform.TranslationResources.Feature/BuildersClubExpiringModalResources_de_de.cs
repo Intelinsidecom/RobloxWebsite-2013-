@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -18,35 +20,35 @@ internal class BuildersClubExpiringModalResources_de_de : BuildersClubExpiringMo
 	/// button text
 	/// English String: "I Want To Renew!"
 	/// </summary>
-	public override string ActionWantToRenew => "Ich mÃ¶chte verlÃ¤ngern!";
+	public override string ActionWantToRenew => "Ich möchte verlängern!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpired"
 	/// description text
 	/// English String: "Oh, no! Your Builders Club membership has expired!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpired => "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft ist abgelaufen!";
+	public override string DescriptionBuildersClubExpired => "Oh nein! Deine „Builders Club“-Mitgliedschaft ist abgelaufen!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringOneDay"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring in one day!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringOneDay => "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft in einem Tag ab!";
+	public override string DescriptionBuildersClubExpiringOneDay => "Oh nein! Deine „Builders Club“-Mitgliedschaft läuft in einem Tag ab!";
 
 	/// <summary>
 	/// Key: "Description.BuildersClubExpiringToday"
 	/// description
 	/// English String: "Oh, no! Your Builders Club membership is expiring today!"
 	/// </summary>
-	public override string DescriptionBuildersClubExpiringToday => "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft heute ab!";
+	public override string DescriptionBuildersClubExpiringToday => "Oh nein! Deine „Builders Club“-Mitgliedschaft läuft heute ab!";
 
 	/// <summary>
 	/// Key: "Heading.DontMissRenewNow"
 	/// modal heading
 	/// English String: "Don't Miss Out - Renew Now!"
 	/// </summary>
-	public override string HeadingDontMissRenewNow => "Nicht verpassen. Jetzt verlÃ¤ngern!";
+	public override string HeadingDontMissRenewNow => "Nicht verpassen. Jetzt verlängern!";
 
 	public BuildersClubExpiringModalResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -60,17 +62,17 @@ internal class BuildersClubExpiringModalResources_de_de : BuildersClubExpiringMo
 
 	protected override string _GetTemplateForActionWantToRenew()
 	{
-		return "Ich mÃ¶chte verlÃ¤ngern!";
+		return "Ich möchte verlängern!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpired()
 	{
-		return "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft ist abgelaufen!";
+		return "Oh nein! Deine „Builders Club“-Mitgliedschaft ist abgelaufen!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringOneDay()
 	{
-		return "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft in einem Tag ab!";
+		return "Oh nein! Deine „Builders Club“-Mitgliedschaft läuft in einem Tag ab!";
 	}
 
 	/// <summary>
@@ -80,22 +82,22 @@ internal class BuildersClubExpiringModalResources_de_de : BuildersClubExpiringMo
 	/// </summary>
 	public override string DescriptionBuildersClubExpiringSomeDays(string numDays)
 	{
-		return $"Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft in {numDays} Tagen ab!";
+		return $"Oh nein! Deine „Builders Club“-Mitgliedschaft läuft in {numDays} Tagen ab!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringSomeDays()
 	{
-		return "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft in {numDays} Tagen ab!";
+		return "Oh nein! Deine „Builders Club“-Mitgliedschaft läuft in {numDays} Tagen ab!";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubExpiringToday()
 	{
-		return "Oh nein! Deine â€žBuilders Clubâ€œ-Mitgliedschaft lÃ¤uft heute ab!";
+		return "Oh nein! Deine „Builders Club“-Mitgliedschaft läuft heute ab!";
 	}
 
 	protected override string _GetTemplateForHeadingDontMissRenewNow()
 	{
-		return "Nicht verpassen. Jetzt verlÃ¤ngern!";
+		return "Nicht verpassen. Jetzt verlängern!";
 	}
 }
 

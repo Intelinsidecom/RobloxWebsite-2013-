@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IEmailConfirmationResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IEmailConfirmationResources : ITranslationResources
 
 {
 	/// <summary>
@@ -40,3 +42,5 @@
 
 
 }
+
+

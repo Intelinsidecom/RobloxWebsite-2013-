@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides NotificationStreamResources_en_us to provide locale specific translations where possible,
@@ -68,7 +70,7 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// Heading displayed in game updates view, containing back link to notifications main view.
 	/// English String: "All Notifications"
 	/// </summary>
-	public override string HeadingBackToAllNotifications => "Todas as notificaÃ§Ãµes";
+	public override string HeadingBackToAllNotifications => "Todas as notificações";
 
 	/// <summary>
 	/// Key: "Label.NoNetworkConnectionText"
@@ -80,38 +82,38 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// Key: "Label.NoNotifications"
 	/// English String: "No Notifications"
 	/// </summary>
-	public override string LabelNoNotifications => "Nenhuma notificaÃ§Ã£o";
+	public override string LabelNoNotifications => "Nenhuma notificação";
 
 	/// <summary>
 	/// Key: "Label.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string LabelNotifications => "NotificaÃ§Ãµes";
+	public override string LabelNotifications => "Notificações";
 
 	/// <summary>
 	/// Key: "Label.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelSettings => "ConfiguraÃ§Ãµes";
+	public override string LabelSettings => "Configurações";
 
 	/// <summary>
 	/// Key: "Message.GameNotPlayableOnDevice"
 	/// Message displayed on game update card when the game is not playable on the device type.
 	/// English String: "Not playable on this device"
 	/// </summary>
-	public override string MessageGameNotPlayableOnDevice => "NÃ£o Ã© compatÃ­vel com este dispositivo";
+	public override string MessageGameNotPlayableOnDevice => "Não é compatível com este dispositivo";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsOther"
 	/// English String: "That user already has the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsOther => "O usuÃ¡rio jÃ¡ possui o nÃºmero mÃ¡ximo de amigos.";
+	public override string MessageTooManyFriendsOther => "O usuário já possui o número máximo de amigos.";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsSelf"
 	/// English String: "You already have the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsSelf => "VocÃª jÃ¡ possui o nÃºmero mÃ¡ximo de amigos.";
+	public override string MessageTooManyFriendsSelf => "Você já possui o número máximo de amigos.";
 
 	public NotificationStreamResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -180,7 +182,7 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 
 	protected override string _GetTemplateForHeadingBackToAllNotifications()
 	{
-		return "Todas as notificaÃ§Ãµes";
+		return "Todas as notificações";
 	}
 
 	protected override string _GetTemplateForLabelNoNetworkConnectionText()
@@ -190,17 +192,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 
 	protected override string _GetTemplateForLabelNoNotifications()
 	{
-		return "Nenhuma notificaÃ§Ã£o";
+		return "Nenhuma notificação";
 	}
 
 	protected override string _GetTemplateForLabelNotifications()
 	{
-		return "NotificaÃ§Ãµes";
+		return "Notificações";
 	}
 
 	protected override string _GetTemplateForLabelSettings()
 	{
-		return "ConfiguraÃ§Ãµes";
+		return "Configurações";
 	}
 
 	/// <summary>
@@ -262,17 +264,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentDouble(string userOne, string userTwo)
 	{
-		return $"VocÃª fez amizade com {userOne} e {userTwo}!";
+		return $"Você fez amizade com {userOne} e {userTwo}!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentDouble()
 	{
-		return "VocÃª fez amizade com {userOne} e {userTwo}!";
+		return "Você fez amizade com {userOne} e {userTwo}!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentMultiple()
 	{
-		return "VocÃª fez amizade com {userOne}, {userTwo} e mais {userMultipleCount, plural, =1 {# pessoa} other {# pessoas}}!";
+		return "Você fez amizade com {userOne}, {userTwo} e mais {userMultipleCount, plural, =1 {# pessoa} other {# pessoas}}!";
 	}
 
 	/// <summary>
@@ -281,12 +283,12 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentSingle(string userOne)
 	{
-		return $"VocÃª fez amizade com {userOne}!";
+		return $"Você fez amizade com {userOne}!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentSingle()
 	{
-		return "VocÃª fez amizade com {userOne}!";
+		return "Você fez amizade com {userOne}!";
 	}
 
 	/// <summary>
@@ -295,17 +297,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailable(string month, string year, string gameName)
 	{
-		return $"RelatÃ³rio analÃ­tico de {month} de {year}  para {gameName} disponÃ­vel.";
+		return $"Relatório analítico de {month} de {year}  para {gameName} disponível.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailable()
 	{
-		return "RelatÃ³rio analÃ­tico de {month} de {year}  para {gameName} disponÃ­vel.";
+		return "Relatório analítico de {month} de {year}  para {gameName} disponível.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple()
 	{
-		return "RelatÃ³rio analÃ­tico de {month} de {year} para {gameName} e {otherCount, plural, =1 {# outro jogo} other {# outros jogos}} disponÃ­vel";
+		return "Relatório analítico de {month} de {year} para {gameName} e {otherCount, plural, =1 {# outro jogo} other {# outros jogos}} disponível";
 	}
 
 	/// <summary>
@@ -314,12 +316,12 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailableMultiple2(string month, string year, string gameCount)
 	{
-		return $"RelatÃ³rio analÃ­tico de {month} de {year}  para {gameCount} jogos disponÃ­vel.";
+		return $"Relatório analítico de {month} de {year}  para {gameCount} jogos disponível.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple2()
 	{
-		return "RelatÃ³rio analÃ­tico de {month} de {year}  para {gameCount} jogos disponÃ­vel.";
+		return "Relatório analítico de {month} de {year}  para {gameCount} jogos disponível.";
 	}
 
 	/// <summary>
@@ -361,17 +363,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne} e {userTwo} enviaram pedidos de amizade para vocÃª.";
+		return $"{userOne} e {userTwo} enviaram pedidos de amizade para você.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentDouble()
 	{
-		return "{userOne} e {userTwo} enviaram pedidos de amizade para vocÃª.";
+		return "{userOne} e {userTwo} enviaram pedidos de amizade para você.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentMultiple()
 	{
-		return "{userOne}, {userTwo} e mais {userMultipleCount, plural, =1 {# pessoa} other {# pessoas}} enviaram pedidos de amizade para vocÃª.";
+		return "{userOne}, {userTwo} e mais {userMultipleCount, plural, =1 {# pessoa} other {# pessoas}} enviaram pedidos de amizade para você.";
 	}
 
 	/// <summary>
@@ -380,17 +382,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentSingle(string userOne)
 	{
-		return $"{userOne} enviou um pedido de amizade para vocÃª.";
+		return $"{userOne} enviou um pedido de amizade para você.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentSingle()
 	{
-		return "{userOne} enviou um pedido de amizade para vocÃª.";
+		return "{userOne} enviou um pedido de amizade para você.";
 	}
 
 	protected override string _GetTemplateForMessageGameNotPlayableOnDevice()
 	{
-		return "NÃ£o Ã© compatÃ­vel com este dispositivo";
+		return "Não é compatível com este dispositivo";
 	}
 
 	/// <summary>
@@ -423,17 +425,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 
 	protected override string _GetTemplateForMessageNumberofNewNotifications()
 	{
-		return "{notificationCount, plural, =1 {# nova notificaÃ§Ã£o} other {# novas notificaÃ§Ãµes}}";
+		return "{notificationCount, plural, =1 {# nova notificação} other {# novas notificações}}";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsOther()
 	{
-		return "O usuÃ¡rio jÃ¡ possui o nÃºmero mÃ¡ximo de amigos.";
+		return "O usuário já possui o número máximo de amigos.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsSelf()
 	{
-		return "VocÃª jÃ¡ possui o nÃºmero mÃ¡ximo de amigos.";
+		return "Você já possui o número máximo de amigos.";
 	}
 
 	/// <summary>
@@ -453,17 +455,17 @@ internal class NotificationStreamResources_pt_br : NotificationStreamResources_e
 
 	protected override string _GetTemplateForMessageYouHaveNewFriendRequests()
 	{
-		return "VocÃª tem {numberOfRequests} novo(s) {numberOfRequests, plural, =1 {pedido de amizade} other {pedidos de amizade}}.";
+		return "Você tem {numberOfRequests} novo(s) {numberOfRequests, plural, =1 {pedido de amizade} other {pedidos de amizade}}.";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriends()
 	{
-		return "VocÃª tem {numberOfFriends} novo(s) {numberOfFriends, plural, =1 {amigo} other {amigos}}.";
+		return "Você tem {numberOfFriends} novo(s) {numberOfFriends, plural, =1 {amigo} other {amigos}}.";
 	}
 
 	protected override string _GetTemplateForMessageYouReceivedMessages()
 	{
-		return "VocÃª recebeu {numberOfMessagesText} {numberOfMessages, plural, =1 {mensagem} other {mensagens}}";
+		return "Você recebeu {numberOfMessagesText} {numberOfMessages, plural, =1 {mensagem} other {mensagens}}";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides PushNotificationsResources_en_us to provide locale specific translations where possible,
@@ -18,7 +20,7 @@ internal class PushNotificationsResources_de_de : PushNotificationsResources_en_
 	/// New activity on Roblox!
 	/// English String: "New activity on Roblox!"
 	/// </summary>
-	public override string MessageDefaultSystemMessageBody => "Neue AktivitÃ¤t bei Roblox!";
+	public override string MessageDefaultSystemMessageBody => "Neue Aktivität bei Roblox!";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Title"
@@ -88,12 +90,12 @@ internal class PushNotificationsResources_de_de : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageAddedToPrivateServerWhiteListAddedToWhiteListMessage(string vipInviter, string server, string place)
 	{
-		return $"{vipInviter} hat dich auf den VIP-Server â€ž{server}â€œ ({place}) eingeladen!";
+		return $"{vipInviter} hat dich auf den VIP-Server „{server}“ ({place}) eingeladen!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListAddedToWhiteListMessage()
 	{
-		return "{vipInviter} hat dich auf den VIP-Server â€ž{server}â€œ ({place}) eingeladen!";
+		return "{vipInviter} hat dich auf den VIP-Server „{server}“ ({place}) eingeladen!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListDefault()
@@ -103,7 +105,7 @@ internal class PushNotificationsResources_de_de : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageBody()
 	{
-		return "Neue AktivitÃ¤t bei Roblox!";
+		return "Neue Aktivität bei Roblox!";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageTitle()
@@ -301,12 +303,12 @@ internal class PushNotificationsResources_de_de : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagesPlayTogether(string actorUsername, string universeName)
 	{
-		return $"{actorUsername} hat ein Spiel zum gemeinsamen Spielen gewÃ¤hlt: {universeName}";
+		return $"{actorUsername} hat ein Spiel zum gemeinsamen Spielen gewählt: {universeName}";
 	}
 
 	protected override string _GetTemplateForMessagesPlayTogether()
 	{
-		return "{actorUsername} hat ein Spiel zum gemeinsamen Spielen gewÃ¤hlt: {universeName}";
+		return "{actorUsername} hat ein Spiel zum gemeinsamen Spielen gewählt: {universeName}";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
@@ -10,43 +12,43 @@ internal class SocialResources_ja_jp : SocialResources_en_us, ISocialResources, 
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Unlink"
 	/// English String: "Unlink"
 	/// </summary>
-	public override string ActionUnlink => "ãƒªãƒ³ã‚¯è§£é™¤";
+	public override string ActionUnlink => "リンク解除";
 
 	/// <summary>
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "æŽ¥ç¶šæ¸ˆã¿ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã“ã“ã§è§£é™¤ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒªãƒ³ã‚¯è§£é™¤ã‚’ã™ã‚‹ã¨Robloxã‹ã‚‰ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã•ã‚Œã¾ã™ã€‚";
+	public override string DescriptionConnectedAccounts => "接続済みのアカウントをここで解除。アカウントのリンク解除をするとRobloxからログアウトされます。";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãƒªãƒ³ã‚¯è§£é™¤ã™ã‚‹ã¨Robloxã‹ã‚‰ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã•ã‚Œã¾ã™ã€‚ã¾ãŸãƒ­ã‚°ã‚¤ãƒ³ã—ç›´ã™ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãƒªãƒ³ã‚¯ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+	public override string DescriptionUnlinkLogOutWarning => "このアカウントをリンク解除するとRobloxからログアウトされます。またログインし直すには、アカウントをリンクする必要があります。";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
 	/// English String: "Connected Accounts"
 	/// </summary>
-	public override string HeadingConnectedAccounts => "æŽ¥ç¶šæ¸ˆã¿ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ";
+	public override string HeadingConnectedAccounts => "接続済みアカウント";
 
 	/// <summary>
 	/// Key: "Placeholder.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string PlaceholderPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+	public override string PlaceholderPassword => "パスワード";
 
 	/// <summary>
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€‚";
+	public override string ResponseInvalidPassword => "無効なパスワード。";
 
 	public SocialResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -55,27 +57,27 @@ internal class SocialResources_ja_jp : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionUnlink()
 	{
-		return "ãƒªãƒ³ã‚¯è§£é™¤";
+		return "リンク解除";
 	}
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "æŽ¥ç¶šæ¸ˆã¿ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ã“ã“ã§è§£é™¤ã€‚ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®ãƒªãƒ³ã‚¯è§£é™¤ã‚’ã™ã‚‹ã¨Robloxã‹ã‚‰ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã•ã‚Œã¾ã™ã€‚";
+		return "接続済みのアカウントをここで解除。アカウントのリンク解除をするとRobloxからログアウトされます。";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "ã“ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãƒªãƒ³ã‚¯è§£é™¤ã™ã‚‹ã¨Robloxã‹ã‚‰ãƒ­ã‚°ã‚¢ã‚¦ãƒˆã•ã‚Œã¾ã™ã€‚ã¾ãŸãƒ­ã‚°ã‚¤ãƒ³ã—ç›´ã™ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ãƒªãƒ³ã‚¯ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "このアカウントをリンク解除するとRobloxからログアウトされます。またログインし直すには、アカウントをリンクする必要があります。";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
 	{
-		return "æŽ¥ç¶šæ¸ˆã¿ã‚¢ã‚«ã‚¦ãƒ³ãƒˆ";
+		return "接続済みアカウント";
 	}
 
 	/// <summary>
@@ -84,22 +86,22 @@ internal class SocialResources_ja_jp : SocialResources_en_us, ISocialResources, 
 	/// </summary>
 	public override string HeadingUnlink(string provider)
 	{
-		return $"{provider} ã®ãƒªãƒ³ã‚¯è§£é™¤";
+		return $"{provider} のリンク解除";
 	}
 
 	protected override string _GetTemplateForHeadingUnlink()
 	{
-		return "{provider} ã®ãƒªãƒ³ã‚¯è§£é™¤";
+		return "{provider} のリンク解除";
 	}
 
 	protected override string _GetTemplateForPlaceholderPassword()
 	{
-		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+		return "パスワード";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "ç„¡åŠ¹ãªãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã€‚";
+		return "無効なパスワード。";
 	}
 }
 

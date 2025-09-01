@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.NoHistoricalData"
 	/// English String: "No historical data to chart."
 	/// </summary>
-	public override string LabelNoHistoricalData => "Aucune donnÃ©e historique Ã  suivre.";
+	public override string LabelNoHistoricalData => "Aucune donnée historique à suivre.";
 
 	/// <summary>
 	/// Key: "Label.OriginalPrice"
@@ -46,20 +48,20 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.QuantitySold"
 	/// English String: "Quantity Sold"
 	/// </summary>
-	public override string LabelQuantitySold => "QuantitÃ© vendue";
+	public override string LabelQuantitySold => "Quantité vendue";
 
 	/// <summary>
 	/// Key: "Label.RecentAveragePrice"
 	/// English String: "Recent Average Price"
 	/// </summary>
-	public override string LabelRecentAveragePrice => "Prix moyen rÃ©cent";
+	public override string LabelRecentAveragePrice => "Prix moyen récent";
 
 	/// <summary>
 	/// Key: "Label.ResaleDataLoadFailure"
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "Erreur lors du chargement de la carte des prix et revendeurs. RÃ©essaie";
+	public override string LabelResaleDataLoadFailure => "Erreur lors du chargement de la carte des prix et revendeurs. Réessaie";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
@@ -71,13 +73,13 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.Volume"
 	/// English String: "Volume"
 	/// </summary>
-	public override string LabelVolume => "QuantitÃ©";
+	public override string LabelVolume => "Quantité";
 
 	/// <summary>
 	/// Key: "Message.NoOneSelling"
 	/// English String: "Sorry, no one is reselling this item at the moment."
 	/// </summary>
-	public override string MessageNoOneSelling => "DÃ©solÃ©, cet objet n'a aucun revendeur pour le moment.";
+	public override string MessageNoOneSelling => "Désolé, cet objet n'a aucun revendeur pour le moment.";
 
 	public PrivateSalesResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -106,7 +108,7 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelNoHistoricalData()
 	{
-		return "Aucune donnÃ©e historique Ã  suivre.";
+		return "Aucune donnée historique à suivre.";
 	}
 
 	protected override string _GetTemplateForLabelOriginalPrice()
@@ -116,17 +118,17 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelQuantitySold()
 	{
-		return "QuantitÃ© vendue";
+		return "Quantité vendue";
 	}
 
 	protected override string _GetTemplateForLabelRecentAveragePrice()
 	{
-		return "Prix moyen rÃ©cent";
+		return "Prix moyen récent";
 	}
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "Erreur lors du chargement de la carte des prix et revendeurs. RÃ©essaie";
+		return "Erreur lors du chargement de la carte des prix et revendeurs. Réessaie";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
@@ -136,7 +138,7 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelVolume()
 	{
-		return "QuantitÃ©";
+		return "Quantité";
 	}
 
 	/// <summary>
@@ -155,7 +157,7 @@ internal class PrivateSalesResources_fr_fr : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForMessageNoOneSelling()
 	{
-		return "DÃ©solÃ©, cet objet n'a aucun revendeur pour le moment.";
+		return "Désolé, cet objet n'a aucun revendeur pour le moment.";
 	}
 }
 

@@ -1,6 +1,6 @@
-﻿using Roblox.ContentFilterApi.Client;
-using Roblox.Platform.Moderation.Implementation;
-using Roblox.Platform.Moderation.Interfaces;
+using Roblox.ContentFilterApi.Client;
+using Roblox.Moderation.Implementation;
+using Roblox.Moderation.Interfaces;
 namespace Roblox.Moderation.Factoriespublic {
     class WhitelistFactory
 

@@ -1,4 +1,4 @@
-using Roblox.GameLocalization.Client.GameLocalizationSettings;
+using Roblox.Platform.GameLocalization.Client.GameLocalizationSettings;
 
 namespace Roblox.Platform.GameLocalization.Client
 {

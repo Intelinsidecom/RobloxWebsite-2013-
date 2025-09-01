@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class ServerCapabilityBase
+namespace Roblox.Platform.Games.Client {
+    public class ServerCapabilityBase
 
 {
 	public bool Cpu { get; set; }

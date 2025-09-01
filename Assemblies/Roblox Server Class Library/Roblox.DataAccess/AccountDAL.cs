@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -92,3 +92,4 @@ public class AccountDAL
 		return RobloxDatabase.RobloxAccounts.Lookup("AccountsV2_GetAccountV2ByName", BuildDAL, queryParameters);
 	}
 }
+

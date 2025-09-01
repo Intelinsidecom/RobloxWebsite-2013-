@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IExternalLinksResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IExternalLinksResources : ITranslationResources
 
 {
 	/// <summary>
@@ -40,3 +42,5 @@
 
 
 }
+
+

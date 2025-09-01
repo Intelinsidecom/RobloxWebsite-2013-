@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface IAccountRecoveryResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface IAccountRecoveryResources : ITranslationResources
 
 {
 	/// <summary>
@@ -95,3 +97,5 @@
 
 
 }
+
+

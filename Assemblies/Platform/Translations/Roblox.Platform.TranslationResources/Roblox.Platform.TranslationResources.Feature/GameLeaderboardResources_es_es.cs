@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
@@ -52,13 +54,13 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "TodavÃ­a no te has clasificado en este perÃ­odo de tiempo. Â¡Ve a ganar puntos!";
+	public override string LabelGoGetPoints => "Todavía no te has clasificado en este período de tiempo. ¡Ve a ganar puntos!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "LÃ­der";
+	public override string LabelLeader => "Líder";
 
 	/// <summary>
 	/// Key: "Label.Loading"
@@ -76,7 +78,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.Owner"
 	/// English String: "Owner"
 	/// </summary>
-	public override string LabelOwner => "DueÃ±o";
+	public override string LabelOwner => "Dueño";
 
 	/// <summary>
 	/// Key: "Label.PastMonth"
@@ -112,7 +114,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "Ver mÃ¡s";
+	public override string LabelSeeMore => "Ver más";
 
 	/// <summary>
 	/// Key: "Label.Today"
@@ -174,12 +176,12 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "TodavÃ­a no te has clasificado en este perÃ­odo de tiempo. Â¡Ve a ganar puntos!";
+		return "Todavía no te has clasificado en este período de tiempo. ¡Ve a ganar puntos!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "LÃ­der";
+		return "Líder";
 	}
 
 	protected override string _GetTemplateForLabelLoading()
@@ -194,7 +196,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelOwner()
 	{
-		return "DueÃ±o";
+		return "Dueño";
 	}
 
 	protected override string _GetTemplateForLabelPastMonth()
@@ -224,7 +226,7 @@ internal class GameLeaderboardResources_es_es : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "Ver mÃ¡s";
+		return "Ver más";
 	}
 
 	protected override string _GetTemplateForLabelToday()

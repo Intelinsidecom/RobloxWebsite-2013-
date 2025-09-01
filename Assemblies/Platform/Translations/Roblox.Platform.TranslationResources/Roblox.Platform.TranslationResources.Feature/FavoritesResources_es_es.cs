@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionAddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string ActionAddToFavorites => "AÃ±adir a favoritos";
+	public override string ActionAddToFavorites => "Añadir a favoritos";
 
 	/// <summary>
 	/// Key: "ActionCancel"
@@ -22,7 +24,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionLogin"
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "Iniciar sesiÃ³n";
+	public override string ActionLogin => "Iniciar sesión";
 
 	/// <summary>
 	/// Key: "ActionRemoveFromFavorites"
@@ -34,7 +36,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "Para aÃ±adir esto a favoritos tienes que iniciar sesiÃ³n o registrarte.";
+	public override string DescriptionLoginRequired => "Para añadir esto a favoritos tienes que iniciar sesión o registrarte.";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
@@ -54,7 +56,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "Label.AddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string LabelAddToFavorites => "AÃ±adir a favoritos";
+	public override string LabelAddToFavorites => "Añadir a favoritos";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
@@ -80,7 +82,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "LabelLoginRequired"
 	/// English String: "Login Required"
 	/// </summary>
-	public override string LabelLoginRequired => "Inicio de sesiÃ³n obligatorio";
+	public override string LabelLoginRequired => "Inicio de sesión obligatorio";
 
 	/// <summary>
 	/// Key: "MessageAssetNotFoundError"
@@ -95,7 +97,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionAddToFavorites()
 	{
-		return "AÃ±adir a favoritos";
+		return "Añadir a favoritos";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -105,7 +107,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "Iniciar sesiÃ³n";
+		return "Iniciar sesión";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromFavorites()
@@ -115,7 +117,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Para aÃ±adir esto a favoritos tienes que iniciar sesiÃ³n o registrarte.";
+		return "Para añadir esto a favoritos tienes que iniciar sesión o registrarte.";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
@@ -145,7 +147,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelAddToFavorites()
 	{
-		return "AÃ±adir a favoritos";
+		return "Añadir a favoritos";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
@@ -165,7 +167,7 @@ internal class FavoritesResources_es_es : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelLoginRequired()
 	{
-		return "Inicio de sesiÃ³n obligatorio";
+		return "Inicio de sesión obligatorio";
 	}
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()

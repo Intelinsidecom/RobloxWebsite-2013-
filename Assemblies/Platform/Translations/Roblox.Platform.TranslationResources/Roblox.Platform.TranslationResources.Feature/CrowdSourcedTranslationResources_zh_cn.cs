@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CrowdSourcedTranslationResources_en_us to provide locale specific translations where possible,
@@ -10,311 +12,311 @@ internal class CrowdSourcedTranslationResources_zh_cn : CrowdSourcedTranslationR
 	/// Key: "Action.AddTranslationEntry"
 	/// English String: "Add New Entry"
 	/// </summary>
-	public override string ActionAddTranslationEntry => "æ·»åŠ æ–°æ¡ç›®";
+	public override string ActionAddTranslationEntry => "添加新条目";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "åˆ é™¤";
+	public override string ActionDelete => "删除";
 
 	/// <summary>
 	/// Key: "Action.Dialog.DiscardChanges"
 	/// English String: "Discard Changes"
 	/// </summary>
-	public override string ActionDialogDiscardChanges => "æ”¾å¼ƒæ›´æ”¹";
+	public override string ActionDialogDiscardChanges => "放弃更改";
 
 	/// <summary>
 	/// Key: "Action.DownloadCSV"
 	/// button label
 	/// English String: "Download CSV"
 	/// </summary>
-	public override string ActionDownloadCSV => "ä¸‹è½½ CSV";
+	public override string ActionDownloadCSV => "下载 CSV";
 
 	/// <summary>
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "åŠ è½½æ›´å¤š";
+	public override string ActionLoadMore => "加载更多";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// button text
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "ä¿å­˜";
+	public override string ActionSave => "保存";
 
 	/// <summary>
 	/// Key: "Action.Saved"
 	/// button text when data is saved
 	/// English String: "Saved"
 	/// </summary>
-	public override string ActionSaved => "å·²ä¿å­˜";
+	public override string ActionSaved => "已保存";
 
 	/// <summary>
 	/// Key: "Action.Saving"
 	/// English String: "Saving"
 	/// </summary>
-	public override string ActionSaving => "æ­£åœ¨ä¿å­˜";
+	public override string ActionSaving => "正在保存";
 
 	/// <summary>
 	/// Key: "Description.NoContent"
 	/// description for no content case
 	/// English String: "No source content found for this game. You can enable Auto-Scraping or manually upload content from Developer Studio to view and manage translations here."
 	/// </summary>
-	public override string DescriptionNoContent => "æœªæ‰¾åˆ°æ­¤æ¸¸æˆçš„æºå†…å®¹ã€‚ä½ å¯ä»¥å¯ç”¨è‡ªåŠ¨æŠ“å–ï¼Œæˆ–ä»Ž Developer Studio æ‰‹åŠ¨ä¸Šä¼ å†…å®¹ï¼Œå¹¶åœ¨æ­¤å¤„æŸ¥çœ‹ä¸Žç®¡ç†ç¿»è¯‘ã€‚";
+	public override string DescriptionNoContent => "未找到此游戏的源内容。你可以启用自动抓取，或从 Developer Studio 手动上传内容，并在此处查看与管理翻译。";
 
 	/// <summary>
 	/// Key: "Description.NoContentDeveloper"
 	/// English String: "No source content found for this game. Please contact the Developer if you think this is an error."
 	/// </summary>
-	public override string DescriptionNoContentDeveloper => "æ‰¾ä¸åˆ°æ­¤æ¸¸æˆçš„åŽŸå†…å®¹ã€‚å¦‚æžœä½ è®¤ä¸ºè¿™æ˜¯ä¸ªé”™è¯¯ï¼Œè¯·è”ç³»å¼€å‘è€…ã€‚";
+	public override string DescriptionNoContentDeveloper => "找不到此游戏的原内容。如果你认为这是个错误，请联系开发者。";
 
 	/// <summary>
 	/// Key: "Description.NoEntriesFound"
 	/// message shown when no entries are found while doing a search or filter
 	/// English String: "No entries were found based on current search filters"
 	/// </summary>
-	public override string DescriptionNoEntriesFound => "æœªæ‰¾åˆ°åŸºäºŽç›®å‰æœç´¢æˆ–ç­›é€‰çš„ç»“æžœ";
+	public override string DescriptionNoEntriesFound => "未找到基于目前搜索或筛选的结果";
 
 	/// <summary>
 	/// Key: "Description.UnsavedChanges"
 	/// English String: "You have unsaved changes. Do you want to proceed?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "ä½ æœ‰æœªä¿å­˜çš„æ›´æ”¹ã€‚æ˜¯å¦ç»§ç»­ï¼Ÿ";
+	public override string DescriptionUnsavedChanges => "你有未保存的更改。是否继续？";
 
 	/// <summary>
 	/// Key: "Example.EnterTranslationHere"
 	/// placeholder text
 	/// English String: "Enter Translation Here"
 	/// </summary>
-	public override string ExampleEnterTranslationHere => "åœ¨æ­¤å¤„è¾“å…¥ç¿»è¯‘";
+	public override string ExampleEnterTranslationHere => "在此处输入翻译";
 
 	/// <summary>
 	/// Key: "Heading.AddTranslationEntry"
 	/// English String: "Add a Translation Entry"
 	/// </summary>
-	public override string HeadingAddTranslationEntry => "æ·»åŠ ç¿»è¯‘æ¡ç›®";
+	public override string HeadingAddTranslationEntry => "添加翻译条目";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.UnsavedChanges"
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingDialogUnsavedChanges => "æœªä¿å­˜çš„æ›´æ”¹";
+	public override string HeadingDialogUnsavedChanges => "未保存的更改";
 
 	/// <summary>
 	/// Key: "Heading.ManageTranslations"
 	/// heading for the page
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "ç®¡ç†ç¿»è¯‘";
+	public override string HeadingManageTranslations => "管理翻译";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteEntry"
 	/// English String: "Are you sure you want to delete this entry?"
 	/// </summary>
-	public override string HeadingModalDeleteEntry => "æ˜¯å¦ç¡®å®šè¦åˆ é™¤æ­¤æ¡ç›®ï¼Ÿ";
+	public override string HeadingModalDeleteEntry => "是否确定要删除此条目？";
 
 	/// <summary>
 	/// Key: "Heading.NoContent"
 	/// heading for section
 	/// English String: "No Content"
 	/// </summary>
-	public override string HeadingNoContent => "æ— å†…å®¹";
+	public override string HeadingNoContent => "无内容";
 
 	/// <summary>
 	/// Key: "Heading.TranslationHistory"
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "ç¿»è¯‘åŽ†å²è®°å½•";
+	public override string HeadingTranslationHistory => "翻译历史记录";
 
 	/// <summary>
 	/// Key: "Label.ActionIrreversibleWarning"
 	/// English String: "Please note that this action is irreversible."
 	/// </summary>
-	public override string LabelActionIrreversibleWarning => "è¯·æ³¨æ„ï¼Œæ­¤åŠ¨ä½œä¸å¯æ’¤å›žã€‚";
+	public override string LabelActionIrreversibleWarning => "请注意，此动作不可撤回。";
 
 	/// <summary>
 	/// Key: "Label.CompletedTranslations"
 	/// English String: "Completed Translations:"
 	/// </summary>
-	public override string LabelCompletedTranslations => "å·²å®Œæˆçš„ç¿»è¯‘ï¼š";
+	public override string LabelCompletedTranslations => "已完成的翻译：";
 
 	/// <summary>
 	/// Key: "Label.Context"
 	/// form label - context of the translation text
 	/// English String: "Context:"
 	/// </summary>
-	public override string LabelContext => "è¯­å¢ƒï¼š";
+	public override string LabelContext => "语境：";
 
 	/// <summary>
 	/// Key: "Label.Deleting"
 	/// English String: "Deleting"
 	/// </summary>
-	public override string LabelDeleting => "æ­£åœ¨åˆ é™¤";
+	public override string LabelDeleting => "正在删除";
 
 	/// <summary>
 	/// Key: "Label.Example"
 	/// example text
 	/// English String: "Example:"
 	/// </summary>
-	public override string LabelExample => "ç¤ºä¾‹ï¼š";
+	public override string LabelExample => "示例：";
 
 	/// <summary>
 	/// Key: "Label.FollowingTranslationsDeleted"
 	/// English String: "The following translations will be deleted."
 	/// </summary>
-	public override string LabelFollowingTranslationsDeleted => "ä¸‹åˆ—ç¿»è¯‘å†…å®¹å°†è¢«åˆ é™¤ã€‚";
+	public override string LabelFollowingTranslationsDeleted => "下列翻译内容将被删除。";
 
 	/// <summary>
 	/// Key: "Label.Key"
 	/// label for the key of text to be translated
 	/// English String: "Key:"
 	/// </summary>
-	public override string LabelKey => "å­—ç¬¦ä¸²ï¼š";
+	public override string LabelKey => "字符串：";
 
 	/// <summary>
 	/// Key: "Label.LastModified"
 	/// form label
 	/// English String: "Last Modified:"
 	/// </summary>
-	public override string LabelLastModified => "ä¸Šæ¬¡ä¿®æ”¹æ—¶é—´ï¼š";
+	public override string LabelLastModified => "上次修改时间：";
 
 	/// <summary>
 	/// Key: "Label.LocationsInGame"
 	/// English String: "Locations in Game"
 	/// </summary>
-	public override string LabelLocationsInGame => "æ¸¸æˆä¸­ä½ç½®";
+	public override string LabelLocationsInGame => "游戏中位置";
 
 	/// <summary>
 	/// Key: "Label.MoreInformation"
 	/// English String: "More Information"
 	/// </summary>
-	public override string LabelMoreInformation => "æ›´å¤šä¿¡æ¯";
+	public override string LabelMoreInformation => "更多信息";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// placeholder label for a required field
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "å¿…å¡«";
+	public override string LabelRequired => "必填";
 
 	/// <summary>
 	/// Key: "Label.SearchPlaceholder"
 	/// placeholder text for a search field
 	/// English String: "Search..."
 	/// </summary>
-	public override string LabelSearchPlaceholder => "æœç´¢...";
+	public override string LabelSearchPlaceholder => "搜索...";
 
 	/// <summary>
 	/// Key: "Label.SortBy"
 	/// sorting drop down label
 	/// English String: "Sort By"
 	/// </summary>
-	public override string LabelSortBy => "æŽ’åºä¾æ®";
+	public override string LabelSortBy => "排序依据";
 
 	/// <summary>
 	/// Key: "Label.Sorting.Alphabetical"
 	/// sort type label
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelSortingAlphabetical => "æŒ‰å­—æ¯é¡ºåº";
+	public override string LabelSortingAlphabetical => "按字母顺序";
 
 	/// <summary>
 	/// Key: "Label.Sorting.UntranslatedFirst"
 	/// sorting label
 	/// English String: "Untranslated First"
 	/// </summary>
-	public override string LabelSortingUntranslatedFirst => "æœªç¿»è¯‘å†…å®¹ä¼˜å…ˆ";
+	public override string LabelSortingUntranslatedFirst => "未翻译内容优先";
 
 	/// <summary>
 	/// Key: "Label.SourceText"
 	/// English String: "Source Text:"
 	/// </summary>
-	public override string LabelSourceText => "æºæ–‡æœ¬ï¼š";
+	public override string LabelSourceText => "源文本：";
 
 	/// <summary>
 	/// Key: "Label.TextToTranslate"
 	/// form label
 	/// English String: "Text to Translate:"
 	/// </summary>
-	public override string LabelTextToTranslate => "å¾…ç¿»è¯‘æ–‡æœ¬ï¼š";
+	public override string LabelTextToTranslate => "待翻译文本：";
 
 	/// <summary>
 	/// Key: "Label.Translated"
 	/// tooltip help text
 	/// English String: "Translated"
 	/// </summary>
-	public override string LabelTranslated => "å·²ç¿»è¯‘";
+	public override string LabelTranslated => "已翻译";
 
 	/// <summary>
 	/// Key: "Label.TranslationCleared"
 	/// English String: "Translation cleared"
 	/// </summary>
-	public override string LabelTranslationCleared => "ç¿»è¯‘å†…å®¹å·²æ¸…é™¤";
+	public override string LabelTranslationCleared => "翻译内容已清除";
 
 	/// <summary>
 	/// Key: "Label.Translator"
 	/// form label
 	/// English String: "Translator:"
 	/// </summary>
-	public override string LabelTranslator => "è¯‘è€…ï¼š";
+	public override string LabelTranslator => "译者：";
 
 	/// <summary>
 	/// Key: "Label.Untranslated"
 	/// tooltip help text
 	/// English String: "Untranslated"
 	/// </summary>
-	public override string LabelUntranslated => "æœªç¿»è¯‘";
+	public override string LabelUntranslated => "未翻译";
 
 	/// <summary>
 	/// Key: "Response.AccessDenied"
 	/// message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "ä½ æ²¡æœ‰è®¿é—®æ­¤é¡µé¢çš„æƒé™";
+	public override string ResponseAccessDenied => "你没有访问此页面的权限";
 
 	/// <summary>
 	/// Key: "Response.NoContextAvailable"
 	/// English String: "No context available"
 	/// </summary>
-	public override string ResponseNoContextAvailable => "æ— è¯­å¢ƒ";
+	public override string ResponseNoContextAvailable => "无语境";
 
 	/// <summary>
 	/// Key: "Response.NoExampleAvailable"
 	/// English String: "No example available"
 	/// </summary>
-	public override string ResponseNoExampleAvailable => "æ— ç¤ºä¾‹";
+	public override string ResponseNoExampleAvailable => "无示例";
 
 	/// <summary>
 	/// Key: "Response.NoGameLocationsAvailable"
 	/// English String: "No game locations have been auto-scraped."
 	/// </summary>
-	public override string ResponseNoGameLocationsAvailable => "æ²¡æœ‰è‡ªåŠ¨æŠ“å–çš„æ¸¸æˆåœ°ç‚¹ã€‚";
+	public override string ResponseNoGameLocationsAvailable => "没有自动抓取的游戏地点。";
 
 	/// <summary>
 	/// Key: "Response.NoKeyAvailable"
 	/// English String: "No key available"
 	/// </summary>
-	public override string ResponseNoKeyAvailable => "æ— å­—ç¬¦ä¸²";
+	public override string ResponseNoKeyAvailable => "无字符串";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationHistory"
 	/// English String: "No translation history available."
 	/// </summary>
-	public override string ResponseNoTranslationHistory => "æ— ç¿»è¯‘åŽ†å²è®°å½•ã€‚";
+	public override string ResponseNoTranslationHistory => "无翻译历史记录。";
 
 	/// <summary>
 	/// Key: "Response.ProblemDeletingEntry"
 	/// English String: "There was a problem deleting entry."
 	/// </summary>
-	public override string ResponseProblemDeletingEntry => "åˆ é™¤æ¡ç›®æ—¶å‡ºçŽ°é—®é¢˜ã€‚";
+	public override string ResponseProblemDeletingEntry => "删除条目时出现问题。";
 
 	public CrowdSourcedTranslationResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -323,152 +325,152 @@ internal class CrowdSourcedTranslationResources_zh_cn : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForActionAddTranslationEntry()
 	{
-		return "æ·»åŠ æ–°æ¡ç›®";
+		return "添加新条目";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "åˆ é™¤";
+		return "删除";
 	}
 
 	protected override string _GetTemplateForActionDialogDiscardChanges()
 	{
-		return "æ”¾å¼ƒæ›´æ”¹";
+		return "放弃更改";
 	}
 
 	protected override string _GetTemplateForActionDownloadCSV()
 	{
-		return "ä¸‹è½½ CSV";
+		return "下载 CSV";
 	}
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "åŠ è½½æ›´å¤š";
+		return "加载更多";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "ä¿å­˜";
+		return "保存";
 	}
 
 	protected override string _GetTemplateForActionSaved()
 	{
-		return "å·²ä¿å­˜";
+		return "已保存";
 	}
 
 	protected override string _GetTemplateForActionSaving()
 	{
-		return "æ­£åœ¨ä¿å­˜";
+		return "正在保存";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContent()
 	{
-		return "æœªæ‰¾åˆ°æ­¤æ¸¸æˆçš„æºå†…å®¹ã€‚ä½ å¯ä»¥å¯ç”¨è‡ªåŠ¨æŠ“å–ï¼Œæˆ–ä»Ž Developer Studio æ‰‹åŠ¨ä¸Šä¼ å†…å®¹ï¼Œå¹¶åœ¨æ­¤å¤„æŸ¥çœ‹ä¸Žç®¡ç†ç¿»è¯‘ã€‚";
+		return "未找到此游戏的源内容。你可以启用自动抓取，或从 Developer Studio 手动上传内容，并在此处查看与管理翻译。";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContentDeveloper()
 	{
-		return "æ‰¾ä¸åˆ°æ­¤æ¸¸æˆçš„åŽŸå†…å®¹ã€‚å¦‚æžœä½ è®¤ä¸ºè¿™æ˜¯ä¸ªé”™è¯¯ï¼Œè¯·è”ç³»å¼€å‘è€…ã€‚";
+		return "找不到此游戏的原内容。如果你认为这是个错误，请联系开发者。";
 	}
 
 	protected override string _GetTemplateForDescriptionNoEntriesFound()
 	{
-		return "æœªæ‰¾åˆ°åŸºäºŽç›®å‰æœç´¢æˆ–ç­›é€‰çš„ç»“æžœ";
+		return "未找到基于目前搜索或筛选的结果";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "ä½ æœ‰æœªä¿å­˜çš„æ›´æ”¹ã€‚æ˜¯å¦ç»§ç»­ï¼Ÿ";
+		return "你有未保存的更改。是否继续？";
 	}
 
 	protected override string _GetTemplateForExampleEnterTranslationHere()
 	{
-		return "åœ¨æ­¤å¤„è¾“å…¥ç¿»è¯‘";
+		return "在此处输入翻译";
 	}
 
 	protected override string _GetTemplateForHeadingAddTranslationEntry()
 	{
-		return "æ·»åŠ ç¿»è¯‘æ¡ç›®";
+		return "添加翻译条目";
 	}
 
 	protected override string _GetTemplateForHeadingDialogUnsavedChanges()
 	{
-		return "æœªä¿å­˜çš„æ›´æ”¹";
+		return "未保存的更改";
 	}
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "ç®¡ç†ç¿»è¯‘";
+		return "管理翻译";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteEntry()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦åˆ é™¤æ­¤æ¡ç›®ï¼Ÿ";
+		return "是否确定要删除此条目？";
 	}
 
 	protected override string _GetTemplateForHeadingNoContent()
 	{
-		return "æ— å†…å®¹";
+		return "无内容";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "ç¿»è¯‘åŽ†å²è®°å½•";
+		return "翻译历史记录";
 	}
 
 	protected override string _GetTemplateForLabelActionIrreversibleWarning()
 	{
-		return "è¯·æ³¨æ„ï¼Œæ­¤åŠ¨ä½œä¸å¯æ’¤å›žã€‚";
+		return "请注意，此动作不可撤回。";
 	}
 
 	protected override string _GetTemplateForLabelCompletedTranslations()
 	{
-		return "å·²å®Œæˆçš„ç¿»è¯‘ï¼š";
+		return "已完成的翻译：";
 	}
 
 	protected override string _GetTemplateForLabelContext()
 	{
-		return "è¯­å¢ƒï¼š";
+		return "语境：";
 	}
 
 	protected override string _GetTemplateForLabelDeleting()
 	{
-		return "æ­£åœ¨åˆ é™¤";
+		return "正在删除";
 	}
 
 	protected override string _GetTemplateForLabelExample()
 	{
-		return "ç¤ºä¾‹ï¼š";
+		return "示例：";
 	}
 
 	protected override string _GetTemplateForLabelFollowingTranslationsDeleted()
 	{
-		return "ä¸‹åˆ—ç¿»è¯‘å†…å®¹å°†è¢«åˆ é™¤ã€‚";
+		return "下列翻译内容将被删除。";
 	}
 
 	protected override string _GetTemplateForLabelKey()
 	{
-		return "å­—ç¬¦ä¸²ï¼š";
+		return "字符串：";
 	}
 
 	protected override string _GetTemplateForLabelLastModified()
 	{
-		return "ä¸Šæ¬¡ä¿®æ”¹æ—¶é—´ï¼š";
+		return "上次修改时间：";
 	}
 
 	protected override string _GetTemplateForLabelLocationsInGame()
 	{
-		return "æ¸¸æˆä¸­ä½ç½®";
+		return "游戏中位置";
 	}
 
 	protected override string _GetTemplateForLabelMoreInformation()
 	{
-		return "æ›´å¤šä¿¡æ¯";
+		return "更多信息";
 	}
 
 	/// <summary>
@@ -477,102 +479,102 @@ internal class CrowdSourcedTranslationResources_zh_cn : CrowdSourcedTranslationR
 	/// </summary>
 	public override string LabelRemainingCharacters(string remainingCharacters)
 	{
-		return $"å‰©ä½™ {remainingCharacters} ä¸ªå­—ç¬¦";
+		return $"剩余 {remainingCharacters} 个字符";
 	}
 
 	protected override string _GetTemplateForLabelRemainingCharacters()
 	{
-		return "å‰©ä½™ {remainingCharacters} ä¸ªå­—ç¬¦";
+		return "剩余 {remainingCharacters} 个字符";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "å¿…å¡«";
+		return "必填";
 	}
 
 	protected override string _GetTemplateForLabelSearchPlaceholder()
 	{
-		return "æœç´¢...";
+		return "搜索...";
 	}
 
 	protected override string _GetTemplateForLabelSortBy()
 	{
-		return "æŽ’åºä¾æ®";
+		return "排序依据";
 	}
 
 	protected override string _GetTemplateForLabelSortingAlphabetical()
 	{
-		return "æŒ‰å­—æ¯é¡ºåº";
+		return "按字母顺序";
 	}
 
 	protected override string _GetTemplateForLabelSortingUntranslatedFirst()
 	{
-		return "æœªç¿»è¯‘å†…å®¹ä¼˜å…ˆ";
+		return "未翻译内容优先";
 	}
 
 	protected override string _GetTemplateForLabelSourceText()
 	{
-		return "æºæ–‡æœ¬ï¼š";
+		return "源文本：";
 	}
 
 	protected override string _GetTemplateForLabelTextToTranslate()
 	{
-		return "å¾…ç¿»è¯‘æ–‡æœ¬ï¼š";
+		return "待翻译文本：";
 	}
 
 	protected override string _GetTemplateForLabelTranslated()
 	{
-		return "å·²ç¿»è¯‘";
+		return "已翻译";
 	}
 
 	protected override string _GetTemplateForLabelTranslationCleared()
 	{
-		return "ç¿»è¯‘å†…å®¹å·²æ¸…é™¤";
+		return "翻译内容已清除";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "è¯‘è€…ï¼š";
+		return "译者：";
 	}
 
 	protected override string _GetTemplateForLabelUntranslated()
 	{
-		return "æœªç¿»è¯‘";
+		return "未翻译";
 	}
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "ä½ æ²¡æœ‰è®¿é—®æ­¤é¡µé¢çš„æƒé™";
+		return "你没有访问此页面的权限";
 	}
 
 	protected override string _GetTemplateForResponseNoContextAvailable()
 	{
-		return "æ— è¯­å¢ƒ";
+		return "无语境";
 	}
 
 	protected override string _GetTemplateForResponseNoExampleAvailable()
 	{
-		return "æ— ç¤ºä¾‹";
+		return "无示例";
 	}
 
 	protected override string _GetTemplateForResponseNoGameLocationsAvailable()
 	{
-		return "æ²¡æœ‰è‡ªåŠ¨æŠ“å–çš„æ¸¸æˆåœ°ç‚¹ã€‚";
+		return "没有自动抓取的游戏地点。";
 	}
 
 	protected override string _GetTemplateForResponseNoKeyAvailable()
 	{
-		return "æ— å­—ç¬¦ä¸²";
+		return "无字符串";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationHistory()
 	{
-		return "æ— ç¿»è¯‘åŽ†å²è®°å½•ã€‚";
+		return "无翻译历史记录。";
 	}
 
 	protected override string _GetTemplateForResponseProblemDeletingEntry()
 	{
-		return "åˆ é™¤æ¡ç›®æ—¶å‡ºçŽ°é—®é¢˜ã€‚";
+		return "删除条目时出现问题。";
 	}
 }
 

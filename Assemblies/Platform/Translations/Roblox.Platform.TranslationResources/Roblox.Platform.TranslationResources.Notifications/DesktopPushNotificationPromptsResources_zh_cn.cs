@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides DesktopPushNotificationPromptsResources_en_us to provide locale specific translations where possible,
@@ -11,56 +13,56 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// Notify Me
 	/// English String: "Notify Me"
 	/// </summary>
-	public override string ActionAcceptNotificationPrompt => "é€šçŸ¥æˆ‘";
+	public override string ActionAcceptNotificationPrompt => "通知我";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// Close
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "å…³é—­";
+	public override string ActionClose => "关闭";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsBackOn"
 	/// Turn Push Notifications Back On
 	/// English String: "Turn Push Notifications Back On"
 	/// </summary>
-	public override string HeadingTurnNotificationsBackOn => "é‡æ–°å¼€å¯æŽ¨é€é€šçŸ¥";
+	public override string HeadingTurnNotificationsBackOn => "重新开启推送通知";
 
 	/// <summary>
 	/// Key: "Heading.TurnNotificationsOn"
 	/// Enable Desktop Push Notifications
 	/// English String: "Enable Desktop Push Notifications"
 	/// </summary>
-	public override string HeadingTurnNotificationsOn => "å¯ç”¨æ¡Œé¢æŽ¨é€é€šçŸ¥";
+	public override string HeadingTurnNotificationsOn => "启用桌面推送通知";
 
 	/// <summary>
 	/// Key: "Label.ClickGreenLockOnUrl"
 	/// Click the green lock next to the URL bar to open up your site permissions.
 	/// English String: "Click the green lock next to the URL bar to open up your site permissions."
 	/// </summary>
-	public override string LabelClickGreenLockOnUrl => "ç‚¹æŒ‰ URL æ æ—è¾¹çš„ç»¿è‰²é”ï¼Œå¼€å¯ä½ çš„ç½‘ç«™æƒé™ã€‚";
+	public override string LabelClickGreenLockOnUrl => "点按 URL 栏旁边的绿色锁，开启你的网站权限。";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsDisabledSuccess"
 	/// Push notifications have been disabled.
 	/// English String: "Push notifications have been disabled."
 	/// </summary>
-	public override string MessagePushNotificationsDisabledSuccess => "æŽ¨é€é€šçŸ¥å·²åœç”¨ã€‚";
+	public override string MessagePushNotificationsDisabledSuccess => "推送通知已停用。";
 
 	/// <summary>
 	/// Key: "Message.PushNotificationsEnabledSuccess"
 	/// Push notifications have been enabled!
 	/// English String: "Push notifications have been enabled!"
 	/// </summary>
-	public override string MessagePushNotificationsEnabledSuccess => "æŽ¨é€é€šçŸ¥å·²å¯ç”¨ï¼";
+	public override string MessagePushNotificationsEnabledSuccess => "推送通知已启用！";
 
 	/// <summary>
 	/// Key: "Message.SendNotificationsPrompt"
 	/// Can we send you notifications on this computer?
 	/// English String: "Can we send you notifications on this computer?"
 	/// </summary>
-	public override string MessageSendNotificationsPrompt => "æˆ‘ä»¬æ˜¯å¦å¯å°†é€šçŸ¥å‘é€è‡³è¿™å°ç”µè„‘?";
+	public override string MessageSendNotificationsPrompt => "我们是否可将通知发送至这台电脑?";
 
 	public DesktopPushNotificationPromptsResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -69,27 +71,27 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 
 	protected override string _GetTemplateForActionAcceptNotificationPrompt()
 	{
-		return "é€šçŸ¥æˆ‘";
+		return "通知我";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "å…³é—­";
+		return "关闭";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsBackOn()
 	{
-		return "é‡æ–°å¼€å¯æŽ¨é€é€šçŸ¥";
+		return "重新开启推送通知";
 	}
 
 	protected override string _GetTemplateForHeadingTurnNotificationsOn()
 	{
-		return "å¯ç”¨æ¡Œé¢æŽ¨é€é€šçŸ¥";
+		return "启用桌面推送通知";
 	}
 
 	protected override string _GetTemplateForLabelClickGreenLockOnUrl()
 	{
-		return "ç‚¹æŒ‰ URL æ æ—è¾¹çš„ç»¿è‰²é”ï¼Œå¼€å¯ä½ çš„ç½‘ç«™æƒé™ã€‚";
+		return "点按 URL 栏旁边的绿色锁，开启你的网站权限。";
 	}
 
 	/// <summary>
@@ -99,12 +101,12 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"é€‰æ‹©{startBold}å…è®¸{endBold}ä»¥é‡æ–°å¼€å¯é€šçŸ¥åŠŸèƒ½ã€‚";
+		return $"选择{startBold}允许{endBold}以重新开启通知功能。";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowNotificationsBackOn()
 	{
-		return "é€‰æ‹©{startBold}å…è®¸{endBold}ä»¥é‡æ–°å¼€å¯é€šçŸ¥åŠŸèƒ½ã€‚";
+		return "选择{startBold}允许{endBold}以重新开启通知功能。";
 	}
 
 	/// <summary>
@@ -114,12 +116,12 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAllowReceiveNotifications(string startBold, string endBold)
 	{
-		return $"çŽ°åœ¨åªè¦åœ¨ä½ çš„æµè§ˆå™¨ä¸­ç‚¹å‡»{startBold}å…è®¸{endBold}ï¼Œæˆ‘ä»¬å°±ä¼šå¼€å§‹å‘é€æŽ¨é€é€šçŸ¥ç»™ä½ äº†ï¼";
+		return $"现在只要在你的浏览器中点击{startBold}允许{endBold}，我们就会开始发送推送通知给你了！";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAllowReceiveNotifications()
 	{
-		return "çŽ°åœ¨åªè¦åœ¨ä½ çš„æµè§ˆå™¨ä¸­ç‚¹å‡»{startBold}å…è®¸{endBold}ï¼Œæˆ‘ä»¬å°±ä¼šå¼€å§‹å‘é€æŽ¨é€é€šçŸ¥ç»™ä½ äº†ï¼";
+		return "现在只要在你的浏览器中点击{startBold}允许{endBold}，我们就会开始发送推送通知给你了！";
 	}
 
 	/// <summary>
@@ -129,12 +131,12 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysAllowNotificationsBackOn(string startBold, string endBold)
 	{
-		return $"é€‰æ‹©{startBold}æ­¤ç½‘ç«™å§‹ç»ˆå…è®¸{endBold}ä»¥é‡æ–°å¼€å¯é€šçŸ¥åŠŸèƒ½ã€‚";
+		return $"选择{startBold}此网站始终允许{endBold}以重新开启通知功能。";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysAllowNotificationsBackOn()
 	{
-		return "é€‰æ‹©{startBold}æ­¤ç½‘ç«™å§‹ç»ˆå…è®¸{endBold}ä»¥é‡æ–°å¼€å¯é€šçŸ¥åŠŸèƒ½ã€‚";
+		return "选择{startBold}此网站始终允许{endBold}以重新开启通知功能。";
 	}
 
 	/// <summary>
@@ -144,12 +146,12 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionAlwaysReceiveNotifications(string startBold, string endBold)
 	{
-		return $"çŽ°åœ¨åªè¦åœ¨ä½ çš„æµè§ˆå™¨ä¸­ç‚¹å‡»{startBold}å§‹ç»ˆæŽ¥æ”¶é€šçŸ¥{endBold}ï¼Œæˆ‘ä»¬å°±ä¼šå¼€å§‹å‘é€æŽ¨é€é€šçŸ¥ç»™ä½ äº†ï¼";
+		return $"现在只要在你的浏览器中点击{startBold}始终接收通知{endBold}，我们就会开始发送推送通知给你了！";
 	}
 
 	protected override string _GetTemplateForLabelInstructionAlwaysReceiveNotifications()
 	{
-		return "çŽ°åœ¨åªè¦åœ¨ä½ çš„æµè§ˆå™¨ä¸­ç‚¹å‡»{startBold}å§‹ç»ˆæŽ¥æ”¶é€šçŸ¥{endBold}ï¼Œæˆ‘ä»¬å°±ä¼šå¼€å§‹å‘é€æŽ¨é€é€šçŸ¥ç»™ä½ äº†ï¼";
+		return "现在只要在你的浏览器中点击{startBold}始终接收通知{endBold}，我们就会开始发送推送通知给你了！";
 	}
 
 	/// <summary>
@@ -159,27 +161,27 @@ internal class DesktopPushNotificationPromptsResources_zh_cn : DesktopPushNotifi
 	/// </summary>
 	public override string LabelInstructionClickPermissionDropdown(string startBold, string endBold)
 	{
-		return $"åœ¨{startBold}æƒé™{endBold}æ ‡ç­¾ä¸­ï¼Œç‚¹æŒ‰â€œé€šçŸ¥â€æ—è¾¹çš„ä¸‹æ‹‰ç®­å¤´ã€‚";
+		return $"在{startBold}权限{endBold}标签中，点按“通知”旁边的下拉箭头。";
 	}
 
 	protected override string _GetTemplateForLabelInstructionClickPermissionDropdown()
 	{
-		return "åœ¨{startBold}æƒé™{endBold}æ ‡ç­¾ä¸­ï¼Œç‚¹æŒ‰â€œé€šçŸ¥â€æ—è¾¹çš„ä¸‹æ‹‰ç®­å¤´ã€‚";
+		return "在{startBold}权限{endBold}标签中，点按“通知”旁边的下拉箭头。";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsDisabledSuccess()
 	{
-		return "æŽ¨é€é€šçŸ¥å·²åœç”¨ã€‚";
+		return "推送通知已停用。";
 	}
 
 	protected override string _GetTemplateForMessagePushNotificationsEnabledSuccess()
 	{
-		return "æŽ¨é€é€šçŸ¥å·²å¯ç”¨ï¼";
+		return "推送通知已启用！";
 	}
 
 	protected override string _GetTemplateForMessageSendNotificationsPrompt()
 	{
-		return "æˆ‘ä»¬æ˜¯å¦å¯å°†é€šçŸ¥å‘é€è‡³è¿™å°ç”µè„‘?";
+		return "我们是否可将通知发送至这台电脑?";
 	}
 }
 

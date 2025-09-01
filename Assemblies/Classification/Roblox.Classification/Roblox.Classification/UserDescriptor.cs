@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.Segmentation.Client;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Classification;
 

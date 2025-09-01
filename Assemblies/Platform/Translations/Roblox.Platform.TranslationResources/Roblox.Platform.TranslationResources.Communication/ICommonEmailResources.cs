@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Communicationpublic {
-    interface ICommonEmailResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Communication {
+    public interface ICommonEmailResources : ITranslationResources
 
 {
 	/// <summary>
@@ -12,3 +14,5 @@
 
 
 }
+
+

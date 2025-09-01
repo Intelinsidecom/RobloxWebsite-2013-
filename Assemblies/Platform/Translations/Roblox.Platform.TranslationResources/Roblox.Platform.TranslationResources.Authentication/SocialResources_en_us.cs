@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class SocialResources_en_us : TranslationResourcesBase, ISocialResources, ITranslationResources
 
 {
@@ -150,3 +150,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

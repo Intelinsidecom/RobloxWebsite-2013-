@@ -1,9 +1,7 @@
-﻿namespace Roblox.Moderation.Propertiespublic {
-    interface ISettings
-
+namespace Roblox.Moderation.Properties
 {
-	int GetOrCreateUnexpiredEntityAttempts { get; }
-}
-
-
+    public interface ISettings
+    {
+        int GetOrCreateUnexpiredEntityAttempts { get; }
+    }
 }

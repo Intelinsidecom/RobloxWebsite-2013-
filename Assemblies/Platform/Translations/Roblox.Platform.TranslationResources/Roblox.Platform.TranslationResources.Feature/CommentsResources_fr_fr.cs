@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
@@ -42,38 +44,38 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.CharactersRemaining"
 	/// English String: "characters remaining"
 	/// </summary>
-	public override string LabelCharactersRemaining => "caractÃ¨res restants";
+	public override string LabelCharactersRemaining => "caractères restants";
 
 	/// <summary>
 	/// Key: "Label.CommentModerated"
 	/// Feedback for user when their comment has been moderated
 	/// English String: "Your comment has been moderated."
 	/// </summary>
-	public override string LabelCommentModerated => "Ton commentaire a Ã©tÃ© modÃ©rÃ©.";
+	public override string LabelCommentModerated => "Ton commentaire a été modéré.";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "VÃ©rifie ton adresse e-mail";
+	public override string LabelEmailVerifiedTitle => "Vérifie ton adresse e-mail";
 
 	/// <summary>
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "Cette fonctionnalitÃ© n'est pas disponible.";
+	public override string LabelFeatureNotAvailable => "Cette fonctionnalité n'est pas disponible.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "Les commentaires doivent porter sur l'objet ou l'emplacement que vous commentez. Les liens ne sont pas autorisÃ©s.";
+	public override string LabelLinksNotAllowedMessage => "Les commentaires doivent porter sur l'objet ou l'emplacement que vous commentez. Les liens ne sont pas autorisés.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
 	/// English String: "Links Not Allowed"
 	/// </summary>
-	public override string LabelLinksNotAllowedTitle => "Liens non autorisÃ©s";
+	public override string LabelLinksNotAllowedTitle => "Liens non autorisés";
 
 	/// <summary>
 	/// Key: "Label.MoreComments"
@@ -109,7 +111,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.SorryWrong"
 	/// English String: "Sorry, something went wrong."
 	/// </summary>
-	public override string LabelSorryWrong => "DÃ©solÃ©, un problÃ¨me est survenu.";
+	public override string LabelSorryWrong => "Désolé, un problème est survenu.";
 
 	/// <summary>
 	/// Key: "Label.Text"
@@ -121,7 +123,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.TooManyChracters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyChracters => "Trop de caractÃ¨res\u00a0!";
+	public override string LabelTooManyChracters => "Trop de caractères\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.TooManyNewLines"
@@ -140,7 +142,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "Vous publiez trop de commentaires. Attendez un moment avant d'en Ã©crire un nouveau.";
+	public override string LabelUserFlooded => "Vous publiez trop de commentaires. Attendez un moment avant d'en écrire un nouveau.";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -159,13 +161,13 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "VÃ©rifier";
+	public override string LabelVerify => "Vérifier";
 
 	/// <summary>
 	/// Key: "Label.WriteAComment"
 	/// English String: "Write a comment!"
 	/// </summary>
-	public override string LabelWriteAComment => "RÃ©digez un commentaire\u00a0!";
+	public override string LabelWriteAComment => "Rédigez un commentaire\u00a0!";
 
 	public CommentsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -214,12 +216,12 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelCharactersRemaining()
 	{
-		return "caractÃ¨res restants";
+		return "caractères restants";
 	}
 
 	protected override string _GetTemplateForLabelCommentModerated()
 	{
-		return "Ton commentaire a Ã©tÃ© modÃ©rÃ©.";
+		return "Ton commentaire a été modéré.";
 	}
 
 	/// <summary>
@@ -228,32 +230,32 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"Tu dois vÃ©rifier ton adresse e-mail avant de pouvoir Ã©crire un commentaire. Pour ce faire, rendez-vous sur la page\u00a0: {accountPageLink}.";
+		return $"Tu dois vérifier ton adresse e-mail avant de pouvoir écrire un commentaire. Pour ce faire, rendez-vous sur la page\u00a0: {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "Tu dois vÃ©rifier ton adresse e-mail avant de pouvoir Ã©crire un commentaire. Pour ce faire, rendez-vous sur la page\u00a0: {accountPageLink}.";
+		return "Tu dois vérifier ton adresse e-mail avant de pouvoir écrire un commentaire. Pour ce faire, rendez-vous sur la page\u00a0: {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "VÃ©rifie ton adresse e-mail";
+		return "Vérifie ton adresse e-mail";
 	}
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "Cette fonctionnalitÃ© n'est pas disponible.";
+		return "Cette fonctionnalité n'est pas disponible.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "Les commentaires doivent porter sur l'objet ou l'emplacement que vous commentez. Les liens ne sont pas autorisÃ©s.";
+		return "Les commentaires doivent porter sur l'objet ou l'emplacement que vous commentez. Les liens ne sont pas autorisés.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
 	{
-		return "Liens non autorisÃ©s";
+		return "Liens non autorisés";
 	}
 
 	protected override string _GetTemplateForLabelMoreComments()
@@ -283,7 +285,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelSorryWrong()
 	{
-		return "DÃ©solÃ©, un problÃ¨me est survenu.";
+		return "Désolé, un problème est survenu.";
 	}
 
 	protected override string _GetTemplateForLabelText()
@@ -293,7 +295,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelTooManyChracters()
 	{
-		return "Trop de caractÃ¨res\u00a0!";
+		return "Trop de caractères\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelTooManyNewLines()
@@ -308,7 +310,7 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "Vous publiez trop de commentaires. Attendez un moment avant d'en Ã©crire un nouveau.";
+		return "Vous publiez trop de commentaires. Attendez un moment avant d'en écrire un nouveau.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -323,12 +325,12 @@ internal class CommentsResources_fr_fr : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "VÃ©rifier";
+		return "Vérifier";
 	}
 
 	protected override string _GetTemplateForLabelWriteAComment()
 	{
-		return "RÃ©digez un commentaire\u00a0!";
+		return "Rédigez un commentaire\u00a0!";
 	}
 
 	/// <summary>

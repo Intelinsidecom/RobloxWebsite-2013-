@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IGamePassResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IGamePassResources : ITranslationResources
 
 {
 	/// <summary>
@@ -29,3 +31,5 @@
 
 
 }
+
+

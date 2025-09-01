@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
@@ -40,13 +42,13 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ActionWhatAreYouUpto"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string ActionWhatAreYouUpto => "Qu'avez-vous en tÃªte\u00a0?";
+	public override string ActionWhatAreYouUpto => "Qu'avez-vous en tête\u00a0?";
 
 	/// <summary>
 	/// Key: "HeadingBlogNews"
 	/// English String: "Blog News"
 	/// </summary>
-	public override string HeadingBlogNews => "ActualitÃ©s du blog";
+	public override string HeadingBlogNews => "Actualités du blog";
 
 	/// <summary>
 	/// Key: "HeadingDeveloperExchange"
@@ -58,7 +60,7 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "HeadingFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string HeadingFriendActivity => "ActivitÃ© de vos amis";
+	public override string HeadingFriendActivity => "Activité de vos amis";
 
 	/// <summary>
 	/// Key: "HeadingFriendsTitle"
@@ -82,13 +84,13 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "HeadingRecentlyPlayed"
 	/// English String: "Recently Played"
 	/// </summary>
-	public override string HeadingRecentlyPlayed => "JouÃ©s rÃ©cemment";
+	public override string HeadingRecentlyPlayed => "Joués récemment";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now on the side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Vous cherchez les actus\u00a0? Elles sont dÃ©sormais dans le menu latÃ©ral.";
+	public override string LabelFindMyFeed => "Vous cherchez les actus\u00a0? Elles sont désormais dans le menu latéral.";
 
 	/// <summary>
 	/// Key: "LabelAnnouncement"
@@ -100,7 +102,7 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "LabelCreateEarn"
 	/// English String: "Create games, earn money"
 	/// </summary>
-	public override string LabelCreateEarn => "CrÃ©ez des jeux et gagnez de l'argent";
+	public override string LabelCreateEarn => "Créez des jeux et gagnez de l'argent";
 
 	/// <summary>
 	/// Key: "LabelSharing"
@@ -112,13 +114,13 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "LabelStatusUpdateFailed"
 	/// English String: "Status update failed."
 	/// </summary>
-	public override string LabelStatusUpdateFailed => "Ã‰chec de publication du statut.";
+	public override string LabelStatusUpdateFailed => "Échec de publication du statut.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoBlank"
 	/// English String: "Update cannot be blank. Please try again."
 	/// </summary>
-	public override string ResponseErrorNoBlank => "Le statut ne peut pas Ãªtre vide. Veuillez rÃ©essayer.";
+	public override string ResponseErrorNoBlank => "Le statut ne peut pas être vide. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoLogin"
@@ -130,13 +132,13 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ResponseErrorOther"
 	/// English String: "System issue. Please try again later, then contact Support."
 	/// </summary>
-	public override string ResponseErrorOther => "ProblÃ¨me systÃ¨me. Veuillez rÃ©essayer plus tard, puis contactez l'assistance.";
+	public override string ResponseErrorOther => "Problème système. Veuillez réessayer plus tard, puis contactez l'assistance.";
 
 	/// <summary>
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "Trop de publications. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseErrorTooManyUpdates => "Trop de publications. Veuillez réessayer plus tard.";
 
 	public HomeResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -170,12 +172,12 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionWhatAreYouUpto()
 	{
-		return "Qu'avez-vous en tÃªte\u00a0?";
+		return "Qu'avez-vous en tête\u00a0?";
 	}
 
 	protected override string _GetTemplateForHeadingBlogNews()
 	{
-		return "ActualitÃ©s du blog";
+		return "Actualités du blog";
 	}
 
 	protected override string _GetTemplateForHeadingDeveloperExchange()
@@ -185,7 +187,7 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForHeadingFriendActivity()
 	{
-		return "ActivitÃ© de vos amis";
+		return "Activité de vos amis";
 	}
 
 	/// <summary>
@@ -219,12 +221,12 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForHeadingRecentlyPlayed()
 	{
-		return "JouÃ©s rÃ©cemment";
+		return "Joués récemment";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Vous cherchez les actus\u00a0? Elles sont dÃ©sormais dans le menu latÃ©ral.";
+		return "Vous cherchez les actus\u00a0? Elles sont désormais dans le menu latéral.";
 	}
 
 	protected override string _GetTemplateForLabelAnnouncement()
@@ -234,7 +236,7 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelCreateEarn()
 	{
-		return "CrÃ©ez des jeux et gagnez de l'argent";
+		return "Créez des jeux et gagnez de l'argent";
 	}
 
 	/// <summary>
@@ -258,12 +260,12 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelStatusUpdateFailed()
 	{
-		return "Ã‰chec de publication du statut.";
+		return "Échec de publication du statut.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoBlank()
 	{
-		return "Le statut ne peut pas Ãªtre vide. Veuillez rÃ©essayer.";
+		return "Le statut ne peut pas être vide. Veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoLogin()
@@ -273,12 +275,12 @@ internal class HomeResources_fr_fr : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForResponseErrorOther()
 	{
-		return "ProblÃ¨me systÃ¨me. Veuillez rÃ©essayer plus tard, puis contactez l'assistance.";
+		return "Problème système. Veuillez réessayer plus tard, puis contactez l'assistance.";
 	}
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "Trop de publications. Veuillez rÃ©essayer plus tard.";
+		return "Trop de publications. Veuillez réessayer plus tard.";
 	}
 }
 

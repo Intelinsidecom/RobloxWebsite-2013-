@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PromotedProductResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 	/// Key: "Label.AddGear"
 	/// English String: "Add Gear"
 	/// </summary>
-	public override string LabelAddGear => "AÃ±adir equipamiento";
+	public override string LabelAddGear => "Añadir equipamiento";
 
 	/// <summary>
 	/// Key: "Label.Buy"
@@ -34,13 +36,13 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccurred => "Se ha producido un error. IntÃ©ntalo de nuevo.";
+	public override string LabelErrorOccurred => "Se ha producido un error. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "Este objeto no estÃ¡ en venta.";
+	public override string LabelNotForSale => "Este objeto no está en venta.";
 
 	/// <summary>
 	/// Key: "Label.NotForSaleShort"
@@ -77,13 +79,13 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 	/// Key: "Label.Sorry"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorry => "No hemos podido eliminar el objeto de tu juego. IntÃ©ntalo de nuevo.";
+	public override string LabelSorry => "No hemos podido eliminar el objeto de tu juego. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "Â¡Hecho!";
+	public override string LabelSuccess => "¡Hecho!";
 
 	public PromotedProductResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -97,7 +99,7 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelAddGear()
 	{
-		return "AÃ±adir equipamiento";
+		return "Añadir equipamiento";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
@@ -112,7 +114,7 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "Se ha producido un error. IntÃ©ntalo de nuevo.";
+		return "Se ha producido un error. Inténtalo de nuevo.";
 	}
 
 	/// <summary>
@@ -121,12 +123,12 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"Has aÃ±adido {item} a tu juego.";
+		return $"Has añadido {item} a tu juego.";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "Has aÃ±adido {item} a tu juego.";
+		return "Has añadido {item} a tu juego.";
 	}
 
 	/// <summary>
@@ -145,7 +147,7 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "Este objeto no estÃ¡ en venta.";
+		return "Este objeto no está en venta.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSaleShort()
@@ -175,12 +177,12 @@ internal class PromotedProductResources_es_es : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelSorry()
 	{
-		return "No hemos podido eliminar el objeto de tu juego. IntÃ©ntalo de nuevo.";
+		return "No hemos podido eliminar el objeto de tu juego. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "Â¡Hecho!";
+		return "¡Hecho!";
 	}
 }
 

@@ -1,35 +1,33 @@
-﻿namespace Roblox.Platform.EphemeralCounterspublic {
-    interface ISequenceStatistics
-
+namespace Roblox.Platform.EphemeralCounters
 {
-	double Maximum { get; }
+    public interface ISequenceStatistics
+    {
+        double Maximum { get; }
 
-	double Minimum { get; }
+        double Minimum { get; }
 
-	double Sum { get; }
+        double Sum { get; }
 
-	int Count { get; }
+        int Count { get; }
 
-	double Average { get; }
+        double Average { get; }
 
-	double StandardDeviation { get; }
+        double StandardDeviation { get; }
 
-	double P01 { get; }
+        double P01 { get; }
 
-	double P05 { get; }
+        double P05 { get; }
 
-	double P25 { get; }
+        double P25 { get; }
 
-	double P50 { get; }
+        double P50 { get; }
 
-	double P75 { get; }
+        double P75 { get; }
 
-	double P95 { get; }
+        double P95 { get; }
 
-	double P99 { get; }
+        double P99 { get; }
 
-	double GetStatisticByName(string statisticName);
-}
-
-
+        double GetStatisticByName(string statisticName);
+    }
 }

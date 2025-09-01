@@ -8,9 +8,9 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Pipeline.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.RequestContext.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Sentinels.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Pipeline.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Http.Client.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Http.pdb
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Pipeline.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.RequestContext.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Instrumentation.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Http\Roblox.Http.ServiceClient\bin\Debug\netstandard2.0\Roblox.Http.Client.Monitoring.pdb

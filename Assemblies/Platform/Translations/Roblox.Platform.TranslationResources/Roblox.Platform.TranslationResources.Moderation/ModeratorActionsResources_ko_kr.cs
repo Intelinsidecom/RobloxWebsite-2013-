@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderation {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
     /// <summary>
 
 /// This class overrides ModeratorActionsResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class ModeratorActionsResources_ko_kr : ModeratorActionsResources_en_us
 	/// Key: "Label.ScrubText"
 	/// English String: "[ Content Deleted ]"
 	/// </summary>
-	public override string LabelScrubText => "[ ì½˜í…ì¸  ì‚­ì œë¨ ]";
+	public override string LabelScrubText => "[ 콘텐츠 삭제됨 ]";
 
 	public ModeratorActionsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -19,7 +21,7 @@ internal class ModeratorActionsResources_ko_kr : ModeratorActionsResources_en_us
 
 	protected override string _GetTemplateForLabelScrubText()
 	{
-		return "[ ì½˜í…ì¸  ì‚­ì œë¨ ]";
+		return "[ 콘텐츠 삭제됨 ]";
 	}
 }
 

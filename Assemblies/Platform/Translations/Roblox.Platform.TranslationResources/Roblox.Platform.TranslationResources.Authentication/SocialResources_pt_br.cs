@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
@@ -22,13 +24,13 @@ internal class SocialResources_pt_br : SocialResources_en_us, ISocialResources, 
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "Desconecte suas contas conectadas aqui. Ao desvincular esta conta, vocÃª se desconecta do Roblox";
+	public override string DescriptionConnectedAccounts => "Desconecte suas contas conectadas aqui. Ao desvincular esta conta, você se desconecta do Roblox";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "Ao desvincular esta conta, vocÃª se desconecta do Roblox. Para se conectar novamente, vocÃª precisarÃ¡ vincular sua conta novamente.";
+	public override string DescriptionUnlinkLogOutWarning => "Ao desvincular esta conta, você se desconecta do Roblox. Para se conectar novamente, você precisará vincular sua conta novamente.";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
@@ -46,7 +48,7 @@ internal class SocialResources_pt_br : SocialResources_en_us, ISocialResources, 
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "Senha invÃ¡lida.";
+	public override string ResponseInvalidPassword => "Senha inválida.";
 
 	public SocialResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -65,12 +67,12 @@ internal class SocialResources_pt_br : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "Desconecte suas contas conectadas aqui. Ao desvincular esta conta, vocÃª se desconecta do Roblox";
+		return "Desconecte suas contas conectadas aqui. Ao desvincular esta conta, você se desconecta do Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "Ao desvincular esta conta, vocÃª se desconecta do Roblox. Para se conectar novamente, vocÃª precisarÃ¡ vincular sua conta novamente.";
+		return "Ao desvincular esta conta, você se desconecta do Roblox. Para se conectar novamente, você precisará vincular sua conta novamente.";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
@@ -99,7 +101,7 @@ internal class SocialResources_pt_br : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "Senha invÃ¡lida.";
+		return "Senha inválida.";
 	}
 }
 

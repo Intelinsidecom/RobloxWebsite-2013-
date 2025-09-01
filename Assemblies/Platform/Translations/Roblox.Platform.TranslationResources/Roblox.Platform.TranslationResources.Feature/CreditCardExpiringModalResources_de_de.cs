@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CreditCardExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -25,7 +27,7 @@ internal class CreditCardExpiringModalResources_de_de : CreditCardExpiringModalR
 	/// description text
 	/// English String: "Please update your credit card information to make sure your Builders Club membership doesn't expire!"
 	/// </summary>
-	public override string DescriptionUpdateYourCreditCard => "Bitte aktualisiere deine Kreditkarteninformationen, damit deine â€žBuilders Clubâ€œ-Mitgliedschaft nicht ablÃ¤uft!";
+	public override string DescriptionUpdateYourCreditCard => "Bitte aktualisiere deine Kreditkarteninformationen, damit deine „Builders Club“-Mitgliedschaft nicht abläuft!";
 
 	/// <summary>
 	/// Key: "Heading.CreditCardExpiration"
@@ -56,17 +58,17 @@ internal class CreditCardExpiringModalResources_de_de : CreditCardExpiringModalR
 	/// </summary>
 	public override string DescriptionCreditCardExpiration(string expirationDate)
 	{
-		return $"Deine Kreditkarte lÃ¤uft am {expirationDate} ab!";
+		return $"Deine Kreditkarte läuft am {expirationDate} ab!";
 	}
 
 	protected override string _GetTemplateForDescriptionCreditCardExpiration()
 	{
-		return "Deine Kreditkarte lÃ¤uft am {expirationDate} ab!";
+		return "Deine Kreditkarte läuft am {expirationDate} ab!";
 	}
 
 	protected override string _GetTemplateForDescriptionUpdateYourCreditCard()
 	{
-		return "Bitte aktualisiere deine Kreditkarteninformationen, damit deine â€žBuilders Clubâ€œ-Mitgliedschaft nicht ablÃ¤uft!";
+		return "Bitte aktualisiere deine Kreditkarteninformationen, damit deine „Builders Club“-Mitgliedschaft nicht abläuft!";
 	}
 
 	protected override string _GetTemplateForHeadingCreditCardExpiration()

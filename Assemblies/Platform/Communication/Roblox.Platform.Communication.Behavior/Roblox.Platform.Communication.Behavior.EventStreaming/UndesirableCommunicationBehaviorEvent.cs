@@ -1,5 +1,5 @@
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
 
 namespace Roblox.Platform.Communication.Behavior.EventStreaming;
 

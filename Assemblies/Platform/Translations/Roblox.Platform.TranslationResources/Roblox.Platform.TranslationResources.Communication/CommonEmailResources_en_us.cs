@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Communicationinternal {
+namespace Roblox.Platform.TranslationResources.Communication {
     class CommonEmailResources_en_us : TranslationResourcesBase, ICommonEmailResources, ITranslationResources
 
 {
@@ -44,3 +44,4 @@ namespace Roblox.Platform.TranslationResources.Communicationinternal {
 
 
 }
+

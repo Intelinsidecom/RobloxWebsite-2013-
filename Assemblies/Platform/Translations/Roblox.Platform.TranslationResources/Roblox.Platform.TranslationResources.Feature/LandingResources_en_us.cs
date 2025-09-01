@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class LandingResources_en_us : TranslationResourcesBase, ILandingResources, ITranslationResources
 
 {
@@ -251,3 +251,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

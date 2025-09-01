@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class ReplacementConfiguration
+namespace Roblox.Platform.Games.Client {
+    public class ReplacementConfiguration
 
 {
 	public long CreatorId { get; set; }

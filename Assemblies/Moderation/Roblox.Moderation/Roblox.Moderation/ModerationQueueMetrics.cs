@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Roblox.Configuration;
 using Roblox.EventLog;
-using Roblox.Platform.Moderation.Properties;
+using Roblox.Moderation.Properties;
 using Roblox.TrackingQueue;
-namespace Roblox.Moderationinternal {
+namespace Roblox.Moderation {
     class ModerationQueueMetrics : ModerationTaskClientBase<IDictionary<string, ITrackingQueueMetrics>>, IModerationQueueMetrics
 
 {

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameBadgesResources_en_us to provide locale specific translations where possible,
@@ -10,94 +12,94 @@ internal class GameBadgesResources_ja_jp : GameBadgesResources_en_us, IGameBadge
 	/// Key: "HeadingGameBadges"
 	/// English String: "Game Badges"
 	/// </summary>
-	public override string HeadingGameBadges => "ã‚²ãƒ¼ãƒ ãƒãƒƒã‚¸";
+	public override string HeadingGameBadges => "ゲームバッジ";
 
 	/// <summary>
 	/// Key: "Label.RarityCakeWalk"
 	/// It would be extremely easy for the user to accomplish this goal.
 	/// English String: "Cake Walk"
 	/// </summary>
-	public override string LabelRarityCakeWalk => "è¶…ã‚«ãƒ³ã‚¿ãƒ³";
+	public override string LabelRarityCakeWalk => "超カンタン";
 
 	/// <summary>
 	/// Key: "Label.RarityChallenging"
 	/// It would be somewhat difficult for the user to accomplish this goal.
 	/// English String: "Challenging"
 	/// </summary>
-	public override string LabelRarityChallenging => "æ‰‹ã”ãŸãˆã‚¢ãƒª";
+	public override string LabelRarityChallenging => "手ごたえアリ";
 
 	/// <summary>
 	/// Key: "Label.RarityEasy"
 	/// It would be easy for the user to accomplish this goal.
 	/// English String: "Easy"
 	/// </summary>
-	public override string LabelRarityEasy => "ã‚«ãƒ³ã‚¿ãƒ³";
+	public override string LabelRarityEasy => "カンタン";
 
 	/// <summary>
 	/// Key: "Label.RarityExtreme"
 	/// It would be extremely difficult for the user to accomplish this goal.
 	/// English String: "Extreme"
 	/// </summary>
-	public override string LabelRarityExtreme => "ã‚¨ã‚¯ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
+	public override string LabelRarityExtreme => "エクストリーム";
 
 	/// <summary>
 	/// Key: "Label.RarityFreebie"
 	/// The user will get this badge for free.
 	/// English String: "Freebie"
 	/// </summary>
-	public override string LabelRarityFreebie => "ç„¡æ–™";
+	public override string LabelRarityFreebie => "無料";
 
 	/// <summary>
 	/// Key: "Label.RarityHard"
 	/// It would be difficult for the user to accomplish this goal.
 	/// English String: "Hard"
 	/// </summary>
-	public override string LabelRarityHard => "é«˜é›£åº¦";
+	public override string LabelRarityHard => "高難度";
 
 	/// <summary>
 	/// Key: "Label.RarityImpossible"
 	/// It is impossible for the user to accomplish this goal.
 	/// English String: "Impossible"
 	/// </summary>
-	public override string LabelRarityImpossible => "ä¸å¯èƒ½";
+	public override string LabelRarityImpossible => "不可能";
 
 	/// <summary>
 	/// Key: "Label.RarityInsane"
 	/// It is nearly impossible for the user to accomplish this goal.
 	/// English String: "Insane"
 	/// </summary>
-	public override string LabelRarityInsane => "æ¿€ãƒ ã‚º";
+	public override string LabelRarityInsane => "激ムズ";
 
 	/// <summary>
 	/// Key: "Label.RarityModerate"
 	/// It would be moderate for the user to accomplish this goal. It is neither easy nor hard.
 	/// English String: "Moderate"
 	/// </summary>
-	public override string LabelRarityModerate => "æ¨™æº–";
+	public override string LabelRarityModerate => "標準";
 
 	/// <summary>
 	/// Key: "LabelRarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "ãƒ¬ã‚¢åº¦";
+	public override string LabelRarity => "レア度";
 
 	/// <summary>
 	/// Key: "LabelSeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
+	public override string LabelSeeMore => "もっと見る";
 
 	/// <summary>
 	/// Key: "LabelWonEver"
 	/// English String: "Won Ever"
 	/// </summary>
-	public override string LabelWonEver => "éŽåŽ»ã«ç²å¾—";
+	public override string LabelWonEver => "過去に獲得";
 
 	/// <summary>
 	/// Key: "LabelWonYesterday"
 	/// English String: "Won Yesterday"
 	/// </summary>
-	public override string LabelWonYesterday => "æ˜¨æ—¥ç²å¾—";
+	public override string LabelWonYesterday => "昨日獲得";
 
 	public GameBadgesResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -106,72 +108,72 @@ internal class GameBadgesResources_ja_jp : GameBadgesResources_en_us, IGameBadge
 
 	protected override string _GetTemplateForHeadingGameBadges()
 	{
-		return "ã‚²ãƒ¼ãƒ ãƒãƒƒã‚¸";
+		return "ゲームバッジ";
 	}
 
 	protected override string _GetTemplateForLabelRarityCakeWalk()
 	{
-		return "è¶…ã‚«ãƒ³ã‚¿ãƒ³";
+		return "超カンタン";
 	}
 
 	protected override string _GetTemplateForLabelRarityChallenging()
 	{
-		return "æ‰‹ã”ãŸãˆã‚¢ãƒª";
+		return "手ごたえアリ";
 	}
 
 	protected override string _GetTemplateForLabelRarityEasy()
 	{
-		return "ã‚«ãƒ³ã‚¿ãƒ³";
+		return "カンタン";
 	}
 
 	protected override string _GetTemplateForLabelRarityExtreme()
 	{
-		return "ã‚¨ã‚¯ã‚¹ãƒˆãƒªãƒ¼ãƒ ";
+		return "エクストリーム";
 	}
 
 	protected override string _GetTemplateForLabelRarityFreebie()
 	{
-		return "ç„¡æ–™";
+		return "無料";
 	}
 
 	protected override string _GetTemplateForLabelRarityHard()
 	{
-		return "é«˜é›£åº¦";
+		return "高難度";
 	}
 
 	protected override string _GetTemplateForLabelRarityImpossible()
 	{
-		return "ä¸å¯èƒ½";
+		return "不可能";
 	}
 
 	protected override string _GetTemplateForLabelRarityInsane()
 	{
-		return "æ¿€ãƒ ã‚º";
+		return "激ムズ";
 	}
 
 	protected override string _GetTemplateForLabelRarityModerate()
 	{
-		return "æ¨™æº–";
+		return "標準";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "ãƒ¬ã‚¢åº¦";
+		return "レア度";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "ã‚‚ã£ã¨è¦‹ã‚‹";
+		return "もっと見る";
 	}
 
 	protected override string _GetTemplateForLabelWonEver()
 	{
-		return "éŽåŽ»ã«ç²å¾—";
+		return "過去に獲得";
 	}
 
 	protected override string _GetTemplateForLabelWonYesterday()
 	{
-		return "æ˜¨æ—¥ç²å¾—";
+		return "昨日獲得";
 	}
 }
 

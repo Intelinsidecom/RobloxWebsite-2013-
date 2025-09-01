@@ -829,7 +829,7 @@
       <returns>Columna que va a recuperarse.</returns>
       <param name="ordinal">Columna que va a recuperarse.</param>
       <typeparam name="T">Obtiene de forma sincrónica el valor de la columna especificada como un tipo.</typeparam>
-      <exception cref="T:System.InvalidOperationException">La conexión se interrumpe o se cierra durante la recuperación de datos.<see cref="T:System.Data.SqlClient.SqlDataReader" /> se cierra durante la recuperación de datos.No hay ningún dato listo para leer (por ejemplo, no se ha llamado al primer <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> o ha devuelto false).Se intentó leer una columna leída previamente en modo secuencial.Había una operación asincrónica en curso.Esto se aplica a todos los métodos Get* cuando se ejecutan en modo secuencial, ya que se les podía llamar mientras se leía una secuencia.</exception>
+      <exception cref="T:System.InvalidOperationException">La conexión se interrumpe o se cierra durante la recuperación de datos.<see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> se cierra durante la recuperación de datos.No hay ningún dato listo para leer (por ejemplo, no se ha llamado al primer <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> o ha devuelto false).Se intentó leer una columna leída previamente en modo secuencial.Había una operación asincrónica en curso.Esto se aplica a todos los métodos Get* cuando se ejecutan en modo secuencial, ya que se les podía llamar mientras se leía una secuencia.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Se intentó leer una columna que no existe.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> no coincide con el tipo devuelto por SQL Server o no se puede convertir.</exception>
@@ -964,7 +964,7 @@
     <member name="P:System.Data.Common.DbDataReader.IsClosed">
       <summary>Obtiene un valor que indica si el objeto <see cref="T:System.Data.Common.DbDataReader" /> está cerrado.</summary>
       <returns>true si el objeto <see cref="T:System.Data.Common.DbDataReader" /> está cerrado; de lo contrario, false.</returns>
-      <exception cref="T:System.InvalidOperationException">El objeto <see cref="T:System.Data.SqlClient.SqlDataReader" /> está cerrado. </exception>
+      <exception cref="T:System.InvalidOperationException">El objeto <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> está cerrado. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

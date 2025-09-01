@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class PlaceThumbnailsResources_en_us : TranslationResourcesBase, IPlaceThumbnailsResources, ITranslationResources
 
 {
@@ -121,3 +121,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

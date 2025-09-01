@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPageResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// description in small text about the disclaimer for signing bonus
 	/// English String: "* Signing bonus is for first time membership purchase only."
 	/// </summary>
-	public override string DescriptionSigningBonusDesclaimer => "* O bÃ´nus Ã© vÃ¡lido apenas para a primeira compra.";
+	public override string DescriptionSigningBonusDesclaimer => "* O bônus é válido apenas para a primeira compra.";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubUpgrade"
 	/// page heading
 	/// English String: "Upgrade to Roblox Builders Club"
 	/// </summary>
-	public override string HeadingBuildersClubUpgrade => "FaÃ§a o upgrade para Roblox Builders Club";
+	public override string HeadingBuildersClubUpgrade => "Faça o upgrade para Roblox Builders Club";
 
 	/// <summary>
 	/// Key: "Label.Annual"
@@ -53,7 +55,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Bonus Gear"
 	/// </summary>
-	public override string LabelBenefitTypeBonusGear => "Equipamentos bÃ´nus";
+	public override string LabelBenefitTypeBonusGear => "Equipamentos bônus";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeCreateGroups"
@@ -67,7 +69,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Daily Robux"
 	/// </summary>
-	public override string LabelBenefitTypeDailyRobux => "Robux diÃ¡rio";
+	public override string LabelBenefitTypeDailyRobux => "Robux diário";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeJoinGroups"
@@ -95,7 +97,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label - asterisk is used to show some terms message
 	/// English String: "Signing Bonus*"
 	/// </summary>
-	public override string LabelBenefitTypeSigningBonus => "BÃ´nus de assinatura*";
+	public override string LabelBenefitTypeSigningBonus => "Bônus de assinatura*";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeTradeSystem"
@@ -109,7 +111,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Virtual Hat"
 	/// </summary>
-	public override string LabelBenefitTypeVirtualHat => "ChapÃ©u virtual";
+	public override string LabelBenefitTypeVirtualHat => "Chapéu virtual";
 
 	/// <summary>
 	/// Key: "Label.EverySixMonths"
@@ -123,7 +125,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "VitalÃ­cia";
+	public override string LabelLifetime => "Vitalícia";
 
 	/// <summary>
 	/// Key: "Label.Membership"
@@ -144,7 +146,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "NÃ£o";
+	public override string LabelNo => "Não";
 
 	/// <summary>
 	/// Key: "Label.None"
@@ -172,22 +174,22 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string DescriptionDowngradeWarning(string currentRenewalDays, string daysCreditCount)
 	{
-		return $"Esta compra converterÃ¡ seus {currentRenewalDays} dias restantes de assinatura atual em {daysCreditCount} dias na nova assinatura. Esses dias serÃ£o adicionados Ã  sua nova assinatura.";
+		return $"Esta compra converterá seus {currentRenewalDays} dias restantes de assinatura atual em {daysCreditCount} dias na nova assinatura. Esses dias serão adicionados à sua nova assinatura.";
 	}
 
 	protected override string _GetTemplateForDescriptionDowngradeWarning()
 	{
-		return "Esta compra converterÃ¡ seus {currentRenewalDays} dias restantes de assinatura atual em {daysCreditCount} dias na nova assinatura. Esses dias serÃ£o adicionados Ã  sua nova assinatura.";
+		return "Esta compra converterá seus {currentRenewalDays} dias restantes de assinatura atual em {daysCreditCount} dias na nova assinatura. Esses dias serão adicionados à sua nova assinatura.";
 	}
 
 	protected override string _GetTemplateForDescriptionSigningBonusDesclaimer()
 	{
-		return "* O bÃ´nus Ã© vÃ¡lido apenas para a primeira compra.";
+		return "* O bônus é válido apenas para a primeira compra.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubUpgrade()
 	{
-		return "FaÃ§a o upgrade para Roblox Builders Club";
+		return "Faça o upgrade para Roblox Builders Club";
 	}
 
 	protected override string _GetTemplateForLabelAnnual()
@@ -212,7 +214,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeBonusGear()
 	{
-		return "Equipamentos bÃ´nus";
+		return "Equipamentos bônus";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeCreateGroups()
@@ -222,7 +224,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeDailyRobux()
 	{
-		return "Robux diÃ¡rio";
+		return "Robux diário";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeJoinGroups()
@@ -242,7 +244,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeSigningBonus()
 	{
-		return "BÃ´nus de assinatura*";
+		return "Bônus de assinatura*";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeTradeSystem()
@@ -252,7 +254,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeVirtualHat()
 	{
-		return "ChapÃ©u virtual";
+		return "Chapéu virtual";
 	}
 
 	/// <summary>
@@ -292,7 +294,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "VitalÃ­cia";
+		return "Vitalícia";
 	}
 
 	protected override string _GetTemplateForLabelMembership()
@@ -322,7 +324,7 @@ internal class BuildersClubPageResources_pt_br : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "NÃ£o";
+		return "Não";
 	}
 
 	protected override string _GetTemplateForLabelNone()

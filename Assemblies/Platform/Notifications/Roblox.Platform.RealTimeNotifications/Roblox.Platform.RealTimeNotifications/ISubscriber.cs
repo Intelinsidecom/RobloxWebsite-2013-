@@ -1,8 +1,9 @@
-﻿using System;
-namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface ISubscriber<TKeyInput, TPublishMessage>
-
+using System;
+namespace Roblox.Platform.RealTimeNotifications
 {
+    public interface ISubscriber<TKeyInput, TPublishMessage>
+
+    {
 	ISubscriptionResult Subscribe(TKeyInput key, Action<string, TPublishMessage> successCallback, Action<Exception> errorCallback = null);
 
 	bool IsSubscribed(string key);

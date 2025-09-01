@@ -1,11 +1,11 @@
-﻿using Roblox.Platform.Assets;
+using Roblox.Platform.AssetsCore;
 namespace Roblox.Moderation {
     /// <inheritdoc cref="T:Roblox.Platform.Moderation.IAssetModerationStatusChecker" />
 
-public class AssetModerationStatusChecker : IAssetModerationStatusChecker
+public class AssetModerationStatusChecker : IAssetModerationStatusChecker, IModerationStatusChecker<IAssetIdentifier>
 {
 	/// <inheritdoc cref="T:Roblox.Platform.Moderation.IAssetModerationStatusChecker" />
-	public AssetModerationStatus GetModerationStatus(IAsset asset)
+	public AssetModerationStatus GetModerationStatus(IAssetIdentifier asset)
 	{
 		return asset.GetModerationStatus();
 	}

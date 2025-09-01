@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslationAnalyticsResources_en_us to provide locale specific translations where possible,
@@ -51,7 +53,7 @@ internal class TranslationAnalyticsResources_es_es : TranslationAnalyticsResourc
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with your request. Please try again later."
 	/// </summary>
-	public override string MessageGenericError => "Ha habido un problema con tu solicitud. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageGenericError => "Ha habido un problema con tu solicitud. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.PermissionError"
@@ -96,7 +98,7 @@ internal class TranslationAnalyticsResources_es_es : TranslationAnalyticsResourc
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "Ha habido un problema con tu solicitud. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Ha habido un problema con tu solicitud. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessagePermissionError()

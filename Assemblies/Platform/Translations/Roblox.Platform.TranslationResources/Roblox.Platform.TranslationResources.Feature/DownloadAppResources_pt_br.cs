@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DownloadAppResources_en_us to provide locale specific translations where possible,
@@ -46,7 +48,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// section title
 	/// English String: "Play Roblox in our mobile app!"
 	/// </summary>
-	public override string LabelPlayGamesInMobile => "Jogue Roblox no nosso app para dispositivos mÃ³veis!";
+	public override string LabelPlayGamesInMobile => "Jogue Roblox no nosso app para dispositivos móveis!";
 
 	/// <summary>
 	/// Key: "Message.AppBumpAndroidDevice"
@@ -60,7 +62,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// The user is being encouraged to play through the mobile app.
 	/// English String: "Millions of games by players like you"
 	/// </summary>
-	public override string MessageAppBumperUpsell => "MilhÃµes de jogos feitos por jogadores como vocÃª";
+	public override string MessageAppBumperUpsell => "Milhões de jogos feitos por jogadores como você";
 
 	/// <summary>
 	/// Key: "Message.AppBumpIOSDevice"
@@ -101,7 +103,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForLabelPlayGamesInMobile()
 	{
-		return "Jogue Roblox no nosso app para dispositivos mÃ³veis!";
+		return "Jogue Roblox no nosso app para dispositivos móveis!";
 	}
 
 	/// <summary>
@@ -111,12 +113,12 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 	/// </summary>
 	public override string LabelReviewsCount(string reviewCount)
 	{
-		return $"{reviewCount} avaliaÃ§Ãµes";
+		return $"{reviewCount} avaliações";
 	}
 
 	protected override string _GetTemplateForLabelReviewsCount()
 	{
-		return "{reviewCount} avaliaÃ§Ãµes";
+		return "{reviewCount} avaliações";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpAndroidDevice()
@@ -126,7 +128,7 @@ internal class DownloadAppResources_pt_br : DownloadAppResources_en_us, IDownloa
 
 	protected override string _GetTemplateForMessageAppBumperUpsell()
 	{
-		return "MilhÃµes de jogos feitos por jogadores como vocÃª";
+		return "Milhões de jogos feitos por jogadores como você";
 	}
 
 	protected override string _GetTemplateForMessageAppBumpIOSDevice()

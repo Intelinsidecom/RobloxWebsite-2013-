@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
@@ -22,19 +24,19 @@ internal class SocialResources_fr_fr : SocialResources_en_us, ISocialResources, 
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "DÃ©connecte tes comptes connectÃ©s ici. Supprimer le lien vers un compte entraÃ®ne la dÃ©connexion Ã  Roblox.";
+	public override string DescriptionConnectedAccounts => "Déconnecte tes comptes connectés ici. Supprimer le lien vers un compte entraîne la déconnexion à Roblox.";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "Supprimer le lien vers ce compte va te dÃ©connecter de Roblox. Tu devras lier ton compte de nouveau avant de te connecter.";
+	public override string DescriptionUnlinkLogOutWarning => "Supprimer le lien vers ce compte va te déconnecter de Roblox. Tu devras lier ton compte de nouveau avant de te connecter.";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
 	/// English String: "Connected Accounts"
 	/// </summary>
-	public override string HeadingConnectedAccounts => "Comptes connectÃ©s";
+	public override string HeadingConnectedAccounts => "Comptes connectés";
 
 	/// <summary>
 	/// Key: "Placeholder.Password"
@@ -65,17 +67,17 @@ internal class SocialResources_fr_fr : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "DÃ©connecte tes comptes connectÃ©s ici. Supprimer le lien vers un compte entraÃ®ne la dÃ©connexion Ã  Roblox.";
+		return "Déconnecte tes comptes connectés ici. Supprimer le lien vers un compte entraîne la déconnexion à Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "Supprimer le lien vers ce compte va te dÃ©connecter de Roblox. Tu devras lier ton compte de nouveau avant de te connecter.";
+		return "Supprimer le lien vers ce compte va te déconnecter de Roblox. Tu devras lier ton compte de nouveau avant de te connecter.";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
 	{
-		return "Comptes connectÃ©s";
+		return "Comptes connectés";
 	}
 
 	/// <summary>

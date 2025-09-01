@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+namespace Roblox.Platform.TranslationResources.Notifications {
     class DesktopPushNotificationPromptsResources_en_us : TranslationResourcesBase, IDesktopPushNotificationPromptsResources, ITranslationResources
 
 {
@@ -250,3 +250,4 @@ namespace Roblox.Platform.TranslationResources.Notificationsinternal {
 
 
 }
+

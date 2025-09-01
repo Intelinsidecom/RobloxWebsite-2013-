@@ -48,10 +48,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
@@ -61,13 +63,13 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "Dieses Feature ist nicht verfÃ¼gbar.";
+	public override string LabelFeatureNotAvailable => "Dieses Feature ist nicht verfügbar.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "Kommentare sollten auf den Artikel oder Ort Bezug nehmen, zu dem du etwas sagen mÃ¶chtest. Links sind nicht erlaubt.";
+	public override string LabelLinksNotAllowedMessage => "Kommentare sollten auf den Artikel oder Ort Bezug nehmen, zu dem du etwas sagen möchtest. Links sind nicht erlaubt.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
@@ -97,7 +99,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "VerstoÃŸ melden";
+	public override string LabelReportAbuse => "Verstoß melden";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
@@ -127,7 +129,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.TooManyNewLines"
 	/// English String: "Too many newlines!"
 	/// </summary>
-	public override string LabelTooManyNewLines => "Zu viele ZeilenumbrÃ¼che!";
+	public override string LabelTooManyNewLines => "Zu viele Zeilenumbrüche!";
 
 	/// <summary>
 	/// Key: "Label.UnknownError"
@@ -140,7 +142,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "Du verÃ¶ffentlichst Kommentare zu schnell. Warte eine Weile, bevor du den nÃ¤chsten Kommentar eingibst.";
+	public override string LabelUserFlooded => "Du veröffentlichst Kommentare zu schnell. Warte eine Weile, bevor du den nächsten Kommentar eingibst.";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -153,7 +155,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// Feedback for user when they try to post a comments for an item with a newly registered account
 	/// English String: "Accounts must be older than 1 day to post comments."
 	/// </summary>
-	public override string LabelUserTooNew => "Dein Konto muss Ã¤lter als 1 Tag sein, damit du ein Kommentar hinterlassen kannst.";
+	public override string LabelUserTooNew => "Dein Konto muss älter als 1 Tag sein, damit du ein Kommentar hinterlassen kannst.";
 
 	/// <summary>
 	/// Key: "Label.Verify"
@@ -228,12 +230,12 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"Bevor du Kommentare verfassen kannst, musst du deine E-Mail-Adresse verifizieren. Dies kannst du auf der Seite â€ž{accountPageLink}â€œ tun.";
+		return $"Bevor du Kommentare verfassen kannst, musst du deine E-Mail-Adresse verifizieren. Dies kannst du auf der Seite „{accountPageLink}“ tun.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "Bevor du Kommentare verfassen kannst, musst du deine E-Mail-Adresse verifizieren. Dies kannst du auf der Seite â€ž{accountPageLink}â€œ tun.";
+		return "Bevor du Kommentare verfassen kannst, musst du deine E-Mail-Adresse verifizieren. Dies kannst du auf der Seite „{accountPageLink}“ tun.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
@@ -243,12 +245,12 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "Dieses Feature ist nicht verfÃ¼gbar.";
+		return "Dieses Feature ist nicht verfügbar.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "Kommentare sollten auf den Artikel oder Ort Bezug nehmen, zu dem du etwas sagen mÃ¶chtest. Links sind nicht erlaubt.";
+		return "Kommentare sollten auf den Artikel oder Ort Bezug nehmen, zu dem du etwas sagen möchtest. Links sind nicht erlaubt.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
@@ -273,7 +275,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "VerstoÃŸ melden";
+		return "Verstoß melden";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
@@ -298,7 +300,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelTooManyNewLines()
 	{
-		return "Zu viele ZeilenumbrÃ¼che!";
+		return "Zu viele Zeilenumbrüche!";
 	}
 
 	protected override string _GetTemplateForLabelUnknownError()
@@ -308,7 +310,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "Du verÃ¶ffentlichst Kommentare zu schnell. Warte eine Weile, bevor du den nÃ¤chsten Kommentar eingibst.";
+		return "Du veröffentlichst Kommentare zu schnell. Warte eine Weile, bevor du den nächsten Kommentar eingibst.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -318,7 +320,7 @@ internal class CommentsResources_de_de : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelUserTooNew()
 	{
-		return "Dein Konto muss Ã¤lter als 1 Tag sein, damit du ein Kommentar hinterlassen kannst.";
+		return "Dein Konto muss älter als 1 Tag sein, damit du ein Kommentar hinterlassen kannst.";
 	}
 
 	protected override string _GetTemplateForLabelVerify()

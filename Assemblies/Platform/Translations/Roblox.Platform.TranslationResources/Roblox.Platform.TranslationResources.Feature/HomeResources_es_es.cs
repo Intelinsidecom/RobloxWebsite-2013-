@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ActionLearnMore"
 	/// English String: "Learn More"
 	/// </summary>
-	public override string ActionLearnMore => "MÃ¡s informaciÃ³n";
+	public override string ActionLearnMore => "Más información";
 
 	/// <summary>
 	/// Key: "ActionSeeAll"
@@ -28,7 +30,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ActionSeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "Ver mÃ¡s";
+	public override string ActionSeeMore => "Ver más";
 
 	/// <summary>
 	/// Key: "ActionShare"
@@ -40,7 +42,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "ActionWhatAreYouUpto"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string ActionWhatAreYouUpto => "Â¿QuÃ© cuentas?";
+	public override string ActionWhatAreYouUpto => "¿Qué cuentas?";
 
 	/// <summary>
 	/// Key: "HeadingBlogNews"
@@ -88,7 +90,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now on the side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Â¿EstÃ¡s buscando Mis noticias? Ahora las encontrarÃ¡s en el menÃº lateral.";
+	public override string LabelFindMyFeed => "¿Estás buscando Mis noticias? Ahora las encontrarás en el menú lateral.";
 
 	/// <summary>
 	/// Key: "LabelAnnouncement"
@@ -112,31 +114,31 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "LabelStatusUpdateFailed"
 	/// English String: "Status update failed."
 	/// </summary>
-	public override string LabelStatusUpdateFailed => "Ha fallado la actualizaciÃ³n de estado.";
+	public override string LabelStatusUpdateFailed => "Ha fallado la actualización de estado.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoBlank"
 	/// English String: "Update cannot be blank. Please try again."
 	/// </summary>
-	public override string ResponseErrorNoBlank => "La actualizaciÃ³n no puede estar vacÃ­a. IntÃ©ntalo de nuevo.";
+	public override string ResponseErrorNoBlank => "La actualización no puede estar vacía. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoLogin"
 	/// English String: "Please log into your account."
 	/// </summary>
-	public override string ResponseErrorNoLogin => "Inicia sesiÃ³n en tu cuenta.";
+	public override string ResponseErrorNoLogin => "Inicia sesión en tu cuenta.";
 
 	/// <summary>
 	/// Key: "ResponseErrorOther"
 	/// English String: "System issue. Please try again later, then contact Support."
 	/// </summary>
-	public override string ResponseErrorOther => "Problema con el sistema. IntÃ©ntalo de nuevo mÃ¡s tarde y, despuÃ©s, ponte en contacto con asistencia tÃ©cnica.";
+	public override string ResponseErrorOther => "Problema con el sistema. Inténtalo de nuevo más tarde y, después, ponte en contacto con asistencia técnica.";
 
 	/// <summary>
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "Demasiadas actualizaciones. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string ResponseErrorTooManyUpdates => "Demasiadas actualizaciones. Inténtalo de nuevo más tarde.";
 
 	public HomeResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -150,7 +152,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionLearnMore()
 	{
-		return "MÃ¡s informaciÃ³n";
+		return "Más información";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
@@ -160,7 +162,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "Ver mÃ¡s";
+		return "Ver más";
 	}
 
 	protected override string _GetTemplateForActionShare()
@@ -170,7 +172,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionWhatAreYouUpto()
 	{
-		return "Â¿QuÃ© cuentas?";
+		return "¿Qué cuentas?";
 	}
 
 	protected override string _GetTemplateForHeadingBlogNews()
@@ -224,7 +226,7 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Â¿EstÃ¡s buscando Mis noticias? Ahora las encontrarÃ¡s en el menÃº lateral.";
+		return "¿Estás buscando Mis noticias? Ahora las encontrarás en el menú lateral.";
 	}
 
 	protected override string _GetTemplateForLabelAnnouncement()
@@ -243,12 +245,12 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string LabelGreeting(string username)
 	{
-		return $"Â¡Hola, {username}!";
+		return $"¡Hola, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelGreeting()
 	{
-		return "Â¡Hola, {username}!";
+		return "¡Hola, {username}!";
 	}
 
 	protected override string _GetTemplateForLabelSharing()
@@ -258,27 +260,27 @@ internal class HomeResources_es_es : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForLabelStatusUpdateFailed()
 	{
-		return "Ha fallado la actualizaciÃ³n de estado.";
+		return "Ha fallado la actualización de estado.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoBlank()
 	{
-		return "La actualizaciÃ³n no puede estar vacÃ­a. IntÃ©ntalo de nuevo.";
+		return "La actualización no puede estar vacía. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoLogin()
 	{
-		return "Inicia sesiÃ³n en tu cuenta.";
+		return "Inicia sesión en tu cuenta.";
 	}
 
 	protected override string _GetTemplateForResponseErrorOther()
 	{
-		return "Problema con el sistema. IntÃ©ntalo de nuevo mÃ¡s tarde y, despuÃ©s, ponte en contacto con asistencia tÃ©cnica.";
+		return "Problema con el sistema. Inténtalo de nuevo más tarde y, después, ponte en contacto con asistencia técnica.";
 	}
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "Demasiadas actualizaciones. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Demasiadas actualizaciones. Inténtalo de nuevo más tarde.";
 	}
 }
 

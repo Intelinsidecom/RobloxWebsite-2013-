@@ -1,5 +1,5 @@
-using System;
-using System.Data.SqlClient;
+﻿using System;
+using Microsoft.Data.SqlClient;
 using Roblox.Platform.Games.Entities;
 using Roblox.Platform.Games.Properties;
 
@@ -109,3 +109,4 @@ public class PrivateServerBuilder : IPrivateServerBuilder
 		return GetNow().AddMonths(Settings.Default.PrivateServerDefaultExpirationMonths).AddHours(Settings.Default.PrivateServerRecurringBufferHours);
 	}
 }
+

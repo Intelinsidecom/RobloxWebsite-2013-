@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Assets.Properties;
@@ -217,3 +217,4 @@ internal class CreationContextDAL
 		return EntityHelper.GetDataCount<long>(new DbInfo(Settings.Default.DbConnectionString_RobloxAssetCreations, "[dbo].[CreationContexts_GetTotalNumberOfCreationContextsByContextTypeIDCreatorTypeIDCreatorTargetIDAndAssetTypeID]", queryParameters));
 	}
 }
+

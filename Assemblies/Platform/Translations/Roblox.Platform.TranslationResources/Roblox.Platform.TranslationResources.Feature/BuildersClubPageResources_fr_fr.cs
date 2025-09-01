@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPageResources_en_us to provide locale specific translations where possible,
@@ -39,28 +41,28 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Ad Free"
 	/// </summary>
-	public override string LabelBenefitTypeAdFree => "Sans publicitÃ©";
+	public override string LabelBenefitTypeAdFree => "Sans publicité";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBCBetaFeatures"
 	/// Label. Note: BC is acronym of Builders Club
 	/// English String: "BC Beta Features"
 	/// </summary>
-	public override string LabelBenefitTypeBCBetaFeatures => "FonctionnalitÃ©s bÃªta du BC";
+	public override string LabelBenefitTypeBCBetaFeatures => "Fonctionnalités bêta du BC";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBonusGear"
 	/// label
 	/// English String: "Bonus Gear"
 	/// </summary>
-	public override string LabelBenefitTypeBonusGear => "Ã‰quipement bonus";
+	public override string LabelBenefitTypeBonusGear => "Équipement bonus";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeCreateGroups"
 	/// label
 	/// English String: "Create Groups"
 	/// </summary>
-	public override string LabelBenefitTypeCreateGroups => "CrÃ©er des groupes";
+	public override string LabelBenefitTypeCreateGroups => "Créer des groupes";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeDailyRobux"
@@ -81,7 +83,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Paid Access"
 	/// </summary>
-	public override string LabelBenefitTypePaidAccess => "AccÃ¨s payant";
+	public override string LabelBenefitTypePaidAccess => "Accès payant";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeSellStuff"
@@ -102,7 +104,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Trade System"
 	/// </summary>
-	public override string LabelBenefitTypeTradeSystem => "SystÃ¨me d'Ã©change";
+	public override string LabelBenefitTypeTradeSystem => "Système d'échange";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeVirtualHat"
@@ -123,7 +125,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 	/// label
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "Ã€ vie";
+	public override string LabelLifetime => "À vie";
 
 	/// <summary>
 	/// Key: "Label.Membership"
@@ -172,12 +174,12 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string DescriptionDowngradeWarning(string currentRenewalDays, string daysCreditCount)
 	{
-		return $"Cet achat convertira les {currentRenewalDays}\u00a0jours restants de l'abonnement actuel en {daysCreditCount}\u00a0jours de nouvel abonnement. Ces jours seront ajoutÃ©s Ã  votre nouvel abonnement.";
+		return $"Cet achat convertira les {currentRenewalDays}\u00a0jours restants de l'abonnement actuel en {daysCreditCount}\u00a0jours de nouvel abonnement. Ces jours seront ajoutés à votre nouvel abonnement.";
 	}
 
 	protected override string _GetTemplateForDescriptionDowngradeWarning()
 	{
-		return "Cet achat convertira les {currentRenewalDays}\u00a0jours restants de l'abonnement actuel en {daysCreditCount}\u00a0jours de nouvel abonnement. Ces jours seront ajoutÃ©s Ã  votre nouvel abonnement.";
+		return "Cet achat convertira les {currentRenewalDays}\u00a0jours restants de l'abonnement actuel en {daysCreditCount}\u00a0jours de nouvel abonnement. Ces jours seront ajoutés à votre nouvel abonnement.";
 	}
 
 	protected override string _GetTemplateForDescriptionSigningBonusDesclaimer()
@@ -202,22 +204,22 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeAdFree()
 	{
-		return "Sans publicitÃ©";
+		return "Sans publicité";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBCBetaFeatures()
 	{
-		return "FonctionnalitÃ©s bÃªta du BC";
+		return "Fonctionnalités bêta du BC";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBonusGear()
 	{
-		return "Ã‰quipement bonus";
+		return "Équipement bonus";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeCreateGroups()
 	{
-		return "CrÃ©er des groupes";
+		return "Créer des groupes";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeDailyRobux()
@@ -232,7 +234,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypePaidAccess()
 	{
-		return "AccÃ¨s payant";
+		return "Accès payant";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeSellStuff()
@@ -247,7 +249,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelBenefitTypeTradeSystem()
 	{
-		return "SystÃ¨me d'Ã©change";
+		return "Système d'échange";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeVirtualHat()
@@ -292,7 +294,7 @@ internal class BuildersClubPageResources_fr_fr : BuildersClubPageResources_en_us
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "Ã€ vie";
+		return "À vie";
 	}
 
 	protected override string _GetTemplateForLabelMembership()

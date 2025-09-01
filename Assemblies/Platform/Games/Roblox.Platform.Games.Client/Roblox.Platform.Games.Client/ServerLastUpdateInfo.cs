@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Platform.Games.Clientpublic {
-    class ServerLastUpdateInfo
+using System;
+namespace Roblox.Platform.Games.Client {
+    public class ServerLastUpdateInfo
 
 {
 	public DateTime? LastUpdatedTimeForServer { get; set; }

@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using Roblox.Paging;
 using Roblox.Platform.Assets.Entities;
@@ -155,3 +155,4 @@ internal class AliasFactory : IAliasFactory
 		return pagedResult;
 	}
 }
+

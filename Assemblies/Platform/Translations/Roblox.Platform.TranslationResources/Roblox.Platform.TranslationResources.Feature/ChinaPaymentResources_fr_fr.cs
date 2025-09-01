@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
@@ -16,13 +18,13 @@ internal class ChinaPaymentResources_fr_fr : ChinaPaymentResources_en_us, IChina
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "Un problÃ¨me est survenu lors du chargement du script Midas. RÃ©essaye plus tard";
+	public override string MessageScriptNotLoadError => "Un problème est survenu lors du chargement du script Midas. Réessaye plus tard";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
-	public override string MessageSessionExpiredError => "Votre session WeChat a expirÃ© et nous ne pouvons pas traiter votre requÃªte. Veuillez vous reconnecter.";
+	public override string MessageSessionExpiredError => "Votre session WeChat a expiré et nous ne pouvons pas traiter votre requête. Veuillez vous reconnecter.";
 
 	public ChinaPaymentResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -36,12 +38,12 @@ internal class ChinaPaymentResources_fr_fr : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "Un problÃ¨me est survenu lors du chargement du script Midas. RÃ©essaye plus tard";
+		return "Un problème est survenu lors du chargement du script Midas. Réessaye plus tard";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
-		return "Votre session WeChat a expirÃ© et nous ne pouvons pas traiter votre requÃªte. Veuillez vous reconnecter.";
+		return "Votre session WeChat a expiré et nous ne pouvons pas traiter votre requête. Veuillez vous reconnecter.";
 	}
 }
 

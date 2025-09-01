@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class SurveysGameRatingsResources_en_us : TranslationResourcesBase, ISurveysGameRatingsResources, ITranslationResources
 
 {
@@ -539,3 +539,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

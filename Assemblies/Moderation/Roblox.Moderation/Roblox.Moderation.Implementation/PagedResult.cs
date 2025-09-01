@@ -1,21 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-namespace Roblox.Moderation.Implementationpublic {
-    class PagedResult<TPageItem>
-
+namespace Roblox.Moderation.Implementation {
+    public class PagedResult<TPageItem>
 {
-	private int _PageSize = 100;
+    private int _PageSize = 100;
 
-	public long TotalPages { get; private set; }
+    public long TotalPages { get; private set; }
 
-	public IEnumerable<TPageItem> PageItems { get; private set; }
+    public IEnumerable<TPageItem> PageItems { get; private set; }
 
-	public PagedResult(long totalItems, IEnumerable<TPageItem> pageItems)
-	{
-		PageItems = pageItems;
-		TotalPages = Math.Max(1L, (long)Math.Ceiling((double)totalItems / (double)_PageSize));
-	}
+    public PagedResult(long totalItems, IEnumerable<TPageItem> pageItems)
+    {
+        PageItems = pageItems;
+        TotalPages = Math.Max(1L, (long)Math.Ceiling((double)totalItems / (double)_PageSize));
+    }
 }
-
-
 }

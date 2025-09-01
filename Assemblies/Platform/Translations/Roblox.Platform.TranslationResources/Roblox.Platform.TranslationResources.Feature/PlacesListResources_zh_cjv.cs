@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
@@ -11,33 +13,33 @@ internal class PlacesListResources_zh_cjv : PlacesListResources_en_us, IPlacesLi
 	/// Join game
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoinGame => "åŠ å…¥";
+	public override string ActionJoinGame => "加入";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string ActionSeeAll => "查看全部";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// check game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "æŸ¥çœ‹è¯¦æƒ…";
+	public override string ActionViewDetails => "查看详情";
 
 	/// <summary>
 	/// Key: "Label.ContextMenuTitle"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelContextMenuTitle => "æ¸¸æˆ";
+	public override string LabelContextMenuTitle => "游戏";
 
 	/// <summary>
 	/// Key: "Label.PlacesListName"
 	/// Title of game list
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelPlacesListName => "æ¸¸æˆ";
+	public override string LabelPlacesListName => "游戏";
 
 	public PlacesListResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -46,22 +48,22 @@ internal class PlacesListResources_zh_cjv : PlacesListResources_en_us, IPlacesLi
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "åŠ å…¥";
+		return "加入";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "查看全部";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "æŸ¥çœ‹è¯¦æƒ…";
+		return "查看详情";
 	}
 
 	protected override string _GetTemplateForLabelContextMenuTitle()
 	{
-		return "æ¸¸æˆ";
+		return "游戏";
 	}
 
 	/// <summary>
@@ -70,17 +72,17 @@ internal class PlacesListResources_zh_cjv : PlacesListResources_en_us, IPlacesLi
 	/// </summary>
 	public override string LabelCreatorBy(string creatorLink)
 	{
-		return $"åˆ›ä½œè€… {creatorLink}";
+		return $"创作者 {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelCreatorBy()
 	{
-		return "åˆ›ä½œè€… {creatorLink}";
+		return "创作者 {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelPlacesListName()
 	{
-		return "æ¸¸æˆ";
+		return "游戏";
 	}
 
 	/// <summary>
@@ -90,12 +92,12 @@ internal class PlacesListResources_zh_cjv : PlacesListResources_en_us, IPlacesLi
 	/// </summary>
 	public override string LabelPlayingPhrase(string playerCount)
 	{
-		return $"{playerCount} äººæ­£åœ¨çŽ©";
+		return $"{playerCount} 人正在玩";
 	}
 
 	protected override string _GetTemplateForLabelPlayingPhrase()
 	{
-		return "{playerCount} äººæ­£åœ¨çŽ©";
+		return "{playerCount} 人正在玩";
 	}
 }
 

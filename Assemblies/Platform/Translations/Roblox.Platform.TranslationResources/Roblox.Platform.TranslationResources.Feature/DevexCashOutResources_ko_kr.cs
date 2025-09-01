@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
@@ -10,31 +12,31 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.CashOutSubmit"
 	/// English String: "Cash Out"
 	/// </summary>
-	public override string CashOutFormCashOutSubmit => "í˜„ê¸ˆ ì¸ì¶œ";
+	public override string CashOutFormCashOutSubmit => "현금 인출";
 
 	/// <summary>
 	/// Key: "CashOutForm.EmailAddressLabel"
 	/// English String: "Email Address"
 	/// </summary>
-	public override string CashOutFormEmailAddressLabel => "ì´ë©”ì¼ ì£¼ì†Œ";
+	public override string CashOutFormEmailAddressLabel => "이메일 주소";
 
 	/// <summary>
 	/// Key: "CashOutForm.ExchangeRateLabel"
 	/// English String: "Exchange Rate"
 	/// </summary>
-	public override string CashOutFormExchangeRateLabel => "í™˜ìœ¨";
+	public override string CashOutFormExchangeRateLabel => "환율";
 
 	/// <summary>
 	/// Key: "CashOutForm.FirstNameLabel"
 	/// English String: "First Name"
 	/// </summary>
-	public override string CashOutFormFirstNameLabel => "ì´ë¦„";
+	public override string CashOutFormFirstNameLabel => "이름";
 
 	/// <summary>
 	/// Key: "CashOutForm.LastNameLabel"
 	/// English String: "Last Name"
 	/// </summary>
-	public override string CashOutFormLastNameLabel => "ì„±";
+	public override string CashOutFormLastNameLabel => "성";
 
 	/// <summary>
 	/// Key: "CashOutForm.Robux"
@@ -46,127 +48,127 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.RobuxAmountLabel"
 	/// English String: "Robux Amount"
 	/// </summary>
-	public override string CashOutFormRobuxAmountLabel => "Robux ê¸ˆì•¡";
+	public override string CashOutFormRobuxAmountLabel => "Robux 금액";
 
 	/// <summary>
 	/// Key: "CashOutForm.YouGetLabel"
 	/// English String: "You get up to:"
 	/// </summary>
-	public override string CashOutFormYouGetLabel => "ë°›ì„ ê¸ˆì•¡:";
+	public override string CashOutFormYouGetLabel => "받을 금액:";
 
 	/// <summary>
 	/// Key: "Label.PasswordLabel"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPasswordLabel => "ë¹„ë°€ë²ˆí˜¸";
+	public override string LabelPasswordLabel => "비밀번호";
 
 	/// <summary>
 	/// Key: "Label.PasswordPlaceholder"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelPasswordPlaceholder => "ê³„ì • ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
+	public override string LabelPasswordPlaceholder => "계정 비밀번호 확인";
 
 	/// <summary>
 	/// Key: "PageHeader.Description"
 	/// English String: "Create games, earn money."
 	/// </summary>
-	public override string PageHeaderDescription => "ê²Œìž„ ê°œë°œì„ í†µí•´ ìˆ˜ìµ ì°½ì¶œê¹Œì§€.";
+	public override string PageHeaderDescription => "게임 개발을 통해 수익 창출까지.";
 
 	/// <summary>
 	/// Key: "PageHeader.Title"
 	/// English String: "Developer Exchange"
 	/// </summary>
-	public override string PageHeaderTitle => "ê°œë°œìž í™˜ì „";
+	public override string PageHeaderTitle => "개발자 환전";
 
 	/// <summary>
 	/// Key: "Response.CannotLoadExchangeRate"
 	/// English String: "Sorry, we were unable to load the current exchange rate. Please try again."
 	/// </summary>
-	public override string ResponseCannotLoadExchangeRate => "ì£„ì†¡í•©ë‹ˆë‹¤. í˜„ìž¬ í™˜ìœ¨ì„ ë¶ˆëŸ¬ì˜¤ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+	public override string ResponseCannotLoadExchangeRate => "죄송합니다. 현재 환율을 불러오지 못했습니다. 다시 시도해 주세요.";
 
 	/// <summary>
 	/// Key: "Response.CurrencyOperationUnavailable"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseCurrencyOperationUnavailable => "ì£„ì†¡í•©ë‹ˆë‹¤. ë¬¸ì œê°€ ë°œìƒí–ˆë„¤ìš”.\u00a0ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+	public override string ResponseCurrencyOperationUnavailable => "죄송합니다. 문제가 발생했네요.\u00a0다시 시도해 주세요.";
 
 	/// <summary>
 	/// Key: "Response.FirstNameRequiredErrorMessage"
 	/// English String: "Please enter your first name."
 	/// </summary>
-	public override string ResponseFirstNameRequiredErrorMessage => "ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponseFirstNameRequiredErrorMessage => "이름을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCredentials"
 	/// English String: "Invalid password."
 	/// </summary>
-	public override string ResponseIncorrectCredentials => "ìœ íš¨í•˜ì§€ ì•Šì€ ë¹„ë°€ë²ˆí˜¸.";
+	public override string ResponseIncorrectCredentials => "유효하지 않은 비밀번호.";
 
 	/// <summary>
 	/// Key: "Response.InsufficientFunds"
 	/// English String: "You do not have enough Robux to complete this transaction."
 	/// </summary>
-	public override string ResponseInsufficientFunds => "Robuxê°€ ë¶€ì¡±í•´ì„œ ì´ ê±°ëž˜ë¥¼ ì™„ë£Œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseInsufficientFunds => "Robux가 부족해서 이 거래를 완료할 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmailErrorMessage"
 	/// English String: "Please enter a valid email address."
 	/// </summary>
-	public override string ResponseInvalidEmailErrorMessage => "ìœ íš¨í•œ ì´ë©”ì¼ ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponseInvalidEmailErrorMessage => "유효한 이메일 주소를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.LastNameRequiredErrorMessage"
 	/// English String: "Please enter your last name."
 	/// </summary>
-	public override string ResponseLastNameRequiredErrorMessage => "ì„±ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponseLastNameRequiredErrorMessage => "성을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.RobuxAmountIsBelowMinimumCashoutThreshold"
 	/// English String: "Robux amount below minimum cash out threshold."
 	/// </summary>
-	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robux ê¸ˆì•¡ì´ í˜„ê¸ˆ ì¸ì¶œ ê°€ëŠ¥í•œ ìµœì†Œ ê¸ˆì•¡ë³´ë‹¤ ì ìŠµë‹ˆë‹¤.";
+	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Robux 금액이 현금 인출 가능한 최소 금액보다 적습니다.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseUnknownError => "ì£„ì†¡í•©ë‹ˆë‹¤. ë¬¸ì œê°€ ë°œìƒí–ˆë„¤ìš”.\u00a0ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+	public override string ResponseUnknownError => "죄송합니다. 문제가 발생했네요.\u00a0다시 시도해 주세요.";
 
 	/// <summary>
 	/// Key: "Response.UserBalanceDoesNotHaveMoreRobuxThanMinimumCashout"
 	/// English String: "You cannot cash out for less than the minimum amount."
 	/// </summary>
-	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "ìµœì†Œ ê¸ˆì•¡ë³´ë‹¤ ì ì€ ê¸ˆì•¡ì„ ì¸ì¶œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "최소 금액보다 적은 금액을 인출할 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.UserCannotCashout"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserCannotCashout => "ì£„ì†¡í•˜ì§€ë§Œ, íšŒì›ë‹˜ì€ í˜„ìž¬ í˜„ê¸ˆì„ ì¸ì¶œí•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseUserCannotCashout => "죄송하지만, 회원님은 현재 현금을 인출하실 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "í˜„ê¸ˆ ì¸ì¶œì„ í•˜ë ¤ë©´ Roblox Premium íšŒì›ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string ResponseUserDoesNotHavePremium => "현금 인출을 하려면 Roblox Premium 회원이어야 합니다.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "í˜„ê¸ˆ ì¸ì¶œì„ í•˜ë ¤ë©´ ì´ë©”ì¼ ì£¼ì†Œë¶€í„° ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "현금 인출을 하려면 이메일 주소부터 인증해야 합니다.";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
 	/// English String: "You need to provide your first and last name."
 	/// </summary>
-	public override string ResponseUserMustProvideFirstAndLastName => "ì„±ê³¼ ì´ë¦„ì„ ëª¨ë‘ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string ResponseUserMustProvideFirstAndLastName => "성과 이름을 모두 입력해야 합니다.";
 
 	/// <summary>
 	/// Key: "Response.UserNotEligibleError"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserNotEligibleError => "ì£„ì†¡í•˜ì§€ë§Œ, íšŒì›ë‹˜ì€ í˜„ìž¬ í˜„ê¸ˆì„ ì¸ì¶œí•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseUserNotEligibleError => "죄송하지만, 회원님은 현재 현금을 인출하실 수 없습니다.";
 
 	public DevexCashOutResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -175,7 +177,7 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormCashOutSubmit()
 	{
-		return "í˜„ê¸ˆ ì¸ì¶œ";
+		return "현금 인출";
 	}
 
 	/// <summary>
@@ -184,32 +186,32 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"ê²°ì œë¥¼ ì²˜ë¦¬í•˜ë ¤ë©´ ì´ ì–‘ì‹ì„ ìž‘ì„±í•´ ì£¼ì„¸ìš”. ì´ë•Œ ì£¼ì†ŒëŠ” ë°˜ë“œì‹œ Roblox DevEx í¬í„¸ ê³„ì •ì— ë“±ë¡ëœ ê²ƒê³¼ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤. ì–‘ì‹ ìž‘ì„±ì— ë„ì›€ì´ í•„ìš”í•˜ë‹¤ë©´ {linkStart}ë„ì›€ë§ íŽ˜ì´ì§€ë¥¼ ë°©ë¬¸í•˜ì„¸ìš”.{linkEnd}";
+		return $"결제를 처리하려면 이 양식을 작성해 주세요. 이때 주소는 반드시 Roblox DevEx 포털 계정에 등록된 것과 일치해야 합니다. 양식 작성에 도움이 필요하다면 {linkStart}도움말 페이지를 방문하세요.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "ê²°ì œë¥¼ ì²˜ë¦¬í•˜ë ¤ë©´ ì´ ì–‘ì‹ì„ ìž‘ì„±í•´ ì£¼ì„¸ìš”. ì´ë•Œ ì£¼ì†ŒëŠ” ë°˜ë“œì‹œ Roblox DevEx í¬í„¸ ê³„ì •ì— ë“±ë¡ëœ ê²ƒê³¼ ì¼ì¹˜í•´ì•¼ í•©ë‹ˆë‹¤. ì–‘ì‹ ìž‘ì„±ì— ë„ì›€ì´ í•„ìš”í•˜ë‹¤ë©´ {linkStart}ë„ì›€ë§ íŽ˜ì´ì§€ë¥¼ ë°©ë¬¸í•˜ì„¸ìš”.{linkEnd}";
+		return "결제를 처리하려면 이 양식을 작성해 주세요. 이때 주소는 반드시 Roblox DevEx 포털 계정에 등록된 것과 일치해야 합니다. 양식 작성에 도움이 필요하다면 {linkStart}도움말 페이지를 방문하세요.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
 	{
-		return "ì´ë©”ì¼ ì£¼ì†Œ";
+		return "이메일 주소";
 	}
 
 	protected override string _GetTemplateForCashOutFormExchangeRateLabel()
 	{
-		return "í™˜ìœ¨";
+		return "환율";
 	}
 
 	protected override string _GetTemplateForCashOutFormFirstNameLabel()
 	{
-		return "ì´ë¦„";
+		return "이름";
 	}
 
 	protected override string _GetTemplateForCashOutFormLastNameLabel()
 	{
-		return "ì„±";
+		return "성";
 	}
 
 	protected override string _GetTemplateForCashOutFormRobux()
@@ -219,7 +221,7 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormRobuxAmountLabel()
 	{
-		return "Robux ê¸ˆì•¡";
+		return "Robux 금액";
 	}
 
 	/// <summary>
@@ -228,112 +230,112 @@ internal class DevexCashOutResources_ko_kr : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormTermsOfService(string linkStart, string linkEnd)
 	{
-		return $"{linkStart}ì´ìš© ì•½ê´€{linkEnd}ì„ ì½ì—ˆìœ¼ë©° ì´ì— ë™ì˜í•©ë‹ˆë‹¤";
+		return $"{linkStart}이용 약관{linkEnd}을 읽었으며 이에 동의합니다";
 	}
 
 	protected override string _GetTemplateForCashOutFormTermsOfService()
 	{
-		return "{linkStart}ì´ìš© ì•½ê´€{linkEnd}ì„ ì½ì—ˆìœ¼ë©° ì´ì— ë™ì˜í•©ë‹ˆë‹¤";
+		return "{linkStart}이용 약관{linkEnd}을 읽었으며 이에 동의합니다";
 	}
 
 	protected override string _GetTemplateForCashOutFormYouGetLabel()
 	{
-		return "ë°›ì„ ê¸ˆì•¡:";
+		return "받을 금액:";
 	}
 
 	protected override string _GetTemplateForLabelPasswordLabel()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸";
+		return "비밀번호";
 	}
 
 	protected override string _GetTemplateForLabelPasswordPlaceholder()
 	{
-		return "ê³„ì • ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
+		return "계정 비밀번호 확인";
 	}
 
 	protected override string _GetTemplateForPageHeaderDescription()
 	{
-		return "ê²Œìž„ ê°œë°œì„ í†µí•´ ìˆ˜ìµ ì°½ì¶œê¹Œì§€.";
+		return "게임 개발을 통해 수익 창출까지.";
 	}
 
 	protected override string _GetTemplateForPageHeaderTitle()
 	{
-		return "ê°œë°œìž í™˜ì „";
+		return "개발자 환전";
 	}
 
 	protected override string _GetTemplateForResponseCannotLoadExchangeRate()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. í˜„ìž¬ í™˜ìœ¨ì„ ë¶ˆëŸ¬ì˜¤ì§€ ëª»í–ˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+		return "죄송합니다. 현재 환율을 불러오지 못했습니다. 다시 시도해 주세요.";
 	}
 
 	protected override string _GetTemplateForResponseCurrencyOperationUnavailable()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ë¬¸ì œê°€ ë°œìƒí–ˆë„¤ìš”.\u00a0ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+		return "죄송합니다. 문제가 발생했네요.\u00a0다시 시도해 주세요.";
 	}
 
 	protected override string _GetTemplateForResponseFirstNameRequiredErrorMessage()
 	{
-		return "ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "이름을 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ë¹„ë°€ë²ˆí˜¸.";
+		return "유효하지 않은 비밀번호.";
 	}
 
 	protected override string _GetTemplateForResponseInsufficientFunds()
 	{
-		return "Robuxê°€ ë¶€ì¡±í•´ì„œ ì´ ê±°ëž˜ë¥¼ ì™„ë£Œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "Robux가 부족해서 이 거래를 완료할 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmailErrorMessage()
 	{
-		return "ìœ íš¨í•œ ì´ë©”ì¼ ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "유효한 이메일 주소를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponseLastNameRequiredErrorMessage()
 	{
-		return "ì„±ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "성을 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponseRobuxAmountIsBelowMinimumCashoutThreshold()
 	{
-		return "Robux ê¸ˆì•¡ì´ í˜„ê¸ˆ ì¸ì¶œ ê°€ëŠ¥í•œ ìµœì†Œ ê¸ˆì•¡ë³´ë‹¤ ì ìŠµë‹ˆë‹¤.";
+		return "Robux 금액이 현금 인출 가능한 최소 금액보다 적습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ë¬¸ì œê°€ ë°œìƒí–ˆë„¤ìš”.\u00a0ë‹¤ì‹œ ì‹œë„í•´ ì£¼ì„¸ìš”.";
+		return "죄송합니다. 문제가 발생했네요.\u00a0다시 시도해 주세요.";
 	}
 
 	protected override string _GetTemplateForResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout()
 	{
-		return "ìµœì†Œ ê¸ˆì•¡ë³´ë‹¤ ì ì€ ê¸ˆì•¡ì„ ì¸ì¶œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "최소 금액보다 적은 금액을 인출할 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUserCannotCashout()
 	{
-		return "ì£„ì†¡í•˜ì§€ë§Œ, íšŒì›ë‹˜ì€ í˜„ìž¬ í˜„ê¸ˆì„ ì¸ì¶œí•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "죄송하지만, 회원님은 현재 현금을 인출하실 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "í˜„ê¸ˆ ì¸ì¶œì„ í•˜ë ¤ë©´ Roblox Premium íšŒì›ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+		return "현금 인출을 하려면 Roblox Premium 회원이어야 합니다.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "í˜„ê¸ˆ ì¸ì¶œì„ í•˜ë ¤ë©´ ì´ë©”ì¼ ì£¼ì†Œë¶€í„° ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "현금 인출을 하려면 이메일 주소부터 인증해야 합니다.";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()
 	{
-		return "ì„±ê³¼ ì´ë¦„ì„ ëª¨ë‘ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "성과 이름을 모두 입력해야 합니다.";
 	}
 
 	protected override string _GetTemplateForResponseUserNotEligibleError()
 	{
-		return "ì£„ì†¡í•˜ì§€ë§Œ, íšŒì›ë‹˜ì€ í˜„ìž¬ í˜„ê¸ˆì„ ì¸ì¶œí•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "죄송하지만, 회원님은 현재 현금을 인출하실 수 없습니다.";
 	}
 }
 

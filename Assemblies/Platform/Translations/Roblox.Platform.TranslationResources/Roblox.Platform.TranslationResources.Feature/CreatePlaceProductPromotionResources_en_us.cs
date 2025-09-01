@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class CreatePlaceProductPromotionResources_en_us : TranslationResourcesBase, ICreatePlaceProductPromotionResources, ITranslationResources
 
 {
@@ -255,3 +255,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

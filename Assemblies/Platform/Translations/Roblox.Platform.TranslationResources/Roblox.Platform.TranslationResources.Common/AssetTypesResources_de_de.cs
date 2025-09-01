@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AssetTypesResources_en_us to provide locale specific translations where possible,
@@ -50,13 +52,13 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 	/// This is the back of a person. The user has an avatar which has a back.
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelBack => "RÃ¼ckseite";
+	public override string LabelBack => "Rückseite";
 
 	/// <summary>
 	/// Key: "Label.BackAccessory"
 	/// English String: "Back Accessory"
 	/// </summary>
-	public override string LabelBackAccessory => "RÃ¼ckseite-Accessoire";
+	public override string LabelBackAccessory => "Rückseite-Accessoire";
 
 	/// <summary>
 	/// Key: "Label.Badge"
@@ -164,13 +166,13 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.GamePasses"
 	/// English String: "Game Passes"
 	/// </summary>
-	public override string LabelGamePasses => "SpielpÃ¤sse";
+	public override string LabelGamePasses => "Spielpässe";
 
 	/// <summary>
 	/// Key: "Label.Gear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "AusrÃ¼stung";
+	public override string LabelGear => "Ausrüstung";
 
 	/// <summary>
 	/// Key: "Label.Hair"
@@ -194,7 +196,7 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Hats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelHats => "HÃ¼te";
+	public override string LabelHats => "Hüte";
 
 	/// <summary>
 	/// Key: "Label.Head"
@@ -207,13 +209,13 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Heads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "KÃ¶pfe";
+	public override string LabelHeads => "Köpfe";
 
 	/// <summary>
 	/// Key: "Label.Idle"
 	/// English String: "Idle"
 	/// </summary>
-	public override string LabelIdle => "UntÃ¤tig";
+	public override string LabelIdle => "Untätig";
 
 	/// <summary>
 	/// Key: "Label.Image"
@@ -484,12 +486,12 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelBack()
 	{
-		return "RÃ¼ckseite";
+		return "Rückseite";
 	}
 
 	protected override string _GetTemplateForLabelBackAccessory()
 	{
-		return "RÃ¼ckseite-Accessoire";
+		return "Rückseite-Accessoire";
 	}
 
 	protected override string _GetTemplateForLabelBadge()
@@ -574,12 +576,12 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelGamePasses()
 	{
-		return "SpielpÃ¤sse";
+		return "Spielpässe";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "AusrÃ¼stung";
+		return "Ausrüstung";
 	}
 
 	protected override string _GetTemplateForLabelHair()
@@ -599,7 +601,7 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelHats()
 	{
-		return "HÃ¼te";
+		return "Hüte";
 	}
 
 	protected override string _GetTemplateForLabelHead()
@@ -609,12 +611,12 @@ internal class AssetTypesResources_de_de : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "KÃ¶pfe";
+		return "Köpfe";
 	}
 
 	protected override string _GetTemplateForLabelIdle()
 	{
-		return "UntÃ¤tig";
+		return "Untätig";
 	}
 
 	protected override string _GetTemplateForLabelImage()

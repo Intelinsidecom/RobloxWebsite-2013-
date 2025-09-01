@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class BuildersClubExpiringModalResources_en_us : TranslationResourcesBase, IBuildersClubExpiringModalResources, ITranslationResources
 
 {
@@ -142,3 +142,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

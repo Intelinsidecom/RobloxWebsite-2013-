@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides TencentResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class TencentResources_zh_cjv : TencentResources_en_us, ITencentResourc
 	/// button text for logging in with QQ (social network application)
 	/// English String: "QQ Login"
 	/// </summary>
-	public override string ActionQQLogin => "QQ ç™»å½•";
+	public override string ActionQQLogin => "QQ 登录";
 
 	/// <summary>
 	/// Key: "Action.WeChatLogin"
 	/// button text for logging in with WeChat (social network application)
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "å¾®ä¿¡ç™»å½•";
+	public override string ActionWeChatLogin => "微信登录";
 
 	public TencentResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -27,12 +29,12 @@ internal class TencentResources_zh_cjv : TencentResources_en_us, ITencentResourc
 
 	protected override string _GetTemplateForActionQQLogin()
 	{
-		return "QQ ç™»å½•";
+		return "QQ 登录";
 	}
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "å¾®ä¿¡ç™»å½•";
+		return "微信登录";
 	}
 }
 

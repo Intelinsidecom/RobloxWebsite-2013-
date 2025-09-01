@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides VotingPanelResources_en_us to provide locale specific translations where possible,
@@ -155,6 +157,11 @@ internal class VotingPanelResources_fr_fr : VotingPanelResources_en_us, IVotingP
 	/// English String: "You must login to vote."
 	/// </summary>
 	public override string LabelYouMustLoginToVote => "Vous devez vous connecter afin de pouvoir voter.";
+
+	public string GetFullContentNamespaceName()
+	{
+		return "Feature.VotingPanel";
+	}
 
 	public VotingPanelResources_fr_fr(TranslationResourceState state)
 		: base(state)

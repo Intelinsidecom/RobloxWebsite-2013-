@@ -824,7 +824,7 @@
       <returns>Die Spalte die abgerufen werden soll.</returns>
       <param name="ordinal">Die Spalte die abgerufen werden soll.</param>
       <typeparam name="T">Ruft den Wert der angegebenen Spalte asynchron als ein Typ ab.</typeparam>
-      <exception cref="T:System.InvalidOperationException">Die Verbindung wird während des Datenabrufs getrennt oder geschlossen.Der <see cref="T:System.Data.SqlClient.SqlDataReader" /> wird während des Datenabrufs geschlossen.Es gibt keine Daten, die gelesen werden können (der erste Aufruf von <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hat z. B. nicht stattgefunden oder "false" zurückgegeben).Es wurde versucht, eine zuvor gelesene Spalte im sequenziellen Modus zu lesen.Es gab einen aktiven asynchronen Vorgang.Dies gilt für alle Get*-Methoden bei der Ausführung im sequenziellen Modus, da sie aufgerufen werden können, während des Lesens eines Datenstroms.</exception>
+      <exception cref="T:System.InvalidOperationException">Die Verbindung wird während des Datenabrufs getrennt oder geschlossen.Der <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> wird während des Datenabrufs geschlossen.Es gibt keine Daten, die gelesen werden können (der erste Aufruf von <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> hat z. B. nicht stattgefunden oder "false" zurückgegeben).Es wurde versucht, eine zuvor gelesene Spalte im sequenziellen Modus zu lesen.Es gab einen aktiven asynchronen Vorgang.Dies gilt für alle Get*-Methoden bei der Ausführung im sequenziellen Modus, da sie aufgerufen werden können, während des Lesens eines Datenstroms.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Es wurde versucht, eine Spalte zu lesen, die nicht vorhanden ist.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> entspricht nicht dem Typ, der von SQL Server zurückgegeben wird, oder kann nicht konvertiert werden.</exception>
@@ -959,7 +959,7 @@
     <member name="P:System.Data.Common.DbDataReader.IsClosed">
       <summary>Ruft einen Wert ab, der angibt, ob der <see cref="T:System.Data.Common.DbDataReader" /> geschlossen ist.</summary>
       <returns>true, wenn die <see cref="T:System.Data.Common.DbDataReader" />-Klasse geschlossen ist, andernfalls false.</returns>
-      <exception cref="T:System.InvalidOperationException">Der <see cref="T:System.Data.SqlClient.SqlDataReader" /> ist geschlossen. </exception>
+      <exception cref="T:System.InvalidOperationException">Der <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> ist geschlossen. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

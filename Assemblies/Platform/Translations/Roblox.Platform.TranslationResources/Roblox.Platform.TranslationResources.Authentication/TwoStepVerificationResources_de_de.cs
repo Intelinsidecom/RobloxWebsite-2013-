@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
@@ -74,7 +76,7 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// Enter your two step verification code.
 	/// English String: "Enter your two step verification code."
 	/// </summary>
-	public override string LabelEnterTwoStepVerificationCode => "Gib deinen Code fÃ¼r die Verifizierung in zwei Schritten ein.";
+	public override string LabelEnterTwoStepVerificationCode => "Gib deinen Code für die Verifizierung in zwei Schritten ein.";
 
 	/// <summary>
 	/// Key: "Label.FacebookPasswordWarning"
@@ -107,7 +109,7 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// Key: "Label.TrustThisDevice"
 	/// English String: "Trust this device for 30 days"
 	/// </summary>
-	public override string LabelTrustThisDevice => "Diesem GerÃ¤t fÃ¼r 30 Tage vertrauen";
+	public override string LabelTrustThisDevice => "Diesem Gerät für 30 Tage vertrauen";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
@@ -125,25 +127,25 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// Key: "Response.FeatureNotAvailable"
 	/// English String: "Feature not available. Please contact support."
 	/// </summary>
-	public override string ResponseFeatureNotAvailable => "Feature nicht verfÃ¼gbar. Bitte kontaktiere den Support.";
+	public override string ResponseFeatureNotAvailable => "Feature nicht verfügbar. Bitte kontaktiere den Support.";
 
 	/// <summary>
 	/// Key: "Response.InvalidCode"
 	/// English String: "Invalid code."
 	/// </summary>
-	public override string ResponseInvalidCode => "UngÃ¼ltiger Code.";
+	public override string ResponseInvalidCode => "Ungültiger Code.";
 
 	/// <summary>
 	/// Key: "Response.SystemErrorReturnToLogin"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string ResponseSystemErrorReturnToLogin => "Systemfehler. Bitte kehre zum Anmeldefenster zurÃ¼ck.";
+	public override string ResponseSystemErrorReturnToLogin => "Systemfehler. Bitte kehre zum Anmeldefenster zurück.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseTooManyAttempts => "Zu viele Versuche. Bitte versuche es spÃ¤ter erneut.";
+	public override string ResponseTooManyAttempts => "Zu viele Versuche. Bitte versuche es später erneut.";
 
 	/// <summary>
 	/// Key: "Response.TooManyCharacters"
@@ -189,12 +191,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten fÃ¼r dein Roblox-Konto aktiviert. Wenn du dich von einem neuen GerÃ¤t aus anmeldest, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
+		return $"Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten für dein Roblox-Konto aktiviert. Wenn du dich von einem neuen Gerät aus anmeldest, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten fÃ¼r dein Roblox-Konto aktiviert. Wenn du dich von einem neuen GerÃ¤t aus anmeldest, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
+		return "Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten für dein Roblox-Konto aktiviert. Wenn du dich von einem neuen Gerät aus anmeldest, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +206,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten wurde fÃ¼r das Roblox-Konto â€ž{accountName}â€œ deines Kindes aktiviert. Wenn sich dein Kind von einem neuen GerÃ¤t aus anmeldet, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
+		return $"Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten wurde für das Roblox-Konto „{accountName}“ deines Kindes aktiviert. Wenn sich dein Kind von einem neuen Gerät aus anmeldet, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten wurde fÃ¼r das Roblox-Konto â€ž{accountName}â€œ deines Kindes aktiviert. Wenn sich dein Kind von einem neuen GerÃ¤t aus anmeldet, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
+		return "Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten wurde für das Roblox-Konto „{accountName}“ deines Kindes aktiviert. Wenn sich dein Kind von einem neuen Gerät aus anmeldet, muss ein 6-stelliger Sicherheitscode eingegeben werden, den Roblox dir per E-Mail sendet.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -219,12 +221,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailSubject(string accountName)
 	{
-		return $"Verifizierung in 2 Schritten fÃ¼r folgendes Roblox-Konto aktiviert: {accountName}";
+		return $"Verifizierung in 2 Schritten für folgendes Roblox-Konto aktiviert: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailSubject()
 	{
-		return "Verifizierung in 2 Schritten fÃ¼r folgendes Roblox-Konto aktiviert: {accountName}";
+		return "Verifizierung in 2 Schritten für folgendes Roblox-Konto aktiviert: {accountName}";
 	}
 
 	/// <summary>
@@ -234,12 +236,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten fÃ¼r dein Roblox-Konto deaktiviert. Zur Anmeldung bei deinem Konto wird kein Sicherheitscode mehr benÃ¶tigt.{lineBreak}{lineBreak}Roblox";
+		return $"Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten für dein Roblox-Konto deaktiviert. Zur Anmeldung bei deinem Konto wird kein Sicherheitscode mehr benötigt.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten fÃ¼r dein Roblox-Konto deaktiviert. Zur Anmeldung bei deinem Konto wird kein Sicherheitscode mehr benÃ¶tigt.{lineBreak}{lineBreak}Roblox";
+		return "Hi {accountName},{lineBreak}{lineBreak}du hast die Verifizierung in 2 Schritten für dein Roblox-Konto deaktiviert. Zur Anmeldung bei deinem Konto wird kein Sicherheitscode mehr benötigt.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +251,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten fÃ¼r das Roblox Konto â€ž{accountName}â€œ deines Kindes wurde deaktiviert. Zur Anmeldung bei seinem Konto wird kein Sicherheitscode mehr benÃ¶tigt.{lineBreak}{lineBreak}Roblox";
+		return $"Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten für das Roblox Konto „{accountName}“ deines Kindes wurde deaktiviert. Zur Anmeldung bei seinem Konto wird kein Sicherheitscode mehr benötigt.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten fÃ¼r das Roblox Konto â€ž{accountName}â€œ deines Kindes wurde deaktiviert. Zur Anmeldung bei seinem Konto wird kein Sicherheitscode mehr benÃ¶tigt.{lineBreak}{lineBreak}Roblox";
+		return "Hi,{lineBreak}{lineBreak}die Verifizierung in 2 Schritten für das Roblox Konto „{accountName}“ deines Kindes wurde deaktiviert. Zur Anmeldung bei seinem Konto wird kein Sicherheitscode mehr benötigt.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -264,12 +266,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailSubject(string accountName)
 	{
-		return $"Verifizierung in 2 Schritten fÃ¼r folgendes Roblox-Konto deaktiviert: {accountName}";
+		return $"Verifizierung in 2 Schritten für folgendes Roblox-Konto deaktiviert: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailSubject()
 	{
-		return "Verifizierung in 2 Schritten fÃ¼r folgendes Roblox-Konto deaktiviert: {accountName}";
+		return "Verifizierung in 2 Schritten für folgendes Roblox-Konto deaktiviert: {accountName}";
 	}
 
 	/// <summary>
@@ -369,12 +371,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}Anmeldungscode fÃ¼r {accountName}: {lineBreak}{lineBreak} {code}{spanEndTag}{lineBreak}{lineBreak}Gib diesen Code im Fenster fÃ¼r die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschlieÃŸen. Dieser Code lÃ¤uft in 15 Minuten ab.{lineBreak}{lineBreak}Du erhÃ¤ltst diese E-Mail, weil es einen Anmeldungsversuch fÃ¼r dein Roblox-Konto von einem neuen Browser oder GerÃ¤t gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, kÃ¶nnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu Ã¤ndern, falls diese Anfrage nicht von dir selbst kam.{lineBreak}{lineBreak}Ressourcen:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Ã„ndere dein Passwort{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Erfahre mehr Ã¼ber die Verifizierung in 2 Schritten{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Sichere dein Konto ab{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Allgemeiner Roblox-Support{aTagEnd} {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
+		return $"{geoLocationInformation}{spanStartTagWithBold}Anmeldungscode für {accountName}: {lineBreak}{lineBreak} {code}{spanEndTag}{lineBreak}{lineBreak}Gib diesen Code im Fenster für die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschließen. Dieser Code läuft in 15 Minuten ab.{lineBreak}{lineBreak}Du erhältst diese E-Mail, weil es einen Anmeldungsversuch für dein Roblox-Konto von einem neuen Browser oder Gerät gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, könnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu ändern, falls diese Anfrage nicht von dir selbst kam.{lineBreak}{lineBreak}Ressourcen:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Ändere dein Passwort{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Erfahre mehr über die Verifizierung in 2 Schritten{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Sichere dein Konto ab{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Allgemeiner Roblox-Support{aTagEnd} {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}Anmeldungscode fÃ¼r {accountName}: {lineBreak}{lineBreak} {code}{spanEndTag}{lineBreak}{lineBreak}Gib diesen Code im Fenster fÃ¼r die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschlieÃŸen. Dieser Code lÃ¤uft in 15 Minuten ab.{lineBreak}{lineBreak}Du erhÃ¤ltst diese E-Mail, weil es einen Anmeldungsversuch fÃ¼r dein Roblox-Konto von einem neuen Browser oder GerÃ¤t gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, kÃ¶nnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu Ã¤ndern, falls diese Anfrage nicht von dir selbst kam.{lineBreak}{lineBreak}Ressourcen:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Ã„ndere dein Passwort{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Erfahre mehr Ã¼ber die Verifizierung in 2 Schritten{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Sichere dein Konto ab{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Allgemeiner Roblox-Support{aTagEnd} {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
+		return "{geoLocationInformation}{spanStartTagWithBold}Anmeldungscode für {accountName}: {lineBreak}{lineBreak} {code}{spanEndTag}{lineBreak}{lineBreak}Gib diesen Code im Fenster für die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschließen. Dieser Code läuft in 15 Minuten ab.{lineBreak}{lineBreak}Du erhältst diese E-Mail, weil es einen Anmeldungsversuch für dein Roblox-Konto von einem neuen Browser oder Gerät gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, könnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu ändern, falls diese Anfrage nicht von dir selbst kam.{lineBreak}{lineBreak}Ressourcen:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Ändere dein Passwort{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}Erfahre mehr über die Verifizierung in 2 Schritten{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Sichere dein Konto ab{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Allgemeiner Roblox-Support{aTagEnd} {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
 	}
 
 	/// <summary>
@@ -384,12 +386,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation}Anmeldungscode fÃ¼r {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Gib diesen Code im Fenster fÃ¼r die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschlieÃŸen. Dieser Code lÃ¤uft in 15 Minuten ab. {lineBreak}{lineBreak}Du erhÃ¤ltst diese E-Mail, weil es einen Anmeldungsversuch fÃ¼r dein Roblox-Konto von einem neuen Browser oder GerÃ¤t gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, kÃ¶nnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu Ã¤ndern, falls diese Anfrage nicht von dir selbst kam. {lineBreak}{lineBreak}Ressourcen: {lineBreak}Ã„ndere dein Passwort [{accountInfoPageLink}] {lineBreak}Erfahre mehr Ã¼ber die Verifizierung in 2 Schritten [{twoStepVerificationHelpArticleLink}]{lineBreak}Sichere dein Konto ab [{keepAccountSafeArticleLink}] {lineBreak}Allgemeiner Roblox-Support [{supportPageLink}] {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
+		return $"{geoLocationInformation}Anmeldungscode für {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Gib diesen Code im Fenster für die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschließen. Dieser Code läuft in 15 Minuten ab. {lineBreak}{lineBreak}Du erhältst diese E-Mail, weil es einen Anmeldungsversuch für dein Roblox-Konto von einem neuen Browser oder Gerät gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, könnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu ändern, falls diese Anfrage nicht von dir selbst kam. {lineBreak}{lineBreak}Ressourcen: {lineBreak}Ändere dein Passwort [{accountInfoPageLink}] {lineBreak}Erfahre mehr über die Verifizierung in 2 Schritten [{twoStepVerificationHelpArticleLink}]{lineBreak}Sichere dein Konto ab [{keepAccountSafeArticleLink}] {lineBreak}Allgemeiner Roblox-Support [{supportPageLink}] {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation}Anmeldungscode fÃ¼r {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Gib diesen Code im Fenster fÃ¼r die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschlieÃŸen. Dieser Code lÃ¤uft in 15 Minuten ab. {lineBreak}{lineBreak}Du erhÃ¤ltst diese E-Mail, weil es einen Anmeldungsversuch fÃ¼r dein Roblox-Konto von einem neuen Browser oder GerÃ¤t gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, kÃ¶nnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu Ã¤ndern, falls diese Anfrage nicht von dir selbst kam. {lineBreak}{lineBreak}Ressourcen: {lineBreak}Ã„ndere dein Passwort [{accountInfoPageLink}] {lineBreak}Erfahre mehr Ã¼ber die Verifizierung in 2 Schritten [{twoStepVerificationHelpArticleLink}]{lineBreak}Sichere dein Konto ab [{keepAccountSafeArticleLink}] {lineBreak}Allgemeiner Roblox-Support [{supportPageLink}] {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
+		return "{geoLocationInformation}Anmeldungscode für {accountName}: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Gib diesen Code im Fenster für die Verifizierung in 2 Schritten ein, um die Anmeldung abzuschließen. Dieser Code läuft in 15 Minuten ab. {lineBreak}{lineBreak}Du erhältst diese E-Mail, weil es einen Anmeldungsversuch für dein Roblox-Konto von einem neuen Browser oder Gerät gab. Solltest du nicht selbst versucht haben, dich bei Roblox anzumelden, könnte jemand anders versuchen, sich Zugang zu deinem Konto zu verschaffen. Wir empfehlen dir dringend, dein Passwort zu ändern, falls diese Anfrage nicht von dir selbst kam. {lineBreak}{lineBreak}Ressourcen: {lineBreak}Ändere dein Passwort [{accountInfoPageLink}] {lineBreak}Erfahre mehr über die Verifizierung in 2 Schritten [{twoStepVerificationHelpArticleLink}]{lineBreak}Sichere dein Konto ab [{keepAccountSafeArticleLink}] {lineBreak}Allgemeiner Roblox-Support [{supportPageLink}] {lineBreak}{lineBreak}Vielen Dank{lineBreak}{lineBreak}Das Roblox-Team";
 	}
 
 	/// <summary>
@@ -489,12 +491,12 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Verifizierungscode fÃ¼r Roblox-Konto: {accountName}";
+		return $"Verifizierungscode für Roblox-Konto: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Verifizierungscode fÃ¼r Roblox-Konto: {accountName}";
+		return "Verifizierungscode für Roblox-Konto: {accountName}";
 	}
 
 	protected override string _GetTemplateForLabelCode()
@@ -539,7 +541,7 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelEnterTwoStepVerificationCode()
 	{
-		return "Gib deinen Code fÃ¼r die Verifizierung in zwei Schritten ein.";
+		return "Gib deinen Code für die Verifizierung in zwei Schritten ein.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookPasswordWarning()
@@ -579,7 +581,7 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelTrustThisDevice()
 	{
-		return "Diesem GerÃ¤t fÃ¼r 30 Tage vertrauen";
+		return "Diesem Gerät für 30 Tage vertrauen";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
@@ -594,22 +596,22 @@ internal class TwoStepVerificationResources_de_de : TwoStepVerificationResources
 
 	protected override string _GetTemplateForResponseFeatureNotAvailable()
 	{
-		return "Feature nicht verfÃ¼gbar. Bitte kontaktiere den Support.";
+		return "Feature nicht verfügbar. Bitte kontaktiere den Support.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCode()
 	{
-		return "UngÃ¼ltiger Code.";
+		return "Ungültiger Code.";
 	}
 
 	protected override string _GetTemplateForResponseSystemErrorReturnToLogin()
 	{
-		return "Systemfehler. Bitte kehre zum Anmeldefenster zurÃ¼ck.";
+		return "Systemfehler. Bitte kehre zum Anmeldefenster zurück.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "Zu viele Versuche. Bitte versuche es spÃ¤ter erneut.";
+		return "Zu viele Versuche. Bitte versuche es später erneut.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCharacters()

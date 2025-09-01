@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides PurchaseDialogResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// Key: "Action.BuyAccess"
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "Acheter accÃ¨s";
+	public override string ActionBuyAccess => "Acheter accès";
 
 	/// <summary>
 	/// Key: "Action.BuyNow"
@@ -100,13 +102,13 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// Key: "Heading.PriceChanged"
 	/// English String: "Item Price Has Changed"
 	/// </summary>
-	public override string HeadingPriceChanged => "Prix de l'objet modifiÃ©";
+	public override string HeadingPriceChanged => "Prix de l'objet modifié";
 
 	/// <summary>
 	/// Key: "Heading.PurchaseComplete"
 	/// English String: "Purchase Complete"
 	/// </summary>
-	public override string HeadingPurchaseComplete => "Achat effectuÃ©";
+	public override string HeadingPurchaseComplete => "Achat effectué";
 
 	/// <summary>
 	/// Key: "Heading.RentItem"
@@ -130,7 +132,7 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// Key: "Message.PurchasingUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string MessagePurchasingUnavailable => "Les achats sont temporairement indisponibles. Veuillez rÃ©essayer plus tard.";
+	public override string MessagePurchasingUnavailable => "Les achats sont temporairement indisponibles. Veuillez réessayer plus tard.";
 
 	public PurchaseDialogResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -139,7 +141,7 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "Acheter accÃ¨s";
+		return "Acheter accès";
 	}
 
 	protected override string _GetTemplateForActionBuyNow()
@@ -214,12 +216,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 
 	protected override string _GetTemplateForHeadingPriceChanged()
 	{
-		return "Prix de l'objet modifiÃ©";
+		return "Prix de l'objet modifié";
 	}
 
 	protected override string _GetTemplateForHeadingPurchaseComplete()
 	{
-		return "Achat effectuÃ©";
+		return "Achat effectué";
 	}
 
 	protected override string _GetTemplateForHeadingRentItem()
@@ -243,12 +245,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageBalanceAfter(string robuxBalance)
 	{
-		return $"Ton solde aprÃ¨s cette transaction sera de {robuxBalance}";
+		return $"Ton solde après cette transaction sera de {robuxBalance}";
 	}
 
 	protected override string _GetTemplateForMessageBalanceAfter()
 	{
-		return "Ton solde aprÃ¨s cette transaction sera de {robuxBalance}";
+		return "Ton solde après cette transaction sera de {robuxBalance}";
 	}
 
 	/// <summary>
@@ -271,12 +273,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePriceChanged(string robuxBefore, string robuxAfter)
 	{
-		return $"Pendant que vous parcouriez la boutique, le prix de cet objet est passÃ© de {robuxBefore} Ã  {robuxAfter}.";
+		return $"Pendant que vous parcouriez la boutique, le prix de cet objet est passé de {robuxBefore} à {robuxAfter}.";
 	}
 
 	protected override string _GetTemplateForMessagePriceChanged()
 	{
-		return "Pendant que vous parcouriez la boutique, le prix de cet objet est passÃ© de {robuxBefore} Ã  {robuxAfter}.";
+		return "Pendant que vous parcouriez la boutique, le prix de cet objet est passé de {robuxBefore} à {robuxAfter}.";
 	}
 
 	/// <summary>
@@ -285,12 +287,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuy(string assetType, string assetName, string seller, string robux)
 	{
-		return $"Souhaitez-vous acheter l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return $"Souhaitez-vous acheter l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuy()
 	{
-		return "Souhaitez-vous acheter l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return "Souhaitez-vous acheter l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	/// <summary>
@@ -299,12 +301,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptBuyAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"Souhaitez-vous acheter l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return $"Souhaitez-vous acheter l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptBuyAccess()
 	{
-		return "Souhaitez-vous acheter l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return "Souhaitez-vous acheter l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	/// <summary>
@@ -313,12 +315,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFree(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"Souhaitez-vous obtenir l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
+		return $"Souhaitez-vous obtenir l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFree()
 	{
-		return "Souhaitez-vous obtenir l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
+		return "Souhaitez-vous obtenir l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
 	}
 
 	/// <summary>
@@ -327,12 +329,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptGetFreeAccess(string assetType, string assetName, string seller, string freeTextStart, string freeTextEnd)
 	{
-		return $"Souhaitez-vous obtenir l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
+		return $"Souhaitez-vous obtenir l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptGetFreeAccess()
 	{
-		return "Souhaitez-vous obtenir l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
+		return "Souhaitez-vous obtenir l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} {freeTextStart}gratuitement{freeTextEnd}\u00a0?";
 	}
 
 	/// <summary>
@@ -341,12 +343,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRent(string assetType, string assetName, string seller, string robux)
 	{
-		return $"Souhaitez-vous louer l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return $"Souhaitez-vous louer l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptRent()
 	{
-		return "Souhaitez-vous louer l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return "Souhaitez-vous louer l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	/// <summary>
@@ -355,17 +357,17 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessagePromptRentAccess(string assetType, string assetName, string seller, string robux)
 	{
-		return $"Souhaitez-vous louer l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return $"Souhaitez-vous louer l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePromptRentAccess()
 	{
-		return "Souhaitez-vous louer l'accÃ¨s Ã  l'Ã©lÃ©ment Â«\u00a0{assetName}\u00a0Â» de type {assetType} de {seller} pour {robux}\u00a0?";
+		return "Souhaitez-vous louer l'accès à l'élément «\u00a0{assetName}\u00a0» de type {assetType} de {seller} pour {robux}\u00a0?";
 	}
 
 	protected override string _GetTemplateForMessagePurchasingUnavailable()
 	{
-		return "Les achats sont temporairement indisponibles. Veuillez rÃ©essayer plus tard.";
+		return "Les achats sont temporairement indisponibles. Veuillez réessayer plus tard.";
 	}
 
 	/// <summary>
@@ -374,12 +376,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquired(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez obtenu l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez obtenu l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquired()
 	{
-		return "Vous avez obtenu l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez obtenu l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -388,12 +390,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyAcquiredAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez obtenu l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez obtenu l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyAcquiredAccess()
 	{
-		return "Vous avez obtenu l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez obtenu l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -402,12 +404,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBought(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez achetÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez acheté l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBought()
 	{
-		return "Vous avez achetÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez acheté l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -416,12 +418,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyBoughtAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez achetÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez acheté l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyBoughtAccess()
 	{
-		return "Vous avez achetÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez acheté l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -430,12 +432,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewed(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez renouvelÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez renouvelé l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewed()
 	{
-		return "Vous avez renouvelÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez renouvelé l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -444,12 +446,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRenewedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez renouvelÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez renouvelé l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRenewedAccess()
 	{
-		return "Vous avez renouvelÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez renouvelé l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRented(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez louÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez loué l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRented()
 	{
-		return "Vous avez louÃ© l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez loué l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	/// <summary>
@@ -472,12 +474,12 @@ internal class PurchaseDialogResources_fr_fr : PurchaseDialogResources_en_us, IP
 	/// </summary>
 	public override string MessageSuccessfullyRentedAccess(string assetName, string assetType, string seller, string robux)
 	{
-		return $"Vous avez louÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return $"Vous avez loué l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 
 	protected override string _GetTemplateForMessageSuccessfullyRentedAccess()
 	{
-		return "Vous avez louÃ© l'accÃ¨s Ã  l'Ã©lÃ©ment {assetName} de type {assetType} de {seller} pour {robux}.";
+		return "Vous avez loué l'accès à l'élément {assetName} de type {assetType} de {seller} pour {robux}.";
 	}
 }
 

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface ICaptchaResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface ICaptchaResources : ITranslationResources
 
 {
 	/// <summary>
@@ -11,3 +13,5 @@
 
 
 }
+
+

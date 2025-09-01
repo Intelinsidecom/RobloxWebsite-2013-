@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -10,109 +12,109 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Action.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string ActionArchive => "ë³´ê´€";
+	public override string ActionArchive => "보관";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "ë’¤ë¡œ";
+	public override string ActionBack => "뒤로";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "ì·¨ì†Œ";
+	public override string ActionDiscard => "취소";
 
 	/// <summary>
 	/// Key: "Action.MarkAsRead"
 	/// English String: "Mark As Read"
 	/// </summary>
-	public override string ActionMarkAsRead => "ì½ìŒìœ¼ë¡œ í‘œì‹œ";
+	public override string ActionMarkAsRead => "읽음으로 표시";
 
 	/// <summary>
 	/// Key: "Action.MarkAsUnread"
 	/// English String: "Mark As Unread"
 	/// </summary>
-	public override string ActionMarkAsUnread => "ì½ì§€ ì•ŠìŒìœ¼ë¡œ í‘œì‹œ";
+	public override string ActionMarkAsUnread => "읽지 않음으로 표시";
 
 	/// <summary>
 	/// Key: "Action.MoveToInbox"
 	/// English String: "Move To Inbox"
 	/// </summary>
-	public override string ActionMoveToInbox => "ìˆ˜ì‹ í•¨ìœ¼ë¡œ ì´ë™";
+	public override string ActionMoveToInbox => "수신함으로 이동";
 
 	/// <summary>
 	/// Key: "Action.Reply"
 	/// English String: "Reply"
 	/// </summary>
-	public override string ActionReply => "ë‹µë³€";
+	public override string ActionReply => "답변";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "ì‹ ê³ í•˜ê¸°";
+	public override string ActionReportAbuse => "신고하기";
 
 	/// <summary>
 	/// Key: "Action.Send"
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionSend => "ë³´ë‚´ê¸°";
+	public override string ActionSend => "보내기";
 
 	/// <summary>
 	/// Key: "Action.SendReply"
 	/// English String: "Send Reply"
 	/// </summary>
-	public override string ActionSendReply => "ë‹µë³€ ë³´ë‚´ê¸°";
+	public override string ActionSendReply => "답변 보내기";
 
 	/// <summary>
 	/// Key: "Heading.Message"
 	/// English String: "Messages"
 	/// </summary>
-	public override string HeadingMessage => "ë©”ì‹œì§€";
+	public override string HeadingMessage => "메시지";
 
 	/// <summary>
 	/// Key: "Heading.NewMessages"
 	/// English String: "New Message"
 	/// </summary>
-	public override string HeadingNewMessages => "ìƒˆ ë©”ì‹œì§€";
+	public override string HeadingNewMessages => "새 메시지";
 
 	/// <summary>
 	/// Key: "Heading.Response"
 	/// English String: "Responses:"
 	/// </summary>
-	public override string HeadingResponse => "ì‘ë‹µ:";
+	public override string HeadingResponse => "응답:";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "ì „ì²´";
+	public override string LabelAll => "전체";
 
 	/// <summary>
 	/// Key: "Label.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string LabelArchive => "ë³´ê´€í•¨";
+	public override string LabelArchive => "보관함";
 
 	/// <summary>
 	/// Key: "Label.Inbox"
 	/// English String: "Inbox"
 	/// </summary>
-	public override string LabelInbox => "ìˆ˜ì‹ í•¨";
+	public override string LabelInbox => "수신함";
 
 	/// <summary>
 	/// Key: "Label.IncludeMessage"
 	/// English String: "Include Previous Message"
 	/// </summary>
-	public override string LabelIncludeMessage => "ì´ì „ ë©”ì‹œì§€ í¬í•¨";
+	public override string LabelIncludeMessage => "이전 메시지 포함";
 
 	/// <summary>
 	/// Key: "Label.News"
 	/// English String: "News"
 	/// </summary>
-	public override string LabelNews => "ìƒˆì†Œì‹";
+	public override string LabelNews => "새소식";
 
 	/// <summary>
 	/// Key: "Label.Of"
@@ -124,128 +126,128 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// Key: "Label.Select"
 	/// English String: "Select..."
 	/// </summary>
-	public override string LabelSelect => "ì„ íƒ...";
+	public override string LabelSelect => "선택...";
 
 	/// <summary>
 	/// Key: "Label.Sent"
 	/// English String: "Sent"
 	/// </summary>
-	public override string LabelSent => "ë°œì‹ í•¨";
+	public override string LabelSent => "발신함";
 
 	/// <summary>
 	/// Key: "Label.Subject"
 	/// English String: "Subject:"
 	/// </summary>
-	public override string LabelSubject => "ì œëª©:";
+	public override string LabelSubject => "제목:";
 
 	/// <summary>
 	/// Key: "Label.To"
 	/// English String: "To:"
 	/// </summary>
-	public override string LabelTo => "ìˆ˜ì‹ ìž:";
+	public override string LabelTo => "수신자:";
 
 	/// <summary>
 	/// Key: "Message.BodyCantBlank"
 	/// English String: "The message body can't be blank."
 	/// </summary>
-	public override string MessageBodyCantBlank => "ë©”ì‹œì§€ ë‚´ìš©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
+	public override string MessageBodyCantBlank => "메시지 내용을 입력하셔야 합니다.";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
 	/// English String: "Sorry, an error occurred sending your message."
 	/// </summary>
-	public override string MessageGeneralError => "ì£„ì†¡í•©ë‹ˆë‹¤. ë©”ì‹œì§€ë¥¼ ì „ì†¡ ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+	public override string MessageGeneralError => "죄송합니다. 메시지를 전송 중 오류가 발생했어요.";
 
 	/// <summary>
 	/// Key: "Message.IdTheftWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageIdTheftWarning => "RobloxëŠ” ì ˆëŒ€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ì§€ ì•ŠìŠµë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìš”êµ¬í•˜ëŠ” í–‰ìœ„ëŠ” ê³„ì •ì„ ë„ìš©í•˜ë ¤ëŠ” ì‹œë„ë¼ëŠ” ì‚¬ì‹¤, ìžŠì§€ë§ˆì„¸ìš”.";
+	public override string MessageIdTheftWarning => "Roblox는 절대 비밀번호를 물어보지 않습니다. 비밀번호를 요구하는 행위는 계정을 도용하려는 시도라는 사실, 잊지마세요.";
 
 	/// <summary>
 	/// Key: "Message.NoMessageExist"
 	/// English String: "Message doesn't exist"
 	/// </summary>
-	public override string MessageNoMessageExist => "ë©”ì‹œì§€ê°€ ì—†ì–´ìš”";
+	public override string MessageNoMessageExist => "메시지가 없어요";
 
 	/// <summary>
 	/// Key: "Message.NoNews"
 	/// English String: "You have no news."
 	/// </summary>
-	public override string MessageNoNews => "ìƒˆì†Œì‹ì´ ì—†ì–´ìš”.";
+	public override string MessageNoNews => "새소식이 없어요.";
 
 	/// <summary>
 	/// Key: "Message.NoRecipient"
 	/// English String: "Recipient doesn't exist!"
 	/// </summary>
-	public override string MessageNoRecipient => "ìˆ˜ì‹ ìžê°€ ì—†ì–´ìš”!";
+	public override string MessageNoRecipient => "수신자가 없어요!";
 
 	/// <summary>
 	/// Key: "Message.NotAuthorizeToManipulate"
 	/// English String: "Not authorized to manipulate message"
 	/// </summary>
-	public override string MessageNotAuthorizeToManipulate => "ë©”ì‹œì§€ë¥¼ ì¡°ìž‘í•  ê¶Œí•œ ì—†ìŒ";
+	public override string MessageNotAuthorizeToManipulate => "메시지를 조작할 권한 없음";
 
 	/// <summary>
 	/// Key: "Message.NotSendAndModerated"
 	/// English String: "Your message was not sent because it was moderated."
 	/// </summary>
-	public override string MessageNotSendAndModerated => "ë©”ì‹œì§€ê°€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í•´ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+	public override string MessageNotSendAndModerated => "메시지가 검열을 통과하지 못해 전송되지 않았어요.";
 
 	/// <summary>
 	/// Key: "Message.RecipientPrivacySettingsTooHigh"
 	/// English String: "The recipient's privacy settings prevent you from sending this message."
 	/// </summary>
-	public override string MessageRecipientPrivacySettingsTooHigh => "ìˆ˜ì‹ ìžì˜ ê°œì¸ì •ë³´ ì„¤ì • ë•Œë¬¸ì— ë³¸ ë©”ì‹œì§€ë¥¼ ë³´ë‚¼ ìˆ˜ ì—†ì–´ìš”.";
+	public override string MessageRecipientPrivacySettingsTooHigh => "수신자의 개인정보 설정 때문에 본 메시지를 보낼 수 없어요.";
 
 	/// <summary>
 	/// Key: "Message.ReplyHere"
 	/// English String: "Reply here..."
 	/// </summary>
-	public override string MessageReplyHere => "ë‹µë³€ ìž‘ì„±...";
+	public override string MessageReplyHere => "답변 작성...";
 
 	/// <summary>
 	/// Key: "Message.RobloxWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageRobloxWarning => "RobloxëŠ” ì ˆëŒ€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ì§€ ì•ŠìŠµë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ëŠ” í–‰ìœ„ëŠ” ê³„ì •ì„ ë„ìš©í•˜ë ¤ëŠ” ì‹œë„ë¼ëŠ” ì‚¬ì‹¤, ìžŠì§€ë§ˆì„¸ìš”.";
+	public override string MessageRobloxWarning => "Roblox는 절대 비밀번호를 물어보지 않습니다. 비밀번호를 물어보는 행위는 계정을 도용하려는 시도라는 사실, 잊지마세요.";
 
 	/// <summary>
 	/// Key: "Message.SendSuccessfully"
 	/// English String: "Successfully sent message."
 	/// </summary>
-	public override string MessageSendSuccessfully => "ë©”ì‹œì§€ ì „ì†¡ ì™„ë£Œ.";
+	public override string MessageSendSuccessfully => "메시지 전송 완료.";
 
 	/// <summary>
 	/// Key: "Message.SendTooManyMessages"
 	/// English String: "You're sending too many messages too quickly."
 	/// </summary>
-	public override string MessageSendTooManyMessages => "ì§§ì€ ì‹œê°„ ì•ˆì— ë„ˆë¬´ ë§Žì€ ë©”ì‹œì§€ë¥¼ ë³´ë‚´ê³  ìžˆìŠµë‹ˆë‹¤.";
+	public override string MessageSendTooManyMessages => "짧은 시간 안에 너무 많은 메시지를 보내고 있습니다.";
 
 	/// <summary>
 	/// Key: "Message.SubjectCantBlank"
 	/// English String: "The message subject can't be blank."
 	/// </summary>
-	public override string MessageSubjectCantBlank => "ë©”ì‹œì§€ ì œëª©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
+	public override string MessageSubjectCantBlank => "메시지 제목을 입력하셔야 합니다.";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// English String: "Unknown error"
 	/// </summary>
-	public override string MessageUnknownError => "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜";
+	public override string MessageUnknownError => "알 수 없는 오류";
 
 	/// <summary>
 	/// Key: "Message.UnknownMessageType"
 	/// This serves as the fallback string for when an message type is received that the web chat does not know how to render.
 	/// English String: "A message cannot be displayed"
 	/// </summary>
-	public override string MessageUnknownMessageType => "ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ìŒ";
+	public override string MessageUnknownMessageType => "메시지를 표시할 수 없음";
 
 	/// <summary>
 	/// Key: "Message.WriteYourMessage"
 	/// English String: "Write your message..."
 	/// </summary>
-	public override string MessageWriteYourMessage => "ë©”ì‹œì§€ë¥¼ ìž‘ì„±í•˜ì„¸ìš”...";
+	public override string MessageWriteYourMessage => "메시지를 작성하세요...";
 
 	public MessagesResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -254,92 +256,92 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionArchive()
 	{
-		return "ë³´ê´€";
+		return "보관";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "ë’¤ë¡œ";
+		return "뒤로";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionMarkAsRead()
 	{
-		return "ì½ìŒìœ¼ë¡œ í‘œì‹œ";
+		return "읽음으로 표시";
 	}
 
 	protected override string _GetTemplateForActionMarkAsUnread()
 	{
-		return "ì½ì§€ ì•ŠìŒìœ¼ë¡œ í‘œì‹œ";
+		return "읽지 않음으로 표시";
 	}
 
 	protected override string _GetTemplateForActionMoveToInbox()
 	{
-		return "ìˆ˜ì‹ í•¨ìœ¼ë¡œ ì´ë™";
+		return "수신함으로 이동";
 	}
 
 	protected override string _GetTemplateForActionReply()
 	{
-		return "ë‹µë³€";
+		return "답변";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "ì‹ ê³ í•˜ê¸°";
+		return "신고하기";
 	}
 
 	protected override string _GetTemplateForActionSend()
 	{
-		return "ë³´ë‚´ê¸°";
+		return "보내기";
 	}
 
 	protected override string _GetTemplateForActionSendReply()
 	{
-		return "ë‹µë³€ ë³´ë‚´ê¸°";
+		return "답변 보내기";
 	}
 
 	protected override string _GetTemplateForHeadingMessage()
 	{
-		return "ë©”ì‹œì§€";
+		return "메시지";
 	}
 
 	protected override string _GetTemplateForHeadingNewMessages()
 	{
-		return "ìƒˆ ë©”ì‹œì§€";
+		return "새 메시지";
 	}
 
 	protected override string _GetTemplateForHeadingResponse()
 	{
-		return "ì‘ë‹µ:";
+		return "응답:";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "ì „ì²´";
+		return "전체";
 	}
 
 	protected override string _GetTemplateForLabelArchive()
 	{
-		return "ë³´ê´€í•¨";
+		return "보관함";
 	}
 
 	protected override string _GetTemplateForLabelInbox()
 	{
-		return "ìˆ˜ì‹ í•¨";
+		return "수신함";
 	}
 
 	protected override string _GetTemplateForLabelIncludeMessage()
 	{
-		return "ì´ì „ ë©”ì‹œì§€ í¬í•¨";
+		return "이전 메시지 포함";
 	}
 
 	protected override string _GetTemplateForLabelNews()
 	{
-		return "ìƒˆì†Œì‹";
+		return "새소식";
 	}
 
 	/// <summary>
@@ -348,12 +350,12 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string LabelNoMessagesInCategory(string activeTab)
 	{
-		return $"{activeTab} ë©”ì‹œì§€ê°€ ì—†ì–´ìš”.";
+		return $"{activeTab} 메시지가 없어요.";
 	}
 
 	protected override string _GetTemplateForLabelNoMessagesInCategory()
 	{
-		return "{activeTab} ë©”ì‹œì§€ê°€ ì—†ì–´ìš”.";
+		return "{activeTab} 메시지가 없어요.";
 	}
 
 	protected override string _GetTemplateForLabelOf()
@@ -363,27 +365,27 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelSelect()
 	{
-		return "ì„ íƒ...";
+		return "선택...";
 	}
 
 	protected override string _GetTemplateForLabelSent()
 	{
-		return "ë°œì‹ í•¨";
+		return "발신함";
 	}
 
 	protected override string _GetTemplateForLabelSubject()
 	{
-		return "ì œëª©:";
+		return "제목:";
 	}
 
 	protected override string _GetTemplateForLabelTo()
 	{
-		return "ìˆ˜ì‹ ìž:";
+		return "수신자:";
 	}
 
 	protected override string _GetTemplateForMessageBodyCantBlank()
 	{
-		return "ë©”ì‹œì§€ ë‚´ìš©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
+		return "메시지 내용을 입력하셔야 합니다.";
 	}
 
 	/// <summary>
@@ -392,62 +394,62 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageBodyTooLong(string maxLength)
 	{
-		return $"ë©”ì‹œì§€ ë‚´ìš©ì„ {maxLength}ìž ì´í•˜ë¡œ ì¤„ì¸ ë‹¤ìŒ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return $"메시지 내용을 {maxLength}자 이하로 줄인 다음 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageBodyTooLong()
 	{
-		return "ë©”ì‹œì§€ ë‚´ìš©ì„ {maxLength}ìž ì´í•˜ë¡œ ì¤„ì¸ ë‹¤ìŒ ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "메시지 내용을 {maxLength}자 이하로 줄인 다음 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤. ë©”ì‹œì§€ë¥¼ ì „ì†¡ ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+		return "죄송합니다. 메시지를 전송 중 오류가 발생했어요.";
 	}
 
 	protected override string _GetTemplateForMessageIdTheftWarning()
 	{
-		return "RobloxëŠ” ì ˆëŒ€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ì§€ ì•ŠìŠµë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ìš”êµ¬í•˜ëŠ” í–‰ìœ„ëŠ” ê³„ì •ì„ ë„ìš©í•˜ë ¤ëŠ” ì‹œë„ë¼ëŠ” ì‚¬ì‹¤, ìžŠì§€ë§ˆì„¸ìš”.";
+		return "Roblox는 절대 비밀번호를 물어보지 않습니다. 비밀번호를 요구하는 행위는 계정을 도용하려는 시도라는 사실, 잊지마세요.";
 	}
 
 	protected override string _GetTemplateForMessageNoMessageExist()
 	{
-		return "ë©”ì‹œì§€ê°€ ì—†ì–´ìš”";
+		return "메시지가 없어요";
 	}
 
 	protected override string _GetTemplateForMessageNoNews()
 	{
-		return "ìƒˆì†Œì‹ì´ ì—†ì–´ìš”.";
+		return "새소식이 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageNoRecipient()
 	{
-		return "ìˆ˜ì‹ ìžê°€ ì—†ì–´ìš”!";
+		return "수신자가 없어요!";
 	}
 
 	protected override string _GetTemplateForMessageNotAuthorizeToManipulate()
 	{
-		return "ë©”ì‹œì§€ë¥¼ ì¡°ìž‘í•  ê¶Œí•œ ì—†ìŒ";
+		return "메시지를 조작할 권한 없음";
 	}
 
 	protected override string _GetTemplateForMessageNotSendAndModerated()
 	{
-		return "ë©”ì‹œì§€ê°€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í•´ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+		return "메시지가 검열을 통과하지 못해 전송되지 않았어요.";
 	}
 
 	protected override string _GetTemplateForMessageRecipientPrivacySettingsTooHigh()
 	{
-		return "ìˆ˜ì‹ ìžì˜ ê°œì¸ì •ë³´ ì„¤ì • ë•Œë¬¸ì— ë³¸ ë©”ì‹œì§€ë¥¼ ë³´ë‚¼ ìˆ˜ ì—†ì–´ìš”.";
+		return "수신자의 개인정보 설정 때문에 본 메시지를 보낼 수 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageReplyHere()
 	{
-		return "ë‹µë³€ ìž‘ì„±...";
+		return "답변 작성...";
 	}
 
 	protected override string _GetTemplateForMessageRobloxWarning()
 	{
-		return "RobloxëŠ” ì ˆëŒ€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ì§€ ì•ŠìŠµë‹ˆë‹¤. ë¹„ë°€ë²ˆí˜¸ë¥¼ ë¬¼ì–´ë³´ëŠ” í–‰ìœ„ëŠ” ê³„ì •ì„ ë„ìš©í•˜ë ¤ëŠ” ì‹œë„ë¼ëŠ” ì‚¬ì‹¤, ìžŠì§€ë§ˆì„¸ìš”.";
+		return "Roblox는 절대 비밀번호를 물어보지 않습니다. 비밀번호를 물어보는 행위는 계정을 도용하려는 시도라는 사실, 잊지마세요.";
 	}
 
 	/// <summary>
@@ -456,37 +458,37 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageSenderPrivacySettingTooHeight(string frontLink, string endLink)
 	{
-		return $"íšŒì›ë‹˜ì˜ {frontLink}ê°œì¸ì •ë³´ ì„¤ì •{endLink} ë•Œë¬¸ì— ë³¸ ë©”ì‹œì§€ë¥¼ ë³´ë‚¼ ìˆ˜ ì—†ì–´ìš”.";
+		return $"회원님의 {frontLink}개인정보 설정{endLink} 때문에 본 메시지를 보낼 수 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageSenderPrivacySettingTooHeight()
 	{
-		return "íšŒì›ë‹˜ì˜ {frontLink}ê°œì¸ì •ë³´ ì„¤ì •{endLink} ë•Œë¬¸ì— ë³¸ ë©”ì‹œì§€ë¥¼ ë³´ë‚¼ ìˆ˜ ì—†ì–´ìš”.";
+		return "회원님의 {frontLink}개인정보 설정{endLink} 때문에 본 메시지를 보낼 수 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageSendSuccessfully()
 	{
-		return "ë©”ì‹œì§€ ì „ì†¡ ì™„ë£Œ.";
+		return "메시지 전송 완료.";
 	}
 
 	protected override string _GetTemplateForMessageSendTooManyMessages()
 	{
-		return "ì§§ì€ ì‹œê°„ ì•ˆì— ë„ˆë¬´ ë§Žì€ ë©”ì‹œì§€ë¥¼ ë³´ë‚´ê³  ìžˆìŠµë‹ˆë‹¤.";
+		return "짧은 시간 안에 너무 많은 메시지를 보내고 있습니다.";
 	}
 
 	protected override string _GetTemplateForMessageSubjectCantBlank()
 	{
-		return "ë©”ì‹œì§€ ì œëª©ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.";
+		return "메시지 제목을 입력하셔야 합니다.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜";
+		return "알 수 없는 오류";
 	}
 
 	protected override string _GetTemplateForMessageUnknownMessageType()
 	{
-		return "ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ìŒ";
+		return "메시지를 표시할 수 없음";
 	}
 
 	/// <summary>
@@ -495,17 +497,17 @@ internal class MessagesResources_ko_kr : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageVerifySenderEmail(string frontLink, string endLink)
 	{
-		return $"ë©”ì‹œì§€ë¥¼ ë³´ë‚´ë ¤ë©´ {frontLink}ê³„ì • ì„¤ì •{endLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ ì¸ì¦ì„ ì™„ë£Œí•˜ì„¸ìš”.";
+		return $"메시지를 보내려면 {frontLink}계정 설정{endLink} 페이지에서 이메일 인증을 완료하세요.";
 	}
 
 	protected override string _GetTemplateForMessageVerifySenderEmail()
 	{
-		return "ë©”ì‹œì§€ë¥¼ ë³´ë‚´ë ¤ë©´ {frontLink}ê³„ì • ì„¤ì •{endLink} íŽ˜ì´ì§€ì—ì„œ ì´ë©”ì¼ ì¸ì¦ì„ ì™„ë£Œí•˜ì„¸ìš”.";
+		return "메시지를 보내려면 {frontLink}계정 설정{endLink} 페이지에서 이메일 인증을 완료하세요.";
 	}
 
 	protected override string _GetTemplateForMessageWriteYourMessage()
 	{
-		return "ë©”ì‹œì§€ë¥¼ ìž‘ì„±í•˜ì„¸ìš”...";
+		return "메시지를 작성하세요...";
 	}
 }
 

@@ -1,23 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationinternal {
-    class ReviewTaskRepublishResult<TTask> : IReviewTaskRepublishResult<TTask> where TTask : IReviewTask
+using Roblox.Localization.Core;
+using Roblox.Moderation.Interfaces;
 
+namespace Roblox.Moderation
 {
-	public bool Success { get; }
+    public class ReviewTaskRepublishResult : IReviewTaskRepublishResult<IReviewTask>
+    {
+        public bool Success { get; set; }
+        public Exception Error { get; set; }
+        public string ErrorMessage { get; set; }
 
-	public IReadOnlyCollection<TTask> TasksRepublishedForDesiredLocale { get; }
+        public IReadOnlyCollection<IReviewTask> TasksRepublishedForDesiredLocale { get; set; }
 
-	public IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> AllTasksRepublishedByLocaleIdentifier { get; }
-
-	public ReviewTaskRepublishResult(bool success, IReadOnlyCollection<TTask> tasksRepublishedForDesiredLocale, IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> allTasksRepublishedByLocaleIdentifier)
-	{
-		Success = success;
-		TasksRepublishedForDesiredLocale = tasksRepublishedForDesiredLocale ?? throw new ArgumentNullException("tasksRepublishedForDesiredLocale");
-		AllTasksRepublishedByLocaleIdentifier = allTasksRepublishedByLocaleIdentifier ?? throw new ArgumentNullException("allTasksRepublishedByLocaleIdentifier");
-	}
-}
-
-
+        public IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> AllTasksRepublishedByLocaleIdentifier { get; set; }
+    }
 }

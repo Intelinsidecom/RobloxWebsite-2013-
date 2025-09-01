@@ -2430,6 +2430,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "Microsoft.Data.SqlClient >= 5.2.2",
       "Roblox.Caching >= 1.0.0",
       "Roblox.Configuration >= 1.0.0",
       "Roblox.Data >= 1.0.0",
@@ -2506,6 +2507,10 @@
       "net472": {
         "targetAlias": "net472",
         "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[7.0.0, )"

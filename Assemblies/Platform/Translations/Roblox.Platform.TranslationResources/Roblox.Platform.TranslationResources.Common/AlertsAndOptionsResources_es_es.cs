@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
@@ -22,7 +24,7 @@ internal class AlertsAndOptionsResources_es_es : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "Cerrar sesiÃ³n";
+	public override string LabelsLogout => "Cerrar sesión";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +36,7 @@ internal class AlertsAndOptionsResources_es_es : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "ConfiguraciÃ³n";
+	public override string LabelsSettings => "Configuración";
 
 	public AlertsAndOptionsResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -53,7 +55,7 @@ internal class AlertsAndOptionsResources_es_es : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "Cerrar sesiÃ³n";
+		return "Cerrar sesión";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +65,7 @@ internal class AlertsAndOptionsResources_es_es : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue}Â Robux"
+	/// English String: "{robuxValue} Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,7 +79,7 @@ internal class AlertsAndOptionsResources_es_es : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "ConfiguraciÃ³n";
+		return "Configuración";
 	}
 }
 

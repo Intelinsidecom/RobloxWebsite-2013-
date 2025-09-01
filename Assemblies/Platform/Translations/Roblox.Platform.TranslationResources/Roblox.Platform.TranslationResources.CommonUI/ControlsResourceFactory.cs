@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     static class ControlsResourceFactory
 
 {
@@ -31,3 +33,4 @@
 
 
 }
+

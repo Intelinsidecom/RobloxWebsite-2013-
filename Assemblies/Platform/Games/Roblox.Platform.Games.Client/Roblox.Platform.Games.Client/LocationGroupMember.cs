@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class LocationGroupMember
+namespace Roblox.Platform.Games.Client {
+    public class LocationGroupMember
 
 {
 	public long Id { get; set; }

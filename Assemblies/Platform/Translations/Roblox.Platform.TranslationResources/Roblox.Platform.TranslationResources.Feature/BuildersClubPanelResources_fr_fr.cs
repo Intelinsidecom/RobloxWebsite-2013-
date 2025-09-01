@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPanelResources_en_us to provide locale specific translations where possible,
@@ -32,21 +34,21 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 	/// button text
 	/// English String: "Update Credit Card"
 	/// </summary>
-	public override string ActionUpdateCreditCard => "Mettre Ã  jour la carte de crÃ©dit";
+	public override string ActionUpdateCreditCard => "Mettre à jour la carte de crédit";
 
 	/// <summary>
 	/// Key: "Action.WhereToBuy"
 	/// button text
 	/// English String: "Where to Buy"
 	/// </summary>
-	public override string ActionWhereToBuy => "OÃ¹ en acheter";
+	public override string ActionWhereToBuy => "Où en acheter";
 
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
-	public override string DescriptionBuyRobux => "Le Robux est la monnaie virtuelle utilisÃ©e dans bon nombre de nos jeux en ligne. Vous pouvez Ã©galement les dÃ©penser pour donner un look d'enfer Ã  votre avatar, mais aussi obtenir un super Ã©quipement Ã  emmener dans les batailles en multijoueur, acheter des objets en Ã©dition limitÃ©e pour les revendre ou les Ã©changer, etc. Il vous faudra des Robux pour tout Ã§a. Qu'attendez-vous\u00a0?";
+	public override string DescriptionBuyRobux => "Le Robux est la monnaie virtuelle utilisée dans bon nombre de nos jeux en ligne. Vous pouvez également les dépenser pour donner un look d'enfer à votre avatar, mais aussi obtenir un super équipement à emmener dans les batailles en multijoueur, acheter des objets en édition limitée pour les revendre ou les échanger, etc. Il vous faudra des Robux pour tout ça. Qu'attendez-vous\u00a0?";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
@@ -126,12 +128,12 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForActionUpdateCreditCard()
 	{
-		return "Mettre Ã  jour la carte de crÃ©dit";
+		return "Mettre à jour la carte de crédit";
 	}
 
 	protected override string _GetTemplateForActionWhereToBuy()
 	{
-		return "OÃ¹ en acheter";
+		return "Où en acheter";
 	}
 
 	/// <summary>
@@ -151,7 +153,7 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForDescriptionBuyRobux()
 	{
-		return "Le Robux est la monnaie virtuelle utilisÃ©e dans bon nombre de nos jeux en ligne. Vous pouvez Ã©galement les dÃ©penser pour donner un look d'enfer Ã  votre avatar, mais aussi obtenir un super Ã©quipement Ã  emmener dans les batailles en multijoueur, acheter des objets en Ã©dition limitÃ©e pour les revendre ou les Ã©changer, etc. Il vous faudra des Robux pour tout Ã§a. Qu'attendez-vous\u00a0?";
+		return "Le Robux est la monnaie virtuelle utilisée dans bon nombre de nos jeux en ligne. Vous pouvez également les dépenser pour donner un look d'enfer à votre avatar, mais aussi obtenir un super équipement à emmener dans les batailles en multijoueur, acheter des objets en édition limitée pour les revendre ou les échanger, etc. Il vous faudra des Robux pour tout ça. Qu'attendez-vous\u00a0?";
 	}
 
 	/// <summary>
@@ -161,12 +163,12 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellations(string linkStartTag, string linkEndTag)
 	{
-		return $"Vous pouvez dÃ©sactiver le renouvellement automatique de l'abonnement Ã  tout moment avant la date de renouvellement\u00a0; vous conserverez l'accÃ¨s aux avantages du Builders Club pour le reste de la pÃ©riode entamÃ©e. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situÃ© dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramÃ¨tres, puis confirmez l'annulation.";
+		return $"Vous pouvez désactiver le renouvellement automatique de l'abonnement à tout moment avant la date de renouvellement\u00a0; vous conserverez l'accès aux avantages du Builders Club pour le reste de la période entamée. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situé dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramètres, puis confirmez l'annulation.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellations()
 	{
-		return "Vous pouvez dÃ©sactiver le renouvellement automatique de l'abonnement Ã  tout moment avant la date de renouvellement\u00a0; vous conserverez l'accÃ¨s aux avantages du Builders Club pour le reste de la pÃ©riode entamÃ©e. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situÃ© dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramÃ¨tres, puis confirmez l'annulation.";
+		return "Vous pouvez désactiver le renouvellement automatique de l'abonnement à tout moment avant la date de renouvellement\u00a0; vous conserverez l'accès aux avantages du Builders Club pour le reste de la période entamée. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situé dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramètres, puis confirmez l'annulation.";
 	}
 
 	/// <summary>
@@ -175,12 +177,12 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellationsPremium(string linkStartTag, string linkEndTag)
 	{
-		return $"Vous pouvez dÃ©sactiver le renouvellement automatique de l'abonnement Ã  tout moment avant la date de renouvellement\u00a0; vous conserverez l'accÃ¨s aux avantages du Builders Club pour le reste de la pÃ©riode entamÃ©e. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situÃ© dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramÃ¨tres, puis confirmez l'annulation.";
+		return $"Vous pouvez désactiver le renouvellement automatique de l'abonnement à tout moment avant la date de renouvellement\u00a0; vous conserverez l'accès aux avantages du Builders Club pour le reste de la période entamée. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situé dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramètres, puis confirmez l'annulation.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellationsPremium()
 	{
-		return "Vous pouvez dÃ©sactiver le renouvellement automatique de l'abonnement Ã  tout moment avant la date de renouvellement\u00a0; vous conserverez l'accÃ¨s aux avantages du Builders Club pour le reste de la pÃ©riode entamÃ©e. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situÃ© dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramÃ¨tres, puis confirmez l'annulation.";
+		return "Vous pouvez désactiver le renouvellement automatique de l'abonnement à tout moment avant la date de renouvellement\u00a0; vous conserverez l'accès aux avantages du Builders Club pour le reste de la période entamée. Pour ce faire, cliquez sur le bouton Annuler le renouvellement de l'abonnement situé dans l'onglet {linkStartTag}Facturation{linkEndTag} de la page des paramètres, puis confirmez l'annulation.";
 	}
 
 	/// <summary>
@@ -190,12 +192,12 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLeanMoreKidsSafety(string startLinkTag, string endLinkTag)
 	{
-		return $"Apprenez-en davantage au sujet du Builders Club et sur la faÃ§on dont nous {startLinkTag}garantissons la sÃ©curitÃ© des enfants{endLinkTag}.";
+		return $"Apprenez-en davantage au sujet du Builders Club et sur la façon dont nous {startLinkTag}garantissons la sécurité des enfants{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeanMoreKidsSafety()
 	{
-		return "Apprenez-en davantage au sujet du Builders Club et sur la faÃ§on dont nous {startLinkTag}garantissons la sÃ©curitÃ© des enfants{endLinkTag}.";
+		return "Apprenez-en davantage au sujet du Builders Club et sur la façon dont nous {startLinkTag}garantissons la sécurité des enfants{endLinkTag}.";
 	}
 
 	/// <summary>
@@ -204,12 +206,12 @@ internal class BuildersClubPanelResources_fr_fr : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLearnMoreKidsSafetyPremium(string startLinkTag, string endLinkTag)
 	{
-		return $"Apprenez-en davantage au sujet de Premium et sur la faÃ§on dont nous {startLinkTag}garantissons la sÃ©curitÃ© des enfants{endLinkTag}.";
+		return $"Apprenez-en davantage au sujet de Premium et sur la façon dont nous {startLinkTag}garantissons la sécurité des enfants{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreKidsSafetyPremium()
 	{
-		return "Apprenez-en davantage au sujet de Premium et sur la faÃ§on dont nous {startLinkTag}garantissons la sÃ©curitÃ© des enfants{endLinkTag}.";
+		return "Apprenez-en davantage au sujet de Premium et sur la façon dont nous {startLinkTag}garantissons la sécurité des enfants{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()

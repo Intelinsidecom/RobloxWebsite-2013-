@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
@@ -16,37 +18,37 @@ internal class AccountRecoveryResources_de_de : AccountRecoveryResources_en_us, 
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "Dadurch werden folgende Einstellungen zurÃ¼ckgesetzt:";
+	public override string DescriptionResetFollowing => "Dadurch werden folgende Einstellungen zurückgesetzt:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "Du bist dabei, dein Konto auf einen frÃ¼heren Stand zurÃ¼ckzusetzen.\nDazu musst du ein neues Passwort festlegen.";
+	public override string DescriptionRevertAccount => "Du bist dabei, dein Konto auf einen früheren Stand zurückzusetzen.\nDazu musst du ein neues Passwort festlegen.";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "Passwort zurÃ¼cksetzen";
+	public override string HeadingAccountRecovery => "Passwort zurücksetzen";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
 	/// English String: "Choose an Account"
 	/// </summary>
-	public override string HeadingChooseAccount => "WÃ¤hle ein Konto";
+	public override string HeadingChooseAccount => "Wähle ein Konto";
 
 	/// <summary>
 	/// Key: "HeadingRevertAccount"
 	/// English String: "Revert Account"
 	/// </summary>
-	public override string HeadingRevertAccount => "Konto zurÃ¼cksetzen";
+	public override string HeadingRevertAccount => "Konto zurücksetzen";
 
 	/// <summary>
 	/// Key: "LabelConfirmNewPassword"
 	/// English String: "Confirm New Password"
 	/// </summary>
-	public override string LabelConfirmNewPassword => "Neues Passwort bestÃ¤tigen";
+	public override string LabelConfirmNewPassword => "Neues Passwort bestätigen";
 
 	/// <summary>
 	/// Key: "LabelEmail"
@@ -82,7 +84,7 @@ internal class AccountRecoveryResources_de_de : AccountRecoveryResources_en_us, 
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "Du setzt deine E-Mail-Adresse auf eine nicht verifizierte E-Mail-Adresse zurÃ¼ck.";
+	public override string MessageRevertToUnverifiedEmail => "Du setzt deine E-Mail-Adresse auf eine nicht verifizierte E-Mail-Adresse zurück.";
 
 	public AccountRecoveryResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -96,32 +98,32 @@ internal class AccountRecoveryResources_de_de : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "Dadurch werden folgende Einstellungen zurÃ¼ckgesetzt:";
+		return "Dadurch werden folgende Einstellungen zurückgesetzt:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "Du bist dabei, dein Konto auf einen frÃ¼heren Stand zurÃ¼ckzusetzen.\nDazu musst du ein neues Passwort festlegen.";
+		return "Du bist dabei, dein Konto auf einen früheren Stand zurückzusetzen.\nDazu musst du ein neues Passwort festlegen.";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "Passwort zurÃ¼cksetzen";
+		return "Passwort zurücksetzen";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
 	{
-		return "WÃ¤hle ein Konto";
+		return "Wähle ein Konto";
 	}
 
 	protected override string _GetTemplateForHeadingRevertAccount()
 	{
-		return "Konto zurÃ¼cksetzen";
+		return "Konto zurücksetzen";
 	}
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
 	{
-		return "Neues Passwort bestÃ¤tigen";
+		return "Neues Passwort bestätigen";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
@@ -179,7 +181,7 @@ internal class AccountRecoveryResources_de_de : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "Du setzt deine E-Mail-Adresse auf eine nicht verifizierte E-Mail-Adresse zurÃ¼ck.";
+		return "Du setzt deine E-Mail-Adresse auf eine nicht verifizierte E-Mail-Adresse zurück.";
 	}
 }
 

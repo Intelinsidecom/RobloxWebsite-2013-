@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
@@ -28,7 +30,7 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.FirstNameLabel"
 	/// English String: "First Name"
 	/// </summary>
-	public override string CashOutFormFirstNameLabel => "PrÃ©nom";
+	public override string CashOutFormFirstNameLabel => "Prénom";
 
 	/// <summary>
 	/// Key: "CashOutForm.LastNameLabel"
@@ -64,13 +66,13 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 	/// Key: "Label.PasswordPlaceholder"
 	/// English String: "Verify Account Password"
 	/// </summary>
-	public override string LabelPasswordPlaceholder => "VÃ©rifier le mot de passe du compte";
+	public override string LabelPasswordPlaceholder => "Vérifier le mot de passe du compte";
 
 	/// <summary>
 	/// Key: "PageHeader.Description"
 	/// English String: "Create games, earn money."
 	/// </summary>
-	public override string PageHeaderDescription => "CrÃ©e des jeux, gagne de l'argent.";
+	public override string PageHeaderDescription => "Crée des jeux, gagne de l'argent.";
 
 	/// <summary>
 	/// Key: "PageHeader.Title"
@@ -82,19 +84,19 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.CannotLoadExchangeRate"
 	/// English String: "Sorry, we were unable to load the current exchange rate. Please try again."
 	/// </summary>
-	public override string ResponseCannotLoadExchangeRate => "DÃ©solÃ©, nous n'avons pas pu charger le taux de change actuel. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseCannotLoadExchangeRate => "Désolé, nous n'avons pas pu charger le taux de change actuel. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Response.CurrencyOperationUnavailable"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseCurrencyOperationUnavailable => "DÃ©solÃ©, un problÃ¨me est survenu. Veuillez rÃ©essayer.";
+	public override string ResponseCurrencyOperationUnavailable => "Désolé, un problème est survenu. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Response.FirstNameRequiredErrorMessage"
 	/// English String: "Please enter your first name."
 	/// </summary>
-	public override string ResponseFirstNameRequiredErrorMessage => "Veuillez saisir votre prÃ©nom.";
+	public override string ResponseFirstNameRequiredErrorMessage => "Veuillez saisir votre prénom.";
 
 	/// <summary>
 	/// Key: "Response.IncorrectCredentials"
@@ -124,49 +126,49 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.RobuxAmountIsBelowMinimumCashoutThreshold"
 	/// English String: "Robux amount below minimum cash out threshold."
 	/// </summary>
-	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Montant de Robux infÃ©rieur au seuil minimum de retrait.";
+	public override string ResponseRobuxAmountIsBelowMinimumCashoutThreshold => "Montant de Robux inférieur au seuil minimum de retrait.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry, something went wrong. Please try again."
 	/// </summary>
-	public override string ResponseUnknownError => "DÃ©solÃ©, un problÃ¨me est survenu. Veuillez rÃ©essayer.";
+	public override string ResponseUnknownError => "Désolé, un problème est survenu. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Response.UserBalanceDoesNotHaveMoreRobuxThanMinimumCashout"
 	/// English String: "You cannot cash out for less than the minimum amount."
 	/// </summary>
-	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "Vous ne pouvez pas effectuer de retrait infÃ©rieur au montant minimum.";
+	public override string ResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout => "Vous ne pouvez pas effectuer de retrait inférieur au montant minimum.";
 
 	/// <summary>
 	/// Key: "Response.UserCannotCashout"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserCannotCashout => "Vous n'Ãªtes pas admissible pour effectuer un retrait pour le moment.";
+	public override string ResponseUserCannotCashout => "Vous n'êtes pas admissible pour effectuer un retrait pour le moment.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "Vous devez disposer d'un abonnement Ã  Roblox Premium pour effectuer des retraits.";
+	public override string ResponseUserDoesNotHavePremium => "Vous devez disposer d'un abonnement à Roblox Premium pour effectuer des retraits.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "Vous devez avoir une adresse e-mail vÃ©rifiÃ©e afin d'effectuer des retraits.";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "Vous devez avoir une adresse e-mail vérifiée afin d'effectuer des retraits.";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
 	/// English String: "You need to provide your first and last name."
 	/// </summary>
-	public override string ResponseUserMustProvideFirstAndLastName => "Vous devez indiquer vos nom et prÃ©nom.";
+	public override string ResponseUserMustProvideFirstAndLastName => "Vous devez indiquer vos nom et prénom.";
 
 	/// <summary>
 	/// Key: "Response.UserNotEligibleError"
 	/// English String: "Sorry, you are not eligible to cash out at this time."
 	/// </summary>
-	public override string ResponseUserNotEligibleError => "Vous n'Ãªtes pas admissible pour effectuer un retrait pour le moment.";
+	public override string ResponseUserNotEligibleError => "Vous n'êtes pas admissible pour effectuer un retrait pour le moment.";
 
 	public DevexCashOutResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -184,12 +186,12 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"Veuillez remplir ce formulaire pour lancer le traitement de votre paiement. L'adresse indiquÃ©e ci-dessous doit correspondre Ã  celle de votre compte du portail DevEx de Roblox. Si vous avez besoin d'aide pour remplir le formulaire, {linkStart}consultez notre page dÃ©diÃ©e.{linkEnd}";
+		return $"Veuillez remplir ce formulaire pour lancer le traitement de votre paiement. L'adresse indiquée ci-dessous doit correspondre à celle de votre compte du portail DevEx de Roblox. Si vous avez besoin d'aide pour remplir le formulaire, {linkStart}consultez notre page dédiée.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "Veuillez remplir ce formulaire pour lancer le traitement de votre paiement. L'adresse indiquÃ©e ci-dessous doit correspondre Ã  celle de votre compte du portail DevEx de Roblox. Si vous avez besoin d'aide pour remplir le formulaire, {linkStart}consultez notre page dÃ©diÃ©e.{linkEnd}";
+		return "Veuillez remplir ce formulaire pour lancer le traitement de votre paiement. L'adresse indiquée ci-dessous doit correspondre à celle de votre compte du portail DevEx de Roblox. Si vous avez besoin d'aide pour remplir le formulaire, {linkStart}consultez notre page dédiée.{linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
@@ -204,7 +206,7 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormFirstNameLabel()
 	{
-		return "PrÃ©nom";
+		return "Prénom";
 	}
 
 	protected override string _GetTemplateForCashOutFormLastNameLabel()
@@ -248,12 +250,12 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForLabelPasswordPlaceholder()
 	{
-		return "VÃ©rifier le mot de passe du compte";
+		return "Vérifier le mot de passe du compte";
 	}
 
 	protected override string _GetTemplateForPageHeaderDescription()
 	{
-		return "CrÃ©e des jeux, gagne de l'argent.";
+		return "Crée des jeux, gagne de l'argent.";
 	}
 
 	protected override string _GetTemplateForPageHeaderTitle()
@@ -263,17 +265,17 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseCannotLoadExchangeRate()
 	{
-		return "DÃ©solÃ©, nous n'avons pas pu charger le taux de change actuel. Veuillez rÃ©essayer plus tard.";
+		return "Désolé, nous n'avons pas pu charger le taux de change actuel. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForResponseCurrencyOperationUnavailable()
 	{
-		return "DÃ©solÃ©, un problÃ¨me est survenu. Veuillez rÃ©essayer.";
+		return "Désolé, un problème est survenu. Veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForResponseFirstNameRequiredErrorMessage()
 	{
-		return "Veuillez saisir votre prÃ©nom.";
+		return "Veuillez saisir votre prénom.";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
@@ -298,42 +300,42 @@ internal class DevexCashOutResources_fr_fr : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseRobuxAmountIsBelowMinimumCashoutThreshold()
 	{
-		return "Montant de Robux infÃ©rieur au seuil minimum de retrait.";
+		return "Montant de Robux inférieur au seuil minimum de retrait.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "DÃ©solÃ©, un problÃ¨me est survenu. Veuillez rÃ©essayer.";
+		return "Désolé, un problème est survenu. Veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForResponseUserBalanceDoesNotHaveMoreRobuxThanMinimumCashout()
 	{
-		return "Vous ne pouvez pas effectuer de retrait infÃ©rieur au montant minimum.";
+		return "Vous ne pouvez pas effectuer de retrait inférieur au montant minimum.";
 	}
 
 	protected override string _GetTemplateForResponseUserCannotCashout()
 	{
-		return "Vous n'Ãªtes pas admissible pour effectuer un retrait pour le moment.";
+		return "Vous n'êtes pas admissible pour effectuer un retrait pour le moment.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "Vous devez disposer d'un abonnement Ã  Roblox Premium pour effectuer des retraits.";
+		return "Vous devez disposer d'un abonnement à Roblox Premium pour effectuer des retraits.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "Vous devez avoir une adresse e-mail vÃ©rifiÃ©e afin d'effectuer des retraits.";
+		return "Vous devez avoir une adresse e-mail vérifiée afin d'effectuer des retraits.";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()
 	{
-		return "Vous devez indiquer vos nom et prÃ©nom.";
+		return "Vous devez indiquer vos nom et prénom.";
 	}
 
 	protected override string _GetTemplateForResponseUserNotEligibleError()
 	{
-		return "Vous n'Ãªtes pas admissible pour effectuer un retrait pour le moment.";
+		return "Vous n'êtes pas admissible pour effectuer un retrait pour le moment.";
 	}
 }
 

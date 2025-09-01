@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Moderation;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 namespace Roblox.Moderation {
     /// <summary>
 

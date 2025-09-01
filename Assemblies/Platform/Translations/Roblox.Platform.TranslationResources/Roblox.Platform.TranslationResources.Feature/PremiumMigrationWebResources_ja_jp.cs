@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PremiumMigrationWebResources_en_us to provide locale specific translations where possible,
@@ -10,14 +12,14 @@ internal class PremiumMigrationWebResources_ja_jp : PremiumMigrationWebResources
 	/// Key: "Heading.MigrationModalTitle"
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string HeadingMigrationModalTitle => "Builders Clubã¯ç¾åœ¨ã¯Roblox Premiumã§ã™";
+	public override string HeadingMigrationModalTitle => "Builders Clubは現在はRoblox Premiumです";
 
 	/// <summary>
 	/// Key: "Heading.MigrationTitle"
 	/// obsoleted
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string HeadingMigrationTitle => "Builders Clubã¯ç¾åœ¨ã¯Roblox Premiumã§ã™";
+	public override string HeadingMigrationTitle => "Builders Clubは現在はRoblox Premiumです";
 
 	public PremiumMigrationWebResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -27,40 +29,40 @@ internal class PremiumMigrationWebResources_ja_jp : PremiumMigrationWebResources
 	/// <summary>
 	/// Key: "Description.MigrationBody"
 	/// obsoleted
-	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, weâ€™re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
+	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, we’re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
 	/// </summary>
 	public override string DescriptionMigrationBody(string robuxAmount, string newLine)
 	{
-		return $"ã“ã‚Œã‹ã‚‰ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„è€…ã¯ä¸€æ—¥ã”ã¨ã®Robuxé¡ã§ã¯ãªãã€ä¸€ãƒ¶æœˆã”ã¨ã®ã”åˆ©ç”¨é¡ã‚’ä¸€åº¦ã«ãŠæ¸¡ã—ã—ã¾ã™ã€‚ä»Šæ—¥ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä»ŠæœˆãŠæ¸¡ã—ã™ã‚‹äºˆå®šã ã£ãŸæ®‹ã‚Šã® {robuxAmount} Robuxã‚’ãŠæ”¯æ‰•ã„ã—ã¾ã™ã€‚\n{newLine}{newLine}\nè©³ã—ãã¯ã€Robloxå—ä¿¡ãƒˆãƒ¬ã‚¤ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚  ";
+		return $"これからは、サブスクリプション契約者は一日ごとのRobux額ではなく、一ヶ月ごとのご利用額を一度にお渡しします。今日は、お持ちのアカウントに今月お渡しする予定だった残りの {robuxAmount} Robuxをお支払いします。\n{newLine}{newLine}\n詳しくは、Roblox受信トレイをチェックしてください。  ";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationBody()
 	{
-		return "ã“ã‚Œã‹ã‚‰ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³å¥‘ç´„è€…ã¯ä¸€æ—¥ã”ã¨ã®Robuxé¡ã§ã¯ãªãã€ä¸€ãƒ¶æœˆã”ã¨ã®ã”åˆ©ç”¨é¡ã‚’ä¸€åº¦ã«ãŠæ¸¡ã—ã—ã¾ã™ã€‚ä»Šæ—¥ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä»ŠæœˆãŠæ¸¡ã—ã™ã‚‹äºˆå®šã ã£ãŸæ®‹ã‚Šã® {robuxAmount} Robuxã‚’ãŠæ”¯æ‰•ã„ã—ã¾ã™ã€‚\n{newLine}{newLine}\nè©³ã—ãã¯ã€Robloxå—ä¿¡ãƒˆãƒ¬ã‚¤ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚  ";
+		return "これからは、サブスクリプション契約者は一日ごとのRobux額ではなく、一ヶ月ごとのご利用額を一度にお渡しします。今日は、お持ちのアカウントに今月お渡しする予定だった残りの {robuxAmount} Robuxをお支払いします。\n{newLine}{newLine}\n詳しくは、Roblox受信トレイをチェックしてください。  ";
 	}
 
 	/// <summary>
 	/// Key: "Description.MigrationModalBody"
-	/// English String: "Going forward, you will receive a full monthâ€™s worth of Robux on the day of your subscription renewal. Today, weâ€™re giving you this month's Robux minus what youâ€™ve already received this month: {robuxAmount}.{newLine}{newLine}\nCheck your Roblox inbox for more details."
+	/// English String: "Going forward, you will receive a full month’s worth of Robux on the day of your subscription renewal. Today, we’re giving you this month's Robux minus what you’ve already received this month: {robuxAmount}.{newLine}{newLine}\nCheck your Roblox inbox for more details."
 	/// </summary>
 	public override string DescriptionMigrationModalBody(string robuxAmount, string newLine)
 	{
-		return $"ã“ã‚Œã‹ã‚‰ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æ›´æ–°æ—¥ã«ä¸€ãƒ¶æœˆåˆ†ã®Robuxã”åˆ©ç”¨é¡ã‚’ä¸€åº¦ã«ãŠæ¸¡ã—ã—ã¾ã™ã€‚ä»Šæ—¥ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä»Šæœˆåˆ†ã‹ã‚‰ã™ã§ã«å—ã‘å–ã£ãŸé¡ã‚’å·®ã—å¼•ãã—ãŸæ®‹ã‚Šã®Robuxã‚’ãŠæ”¯æ‰•ã„ã—ã¾ã™: \n{robuxAmount}.{newLine}{newLine}\nè©³ã—ãã¯ã€Robloxå—ä¿¡ãƒˆãƒ¬ã‚¤ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return $"これからは、サブスクリプション更新日に一ヶ月分のRobuxご利用額を一度にお渡しします。今日は、お持ちのアカウントに今月分からすでに受け取った額を差し引きした残りのRobuxをお支払いします: \n{robuxAmount}.{newLine}{newLine}\n詳しくは、Roblox受信トレイをチェックしてください。";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationModalBody()
 	{
-		return "ã“ã‚Œã‹ã‚‰ã¯ã€ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æ›´æ–°æ—¥ã«ä¸€ãƒ¶æœˆåˆ†ã®Robuxã”åˆ©ç”¨é¡ã‚’ä¸€åº¦ã«ãŠæ¸¡ã—ã—ã¾ã™ã€‚ä»Šæ—¥ã¯ã€ãŠæŒã¡ã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã«ä»Šæœˆåˆ†ã‹ã‚‰ã™ã§ã«å—ã‘å–ã£ãŸé¡ã‚’å·®ã—å¼•ãã—ãŸæ®‹ã‚Šã®Robuxã‚’ãŠæ”¯æ‰•ã„ã—ã¾ã™: \n{robuxAmount}.{newLine}{newLine}\nè©³ã—ãã¯ã€Robloxå—ä¿¡ãƒˆãƒ¬ã‚¤ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return "これからは、サブスクリプション更新日に一ヶ月分のRobuxご利用額を一度にお渡しします。今日は、お持ちのアカウントに今月分からすでに受け取った額を差し引きした残りのRobuxをお支払いします: \n{robuxAmount}.{newLine}{newLine}\n詳しくは、Roblox受信トレイをチェックしてください。";
 	}
 
 	protected override string _GetTemplateForHeadingMigrationModalTitle()
 	{
-		return "Builders Clubã¯ç¾åœ¨ã¯Roblox Premiumã§ã™";
+		return "Builders Clubは現在はRoblox Premiumです";
 	}
 
 	protected override string _GetTemplateForHeadingMigrationTitle()
 	{
-		return "Builders Clubã¯ç¾åœ¨ã¯Roblox Premiumã§ã™";
+		return "Builders Clubは現在はRoblox Premiumです";
 	}
 }
 

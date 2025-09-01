@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides SocialMetaTagsResources_en_us to provide locale specific translations where possible,
@@ -11,42 +13,42 @@ internal class SocialMetaTagsResources_zh_cn : SocialMetaTagsResources_en_us, IS
 	/// description shown on Facebook or Twitter when shared
 	/// English String: "Create anything you can imagine with Roblox's free and immersive creation engine. Start creating games today!"
 	/// </summary>
-	public override string DescriptionDevelopLanding => "ä½¿ç”¨ Roblox å…è´¹çš„æ²‰æµ¸å¼åˆ›æ„å¼•æ“Žï¼Œåˆ›é€ ä½ èƒ½æƒ³è±¡çš„ä¸€åˆ‡ã€‚çŽ°åœ¨å°±å¼€å§‹åˆ›ä½œæ¸¸æˆå§ï¼";
+	public override string DescriptionDevelopLanding => "使用 Roblox 免费的沉浸式创意引擎，创造你能想象的一切。现在就开始创作游戏吧！";
 
 	/// <summary>
 	/// Key: "Description.GamesPage"
 	/// description shown when Games page is shared on Facebook or Twitter
 	/// English String: "Play millions of free games on your smartphone, tablet, computer, Xbox One, Oculus Rift, and more."
 	/// </summary>
-	public override string DescriptionGamesPage => "æ•°ç™¾ä¸‡æ¬¾å…è´¹æ¸¸æˆï¼Œåœ¨ä½ çš„æ™ºèƒ½æ‰‹æœºã€å¹³æ¿ç”µè„‘ã€ç”µè„‘ã€Xbox Oneã€Oculus Rift åŠæ›´å¤šè®¾å¤‡ä¸Šç•…çŽ©ã€‚";
+	public override string DescriptionGamesPage => "数百万款免费游戏，在你的智能手机、平板电脑、电脑、Xbox One、Oculus Rift 及更多设备上畅玩。";
 
 	/// <summary>
 	/// Key: "Description.Roblox"
 	/// description shown on Facebook or Twitter when Roblox landing page is shared
 	/// English String: "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of players across an infinite variety of immersive, user-generated 3D worlds."
 	/// </summary>
-	public override string DescriptionRoblox => "Roblox æ­£åœ¨å¼€åˆ›æ–°ä¸€ä»£çš„å¨±ä¹æ–¹å¼ï¼Œè®©æ•°ç™¾ä¸‡çŽ©å®¶éƒ½èƒ½åœ¨ä¸€ä¸ªç”±ç”¨æˆ·ç”Ÿæˆçš„æ²‰æµ¸å¼ 3D ä¸–ç•Œä¸­æƒ³è±¡ã€åˆ›é€ ã€ä¸€åŒçŽ©è€ã€‚";
+	public override string DescriptionRoblox => "Roblox 正在开创新一代的娱乐方式，让数百万玩家都能在一个由用户生成的沉浸式 3D 世界中想象、创造、一同玩耍。";
 
 	/// <summary>
 	/// Key: "Label.CatalogPage"
 	/// Description shown when the catalog page is shared on Facebook or Twitter
 	/// English String: "Customize your avatar with a never-ending variety of clothing options, accessories, gear, and more!"
 	/// </summary>
-	public override string LabelCatalogPage => "ä½¿ç”¨æˆåƒä¸Šä¸‡ä»¶æœè£…ã€é¥°å“ã€è£…å¤‡ç­‰ç‰©å“æ¥è‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡ï¼";
+	public override string LabelCatalogPage => "使用成千上万件服装、饰品、装备等物品来自定义你的虚拟形象！";
 
 	/// <summary>
 	/// Key: "Label.CatalogPageTItle"
 	/// title
 	/// English String: "Roblox Catalog"
 	/// </summary>
-	public override string LabelCatalogPageTItle => "Roblox å•†åº—";
+	public override string LabelCatalogPageTItle => "Roblox 商店";
 
 	/// <summary>
 	/// Key: "Label.GamesPageTitle"
 	/// title for social meta tag fro games page
 	/// English String: "Roblox Games"
 	/// </summary>
-	public override string LabelGamesPageTitle => "Roblox æ¸¸æˆ";
+	public override string LabelGamesPageTitle => "Roblox 游戏";
 
 	public SocialMetaTagsResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -55,62 +57,62 @@ internal class SocialMetaTagsResources_zh_cn : SocialMetaTagsResources_en_us, IS
 
 	protected override string _GetTemplateForDescriptionDevelopLanding()
 	{
-		return "ä½¿ç”¨ Roblox å…è´¹çš„æ²‰æµ¸å¼åˆ›æ„å¼•æ“Žï¼Œåˆ›é€ ä½ èƒ½æƒ³è±¡çš„ä¸€åˆ‡ã€‚çŽ°åœ¨å°±å¼€å§‹åˆ›ä½œæ¸¸æˆå§ï¼";
+		return "使用 Roblox 免费的沉浸式创意引擎，创造你能想象的一切。现在就开始创作游戏吧！";
 	}
 
 	/// <summary>
 	/// Key: "Description.FavoritesPage"
 	/// social meta tag
-	/// English String: "Visit {userName}â€™s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
+	/// English String: "Visit {userName}’s Favorites and see what they like. Browse through their favorite places, accessories, and a lot more. Also, find the favorite gear they use in games and get one for yourself!"
 	/// </summary>
 	public override string DescriptionFavoritesPage(string userName)
 	{
-		return $"è¯·è®¿é—®â€œ{userName}â€çš„æœ€çˆ±ï¼Œçœ‹çœ‹ä»–ä»¬å–œæ¬¢ä»€ä¹ˆã€‚ä½ ä¹Ÿå¯ä»¥æµè§ˆä»–ä»¬æœ€å–œçˆ±çš„æ¸¸æˆåœºæ™¯ã€é¥°å“å’Œå…¶ä»–å†…å®¹ã€‚æ­¤å¤–ï¼Œä½ è¿˜èƒ½æ‰¾åˆ°ä»–ä»¬åœ¨æ¸¸æˆä¸­æœ€å¸¸ä½¿ç”¨çš„è£…å¤‡ï¼Œä½ åŒæ ·å¯ä»¥æ‹¥æœ‰ï¼";
+		return $"请访问“{userName}”的最爱，看看他们喜欢什么。你也可以浏览他们最喜爱的游戏场景、饰品和其他内容。此外，你还能找到他们在游戏中最常使用的装备，你同样可以拥有！";
 	}
 
 	protected override string _GetTemplateForDescriptionFavoritesPage()
 	{
-		return "è¯·è®¿é—®â€œ{userName}â€çš„æœ€çˆ±ï¼Œçœ‹çœ‹ä»–ä»¬å–œæ¬¢ä»€ä¹ˆã€‚ä½ ä¹Ÿå¯ä»¥æµè§ˆä»–ä»¬æœ€å–œçˆ±çš„æ¸¸æˆåœºæ™¯ã€é¥°å“å’Œå…¶ä»–å†…å®¹ã€‚æ­¤å¤–ï¼Œä½ è¿˜èƒ½æ‰¾åˆ°ä»–ä»¬åœ¨æ¸¸æˆä¸­æœ€å¸¸ä½¿ç”¨çš„è£…å¤‡ï¼Œä½ åŒæ ·å¯ä»¥æ‹¥æœ‰ï¼";
+		return "请访问“{userName}”的最爱，看看他们喜欢什么。你也可以浏览他们最喜爱的游戏场景、饰品和其他内容。此外，你还能找到他们在游戏中最常使用的装备，你同样可以拥有！";
 	}
 
 	/// <summary>
 	/// Key: "Description.GamePage"
 	/// The game description which shows on social media, when shared
-	/// English String: "Check out {gameName}. Itâ€™s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
+	/// English String: "Check out {gameName}. It’s one of the millions of unique, user-generated 3D experiences created on Roblox. {gameDescription}"
 	/// </summary>
 	public override string DescriptionGamePage(string gameName, string gameDescription)
 	{
-		return $"è¯·å‚è€ƒâ€œ{gameName}â€ï¼Œç»™ä½  Roblox ä¸Šæ•°ç™¾ä¸‡ç§ç‹¬ä¸€æ— äºŒï¼Œç”±ç”¨æˆ·åˆ›ä½œçš„ 3D ä½“éªŒã€‚{gameDescription}";
+		return $"请参考“{gameName}”，给你 Roblox 上数百万种独一无二，由用户创作的 3D 体验。{gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamePage()
 	{
-		return "è¯·å‚è€ƒâ€œ{gameName}â€ï¼Œç»™ä½  Roblox ä¸Šæ•°ç™¾ä¸‡ç§ç‹¬ä¸€æ— äºŒï¼Œç”±ç”¨æˆ·åˆ›ä½œçš„ 3D ä½“éªŒã€‚{gameDescription}";
+		return "请参考“{gameName}”，给你 Roblox 上数百万种独一无二，由用户创作的 3D 体验。{gameDescription}";
 	}
 
 	protected override string _GetTemplateForDescriptionGamesPage()
 	{
-		return "æ•°ç™¾ä¸‡æ¬¾å…è´¹æ¸¸æˆï¼Œåœ¨ä½ çš„æ™ºèƒ½æ‰‹æœºã€å¹³æ¿ç”µè„‘ã€ç”µè„‘ã€Xbox Oneã€Oculus Rift åŠæ›´å¤šè®¾å¤‡ä¸Šç•…çŽ©ã€‚";
+		return "数百万款免费游戏，在你的智能手机、平板电脑、电脑、Xbox One、Oculus Rift 及更多设备上畅玩。";
 	}
 
 	/// <summary>
 	/// Key: "Description.InventoryPage"
 	/// social meta tag
-	/// English String: "Visit {userName1}â€™s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}â€™s collection of hats, shirts, gear, and more."
+	/// English String: "Visit {userName1}’s Inventory and see the cool items they have collected. Look out for their game passes and get one for yourself! Browse through {userName2}’s collection of hats, shirts, gear, and more."
 	/// </summary>
 	public override string DescriptionInventoryPage(string userName1, string userName2)
 	{
-		return $"è¯·è®¿é—®â€œ{userName1}â€çš„é“å…·åº“ï¼ŒæŸ¥çœ‹ä»–ä»¬çš„é…·ç‚«æ”¶è—ã€‚çœ‹çœ‹ä»–ä»¬çš„æ¸¸æˆé€šè¡Œè¯ï¼Œä½ ä¹Ÿå¯ä»¥åŒæ ·æ‹¥æœ‰ï¼ä½ è¿˜å¯ä»¥æµè§ˆâ€œ{userName2}â€æ”¶è—çš„å¸½å­ã€è¡¬è¡«ã€è£…å¤‡ç­‰é“å…·ã€‚";
+		return $"请访问“{userName1}”的道具库，查看他们的酷炫收藏。看看他们的游戏通行证，你也可以同样拥有！你还可以浏览“{userName2}”收藏的帽子、衬衫、装备等道具。";
 	}
 
 	protected override string _GetTemplateForDescriptionInventoryPage()
 	{
-		return "è¯·è®¿é—®â€œ{userName1}â€çš„é“å…·åº“ï¼ŒæŸ¥çœ‹ä»–ä»¬çš„é…·ç‚«æ”¶è—ã€‚çœ‹çœ‹ä»–ä»¬çš„æ¸¸æˆé€šè¡Œè¯ï¼Œä½ ä¹Ÿå¯ä»¥åŒæ ·æ‹¥æœ‰ï¼ä½ è¿˜å¯ä»¥æµè§ˆâ€œ{userName2}â€æ”¶è—çš„å¸½å­ã€è¡¬è¡«ã€è£…å¤‡ç­‰é“å…·ã€‚";
+		return "请访问“{userName1}”的道具库，查看他们的酷炫收藏。看看他们的游戏通行证，你也可以同样拥有！你还可以浏览“{userName2}”收藏的帽子、衬衫、装备等道具。";
 	}
 
 	protected override string _GetTemplateForDescriptionRoblox()
 	{
-		return "Roblox æ­£åœ¨å¼€åˆ›æ–°ä¸€ä»£çš„å¨±ä¹æ–¹å¼ï¼Œè®©æ•°ç™¾ä¸‡çŽ©å®¶éƒ½èƒ½åœ¨ä¸€ä¸ªç”±ç”¨æˆ·ç”Ÿæˆçš„æ²‰æµ¸å¼ 3D ä¸–ç•Œä¸­æƒ³è±¡ã€åˆ›é€ ã€ä¸€åŒçŽ©è€ã€‚";
+		return "Roblox 正在开创新一代的娱乐方式，让数百万玩家都能在一个由用户生成的沉浸式 3D 世界中想象、创造、一同玩耍。";
 	}
 
 	/// <summary>
@@ -120,27 +122,27 @@ internal class SocialMetaTagsResources_zh_cn : SocialMetaTagsResources_en_us, IS
 	/// </summary>
 	public override string DescriptionUserProfilePage(string userName1, string userName2)
 	{
-		return $"åœ¨ Roblox ä¸­çŽ©æ¸¸æˆã€åˆ›é€ å¹¶æŽ¢ç´¢æ— é™å¯èƒ½æ€§çš„æ•°ç™¾ä¸‡ç”¨æˆ·ä¹‹ä¸­ï¼Œâ€œ{userName1}â€ä¹Ÿæ˜¯å…¶ä¸­ä¸€ä½ã€‚å¿«æ¥ Roblox ä¸ŠåŠ å…¥â€œ{userName2}â€ä¸€åŒæŽ¢ç´¢å§ï¼";
+		return $"在 Roblox 中玩游戏、创造并探索无限可能性的数百万用户之中，“{userName1}”也是其中一位。快来 Roblox 上加入“{userName2}”一同探索吧！";
 	}
 
 	protected override string _GetTemplateForDescriptionUserProfilePage()
 	{
-		return "åœ¨ Roblox ä¸­çŽ©æ¸¸æˆã€åˆ›é€ å¹¶æŽ¢ç´¢æ— é™å¯èƒ½æ€§çš„æ•°ç™¾ä¸‡ç”¨æˆ·ä¹‹ä¸­ï¼Œâ€œ{userName1}â€ä¹Ÿæ˜¯å…¶ä¸­ä¸€ä½ã€‚å¿«æ¥ Roblox ä¸ŠåŠ å…¥â€œ{userName2}â€ä¸€åŒæŽ¢ç´¢å§ï¼";
+		return "在 Roblox 中玩游戏、创造并探索无限可能性的数百万用户之中，“{userName1}”也是其中一位。快来 Roblox 上加入“{userName2}”一同探索吧！";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPage()
 	{
-		return "ä½¿ç”¨æˆåƒä¸Šä¸‡ä»¶æœè£…ã€é¥°å“ã€è£…å¤‡ç­‰ç‰©å“æ¥è‡ªå®šä¹‰ä½ çš„è™šæ‹Ÿå½¢è±¡ï¼";
+		return "使用成千上万件服装、饰品、装备等物品来自定义你的虚拟形象！";
 	}
 
 	protected override string _GetTemplateForLabelCatalogPageTItle()
 	{
-		return "Roblox å•†åº—";
+		return "Roblox 商店";
 	}
 
 	protected override string _GetTemplateForLabelGamesPageTitle()
 	{
-		return "Roblox æ¸¸æˆ";
+		return "Roblox 游戏";
 	}
 
 	/// <summary>
@@ -150,12 +152,12 @@ internal class SocialMetaTagsResources_zh_cn : SocialMetaTagsResources_en_us, IS
 	/// </summary>
 	public override string LabelUserProfile(string userName)
 	{
-		return $"â€œ{userName}â€çš„ä¸ªäººèµ„æ–™";
+		return $"“{userName}”的个人资料";
 	}
 
 	protected override string _GetTemplateForLabelUserProfile()
 	{
-		return "â€œ{userName}â€çš„ä¸ªäººèµ„æ–™";
+		return "“{userName}”的个人资料";
 	}
 }
 

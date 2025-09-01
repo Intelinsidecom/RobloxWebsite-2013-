@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Roblox.ApiClientBase;
 using Roblox.ContentFilterApi.Client;
-using Roblox.Platform.Moderation.Interfaces;
-namespace Roblox.Moderation.Implementationinternal {
+using Roblox.Moderation.Interfaces;
+
+namespace Roblox.Moderation.Implementation {
     class Whitelist : IWhitelist
 
 {
@@ -52,17 +53,17 @@ namespace Roblox.Moderation.Implementationinternal {
 		return _Client.WhitelistExpressionExists(value);
 	}
 
-	public PagedResult<IWhitelistEntry> GetPaged(int page = 1)
+	public Roblox.Moderation.Implementation.PagedResult<IWhitelistEntry> GetPaged(int page = 1)
 	{
-		PagedResult<int, WhitelistExpression> whitelistExpressions = _Client.GetWhitelistExpressions(CategoryType.ToString(), CategoryTargetId, page);
-		return new PagedResult<IWhitelistEntry>(pageItems: whitelistExpressions.PageItems.Select((WhitelistExpression entry) => new WhitelistEntry(_Client, CategoryType, CategoryTargetId, entry.Value)), totalItems: whitelistExpressions.Count);
+		Roblox.ApiClientBase.PagedResult<int, WhitelistExpression> whitelistExpressions = _Client.GetWhitelistExpressions(CategoryType.ToString(), CategoryTargetId, page);
+		return new Roblox.Moderation.Implementation.PagedResult<IWhitelistEntry>(pageItems: whitelistExpressions.PageItems.Select((WhitelistExpression entry) => new WhitelistEntry(_Client, CategoryType, CategoryTargetId, entry.Value)), totalItems: whitelistExpressions.Count);
 	}
 
 	public IEnumerable<string> GetAllTerms()
 	{
 		List<string> whitelistWords = new List<string>();
 		int startPage = 1;
-		PagedResult<IWhitelistEntry> currentResult;
+		Roblox.Moderation.Implementation.PagedResult<IWhitelistEntry> currentResult;
 		do
 		{
 			currentResult = GetPaged(startPage);

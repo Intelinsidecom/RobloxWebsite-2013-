@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class EmailConfirmationResources_en_us : TranslationResourcesBase, IEmailConfirmationResources, ITranslationResources
 
 {
@@ -107,3 +107,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

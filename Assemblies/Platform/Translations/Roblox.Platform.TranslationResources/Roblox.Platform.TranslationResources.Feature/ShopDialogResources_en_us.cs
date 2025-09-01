@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class ShopDialogResources_en_us : TranslationResourcesBase, IShopDialogResources, ITranslationResources
 
 {
@@ -155,3 +155,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

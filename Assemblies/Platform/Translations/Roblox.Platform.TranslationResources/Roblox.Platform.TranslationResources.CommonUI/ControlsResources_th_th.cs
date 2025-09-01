@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -10,194 +12,194 @@ internal class ControlsResources_th_th : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "à¸¢à¸­à¸¡à¸£\u0e31à¸š";
+	public override string ActionAccept => "ยอมร\u0e31บ";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "à¸¢à¸­à¸¡à¸£\u0e31à¸š";
+	public override string ActionAgree => "ยอมร\u0e31บ";
 
 	/// <summary>
 	/// Key: "Action.Allow"
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "à¸­à¸™\u0e38à¸à¸²à¸•";
+	public override string ActionAllow => "อน\u0e38ญาต";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "à¸¢\u0e49à¸­à¸™à¸à¸¥\u0e31à¸š";
+	public override string ActionBack => "ย\u0e49อนกล\u0e31บ";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "à¸¢à¸à¹€à¸¥\u0e34à¸";
+	public override string ActionCancel => "ยกเล\u0e34ก";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "à¸¢\u0e37à¸™à¸¢\u0e31à¸™";
+	public override string ActionConfirm => "ย\u0e37นย\u0e31น";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "à¸¥à¸š";
+	public override string ActionDelete => "ลบ";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "à¸—\u0e34\u0e49à¸‡";
+	public override string ActionDiscard => "ท\u0e34\u0e49ง";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "à¹„à¸¡\u0e48";
+	public override string ActionNo => "ไม\u0e48";
 
 	/// <summary>
 	/// Key: "Action.OK"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOK => "à¸•à¸à¸¥à¸‡";
+	public override string ActionOK => "ตกลง";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "à¸š\u0e31à¸™à¸—\u0e36à¸";
+	public override string ActionSave => "บ\u0e31นท\u0e36ก";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "à¸ª\u0e48à¸‡";
+	public override string ActionSubmit => "ส\u0e48ง";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "à¹ƒà¸Š\u0e48";
+	public override string ActionYes => "ใช\u0e48";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string BirthdaypickerLabelDate => "à¸§\u0e31à¸™à¸—\u0e35\u0e48";
+	public override string BirthdaypickerLabelDate => "ว\u0e31นท\u0e35\u0e48";
 
 	/// <summary>
 	/// Key: "Label.April"
 	/// English String: "April"
 	/// </summary>
-	public override string LabelApril => "à¹€à¸¡à¸©à¸²à¸¢à¸™";
+	public override string LabelApril => "เมษายน";
 
 	/// <summary>
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "à¸ª\u0e34à¸‡à¸«à¸²à¸„à¸¡";
+	public override string LabelAugust => "ส\u0e34งหาคม";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "à¸§\u0e31à¸™";
+	public override string LabelDay => "ว\u0e31น";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "à¸˜\u0e31à¸™à¸§à¸²à¸„à¸¡";
+	public override string LabelDecember => "ธ\u0e31นวาคม";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "à¸\u0e38à¸¡à¸ à¸²à¸ž\u0e31à¸™à¸˜\u0e4c";
+	public override string LabelFebruary => "ก\u0e38มภาพ\u0e31นธ\u0e4c";
 
 	/// <summary>
 	/// Key: "Label.January"
 	/// English String: "January"
 	/// </summary>
-	public override string LabelJanuary => "à¸¡à¸à¸£à¸²à¸„à¸¡";
+	public override string LabelJanuary => "มกราคม";
 
 	/// <summary>
 	/// Key: "Label.July"
 	/// English String: "July"
 	/// </summary>
-	public override string LabelJuly => "à¸à¸£à¸à¸Žà¸²à¸„à¸¡";
+	public override string LabelJuly => "กรกฎาคม";
 
 	/// <summary>
 	/// Key: "Label.June"
 	/// English String: "June"
 	/// </summary>
-	public override string LabelJune => "à¸¡\u0e34à¸–\u0e38à¸™à¸²à¸¢à¸™";
+	public override string LabelJune => "ม\u0e34ถ\u0e38นายน";
 
 	/// <summary>
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "à¸¡\u0e35à¸™à¸²à¸„à¸¡";
+	public override string LabelMarch => "ม\u0e35นาคม";
 
 	/// <summary>
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "à¸žà¸¤à¸©à¸ à¸²à¸„à¸¡";
+	public override string LabelMay => "พฤษภาคม";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "à¹€à¸”\u0e37à¸­à¸™";
+	public override string LabelMonth => "เด\u0e37อน";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "à¸•\u0e48à¸­à¹„à¸›";
+	public override string LabelNext => "ต\u0e48อไป";
 
 	/// <summary>
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "à¸žà¸¤à¸¨à¸ˆ\u0e34à¸à¸²à¸¢à¸™";
+	public override string LabelNovember => "พฤศจ\u0e34กายน";
 
 	/// <summary>
 	/// Key: "Label.October"
 	/// English String: "October"
 	/// </summary>
-	public override string LabelOctober => "à¸•\u0e38à¸¥à¸²à¸„à¸¡";
+	public override string LabelOctober => "ต\u0e38ลาคม";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "à¸\u0e48à¸­à¸™à¸«à¸™\u0e49à¸²";
+	public override string LabelPrevious => "ก\u0e48อนหน\u0e49า";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "à¸\u0e31à¸™à¸¢à¸²à¸¢à¸™";
+	public override string LabelSeptember => "ก\u0e31นยายน";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "à¸›\u0e35";
+	public override string LabelYear => "ป\u0e35";
 
 	public ControlsResources_th_th(TranslationResourceState state)
 		: base(state)
@@ -206,82 +208,82 @@ internal class ControlsResources_th_th : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "à¸¢à¸­à¸¡à¸£\u0e31à¸š";
+		return "ยอมร\u0e31บ";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "à¸¢à¸­à¸¡à¸£\u0e31à¸š";
+		return "ยอมร\u0e31บ";
 	}
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "à¸­à¸™\u0e38à¸à¸²à¸•";
+		return "อน\u0e38ญาต";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "à¸¢\u0e49à¸­à¸™à¸à¸¥\u0e31à¸š";
+		return "ย\u0e49อนกล\u0e31บ";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "à¸¢à¸à¹€à¸¥\u0e34à¸";
+		return "ยกเล\u0e34ก";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "à¸¢\u0e37à¸™à¸¢\u0e31à¸™";
+		return "ย\u0e37นย\u0e31น";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "à¸¥à¸š";
+		return "ลบ";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "à¸—\u0e34\u0e49à¸‡";
+		return "ท\u0e34\u0e49ง";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "à¹„à¸¡\u0e48";
+		return "ไม\u0e48";
 	}
 
 	protected override string _GetTemplateForActionOK()
 	{
-		return "à¸•à¸à¸¥à¸‡";
+		return "ตกลง";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "à¸š\u0e31à¸™à¸—\u0e36à¸";
+		return "บ\u0e31นท\u0e36ก";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "à¸ª\u0e48à¸‡";
+		return "ส\u0e48ง";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "à¹ƒà¸Š\u0e48";
+		return "ใช\u0e48";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
 	{
-		return "à¸§\u0e31à¸™à¸—\u0e35\u0e48";
+		return "ว\u0e31นท\u0e35\u0e48";
 	}
 
 	protected override string _GetTemplateForLabelApril()
 	{
-		return "à¹€à¸¡à¸©à¸²à¸¢à¸™";
+		return "เมษายน";
 	}
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "à¸ª\u0e34à¸‡à¸«à¸²à¸„à¸¡";
+		return "ส\u0e34งหาคม";
 	}
 
 	/// <summary>
@@ -291,87 +293,87 @@ internal class ControlsResources_th_th : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"à¸«à¸™\u0e49à¸² {currentPage}";
+		return $"หน\u0e49า {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "à¸«à¸™\u0e49à¸² {currentPage}";
+		return "หน\u0e49า {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "à¸§\u0e31à¸™";
+		return "ว\u0e31น";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "à¸˜\u0e31à¸™à¸§à¸²à¸„à¸¡";
+		return "ธ\u0e31นวาคม";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "à¸\u0e38à¸¡à¸ à¸²à¸ž\u0e31à¸™à¸˜\u0e4c";
+		return "ก\u0e38มภาพ\u0e31นธ\u0e4c";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
 	{
-		return "à¸¡à¸à¸£à¸²à¸„à¸¡";
+		return "มกราคม";
 	}
 
 	protected override string _GetTemplateForLabelJuly()
 	{
-		return "à¸à¸£à¸à¸Žà¸²à¸„à¸¡";
+		return "กรกฎาคม";
 	}
 
 	protected override string _GetTemplateForLabelJune()
 	{
-		return "à¸¡\u0e34à¸–\u0e38à¸™à¸²à¸¢à¸™";
+		return "ม\u0e34ถ\u0e38นายน";
 	}
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "à¸¡\u0e35à¸™à¸²à¸„à¸¡";
+		return "ม\u0e35นาคม";
 	}
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "à¸žà¸¤à¸©à¸ à¸²à¸„à¸¡";
+		return "พฤษภาคม";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "à¹€à¸”\u0e37à¸­à¸™";
+		return "เด\u0e37อน";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "à¸•\u0e48à¸­à¹„à¸›";
+		return "ต\u0e48อไป";
 	}
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "à¸žà¸¤à¸¨à¸ˆ\u0e34à¸à¸²à¸¢à¸™";
+		return "พฤศจ\u0e34กายน";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
 	{
-		return "à¸•\u0e38à¸¥à¸²à¸„à¸¡";
+		return "ต\u0e38ลาคม";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "à¸\u0e48à¸­à¸™à¸«à¸™\u0e49à¸²";
+		return "ก\u0e48อนหน\u0e49า";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "à¸\u0e31à¸™à¸¢à¸²à¸¢à¸™";
+		return "ก\u0e31นยายน";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "à¸›\u0e35";
+		return "ป\u0e35";
 	}
 }
 

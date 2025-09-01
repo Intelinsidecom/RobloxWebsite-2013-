@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class AccountRecoveryResources_en_us : TranslationResourcesBase, IAccountRecoveryResources, ITranslationResources
 
 {
@@ -258,3 +258,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

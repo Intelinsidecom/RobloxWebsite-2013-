@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUIpublic {
-    interface IControlsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
+    public interface IControlsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -205,3 +207,5 @@
 
 
 }
+
+

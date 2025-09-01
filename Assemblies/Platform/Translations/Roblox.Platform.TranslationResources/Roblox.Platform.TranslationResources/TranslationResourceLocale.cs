@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResourcespublic {
-    enum TranslationResourceLocale
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources {
+    public enum TranslationResourceLocale
 
 {
 	en_us,

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface IReturnToStudioResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface IReturnToStudioResources : ITranslationResources
 
 {
 	/// <summary>
@@ -52,3 +54,5 @@
 
 
 }
+
+

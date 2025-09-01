@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RecommendationsResources_en_us to provide locale specific translations where possible,
@@ -39,13 +41,13 @@ internal class RecommendationsResources_fr_fr : RecommendationsResources_en_us, 
 	/// heading for Item page recommendations section.
 	/// English String: "Recommended items"
 	/// </summary>
-	public override string HeadingRecommendedItems => "Objets recommandÃ©s";
+	public override string HeadingRecommendedItems => "Objets recommandés";
 
 	/// <summary>
 	/// Key: "Heading.RecommendedTitle"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string HeadingRecommendedTitle => "RecommandÃ©s";
+	public override string HeadingRecommendedTitle => "Recommandés";
 
 	/// <summary>
 	/// Key: "Label.Free"
@@ -106,12 +108,12 @@ internal class RecommendationsResources_fr_fr : RecommendationsResources_en_us, 
 
 	protected override string _GetTemplateForHeadingRecommendedItems()
 	{
-		return "Objets recommandÃ©s";
+		return "Objets recommandés";
 	}
 
 	protected override string _GetTemplateForHeadingRecommendedTitle()
 	{
-		return "RecommandÃ©s";
+		return "Recommandés";
 	}
 
 	/// <summary>

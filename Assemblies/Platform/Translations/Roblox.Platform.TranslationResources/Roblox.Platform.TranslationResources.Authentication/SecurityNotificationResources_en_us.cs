@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class SecurityNotificationResources_en_us : TranslationResourcesBase, ISecurityNotificationResources, ITranslationResources
 
 {
@@ -78,3 +78,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

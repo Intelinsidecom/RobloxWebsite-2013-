@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
@@ -10,55 +12,55 @@ internal class PluginsResources_zh_tw : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.ErrorBody"
 	/// English String: "There was a problem installing this plugin. Please try again later."
 	/// </summary>
-	public override string LabelErrorBody => "å®‰è£æ­¤å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string LabelErrorBody => "安裝此外掛程式時發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
 	/// English String: "Error Installing Plugin"
 	/// </summary>
-	public override string LabelErrorTitle => "å®‰è£å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤";
+	public override string LabelErrorTitle => "安裝外掛程式時發生錯誤";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "ç¢ºå®š";
+	public override string LabelOk => "確定";
 
 	/// <summary>
 	/// Key: "Label.Reinstall"
 	/// English String: "Reinstall"
 	/// </summary>
-	public override string LabelReinstall => "é‡æ–°å®‰è£";
+	public override string LabelReinstall => "重新安裝";
 
 	/// <summary>
 	/// Key: "Label.SuccessTitle"
 	/// English String: "Plugin Installed"
 	/// </summary>
-	public override string LabelSuccessTitle => "å·²å®‰è£å¤–æŽ›ç¨‹å¼";
+	public override string LabelSuccessTitle => "已安裝外掛程式";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorBody"
 	/// English String: "There was a problem updating this plugin. Please try again later."
 	/// </summary>
-	public override string LabelUpdateErrorBody => "æ›´æ–°æ­¤å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string LabelUpdateErrorBody => "更新此外掛程式時發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Label.UpdateErrorTitle"
 	/// English String: "Error Updating Plugin"
 	/// </summary>
-	public override string LabelUpdateErrorTitle => "æ›´æ–°å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤";
+	public override string LabelUpdateErrorTitle => "更新外掛程式時發生錯誤";
 
 	/// <summary>
 	/// Key: "Label.UpdateSuccessTitle"
 	/// English String: "Plugin Update"
 	/// </summary>
-	public override string LabelUpdateSuccessTitle => "å¤–æŽ›ç¨‹å¼æ›´æ–°";
+	public override string LabelUpdateSuccessTitle => "外掛程式更新";
 
 	/// <summary>
 	/// Key: "Label.UpdateText"
 	/// English String: "Update"
 	/// </summary>
-	public override string LabelUpdateText => "æ›´æ–°";
+	public override string LabelUpdateText => "更新";
 
 	public PluginsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -67,22 +69,22 @@ internal class PluginsResources_zh_tw : PluginsResources_en_us, IPluginsResource
 
 	protected override string _GetTemplateForLabelErrorBody()
 	{
-		return "å®‰è£æ­¤å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "安裝此外掛程式時發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
 	{
-		return "å®‰è£å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤";
+		return "安裝外掛程式時發生錯誤";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "ç¢ºå®š";
+		return "確定";
 	}
 
 	protected override string _GetTemplateForLabelReinstall()
 	{
-		return "é‡æ–°å®‰è£";
+		return "重新安裝";
 	}
 
 	/// <summary>
@@ -91,27 +93,27 @@ internal class PluginsResources_zh_tw : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelSuccessBody(string item)
 	{
-		return $"{item}å·²å®‰è£æˆåŠŸï¼";
+		return $"{item}已安裝成功！";
 	}
 
 	protected override string _GetTemplateForLabelSuccessBody()
 	{
-		return "{item}å·²å®‰è£æˆåŠŸï¼";
+		return "{item}已安裝成功！";
 	}
 
 	protected override string _GetTemplateForLabelSuccessTitle()
 	{
-		return "å·²å®‰è£å¤–æŽ›ç¨‹å¼";
+		return "已安裝外掛程式";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorBody()
 	{
-		return "æ›´æ–°æ­¤å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "更新此外掛程式時發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForLabelUpdateErrorTitle()
 	{
-		return "æ›´æ–°å¤–æŽ›ç¨‹å¼æ™‚ç™¼ç”ŸéŒ¯èª¤";
+		return "更新外掛程式時發生錯誤";
 	}
 
 	/// <summary>
@@ -120,22 +122,22 @@ internal class PluginsResources_zh_tw : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"{item} å·²æ›´æ–°æˆåŠŸï¼è«‹é–‹å•Ÿæ–°è¦–çª—ï¼Œè®“æ›´æ–°ç”Ÿæ•ˆã€‚";
+		return $"{item} 已更新成功！請開啟新視窗，讓更新生效。";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "{item} å·²æ›´æ–°æˆåŠŸï¼è«‹é–‹å•Ÿæ–°è¦–çª—ï¼Œè®“æ›´æ–°ç”Ÿæ•ˆã€‚";
+		return "{item} 已更新成功！請開啟新視窗，讓更新生效。";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
 	{
-		return "å¤–æŽ›ç¨‹å¼æ›´æ–°";
+		return "外掛程式更新";
 	}
 
 	protected override string _GetTemplateForLabelUpdateText()
 	{
-		return "æ›´æ–°";
+		return "更新";
 	}
 }
 

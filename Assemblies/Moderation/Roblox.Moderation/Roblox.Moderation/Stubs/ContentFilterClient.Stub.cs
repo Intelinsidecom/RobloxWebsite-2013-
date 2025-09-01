@@ -1,3 +1,5 @@
+// Duplicate stub disabled; replaced by ContentFilterApiClientStubs.cs
+#if false
 using System;
 using Roblox.ApiClientBase;
 
@@ -38,3 +40,4 @@ namespace Roblox.ContentFilterApi.Client
         public string Value { get; set; }
     }
 }
+#endif

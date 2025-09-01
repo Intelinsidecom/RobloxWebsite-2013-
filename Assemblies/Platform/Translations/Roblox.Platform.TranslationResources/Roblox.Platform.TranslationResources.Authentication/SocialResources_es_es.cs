@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SocialResources_en_us to provide locale specific translations where possible,
@@ -22,13 +24,13 @@ internal class SocialResources_es_es : SocialResources_en_us, ISocialResources, 
 	/// Key: "Description.ConnectedAccounts"
 	/// English String: "Disconnect your connected accounts here. Unlinking an account will log you out of Roblox."
 	/// </summary>
-	public override string DescriptionConnectedAccounts => "Desconecta tus cuentas conectadas aquÃ­. Si desenlazas una cuenta, se cerrarÃ¡ sesiÃ³n en Roblox.";
+	public override string DescriptionConnectedAccounts => "Desconecta tus cuentas conectadas aquí. Si desenlazas una cuenta, se cerrará sesión en Roblox.";
 
 	/// <summary>
 	/// Key: "Description.UnlinkLogOutWarning"
 	/// English String: "Unlinking this account will log you out of Roblox. You will have to link your account again to log back in."
 	/// </summary>
-	public override string DescriptionUnlinkLogOutWarning => "Si desenlazas esta cuenta, se cerrarÃ¡ sesiÃ³n en Roblox. TendrÃ¡s que volver a enlazar tu cuenta para iniciar sesiÃ³n.";
+	public override string DescriptionUnlinkLogOutWarning => "Si desenlazas esta cuenta, se cerrará sesión en Roblox. Tendrás que volver a enlazar tu cuenta para iniciar sesión.";
 
 	/// <summary>
 	/// Key: "Heading.ConnectedAccounts"
@@ -40,13 +42,13 @@ internal class SocialResources_es_es : SocialResources_en_us, ISocialResources, 
 	/// Key: "Placeholder.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string PlaceholderPassword => "ContraseÃ±a";
+	public override string PlaceholderPassword => "Contraseña";
 
 	/// <summary>
 	/// Key: "Response.InvalidPassword"
 	/// English String: "Invalid Password."
 	/// </summary>
-	public override string ResponseInvalidPassword => "ContraseÃ±a no vÃ¡lida.";
+	public override string ResponseInvalidPassword => "Contraseña no válida.";
 
 	public SocialResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -65,12 +67,12 @@ internal class SocialResources_es_es : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForDescriptionConnectedAccounts()
 	{
-		return "Desconecta tus cuentas conectadas aquÃ­. Si desenlazas una cuenta, se cerrarÃ¡ sesiÃ³n en Roblox.";
+		return "Desconecta tus cuentas conectadas aquí. Si desenlazas una cuenta, se cerrará sesión en Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnlinkLogOutWarning()
 	{
-		return "Si desenlazas esta cuenta, se cerrarÃ¡ sesiÃ³n en Roblox. TendrÃ¡s que volver a enlazar tu cuenta para iniciar sesiÃ³n.";
+		return "Si desenlazas esta cuenta, se cerrará sesión en Roblox. Tendrás que volver a enlazar tu cuenta para iniciar sesión.";
 	}
 
 	protected override string _GetTemplateForHeadingConnectedAccounts()
@@ -94,12 +96,12 @@ internal class SocialResources_es_es : SocialResources_en_us, ISocialResources, 
 
 	protected override string _GetTemplateForPlaceholderPassword()
 	{
-		return "ContraseÃ±a";
+		return "Contraseña";
 	}
 
 	protected override string _GetTemplateForResponseInvalidPassword()
 	{
-		return "ContraseÃ±a no vÃ¡lida.";
+		return "Contraseña no válida.";
 	}
 }
 

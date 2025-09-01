@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GamePageResources_en_us to provide locale specific translations where possible,
@@ -10,92 +12,92 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// Key: "abelFilterDefault"
 	/// English String: "Default"
 	/// </summary>
-	public override string abelFilterDefault => "ê¸°ë³¸ê°’";
+	public override string abelFilterDefault => "기본값";
 
 	/// <summary>
 	/// Key: "ActionDisableExperimentalMode"
 	/// English String: "Disable"
 	/// </summary>
-	public override string ActionDisableExperimentalMode => "ë¹„í™œì„±í™”";
+	public override string ActionDisableExperimentalMode => "비활성화";
 
 	/// <summary>
 	/// Key: "ActionSeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "ì „ì²´ ë³´ê¸°";
+	public override string ActionSeeAll => "전체 보기";
 
 	/// <summary>
 	/// Key: "HeadingExperimentalMode"
 	/// English String: "Experimental Mode Games"
 	/// </summary>
-	public override string HeadingExperimentalMode => "ì‹¤í—˜ ëª¨ë“œ ê²Œìž„";
+	public override string HeadingExperimentalMode => "실험 모드 게임";
 
 	/// <summary>
 	/// Key: "Label.FilterExperimental"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelFilterExperimental => "ì¶”ì²œ";
+	public override string LabelFilterExperimental => "추천";
 
 	/// <summary>
 	/// Key: "Label.MoreResults"
 	/// English String: "more results"
 	/// </summary>
-	public override string LabelMoreResults => "ê²°ê³¼ ë” ë³´ê¸°";
+	public override string LabelMoreResults => "결과 더 보기";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results For"
 	/// </summary>
-	public override string LabelMoreResultsFor => "ë‹¤ìŒì— ëŒ€í•œ ë” ë§Žì€ ê²€ìƒ‰ ê²°ê³¼";
+	public override string LabelMoreResultsFor => "다음에 대한 더 많은 검색 결과";
 
 	/// <summary>
 	/// Key: "Label.SponsoredAd"
 	/// text for label of sponsored game cards
 	/// English String: "Sponsored Ad"
 	/// </summary>
-	public override string LabelSponsoredAd => "ìŠ¤í°ì„œ ê´‘ê³ ";
+	public override string LabelSponsoredAd => "스폰서 광고";
 
 	/// <summary>
 	/// Key: "Label.TopResult"
 	/// English String: "Top Result"
 	/// </summary>
-	public override string LabelTopResult => "ìƒìœ„ ê²€ìƒ‰ ê²°ê³¼";
+	public override string LabelTopResult => "상위 검색 결과";
 
 	/// <summary>
 	/// Key: "LabelCancelField"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancelField => "ì·¨ì†Œ";
+	public override string LabelCancelField => "취소";
 
 	/// <summary>
 	/// Key: "LabelExperimental"
 	/// English String: "Experimental"
 	/// </summary>
-	public override string LabelExperimental => "ì‹¤í—˜";
+	public override string LabelExperimental => "실험";
 
 	/// <summary>
 	/// Key: "LabelExperimentalHelpText"
 	/// English String: "What's this?"
 	/// </summary>
-	public override string LabelExperimentalHelpText => "ì´ê²ƒì€ ë¬´ì—‡ì¸ê°€ìš”?";
+	public override string LabelExperimentalHelpText => "이것은 무엇인가요?";
 
 	/// <summary>
 	/// Key: "LabelExperimentalMode"
 	/// English String: "Experimental Mode"
 	/// </summary>
-	public override string LabelExperimentalMode => "ì‹¤í—˜ ëª¨ë“œ";
+	public override string LabelExperimentalMode => "실험 모드";
 
 	/// <summary>
 	/// Key: "LabelExperimentalResults"
 	/// English String: "These results contain Experimental Mode games."
 	/// </summary>
-	public override string LabelExperimentalResults => "ê²°ê³¼ì— ì‹¤í—˜ ëª¨ë“œ ê²Œìž„ì´ í¬í•¨ë˜ì–´ ìžˆì–´ìš”.";
+	public override string LabelExperimentalResults => "결과에 실험 모드 게임이 포함되어 있어요.";
 
 	/// <summary>
 	/// Key: "LabelFilterAllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelFilterAllTime => "ì „ì²´ ê¸°ê°„";
+	public override string LabelFilterAllTime => "전체 기간";
 
 	/// <summary>
 	/// Key: "LabelFilterBuildersClub"
@@ -107,187 +109,187 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// Key: "LabelFilterBy"
 	/// English String: "Filter By"
 	/// </summary>
-	public override string LabelFilterBy => "í•„í„°ë§:";
+	public override string LabelFilterBy => "필터링:";
 
 	/// <summary>
 	/// Key: "LabelFilterContest"
 	/// English String: "Contest"
 	/// </summary>
-	public override string LabelFilterContest => "ì½˜í…ŒìŠ¤íŠ¸";
+	public override string LabelFilterContest => "콘테스트";
 
 	/// <summary>
 	/// Key: "LabelFilterDefault"
 	/// English String: "Default"
 	/// </summary>
-	public override string LabelFilterDefault => "ê¸°ë³¸ê°’";
+	public override string LabelFilterDefault => "기본값";
 
 	/// <summary>
 	/// Key: "LabelFilterFeatured"
 	/// English String: "Featured"
 	/// </summary>
-	public override string LabelFilterFeatured => "ì£¼ëª©";
+	public override string LabelFilterFeatured => "주목";
 
 	/// <summary>
 	/// Key: "LabelFilterFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFilterFriendActivity => "ì¹œêµ¬ í™œë™";
+	public override string LabelFilterFriendActivity => "친구 활동";
 
 	/// <summary>
 	/// Key: "LabelFilterGenre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "ìž¥ë¥´";
+	public override string LabelFilterGenre => "장르";
 
 	/// <summary>
 	/// Key: "LabelFilterMyFavorite"
 	/// English String: "My Favorite"
 	/// </summary>
-	public override string LabelFilterMyFavorite => "ë‚´ ì¦ê²¨ì°¾ê¸°";
+	public override string LabelFilterMyFavorite => "내 즐겨찾기";
 
 	/// <summary>
 	/// Key: "LabelFilterMyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string LabelFilterMyFavorites => "ë‚´ ì¦ê²¨ì°¾ê¸°";
+	public override string LabelFilterMyFavorites => "내 즐겨찾기";
 
 	/// <summary>
 	/// Key: "LabelFilterMyRecent"
 	/// English String: "My Recent"
 	/// </summary>
-	public override string LabelFilterMyRecent => "ìµœê·¼ í”Œë ˆì´";
+	public override string LabelFilterMyRecent => "최근 플레이";
 
 	/// <summary>
 	/// Key: "LabelFilterNow"
 	/// English String: "Now"
 	/// </summary>
-	public override string LabelFilterNow => "ì§€ê¸ˆ";
+	public override string LabelFilterNow => "지금";
 
 	/// <summary>
 	/// Key: "LabelFilterPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelFilterPastDay => "ì–´ì œ";
+	public override string LabelFilterPastDay => "어제";
 
 	/// <summary>
 	/// Key: "LabelFilterPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelFilterPastWeek => "ì§€ë‚œì£¼";
+	public override string LabelFilterPastWeek => "지난주";
 
 	/// <summary>
 	/// Key: "LabelFilterPersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelFilterPersonalizedByLiked => "ê´€ì‹¬ ê¸°ë°˜ ì¶”ì²œ";
+	public override string LabelFilterPersonalizedByLiked => "관심 기반 추천";
 
 	/// <summary>
 	/// Key: "LabelFilterPersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelFilterPersonalServer => "ê°œì¸ ì„œë²„";
+	public override string LabelFilterPersonalServer => "개인 서버";
 
 	/// <summary>
 	/// Key: "LabelFilterPopular"
 	/// English String: "Popular"
 	/// </summary>
-	public override string LabelFilterPopular => "ì¸ê¸°";
+	public override string LabelFilterPopular => "인기";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularInVr"
 	/// English String: "Popular in VR"
 	/// </summary>
-	public override string LabelFilterPopularInVr => "VRì—ì„œ ì¸ê¸°";
+	public override string LabelFilterPopularInVr => "VR에서 인기";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelFilterPopularNearYou => "ì£¼ë³€ì—ì„œ ì¸ê¸°";
+	public override string LabelFilterPopularNearYou => "주변에서 인기";
 
 	/// <summary>
 	/// Key: "LabelFilterPopularWorldwide"
 	/// English String: "Popular Worldwide"
 	/// </summary>
-	public override string LabelFilterPopularWorldwide => "ì „ ì„¸ê³„ì ìœ¼ë¡œ ì¸ê¸°";
+	public override string LabelFilterPopularWorldwide => "전 세계적으로 인기";
 
 	/// <summary>
 	/// Key: "LabelFilterPurchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelFilterPurchased => "êµ¬ë§¤";
+	public override string LabelFilterPurchased => "구매";
 
 	/// <summary>
 	/// Key: "LabelFilterRecentlyPlayed "
 	/// English String: "Recently Played"
 	/// </summary>
-	public override string LabelFilterRecentlyPlayed => "ìµœê·¼ í”Œë ˆì´";
+	public override string LabelFilterRecentlyPlayed => "최근 플레이";
 
 	/// <summary>
 	/// Key: "LabelFilterTime"
 	/// English String: "Time"
 	/// </summary>
-	public override string LabelFilterTime => "ì‹œê°„";
+	public override string LabelFilterTime => "시간";
 
 	/// <summary>
 	/// Key: "LabelFilterTopFavorite"
 	/// English String: "Top Favorite"
 	/// </summary>
-	public override string LabelFilterTopFavorite => "ìµœê³  ì¦ê²¨ì°¾ê¸°";
+	public override string LabelFilterTopFavorite => "최고 즐겨찾기";
 
 	/// <summary>
 	/// Key: "LabelFilterTopGrossing"
 	/// English String: "Top Earning"
 	/// </summary>
-	public override string LabelFilterTopGrossing => "ìµœê³  ìˆ˜ìµ";
+	public override string LabelFilterTopGrossing => "최고 수익";
 
 	/// <summary>
 	/// Key: "LabelFilterTopPaid"
 	/// English String: "Top Paid"
 	/// </summary>
-	public override string LabelFilterTopPaid => "ìµœê³  ë§¤ì¶œ";
+	public override string LabelFilterTopPaid => "최고 매출";
 
 	/// <summary>
 	/// Key: "LabelFilterTopRated"
 	/// English String: "Top Rated"
 	/// </summary>
-	public override string LabelFilterTopRated => "ìµœê³  í‰ì ";
+	public override string LabelFilterTopRated => "최고 평점";
 
 	/// <summary>
 	/// Key: "LabelFilterTopRetaining"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelFilterTopRetaining => "ì¶”ì²œ";
+	public override string LabelFilterTopRetaining => "추천";
 
 	/// <summary>
 	/// Key: "LabelNoSearchResults"
 	/// English String: "No Search Results Found"
 	/// </summary>
-	public override string LabelNoSearchResults => "ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ";
+	public override string LabelNoSearchResults => "검색 결과 없음";
 
 	/// <summary>
 	/// Key: "LabelSearchField"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearchField => "ê²€ìƒ‰";
+	public override string LabelSearchField => "검색";
 
 	/// <summary>
 	/// Key: "LabelSearchInsteadFor"
 	/// English String: "Search instead for"
 	/// </summary>
-	public override string LabelSearchInsteadFor => "ë‹¤ë¥¸ ê²€ìƒ‰ ê²°ê³¼ - ê²€ìƒ‰ì–´:";
+	public override string LabelSearchInsteadFor => "다른 검색 결과 - 검색어:";
 
 	/// <summary>
 	/// Key: "LabelSearchYouMightMean"
 	/// English String: "Did you mean:"
 	/// </summary>
-	public override string LabelSearchYouMightMean => "ì´ê²ƒì„ ì°¾ìœ¼ì…¨ë‚˜ìš”?";
+	public override string LabelSearchYouMightMean => "이것을 찾으셨나요?";
 
 	/// <summary>
 	/// Key: "LabelShowingResultsFor"
 	/// English String: "Showing results for"
 	/// </summary>
-	public override string LabelShowingResultsFor => "ê²€ìƒ‰ ê²°ê³¼ - ê²€ìƒ‰ì–´:";
+	public override string LabelShowingResultsFor => "검색 결과 - 검색어:";
 
 	public GamePageResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -296,52 +298,52 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForabelFilterDefault()
 	{
-		return "ê¸°ë³¸ê°’";
+		return "기본값";
 	}
 
 	protected override string _GetTemplateForActionDisableExperimentalMode()
 	{
-		return "ë¹„í™œì„±í™”";
+		return "비활성화";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "ì „ì²´ ë³´ê¸°";
+		return "전체 보기";
 	}
 
 	protected override string _GetTemplateForHeadingExperimentalMode()
 	{
-		return "ì‹¤í—˜ ëª¨ë“œ ê²Œìž„";
+		return "실험 모드 게임";
 	}
 
 	protected override string _GetTemplateForLabelFilterExperimental()
 	{
-		return "ì¶”ì²œ";
+		return "추천";
 	}
 
 	protected override string _GetTemplateForLabelMoreResults()
 	{
-		return "ê²°ê³¼ ë” ë³´ê¸°";
+		return "결과 더 보기";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "ë‹¤ìŒì— ëŒ€í•œ ë” ë§Žì€ ê²€ìƒ‰ ê²°ê³¼";
+		return "다음에 대한 더 많은 검색 결과";
 	}
 
 	protected override string _GetTemplateForLabelSponsoredAd()
 	{
-		return "ìŠ¤í°ì„œ ê´‘ê³ ";
+		return "스폰서 광고";
 	}
 
 	protected override string _GetTemplateForLabelTopResult()
 	{
-		return "ìƒìœ„ ê²€ìƒ‰ ê²°ê³¼";
+		return "상위 검색 결과";
 	}
 
 	protected override string _GetTemplateForLabelCancelField()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	/// <summary>
@@ -350,37 +352,37 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelCreatorBy(string creatorLink)
 	{
-		return $"ê°œë°œ: {creatorLink}";
+		return $"개발: {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelCreatorBy()
 	{
-		return "ê°œë°œ: {creatorLink}";
+		return "개발: {creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelExperimental()
 	{
-		return "ì‹¤í—˜";
+		return "실험";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalHelpText()
 	{
-		return "ì´ê²ƒì€ ë¬´ì—‡ì¸ê°€ìš”?";
+		return "이것은 무엇인가요?";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalMode()
 	{
-		return "ì‹¤í—˜ ëª¨ë“œ";
+		return "실험 모드";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalResults()
 	{
-		return "ê²°ê³¼ì— ì‹¤í—˜ ëª¨ë“œ ê²Œìž„ì´ í¬í•¨ë˜ì–´ ìžˆì–´ìš”.";
+		return "결과에 실험 모드 게임이 포함되어 있어요.";
 	}
 
 	protected override string _GetTemplateForLabelFilterAllTime()
 	{
-		return "ì „ì²´ ê¸°ê°„";
+		return "전체 기간";
 	}
 
 	/// <summary>
@@ -389,12 +391,12 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelFilterBecauseYouLiked(string gameName)
 	{
-		return $"ê´€ì‹¬ ê¸°ë°˜ ì¶”ì²œ: {gameName}";
+		return $"관심 기반 추천: {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBecauseYouLiked()
 	{
-		return "ê´€ì‹¬ ê¸°ë°˜ ì¶”ì²œ: {gameName}";
+		return "관심 기반 추천: {gameName}";
 	}
 
 	protected override string _GetTemplateForLabelFilterBuildersClub()
@@ -404,77 +406,77 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 
 	protected override string _GetTemplateForLabelFilterBy()
 	{
-		return "í•„í„°ë§:";
+		return "필터링:";
 	}
 
 	protected override string _GetTemplateForLabelFilterContest()
 	{
-		return "ì½˜í…ŒìŠ¤íŠ¸";
+		return "콘테스트";
 	}
 
 	protected override string _GetTemplateForLabelFilterDefault()
 	{
-		return "ê¸°ë³¸ê°’";
+		return "기본값";
 	}
 
 	protected override string _GetTemplateForLabelFilterFeatured()
 	{
-		return "ì£¼ëª©";
+		return "주목";
 	}
 
 	protected override string _GetTemplateForLabelFilterFriendActivity()
 	{
-		return "ì¹œêµ¬ í™œë™";
+		return "친구 활동";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "ìž¥ë¥´";
+		return "장르";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyFavorite()
 	{
-		return "ë‚´ ì¦ê²¨ì°¾ê¸°";
+		return "내 즐겨찾기";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyFavorites()
 	{
-		return "ë‚´ ì¦ê²¨ì°¾ê¸°";
+		return "내 즐겨찾기";
 	}
 
 	protected override string _GetTemplateForLabelFilterMyRecent()
 	{
-		return "ìµœê·¼ í”Œë ˆì´";
+		return "최근 플레이";
 	}
 
 	protected override string _GetTemplateForLabelFilterNow()
 	{
-		return "ì§€ê¸ˆ";
+		return "지금";
 	}
 
 	protected override string _GetTemplateForLabelFilterPastDay()
 	{
-		return "ì–´ì œ";
+		return "어제";
 	}
 
 	protected override string _GetTemplateForLabelFilterPastWeek()
 	{
-		return "ì§€ë‚œì£¼";
+		return "지난주";
 	}
 
 	protected override string _GetTemplateForLabelFilterPersonalizedByLiked()
 	{
-		return "ê´€ì‹¬ ê¸°ë°˜ ì¶”ì²œ";
+		return "관심 기반 추천";
 	}
 
 	protected override string _GetTemplateForLabelFilterPersonalServer()
 	{
-		return "ê°œì¸ ì„œë²„";
+		return "개인 서버";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopular()
 	{
-		return "ì¸ê¸°";
+		return "인기";
 	}
 
 	/// <summary>
@@ -483,72 +485,72 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelFilterPopularByCountry(string CountryName)
 	{
-		return $"{CountryName}ì—ì„œ ì¸ê¸°";
+		return $"{CountryName}에서 인기";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularByCountry()
 	{
-		return "{CountryName}ì—ì„œ ì¸ê¸°";
+		return "{CountryName}에서 인기";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularInVr()
 	{
-		return "VRì—ì„œ ì¸ê¸°";
+		return "VR에서 인기";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularNearYou()
 	{
-		return "ì£¼ë³€ì—ì„œ ì¸ê¸°";
+		return "주변에서 인기";
 	}
 
 	protected override string _GetTemplateForLabelFilterPopularWorldwide()
 	{
-		return "ì „ ì„¸ê³„ì ìœ¼ë¡œ ì¸ê¸°";
+		return "전 세계적으로 인기";
 	}
 
 	protected override string _GetTemplateForLabelFilterPurchased()
 	{
-		return "êµ¬ë§¤";
+		return "구매";
 	}
 
 	protected override string _GetTemplateForLabelFilterRecentlyPlayed()
 	{
-		return "ìµœê·¼ í”Œë ˆì´";
+		return "최근 플레이";
 	}
 
 	protected override string _GetTemplateForLabelFilterTime()
 	{
-		return "ì‹œê°„";
+		return "시간";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopFavorite()
 	{
-		return "ìµœê³  ì¦ê²¨ì°¾ê¸°";
+		return "최고 즐겨찾기";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopGrossing()
 	{
-		return "ìµœê³  ìˆ˜ìµ";
+		return "최고 수익";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopPaid()
 	{
-		return "ìµœê³  ë§¤ì¶œ";
+		return "최고 매출";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopRated()
 	{
-		return "ìµœê³  í‰ì ";
+		return "최고 평점";
 	}
 
 	protected override string _GetTemplateForLabelFilterTopRetaining()
 	{
-		return "ì¶”ì²œ";
+		return "추천";
 	}
 
 	protected override string _GetTemplateForLabelNoSearchResults()
 	{
-		return "ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ";
+		return "검색 결과 없음";
 	}
 
 	/// <summary>
@@ -557,32 +559,32 @@ internal class GamePageResources_ko_kr : GamePageResources_en_us, IGamePageResou
 	/// </summary>
 	public override string LabelPlayingPhrase(string playerCount)
 	{
-		return $"{playerCount}ëª… í”Œë ˆì´ ì¤‘";
+		return $"{playerCount}명 플레이 중";
 	}
 
 	protected override string _GetTemplateForLabelPlayingPhrase()
 	{
-		return "{playerCount}ëª… í”Œë ˆì´ ì¤‘";
+		return "{playerCount}명 플레이 중";
 	}
 
 	protected override string _GetTemplateForLabelSearchField()
 	{
-		return "ê²€ìƒ‰";
+		return "검색";
 	}
 
 	protected override string _GetTemplateForLabelSearchInsteadFor()
 	{
-		return "ë‹¤ë¥¸ ê²€ìƒ‰ ê²°ê³¼ - ê²€ìƒ‰ì–´:";
+		return "다른 검색 결과 - 검색어:";
 	}
 
 	protected override string _GetTemplateForLabelSearchYouMightMean()
 	{
-		return "ì´ê²ƒì„ ì°¾ìœ¼ì…¨ë‚˜ìš”?";
+		return "이것을 찾으셨나요?";
 	}
 
 	protected override string _GetTemplateForLabelShowingResultsFor()
 	{
-		return "ê²€ìƒ‰ ê²°ê³¼ - ê²€ìƒ‰ì–´:";
+		return "검색 결과 - 검색어:";
 	}
 }
 

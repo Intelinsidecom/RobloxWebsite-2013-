@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
@@ -112,3 +112,4 @@ internal class TwoStepVerificationSettingsAuditEntryDAL
 		return RobloxDatabase.RobloxTwoStepVerificationSettingsAudit.Lookup("TwoStepVerificationSettingsAuditEntries_GetTwoStepVerificationSettingsAuditEntryByPublicID", BuildDAL, queryParameters);
 	}
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ResetPasswordResources_en_us to provide locale specific translations where possible,
@@ -10,312 +12,312 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.EmailToResetPassword"
 	/// English String: "Use email to reset password"
 	/// </summary>
-	public override string ActionEmailToResetPassword => "ä½¿ç”¨ç”µå­é‚®ä»¶ä»¥é‡ç½®å¯†ç ";
+	public override string ActionEmailToResetPassword => "使用电子邮件以重置密码";
 
 	/// <summary>
 	/// Key: "Action.EmailToRetriveUsername"
 	/// English String: "Use email to retrieve username"
 	/// </summary>
-	public override string ActionEmailToRetriveUsername => "ä½¿ç”¨ç”µå­é‚®ä»¶ä»¥å–å›žç”¨æˆ·å";
+	public override string ActionEmailToRetriveUsername => "使用电子邮件以取回用户名";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// OK
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "å¥½";
+	public override string ActionOk => "好";
 
 	/// <summary>
 	/// Key: "Action.PhoneToResetPassword"
 	/// English String: "Use phone number to reset password"
 	/// </summary>
-	public override string ActionPhoneToResetPassword => "ä½¿ç”¨æ‰‹æœºå·ç ä»¥é‡ç½®å¯†ç ";
+	public override string ActionPhoneToResetPassword => "使用手机号码以重置密码";
 
 	/// <summary>
 	/// Key: "Action.PhoneToRetriveUsername"
 	/// English String: "Use phone number to retrieve username"
 	/// </summary>
-	public override string ActionPhoneToRetriveUsername => "ä½¿ç”¨æ‰‹æœºå·ç ä»¥å–å›žç”¨æˆ·å";
+	public override string ActionPhoneToRetriveUsername => "使用手机号码以取回用户名";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "éªŒè¯";
+	public override string ActionVerify => "验证";
 
 	/// <summary>
 	/// Key: "Description.EmailToResetPassword"
 	/// English String: "Enter your email to reset your password."
 	/// </summary>
-	public override string DescriptionEmailToResetPassword => "è¾“å…¥ä½ çš„ç”µå­é‚®ä»¶ä»¥é‡ç½®ä½ çš„å¯†ç ã€‚";
+	public override string DescriptionEmailToResetPassword => "输入你的电子邮件以重置你的密码。";
 
 	/// <summary>
 	/// Key: "Description.EmailToRetriveUsername"
 	/// English String: "Enter your email to retrieve your username."
 	/// </summary>
-	public override string DescriptionEmailToRetriveUsername => "è¾“å…¥ä½ çš„ç”µå­é‚®ä»¶ä»¥å–å›žä½ çš„ç”¨æˆ·åã€‚";
+	public override string DescriptionEmailToRetriveUsername => "输入你的电子邮件以取回你的用户名。";
 
 	/// <summary>
 	/// Key: "Description.PasswordChangeEmail.Subject"
 	/// email subject to change password
 	/// English String: "Roblox Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordChangeEmailSubject => "Roblox å¯†ç é‡ç½®";
+	public override string DescriptionPasswordChangeEmailSubject => "Roblox 密码重置";
 
 	/// <summary>
 	/// Key: "Description.PasswordResetEmail.Subject"
 	/// Subject for password reset email
 	/// English String: "Roblox Account Password Reset"
 	/// </summary>
-	public override string DescriptionPasswordResetEmailSubject => "Roblox å¸æˆ·å¯†ç é‡ç½®";
+	public override string DescriptionPasswordResetEmailSubject => "Roblox 帐户密码重置";
 
 	/// <summary>
 	/// Key: "Description.PhoneToResetPassword"
 	/// English String: "Enter your phone number to reset your password."
 	/// </summary>
-	public override string DescriptionPhoneToResetPassword => "è¾“å…¥ä½ çš„æ‰‹æœºå·ç ä»¥é‡ç½®ä½ çš„å¯†ç ã€‚";
+	public override string DescriptionPhoneToResetPassword => "输入你的手机号码以重置你的密码。";
 
 	/// <summary>
 	/// Key: "Description.PhoneToRetriveUsername"
 	/// English String: "Enter your phone number to retrieve your username."
 	/// </summary>
-	public override string DescriptionPhoneToRetriveUsername => "è¾“å…¥ä½ çš„æ‰‹æœºå·ç ä»¥å–å›žä½ çš„ç”¨æˆ·åã€‚";
+	public override string DescriptionPhoneToRetriveUsername => "输入你的手机号码以取回你的用户名。";
 
 	/// <summary>
 	/// Key: "Heading.VerifyCode"
 	/// verify code heading
 	/// English String: "Verify Code"
 	/// </summary>
-	public override string HeadingVerifyCode => "éªŒè¯ç ";
+	public override string HeadingVerifyCode => "验证码";
 
 	/// <summary>
 	/// Key: "Heading.VerifyPhone"
 	/// English String: "Verify Phone"
 	/// </summary>
-	public override string HeadingVerifyPhone => "éªŒè¯æ‰‹æœº";
+	public override string HeadingVerifyPhone => "验证手机";
 
 	/// <summary>
 	/// Key: "HeadingForgetPasswordOrUsername"
 	/// English String: "Forgot Password or Username"
 	/// </summary>
-	public override string HeadingForgetPasswordOrUsername => "å¿˜è®°å¯†ç æˆ–ç”¨æˆ·å";
+	public override string HeadingForgetPasswordOrUsername => "忘记密码或用户名";
 
 	/// <summary>
 	/// Key: "Label.ActionButtonYes"
 	/// button label
 	/// English String: "Yes"
 	/// </summary>
-	public override string LabelActionButtonYes => "æ˜¯";
+	public override string LabelActionButtonYes => "是";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyPassword"
 	/// English String: "Forgot My Password"
 	/// </summary>
-	public override string LabelForgetMyPassword => "å¿˜è®°æˆ‘çš„å¯†ç ";
+	public override string LabelForgetMyPassword => "忘记我的密码";
 
 	/// <summary>
 	/// Key: "Label.ForgetMyUsername"
 	/// English String: "Forgot My Username"
 	/// </summary>
-	public override string LabelForgetMyUsername => "å¿˜è®°æˆ‘çš„ç”¨æˆ·å";
+	public override string LabelForgetMyUsername => "忘记我的用户名";
 
 	/// <summary>
 	/// Key: "Label.InvalidEmail"
 	/// English String: "Invalid email"
 	/// </summary>
-	public override string LabelInvalidEmail => "ç”µå­é‚®ä»¶æ— æ•ˆ";
+	public override string LabelInvalidEmail => "电子邮件无效";
 
 	/// <summary>
 	/// Key: "Label.InvalidPhoneNumber"
 	/// English String: "Invalid phone number"
 	/// </summary>
-	public override string LabelInvalidPhoneNumber => "æ‰‹æœºå·ç æ— æ•ˆ";
+	public override string LabelInvalidPhoneNumber => "手机号码无效";
 
 	/// <summary>
 	/// Key: "Label.NeutralButtonOk"
 	/// ok button label
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelNeutralButtonOk => "å¥½";
+	public override string LabelNeutralButtonOk => "好";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// label
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "å¯†ç ";
+	public override string LabelPassword => "密码";
 
 	/// <summary>
 	/// Key: "Label.ResendCode"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string LabelResendCode => "é‡æ–°å‘é€éªŒè¯ç ";
+	public override string LabelResendCode => "重新发送验证码";
 
 	/// <summary>
 	/// Key: "Label.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string LabelSubmit => "æäº¤";
+	public override string LabelSubmit => "提交";
 
 	/// <summary>
 	/// Key: "Label.ToolTip.WhoCanFindMeByPhone"
 	/// English String: "This setting controls who can find you using the phone number you provided."
 	/// </summary>
-	public override string LabelToolTipWhoCanFindMeByPhone => "æ­¤è®¾ç½®å¯æŽ§åˆ¶è°å¯ä»¥é€šè¿‡ä½ æä¾›çš„æ‰‹æœºå·ç æ‰¾åˆ°ä½ ã€‚";
+	public override string LabelToolTipWhoCanFindMeByPhone => "此设置可控制谁可以通过你提供的手机号码找到你。";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ç”¨æˆ·å";
+	public override string LabelUsername => "用户名";
 
 	/// <summary>
 	/// Key: "Label.WhoCanFindMeByPhone"
 	/// English String: "Who can find me by my phone number?"
 	/// </summary>
-	public override string LabelWhoCanFindMeByPhone => "è°å¯ä»¥é€šè¿‡æˆ‘çš„æ‰‹æœºå·ç æ‰¾åˆ°æˆ‘ï¼Ÿ";
+	public override string LabelWhoCanFindMeByPhone => "谁可以通过我的手机号码找到我？";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error occurred, try again later."
 	/// </summary>
-	public override string MessageDefaultError => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
+	public override string MessageDefaultError => "发生错误，请稍后重试。";
 
 	/// <summary>
 	/// Key: "Message.EmailForUsernameSuccessBody"
 	/// success message
 	/// English String: "An email with your username(s) has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailForUsernameSuccessBody => "å¦‚æžœä½ çš„å¸æˆ·å·²ä¿å­˜ç”µå­é‚®ä»¶åœ°å€ï¼Œé‚£æˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€å°åŒ…å«ä½ ç”¨æˆ·åçš„ç”µå­é‚®ä»¶ã€‚";
+	public override string MessageEmailForUsernameSuccessBody => "如果你的帐户已保存电子邮件地址，那我们已向你发送了一封包含你用户名的电子邮件。";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessBody"
 	/// English String: "An email with instructions has been sent to you if the email was previously saved on your account."
 	/// </summary>
-	public override string MessageEmailSuccessBody => "å¦‚æžœä½ çš„å¸æˆ·å·²ä¿å­˜ç”µå­é‚®ä»¶åœ°å€ï¼Œé‚£æˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€å°é™„æœ‰è¯´æ˜Žçš„ç”µå­é‚®ä»¶ã€‚";
+	public override string MessageEmailSuccessBody => "如果你的帐户已保存电子邮件地址，那我们已向你发送了一封附有说明的电子邮件。";
 
 	/// <summary>
 	/// Key: "Message.EmailSuccessTitle"
 	/// English String: "Email Sent"
 	/// </summary>
-	public override string MessageEmailSuccessTitle => "ç”µå­é‚®ä»¶å·²å‘é€";
+	public override string MessageEmailSuccessTitle => "电子邮件已发送";
 
 	/// <summary>
 	/// Key: "Message.EnterCode"
 	/// English String: "A code was sent to your phone if it was previously verified on your account. Please enter it below"
 	/// </summary>
-	public override string MessageEnterCode => "å¦‚æžœä½ çš„æ‰‹æœºå·ç å·²ç»è¿‡éªŒè¯ï¼Œä½ å°†æ”¶åˆ°æˆ‘ä»¬å‘é€è‡³ä½ æ‰‹æœºçš„ä»£ç ã€‚è¯·åœ¨ä¸‹æ–¹è¾“å…¥";
+	public override string MessageEnterCode => "如果你的手机号码已经过验证，你将收到我们发送至你手机的代码。请在下方输入";
 
 	/// <summary>
 	/// Key: "Message.EnterCodeSentToEmail"
 	/// Enter the code we just sent to your email.
 	/// English String: "Enter the code we just sent to your email."
 	/// </summary>
-	public override string MessageEnterCodeSentToEmail => "è¯·è¾“å…¥æˆ‘ä»¬åˆšå‘é€è‡³ä½ ç”µå­é‚®ä»¶çš„ä»£ç ã€‚";
+	public override string MessageEnterCodeSentToEmail => "请输入我们刚发送至你电子邮件的代码。";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessBody"
 	/// English String: "An SMS with your username(s) has been sent to you if the phone number was previously verified on your account."
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessBody => "å¦‚æžœä½ çš„å¸æˆ·å·²éªŒè¯è¿‡ç”µè¯å·ç ï¼Œé‚£ä¹ˆæˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€æ¡åŒ…å«ä½ ç”¨æˆ·åçš„ä¿¡æ¯ã€‚";
+	public override string MessagePhoneForUsernameSuccessBody => "如果你的帐户已验证过电话号码，那么我们已向你发送了一条包含你用户名的信息。";
 
 	/// <summary>
 	/// Key: "Message.PhoneForUsernameSuccessTitle"
 	/// English String: "SMS Sent"
 	/// </summary>
-	public override string MessagePhoneForUsernameSuccessTitle => "çŸ­ä¿¡å·²å‘é€";
+	public override string MessagePhoneForUsernameSuccessTitle => "短信已发送";
 
 	/// <summary>
 	/// Key: "MessageAccountDoesNotHaveAnEmail"
 	/// English String: "There is no email linked to this account"
 	/// </summary>
-	public override string MessageAccountDoesNotHaveAnEmail => "æ²¡æœ‰ä¸Žæ­¤å¸æˆ·ç›¸å…³è”çš„ç”µå­é‚®ä»¶";
+	public override string MessageAccountDoesNotHaveAnEmail => "没有与此帐户相关联的电子邮件";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByEmail"
 	/// No account found. Please use a different email.
 	/// English String: "No account found. Please use a different email."
 	/// </summary>
-	public override string MessageAccountNotFoundByEmail => "æœªæ‰¾åˆ°å¸æˆ·ã€‚è¯·ä½¿ç”¨å…¶ä»–ç”µå­é‚®ä»¶ã€‚";
+	public override string MessageAccountNotFoundByEmail => "未找到帐户。请使用其他电子邮件。";
 
 	/// <summary>
 	/// Key: "MessageAccountNotFoundByPhone"
 	/// No account found. Please use a different phone number.
 	/// English String: "No account found. Please use a different phone number."
 	/// </summary>
-	public override string MessageAccountNotFoundByPhone => "æœªæ‰¾åˆ°å¸æˆ·ã€‚è¯·ä½¿ç”¨å…¶ä»–æ‰‹æœºå·ç ã€‚";
+	public override string MessageAccountNotFoundByPhone => "未找到帐户。请使用其他手机号码。";
 
 	/// <summary>
 	/// Key: "MessageAccountRecoveryUnknownError"
 	/// English String: "System error. Account could not be restored to this state."
 	/// </summary>
-	public override string MessageAccountRecoveryUnknownError => "ç³»ç»Ÿé”™è¯¯ã€‚å¸æˆ·æ— æ³•æ¢å¤è‡³æ­¤çŠ¶æ€ã€‚";
+	public override string MessageAccountRecoveryUnknownError => "系统错误。帐户无法恢复至此状态。";
 
 	/// <summary>
 	/// Key: "MessageCaptchaError"
 	/// English String: "We need to make sure you're not a robot!"
 	/// </summary>
-	public override string MessageCaptchaError => "æˆ‘ä»¬éœ€è¦ç¡®å®šä½ ä¸æ˜¯æœºå™¨äºº :)";
+	public override string MessageCaptchaError => "我们需要确定你不是机器人 :)";
 
 	/// <summary>
 	/// Key: "MessageCaptchaFailError"
 	/// English String: "The words you typed didn't match the picture. Please try again."
 	/// </summary>
-	public override string MessageCaptchaFailError => "ä½ é”®å…¥çš„æ–‡å­—ä¸Žå›¾ç‰‡ä¸ç¬¦ã€‚è¯·é‡è¯•ã€‚";
+	public override string MessageCaptchaFailError => "你键入的文字与图片不符。请重试。";
 
 	/// <summary>
 	/// Key: "MessageCredentialsError"
 	/// English String: "Your username or password is incorrect. Please check them and try again."
 	/// </summary>
-	public override string MessageCredentialsError => "ä½ çš„ç”¨æˆ·åæˆ–å¯†ç ä¸æ­£ç¡®ã€‚è¯·æ£€æŸ¥å¹¶é‡è¯•ã€‚";
+	public override string MessageCredentialsError => "你的用户名或密码不正确。请检查并重试。";
 
 	/// <summary>
 	/// Key: "MessageFloodCheckedError"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string MessageFloodCheckedError => "å°è¯•æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+	public override string MessageFloodCheckedError => "尝试次数过多。请稍后重试。";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordFeatureDisabled"
 	/// English String: "Feature temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageForgotPasswordFeatureDisabled => "åŠŸèƒ½æš‚æ—¶åœç”¨ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+	public override string MessageForgotPasswordFeatureDisabled => "功能暂时停用。请稍后重试。";
 
 	/// <summary>
 	/// Key: "MessageForgotPasswordSuccess"
 	/// English String: "Check your email for login instructions"
 	/// </summary>
-	public override string MessageForgotPasswordSuccess => "è¯·æŸ¥çœ‹ä½ çš„é‚®ä»¶ä»¥èŽ·å–ç™»å½•è¯´æ˜Ž";
+	public override string MessageForgotPasswordSuccess => "请查看你的邮件以获取登录说明";
 
 	/// <summary>
 	/// Key: "MessageInvalidAccountStatus"
 	/// English String: "Account status prevents resetting password"
 	/// </summary>
-	public override string MessageInvalidAccountStatus => "å¸æˆ·çŠ¶æ€å¯¼è‡´æ— æ³•é‡ç½®å¯†ç ";
+	public override string MessageInvalidAccountStatus => "帐户状态导致无法重置密码";
 
 	/// <summary>
 	/// Key: "MessageInvalidPassword"
 	/// English String: "Invalid password"
 	/// </summary>
-	public override string MessageInvalidPassword => "å¯†ç æ— æ•ˆ";
+	public override string MessageInvalidPassword => "密码无效";
 
 	/// <summary>
 	/// Key: "MessageInvalidTicket"
 	/// English String: "We couldn't load this security ticket."
 	/// </summary>
-	public override string MessageInvalidTicket => "æˆ‘ä»¬æ— æ³•åŠ è½½æ­¤å®‰å…¨ç¥¨å•ã€‚";
+	public override string MessageInvalidTicket => "我们无法加载此安全票单。";
 
 	/// <summary>
 	/// Key: "MessageInvalidUserNameOrEmail"
 	/// English String: "Invalid username, or no email exists"
 	/// </summary>
-	public override string MessageInvalidUserNameOrEmail => "ç”¨æˆ·åæ— æ•ˆï¼Œæˆ–ç”µå­é‚®ä»¶ä¸å­˜åœ¨";
+	public override string MessageInvalidUserNameOrEmail => "用户名无效，或电子邮件不存在";
 
 	/// <summary>
 	/// Key: "MessageMobileResetPasswordSuccess"
@@ -327,92 +329,92 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// Key: "MessageNoAccountsLinkedToEmail"
 	/// English String: "There are no accounts linked to this email address"
 	/// </summary>
-	public override string MessageNoAccountsLinkedToEmail => "æ²¡æœ‰ä¸Žæ­¤ç”µå­é‚®ä»¶åœ°å€ç›¸å…³è”çš„å¸æˆ·";
+	public override string MessageNoAccountsLinkedToEmail => "没有与此电子邮件地址相关联的帐户";
 
 	/// <summary>
 	/// Key: "MessageOldUsernameError"
 	/// English String: "It looks like you are trying to log in with a username that has changed. Please log in with your new username."
 	/// </summary>
-	public override string MessageOldUsernameError => "ä½ ä¼¼ä¹Žåœ¨å°è¯•ä½¿ç”¨å·²æ›´æ”¹çš„ç”¨æˆ·åè¿›è¡Œç™»å½•ã€‚è¯·ä½¿ç”¨ä½ çš„æ–°ç”¨æˆ·åç™»å½•ã€‚";
+	public override string MessageOldUsernameError => "你似乎在尝试使用已更改的用户名进行登录。请使用你的新用户名登录。";
 
 	/// <summary>
 	/// Key: "MessagePasswordCannotBeUsed"
 	/// English String: "Sorry, that password cannot be used."
 	/// </summary>
-	public override string MessagePasswordCannotBeUsed => "æŠ±æ­‰ï¼Œæ— æ³•ä½¿ç”¨è¯¥å¯†ç ã€‚";
+	public override string MessagePasswordCannotBeUsed => "抱歉，无法使用该密码。";
 
 	/// <summary>
 	/// Key: "MessagePasswordsDoNotMatch"
 	/// English String: "Passwords do not match"
 	/// </summary>
-	public override string MessagePasswordsDoNotMatch => "å¯†ç ä¸åŒ¹é…";
+	public override string MessagePasswordsDoNotMatch => "密码不匹配";
 
 	/// <summary>
 	/// Key: "MessageSamlUnauthenticated"
 	/// English String: "You must log in to Roblox to finish authenticating."
 	/// </summary>
-	public override string MessageSamlUnauthenticated => "ä½ å¿…é¡»ç™»å½• Roblox ä»¥å®Œæˆèº«ä»½éªŒè¯ã€‚";
+	public override string MessageSamlUnauthenticated => "你必须登录 Roblox 以完成身份验证。";
 
 	/// <summary>
 	/// Key: "MessageUnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string MessageUnknownError => "æœªçŸ¥é”™è¯¯";
+	public override string MessageUnknownError => "未知错误";
 
 	/// <summary>
 	/// Key: "MessageUnknownSystemError"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string MessageUnknownSystemError => "ç³»ç»Ÿé”™è¯¯ã€‚è¯·è¿”å›žç™»å½•å±å¹•ã€‚";
+	public override string MessageUnknownSystemError => "系统错误。请返回登录屏幕。";
 
 	/// <summary>
 	/// Key: "Placeholder.Email"
 	/// English String: "Email"
 	/// </summary>
-	public override string PlaceholderEmail => "ç”µå­é‚®ä»¶";
+	public override string PlaceholderEmail => "电子邮件";
 
 	/// <summary>
 	/// Key: "Placeholder.PhoneNumber"
 	/// English String: "Phone Number"
 	/// </summary>
-	public override string PlaceholderPhoneNumber => "æ‰‹æœºå·ç ";
+	public override string PlaceholderPhoneNumber => "手机号码";
 
 	/// <summary>
 	/// Key: "Response.PasswordResetSuccess"
 	/// Password reset success! Please login again.
 	/// English String: "Password reset success! Please login again."
 	/// </summary>
-	public override string ResponsePasswordResetSuccess => "å¯†ç é‡ç½®æˆåŠŸï¼è¯·å†æ¬¡ç™»å½•ã€‚";
+	public override string ResponsePasswordResetSuccess => "密码重置成功！请再次登录。";
 
 	/// <summary>
 	/// Key: "Response.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string ResponseSuccess => "æˆåŠŸ";
+	public override string ResponseSuccess => "成功";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordFlooded"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseUpdatePasswordFlooded => "å°è¯•æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+	public override string ResponseUpdatePasswordFlooded => "尝试次数过多。请稍后重试。";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordIncorrect"
 	/// English String: "Your current password is incorrect, the password was not changed."
 	/// </summary>
-	public override string ResponseUpdatePasswordIncorrect => "ä½ å½“å‰çš„å¯†ç ä¸æ­£ç¡®ï¼Œå¯†ç æœªæ›´æ”¹ã€‚";
+	public override string ResponseUpdatePasswordIncorrect => "你当前的密码不正确，密码未更改。";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordInputMissing"
 	/// English String: "Must include new password and confirm password"
 	/// </summary>
-	public override string ResponseUpdatePasswordInputMissing => "å¿…é¡»åŒ…å«æ–°å¯†ç å¹¶ç¡®è®¤å¯†ç ";
+	public override string ResponseUpdatePasswordInputMissing => "必须包含新密码并确认密码";
 
 	/// <summary>
 	/// Key: "Response.UpdatePasswordMismatch"
 	/// English String: "Your new password and confirm password must match"
 	/// </summary>
-	public override string ResponseUpdatePasswordMismatch => "ä½ çš„æ–°å¯†ç é¡»ä¸Žç¡®è®¤å¯†ç ç›¸ç¬¦";
+	public override string ResponseUpdatePasswordMismatch => "你的新密码须与确认密码相符";
 
 	public ResetPasswordResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -421,37 +423,37 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionEmailToResetPassword()
 	{
-		return "ä½¿ç”¨ç”µå­é‚®ä»¶ä»¥é‡ç½®å¯†ç ";
+		return "使用电子邮件以重置密码";
 	}
 
 	protected override string _GetTemplateForActionEmailToRetriveUsername()
 	{
-		return "ä½¿ç”¨ç”µå­é‚®ä»¶ä»¥å–å›žç”¨æˆ·å";
+		return "使用电子邮件以取回用户名";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForActionPhoneToResetPassword()
 	{
-		return "ä½¿ç”¨æ‰‹æœºå·ç ä»¥é‡ç½®å¯†ç ";
+		return "使用手机号码以重置密码";
 	}
 
 	protected override string _GetTemplateForActionPhoneToRetriveUsername()
 	{
-		return "ä½¿ç”¨æ‰‹æœºå·ç ä»¥å–å›žç”¨æˆ·å";
+		return "使用手机号码以取回用户名";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "éªŒè¯";
+		return "验证";
 	}
 
 	/// <summary>
@@ -461,22 +463,22 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionChangePasswordEmailHtmlBody1(string userName, string lineBreak, string actionLink)
 	{
-		return $"æˆ‘ä»¬æ³¨æ„åˆ°ä½  Roblox å¸æˆ·çš„å¯†ç å·²æ›´æ”¹ï¼š{userName} ã€‚å¦‚æžœä½ ä¸æƒ³çœŸçš„æ›´æ”¹ï¼Œæˆ–è€…ä½ è®¤ä¸ºåˆ«äººå¯èƒ½ä¸å°å¿ƒä½œå‡ºäº†æ­¤æ›´æ”¹ï¼Œé‚£ä¹ˆè¯·ç‚¹æŒ‰æ­¤é“¾æŽ¥ä»¥æ’¤é”€ï¼š{lineBreak}{actionLink}{lineBreak}{lineBreak}å¦‚æžœä½ æ›´å€¾å‘äºŽä½¿ç”¨æ–°çš„ Roblox å¯†ç ï¼Œæ— éœ€ä»»ä½•æ­¥éª¤ï¼Œå¸æˆ·å·²è®¾ç½®å¥½ã€‚è¯·ä¸è¦å›žå¤æ­¤æ¶ˆæ¯ã€‚å¦‚æžœä½ æœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·æŸ¥çœ‹ Roblox å¸®åŠ©é¡µé¢ï¼ˆhttps://www.roblox.com/helpï¼‰ã€‚";
+		return $"我们注意到你 Roblox 帐户的密码已更改：{userName} 。如果你不想真的更改，或者你认为别人可能不小心作出了此更改，那么请点按此链接以撤销：{lineBreak}{actionLink}{lineBreak}{lineBreak}如果你更倾向于使用新的 Roblox 密码，无需任何步骤，帐户已设置好。请不要回复此消息。如果你有任何问题，请查看 Roblox 帮助页面（https://www.roblox.com/help）。";
 	}
 
 	protected override string _GetTemplateForDescriptionChangePasswordEmailHtmlBody1()
 	{
-		return "æˆ‘ä»¬æ³¨æ„åˆ°ä½  Roblox å¸æˆ·çš„å¯†ç å·²æ›´æ”¹ï¼š{userName} ã€‚å¦‚æžœä½ ä¸æƒ³çœŸçš„æ›´æ”¹ï¼Œæˆ–è€…ä½ è®¤ä¸ºåˆ«äººå¯èƒ½ä¸å°å¿ƒä½œå‡ºäº†æ­¤æ›´æ”¹ï¼Œé‚£ä¹ˆè¯·ç‚¹æŒ‰æ­¤é“¾æŽ¥ä»¥æ’¤é”€ï¼š{lineBreak}{actionLink}{lineBreak}{lineBreak}å¦‚æžœä½ æ›´å€¾å‘äºŽä½¿ç”¨æ–°çš„ Roblox å¯†ç ï¼Œæ— éœ€ä»»ä½•æ­¥éª¤ï¼Œå¸æˆ·å·²è®¾ç½®å¥½ã€‚è¯·ä¸è¦å›žå¤æ­¤æ¶ˆæ¯ã€‚å¦‚æžœä½ æœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·æŸ¥çœ‹ Roblox å¸®åŠ©é¡µé¢ï¼ˆhttps://www.roblox.com/helpï¼‰ã€‚";
+		return "我们注意到你 Roblox 帐户的密码已更改：{userName} 。如果你不想真的更改，或者你认为别人可能不小心作出了此更改，那么请点按此链接以撤销：{lineBreak}{actionLink}{lineBreak}{lineBreak}如果你更倾向于使用新的 Roblox 密码，无需任何步骤，帐户已设置好。请不要回复此消息。如果你有任何问题，请查看 Roblox 帮助页面（https://www.roblox.com/help）。";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToResetPassword()
 	{
-		return "è¾“å…¥ä½ çš„ç”µå­é‚®ä»¶ä»¥é‡ç½®ä½ çš„å¯†ç ã€‚";
+		return "输入你的电子邮件以重置你的密码。";
 	}
 
 	protected override string _GetTemplateForDescriptionEmailToRetriveUsername()
 	{
-		return "è¾“å…¥ä½ çš„ç”µå­é‚®ä»¶ä»¥å–å›žä½ çš„ç”¨æˆ·åã€‚";
+		return "输入你的电子邮件以取回你的用户名。";
 	}
 
 	/// <summary>
@@ -486,12 +488,12 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailBodyPlainText(string userName, string urlWithTicket)
 	{
-		return $"æˆ‘ä»¬æ³¨æ„åˆ°ä½  Roblox å¸æˆ·çš„å¯†ç å·²æ›´æ”¹ï¼š{userName} ã€‚å¦‚æžœä½ ä¸æƒ³çœŸçš„æ›´æ”¹ï¼Œæˆ–è€…ä½ è®¤ä¸ºåˆ«äººå¯èƒ½ä¸å°å¿ƒä½œå‡ºäº†æ­¤æ›´æ”¹ï¼Œé‚£ä¹ˆè¯·ç‚¹æŒ‰æ­¤é“¾æŽ¥ä»¥æ’¤é”€ï¼š\n{urlWithTicket}\n\nå¦‚æžœä½ æ›´å€¾å‘äºŽä½¿ç”¨æ–°çš„ Roblox å¯†ç ï¼Œæ— éœ€ä»»ä½•æ­¥éª¤ï¼Œå¸æˆ·å·²è®¾ç½®å¥½ã€‚è¯·ä¸è¦å›žå¤æ­¤æ¶ˆæ¯ã€‚å¦‚æžœä½ æœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·æŸ¥çœ‹ Roblox å¸®åŠ©é¡µé¢ï¼ˆhttps://www.roblox.com/helpï¼‰ã€‚";
+		return $"我们注意到你 Roblox 帐户的密码已更改：{userName} 。如果你不想真的更改，或者你认为别人可能不小心作出了此更改，那么请点按此链接以撤销：\n{urlWithTicket}\n\n如果你更倾向于使用新的 Roblox 密码，无需任何步骤，帐户已设置好。请不要回复此消息。如果你有任何问题，请查看 Roblox 帮助页面（https://www.roblox.com/help）。";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailBodyPlainText()
 	{
-		return "æˆ‘ä»¬æ³¨æ„åˆ°ä½  Roblox å¸æˆ·çš„å¯†ç å·²æ›´æ”¹ï¼š{userName} ã€‚å¦‚æžœä½ ä¸æƒ³çœŸçš„æ›´æ”¹ï¼Œæˆ–è€…ä½ è®¤ä¸ºåˆ«äººå¯èƒ½ä¸å°å¿ƒä½œå‡ºäº†æ­¤æ›´æ”¹ï¼Œé‚£ä¹ˆè¯·ç‚¹æŒ‰æ­¤é“¾æŽ¥ä»¥æ’¤é”€ï¼š\n{urlWithTicket}\n\nå¦‚æžœä½ æ›´å€¾å‘äºŽä½¿ç”¨æ–°çš„ Roblox å¯†ç ï¼Œæ— éœ€ä»»ä½•æ­¥éª¤ï¼Œå¸æˆ·å·²è®¾ç½®å¥½ã€‚è¯·ä¸è¦å›žå¤æ­¤æ¶ˆæ¯ã€‚å¦‚æžœä½ æœ‰ä»»ä½•é—®é¢˜ï¼Œè¯·æŸ¥çœ‹ Roblox å¸®åŠ©é¡µé¢ï¼ˆhttps://www.roblox.com/helpï¼‰ã€‚";
+		return "我们注意到你 Roblox 帐户的密码已更改：{userName} 。如果你不想真的更改，或者你认为别人可能不小心作出了此更改，那么请点按此链接以撤销：\n{urlWithTicket}\n\n如果你更倾向于使用新的 Roblox 密码，无需任何步骤，帐户已设置好。请不要回复此消息。如果你有任何问题，请查看 Roblox 帮助页面（https://www.roblox.com/help）。";
 	}
 
 	/// <summary>
@@ -501,17 +503,17 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionPasswordChangeEmailFrom(string fromEmailAddress)
 	{
-		return $"â€œRoblox å¸æˆ·å¯†ç é‡ç½®â€{fromEmailAddress}";
+		return $"“Roblox 帐户密码重置”{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailFrom()
 	{
-		return "â€œRoblox å¸æˆ·å¯†ç é‡ç½®â€{fromEmailAddress}";
+		return "“Roblox 帐户密码重置”{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordChangeEmailSubject()
 	{
-		return "Roblox å¯†ç é‡ç½®";
+		return "Roblox 密码重置";
 	}
 
 	/// <summary>
@@ -521,12 +523,12 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionPasswordResetEmailFrom(string escapeLiteralStart, string escapeLiteralEnd, string fromEmailAddress)
 	{
-		return $"{escapeLiteralStart}Roblox å¯†ç é‡ç½®{escapeLiteralEnd}{fromEmailAddress}";
+		return $"{escapeLiteralStart}Roblox 密码重置{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailFrom()
 	{
-		return "{escapeLiteralStart}Roblox å¯†ç é‡ç½®{escapeLiteralEnd}{fromEmailAddress}";
+		return "{escapeLiteralStart}Roblox 密码重置{escapeLiteralEnd}{fromEmailAddress}";
 	}
 
 	/// <summary>
@@ -536,12 +538,12 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionPasswordResetEmailHtmlBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string aTagWithStartHref, string resetPasswordUrl, string hrefEnd, string buttonStart, string buttonEnd, string aTagEnd)
 	{
-		return $"æˆ‘ä»¬å·²æ”¶åˆ°é‡ç½®ä½ çš„ Roblox å¸æˆ·å¯†ç çš„è¯·æ±‚ï¼š{emailOrUsername}{lineBreak}{lineBreak}å¦‚æžœä½ æäº¤äº†è¯¥è¯·æ±‚ï¼Œè¯·ç‚¹æŒ‰ä¸‹æ–¹æŒ‰é’®ä»¥ç»§ç»­ã€‚{lineBreak}æŒ‰é’®é“¾æŽ¥å°†ä¼šåœ¨{passwordResetTicketHours} å°æ—¶ {passwordResetTicketMinutes} å†…æœ‰æ•ˆã€‚å¦‚æžœä½ ä¸æƒ³é‡ç½®å¯†ç ï¼Œè¯·å¿½ç•¥æ­¤é€šçŸ¥ã€‚{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}é‡ç½®å¯†ç {buttonEnd}{aTagEnd}";
+		return $"我们已收到重置你的 Roblox 帐户密码的请求：{emailOrUsername}{lineBreak}{lineBreak}如果你提交了该请求，请点按下方按钮以继续。{lineBreak}按钮链接将会在{passwordResetTicketHours} 小时 {passwordResetTicketMinutes} 内有效。如果你不想重置密码，请忽略此通知。{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}重置密码{buttonEnd}{aTagEnd}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailHtmlBody()
 	{
-		return "æˆ‘ä»¬å·²æ”¶åˆ°é‡ç½®ä½ çš„ Roblox å¸æˆ·å¯†ç çš„è¯·æ±‚ï¼š{emailOrUsername}{lineBreak}{lineBreak}å¦‚æžœä½ æäº¤äº†è¯¥è¯·æ±‚ï¼Œè¯·ç‚¹æŒ‰ä¸‹æ–¹æŒ‰é’®ä»¥ç»§ç»­ã€‚{lineBreak}æŒ‰é’®é“¾æŽ¥å°†ä¼šåœ¨{passwordResetTicketHours} å°æ—¶ {passwordResetTicketMinutes} å†…æœ‰æ•ˆã€‚å¦‚æžœä½ ä¸æƒ³é‡ç½®å¯†ç ï¼Œè¯·å¿½ç•¥æ­¤é€šçŸ¥ã€‚{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}é‡ç½®å¯†ç {buttonEnd}{aTagEnd}";
+		return "我们已收到重置你的 Roblox 帐户密码的请求：{emailOrUsername}{lineBreak}{lineBreak}如果你提交了该请求，请点按下方按钮以继续。{lineBreak}按钮链接将会在{passwordResetTicketHours} 小时 {passwordResetTicketMinutes} 内有效。如果你不想重置密码，请忽略此通知。{lineBreak}{lineBreak}{aTagWithStartHref}{resetPasswordUrl}{hrefEnd}{buttonStart}重置密码{buttonEnd}{aTagEnd}";
 	}
 
 	/// <summary>
@@ -551,102 +553,102 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string DescriptionPasswordResetEmailPlainBody(string emailOrUsername, string lineBreak, string passwordResetTicketHours, string passwordResetTicketMinutes, string resetPasswordUrl)
 	{
-		return $"æˆ‘ä»¬å·²æ”¶åˆ°é‡ç½®ä½ çš„ Roblox å¸æˆ·å¯†ç çš„è¯·æ±‚ï¼š{emailOrUsername}{lineBreak}{lineBreak}å¦‚æžœä½ æäº¤äº†è¯¥è¯·æ±‚ï¼Œè¯·ç‚¹æŒ‰ä¸‹æ–¹é“¾æŽ¥ï¼Œæˆ–å°†å…¶ç²˜è´´è‡³ç½‘é¡µæµè§ˆå™¨ä»¥ç»§ç»­ã€‚{lineBreak}æ­¤é“¾æŽ¥å°†ä¼šåœ¨{passwordResetTicketHours} å°æ—¶ {passwordResetTicketMinutes} å†…æœ‰æ•ˆã€‚å¦‚æžœä½ ä¸æƒ³é‡ç½®å¯†ç ï¼Œè¯·å¿½ç•¥æ­¤é€šçŸ¥ã€‚{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return $"我们已收到重置你的 Roblox 帐户密码的请求：{emailOrUsername}{lineBreak}{lineBreak}如果你提交了该请求，请点按下方链接，或将其粘贴至网页浏览器以继续。{lineBreak}此链接将会在{passwordResetTicketHours} 小时 {passwordResetTicketMinutes} 内有效。如果你不想重置密码，请忽略此通知。{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailPlainBody()
 	{
-		return "æˆ‘ä»¬å·²æ”¶åˆ°é‡ç½®ä½ çš„ Roblox å¸æˆ·å¯†ç çš„è¯·æ±‚ï¼š{emailOrUsername}{lineBreak}{lineBreak}å¦‚æžœä½ æäº¤äº†è¯¥è¯·æ±‚ï¼Œè¯·ç‚¹æŒ‰ä¸‹æ–¹é“¾æŽ¥ï¼Œæˆ–å°†å…¶ç²˜è´´è‡³ç½‘é¡µæµè§ˆå™¨ä»¥ç»§ç»­ã€‚{lineBreak}æ­¤é“¾æŽ¥å°†ä¼šåœ¨{passwordResetTicketHours} å°æ—¶ {passwordResetTicketMinutes} å†…æœ‰æ•ˆã€‚å¦‚æžœä½ ä¸æƒ³é‡ç½®å¯†ç ï¼Œè¯·å¿½ç•¥æ­¤é€šçŸ¥ã€‚{lineBreak}{lineBreak}{resetPasswordUrl}";
+		return "我们已收到重置你的 Roblox 帐户密码的请求：{emailOrUsername}{lineBreak}{lineBreak}如果你提交了该请求，请点按下方链接，或将其粘贴至网页浏览器以继续。{lineBreak}此链接将会在{passwordResetTicketHours} 小时 {passwordResetTicketMinutes} 内有效。如果你不想重置密码，请忽略此通知。{lineBreak}{lineBreak}{resetPasswordUrl}";
 	}
 
 	protected override string _GetTemplateForDescriptionPasswordResetEmailSubject()
 	{
-		return "Roblox å¸æˆ·å¯†ç é‡ç½®";
+		return "Roblox 帐户密码重置";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToResetPassword()
 	{
-		return "è¾“å…¥ä½ çš„æ‰‹æœºå·ç ä»¥é‡ç½®ä½ çš„å¯†ç ã€‚";
+		return "输入你的手机号码以重置你的密码。";
 	}
 
 	protected override string _GetTemplateForDescriptionPhoneToRetriveUsername()
 	{
-		return "è¾“å…¥ä½ çš„æ‰‹æœºå·ç ä»¥å–å›žä½ çš„ç”¨æˆ·åã€‚";
+		return "输入你的手机号码以取回你的用户名。";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyCode()
 	{
-		return "éªŒè¯ç ";
+		return "验证码";
 	}
 
 	protected override string _GetTemplateForHeadingVerifyPhone()
 	{
-		return "éªŒè¯æ‰‹æœº";
+		return "验证手机";
 	}
 
 	protected override string _GetTemplateForHeadingForgetPasswordOrUsername()
 	{
-		return "å¿˜è®°å¯†ç æˆ–ç”¨æˆ·å";
+		return "忘记密码或用户名";
 	}
 
 	protected override string _GetTemplateForLabelActionButtonYes()
 	{
-		return "æ˜¯";
+		return "是";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyPassword()
 	{
-		return "å¿˜è®°æˆ‘çš„å¯†ç ";
+		return "忘记我的密码";
 	}
 
 	protected override string _GetTemplateForLabelForgetMyUsername()
 	{
-		return "å¿˜è®°æˆ‘çš„ç”¨æˆ·å";
+		return "忘记我的用户名";
 	}
 
 	protected override string _GetTemplateForLabelInvalidEmail()
 	{
-		return "ç”µå­é‚®ä»¶æ— æ•ˆ";
+		return "电子邮件无效";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPhoneNumber()
 	{
-		return "æ‰‹æœºå·ç æ— æ•ˆ";
+		return "手机号码无效";
 	}
 
 	protected override string _GetTemplateForLabelNeutralButtonOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "å¯†ç ";
+		return "密码";
 	}
 
 	protected override string _GetTemplateForLabelResendCode()
 	{
-		return "é‡æ–°å‘é€éªŒè¯ç ";
+		return "重新发送验证码";
 	}
 
 	protected override string _GetTemplateForLabelSubmit()
 	{
-		return "æäº¤";
+		return "提交";
 	}
 
 	protected override string _GetTemplateForLabelToolTipWhoCanFindMeByPhone()
 	{
-		return "æ­¤è®¾ç½®å¯æŽ§åˆ¶è°å¯ä»¥é€šè¿‡ä½ æä¾›çš„æ‰‹æœºå·ç æ‰¾åˆ°ä½ ã€‚";
+		return "此设置可控制谁可以通过你提供的手机号码找到你。";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ç”¨æˆ·å";
+		return "用户名";
 	}
 
 	protected override string _GetTemplateForLabelWhoCanFindMeByPhone()
 	{
-		return "è°å¯ä»¥é€šè¿‡æˆ‘çš„æ‰‹æœºå·ç æ‰¾åˆ°æˆ‘ï¼Ÿ";
+		return "谁可以通过我的手机号码找到我？";
 	}
 
 	/// <summary>
@@ -655,122 +657,122 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string MessageCantSendEmailWarning(string styleStart, string styleEnd)
 	{
-		return $"å¦‚æžœä½ åœ¨åˆ›å»ºå¸æˆ·æ—¶æœªæä¾›{styleStart}çœŸå®žçš„ç”µå­é‚®ä»¶åœ°å€{styleEnd}ï¼Œæˆ‘ä»¬åˆ™æ— æ³•å‘ä½ å‘é€ç”µå­é‚®ä»¶ã€‚";
+		return $"如果你在创建帐户时未提供{styleStart}真实的电子邮件地址{styleEnd}，我们则无法向你发送电子邮件。";
 	}
 
 	protected override string _GetTemplateForMessageCantSendEmailWarning()
 	{
-		return "å¦‚æžœä½ åœ¨åˆ›å»ºå¸æˆ·æ—¶æœªæä¾›{styleStart}çœŸå®žçš„ç”µå­é‚®ä»¶åœ°å€{styleEnd}ï¼Œæˆ‘ä»¬åˆ™æ— æ³•å‘ä½ å‘é€ç”µå­é‚®ä»¶ã€‚";
+		return "如果你在创建帐户时未提供{styleStart}真实的电子邮件地址{styleEnd}，我们则无法向你发送电子邮件。";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·ç¨åŽé‡è¯•ã€‚";
+		return "发生错误，请稍后重试。";
 	}
 
 	protected override string _GetTemplateForMessageEmailForUsernameSuccessBody()
 	{
-		return "å¦‚æžœä½ çš„å¸æˆ·å·²ä¿å­˜ç”µå­é‚®ä»¶åœ°å€ï¼Œé‚£æˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€å°åŒ…å«ä½ ç”¨æˆ·åçš„ç”µå­é‚®ä»¶ã€‚";
+		return "如果你的帐户已保存电子邮件地址，那我们已向你发送了一封包含你用户名的电子邮件。";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessBody()
 	{
-		return "å¦‚æžœä½ çš„å¸æˆ·å·²ä¿å­˜ç”µå­é‚®ä»¶åœ°å€ï¼Œé‚£æˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€å°é™„æœ‰è¯´æ˜Žçš„ç”µå­é‚®ä»¶ã€‚";
+		return "如果你的帐户已保存电子邮件地址，那我们已向你发送了一封附有说明的电子邮件。";
 	}
 
 	protected override string _GetTemplateForMessageEmailSuccessTitle()
 	{
-		return "ç”µå­é‚®ä»¶å·²å‘é€";
+		return "电子邮件已发送";
 	}
 
 	protected override string _GetTemplateForMessageEnterCode()
 	{
-		return "å¦‚æžœä½ çš„æ‰‹æœºå·ç å·²ç»è¿‡éªŒè¯ï¼Œä½ å°†æ”¶åˆ°æˆ‘ä»¬å‘é€è‡³ä½ æ‰‹æœºçš„ä»£ç ã€‚è¯·åœ¨ä¸‹æ–¹è¾“å…¥";
+		return "如果你的手机号码已经过验证，你将收到我们发送至你手机的代码。请在下方输入";
 	}
 
 	protected override string _GetTemplateForMessageEnterCodeSentToEmail()
 	{
-		return "è¯·è¾“å…¥æˆ‘ä»¬åˆšå‘é€è‡³ä½ ç”µå­é‚®ä»¶çš„ä»£ç ã€‚";
+		return "请输入我们刚发送至你电子邮件的代码。";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessBody()
 	{
-		return "å¦‚æžœä½ çš„å¸æˆ·å·²éªŒè¯è¿‡ç”µè¯å·ç ï¼Œé‚£ä¹ˆæˆ‘ä»¬å·²å‘ä½ å‘é€äº†ä¸€æ¡åŒ…å«ä½ ç”¨æˆ·åçš„ä¿¡æ¯ã€‚";
+		return "如果你的帐户已验证过电话号码，那么我们已向你发送了一条包含你用户名的信息。";
 	}
 
 	protected override string _GetTemplateForMessagePhoneForUsernameSuccessTitle()
 	{
-		return "çŸ­ä¿¡å·²å‘é€";
+		return "短信已发送";
 	}
 
 	protected override string _GetTemplateForMessageAccountDoesNotHaveAnEmail()
 	{
-		return "æ²¡æœ‰ä¸Žæ­¤å¸æˆ·ç›¸å…³è”çš„ç”µå­é‚®ä»¶";
+		return "没有与此帐户相关联的电子邮件";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByEmail()
 	{
-		return "æœªæ‰¾åˆ°å¸æˆ·ã€‚è¯·ä½¿ç”¨å…¶ä»–ç”µå­é‚®ä»¶ã€‚";
+		return "未找到帐户。请使用其他电子邮件。";
 	}
 
 	protected override string _GetTemplateForMessageAccountNotFoundByPhone()
 	{
-		return "æœªæ‰¾åˆ°å¸æˆ·ã€‚è¯·ä½¿ç”¨å…¶ä»–æ‰‹æœºå·ç ã€‚";
+		return "未找到帐户。请使用其他手机号码。";
 	}
 
 	protected override string _GetTemplateForMessageAccountRecoveryUnknownError()
 	{
-		return "ç³»ç»Ÿé”™è¯¯ã€‚å¸æˆ·æ— æ³•æ¢å¤è‡³æ­¤çŠ¶æ€ã€‚";
+		return "系统错误。帐户无法恢复至此状态。";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaError()
 	{
-		return "æˆ‘ä»¬éœ€è¦ç¡®å®šä½ ä¸æ˜¯æœºå™¨äºº :)";
+		return "我们需要确定你不是机器人 :)";
 	}
 
 	protected override string _GetTemplateForMessageCaptchaFailError()
 	{
-		return "ä½ é”®å…¥çš„æ–‡å­—ä¸Žå›¾ç‰‡ä¸ç¬¦ã€‚è¯·é‡è¯•ã€‚";
+		return "你键入的文字与图片不符。请重试。";
 	}
 
 	protected override string _GetTemplateForMessageCredentialsError()
 	{
-		return "ä½ çš„ç”¨æˆ·åæˆ–å¯†ç ä¸æ­£ç¡®ã€‚è¯·æ£€æŸ¥å¹¶é‡è¯•ã€‚";
+		return "你的用户名或密码不正确。请检查并重试。";
 	}
 
 	protected override string _GetTemplateForMessageFloodCheckedError()
 	{
-		return "å°è¯•æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+		return "尝试次数过多。请稍后重试。";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordFeatureDisabled()
 	{
-		return "åŠŸèƒ½æš‚æ—¶åœç”¨ã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+		return "功能暂时停用。请稍后重试。";
 	}
 
 	protected override string _GetTemplateForMessageForgotPasswordSuccess()
 	{
-		return "è¯·æŸ¥çœ‹ä½ çš„é‚®ä»¶ä»¥èŽ·å–ç™»å½•è¯´æ˜Ž";
+		return "请查看你的邮件以获取登录说明";
 	}
 
 	protected override string _GetTemplateForMessageInvalidAccountStatus()
 	{
-		return "å¸æˆ·çŠ¶æ€å¯¼è‡´æ— æ³•é‡ç½®å¯†ç ";
+		return "帐户状态导致无法重置密码";
 	}
 
 	protected override string _GetTemplateForMessageInvalidPassword()
 	{
-		return "å¯†ç æ— æ•ˆ";
+		return "密码无效";
 	}
 
 	protected override string _GetTemplateForMessageInvalidTicket()
 	{
-		return "æˆ‘ä»¬æ— æ³•åŠ è½½æ­¤å®‰å…¨ç¥¨å•ã€‚";
+		return "我们无法加载此安全票单。";
 	}
 
 	protected override string _GetTemplateForMessageInvalidUserNameOrEmail()
 	{
-		return "ç”¨æˆ·åæ— æ•ˆï¼Œæˆ–ç”µå­é‚®ä»¶ä¸å­˜åœ¨";
+		return "用户名无效，或电子邮件不存在";
 	}
 
 	protected override string _GetTemplateForMessageMobileResetPasswordSuccess()
@@ -780,17 +782,17 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 
 	protected override string _GetTemplateForMessageNoAccountsLinkedToEmail()
 	{
-		return "æ²¡æœ‰ä¸Žæ­¤ç”µå­é‚®ä»¶åœ°å€ç›¸å…³è”çš„å¸æˆ·";
+		return "没有与此电子邮件地址相关联的帐户";
 	}
 
 	protected override string _GetTemplateForMessageOldUsernameError()
 	{
-		return "ä½ ä¼¼ä¹Žåœ¨å°è¯•ä½¿ç”¨å·²æ›´æ”¹çš„ç”¨æˆ·åè¿›è¡Œç™»å½•ã€‚è¯·ä½¿ç”¨ä½ çš„æ–°ç”¨æˆ·åç™»å½•ã€‚";
+		return "你似乎在尝试使用已更改的用户名进行登录。请使用你的新用户名登录。";
 	}
 
 	protected override string _GetTemplateForMessagePasswordCannotBeUsed()
 	{
-		return "æŠ±æ­‰ï¼Œæ— æ³•ä½¿ç”¨è¯¥å¯†ç ã€‚";
+		return "抱歉，无法使用该密码。";
 	}
 
 	/// <summary>
@@ -799,37 +801,37 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string MessagePasswordResetTicketExpired(string expirationHour, string expirationMinute)
 	{
-		return $"æŠ±æ­‰ï¼Œå¯†ç é‡ç½®è¯·æ±‚ä¼šåœ¨å‘é€åŽçš„ {expirationHour} å°æ—¶ {expirationMinute} åˆ†åŽè¿‡æœŸã€‚è¯·é‡æ–°æäº¤ä¸€å¼ å¯†ç é‡ç½®ç¥¨å•ã€‚";
+		return $"抱歉，密码重置请求会在发送后的 {expirationHour} 小时 {expirationMinute} 分后过期。请重新提交一张密码重置票单。";
 	}
 
 	protected override string _GetTemplateForMessagePasswordResetTicketExpired()
 	{
-		return "æŠ±æ­‰ï¼Œå¯†ç é‡ç½®è¯·æ±‚ä¼šåœ¨å‘é€åŽçš„ {expirationHour} å°æ—¶ {expirationMinute} åˆ†åŽè¿‡æœŸã€‚è¯·é‡æ–°æäº¤ä¸€å¼ å¯†ç é‡ç½®ç¥¨å•ã€‚";
+		return "抱歉，密码重置请求会在发送后的 {expirationHour} 小时 {expirationMinute} 分后过期。请重新提交一张密码重置票单。";
 	}
 
 	protected override string _GetTemplateForMessagePasswordsDoNotMatch()
 	{
-		return "å¯†ç ä¸åŒ¹é…";
+		return "密码不匹配";
 	}
 
 	protected override string _GetTemplateForMessageSamlUnauthenticated()
 	{
-		return "ä½ å¿…é¡»ç™»å½• Roblox ä»¥å®Œæˆèº«ä»½éªŒè¯ã€‚";
+		return "你必须登录 Roblox 以完成身份验证。";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "æœªçŸ¥é”™è¯¯";
+		return "未知错误";
 	}
 
 	protected override string _GetTemplateForMessageUnknownSystemError()
 	{
-		return "ç³»ç»Ÿé”™è¯¯ã€‚è¯·è¿”å›žç™»å½•å±å¹•ã€‚";
+		return "系统错误。请返回登录屏幕。";
 	}
 
 	protected override string _GetTemplateForPlaceholderEmail()
 	{
-		return "ç”µå­é‚®ä»¶";
+		return "电子邮件";
 	}
 
 	/// <summary>
@@ -838,47 +840,47 @@ internal class ResetPasswordResources_zh_cjv : ResetPasswordResources_en_us, IRe
 	/// </summary>
 	public override string PlaceholderEnterCode(string codeLength)
 	{
-		return $"è¾“å…¥éªŒè¯ç ï¼ˆ{codeLength} ä½ï¼‰";
+		return $"输入验证码（{codeLength} 位）";
 	}
 
 	protected override string _GetTemplateForPlaceholderEnterCode()
 	{
-		return "è¾“å…¥éªŒè¯ç ï¼ˆ{codeLength} ä½ï¼‰";
+		return "输入验证码（{codeLength} 位）";
 	}
 
 	protected override string _GetTemplateForPlaceholderPhoneNumber()
 	{
-		return "æ‰‹æœºå·ç ";
+		return "手机号码";
 	}
 
 	protected override string _GetTemplateForResponsePasswordResetSuccess()
 	{
-		return "å¯†ç é‡ç½®æˆåŠŸï¼è¯·å†æ¬¡ç™»å½•ã€‚";
+		return "密码重置成功！请再次登录。";
 	}
 
 	protected override string _GetTemplateForResponseSuccess()
 	{
-		return "æˆåŠŸ";
+		return "成功";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordFlooded()
 	{
-		return "å°è¯•æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+		return "尝试次数过多。请稍后重试。";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordIncorrect()
 	{
-		return "ä½ å½“å‰çš„å¯†ç ä¸æ­£ç¡®ï¼Œå¯†ç æœªæ›´æ”¹ã€‚";
+		return "你当前的密码不正确，密码未更改。";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordInputMissing()
 	{
-		return "å¿…é¡»åŒ…å«æ–°å¯†ç å¹¶ç¡®è®¤å¯†ç ";
+		return "必须包含新密码并确认密码";
 	}
 
 	protected override string _GetTemplateForResponseUpdatePasswordMismatch()
 	{
-		return "ä½ çš„æ–°å¯†ç é¡»ä¸Žç¡®è®¤å¯†ç ç›¸ç¬¦";
+		return "你的新密码须与确认密码相符";
 	}
 }
 

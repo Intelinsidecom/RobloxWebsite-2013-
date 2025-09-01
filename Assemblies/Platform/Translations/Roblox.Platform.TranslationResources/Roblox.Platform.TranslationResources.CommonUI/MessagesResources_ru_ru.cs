@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -11,75 +13,75 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð° Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÑƒÑŽ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ";
+	public override string ActionPreviousPage => "Вернуться на предыдущую страницу";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Ð”Ð¾Ð¼Ð¾Ð¹";
+	public override string ActionReturnHome => "Домой";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "ÐžÑˆÐ¸Ð±ÐºÐ°";
+	public override string LabelError => "Ошибка";
 
 	/// <summary>
 	/// Key: "Label.ErrorImage"
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+	public override string LabelErrorImage => "Ошибка изображения";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²!";
+	public override string LabelTooManyCharacters => "Слишком много символов!";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "Ð’ÑÐµÐ³Ð´Ð° Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾";
+	public override string MessageAlwaysAllowed => "Всегда разрешено";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
 	/// English String: "Analytics Cookies"
 	/// </summary>
-	public override string MessageAnalyiticsCookies => "ÐÐ½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Ñ„Ð°Ð¹Ð»Ð¾Ð² cookies";
+	public override string MessageAnalyiticsCookies => "Аналитика файлов cookies";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "Ð¤Ð°Ð¹Ð»Ñ‹ cookies Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð´Ð»Ñ Ð¿Ð¾Ð²Ñ‹ÑˆÐµÐ½Ð¸Ñ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐ°Ð¹Ñ‚Ð° Ð¸ Ð²Ñ‹ÑÑÐ½ÐµÐ½Ð¸Ñ Ñ†ÐµÐ»ÐµÐ¹ ÐµÐ³Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ.";
+	public override string MessageAnalyiticsCookiesDescription => "Файлы cookies используются для повышения производительности сайта и выяснения целей его использования.";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
 	/// English String: "Google Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem1 => "ÐÐ½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Google";
+	public override string MessageAnalyiticsCookiesItem1 => "Аналитика Google";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem2"
 	/// English String: "Google Universal Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem2 => "Ð£Ð½Ð¸Ð²ÐµÑ€ÑÐ°Ð»ÑŒÐ½Ð°Ñ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Google";
+	public override string MessageAnalyiticsCookiesItem2 => "Универсальная аналитика Google";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ñ„Ð°Ð¹Ð»Ñ‹ cookies";
+	public override string MessageEssentialCookies => "Необходимые файлы cookies";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "Ð¤Ð°Ð¹Ð»Ñ‹ cookies Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹ Ð´Ð»Ñ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»Ð½Ð¾Ñ†ÐµÐ½Ð½Ð¾Ð³Ð¾ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð°, Ð½Ð°Ð¿Ñ€Ð¸Ð¼ÐµÑ€, Ð´Ð»Ñ Ð°ÑƒÑ‚ÐµÐ½Ñ‚ÐµÑ„Ð¸ÐºÐ°Ñ†Ð¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ, Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚Ð¸ Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ñ… Ð´Ð°Ð½Ð½Ñ‹Ñ….";
+	public override string MessageEssentialCookiesDescription => "Файлы cookies необходимы для осуществления полноценного функционирования сайта, например, для аутентефикации пользователя, безопасности и сохранения пользовательских данных.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +99,7 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°Ð¼Ð¸ cookies";
+	public override string MessageManageCookies => "Управление файлами cookies";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,83 +112,83 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°ÐºÑ€Ñ‹Ñ‚";
+	public override string ResponseAccessDenied => "Доступ закрыт";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "Ð£ Ð²Ð°Ñ Ð½ÐµÑ‚ Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ Ð½Ð° Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ ÑÑ‚Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+	public override string ResponseAccessDeniedDescription => "У вас нет разрешения на просмотр этой страницы";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð·Ð°Ð¿Ñ€Ð¾Ñ";
+	public override string ResponseBadRequest => "Некорректный запрос";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "Ð¡ Ð²Ð°ÑˆÐ¸Ð¼ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ¾Ð¼ Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°";
+	public override string ResponseBadRequestDescription => "С вашим запросом произошла ошибка";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "Ð’Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÑÑ Ð¾ÑˆÐ¸Ð±ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð°";
+	public override string ResponseInternalServerError => "Внутренняя ошибка сервера";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¿Ñ€ÐµÐ´Ð²Ð¸Ð´ÐµÐ½Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°";
+	public override string ResponseInternalServerErrorDescription => "Произошла непредвиденная ошибка";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°";
+	public override string ResponsePageNotFound => "Страница не найдена";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð° Ð¸Ð»Ð¸ Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚";
+	public override string ResponsePageNotFoundDescrition => "Страница не найдена или не существует";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð°ÑˆÐµÐ³Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°";
+	public override string ResponseRequestError => "Ошибка вашего запроса";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "Ð§Ñ‚Ð¾-Ñ‚Ð¾ Ð¿Ð¾ÑˆÐ»Ð¾ Ð½Ðµ Ñ‚Ð°Ðº";
+	public override string ResponseSomethingWentWrong => "Что-то пошло не так";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº";
+	public override string ResponseTooManyAttemptsText => "Слишком много попыток";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ Ð¿Ð¾Ð·Ð¶Ðµ.";
+	public override string ResponseUnexpectedError => "Произошла неизвестная ошибка. Повторите попытку позже.";
 
 	public MessagesResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -195,12 +197,12 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð° Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÑƒÑŽ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ";
+		return "Вернуться на предыдущую страницу";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Ð”Ð¾Ð¼Ð¾Ð¹";
+		return "Домой";
 	}
 
 	/// <summary>
@@ -210,12 +212,12 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°, Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÐµÐ¹ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÐµÐ¹ Ð¸ Ð°Ð½Ð°Ð»Ð¸Ð·Ð° Ñ‚Ñ€Ð°Ñ„Ñ„Ð¸ÐºÐ° Ð½Ð° Ð½Ð°ÑˆÐµÐ¼ ÑÐ°Ð¹Ñ‚Ðµ. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ð¹ Ð¾Ð± Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies Ð¸ {startLink}Ð¸Ñ… Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐµ{endLink}, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ Ð½Ð°ÑˆÐ¸Ð¼Ð¸ {startLink2}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies{endLink2}.";
+		return $"Roblox использует файлы-cookies для персонализации контента, предоставления возможностей социальных сетей и анализа траффика на нашем сайте. Для получения сведений об использовании файлов-cookies и {startLink}их настройке{endLink}, пожалуйста, ознакомьтесь с нашими {startLink2}Политикой конфиденциальности и использованием файлов-cookies{endLink2}.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°, Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÐµÐ¹ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÐµÐ¹ Ð¸ Ð°Ð½Ð°Ð»Ð¸Ð·Ð° Ñ‚Ñ€Ð°Ñ„Ñ„Ð¸ÐºÐ° Ð½Ð° Ð½Ð°ÑˆÐµÐ¼ ÑÐ°Ð¹Ñ‚Ðµ. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ð¹ Ð¾Ð± Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies Ð¸ {startLink}Ð¸Ñ… Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐµ{endLink}, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ Ð½Ð°ÑˆÐ¸Ð¼Ð¸ {startLink2}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies{endLink2}.";
+		return "Roblox использует файлы-cookies для персонализации контента, предоставления возможностей социальных сетей и анализа траффика на нашем сайте. Для получения сведений об использовании файлов-cookies и {startLink}их настройке{endLink}, пожалуйста, ознакомьтесь с нашими {startLink2}Политикой конфиденциальности и использованием файлов-cookies{endLink2}.";
 	}
 
 	/// <summary>
@@ -225,52 +227,52 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"Ð•ÑÐ»Ð¸ Ñƒ Ð²Ð°Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°ÐµÑ‚ Ð¿Ð¾ÑÐ²Ð»ÑÑ‚ÑŒÑÑ ÑÑ‚Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, ÑÐ²ÑÐ¶Ð¸Ñ‚ÐµÑÑŒ Ñ Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°Ð½Ð¸ÐµÐ¼ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð²: {emailLink}";
+		return $"Если у вас продолжает появляться эта страница, пожалуйста, свяжитесь с обслуживанием клиентов: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "Ð•ÑÐ»Ð¸ Ñƒ Ð²Ð°Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð°ÐµÑ‚ Ð¿Ð¾ÑÐ²Ð»ÑÑ‚ÑŒÑÑ ÑÑ‚Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, ÑÐ²ÑÐ¶Ð¸Ñ‚ÐµÑÑŒ Ñ Ð¾Ð±ÑÐ»ÑƒÐ¶Ð¸Ð²Ð°Ð½Ð¸ÐµÐ¼ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð¾Ð²: {emailLink}";
+		return "Если у вас продолжает появляться эта страница, пожалуйста, свяжитесь с обслуживанием клиентов: {emailLink}";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "ÐžÑˆÐ¸Ð±ÐºÐ°";
+		return "Ошибка";
 	}
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+		return "Ошибка изображения";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²!";
+		return "Слишком много символов!";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "Ð’ÑÐµÐ³Ð´Ð° Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾";
+		return "Всегда разрешено";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
 	{
-		return "ÐÐ½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Ñ„Ð°Ð¹Ð»Ð¾Ð² cookies";
+		return "Аналитика файлов cookies";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "Ð¤Ð°Ð¹Ð»Ñ‹ cookies Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð´Ð»Ñ Ð¿Ð¾Ð²Ñ‹ÑˆÐµÐ½Ð¸Ñ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐ°Ð¹Ñ‚Ð° Ð¸ Ð²Ñ‹ÑÑÐ½ÐµÐ½Ð¸Ñ Ñ†ÐµÐ»ÐµÐ¹ ÐµÐ³Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ.";
+		return "Файлы cookies используются для повышения производительности сайта и выяснения целей его использования.";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
 	{
-		return "ÐÐ½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Google";
+		return "Аналитика Google";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem2()
 	{
-		return "Ð£Ð½Ð¸Ð²ÐµÑ€ÑÐ°Ð»ÑŒÐ½Ð°Ñ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸ÐºÐ° Google";
+		return "Универсальная аналитика Google";
 	}
 
 	/// <summary>
@@ -280,12 +282,12 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð²Ð°ÑˆÐµÐ³Ð¾ ÑƒÐ´Ð¾Ð±ÑÑ‚Ð²Ð°. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð±Ð¾Ð»ÐµÐµ Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸, Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ Ð¾Ñ‚Ð·Ñ‹Ð² ÑÐ¾Ð³Ð»Ð°ÑÐ¸Ñ Ð½Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ cookies Ð¸ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¸Ð¼Ð¸, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ {startLink}Â«ÐšÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒÑŽ Ð¸ ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ cookiesÂ»{endLink}.";
+		return $"Roblox использует файлы-cookies для вашего удобства. Для получения более полной информации, включая отзыв согласия на использование cookies и управления ими, пожалуйста ознакомьтесь с {startLink}«Конфиденциальностью и Политикой использования cookies»{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð²Ð°ÑˆÐµÐ³Ð¾ ÑƒÐ´Ð¾Ð±ÑÑ‚Ð²Ð°. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð±Ð¾Ð»ÐµÐµ Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸, Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ Ð¾Ñ‚Ð·Ñ‹Ð² ÑÐ¾Ð³Ð»Ð°ÑÐ¸Ñ Ð½Ð° Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ cookies Ð¸ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¸Ð¼Ð¸, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ {startLink}Â«ÐšÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒÑŽ Ð¸ ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ cookiesÂ»{endLink}.";
+		return "Roblox использует файлы-cookies для вашего удобства. Для получения более полной информации, включая отзыв согласия на использование cookies и управления ими, пожалуйста ознакомьтесь с {startLink}«Конфиденциальностью и Политикой использования cookies»{endLink}.";
 	}
 
 	/// <summary>
@@ -294,12 +296,12 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°, Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÐµÐ¹ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÐµÐ¹ Ð¸ Ð°Ð½Ð°Ð»Ð¸Ð·Ð° Ñ‚Ñ€Ð°Ñ„Ñ„Ð¸ÐºÐ° Ð½Ð° Ð½Ð°ÑˆÐµÐ¼ ÑÐ°Ð¹Ñ‚Ðµ. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ð¹ Ð¾Ð± Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies Ð¸ {startLink}Ð¸Ñ… Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐµ{endLink}, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ Ð½Ð°ÑˆÐ¸Ð¼Ð¸ {startLink2}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies{endLink2}.";
+		return $"Roblox использует файлы-cookies для персонализации контента, предоставления возможностей социальных сетей и анализа траффика на нашем сайте. Для получения сведений об использовании файлов-cookies и {startLink}их настройке{endLink}, пожалуйста, ознакомьтесь с нашими {startLink2}Политикой конфиденциальности и использованием файлов-cookies{endLink2}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹-cookies Ð´Ð»Ñ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°, Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÐµÐ¹ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÐµÐ¹ Ð¸ Ð°Ð½Ð°Ð»Ð¸Ð·Ð° Ñ‚Ñ€Ð°Ñ„Ñ„Ð¸ÐºÐ° Ð½Ð° Ð½Ð°ÑˆÐµÐ¼ ÑÐ°Ð¹Ñ‚Ðµ. Ð”Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ð¹ Ð¾Ð± Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies Ð¸ {startLink}Ð¸Ñ… Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐµ{endLink}, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¾Ð·Ð½Ð°ÐºÐ¾Ð¼ÑŒÑ‚ÐµÑÑŒ Ñ Ð½Ð°ÑˆÐ¸Ð¼Ð¸ {startLink2}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÐ¾Ð¹ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ Ñ„Ð°Ð¹Ð»Ð¾Ð²-cookies{endLink2}.";
+		return "Roblox использует файлы-cookies для персонализации контента, предоставления возможностей социальных сетей и анализа траффика на нашем сайте. Для получения сведений об использовании файлов-cookies и {startLink}их настройке{endLink}, пожалуйста, ознакомьтесь с нашими {startLink2}Политикой конфиденциальности и использованием файлов-cookies{endLink2}.";
 	}
 
 	/// <summary>
@@ -308,22 +310,22 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ, Ð¼Ð¾Ð¶ÐµÑ‚ Ð»Ð¸ ÑÑ‚Ð¾Ñ‚ ÑÐ°Ð¹Ñ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ñ‹ cookies, ÐºÐ°Ðº ÑƒÐºÐ°Ð·Ð°Ð½Ð¾ Ð½Ð¸Ð¶Ðµ. Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÑƒÐ·Ð½Ð°Ñ‚ÑŒ, ÐºÐ°Ðº ÑÑ‚Ð¾Ñ‚ ÑÐ°Ð¹Ñ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹ cookies Ð¸ ÑÐ²ÑÐ·Ð°Ð½Ð½Ñ‹Ðµ Ñ Ð½Ð¸Ð¼Ð¸ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸, Ð¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð² Ð½Ð°ÑˆÑƒ {startLink}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸{endLink}.";
+		return $"Пожалуйста, укажите, может ли этот сайт использовать файлы cookies, как указано ниже. Вы можете узнать, как этот сайт использует файлы cookies и связанные с ними технологии, прочитав нашу {startLink}Политику конфиденциальности{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ, Ð¼Ð¾Ð¶ÐµÑ‚ Ð»Ð¸ ÑÑ‚Ð¾Ñ‚ ÑÐ°Ð¹Ñ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ñ‹ cookies, ÐºÐ°Ðº ÑƒÐºÐ°Ð·Ð°Ð½Ð¾ Ð½Ð¸Ð¶Ðµ. Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÑƒÐ·Ð½Ð°Ñ‚ÑŒ, ÐºÐ°Ðº ÑÑ‚Ð¾Ñ‚ ÑÐ°Ð¹Ñ‚ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ Ñ„Ð°Ð¹Ð»Ñ‹ cookies Ð¸ ÑÐ²ÑÐ·Ð°Ð½Ð½Ñ‹Ðµ Ñ Ð½Ð¸Ð¼Ð¸ Ñ‚ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸, Ð¿Ñ€Ð¾Ñ‡Ð¸Ñ‚Ð°Ð² Ð½Ð°ÑˆÑƒ {startLink}ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸{endLink}.";
+		return "Пожалуйста, укажите, может ли этот сайт использовать файлы cookies, как указано ниже. Вы можете узнать, как этот сайт использует файлы cookies и связанные с ними технологии, прочитав нашу {startLink}Политику конфиденциальности{endLink}.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ñ„Ð°Ð¹Ð»Ñ‹ cookies";
+		return "Необходимые файлы cookies";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "Ð¤Ð°Ð¹Ð»Ñ‹ cookies Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ñ‹ Ð´Ð»Ñ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»Ð½Ð¾Ñ†ÐµÐ½Ð½Ð¾Ð³Ð¾ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð°, Ð½Ð°Ð¿Ñ€Ð¸Ð¼ÐµÑ€, Ð´Ð»Ñ Ð°ÑƒÑ‚ÐµÐ½Ñ‚ÐµÑ„Ð¸ÐºÐ°Ñ†Ð¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ, Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚Ð¸ Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ñ… Ð´Ð°Ð½Ð½Ñ‹Ñ….";
+		return "Файлы cookies необходимы для осуществления полноценного функционирования сайта, например, для аутентефикации пользователя, безопасности и сохранения пользовательских данных.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +340,7 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°Ð¼Ð¸ cookies";
+		return "Управление файлами cookies";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,62 +350,62 @@ internal class MessagesResources_ru_ru : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°ÐºÑ€Ñ‹Ñ‚";
+		return "Доступ закрыт";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "Ð£ Ð²Ð°Ñ Ð½ÐµÑ‚ Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¸Ñ Ð½Ð° Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ ÑÑ‚Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+		return "У вас нет разрешения на просмотр этой страницы";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð·Ð°Ð¿Ñ€Ð¾Ñ";
+		return "Некорректный запрос";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "Ð¡ Ð²Ð°ÑˆÐ¸Ð¼ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ¾Ð¼ Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°";
+		return "С вашим запросом произошла ошибка";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "Ð’Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÑÑ Ð¾ÑˆÐ¸Ð±ÐºÐ° ÑÐµÑ€Ð²ÐµÑ€Ð°";
+		return "Внутренняя ошибка сервера";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¿Ñ€ÐµÐ´Ð²Ð¸Ð´ÐµÐ½Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°";
+		return "Произошла непредвиденная ошибка";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°";
+		return "Страница не найдена";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð° Ð¸Ð»Ð¸ Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚";
+		return "Страница не найдена или не существует";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð°ÑˆÐµÐ³Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°";
+		return "Ошибка вашего запроса";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "Ð§Ñ‚Ð¾-Ñ‚Ð¾ Ð¿Ð¾ÑˆÐ»Ð¾ Ð½Ðµ Ñ‚Ð°Ðº";
+		return "Что-то пошло не так";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð¾Ðº";
+		return "Слишком много попыток";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "ÐŸÑ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ Ð¿Ð¾Ð·Ð¶Ðµ.";
+		return "Произошла неизвестная ошибка. Повторите попытку позже.";
 	}
 }
 

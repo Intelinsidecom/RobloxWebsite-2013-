@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class ChinaPaymentResources_ja_jp : ChinaPaymentResources_en_us, IChina
 	/// Key: "Heading.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string HeadingError => "ã‚¨ãƒ©ãƒ¼";
+	public override string HeadingError => "エラー";
 
 	/// <summary>
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "ç¾åœ¨ã€Midas scriptã®èª­ã¿è¾¼ã¿ã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageScriptNotLoadError => "現在、Midas scriptの読み込みに問題があります。後でやり直してください。";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
 	/// English String: "Looks like your WeChat session is expired and we cannot process your request. Please log out and log in again."
 	/// </summary>
-	public override string MessageSessionExpiredError => "WeChatã‚»ãƒƒã‚·ãƒ§ãƒ³ãŒæœŸé™åˆ‡ã‚Œã®ãŸã‚ã€ãƒªã‚¹ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒ­ã‚°ã‚¢ã‚¦ãƒˆå¾Œã€ãƒ­ã‚°ã‚¤ãƒ³ã—ãªãŠã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageSessionExpiredError => "WeChatセッションが期限切れのため、リスエストを処理できませんでした。ログアウト後、ログインしなおしてください。";
 
 	public ChinaPaymentResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class ChinaPaymentResources_ja_jp : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForHeadingError()
 	{
-		return "ã‚¨ãƒ©ãƒ¼";
+		return "エラー";
 	}
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "ç¾åœ¨ã€Midas scriptã®èª­ã¿è¾¼ã¿ã«å•é¡ŒãŒã‚ã‚Šã¾ã™ã€‚å¾Œã§ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+		return "現在、Midas scriptの読み込みに問題があります。後でやり直してください。";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()
 	{
-		return "WeChatã‚»ãƒƒã‚·ãƒ§ãƒ³ãŒæœŸé™åˆ‡ã‚Œã®ãŸã‚ã€ãƒªã‚¹ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒ­ã‚°ã‚¢ã‚¦ãƒˆå¾Œã€ãƒ­ã‚°ã‚¤ãƒ³ã—ãªãŠã—ã¦ãã ã•ã„ã€‚";
+		return "WeChatセッションが期限切れのため、リスエストを処理できませんでした。ログアウト後、ログインしなおしてください。";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubResources_en_us to provide locale specific translations where possible,
@@ -51,12 +53,12 @@ internal class BuildersClubResources_pt_br : BuildersClubResources_en_us, IBuild
 	/// </summary>
 	public override string DescriptionBuildersClubOnlyModel(string bcRequirementName)
 	{
-		return $"Este Ã© um item premium somente disponÃ­vel para nossos membros {bcRequirementName}.";
+		return $"Este é um item premium somente disponível para nossos membros {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForDescriptionBuildersClubOnlyModel()
 	{
-		return "Este Ã© um item premium somente disponÃ­vel para nossos membros {bcRequirementName}.";
+		return "Este é um item premium somente disponível para nossos membros {bcRequirementName}.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubOnly()

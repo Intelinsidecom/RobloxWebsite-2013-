@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface ITwoStepVerificationResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface ITwoStepVerificationResources : ITranslationResources
 
 {
 	/// <summary>
@@ -312,3 +314,5 @@
 
 
 }
+
+

@@ -907,7 +907,7 @@
       <returns>검색할 열입니다.</returns>
       <param name="ordinal">검색할 열입니다.</param>
       <typeparam name="T">지정된 열의 값을 형식으로 동기적으로 가져옵니다.</typeparam>
-      <exception cref="T:System.InvalidOperationException">데이터 검색 중 연결이 끊기거나 닫힌 경우데이터 검색 중 <see cref="T:System.Data.SqlClient.SqlDataReader" />가 닫힌 경우읽을 준비가 된 데이터가 없는 경우(예를 들어, 첫 번째 <see cref="M:System.Data.SqlClient.SqlDataReader.Read" />가 호출되지 않았거나 false를 반환한 경우)순차 모드에서 이전에 읽은 열을 읽으려고 했습니다.진행 중인 비동기 작업이 없습니다.이는 스트림을 읽는 동안 호출할 수 있기 때문에 순차 모드로 실행할 때 모든 Get* 메서드에 적용됩니다.</exception>
+      <exception cref="T:System.InvalidOperationException">데이터 검색 중 연결이 끊기거나 닫힌 경우데이터 검색 중 <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" />가 닫힌 경우읽을 준비가 된 데이터가 없는 경우(예를 들어, 첫 번째 <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" />가 호출되지 않았거나 false를 반환한 경우)순차 모드에서 이전에 읽은 열을 읽으려고 했습니다.진행 중인 비동기 작업이 없습니다.이는 스트림을 읽는 동안 호출할 수 있기 때문에 순차 모드로 실행할 때 모든 Get* 메서드에 적용됩니다.</exception>
       <exception cref="T:System.IndexOutOfRangeException">존재하지 않는 열을 읽으려고 시도합니다.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" />는 SQL Server에서 반환되는 형식과 일치하지 않거나 캐스팅할 수 없습니다.</exception>
@@ -1047,7 +1047,7 @@
       <returns>
         <see cref="T:System.Data.Common.DbDataReader" />가 닫혔으면 true이고, 그렇지 않으면 false입니다.</returns>
       <exception cref="T:System.InvalidOperationException">
-        <see cref="T:System.Data.SqlClient.SqlDataReader" />가 닫힌 경우 </exception>
+        <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" />가 닫힌 경우 </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

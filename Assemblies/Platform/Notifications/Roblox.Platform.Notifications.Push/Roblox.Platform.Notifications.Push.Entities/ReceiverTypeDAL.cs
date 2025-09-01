@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
@@ -103,3 +103,4 @@ internal class ReceiverTypeDAL
 		return RobloxDatabase.RobloxPushNotifications.GetOrCreate("ReceiverTypes_GetOrCreateReceiverType", BuildDAL, queryParameters);
 	}
 }
+

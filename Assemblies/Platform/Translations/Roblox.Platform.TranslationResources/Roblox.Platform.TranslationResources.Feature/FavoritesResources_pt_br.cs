@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class FavoritesResources_pt_br : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "VocÃª precisa estar conectado para adicionar isto aos seus favoritos. Conecte-se ou cadastre-se para continuar.";
+	public override string DescriptionLoginRequired => "Você precisa estar conectado para adicionar isto aos seus favoritos. Conecte-se ou cadastre-se para continuar.";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
@@ -80,13 +82,13 @@ internal class FavoritesResources_pt_br : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "LabelLoginRequired"
 	/// English String: "Login Required"
 	/// </summary>
-	public override string LabelLoginRequired => "ConexÃ£o obrigatÃ³ria";
+	public override string LabelLoginRequired => "Conexão obrigatória";
 
 	/// <summary>
 	/// Key: "MessageAssetNotFoundError"
 	/// English String: "The asset you are trying to favorite cannot be found."
 	/// </summary>
-	public override string MessageAssetNotFoundError => "O elemento que vocÃª estÃ¡ tentando selecionar como favorito nÃ£o pode ser encontrado.";
+	public override string MessageAssetNotFoundError => "O elemento que você está tentando selecionar como favorito não pode ser encontrado.";
 
 	public FavoritesResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -115,7 +117,7 @@ internal class FavoritesResources_pt_br : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "VocÃª precisa estar conectado para adicionar isto aos seus favoritos. Conecte-se ou cadastre-se para continuar.";
+		return "Você precisa estar conectado para adicionar isto aos seus favoritos. Conecte-se ou cadastre-se para continuar.";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
@@ -165,12 +167,12 @@ internal class FavoritesResources_pt_br : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelLoginRequired()
 	{
-		return "ConexÃ£o obrigatÃ³ria";
+		return "Conexão obrigatória";
 	}
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()
 	{
-		return "O elemento que vocÃª estÃ¡ tentando selecionar como favorito nÃ£o pode ser encontrado.";
+		return "O elemento que você está tentando selecionar como favorito não pode ser encontrado.";
 	}
 }
 

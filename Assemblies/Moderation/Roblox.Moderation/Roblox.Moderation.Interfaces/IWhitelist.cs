@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Roblox.Platform.Moderation.Implementation;
+using System.Collections.Generic;
+using Roblox.Moderation.Implementation;
 namespace Roblox.Moderation.Interfaces {
     /// <summary>
 

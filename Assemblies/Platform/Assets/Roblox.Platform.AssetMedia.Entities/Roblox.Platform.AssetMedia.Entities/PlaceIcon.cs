@@ -5,6 +5,7 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+using Roblox.Data.AssetMedia;
 
 namespace Roblox.Platform.AssetMedia.Entities;
 

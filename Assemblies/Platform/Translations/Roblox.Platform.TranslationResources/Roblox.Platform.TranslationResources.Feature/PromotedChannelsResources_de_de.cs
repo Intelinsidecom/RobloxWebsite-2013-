@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PromotedChannelsResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// The button text for adding an additional social link.
 	/// English String: "Add Link"
 	/// </summary>
-	public override string ActionAddLink => "Link hinzufÃ¼gen";
+	public override string ActionAddLink => "Link hinzufügen";
 
 	/// <summary>
 	/// Key: "Action.Remove"
@@ -74,14 +76,14 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// The message displayed when the social link has been removed.
 	/// English String: "The social media link has been deleted."
 	/// </summary>
-	public override string MessageSocialLinkRemoved => "Der Link zum sozialen Netzwerk wurde gelÃ¶scht.";
+	public override string MessageSocialLinkRemoved => "Der Link zum sozialen Netzwerk wurde gelöscht.";
 
 	/// <summary>
 	/// Key: "Message.SocialLinksEditDisabledError"
 	/// The error message displayed when the social links feature is disabled and attempt to be edited.
 	/// English String: "Social links may not be edited at this time."
 	/// </summary>
-	public override string MessageSocialLinksEditDisabledError => "Links zu sozialen Netzwerken kÃ¶nnen derzeit nicht bearbeitet werden.";
+	public override string MessageSocialLinksEditDisabledError => "Links zu sozialen Netzwerken können derzeit nicht bearbeitet werden.";
 
 	/// <summary>
 	/// Key: "Message.TitleEmptyError"
@@ -132,7 +134,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForActionAddLink()
 	{
-		return "Link hinzufÃ¼gen";
+		return "Link hinzufügen";
 	}
 
 	protected override string _GetTemplateForActionRemove()
@@ -162,12 +164,12 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string LabelLimits(string socialLinkLimit)
 	{
-		return $"Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufÃ¼gen.";
+		return $"Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufügen.";
 	}
 
 	protected override string _GetTemplateForLabelLimits()
 	{
-		return "Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufÃ¼gen.";
+		return "Du kannst bis zu {socialLinkLimit} Links zu sozialen Netzwerken hinzufügen.";
 	}
 
 	protected override string _GetTemplateForLabelTitle()
@@ -192,7 +194,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinkRemoved()
 	{
-		return "Der Link zum sozialen Netzwerk wurde gelÃ¶scht.";
+		return "Der Link zum sozialen Netzwerk wurde gelöscht.";
 	}
 
 	/// <summary>
@@ -212,7 +214,7 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 
 	protected override string _GetTemplateForMessageSocialLinksEditDisabledError()
 	{
-		return "Links zu sozialen Netzwerken kÃ¶nnen derzeit nicht bearbeitet werden.";
+		return "Links zu sozialen Netzwerken können derzeit nicht bearbeitet werden.";
 	}
 
 	/// <summary>
@@ -222,12 +224,12 @@ internal class PromotedChannelsResources_de_de : PromotedChannelsResources_en_us
 	/// </summary>
 	public override string MessageSocialLinkTypeLimitError(string socialMediaType)
 	{
-		return $"Du kannst hÃ¶chstens einen Link zum sozialen Netzwerk â€ž{socialMediaType}â€œ haben.";
+		return $"Du kannst höchstens einen Link zum sozialen Netzwerk „{socialMediaType}“ haben.";
 	}
 
 	protected override string _GetTemplateForMessageSocialLinkTypeLimitError()
 	{
-		return "Du kannst hÃ¶chstens einen Link zum sozialen Netzwerk â€ž{socialMediaType}â€œ haben.";
+		return "Du kannst höchstens einen Link zum sozialen Netzwerk „{socialMediaType}“ haben.";
 	}
 
 	protected override string _GetTemplateForMessageTitleEmptyError()

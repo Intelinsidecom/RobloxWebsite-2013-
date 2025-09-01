@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class DownloadAppResources_en_us : TranslationResourcesBase, IDownloadAppResources, ITranslationResources
 
 {
@@ -190,3 +190,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

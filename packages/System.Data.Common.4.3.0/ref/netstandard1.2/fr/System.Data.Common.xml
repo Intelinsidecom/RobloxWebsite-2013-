@@ -836,7 +836,7 @@
       <returns>Colonne à récupérer.</returns>
       <param name="ordinal">Colonne à récupérer.</param>
       <typeparam name="T">Obtient, de manière asynchrone, la valeur de la colonne spécifiée sous la forme d'un type.</typeparam>
-      <exception cref="T:System.InvalidOperationException">La connexion est perdue ou est fermée pendant la récupération des données.Fermeture de <see cref="T:System.Data.SqlClient.SqlDataReader" /> au cours de la récupération des données.Il n'existe aucune donnée prête à être lue (par exemple, le premier <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> n'a pas été appelé ou retourné comme false).Tentative de lecture d'une colonne précédemment lue en mode séquentiel.Il y avait une opération asynchrone en cours.Cela s'applique à toutes les méthodes Get* exécutées en mode séquentiel, car elles peuvent être appelées pendant la lecture d'un flux de données.</exception>
+      <exception cref="T:System.InvalidOperationException">La connexion est perdue ou est fermée pendant la récupération des données.Fermeture de <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> au cours de la récupération des données.Il n'existe aucune donnée prête à être lue (par exemple, le premier <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> n'a pas été appelé ou retourné comme false).Tentative de lecture d'une colonne précédemment lue en mode séquentiel.Il y avait une opération asynchrone en cours.Cela s'applique à toutes les méthodes Get* exécutées en mode séquentiel, car elles peuvent être appelées pendant la lecture d'un flux de données.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Tentative de lecture d'une colonne qui n'existe pas.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> ne correspond pas au type retourné par SQL Server ou ne peut pas être casté.</exception>
@@ -972,7 +972,7 @@
       <summary>Obtient une valeur indiquant si <see cref="T:System.Data.Common.DbDataReader" /> est fermé.</summary>
       <returns>true si <see cref="T:System.Data.Common.DbDataReader" /> est fermé ; sinon, false.</returns>
       <exception cref="T:System.InvalidOperationException">
-        <see cref="T:System.Data.SqlClient.SqlDataReader" /> est fermé. </exception>
+        <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> est fermé. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

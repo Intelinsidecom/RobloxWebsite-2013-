@@ -1,7 +1,7 @@
-﻿using Roblox.Instrumentation;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationpublic {
-    interface IReviewTaskRepublisherPerformanceCounters
+using Roblox.Instrumentation;
+using Roblox.Localization.Core;
+namespace Roblox.Moderation {
+    public interface IReviewTaskRepublisherPerformanceCounters
 
 {
 	/// <summary>

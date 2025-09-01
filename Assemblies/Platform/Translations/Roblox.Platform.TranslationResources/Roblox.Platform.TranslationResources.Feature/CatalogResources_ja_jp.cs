@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CatalogResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "Robuxã‚’è²·ã†";
+	public override string ActionBuyRobux => "Robuxを買う";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddGearOk"
@@ -22,55 +24,55 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "Action.Filter.Apply"
 	/// English String: "Apply"
 	/// </summary>
-	public override string ActionFilterApply => "é©ç”¨";
+	public override string ActionFilterApply => "適用";
 
 	/// <summary>
 	/// Key: "Action.Filter.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionFilterCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionFilterCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Go"
 	/// English String: "Go"
 	/// </summary>
-	public override string ActionGo => "å®Ÿè¡Œ";
+	public override string ActionGo => "実行";
 
 	/// <summary>
 	/// Key: "Action.ViewAllItems"
 	/// English String: "View All Items"
 	/// </summary>
-	public override string ActionViewAllItems => "ã™ã¹ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¡¨ç¤º";
+	public override string ActionViewAllItems => "すべてのアイテムを表示";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddGearBody"
 	/// English String: "To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)"
 	/// </summary>
-	public override string DescriptionDialogAddGearBody => "ã‚²ãƒ¼ãƒ ã«ã‚®ã‚¢ã‚’è¿½åŠ ã™ã‚‹ã«ã¯ã€ã‚«ã‚¿ãƒ­ã‚°ã§ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŽ¢ã—ã¦ã€Œã‚²ãƒ¼ãƒ ã«è¿½åŠ ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚ã‚¢ã‚¤ãƒ†ãƒ ã¯è‡ªå‹•çš„ã«ã‚²ãƒ¼ãƒ å†…ã§è¨±å¯ã•ã‚Œã€ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ã‚¢ã‚¤ãƒ†ãƒ ãŒå£²ã‚Œã‚‹åº¦ã«å ±é…¬ã‚’å—ã‘å–ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ï¼ˆè¿½åŠ ã§ãã‚‹ã®ã¯è²©å£²ä¸­ã®ã‚®ã‚¢ã ã‘ã§ã™ã€‚ï¼‰";
+	public override string DescriptionDialogAddGearBody => "ゲームにギアを追加するには、カタログでアイテムを探して「ゲームに追加」ボタンをクリックします。アイテムは自動的にゲーム内で許可され、ゲームページでアイテムが売れる度に報酬を受け取ることができます。（追加できるのは販売中のギアだけです。）";
 
 	/// <summary>
 	/// Key: "Heading.CatalogCategory"
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCatalogCategory => "ã‚«ãƒ†ã‚´ãƒª";
+	public override string HeadingCatalogCategory => "カテゴリ";
 
 	/// <summary>
 	/// Key: "Heading.CatalogPage"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string HeadingCatalogPage => "ã‚«ã‚¿ãƒ­ã‚°";
+	public override string HeadingCatalogPage => "カタログ";
 
 	/// <summary>
 	/// Key: "Label.AllFeaturedItems"
 	/// English String: "View All Featured Items"
 	/// </summary>
-	public override string LabelAllFeaturedItems => "ã™ã¹ã¦ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¡¨ç¤º";
+	public override string LabelAllFeaturedItems => "すべての注目アイテムを表示";
 
 	/// <summary>
 	/// Key: "Label.AllGenres"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelAllGenres => "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«";
+	public override string LabelAllGenres => "すべてのジャンル";
 
 	/// <summary>
 	/// Key: "Label.Amazon"
@@ -83,188 +85,188 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.BreadCrumb.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelBreadCrumbFree => "ç„¡æ–™";
+	public override string LabelBreadCrumbFree => "無料";
 
 	/// <summary>
 	/// Key: "Label.BreadCrumb.Group"
 	/// English String: "Group:"
 	/// </summary>
-	public override string LabelBreadCrumbGroup => "ã‚°ãƒ«ãƒ¼ãƒ—:";
+	public override string LabelBreadCrumbGroup => "グループ:";
 
 	/// <summary>
 	/// Key: "Label.Bundle"
 	/// Bundle
 	/// English String: "Bundle"
 	/// </summary>
-	public override string LabelBundle => "ãƒãƒ³ãƒ‰ãƒ«";
+	public override string LabelBundle => "バンドル";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// Bundles
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "ãƒãƒ³ãƒ‰ãƒ«";
+	public override string LabelBundles => "バンドル";
 
 	/// <summary>
 	/// Key: "Label.Card.CreatorBy"
 	/// English String: "By"
 	/// </summary>
-	public override string LabelCardCreatorBy => "ä½œ";
+	public override string LabelCardCreatorBy => "作";
 
 	/// <summary>
 	/// Key: "Label.Card.PriceWas"
 	/// English String: "Was"
 	/// </summary>
-	public override string LabelCardPriceWas => "ä»¥å‰ã®ä¾¡æ ¼";
+	public override string LabelCardPriceWas => "以前の価格";
 
 	/// <summary>
 	/// Key: "Label.Card.Remaining"
 	/// English String: "Remaining:"
 	/// </summary>
-	public override string LabelCardRemaining => "æ®‹ã‚Š:";
+	public override string LabelCardRemaining => "残り:";
 
 	/// <summary>
 	/// Key: "Label.CategoryAttributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelCategoryAttributes => "å±žæ€§";
+	public override string LabelCategoryAttributes => "属性";
 
 	/// <summary>
 	/// Key: "Label.CategoryType"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelCategoryType => "ã‚¿ã‚¤ãƒ—";
+	public override string LabelCategoryType => "タイプ";
 
 	/// <summary>
 	/// Key: "Label.CommunityCreations"
 	/// UGC items
 	/// English String: " Community Creations"
 	/// </summary>
-	public override string LabelCommunityCreations => " ã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£ã®ä½œå“";
+	public override string LabelCommunityCreations => " コミュニティの作品";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddGearTitle"
 	/// English String: "Add Gear to Your Game"
 	/// </summary>
-	public override string LabelDialogAddGearTitle => "ã‚²ãƒ¼ãƒ ã«ã‚®ã‚¢ã‚’è¿½åŠ ";
+	public override string LabelDialogAddGearTitle => "ゲームにギアを追加";
 
 	/// <summary>
 	/// Key: "Label.Emotes"
 	/// Emotes
 	/// English String: "Emotes"
 	/// </summary>
-	public override string LabelEmotes => "ã‚¨ãƒ¢ãƒ¼ãƒˆ";
+	public override string LabelEmotes => "エモート";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "ãŠæ°—ã«å…¥ã‚Š";
+	public override string LabelFavorites => "お気に入り";
 
 	/// <summary>
 	/// Key: "Label.FeaturedBundles"
 	/// Featured Bundles
 	/// English String: "Featured Bundles"
 	/// </summary>
-	public override string LabelFeaturedBundles => "æ³¨ç›®ã®ãƒãƒ³ãƒ‰ãƒ«";
+	public override string LabelFeaturedBundles => "注目のバンドル";
 
 	/// <summary>
 	/// Key: "Label.FeaturedEmotes"
 	/// Featured Emotes
 	/// English String: "Featured Emotes"
 	/// </summary>
-	public override string LabelFeaturedEmotes => "æ³¨ç›®ã®ã‚¨ãƒ¢ãƒ¼ãƒˆ";
+	public override string LabelFeaturedEmotes => "注目のエモート";
 
 	/// <summary>
 	/// Key: "Label.Filter.ByTime"
 	/// English String: "By Time"
 	/// </summary>
-	public override string LabelFilterByTime => "æ™‚é–“";
+	public override string LabelFilterByTime => "時間";
 
 	/// <summary>
 	/// Key: "Label.Filter.Category"
 	/// English String: "Category"
 	/// </summary>
-	public override string LabelFilterCategory => "ã‚«ãƒ†ã‚´ãƒª";
+	public override string LabelFilterCategory => "カテゴリ";
 
 	/// <summary>
 	/// Key: "Label.Filter.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelFilterCreator => "ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼";
+	public override string LabelFilterCreator => "クリエーター";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filter"
 	/// English String: "Filter"
 	/// </summary>
-	public override string LabelFilterFilter => "ãƒ•ã‚£ãƒ«ã‚¿";
+	public override string LabelFilterFilter => "フィルタ";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filters"
 	/// English String: "Filters"
 	/// </summary>
-	public override string LabelFilterFilters => "ãƒ•ã‚£ãƒ«ã‚¿";
+	public override string LabelFilterFilters => "フィルタ";
 
 	/// <summary>
 	/// Key: "Label.Filter.Genre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "ã‚¸ãƒ£ãƒ³ãƒ«";
+	public override string LabelFilterGenre => "ジャンル";
 
 	/// <summary>
 	/// Key: "Label.Filter.Hide"
 	/// English String: "Hide"
 	/// </summary>
-	public override string LabelFilterHide => "éžè¡¨ç¤º";
+	public override string LabelFilterHide => "非表示";
 
 	/// <summary>
 	/// Key: "Label.Filter.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelFilterPrice => "ä¾¡æ ¼";
+	public override string LabelFilterPrice => "価格";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMax"
 	/// English String: "Max"
 	/// </summary>
-	public override string LabelFilterPriceMax => "æœ€é«˜é¡";
+	public override string LabelFilterPriceMax => "最高額";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMin"
 	/// English String: "Min"
 	/// </summary>
-	public override string LabelFilterPriceMin => "æœ€ä½Žé¡";
+	public override string LabelFilterPriceMin => "最低額";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceTo"
 	/// English String: "To"
 	/// </summary>
-	public override string LabelFilterPriceTo => "æ–°ã—ã„ä¾¡æ ¼";
+	public override string LabelFilterPriceTo => "新しい価格";
 
 	/// <summary>
 	/// Key: "Label.Filter.Show"
 	/// English String: "Show"
 	/// </summary>
-	public override string LabelFilterShow => "è¡¨ç¤º";
+	public override string LabelFilterShow => "表示";
 
 	/// <summary>
 	/// Key: "Label.Filter.Sorting"
 	/// English String: "Sorting"
 	/// </summary>
-	public override string LabelFilterSorting => "ä¸¦ã¹æ›¿ãˆ";
+	public override string LabelFilterSorting => "並べ替え";
 
 	/// <summary>
 	/// Key: "Label.Filter.UnavailableItems"
 	/// English String: "Unavailable Items"
 	/// </summary>
-	public override string LabelFilterUnavailableItems => "åˆ©ç”¨ã§ããªã„ã‚¢ã‚¤ãƒ†ãƒ ";
+	public override string LabelFilterUnavailableItems => "利用できないアイテム";
 
 	/// <summary>
 	/// Key: "Label.GoogleOnly"
 	/// label
 	/// English String: "Google Only"
 	/// </summary>
-	public override string LabelGoogleOnly => "Googleå°‚ç”¨";
+	public override string LabelGoogleOnly => "Google専用";
 
 	/// <summary>
 	/// Key: "Label.Ios"
@@ -278,14 +280,14 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Mobile"
 	/// </summary>
-	public override string LabelMobile => "ãƒ¢ãƒã‚¤ãƒ«";
+	public override string LabelMobile => "モバイル";
 
 	/// <summary>
 	/// Key: "Label.New"
 	/// label
 	/// English String: "New"
 	/// </summary>
-	public override string LabelNew => "æ–°ç€";
+	public override string LabelNew => "新着";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -299,25 +301,25 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Sale"
 	/// </summary>
-	public override string LabelSale => "ã‚»ãƒ¼ãƒ«";
+	public override string LabelSale => "セール";
 
 	/// <summary>
 	/// Key: "Label.SearchField"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearchField => "æ¤œç´¢";
+	public override string LabelSearchField => "検索";
 
 	/// <summary>
 	/// Key: "Label.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string LabelSeeAll => "ã™ã¹ã¦è¦‹ã‚‹";
+	public override string LabelSeeAll => "すべて見る";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+	public override string LabelUsername => "ユーザーネーム";
 
 	/// <summary>
 	/// Key: "Label.Xbox"
@@ -330,325 +332,325 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAccessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string LabelAccessories => "ã‚¢ã‚¯ã‚»ã‚µãƒª";
+	public override string LabelAccessories => "アクセサリ";
 
 	/// <summary>
 	/// Key: "LabelAccessoryAll"
 	/// English String: "All Accessories"
 	/// </summary>
-	public override string LabelAccessoryAll => "ã™ã¹ã¦ã®ã‚¢ã‚¯ã‚»ã‚µãƒª";
+	public override string LabelAccessoryAll => "すべてのアクセサリ";
 
 	/// <summary>
 	/// Key: "LabelAccessoryBack"
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelAccessoryBack => "èƒŒé¢";
+	public override string LabelAccessoryBack => "背面";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFace"
 	/// English String: "Face"
 	/// </summary>
-	public override string LabelAccessoryFace => "é¡”";
+	public override string LabelAccessoryFace => "顔";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFront"
 	/// English String: "Front"
 	/// </summary>
-	public override string LabelAccessoryFront => "æ­£é¢";
+	public override string LabelAccessoryFront => "正面";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHair"
 	/// English String: "Hair"
 	/// </summary>
-	public override string LabelAccessoryHair => "é«ª";
+	public override string LabelAccessoryHair => "髪";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelAccessoryHats => "å¸½å­";
+	public override string LabelAccessoryHats => "帽子";
 
 	/// <summary>
 	/// Key: "LabelAccessoryNeck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelAccessoryNeck => "é¦–";
+	public override string LabelAccessoryNeck => "首";
 
 	/// <summary>
 	/// Key: "LabelAccessoryShoulder"
 	/// English String: "Shoulder"
 	/// </summary>
-	public override string LabelAccessoryShoulder => "è‚©";
+	public override string LabelAccessoryShoulder => "肩";
 
 	/// <summary>
 	/// Key: "LabelAccessoryWaist"
 	/// English String: "Waist"
 	/// </summary>
-	public override string LabelAccessoryWaist => "è…°";
+	public override string LabelAccessoryWaist => "腰";
 
 	/// <summary>
 	/// Key: "LabelAll"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "ã™ã¹ã¦";
+	public override string LabelAll => "すべて";
 
 	/// <summary>
 	/// Key: "LabelAllBodyParts"
 	/// English String: "All Body Parts"
 	/// </summary>
-	public override string LabelAllBodyParts => "ã™ã¹ã¦ã®ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+	public override string LabelAllBodyParts => "すべてのボディパーツ";
 
 	/// <summary>
 	/// Key: "LabelAllCategories"
 	/// English String: "All Categories"
 	/// </summary>
-	public override string LabelAllCategories => "ã™ã¹ã¦ã®ã‚«ãƒ†ã‚´ãƒª";
+	public override string LabelAllCategories => "すべてのカテゴリ";
 
 	/// <summary>
 	/// Key: "LabelAllClothing"
 	/// English String: "All Clothing"
 	/// </summary>
-	public override string LabelAllClothing => "ã™ã¹ã¦ã®ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+	public override string LabelAllClothing => "すべてのコスチューム";
 
 	/// <summary>
 	/// Key: "LabelAllCollectibles"
 	/// English String: "All Collectibles"
 	/// </summary>
-	public override string LabelAllCollectibles => "ã™ã¹ã¦ã®ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«";
+	public override string LabelAllCollectibles => "すべてのコレクタブル";
 
 	/// <summary>
 	/// Key: "LabelAllCreators"
 	/// English String: "All Creators"
 	/// </summary>
-	public override string LabelAllCreators => "ã™ã¹ã¦ã®ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼";
+	public override string LabelAllCreators => "すべてのクリエーター";
 
 	/// <summary>
 	/// Key: "LabelAllCurrency"
 	/// English String: "All Currency"
 	/// </summary>
-	public override string LabelAllCurrency => "ã™ã¹ã¦ã®é€šè²¨";
+	public override string LabelAllCurrency => "すべての通貨";
 
 	/// <summary>
 	/// Key: "LabelAllFeatured"
 	/// English String: "All Featured Items"
 	/// </summary>
-	public override string LabelAllFeatured => "ã™ã¹ã¦ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ";
+	public override string LabelAllFeatured => "すべての注目アイテム";
 
 	/// <summary>
 	/// Key: "LabelAllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "é€šç®—";
+	public override string LabelAllTime => "通算";
 
 	/// <summary>
 	/// Key: "LabelAnimations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string LabelAnimations => "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³";
+	public override string LabelAnimations => "アニメーション";
 
 	/// <summary>
 	/// Key: "LabelAnyPrice"
 	/// English String: "Any Price"
 	/// </summary>
-	public override string LabelAnyPrice => "ä¾¡æ ¼æŒ‡å®šãªã—";
+	public override string LabelAnyPrice => "価格指定なし";
 
 	/// <summary>
 	/// Key: "LabelAvatarAnimations"
 	/// English String: "Avatar Animations"
 	/// </summary>
-	public override string LabelAvatarAnimations => "ã‚¢ãƒã‚¿ãƒ¼ã‚¢ãƒ‹ãƒ¡";
+	public override string LabelAvatarAnimations => "アバターアニメ";
 
 	/// <summary>
 	/// Key: "LabelBestselling"
 	/// English String: "Bestselling"
 	/// </summary>
-	public override string LabelBestselling => "ãƒ™ã‚¹ãƒˆã‚»ãƒ©ãƒ¼";
+	public override string LabelBestselling => "ベストセラー";
 
 	/// <summary>
 	/// Key: "LabelBodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+	public override string LabelBodyParts => "ボディパーツ";
 
 	/// <summary>
 	/// Key: "LabelClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string LabelClothing => "ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+	public override string LabelClothing => "コスチューム";
 
 	/// <summary>
 	/// Key: "LabelCollectibleAccessories"
 	/// English String: "Collectible Accessories"
 	/// </summary>
-	public override string LabelCollectibleAccessories => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¯ã‚»ã‚µãƒª";
+	public override string LabelCollectibleAccessories => "コレクタブルアクセサリ";
 
 	/// <summary>
 	/// Key: "LabelCollectibleFaces"
 	/// English String: "Collectible Faces"
 	/// </summary>
-	public override string LabelCollectibleFaces => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã®é¡”";
+	public override string LabelCollectibleFaces => "コレクタブルの顔";
 
 	/// <summary>
 	/// Key: "LabelCollectibleGear"
 	/// English String: "Collectible Gear"
 	/// </summary>
-	public override string LabelCollectibleGear => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚®ã‚¢";
+	public override string LabelCollectibleGear => "コレクタブルギア";
 
 	/// <summary>
 	/// Key: "LabelCollectibles"
 	/// English String: "Collectibles"
 	/// </summary>
-	public override string LabelCollectibles => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«";
+	public override string LabelCollectibles => "コレクタブル";
 
 	/// <summary>
 	/// Key: "LabelFaces"
 	/// English String: "Faces"
 	/// </summary>
-	public override string LabelFaces => "é¡”";
+	public override string LabelFaces => "顔";
 
 	/// <summary>
 	/// Key: "LabelFeatured"
 	/// English String: "Featured"
 	/// </summary>
-	public override string LabelFeatured => "æ³¨ç›®";
+	public override string LabelFeatured => "注目";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAccesories"
 	/// English String: "Featured Accessories"
 	/// </summary>
-	public override string LabelFeaturedAccesories => "æ³¨ç›®ã®ã‚¢ã‚¯ã‚»ã‚µãƒª";
+	public override string LabelFeaturedAccesories => "注目のアクセサリ";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAnimations"
 	/// English String: "Featured Animations"
 	/// </summary>
-	public override string LabelFeaturedAnimations => "æ³¨ç›®ã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³";
+	public override string LabelFeaturedAnimations => "注目のアニメーション";
 
 	/// <summary>
 	/// Key: "LabelFeaturedFaces"
 	/// English String: "Featured Faces"
 	/// </summary>
-	public override string LabelFeaturedFaces => "æ³¨ç›®ã®é¡”";
+	public override string LabelFeaturedFaces => "注目の顔";
 
 	/// <summary>
 	/// Key: "LabelFeaturedGear"
 	/// English String: "Featured Gear"
 	/// </summary>
-	public override string LabelFeaturedGear => "æ³¨ç›®ã®ã‚®ã‚¢";
+	public override string LabelFeaturedGear => "注目のギア";
 
 	/// <summary>
 	/// Key: "LabelFeaturedPackages"
 	/// English String: "Featured Packages"
 	/// </summary>
-	public override string LabelFeaturedPackages => "æ³¨ç›®ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸";
+	public override string LabelFeaturedPackages => "注目のパッケージ";
 
 	/// <summary>
 	/// Key: "LabelFree"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "ç„¡æ–™";
+	public override string LabelFree => "無料";
 
 	/// <summary>
 	/// Key: "LabelGear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "ã‚®ã‚¢";
+	public override string LabelGear => "ギア";
 
 	/// <summary>
 	/// Key: "LabelGearAll"
 	/// English String: "All Gear"
 	/// </summary>
-	public override string LabelGearAll => "ã™ã¹ã¦ã®ã‚®ã‚¢";
+	public override string LabelGearAll => "すべてのギア";
 
 	/// <summary>
 	/// Key: "LabelGearBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGearBuilding => "å»ºç¯‰";
+	public override string LabelGearBuilding => "建築";
 
 	/// <summary>
 	/// Key: "LabelGearExplosive"
 	/// English String: "Explosive"
 	/// </summary>
-	public override string LabelGearExplosive => "çˆ†ç™ºç‰©";
+	public override string LabelGearExplosive => "爆発物";
 
 	/// <summary>
 	/// Key: "LabelGearMelee"
 	/// English String: "Melee"
 	/// </summary>
-	public override string LabelGearMelee => "ãƒ¡ãƒ¬ãƒ¼";
+	public override string LabelGearMelee => "メレー";
 
 	/// <summary>
 	/// Key: "LabelGearMusical"
 	/// English String: "Musical"
 	/// </summary>
-	public override string LabelGearMusical => "éŸ³æ¥½";
+	public override string LabelGearMusical => "音楽";
 
 	/// <summary>
 	/// Key: "LabelGearNavigation"
 	/// English String: "Navigation"
 	/// </summary>
-	public override string LabelGearNavigation => "ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³";
+	public override string LabelGearNavigation => "ナビゲーション";
 
 	/// <summary>
 	/// Key: "LabelGearPersonalTransport"
 	/// English String: "Transport"
 	/// </summary>
-	public override string LabelGearPersonalTransport => "ä¹—ã‚Šç‰©";
+	public override string LabelGearPersonalTransport => "乗り物";
 
 	/// <summary>
 	/// Key: "LabelGearPowerUps"
 	/// English String: "Power Up"
 	/// </summary>
-	public override string LabelGearPowerUps => "ãƒ‘ãƒ¯ãƒ¼ã‚¢ãƒƒãƒ—";
+	public override string LabelGearPowerUps => "パワーアップ";
 
 	/// <summary>
 	/// Key: "LabelGearRanged"
 	/// English String: "Ranged"
 	/// </summary>
-	public override string LabelGearRanged => "é è·é›¢";
+	public override string LabelGearRanged => "遠距離";
 
 	/// <summary>
 	/// Key: "LabelGearSocial"
 	/// English String: "Social"
 	/// </summary>
-	public override string LabelGearSocial => "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«";
+	public override string LabelGearSocial => "ソーシャル";
 
 	/// <summary>
 	/// Key: "LabelGenreAdventure"
 	/// English String: "Adventure"
 	/// </summary>
-	public override string LabelGenreAdventure => "ã‚¢ãƒ‰ãƒ™ãƒ³ãƒãƒ£ãƒ¼";
+	public override string LabelGenreAdventure => "アドベンチャー";
 
 	/// <summary>
 	/// Key: "LabelGenreAll"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelGenreAll => "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«";
+	public override string LabelGenreAll => "すべてのジャンル";
 
 	/// <summary>
 	/// Key: "LabelGenreBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreBuilding => "å»ºç¯‰";
+	public override string LabelGenreBuilding => "建築";
 
 	/// <summary>
 	/// Key: "LabelGenreComedy"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreComedy => "ã‚³ãƒ¡ãƒ‡ã‚£";
+	public override string LabelGenreComedy => "コメディ";
 
 	/// <summary>
 	/// Key: "LabelGenreFantasy"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreFantasy => "ä¸­ä¸–";
+	public override string LabelGenreFantasy => "中世";
 
 	/// <summary>
 	/// Key: "LabelGenreFighting"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreFighting => "æ ¼é—˜";
+	public override string LabelGenreFighting => "格闘";
 
 	/// <summary>
 	/// Key: "LabelGenreFPS"
@@ -660,43 +662,43 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreFunny"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreFunny => "ã‚³ãƒ¡ãƒ‡ã‚£";
+	public override string LabelGenreFunny => "コメディ";
 
 	/// <summary>
 	/// Key: "LabelGenreHorror"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreHorror => "ãƒ›ãƒ©ãƒ¼";
+	public override string LabelGenreHorror => "ホラー";
 
 	/// <summary>
 	/// Key: "LabelGenreMedieval"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreMedieval => "ä¸­ä¸–";
+	public override string LabelGenreMedieval => "中世";
 
 	/// <summary>
 	/// Key: "LabelGenreMilitary"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreMilitary => "ãƒŸãƒªã‚¿ãƒªãƒ¼";
+	public override string LabelGenreMilitary => "ミリタリー";
 
 	/// <summary>
 	/// Key: "LabelGenreNaval"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenreNaval => "æµ·è»";
+	public override string LabelGenreNaval => "海軍";
 
 	/// <summary>
 	/// Key: "LabelGenreNinja"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreNinja => "æ ¼é—˜";
+	public override string LabelGenreNinja => "格闘";
 
 	/// <summary>
 	/// Key: "LabelGenrePirate"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenrePirate => "æµ·è»";
+	public override string LabelGenrePirate => "海軍";
 
 	/// <summary>
 	/// Key: "LabelGenreRPG"
@@ -708,7 +710,7 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreScary"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreScary => "ãƒ›ãƒ©ãƒ¼";
+	public override string LabelGenreScary => "ホラー";
 
 	/// <summary>
 	/// Key: "LabelGenreSciFi"
@@ -720,109 +722,109 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelGenreSports"
 	/// English String: "Sports"
 	/// </summary>
-	public override string LabelGenreSports => "ã‚¹ãƒãƒ¼ãƒ„";
+	public override string LabelGenreSports => "スポーツ";
 
 	/// <summary>
 	/// Key: "LabelGenreTownAndCity"
 	/// English String: "Town and City"
 	/// </summary>
-	public override string LabelGenreTownAndCity => "éƒ½å¸‚é–‹ç™º";
+	public override string LabelGenreTownAndCity => "都市開発";
 
 	/// <summary>
 	/// Key: "LabelGenreTutorial"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreTutorial => "å»ºç¯‰";
+	public override string LabelGenreTutorial => "建築";
 
 	/// <summary>
 	/// Key: "LabelGenreWar"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreWar => "ãƒŸãƒªã‚¿ãƒªãƒ¼";
+	public override string LabelGenreWar => "ミリタリー";
 
 	/// <summary>
 	/// Key: "LabelGenreWestern"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWestern => "ã‚¦ã‚¨ã‚¹ã‚¿ãƒ³";
+	public override string LabelGenreWestern => "ウエスタン";
 
 	/// <summary>
 	/// Key: "LabelGenreWildWest"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWildWest => "ã‚¦ã‚¨ã‚¹ã‚¿ãƒ³";
+	public override string LabelGenreWildWest => "ウエスタン";
 
 	/// <summary>
 	/// Key: "LabelHeads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "é ­";
+	public override string LabelHeads => "頭";
 
 	/// <summary>
 	/// Key: "LabelMostFavorited"
 	/// English String: "Most Favorited"
 	/// </summary>
-	public override string LabelMostFavorited => "ä¸€ç•ªäººæ°—";
+	public override string LabelMostFavorited => "一番人気";
 
 	/// <summary>
 	/// Key: "LabelNoResellers"
 	/// English String: "No Resellers"
 	/// </summary>
-	public override string LabelNoResellers => "å†è²©è€…ãªã—";
+	public override string LabelNoResellers => "再販者なし";
 
 	/// <summary>
 	/// Key: "LabelOffSale"
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffSale => "éžå£²å“";
+	public override string LabelOffSale => "非売品";
 
 	/// <summary>
 	/// Key: "LabelPackages"
 	/// English String: "Packages"
 	/// </summary>
-	public override string LabelPackages => "ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸";
+	public override string LabelPackages => "パッケージ";
 
 	/// <summary>
 	/// Key: "LabelPants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "ãƒ‘ãƒ³ãƒ„";
+	public override string LabelPants => "パンツ";
 
 	/// <summary>
 	/// Key: "LabelPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelPastDay => "æ˜¨æ—¥";
+	public override string LabelPastDay => "昨日";
 
 	/// <summary>
 	/// Key: "LabelPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "å…ˆé€±";
+	public override string LabelPastWeek => "先週";
 
 	/// <summary>
 	/// Key: "LabelPriceHighFirst"
 	/// English String: "Price (High to Low)"
 	/// </summary>
-	public override string LabelPriceHighFirst => "ä¾¡æ ¼ï¼ˆé«˜ã„é †ï¼‰";
+	public override string LabelPriceHighFirst => "価格（高い順）";
 
 	/// <summary>
 	/// Key: "LabelPriceLowFirst"
 	/// English String: "Price (Low to High)"
 	/// </summary>
-	public override string LabelPriceLowFirst => "ä¾¡æ ¼ï¼ˆå®‰ã„é †ï¼‰";
+	public override string LabelPriceLowFirst => "価格（安い順）";
 
 	/// <summary>
 	/// Key: "LabelRecentlyUpdated"
 	/// English String: "Recently Updated"
 	/// </summary>
-	public override string LabelRecentlyUpdated => "æœ€è¿‘ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
+	public override string LabelRecentlyUpdated => "最近アップデート";
 
 	/// <summary>
 	/// Key: "LabelRelevance"
 	/// English String: "Relevance"
 	/// </summary>
-	public override string LabelRelevance => "ä¸¦ã¹æ›¿ãˆ";
+	public override string LabelRelevance => "並べ替え";
 
 	/// <summary>
 	/// Key: "LabelRoblox"
@@ -840,50 +842,50 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelShirts"
 	/// English String: "Shirts"
 	/// </summary>
-	public override string LabelShirts => "ã‚·ãƒ£ãƒ„";
+	public override string LabelShirts => "シャツ";
 
 	/// <summary>
 	/// Key: "LabelTShirts"
 	/// English String: "T-Shirts"
 	/// </summary>
-	public override string LabelTShirts => "Tã‚·ãƒ£ãƒ„";
+	public override string LabelTShirts => "Tシャツ";
 
 	/// <summary>
 	/// Key: "Response.Error.Filter"
 	/// English String: "Errors exist in Filter tab"
 	/// </summary>
-	public override string ResponseErrorFilter => "ãƒ•ã‚£ãƒ«ã‚¿ã‚¿ãƒ–ã«ã‚¨ãƒ©ãƒ¼ãŒã‚ã‚Šã¾ã™";
+	public override string ResponseErrorFilter => "フィルタタブにエラーがあります";
 
 	/// <summary>
 	/// Key: "Response.GenericError"
 	/// English String: "An error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseGenericError => "エラーが発生しました。後でもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.NoItemsFound"
 	/// English String: "No items found."
 	/// </summary>
-	public override string ResponseNoItemsFound => "ã‚¢ã‚¤ãƒ†ãƒ ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
+	public override string ResponseNoItemsFound => "アイテムが見つかりません。";
 
 	/// <summary>
 	/// Key: "Response.NoSaleItemsFromSearch"
 	/// English String: "Your search did not find items for sale. Unavailable items displayed below."
 	/// </summary>
-	public override string ResponseNoSaleItemsFromSearch => "æ¤œç´¢ã—ã¾ã—ãŸãŒã€è²©å£²ä¸­ã®ã‚¢ã‚¤ãƒ†ãƒ ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ©ç”¨ã§ããªã„ã‚¢ã‚¤ãƒ†ãƒ ãŒä»¥ä¸‹ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
+	public override string ResponseNoSaleItemsFromSearch => "検索しましたが、販売中のアイテムが見つかりませんでした。利用できないアイテムが以下に表示されます。";
 
 	/// <summary>
 	/// Key: "Response.TemporarilyUnavailable"
 	/// English String: "Catalog temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string ResponseTemporarilyUnavailable => "ã‚«ã‚¿ãƒ­ã‚°ã¯ä¸€æ™‚çš„ã«åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseTemporarilyUnavailable => "カタログは一時的に利用できません。後でもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.Throttled"
 	/// Shown to users when they have made too many requests in a minute and are being throttled.
 	/// English String: "You're going too fast! Try again in a minute."
 	/// </summary>
-	public override string ResponseThrottled => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®é–“éš”ãŒçŸ­ã™ãŽã¾ã™ã€‚1åˆ†å¾Œã«ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseThrottled => "リクエストの間隔が短すぎます。1分後にもう一度お試しください。";
 
 	public CatalogResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -892,7 +894,7 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "Robuxã‚’è²·ã†";
+		return "Robuxを買う";
 	}
 
 	protected override string _GetTemplateForActionDialogAddGearOk()
@@ -902,47 +904,47 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForActionFilterApply()
 	{
-		return "é©ç”¨";
+		return "適用";
 	}
 
 	protected override string _GetTemplateForActionFilterCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionGo()
 	{
-		return "å®Ÿè¡Œ";
+		return "実行";
 	}
 
 	protected override string _GetTemplateForActionViewAllItems()
 	{
-		return "ã™ã¹ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¡¨ç¤º";
+		return "すべてのアイテムを表示";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddGearBody()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«ã‚®ã‚¢ã‚’è¿½åŠ ã™ã‚‹ã«ã¯ã€ã‚«ã‚¿ãƒ­ã‚°ã§ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŽ¢ã—ã¦ã€Œã‚²ãƒ¼ãƒ ã«è¿½åŠ ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚ã‚¢ã‚¤ãƒ†ãƒ ã¯è‡ªå‹•çš„ã«ã‚²ãƒ¼ãƒ å†…ã§è¨±å¯ã•ã‚Œã€ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ã‚¢ã‚¤ãƒ†ãƒ ãŒå£²ã‚Œã‚‹åº¦ã«å ±é…¬ã‚’å—ã‘å–ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ï¼ˆè¿½åŠ ã§ãã‚‹ã®ã¯è²©å£²ä¸­ã®ã‚®ã‚¢ã ã‘ã§ã™ã€‚ï¼‰";
+		return "ゲームにギアを追加するには、カタログでアイテムを探して「ゲームに追加」ボタンをクリックします。アイテムは自動的にゲーム内で許可され、ゲームページでアイテムが売れる度に報酬を受け取ることができます。（追加できるのは販売中のギアだけです。）";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogCategory()
 	{
-		return "ã‚«ãƒ†ã‚´ãƒª";
+		return "カテゴリ";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogPage()
 	{
-		return "ã‚«ã‚¿ãƒ­ã‚°";
+		return "カタログ";
 	}
 
 	protected override string _GetTemplateForLabelAllFeaturedItems()
 	{
-		return "ã™ã¹ã¦ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¡¨ç¤º";
+		return "すべての注目アイテムを表示";
 	}
 
 	protected override string _GetTemplateForLabelAllGenres()
 	{
-		return "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«";
+		return "すべてのジャンル";
 	}
 
 	protected override string _GetTemplateForLabelAmazon()
@@ -952,7 +954,7 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelBreadCrumbFree()
 	{
-		return "ç„¡æ–™";
+		return "無料";
 	}
 
 	/// <summary>
@@ -961,12 +963,12 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreOrText(string genreName1, string genreName2)
 	{
-		return $"{genreName1} ã¾ãŸã¯ {genreName2}";
+		return $"{genreName1} または {genreName2}";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreOrText()
 	{
-		return "{genreName1} ã¾ãŸã¯ {genreName2}";
+		return "{genreName1} または {genreName2}";
 	}
 
 	/// <summary>
@@ -975,17 +977,17 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreSelectedText(string genreCount)
 	{
-		return $"ã‚¸ãƒ£ãƒ³ãƒ«: {genreCount} ã‚’é¸æŠž";
+		return $"ジャンル: {genreCount} を選択";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreSelectedText()
 	{
-		return "ã‚¸ãƒ£ãƒ³ãƒ«: {genreCount} ã‚’é¸æŠž";
+		return "ジャンル: {genreCount} を選択";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGroup()
 	{
-		return "ã‚°ãƒ«ãƒ¼ãƒ—:";
+		return "グループ:";
 	}
 
 	/// <summary>
@@ -994,12 +996,12 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceAbove(string price)
 	{
-		return $"{price}ä»¥ä¸Š";
+		return $"{price}以上";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceAbove()
 	{
-		return "{price}ä»¥ä¸Š";
+		return "{price}以上";
 	}
 
 	/// <summary>
@@ -1008,12 +1010,12 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceBelow(string price)
 	{
-		return $"{price}ä»¥ä¸‹";
+		return $"{price}以下";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceBelow()
 	{
-		return "{price}ä»¥ä¸‹";
+		return "{price}以下";
 	}
 
 	/// <summary>
@@ -1022,22 +1024,22 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbResultsCount(string startNumber, string endNumber, string resultsCount)
 	{
-		return $"{resultsCount}ä¸­{startNumber} - {endNumber}ã®çµæžœ";
+		return $"{resultsCount}中{startNumber} - {endNumber}の結果";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbResultsCount()
 	{
-		return "{resultsCount}ä¸­{startNumber} - {endNumber}ã®çµæžœ";
+		return "{resultsCount}中{startNumber} - {endNumber}の結果";
 	}
 
 	protected override string _GetTemplateForLabelBundle()
 	{
-		return "ãƒãƒ³ãƒ‰ãƒ«";
+		return "バンドル";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "ãƒãƒ³ãƒ‰ãƒ«";
+		return "バンドル";
 	}
 
 	/// <summary>
@@ -1047,67 +1049,67 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelByCreatorLink(string linkStart, string creator, string linkEnd)
 	{
-		return $"ä½œï¼š {linkStart}{creator}{linkEnd}";
+		return $"作： {linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelByCreatorLink()
 	{
-		return "ä½œï¼š {linkStart}{creator}{linkEnd}";
+		return "作： {linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelCardCreatorBy()
 	{
-		return "ä½œ";
+		return "作";
 	}
 
 	protected override string _GetTemplateForLabelCardPriceWas()
 	{
-		return "ä»¥å‰ã®ä¾¡æ ¼";
+		return "以前の価格";
 	}
 
 	protected override string _GetTemplateForLabelCardRemaining()
 	{
-		return "æ®‹ã‚Š:";
+		return "残り:";
 	}
 
 	protected override string _GetTemplateForLabelCategoryAttributes()
 	{
-		return "å±žæ€§";
+		return "属性";
 	}
 
 	protected override string _GetTemplateForLabelCategoryType()
 	{
-		return "ã‚¿ã‚¤ãƒ—";
+		return "タイプ";
 	}
 
 	protected override string _GetTemplateForLabelCommunityCreations()
 	{
-		return " ã‚³ãƒŸãƒ¥ãƒ‹ãƒ†ã‚£ã®ä½œå“";
+		return " コミュニティの作品";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddGearTitle()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«ã‚®ã‚¢ã‚’è¿½åŠ ";
+		return "ゲームにギアを追加";
 	}
 
 	protected override string _GetTemplateForLabelEmotes()
 	{
-		return "ã‚¨ãƒ¢ãƒ¼ãƒˆ";
+		return "エモート";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "ãŠæ°—ã«å…¥ã‚Š";
+		return "お気に入り";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedBundles()
 	{
-		return "æ³¨ç›®ã®ãƒãƒ³ãƒ‰ãƒ«";
+		return "注目のバンドル";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedEmotes()
 	{
-		return "æ³¨ç›®ã®ã‚¨ãƒ¢ãƒ¼ãƒˆ";
+		return "注目のエモート";
 	}
 
 	/// <summary>
@@ -1116,87 +1118,87 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelFeaturedItemsOnRoblox(string spanStart, string roblox, string spanEnd)
 	{
-		return $"{spanStart}{roblox}{spanEnd} ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ";
+		return $"{spanStart}{roblox}{spanEnd} の注目アイテム";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedItemsOnRoblox()
 	{
-		return "{spanStart}{roblox}{spanEnd} ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "{spanStart}{roblox}{spanEnd} の注目アイテム";
 	}
 
 	protected override string _GetTemplateForLabelFilterByTime()
 	{
-		return "æ™‚é–“";
+		return "時間";
 	}
 
 	protected override string _GetTemplateForLabelFilterCategory()
 	{
-		return "ã‚«ãƒ†ã‚´ãƒª";
+		return "カテゴリ";
 	}
 
 	protected override string _GetTemplateForLabelFilterCreator()
 	{
-		return "ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼";
+		return "クリエーター";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilter()
 	{
-		return "ãƒ•ã‚£ãƒ«ã‚¿";
+		return "フィルタ";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilters()
 	{
-		return "ãƒ•ã‚£ãƒ«ã‚¿";
+		return "フィルタ";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "ã‚¸ãƒ£ãƒ³ãƒ«";
+		return "ジャンル";
 	}
 
 	protected override string _GetTemplateForLabelFilterHide()
 	{
-		return "éžè¡¨ç¤º";
+		return "非表示";
 	}
 
 	protected override string _GetTemplateForLabelFilterPrice()
 	{
-		return "ä¾¡æ ¼";
+		return "価格";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMax()
 	{
-		return "æœ€é«˜é¡";
+		return "最高額";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMin()
 	{
-		return "æœ€ä½Žé¡";
+		return "最低額";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceTo()
 	{
-		return "æ–°ã—ã„ä¾¡æ ¼";
+		return "新しい価格";
 	}
 
 	protected override string _GetTemplateForLabelFilterShow()
 	{
-		return "è¡¨ç¤º";
+		return "表示";
 	}
 
 	protected override string _GetTemplateForLabelFilterSorting()
 	{
-		return "ä¸¦ã¹æ›¿ãˆ";
+		return "並べ替え";
 	}
 
 	protected override string _GetTemplateForLabelFilterUnavailableItems()
 	{
-		return "åˆ©ç”¨ã§ããªã„ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "利用できないアイテム";
 	}
 
 	protected override string _GetTemplateForLabelGoogleOnly()
 	{
-		return "Googleå°‚ç”¨";
+		return "Google専用";
 	}
 
 	protected override string _GetTemplateForLabelIos()
@@ -1206,12 +1208,12 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelMobile()
 	{
-		return "ãƒ¢ãƒã‚¤ãƒ«";
+		return "モバイル";
 	}
 
 	protected override string _GetTemplateForLabelNew()
 	{
-		return "æ–°ç€";
+		return "新着";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1221,22 +1223,22 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelSale()
 	{
-		return "ã‚»ãƒ¼ãƒ«";
+		return "セール";
 	}
 
 	protected override string _GetTemplateForLabelSearchField()
 	{
-		return "æ¤œç´¢";
+		return "検索";
 	}
 
 	protected override string _GetTemplateForLabelSeeAll()
 	{
-		return "ã™ã¹ã¦è¦‹ã‚‹";
+		return "すべて見る";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+		return "ユーザーネーム";
 	}
 
 	protected override string _GetTemplateForLabelXbox()
@@ -1246,272 +1248,272 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAccessories()
 	{
-		return "ã‚¢ã‚¯ã‚»ã‚µãƒª";
+		return "アクセサリ";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryAll()
 	{
-		return "ã™ã¹ã¦ã®ã‚¢ã‚¯ã‚»ã‚µãƒª";
+		return "すべてのアクセサリ";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryBack()
 	{
-		return "èƒŒé¢";
+		return "背面";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFace()
 	{
-		return "é¡”";
+		return "顔";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFront()
 	{
-		return "æ­£é¢";
+		return "正面";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHair()
 	{
-		return "é«ª";
+		return "髪";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHats()
 	{
-		return "å¸½å­";
+		return "帽子";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryNeck()
 	{
-		return "é¦–";
+		return "首";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryShoulder()
 	{
-		return "è‚©";
+		return "肩";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryWaist()
 	{
-		return "è…°";
+		return "腰";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "ã™ã¹ã¦";
+		return "すべて";
 	}
 
 	protected override string _GetTemplateForLabelAllBodyParts()
 	{
-		return "ã™ã¹ã¦ã®ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+		return "すべてのボディパーツ";
 	}
 
 	protected override string _GetTemplateForLabelAllCategories()
 	{
-		return "ã™ã¹ã¦ã®ã‚«ãƒ†ã‚´ãƒª";
+		return "すべてのカテゴリ";
 	}
 
 	protected override string _GetTemplateForLabelAllClothing()
 	{
-		return "ã™ã¹ã¦ã®ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+		return "すべてのコスチューム";
 	}
 
 	protected override string _GetTemplateForLabelAllCollectibles()
 	{
-		return "ã™ã¹ã¦ã®ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«";
+		return "すべてのコレクタブル";
 	}
 
 	protected override string _GetTemplateForLabelAllCreators()
 	{
-		return "ã™ã¹ã¦ã®ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼";
+		return "すべてのクリエーター";
 	}
 
 	protected override string _GetTemplateForLabelAllCurrency()
 	{
-		return "ã™ã¹ã¦ã®é€šè²¨";
+		return "すべての通貨";
 	}
 
 	protected override string _GetTemplateForLabelAllFeatured()
 	{
-		return "ã™ã¹ã¦ã®æ³¨ç›®ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "すべての注目アイテム";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "é€šç®—";
+		return "通算";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
 	{
-		return "ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³";
+		return "アニメーション";
 	}
 
 	protected override string _GetTemplateForLabelAnyPrice()
 	{
-		return "ä¾¡æ ¼æŒ‡å®šãªã—";
+		return "価格指定なし";
 	}
 
 	protected override string _GetTemplateForLabelAvatarAnimations()
 	{
-		return "ã‚¢ãƒã‚¿ãƒ¼ã‚¢ãƒ‹ãƒ¡";
+		return "アバターアニメ";
 	}
 
 	protected override string _GetTemplateForLabelBestselling()
 	{
-		return "ãƒ™ã‚¹ãƒˆã‚»ãƒ©ãƒ¼";
+		return "ベストセラー";
 	}
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+		return "ボディパーツ";
 	}
 
 	protected override string _GetTemplateForLabelClothing()
 	{
-		return "ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+		return "コスチューム";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleAccessories()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¯ã‚»ã‚µãƒª";
+		return "コレクタブルアクセサリ";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleFaces()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã®é¡”";
+		return "コレクタブルの顔";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleGear()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚®ã‚¢";
+		return "コレクタブルギア";
 	}
 
 	protected override string _GetTemplateForLabelCollectibles()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«";
+		return "コレクタブル";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
 	{
-		return "é¡”";
+		return "顔";
 	}
 
 	protected override string _GetTemplateForLabelFeatured()
 	{
-		return "æ³¨ç›®";
+		return "注目";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAccesories()
 	{
-		return "æ³¨ç›®ã®ã‚¢ã‚¯ã‚»ã‚µãƒª";
+		return "注目のアクセサリ";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAnimations()
 	{
-		return "æ³¨ç›®ã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³";
+		return "注目のアニメーション";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedFaces()
 	{
-		return "æ³¨ç›®ã®é¡”";
+		return "注目の顔";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedGear()
 	{
-		return "æ³¨ç›®ã®ã‚®ã‚¢";
+		return "注目のギア";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedPackages()
 	{
-		return "æ³¨ç›®ã®ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸";
+		return "注目のパッケージ";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "ç„¡æ–™";
+		return "無料";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "ã‚®ã‚¢";
+		return "ギア";
 	}
 
 	protected override string _GetTemplateForLabelGearAll()
 	{
-		return "ã™ã¹ã¦ã®ã‚®ã‚¢";
+		return "すべてのギア";
 	}
 
 	protected override string _GetTemplateForLabelGearBuilding()
 	{
-		return "å»ºç¯‰";
+		return "建築";
 	}
 
 	protected override string _GetTemplateForLabelGearExplosive()
 	{
-		return "çˆ†ç™ºç‰©";
+		return "爆発物";
 	}
 
 	protected override string _GetTemplateForLabelGearMelee()
 	{
-		return "ãƒ¡ãƒ¬ãƒ¼";
+		return "メレー";
 	}
 
 	protected override string _GetTemplateForLabelGearMusical()
 	{
-		return "éŸ³æ¥½";
+		return "音楽";
 	}
 
 	protected override string _GetTemplateForLabelGearNavigation()
 	{
-		return "ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³";
+		return "ナビゲーション";
 	}
 
 	protected override string _GetTemplateForLabelGearPersonalTransport()
 	{
-		return "ä¹—ã‚Šç‰©";
+		return "乗り物";
 	}
 
 	protected override string _GetTemplateForLabelGearPowerUps()
 	{
-		return "ãƒ‘ãƒ¯ãƒ¼ã‚¢ãƒƒãƒ—";
+		return "パワーアップ";
 	}
 
 	protected override string _GetTemplateForLabelGearRanged()
 	{
-		return "é è·é›¢";
+		return "遠距離";
 	}
 
 	protected override string _GetTemplateForLabelGearSocial()
 	{
-		return "ã‚½ãƒ¼ã‚·ãƒ£ãƒ«";
+		return "ソーシャル";
 	}
 
 	protected override string _GetTemplateForLabelGenreAdventure()
 	{
-		return "ã‚¢ãƒ‰ãƒ™ãƒ³ãƒãƒ£ãƒ¼";
+		return "アドベンチャー";
 	}
 
 	protected override string _GetTemplateForLabelGenreAll()
 	{
-		return "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«";
+		return "すべてのジャンル";
 	}
 
 	protected override string _GetTemplateForLabelGenreBuilding()
 	{
-		return "å»ºç¯‰";
+		return "建築";
 	}
 
 	protected override string _GetTemplateForLabelGenreComedy()
 	{
-		return "ã‚³ãƒ¡ãƒ‡ã‚£";
+		return "コメディ";
 	}
 
 	protected override string _GetTemplateForLabelGenreFantasy()
 	{
-		return "ä¸­ä¸–";
+		return "中世";
 	}
 
 	protected override string _GetTemplateForLabelGenreFighting()
 	{
-		return "æ ¼é—˜";
+		return "格闘";
 	}
 
 	protected override string _GetTemplateForLabelGenreFPS()
@@ -1521,37 +1523,37 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreFunny()
 	{
-		return "ã‚³ãƒ¡ãƒ‡ã‚£";
+		return "コメディ";
 	}
 
 	protected override string _GetTemplateForLabelGenreHorror()
 	{
-		return "ãƒ›ãƒ©ãƒ¼";
+		return "ホラー";
 	}
 
 	protected override string _GetTemplateForLabelGenreMedieval()
 	{
-		return "ä¸­ä¸–";
+		return "中世";
 	}
 
 	protected override string _GetTemplateForLabelGenreMilitary()
 	{
-		return "ãƒŸãƒªã‚¿ãƒªãƒ¼";
+		return "ミリタリー";
 	}
 
 	protected override string _GetTemplateForLabelGenreNaval()
 	{
-		return "æµ·è»";
+		return "海軍";
 	}
 
 	protected override string _GetTemplateForLabelGenreNinja()
 	{
-		return "æ ¼é—˜";
+		return "格闘";
 	}
 
 	protected override string _GetTemplateForLabelGenrePirate()
 	{
-		return "æµ·è»";
+		return "海軍";
 	}
 
 	protected override string _GetTemplateForLabelGenreRPG()
@@ -1561,7 +1563,7 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreScary()
 	{
-		return "ãƒ›ãƒ©ãƒ¼";
+		return "ホラー";
 	}
 
 	protected override string _GetTemplateForLabelGenreSciFi()
@@ -1571,92 +1573,92 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelGenreSports()
 	{
-		return "ã‚¹ãƒãƒ¼ãƒ„";
+		return "スポーツ";
 	}
 
 	protected override string _GetTemplateForLabelGenreTownAndCity()
 	{
-		return "éƒ½å¸‚é–‹ç™º";
+		return "都市開発";
 	}
 
 	protected override string _GetTemplateForLabelGenreTutorial()
 	{
-		return "å»ºç¯‰";
+		return "建築";
 	}
 
 	protected override string _GetTemplateForLabelGenreWar()
 	{
-		return "ãƒŸãƒªã‚¿ãƒªãƒ¼";
+		return "ミリタリー";
 	}
 
 	protected override string _GetTemplateForLabelGenreWestern()
 	{
-		return "ã‚¦ã‚¨ã‚¹ã‚¿ãƒ³";
+		return "ウエスタン";
 	}
 
 	protected override string _GetTemplateForLabelGenreWildWest()
 	{
-		return "ã‚¦ã‚¨ã‚¹ã‚¿ãƒ³";
+		return "ウエスタン";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "é ­";
+		return "頭";
 	}
 
 	protected override string _GetTemplateForLabelMostFavorited()
 	{
-		return "ä¸€ç•ªäººæ°—";
+		return "一番人気";
 	}
 
 	protected override string _GetTemplateForLabelNoResellers()
 	{
-		return "å†è²©è€…ãªã—";
+		return "再販者なし";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "éžå£²å“";
+		return "非売品";
 	}
 
 	protected override string _GetTemplateForLabelPackages()
 	{
-		return "ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸";
+		return "パッケージ";
 	}
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "ãƒ‘ãƒ³ãƒ„";
+		return "パンツ";
 	}
 
 	protected override string _GetTemplateForLabelPastDay()
 	{
-		return "æ˜¨æ—¥";
+		return "昨日";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "å…ˆé€±";
+		return "先週";
 	}
 
 	protected override string _GetTemplateForLabelPriceHighFirst()
 	{
-		return "ä¾¡æ ¼ï¼ˆé«˜ã„é †ï¼‰";
+		return "価格（高い順）";
 	}
 
 	protected override string _GetTemplateForLabelPriceLowFirst()
 	{
-		return "ä¾¡æ ¼ï¼ˆå®‰ã„é †ï¼‰";
+		return "価格（安い順）";
 	}
 
 	protected override string _GetTemplateForLabelRecentlyUpdated()
 	{
-		return "æœ€è¿‘ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
+		return "最近アップデート";
 	}
 
 	protected override string _GetTemplateForLabelRelevance()
 	{
-		return "ä¸¦ã¹æ›¿ãˆ";
+		return "並べ替え";
 	}
 
 	protected override string _GetTemplateForLabelRoblox()
@@ -1671,42 +1673,42 @@ internal class CatalogResources_ja_jp : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelShirts()
 	{
-		return "ã‚·ãƒ£ãƒ„";
+		return "シャツ";
 	}
 
 	protected override string _GetTemplateForLabelTShirts()
 	{
-		return "Tã‚·ãƒ£ãƒ„";
+		return "Tシャツ";
 	}
 
 	protected override string _GetTemplateForResponseErrorFilter()
 	{
-		return "ãƒ•ã‚£ãƒ«ã‚¿ã‚¿ãƒ–ã«ã‚¨ãƒ©ãƒ¼ãŒã‚ã‚Šã¾ã™";
+		return "フィルタタブにエラーがあります";
 	}
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "エラーが発生しました。後でもう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseNoItemsFound()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
+		return "アイテムが見つかりません。";
 	}
 
 	protected override string _GetTemplateForResponseNoSaleItemsFromSearch()
 	{
-		return "æ¤œç´¢ã—ã¾ã—ãŸãŒã€è²©å£²ä¸­ã®ã‚¢ã‚¤ãƒ†ãƒ ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸã€‚åˆ©ç”¨ã§ããªã„ã‚¢ã‚¤ãƒ†ãƒ ãŒä»¥ä¸‹ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚";
+		return "検索しましたが、販売中のアイテムが見つかりませんでした。利用できないアイテムが以下に表示されます。";
 	}
 
 	protected override string _GetTemplateForResponseTemporarilyUnavailable()
 	{
-		return "ã‚«ã‚¿ãƒ­ã‚°ã¯ä¸€æ™‚çš„ã«åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "カタログは一時的に利用できません。後でもう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseThrottled()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã®é–“éš”ãŒçŸ­ã™ãŽã¾ã™ã€‚1åˆ†å¾Œã«ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "リクエストの間隔が短すぎます。1分後にもう一度お試しください。";
 	}
 }
 

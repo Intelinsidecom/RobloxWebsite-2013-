@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides AvatarResources_en_us to provide locale specific translations where possible,
@@ -6,109 +8,120 @@
 /// </summary>
 internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, ITranslationResources
 {
+
+    public IReadOnlyDictionary<string, string> GetAllKeys()
+    {
+        return base.GetAllKeys();
+    }
+
+    public string GetFullContentNamespaceName()
+    {
+        return "Feature.Avatar";
+    }
+
 	/// <summary>
 	/// Key: "Action.Advanced"
 	/// Click Advanced to get the advanced options
 	/// English String: "Advanced"
 	/// </summary>
-	public override string ActionAdvanced => "é€²éšŽ";
+	public override string ActionAdvanced => "Ã©â‚¬Â²Ã©Å¡Å½";
 
 	/// <summary>
 	/// Key: "Action.Buy"
 	/// Button used to buy an item to customize the user's avatar.
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "è³¼è²·";
+	public override string ActionBuy => "Ã¨Â³Â¼Ã¨Â²Â·";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "Ã¥Ââ€“Ã¦Â¶Ë†";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "é—œé–‰";
+	public override string ActionClose => "Ã©â€”Å“Ã©â€“â€°";
 
 	/// <summary>
 	/// Key: "Action.Create"
 	/// English String: "Create"
 	/// </summary>
-	public override string ActionCreate => "å‰µä½œ";
+	public override string ActionCreate => "Ã¥â€°ÂµÃ¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Action.CreateNewOutfit"
 	/// Button to create new outfit
 	/// English String: "Create"
 	/// </summary>
-	public override string ActionCreateNewOutfit => "å‰µä½œ";
+	public override string ActionCreateNewOutfit => "Ã¥â€°ÂµÃ¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "åˆªé™¤";
+	public override string ActionDelete => "Ã¥Ë†ÂªÃ©â„¢Â¤";
 
 	/// <summary>
 	/// Key: "Action.Done"
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "å®Œæˆ";
+	public override string ActionDone => "Ã¥Â®Å’Ã¦Ë†Â";
 
 	/// <summary>
 	/// Key: "Action.Get"
 	/// Button used to buy get an item for free to customize the user's avatar.
 	/// English String: "Get"
 	/// </summary>
-	public override string ActionGet => "é ˜å–";
+	public override string ActionGet => "Ã©Â ËœÃ¥Ââ€“";
 
 	/// <summary>
 	/// Key: "Action.GetMore"
 	/// A call to action for the user to buy more clothes from the Catalog page. This could improve how their avatar looks.
 	/// English String: "Get More"
 	/// </summary>
-	public override string ActionGetMore => "å‰å¾€åž‹éŒ„";
+	public override string ActionGetMore => "Ã¥â€°ÂÃ¥Â¾â‚¬Ã¥Å¾â€¹Ã©Å’â€ž";
 
 	/// <summary>
 	/// Key: "Action.OpenRobloxApp"
 	/// English String: "Open Roblox App"
 	/// </summary>
-	public override string ActionOpenRobloxApp => "é–‹å•Ÿ Roblox App";
+	public override string ActionOpenRobloxApp => "Ã©â€“â€¹Ã¥â€¢Å¸ Roblox App";
 
 	/// <summary>
 	/// Key: "Action.Redraw"
 	/// Redraw the avatar on the screen
 	/// English String: "Redraw"
 	/// </summary>
-	public override string ActionRedraw => "é‡ç¹ª";
+	public override string ActionRedraw => "Ã©â€¡ÂÃ§Â¹Âª";
 
 	/// <summary>
 	/// Key: "Action.Rename"
 	/// English String: "Rename"
 	/// </summary>
-	public override string ActionRename => "æ›´å";
+	public override string ActionRename => "Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Action.RenameOutfit"
 	/// Button to rename outfit
 	/// English String: "Rename"
 	/// </summary>
-	public override string ActionRenameOutfit => "æ›´å";
+	public override string ActionRenameOutfit => "Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "å„²å­˜";
+	public override string ActionSave => "Ã¥â€žÂ²Ã¥Â­Ëœ";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// See all clothing that user can buy
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string ActionSeeAll => "Ã¦Å¸Â¥Ã§Å“â€¹Ã¥â€¦Â¨Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Action.ThreeDimensions"
@@ -128,1102 +141,1102 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// Key: "Action.Update"
 	/// English String: "Update"
 	/// </summary>
-	public override string ActionUpdate => "æ›´æ–°";
+	public override string ActionUpdate => "Ã¦â€ºÂ´Ã¦â€“Â°";
 
 	/// <summary>
 	/// Key: "Action.UserUnderstands"
 	/// The user casually responds to the application saying that they understand how to navigate the menu.
 	/// English String: "Got it"
 	/// </summary>
-	public override string ActionUserUnderstands => "äº†è§£";
+	public override string ActionUserUnderstands => "Ã¤Âºâ€ Ã¨Â§Â£";
 
 	/// <summary>
 	/// Key: "Description.AvatarEditorUpsell"
 	/// English String: "To change your look you will need to use the Avatar Editor on the App."
 	/// </summary>
-	public override string DescriptionAvatarEditorUpsell => "è‹¥è¦è®Šæ›´æ‚¨çš„å¤–è§€ï¼Œæ‚¨éœ€è¦ä½¿ç”¨ App ä¸Šçš„è™›æ“¬äººå¶ç·¨è¼¯å™¨ã€‚";
+	public override string DescriptionAvatarEditorUpsell => "Ã¨â€¹Â¥Ã¨Â¦ÂÃ¨Â®Å Ã¦â€ºÂ´Ã¦â€šÂ¨Ã§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¯Â¼Å’Ã¦â€šÂ¨Ã©Å“â‚¬Ã¨Â¦ÂÃ¤Â½Â¿Ã§â€Â¨ App Ã¤Â¸Å Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§Â·Â¨Ã¨Â¼Â¯Ã¥â„¢Â¨Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Description.CreateNewCostume"
 	/// A costume will be created from your avatar's current appearance.
 	/// English String: "A costume will be created from your avatar's current appearance."
 	/// </summary>
-	public override string DescriptionCreateNewCostume => "å°‡ä¾ç…§æ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€å‰µä½œä¸€å¥—è£æ‰®ã€‚";
+	public override string DescriptionCreateNewCostume => "Ã¥Â°â€¡Ã¤Â¾ÂÃ§â€¦Â§Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¥Â¥â€”Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Description.CreateNewOutfit"
 	/// An outfit will be created from your avatar's current appearance.
 	/// English String: "An outfit will be created from your avatar's current appearance."
 	/// </summary>
-	public override string DescriptionCreateNewOutfit => "å°‡ä¾ç…§æ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€å‰µä½œä¸€å¥—æœé£¾ã€‚";
+	public override string DescriptionCreateNewOutfit => "Ã¥Â°â€¡Ã¤Â¾ÂÃ§â€¦Â§Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¥Â¥â€”Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Description.RenameCostume"
 	/// Choose a new name for your costume.
 	/// English String: "Choose a new name for your costume."
 	/// </summary>
-	public override string DescriptionRenameCostume => "ç‚ºæ‚¨çš„è£æ‰®å‘½åã€‚";
+	public override string DescriptionRenameCostume => "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥â€˜Â½Ã¥ÂÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Description.RenameOutfit"
 	/// Choose a new name for your outfit.
 	/// English String: "Choose a new name for your outfit."
 	/// </summary>
-	public override string DescriptionRenameOutfit => "ç‚ºæ‚¨çš„æœé£¾å‘½åã€‚";
+	public override string DescriptionRenameOutfit => "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¦Å“ÂÃ©Â£Â¾Ã¥â€˜Â½Ã¥ÂÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Heading.Accessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string HeadingAccessories => "é£¾å“";
+	public override string HeadingAccessories => "Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Heading.AccessoriesChange"
 	/// English String: "Accessories Change"
 	/// </summary>
-	public override string HeadingAccessoriesChange => "é£¾å“è®Šæ›´";
+	public override string HeadingAccessoriesChange => "Ã©Â£Â¾Ã¥â€œÂÃ¨Â®Å Ã¦â€ºÂ´";
 
 	/// <summary>
 	/// Key: "Heading.AdvancedOptions"
 	/// English String: "Advanced Options"
 	/// </summary>
-	public override string HeadingAdvancedOptions => "é€²éšŽé¸é …";
+	public override string HeadingAdvancedOptions => "Ã©â‚¬Â²Ã©Å¡Å½Ã©ÂÂ¸Ã©Â â€¦";
 
 	/// <summary>
 	/// Key: "Heading.All"
 	/// All avatar modification types
 	/// English String: "All"
 	/// </summary>
-	public override string HeadingAll => "å…¨éƒ¨";
+	public override string HeadingAll => "Ã¥â€¦Â¨Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Heading.Animations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string HeadingAnimations => "å‹•ç•«";
+	public override string HeadingAnimations => "Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Heading.Appearance"
 	/// English String: "Appearance"
 	/// </summary>
-	public override string HeadingAppearance => "å¤–è§€";
+	public override string HeadingAppearance => "Ã¥Â¤â€“Ã¨Â§â‚¬";
 
 	/// <summary>
 	/// Key: "Heading.AvatarPageTitle"
 	/// Page title for the Avatar page. On this page, the user can modify how they look.
 	/// English String: "Avatar Editor"
 	/// </summary>
-	public override string HeadingAvatarPageTitle => "è™›æ“¬äººå¶ç·¨è¼¯å™¨";
+	public override string HeadingAvatarPageTitle => "Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§Â·Â¨Ã¨Â¼Â¯Ã¥â„¢Â¨";
 
 	/// <summary>
 	/// Key: "Heading.Body"
 	/// English String: "Body"
 	/// </summary>
-	public override string HeadingBody => "èº«é«”";
+	public override string HeadingBody => "Ã¨ÂºÂ«Ã©Â«â€";
 
 	/// <summary>
 	/// Key: "Heading.BodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string HeadingBodyParts => "èº«é«”éƒ¨ä½";
+	public override string HeadingBodyParts => "Ã¨ÂºÂ«Ã©Â«â€Ã©Æ’Â¨Ã¤Â½Â";
 
 	/// <summary>
 	/// Key: "Heading.Clothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string HeadingClothing => "æœè£";
+	public override string HeadingClothing => "Ã¦Å“ÂÃ¨Â£Â";
 
 	/// <summary>
 	/// Key: "Heading.Costumes"
 	/// NOTE: Any instance of the word "Outfits" will eventually be swapped out for "Costumes" This is not currently in the UI
 	/// English String: "Costumes"
 	/// </summary>
-	public override string HeadingCostumes => "è£æ‰®";
+	public override string HeadingCostumes => "Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Heading.CreateNewCostume"
 	/// NOTE: Costume is a more whimsical word choice for outfit. Any instance of the word "outfit" will eventually be swapped out for "costume" This is not currently in the UI
 	/// English String: "Create New Costume"
 	/// </summary>
-	public override string HeadingCreateNewCostume => "å‰µä½œæ–°è£æ‰®";
+	public override string HeadingCreateNewCostume => "Ã¥â€°ÂµÃ¤Â½Å“Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Heading.CreateNewOutfit"
 	/// English String: "Create New Outfit"
 	/// </summary>
-	public override string HeadingCreateNewOutfit => "å‰µä½œæ–°æœé£¾";
+	public override string HeadingCreateNewOutfit => "Ã¥â€°ÂµÃ¤Â½Å“Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Heading.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string HeadingDelete => "åˆªé™¤";
+	public override string HeadingDelete => "Ã¥Ë†ÂªÃ©â„¢Â¤";
 
 	/// <summary>
 	/// Key: "Heading.DeleteCostume"
 	/// NOTE: Any instance of the word "Outfit" will eventually be swapped out for "Costume" This is not currently in the UI
 	/// English String: "Delete Costume"
 	/// </summary>
-	public override string HeadingDeleteCostume => "åˆªé™¤è£æ‰®";
+	public override string HeadingDeleteCostume => "Ã¥Ë†ÂªÃ©â„¢Â¤Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Heading.DeleteOutfit"
 	/// English String: "Delete Outfit"
 	/// </summary>
-	public override string HeadingDeleteOutfit => "åˆªé™¤æœé£¾";
+	public override string HeadingDeleteOutfit => "Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Heading.Emotes"
 	/// English String: "Emotes"
 	/// </summary>
-	public override string HeadingEmotes => "å‹•ä½œ";
+	public override string HeadingEmotes => "Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Heading.EquipEmotes"
 	/// English String: "Equip Emotes"
 	/// </summary>
-	public override string HeadingEquipEmotes => "è£ä¸Šå‹•ä½œ";
+	public override string HeadingEquipEmotes => "Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Heading.Outfits"
 	/// English String: "Outfits"
 	/// </summary>
-	public override string HeadingOutfits => "æœé£¾";
+	public override string HeadingOutfits => "Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Heading.Packages"
 	/// English String: "Packages"
 	/// </summary>
-	public override string HeadingPackages => "å¥—è£";
+	public override string HeadingPackages => "Ã¥Â¥â€”Ã¨Â£Â";
 
 	/// <summary>
 	/// Key: "Heading.Recent"
 	/// English String: "Recent"
 	/// </summary>
-	public override string HeadingRecent => "æœ€è¿‘ä½¿ç”¨";
+	public override string HeadingRecent => "Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨";
 
 	/// <summary>
 	/// Key: "Heading.Recommended"
 	/// See recommended clothing for your avatar
 	/// English String: "Recommended"
 	/// </summary>
-	public override string HeadingRecommended => "æŽ¨è–¦";
+	public override string HeadingRecommended => "Ã¦Å½Â¨Ã¨â€“Â¦";
 
 	/// <summary>
 	/// Key: "Heading.RenameCostume"
 	/// English String: "Rename Costume"
 	/// </summary>
-	public override string HeadingRenameCostume => "ç‚ºè£æ‰®æ›´å";
+	public override string HeadingRenameCostume => "Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Heading.RenameOutfit"
 	/// English String: "Rename Outfit"
 	/// </summary>
-	public override string HeadingRenameOutfit => "ç‚ºæœé£¾æ›´å";
+	public override string HeadingRenameOutfit => "Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Heading.Scaling"
 	/// English String: "Scaling"
 	/// </summary>
-	public override string HeadingScaling => "ç¸®æ”¾";
+	public override string HeadingScaling => "Ã§Â¸Â®Ã¦â€Â¾";
 
 	/// <summary>
 	/// Key: "Heading.SkinToneBodyParts"
 	/// English String: "Skin Tone by Body Parts"
 	/// </summary>
-	public override string HeadingSkinToneBodyParts => "è†šè‰²ï¼ˆæŒ‰èº«é«”éƒ¨ä½ï¼‰";
+	public override string HeadingSkinToneBodyParts => "Ã¨â€ Å¡Ã¨â€°Â²Ã¯Â¼Ë†Ã¦Å’â€°Ã¨ÂºÂ«Ã©Â«â€Ã©Æ’Â¨Ã¤Â½ÂÃ¯Â¼â€°";
 
 	/// <summary>
 	/// Key: "Heading.Update"
 	/// English String: "Update"
 	/// </summary>
-	public override string HeadingUpdate => "æ›´æ–°";
+	public override string HeadingUpdate => "Ã¦â€ºÂ´Ã¦â€“Â°";
 
 	/// <summary>
 	/// Key: "Heading.UpdateCostume"
 	/// NOTE: Any instance of the word "Outfit" will eventually be swapped out for "Costume" This is not currently in the UI
 	/// English String: "Update Costume"
 	/// </summary>
-	public override string HeadingUpdateCostume => "æ›´æ–°è£æ‰®";
+	public override string HeadingUpdateCostume => "Ã¦â€ºÂ´Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Heading.UpdateOutfit"
 	/// English String: "Update Outfit"
 	/// </summary>
-	public override string HeadingUpdateOutfit => "æ›´æ–°æœé£¾";
+	public override string HeadingUpdateOutfit => "Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// All body parts. This label will allow for body parts to change color
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "å…¨éƒ¨";
+	public override string LabelAll => "Ã¥â€¦Â¨Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.AskIfLoadingCorrectly"
 	/// Avatar isn't loading correctly?
 	/// English String: "Avatar isn't loading correctly?"
 	/// </summary>
-	public override string LabelAskIfLoadingCorrectly => "è™›æ“¬äººå¶æœªæ­£ç¢ºè¼‰å…¥ï¼Ÿ";
+	public override string LabelAskIfLoadingCorrectly => "Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¦Å“ÂªÃ¦Â­Â£Ã§Â¢ÂºÃ¨Â¼â€°Ã¥â€¦Â¥Ã¯Â¼Å¸";
 
 	/// <summary>
 	/// Key: "Label.AssetIDPlaceholder"
 	/// This refers to the Asset ID which is a technical word for the Identification Number of an item or asset.
 	/// English String: "Asset ID"
 	/// </summary>
-	public override string LabelAssetIDPlaceholder => "ç´ æ ID";
+	public override string LabelAssetIDPlaceholder => "Ã§Â´Â Ã¦ÂÂ ID";
 
 	/// <summary>
 	/// Key: "Label.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelBack => "èƒŒé¢";
+	public override string LabelBack => "Ã¨Æ’Å’Ã©ÂÂ¢";
 
 	/// <summary>
 	/// Key: "Label.BackAccessories"
 	/// English String: "Back Accessories"
 	/// </summary>
-	public override string LabelBackAccessories => "èƒŒé¢é£¾å“";
+	public override string LabelBackAccessories => "Ã¨Æ’Å’Ã©ÂÂ¢Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.BodyType"
 	/// English String: "Body Type"
 	/// </summary>
-	public override string LabelBodyType => "é«”åž‹";
+	public override string LabelBodyType => "Ã©Â«â€Ã¥Å¾â€¹";
 
 	/// <summary>
 	/// Key: "Label.Climb"
 	/// English String: "Climb"
 	/// </summary>
-	public override string LabelClimb => "æ”€çˆ¬";
+	public override string LabelClimb => "Ã¦â€â‚¬Ã§Ë†Â¬";
 
 	/// <summary>
 	/// Key: "Label.ClimbAnimations"
 	/// English String: "Climb Animations"
 	/// </summary>
-	public override string LabelClimbAnimations => "æ”€çˆ¬å‹•ç•«";
+	public override string LabelClimbAnimations => "Ã¦â€â‚¬Ã§Ë†Â¬Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.Clothes"
 	/// English String: "Clothes"
 	/// </summary>
-	public override string LabelClothes => "è¡£ç‰©";
+	public override string LabelClothes => "Ã¨Â¡Â£Ã§â€°Â©";
 
 	/// <summary>
 	/// Key: "Label.Costume"
 	/// NOTE: Any instance of the word "Outfit" will eventually be swapped out for "Costume" This is not currently in the UI
 	/// English String: "Costume"
 	/// </summary>
-	public override string LabelCostume => "è£æ‰®";
+	public override string LabelCostume => "Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "label.Emotes"
 	/// English String: "Emotes"
 	/// </summary>
-	public override string labelEmotes => "å‹•ä½œ";
+	public override string labelEmotes => "Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Label.Equip"
 	/// English String: "Equip"
 	/// </summary>
-	public override string LabelEquip => "è£å‚™";
+	public override string LabelEquip => "Ã¨Â£ÂÃ¥â€šâ„¢";
 
 	/// <summary>
 	/// Key: "Label.ExploreCatalog"
 	/// This text entices users to shop for more things to wear on their avatar
 	/// English String: "Explore the catalog to find more clothes!"
 	/// </summary>
-	public override string LabelExploreCatalog => "ç€è¦½åž‹éŒ„ï¼Œå°‹æ‰¾æ›´å¤šæœè£ï¼";
+	public override string LabelExploreCatalog => "Ã§â‚¬ÂÃ¨Â¦Â½Ã¥Å¾â€¹Ã©Å’â€žÃ¯Â¼Å’Ã¥Â°â€¹Ã¦â€°Â¾Ã¦â€ºÂ´Ã¥Â¤Å¡Ã¦Å“ÂÃ¨Â£ÂÃ¯Â¼Â";
 
 	/// <summary>
 	/// Key: "Label.Face"
 	/// English String: "Face"
 	/// </summary>
-	public override string LabelFace => "è‡‰éƒ¨";
+	public override string LabelFace => "Ã¨â€¡â€°Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.FaceAccessories"
 	/// English String: "Face Accessories"
 	/// </summary>
-	public override string LabelFaceAccessories => "è‡‰éƒ¨é£¾å“";
+	public override string LabelFaceAccessories => "Ã¨â€¡â€°Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Faces"
 	/// English String: "Faces"
 	/// </summary>
-	public override string LabelFaces => "è‡‰éƒ¨";
+	public override string LabelFaces => "Ã¨â€¡â€°Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.Fall"
 	/// English String: "Fall"
 	/// </summary>
-	public override string LabelFall => "è·Œè½";
+	public override string LabelFall => "Ã¨Â·Å’Ã¨ÂÂ½";
 
 	/// <summary>
 	/// Key: "Label.FallAnimations"
 	/// English String: "Fall Animations"
 	/// </summary>
-	public override string LabelFallAnimations => "è·Œè½å‹•ç•«";
+	public override string LabelFallAnimations => "Ã¨Â·Å’Ã¨ÂÂ½Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// Text label for recommended items
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "å…è²»";
+	public override string LabelFree => "Ã¥â€¦ÂÃ¨Â²Â»";
 
 	/// <summary>
 	/// Key: "Label.Front"
 	/// English String: "Front"
 	/// </summary>
-	public override string LabelFront => "æ­£é¢";
+	public override string LabelFront => "Ã¦Â­Â£Ã©ÂÂ¢";
 
 	/// <summary>
 	/// Key: "Label.FrontAccessories"
 	/// English String: "Front Accessories"
 	/// </summary>
-	public override string LabelFrontAccessories => "æ­£é¢é£¾å“";
+	public override string LabelFrontAccessories => "Ã¦Â­Â£Ã©ÂÂ¢Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Gear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "è£å‚™";
+	public override string LabelGear => "Ã¨Â£ÂÃ¥â€šâ„¢";
 
 	/// <summary>
 	/// Key: "Label.Hair"
 	/// English String: "Hair"
 	/// </summary>
-	public override string LabelHair => "é«®åž‹";
+	public override string LabelHair => "Ã©Â«Â®Ã¥Å¾â€¹";
 
 	/// <summary>
 	/// Key: "Label.HairAccessories"
 	/// English String: "Hair Accessories"
 	/// </summary>
-	public override string LabelHairAccessories => "é«®åž‹é£¾å“";
+	public override string LabelHairAccessories => "Ã©Â«Â®Ã¥Å¾â€¹Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Hat"
 	/// English String: "Hat"
 	/// </summary>
-	public override string LabelHat => "å¸½å­";
+	public override string LabelHat => "Ã¥Â¸Â½Ã¥Â­Â";
 
 	/// <summary>
 	/// Key: "Label.HatAccessories"
 	/// English String: "Hat Accessories"
 	/// </summary>
-	public override string LabelHatAccessories => "å¸½å­é£¾å“";
+	public override string LabelHatAccessories => "Ã¥Â¸Â½Ã¥Â­ÂÃ©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Head"
 	/// English String: "Head"
 	/// </summary>
-	public override string LabelHead => "é ­éƒ¨";
+	public override string LabelHead => "Ã©Â Â­Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.Heads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "é ­éƒ¨";
+	public override string LabelHeads => "Ã©Â Â­Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.Height"
 	/// English String: "Height"
 	/// </summary>
-	public override string LabelHeight => "é«˜åº¦";
+	public override string LabelHeight => "Ã©Â«ËœÃ¥ÂºÂ¦";
 
 	/// <summary>
 	/// Key: "Label.Idle"
 	/// English String: "Idle"
 	/// </summary>
-	public override string LabelIdle => "é–’ç½®";
+	public override string LabelIdle => "Ã©â€“â€™Ã§Â½Â®";
 
 	/// <summary>
 	/// Key: "Label.IdleAnimations"
 	/// English String: "Idle Animations"
 	/// </summary>
-	public override string LabelIdleAnimations => "é–’ç½®å‹•ç•«";
+	public override string LabelIdleAnimations => "Ã©â€“â€™Ã§Â½Â®Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.Jump"
 	/// English String: "Jump"
 	/// </summary>
-	public override string LabelJump => "è·³èº";
+	public override string LabelJump => "Ã¨Â·Â³Ã¨ÂºÂ";
 
 	/// <summary>
 	/// Key: "Label.JumpAnimations"
 	/// English String: "Jump Animations"
 	/// </summary>
-	public override string LabelJumpAnimations => "è·³èºå‹•ç•«";
+	public override string LabelJumpAnimations => "Ã¨Â·Â³Ã¨ÂºÂÃ¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.LeftArm"
 	/// English String: "Left Arm"
 	/// </summary>
-	public override string LabelLeftArm => "å·¦è‡‚";
+	public override string LabelLeftArm => "Ã¥Â·Â¦Ã¨â€¡â€š";
 
 	/// <summary>
 	/// Key: "Label.LeftArms"
 	/// English String: "Left Arms"
 	/// </summary>
-	public override string LabelLeftArms => "å·¦è‡‚";
+	public override string LabelLeftArms => "Ã¥Â·Â¦Ã¨â€¡â€š";
 
 	/// <summary>
 	/// Key: "Label.LeftLeg"
 	/// English String: "Left Leg"
 	/// </summary>
-	public override string LabelLeftLeg => "å·¦è…¿";
+	public override string LabelLeftLeg => "Ã¥Â·Â¦Ã¨â€¦Â¿";
 
 	/// <summary>
 	/// Key: "Label.LeftLegs"
 	/// English String: "Left Legs"
 	/// </summary>
-	public override string LabelLeftLegs => "å·¦è…¿";
+	public override string LabelLeftLegs => "Ã¥Â·Â¦Ã¨â€¦Â¿";
 
 	/// <summary>
 	/// Key: "Label.MyCostumes"
 	/// NOTE: Any instance of the word "Outfits" will eventually be swapped out for "Costumes" This is not currently in the UI
 	/// English String: "My Costumes"
 	/// </summary>
-	public override string LabelMyCostumes => "æˆ‘çš„è£æ‰®";
+	public override string LabelMyCostumes => "Ã¦Ë†â€˜Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Label.NamePlaceholderCostume"
 	/// English String: "Name your costume"
 	/// </summary>
-	public override string LabelNamePlaceholderCostume => "ç‚ºæ‚¨çš„è£æ‰®å‘½å";
+	public override string LabelNamePlaceholderCostume => "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥â€˜Â½Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Label.NamePlaceholderOutfit"
 	/// English String: "Name your outfit"
 	/// </summary>
-	public override string LabelNamePlaceholderOutfit => "å‘½åæœé£¾";
+	public override string LabelNamePlaceholderOutfit => "Ã¥â€˜Â½Ã¥ÂÂÃ¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Label.Neck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelNeck => "é ¸éƒ¨";
+	public override string LabelNeck => "Ã©Â Â¸Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.NeckAccessories"
 	/// English String: "Neck Accessories"
 	/// </summary>
-	public override string LabelNeckAccessories => "é ¸éƒ¨é£¾å“";
+	public override string LabelNeckAccessories => "Ã©Â Â¸Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.NoResellers"
 	/// Text label for recommended items
 	/// English String: "No resellers"
 	/// </summary>
-	public override string LabelNoResellers => "æ²’æœ‰äººè½‰è³£";
+	public override string LabelNoResellers => "Ã¦Â²â€™Ã¦Å“â€°Ã¤ÂºÂºÃ¨Â½â€°Ã¨Â³Â£";
 
 	/// <summary>
 	/// Key: "Label.OffSale"
 	/// Text label for recommended items
 	/// English String: "Off sale"
 	/// </summary>
-	public override string LabelOffSale => "ä¸‹æž¶";
+	public override string LabelOffSale => "Ã¤Â¸â€¹Ã¦Å¾Â¶";
 
 	/// <summary>
 	/// Key: "Label.Outfit"
 	/// English String: "Outfit"
 	/// </summary>
-	public override string LabelOutfit => "æœé£¾";
+	public override string LabelOutfit => "Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Label.Pants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "è¤²å­";
+	public override string LabelPants => "Ã¨Â¤Â²Ã¥Â­Â";
 
 	/// <summary>
 	/// Key: "Label.Parts"
 	/// English String: "Parts"
 	/// </summary>
-	public override string LabelParts => "éƒ¨ä½";
+	public override string LabelParts => "Ã©Æ’Â¨Ã¤Â½Â";
 
 	/// <summary>
 	/// Key: "Label.PresetCostumes"
 	/// NOTE: Any instance of the word "Outfits" will eventually be swapped out for "Costumes" This is not currently in the UI
 	/// English String: "Preset Costumes"
 	/// </summary>
-	public override string LabelPresetCostumes => "é è¨­è£æ‰®";
+	public override string LabelPresetCostumes => "Ã©Â ÂÃ¨Â¨Â­Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Label.Proportions"
 	/// English String: "Proportions"
 	/// </summary>
-	public override string LabelProportions => "èº«æ";
+	public override string LabelProportions => "Ã¨ÂºÂ«Ã¦ÂÂ";
 
 	/// <summary>
 	/// Key: "Label.RedrawUnavailable"
 	/// Avatar redraw is unavailable
 	/// English String: "Avatar redraw is unavailable."
 	/// </summary>
-	public override string LabelRedrawUnavailable => "ç„¡æ³•ä½¿ç”¨è™›æ“¬äººå¶é‡ç¹ªã€‚";
+	public override string LabelRedrawUnavailable => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¤Â½Â¿Ã§â€Â¨Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©â€¡ÂÃ§Â¹ÂªÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Label.RightArm"
 	/// English String: "Right Arm"
 	/// </summary>
-	public override string LabelRightArm => "å³è‡‚";
+	public override string LabelRightArm => "Ã¥ÂÂ³Ã¨â€¡â€š";
 
 	/// <summary>
 	/// Key: "Label.RightArms"
 	/// English String: "Right Arms"
 	/// </summary>
-	public override string LabelRightArms => "å³è‡‚";
+	public override string LabelRightArms => "Ã¥ÂÂ³Ã¨â€¡â€š";
 
 	/// <summary>
 	/// Key: "Label.RightLeg"
 	/// English String: "Right Leg"
 	/// </summary>
-	public override string LabelRightLeg => "å³è…¿";
+	public override string LabelRightLeg => "Ã¥ÂÂ³Ã¨â€¦Â¿";
 
 	/// <summary>
 	/// Key: "Label.RightLegs"
 	/// English String: "Right Legs"
 	/// </summary>
-	public override string LabelRightLegs => "å³è…¿";
+	public override string LabelRightLegs => "Ã¥ÂÂ³Ã¨â€¦Â¿";
 
 	/// <summary>
 	/// Key: "Label.Run"
 	/// English String: "Run"
 	/// </summary>
-	public override string LabelRun => "å¥”è·‘";
+	public override string LabelRun => "Ã¥Â¥â€Ã¨Â·â€˜";
 
 	/// <summary>
 	/// Key: "Label.RunAnimations"
 	/// English String: "Run Animations"
 	/// </summary>
-	public override string LabelRunAnimations => "å¥”è·‘å‹•ç•«";
+	public override string LabelRunAnimations => "Ã¥Â¥â€Ã¨Â·â€˜Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.Scale"
 	/// English String: "Scale"
 	/// </summary>
-	public override string LabelScale => "æ¯”ä¾‹";
+	public override string LabelScale => "Ã¦Â¯â€Ã¤Â¾â€¹";
 
 	/// <summary>
 	/// Key: "Label.Shirts"
 	/// English String: "Shirts"
 	/// </summary>
-	public override string LabelShirts => "è¥¯è¡«";
+	public override string LabelShirts => "Ã¨Â¥Â¯Ã¨Â¡Â«";
 
 	/// <summary>
 	/// Key: "Label.ShoulderAccessories"
 	/// English String: "Shoulder Accessories"
 	/// </summary>
-	public override string LabelShoulderAccessories => "è‚©è†€é£¾å“";
+	public override string LabelShoulderAccessories => "Ã¨â€šÂ©Ã¨â€ â‚¬Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Shoulders"
 	/// English String: "Shoulders"
 	/// </summary>
-	public override string LabelShoulders => "è‚©è†€";
+	public override string LabelShoulders => "Ã¨â€šÂ©Ã¨â€ â‚¬";
 
 	/// <summary>
 	/// Key: "Label.SkinTone"
 	/// English String: "Skin Tone"
 	/// </summary>
-	public override string LabelSkinTone => "è†šè‰²";
+	public override string LabelSkinTone => "Ã¨â€ Å¡Ã¨â€°Â²";
 
 	/// <summary>
 	/// Key: "Label.Swim"
 	/// English String: "Swim"
 	/// </summary>
-	public override string LabelSwim => "æ¸¸æ³³";
+	public override string LabelSwim => "Ã¦Â¸Â¸Ã¦Â³Â³";
 
 	/// <summary>
 	/// Key: "Label.SwimAnimations"
 	/// English String: "Swim Animations"
 	/// </summary>
-	public override string LabelSwimAnimations => "æ¸¸æ³³å‹•ç•«";
+	public override string LabelSwimAnimations => "Ã¦Â¸Â¸Ã¦Â³Â³Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.SwitchAvatarType"
 	/// User is able to increase the number of joints in their avatar from 6 to 15. R15 moves better. See http://roblox.wikia.com/wiki/R15
 	/// English String: "Switch between classic R6 avatar and more expressive next generation R15 avatar"
 	/// </summary>
-	public override string LabelSwitchAvatarType => "åœ¨ç¶“å…¸ R6 è™›æ“¬äººå¶èˆ‡æ›´æœ‰è¡¨ç¾åŠ›çš„æ–°ä¸€ä»£ R15 è™›æ“¬äººå¶ä¹‹é–“åˆ‡æ›";
+	public override string LabelSwitchAvatarType => "Ã¥Å“Â¨Ã§Â¶â€œÃ¥â€¦Â¸ R6 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¨Ë†â€¡Ã¦â€ºÂ´Ã¦Å“â€°Ã¨Â¡Â¨Ã§ÂÂ¾Ã¥Å â€ºÃ§Å¡â€žÃ¦â€“Â°Ã¤Â¸â‚¬Ã¤Â»Â£ R15 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¤Â¹â€¹Ã©â€“â€œÃ¥Ë†â€¡Ã¦Ââ€º";
 
 	/// <summary>
 	/// Key: "Label.Torso"
 	/// English String: "Torso"
 	/// </summary>
-	public override string LabelTorso => "è»€å¹¹";
+	public override string LabelTorso => "Ã¨Â»â‚¬Ã¥Â¹Â¹";
 
 	/// <summary>
 	/// Key: "Label.Torsos"
 	/// English String: "Torsos"
 	/// </summary>
-	public override string LabelTorsos => "è»€å¹¹";
+	public override string LabelTorsos => "Ã¨Â»â‚¬Ã¥Â¹Â¹";
 
 	/// <summary>
 	/// Key: "Label.TShirts"
 	/// English String: "T-Shirts"
 	/// </summary>
-	public override string LabelTShirts => "T æ¤";
+	public override string LabelTShirts => "T Ã¦ÂÂ¤";
 
 	/// <summary>
 	/// Key: "Label.Waist"
 	/// English String: "Waist"
 	/// </summary>
-	public override string LabelWaist => "è…°éƒ¨";
+	public override string LabelWaist => "Ã¨â€¦Â°Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Label.WaistAccessories"
 	/// English String: "Waist Accessories"
 	/// </summary>
-	public override string LabelWaistAccessories => "è…°éƒ¨é£¾å“";
+	public override string LabelWaistAccessories => "Ã¨â€¦Â°Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Label.Walk"
 	/// English String: "Walk"
 	/// </summary>
-	public override string LabelWalk => "æ­¥è¡Œ";
+	public override string LabelWalk => "Ã¦Â­Â¥Ã¨Â¡Å’";
 
 	/// <summary>
 	/// Key: "Label.WalkAnimations"
 	/// English String: "Walk Animations"
 	/// </summary>
-	public override string LabelWalkAnimations => "æ­¥è¡Œå‹•ç•«";
+	public override string LabelWalkAnimations => "Ã¦Â­Â¥Ã¨Â¡Å’Ã¥â€¹â€¢Ã§â€¢Â«";
 
 	/// <summary>
 	/// Key: "Label.Width"
 	/// English String: "Width"
 	/// </summary>
-	public override string LabelWidth => "å¯¬åº¦";
+	public override string LabelWidth => "Ã¥Â¯Â¬Ã¥ÂºÂ¦";
 
 	/// <summary>
 	/// Key: "Label.YourEmotes"
 	/// English String: "Your Emotes"
 	/// </summary>
-	public override string LabelYourEmotes => "æ‚¨çš„å‹•ä½œ";
+	public override string LabelYourEmotes => "Ã¦â€šÂ¨Ã§Å¡â€žÃ¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Message.AccessoriesChange"
 	/// English String: "Are you sure you want to override your current look?"
 	/// </summary>
-	public override string MessageAccessoriesChange => "ç¢ºå®šè¦†è“‹ç›®å‰çš„å¤–è§€ï¼Ÿ";
+	public override string MessageAccessoriesChange => "Ã§Â¢ÂºÃ¥Â®Å¡Ã¨Â¦â€ Ã¨â€œâ€¹Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¯Â¼Å¸";
 
 	/// <summary>
 	/// Key: "Message.ChooseEmote"
 	/// English String: "Choose an Emote"
 	/// </summary>
-	public override string MessageChooseEmote => "é¸æ“‡å‹•ä½œ";
+	public override string MessageChooseEmote => "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Message.ChooseEmoteSlot"
 	/// English String: "Choose a slot"
 	/// </summary>
-	public override string MessageChooseEmoteSlot => "é¸æ“‡æ¬„ä½";
+	public override string MessageChooseEmoteSlot => "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¦Â¬â€žÃ¤Â½Â";
 
 	/// <summary>
 	/// Key: "Message.ChooseEmoteSlotOrEmote"
 	/// English String: "Choose a slot or an Emote"
 	/// </summary>
-	public override string MessageChooseEmoteSlotOrEmote => "é¸æ“‡æ¬„ä½æˆ–å‹•ä½œ";
+	public override string MessageChooseEmoteSlotOrEmote => "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¦Â¬â€žÃ¤Â½ÂÃ¦Ë†â€“Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Message.DefaultClothing"
 	/// Encourage user to choose their own clothes.
 	/// English String: "Default clothing has been applied to your avatar - wear something from your clothing."
 	/// </summary>
-	public override string MessageDefaultClothing => "å·²åœ¨æ‚¨çš„è™›æ“¬äººå¶å¥—ç”¨é è¨­æœè£ï¼Œè«‹è‡ªè¡Œé¸æ“‡è¦ç©¿ä¸Šçš„æœè£ã€‚";
+	public override string MessageDefaultClothing => "Ã¥Â·Â²Ã¥Å“Â¨Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¥Â¥â€”Ã§â€Â¨Ã©Â ÂÃ¨Â¨Â­Ã¦Å“ÂÃ¨Â£ÂÃ¯Â¼Å’Ã¨Â«â€¹Ã¨â€¡ÂªÃ¨Â¡Å’Ã©ÂÂ¸Ã¦â€œâ€¡Ã¨Â¦ÂÃ§Â©Â¿Ã¤Â¸Å Ã§Å¡â€žÃ¦Å“ÂÃ¨Â£ÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.DeleteThisCostume"
 	/// NOTE: Any instance of the word "outfit" will eventually be swapped out for "costume" This is not currently in the UI
 	/// English String: "Are you sure you want to delete this costume?"
 	/// </summary>
-	public override string MessageDeleteThisCostume => "ç¢ºå®šåˆªé™¤æ­¤è£æ‰®ï¼Ÿ";
+	public override string MessageDeleteThisCostume => "Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å¸";
 
 	/// <summary>
 	/// Key: "Message.DeleteThisOutfit"
 	/// English String: "Are you sure you want to delete this outfit?"
 	/// </summary>
-	public override string MessageDeleteThisOutfit => "ç¢ºå®šåˆªé™¤æ­¤æœé£¾ï¼Ÿ";
+	public override string MessageDeleteThisOutfit => "Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å¸";
 
 	/// <summary>
 	/// Key: "Message.EmotesInstructions"
 	/// The instructions describe the navigation flow within the Avatar Editor to equip an emote.
 	/// English String: "Go to \"Animations\" &gt; \"Emotes\" &gt; \"Equip Emotes\" to equip an emote."
 	/// </summary>
-	public override string MessageEmotesInstructions => "å‰å¾€ã€Œå‹•ç•«ã€>ã€Œå‹•ä½œã€>ã€Œè£å‚™å‹•ä½œã€ä¾†è£å‚™å‹•ä½œã€‚";
+	public override string MessageEmotesInstructions => "Ã¥â€°ÂÃ¥Â¾â‚¬Ã£â‚¬Å’Ã¥â€¹â€¢Ã§â€¢Â«Ã£â‚¬Â>Ã£â‚¬Å’Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬Â>Ã£â‚¬Å’Ã¨Â£ÂÃ¥â€šâ„¢Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬ÂÃ¤Â¾â€ Ã¨Â£ÂÃ¥â€šâ„¢Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.EmptyAssetList"
 	/// User is seeing no assets on this page because they don't have any.
 	/// English String: "You don't have any."
 	/// </summary>
-	public override string MessageEmptyAssetList => "æ‚¨æ²’æœ‰ç´ æã€‚";
+	public override string MessageEmptyAssetList => "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã§Â´Â Ã¦ÂÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.EmptyListOfCostumes"
 	/// The user is viewing an empty list of costumes to choose from. The application tells the user that they can create an costume.
 	/// English String: "You don't have any costumes. Try creating some!"
 	/// </summary>
-	public override string MessageEmptyListOfCostumes => "æ‚¨æ²’æœ‰ä»»ä½•è£æ‰®ã€‚è«‹è©¦è‘—å‰µä½œä¸€äº›å§ï¼";
+	public override string MessageEmptyListOfCostumes => "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã¤Â»Â»Ã¤Â½â€¢Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€šÃ¨Â«â€¹Ã¨â€˜â€”Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¤Âºâ€ºÃ¥ÂÂ§Ã¯Â¼Â";
 
 	/// <summary>
 	/// Key: "Message.EmptyListOfOutfits"
 	/// The user is viewing an empty list of outfits to choose from. The application tells the user that they can create an outfit.
 	/// English String: "You don't have any outfits. Try creating some!"
 	/// </summary>
-	public override string MessageEmptyListOfOutfits => "æ‚¨æ²’æœ‰ä»»ä½•æœé£¾ï¼Œè«‹å˜—è©¦å‰µä½œæœé£¾å§ï¼";
+	public override string MessageEmptyListOfOutfits => "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã¤Â»Â»Ã¤Â½â€¢Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã¥Ëœâ€”Ã¨Â©Â¦Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾Ã¥ÂÂ§Ã¯Â¼Â";
 
 	/// <summary>
 	/// Key: "Message.EmptyRecentItems"
 	/// English String: "You don't have any recent items."
 	/// </summary>
-	public override string MessageEmptyRecentItems => "æ²’æœ‰æœ€è¿‘ä½¿ç”¨çš„é“å…·ã€‚";
+	public override string MessageEmptyRecentItems => "Ã¦Â²â€™Ã¦Å“â€°Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorCreateCostume"
 	/// English String: "Unable to create costume, try again later."
 	/// </summary>
-	public override string MessageErrorCreateCostume => "ç„¡æ³•å‰µä½œè£æ‰®ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorCreateCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥â€°ÂµÃ¤Â½Å“Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorCreateOutfit"
 	/// English String: "Unable to create outfit, try again later."
 	/// </summary>
-	public override string MessageErrorCreateOutfit => "ç„¡æ³•å‰µä½œæœé£¾ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorCreateOutfit => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorDeleteEmote"
 	/// English String: "Failed to delete emote."
 	/// </summary>
-	public override string MessageErrorDeleteEmote => "ç„¡æ³•åˆªé™¤å‹•ä½œã€‚";
+	public override string MessageErrorDeleteEmote => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorEquipEmote"
 	/// English String: "Failed to equip emote, please try again later."
 	/// </summary>
-	public override string MessageErrorEquipEmote => "ç„¡æ³•è£ä¸Šå‹•ä½œï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorEquipEmote => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorLoadCostume"
 	/// English String: "Failed to load costume."
 	/// </summary>
-	public override string MessageErrorLoadCostume => "ç„¡æ³•è¼‰å…¥è£æ‰®ã€‚";
+	public override string MessageErrorLoadCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorLoadEmotes"
 	/// English String: "Failed to load emotes."
 	/// </summary>
-	public override string MessageErrorLoadEmotes => "ç„¡æ³•è¼‰å…¥å‹•ä½œã€‚";
+	public override string MessageErrorLoadEmotes => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorLoadOutfits"
 	/// English String: "Failed to load outfits."
 	/// </summary>
-	public override string MessageErrorLoadOutfits => "ç„¡æ³•è¼‰å…¥æœé£¾ã€‚";
+	public override string MessageErrorLoadOutfits => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorOutfitName"
 	/// English String: "Name can contain letters, numbers, and spaces."
 	/// </summary>
-	public override string MessageErrorOutfitName => "åç¨±å¯å«æœ‰å­—æ¯ã€æ•¸å­—å’Œç©ºæ ¼ã€‚";
+	public override string MessageErrorOutfitName => "Ã¥ÂÂÃ§Â¨Â±Ã¥ÂÂ¯Ã¥ÂÂ«Ã¦Å“â€°Ã¥Â­â€”Ã¦Â¯ÂÃ£â‚¬ÂÃ¦â€¢Â¸Ã¥Â­â€”Ã¥â€™Å’Ã§Â©ÂºÃ¦Â Â¼Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorRenameCostume"
 	/// English String: "Failed to rename costume."
 	/// </summary>
-	public override string MessageErrorRenameCostume => "ç„¡æ³•ç‚ºè£æ‰®æ›´åã€‚";
+	public override string MessageErrorRenameCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorRenameOutfit"
 	/// English String: "Failed to rename outfit."
 	/// </summary>
-	public override string MessageErrorRenameOutfit => "ç„¡æ³•ç‚ºæœé£¾æ›´åã€‚";
+	public override string MessageErrorRenameOutfit => "Ã§â€žÂ¡Ã¦Â³â€¢Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorUnequipEmote"
 	/// English String: "Failed to unequip emote."
 	/// </summary>
-	public override string MessageErrorUnequipEmote => "ç„¡æ³•å¸ä¸‹å‹•ä½œã€‚";
+	public override string MessageErrorUnequipEmote => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥ÂÂ¸Ã¤Â¸â€¹Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateCostume"
 	/// English String: "Costume update failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateCostume => "ç„¡æ³•æ›´æ–°è£æ‰®ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorUpdateCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateEmote"
 	/// English String: "Updating emote slot failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateEmote => "æ›´æ–°å‹•ä½œæ¬„ä½å¤±æ•—ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorUpdateEmote => "Ã¦â€ºÂ´Ã¦â€“Â°Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Â¬â€žÃ¤Â½ÂÃ¥Â¤Â±Ã¦â€¢â€”Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateOutfit"
 	/// English String: "Outfit update failed, please try again later."
 	/// </summary>
-	public override string MessageErrorUpdateOutfit => "ç„¡æ³•æ›´æ–°æœé£¾ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageErrorUpdateOutfit => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorUpdateWorn"
 	/// There was an error updating items that the user is already wearing.
 	/// English String: "Error while updating worn items."
 	/// </summary>
-	public override string MessageErrorUpdateWorn => "æ›´æ–°å·²ç©¿æˆ´é“å…·æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚";
+	public override string MessageErrorUpdateWorn => "Ã¦â€ºÂ´Ã¦â€“Â°Ã¥Â·Â²Ã§Â©Â¿Ã¦Ë†Â´Ã©Ââ€œÃ¥â€¦Â·Ã¦â„¢â€šÃ§â„¢Â¼Ã§â€Å¸Ã©Å’Â¯Ã¨ÂªÂ¤Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorWearCostume"
 	/// English String: "Failed to wear costume."
 	/// </summary>
-	public override string MessageErrorWearCostume => "ç„¡æ³•ç©¿ä¸Šæ­¤è£æ‰®ã€‚";
+	public override string MessageErrorWearCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¤Â¸Å Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ErrorWearOutfit"
 	/// English String: "Failed to wear outfit."
 	/// </summary>
-	public override string MessageErrorWearOutfit => "ç„¡æ³•ç©¿ä¸Šæ­¤æœé£¾ã€‚";
+	public override string MessageErrorWearOutfit => "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¤Â¸Å Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedDeleteCostume"
 	/// English String: "Failed to delete costume."
 	/// </summary>
-	public override string MessageFailedDeleteCostume => "ç„¡æ³•åˆªé™¤æ­¤è£æ‰®ã€‚";
+	public override string MessageFailedDeleteCostume => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedDeleteEmote"
 	/// English String: "Failed to delete emote."
 	/// </summary>
-	public override string MessageFailedDeleteEmote => "ç„¡æ³•åˆªé™¤å‹•ä½œã€‚";
+	public override string MessageFailedDeleteEmote => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedDeleteOutfit"
 	/// English String: "Failed to delete outfit."
 	/// </summary>
-	public override string MessageFailedDeleteOutfit => "ç„¡æ³•åˆªé™¤æ­¤æœé£¾ã€‚";
+	public override string MessageFailedDeleteOutfit => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedLoadAssets"
 	/// English String: "Failed to load assets list."
 	/// </summary>
-	public override string MessageFailedLoadAssets => "ç„¡æ³•è¼‰å…¥ç´ ææ¸…å–®ã€‚";
+	public override string MessageFailedLoadAssets => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã§Â´Â Ã¦ÂÂÃ¦Â¸â€¦Ã¥â€“Â®Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedLoadRecent"
 	/// English String: "Failed to load recent items."
 	/// </summary>
-	public override string MessageFailedLoadRecent => "ç„¡æ³•è¼‰å…¥æœ€è¿‘ä½¿ç”¨éŽçš„é“å…·ã€‚";
+	public override string MessageFailedLoadRecent => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨Ã©ÂÅ½Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateBodyColor"
 	/// English String: "Failed to update skin tone."
 	/// </summary>
-	public override string MessageFailedUpdateBodyColor => "ç„¡æ³•æ›´æ–°è†šè‰²ã€‚";
+	public override string MessageFailedUpdateBodyColor => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨â€ Å¡Ã¨â€°Â²Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateDeletedCostume"
 	/// The user tried to update a deleted costume.
 	/// English String: "The costume you tried to update no longer exists."
 	/// </summary>
-	public override string MessageFailedUpdateDeletedCostume => "æ‚¨å˜—è©¦æ›´æ–°çš„è£æ‰®å·²ä¸å­˜åœ¨ã€‚";
+	public override string MessageFailedUpdateDeletedCostume => "Ã¦â€šÂ¨Ã¥Ëœâ€”Ã¨Â©Â¦Ã¦â€ºÂ´Ã¦â€“Â°Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¤Â¸ÂÃ¥Â­ËœÃ¥Å“Â¨Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateDeletedOutfit"
 	/// The user tried to update a deleted outfit.
 	/// English String: "The outfit you tried to update no longer exists."
 	/// </summary>
-	public override string MessageFailedUpdateDeletedOutfit => "æ‚¨å˜—è©¦æ›´æ–°çš„æœè£å·²ä¸å­˜åœ¨ã€‚";
+	public override string MessageFailedUpdateDeletedOutfit => "Ã¦â€šÂ¨Ã¥Ëœâ€”Ã¨Â©Â¦Ã¦â€ºÂ´Ã¦â€“Â°Ã§Å¡â€žÃ¦Å“ÂÃ¨Â£ÂÃ¥Â·Â²Ã¤Â¸ÂÃ¥Â­ËœÃ¥Å“Â¨Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateScales"
 	/// English String: "Failed to update scales."
 	/// </summary>
-	public override string MessageFailedUpdateScales => "ç„¡æ³•æ›´æ–°æ¯”ä¾‹ã€‚";
+	public override string MessageFailedUpdateScales => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Â¯â€Ã¤Â¾â€¹Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedUpdateType"
 	/// Failed to update the way the user's avatar is rendered.
 	/// English String: "Failed to update avatar type."
 	/// </summary>
-	public override string MessageFailedUpdateType => "ç„¡æ³•æ›´æ–°è™›æ“¬äººå¶é¡žåž‹ã€‚";
+	public override string MessageFailedUpdateType => "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©Â¡Å¾Ã¥Å¾â€¹Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.FailedWearPackage"
 	/// English String: "Failed to wear package."
 	/// </summary>
-	public override string MessageFailedWearPackage => "ç„¡æ³•ç©¿æˆ´å¥—è£ã€‚";
+	public override string MessageFailedWearPackage => "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¦Ë†Â´Ã¥Â¥â€”Ã¨Â£ÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.HatLimitTooltip"
 	/// English String: "You can wear up to 3 hats"
 	/// </summary>
-	public override string MessageHatLimitTooltip => "æ‚¨æœ€å¤šå¯ä»¥æˆ´ä¸Š 3 é ‚å¸½å­";
+	public override string MessageHatLimitTooltip => "Ã¦â€šÂ¨Ã¦Å“â‚¬Ã¥Â¤Å¡Ã¥ÂÂ¯Ã¤Â»Â¥Ã¦Ë†Â´Ã¤Â¸Å  3 Ã©Â â€šÃ¥Â¸Â½Ã¥Â­Â";
 
 	/// <summary>
 	/// Key: "Message.InvalidOutfitName"
 	/// English String: "Name must be appropriate and less than 200 characters."
 	/// </summary>
-	public override string MessageInvalidOutfitName => "åç¨±å¿…é ˆé©ç•¶ï¼Œä¸¦å°‘æ–¼ 200 å€‹å­—å…ƒã€‚";
+	public override string MessageInvalidOutfitName => "Ã¥ÂÂÃ§Â¨Â±Ã¥Â¿â€¦Ã©Â Ë†Ã©ÂÂ©Ã§â€¢Â¶Ã¯Â¼Å’Ã¤Â¸Â¦Ã¥Â°â€˜Ã¦â€“Â¼ 200 Ã¥â‚¬â€¹Ã¥Â­â€”Ã¥â€¦Æ’Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.Loading"
 	/// The user's avatar is loading
 	/// English String: "Loading..."
 	/// </summary>
-	public override string MessageLoading => "æ­£åœ¨è¼‰å…¥â€¦";
+	public override string MessageLoading => "Ã¦Â­Â£Ã¥Å“Â¨Ã¨Â¼â€°Ã¥â€¦Â¥Ã¢â‚¬Â¦";
 
 	/// <summary>
 	/// Key: "Message.PageUnavailable"
 	/// English String: "The avatar page is temporarily unavailable."
 	/// </summary>
-	public override string MessagePageUnavailable => "æš«æ™‚ç„¡æ³•ä½¿ç”¨è™›æ“¬äººå¶é é¢ã€‚";
+	public override string MessagePageUnavailable => "Ã¦Å¡Â«Ã¦â„¢â€šÃ§â€žÂ¡Ã¦Â³â€¢Ã¤Â½Â¿Ã§â€Â¨Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©Â ÂÃ©ÂÂ¢Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.PresetCostumesDelay"
 	/// One-time message that appears to the user first time they visit the Preset Costumes tab. The delay is caused by initial migration.
 	/// English String: "Note: We're doing some housekeeping, so it may take a few minutes for all your costumes to appear. Check again in a bit!"
 	/// </summary>
-	public override string MessagePresetCostumesDelay => "æ³¨æ„ï¼šæˆ‘å€‘æ­£åœ¨é€²è¡Œæ›´æ–°ï¼Œæ‰€ä»¥æ‚¨çš„è£æ‰®å¯èƒ½å¹¾åˆ†é˜å¾Œæ‰æœƒå‡ºç¾ã€‚è«‹ç¨å¾Œå†å›žä¾†ï¼";
+	public override string MessagePresetCostumesDelay => "Ã¦Â³Â¨Ã¦â€žÂÃ¯Â¼Å¡Ã¦Ë†â€˜Ã¥â‚¬â€˜Ã¦Â­Â£Ã¥Å“Â¨Ã©â‚¬Â²Ã¨Â¡Å’Ã¦â€ºÂ´Ã¦â€“Â°Ã¯Â¼Å’Ã¦â€°â‚¬Ã¤Â»Â¥Ã¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥ÂÂ¯Ã¨Æ’Â½Ã¥Â¹Â¾Ã¥Ë†â€ Ã©ÂËœÃ¥Â¾Å’Ã¦â€°ÂÃ¦Å“Æ’Ã¥â€¡ÂºÃ§ÂÂ¾Ã£â‚¬â€šÃ¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¥â€ºÅ¾Ã¤Â¾â€ Ã¯Â¼Â";
 
 	/// <summary>
 	/// Key: "Message.ReachedMaxCostumes"
 	/// English String: "You have reached the maximum number of costumes."
 	/// </summary>
-	public override string MessageReachedMaxCostumes => "æ‚¨çš„è£æ‰®æ•¸é‡å·²é”ä¸Šé™ã€‚";
+	public override string MessageReachedMaxCostumes => "Ã¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¦â€¢Â¸Ã©â€¡ÂÃ¥Â·Â²Ã©Ââ€Ã¤Â¸Å Ã©â„¢ÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.ReachedMaxOutfits"
 	/// English String: "You have reached the maximum number of outfits."
 	/// </summary>
-	public override string MessageReachedMaxOutfits => "æ‚¨çš„æœé£¾æ•¸é‡å·²é”ä¸Šé™ã€‚";
+	public override string MessageReachedMaxOutfits => "Ã¦â€šÂ¨Ã§Å¡â€žÃ¦Å“ÂÃ©Â£Â¾Ã¦â€¢Â¸Ã©â€¡ÂÃ¥Â·Â²Ã©Ââ€Ã¤Â¸Å Ã©â„¢ÂÃ£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.RedirectAvatarSettings"
 	/// English String: "You can set Avatar Settings from your Roblox Studio project. In Roblox Studio, go to Home &gt; Game Settings &gt; Avatar"
 	/// </summary>
-	public override string MessageRedirectAvatarSettings => "æ‚¨å¯ä»¥å¾ž Roblox Studio å°ˆæ¡ˆè®Šæ›´è™›æ“¬äººå¶è¨­å®šï¼Œè«‹åœ¨ Roblox Studio å‰å¾€é¦–é  > éŠæˆ²è¨­å®š > è™›æ“¬äººå¶";
+	public override string MessageRedirectAvatarSettings => "Ã¦â€šÂ¨Ã¥ÂÂ¯Ã¤Â»Â¥Ã¥Â¾Å¾ Roblox Studio Ã¥Â°Ë†Ã¦Â¡Ë†Ã¨Â®Å Ã¦â€ºÂ´Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¨Â¨Â­Ã¥Â®Å¡Ã¯Â¼Å’Ã¨Â«â€¹Ã¥Å“Â¨ Roblox Studio Ã¥â€°ÂÃ¥Â¾â‚¬Ã©Â¦â€“Ã©Â Â > Ã©ÂÅ Ã¦Ë†Â²Ã¨Â¨Â­Ã¥Â®Å¡ > Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶";
 
 	/// <summary>
 	/// Key: "Message.RedrawFloodchecked"
 	/// English String: "You have redrawn your avatar too many times, please try again later."
 	/// </summary>
-	public override string MessageRedrawFloodchecked => "æ‚¨é‡ç¹ªè™›æ“¬äººå¶æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string MessageRedrawFloodchecked => "Ã¦â€šÂ¨Ã©â€¡ÂÃ§Â¹ÂªÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¦Â¬Â¡Ã¦â€¢Â¸Ã©ÂÅ½Ã¥Â¤Å¡Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.RedrawThumbnailFailed"
 	/// English String: "Failed to redraw thumbnail."
 	/// </summary>
-	public override string MessageRedrawThumbnailFailed => "ç„¡æ³•é‡ç¹ªç¸®åœ–ã€‚";
+	public override string MessageRedrawThumbnailFailed => "Ã§â€žÂ¡Ã¦Â³â€¢Ã©â€¡ÂÃ§Â¹ÂªÃ§Â¸Â®Ã¥Å“â€“Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.SelectEnableScaling"
 	/// R15 is a proper noun
 	/// English String: "Select R15 to enable scaling."
 	/// </summary>
-	public override string MessageSelectEnableScaling => "ç¸®æ”¾åƒ…é©ç”¨æ–¼ R15 è™›æ“¬äººå¶";
+	public override string MessageSelectEnableScaling => "Ã§Â¸Â®Ã¦â€Â¾Ã¥Æ’â€¦Ã©ÂÂ©Ã§â€Â¨Ã¦â€“Â¼ R15 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶";
 
 	/// <summary>
 	/// Key: "Message.Success"
 	/// English String: "Success"
 	/// </summary>
-	public override string MessageSuccess => "æˆåŠŸ";
+	public override string MessageSuccess => "Ã¦Ë†ÂÃ¥Å Å¸";
 
 	/// <summary>
 	/// Key: "Message.SuccessCreateCostume"
 	/// English String: "Created costume"
 	/// </summary>
-	public override string MessageSuccessCreateCostume => "å·²å‰µä½œè£æ‰®";
+	public override string MessageSuccessCreateCostume => "Ã¥Â·Â²Ã¥â€°ÂµÃ¤Â½Å“Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Message.SuccessCreateOutfit"
 	/// English String: "Created outfit"
 	/// </summary>
-	public override string MessageSuccessCreateOutfit => "å·²å‰µä½œæœé£¾";
+	public override string MessageSuccessCreateOutfit => "Ã¥Â·Â²Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Message.SuccessDeleteCostume"
 	/// Deleted costume
 	/// English String: "Deleted costume"
 	/// </summary>
-	public override string MessageSuccessDeleteCostume => "è£æ‰®å·²åˆªé™¤";
+	public override string MessageSuccessDeleteCostume => "Ã¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¥Ë†ÂªÃ©â„¢Â¤";
 
 	/// <summary>
 	/// Key: "Message.SuccessDeleteOutfit"
 	/// English String: "Deleted outfit"
 	/// </summary>
-	public override string MessageSuccessDeleteOutfit => "å·²åˆªé™¤æ­¤æœé£¾";
+	public override string MessageSuccessDeleteOutfit => "Ã¥Â·Â²Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Message.SuccessEquipEmote"
 	/// English String: "Equipped Emote"
 	/// </summary>
-	public override string MessageSuccessEquipEmote => "å·²è£ä¸Šå‹•ä½œ";
+	public override string MessageSuccessEquipEmote => "Ã¥Â·Â²Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Message.SuccessRenameCostume"
 	/// English String: "Renamed costume"
 	/// </summary>
-	public override string MessageSuccessRenameCostume => "å·²ç‚ºè£æ‰®æ›´å";
+	public override string MessageSuccessRenameCostume => "Ã¥Â·Â²Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Message.SuccessRenameOutfit"
 	/// English String: "Renamed outfit"
 	/// </summary>
-	public override string MessageSuccessRenameOutfit => "å·²ç‚ºæœé£¾æ›´å";
+	public override string MessageSuccessRenameOutfit => "Ã¥Â·Â²Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂ";
 
 	/// <summary>
 	/// Key: "Message.SuccessSavedAccessories"
 	/// English String: "Saved accessories"
 	/// </summary>
-	public override string MessageSuccessSavedAccessories => "å·²å„²å­˜é£¾å“";
+	public override string MessageSuccessSavedAccessories => "Ã¥Â·Â²Ã¥â€žÂ²Ã¥Â­ËœÃ©Â£Â¾Ã¥â€œÂ";
 
 	/// <summary>
 	/// Key: "Message.SuccessUnequipEmote"
 	/// English String: "Unequipped emote"
 	/// </summary>
-	public override string MessageSuccessUnequipEmote => "å·²å¸ä¸‹å‹•ä½œ";
+	public override string MessageSuccessUnequipEmote => "Ã¥Â·Â²Ã¥ÂÂ¸Ã¤Â¸â€¹Ã¥â€¹â€¢Ã¤Â½Å“";
 
 	/// <summary>
 	/// Key: "Message.SuccessUpdatedCostume"
 	/// English String: "Updated costume"
 	/// </summary>
-	public override string MessageSuccessUpdatedCostume => "è£æ‰®å·²æ›´æ–°";
+	public override string MessageSuccessUpdatedCostume => "Ã¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¦â€ºÂ´Ã¦â€“Â°";
 
 	/// <summary>
 	/// Key: "Message.SuccessUpdatedOutfit"
 	/// English String: "Updated outfit"
 	/// </summary>
-	public override string MessageSuccessUpdatedOutfit => "å·²æ›´æ–°æœé£¾";
+	public override string MessageSuccessUpdatedOutfit => "Ã¥Â·Â²Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Message.SuccessWoreCostume"
 	/// English String: "Successfully wore costume"
 	/// </summary>
-	public override string MessageSuccessWoreCostume => "å·²æˆåŠŸç©¿æˆ´è£æ‰®";
+	public override string MessageSuccessWoreCostume => "Ã¥Â·Â²Ã¦Ë†ÂÃ¥Å Å¸Ã§Â©Â¿Ã¤Â¸Å Ã¨Â£ÂÃ¦â€°Â®";
 
 	/// <summary>
 	/// Key: "Message.SuccessWoreOutfit"
 	/// English String: "Successfully wore outfit"
 	/// </summary>
-	public override string MessageSuccessWoreOutfit => "å·²æˆåŠŸç©¿æˆ´æœé£¾";
+	public override string MessageSuccessWoreOutfit => "Ã¥Â·Â²Ã¦Ë†ÂÃ¥Å Å¸Ã§Â©Â¿Ã¤Â¸Å Ã¦Å“ÂÃ©Â£Â¾";
 
 	/// <summary>
 	/// Key: "Message.UpdateThisCostume"
 	/// NOTE: Any instance of the word "outfit" will eventually be swapped out for "costume" This is not currently in the UI
 	/// English String: "Do you want to update this costume? This will overwrite the costume with your avatar's current appearance."
 	/// </summary>
-	public override string MessageUpdateThisCostume => "æ‚¨è¦æ›´æ–°æ­¤è£æ‰®å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡è£æ‰®è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+	public override string MessageUpdateThisCostume => "Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡Ã¨Â£ÂÃ¦â€°Â®Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.UpdateThisOutfit"
 	/// English String: "Do you want to update this outfit? This will overwrite the outfit with your avatar's current appearance."
 	/// </summary>
-	public override string MessageUpdateThisOutfit => "æ‚¨è¦æ›´æ–°æ­¤æœé£¾å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡æœé£¾è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+	public override string MessageUpdateThisOutfit => "Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡Ã¦Å“ÂÃ©Â£Â¾Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 
 	/// <summary>
 	/// Key: "Message.Warning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string MessageWarning => "è­¦å‘Š";
+	public override string MessageWarning => "Ã¨Â­Â¦Ã¥â€˜Å ";
 
 	public AvatarResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -1232,82 +1245,82 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForActionAdvanced()
 	{
-		return "é€²éšŽ";
+		return "Ã©â‚¬Â²Ã©Å¡Å½";
 	}
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è³¼è²·";
+		return "Ã¨Â³Â¼Ã¨Â²Â·";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "Ã¥Ââ€“Ã¦Â¶Ë†";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "é—œé–‰";
+		return "Ã©â€”Å“Ã©â€“â€°";
 	}
 
 	protected override string _GetTemplateForActionCreate()
 	{
-		return "å‰µä½œ";
+		return "Ã¥â€°ÂµÃ¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForActionCreateNewOutfit()
 	{
-		return "å‰µä½œ";
+		return "Ã¥â€°ÂµÃ¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "åˆªé™¤";
+		return "Ã¥Ë†ÂªÃ©â„¢Â¤";
 	}
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "å®Œæˆ";
+		return "Ã¥Â®Å’Ã¦Ë†Â";
 	}
 
 	protected override string _GetTemplateForActionGet()
 	{
-		return "é ˜å–";
+		return "Ã©Â ËœÃ¥Ââ€“";
 	}
 
 	protected override string _GetTemplateForActionGetMore()
 	{
-		return "å‰å¾€åž‹éŒ„";
+		return "Ã¥â€°ÂÃ¥Â¾â‚¬Ã¥Å¾â€¹Ã©Å’â€ž";
 	}
 
 	protected override string _GetTemplateForActionOpenRobloxApp()
 	{
-		return "é–‹å•Ÿ Roblox App";
+		return "Ã©â€“â€¹Ã¥â€¢Å¸ Roblox App";
 	}
 
 	protected override string _GetTemplateForActionRedraw()
 	{
-		return "é‡ç¹ª";
+		return "Ã©â€¡ÂÃ§Â¹Âª";
 	}
 
 	protected override string _GetTemplateForActionRename()
 	{
-		return "æ›´å";
+		return "Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForActionRenameOutfit()
 	{
-		return "æ›´å";
+		return "Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "å„²å­˜";
+		return "Ã¥â€žÂ²Ã¥Â­Ëœ";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "Ã¦Å¸Â¥Ã§Å“â€¹Ã¥â€¦Â¨Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForActionThreeDimensions()
@@ -1322,232 +1335,232 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 
 	protected override string _GetTemplateForActionUpdate()
 	{
-		return "æ›´æ–°";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°";
 	}
 
 	protected override string _GetTemplateForActionUserUnderstands()
 	{
-		return "äº†è§£";
+		return "Ã¤Âºâ€ Ã¨Â§Â£";
 	}
 
 	protected override string _GetTemplateForDescriptionAvatarEditorUpsell()
 	{
-		return "è‹¥è¦è®Šæ›´æ‚¨çš„å¤–è§€ï¼Œæ‚¨éœ€è¦ä½¿ç”¨ App ä¸Šçš„è™›æ“¬äººå¶ç·¨è¼¯å™¨ã€‚";
+		return "Ã¨â€¹Â¥Ã¨Â¦ÂÃ¨Â®Å Ã¦â€ºÂ´Ã¦â€šÂ¨Ã§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¯Â¼Å’Ã¦â€šÂ¨Ã©Å“â‚¬Ã¨Â¦ÂÃ¤Â½Â¿Ã§â€Â¨ App Ã¤Â¸Å Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§Â·Â¨Ã¨Â¼Â¯Ã¥â„¢Â¨Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForDescriptionCreateNewCostume()
 	{
-		return "å°‡ä¾ç…§æ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€å‰µä½œä¸€å¥—è£æ‰®ã€‚";
+		return "Ã¥Â°â€¡Ã¤Â¾ÂÃ§â€¦Â§Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¥Â¥â€”Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForDescriptionCreateNewOutfit()
 	{
-		return "å°‡ä¾ç…§æ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€å‰µä½œä¸€å¥—æœé£¾ã€‚";
+		return "Ã¥Â°â€¡Ã¤Â¾ÂÃ§â€¦Â§Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¥Â¥â€”Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForDescriptionRenameCostume()
 	{
-		return "ç‚ºæ‚¨çš„è£æ‰®å‘½åã€‚";
+		return "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥â€˜Â½Ã¥ÂÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForDescriptionRenameOutfit()
 	{
-		return "ç‚ºæ‚¨çš„æœé£¾å‘½åã€‚";
+		return "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¦Å“ÂÃ©Â£Â¾Ã¥â€˜Â½Ã¥ÂÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForHeadingAccessories()
 	{
-		return "é£¾å“";
+		return "Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForHeadingAccessoriesChange()
 	{
-		return "é£¾å“è®Šæ›´";
+		return "Ã©Â£Â¾Ã¥â€œÂÃ¨Â®Å Ã¦â€ºÂ´";
 	}
 
 	protected override string _GetTemplateForHeadingAdvancedOptions()
 	{
-		return "é€²éšŽé¸é …";
+		return "Ã©â‚¬Â²Ã©Å¡Å½Ã©ÂÂ¸Ã©Â â€¦";
 	}
 
 	protected override string _GetTemplateForHeadingAll()
 	{
-		return "å…¨éƒ¨";
+		return "Ã¥â€¦Â¨Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForHeadingAnimations()
 	{
-		return "å‹•ç•«";
+		return "Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForHeadingAppearance()
 	{
-		return "å¤–è§€";
+		return "Ã¥Â¤â€“Ã¨Â§â‚¬";
 	}
 
 	protected override string _GetTemplateForHeadingAvatarPageTitle()
 	{
-		return "è™›æ“¬äººå¶ç·¨è¼¯å™¨";
+		return "Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§Â·Â¨Ã¨Â¼Â¯Ã¥â„¢Â¨";
 	}
 
 	protected override string _GetTemplateForHeadingBody()
 	{
-		return "èº«é«”";
+		return "Ã¨ÂºÂ«Ã©Â«â€";
 	}
 
 	protected override string _GetTemplateForHeadingBodyParts()
 	{
-		return "èº«é«”éƒ¨ä½";
+		return "Ã¨ÂºÂ«Ã©Â«â€Ã©Æ’Â¨Ã¤Â½Â";
 	}
 
 	protected override string _GetTemplateForHeadingClothing()
 	{
-		return "æœè£";
+		return "Ã¦Å“ÂÃ¨Â£Â";
 	}
 
 	protected override string _GetTemplateForHeadingCostumes()
 	{
-		return "è£æ‰®";
+		return "Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForHeadingCreateNewCostume()
 	{
-		return "å‰µä½œæ–°è£æ‰®";
+		return "Ã¥â€°ÂµÃ¤Â½Å“Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForHeadingCreateNewOutfit()
 	{
-		return "å‰µä½œæ–°æœé£¾";
+		return "Ã¥â€°ÂµÃ¤Â½Å“Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForHeadingDelete()
 	{
-		return "åˆªé™¤";
+		return "Ã¥Ë†ÂªÃ©â„¢Â¤";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteCostume()
 	{
-		return "åˆªé™¤è£æ‰®";
+		return "Ã¥Ë†ÂªÃ©â„¢Â¤Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteOutfit()
 	{
-		return "åˆªé™¤æœé£¾";
+		return "Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForHeadingEmotes()
 	{
-		return "å‹•ä½œ";
+		return "Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForHeadingEquipEmotes()
 	{
-		return "è£ä¸Šå‹•ä½œ";
+		return "Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForHeadingOutfits()
 	{
-		return "æœé£¾";
+		return "Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForHeadingPackages()
 	{
-		return "å¥—è£";
+		return "Ã¥Â¥â€”Ã¨Â£Â";
 	}
 
 	protected override string _GetTemplateForHeadingRecent()
 	{
-		return "æœ€è¿‘ä½¿ç”¨";
+		return "Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨";
 	}
 
 	protected override string _GetTemplateForHeadingRecommended()
 	{
-		return "æŽ¨è–¦";
+		return "Ã¦Å½Â¨Ã¨â€“Â¦";
 	}
 
 	protected override string _GetTemplateForHeadingRenameCostume()
 	{
-		return "ç‚ºè£æ‰®æ›´å";
+		return "Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForHeadingRenameOutfit()
 	{
-		return "ç‚ºæœé£¾æ›´å";
+		return "Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForHeadingScaling()
 	{
-		return "ç¸®æ”¾";
+		return "Ã§Â¸Â®Ã¦â€Â¾";
 	}
 
 	protected override string _GetTemplateForHeadingSkinToneBodyParts()
 	{
-		return "è†šè‰²ï¼ˆæŒ‰èº«é«”éƒ¨ä½ï¼‰";
+		return "Ã¨â€ Å¡Ã¨â€°Â²Ã¯Â¼Ë†Ã¦Å’â€°Ã¨ÂºÂ«Ã©Â«â€Ã©Æ’Â¨Ã¤Â½ÂÃ¯Â¼â€°";
 	}
 
 	protected override string _GetTemplateForHeadingUpdate()
 	{
-		return "æ›´æ–°";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°";
 	}
 
 	protected override string _GetTemplateForHeadingUpdateCostume()
 	{
-		return "æ›´æ–°è£æ‰®";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForHeadingUpdateOutfit()
 	{
-		return "æ›´æ–°æœé£¾";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "å…¨éƒ¨";
+		return "Ã¥â€¦Â¨Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelAskIfLoadingCorrectly()
 	{
-		return "è™›æ“¬äººå¶æœªæ­£ç¢ºè¼‰å…¥ï¼Ÿ";
+		return "Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¦Å“ÂªÃ¦Â­Â£Ã§Â¢ÂºÃ¨Â¼â€°Ã¥â€¦Â¥Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForLabelAssetIDPlaceholder()
 	{
-		return "ç´ æ ID";
+		return "Ã§Â´Â Ã¦ÂÂ ID";
 	}
 
 	protected override string _GetTemplateForLabelBack()
 	{
-		return "èƒŒé¢";
+		return "Ã¨Æ’Å’Ã©ÂÂ¢";
 	}
 
 	protected override string _GetTemplateForLabelBackAccessories()
 	{
-		return "èƒŒé¢é£¾å“";
+		return "Ã¨Æ’Å’Ã©ÂÂ¢Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelBodyType()
 	{
-		return "é«”åž‹";
+		return "Ã©Â«â€Ã¥Å¾â€¹";
 	}
 
 	protected override string _GetTemplateForLabelClimb()
 	{
-		return "æ”€çˆ¬";
+		return "Ã¦â€â‚¬Ã§Ë†Â¬";
 	}
 
 	protected override string _GetTemplateForLabelClimbAnimations()
 	{
-		return "æ”€çˆ¬å‹•ç•«";
+		return "Ã¦â€â‚¬Ã§Ë†Â¬Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelClothes()
 	{
-		return "è¡£ç‰©";
+		return "Ã¨Â¡Â£Ã§â€°Â©";
 	}
 
 	protected override string _GetTemplateForLabelCostume()
 	{
-		return "è£æ‰®";
+		return "Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	/// <summary>
@@ -1557,12 +1570,12 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string LabelDirectionsForPackagePlacement(string startBold, string rightArrow, string endBold)
 	{
-		return $"ã€Œå¥—è£ã€å·²ç§»åˆ°ã€Œè£æ‰®ã€ã€‚è«‹æŸ¥çœ‹{startBold}è£æ‰®{rightArrow}é è¨­è£æ‰®{endBold}";
+		return $"Ã£â‚¬Å’Ã¥Â¥â€”Ã¨Â£ÂÃ£â‚¬ÂÃ¥Â·Â²Ã§Â§Â»Ã¥Ë†Â°Ã£â‚¬Å’Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬ÂÃ£â‚¬â€šÃ¨Â«â€¹Ã¦Å¸Â¥Ã§Å“â€¹{startBold}Ã¨Â£ÂÃ¦â€°Â®{rightArrow}Ã©Â ÂÃ¨Â¨Â­Ã¨Â£ÂÃ¦â€°Â®{endBold}";
 	}
 
 	protected override string _GetTemplateForLabelDirectionsForPackagePlacement()
 	{
-		return "ã€Œå¥—è£ã€å·²ç§»åˆ°ã€Œè£æ‰®ã€ã€‚è«‹æŸ¥çœ‹{startBold}è£æ‰®{rightArrow}é è¨­è£æ‰®{endBold}";
+		return "Ã£â‚¬Å’Ã¥Â¥â€”Ã¨Â£ÂÃ£â‚¬ÂÃ¥Â·Â²Ã§Â§Â»Ã¥Ë†Â°Ã£â‚¬Å’Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬ÂÃ£â‚¬â€šÃ¨Â«â€¹Ã¦Å¸Â¥Ã§Å“â€¹{startBold}Ã¨Â£ÂÃ¦â€°Â®{rightArrow}Ã©Â ÂÃ¨Â¨Â­Ã¨Â£ÂÃ¦â€°Â®{endBold}";
 	}
 
 	/// <summary>
@@ -1572,352 +1585,352 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string LabelDirectionsForScalingOptions(string startBold, string rightArrow, string endBold)
 	{
-		return $"ã€Œèº«é«”ã€é¡žåˆ¥ä¸­æä¾›ç¸®æ”¾é¸é …ã€‚è«‹æŸ¥çœ‹{startBold}èº«é«”{rightArrow}æ¯”ä¾‹{endBold}";
+		return $"Ã£â‚¬Å’Ã¨ÂºÂ«Ã©Â«â€Ã£â‚¬ÂÃ©Â¡Å¾Ã¥Ë†Â¥Ã¤Â¸Â­Ã¦ÂÂÃ¤Â¾â€ºÃ§Â¸Â®Ã¦â€Â¾Ã©ÂÂ¸Ã©Â â€¦Ã£â‚¬â€šÃ¨Â«â€¹Ã¦Å¸Â¥Ã§Å“â€¹{startBold}Ã¨ÂºÂ«Ã©Â«â€{rightArrow}Ã¦Â¯â€Ã¤Â¾â€¹{endBold}";
 	}
 
 	protected override string _GetTemplateForLabelDirectionsForScalingOptions()
 	{
-		return "ã€Œèº«é«”ã€é¡žåˆ¥ä¸­æä¾›ç¸®æ”¾é¸é …ã€‚è«‹æŸ¥çœ‹{startBold}èº«é«”{rightArrow}æ¯”ä¾‹{endBold}";
+		return "Ã£â‚¬Å’Ã¨ÂºÂ«Ã©Â«â€Ã£â‚¬ÂÃ©Â¡Å¾Ã¥Ë†Â¥Ã¤Â¸Â­Ã¦ÂÂÃ¤Â¾â€ºÃ§Â¸Â®Ã¦â€Â¾Ã©ÂÂ¸Ã©Â â€¦Ã£â‚¬â€šÃ¨Â«â€¹Ã¦Å¸Â¥Ã§Å“â€¹{startBold}Ã¨ÂºÂ«Ã©Â«â€{rightArrow}Ã¦Â¯â€Ã¤Â¾â€¹{endBold}";
 	}
 
 	protected override string _GetTemplateForlabelEmotes()
 	{
-		return "å‹•ä½œ";
+		return "Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForLabelEquip()
 	{
-		return "è£å‚™";
+		return "Ã¨Â£ÂÃ¥â€šâ„¢";
 	}
 
 	protected override string _GetTemplateForLabelExploreCatalog()
 	{
-		return "ç€è¦½åž‹éŒ„ï¼Œå°‹æ‰¾æ›´å¤šæœè£ï¼";
+		return "Ã§â‚¬ÂÃ¨Â¦Â½Ã¥Å¾â€¹Ã©Å’â€žÃ¯Â¼Å’Ã¥Â°â€¹Ã¦â€°Â¾Ã¦â€ºÂ´Ã¥Â¤Å¡Ã¦Å“ÂÃ¨Â£ÂÃ¯Â¼Â";
 	}
 
 	protected override string _GetTemplateForLabelFace()
 	{
-		return "è‡‰éƒ¨";
+		return "Ã¨â€¡â€°Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelFaceAccessories()
 	{
-		return "è‡‰éƒ¨é£¾å“";
+		return "Ã¨â€¡â€°Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
 	{
-		return "è‡‰éƒ¨";
+		return "Ã¨â€¡â€°Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelFall()
 	{
-		return "è·Œè½";
+		return "Ã¨Â·Å’Ã¨ÂÂ½";
 	}
 
 	protected override string _GetTemplateForLabelFallAnimations()
 	{
-		return "è·Œè½å‹•ç•«";
+		return "Ã¨Â·Å’Ã¨ÂÂ½Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "å…è²»";
+		return "Ã¥â€¦ÂÃ¨Â²Â»";
 	}
 
 	protected override string _GetTemplateForLabelFront()
 	{
-		return "æ­£é¢";
+		return "Ã¦Â­Â£Ã©ÂÂ¢";
 	}
 
 	protected override string _GetTemplateForLabelFrontAccessories()
 	{
-		return "æ­£é¢é£¾å“";
+		return "Ã¦Â­Â£Ã©ÂÂ¢Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "è£å‚™";
+		return "Ã¨Â£ÂÃ¥â€šâ„¢";
 	}
 
 	protected override string _GetTemplateForLabelHair()
 	{
-		return "é«®åž‹";
+		return "Ã©Â«Â®Ã¥Å¾â€¹";
 	}
 
 	protected override string _GetTemplateForLabelHairAccessories()
 	{
-		return "é«®åž‹é£¾å“";
+		return "Ã©Â«Â®Ã¥Å¾â€¹Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelHat()
 	{
-		return "å¸½å­";
+		return "Ã¥Â¸Â½Ã¥Â­Â";
 	}
 
 	protected override string _GetTemplateForLabelHatAccessories()
 	{
-		return "å¸½å­é£¾å“";
+		return "Ã¥Â¸Â½Ã¥Â­ÂÃ©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelHead()
 	{
-		return "é ­éƒ¨";
+		return "Ã©Â Â­Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "é ­éƒ¨";
+		return "Ã©Â Â­Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelHeight()
 	{
-		return "é«˜åº¦";
+		return "Ã©Â«ËœÃ¥ÂºÂ¦";
 	}
 
 	protected override string _GetTemplateForLabelIdle()
 	{
-		return "é–’ç½®";
+		return "Ã©â€“â€™Ã§Â½Â®";
 	}
 
 	protected override string _GetTemplateForLabelIdleAnimations()
 	{
-		return "é–’ç½®å‹•ç•«";
+		return "Ã©â€“â€™Ã§Â½Â®Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelJump()
 	{
-		return "è·³èº";
+		return "Ã¨Â·Â³Ã¨ÂºÂ";
 	}
 
 	protected override string _GetTemplateForLabelJumpAnimations()
 	{
-		return "è·³èºå‹•ç•«";
+		return "Ã¨Â·Â³Ã¨ÂºÂÃ¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelLeftArm()
 	{
-		return "å·¦è‡‚";
+		return "Ã¥Â·Â¦Ã¨â€¡â€š";
 	}
 
 	protected override string _GetTemplateForLabelLeftArms()
 	{
-		return "å·¦è‡‚";
+		return "Ã¥Â·Â¦Ã¨â€¡â€š";
 	}
 
 	protected override string _GetTemplateForLabelLeftLeg()
 	{
-		return "å·¦è…¿";
+		return "Ã¥Â·Â¦Ã¨â€¦Â¿";
 	}
 
 	protected override string _GetTemplateForLabelLeftLegs()
 	{
-		return "å·¦è…¿";
+		return "Ã¥Â·Â¦Ã¨â€¦Â¿";
 	}
 
 	protected override string _GetTemplateForLabelMyCostumes()
 	{
-		return "æˆ‘çš„è£æ‰®";
+		return "Ã¦Ë†â€˜Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForLabelNamePlaceholderCostume()
 	{
-		return "ç‚ºæ‚¨çš„è£æ‰®å‘½å";
+		return "Ã§â€šÂºÃ¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥â€˜Â½Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForLabelNamePlaceholderOutfit()
 	{
-		return "å‘½åæœé£¾";
+		return "Ã¥â€˜Â½Ã¥ÂÂÃ¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForLabelNeck()
 	{
-		return "é ¸éƒ¨";
+		return "Ã©Â Â¸Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelNeckAccessories()
 	{
-		return "é ¸éƒ¨é£¾å“";
+		return "Ã©Â Â¸Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelNoResellers()
 	{
-		return "æ²’æœ‰äººè½‰è³£";
+		return "Ã¦Â²â€™Ã¦Å“â€°Ã¤ÂºÂºÃ¨Â½â€°Ã¨Â³Â£";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "ä¸‹æž¶";
+		return "Ã¤Â¸â€¹Ã¦Å¾Â¶";
 	}
 
 	protected override string _GetTemplateForLabelOutfit()
 	{
-		return "æœé£¾";
+		return "Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "è¤²å­";
+		return "Ã¨Â¤Â²Ã¥Â­Â";
 	}
 
 	protected override string _GetTemplateForLabelParts()
 	{
-		return "éƒ¨ä½";
+		return "Ã©Æ’Â¨Ã¤Â½Â";
 	}
 
 	protected override string _GetTemplateForLabelPresetCostumes()
 	{
-		return "é è¨­è£æ‰®";
+		return "Ã©Â ÂÃ¨Â¨Â­Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForLabelProportions()
 	{
-		return "èº«æ";
+		return "Ã¨ÂºÂ«Ã¦ÂÂ";
 	}
 
 	protected override string _GetTemplateForLabelRedrawUnavailable()
 	{
-		return "ç„¡æ³•ä½¿ç”¨è™›æ“¬äººå¶é‡ç¹ªã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¤Â½Â¿Ã§â€Â¨Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©â€¡ÂÃ§Â¹ÂªÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelRightArm()
 	{
-		return "å³è‡‚";
+		return "Ã¥ÂÂ³Ã¨â€¡â€š";
 	}
 
 	protected override string _GetTemplateForLabelRightArms()
 	{
-		return "å³è‡‚";
+		return "Ã¥ÂÂ³Ã¨â€¡â€š";
 	}
 
 	protected override string _GetTemplateForLabelRightLeg()
 	{
-		return "å³è…¿";
+		return "Ã¥ÂÂ³Ã¨â€¦Â¿";
 	}
 
 	protected override string _GetTemplateForLabelRightLegs()
 	{
-		return "å³è…¿";
+		return "Ã¥ÂÂ³Ã¨â€¦Â¿";
 	}
 
 	protected override string _GetTemplateForLabelRun()
 	{
-		return "å¥”è·‘";
+		return "Ã¥Â¥â€Ã¨Â·â€˜";
 	}
 
 	protected override string _GetTemplateForLabelRunAnimations()
 	{
-		return "å¥”è·‘å‹•ç•«";
+		return "Ã¥Â¥â€Ã¨Â·â€˜Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelScale()
 	{
-		return "æ¯”ä¾‹";
+		return "Ã¦Â¯â€Ã¤Â¾â€¹";
 	}
 
 	protected override string _GetTemplateForLabelShirts()
 	{
-		return "è¥¯è¡«";
+		return "Ã¨Â¥Â¯Ã¨Â¡Â«";
 	}
 
 	protected override string _GetTemplateForLabelShoulderAccessories()
 	{
-		return "è‚©è†€é£¾å“";
+		return "Ã¨â€šÂ©Ã¨â€ â‚¬Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelShoulders()
 	{
-		return "è‚©è†€";
+		return "Ã¨â€šÂ©Ã¨â€ â‚¬";
 	}
 
 	protected override string _GetTemplateForLabelSkinTone()
 	{
-		return "è†šè‰²";
+		return "Ã¨â€ Å¡Ã¨â€°Â²";
 	}
 
 	protected override string _GetTemplateForLabelSwim()
 	{
-		return "æ¸¸æ³³";
+		return "Ã¦Â¸Â¸Ã¦Â³Â³";
 	}
 
 	protected override string _GetTemplateForLabelSwimAnimations()
 	{
-		return "æ¸¸æ³³å‹•ç•«";
+		return "Ã¦Â¸Â¸Ã¦Â³Â³Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelSwitchAvatarType()
 	{
-		return "åœ¨ç¶“å…¸ R6 è™›æ“¬äººå¶èˆ‡æ›´æœ‰è¡¨ç¾åŠ›çš„æ–°ä¸€ä»£ R15 è™›æ“¬äººå¶ä¹‹é–“åˆ‡æ›";
+		return "Ã¥Å“Â¨Ã§Â¶â€œÃ¥â€¦Â¸ R6 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¨Ë†â€¡Ã¦â€ºÂ´Ã¦Å“â€°Ã¨Â¡Â¨Ã§ÂÂ¾Ã¥Å â€ºÃ§Å¡â€žÃ¦â€“Â°Ã¤Â¸â‚¬Ã¤Â»Â£ R15 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¤Â¹â€¹Ã©â€“â€œÃ¥Ë†â€¡Ã¦Ââ€º";
 	}
 
 	protected override string _GetTemplateForLabelTorso()
 	{
-		return "è»€å¹¹";
+		return "Ã¨Â»â‚¬Ã¥Â¹Â¹";
 	}
 
 	protected override string _GetTemplateForLabelTorsos()
 	{
-		return "è»€å¹¹";
+		return "Ã¨Â»â‚¬Ã¥Â¹Â¹";
 	}
 
 	protected override string _GetTemplateForLabelTShirts()
 	{
-		return "T æ¤";
+		return "T Ã¦ÂÂ¤";
 	}
 
 	protected override string _GetTemplateForLabelWaist()
 	{
-		return "è…°éƒ¨";
+		return "Ã¨â€¦Â°Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForLabelWaistAccessories()
 	{
-		return "è…°éƒ¨é£¾å“";
+		return "Ã¨â€¦Â°Ã©Æ’Â¨Ã©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForLabelWalk()
 	{
-		return "æ­¥è¡Œ";
+		return "Ã¦Â­Â¥Ã¨Â¡Å’";
 	}
 
 	protected override string _GetTemplateForLabelWalkAnimations()
 	{
-		return "æ­¥è¡Œå‹•ç•«";
+		return "Ã¦Â­Â¥Ã¨Â¡Å’Ã¥â€¹â€¢Ã§â€¢Â«";
 	}
 
 	protected override string _GetTemplateForLabelWidth()
 	{
-		return "å¯¬åº¦";
+		return "Ã¥Â¯Â¬Ã¥ÂºÂ¦";
 	}
 
 	protected override string _GetTemplateForLabelYourEmotes()
 	{
-		return "æ‚¨çš„å‹•ä½œ";
+		return "Ã¦â€šÂ¨Ã§Å¡â€žÃ¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForMessageAccessoriesChange()
 	{
-		return "ç¢ºå®šè¦†è“‹ç›®å‰çš„å¤–è§€ï¼Ÿ";
+		return "Ã§Â¢ÂºÃ¥Â®Å¡Ã¨Â¦â€ Ã¨â€œâ€¹Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForMessageChooseEmote()
 	{
-		return "é¸æ“‡å‹•ä½œ";
+		return "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForMessageChooseEmoteSlot()
 	{
-		return "é¸æ“‡æ¬„ä½";
+		return "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¦Â¬â€žÃ¤Â½Â";
 	}
 
 	protected override string _GetTemplateForMessageChooseEmoteSlotOrEmote()
 	{
-		return "é¸æ“‡æ¬„ä½æˆ–å‹•ä½œ";
+		return "Ã©ÂÂ¸Ã¦â€œâ€¡Ã¦Â¬â€žÃ¤Â½ÂÃ¦Ë†â€“Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForMessageDefaultClothing()
 	{
-		return "å·²åœ¨æ‚¨çš„è™›æ“¬äººå¶å¥—ç”¨é è¨­æœè£ï¼Œè«‹è‡ªè¡Œé¸æ“‡è¦ç©¿ä¸Šçš„æœè£ã€‚";
+		return "Ã¥Â·Â²Ã¥Å“Â¨Ã¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¥Â¥â€”Ã§â€Â¨Ã©Â ÂÃ¨Â¨Â­Ã¦Å“ÂÃ¨Â£ÂÃ¯Â¼Å’Ã¨Â«â€¹Ã¨â€¡ÂªÃ¨Â¡Å’Ã©ÂÂ¸Ã¦â€œâ€¡Ã¨Â¦ÂÃ§Â©Â¿Ã¤Â¸Å Ã§Å¡â€žÃ¦Å“ÂÃ¨Â£ÂÃ£â‚¬â€š";
 	}
 
 	/// <summary>
@@ -1926,32 +1939,32 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageDeleteOutfit(string outfitType)
 	{
-		return $"ç¢ºå®šåˆªé™¤æ­¤{outfitType}ï¼Ÿ";
+		return $"Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤{outfitType}Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForMessageDeleteOutfit()
 	{
-		return "ç¢ºå®šåˆªé™¤æ­¤{outfitType}ï¼Ÿ";
+		return "Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤{outfitType}Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForMessageDeleteThisCostume()
 	{
-		return "ç¢ºå®šåˆªé™¤æ­¤è£æ‰®ï¼Ÿ";
+		return "Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForMessageDeleteThisOutfit()
 	{
-		return "ç¢ºå®šåˆªé™¤æ­¤æœé£¾ï¼Ÿ";
+		return "Ã§Â¢ÂºÃ¥Â®Å¡Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForMessageEmotesInstructions()
 	{
-		return "å‰å¾€ã€Œå‹•ç•«ã€>ã€Œå‹•ä½œã€>ã€Œè£å‚™å‹•ä½œã€ä¾†è£å‚™å‹•ä½œã€‚";
+		return "Ã¥â€°ÂÃ¥Â¾â‚¬Ã£â‚¬Å’Ã¥â€¹â€¢Ã§â€¢Â«Ã£â‚¬Â>Ã£â‚¬Å’Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬Â>Ã£â‚¬Å’Ã¨Â£ÂÃ¥â€šâ„¢Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬ÂÃ¤Â¾â€ Ã¨Â£ÂÃ¥â€šâ„¢Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageEmptyAssetList()
 	{
-		return "æ‚¨æ²’æœ‰ç´ æã€‚";
+		return "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã§Â´Â Ã¦ÂÂÃ£â‚¬â€š";
 	}
 
 	/// <summary>
@@ -1961,182 +1974,182 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageEmptyListForItem(string itemType)
 	{
-		return $"æ‚¨æ²’æœ‰{itemType}";
+		return $"Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°{itemType}";
 	}
 
 	protected override string _GetTemplateForMessageEmptyListForItem()
 	{
-		return "æ‚¨æ²’æœ‰{itemType}";
+		return "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°{itemType}";
 	}
 
 	protected override string _GetTemplateForMessageEmptyListOfCostumes()
 	{
-		return "æ‚¨æ²’æœ‰ä»»ä½•è£æ‰®ã€‚è«‹è©¦è‘—å‰µä½œä¸€äº›å§ï¼";
+		return "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã¤Â»Â»Ã¤Â½â€¢Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€šÃ¨Â«â€¹Ã¨â€˜â€”Ã¥â€°ÂµÃ¤Â½Å“Ã¤Â¸â‚¬Ã¤Âºâ€ºÃ¥ÂÂ§Ã¯Â¼Â";
 	}
 
 	protected override string _GetTemplateForMessageEmptyListOfOutfits()
 	{
-		return "æ‚¨æ²’æœ‰ä»»ä½•æœé£¾ï¼Œè«‹å˜—è©¦å‰µä½œæœé£¾å§ï¼";
+		return "Ã¦â€šÂ¨Ã¦Â²â€™Ã¦Å“â€°Ã¤Â»Â»Ã¤Â½â€¢Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã¥Ëœâ€”Ã¨Â©Â¦Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾Ã¥ÂÂ§Ã¯Â¼Â";
 	}
 
 	protected override string _GetTemplateForMessageEmptyRecentItems()
 	{
-		return "æ²’æœ‰æœ€è¿‘ä½¿ç”¨çš„é“å…·ã€‚";
+		return "Ã¦Â²â€™Ã¦Å“â€°Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorCreateCostume()
 	{
-		return "ç„¡æ³•å‰µä½œè£æ‰®ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥â€°ÂµÃ¤Â½Å“Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorCreateOutfit()
 	{
-		return "ç„¡æ³•å‰µä½œæœé£¾ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorDeleteEmote()
 	{
-		return "ç„¡æ³•åˆªé™¤å‹•ä½œã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorEquipEmote()
 	{
-		return "ç„¡æ³•è£ä¸Šå‹•ä½œï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorLoadCostume()
 	{
-		return "ç„¡æ³•è¼‰å…¥è£æ‰®ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorLoadEmotes()
 	{
-		return "ç„¡æ³•è¼‰å…¥å‹•ä½œã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorLoadOutfits()
 	{
-		return "ç„¡æ³•è¼‰å…¥æœé£¾ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorOutfitName()
 	{
-		return "åç¨±å¯å«æœ‰å­—æ¯ã€æ•¸å­—å’Œç©ºæ ¼ã€‚";
+		return "Ã¥ÂÂÃ§Â¨Â±Ã¥ÂÂ¯Ã¥ÂÂ«Ã¦Å“â€°Ã¥Â­â€”Ã¦Â¯ÂÃ£â‚¬ÂÃ¦â€¢Â¸Ã¥Â­â€”Ã¥â€™Å’Ã§Â©ÂºÃ¦Â Â¼Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorRenameCostume()
 	{
-		return "ç„¡æ³•ç‚ºè£æ‰®æ›´åã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorRenameOutfit()
 	{
-		return "ç„¡æ³•ç‚ºæœé£¾æ›´åã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorUnequipEmote()
 	{
-		return "ç„¡æ³•å¸ä¸‹å‹•ä½œã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥ÂÂ¸Ã¤Â¸â€¹Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateCostume()
 	{
-		return "ç„¡æ³•æ›´æ–°è£æ‰®ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨Â£ÂÃ¦â€°Â®Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateEmote()
 	{
-		return "æ›´æ–°å‹•ä½œæ¬„ä½å¤±æ•—ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Â¬â€žÃ¤Â½ÂÃ¥Â¤Â±Ã¦â€¢â€”Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateOutfit()
 	{
-		return "ç„¡æ³•æ›´æ–°æœé£¾ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorUpdateWorn()
 	{
-		return "æ›´æ–°å·²ç©¿æˆ´é“å…·æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚";
+		return "Ã¦â€ºÂ´Ã¦â€“Â°Ã¥Â·Â²Ã§Â©Â¿Ã¦Ë†Â´Ã©Ââ€œÃ¥â€¦Â·Ã¦â„¢â€šÃ§â„¢Â¼Ã§â€Å¸Ã©Å’Â¯Ã¨ÂªÂ¤Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorWearCostume()
 	{
-		return "ç„¡æ³•ç©¿ä¸Šæ­¤è£æ‰®ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¤Â¸Å Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageErrorWearOutfit()
 	{
-		return "ç„¡æ³•ç©¿ä¸Šæ­¤æœé£¾ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¤Â¸Å Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedDeleteCostume()
 	{
-		return "ç„¡æ³•åˆªé™¤æ­¤è£æ‰®ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedDeleteEmote()
 	{
-		return "ç„¡æ³•åˆªé™¤å‹•ä½œã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedDeleteOutfit()
 	{
-		return "ç„¡æ³•åˆªé™¤æ­¤æœé£¾ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedLoadAssets()
 	{
-		return "ç„¡æ³•è¼‰å…¥ç´ ææ¸…å–®ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã§Â´Â Ã¦ÂÂÃ¦Â¸â€¦Ã¥â€“Â®Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedLoadRecent()
 	{
-		return "ç„¡æ³•è¼‰å…¥æœ€è¿‘ä½¿ç”¨éŽçš„é“å…·ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¨Â¼â€°Ã¥â€¦Â¥Ã¦Å“â‚¬Ã¨Â¿â€˜Ã¤Â½Â¿Ã§â€Â¨Ã©ÂÅ½Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateBodyColor()
 	{
-		return "ç„¡æ³•æ›´æ–°è†šè‰²ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨â€ Å¡Ã¨â€°Â²Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateDeletedCostume()
 	{
-		return "æ‚¨å˜—è©¦æ›´æ–°çš„è£æ‰®å·²ä¸å­˜åœ¨ã€‚";
+		return "Ã¦â€šÂ¨Ã¥Ëœâ€”Ã¨Â©Â¦Ã¦â€ºÂ´Ã¦â€“Â°Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¤Â¸ÂÃ¥Â­ËœÃ¥Å“Â¨Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateDeletedOutfit()
 	{
-		return "æ‚¨å˜—è©¦æ›´æ–°çš„æœè£å·²ä¸å­˜åœ¨ã€‚";
+		return "Ã¦â€šÂ¨Ã¥Ëœâ€”Ã¨Â©Â¦Ã¦â€ºÂ´Ã¦â€“Â°Ã§Å¡â€žÃ¦Å“ÂÃ¨Â£ÂÃ¥Â·Â²Ã¤Â¸ÂÃ¥Â­ËœÃ¥Å“Â¨Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateScales()
 	{
-		return "ç„¡æ³•æ›´æ–°æ¯”ä¾‹ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Â¯â€Ã¤Â¾â€¹Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedUpdateType()
 	{
-		return "ç„¡æ³•æ›´æ–°è™›æ“¬äººå¶é¡žåž‹ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã¦â€ºÂ´Ã¦â€“Â°Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©Â¡Å¾Ã¥Å¾â€¹Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageFailedWearPackage()
 	{
-		return "ç„¡æ³•ç©¿æˆ´å¥—è£ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã§Â©Â¿Ã¦Ë†Â´Ã¥Â¥â€”Ã¨Â£ÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageHatLimitTooltip()
 	{
-		return "æ‚¨æœ€å¤šå¯ä»¥æˆ´ä¸Š 3 é ‚å¸½å­";
+		return "Ã¦â€šÂ¨Ã¦Å“â‚¬Ã¥Â¤Å¡Ã¥ÂÂ¯Ã¤Â»Â¥Ã¦Ë†Â´Ã¤Â¸Å  3 Ã©Â â€šÃ¥Â¸Â½Ã¥Â­Â";
 	}
 
 	protected override string _GetTemplateForMessageInvalidOutfitName()
 	{
-		return "åç¨±å¿…é ˆé©ç•¶ï¼Œä¸¦å°‘æ–¼ 200 å€‹å­—å…ƒã€‚";
+		return "Ã¥ÂÂÃ§Â¨Â±Ã¥Â¿â€¦Ã©Â Ë†Ã©ÂÂ©Ã§â€¢Â¶Ã¯Â¼Å’Ã¤Â¸Â¦Ã¥Â°â€˜Ã¦â€“Â¼ 200 Ã¥â‚¬â€¹Ã¥Â­â€”Ã¥â€¦Æ’Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageLoading()
 	{
-		return "æ­£åœ¨è¼‰å…¥â€¦";
+		return "Ã¦Â­Â£Ã¥Å“Â¨Ã¨Â¼â€°Ã¥â€¦Â¥Ã¢â‚¬Â¦";
 	}
 
 	/// <summary>
@@ -2146,122 +2159,122 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageMissingItemsFromOutfit(string number)
 	{
-		return $"æ‚¨åœ¨æ­¤æœé£¾ç¼ºå°‘çš„é“å…·æ•¸é‡ï¼š{number}";
+		return $"Ã¦â€šÂ¨Ã¥Å“Â¨Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã§Â¼ÂºÃ¥Â°â€˜Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã¦â€¢Â¸Ã©â€¡ÂÃ¯Â¼Å¡{number}";
 	}
 
 	protected override string _GetTemplateForMessageMissingItemsFromOutfit()
 	{
-		return "æ‚¨åœ¨æ­¤æœé£¾ç¼ºå°‘çš„é“å…·æ•¸é‡ï¼š{number}";
+		return "Ã¦â€šÂ¨Ã¥Å“Â¨Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã§Â¼ÂºÃ¥Â°â€˜Ã§Å¡â€žÃ©Ââ€œÃ¥â€¦Â·Ã¦â€¢Â¸Ã©â€¡ÂÃ¯Â¼Å¡{number}";
 	}
 
 	protected override string _GetTemplateForMessagePageUnavailable()
 	{
-		return "æš«æ™‚ç„¡æ³•ä½¿ç”¨è™›æ“¬äººå¶é é¢ã€‚";
+		return "Ã¦Å¡Â«Ã¦â„¢â€šÃ§â€žÂ¡Ã¦Â³â€¢Ã¤Â½Â¿Ã§â€Â¨Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã©Â ÂÃ©ÂÂ¢Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessagePresetCostumesDelay()
 	{
-		return "æ³¨æ„ï¼šæˆ‘å€‘æ­£åœ¨é€²è¡Œæ›´æ–°ï¼Œæ‰€ä»¥æ‚¨çš„è£æ‰®å¯èƒ½å¹¾åˆ†é˜å¾Œæ‰æœƒå‡ºç¾ã€‚è«‹ç¨å¾Œå†å›žä¾†ï¼";
+		return "Ã¦Â³Â¨Ã¦â€žÂÃ¯Â¼Å¡Ã¦Ë†â€˜Ã¥â‚¬â€˜Ã¦Â­Â£Ã¥Å“Â¨Ã©â‚¬Â²Ã¨Â¡Å’Ã¦â€ºÂ´Ã¦â€“Â°Ã¯Â¼Å’Ã¦â€°â‚¬Ã¤Â»Â¥Ã¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¥ÂÂ¯Ã¨Æ’Â½Ã¥Â¹Â¾Ã¥Ë†â€ Ã©ÂËœÃ¥Â¾Å’Ã¦â€°ÂÃ¦Å“Æ’Ã¥â€¡ÂºÃ§ÂÂ¾Ã£â‚¬â€šÃ¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¥â€ºÅ¾Ã¤Â¾â€ Ã¯Â¼Â";
 	}
 
 	protected override string _GetTemplateForMessageReachedMaxCostumes()
 	{
-		return "æ‚¨çš„è£æ‰®æ•¸é‡å·²é”ä¸Šé™ã€‚";
+		return "Ã¦â€šÂ¨Ã§Å¡â€žÃ¨Â£ÂÃ¦â€°Â®Ã¦â€¢Â¸Ã©â€¡ÂÃ¥Â·Â²Ã©Ââ€Ã¤Â¸Å Ã©â„¢ÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageReachedMaxOutfits()
 	{
-		return "æ‚¨çš„æœé£¾æ•¸é‡å·²é”ä¸Šé™ã€‚";
+		return "Ã¦â€šÂ¨Ã§Å¡â€žÃ¦Å“ÂÃ©Â£Â¾Ã¦â€¢Â¸Ã©â€¡ÂÃ¥Â·Â²Ã©Ââ€Ã¤Â¸Å Ã©â„¢ÂÃ£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageRedirectAvatarSettings()
 	{
-		return "æ‚¨å¯ä»¥å¾ž Roblox Studio å°ˆæ¡ˆè®Šæ›´è™›æ“¬äººå¶è¨­å®šï¼Œè«‹åœ¨ Roblox Studio å‰å¾€é¦–é  > éŠæˆ²è¨­å®š > è™›æ“¬äººå¶";
+		return "Ã¦â€šÂ¨Ã¥ÂÂ¯Ã¤Â»Â¥Ã¥Â¾Å¾ Roblox Studio Ã¥Â°Ë†Ã¦Â¡Ë†Ã¨Â®Å Ã¦â€ºÂ´Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¨Â¨Â­Ã¥Â®Å¡Ã¯Â¼Å’Ã¨Â«â€¹Ã¥Å“Â¨ Roblox Studio Ã¥â€°ÂÃ¥Â¾â‚¬Ã©Â¦â€“Ã©Â Â > Ã©ÂÅ Ã¦Ë†Â²Ã¨Â¨Â­Ã¥Â®Å¡ > Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶";
 	}
 
 	protected override string _GetTemplateForMessageRedrawFloodchecked()
 	{
-		return "æ‚¨é‡ç¹ªè™›æ“¬äººå¶æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "Ã¦â€šÂ¨Ã©â€¡ÂÃ§Â¹ÂªÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã¦Â¬Â¡Ã¦â€¢Â¸Ã©ÂÅ½Ã¥Â¤Å¡Ã¯Â¼Å’Ã¨Â«â€¹Ã§Â¨ÂÃ¥Â¾Å’Ã¥â€ ÂÃ¨Â©Â¦Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageRedrawThumbnailFailed()
 	{
-		return "ç„¡æ³•é‡ç¹ªç¸®åœ–ã€‚";
+		return "Ã§â€žÂ¡Ã¦Â³â€¢Ã©â€¡ÂÃ§Â¹ÂªÃ§Â¸Â®Ã¥Å“â€“Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageSelectEnableScaling()
 	{
-		return "ç¸®æ”¾åƒ…é©ç”¨æ–¼ R15 è™›æ“¬äººå¶";
+		return "Ã§Â¸Â®Ã¦â€Â¾Ã¥Æ’â€¦Ã©ÂÂ©Ã§â€Â¨Ã¦â€“Â¼ R15 Ã¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶";
 	}
 
 	protected override string _GetTemplateForMessageSuccess()
 	{
-		return "æˆåŠŸ";
+		return "Ã¦Ë†ÂÃ¥Å Å¸";
 	}
 
 	protected override string _GetTemplateForMessageSuccessCreateCostume()
 	{
-		return "å·²å‰µä½œè£æ‰®";
+		return "Ã¥Â·Â²Ã¥â€°ÂµÃ¤Â½Å“Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForMessageSuccessCreateOutfit()
 	{
-		return "å·²å‰µä½œæœé£¾";
+		return "Ã¥Â·Â²Ã¥â€°ÂµÃ¤Â½Å“Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForMessageSuccessDeleteCostume()
 	{
-		return "è£æ‰®å·²åˆªé™¤";
+		return "Ã¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¥Ë†ÂªÃ©â„¢Â¤";
 	}
 
 	protected override string _GetTemplateForMessageSuccessDeleteOutfit()
 	{
-		return "å·²åˆªé™¤æ­¤æœé£¾";
+		return "Ã¥Â·Â²Ã¥Ë†ÂªÃ©â„¢Â¤Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForMessageSuccessEquipEmote()
 	{
-		return "å·²è£ä¸Šå‹•ä½œ";
+		return "Ã¥Â·Â²Ã¨Â£ÂÃ¤Â¸Å Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForMessageSuccessRenameCostume()
 	{
-		return "å·²ç‚ºè£æ‰®æ›´å";
+		return "Ã¥Â·Â²Ã§â€šÂºÃ¨Â£ÂÃ¦â€°Â®Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForMessageSuccessRenameOutfit()
 	{
-		return "å·²ç‚ºæœé£¾æ›´å";
+		return "Ã¥Â·Â²Ã§â€šÂºÃ¦Å“ÂÃ©Â£Â¾Ã¦â€ºÂ´Ã¥ÂÂ";
 	}
 
 	protected override string _GetTemplateForMessageSuccessSavedAccessories()
 	{
-		return "å·²å„²å­˜é£¾å“";
+		return "Ã¥Â·Â²Ã¥â€žÂ²Ã¥Â­ËœÃ©Â£Â¾Ã¥â€œÂ";
 	}
 
 	protected override string _GetTemplateForMessageSuccessUnequipEmote()
 	{
-		return "å·²å¸ä¸‹å‹•ä½œ";
+		return "Ã¥Â·Â²Ã¥ÂÂ¸Ã¤Â¸â€¹Ã¥â€¹â€¢Ã¤Â½Å“";
 	}
 
 	protected override string _GetTemplateForMessageSuccessUpdatedCostume()
 	{
-		return "è£æ‰®å·²æ›´æ–°";
+		return "Ã¨Â£ÂÃ¦â€°Â®Ã¥Â·Â²Ã¦â€ºÂ´Ã¦â€“Â°";
 	}
 
 	protected override string _GetTemplateForMessageSuccessUpdatedOutfit()
 	{
-		return "å·²æ›´æ–°æœé£¾";
+		return "Ã¥Â·Â²Ã¦â€ºÂ´Ã¦â€“Â°Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	protected override string _GetTemplateForMessageSuccessWoreCostume()
 	{
-		return "å·²æˆåŠŸç©¿æˆ´è£æ‰®";
+		return "Ã¥Â·Â²Ã¦Ë†ÂÃ¥Å Å¸Ã§Â©Â¿Ã¤Â¸Å Ã¨Â£ÂÃ¦â€°Â®";
 	}
 
 	protected override string _GetTemplateForMessageSuccessWoreOutfit()
 	{
-		return "å·²æˆåŠŸç©¿æˆ´æœé£¾";
+		return "Ã¥Â·Â²Ã¦Ë†ÂÃ¥Å Å¸Ã§Â©Â¿Ã¤Â¸Å Ã¦Å“ÂÃ©Â£Â¾";
 	}
 
 	/// <summary>
@@ -2270,29 +2283,30 @@ internal class AvatarResources_zh_tw : AvatarResources_en_us, IAvatarResources, 
 	/// </summary>
 	public override string MessageUpdateOutfit(string outfitType1, string outfitType2)
 	{
-		return $"æ‚¨è¦æ›´æ–°æ­¤{outfitType1}å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡{outfitType2}è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+		return $"Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤{outfitType1}Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡{outfitType2}Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageUpdateOutfit()
 	{
-		return "æ‚¨è¦æ›´æ–°æ­¤{outfitType1}å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡{outfitType2}è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+		return "Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤{outfitType1}Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡{outfitType2}Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageUpdateThisCostume()
 	{
-		return "æ‚¨è¦æ›´æ–°æ­¤è£æ‰®å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡è£æ‰®è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+		return "Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤Ã¨Â£ÂÃ¦â€°Â®Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡Ã¨Â£ÂÃ¦â€°Â®Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageUpdateThisOutfit()
 	{
-		return "æ‚¨è¦æ›´æ–°æ­¤æœé£¾å—Žï¼Ÿæ­¤å‹•ä½œæœƒå°‡æœé£¾è¦†è“‹æˆæ‚¨çš„è™›æ“¬äººå¶ç›®å‰çš„å¤–è§€ã€‚";
+		return "Ã¦â€šÂ¨Ã¨Â¦ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¦Â­Â¤Ã¦Å“ÂÃ©Â£Â¾Ã¥â€”Å½Ã¯Â¼Å¸Ã¦Â­Â¤Ã¥â€¹â€¢Ã¤Â½Å“Ã¦Å“Æ’Ã¥Â°â€¡Ã¦Å“ÂÃ©Â£Â¾Ã¨Â¦â€ Ã¨â€œâ€¹Ã¦Ë†ÂÃ¦â€šÂ¨Ã§Å¡â€žÃ¨â„¢â€ºÃ¦â€œÂ¬Ã¤ÂºÂºÃ¥ÂÂ¶Ã§â€ºÂ®Ã¥â€°ÂÃ§Å¡â€žÃ¥Â¤â€“Ã¨Â§â‚¬Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForMessageWarning()
 	{
-		return "è­¦å‘Š";
+		return "Ã¨Â­Â¦Ã¥â€˜Å ";
 	}
 }
 
 
 }
+

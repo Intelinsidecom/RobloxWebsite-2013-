@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PeopleListResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PeopleListResources_ja_jp : PeopleListResources_en_us, IPeopleLis
 	/// Purchase game and play
 	/// English String: "Buy to Play"
 	/// </summary>
-	public override string ActionBuy => "è²·ã£ã¦ãƒ—ãƒ¬ã‚¤";
+	public override string ActionBuy => "買ってプレイ";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// Join game with friends
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "å‚åŠ ";
+	public override string ActionJoin => "参加";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// View game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "è©³ç´°ã‚’è¡¨ç¤º";
+	public override string ActionViewDetails => "詳細を表示";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "å‹é”";
+	public override string HeadingFriends => "友達";
 
 	/// <summary>
 	/// Key: "Heading.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string HeadingSeeAll => "ã™ã¹ã¦è¦‹ã‚‹";
+	public override string HeadingSeeAll => "すべて見る";
 
 	/// <summary>
 	/// Key: "Label.ViewProfile"
 	/// Go to Profile page and view
 	/// English String: "View Profile"
 	/// </summary>
-	public override string LabelViewProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‚’è¡¨ç¤º";
+	public override string LabelViewProfile => "プロフィールを表示";
 
 	public PeopleListResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -53,27 +55,27 @@ internal class PeopleListResources_ja_jp : PeopleListResources_en_us, IPeopleLis
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è²·ã£ã¦ãƒ—ãƒ¬ã‚¤";
+		return "買ってプレイ";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "å‚åŠ ";
+		return "参加";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "è©³ç´°ã‚’è¡¨ç¤º";
+		return "詳細を表示";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "å‹é”";
+		return "友達";
 	}
 
 	protected override string _GetTemplateForHeadingSeeAll()
 	{
-		return "ã™ã¹ã¦è¦‹ã‚‹";
+		return "すべて見る";
 	}
 
 	/// <summary>
@@ -83,17 +85,17 @@ internal class PeopleListResources_ja_jp : PeopleListResources_en_us, IPeopleLis
 	/// </summary>
 	public override string LabelChat(string username)
 	{
-		return $"{username} ã•ã‚“ã¨ãƒãƒ£ãƒƒãƒˆ";
+		return $"{username} さんとチャット";
 	}
 
 	protected override string _GetTemplateForLabelChat()
 	{
-		return "{username} ã•ã‚“ã¨ãƒãƒ£ãƒƒãƒˆ";
+		return "{username} さんとチャット";
 	}
 
 	protected override string _GetTemplateForLabelViewProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‚’è¡¨ç¤º";
+		return "プロフィールを表示";
 	}
 }
 

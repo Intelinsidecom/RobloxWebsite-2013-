@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FriendsResources_en_us to provide locale specific translations where possible,
@@ -10,85 +12,85 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "æ‰¿èªã™ã‚‹";
+	public override string ActionAccept => "承認する";
 
 	/// <summary>
 	/// Key: "Action.FindFriends"
 	/// English String: "Find Friends"
 	/// </summary>
-	public override string ActionFindFriends => "å‹é”ã‚’è¦‹ã¤ã‘ã‚‹";
+	public override string ActionFindFriends => "友達を見つける";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "ãƒ•ã‚©ãƒ­ãƒ¼";
+	public override string ActionFollow => "フォロー";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "ç„¡è¦–ã™ã‚‹";
+	public override string ActionIgnore => "無視する";
 
 	/// <summary>
 	/// Key: "Action.IgnoreAll"
 	/// English String: "Ignore All"
 	/// </summary>
-	public override string ActionIgnoreAll => "ã™ã¹ã¦ç„¡è¦–ã™ã‚‹";
+	public override string ActionIgnoreAll => "すべて無視する";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
+	public override string ActionUnfollow => "フォローをやめる";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "å‹é”è§£é™¤";
+	public override string ActionUnfriend => "友達解除";
 
 	/// <summary>
 	/// Key: "Heading.MyFriends"
 	/// English String: "My Friends"
 	/// </summary>
-	public override string HeadingMyFriends => "ã‚ãªãŸã®å‹é”";
+	public override string HeadingMyFriends => "あなたの友達";
 
 	/// <summary>
 	/// Key: "Label.ErrorTitle"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelErrorTitle => "ã‚¨ãƒ©ãƒ¼";
+	public override string LabelErrorTitle => "エラー";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
+	public override string LabelFollowers => "フォロワー";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "ãƒ•ã‚©ãƒ­ãƒ¼ä¸­";
+	public override string LabelFollowing => "フォロー中";
 
 	/// <summary>
 	/// Key: "Label.FriendRequests"
 	/// English String: "Friend Requests"
 	/// </summary>
-	public override string LabelFriendRequests => "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
+	public override string LabelFriendRequests => "友達リクエスト";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "å‹é”";
+	public override string LabelFriends => "友達";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+	public override string LabelOffline => "オフライン";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -100,195 +102,195 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+	public override string LabelOnline => "オンライン";
 
 	/// <summary>
 	/// Key: "Label.Requests"
 	/// English String: "Requests"
 	/// </summary>
-	public override string LabelRequests => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
+	public override string LabelRequests => "リクエスト";
 
 	/// <summary>
 	/// Key: "Label.SearchFriends"
 	/// When user doesn't have any friends.
 	/// English String: "Search for Friends"
 	/// </summary>
-	public override string LabelSearchFriends => "å‹é”ã‚’æ¤œç´¢";
+	public override string LabelSearchFriends => "友達を検索";
 
 	/// <summary>
 	/// Key: "Label.Unfollowed"
 	/// Unfollowed
 	/// English String: "Unfollowed"
 	/// </summary>
-	public override string LabelUnfollowed => "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã¾ã—ãŸ";
+	public override string LabelUnfollowed => "フォローをやめました";
 
 	/// <summary>
 	/// Key: "Message.ActionNotAllowedError"
 	/// English String: "Action not allowed"
 	/// </summary>
-	public override string MessageActionNotAllowedError => "ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“";
+	public override string MessageActionNotAllowedError => "アクションが許可されていません";
 
 	/// <summary>
 	/// Key: "Message.AlreadyExistsError"
 	/// English String: "Already exists."
 	/// </summary>
-	public override string MessageAlreadyExistsError => "ã™ã§ã«ã‚ã‚Šã¾ã™ã€‚";
+	public override string MessageAlreadyExistsError => "すでにあります。";
 
 	/// <summary>
 	/// Key: "Message.CurrentInvalidParametersError"
 	/// English String: "Invalid parameters."
 	/// </summary>
-	public override string MessageCurrentInvalidParametersError => "ç„¡åŠ¹ãªãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã§ã™ã€‚";
+	public override string MessageCurrentInvalidParametersError => "無効なパラメータです。";
 
 	/// <summary>
 	/// Key: "Message.CurrentUserFriendsLimitExceededError"
 	/// English String: "You have reached the maximum number of Friends. Please remove a Friend before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageCurrentUserFriendsLimitExceededError => "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹å‰ã«ã€ã»ã‹ã®å‹é”ã‚’å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageCurrentUserFriendsLimitExceededError => "友達の数が上限を超えました。友達リクエストを承認する前に、ほかの友達を削除してください。";
 
 	/// <summary>
 	/// Key: "Message.DefaultError"
 	/// English String: "An error ocurred."
 	/// </summary>
-	public override string MessageDefaultError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+	public override string MessageDefaultError => "エラーが発生しました。";
 
 	/// <summary>
 	/// Key: "Message.FloodLimitExceededError"
 	/// English String: "You are performing this action too often. Please wait a minute and try again."
 	/// </summary>
-	public override string MessageFloodLimitExceededError => "ã“ã®æ“ä½œã‚’ä½•åº¦ã‚‚å®Ÿè¡Œã—ã¦ã„ã¾ã™ã€‚1åˆ†ã»ã©å¾…ã£ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageFloodLimitExceededError => "この操作を何度も実行しています。1分ほど待ってからやり直してください。";
 
 	/// <summary>
 	/// Key: "Message.FollowerTabTooltip"
 	/// English String: "People who have chosen to follow your activity."
 	/// </summary>
-	public override string MessageFollowerTabTooltip => "ã‚ãªãŸã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
+	public override string MessageFollowerTabTooltip => "あなたのアクティビティをフォローしているユーザー。";
 
 	/// <summary>
 	/// Key: "Message.FollowingTabTooltip"
 	/// English String: "People whose activity you have chosen to follow."
 	/// </summary>
-	public override string MessageFollowingTabTooltip => "ã‚ãªãŸãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
+	public override string MessageFollowingTabTooltip => "あなたがアクティビティをフォローしているユーザー。";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralError"
 	/// English String: "Something went wrong."
 	/// </summary>
-	public override string MessageForGeneralError => "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+	public override string MessageForGeneralError => "問題が発生しました。";
 
 	/// <summary>
 	/// Key: "Message.ForGeneralFooter"
 	/// English String: "Please check back in few minutes."
 	/// </summary>
-	public override string MessageForGeneralFooter => "ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string MessageForGeneralFooter => "しばらくしてからもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsError"
 	/// English String: "Unable to process Request.You currently have the max number of Friends allowed. "
 	/// </summary>
-	public override string MessageForMaxFriendsError => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã€‚ç¾åœ¨ã€ç™»éŒ²ã§ãã‚‹å‹é”ã®æ•°ãŒä¸Šé™ã«é”ã—ã¦ã„ã¾ã™ã€‚ ";
+	public override string MessageForMaxFriendsError => "リクエストを処理できません。現在、登録できる友達の数が上限に達しています。 ";
 
 	/// <summary>
 	/// Key: "Message.ForMaxFriendsFooter"
 	/// English String: "Unfriend someone before accepting any more Friend Requests."
 	/// </summary>
-	public override string MessageForMaxFriendsFooter => "ã“ã‚Œä»¥ä¸Šã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹ã«ã¯ã€èª°ã‹ã‚’å‹é”è§£é™¤ã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageForMaxFriendsFooter => "これ以上の友達リクエストを承認するには、誰かを友達解除してください。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsError"
 	/// English String: "Unable to process Request. That user currently has the max number of Friends allowed."
 	/// </summary>
-	public override string MessageForMaxRequestsError => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã€‚ç¾åœ¨ã€ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ç™»éŒ²ã§ãã‚‹å‹é”ã®æ•°ãŒä¸Šé™ã«é”ã—ã¦ã„ã¾ã™ã€‚";
+	public override string MessageForMaxRequestsError => "リクエストを処理できません。現在、そのユーザーは登録できる友達の数が上限に達しています。";
 
 	/// <summary>
 	/// Key: "Message.ForMaxRequestsFooter"
 	/// English String: "You can not accept their Friend Request until they remove a Friend."
 	/// </summary>
-	public override string MessageForMaxRequestsFooter => "ã»ã‹ã®å‹é”ã‚’å‰Šé™¤ã™ã‚‹ã¾ã§ã€æ–°ã—ã„å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageForMaxRequestsFooter => "ほかの友達を削除するまで、新しい友達リクエストを承認できません。";
 
 	/// <summary>
 	/// Key: "Message.FriendRequestNotExistError"
 	/// English String: "Friend request does not exist"
 	/// </summary>
-	public override string MessageFriendRequestNotExistError => "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå­˜åœ¨ã—ã¾ã›ã‚“";
+	public override string MessageFriendRequestNotExistError => "友達リクエストが存在しません";
 
 	/// <summary>
 	/// Key: "Message.FriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageFriendsLimitExceededError => "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚";
+	public override string MessageFriendsLimitExceededError => "友達の数が上限を超えました。";
 
 	/// <summary>
 	/// Key: "Message.FriendsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageFriendsTabTooltip => "Robloxã®ãƒ¦ãƒ¼ã‚¶ãƒ¼äºŒäººãŒãŠäº’ã„ã«åŒæ„ã™ã‚Œã°ã€å‹é”ã«ãªã‚Œã¾ã™ã€‚";
+	public override string MessageFriendsTabTooltip => "Robloxのユーザー二人がお互いに同意すれば、友達になれます。";
 
 	/// <summary>
 	/// Key: "Message.NotRecipientError"
 	/// English String: "You are not the recipient of this friend request."
 	/// </summary>
-	public override string MessageNotRecipientError => "ã“ã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã€ã‚ãªãŸå®›ã¦ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+	public override string MessageNotRecipientError => "この友達リクエストは、あなた宛てではありません。";
 
 	/// <summary>
 	/// Key: "Message.OtherUserFriendsLimitExceededError"
 	/// English String: "Friends limit exceeded."
 	/// </summary>
-	public override string MessageOtherUserFriendsLimitExceededError => "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚";
+	public override string MessageOtherUserFriendsLimitExceededError => "友達の数が上限を超えました。";
 
 	/// <summary>
 	/// Key: "Message.RequestsTabTooltip"
 	/// English String: "Friends are established when two Roblox users mutually agree to friendship."
 	/// </summary>
-	public override string MessageRequestsTabTooltip => "Robloxã®ãƒ¦ãƒ¼ã‚¶ãƒ¼äºŒäººãŒãŠäº’ã„ã«åŒæ„ã™ã‚Œã°ã€å‹é”ã«ãªã‚Œã¾ã™ã€‚";
+	public override string MessageRequestsTabTooltip => "Robloxのユーザー二人がお互いに同意すれば、友達になれます。";
 
 	/// <summary>
 	/// Key: "Message.RobloxIsMoreFunWithFriends"
 	/// English String: "Roblox is more fun with friends!"
 	/// </summary>
-	public override string MessageRobloxIsMoreFunWithFriends => "Robloxã¯ã€å‹é”ã¨ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã™ã‚Œã°ã€ã‚‚ã£ã¨ãŠæ¥½ã—ã¿ã„ãŸã ã‘ã¾ã™ï¼";
+	public override string MessageRobloxIsMoreFunWithFriends => "Robloxは、友達と一緒にプレイすれば、もっとお楽しみいただけます！";
 
 	/// <summary>
 	/// Key: "Message.SelfFollowingAttemptError"
 	/// English String: "You cannot follow yourself."
 	/// </summary>
-	public override string MessageSelfFollowingAttemptError => "è‡ªåˆ†ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageSelfFollowingAttemptError => "自分をフォローすることはできません。";
 
 	/// <summary>
 	/// Key: "Message.SelfFriendingAttemptError"
 	/// English String: "You cannot be friends with yourself."
 	/// </summary>
-	public override string MessageSelfFriendingAttemptError => "è‡ªåˆ†ã¨å‹é”ã«ãªã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageSelfFriendingAttemptError => "自分と友達になることはできません。";
 
 	/// <summary>
 	/// Key: "Message.SystemUnavailableError"
 	/// English String: "Friends and Followers system is unavailable."
 	/// </summary>
-	public override string MessageSystemUnavailableError => "å‹é”ãŠã‚ˆã³ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼ã®ã‚·ã‚¹ãƒ†ãƒ ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageSystemUnavailableError => "友達およびフォロワーのシステムは利用できません。";
 
 	/// <summary>
 	/// Key: "Message.UnblockUserPinLockedError"
 	/// English String: "Pin is locked."
 	/// </summary>
-	public override string MessageUnblockUserPinLockedError => "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+	public override string MessageUnblockUserPinLockedError => "PINはロックされています。";
 
 	/// <summary>
 	/// Key: "Message.UserBlockedError"
 	/// English String: "User is blocked"
 	/// </summary>
-	public override string MessageUserBlockedError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ãƒ–ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
+	public override string MessageUserBlockedError => "ユーザーはブロックされています";
 
 	/// <summary>
 	/// Key: "Message.UserHasNotPassedCaptchaError"
 	/// English String: "You need to pass Captcha."
 	/// </summary>
-	public override string MessageUserHasNotPassedCaptchaError => "ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+	public override string MessageUserHasNotPassedCaptchaError => "キャプチャを完了する必要があります。";
 
 	/// <summary>
 	/// Key: "Message.UsersAreNotInSameGameError"
 	/// English String: "Users need to be in the same game."
 	/// </summary>
-	public override string MessageUsersAreNotInSameGameError => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåŒã˜ã‚²ãƒ¼ãƒ å†…ã«ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+	public override string MessageUsersAreNotInSameGameError => "ユーザーが同じゲーム内にいる必要があります。";
 
 	public FriendsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -297,37 +299,37 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "æ‰¿èªã™ã‚‹";
+		return "承認する";
 	}
 
 	protected override string _GetTemplateForActionFindFriends()
 	{
-		return "å‹é”ã‚’è¦‹ã¤ã‘ã‚‹";
+		return "友達を見つける";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼";
+		return "フォロー";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "ç„¡è¦–ã™ã‚‹";
+		return "無視する";
 	}
 
 	protected override string _GetTemplateForActionIgnoreAll()
 	{
-		return "ã™ã¹ã¦ç„¡è¦–ã™ã‚‹";
+		return "すべて無視する";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
+		return "フォローをやめる";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "å‹é”è§£é™¤";
+		return "友達解除";
 	}
 
 	/// <summary>
@@ -337,17 +339,17 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string DescriptionSearchFriends(string startLink, string endLink)
 	{
-		return $"ä¸Šéƒ¨ã®è™«çœ¼é¡ã‚¢ã‚¤ã‚³ãƒ³ã‚’ã‚¿ãƒƒãƒ—ã—ã¦ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’æ¤œç´¢ã™ã‚‹ã‹ã€{startLink}ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤{endLink}ã—ã¦ã€çŸ¥ã‚Šåˆã„ã«ãªã‚Šã¾ã—ã‚‡ã†ã€‚";
+		return $"上部の虫眼鏡アイコンをタップして、ユーザーを検索するか、{startLink}ゲームをプレイ{endLink}して、知り合いになりましょう。";
 	}
 
 	protected override string _GetTemplateForDescriptionSearchFriends()
 	{
-		return "ä¸Šéƒ¨ã®è™«çœ¼é¡ã‚¢ã‚¤ã‚³ãƒ³ã‚’ã‚¿ãƒƒãƒ—ã—ã¦ã€ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’æ¤œç´¢ã™ã‚‹ã‹ã€{startLink}ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤{endLink}ã—ã¦ã€çŸ¥ã‚Šåˆã„ã«ãªã‚Šã¾ã—ã‚‡ã†ã€‚";
+		return "上部の虫眼鏡アイコンをタップして、ユーザーを検索するか、{startLink}ゲームをプレイ{endLink}して、知り合いになりましょう。";
 	}
 
 	protected override string _GetTemplateForHeadingMyFriends()
 	{
-		return "ã‚ãªãŸã®å‹é”";
+		return "あなたの友達";
 	}
 
 	/// <summary>
@@ -356,37 +358,37 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string HeadingUsersFriends(string username)
 	{
-		return $"{username} ã•ã‚“ã®å‹é”";
+		return $"{username} さんの友達";
 	}
 
 	protected override string _GetTemplateForHeadingUsersFriends()
 	{
-		return "{username} ã•ã‚“ã®å‹é”";
+		return "{username} さんの友達";
 	}
 
 	protected override string _GetTemplateForLabelErrorTitle()
 	{
-		return "ã‚¨ãƒ©ãƒ¼";
+		return "エラー";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
+		return "フォロワー";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ä¸­";
+		return "フォロー中";
 	}
 
 	protected override string _GetTemplateForLabelFriendRequests()
 	{
-		return "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
+		return "友達リクエスト";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "å‹é”";
+		return "友達";
 	}
 
 	/// <summary>
@@ -396,17 +398,17 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 	/// </summary>
 	public override string LabelNearbyUpsell(string startSpan, string endSpan)
 	{
-		return $"ä¿ç•™ä¸­ã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã‚ã‚Šã¾ã›ã‚“ã€‚å‹é”ã‚’è¿½åŠ ã™ã‚‹ã«ã¯ã€ {startSpan}å‘¨è¾º{endSpan} ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return $"保留中の友達リクエストはありません。友達を追加するには、 {startSpan}周辺{endSpan} をチェックしてください。";
 	}
 
 	protected override string _GetTemplateForLabelNearbyUpsell()
 	{
-		return "ä¿ç•™ä¸­ã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã‚ã‚Šã¾ã›ã‚“ã€‚å‹é”ã‚’è¿½åŠ ã™ã‚‹ã«ã¯ã€ {startSpan}å‘¨è¾º{endSpan} ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return "保留中の友達リクエストはありません。友達を追加するには、 {startSpan}周辺{endSpan} をチェックしてください。";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+		return "オフライン";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -416,162 +418,162 @@ internal class FriendsResources_ja_jp : FriendsResources_en_us, IFriendsResource
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+		return "オンライン";
 	}
 
 	protected override string _GetTemplateForLabelRequests()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆ";
+		return "リクエスト";
 	}
 
 	protected override string _GetTemplateForLabelSearchFriends()
 	{
-		return "å‹é”ã‚’æ¤œç´¢";
+		return "友達を検索";
 	}
 
 	protected override string _GetTemplateForLabelUnfollowed()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã¾ã—ãŸ";
+		return "フォローをやめました";
 	}
 
 	protected override string _GetTemplateForMessageActionNotAllowedError()
 	{
-		return "ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ãŒè¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“";
+		return "アクションが許可されていません";
 	}
 
 	protected override string _GetTemplateForMessageAlreadyExistsError()
 	{
-		return "ã™ã§ã«ã‚ã‚Šã¾ã™ã€‚";
+		return "すでにあります。";
 	}
 
 	protected override string _GetTemplateForMessageCurrentInvalidParametersError()
 	{
-		return "ç„¡åŠ¹ãªãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã§ã™ã€‚";
+		return "無効なパラメータです。";
 	}
 
 	protected override string _GetTemplateForMessageCurrentUserFriendsLimitExceededError()
 	{
-		return "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹å‰ã«ã€ã»ã‹ã®å‹é”ã‚’å‰Šé™¤ã—ã¦ãã ã•ã„ã€‚";
+		return "友達の数が上限を超えました。友達リクエストを承認する前に、ほかの友達を削除してください。";
 	}
 
 	protected override string _GetTemplateForMessageDefaultError()
 	{
-		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+		return "エラーが発生しました。";
 	}
 
 	protected override string _GetTemplateForMessageFloodLimitExceededError()
 	{
-		return "ã“ã®æ“ä½œã‚’ä½•åº¦ã‚‚å®Ÿè¡Œã—ã¦ã„ã¾ã™ã€‚1åˆ†ã»ã©å¾…ã£ã¦ã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+		return "この操作を何度も実行しています。1分ほど待ってからやり直してください。";
 	}
 
 	protected override string _GetTemplateForMessageFollowerTabTooltip()
 	{
-		return "ã‚ãªãŸã®ã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
+		return "あなたのアクティビティをフォローしているユーザー。";
 	}
 
 	protected override string _GetTemplateForMessageFollowingTabTooltip()
 	{
-		return "ã‚ãªãŸãŒã‚¢ã‚¯ãƒ†ã‚£ãƒ“ãƒ†ã‚£ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã‚‹ãƒ¦ãƒ¼ã‚¶ãƒ¼ã€‚";
+		return "あなたがアクティビティをフォローしているユーザー。";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralError()
 	{
-		return "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+		return "問題が発生しました。";
 	}
 
 	protected override string _GetTemplateForMessageForGeneralFooter()
 	{
-		return "ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "しばらくしてからもう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsError()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã€‚ç¾åœ¨ã€ç™»éŒ²ã§ãã‚‹å‹é”ã®æ•°ãŒä¸Šé™ã«é”ã—ã¦ã„ã¾ã™ã€‚ ";
+		return "リクエストを処理できません。現在、登録できる友達の数が上限に達しています。 ";
 	}
 
 	protected override string _GetTemplateForMessageForMaxFriendsFooter()
 	{
-		return "ã“ã‚Œä»¥ä¸Šã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹ã«ã¯ã€èª°ã‹ã‚’å‹é”è§£é™¤ã—ã¦ãã ã•ã„ã€‚";
+		return "これ以上の友達リクエストを承認するには、誰かを友達解除してください。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsError()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’å‡¦ç†ã§ãã¾ã›ã‚“ã€‚ç¾åœ¨ã€ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ç™»éŒ²ã§ãã‚‹å‹é”ã®æ•°ãŒä¸Šé™ã«é”ã—ã¦ã„ã¾ã™ã€‚";
+		return "リクエストを処理できません。現在、そのユーザーは登録できる友達の数が上限に達しています。";
 	}
 
 	protected override string _GetTemplateForMessageForMaxRequestsFooter()
 	{
-		return "ã»ã‹ã®å‹é”ã‚’å‰Šé™¤ã™ã‚‹ã¾ã§ã€æ–°ã—ã„å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã§ãã¾ã›ã‚“ã€‚";
+		return "ほかの友達を削除するまで、新しい友達リクエストを承認できません。";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestNotExistError()
 	{
-		return "å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆãŒå­˜åœ¨ã—ã¾ã›ã‚“";
+		return "友達リクエストが存在しません";
 	}
 
 	protected override string _GetTemplateForMessageFriendsLimitExceededError()
 	{
-		return "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚";
+		return "友達の数が上限を超えました。";
 	}
 
 	protected override string _GetTemplateForMessageFriendsTabTooltip()
 	{
-		return "Robloxã®ãƒ¦ãƒ¼ã‚¶ãƒ¼äºŒäººãŒãŠäº’ã„ã«åŒæ„ã™ã‚Œã°ã€å‹é”ã«ãªã‚Œã¾ã™ã€‚";
+		return "Robloxのユーザー二人がお互いに同意すれば、友達になれます。";
 	}
 
 	protected override string _GetTemplateForMessageNotRecipientError()
 	{
-		return "ã“ã®å‹é”ãƒªã‚¯ã‚¨ã‚¹ãƒˆã¯ã€ã‚ãªãŸå®›ã¦ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "この友達リクエストは、あなた宛てではありません。";
 	}
 
 	protected override string _GetTemplateForMessageOtherUserFriendsLimitExceededError()
 	{
-		return "å‹é”ã®æ•°ãŒä¸Šé™ã‚’è¶…ãˆã¾ã—ãŸã€‚";
+		return "友達の数が上限を超えました。";
 	}
 
 	protected override string _GetTemplateForMessageRequestsTabTooltip()
 	{
-		return "Robloxã®ãƒ¦ãƒ¼ã‚¶ãƒ¼äºŒäººãŒãŠäº’ã„ã«åŒæ„ã™ã‚Œã°ã€å‹é”ã«ãªã‚Œã¾ã™ã€‚";
+		return "Robloxのユーザー二人がお互いに同意すれば、友達になれます。";
 	}
 
 	protected override string _GetTemplateForMessageRobloxIsMoreFunWithFriends()
 	{
-		return "Robloxã¯ã€å‹é”ã¨ä¸€ç·’ã«ãƒ—ãƒ¬ã‚¤ã™ã‚Œã°ã€ã‚‚ã£ã¨ãŠæ¥½ã—ã¿ã„ãŸã ã‘ã¾ã™ï¼";
+		return "Robloxは、友達と一緒にプレイすれば、もっとお楽しみいただけます！";
 	}
 
 	protected override string _GetTemplateForMessageSelfFollowingAttemptError()
 	{
-		return "è‡ªåˆ†ã‚’ãƒ•ã‚©ãƒ­ãƒ¼ã™ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+		return "自分をフォローすることはできません。";
 	}
 
 	protected override string _GetTemplateForMessageSelfFriendingAttemptError()
 	{
-		return "è‡ªåˆ†ã¨å‹é”ã«ãªã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+		return "自分と友達になることはできません。";
 	}
 
 	protected override string _GetTemplateForMessageSystemUnavailableError()
 	{
-		return "å‹é”ãŠã‚ˆã³ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼ã®ã‚·ã‚¹ãƒ†ãƒ ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚";
+		return "友達およびフォロワーのシステムは利用できません。";
 	}
 
 	protected override string _GetTemplateForMessageUnblockUserPinLockedError()
 	{
-		return "PINã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+		return "PINはロックされています。";
 	}
 
 	protected override string _GetTemplateForMessageUserBlockedError()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ãƒ–ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™";
+		return "ユーザーはブロックされています";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNotPassedCaptchaError()
 	{
-		return "ã‚­ãƒ£ãƒ—ãƒãƒ£ã‚’å®Œäº†ã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "キャプチャを完了する必要があります。";
 	}
 
 	protected override string _GetTemplateForMessageUsersAreNotInSameGameError()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒåŒã˜ã‚²ãƒ¼ãƒ å†…ã«ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "ユーザーが同じゲーム内にいる必要があります。";
 	}
 }
 

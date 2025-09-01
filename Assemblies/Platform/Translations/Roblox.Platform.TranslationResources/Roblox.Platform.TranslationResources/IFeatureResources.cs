@@ -1,6 +1,8 @@
-﻿using Roblox.TranslationResources.Feature;
-namespace Roblox.Platform.TranslationResourcespublic {
-    interface IFeatureResources : ITranslationResourcesNamespacesGroup
+﻿using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Feature;
+namespace Roblox.Platform.TranslationResources {
+    public interface IFeatureResources : ITranslationResourcesNamespacesGroup
 
 {
 	IAccountSettingsResources AccountSettings { get; }
@@ -164,3 +166,5 @@ namespace Roblox.Platform.TranslationResourcespublic {
 
 
 }
+
+

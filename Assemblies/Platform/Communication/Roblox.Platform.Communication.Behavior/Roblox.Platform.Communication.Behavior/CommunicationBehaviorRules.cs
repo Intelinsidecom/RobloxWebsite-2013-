@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Roblox.Platform.Communication.Behavior.Properties;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Communication.Behavior;
 

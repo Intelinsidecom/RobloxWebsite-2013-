@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides WeChatResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class WeChatResources_ko_kr : WeChatResources_en_us, IWeChatResources, 
 	/// button text for logging in with WeChat (social network application)
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "WeChat ë¡œê·¸ì¸";
+	public override string ActionWeChatLogin => "WeChat 로그인";
 
 	public WeChatResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -20,7 +22,7 @@ internal class WeChatResources_ko_kr : WeChatResources_en_us, IWeChatResources, 
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "WeChat ë¡œê·¸ì¸";
+		return "WeChat 로그인";
 	}
 }
 

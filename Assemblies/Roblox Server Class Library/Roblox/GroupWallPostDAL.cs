@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.DataV2.Core;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
@@ -218,3 +218,4 @@ public class GroupWallPostDAL
 		return Database.GetIDCollection<long>("WallPostsV2_GetWallPostV2IDsByGroupID", queryParameters);
 	}
 }
+

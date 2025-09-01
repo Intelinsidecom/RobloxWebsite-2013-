@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides NotificationStreamResources_en_us to provide locale specific translations where possible,
@@ -10,108 +12,108 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "ìˆ˜ë½";
+	public override string ActionAccept => "수락";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "ì±„íŒ…";
+	public override string ActionChat => "채팅";
 
 	/// <summary>
 	/// Key: "Action.Ignore"
 	/// English String: "Ignore"
 	/// </summary>
-	public override string ActionIgnore => "ë¬´ì‹œ";
+	public override string ActionIgnore => "무시";
 
 	/// <summary>
 	/// Key: "Action.Play"
 	/// Label for button to launch game.
 	/// English String: "Play"
 	/// </summary>
-	public override string ActionPlay => "í”Œë ˆì´";
+	public override string ActionPlay => "플레이";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// Label for link to report a game update message
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "ì‹ ê³ í•˜ê¸°";
+	public override string ActionReportAbuse => "신고하기";
 
 	/// <summary>
 	/// Key: "Action.Undo"
 	/// Label for Undo link to reverse the unfollow action
 	/// English String: "Undo"
 	/// </summary>
-	public override string ActionUndo => "ì‹¤í–‰ ì·¨ì†Œ";
+	public override string ActionUndo => "실행 취소";
 
 	/// <summary>
 	/// Key: "Action.View"
 	/// English String: "View"
 	/// </summary>
-	public override string ActionView => "ë³´ê¸°";
+	public override string ActionView => "보기";
 
 	/// <summary>
 	/// Key: "Action.ViewAll"
 	/// English String: "View All"
 	/// </summary>
-	public override string ActionViewAll => "ì „ì²´ ë³´ê¸°";
+	public override string ActionViewAll => "전체 보기";
 
 	/// <summary>
 	/// Key: "Heading.BackToAllNotifications"
 	/// Heading displayed in game updates view, containing back link to notifications main view.
 	/// English String: "All Notifications"
 	/// </summary>
-	public override string HeadingBackToAllNotifications => "ì „ì²´ ì•Œë¦¼";
+	public override string HeadingBackToAllNotifications => "전체 알림";
 
 	/// <summary>
 	/// Key: "Label.NoNetworkConnectionText"
 	/// English String: "Connecting..."
 	/// </summary>
-	public override string LabelNoNetworkConnectionText => "ì—°ê²° ì¤‘...";
+	public override string LabelNoNetworkConnectionText => "연결 중...";
 
 	/// <summary>
 	/// Key: "Label.NoNotifications"
 	/// English String: "No Notifications"
 	/// </summary>
-	public override string LabelNoNotifications => "ì•Œë¦¼ ì—†ìŒ";
+	public override string LabelNoNotifications => "알림 없음";
 
 	/// <summary>
 	/// Key: "Label.Notifications"
 	/// English String: "Notifications"
 	/// </summary>
-	public override string LabelNotifications => "ì•Œë¦¼";
+	public override string LabelNotifications => "알림";
 
 	/// <summary>
 	/// Key: "Label.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelSettings => "ì„¤ì •";
+	public override string LabelSettings => "설정";
 
 	/// <summary>
 	/// Key: "Message.GameNotPlayableOnDevice"
 	/// Message displayed on game update card when the game is not playable on the device type.
 	/// English String: "Not playable on this device"
 	/// </summary>
-	public override string MessageGameNotPlayableOnDevice => "ë³¸ ê¸°ê¸°ì—ì„œëŠ” í”Œë ˆì´í•  ìˆ˜ ì—†ì–´ìš”";
+	public override string MessageGameNotPlayableOnDevice => "본 기기에서는 플레이할 수 없어요";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsOther"
 	/// English String: "That user already has the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsOther => "í•´ë‹¹ ì‚¬ìš©ìžì˜ ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
+	public override string MessageTooManyFriendsOther => "해당 사용자의 친구 수가 한도에 도달했어요.";
 
 	/// <summary>
 	/// Key: "Message.TooManyFriendsSelf"
 	/// English String: "You already have the max number of friends."
 	/// </summary>
-	public override string MessageTooManyFriendsSelf => "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
+	public override string MessageTooManyFriendsSelf => "친구 수가 한도에 도달했어요.";
 
 	public NotificationStreamResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -120,37 +122,37 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "ìˆ˜ë½";
+		return "수락";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "ì±„íŒ…";
+		return "채팅";
 	}
 
 	protected override string _GetTemplateForActionIgnore()
 	{
-		return "ë¬´ì‹œ";
+		return "무시";
 	}
 
 	protected override string _GetTemplateForActionPlay()
 	{
-		return "í”Œë ˆì´";
+		return "플레이";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "ì‹ ê³ í•˜ê¸°";
+		return "신고하기";
 	}
 
 	protected override string _GetTemplateForActionUndo()
 	{
-		return "ì‹¤í–‰ ì·¨ì†Œ";
+		return "실행 취소";
 	}
 
 	/// <summary>
@@ -160,47 +162,47 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string ActionUnfollowGame(string gameName)
 	{
-		return $"{gameName} íŒ”ë¡œìš° ì·¨ì†Œ";
+		return $"{gameName} 팔로우 취소";
 	}
 
 	protected override string _GetTemplateForActionUnfollowGame()
 	{
-		return "{gameName} íŒ”ë¡œìš° ì·¨ì†Œ";
+		return "{gameName} 팔로우 취소";
 	}
 
 	protected override string _GetTemplateForActionView()
 	{
-		return "ë³´ê¸°";
+		return "보기";
 	}
 
 	protected override string _GetTemplateForActionViewAll()
 	{
-		return "ì „ì²´ ë³´ê¸°";
+		return "전체 보기";
 	}
 
 	protected override string _GetTemplateForHeadingBackToAllNotifications()
 	{
-		return "ì „ì²´ ì•Œë¦¼";
+		return "전체 알림";
 	}
 
 	protected override string _GetTemplateForLabelNoNetworkConnectionText()
 	{
-		return "ì—°ê²° ì¤‘...";
+		return "연결 중...";
 	}
 
 	protected override string _GetTemplateForLabelNoNotifications()
 	{
-		return "ì•Œë¦¼ ì—†ìŒ";
+		return "알림 없음";
 	}
 
 	protected override string _GetTemplateForLabelNotifications()
 	{
-		return "ì•Œë¦¼";
+		return "알림";
 	}
 
 	protected override string _GetTemplateForLabelSettings()
 	{
-		return "ì„¤ì •";
+		return "설정";
 	}
 
 	/// <summary>
@@ -210,17 +212,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageAggregatedGameUpdateDouble(string gameOne, string gameTwo)
 	{
-		return $"{gameOne}, {gameTwo}ì— ì—…ë°ì´íŠ¸ê°€ ìžˆì–´ìš”.";
+		return $"{gameOne}, {gameTwo}에 업데이트가 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateDouble()
 	{
-		return "{gameOne}, {gameTwo}ì— ì—…ë°ì´íŠ¸ê°€ ìžˆì–´ìš”.";
+		return "{gameOne}, {gameTwo}에 업데이트가 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageAggregatedGameUpdateMultiple()
 	{
-		return "{gameOne}, {gameTwo} , {otherCount, plural, =1 {#ê°œ ê¸°íƒ€ ê²Œìž„} other {#ê°œ ê¸°íƒ€ ê²Œìž„}}ì— ì—…ë°ì´íŠ¸ê°€ ìžˆì–´ìš”.";
+		return "{gameOne}, {gameTwo} , {otherCount, plural, =1 {#개 기타 게임} other {#개 기타 게임}}에 업데이트가 있어요.";
 	}
 
 	/// <summary>
@@ -229,17 +231,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}ë‹˜ê³¼ {userTwo}ë‹˜";
+		return $"{userOne}님과 {userTwo}님";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedDouble()
 	{
-		return "{userOne}ë‹˜ê³¼ {userTwo}ë‹˜";
+		return "{userOne}님과 {userTwo}님";
 	}
 
 	protected override string _GetTemplateForMessageConfirmAcceptedMultiple()
 	{
-		return "{userOne}ë‹˜, {userTwo}ë‹˜ ì™¸ {userMultipleCount, plural, =1 {#ëª…} other {#ëª…}}";
+		return "{userOne}님, {userTwo}님 외 {userMultipleCount, plural, =1 {#명} other {#명}}";
 	}
 
 	/// <summary>
@@ -262,17 +264,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ê°€ ë˜ì—ˆì–´ìš”!";
+		return $"{userOne}님과 {userTwo}님이 친구가 되었어요!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentDouble()
 	{
-		return "{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ê°€ ë˜ì—ˆì–´ìš”!";
+		return "{userOne}님과 {userTwo}님이 친구가 되었어요!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentMultiple()
 	{
-		return "{userOne}ë‹˜, {userTwo}ë‹˜ ì™¸ {userMultipleCount, plural, =1 {#ëª…} other {#ëª…}}ê³¼ ì¹œêµ¬ê°€ ë˜ì—ˆì–´ìš”!";
+		return "{userOne}님, {userTwo}님 외 {userMultipleCount, plural, =1 {#명} other {#명}}과 친구가 되었어요!";
 	}
 
 	/// <summary>
@@ -281,12 +283,12 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageConfirmSentSingle(string userOne)
 	{
-		return $"{userOne}ë‹˜ê³¼ ì¹œêµ¬ê°€ ë˜ì—ˆì–´ìš”!";
+		return $"{userOne}님과 친구가 되었어요!";
 	}
 
 	protected override string _GetTemplateForMessageConfirmSentSingle()
 	{
-		return "{userOne}ë‹˜ê³¼ ì¹œêµ¬ê°€ ë˜ì—ˆì–´ìš”!";
+		return "{userOne}님과 친구가 되었어요!";
 	}
 
 	/// <summary>
@@ -295,17 +297,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailable(string month, string year, string gameName)
 	{
-		return $"{gameName}ì˜ {year} {month} ë¶„ì„ ë³´ê³ ì„œë¥¼ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”.";
+		return $"{gameName}의 {year} {month} 분석 보고서를 이용할 수 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailable()
 	{
-		return "{gameName}ì˜ {year} {month} ë¶„ì„ ë³´ê³ ì„œë¥¼ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”.";
+		return "{gameName}의 {year} {month} 분석 보고서를 이용할 수 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple()
 	{
-		return "{gameName} ë° {otherCount, plural, =1 {#ê°œ ê¸°íƒ€ ê²Œìž„} other {# ê¸°íƒ€ ê²Œìž„}}ì˜ {year} {month} ë¶„ì„ ë³´ê³ ì„œë¥¼ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”.";
+		return "{gameName} 및 {otherCount, plural, =1 {#개 기타 게임} other {# 기타 게임}}의 {year} {month} 분석 보고서를 이용할 수 있어요.";
 	}
 
 	/// <summary>
@@ -314,12 +316,12 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageDeveloperMetricsAvailableMultiple2(string month, string year, string gameCount)
 	{
-		return $"{gameCount}ê°œ ê²Œìž„ì˜ {year} {month} ë¶„ì„ ë³´ê³ ì„œë¥¼ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”.";
+		return $"{gameCount}개 게임의 {year} {month} 분석 보고서를 이용할 수 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageDeveloperMetricsAvailableMultiple2()
 	{
-		return "{gameCount}ê°œ ê²Œìž„ì˜ {year} {month} ë¶„ì„ ë³´ê³ ì„œë¥¼ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”.";
+		return "{gameCount}개 게임의 {year} {month} 분석 보고서를 이용할 수 있어요.";
 	}
 
 	/// <summary>
@@ -328,17 +330,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
+		return $"{userOne}님과 {userTwo}님이 친구 요청을 수락했어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedDouble()
 	{
-		return "{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
+		return "{userOne}님과 {userTwo}님이 친구 요청을 수락했어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedMultiple()
 	{
-		return "{userOne}ë‹˜, {userTwo}ë‹˜ ì™¸ {userMultipleCount, plural, =1 {#ëª…} other {#ëª…}}ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
+		return "{userOne}님, {userTwo}님 외 {userMultipleCount, plural, =1 {#명} other {#명}}이 친구 요청을 수락했어요.";
 	}
 
 	/// <summary>
@@ -347,12 +349,12 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestAcceptedSingle(string userOne)
 	{
-		return $"{userOne}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
+		return $"{userOne}님이 친구 요청을 수락했어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestAcceptedSingle()
 	{
-		return "{userOne}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ìˆ˜ë½í–ˆì–´ìš”.";
+		return "{userOne}님이 친구 요청을 수락했어요.";
 	}
 
 	/// <summary>
@@ -361,17 +363,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentDouble(string userOne, string userTwo)
 	{
-		return $"{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ë³´ëƒˆì–´ìš”.";
+		return $"{userOne}님과 {userTwo}님이 친구 요청을 보냈어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentDouble()
 	{
-		return "{userOne}ë‹˜ê³¼ {userTwo}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ë³´ëƒˆì–´ìš”.";
+		return "{userOne}님과 {userTwo}님이 친구 요청을 보냈어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentMultiple()
 	{
-		return "{userOne}ë‹˜, {userTwo}ë‹˜ ì™¸ {userMultipleCount, plural, =1 {#ëª…} other {#ëª…}}ì´ ì¹œêµ¬ ìš”ì²­ì„ ë³´ëƒˆì–´ìš”.";
+		return "{userOne}님, {userTwo}님 외 {userMultipleCount, plural, =1 {#명} other {#명}}이 친구 요청을 보냈어요.";
 	}
 
 	/// <summary>
@@ -380,17 +382,17 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageFriendRequestSentSingle(string userOne)
 	{
-		return $"{userOne}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ë³´ëƒˆì–´ìš”.";
+		return $"{userOne}님이 친구 요청을 보냈어요.";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestSentSingle()
 	{
-		return "{userOne}ë‹˜ì´ ì¹œêµ¬ ìš”ì²­ì„ ë³´ëƒˆì–´ìš”.";
+		return "{userOne}님이 친구 요청을 보냈어요.";
 	}
 
 	protected override string _GetTemplateForMessageGameNotPlayableOnDevice()
 	{
-		return "ë³¸ ê¸°ê¸°ì—ì„œëŠ” í”Œë ˆì´í•  ìˆ˜ ì—†ì–´ìš”";
+		return "본 기기에서는 플레이할 수 없어요";
 	}
 
 	/// <summary>
@@ -399,12 +401,12 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageAndPreview(string titleStart, string username, string titleEnd, string message)
 	{
-		return $"{titleStart}{username}ë‹˜ì˜ ë©”ì‹œì§€:{titleEnd} {message}";
+		return $"{titleStart}{username}님의 메시지:{titleEnd} {message}";
 	}
 
 	protected override string _GetTemplateForMessageMessageAndPreview()
 	{
-		return "{titleStart}{username}ë‹˜ì˜ ë©”ì‹œì§€:{titleEnd} {message}";
+		return "{titleStart}{username}님의 메시지:{titleEnd} {message}";
 	}
 
 	/// <summary>
@@ -413,27 +415,27 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageMessageFrom(string username)
 	{
-		return $"{username}ë‹˜ì˜ ë©”ì‹œì§€: ";
+		return $"{username}님의 메시지: ";
 	}
 
 	protected override string _GetTemplateForMessageMessageFrom()
 	{
-		return "{username}ë‹˜ì˜ ë©”ì‹œì§€: ";
+		return "{username}님의 메시지: ";
 	}
 
 	protected override string _GetTemplateForMessageNumberofNewNotifications()
 	{
-		return "{notificationCount, plural, =1 {ìƒˆ ì•Œë¦¼ #ê±´} other {ìƒˆ ì•Œë¦¼ #ê±´}}";
+		return "{notificationCount, plural, =1 {새 알림 #건} other {새 알림 #건}}";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsOther()
 	{
-		return "í•´ë‹¹ ì‚¬ìš©ìžì˜ ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
+		return "해당 사용자의 친구 수가 한도에 도달했어요.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyFriendsSelf()
 	{
-		return "ì¹œêµ¬ ìˆ˜ê°€ í•œë„ì— ë„ë‹¬í–ˆì–´ìš”.";
+		return "친구 수가 한도에 도달했어요.";
 	}
 
 	/// <summary>
@@ -443,27 +445,27 @@ internal class NotificationStreamResources_ko_kr : NotificationStreamResources_e
 	/// </summary>
 	public override string MessageUnfollowedGame(string gameName)
 	{
-		return $"{gameName} íŒ”ë¡œìš° ì·¨ì†Œ";
+		return $"{gameName} 팔로우 취소";
 	}
 
 	protected override string _GetTemplateForMessageUnfollowedGame()
 	{
-		return "{gameName} íŒ”ë¡œìš° ì·¨ì†Œ";
+		return "{gameName} 팔로우 취소";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriendRequests()
 	{
-		return "{numberOfRequests}ê°œì˜ ìƒˆ {numberOfRequests, plural, =1 {ì¹œêµ¬ ìš”ì²­} other {ì¹œêµ¬ ìš”ì²­}}ì´ ë„ì°©í–ˆì–´ìš”.";
+		return "{numberOfRequests}개의 새 {numberOfRequests, plural, =1 {친구 요청} other {친구 요청}}이 도착했어요.";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNewFriends()
 	{
-		return "{numberOfFriends}ëª…ì˜ ìƒˆ {numberOfFriends, plural, =1 {ì¹œêµ¬} other {ì¹œêµ¬}}ê°€ ìƒê²¼ì–´ìš”.";
+		return "{numberOfFriends}명의 새 {numberOfFriends, plural, =1 {친구} other {친구}}가 생겼어요.";
 	}
 
 	protected override string _GetTemplateForMessageYouReceivedMessages()
 	{
-		return "{numberOfMessagesText}ê°œì˜ ìƒˆ {numberOfMessages, plural, =1 {ë©”ì‹œì§€} other {ë©”ì‹œì§€}}ê°€ ë„ì°©í–ˆì–´ìš”.";
+		return "{numberOfMessagesText}개의 새 {numberOfMessages, plural, =1 {메시지} other {메시지}}가 도착했어요.";
 	}
 }
 

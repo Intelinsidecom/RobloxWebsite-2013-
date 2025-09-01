@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides HomeResources_en_us to provide locale specific translations where possible,
@@ -10,43 +12,43 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "è¿”å›žé¡¶éƒ¨";
+	public override string ActionBackToTop => "返回顶部";
 
 	/// <summary>
 	/// Key: "ActionLearnMore"
 	/// English String: "Learn More"
 	/// </summary>
-	public override string ActionLearnMore => "äº†è§£æ›´å¤š";
+	public override string ActionLearnMore => "了解更多";
 
 	/// <summary>
 	/// Key: "ActionSeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string ActionSeeAll => "查看全部";
 
 	/// <summary>
 	/// Key: "ActionSeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "æŸ¥çœ‹æ›´å¤š";
+	public override string ActionSeeMore => "查看更多";
 
 	/// <summary>
 	/// Key: "ActionShare"
 	/// English String: "Share"
 	/// </summary>
-	public override string ActionShare => "åˆ†äº«";
+	public override string ActionShare => "分享";
 
 	/// <summary>
 	/// Key: "ActionWhatAreYouUpto"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string ActionWhatAreYouUpto => "æœ€è¿‘æ€Žä¹ˆæ ·ï¼Ÿ";
+	public override string ActionWhatAreYouUpto => "最近怎么样？";
 
 	/// <summary>
 	/// Key: "HeadingBlogNews"
 	/// English String: "Blog News"
 	/// </summary>
-	public override string HeadingBlogNews => "åšå®¢æ¶ˆæ¯";
+	public override string HeadingBlogNews => "博客消息";
 
 	/// <summary>
 	/// Key: "HeadingDeveloperExchange"
@@ -58,85 +60,85 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 	/// Key: "HeadingFriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string HeadingFriendActivity => "å¥½å‹åŠ¨æ€";
+	public override string HeadingFriendActivity => "好友动态";
 
 	/// <summary>
 	/// Key: "HeadingFriendsTitle"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriendsTitle => "å¥½å‹";
+	public override string HeadingFriendsTitle => "好友";
 
 	/// <summary>
 	/// Key: "HeadingMyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string HeadingMyFavorites => "æˆ‘çš„æœ€çˆ±";
+	public override string HeadingMyFavorites => "我的最爱";
 
 	/// <summary>
 	/// Key: "HeadingMyFeed"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string HeadingMyFeed => "æˆ‘çš„æŽ¨é€";
+	public override string HeadingMyFeed => "我的推送";
 
 	/// <summary>
 	/// Key: "HeadingRecentlyPlayed"
 	/// English String: "Recently Played"
 	/// </summary>
-	public override string HeadingRecentlyPlayed => "æœ€è¿‘çŽ©è¿‡";
+	public override string HeadingRecentlyPlayed => "最近玩过";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now on the side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "åœ¨æ‰¾â€œæˆ‘çš„æŽ¨é€â€ï¼ŸçŽ°å·²æ”¹ä¸ºåœ¨ä¾§è¾¹æ æ˜¾ç¤ºã€‚";
+	public override string LabelFindMyFeed => "在找“我的推送”？现已改为在侧边栏显示。";
 
 	/// <summary>
 	/// Key: "LabelAnnouncement"
 	/// English String: "Announcement"
 	/// </summary>
-	public override string LabelAnnouncement => "å…¬å‘Š";
+	public override string LabelAnnouncement => "公告";
 
 	/// <summary>
 	/// Key: "LabelCreateEarn"
 	/// English String: "Create games, earn money"
 	/// </summary>
-	public override string LabelCreateEarn => "åˆ›ä½œæ¸¸æˆï¼Œèµšå–é‡‘é’±";
+	public override string LabelCreateEarn => "创作游戏，赚取金钱";
 
 	/// <summary>
 	/// Key: "LabelSharing"
 	/// English String: "Sharing..."
 	/// </summary>
-	public override string LabelSharing => "æ­£åœ¨åˆ†äº«...";
+	public override string LabelSharing => "正在分享...";
 
 	/// <summary>
 	/// Key: "LabelStatusUpdateFailed"
 	/// English String: "Status update failed."
 	/// </summary>
-	public override string LabelStatusUpdateFailed => "æ— æ³•æ›´æ–°çŠ¶æ€ã€‚";
+	public override string LabelStatusUpdateFailed => "无法更新状态。";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoBlank"
 	/// English String: "Update cannot be blank. Please try again."
 	/// </summary>
-	public override string ResponseErrorNoBlank => "æ›´æ–°ä¸èƒ½ä¸ºç©ºç™½ã€‚è¯·é‡è¯•ã€‚";
+	public override string ResponseErrorNoBlank => "更新不能为空白。请重试。";
 
 	/// <summary>
 	/// Key: "ResponseErrorNoLogin"
 	/// English String: "Please log into your account."
 	/// </summary>
-	public override string ResponseErrorNoLogin => "è¯·ç™»å½•ä½ çš„å¸æˆ·ã€‚";
+	public override string ResponseErrorNoLogin => "请登录你的帐户。";
 
 	/// <summary>
 	/// Key: "ResponseErrorOther"
 	/// English String: "System issue. Please try again later, then contact Support."
 	/// </summary>
-	public override string ResponseErrorOther => "ç³»ç»Ÿå‡ºçŽ°é—®é¢˜ï¼Œè¯·ç¨åŽé‡è¯•å¹¶è”ç³»æŠ€æœ¯æ”¯æŒã€‚";
+	public override string ResponseErrorOther => "系统出现问题，请稍后重试并联系技术支持。";
 
 	/// <summary>
 	/// Key: "ResponseErrorTooManyUpdates"
 	/// English String: "Too many updates. Please try again later."
 	/// </summary>
-	public override string ResponseErrorTooManyUpdates => "æ›´æ–°æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+	public override string ResponseErrorTooManyUpdates => "更新次数过多。请稍后重试。";
 
 	public HomeResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -145,37 +147,37 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "è¿”å›žé¡¶éƒ¨";
+		return "返回顶部";
 	}
 
 	protected override string _GetTemplateForActionLearnMore()
 	{
-		return "äº†è§£æ›´å¤š";
+		return "了解更多";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "查看全部";
 	}
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "æŸ¥çœ‹æ›´å¤š";
+		return "查看更多";
 	}
 
 	protected override string _GetTemplateForActionShare()
 	{
-		return "åˆ†äº«";
+		return "分享";
 	}
 
 	protected override string _GetTemplateForActionWhatAreYouUpto()
 	{
-		return "æœ€è¿‘æ€Žä¹ˆæ ·ï¼Ÿ";
+		return "最近怎么样？";
 	}
 
 	protected override string _GetTemplateForHeadingBlogNews()
 	{
-		return "åšå®¢æ¶ˆæ¯";
+		return "博客消息";
 	}
 
 	protected override string _GetTemplateForHeadingDeveloperExchange()
@@ -185,7 +187,7 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 
 	protected override string _GetTemplateForHeadingFriendActivity()
 	{
-		return "å¥½å‹åŠ¨æ€";
+		return "好友动态";
 	}
 
 	/// <summary>
@@ -194,47 +196,47 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string HeadingFriends(string friendCount)
 	{
-		return $"å¥½å‹ï¼ˆ{friendCount} åï¼‰";
+		return $"好友（{friendCount} 名）";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "å¥½å‹ï¼ˆ{friendCount} åï¼‰";
+		return "好友（{friendCount} 名）";
 	}
 
 	protected override string _GetTemplateForHeadingFriendsTitle()
 	{
-		return "å¥½å‹";
+		return "好友";
 	}
 
 	protected override string _GetTemplateForHeadingMyFavorites()
 	{
-		return "æˆ‘çš„æœ€çˆ±";
+		return "我的最爱";
 	}
 
 	protected override string _GetTemplateForHeadingMyFeed()
 	{
-		return "æˆ‘çš„æŽ¨é€";
+		return "我的推送";
 	}
 
 	protected override string _GetTemplateForHeadingRecentlyPlayed()
 	{
-		return "æœ€è¿‘çŽ©è¿‡";
+		return "最近玩过";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "åœ¨æ‰¾â€œæˆ‘çš„æŽ¨é€â€ï¼ŸçŽ°å·²æ”¹ä¸ºåœ¨ä¾§è¾¹æ æ˜¾ç¤ºã€‚";
+		return "在找“我的推送”？现已改为在侧边栏显示。";
 	}
 
 	protected override string _GetTemplateForLabelAnnouncement()
 	{
-		return "å…¬å‘Š";
+		return "公告";
 	}
 
 	protected override string _GetTemplateForLabelCreateEarn()
 	{
-		return "åˆ›ä½œæ¸¸æˆï¼Œèµšå–é‡‘é’±";
+		return "创作游戏，赚取金钱";
 	}
 
 	/// <summary>
@@ -243,42 +245,42 @@ internal class HomeResources_zh_cn : HomeResources_en_us, IHomeResources, ITrans
 	/// </summary>
 	public override string LabelGreeting(string username)
 	{
-		return $"ä½ å¥½ï¼Œ{username}ï¼";
+		return $"你好，{username}！";
 	}
 
 	protected override string _GetTemplateForLabelGreeting()
 	{
-		return "ä½ å¥½ï¼Œ{username}ï¼";
+		return "你好，{username}！";
 	}
 
 	protected override string _GetTemplateForLabelSharing()
 	{
-		return "æ­£åœ¨åˆ†äº«...";
+		return "正在分享...";
 	}
 
 	protected override string _GetTemplateForLabelStatusUpdateFailed()
 	{
-		return "æ— æ³•æ›´æ–°çŠ¶æ€ã€‚";
+		return "无法更新状态。";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoBlank()
 	{
-		return "æ›´æ–°ä¸èƒ½ä¸ºç©ºç™½ã€‚è¯·é‡è¯•ã€‚";
+		return "更新不能为空白。请重试。";
 	}
 
 	protected override string _GetTemplateForResponseErrorNoLogin()
 	{
-		return "è¯·ç™»å½•ä½ çš„å¸æˆ·ã€‚";
+		return "请登录你的帐户。";
 	}
 
 	protected override string _GetTemplateForResponseErrorOther()
 	{
-		return "ç³»ç»Ÿå‡ºçŽ°é—®é¢˜ï¼Œè¯·ç¨åŽé‡è¯•å¹¶è”ç³»æŠ€æœ¯æ”¯æŒã€‚";
+		return "系统出现问题，请稍后重试并联系技术支持。";
 	}
 
 	protected override string _GetTemplateForResponseErrorTooManyUpdates()
 	{
-		return "æ›´æ–°æ¬¡æ•°è¿‡å¤šã€‚è¯·ç¨åŽé‡è¯•ã€‚";
+		return "更新次数过多。请稍后重试。";
 	}
 }
 

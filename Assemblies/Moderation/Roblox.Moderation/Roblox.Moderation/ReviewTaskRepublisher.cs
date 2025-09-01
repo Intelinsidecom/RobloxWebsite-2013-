@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.EventLog;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Moderationinternal {
+using Roblox.Localization.Core;
+namespace Roblox.Moderation {
     class ReviewTaskRepublisher<TTask> : IReviewTaskRepublisher<TTask> where TTask : IReviewTask
 
 {

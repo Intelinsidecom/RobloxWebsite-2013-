@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class PromotedChannelsResources_en_us : TranslationResourcesBase, IPromotedChannelsResources, ITranslationResources
 
 {
@@ -356,3 +356,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides ReturnToStudioResources_en_us to provide locale specific translations where possible,
@@ -11,26 +13,26 @@ internal class ReturnToStudioResources_zh_tw : ReturnToStudioResources_en_us, IR
 	/// Logout the current user
 	/// English String: "Switch Accounts"
 	/// </summary>
-	public override string ActionLogout => "åˆ‡æ›å¸³è™Ÿ";
+	public override string ActionLogout => "切換帳號";
 
 	/// <summary>
 	/// Key: "Action.OpenStudio"
 	/// Open studio
 	/// English String: "Open Studio"
 	/// </summary>
-	public override string ActionOpenStudio => "é–‹å•Ÿ Studio";
+	public override string ActionOpenStudio => "開啟 Studio";
 
 	/// <summary>
 	/// Key: "Description.OpeningStudio"
 	/// English String: "Opening Roblox Studio now..."
 	/// </summary>
-	public override string DescriptionOpeningStudio => "æ­£åœ¨é–‹å•Ÿ Roblox Studioâ€¦";
+	public override string DescriptionOpeningStudio => "正在開啟 Roblox Studio…";
 
 	/// <summary>
 	/// Key: "Label.StudioHelp"
 	/// English String: "If Studio does not open, click here for help"
 	/// </summary>
-	public override string LabelStudioHelp => "è‹¥ Studio ç„¡æ³•é–‹å•Ÿï¼Œè«‹æŒ‰ä¸‹æ­¤è™•å–å¾—å”åŠ©";
+	public override string LabelStudioHelp => "若 Studio 無法開啟，請按下此處取得協助";
 
 	public ReturnToStudioResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -39,12 +41,12 @@ internal class ReturnToStudioResources_zh_tw : ReturnToStudioResources_en_us, IR
 
 	protected override string _GetTemplateForActionLogout()
 	{
-		return "åˆ‡æ›å¸³è™Ÿ";
+		return "切換帳號";
 	}
 
 	protected override string _GetTemplateForActionOpenStudio()
 	{
-		return "é–‹å•Ÿ Studio";
+		return "開啟 Studio";
 	}
 
 	/// <summary>
@@ -54,17 +56,17 @@ internal class ReturnToStudioResources_zh_tw : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionAttemptedUsername(string username)
 	{
-		return $"æ‚¨å‰›å‰›å˜—è©¦ä»¥ {username} èº«ä»½ç™»å…¥ Studio";
+		return $"您剛剛嘗試以 {username} 身份登入 Studio";
 	}
 
 	protected override string _GetTemplateForDescriptionAttemptedUsername()
 	{
-		return "æ‚¨å‰›å‰›å˜—è©¦ä»¥ {username} èº«ä»½ç™»å…¥ Studio";
+		return "您剛剛嘗試以 {username} 身份登入 Studio";
 	}
 
 	protected override string _GetTemplateForDescriptionOpeningStudio()
 	{
-		return "æ­£åœ¨é–‹å•Ÿ Roblox Studioâ€¦";
+		return "正在開啟 Roblox Studio…";
 	}
 
 	/// <summary>
@@ -74,12 +76,12 @@ internal class ReturnToStudioResources_zh_tw : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string DescriptionOpenStudioSuggestion(string username)
 	{
-		return $"æ‚¨æƒ³ä»¥ {username} èº«åˆ†é–‹å•Ÿ Studio å—Žï¼Ÿ";
+		return $"您想以 {username} 身分開啟 Studio 嗎？";
 	}
 
 	protected override string _GetTemplateForDescriptionOpenStudioSuggestion()
 	{
-		return "æ‚¨æƒ³ä»¥ {username} èº«åˆ†é–‹å•Ÿ Studio å—Žï¼Ÿ";
+		return "您想以 {username} 身分開啟 Studio 嗎？";
 	}
 
 	/// <summary>
@@ -89,17 +91,17 @@ internal class ReturnToStudioResources_zh_tw : ReturnToStudioResources_en_us, IR
 	/// </summary>
 	public override string HeadingGreeting(string username)
 	{
-		return $"{username}ï¼Œæ‚¨å¥½ï¼";
+		return $"{username}，您好！";
 	}
 
 	protected override string _GetTemplateForHeadingGreeting()
 	{
-		return "{username}ï¼Œæ‚¨å¥½ï¼";
+		return "{username}，您好！";
 	}
 
 	protected override string _GetTemplateForLabelStudioHelp()
 	{
-		return "è‹¥ Studio ç„¡æ³•é–‹å•Ÿï¼Œè«‹æŒ‰ä¸‹æ­¤è™•å–å¾—å”åŠ©";
+		return "若 Studio 無法開啟，請按下此處取得協助";
 	}
 }
 

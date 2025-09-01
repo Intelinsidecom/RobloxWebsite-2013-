@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IPromotedChannelsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IPromotedChannelsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -145,3 +147,5 @@
 
 
 }
+
+

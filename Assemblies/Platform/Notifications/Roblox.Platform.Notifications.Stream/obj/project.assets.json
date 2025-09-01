@@ -15,18 +15,18 @@
           }
         }
       },
-      "AWSSDK.SimpleNotificationService/3.7.0": {
+      "AWSSDK.KinesisFirehose/3.7.200": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.0, 3.8.0)"
+          "AWSSDK.Core": "[3.7.200, 4.0.0)"
         },
         "compile": {
-          "lib/net45/AWSSDK.SimpleNotificationService.dll": {
+          "lib/net45/AWSSDK.KinesisFirehose.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net45/AWSSDK.SimpleNotificationService.dll": {
+          "lib/net45/AWSSDK.KinesisFirehose.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -390,6 +390,22 @@
           }
         }
       },
+      "Microsoft.Owin/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Win32.Registry/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -427,6 +443,15 @@
           "lib/net45/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
         }
       },
       "Pipelines.Sockets.Unofficial/2.2.2": {
@@ -517,6 +542,18 @@
           }
         }
       },
+      "System.Collections.Concurrent/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -605,6 +642,19 @@
           "lib/net472/System.IdentityModel.Tokens.Jwt.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.IO.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Compression/4.3.0": {
@@ -716,6 +766,33 @@
           }
         }
       },
+      "System.Net.Http/4.3.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.X509Certificates": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Net.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Net.Http.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Net.Http.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -750,6 +827,21 @@
         },
         "build": {
           "buildTransitive/net462/System.Resources.Extensions.targets": {}
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net462/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Caching/4.7.0": {
@@ -827,6 +919,74 @@
           }
         }
       },
+      "System.Security.Cryptography.Algorithms/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtime": {
+          "lib/net463/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
       "System.Security.Cryptography.ProtectedData/4.7.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -845,6 +1005,34 @@
         },
         "runtimeTargets": {
           "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Encoding": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1008,6 +1196,46 @@
           }
         }
       },
+      "Roblox Server Class Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Agents": "1.0.0",
+          "Roblox.Amazon": "1.0.0",
+          "Roblox.Amazon.Sqs": "1.0.0",
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Assets": "1.0.0",
+          "Roblox.BucketStore": "1.0.0",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Common.Web": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Coordination": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0",
+          "Roblox.Economy": "1.0.0",
+          "Roblox.Economy.Common": "1.0.0",
+          "Roblox.Entities.Mssql": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Locking": "1.0.0",
+          "Roblox.Moderation": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Passwords.Client": "1.0.0",
+          "Roblox.Redis": "1.0.0",
+          "Roblox.Redis.Lru": "1.0.0",
+          "Roblox.RequestContext": "1.0.0",
+          "StackExchange.Redis": "2.6.66",
+          "System.Resources.Extensions": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox Server Class Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox Server Class Library.dll": {}
+        }
+      },
       "Roblox.Agents/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
@@ -1034,6 +1262,24 @@
           "bin/placeholder/Roblox.Agents.dll": {}
         }
       },
+      "Roblox.Amazon/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.BucketStore": "1.0.0",
+          "Roblox.Common.NetStandard": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Amazon.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Amazon.dll": {}
+        }
+      },
       "Roblox.Amazon.Core/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1049,24 +1295,25 @@
           "bin/placeholder/Roblox.Amazon.Core.dll": {}
         }
       },
-      "Roblox.Amazon.Sns/1.0.0": {
+      "Roblox.Amazon.Firehose/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
-          "AWSSDK.SimpleNotificationService": "3.7.0",
-          "Newtonsoft.Json": "13.0.3",
+          "AWSSDK.KinesisFirehose": "3.7.200",
           "Roblox.Amazon.Core": "1.0.0",
           "Roblox.Configuration": "1.0.0",
+          "Roblox.Coordination": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Roblox.Amazon.Sns.dll": {}
+          "bin/placeholder/Roblox.Amazon.Firehose.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Roblox.Amazon.Sns.dll": {}
+          "bin/placeholder/Roblox.Amazon.Firehose.dll": {}
         }
       },
       "Roblox.Amazon.Sqs/1.0.0": {
@@ -1092,6 +1339,57 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.Amazon.Sqs.dll": {}
+        }
+      },
+      "Roblox.ApiClientBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Sentinels": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.ApiClientBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.ApiClientBase.dll": {}
+        }
+      },
+      "Roblox.Assets/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Assets.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Assets.dll": {}
+        }
+      },
+      "Roblox.BucketStore/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.Common.NetStandard": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.BucketStore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.BucketStore.dll": {}
         }
       },
       "Roblox.Caching/1.0.0": {
@@ -1162,6 +1460,25 @@
           "bin/placeholder/Roblox.Common.NetStandard.dll": {}
         }
       },
+      "Roblox.Common.Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Diagnostics": "1.0.0",
+          "Roblox.Platform.Infrastructure": "1.0.0",
+          "Roblox.WebsiteSettings": "1.0.0",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Common.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Common.Web.dll": {}
+        }
+      },
       "Roblox.Configuration/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1230,6 +1547,49 @@
           "bin/placeholder/Roblox.Diagnostics.dll": {}
         }
       },
+      "Roblox.Economy/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "Roblox.Economy.Common": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Economy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Economy.dll": {}
+        }
+      },
+      "Roblox.Economy.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Platform.VirtualCurrency": "1.0.0",
+          "Roblox.TransactionEvents": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Economy.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Economy.Common.dll": {}
+        }
+      },
       "Roblox.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1264,6 +1624,28 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.EventLog.dll": {}
+        }
+      },
+      "Roblox.EventStream/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "AWSSDK.Core": "3.7.500.11",
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Amazon.Firehose": "1.0.0",
+          "Roblox.Collections": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Coordination": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Random": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.EventStream.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.EventStream.dll": {}
         }
       },
       "Roblox.FloodCheckers.Core/1.0.0": {
@@ -1384,6 +1766,61 @@
           "bin/placeholder/Roblox.Instrumentation.dll": {}
         }
       },
+      "Roblox.LeasedLocks.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.LeasedLocks.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.LeasedLocks.Client.dll": {}
+        }
+      },
+      "Roblox.Localization.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "Roblox.Entities": "1.0.0",
+          "Roblox.Entities.Mssql": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Platform.Core": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "System.Data.SqlClient": "4.9.0",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Localization.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Localization.Core.dll": {}
+        }
+      },
+      "Roblox.Locking/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.LeasedLocks.Client": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Locking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Locking.dll": {}
+        }
+      },
       "Roblox.MemCachedClient/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1397,6 +1834,38 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.MemCachedClient.dll": {}
+        }
+      },
+      "Roblox.Moderation/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Agents": "1.0.0",
+          "Roblox.Amazon.Sqs": "1.0.0",
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Coordination": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "Roblox.Entities": "1.0.0",
+          "Roblox.Entities.Mssql": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Localization.Core": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Platform.AssetsCore": "1.0.0",
+          "Roblox.Platform.Core": "1.0.0",
+          "Roblox.Platform.MembershipCore": "1.0.0",
+          "Roblox.TrackingQueue": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "System.Data.SqlClient": "4.9.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Moderation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Moderation.dll": {}
         }
       },
       "Roblox.Mssql/1.0.0": {
@@ -1433,6 +1902,16 @@
           "bin/placeholder/Roblox.MssqlDatabases.dll": {}
         }
       },
+      "Roblox.Networking/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Networking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Networking.dll": {}
+        }
+      },
       "Roblox.Passwords.Client/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1463,6 +1942,16 @@
           "bin/placeholder/Roblox.Pipeline.dll": {}
         }
       },
+      "Roblox.Platform.AssetsCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Platform.AssetsCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.AssetsCore.dll": {}
+        }
+      },
       "Roblox.Platform.Core/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
@@ -1477,18 +1966,57 @@
           "bin/placeholder/Roblox.Platform.Core.dll": {}
         }
       },
-      "Roblox.Platform.Membership/1.0.0": {
+      "Roblox.Platform.Currency.Client/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Roblox.Agents": "1.0.0",
-          "Roblox.Amazon.Core": "1.0.0",
-          "Roblox.Amazon.Sns": "1.0.0",
+          "System.Collections.Concurrent": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.Currency.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.Currency.Client.dll": {}
+        }
+      },
+      "Roblox.Platform.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Newtonsoft.Json": "13.0.3",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
-          "Roblox.Entities": "1.0.0",
+          "Roblox.Entities.Mssql": "1.0.0",
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.Hashing": "1.0.0",
+          "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Networking": "1.0.0",
+          "Roblox.Redis": "1.0.0",
+          "Roblox.Redis.Lru": "1.0.0",
+          "StackExchange.Redis": "1.2.6",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.Infrastructure.dll": {}
+        }
+      },
+      "Roblox.Platform.Membership/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox Server Class Library": "1.0.0",
+          "Roblox.Agents": "1.0.0",
+          "Roblox.Amazon.Core": "1.0.0",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
@@ -1607,6 +2135,25 @@
           "bin/placeholder/Roblox.Platform.Users.Client.dll": {}
         }
       },
+      "Roblox.Platform.VirtualCurrency/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Platform.Core": "1.0.0",
+          "Roblox.Platform.Currency.Client": "1.0.0",
+          "Roblox.Platform.MembershipCore": "1.0.0",
+          "Roblox.Sentinels": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.VirtualCurrency.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.VirtualCurrency.dll": {}
+        }
+      },
       "Roblox.Random/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1717,6 +2264,49 @@
         "runtime": {
           "bin/placeholder/Roblox.Time.dll": {}
         }
+      },
+      "Roblox.TrackingQueue/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Amazon.Sqs": "1.0.0",
+          "Roblox.Coordination": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.TrackingQueue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.TrackingQueue.dll": {}
+        }
+      },
+      "Roblox.TransactionEvents/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.EventLog": "1.0.0",
+          "Roblox.EventStream": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.TransactionEvents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.TransactionEvents.dll": {}
+        }
+      },
+      "Roblox.WebsiteSettings/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.Configuration": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.WebsiteSettings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.WebsiteSettings.dll": {}
+        }
       }
     }
   },
@@ -1750,29 +2340,31 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.SimpleNotificationService/3.7.0": {
-      "sha512": "ai2NPlh9Ya6W592S24a7j4/kbosvyCmhEfgePJUzSZ4BoiWZ4QeqBVdk3DEeeY2kcttJ7wIy2dhJ5owbb/xWHg==",
+    "AWSSDK.KinesisFirehose/3.7.200": {
+      "sha512": "9vD5PKsvn0qDQ1+R5NRIx0iuxHYvGaOq53Xrvm46+egzYt7vp0yc/VOh31IG19Mhc6QrymniBChSGHcpznj2xw==",
       "type": "package",
-      "path": "awssdk.simplenotificationservice/3.7.0",
+      "path": "awssdk.kinesisfirehose/3.7.200",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
-        "awssdk.simplenotificationservice.3.7.0.nupkg.sha512",
-        "awssdk.simplenotificationservice.nuspec",
-        "lib/net35/AWSSDK.SimpleNotificationService.dll",
-        "lib/net35/AWSSDK.SimpleNotificationService.pdb",
-        "lib/net35/AWSSDK.SimpleNotificationService.xml",
-        "lib/net45/AWSSDK.SimpleNotificationService.dll",
-        "lib/net45/AWSSDK.SimpleNotificationService.pdb",
-        "lib/net45/AWSSDK.SimpleNotificationService.xml",
-        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll",
-        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.pdb",
-        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.xml",
-        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
-        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
-        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
+        "analyzers/dotnet/cs/AWSSDK.KinesisFirehose.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.kinesisfirehose.3.7.200.nupkg.sha512",
+        "awssdk.kinesisfirehose.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.KinesisFirehose.dll",
+        "lib/net35/AWSSDK.KinesisFirehose.pdb",
+        "lib/net35/AWSSDK.KinesisFirehose.xml",
+        "lib/net45/AWSSDK.KinesisFirehose.dll",
+        "lib/net45/AWSSDK.KinesisFirehose.pdb",
+        "lib/net45/AWSSDK.KinesisFirehose.xml",
+        "lib/netcoreapp3.1/AWSSDK.KinesisFirehose.dll",
+        "lib/netcoreapp3.1/AWSSDK.KinesisFirehose.pdb",
+        "lib/netcoreapp3.1/AWSSDK.KinesisFirehose.xml",
+        "lib/netstandard2.0/AWSSDK.KinesisFirehose.dll",
+        "lib/netstandard2.0/AWSSDK.KinesisFirehose.pdb",
+        "lib/netstandard2.0/AWSSDK.KinesisFirehose.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -2199,6 +2791,20 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
+    "Microsoft.Owin/4.2.2": {
+      "sha512": "jt410l/8dvCIguRdU7dupYdm4kGLepVdD8EOTKU4nYZcLRrn6kQYqI6pbJOTJp7Vlm/T2WUF5bzyKK2z29xtjg==",
+      "type": "package",
+      "path": "microsoft.owin/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.dll",
+        "lib/net45/Microsoft.Owin.xml",
+        "microsoft.owin.4.2.2.nupkg.sha512",
+        "microsoft.owin.nuspec"
+      ]
+    },
     "Microsoft.Win32.Registry/5.0.0": {
       "sha512": "dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
       "type": "package",
@@ -2271,6 +2877,18 @@
         "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
       ]
     },
     "Pipelines.Sockets.Unofficial/2.2.2": {
@@ -2391,6 +3009,74 @@
         "lib/netstandard2.0/System.ClientModel.xml",
         "system.clientmodel.1.0.0.nupkg.sha512",
         "system.clientmodel.nuspec"
+      ]
+    },
+    "System.Collections.Concurrent/4.3.0": {
+      "sha512": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
+      "type": "package",
+      "path": "system.collections.concurrent/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Collections.Concurrent.dll",
+        "lib/netstandard1.3/System.Collections.Concurrent.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Collections.Concurrent.dll",
+        "ref/netcore50/System.Collections.Concurrent.xml",
+        "ref/netcore50/de/System.Collections.Concurrent.xml",
+        "ref/netcore50/es/System.Collections.Concurrent.xml",
+        "ref/netcore50/fr/System.Collections.Concurrent.xml",
+        "ref/netcore50/it/System.Collections.Concurrent.xml",
+        "ref/netcore50/ja/System.Collections.Concurrent.xml",
+        "ref/netcore50/ko/System.Collections.Concurrent.xml",
+        "ref/netcore50/ru/System.Collections.Concurrent.xml",
+        "ref/netcore50/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netcore50/zh-hant/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/System.Collections.Concurrent.dll",
+        "ref/netstandard1.1/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/de/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/es/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/fr/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/it/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ja/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ko/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ru/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/zh-hant/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/System.Collections.Concurrent.dll",
+        "ref/netstandard1.3/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/de/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/es/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/fr/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/it/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ja/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ko/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ru/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/zh-hant/System.Collections.Concurrent.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.collections.concurrent.4.3.0.nupkg.sha512",
+        "system.collections.concurrent.nuspec"
       ]
     },
     "System.Configuration.ConfigurationManager/7.0.0": {
@@ -2537,6 +3223,87 @@
         "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.xml",
         "system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
+      ]
+    },
+    "System.IO/4.3.0": {
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "type": "package",
+      "path": "system.io/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.IO.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.IO.dll",
+        "ref/netcore50/System.IO.dll",
+        "ref/netcore50/System.IO.xml",
+        "ref/netcore50/de/System.IO.xml",
+        "ref/netcore50/es/System.IO.xml",
+        "ref/netcore50/fr/System.IO.xml",
+        "ref/netcore50/it/System.IO.xml",
+        "ref/netcore50/ja/System.IO.xml",
+        "ref/netcore50/ko/System.IO.xml",
+        "ref/netcore50/ru/System.IO.xml",
+        "ref/netcore50/zh-hans/System.IO.xml",
+        "ref/netcore50/zh-hant/System.IO.xml",
+        "ref/netstandard1.0/System.IO.dll",
+        "ref/netstandard1.0/System.IO.xml",
+        "ref/netstandard1.0/de/System.IO.xml",
+        "ref/netstandard1.0/es/System.IO.xml",
+        "ref/netstandard1.0/fr/System.IO.xml",
+        "ref/netstandard1.0/it/System.IO.xml",
+        "ref/netstandard1.0/ja/System.IO.xml",
+        "ref/netstandard1.0/ko/System.IO.xml",
+        "ref/netstandard1.0/ru/System.IO.xml",
+        "ref/netstandard1.0/zh-hans/System.IO.xml",
+        "ref/netstandard1.0/zh-hant/System.IO.xml",
+        "ref/netstandard1.3/System.IO.dll",
+        "ref/netstandard1.3/System.IO.xml",
+        "ref/netstandard1.3/de/System.IO.xml",
+        "ref/netstandard1.3/es/System.IO.xml",
+        "ref/netstandard1.3/fr/System.IO.xml",
+        "ref/netstandard1.3/it/System.IO.xml",
+        "ref/netstandard1.3/ja/System.IO.xml",
+        "ref/netstandard1.3/ko/System.IO.xml",
+        "ref/netstandard1.3/ru/System.IO.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.xml",
+        "ref/netstandard1.5/System.IO.dll",
+        "ref/netstandard1.5/System.IO.xml",
+        "ref/netstandard1.5/de/System.IO.xml",
+        "ref/netstandard1.5/es/System.IO.xml",
+        "ref/netstandard1.5/fr/System.IO.xml",
+        "ref/netstandard1.5/it/System.IO.xml",
+        "ref/netstandard1.5/ja/System.IO.xml",
+        "ref/netstandard1.5/ko/System.IO.xml",
+        "ref/netstandard1.5/ru/System.IO.xml",
+        "ref/netstandard1.5/zh-hans/System.IO.xml",
+        "ref/netstandard1.5/zh-hant/System.IO.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.io.4.3.0.nupkg.sha512",
+        "system.io.nuspec"
       ]
     },
     "System.IO.Compression/4.3.0": {
@@ -2721,6 +3488,48 @@
         "system.memory.data.nuspec"
       ]
     },
+    "System.Net.Http/4.3.4": {
+      "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
+      "type": "package",
+      "path": "system.net.http/4.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/Xamarinmac20/_._",
+        "lib/monoandroid10/_._",
+        "lib/monotouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Net.Http.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/Xamarinmac20/_._",
+        "ref/monoandroid10/_._",
+        "ref/monotouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Net.Http.dll",
+        "ref/netcore50/System.Net.Http.dll",
+        "ref/netstandard1.1/System.Net.Http.dll",
+        "ref/netstandard1.3/System.Net.Http.dll",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Net.Http.dll",
+        "runtimes/win/lib/net46/System.Net.Http.dll",
+        "runtimes/win/lib/netcore50/System.Net.Http.dll",
+        "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
+        "system.net.http.4.3.4.nupkg.sha512",
+        "system.net.http.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -2793,6 +3602,98 @@
         "system.resources.extensions.7.0.0.nupkg.sha512",
         "system.resources.extensions.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "type": "package",
+      "path": "system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.dll",
+        "lib/portable-net45+win8+wp80+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.0/System.Runtime.dll",
+        "ref/netstandard1.0/System.Runtime.xml",
+        "ref/netstandard1.0/de/System.Runtime.xml",
+        "ref/netstandard1.0/es/System.Runtime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.xml",
+        "ref/netstandard1.0/it/System.Runtime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.2/System.Runtime.dll",
+        "ref/netstandard1.2/System.Runtime.xml",
+        "ref/netstandard1.2/de/System.Runtime.xml",
+        "ref/netstandard1.2/es/System.Runtime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.xml",
+        "ref/netstandard1.2/it/System.Runtime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.3/System.Runtime.dll",
+        "ref/netstandard1.3/System.Runtime.xml",
+        "ref/netstandard1.3/de/System.Runtime.xml",
+        "ref/netstandard1.3/es/System.Runtime.xml",
+        "ref/netstandard1.3/fr/System.Runtime.xml",
+        "ref/netstandard1.3/it/System.Runtime.xml",
+        "ref/netstandard1.3/ja/System.Runtime.xml",
+        "ref/netstandard1.3/ko/System.Runtime.xml",
+        "ref/netstandard1.3/ru/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.5/System.Runtime.dll",
+        "ref/netstandard1.5/System.Runtime.xml",
+        "ref/netstandard1.5/de/System.Runtime.xml",
+        "ref/netstandard1.5/es/System.Runtime.xml",
+        "ref/netstandard1.5/fr/System.Runtime.xml",
+        "ref/netstandard1.5/it/System.Runtime.xml",
+        "ref/netstandard1.5/ja/System.Runtime.xml",
+        "ref/netstandard1.5/ko/System.Runtime.xml",
+        "ref/netstandard1.5/ru/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
+        "ref/portable-net45+win8+wp80+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
       ]
     },
     "System.Runtime.Caching/4.7.0": {
@@ -2920,6 +3821,117 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Security.Cryptography.Algorithms/4.3.0": {
+      "sha512": "W1kd2Y8mYSCgc3ULTAZ0hOP2dSdG5YauTb1089T0/kRcN2MpSAW1izOFROrJgxSlMn3ArsgHXagigyi+ibhevg==",
+      "type": "package",
+      "path": "system.security.cryptography.algorithms/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Algorithms.dll",
+        "ref/net461/System.Security.Cryptography.Algorithms.dll",
+        "ref/net463/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/osx/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+        "system.security.cryptography.algorithms.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Encoding/4.3.0": {
+      "sha512": "1DEWjZZly9ae9C79vFwqaO5kaOlI5q+3/55ohmq/7dpDyDfc8lYe7YVxJUZ5MF/NtbkRjwFRo14yM4OEo9EmDw==",
+      "type": "package",
+      "path": "system.security.cryptography.encoding/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Encoding.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/de/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/es/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/fr/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/it/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ja/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ko/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ru/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Cryptography.Encoding.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+        "system.security.cryptography.encoding.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Primitives/4.3.0": {
+      "sha512": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
+      "type": "package",
+      "path": "system.security.cryptography.primitives/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Primitives.dll",
+        "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Primitives.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Primitives.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+        "system.security.cryptography.primitives.nuspec"
+      ]
+    },
     "System.Security.Cryptography.ProtectedData/4.7.0": {
       "sha512": "ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
       "type": "package",
@@ -2963,6 +3975,62 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.X509Certificates/4.3.0": {
+      "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
+      "type": "package",
+      "path": "system.security.cryptography.x509certificates/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.X509Certificates.dll",
+        "lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.X509Certificates.dll",
+        "ref/net461/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/de/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/es/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/fr/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/it/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ja/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ko/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/ru/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/de/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/es/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/fr/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/it/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ja/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ko/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/ru/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/zh-hans/System.Security.Cryptography.X509Certificates.xml",
+        "ref/netstandard1.4/zh-hant/System.Security.Cryptography.X509Certificates.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/netcore50/System.Security.Cryptography.X509Certificates.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll",
+        "system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
+        "system.security.cryptography.x509certificates.nuspec"
       ]
     },
     "System.Security.Permissions/7.0.0": {
@@ -3271,25 +4339,50 @@
         "version.txt"
       ]
     },
+    "Roblox Server Class Library/1.0.0": {
+      "type": "project",
+      "path": "../../../Roblox Server Class Library/Roblox Server Class Library.csproj",
+      "msbuildProject": "../../../Roblox Server Class Library/Roblox Server Class Library.csproj"
+    },
     "Roblox.Agents/1.0.0": {
       "type": "project",
       "path": "../../../Agents/Roblox.Agents/Roblox.Agents.csproj",
       "msbuildProject": "../../../Agents/Roblox.Agents/Roblox.Agents.csproj"
+    },
+    "Roblox.Amazon/1.0.0": {
+      "type": "project",
+      "path": "../../../Amazon/Roblox.Amazon/Roblox.Amazon.csproj",
+      "msbuildProject": "../../../Amazon/Roblox.Amazon/Roblox.Amazon.csproj"
     },
     "Roblox.Amazon.Core/1.0.0": {
       "type": "project",
       "path": "../../../Amazon/Roblox.Amazon.Core/Roblox.Amazon.Core.csproj",
       "msbuildProject": "../../../Amazon/Roblox.Amazon.Core/Roblox.Amazon.Core.csproj"
     },
-    "Roblox.Amazon.Sns/1.0.0": {
+    "Roblox.Amazon.Firehose/1.0.0": {
       "type": "project",
-      "path": "../../../Amazon/Roblox.Amazon.Sns/Roblox.Amazon.Sns.csproj",
-      "msbuildProject": "../../../Amazon/Roblox.Amazon.Sns/Roblox.Amazon.Sns.csproj"
+      "path": "../../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj",
+      "msbuildProject": "../../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj"
     },
     "Roblox.Amazon.Sqs/1.0.0": {
       "type": "project",
       "path": "../../../Amazon/Roblox.Amazon.Sqs/Roblox.Amazon.Sqs.csproj",
       "msbuildProject": "../../../Amazon/Roblox.Amazon.Sqs/Roblox.Amazon.Sqs.csproj"
+    },
+    "Roblox.ApiClientBase/1.0.0": {
+      "type": "project",
+      "path": "../../../ApiClientBase/Roblox.ApiClientBase/Roblox.ApiClientBase.csproj",
+      "msbuildProject": "../../../ApiClientBase/Roblox.ApiClientBase/Roblox.ApiClientBase.csproj"
+    },
+    "Roblox.Assets/1.0.0": {
+      "type": "project",
+      "path": "../../../Assets/Roblox.Assets/Roblox.Assets.csproj",
+      "msbuildProject": "../../../Assets/Roblox.Assets/Roblox.Assets.csproj"
+    },
+    "Roblox.BucketStore/1.0.0": {
+      "type": "project",
+      "path": "../../../Roblox/Roblox.BucketStore/Roblox.BucketStore.csproj",
+      "msbuildProject": "../../../Roblox/Roblox.BucketStore/Roblox.BucketStore.csproj"
     },
     "Roblox.Caching/1.0.0": {
       "type": "project",
@@ -3310,6 +4403,11 @@
       "type": "project",
       "path": "../../../Common/Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj",
       "msbuildProject": "../../../Common/Roblox.Common.NetStandard/Roblox.Common.NetStandard.csproj"
+    },
+    "Roblox.Common.Web/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Roblox.Common.Web/Roblox.Common.Web.csproj",
+      "msbuildProject": "../../../Common/Roblox.Common.Web/Roblox.Common.Web.csproj"
     },
     "Roblox.Configuration/1.0.0": {
       "type": "project",
@@ -3336,6 +4434,16 @@
       "path": "../../../Diagnostics/Roblox.Diagnostics/Roblox.Diagnostics.csproj",
       "msbuildProject": "../../../Diagnostics/Roblox.Diagnostics/Roblox.Diagnostics.csproj"
     },
+    "Roblox.Economy/1.0.0": {
+      "type": "project",
+      "path": "../../../Economy/Roblox.Economy/Roblox.Economy.csproj",
+      "msbuildProject": "../../../Economy/Roblox.Economy/Roblox.Economy.csproj"
+    },
+    "Roblox.Economy.Common/1.0.0": {
+      "type": "project",
+      "path": "../../../Economy/Roblox.Economy.Common/Roblox.Economy.Common.csproj",
+      "msbuildProject": "../../../Economy/Roblox.Economy.Common/Roblox.Economy.Common.csproj"
+    },
     "Roblox.Entities/1.0.0": {
       "type": "project",
       "path": "../../../Roblox/Roblox.Entities/Roblox.Entities.csproj",
@@ -3350,6 +4458,11 @@
       "type": "project",
       "path": "../../../Events/Roblox.EventLog/Roblox.EventLog.csproj",
       "msbuildProject": "../../../Events/Roblox.EventLog/Roblox.EventLog.csproj"
+    },
+    "Roblox.EventStream/1.0.0": {
+      "type": "project",
+      "path": "../../../Events/Roblox.EventStream/Roblox.EventStream.csproj",
+      "msbuildProject": "../../../Events/Roblox.EventStream/Roblox.EventStream.csproj"
     },
     "Roblox.FloodCheckers.Core/1.0.0": {
       "type": "project",
@@ -3391,10 +4504,30 @@
       "path": "../../../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj",
       "msbuildProject": "../../../Instrumentation/Roblox.Instrumentation/Roblox.Instrumentation.csproj"
     },
+    "Roblox.LeasedLocks.Client/1.0.0": {
+      "type": "project",
+      "path": "../../../LeasedLocks/Roblox.LeasedLocks.Client/Roblox.LeasedLocks.Client.csproj",
+      "msbuildProject": "../../../LeasedLocks/Roblox.LeasedLocks.Client/Roblox.LeasedLocks.Client.csproj"
+    },
+    "Roblox.Localization.Core/1.0.0": {
+      "type": "project",
+      "path": "../../../Localization/Roblox.Localization.Core/Roblox.Localization.Core.csproj",
+      "msbuildProject": "../../../Localization/Roblox.Localization.Core/Roblox.Localization.Core.csproj"
+    },
+    "Roblox.Locking/1.0.0": {
+      "type": "project",
+      "path": "../../../Locking/Roblox.Locking/Roblox.Locking.csproj",
+      "msbuildProject": "../../../Locking/Roblox.Locking/Roblox.Locking.csproj"
+    },
     "Roblox.MemCachedClient/1.0.0": {
       "type": "project",
       "path": "../../../Caching/Roblox.MemCachedClient/Roblox.MemCachedClient.csproj",
       "msbuildProject": "../../../Caching/Roblox.MemCachedClient/Roblox.MemCachedClient.csproj"
+    },
+    "Roblox.Moderation/1.0.0": {
+      "type": "project",
+      "path": "../../../Moderation/Roblox.Moderation/Roblox.Moderation.csproj",
+      "msbuildProject": "../../../Moderation/Roblox.Moderation/Roblox.Moderation.csproj"
     },
     "Roblox.Mssql/1.0.0": {
       "type": "project",
@@ -3406,6 +4539,11 @@
       "path": "../../../Mssql/Roblox.MssqlDatabases/Roblox.MssqlDatabases.csproj",
       "msbuildProject": "../../../Mssql/Roblox.MssqlDatabases/Roblox.MssqlDatabases.csproj"
     },
+    "Roblox.Networking/1.0.0": {
+      "type": "project",
+      "path": "../../../Networking/Roblox.Networking/Roblox.Networking.csproj",
+      "msbuildProject": "../../../Networking/Roblox.Networking/Roblox.Networking.csproj"
+    },
     "Roblox.Passwords.Client/1.0.0": {
       "type": "project",
       "path": "../../../Passwords/Roblox.Passwords.Client/Roblox.Passwords.Client.csproj",
@@ -3416,10 +4554,25 @@
       "path": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj",
       "msbuildProject": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj"
     },
+    "Roblox.Platform.AssetsCore/1.0.0": {
+      "type": "project",
+      "path": "../../Assets/Roblox.Platform.AssetsCore/Roblox.Platform.AssetsCore.csproj",
+      "msbuildProject": "../../Assets/Roblox.Platform.AssetsCore/Roblox.Platform.AssetsCore.csproj"
+    },
     "Roblox.Platform.Core/1.0.0": {
       "type": "project",
       "path": "../../Core/Roblox.Platform.Core/Roblox.Platform.Core.csproj",
       "msbuildProject": "../../Core/Roblox.Platform.Core/Roblox.Platform.Core.csproj"
+    },
+    "Roblox.Platform.Currency.Client/1.0.0": {
+      "type": "project",
+      "path": "../../Currency/Roblox.Platform.Currency.Client/Roblox.Platform.Currency.Client.csproj",
+      "msbuildProject": "../../Currency/Roblox.Platform.Currency.Client/Roblox.Platform.Currency.Client.csproj"
+    },
+    "Roblox.Platform.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastructure/Roblox.Platform.Infrastructure/Roblox.Platform.Infrastructure.csproj",
+      "msbuildProject": "../../Infrastructure/Roblox.Platform.Infrastructure/Roblox.Platform.Infrastructure.csproj"
     },
     "Roblox.Platform.Membership/1.0.0": {
       "type": "project",
@@ -3450,6 +4603,11 @@
       "type": "project",
       "path": "../../Users/Roblox.Platform.Users.Client/Roblox.Platform.Users.Client.csproj",
       "msbuildProject": "../../Users/Roblox.Platform.Users.Client/Roblox.Platform.Users.Client.csproj"
+    },
+    "Roblox.Platform.VirtualCurrency/1.0.0": {
+      "type": "project",
+      "path": "../../VirtualCurrency/Roblox.Platform.VirtualCurrency/Roblox.Platform.VirtualCurrency.csproj",
+      "msbuildProject": "../../VirtualCurrency/Roblox.Platform.VirtualCurrency/Roblox.Platform.VirtualCurrency.csproj"
     },
     "Roblox.Random/1.0.0": {
       "type": "project",
@@ -3490,6 +4648,21 @@
       "type": "project",
       "path": "../../../Time/Roblox.Time/Roblox.Time.csproj",
       "msbuildProject": "../../../Time/Roblox.Time/Roblox.Time.csproj"
+    },
+    "Roblox.TrackingQueue/1.0.0": {
+      "type": "project",
+      "path": "../../../Roblox/Roblox.TrackingQueue/Roblox.TrackingQueue.csproj",
+      "msbuildProject": "../../../Roblox/Roblox.TrackingQueue/Roblox.TrackingQueue.csproj"
+    },
+    "Roblox.TransactionEvents/1.0.0": {
+      "type": "project",
+      "path": "../../../Transactions/Roblox.TransactionEvents/Roblox.TransactionEvents.csproj",
+      "msbuildProject": "../../../Transactions/Roblox.TransactionEvents/Roblox.TransactionEvents.csproj"
+    },
+    "Roblox.WebsiteSettings/1.0.0": {
+      "type": "project",
+      "path": "../../../Web/Roblox.WebsiteSettings/Roblox.WebsiteSettings.csproj",
+      "msbuildProject": "../../../Web/Roblox.WebsiteSettings/Roblox.WebsiteSettings.csproj"
     }
   },
   "projectFileDependencyGroups": {

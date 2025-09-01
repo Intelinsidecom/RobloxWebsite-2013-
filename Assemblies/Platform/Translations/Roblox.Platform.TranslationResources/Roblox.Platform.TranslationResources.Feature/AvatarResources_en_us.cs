@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class AvatarResources_en_us : TranslationResourcesBase, IAvatarResources, ITranslationResources
 
 {
@@ -3113,3 +3113,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

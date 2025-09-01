@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class GameBadgesResources_en_us : TranslationResourcesBase, IGameBadgesResources, ITranslationResources
 
 {
@@ -246,3 +246,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

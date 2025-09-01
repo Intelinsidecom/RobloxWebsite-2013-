@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
-using Roblox.Platform.Moderation.Entities;
-using Roblox.Platform.Moderation.Factories;
+using Roblox.Localization.Core;
+using Roblox.Moderation.Entities;
+using Roblox.Moderation.Factories;
 namespace Roblox.Moderation {
     /// <summary>
 

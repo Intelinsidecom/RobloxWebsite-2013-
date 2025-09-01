@@ -15,6 +15,7 @@ using Roblox.Platform.Assets.Properties;
 using Roblox.Platform.Core;
 using Roblox.Platform.Core.ExclusiveStartPaging;
 using Roblox.Properties;
+using Roblox.Platform.Assets;
 
 namespace Roblox.Platform.Assets;
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlaceThumbnailsResources_en_us to provide locale specific translations where possible,
@@ -11,34 +13,34 @@ internal class PlaceThumbnailsResources_pt_br : PlaceThumbnailsResources_en_us, 
 	/// The button text that user confirm for leaving to Youtube
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueToVideo => "Continuar para o vÃ­deo";
+	public override string ActionContinueToVideo => "Continuar para o vídeo";
 
 	/// <summary>
 	/// Key: "Description.LeaveRobloxForYouTube"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "You are about to leave Roblox to view a video on YouTube."
 	/// </summary>
-	public override string DescriptionLeaveRobloxForYouTube => "VocÃª estÃ¡ prestes a sair do Roblox para assistir um vÃ­deo no Youtube.";
+	public override string DescriptionLeaveRobloxForYouTube => "Você está prestes a sair do Roblox para assistir um vídeo no Youtube.";
 
 	/// <summary>
 	/// Key: "Description.YouTubeIsNotRoblox"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "YouTube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionYouTubeIsNotRoblox => "O Youtube nÃ£o faz parte de Roblox.com e tÃªm uma polÃ­tica de privacidade separada.";
+	public override string DescriptionYouTubeIsNotRoblox => "O Youtube não faz parte de Roblox.com e têm uma política de privacidade separada.";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// The title of the dialog that will show up when user is leaving Roblox to Youtube
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "VocÃª estÃ¡ saindo do Roblox";
+	public override string HeadingLeavingRoblox => "Você está saindo do Roblox";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "PrÃ³ximo";
+	public override string LabelNext => "Próximo";
 
 	/// <summary>
 	/// Key: "Label.Previous"
@@ -53,27 +55,27 @@ internal class PlaceThumbnailsResources_pt_br : PlaceThumbnailsResources_en_us, 
 
 	protected override string _GetTemplateForActionContinueToVideo()
 	{
-		return "Continuar para o vÃ­deo";
+		return "Continuar para o vídeo";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveRobloxForYouTube()
 	{
-		return "VocÃª estÃ¡ prestes a sair do Roblox para assistir um vÃ­deo no Youtube.";
+		return "Você está prestes a sair do Roblox para assistir um vídeo no Youtube.";
 	}
 
 	protected override string _GetTemplateForDescriptionYouTubeIsNotRoblox()
 	{
-		return "O Youtube nÃ£o faz parte de Roblox.com e tÃªm uma polÃ­tica de privacidade separada.";
+		return "O Youtube não faz parte de Roblox.com e têm uma política de privacidade separada.";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "VocÃª estÃ¡ saindo do Roblox";
+		return "Você está saindo do Roblox";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "PrÃ³ximo";
+		return "Próximo";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()

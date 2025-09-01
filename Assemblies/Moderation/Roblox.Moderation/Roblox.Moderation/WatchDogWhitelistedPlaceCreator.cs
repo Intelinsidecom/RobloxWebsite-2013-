@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     class WatchDogWhitelistedPlaceCreator : IRobloxEntity<long, WatchDogWhitelistedPlaceCreatorDAL>, ICacheableObject<long>, ICacheableObject
 
 {

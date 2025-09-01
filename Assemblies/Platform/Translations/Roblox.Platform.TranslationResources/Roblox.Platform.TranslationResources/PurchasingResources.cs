@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.Purchasing;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Purchasing;
+namespace Roblox.Platform.TranslationResources {
     class PurchasingResources : IPurchasingResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -47,3 +48,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class FeedResources_en_us : TranslationResourcesBase, IFeedResources, ITranslationResources
 
 {
@@ -237,3 +237,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Communicationinternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Communication {
     static class CommonEmailResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

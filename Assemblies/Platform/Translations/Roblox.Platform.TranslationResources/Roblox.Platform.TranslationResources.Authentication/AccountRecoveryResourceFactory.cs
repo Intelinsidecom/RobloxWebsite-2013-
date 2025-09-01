@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     static class AccountRecoveryResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

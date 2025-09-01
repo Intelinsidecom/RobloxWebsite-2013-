@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ItemConfigurationResources_en_us to provide locale specific translations where possible,
@@ -10,32 +12,32 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Description.AllowCopying"
 	/// English String: "By switching on, you are granting every other user of Roblox the right to use (in various ways) the content you are now sharing. If you do not want to grant this right, please do not check this box. For more information about sharing content, please review the Roblox Terms of Use."
 	/// </summary>
-	public override string DescriptionAllowCopying => "Al activar esta casilla, otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los TÃ©rminos de uso de Roblox.";
+	public override string DescriptionAllowCopying => "Al activar esta casilla, otorgarás a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener más información sobre cómo se comparte el contenido, revisa los Términos de uso de Roblox.";
 
 	/// <summary>
 	/// Key: "Description.ArchiveWarning"
 	/// English String: "Archiving this asset will prevent it from being used in game. Archived assets can be restored."
 	/// </summary>
-	public override string DescriptionArchiveWarning => "Si archivas este recurso, no lo podrÃ¡s usar en el juego. Los recursos archivados se pueden restaurar.";
+	public override string DescriptionArchiveWarning => "Si archivas este recurso, no lo podrás usar en el juego. Los recursos archivados se pueden restaurar.";
 
 	/// <summary>
 	/// Key: "Description.ClickToAddTag"
 	/// Hover text on the button that adds a tag to an item
 	/// English String: "Click to add tag"
 	/// </summary>
-	public override string DescriptionClickToAddTag => "Haz clic para aÃ±adir una etiqueta";
+	public override string DescriptionClickToAddTag => "Haz clic para añadir una etiqueta";
 
 	/// <summary>
 	/// Key: "Description.ModeratorFileReview"
 	/// English String: "* Uploaded file will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorFileReview => "* El archivo subido serÃ¡ revisado por los moderadores antes de que sea visible para otros usuarios";
+	public override string DescriptionModeratorFileReview => "* El archivo subido será revisado por los moderadores antes de que sea visible para otros usuarios";
 
 	/// <summary>
 	/// Key: "Description.ModeratorReview"
 	/// English String: "* Uploaded image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionModeratorReview => "* La imagen subida serÃ¡ revisada por los moderadores antes de que sea visible para otros usuarios";
+	public override string DescriptionModeratorReview => "* La imagen subida será revisada por los moderadores antes de que sea visible para otros usuarios";
 
 	/// <summary>
 	/// Key: "Heading.Archive"
@@ -67,7 +69,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Heading.Settings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string HeadingSettings => "ConfiguraciÃ³n";
+	public override string HeadingSettings => "Configuración";
 
 	/// <summary>
 	/// Key: "Label.AllowCopying"
@@ -111,13 +113,13 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Label.CurrentPublishedVersion"
 	/// English String: "Current published version"
 	/// </summary>
-	public override string LabelCurrentPublishedVersion => "VersiÃ³n actual publicada";
+	public override string LabelCurrentPublishedVersion => "Versión actual publicada";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "DescripciÃ³n";
+	public override string LabelDescription => "Descripción";
 
 	/// <summary>
 	/// Key: "Label.Device"
@@ -131,7 +133,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Placeholder for input field
 	/// English String: "Enter tag here..."
 	/// </summary>
-	public override string LabelEnterItemTag => "Introduce una etiqueta aquÃ­...";
+	public override string LabelEnterItemTag => "Introduce una etiqueta aquí...";
 
 	/// <summary>
 	/// Key: "Label.Game"
@@ -175,13 +177,13 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Label.LastUpdated"
 	/// English String: "Last Updated"
 	/// </summary>
-	public override string LabelLastUpdated => "Ãšltima actualizaciÃ³n";
+	public override string LabelLastUpdated => "Última actualización";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// English String: "Learn more"
 	/// </summary>
-	public override string LabelLearnMore => "MÃ¡s informaciÃ³n";
+	public override string LabelLearnMore => "Más información";
 
 	/// <summary>
 	/// Key: "Label.MarketplaceFee"
@@ -217,7 +219,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Label.Profit"
 	/// English String: "You Earn"
 	/// </summary>
-	public override string LabelProfit => "TÃº ganas";
+	public override string LabelProfit => "Tú ganas";
 
 	/// <summary>
 	/// Key: "Label.Restore"
@@ -229,7 +231,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Label.RevertVersion"
 	/// English String: "Revert to this version"
 	/// </summary>
-	public override string LabelRevertVersion => "Volver a esta versiÃ³n";
+	public override string LabelRevertVersion => "Volver a esta versión";
 
 	/// <summary>
 	/// Key: "Label.Sales"
@@ -273,7 +275,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Label.Version"
 	/// English String: "Version"
 	/// </summary>
-	public override string LabelVersion => "VersiÃ³n";
+	public override string LabelVersion => "Versión";
 
 	/// <summary>
 	/// Key: "Label.Versions"
@@ -297,28 +299,28 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Message.DescriptionFieldEmptyError"
 	/// English String: "Description cannot be empty"
 	/// </summary>
-	public override string MessageDescriptionFieldEmptyError => "La descripciÃ³n no puede estar vacÃ­a.";
+	public override string MessageDescriptionFieldEmptyError => "La descripción no puede estar vacía.";
 
 	/// <summary>
 	/// Key: "Message.DescriptionTooLongError"
 	/// error message
 	/// English String: "The description is too long."
 	/// </summary>
-	public override string MessageDescriptionTooLongError => "La descripciÃ³n es demasiado larga.";
+	public override string MessageDescriptionTooLongError => "La descripción es demasiado larga.";
 
 	/// <summary>
 	/// Key: "Message.FilteringServiceUnavailableError"
 	/// error message
 	/// English String: "Text filtering service is unavailable at this time."
 	/// </summary>
-	public override string MessageFilteringServiceUnavailableError => "El servicio de filtrado de texto no estÃ¡ disponible en este momento.";
+	public override string MessageFilteringServiceUnavailableError => "El servicio de filtrado de texto no está disponible en este momento.";
 
 	/// <summary>
 	/// Key: "Message.GamePassConfigDisabledError"
 	/// error message
 	/// English String: "Game Pass configuration is not enabled yet."
 	/// </summary>
-	public override string MessageGamePassConfigDisabledError => "La configuraciÃ³n del pase del juego no estÃ¡ activada todavÃ­a.";
+	public override string MessageGamePassConfigDisabledError => "La configuración del pase del juego no está activada todavía.";
 
 	/// <summary>
 	/// Key: "Message.GamePassNotFoundError"
@@ -339,27 +341,27 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// error message
 	/// English String: "Failed to save image. Please try again later."
 	/// </summary>
-	public override string MessageImageSavingFailedError => "Error al guardar la imagen. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageImageSavingFailedError => "Error al guardar la imagen. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.InappropriateTextError"
 	/// error message
 	/// English String: "The name or description contains inappropriate text."
 	/// </summary>
-	public override string MessageInappropriateTextError => "El nombre o la descripciÃ³n contienen texto inadecuado.";
+	public override string MessageInappropriateTextError => "El nombre o la descripción contienen texto inadecuado.";
 
 	/// <summary>
 	/// Key: "Message.NameFieldEmpty"
 	/// English String: "Name cannot be empty"
 	/// </summary>
-	public override string MessageNameFieldEmpty => "El nombre no puede estar vacÃ­o.";
+	public override string MessageNameFieldEmpty => "El nombre no puede estar vacío.";
 
 	/// <summary>
 	/// Key: "Message.NameRequiredError"
 	/// error message
 	/// English String: "The name cannot be empty."
 	/// </summary>
-	public override string MessageNameRequiredError => "El nombre no puede estar vacÃ­o.";
+	public override string MessageNameRequiredError => "El nombre no puede estar vacío.";
 
 	/// <summary>
 	/// Key: "Message.NoTagsFound"
@@ -383,14 +385,14 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// Key: "Message.SaveError"
 	/// English String: "Something failed. Please try again later"
 	/// </summary>
-	public override string MessageSaveError => "Algo ha ido mal. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageSaveError => "Algo ha ido mal. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.TooManyUploads"
 	/// error message
 	/// English String: "You are uploading too much. Please try again later."
 	/// </summary>
-	public override string MessageTooManyUploads => "EstÃ¡s subiendo demasiados archivos. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string MessageTooManyUploads => "Estás subiendo demasiados archivos. Inténtalo de nuevo más tarde.";
 
 	/// <summary>
 	/// Key: "Message.UpdatePriceError"
@@ -435,17 +437,17 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAcceptableFiles(string lineBreak, string fileExtensions, string fileSizes)
 	{
-		return $"* Archivos aceptados{lineBreak}Formato: {fileExtensions}   |   TamaÃ±o: {fileSizes}";
+		return $"* Archivos aceptados{lineBreak}Formato: {fileExtensions}   |   Tamaño: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFiles()
 	{
-		return "* Archivos aceptados{lineBreak}Formato: {fileExtensions}   |   TamaÃ±o: {fileSizes}";
+		return "* Archivos aceptados{lineBreak}Formato: {fileExtensions}   |   Tamaño: {fileSizes}";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopying()
 	{
-		return "Al activar esta casilla, otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los TÃ©rminos de uso de Roblox.";
+		return "Al activar esta casilla, otorgarás a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener más información sobre cómo se comparte el contenido, revisa los Términos de uso de Roblox.";
 	}
 
 	/// <summary>
@@ -454,22 +456,22 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionAllowCopyingWarning(string linkStart, string linkEnd)
 	{
-		return $"Al activar esta casilla, otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los {linkStart}TÃ©rminos de uso{linkEnd} de Roblox.";
+		return $"Al activar esta casilla, otorgarás a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener más información sobre cómo se comparte el contenido, revisa los {linkStart}Términos de uso{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingWarning()
 	{
-		return "Al activar esta casilla, otorgarÃ¡s a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener mÃ¡s informaciÃ³n sobre cÃ³mo se comparte el contenido, revisa los {linkStart}TÃ©rminos de uso{linkEnd} de Roblox.";
+		return "Al activar esta casilla, otorgarás a todos los usuarios de Roblox el derecho a utilizar (de varias maneras) el contenido que compartes. Si no quieres otorgarlo, no la actives. Para obtener más información sobre cómo se comparte el contenido, revisa los {linkStart}Términos de uso{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionArchiveWarning()
 	{
-		return "Si archivas este recurso, no lo podrÃ¡s usar en el juego. Los recursos archivados se pueden restaurar.";
+		return "Si archivas este recurso, no lo podrás usar en el juego. Los recursos archivados se pueden restaurar.";
 	}
 
 	protected override string _GetTemplateForDescriptionClickToAddTag()
 	{
-		return "Haz clic para aÃ±adir una etiqueta";
+		return "Haz clic para añadir una etiqueta";
 	}
 
 	/// <summary>
@@ -478,22 +480,22 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string DescriptionMarketplaceExplanation(string marketplaceFeePercentage, string minimumPrice)
 	{
-		return $"(Roblox recibe el {marketplaceFeePercentage} %, {minimumPrice} mÃ­nimo)";
+		return $"(Roblox recibe el {marketplaceFeePercentage} %, {minimumPrice} mínimo)";
 	}
 
 	protected override string _GetTemplateForDescriptionMarketplaceExplanation()
 	{
-		return "(Roblox recibe el {marketplaceFeePercentage} %, {minimumPrice} mÃ­nimo)";
+		return "(Roblox recibe el {marketplaceFeePercentage} %, {minimumPrice} mínimo)";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorFileReview()
 	{
-		return "* El archivo subido serÃ¡ revisado por los moderadores antes de que sea visible para otros usuarios";
+		return "* El archivo subido será revisado por los moderadores antes de que sea visible para otros usuarios";
 	}
 
 	protected override string _GetTemplateForDescriptionModeratorReview()
 	{
-		return "* La imagen subida serÃ¡ revisada por los moderadores antes de que sea visible para otros usuarios";
+		return "* La imagen subida será revisada por los moderadores antes de que sea visible para otros usuarios";
 	}
 
 	/// <summary>
@@ -513,12 +515,12 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	public override string DescriptionVerifiedCreatorEmail(string linkStart, string linkEnd)
 	{
-		return $"Para compartir el contenido en el Mercado, debes aÃ±adir un correo electrÃ³nico y verificarlo en tu cuenta. Esto se puede hacer en {linkStart}ConfiguraciÃ³n de la cuenta{linkEnd}.";
+		return $"Para compartir el contenido en el Mercado, debes añadir un correo electrónico y verificarlo en tu cuenta. Esto se puede hacer en {linkStart}Configuración de la cuenta{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForDescriptionVerifiedCreatorEmail()
 	{
-		return "Para compartir el contenido en el Mercado, debes aÃ±adir un correo electrÃ³nico y verificarlo en tu cuenta. Esto se puede hacer en {linkStart}ConfiguraciÃ³n de la cuenta{linkEnd}.";
+		return "Para compartir el contenido en el Mercado, debes añadir un correo electrónico y verificarlo en tu cuenta. Esto se puede hacer en {linkStart}Configuración de la cuenta{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForHeadingArchive()
@@ -557,7 +559,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForHeadingSettings()
 	{
-		return "ConfiguraciÃ³n";
+		return "Configuración";
 	}
 
 	protected override string _GetTemplateForLabelAllowCopying()
@@ -592,12 +594,12 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelCurrentPublishedVersion()
 	{
-		return "VersiÃ³n actual publicada";
+		return "Versión actual publicada";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "DescripciÃ³n";
+		return "Descripción";
 	}
 
 	protected override string _GetTemplateForLabelDevice()
@@ -607,7 +609,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelEnterItemTag()
 	{
-		return "Introduce una etiqueta aquÃ­...";
+		return "Introduce una etiqueta aquí...";
 	}
 
 	/// <summary>
@@ -656,12 +658,12 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelLastUpdated()
 	{
-		return "Ãšltima actualizaciÃ³n";
+		return "Última actualización";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "MÃ¡s informaciÃ³n";
+		return "Más información";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
@@ -691,7 +693,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelProfit()
 	{
-		return "TÃº ganas";
+		return "Tú ganas";
 	}
 
 	protected override string _GetTemplateForLabelRestore()
@@ -701,7 +703,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelRevertVersion()
 	{
-		return "Volver a esta versiÃ³n";
+		return "Volver a esta versión";
 	}
 
 	protected override string _GetTemplateForLabelSales()
@@ -736,7 +738,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForLabelVersion()
 	{
-		return "VersiÃ³n";
+		return "Versión";
 	}
 
 	protected override string _GetTemplateForLabelVersions()
@@ -760,17 +762,17 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageDescriptionFieldEmpty(string maxDescriptionLength)
 	{
-		return $"NÃºmero lÃ­mite de caracteres {maxDescriptionLength}";
+		return $"Número límite de caracteres {maxDescriptionLength}";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmpty()
 	{
-		return "NÃºmero lÃ­mite de caracteres {maxDescriptionLength}";
+		return "Número límite de caracteres {maxDescriptionLength}";
 	}
 
 	protected override string _GetTemplateForMessageDescriptionFieldEmptyError()
 	{
-		return "La descripciÃ³n no puede estar vacÃ­a.";
+		return "La descripción no puede estar vacía.";
 	}
 
 	/// <summary>
@@ -789,17 +791,17 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageDescriptionTooLongError()
 	{
-		return "La descripciÃ³n es demasiado larga.";
+		return "La descripción es demasiado larga.";
 	}
 
 	protected override string _GetTemplateForMessageFilteringServiceUnavailableError()
 	{
-		return "El servicio de filtrado de texto no estÃ¡ disponible en este momento.";
+		return "El servicio de filtrado de texto no está disponible en este momento.";
 	}
 
 	protected override string _GetTemplateForMessageGamePassConfigDisabledError()
 	{
-		return "La configuraciÃ³n del pase del juego no estÃ¡ activada todavÃ­a.";
+		return "La configuración del pase del juego no está activada todavía.";
 	}
 
 	protected override string _GetTemplateForMessageGamePassNotFoundError()
@@ -814,12 +816,12 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageImageSavingFailedError()
 	{
-		return "Error al guardar la imagen. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Error al guardar la imagen. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageInappropriateTextError()
 	{
-		return "El nombre o la descripciÃ³n contienen texto inadecuado.";
+		return "El nombre o la descripción contienen texto inadecuado.";
 	}
 
 	/// <summary>
@@ -838,7 +840,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageNameFieldEmpty()
 	{
-		return "El nombre no puede estar vacÃ­o.";
+		return "El nombre no puede estar vacío.";
 	}
 
 	/// <summary>
@@ -857,7 +859,7 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 
 	protected override string _GetTemplateForMessageNameRequiredError()
 	{
-		return "El nombre no puede estar vacÃ­o.";
+		return "El nombre no puede estar vacío.";
 	}
 
 	protected override string _GetTemplateForMessageNoTagsFound()
@@ -881,12 +883,12 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertError(string versionNumber)
 	{
-		return $"Error al volver a la versiÃ³n {versionNumber}";
+		return $"Error al volver a la versión {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageRevertError()
 	{
-		return "Error al volver a la versiÃ³n {versionNumber}";
+		return "Error al volver a la versión {versionNumber}";
 	}
 
 	/// <summary>
@@ -895,22 +897,22 @@ internal class ItemConfigurationResources_es_es : ItemConfigurationResources_en_
 	/// </summary>
 	public override string MessageRevertSuccess(string versionNumber)
 	{
-		return $"Se ha vuelto correctamente a la versiÃ³n {versionNumber}";
+		return $"Se ha vuelto correctamente a la versión {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageRevertSuccess()
 	{
-		return "Se ha vuelto correctamente a la versiÃ³n {versionNumber}";
+		return "Se ha vuelto correctamente a la versión {versionNumber}";
 	}
 
 	protected override string _GetTemplateForMessageSaveError()
 	{
-		return "Algo ha ido mal. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Algo ha ido mal. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageTooManyUploads()
 	{
-		return "EstÃ¡s subiendo demasiados archivos. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Estás subiendo demasiados archivos. Inténtalo de nuevo más tarde.";
 	}
 
 	protected override string _GetTemplateForMessageUpdatePriceError()

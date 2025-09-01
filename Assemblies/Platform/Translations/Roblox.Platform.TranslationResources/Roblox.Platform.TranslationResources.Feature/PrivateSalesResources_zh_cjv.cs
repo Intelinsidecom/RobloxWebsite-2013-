@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
@@ -10,74 +12,74 @@ internal class PrivateSalesResources_zh_cjv : PrivateSalesResources_en_us, IPriv
 	/// Key: "Action.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "è´­ä¹°";
+	public override string ActionBuy => "购买";
 
 	/// <summary>
 	/// Key: "Heading.PriceChart"
 	/// English String: "Price Chart"
 	/// </summary>
-	public override string HeadingPriceChart => "ä»·æ ¼å›¾è¡¨";
+	public override string HeadingPriceChart => "价格图表";
 
 	/// <summary>
 	/// Key: "Heading.Resellers"
 	/// English String: "Resellers"
 	/// </summary>
-	public override string HeadingResellers => "è½¬å”®è€…";
+	public override string HeadingResellers => "转售者";
 
 	/// <summary>
 	/// Key: "Label.AveragePrice"
 	/// English String: "Average Price"
 	/// </summary>
-	public override string LabelAveragePrice => "å¹³å‡ä»·æ ¼";
+	public override string LabelAveragePrice => "平均价格";
 
 	/// <summary>
 	/// Key: "Label.NoHistoricalData"
 	/// English String: "No historical data to chart."
 	/// </summary>
-	public override string LabelNoHistoricalData => "æ²¡æœ‰å¯åˆ—å…¥å›¾è¡¨çš„åŽ†å²æ•°æ®ã€‚";
+	public override string LabelNoHistoricalData => "没有可列入图表的历史数据。";
 
 	/// <summary>
 	/// Key: "Label.OriginalPrice"
 	/// English String: "Original Price"
 	/// </summary>
-	public override string LabelOriginalPrice => "åŽŸå§‹ä»·æ ¼";
+	public override string LabelOriginalPrice => "原始价格";
 
 	/// <summary>
 	/// Key: "Label.QuantitySold"
 	/// English String: "Quantity Sold"
 	/// </summary>
-	public override string LabelQuantitySold => "å”®å‡ºæ•°é‡";
+	public override string LabelQuantitySold => "售出数量";
 
 	/// <summary>
 	/// Key: "Label.RecentAveragePrice"
 	/// English String: "Recent Average Price"
 	/// </summary>
-	public override string LabelRecentAveragePrice => "æœ€è¿‘å¹³å‡ä»·æ ¼";
+	public override string LabelRecentAveragePrice => "最近平均价格";
 
 	/// <summary>
 	/// Key: "Label.ResaleDataLoadFailure"
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "æ— æ³•åŠ è½½ä»·æ ¼è¡¨åŠè½¬å”®è€…ä¿¡æ¯ï¼Œè¯·é‡è¯•ã€‚";
+	public override string LabelResaleDataLoadFailure => "无法加载价格表及转售者信息，请重试。";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "æŸ¥çœ‹æ›´å¤š";
+	public override string LabelSeeMore => "查看更多";
 
 	/// <summary>
 	/// Key: "Label.Volume"
 	/// English String: "Volume"
 	/// </summary>
-	public override string LabelVolume => "æ•°é‡";
+	public override string LabelVolume => "数量";
 
 	/// <summary>
 	/// Key: "Message.NoOneSelling"
 	/// English String: "Sorry, no one is reselling this item at the moment."
 	/// </summary>
-	public override string MessageNoOneSelling => "æŠ±æ­‰ï¼ŒçŽ°åœ¨æ— äººè½¬å”®æ­¤ç‰©å“ã€‚";
+	public override string MessageNoOneSelling => "抱歉，现在无人转售此物品。";
 
 	public PrivateSalesResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -86,57 +88,57 @@ internal class PrivateSalesResources_zh_cjv : PrivateSalesResources_en_us, IPriv
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è´­ä¹°";
+		return "购买";
 	}
 
 	protected override string _GetTemplateForHeadingPriceChart()
 	{
-		return "ä»·æ ¼å›¾è¡¨";
+		return "价格图表";
 	}
 
 	protected override string _GetTemplateForHeadingResellers()
 	{
-		return "è½¬å”®è€…";
+		return "转售者";
 	}
 
 	protected override string _GetTemplateForLabelAveragePrice()
 	{
-		return "å¹³å‡ä»·æ ¼";
+		return "平均价格";
 	}
 
 	protected override string _GetTemplateForLabelNoHistoricalData()
 	{
-		return "æ²¡æœ‰å¯åˆ—å…¥å›¾è¡¨çš„åŽ†å²æ•°æ®ã€‚";
+		return "没有可列入图表的历史数据。";
 	}
 
 	protected override string _GetTemplateForLabelOriginalPrice()
 	{
-		return "åŽŸå§‹ä»·æ ¼";
+		return "原始价格";
 	}
 
 	protected override string _GetTemplateForLabelQuantitySold()
 	{
-		return "å”®å‡ºæ•°é‡";
+		return "售出数量";
 	}
 
 	protected override string _GetTemplateForLabelRecentAveragePrice()
 	{
-		return "æœ€è¿‘å¹³å‡ä»·æ ¼";
+		return "最近平均价格";
 	}
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "æ— æ³•åŠ è½½ä»·æ ¼è¡¨åŠè½¬å”®è€…ä¿¡æ¯ï¼Œè¯·é‡è¯•ã€‚";
+		return "无法加载价格表及转售者信息，请重试。";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "æŸ¥çœ‹æ›´å¤š";
+		return "查看更多";
 	}
 
 	protected override string _GetTemplateForLabelVolume()
 	{
-		return "æ•°é‡";
+		return "数量";
 	}
 
 	/// <summary>
@@ -145,17 +147,17 @@ internal class PrivateSalesResources_zh_cjv : PrivateSalesResources_en_us, IPriv
 	/// </summary>
 	public override string LabelXDays(string numberOfDays)
 	{
-		return $"{numberOfDays} å¤©";
+		return $"{numberOfDays} 天";
 	}
 
 	protected override string _GetTemplateForLabelXDays()
 	{
-		return "{numberOfDays} å¤©";
+		return "{numberOfDays} 天";
 	}
 
 	protected override string _GetTemplateForMessageNoOneSelling()
 	{
-		return "æŠ±æ­‰ï¼ŒçŽ°åœ¨æ— äººè½¬å”®æ­¤ç‰©å“ã€‚";
+		return "抱歉，现在无人转售此物品。";
 	}
 }
 

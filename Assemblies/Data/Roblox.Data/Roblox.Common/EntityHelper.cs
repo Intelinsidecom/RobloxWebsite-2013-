@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -367,12 +367,12 @@ public class EntityHelper
 	}
 
 	/// <summary>
-	/// Gets the <see cref="T:System.Data.SqlClient.SqlParameter" /> containing the given <see cref="T:System.Collections.Generic.IEnumerable`1" /> of IDs.
+	/// Gets the <see cref="T:Microsoft.Data.SqlClient.SqlParameter" /> containing the given <see cref="T:System.Collections.Generic.IEnumerable`1" /> of IDs.
 	/// </summary>
 	/// <typeparam name="TIndex">The type of the IDs.</typeparam>
-	/// <param name="indices">The IDs to build a <see cref="T:System.Data.SqlClient.SqlParameter" /> for.</param>
-	/// <param name="parameterName">The name of the <see cref="T:System.Data.SqlClient.SqlParameter" />.</param>
-	/// <returns>The <see cref="T:System.Data.SqlClient.SqlParameter" />.</returns>
+	/// <param name="indices">The IDs to build a <see cref="T:Microsoft.Data.SqlClient.SqlParameter" /> for.</param>
+	/// <param name="parameterName">The name of the <see cref="T:Microsoft.Data.SqlClient.SqlParameter" />.</param>
+	/// <returns>The <see cref="T:Microsoft.Data.SqlClient.SqlParameter" />.</returns>
 	public static SqlParameter GetMultiGetIDsSqlParameter<TIndex>(IEnumerable<TIndex> indices, string parameterName = "IDs")
 	{
 		//IL_0005: Unknown result type (might be due to invalid IL or missing references)
@@ -397,11 +397,11 @@ public class EntityHelper
 	}
 
 	/// <summary>
-	/// Converts the given <see cref="T:System.Collections.Generic.IEnumerable`1" /> of IDs to an array of <see cref="T:System.Data.SqlClient.SqlParameter" />s.
+	/// Converts the given <see cref="T:System.Collections.Generic.IEnumerable`1" /> of IDs to an array of <see cref="T:Microsoft.Data.SqlClient.SqlParameter" />s.
 	/// </summary>
 	/// <typeparam name="TIndex">The type of the IDs.</typeparam>
-	/// <param name="indices">The IDs to convert into <see cref="T:System.Data.SqlClient.SqlParameter" />s.</param>
-	/// <returns>The IDs as <see cref="T:System.Data.SqlClient.SqlParameter" />s.</returns>
+	/// <param name="indices">The IDs to convert into <see cref="T:Microsoft.Data.SqlClient.SqlParameter" />s.</param>
+	/// <returns>The IDs as <see cref="T:Microsoft.Data.SqlClient.SqlParameter" />s.</returns>
 	public static SqlParameter[] GetMultiGetIDsSqlParameters<TIndex>(IEnumerable<TIndex> indices)
 	{
 		return (SqlParameter[])(object)new SqlParameter[1] { GetMultiGetIDsSqlParameter(indices) };
@@ -1297,3 +1297,4 @@ public class EntityHelper
 		throw new ArgumentException("Invalid table type for Multi-Get: " + parameterType);
 	}
 }
+

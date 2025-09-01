@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FeedsResources_en_us to provide locale specific translations where possible,
@@ -22,7 +24,7 @@ internal class FeedsResources_de_de : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Heading.ForumHelp"
 	/// English String: "Roblox forums for help"
 	/// </summary>
-	public override string HeadingForumHelp => "Besuche Roblox-Foren fÃ¼r Hilfe";
+	public override string HeadingForumHelp => "Besuche Roblox-Foren für Hilfe";
 
 	/// <summary>
 	/// Key: "Heading.MakeFriends"
@@ -40,13 +42,13 @@ internal class FeedsResources_de_de : FeedsResources_en_us, IFeedsResources, ITr
 	/// Key: "Label.NoFeedLink"
 	/// English String: "make some best friends now."
 	/// </summary>
-	public override string LabelNoFeedLink => "schlieÃŸe jetzt neue Freundschaften.";
+	public override string LabelNoFeedLink => "schließe jetzt neue Freundschaften.";
 
 	/// <summary>
 	/// Key: "Label.NoFeedText"
 	/// English String: "No news about your best friends... want to know what your best friends are up to?"
 	/// </summary>
-	public override string LabelNoFeedText => "Es gibt nichts Neues von deinen besten Freunden\u00a0... MÃ¶chtest du wissen, was deine besten Freunde so machen?";
+	public override string LabelNoFeedText => "Es gibt nichts Neues von deinen besten Freunden\u00a0... Möchtest du wissen, was deine besten Freunde so machen?";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
@@ -71,7 +73,7 @@ internal class FeedsResources_de_de : FeedsResources_en_us, IFeedsResources, ITr
 
 	protected override string _GetTemplateForHeadingForumHelp()
 	{
-		return "Besuche Roblox-Foren fÃ¼r Hilfe";
+		return "Besuche Roblox-Foren für Hilfe";
 	}
 
 	protected override string _GetTemplateForHeadingMakeFriends()
@@ -132,12 +134,12 @@ internal class FeedsResources_de_de : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelForumHelp(string linkStart, string linkEnd)
 	{
-		return $"Was auch immer dich interessiert, solange es etwas mit Roblox zu tun hat, findest du {linkStart}hier{linkEnd} Leute, die sich darÃ¼ber unterhalten.";
+		return $"Was auch immer dich interessiert, solange es etwas mit Roblox zu tun hat, findest du {linkStart}hier{linkEnd} Leute, die sich darüber unterhalten.";
 	}
 
 	protected override string _GetTemplateForLabelForumHelp()
 	{
-		return "Was auch immer dich interessiert, solange es etwas mit Roblox zu tun hat, findest du {linkStart}hier{linkEnd} Leute, die sich darÃ¼ber unterhalten.";
+		return "Was auch immer dich interessiert, solange es etwas mit Roblox zu tun hat, findest du {linkStart}hier{linkEnd} Leute, die sich darüber unterhalten.";
 	}
 
 	/// <summary>
@@ -146,22 +148,22 @@ internal class FeedsResources_de_de : FeedsResources_en_us, IFeedsResources, ITr
 	/// </summary>
 	public override string LabelMakeFriends(string linkStart, string linkEnd)
 	{
-		return $"Lerne beim Spielen andere Spieler kennen und sende ihnen Freundesanfragen. Wenn du das versÃ¤umst, kannst du ihnen auch spÃ¤ter noch eine Anfrage senden, indem du nach ihren Benutzerprofilen {linkStart}suchst{linkEnd}.";
+		return $"Lerne beim Spielen andere Spieler kennen und sende ihnen Freundesanfragen. Wenn du das versäumst, kannst du ihnen auch später noch eine Anfrage senden, indem du nach ihren Benutzerprofilen {linkStart}suchst{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelMakeFriends()
 	{
-		return "Lerne beim Spielen andere Spieler kennen und sende ihnen Freundesanfragen. Wenn du das versÃ¤umst, kannst du ihnen auch spÃ¤ter noch eine Anfrage senden, indem du nach ihren Benutzerprofilen {linkStart}suchst{linkEnd}.";
+		return "Lerne beim Spielen andere Spieler kennen und sende ihnen Freundesanfragen. Wenn du das versäumst, kannst du ihnen auch später noch eine Anfrage senden, indem du nach ihren Benutzerprofilen {linkStart}suchst{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedLink()
 	{
-		return "schlieÃŸe jetzt neue Freundschaften.";
+		return "schließe jetzt neue Freundschaften.";
 	}
 
 	protected override string _GetTemplateForLabelNoFeedText()
 	{
-		return "Es gibt nichts Neues von deinen besten Freunden\u00a0... MÃ¶chtest du wissen, was deine besten Freunde so machen?";
+		return "Es gibt nichts Neues von deinen besten Freunden\u00a0... Möchtest du wissen, was deine besten Freunde so machen?";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()

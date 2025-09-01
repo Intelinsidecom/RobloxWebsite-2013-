@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.DataV2.Core;
@@ -304,3 +304,4 @@ public class AssetVersionDAL
 		return Convert.ToInt32(dbHelper.ExecuteSQLScalar($"[dbo].[{storedProcedure}]", CommandType.StoredProcedure));
 	}
 }
+

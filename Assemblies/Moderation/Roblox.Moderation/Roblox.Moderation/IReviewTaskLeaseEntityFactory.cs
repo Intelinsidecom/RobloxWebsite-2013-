@@ -1,4 +1,4 @@
-﻿namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     interface IReviewTaskLeaseEntityFactory<out TILeaseEntity> where TILeaseEntity : IReviewTaskLeaseEntity
 
 {

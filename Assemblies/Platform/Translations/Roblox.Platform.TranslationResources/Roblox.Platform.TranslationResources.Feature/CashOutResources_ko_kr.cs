@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CashOutResources_en_us to provide locale specific translations where possible,
@@ -10,146 +12,146 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.CashOut"
 	/// English String: "Cash Out"
 	/// </summary>
-	public override string ActionCashOut => "í˜„ê¸ˆ ì¸ì¶œ";
+	public override string ActionCashOut => "현금 인출";
 
 	/// <summary>
 	/// Key: "Action.GetItNow"
 	/// button text
 	/// English String: "Get it now"
 	/// </summary>
-	public override string ActionGetItNow => "ì§€ê¸ˆ ì´ìš©í•˜ì„¸ìš”";
+	public override string ActionGetItNow => "지금 이용하세요";
 
 	/// <summary>
 	/// Key: "Action.GetObc"
 	/// English String: "Get OBC Now"
 	/// </summary>
-	public override string ActionGetObc => "ì§€ê¸ˆ OBC ê°€ìž…";
+	public override string ActionGetObc => "지금 OBC 가입";
 
 	/// <summary>
 	/// Key: "Action.UpgradeMembership"
 	/// English String: "Upgrade Membership"
 	/// </summary>
-	public override string ActionUpgradeMembership => "ë©¤ë²„ì‹­ ì—…ê·¸ë ˆì´ë“œ";
+	public override string ActionUpgradeMembership => "멤버십 업그레이드";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "ì¸ì¦";
+	public override string ActionVerify => "인증";
 
 	/// <summary>
 	/// Key: "Action.VerifyEmail"
 	/// English String: "Verify Email"
 	/// </summary>
-	public override string ActionVerifyEmail => "ì´ë©”ì¼ ì¸ì¦";
+	public override string ActionVerifyEmail => "이메일 인증";
 
 	/// <summary>
 	/// Key: "Action.VerifyNow"
 	/// English String: "Verify Now"
 	/// </summary>
-	public override string ActionVerifyNow => "ì§€ê¸ˆ ì¸ì¦";
+	public override string ActionVerifyNow => "지금 인증";
 
 	/// <summary>
 	/// Key: "Action.VisitDevEx"
 	/// English String: "Visit DevEx"
 	/// </summary>
-	public override string ActionVisitDevEx => "DevEx ë°©ë¬¸";
+	public override string ActionVisitDevEx => "DevEx 방문";
 
 	/// <summary>
 	/// Key: "Heading.CreateGamesEarnMoney"
 	/// section heading
 	/// English String: "Developer Exchange: Create games, earn money."
 	/// </summary>
-	public override string HeadingCreateGamesEarnMoney => "ê°œë°œìž í™˜ì „: ê²Œìž„ ê°œë°œì„ í†µí•´ ìˆ˜ìµ ì°½ì¶œê¹Œì§€";
+	public override string HeadingCreateGamesEarnMoney => "개발자 환전: 게임 개발을 통해 수익 창출까지";
 
 	/// <summary>
 	/// Key: "Heading.DeveloperExchange"
 	/// heading
 	/// English String: "Developer Exchange"
 	/// </summary>
-	public override string HeadingDeveloperExchange => "ê°œë°œìž í™˜ì „";
+	public override string HeadingDeveloperExchange => "개발자 환전";
 
 	/// <summary>
 	/// Key: "Heading.YourUpdate"
 	/// section heading
 	/// English String: "Your Update"
 	/// </summary>
-	public override string HeadingYourUpdate => "ì‚¬ìš©ìž ì—…ë°ì´íŠ¸";
+	public override string HeadingYourUpdate => "사용자 업데이트";
 
 	/// <summary>
 	/// Key: "Label.AlmostReady"
 	/// English String: "You're almost ready!"
 	/// </summary>
-	public override string LabelAlmostReady => "ê±°ì˜ ë‹¤ ë˜ì—ˆì–´ìš”!";
+	public override string LabelAlmostReady => "거의 다 되었어요!";
 
 	/// <summary>
 	/// Key: "Label.BuilderClubForCash"
 	/// English String: "You'll need Outrageous Builder's Club to exchange Robux for cash."
 	/// </summary>
-	public override string LabelBuilderClubForCash => "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•˜ë ¤ë©´ Outrageous Builders Clubì— ê°€ìž…í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string LabelBuilderClubForCash => "Robux를 현금으로 환전하려면 Outrageous Builders Club에 가입해야 합니다.";
 
 	/// <summary>
 	/// Key: "Label.BuildersCludForCashout"
 	/// English String: "You need Outrageous Builders Club to Cash Out."
 	/// </summary>
-	public override string LabelBuildersCludForCashout => "í˜„ê¸ˆì„ ì¸ì¶œí•˜ë ¤ë©´ Outrageous Builders Clubì— ê°€ìž…í•´ì•¼ í•´ìš”.";
+	public override string LabelBuildersCludForCashout => "현금을 인출하려면 Outrageous Builders Club에 가입해야 해요.";
 
 	/// <summary>
 	/// Key: "Label.CurrentExchangeRate"
 	/// English String: "Current Rate"
 	/// </summary>
-	public override string LabelCurrentExchangeRate => "í˜„ìž¬ í™˜ìœ¨";
+	public override string LabelCurrentExchangeRate => "현재 환율";
 
 	/// <summary>
 	/// Key: "Label.DevExStatusCompleted"
 	/// label
 	/// English String: "Its status is Completed"
 	/// </summary>
-	public override string LabelDevExStatusCompleted => "í™˜ì „ ìš”ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤";
+	public override string LabelDevExStatusCompleted => "환전 요청이 완료되었습니다";
 
 	/// <summary>
 	/// Key: "Label.DevExStatusPending"
 	/// label
 	/// English String: "Its status is Pending"
 	/// </summary>
-	public override string LabelDevExStatusPending => "í™˜ì „ ìš”ì²­ì´ ëŒ€ê¸° ì¤‘ìž…ë‹ˆë‹¤";
+	public override string LabelDevExStatusPending => "환전 요청이 대기 중입니다";
 
 	/// <summary>
 	/// Key: "Label.DevExStatusRejected"
 	/// label
 	/// English String: "Its status is Rejected"
 	/// </summary>
-	public override string LabelDevExStatusRejected => "í™˜ì „ ìš”ì²­ì´ ê±°ë¶€ë˜ì—ˆìŠµë‹ˆë‹¤";
+	public override string LabelDevExStatusRejected => "환전 요청이 거부되었습니다";
 
 	/// <summary>
 	/// Key: "Label.NeedVerifiedEmail"
 	/// English String: "You need a verified email address to use DevEx."
 	/// </summary>
-	public override string LabelNeedVerifiedEmail => "DevExë¥¼ ì´ìš©í•˜ë ¤ë©´ ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string LabelNeedVerifiedEmail => "DevEx를 이용하려면 이메일 주소를 인증해야 합니다.";
 
 	/// <summary>
 	/// Key: "Label.NotEligible"
 	/// English String: "You are not eligible currently."
 	/// </summary>
-	public override string LabelNotEligible => "íšŒì›ë‹˜ì€ í˜„ìž¬ ë³¸ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string LabelNotEligible => "회원님은 현재 본 서비스를 이용하실 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Label.NotEnoughRobuxForCashout"
 	/// English String: "You don't have enough Robux to Cash Out."
 	/// </summary>
-	public override string LabelNotEnoughRobuxForCashout => "Robuxê°€ ë¶€ì¡±í•´ì„œ í˜„ê¸ˆì„ ì¸ì¶œí•  ìˆ˜ ì—†ì–´ìš”.";
+	public override string LabelNotEnoughRobuxForCashout => "Robux가 부족해서 현금을 인출할 수 없어요.";
 
 	/// <summary>
 	/// Key: "Label.PremiumForCash"
 	/// English String: "You'll need Roblox Premium to exchange Robux for cash."
 	/// </summary>
-	public override string LabelPremiumForCash => "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ êµí™˜í•˜ë ¤ë©´ Roblox Premiumì´ í•„ìš”í•´ìš”.";
+	public override string LabelPremiumForCash => "Robux를 현금으로 교환하려면 Roblox Premium이 필요해요.";
 
 	/// <summary>
 	/// Key: "Label.Robux"
@@ -161,19 +163,19 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// Key: "Label.TradingRobux"
 	/// English String: "You're on your way to trading Robux for cash!"
 	/// </summary>
-	public override string LabelTradingRobux => "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•˜ëŠ” ì¤‘ìž…ë‹ˆë‹¤!";
+	public override string LabelTradingRobux => "Robux를 현금으로 환전하는 중입니다!";
 
 	/// <summary>
 	/// Key: "Label.TradingRobuxCash"
 	/// English String: "You're almost there! You almost qualify to trade your Robux for cash!"
 	/// </summary>
-	public override string LabelTradingRobuxCash => "ê±°ì˜ ë‹¤ ëë‚˜ê°€ìš”! ì¡°ê¸ˆë§Œ ë” ìžˆìœ¼ë©´ Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•  ìˆ˜ ìžˆì–´ìš”!";
+	public override string LabelTradingRobuxCash => "거의 다 끝나가요! 조금만 더 있으면 Robux를 현금으로 환전할 수 있어요!";
 
 	/// <summary>
 	/// Key: "Label.VerifiedEmailForCashout"
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
-	public override string LabelVerifiedEmailForCashout => "í˜„ê¸ˆì„ ì¸ì¶œí•˜ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ì„ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string LabelVerifiedEmailForCashout => "현금을 인출하려면 먼저 이메일을 인증해야 합니다.";
 
 	public CashOutResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -182,47 +184,47 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionCashOut()
 	{
-		return "í˜„ê¸ˆ ì¸ì¶œ";
+		return "현금 인출";
 	}
 
 	protected override string _GetTemplateForActionGetItNow()
 	{
-		return "ì§€ê¸ˆ ì´ìš©í•˜ì„¸ìš”";
+		return "지금 이용하세요";
 	}
 
 	protected override string _GetTemplateForActionGetObc()
 	{
-		return "ì§€ê¸ˆ OBC ê°€ìž…";
+		return "지금 OBC 가입";
 	}
 
 	protected override string _GetTemplateForActionUpgradeMembership()
 	{
-		return "ë©¤ë²„ì‹­ ì—…ê·¸ë ˆì´ë“œ";
+		return "멤버십 업그레이드";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "ì¸ì¦";
+		return "인증";
 	}
 
 	protected override string _GetTemplateForActionVerifyEmail()
 	{
-		return "ì´ë©”ì¼ ì¸ì¦";
+		return "이메일 인증";
 	}
 
 	protected override string _GetTemplateForActionVerifyNow()
 	{
-		return "ì§€ê¸ˆ ì¸ì¦";
+		return "지금 인증";
 	}
 
 	protected override string _GetTemplateForActionVisitDevEx()
 	{
-		return "DevEx ë°©ë¬¸";
+		return "DevEx 방문";
 	}
 
 	/// <summary>
@@ -232,12 +234,12 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExRequestCompleted(string startMoneyLink, string endMoneyLink)
 	{
-		return $"DevEx ìš”ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. ìžì„¸í•œ ì‚¬í•­ì€ {startMoneyLink}ìžê¸ˆ{endMoneyLink} íŽ˜ì´ì§€ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return $"DevEx 요청이 완료되었습니다. 자세한 사항은 {startMoneyLink}자금{endMoneyLink} 페이지에서 확인하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExRequestCompleted()
 	{
-		return "DevEx ìš”ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤. ìžì„¸í•œ ì‚¬í•­ì€ {startMoneyLink}ìžê¸ˆ{endMoneyLink} íŽ˜ì´ì§€ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return "DevEx 요청이 완료되었습니다. 자세한 사항은 {startMoneyLink}자금{endMoneyLink} 페이지에서 확인하세요.";
 	}
 
 	/// <summary>
@@ -247,12 +249,12 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExRequestSubmittedOn(string requestDate)
 	{
-		return $"{requestDate}ì— DevEx ìš”ì²­ì„ í•˜ì…¨ìŠµë‹ˆë‹¤";
+		return $"{requestDate}에 DevEx 요청을 하셨습니다";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExRequestSubmittedOn()
 	{
-		return "{requestDate}ì— DevEx ìš”ì²­ì„ í•˜ì…¨ìŠµë‹ˆë‹¤";
+		return "{requestDate}에 DevEx 요청을 하셨습니다";
 	}
 
 	/// <summary>
@@ -262,12 +264,12 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionDevExTermsDisclaimer(string helpLinkStart, string helpLinkEnd)
 	{
-		return $"* êµ¬(èˆŠ) Robuxì—ëŠ” ë‹¤ë¥¸ í™˜ìœ¨ì´ ì ìš©ë  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. {helpLinkStart}ì—¬ê¸°{helpLinkEnd}ë¥¼ í´ë¦­í•´ ìžì„¸í•œ ì •ë³´ë¥¼ í™•ì¸í•˜ì„¸ìš”.";
+		return $"* 구(舊) Robux에는 다른 환율이 적용될 수도 있습니다. {helpLinkStart}여기{helpLinkEnd}를 클릭해 자세한 정보를 확인하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionDevExTermsDisclaimer()
 	{
-		return "* êµ¬(èˆŠ) Robuxì—ëŠ” ë‹¤ë¥¸ í™˜ìœ¨ì´ ì ìš©ë  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. {helpLinkStart}ì—¬ê¸°{helpLinkEnd}ë¥¼ í´ë¦­í•´ ìžì„¸í•œ ì •ë³´ë¥¼ í™•ì¸í•˜ì„¸ìš”.";
+		return "* 구(舊) Robux에는 다른 환율이 적용될 수도 있습니다. {helpLinkStart}여기{helpLinkEnd}를 클릭해 자세한 정보를 확인하세요.";
 	}
 
 	/// <summary>
@@ -277,12 +279,12 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionLearnMoreAboutDevEx(string startDevExLink, string endDevExLink)
 	{
-		return $"ê°œë°œìž í™˜ì „ì— ëŒ€í•´ {startDevExLink}ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”{endDevExLink}.";
+		return $"개발자 환전에 대해 {startDevExLink}자세히 알아보세요{endDevExLink}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreAboutDevEx()
 	{
-		return "ê°œë°œìž í™˜ì „ì— ëŒ€í•´ {startDevExLink}ìžì„¸ížˆ ì•Œì•„ë³´ì„¸ìš”{endDevExLink}.";
+		return "개발자 환전에 대해 {startDevExLink}자세히 알아보세요{endDevExLink}.";
 	}
 
 	/// <summary>
@@ -292,32 +294,32 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string DescriptionVisitDevEx(string startDevExLink, string endDevExLink)
 	{
-		return $"ê°œë°œìž í™˜ì „ì„ {startDevExLink}ë°©ë¬¸{endDevExLink}í•˜ì„¸ìš”.";
+		return $"개발자 환전을 {startDevExLink}방문{endDevExLink}하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionVisitDevEx()
 	{
-		return "ê°œë°œìž í™˜ì „ì„ {startDevExLink}ë°©ë¬¸{endDevExLink}í•˜ì„¸ìš”.";
+		return "개발자 환전을 {startDevExLink}방문{endDevExLink}하세요.";
 	}
 
 	protected override string _GetTemplateForHeadingCreateGamesEarnMoney()
 	{
-		return "ê°œë°œìž í™˜ì „: ê²Œìž„ ê°œë°œì„ í†µí•´ ìˆ˜ìµ ì°½ì¶œê¹Œì§€";
+		return "개발자 환전: 게임 개발을 통해 수익 창출까지";
 	}
 
 	protected override string _GetTemplateForHeadingDeveloperExchange()
 	{
-		return "ê°œë°œìž í™˜ì „";
+		return "개발자 환전";
 	}
 
 	protected override string _GetTemplateForHeadingYourUpdate()
 	{
-		return "ì‚¬ìš©ìž ì—…ë°ì´íŠ¸";
+		return "사용자 업데이트";
 	}
 
 	protected override string _GetTemplateForLabelAlmostReady()
 	{
-		return "ê±°ì˜ ë‹¤ ë˜ì—ˆì–´ìš”!";
+		return "거의 다 되었어요!";
 	}
 
 	/// <summary>
@@ -337,17 +339,17 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 
 	protected override string _GetTemplateForLabelBuilderClubForCash()
 	{
-		return "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•˜ë ¤ë©´ Outrageous Builders Clubì— ê°€ìž…í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "Robux를 현금으로 환전하려면 Outrageous Builders Club에 가입해야 합니다.";
 	}
 
 	protected override string _GetTemplateForLabelBuildersCludForCashout()
 	{
-		return "í˜„ê¸ˆì„ ì¸ì¶œí•˜ë ¤ë©´ Outrageous Builders Clubì— ê°€ìž…í•´ì•¼ í•´ìš”.";
+		return "현금을 인출하려면 Outrageous Builders Club에 가입해야 해요.";
 	}
 
 	protected override string _GetTemplateForLabelCurrentExchangeRate()
 	{
-		return "í˜„ìž¬ í™˜ìœ¨";
+		return "현재 환율";
 	}
 
 	/// <summary>
@@ -356,47 +358,47 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string LabelCurrentRateCaption(string minimumDevexRobuxAmount)
 	{
-		return $"í˜„ìž¬ í™˜ìœ¨ì€ {minimumDevexRobuxAmount} Robuxë¥¼ ì´ˆê³¼í•˜ëŠ” ëª¨ë“  ê¸ˆì•¡ì— ì ìš©ë©ë‹ˆë‹¤.";
+		return $"현재 환율은 {minimumDevexRobuxAmount} Robux를 초과하는 모든 금액에 적용됩니다.";
 	}
 
 	protected override string _GetTemplateForLabelCurrentRateCaption()
 	{
-		return "í˜„ìž¬ í™˜ìœ¨ì€ {minimumDevexRobuxAmount} Robuxë¥¼ ì´ˆê³¼í•˜ëŠ” ëª¨ë“  ê¸ˆì•¡ì— ì ìš©ë©ë‹ˆë‹¤.";
+		return "현재 환율은 {minimumDevexRobuxAmount} Robux를 초과하는 모든 금액에 적용됩니다.";
 	}
 
 	protected override string _GetTemplateForLabelDevExStatusCompleted()
 	{
-		return "í™˜ì „ ìš”ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤";
+		return "환전 요청이 완료되었습니다";
 	}
 
 	protected override string _GetTemplateForLabelDevExStatusPending()
 	{
-		return "í™˜ì „ ìš”ì²­ì´ ëŒ€ê¸° ì¤‘ìž…ë‹ˆë‹¤";
+		return "환전 요청이 대기 중입니다";
 	}
 
 	protected override string _GetTemplateForLabelDevExStatusRejected()
 	{
-		return "í™˜ì „ ìš”ì²­ì´ ê±°ë¶€ë˜ì—ˆìŠµë‹ˆë‹¤";
+		return "환전 요청이 거부되었습니다";
 	}
 
 	protected override string _GetTemplateForLabelNeedVerifiedEmail()
 	{
-		return "DevExë¥¼ ì´ìš©í•˜ë ¤ë©´ ì´ë©”ì¼ ì£¼ì†Œë¥¼ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "DevEx를 이용하려면 이메일 주소를 인증해야 합니다.";
 	}
 
 	protected override string _GetTemplateForLabelNotEligible()
 	{
-		return "íšŒì›ë‹˜ì€ í˜„ìž¬ ë³¸ ì„œë¹„ìŠ¤ë¥¼ ì´ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "회원님은 현재 본 서비스를 이용하실 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForLabelNotEnoughRobuxForCashout()
 	{
-		return "Robuxê°€ ë¶€ì¡±í•´ì„œ í˜„ê¸ˆì„ ì¸ì¶œí•  ìˆ˜ ì—†ì–´ìš”.";
+		return "Robux가 부족해서 현금을 인출할 수 없어요.";
 	}
 
 	protected override string _GetTemplateForLabelPremiumForCash()
 	{
-		return "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ êµí™˜í•˜ë ¤ë©´ Roblox Premiumì´ í•„ìš”í•´ìš”.";
+		return "Robux를 현금으로 교환하려면 Roblox Premium이 필요해요.";
 	}
 
 	protected override string _GetTemplateForLabelRobux()
@@ -411,27 +413,27 @@ internal class CashOutResources_ko_kr : CashOutResources_en_us, ICashOutResource
 	/// </summary>
 	public override string LabelRobuxToUSD(string robuxAmount, string usdAmount)
 	{
-		return $"{robuxAmount} Robuxë‹¹ {usdAmount}";
+		return $"{robuxAmount} Robux당 {usdAmount}";
 	}
 
 	protected override string _GetTemplateForLabelRobuxToUSD()
 	{
-		return "{robuxAmount} Robuxë‹¹ {usdAmount}";
+		return "{robuxAmount} Robux당 {usdAmount}";
 	}
 
 	protected override string _GetTemplateForLabelTradingRobux()
 	{
-		return "Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•˜ëŠ” ì¤‘ìž…ë‹ˆë‹¤!";
+		return "Robux를 현금으로 환전하는 중입니다!";
 	}
 
 	protected override string _GetTemplateForLabelTradingRobuxCash()
 	{
-		return "ê±°ì˜ ë‹¤ ëë‚˜ê°€ìš”! ì¡°ê¸ˆë§Œ ë” ìžˆìœ¼ë©´ Robuxë¥¼ í˜„ê¸ˆìœ¼ë¡œ í™˜ì „í•  ìˆ˜ ìžˆì–´ìš”!";
+		return "거의 다 끝나가요! 조금만 더 있으면 Robux를 현금으로 환전할 수 있어요!";
 	}
 
 	protected override string _GetTemplateForLabelVerifiedEmailForCashout()
 	{
-		return "í˜„ê¸ˆì„ ì¸ì¶œí•˜ë ¤ë©´ ë¨¼ì € ì´ë©”ì¼ì„ ì¸ì¦í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "현금을 인출하려면 먼저 이메일을 인증해야 합니다.";
 	}
 }
 

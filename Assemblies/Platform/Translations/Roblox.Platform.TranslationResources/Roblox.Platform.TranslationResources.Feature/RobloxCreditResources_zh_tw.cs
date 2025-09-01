@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RobloxCreditResources_en_us to provide locale specific translations where possible,
@@ -10,37 +12,37 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Action.ConvertToRobux"
 	/// English String: "Convert To Robux"
 	/// </summary>
-	public override string ActionConvertToRobux => "è½‰æ›åˆ° Robux";
+	public override string ActionConvertToRobux => "轉換到 Robux";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "å…Œæ›";
+	public override string ActionRedeem => "兌換";
 
 	/// <summary>
 	/// Key: "Heading.GetRobux"
 	/// English String: "Get Robux"
 	/// </summary>
-	public override string HeadingGetRobux => "å–å¾— Robux";
+	public override string HeadingGetRobux => "取得 Robux";
 
 	/// <summary>
 	/// Key: "Heading.RobloxCredit"
 	/// English String: "Roblox credit"
 	/// </summary>
-	public override string HeadingRobloxCredit => "Roblox é»žæ•¸";
+	public override string HeadingRobloxCredit => "Roblox 點數";
 
 	/// <summary>
 	/// Key: "Message.FailedDebitRobloxCredit"
 	/// English String: "There has been an issue processing your Roblox credit. Please try again later!"
 	/// </summary>
-	public override string MessageFailedDebitRobloxCredit => "è™•ç† Roblox é»žæ•¸æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ï¼";
+	public override string MessageFailedDebitRobloxCredit => "處理 Roblox 點數時發生錯誤，請稍後再試！";
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
-	public override string MessageFailedGrantingRobux => "æˆ‘å€‘å·²å‘æ‚¨æ”¶å– Roblox é»žæ•¸ï¼Œä½†çµ¦æ‚¨ Robux æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚ã€‚è‹¥è¦å–å¾—æ‚¨çš„ Robuxï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
+	public override string MessageFailedGrantingRobux => "我們已向您收取 Roblox 點數，但給您 Robux 時發生錯誤。。若要取得您的 Robux，請聯絡客服人員。";
 
 	public RobloxCreditResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -49,12 +51,12 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForActionConvertToRobux()
 	{
-		return "è½‰æ›åˆ° Robux";
+		return "轉換到 Robux";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "å…Œæ›";
+		return "兌換";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRedeemCreditForRobux(string balance, string robuxAmount)
 	{
-		return $"å°‡ {balance} Roblox é»žæ•¸å…Œæ›æˆ {robuxAmount}";
+		return $"將 {balance} Roblox 點數兌換成 {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRedeemCreditForRobux()
 	{
-		return "å°‡ {balance} Roblox é»žæ•¸å…Œæ›æˆ {robuxAmount}";
+		return "將 {balance} Roblox 點數兌換成 {robuxAmount}";
 	}
 
 	/// <summary>
@@ -78,22 +80,22 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRobloxCreditToRobuxRedemption(string balance, string iconRobux, string robuxAmount)
 	{
-		return $"å°‡ {balance} Roblox é»žæ•¸å…Œæ›æˆ {iconRobux} {robuxAmount}";
+		return $"將 {balance} Roblox 點數兌換成 {iconRobux} {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRobloxCreditToRobuxRedemption()
 	{
-		return "å°‡ {balance} Roblox é»žæ•¸å…Œæ›æˆ {iconRobux} {robuxAmount}";
+		return "將 {balance} Roblox 點數兌換成 {iconRobux} {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobux()
 	{
-		return "å–å¾— Robux";
+		return "取得 Robux";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxCredit()
 	{
-		return "Roblox é»žæ•¸";
+		return "Roblox 點數";
 	}
 
 	/// <summary>
@@ -103,22 +105,22 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string LabelCurrentBalance(string balance)
 	{
-		return $"ç›®å‰é¤˜é¡ï¼š${balance}";
+		return $"目前餘額：${balance}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentBalance()
 	{
-		return "ç›®å‰é¤˜é¡ï¼š${balance}";
+		return "目前餘額：${balance}";
 	}
 
 	protected override string _GetTemplateForMessageFailedDebitRobloxCredit()
 	{
-		return "è™•ç† Roblox é»žæ•¸æ™‚ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ï¼";
+		return "處理 Roblox 點數時發生錯誤，請稍後再試！";
 	}
 
 	protected override string _GetTemplateForMessageFailedGrantingRobux()
 	{
-		return "æˆ‘å€‘å·²å‘æ‚¨æ”¶å– Roblox é»žæ•¸ï¼Œä½†çµ¦æ‚¨ Robux æ™‚ç™¼ç”ŸéŒ¯èª¤ã€‚ã€‚è‹¥è¦å–å¾—æ‚¨çš„ Robuxï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
+		return "我們已向您收取 Roblox 點數，但給您 Robux 時發生錯誤。。若要取得您的 Robux，請聯絡客服人員。";
 	}
 
 	/// <summary>
@@ -127,12 +129,12 @@ internal class RobloxCreditResources_zh_tw : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string MessageRobloxCreditToRobuxRedemptionConfirmation(string robuxAmount)
 	{
-		return $"æ‚¨å·²æˆåŠŸå…Œæ› {robuxAmount} Robuxï¼";
+		return $"您已成功兌換 {robuxAmount} Robux！";
 	}
 
 	protected override string _GetTemplateForMessageRobloxCreditToRobuxRedemptionConfirmation()
 	{
-		return "æ‚¨å·²æˆåŠŸå…Œæ› {robuxAmount} Robuxï¼";
+		return "您已成功兌換 {robuxAmount} Robux！";
 	}
 }
 

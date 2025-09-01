@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class GameLaunchGuestModeResources_en_us : TranslationResourcesBase, IGameLaunchGuestModeResources, ITranslationResources
 
 {
@@ -273,3 +273,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

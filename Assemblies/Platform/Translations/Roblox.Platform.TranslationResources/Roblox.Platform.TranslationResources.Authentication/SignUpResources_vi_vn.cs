@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
@@ -11,193 +13,193 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 	/// create account button label
 	/// English String: "Create Account"
 	/// </summary>
-	public override string ActionCreateAccount => "Táº¡o TÃ i khoáº£n";
+	public override string ActionCreateAccount => "Tạo Tài khoản";
 
 	/// <summary>
 	/// Key: "Action.LinkAccount"
 	/// Button text to link 3rd Party Account to a Roblox Account
 	/// English String: "Link Account"
 	/// </summary>
-	public override string ActionLinkAccount => "LiÃªn káº¿t TÃ i khoáº£n";
+	public override string ActionLinkAccount => "Liên kết Tài khoản";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// button label for capitalized words for Log In
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "ÄÄƒng nháº­p";
+	public override string ActionLogInCapitalized => "Đăng nhập";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button label to return the user to home page
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Trá»Ÿ láº¡i Trang chá»§";
+	public override string ActionReturnHome => "Trở lại Trang chủ";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "ÄÄƒng kÃ½";
+	public override string ActionSignUp => "Đăng ký";
 
-	public override string ActionSignupAndSync => "ÄÄƒng kÃ½ & Äá»“ng bá»™";
+	public override string ActionSignupAndSync => "Đăng ký & Đồng bộ";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "Gá»­i";
+	public override string ActionSubmit => "Gửi";
 
 	/// <summary>
 	/// Key: "Description.AccountLinkingWarning"
 	/// instructions for linking account on signup page for FB based account
 	/// English String: "To link to an existing Roblox account, sign in and link them on the account settings page."
 	/// </summary>
-	public override string DescriptionAccountLinkingWarning => "Äá»ƒ liÃªn káº¿t vá»›i tÃ i khoáº£n Roblox cÃ³ sáºµn, hÃ£y Ä‘Äƒng nháº­p vÃ  liÃªn káº¿t chÃºng trÃªn trang cÃ i Ä‘áº·t tÃ i khoáº£n.";
+	public override string DescriptionAccountLinkingWarning => "Để liên kết với tài khoản Roblox có sẵn, hãy đăng nhập và liên kết chúng trên trang cài đặt tài khoản.";
 
 	/// <summary>
 	/// Key: "Description.NoRealName"
 	/// description
 	/// English String: "Do not use your real name."
 	/// </summary>
-	public override string DescriptionNoRealName => "KhÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n.";
+	public override string DescriptionNoRealName => "Không dùng tên thật của bạn.";
 
 	/// <summary>
 	/// Key: "Description.PrivacyPolicy"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string DescriptionPrivacyPolicy => "ChÃ­nh sÃ¡ch riÃªng tÆ°";
+	public override string DescriptionPrivacyPolicy => "Chính sách riêng tư";
 
 	/// <summary>
 	/// Key: "Description.TermsOfService"
 	/// English String: "Terms of Service"
 	/// </summary>
-	public override string DescriptionTermsOfService => "Äiá»u khoáº£n dá»‹ch vá»¥";
+	public override string DescriptionTermsOfService => "Điều khoản dịch vụ";
 
 	/// <summary>
 	/// Key: "GuestSignUpAB.Action.SignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string GuestSignUpABActionSignUp => "ÄÄƒng kÃ½";
+	public override string GuestSignUpABActionSignUp => "Đăng ký";
 
 	/// <summary>
 	/// Key: "Heading.ConnectFacebook"
 	/// section heading
 	/// English String: "Connect to Facebook"
 	/// </summary>
-	public override string HeadingConnectFacebook => "Káº¿t ná»‘i vá»›i Facebook";
+	public override string HeadingConnectFacebook => "Kết nối với Facebook";
 
 	/// <summary>
 	/// Key: "Heading.CreateAnAccount"
 	/// should be capitalized if the language supports capitalization
 	/// English String: "CREATE AN ACCOUNT"
 	/// </summary>
-	public override string HeadingCreateAnAccount => "Táº O TÃ€I KHOáº¢N";
+	public override string HeadingCreateAnAccount => "TẠO TÀI KHOẢN";
 
 	/// <summary>
 	/// Key: "Heading.LoginHaveFun"
 	/// heading for login container
 	/// English String: "Log in and start having fun!"
 	/// </summary>
-	public override string HeadingLoginHaveFun => "ÄÄƒng nháº­p vÃ  giáº£i trÃ­!";
+	public override string HeadingLoginHaveFun => "Đăng nhập và giải trí!";
 
 	/// <summary>
 	/// Key: "Heading.SignupHaveFun"
 	/// signup form heading
 	/// English String: "Sign up and start having fun!"
 	/// </summary>
-	public override string HeadingSignupHaveFun => "ÄÄƒng kÃ½ vÃ  giáº£i trÃ­!";
+	public override string HeadingSignupHaveFun => "Đăng ký và giải trí!";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// About link on roller coaster page
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "Vá» sáº£n pháº©m";
+	public override string LabelAbout => "Về sản phẩm";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "Báº¡n Ä‘Ã£ cÃ³ tÃ i khoáº£n Roblox?";
+	public override string LabelAlreadyHaveRobloxAccount => "Bạn đã có tài khoản Roblox?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "ÄÃ£ Ä‘Äƒng kÃ½?";
+	public override string LabelAlreadyRegistered => "Đã đăng ký?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "NgÃ y sinh";
+	public override string LabelBirthday => "Ngày sinh";
 
 	/// <summary>
 	/// Key: "Label.BirthdayWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Birthday:"
 	/// </summary>
-	public override string LabelBirthdayWithColumn => "NgÃ y sinh:";
+	public override string LabelBirthdayWithColumn => "Ngày sinh:";
 
 	/// <summary>
 	/// Key: "Label.ConfirmPassword"
 	/// English String: "Confirm password"
 	/// </summary>
-	public override string LabelConfirmPassword => "XÃ¡c nháº­n máº­t kháº©u";
+	public override string LabelConfirmPassword => "Xác nhận mật khẩu";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "NgÃ y";
+	public override string LabelDay => "Ngày";
 
 	/// <summary>
 	/// Key: "Label.DesiredUsername"
 	/// should have a column if the language supports it
 	/// English String: "Desired Username:"
 	/// </summary>
-	public override string LabelDesiredUsername => "TÃªn ngÆ°á»i dÃ¹ng muá»‘n Ä‘áº·t:";
+	public override string LabelDesiredUsername => "Tên người dùng muốn đặt:";
 
 	/// <summary>
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "TÃ i khoáº£n Facebook cá»§a báº¡n khÃ´ng Ä‘Æ°á»£c liÃªn káº¿t vá»›i báº¥t ká»³ tÃ i khoáº£n Roblox nÃ o. Vui lÃ²ng Ä‘Äƒng kÃ½ má»™t tÃ i khoáº£n Roblox.";
+	public override string LabelFacebookNotLinked => "Tài khoản Facebook của bạn không được liên kết với bất kỳ tài khoản Roblox nào. Vui lòng đăng ký một tài khoản Roblox.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
 	/// username field label for FB signup
 	/// English String: "Create Roblox username:"
 	/// </summary>
-	public override string LabelFacebookSignupUsername => "Táº¡o tÃªn ngÆ°á»i dÃ¹ng Roblox:";
+	public override string LabelFacebookSignupUsername => "Tạo tên người dùng Roblox:";
 
 	/// <summary>
 	/// Key: "Label.Female"
 	/// label
 	/// English String: "Female"
 	/// </summary>
-	public override string LabelFemale => "Ná»¯";
+	public override string LabelFemale => "Nữ";
 
 	/// <summary>
 	/// Key: "Label.Gender"
 	/// English String: "Gender"
 	/// </summary>
-	public override string LabelGender => "Giá»›i tÃ­nh";
+	public override string LabelGender => "Giới tính";
 
 	/// <summary>
 	/// Key: "Label.GenderRequired"
 	/// English String: "Gender is required."
 	/// </summary>
-	public override string LabelGenderRequired => "Cáº§n pháº£i chá»n giá»›i tÃ­nh.";
+	public override string LabelGenderRequired => "Cần phải chọn giới tính.";
 
 	/// <summary>
 	/// Key: "Label.GenderWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Gender:"
 	/// </summary>
-	public override string LabelGenderWithColumn => "Giá»›i tÃ­nh:";
+	public override string LabelGenderWithColumn => "Giới tính:";
 
 	/// <summary>
 	/// Key: "Label.Male"
@@ -210,53 +212,53 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 	/// Key: "Label.Month"
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "ThÃ¡ng";
+	public override string LabelMonth => "Tháng";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "Máº­t kháº©u";
+	public override string LabelPassword => "Mật khẩu";
 
 	/// <summary>
 	/// Key: "Label.PasswordRequirements"
 	/// English String: "Password (min length 8)"
 	/// </summary>
-	public override string LabelPasswordRequirements => "Máº­t kháº©u (tá»‘i thiá»ƒu 8 kÃ½ tá»±)";
+	public override string LabelPasswordRequirements => "Mật khẩu (tối thiểu 8 ký tự)";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
 	/// platforms link on roller coaster page
 	/// English String: "Platforms"
 	/// </summary>
-	public override string LabelPlatforms => "Ná»n táº£ng";
+	public override string LabelPlatforms => "Nền tảng";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// Play link on roller coaster page
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "ChÆ¡i";
+	public override string LabelPlay => "Chơi";
 
 	/// <summary>
 	/// Key: "Label.PleaseAgreeToTerms"
 	/// English String: "Please agree to our Terms of Use and Privacy Policy."
 	/// </summary>
-	public override string LabelPleaseAgreeToTerms => "Vui lÃ²ng Ä‘á»“ng kÃ½ vá»›i Äiá»u khoáº£n sá»­ dá»¥ng vÃ  ChÃ­nh sÃ¡ch riÃªng tÆ° cá»§a chÃºng tÃ´i.";
+	public override string LabelPleaseAgreeToTerms => "Vui lòng đồng ký với Điều khoản sử dụng và Chính sách riêng tư của chúng tôi.";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// Required
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "Báº¯t buá»™c";
+	public override string LabelRequired => "Bắt buộc";
 
 	/// <summary>
 	/// Key: "Label.SignupButtonText"
 	/// sign up button text
 	/// English String: "Sign Up and Play!"
 	/// </summary>
-	public override string LabelSignupButtonText => "ÄÄƒng kÃ½ vÃ  ChÆ¡i!";
+	public override string LabelSignupButtonText => "Đăng ký và Chơi!";
 
 	/// <summary>
 	/// Key: "Label.SignUpWith"
@@ -268,288 +270,288 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 	/// [facebook button]
 	/// English String: "or sign up with"
 	/// </summary>
-	public override string LabelSignUpWith => "hoáº·c Ä‘Äƒng kÃ½ báº±ng";
+	public override string LabelSignUpWith => "hoặc đăng ký bằng";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Äiá»u khoáº£n sá»­ dá»¥ng";
+	public override string LabelTermsOfUse => "Điều khoản sử dụng";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "TÃªn ngÆ°á»i dÃ¹ng";
+	public override string LabelUsername => "Tên người dùng";
 
 	/// <summary>
 	/// Key: "Label.UsernameCharacterLimit"
 	/// label
 	/// English String: "3-20 alphanumeric characters, no spaces."
 	/// </summary>
-	public override string LabelUsernameCharacterLimit => "CÃ³ tá»« 3-20 chá»¯ cÃ¡i vÃ  chá»¯ sá»‘, khÃ´ng chá»©a kÃ½ tá»± trá»‘ng.";
+	public override string LabelUsernameCharacterLimit => "Có từ 3-20 chữ cái và chữ số, không chứa ký tự trống.";
 
 	/// <summary>
 	/// Key: "Label.UsernameHint"
 	/// placeholder for username field
 	/// English String: "Username (don't use your real name)"
 	/// </summary>
-	public override string LabelUsernameHint => "TÃªn ngÆ°á»i dÃ¹ng (khÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n)";
+	public override string LabelUsernameHint => "Tên người dùng (không dùng tên thật của bạn)";
 
 	/// <summary>
 	/// Key: "Label.UsernameRequirements"
 	/// English String: "Username (length 3-20, _ is allowed)"
 	/// </summary>
-	public override string LabelUsernameRequirements => "TÃªn ngÆ°á»i dÃ¹ng (tá»« 3-20 kÃ½ tá»±, _ Ä‘Æ°á»£c cho phÃ©p)";
+	public override string LabelUsernameRequirements => "Tên người dùng (từ 3-20 ký tự, _ được cho phép)";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "NÄƒm";
+	public override string LabelYear => "Năm";
 
 	/// <summary>
 	/// Key: "Message.Password.MinLength"
 	/// English String: "Min length 8"
 	/// </summary>
-	public override string MessagePasswordMinLength => "Tá»‘i thiá»ƒu 8 kÃ½ tá»±";
+	public override string MessagePasswordMinLength => "Tối thiểu 8 ký tự";
 
 	/// <summary>
 	/// Key: "Message.Username.NoRealNameUse"
 	/// English String: "Don't use your real name"
 	/// </summary>
-	public override string MessageUsernameNoRealNameUse => "KhÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n";
+	public override string MessageUsernameNoRealNameUse => "Không dùng tên thật của bạn";
 
 	/// <summary>
 	/// Key: "Response.BadUsername"
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseBadUsername => "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng phÃ¹ há»£p vá»›i Roblox.";
+	public override string ResponseBadUsername => "Tên người dùng không phù hợp với Roblox.";
 
 	/// <summary>
 	/// Key: "Response.BadUsernameForWeChat"
 	/// message shown when signing up with an inappropriate username
 	/// English String: "Username is not appropriate"
 	/// </summary>
-	public override string ResponseBadUsernameForWeChat => "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng phÃ¹ há»£p";
+	public override string ResponseBadUsernameForWeChat => "Tên người dùng không phù hợp";
 
 	/// <summary>
 	/// Key: "Response.BirthdayInvalid"
 	/// English String: "This birthday is invalid."
 	/// </summary>
-	public override string ResponseBirthdayInvalid => "NgÃ y sinh nÃ y khÃ´ng há»£p lá»‡.";
+	public override string ResponseBirthdayInvalid => "Ngày sinh này không hợp lệ.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayMustBeSetFirst"
 	/// English String: "Birthday must be set first."
 	/// </summary>
-	public override string ResponseBirthdayMustBeSetFirst => "Pháº£i chá»n ngÃ y sinh trÆ°á»›c.";
+	public override string ResponseBirthdayMustBeSetFirst => "Phải chọn ngày sinh trước.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaMismatchError"
 	/// error message
 	/// English String: "Words do not match."
 	/// </summary>
-	public override string ResponseCaptchaMismatchError => "CÃ¡c tá»« khÃ´ng trÃ¹ng.";
+	public override string ResponseCaptchaMismatchError => "Các từ không trùng.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// validation error message
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "Vui lÃ²ng Ä‘iá»n mÃ£ Captcha";
+	public override string ResponseCaptchaNotEnteredError => "Vui lòng điền mã Captcha";
 
 	/// <summary>
 	/// Key: "Response.FacebookConnectionError"
 	/// error message
 	/// English String: "Error while retrieving values from Facebook."
 	/// </summary>
-	public override string ResponseFacebookConnectionError => "Xáº£y ra lá»—i khi truy xuáº¥t giÃ¡ trá»‹ tá»« Facebook.";
+	public override string ResponseFacebookConnectionError => "Xảy ra lỗi khi truy xuất giá trị từ Facebook.";
 
 	/// <summary>
 	/// Key: "Response.FacebookLoginAge"
 	/// English String: "Facebook login can only be used by users above 13."
 	/// </summary>
-	public override string ResponseFacebookLoginAge => "Chá»‰ ngÆ°á»i dÃ¹ng trÃªn 13 tuá»•i má»›i cÃ³ thá»ƒ sá»­ dá»¥ng Ä‘Äƒng nháº­p báº±ng Facebook.";
+	public override string ResponseFacebookLoginAge => "Chỉ người dùng trên 13 tuổi mới có thể sử dụng đăng nhập bằng Facebook.";
 
 	/// <summary>
 	/// Key: "Response.InvalidBirthday"
 	/// English String: "Invalid birthday."
 	/// </summary>
-	public override string ResponseInvalidBirthday => "NgÃ y sinh khÃ´ng há»£p lá»‡.";
+	public override string ResponseInvalidBirthday => "Ngày sinh không hợp lệ.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string ResponseInvalidEmail => "Äá»‹a chá»‰ email khÃ´ng há»£p lá»‡.";
+	public override string ResponseInvalidEmail => "Địa chỉ email không hợp lệ.";
 
 	/// <summary>
 	/// Key: "Response.JavaScriptRequired"
 	/// error to show that JavaScipt is required for the form to work
 	/// English String: "JavaScript is required to submit this form."
 	/// </summary>
-	public override string ResponseJavaScriptRequired => "Pháº£i báº­t JavaScript Ä‘á»ƒ gá»­i máº«u nÃ y.";
+	public override string ResponseJavaScriptRequired => "Phải bật JavaScript để gửi mẫu này.";
 
 	/// <summary>
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "Vui lÃ²ng táº¡o máº­t kháº©u khÃ³ Ä‘oÃ¡n hÆ¡n.";
+	public override string ResponsePasswordComplexity => "Vui lòng tạo mật khẩu khó đoán hơn.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
 	/// validation message for password confirmation
 	/// English String: "Please enter a password confirmation."
 	/// </summary>
-	public override string ResponsePasswordConfirmation => "Vui lÃ²ng nháº­p máº­t kháº©u xÃ¡c nháº­n.";
+	public override string ResponsePasswordConfirmation => "Vui lòng nhập mật khẩu xác nhận.";
 
 	/// <summary>
 	/// Key: "Response.PasswordContainsUsernameError"
 	/// error when passsword has username in it
 	/// English String: "Password shouldn't match username."
 	/// </summary>
-	public override string ResponsePasswordContainsUsernameError => "Máº­t kháº©u khÃ´ng nÃªn trÃ¹ng vá»›i tÃªn ngÆ°á»i dÃ¹ng.";
+	public override string ResponsePasswordContainsUsernameError => "Mật khẩu không nên trùng với tên người dùng.";
 
 	/// <summary>
 	/// Key: "Response.PasswordMismatch"
 	/// English String: "Passwords do not match."
 	/// </summary>
-	public override string ResponsePasswordMismatch => "Máº­t kháº©u khÃ´ng trÃ¹ng nhau.";
+	public override string ResponsePasswordMismatch => "Mật khẩu không trùng nhau.";
 
 	/// <summary>
 	/// Key: "Response.PasswordWrongShort"
 	/// English String: "Passwords must be at least 8 characters long."
 	/// </summary>
-	public override string ResponsePasswordWrongShort => "Máº­t kháº©u pháº£i cÃ³ tá»‘i thiá»ƒu 8 kÃ½ tá»±.";
+	public override string ResponsePasswordWrongShort => "Mật khẩu phải có tối thiểu 8 ký tự.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterPassword"
 	/// English String: "Please enter a password."
 	/// </summary>
-	public override string ResponsePleaseEnterPassword => "Vui lÃ²ng nháº­p máº­t kháº©u.";
+	public override string ResponsePleaseEnterPassword => "Vui lòng nhập mật khẩu.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterUsername"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponsePleaseEnterUsername => "Vui lÃ²ng nháº­p tÃªn ngÆ°á»i dÃ¹ng.";
+	public override string ResponsePleaseEnterUsername => "Vui lòng nhập tên người dùng.";
 
 	/// <summary>
 	/// Key: "Response.SocialAccountCreationFailed"
 	/// error message
 	/// English String: "Account creation failed"
 	/// </summary>
-	public override string ResponseSocialAccountCreationFailed => "KhÃ´ng thá»ƒ táº¡o tÃ i khoáº£n";
+	public override string ResponseSocialAccountCreationFailed => "Không thể tạo tài khoản";
 
 	/// <summary>
 	/// Key: "Response.SpaceOrSpecialCharaterError"
 	/// Spaces and special characters are not allowed error message
 	/// English String: "Spaces and special characters are not allowed."
 	/// </summary>
-	public override string ResponseSpaceOrSpecialCharaterError => "KhÃ´ng Ä‘Æ°á»£c nháº­p kÃ½ tá»± trá»‘ng vÃ  kÃ½ tá»± Ä‘áº·c biá»‡t.";
+	public override string ResponseSpaceOrSpecialCharaterError => "Không được nhập ký tự trống và ký tự đặc biệt.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAccountsWithSameEmailError"
 	/// Too many accounts use this email error message
 	/// English String: "Too many accounts use this email."
 	/// </summary>
-	public override string ResponseTooManyAccountsWithSameEmailError => "CÃ³ quÃ¡ nhiá»u tÃ i khoáº£n sá»­ dá»¥ng email nÃ y.";
+	public override string ResponseTooManyAccountsWithSameEmailError => "Có quá nhiều tài khoản sử dụng email này.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "Ráº¥t tiáº¿c! ÄÃ£ xáº£y ra lá»—i khÃ´ng xÃ¡c Ä‘á»‹nh. Vui lÃ²ng thá»­ láº¡i sau.";
+	public override string ResponseUnknownError => "Rất tiếc! Đã xảy ra lỗi không xác định. Vui lòng thử lại sau.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
 	/// error showing which characters are allowed for username
 	/// English String: "Usernames may only contain letters, numbers, and _."
 	/// </summary>
-	public override string ResponseUsernameAllowedCharactersError => "TÃªn ngÆ°á»i dÃ¹ng chá»‰ Ä‘Æ°á»£c chá»©a chá»¯ cÃ¡i, chá»¯ sá»‘ vÃ  kÃ½ tá»± _.";
+	public override string ResponseUsernameAllowedCharactersError => "Tên người dùng chỉ được chứa chữ cái, chữ số và ký tự _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "TÃªn ngÆ°á»i dÃ¹ng Ä‘Ã£ Ä‘Æ°á»£c sá»­ dá»¥ng.";
+	public override string ResponseUsernameAlreadyInUse => "Tên người dùng đã được sử dụng.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "KhÃ´ng thá»ƒ sá»­ dá»¥ng tÃªn nÃ y, xin chá»n tÃªn khÃ¡c.";
+	public override string ResponseUsernameExplicit => "Không thể sử dụng tên này, xin chọn tên khác.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
 	/// English String: "Please enter a valid username."
 	/// </summary>
-	public override string ResponseUsernameInvalid => "Vui lÃ²ng nháº­p tÃªn ngÆ°á»i dÃ¹ng há»£p lá»‡.";
+	public override string ResponseUsernameInvalid => "Vui lòng nhập tên người dùng hợp lệ.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidCharacters"
 	/// English String: "Only a-z, A-Z, 0-9 and _ are allowed."
 	/// </summary>
-	public override string ResponseUsernameInvalidCharacters => "Chá»‰ Ä‘Æ°á»£c dÃ¹ng cÃ¡c kÃ½ tá»± a-z, A-Z, 0-9 vÃ  kÃ½ tá»± _.";
+	public override string ResponseUsernameInvalidCharacters => "Chỉ được dùng các ký tự a-z, A-Z, 0-9 và ký tự _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidLength"
 	/// English String: "Usernames can be 3 to 20 characters long."
 	/// </summary>
-	public override string ResponseUsernameInvalidLength => "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ dÃ i tá»« 3 Ä‘áº¿n 20 kÃ½ tá»±.";
+	public override string ResponseUsernameInvalidLength => "Tên người dùng có thể dài từ 3 đến 20 ký tự.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidUnderscore"
 	/// English String: "Usernames cannot start or end with _."
 	/// </summary>
-	public override string ResponseUsernameInvalidUnderscore => "KhÃ´ng thá»ƒ báº¯t Ä‘áº§u/káº¿t thÃºc vá»›i kÃ½ tá»± _.";
+	public override string ResponseUsernameInvalidUnderscore => "Không thể bắt đầu/kết thúc với ký tự _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotAvailable"
 	/// English String: "Username not available. Please try again."
 	/// </summary>
-	public override string ResponseUsernameNotAvailable => "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng kháº£ dá»¥ng. Vui lÃ²ng thá»­ láº¡i.";
+	public override string ResponseUsernameNotAvailable => "Tên người dùng không khả dụng. Vui lòng thử lại.";
 
 	/// <summary>
 	/// Key: "Response.UsernameOrPasswordIncorrect"
 	/// Your username or password is incorrect
 	/// English String: "Your username or password is incorrect."
 	/// </summary>
-	public override string ResponseUsernameOrPasswordIncorrect => "Sai tÃªn ngÆ°á»i dÃ¹ng hoáº·c máº­t kháº©u.";
+	public override string ResponseUsernameOrPasswordIncorrect => "Sai tên người dùng hoặc mật khẩu.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePasswordRequired"
 	/// Username and Password are required error message
 	/// English String: "Username and Password are required."
 	/// </summary>
-	public override string ResponseUsernamePasswordRequired => "Pháº£i nháº­p Máº­t kháº©u vÃ  TÃªn ngÆ°á»i dÃ¹ng.";
+	public override string ResponseUsernamePasswordRequired => "Phải nhập Mật khẩu và Tên người dùng.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePrivateInfo"
 	/// English String: "Username might contain private information."
 	/// </summary>
-	public override string ResponseUsernamePrivateInfo => "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ chá»©a thÃ´ng tin cÃ¡ nhÃ¢n.";
+	public override string ResponseUsernamePrivateInfo => "Tên người dùng có thể chứa thông tin cá nhân.";
 
 	/// <summary>
 	/// Key: "Response.UsernameRequired"
 	/// validation error message
 	/// English String: "Username is required."
 	/// </summary>
-	public override string ResponseUsernameRequired => "Báº¯t buá»™c pháº£i cÃ³ tÃªn ngÆ°á»i dÃ¹ng.";
+	public override string ResponseUsernameRequired => "Bắt buộc phải có tên người dùng.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTakenTryAgain"
 	/// English String: "This username is already taken! Please try a different one."
 	/// </summary>
-	public override string ResponseUsernameTakenTryAgain => "TÃªn ngÆ°á»i dÃ¹ng nÃ y Ä‘Ã£ Ä‘Æ°á»£c sá»­ dá»¥ng! Vui lÃ²ng thá»­ tÃªn khÃ¡c.";
+	public override string ResponseUsernameTakenTryAgain => "Tên người dùng này đã được sử dụng! Vui lòng thử tên khác.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTooManyUnderscores"
 	/// English String: "Usernames can have at most one _."
 	/// </summary>
-	public override string ResponseUsernameTooManyUnderscores => "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ chá»©a tá»‘i Ä‘a má»™t kÃ½ tá»± _.";
+	public override string ResponseUsernameTooManyUnderscores => "Tên người dùng có thể chứa tối đa một ký tự _.";
 
 	public SignUpResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -558,52 +560,52 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionCreateAccount()
 	{
-		return "Táº¡o TÃ i khoáº£n";
+		return "Tạo Tài khoản";
 	}
 
 	protected override string _GetTemplateForActionLinkAccount()
 	{
-		return "LiÃªn káº¿t TÃ i khoáº£n";
+		return "Liên kết Tài khoản";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "ÄÄƒng nháº­p";
+		return "Đăng nhập";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Trá»Ÿ láº¡i Trang chá»§";
+		return "Trở lại Trang chủ";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "ÄÄƒng kÃ½";
+		return "Đăng ký";
 	}
 
 	protected override string _GetTemplateForActionSignupAndSync()
 	{
-		return "ÄÄƒng kÃ½ & Äá»“ng bá»™";
+		return "Đăng ký & Đồng bộ";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "Gá»­i";
+		return "Gửi";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountLinkingWarning()
 	{
-		return "Äá»ƒ liÃªn káº¿t vá»›i tÃ i khoáº£n Roblox cÃ³ sáºµn, hÃ£y Ä‘Äƒng nháº­p vÃ  liÃªn káº¿t chÃºng trÃªn trang cÃ i Ä‘áº·t tÃ i khoáº£n.";
+		return "Để liên kết với tài khoản Roblox có sẵn, hãy đăng nhập và liên kết chúng trên trang cài đặt tài khoản.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoRealName()
 	{
-		return "KhÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n.";
+		return "Không dùng tên thật của bạn.";
 	}
 
 	protected override string _GetTemplateForDescriptionPrivacyPolicy()
 	{
-		return "ChÃ­nh sÃ¡ch riÃªng tÆ°";
+		return "Chính sách riêng tư";
 	}
 
 	/// <summary>
@@ -613,32 +615,32 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string DescriptionSignUpAgreement(string spanStart, string spanEnd, string termsOfUseLink, string privacyPolicyLink)
 	{
-		return $"Báº¥m vÃ o {spanStart}ÄÄƒng kÃ½{spanEnd} Ä‘á»“ng nghÄ©a báº¡n Ä‘á»“ng Ã½ vá»›i {termsOfUseLink} vÃ  thá»«a nháº­n {privacyPolicyLink}";
+		return $"Bấm vào {spanStart}Đăng ký{spanEnd} đồng nghĩa bạn đồng ý với {termsOfUseLink} và thừa nhận {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionSignUpAgreement()
 	{
-		return "Báº¥m vÃ o {spanStart}ÄÄƒng kÃ½{spanEnd} Ä‘á»“ng nghÄ©a báº¡n Ä‘á»“ng Ã½ vá»›i {termsOfUseLink} vÃ  thá»«a nháº­n {privacyPolicyLink}";
+		return "Bấm vào {spanStart}Đăng ký{spanEnd} đồng nghĩa bạn đồng ý với {termsOfUseLink} và thừa nhận {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionTermsOfService()
 	{
-		return "Äiá»u khoáº£n dá»‹ch vá»¥";
+		return "Điều khoản dịch vụ";
 	}
 
 	protected override string _GetTemplateForGuestSignUpABActionSignUp()
 	{
-		return "ÄÄƒng kÃ½";
+		return "Đăng ký";
 	}
 
 	protected override string _GetTemplateForHeadingConnectFacebook()
 	{
-		return "Káº¿t ná»‘i vá»›i Facebook";
+		return "Kết nối với Facebook";
 	}
 
 	protected override string _GetTemplateForHeadingCreateAnAccount()
 	{
-		return "Táº O TÃ€I KHOáº¢N";
+		return "TẠO TÀI KHOẢN";
 	}
 
 	/// <summary>
@@ -648,92 +650,92 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string HeadingFacebookSignupAlmostDone(string firstname)
 	{
-		return $"{firstname}, Báº N Sáº®P ÄÄ‚NG KÃ XONG Rá»’I";
+		return $"{firstname}, BẠN SẮP ĐĂNG KÝ XONG RỒI";
 	}
 
 	protected override string _GetTemplateForHeadingFacebookSignupAlmostDone()
 	{
-		return "{firstname}, Báº N Sáº®P ÄÄ‚NG KÃ XONG Rá»’I";
+		return "{firstname}, BẠN SẮP ĐĂNG KÝ XONG RỒI";
 	}
 
 	protected override string _GetTemplateForHeadingLoginHaveFun()
 	{
-		return "ÄÄƒng nháº­p vÃ  giáº£i trÃ­!";
+		return "Đăng nhập và giải trí!";
 	}
 
 	protected override string _GetTemplateForHeadingSignupHaveFun()
 	{
-		return "ÄÄƒng kÃ½ vÃ  giáº£i trÃ­!";
+		return "Đăng ký và giải trí!";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "Vá» sáº£n pháº©m";
+		return "Về sản phẩm";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "Báº¡n Ä‘Ã£ cÃ³ tÃ i khoáº£n Roblox?";
+		return "Bạn đã có tài khoản Roblox?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "ÄÃ£ Ä‘Äƒng kÃ½?";
+		return "Đã đăng ký?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "NgÃ y sinh";
+		return "Ngày sinh";
 	}
 
 	protected override string _GetTemplateForLabelBirthdayWithColumn()
 	{
-		return "NgÃ y sinh:";
+		return "Ngày sinh:";
 	}
 
 	protected override string _GetTemplateForLabelConfirmPassword()
 	{
-		return "XÃ¡c nháº­n máº­t kháº©u";
+		return "Xác nhận mật khẩu";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "NgÃ y";
+		return "Ngày";
 	}
 
 	protected override string _GetTemplateForLabelDesiredUsername()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng muá»‘n Ä‘áº·t:";
+		return "Tên người dùng muốn đặt:";
 	}
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "TÃ i khoáº£n Facebook cá»§a báº¡n khÃ´ng Ä‘Æ°á»£c liÃªn káº¿t vá»›i báº¥t ká»³ tÃ i khoáº£n Roblox nÃ o. Vui lÃ²ng Ä‘Äƒng kÃ½ má»™t tÃ i khoáº£n Roblox.";
+		return "Tài khoản Facebook của bạn không được liên kết với bất kỳ tài khoản Roblox nào. Vui lòng đăng ký một tài khoản Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
 	{
-		return "Táº¡o tÃªn ngÆ°á»i dÃ¹ng Roblox:";
+		return "Tạo tên người dùng Roblox:";
 	}
 
 	protected override string _GetTemplateForLabelFemale()
 	{
-		return "Ná»¯";
+		return "Nữ";
 	}
 
 	protected override string _GetTemplateForLabelGender()
 	{
-		return "Giá»›i tÃ­nh";
+		return "Giới tính";
 	}
 
 	protected override string _GetTemplateForLabelGenderRequired()
 	{
-		return "Cáº§n pháº£i chá»n giá»›i tÃ­nh.";
+		return "Cần phải chọn giới tính.";
 	}
 
 	protected override string _GetTemplateForLabelGenderWithColumn()
 	{
-		return "Giá»›i tÃ­nh:";
+		return "Giới tính:";
 	}
 
 	protected override string _GetTemplateForLabelMale()
@@ -743,267 +745,267 @@ internal class SignUpResources_vi_vn : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "ThÃ¡ng";
+		return "Tháng";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "Máº­t kháº©u";
+		return "Mật khẩu";
 	}
 
 	protected override string _GetTemplateForLabelPasswordRequirements()
 	{
-		return "Máº­t kháº©u (tá»‘i thiá»ƒu 8 kÃ½ tá»±)";
+		return "Mật khẩu (tối thiểu 8 ký tự)";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
 	{
-		return "Ná»n táº£ng";
+		return "Nền tảng";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "ChÆ¡i";
+		return "Chơi";
 	}
 
 	protected override string _GetTemplateForLabelPleaseAgreeToTerms()
 	{
-		return "Vui lÃ²ng Ä‘á»“ng kÃ½ vá»›i Äiá»u khoáº£n sá»­ dá»¥ng vÃ  ChÃ­nh sÃ¡ch riÃªng tÆ° cá»§a chÃºng tÃ´i.";
+		return "Vui lòng đồng ký với Điều khoản sử dụng và Chính sách riêng tư của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "Báº¯t buá»™c";
+		return "Bắt buộc";
 	}
 
 	protected override string _GetTemplateForLabelSignupButtonText()
 	{
-		return "ÄÄƒng kÃ½ vÃ  ChÆ¡i!";
+		return "Đăng ký và Chơi!";
 	}
 
 	protected override string _GetTemplateForLabelSignUpWith()
 	{
-		return "hoáº·c Ä‘Äƒng kÃ½ báº±ng";
+		return "hoặc đăng ký bằng";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Äiá»u khoáº£n sá»­ dá»¥ng";
+		return "Điều khoản sử dụng";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng";
+		return "Tên người dùng";
 	}
 
 	protected override string _GetTemplateForLabelUsernameCharacterLimit()
 	{
-		return "CÃ³ tá»« 3-20 chá»¯ cÃ¡i vÃ  chá»¯ sá»‘, khÃ´ng chá»©a kÃ½ tá»± trá»‘ng.";
+		return "Có từ 3-20 chữ cái và chữ số, không chứa ký tự trống.";
 	}
 
 	protected override string _GetTemplateForLabelUsernameHint()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng (khÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n)";
+		return "Tên người dùng (không dùng tên thật của bạn)";
 	}
 
 	protected override string _GetTemplateForLabelUsernameRequirements()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng (tá»« 3-20 kÃ½ tá»±, _ Ä‘Æ°á»£c cho phÃ©p)";
+		return "Tên người dùng (từ 3-20 ký tự, _ được cho phép)";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "NÄƒm";
+		return "Năm";
 	}
 
 	protected override string _GetTemplateForMessagePasswordMinLength()
 	{
-		return "Tá»‘i thiá»ƒu 8 kÃ½ tá»±";
+		return "Tối thiểu 8 ký tự";
 	}
 
 	protected override string _GetTemplateForMessageUsernameNoRealNameUse()
 	{
-		return "KhÃ´ng dÃ¹ng tÃªn tháº­t cá»§a báº¡n";
+		return "Không dùng tên thật của bạn";
 	}
 
 	protected override string _GetTemplateForResponseBadUsername()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng phÃ¹ há»£p vá»›i Roblox.";
+		return "Tên người dùng không phù hợp với Roblox.";
 	}
 
 	protected override string _GetTemplateForResponseBadUsernameForWeChat()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng phÃ¹ há»£p";
+		return "Tên người dùng không phù hợp";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
 	{
-		return "NgÃ y sinh nÃ y khÃ´ng há»£p lá»‡.";
+		return "Ngày sinh này không hợp lệ.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayMustBeSetFirst()
 	{
-		return "Pháº£i chá»n ngÃ y sinh trÆ°á»›c.";
+		return "Phải chọn ngày sinh trước.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaMismatchError()
 	{
-		return "CÃ¡c tá»« khÃ´ng trÃ¹ng.";
+		return "Các từ không trùng.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "Vui lÃ²ng Ä‘iá»n mÃ£ Captcha";
+		return "Vui lòng điền mã Captcha";
 	}
 
 	protected override string _GetTemplateForResponseFacebookConnectionError()
 	{
-		return "Xáº£y ra lá»—i khi truy xuáº¥t giÃ¡ trá»‹ tá»« Facebook.";
+		return "Xảy ra lỗi khi truy xuất giá trị từ Facebook.";
 	}
 
 	protected override string _GetTemplateForResponseFacebookLoginAge()
 	{
-		return "Chá»‰ ngÆ°á»i dÃ¹ng trÃªn 13 tuá»•i má»›i cÃ³ thá»ƒ sá»­ dá»¥ng Ä‘Äƒng nháº­p báº±ng Facebook.";
+		return "Chỉ người dùng trên 13 tuổi mới có thể sử dụng đăng nhập bằng Facebook.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidBirthday()
 	{
-		return "NgÃ y sinh khÃ´ng há»£p lá»‡.";
+		return "Ngày sinh không hợp lệ.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmail()
 	{
-		return "Äá»‹a chá»‰ email khÃ´ng há»£p lá»‡.";
+		return "Địa chỉ email không hợp lệ.";
 	}
 
 	protected override string _GetTemplateForResponseJavaScriptRequired()
 	{
-		return "Pháº£i báº­t JavaScript Ä‘á»ƒ gá»­i máº«u nÃ y.";
+		return "Phải bật JavaScript để gửi mẫu này.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "Vui lÃ²ng táº¡o máº­t kháº©u khÃ³ Ä‘oÃ¡n hÆ¡n.";
+		return "Vui lòng tạo mật khẩu khó đoán hơn.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
 	{
-		return "Vui lÃ²ng nháº­p máº­t kháº©u xÃ¡c nháº­n.";
+		return "Vui lòng nhập mật khẩu xác nhận.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordContainsUsernameError()
 	{
-		return "Máº­t kháº©u khÃ´ng nÃªn trÃ¹ng vá»›i tÃªn ngÆ°á»i dÃ¹ng.";
+		return "Mật khẩu không nên trùng với tên người dùng.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordMismatch()
 	{
-		return "Máº­t kháº©u khÃ´ng trÃ¹ng nhau.";
+		return "Mật khẩu không trùng nhau.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordWrongShort()
 	{
-		return "Máº­t kháº©u pháº£i cÃ³ tá»‘i thiá»ƒu 8 kÃ½ tá»±.";
+		return "Mật khẩu phải có tối thiểu 8 ký tự.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterPassword()
 	{
-		return "Vui lÃ²ng nháº­p máº­t kháº©u.";
+		return "Vui lòng nhập mật khẩu.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterUsername()
 	{
-		return "Vui lÃ²ng nháº­p tÃªn ngÆ°á»i dÃ¹ng.";
+		return "Vui lòng nhập tên người dùng.";
 	}
 
 	protected override string _GetTemplateForResponseSocialAccountCreationFailed()
 	{
-		return "KhÃ´ng thá»ƒ táº¡o tÃ i khoáº£n";
+		return "Không thể tạo tài khoản";
 	}
 
 	protected override string _GetTemplateForResponseSpaceOrSpecialCharaterError()
 	{
-		return "KhÃ´ng Ä‘Æ°á»£c nháº­p kÃ½ tá»± trá»‘ng vÃ  kÃ½ tá»± Ä‘áº·c biá»‡t.";
+		return "Không được nhập ký tự trống và ký tự đặc biệt.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAccountsWithSameEmailError()
 	{
-		return "CÃ³ quÃ¡ nhiá»u tÃ i khoáº£n sá»­ dá»¥ng email nÃ y.";
+		return "Có quá nhiều tài khoản sử dụng email này.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Ráº¥t tiáº¿c! ÄÃ£ xáº£y ra lá»—i khÃ´ng xÃ¡c Ä‘á»‹nh. Vui lÃ²ng thá»­ láº¡i sau.";
+		return "Rất tiếc! Đã xảy ra lỗi không xác định. Vui lòng thử lại sau.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng chá»‰ Ä‘Æ°á»£c chá»©a chá»¯ cÃ¡i, chá»¯ sá»‘ vÃ  kÃ½ tá»± _.";
+		return "Tên người dùng chỉ được chứa chữ cái, chữ số và ký tự _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng Ä‘Ã£ Ä‘Æ°á»£c sá»­ dá»¥ng.";
+		return "Tên người dùng đã được sử dụng.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "KhÃ´ng thá»ƒ sá»­ dá»¥ng tÃªn nÃ y, xin chá»n tÃªn khÃ¡c.";
+		return "Không thể sử dụng tên này, xin chọn tên khác.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
 	{
-		return "Vui lÃ²ng nháº­p tÃªn ngÆ°á»i dÃ¹ng há»£p lá»‡.";
+		return "Vui lòng nhập tên người dùng hợp lệ.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidCharacters()
 	{
-		return "Chá»‰ Ä‘Æ°á»£c dÃ¹ng cÃ¡c kÃ½ tá»± a-z, A-Z, 0-9 vÃ  kÃ½ tá»± _.";
+		return "Chỉ được dùng các ký tự a-z, A-Z, 0-9 và ký tự _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidLength()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ dÃ i tá»« 3 Ä‘áº¿n 20 kÃ½ tá»±.";
+		return "Tên người dùng có thể dài từ 3 đến 20 ký tự.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidUnderscore()
 	{
-		return "KhÃ´ng thá»ƒ báº¯t Ä‘áº§u/káº¿t thÃºc vá»›i kÃ½ tá»± _.";
+		return "Không thể bắt đầu/kết thúc với ký tự _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng khÃ´ng kháº£ dá»¥ng. Vui lÃ²ng thá»­ láº¡i.";
+		return "Tên người dùng không khả dụng. Vui lòng thử lại.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameOrPasswordIncorrect()
 	{
-		return "Sai tÃªn ngÆ°á»i dÃ¹ng hoáº·c máº­t kháº©u.";
+		return "Sai tên người dùng hoặc mật khẩu.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePasswordRequired()
 	{
-		return "Pháº£i nháº­p Máº­t kháº©u vÃ  TÃªn ngÆ°á»i dÃ¹ng.";
+		return "Phải nhập Mật khẩu và Tên người dùng.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePrivateInfo()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ chá»©a thÃ´ng tin cÃ¡ nhÃ¢n.";
+		return "Tên người dùng có thể chứa thông tin cá nhân.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameRequired()
 	{
-		return "Báº¯t buá»™c pháº£i cÃ³ tÃªn ngÆ°á»i dÃ¹ng.";
+		return "Bắt buộc phải có tên người dùng.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTakenTryAgain()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng nÃ y Ä‘Ã£ Ä‘Æ°á»£c sá»­ dá»¥ng! Vui lÃ²ng thá»­ tÃªn khÃ¡c.";
+		return "Tên người dùng này đã được sử dụng! Vui lòng thử tên khác.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTooManyUnderscores()
 	{
-		return "TÃªn ngÆ°á»i dÃ¹ng cÃ³ thá»ƒ chá»©a tá»‘i Ä‘a má»™t kÃ½ tá»± _.";
+		return "Tên người dùng có thể chứa tối đa một ký tự _.";
 	}
 }
 

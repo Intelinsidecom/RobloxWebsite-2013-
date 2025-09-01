@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
@@ -167,3 +167,4 @@ internal class PhoneNumberInternationalPrefixDAL
 		return RobloxDatabase.RobloxDemographics.GetIDCollection<short>("PhoneNumberInternationalPrefixes_GetPhoneNumberInternationalPrefixIDsByCountryID", queryParameters);
 	}
 }
+

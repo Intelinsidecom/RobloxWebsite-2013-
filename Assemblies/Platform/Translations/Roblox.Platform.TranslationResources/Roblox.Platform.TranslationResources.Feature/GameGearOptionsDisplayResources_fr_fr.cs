@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class GameGearOptionsDisplayResources_fr_fr : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "Tous genres autorisÃ©s";
+	public override string LabelAllGenreAllowed => "Tous genres autorisés";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
 	/// English String: "No Gear Allowed"
 	/// </summary>
-	public override string LabelNoGear => "Aucun Ã©quipement autorisÃ©";
+	public override string LabelNoGear => "Aucun équipement autorisé";
 
 	public GameGearOptionsDisplayResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -25,7 +27,7 @@ internal class GameGearOptionsDisplayResources_fr_fr : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "Tous genres autorisÃ©s";
+		return "Tous genres autorisés";
 	}
 
 	/// <summary>
@@ -34,17 +36,17 @@ internal class GameGearOptionsDisplayResources_fr_fr : GameGearOptionsDisplayRes
 	/// </summary>
 	public override string LabelGearOnly(string GearName)
 	{
-		return $"Ã‰quipement {GearName} uniquement";
+		return $"Équipement {GearName} uniquement";
 	}
 
 	protected override string _GetTemplateForLabelGearOnly()
 	{
-		return "Ã‰quipement {GearName} uniquement";
+		return "Équipement {GearName} uniquement";
 	}
 
 	protected override string _GetTemplateForLabelNoGear()
 	{
-		return "Aucun Ã©quipement autorisÃ©";
+		return "Aucun équipement autorisé";
 	}
 }
 

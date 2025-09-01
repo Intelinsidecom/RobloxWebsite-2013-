@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class TermsOfServiceResources_ko_kr : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosAgreementTitle"
 	/// English String: "TERMS OF USE AGREEMENT"
 	/// </summary>
-	public override string HeadingTosAgreementTitle => "ì´ìš© ì•½ê´€ ë™ì˜";
+	public override string HeadingTosAgreementTitle => "이용 약관 동의";
 
 	/// <summary>
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "ì´ìš© ì•½ê´€ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤";
+	public override string HeadingTosHaveChangedTitle => "이용 약관이 변경되었습니다";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
 	/// English String: "I AGREE"
 	/// </summary>
-	public override string LabelIAgree => "ë™ì˜";
+	public override string LabelIAgree => "동의";
 
 	public TermsOfServiceResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class TermsOfServiceResources_ko_kr : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosAgreementTitle()
 	{
-		return "ì´ìš© ì•½ê´€ ë™ì˜";
+		return "이용 약관 동의";
 	}
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "ì´ìš© ì•½ê´€ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤";
+		return "이용 약관이 변경되었습니다";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
 	{
-		return "ë™ì˜";
+		return "동의";
 	}
 
 	/// <summary>
@@ -50,12 +52,12 @@ internal class TermsOfServiceResources_ko_kr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ {tosLinkStart}ì´ìš© ì•½ê´€{tosLinkEnd} ë° {privacyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privacyLinkEnd}ì— ë™ì˜í•˜ê²Œ ë©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return $"'동의'를 클릭하면 {tosLinkStart}이용 약관{tosLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privacyLinkEnd}에 동의하게 됩니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ {tosLinkStart}ì´ìš© ì•½ê´€{tosLinkEnd} ë° {privacyLinkStart}ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨{privacyLinkEnd}ì— ë™ì˜í•˜ê²Œ ë©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return "'동의'를 클릭하면 {tosLinkStart}이용 약관{tosLinkEnd} 및 {privacyLinkStart}개인정보 처리방침{privacyLinkEnd}에 동의하게 됩니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class TermsOfServiceResources_ko_kr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì´ {tosLinkStart}ì´ìš© ì•½ê´€{tosLinkEnd}ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë˜ë©°, ì´ëŠ” íšŒì›ë‹˜ì´ Robloxì— ê³¼ê±°ì— ì œê³µí–ˆìœ¼ë©° ë¯¸ëž˜ì— ì œê³µí•  ì½˜í…ì¸ ë¥¼ Robloxê°€ ì˜¨ë¼ì¸ ë° ì˜¤í”„ë¼ì¸ì—ì„œ (ìœ í˜• ì•„ì´í…œ ë“±) ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ í—ˆê°€í•˜ëŠ” ë¼ì´ì„ ìŠ¤ë¥¼ í¬í•¨í•©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return $"'동의'를 클릭하면 회원님이 {tosLinkStart}이용 약관{tosLinkEnd}에 동의하는 것으로 간주되며, 이는 회원님이 Roblox에 과거에 제공했으며 미래에 제공할 콘텐츠를 Roblox가 온라인 및 오프라인에서 (유형 아이템 등) 사용할 수 있도록 허가하는 라이선스를 포함합니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì´ {tosLinkStart}ì´ìš© ì•½ê´€{tosLinkEnd}ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë˜ë©°, ì´ëŠ” íšŒì›ë‹˜ì´ Robloxì— ê³¼ê±°ì— ì œê³µí–ˆìœ¼ë©° ë¯¸ëž˜ì— ì œê³µí•  ì½˜í…ì¸ ë¥¼ Robloxê°€ ì˜¨ë¼ì¸ ë° ì˜¤í”„ë¼ì¸ì—ì„œ (ìœ í˜• ì•„ì´í…œ ë“±) ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ í—ˆê°€í•˜ëŠ” ë¼ì´ì„ ìŠ¤ë¥¼ í¬í•¨í•©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return "'동의'를 클릭하면 회원님이 {tosLinkStart}이용 약관{tosLinkEnd}에 동의하는 것으로 간주되며, 이는 회원님이 Roblox에 과거에 제공했으며 미래에 제공할 콘텐츠를 Roblox가 온라인 및 오프라인에서 (유형 아이템 등) 사용할 수 있도록 허가하는 라이선스를 포함합니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 
 	/// <summary>
@@ -78,12 +80,12 @@ internal class TermsOfServiceResources_ko_kr : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì´ {tosLinkStart}Roblox ì´ìš© ì•½ê´€{tosLinkEnd}ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ë³¸ ì•½ê´€ì€ íšŒì›ë‹˜ì´ Robloxì— ê³¼ê±°ì— ì œê³µí–ˆìœ¼ë©° ë¯¸ëž˜ì— ì œê³µí•  ì½˜í…ì¸ ë¥¼ Robloxê°€ ì˜¨ë¼ì¸, ì˜¤í”„ë¼ì¸ ìš©ë„ ë° ìœ í˜• ì•„ì´í…œì— ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ í—ˆê°€í•˜ëŠ” ë¼ì´ì„ ìŠ¤ë¥¼ í¬í•¨í•©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return $"'동의'를 클릭하면 회원님이 {tosLinkStart}Roblox 이용 약관{tosLinkEnd}에 동의하는 것으로 간주됩니다. 본 약관은 회원님이 Roblox에 과거에 제공했으며 미래에 제공할 콘텐츠를 Roblox가 온라인, 오프라인 용도 및 유형 아이템에 사용할 수 있도록 허가하는 라이선스를 포함합니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "'ë™ì˜'ë¥¼ í´ë¦­í•˜ë©´ íšŒì›ë‹˜ì´ {tosLinkStart}Roblox ì´ìš© ì•½ê´€{tosLinkEnd}ì— ë™ì˜í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤. ë³¸ ì•½ê´€ì€ íšŒì›ë‹˜ì´ Robloxì— ê³¼ê±°ì— ì œê³µí–ˆìœ¼ë©° ë¯¸ëž˜ì— ì œê³µí•  ì½˜í…ì¸ ë¥¼ Robloxê°€ ì˜¨ë¼ì¸, ì˜¤í”„ë¼ì¸ ìš©ë„ ë° ìœ í˜• ì•„ì´í…œì— ì‚¬ìš©í•  ìˆ˜ ìžˆë„ë¡ í—ˆê°€í•˜ëŠ” ë¼ì´ì„ ìŠ¤ë¥¼ í¬í•¨í•©ë‹ˆë‹¤. ìžì„¸í•œ ë³€ê²½ ì‚¬í•­ì€ {legalChangesLinkStart}ì—¬ê¸°{legalChangesLinkEnd}ì—ì„œ í™•ì¸í•˜ì„¸ìš”.";
+		return "'동의'를 클릭하면 회원님이 {tosLinkStart}Roblox 이용 약관{tosLinkEnd}에 동의하는 것으로 간주됩니다. 본 약관은 회원님이 Roblox에 과거에 제공했으며 미래에 제공할 콘텐츠를 Roblox가 온라인, 오프라인 용도 및 유형 아이템에 사용할 수 있도록 허가하는 라이선스를 포함합니다. 자세한 변경 사항은 {legalChangesLinkStart}여기{legalChangesLinkEnd}에서 확인하세요.";
 	}
 }
 

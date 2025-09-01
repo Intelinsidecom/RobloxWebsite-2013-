@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlaceThumbnailsResources_en_us to provide locale specific translations where possible,
@@ -11,40 +13,40 @@ internal class PlaceThumbnailsResources_ko_kr : PlaceThumbnailsResources_en_us, 
 	/// The button text that user confirm for leaving to Youtube
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueToVideo => "ë¹„ë””ì˜¤ ê³„ì† ë³´ê¸°";
+	public override string ActionContinueToVideo => "비디오 계속 보기";
 
 	/// <summary>
 	/// Key: "Description.LeaveRobloxForYouTube"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "You are about to leave Roblox to view a video on YouTube."
 	/// </summary>
-	public override string DescriptionLeaveRobloxForYouTube => "Robloxë¥¼ ë‚˜ê°€ YouTube ë¹„ë””ì˜¤ë¥¼ ì‹œì²­í•˜ë ¤ í•˜ì‹œëŠ”êµ°ìš”.";
+	public override string DescriptionLeaveRobloxForYouTube => "Roblox를 나가 YouTube 비디오를 시청하려 하시는군요.";
 
 	/// <summary>
 	/// Key: "Description.YouTubeIsNotRoblox"
 	/// The content of the dialog that will show up when user is leaving Roblox to YouTube
 	/// English String: "YouTube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionYouTubeIsNotRoblox => "YouTubeëŠ” Roblox.comê³¼ëŠ” ë³„ê°œì˜ ì½˜í…ì¸ ë¡œ ë³„ë„ì˜ ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì´ ì ìš©ë©ë‹ˆë‹¤.";
+	public override string DescriptionYouTubeIsNotRoblox => "YouTube는 Roblox.com과는 별개의 콘텐츠로 별도의 개인정보 처리방침이 적용됩니다.";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// The title of the dialog that will show up when user is leaving Roblox to Youtube
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "Robloxë¥¼ ë– ë‚˜ê²Œ ë¼ìš”";
+	public override string HeadingLeavingRoblox => "Roblox를 떠나게 돼요";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "ë‹¤ìŒ";
+	public override string LabelNext => "다음";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "ì´ì „";
+	public override string LabelPrevious => "이전";
 
 	public PlaceThumbnailsResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -53,32 +55,32 @@ internal class PlaceThumbnailsResources_ko_kr : PlaceThumbnailsResources_en_us, 
 
 	protected override string _GetTemplateForActionContinueToVideo()
 	{
-		return "ë¹„ë””ì˜¤ ê³„ì† ë³´ê¸°";
+		return "비디오 계속 보기";
 	}
 
 	protected override string _GetTemplateForDescriptionLeaveRobloxForYouTube()
 	{
-		return "Robloxë¥¼ ë‚˜ê°€ YouTube ë¹„ë””ì˜¤ë¥¼ ì‹œì²­í•˜ë ¤ í•˜ì‹œëŠ”êµ°ìš”.";
+		return "Roblox를 나가 YouTube 비디오를 시청하려 하시는군요.";
 	}
 
 	protected override string _GetTemplateForDescriptionYouTubeIsNotRoblox()
 	{
-		return "YouTubeëŠ” Roblox.comê³¼ëŠ” ë³„ê°œì˜ ì½˜í…ì¸ ë¡œ ë³„ë„ì˜ ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì´ ì ìš©ë©ë‹ˆë‹¤.";
+		return "YouTube는 Roblox.com과는 별개의 콘텐츠로 별도의 개인정보 처리방침이 적용됩니다.";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "Robloxë¥¼ ë– ë‚˜ê²Œ ë¼ìš”";
+		return "Roblox를 떠나게 돼요";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "ë‹¤ìŒ";
+		return "다음";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "ì´ì „";
+		return "이전";
 	}
 }
 

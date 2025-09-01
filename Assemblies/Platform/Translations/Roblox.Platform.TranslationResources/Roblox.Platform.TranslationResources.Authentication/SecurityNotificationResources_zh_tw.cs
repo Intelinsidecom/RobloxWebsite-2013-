@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SecurityNotificationResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class SecurityNotificationResources_zh_tw : SecurityNotificationResourc
 	/// Key: "Heading.Important"
 	/// English String: "Important"
 	/// </summary>
-	public override string HeadingImportant => "é‡è¦";
+	public override string HeadingImportant => "重要";
 
 	public SecurityNotificationResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -23,12 +25,12 @@ internal class SecurityNotificationResources_zh_tw : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationText(string aTagStartWithHref, string emailMailToLink, string hrefEnd, string emailText, string aTagEnd)
 	{
-		return $"ç‚ºäº†ç¶­è­·æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ï¼Œæ‚¨çš„ Roblox å¯†ç¢¼å·²è¢«é‡è£½ã€‚è‹¥è¦å–å›žæ‚¨çš„å¸³è™Ÿï¼Œè«‹åœ¨æ­¤é é¢çš„ã€Œæäº¤ã€æŒ‰éˆ•è¼¸å…¥æ‚¨çš„é›»å­éƒµä»¶åœ°å€æˆ–æ‰‹æ©Ÿè™Ÿç¢¼ã€‚è‹¥æ‚¨çš„å¸³è™Ÿæ²’æœ‰é›»å­éƒµä»¶åœ°å€æˆ–æ‰‹æ©Ÿè™Ÿç¢¼ã€‚è«‹åœ¨ {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd} è¯çµ¡ Roblox å®¢æœäººå“¡ã€‚";
+		return $"為了維護您的帳號的安全，您的 Roblox 密碼已被重製。若要取回您的帳號，請在此頁面的「提交」按鈕輸入您的電子郵件地址或手機號碼。若您的帳號沒有電子郵件地址或手機號碼。請在 {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd} 聯絡 Roblox 客服人員。";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationText()
 	{
-		return "ç‚ºäº†ç¶­è­·æ‚¨çš„å¸³è™Ÿçš„å®‰å…¨ï¼Œæ‚¨çš„ Roblox å¯†ç¢¼å·²è¢«é‡è£½ã€‚è‹¥è¦å–å›žæ‚¨çš„å¸³è™Ÿï¼Œè«‹åœ¨æ­¤é é¢çš„ã€Œæäº¤ã€æŒ‰éˆ•è¼¸å…¥æ‚¨çš„é›»å­éƒµä»¶åœ°å€æˆ–æ‰‹æ©Ÿè™Ÿç¢¼ã€‚è‹¥æ‚¨çš„å¸³è™Ÿæ²’æœ‰é›»å­éƒµä»¶åœ°å€æˆ–æ‰‹æ©Ÿè™Ÿç¢¼ã€‚è«‹åœ¨ {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd} è¯çµ¡ Roblox å®¢æœäººå“¡ã€‚";
+		return "為了維護您的帳號的安全，您的 Roblox 密碼已被重製。若要取回您的帳號，請在此頁面的「提交」按鈕輸入您的電子郵件地址或手機號碼。若您的帳號沒有電子郵件地址或手機號碼。請在 {aTagStartWithHref}{emailMailToLink}{hrefEnd}{emailText}{aTagEnd} 聯絡 Roblox 客服人員。";
 	}
 
 	/// <summary>
@@ -37,17 +39,17 @@ internal class SecurityNotificationResources_zh_tw : SecurityNotificationResourc
 	/// </summary>
 	public override string DescriptionSecurityNotificationTextWarning(string startSpan, string endSpan)
 	{
-		return $"è«‹é¸æ“‡{startSpan}å…¨æ–°{endSpan}ä¸”{startSpan}åªç”¨æ–¼ Roblox {endSpan}çš„å¯†ç¢¼ã€‚è«‹å‹¿åœ¨å…¶å®ƒç¶²ç«™ä¸Šä½¿ç”¨æ­¤å¯†ç¢¼ï¼Œä»¥å…æ‚¨çš„ Roblox å¸³è™Ÿé­åˆ°å…¥ä¾µã€‚";
+		return $"請選擇{startSpan}全新{endSpan}且{startSpan}只用於 Roblox {endSpan}的密碼。請勿在其它網站上使用此密碼，以免您的 Roblox 帳號遭到入侵。";
 	}
 
 	protected override string _GetTemplateForDescriptionSecurityNotificationTextWarning()
 	{
-		return "è«‹é¸æ“‡{startSpan}å…¨æ–°{endSpan}ä¸”{startSpan}åªç”¨æ–¼ Roblox {endSpan}çš„å¯†ç¢¼ã€‚è«‹å‹¿åœ¨å…¶å®ƒç¶²ç«™ä¸Šä½¿ç”¨æ­¤å¯†ç¢¼ï¼Œä»¥å…æ‚¨çš„ Roblox å¸³è™Ÿé­åˆ°å…¥ä¾µã€‚";
+		return "請選擇{startSpan}全新{endSpan}且{startSpan}只用於 Roblox {endSpan}的密碼。請勿在其它網站上使用此密碼，以免您的 Roblox 帳號遭到入侵。";
 	}
 
 	protected override string _GetTemplateForHeadingImportant()
 	{
-		return "é‡è¦";
+		return "重要";
 	}
 }
 

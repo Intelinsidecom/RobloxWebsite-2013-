@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class AlertsAndOptionsResources_ja_jp : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "Robuxã‚’è³¼å…¥ã™ã‚‹";
+	public override string LabelsBuyRobux => "Robuxを購入する";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "ãƒ˜ãƒ«ãƒ—";
+	public override string LabelsHelp => "ヘルプ";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ";
+	public override string LabelsLogout => "ログアウト";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -34,7 +36,7 @@ internal class AlertsAndOptionsResources_ja_jp : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "è¨­å®š";
+	public override string LabelsSettings => "設定";
 
 	public AlertsAndOptionsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -43,17 +45,17 @@ internal class AlertsAndOptionsResources_ja_jp : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "Robuxã‚’è³¼å…¥ã™ã‚‹";
+		return "Robuxを購入する";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "ãƒ˜ãƒ«ãƒ—";
+		return "ヘルプ";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ";
+		return "ログアウト";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +65,7 @@ internal class AlertsAndOptionsResources_ja_jp : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue}Â Robux"
+	/// English String: "{robuxValue} Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,7 +79,7 @@ internal class AlertsAndOptionsResources_ja_jp : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "è¨­å®š";
+		return "設定";
 	}
 }
 

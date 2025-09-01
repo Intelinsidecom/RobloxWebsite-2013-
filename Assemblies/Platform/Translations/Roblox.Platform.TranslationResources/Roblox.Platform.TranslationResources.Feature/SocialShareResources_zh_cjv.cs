@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides SocialShareResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class SocialShareResources_zh_cjv : SocialShareResources_en_us, ISocial
 	/// Label for share button.
 	/// English String: "Share"
 	/// </summary>
-	public override string ActionShare => "åˆ†äº«";
+	public override string ActionShare => "分享";
 
 	public SocialShareResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -20,7 +22,7 @@ internal class SocialShareResources_zh_cjv : SocialShareResources_en_us, ISocial
 
 	protected override string _GetTemplateForActionShare()
 	{
-		return "åˆ†äº«";
+		return "分享";
 	}
 }
 

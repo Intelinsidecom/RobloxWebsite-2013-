@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
@@ -11,252 +13,252 @@ internal class SignUpResources_ko_kr : SignUpResources_en_us, ISignUpResources, 
 	/// create account button label
 	/// English String: "Create Account"
 	/// </summary>
-	public override string ActionCreateAccount => "ê³„ì • ë§Œë“¤ê¸°";
+	public override string ActionCreateAccount => "계정 만들기";
 
 	/// <summary>
 	/// Key: "Action.LinkAccount"
 	/// Button text to link 3rd Party Account to a Roblox Account
 	/// English String: "Link Account"
 	/// </summary>
-	public override string ActionLinkAccount => "ê³„ì • ì—°ê²°";
+	public override string ActionLinkAccount => "계정 연결";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// button label for capitalized words for Log In
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "ë¡œê·¸ì¸";
+	public override string ActionLogInCapitalized => "로그인";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button label to return the user to home page
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "í™ˆìœ¼ë¡œ ëŒì•„ê°€ê¸°";
+	public override string ActionReturnHome => "홈으로 돌아가기";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "íšŒì›ê°€ìž…";
+	public override string ActionSignUp => "회원가입";
 
-	public override string ActionSignupAndSync => "íšŒì›ê°€ìž… ë° ë™ê¸°í™”";
+	public override string ActionSignupAndSync => "회원가입 및 동기화";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "ì œì¶œ";
+	public override string ActionSubmit => "제출";
 
 	/// <summary>
 	/// Key: "Description.AccountLinkingWarning"
 	/// instructions for linking account on signup page for FB based account
 	/// English String: "To link to an existing Roblox account, sign in and link them on the account settings page."
 	/// </summary>
-	public override string DescriptionAccountLinkingWarning => "ê¸°ì¡´ Roblox ê³„ì •ì— ì—°ê²°í•˜ë ¤ë©´, ë¡œê·¸ì¸í•œ í›„ ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ì—°ê²°í•˜ì„¸ìš”.";
+	public override string DescriptionAccountLinkingWarning => "기존 Roblox 계정에 연결하려면, 로그인한 후 계정 설정 페이지에서 연결하세요.";
 
 	/// <summary>
 	/// Key: "Description.NoRealName"
 	/// description
 	/// English String: "Do not use your real name."
 	/// </summary>
-	public override string DescriptionNoRealName => "ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”.";
+	public override string DescriptionNoRealName => "실명을 사용하지 마세요.";
 
 	/// <summary>
 	/// Key: "Description.PrivacyPolicy"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string DescriptionPrivacyPolicy => "ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨";
+	public override string DescriptionPrivacyPolicy => "개인정보 처리방침";
 
 	/// <summary>
 	/// Key: "Description.TermsOfService"
 	/// English String: "Terms of Service"
 	/// </summary>
-	public override string DescriptionTermsOfService => "ì„œë¹„ìŠ¤ ì•½ê´€";
+	public override string DescriptionTermsOfService => "서비스 약관";
 
 	/// <summary>
 	/// Key: "GuestSignUpAB.Action.SignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string GuestSignUpABActionSignUp => "íšŒì›ê°€ìž…";
+	public override string GuestSignUpABActionSignUp => "회원가입";
 
 	/// <summary>
 	/// Key: "Heading.ConnectFacebook"
 	/// section heading
 	/// English String: "Connect to Facebook"
 	/// </summary>
-	public override string HeadingConnectFacebook => "Facebookì— ì—°ê²°";
+	public override string HeadingConnectFacebook => "Facebook에 연결";
 
 	/// <summary>
 	/// Key: "Heading.CreateAnAccount"
 	/// should be capitalized if the language supports capitalization
 	/// English String: "CREATE AN ACCOUNT"
 	/// </summary>
-	public override string HeadingCreateAnAccount => "ê³„ì • ë§Œë“¤ê¸°";
+	public override string HeadingCreateAnAccount => "계정 만들기";
 
 	/// <summary>
 	/// Key: "Heading.LoginHaveFun"
 	/// heading for login container
 	/// English String: "Log in and start having fun!"
 	/// </summary>
-	public override string HeadingLoginHaveFun => "ë¡œê·¸ì¸í•˜ì—¬ ì¦ê²¨ë³´ì„¸ìš”!";
+	public override string HeadingLoginHaveFun => "로그인하여 즐겨보세요!";
 
 	/// <summary>
 	/// Key: "Heading.SignupHaveFun"
 	/// signup form heading
 	/// English String: "Sign up and start having fun!"
 	/// </summary>
-	public override string HeadingSignupHaveFun => "ê°€ìž…í•˜ì‹œê³  ì¦ê²¨ë³´ì„¸ìš”!";
+	public override string HeadingSignupHaveFun => "가입하시고 즐겨보세요!";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// About link on roller coaster page
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "ì†Œê°œ";
+	public override string LabelAbout => "소개";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "ì´ë¯¸ Roblox ê³„ì •ì´ ìžˆìœ¼ì‹œë‹¤êµ¬ìš”?";
+	public override string LabelAlreadyHaveRobloxAccount => "이미 Roblox 계정이 있으시다구요?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "ì´ë¯¸ ê°€ìž…í•˜ì…¨ë‚˜ìš”?";
+	public override string LabelAlreadyRegistered => "이미 가입하셨나요?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "ìƒë…„ì›”ì¼";
+	public override string LabelBirthday => "생년월일";
 
 	/// <summary>
 	/// Key: "Label.BirthdayWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Birthday:"
 	/// </summary>
-	public override string LabelBirthdayWithColumn => "ìƒë…„ì›”ì¼:";
+	public override string LabelBirthdayWithColumn => "생년월일:";
 
 	/// <summary>
 	/// Key: "Label.ConfirmPassword"
 	/// English String: "Confirm password"
 	/// </summary>
-	public override string LabelConfirmPassword => "ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
+	public override string LabelConfirmPassword => "비밀번호 확인";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "ì¼";
+	public override string LabelDay => "일";
 
 	/// <summary>
 	/// Key: "Label.DesiredUsername"
 	/// should have a column if the language supports it
 	/// English String: "Desired Username:"
 	/// </summary>
-	public override string LabelDesiredUsername => "í¬ë§í•˜ëŠ” ì‚¬ìš©ìž ì´ë¦„:";
+	public override string LabelDesiredUsername => "희망하는 사용자 이름:";
 
 	/// <summary>
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "ì‚¬ìš©ìžì˜ Facebook ê³„ì •ê³¼ ì—°ê²°ëœ Roblox ê³„ì •ì´ ì—†ìŠµë‹ˆë‹¤. ê°€ìž…í•˜ì—¬ Roblox ê³„ì •ì„ ë§Œë“¤ì–´ ë³´ì„¸ìš”.";
+	public override string LabelFacebookNotLinked => "사용자의 Facebook 계정과 연결된 Roblox 계정이 없습니다. 가입하여 Roblox 계정을 만들어 보세요.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
 	/// username field label for FB signup
 	/// English String: "Create Roblox username:"
 	/// </summary>
-	public override string LabelFacebookSignupUsername => "Roblox ì‚¬ìš©ìž ì´ë¦„ ë§Œë“¤ê¸°:";
+	public override string LabelFacebookSignupUsername => "Roblox 사용자 이름 만들기:";
 
 	/// <summary>
 	/// Key: "Label.Female"
 	/// label
 	/// English String: "Female"
 	/// </summary>
-	public override string LabelFemale => "ì—¬ì„±";
+	public override string LabelFemale => "여성";
 
 	/// <summary>
 	/// Key: "Label.Gender"
 	/// English String: "Gender"
 	/// </summary>
-	public override string LabelGender => "ì„±ë³„";
+	public override string LabelGender => "성별";
 
 	/// <summary>
 	/// Key: "Label.GenderRequired"
 	/// English String: "Gender is required."
 	/// </summary>
-	public override string LabelGenderRequired => "ì„±ë³„ì„ ì„ íƒí•˜ì„¸ìš”.";
+	public override string LabelGenderRequired => "성별을 선택하세요.";
 
 	/// <summary>
 	/// Key: "Label.GenderWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Gender:"
 	/// </summary>
-	public override string LabelGenderWithColumn => "ì„±ë³„:";
+	public override string LabelGenderWithColumn => "성별:";
 
 	/// <summary>
 	/// Key: "Label.Male"
 	/// label
 	/// English String: "Male"
 	/// </summary>
-	public override string LabelMale => "ë‚¨ì„±";
+	public override string LabelMale => "남성";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "ì›”";
+	public override string LabelMonth => "월";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ë¹„ë°€ë²ˆí˜¸";
+	public override string LabelPassword => "비밀번호";
 
 	/// <summary>
 	/// Key: "Label.PasswordRequirements"
 	/// English String: "Password (min length 8)"
 	/// </summary>
-	public override string LabelPasswordRequirements => "ë¹„ë°€ë²ˆí˜¸ (8ìž ì´ìƒ)";
+	public override string LabelPasswordRequirements => "비밀번호 (8자 이상)";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
 	/// platforms link on roller coaster page
 	/// English String: "Platforms"
 	/// </summary>
-	public override string LabelPlatforms => "í”Œëž«í¼";
+	public override string LabelPlatforms => "플랫폼";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// Play link on roller coaster page
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "í”Œë ˆì´";
+	public override string LabelPlay => "플레이";
 
 	/// <summary>
 	/// Key: "Label.PleaseAgreeToTerms"
 	/// English String: "Please agree to our Terms of Use and Privacy Policy."
 	/// </summary>
-	public override string LabelPleaseAgreeToTerms => "ì´ìš© ì•½ê´€ ë° ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì— ë™ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.";
+	public override string LabelPleaseAgreeToTerms => "이용 약관 및 개인정보 처리방침에 동의하시기 바랍니다.";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// Required
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "í•„ìˆ˜";
+	public override string LabelRequired => "필수";
 
 	/// <summary>
 	/// Key: "Label.SignupButtonText"
 	/// sign up button text
 	/// English String: "Sign Up and Play!"
 	/// </summary>
-	public override string LabelSignupButtonText => "íšŒì›ê°€ìž…í•˜ì‹œê³  í”Œë ˆì´í•˜ì„¸ìš”!";
+	public override string LabelSignupButtonText => "회원가입하시고 플레이하세요!";
 
 	/// <summary>
 	/// Key: "Label.SignUpWith"
@@ -268,288 +270,288 @@ internal class SignUpResources_ko_kr : SignUpResources_en_us, ISignUpResources, 
 	/// [facebook button]
 	/// English String: "or sign up with"
 	/// </summary>
-	public override string LabelSignUpWith => "ë˜ëŠ” ë‹¤ìŒ ë°©ë²•ìœ¼ë¡œ ê°€ìž…í•˜ê¸°";
+	public override string LabelSignUpWith => "또는 다음 방법으로 가입하기";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "ì´ìš© ì•½ê´€";
+	public override string LabelTermsOfUse => "이용 약관";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ì‚¬ìš©ìž ì´ë¦„";
+	public override string LabelUsername => "사용자 이름";
 
 	/// <summary>
 	/// Key: "Label.UsernameCharacterLimit"
 	/// label
 	/// English String: "3-20 alphanumeric characters, no spaces."
 	/// </summary>
-	public override string LabelUsernameCharacterLimit => "3-20ìžì˜ ì˜ìˆ«ìžë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ê³µë°±ì€ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string LabelUsernameCharacterLimit => "3-20자의 영숫자만 사용할 수 있습니다. 공백은 사용할 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Label.UsernameHint"
 	/// placeholder for username field
 	/// English String: "Username (don't use your real name)"
 	/// </summary>
-	public override string LabelUsernameHint => "ì‚¬ìš©ìž ì´ë¦„ (ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”)";
+	public override string LabelUsernameHint => "사용자 이름 (실명을 사용하지 마세요)";
 
 	/// <summary>
 	/// Key: "Label.UsernameRequirements"
 	/// English String: "Username (length 3-20, _ is allowed)"
 	/// </summary>
-	public override string LabelUsernameRequirements => "ì‚¬ìš©ìž ì´ë¦„ (3~20ìž, _ ì‚¬ìš© ê°€ëŠ¥)";
+	public override string LabelUsernameRequirements => "사용자 이름 (3~20자, _ 사용 가능)";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "ë…„";
+	public override string LabelYear => "년";
 
 	/// <summary>
 	/// Key: "Message.Password.MinLength"
 	/// English String: "Min length 8"
 	/// </summary>
-	public override string MessagePasswordMinLength => "8ìž ì´ìƒ";
+	public override string MessagePasswordMinLength => "8자 이상";
 
 	/// <summary>
 	/// Key: "Message.Username.NoRealNameUse"
 	/// English String: "Don't use your real name"
 	/// </summary>
-	public override string MessageUsernameNoRealNameUse => "ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”";
+	public override string MessageUsernameNoRealNameUse => "실명을 사용하지 마세요";
 
 	/// <summary>
 	/// Key: "Response.BadUsername"
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseBadUsername => "Robloxì— ì í•©í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+	public override string ResponseBadUsername => "Roblox에 적합하지 않은 사용자 이름입니다.";
 
 	/// <summary>
 	/// Key: "Response.BadUsernameForWeChat"
 	/// message shown when signing up with an inappropriate username
 	/// English String: "Username is not appropriate"
 	/// </summary>
-	public override string ResponseBadUsernameForWeChat => "ì í•©í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+	public override string ResponseBadUsernameForWeChat => "적합하지 않은 사용자 이름입니다.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayInvalid"
 	/// English String: "This birthday is invalid."
 	/// </summary>
-	public override string ResponseBirthdayInvalid => "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒë…„ì›”ì¼ìž…ë‹ˆë‹¤.";
+	public override string ResponseBirthdayInvalid => "유효하지 않은 생년월일입니다.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayMustBeSetFirst"
 	/// English String: "Birthday must be set first."
 	/// </summary>
-	public override string ResponseBirthdayMustBeSetFirst => "ë¨¼ì € ìƒë…„ì›”ì¼ì„ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string ResponseBirthdayMustBeSetFirst => "먼저 생년월일을 설정해야 합니다.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaMismatchError"
 	/// error message
 	/// English String: "Words do not match."
 	/// </summary>
-	public override string ResponseCaptchaMismatchError => "ë‹¨ì–´ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string ResponseCaptchaMismatchError => "단어가 일치하지 않습니다.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// validation error message
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "ë³´ì•ˆ ë¬¸ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”";
+	public override string ResponseCaptchaNotEnteredError => "보안 문자를 입력하세요";
 
 	/// <summary>
 	/// Key: "Response.FacebookConnectionError"
 	/// error message
 	/// English String: "Error while retrieving values from Facebook."
 	/// </summary>
-	public override string ResponseFacebookConnectionError => "Facebookì—ì„œ ê°’ì„ ë°›ëŠ” ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+	public override string ResponseFacebookConnectionError => "Facebook에서 값을 받는 중 오류가 발생했어요.";
 
 	/// <summary>
 	/// Key: "Response.FacebookLoginAge"
 	/// English String: "Facebook login can only be used by users above 13."
 	/// </summary>
-	public override string ResponseFacebookLoginAge => "ë§Œ 13ì„¸ ì´ìƒë§Œ Facebookì— ë¡œê·¸ì¸í•  ìˆ˜ ìžˆì–´ìš”.";
+	public override string ResponseFacebookLoginAge => "만 13세 이상만 Facebook에 로그인할 수 있어요.";
 
 	/// <summary>
 	/// Key: "Response.InvalidBirthday"
 	/// English String: "Invalid birthday."
 	/// </summary>
-	public override string ResponseInvalidBirthday => "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒë…„ì›”ì¼";
+	public override string ResponseInvalidBirthday => "유효하지 않은 생년월일";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string ResponseInvalidEmail => "ìœ íš¨í•˜ì§€ ì•Šì€ ì´ë©”ì¼ ì£¼ì†Œ.";
+	public override string ResponseInvalidEmail => "유효하지 않은 이메일 주소.";
 
 	/// <summary>
 	/// Key: "Response.JavaScriptRequired"
 	/// error to show that JavaScipt is required for the form to work
 	/// English String: "JavaScript is required to submit this form."
 	/// </summary>
-	public override string ResponseJavaScriptRequired => "ë³¸ ì–‘ì‹ì„ ì œì¶œí•˜ë ¤ë©´ JavaScriptê°€ í•„ìš”í•©ë‹ˆë‹¤.";
+	public override string ResponseJavaScriptRequired => "본 양식을 제출하려면 JavaScript가 필요합니다.";
 
 	/// <summary>
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "ì¢€ ë” ë³µìž¡í•œ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë§Œë“œì„¸ìš”.";
+	public override string ResponsePasswordComplexity => "좀 더 복잡한 비밀번호를 만드세요.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
 	/// validation message for password confirmation
 	/// English String: "Please enter a password confirmation."
 	/// </summary>
-	public override string ResponsePasswordConfirmation => "ë¹„ë°€ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ í•œ ë²ˆ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponsePasswordConfirmation => "비밀번호를 다시 한 번 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.PasswordContainsUsernameError"
 	/// error when passsword has username in it
 	/// English String: "Password shouldn't match username."
 	/// </summary>
-	public override string ResponsePasswordContainsUsernameError => "ë¹„ë°€ë²ˆí˜¸ëŠ” ì‚¬ìš©ìž ì´ë¦„ê³¼ ê°™ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponsePasswordContainsUsernameError => "비밀번호는 사용자 이름과 같을 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.PasswordMismatch"
 	/// English String: "Passwords do not match."
 	/// </summary>
-	public override string ResponsePasswordMismatch => "ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string ResponsePasswordMismatch => "비밀번호가 일치하지 않습니다.";
 
 	/// <summary>
 	/// Key: "Response.PasswordWrongShort"
 	/// English String: "Passwords must be at least 8 characters long."
 	/// </summary>
-	public override string ResponsePasswordWrongShort => "ë¹„ë°€ë²ˆí˜¸ëŠ” 8ìž ì´ìƒì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+	public override string ResponsePasswordWrongShort => "비밀번호는 8자 이상이어야 합니다.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterPassword"
 	/// English String: "Please enter a password."
 	/// </summary>
-	public override string ResponsePleaseEnterPassword => "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponsePleaseEnterPassword => "비밀번호를 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterUsername"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponsePleaseEnterUsername => "ì‚¬ìš©ìž ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponsePleaseEnterUsername => "사용자 이름을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.SocialAccountCreationFailed"
 	/// error message
 	/// English String: "Account creation failed"
 	/// </summary>
-	public override string ResponseSocialAccountCreationFailed => "ê³„ì • ë§Œë“¤ê¸° ì‹¤íŒ¨";
+	public override string ResponseSocialAccountCreationFailed => "계정 만들기 실패";
 
 	/// <summary>
 	/// Key: "Response.SpaceOrSpecialCharaterError"
 	/// Spaces and special characters are not allowed error message
 	/// English String: "Spaces and special characters are not allowed."
 	/// </summary>
-	public override string ResponseSpaceOrSpecialCharaterError => "ê³µë°± ë° íŠ¹ìˆ˜ ë¬¸ìžëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseSpaceOrSpecialCharaterError => "공백 및 특수 문자는 사용할 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAccountsWithSameEmailError"
 	/// Too many accounts use this email error message
 	/// English String: "Too many accounts use this email."
 	/// </summary>
-	public override string ResponseTooManyAccountsWithSameEmailError => "ë„ˆë¬´ ë§Žì€ ê³„ì •ì´ ë³¸ ì´ë©”ì¼ì„ ì‚¬ìš©í•©ë‹ˆë‹¤.";
+	public override string ResponseTooManyAccountsWithSameEmailError => "너무 많은 계정이 본 이메일을 사용합니다.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "ì£„ì†¡í•©ë‹ˆë‹¤!\u00a0ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.\u00a0ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string ResponseUnknownError => "죄송합니다!\u00a0알 수 없는 오류가 발생했어요.\u00a0나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
 	/// error showing which characters are allowed for username
 	/// English String: "Usernames may only contain letters, numbers, and _."
 	/// </summary>
-	public override string ResponseUsernameAllowedCharactersError => "ì‚¬ìš©ìž ì´ë¦„ì—ëŠ” ì•ŒíŒŒë²³, ìˆ«ìž ë° _ë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernameAllowedCharactersError => "사용자 이름에는 알파벳, 숫자 및 _만 사용할 수 있습니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+	public override string ResponseUsernameAlreadyInUse => "이미 사용 중인 사용자 이름입니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string ResponseUsernameExplicit => "사용할 수 없는 사용자 이름입니다. 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
 	/// English String: "Please enter a valid username."
 	/// </summary>
-	public override string ResponseUsernameInvalid => "ìœ íš¨í•œ ì‚¬ìš©ìž ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+	public override string ResponseUsernameInvalid => "유효한 사용자 이름을 입력하세요.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidCharacters"
 	/// English String: "Only a-z, A-Z, 0-9 and _ are allowed."
 	/// </summary>
-	public override string ResponseUsernameInvalidCharacters => "a-z, A-Z, 0-9 ë° _ë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernameInvalidCharacters => "a-z, A-Z, 0-9 및 _만 사용할 수 있습니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidLength"
 	/// English String: "Usernames can be 3 to 20 characters long."
 	/// </summary>
-	public override string ResponseUsernameInvalidLength => "ì‚¬ìš©ìž ì´ë¦„ì€ 3~20ìžë¡œ êµ¬ì„±ë©ë‹ˆë‹¤.";
+	public override string ResponseUsernameInvalidLength => "사용자 이름은 3~20자로 구성됩니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidUnderscore"
 	/// English String: "Usernames cannot start or end with _."
 	/// </summary>
-	public override string ResponseUsernameInvalidUnderscore => "ì‚¬ìš©ìž ì´ë¦„ì€ _ìœ¼ë¡œ ì‹œìž‘í•˜ê±°ë‚˜ ëë‚  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernameInvalidUnderscore => "사용자 이름은 _으로 시작하거나 끝날 수 없습니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotAvailable"
 	/// English String: "Username not available. Please try again."
 	/// </summary>
-	public override string ResponseUsernameNotAvailable => "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì‚¬ìš©ìž ì´ë¦„. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string ResponseUsernameNotAvailable => "사용할 수 없는 사용자 이름. 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Response.UsernameOrPasswordIncorrect"
 	/// Your username or password is incorrect
 	/// English String: "Your username or password is incorrect."
 	/// </summary>
-	public override string ResponseUsernameOrPasswordIncorrect => "ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernameOrPasswordIncorrect => "사용자 이름 또는 비밀번호가 일치하지 않습니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePasswordRequired"
 	/// Username and Password are required error message
 	/// English String: "Username and Password are required."
 	/// </summary>
-	public override string ResponseUsernamePasswordRequired => "ì‚¬ìš©ìž ì´ë¦„ ë° ë¹„ë°€ë²ˆí˜¸ê°€ í•„ìš”í•©ë‹ˆë‹¤.";
+	public override string ResponseUsernamePasswordRequired => "사용자 이름 및 비밀번호가 필요합니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePrivateInfo"
 	/// English String: "Username might contain private information."
 	/// </summary>
-	public override string ResponseUsernamePrivateInfo => "ì‚¬ìš©ìž ì´ë¦„ì— ê°œì¸ ì •ë³´ê°€ í¬í•¨ë  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernamePrivateInfo => "사용자 이름에 개인 정보가 포함될 수도 있습니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameRequired"
 	/// validation error message
 	/// English String: "Username is required."
 	/// </summary>
-	public override string ResponseUsernameRequired => "ì‚¬ìš©ìž ì´ë¦„ì€ í•„ìˆ˜ìž…ë‹ˆë‹¤.";
+	public override string ResponseUsernameRequired => "사용자 이름은 필수입니다.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTakenTryAgain"
 	/// English String: "This username is already taken! Please try a different one."
 	/// </summary>
-	public override string ResponseUsernameTakenTryAgain => "ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤!\u00a0ë‹¤ë¥¸ ì´ë¦„ì„ ì‚¬ìš©í•˜ì„¸ìš”.";
+	public override string ResponseUsernameTakenTryAgain => "이미 사용 중인 사용자 이름입니다!\u00a0다른 이름을 사용하세요.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTooManyUnderscores"
 	/// English String: "Usernames can have at most one _."
 	/// </summary>
-	public override string ResponseUsernameTooManyUnderscores => "ì‚¬ìš©ìž ì´ë¦„ì€ _ì„ í•˜ë‚˜ë§Œ í¬í•¨í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+	public override string ResponseUsernameTooManyUnderscores => "사용자 이름은 _을 하나만 포함할 수 있습니다.";
 
 	public SignUpResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -558,52 +560,52 @@ internal class SignUpResources_ko_kr : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionCreateAccount()
 	{
-		return "ê³„ì • ë§Œë“¤ê¸°";
+		return "계정 만들기";
 	}
 
 	protected override string _GetTemplateForActionLinkAccount()
 	{
-		return "ê³„ì • ì—°ê²°";
+		return "계정 연결";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "ë¡œê·¸ì¸";
+		return "로그인";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "í™ˆìœ¼ë¡œ ëŒì•„ê°€ê¸°";
+		return "홈으로 돌아가기";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "íšŒì›ê°€ìž…";
+		return "회원가입";
 	}
 
 	protected override string _GetTemplateForActionSignupAndSync()
 	{
-		return "íšŒì›ê°€ìž… ë° ë™ê¸°í™”";
+		return "회원가입 및 동기화";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "ì œì¶œ";
+		return "제출";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountLinkingWarning()
 	{
-		return "ê¸°ì¡´ Roblox ê³„ì •ì— ì—°ê²°í•˜ë ¤ë©´, ë¡œê·¸ì¸í•œ í›„ ê³„ì • ì„¤ì • íŽ˜ì´ì§€ì—ì„œ ì—°ê²°í•˜ì„¸ìš”.";
+		return "기존 Roblox 계정에 연결하려면, 로그인한 후 계정 설정 페이지에서 연결하세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoRealName()
 	{
-		return "ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”.";
+		return "실명을 사용하지 마세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionPrivacyPolicy()
 	{
-		return "ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨";
+		return "개인정보 처리방침";
 	}
 
 	/// <summary>
@@ -613,32 +615,32 @@ internal class SignUpResources_ko_kr : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string DescriptionSignUpAgreement(string spanStart, string spanEnd, string termsOfUseLink, string privacyPolicyLink)
 	{
-		return $"{spanStart}íšŒì›ê°€ìž…{spanEnd}ì„ í´ë¦­í•˜ë©´ {termsOfUseLink}ì— ë™ì˜í•˜ê³  {privacyPolicyLink}ì„(ë¥¼) ìŠ¹ë‚™í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤.";
+		return $"{spanStart}회원가입{spanEnd}을 클릭하면 {termsOfUseLink}에 동의하고 {privacyPolicyLink}을(를) 승낙하는 것으로 간주됩니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionSignUpAgreement()
 	{
-		return "{spanStart}íšŒì›ê°€ìž…{spanEnd}ì„ í´ë¦­í•˜ë©´ {termsOfUseLink}ì— ë™ì˜í•˜ê³  {privacyPolicyLink}ì„(ë¥¼) ìŠ¹ë‚™í•˜ëŠ” ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤.";
+		return "{spanStart}회원가입{spanEnd}을 클릭하면 {termsOfUseLink}에 동의하고 {privacyPolicyLink}을(를) 승낙하는 것으로 간주됩니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionTermsOfService()
 	{
-		return "ì„œë¹„ìŠ¤ ì•½ê´€";
+		return "서비스 약관";
 	}
 
 	protected override string _GetTemplateForGuestSignUpABActionSignUp()
 	{
-		return "íšŒì›ê°€ìž…";
+		return "회원가입";
 	}
 
 	protected override string _GetTemplateForHeadingConnectFacebook()
 	{
-		return "Facebookì— ì—°ê²°";
+		return "Facebook에 연결";
 	}
 
 	protected override string _GetTemplateForHeadingCreateAnAccount()
 	{
-		return "ê³„ì • ë§Œë“¤ê¸°";
+		return "계정 만들기";
 	}
 
 	/// <summary>
@@ -648,362 +650,362 @@ internal class SignUpResources_ko_kr : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string HeadingFacebookSignupAlmostDone(string firstname)
 	{
-		return $"{firstname} ë‹˜, ê±°ì˜ ëë‚¬ì–´ìš”.";
+		return $"{firstname} 님, 거의 끝났어요.";
 	}
 
 	protected override string _GetTemplateForHeadingFacebookSignupAlmostDone()
 	{
-		return "{firstname} ë‹˜, ê±°ì˜ ëë‚¬ì–´ìš”.";
+		return "{firstname} 님, 거의 끝났어요.";
 	}
 
 	protected override string _GetTemplateForHeadingLoginHaveFun()
 	{
-		return "ë¡œê·¸ì¸í•˜ì—¬ ì¦ê²¨ë³´ì„¸ìš”!";
+		return "로그인하여 즐겨보세요!";
 	}
 
 	protected override string _GetTemplateForHeadingSignupHaveFun()
 	{
-		return "ê°€ìž…í•˜ì‹œê³  ì¦ê²¨ë³´ì„¸ìš”!";
+		return "가입하시고 즐겨보세요!";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "ì†Œê°œ";
+		return "소개";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "ì´ë¯¸ Roblox ê³„ì •ì´ ìžˆìœ¼ì‹œë‹¤êµ¬ìš”?";
+		return "이미 Roblox 계정이 있으시다구요?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "ì´ë¯¸ ê°€ìž…í•˜ì…¨ë‚˜ìš”?";
+		return "이미 가입하셨나요?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "ìƒë…„ì›”ì¼";
+		return "생년월일";
 	}
 
 	protected override string _GetTemplateForLabelBirthdayWithColumn()
 	{
-		return "ìƒë…„ì›”ì¼:";
+		return "생년월일:";
 	}
 
 	protected override string _GetTemplateForLabelConfirmPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ í™•ì¸";
+		return "비밀번호 확인";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "ì¼";
+		return "일";
 	}
 
 	protected override string _GetTemplateForLabelDesiredUsername()
 	{
-		return "í¬ë§í•˜ëŠ” ì‚¬ìš©ìž ì´ë¦„:";
+		return "희망하는 사용자 이름:";
 	}
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "ì‚¬ìš©ìžì˜ Facebook ê³„ì •ê³¼ ì—°ê²°ëœ Roblox ê³„ì •ì´ ì—†ìŠµë‹ˆë‹¤. ê°€ìž…í•˜ì—¬ Roblox ê³„ì •ì„ ë§Œë“¤ì–´ ë³´ì„¸ìš”.";
+		return "사용자의 Facebook 계정과 연결된 Roblox 계정이 없습니다. 가입하여 Roblox 계정을 만들어 보세요.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
 	{
-		return "Roblox ì‚¬ìš©ìž ì´ë¦„ ë§Œë“¤ê¸°:";
+		return "Roblox 사용자 이름 만들기:";
 	}
 
 	protected override string _GetTemplateForLabelFemale()
 	{
-		return "ì—¬ì„±";
+		return "여성";
 	}
 
 	protected override string _GetTemplateForLabelGender()
 	{
-		return "ì„±ë³„";
+		return "성별";
 	}
 
 	protected override string _GetTemplateForLabelGenderRequired()
 	{
-		return "ì„±ë³„ì„ ì„ íƒí•˜ì„¸ìš”.";
+		return "성별을 선택하세요.";
 	}
 
 	protected override string _GetTemplateForLabelGenderWithColumn()
 	{
-		return "ì„±ë³„:";
+		return "성별:";
 	}
 
 	protected override string _GetTemplateForLabelMale()
 	{
-		return "ë‚¨ì„±";
+		return "남성";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "ì›”";
+		return "월";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸";
+		return "비밀번호";
 	}
 
 	protected override string _GetTemplateForLabelPasswordRequirements()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ (8ìž ì´ìƒ)";
+		return "비밀번호 (8자 이상)";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
 	{
-		return "í”Œëž«í¼";
+		return "플랫폼";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "í”Œë ˆì´";
+		return "플레이";
 	}
 
 	protected override string _GetTemplateForLabelPleaseAgreeToTerms()
 	{
-		return "ì´ìš© ì•½ê´€ ë° ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨ì— ë™ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.";
+		return "이용 약관 및 개인정보 처리방침에 동의하시기 바랍니다.";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "í•„ìˆ˜";
+		return "필수";
 	}
 
 	protected override string _GetTemplateForLabelSignupButtonText()
 	{
-		return "íšŒì›ê°€ìž…í•˜ì‹œê³  í”Œë ˆì´í•˜ì„¸ìš”!";
+		return "회원가입하시고 플레이하세요!";
 	}
 
 	protected override string _GetTemplateForLabelSignUpWith()
 	{
-		return "ë˜ëŠ” ë‹¤ìŒ ë°©ë²•ìœ¼ë¡œ ê°€ìž…í•˜ê¸°";
+		return "또는 다음 방법으로 가입하기";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "ì´ìš© ì•½ê´€";
+		return "이용 약관";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„";
+		return "사용자 이름";
 	}
 
 	protected override string _GetTemplateForLabelUsernameCharacterLimit()
 	{
-		return "3-20ìžì˜ ì˜ìˆ«ìžë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ê³µë°±ì€ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "3-20자의 영숫자만 사용할 수 있습니다. 공백은 사용할 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForLabelUsernameHint()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ (ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”)";
+		return "사용자 이름 (실명을 사용하지 마세요)";
 	}
 
 	protected override string _GetTemplateForLabelUsernameRequirements()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ (3~20ìž, _ ì‚¬ìš© ê°€ëŠ¥)";
+		return "사용자 이름 (3~20자, _ 사용 가능)";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "ë…„";
+		return "년";
 	}
 
 	protected override string _GetTemplateForMessagePasswordMinLength()
 	{
-		return "8ìž ì´ìƒ";
+		return "8자 이상";
 	}
 
 	protected override string _GetTemplateForMessageUsernameNoRealNameUse()
 	{
-		return "ì‹¤ëª…ì„ ì‚¬ìš©í•˜ì§€ ë§ˆì„¸ìš”";
+		return "실명을 사용하지 마세요";
 	}
 
 	protected override string _GetTemplateForResponseBadUsername()
 	{
-		return "Robloxì— ì í•©í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+		return "Roblox에 적합하지 않은 사용자 이름입니다.";
 	}
 
 	protected override string _GetTemplateForResponseBadUsernameForWeChat()
 	{
-		return "ì í•©í•˜ì§€ ì•Šì€ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+		return "적합하지 않은 사용자 이름입니다.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒë…„ì›”ì¼ìž…ë‹ˆë‹¤.";
+		return "유효하지 않은 생년월일입니다.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayMustBeSetFirst()
 	{
-		return "ë¨¼ì € ìƒë…„ì›”ì¼ì„ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤.";
+		return "먼저 생년월일을 설정해야 합니다.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaMismatchError()
 	{
-		return "ë‹¨ì–´ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "단어가 일치하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "ë³´ì•ˆ ë¬¸ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”";
+		return "보안 문자를 입력하세요";
 	}
 
 	protected override string _GetTemplateForResponseFacebookConnectionError()
 	{
-		return "Facebookì—ì„œ ê°’ì„ ë°›ëŠ” ì¤‘ ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.";
+		return "Facebook에서 값을 받는 중 오류가 발생했어요.";
 	}
 
 	protected override string _GetTemplateForResponseFacebookLoginAge()
 	{
-		return "ë§Œ 13ì„¸ ì´ìƒë§Œ Facebookì— ë¡œê·¸ì¸í•  ìˆ˜ ìžˆì–´ìš”.";
+		return "만 13세 이상만 Facebook에 로그인할 수 있어요.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidBirthday()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ìƒë…„ì›”ì¼";
+		return "유효하지 않은 생년월일";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmail()
 	{
-		return "ìœ íš¨í•˜ì§€ ì•Šì€ ì´ë©”ì¼ ì£¼ì†Œ.";
+		return "유효하지 않은 이메일 주소.";
 	}
 
 	protected override string _GetTemplateForResponseJavaScriptRequired()
 	{
-		return "ë³¸ ì–‘ì‹ì„ ì œì¶œí•˜ë ¤ë©´ JavaScriptê°€ í•„ìš”í•©ë‹ˆë‹¤.";
+		return "본 양식을 제출하려면 JavaScript가 필요합니다.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "ì¢€ ë” ë³µìž¡í•œ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë§Œë“œì„¸ìš”.";
+		return "좀 더 복잡한 비밀번호를 만드세요.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ í•œ ë²ˆ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "비밀번호를 다시 한 번 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordContainsUsernameError()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ëŠ” ì‚¬ìš©ìž ì´ë¦„ê³¼ ê°™ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "비밀번호는 사용자 이름과 같을 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordMismatch()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "비밀번호가 일치하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordWrongShort()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ëŠ” 8ìž ì´ìƒì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+		return "비밀번호는 8자 이상이어야 합니다.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterPassword()
 	{
-		return "ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "비밀번호를 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterUsername()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "사용자 이름을 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponseSocialAccountCreationFailed()
 	{
-		return "ê³„ì • ë§Œë“¤ê¸° ì‹¤íŒ¨";
+		return "계정 만들기 실패";
 	}
 
 	protected override string _GetTemplateForResponseSpaceOrSpecialCharaterError()
 	{
-		return "ê³µë°± ë° íŠ¹ìˆ˜ ë¬¸ìžëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "공백 및 특수 문자는 사용할 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAccountsWithSameEmailError()
 	{
-		return "ë„ˆë¬´ ë§Žì€ ê³„ì •ì´ ë³¸ ì´ë©”ì¼ì„ ì‚¬ìš©í•©ë‹ˆë‹¤.";
+		return "너무 많은 계정이 본 이메일을 사용합니다.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "ì£„ì†¡í•©ë‹ˆë‹¤!\u00a0ì•Œ ìˆ˜ ì—†ëŠ” ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”.\u00a0ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "죄송합니다!\u00a0알 수 없는 오류가 발생했어요.\u00a0나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì—ëŠ” ì•ŒíŒŒë²³, ìˆ«ìž ë° _ë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+		return "사용자 이름에는 알파벳, 숫자 및 _만 사용할 수 있습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤.";
+		return "이미 사용 중인 사용자 이름입니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "사용할 수 없는 사용자 이름입니다. 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
 	{
-		return "ìœ íš¨í•œ ì‚¬ìš©ìž ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”.";
+		return "유효한 사용자 이름을 입력하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidCharacters()
 	{
-		return "a-z, A-Z, 0-9 ë° _ë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+		return "a-z, A-Z, 0-9 및 _만 사용할 수 있습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidLength()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì€ 3~20ìžë¡œ êµ¬ì„±ë©ë‹ˆë‹¤.";
+		return "사용자 이름은 3~20자로 구성됩니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidUnderscore()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì€ _ìœ¼ë¡œ ì‹œìž‘í•˜ê±°ë‚˜ ëë‚  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "사용자 이름은 _으로 시작하거나 끝날 수 없습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
 	{
-		return "ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ì‚¬ìš©ìž ì´ë¦„. ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "사용할 수 없는 사용자 이름. 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameOrPasswordIncorrect()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "사용자 이름 또는 비밀번호가 일치하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePasswordRequired()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ ë° ë¹„ë°€ë²ˆí˜¸ê°€ í•„ìš”í•©ë‹ˆë‹¤.";
+		return "사용자 이름 및 비밀번호가 필요합니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePrivateInfo()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì— ê°œì¸ ì •ë³´ê°€ í¬í•¨ë  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.";
+		return "사용자 이름에 개인 정보가 포함될 수도 있습니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameRequired()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì€ í•„ìˆ˜ìž…ë‹ˆë‹¤.";
+		return "사용자 이름은 필수입니다.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTakenTryAgain()
 	{
-		return "ì´ë¯¸ ì‚¬ìš© ì¤‘ì¸ ì‚¬ìš©ìž ì´ë¦„ìž…ë‹ˆë‹¤!\u00a0ë‹¤ë¥¸ ì´ë¦„ì„ ì‚¬ìš©í•˜ì„¸ìš”.";
+		return "이미 사용 중인 사용자 이름입니다!\u00a0다른 이름을 사용하세요.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTooManyUnderscores()
 	{
-		return "ì‚¬ìš©ìž ì´ë¦„ì€ _ì„ í•˜ë‚˜ë§Œ í¬í•¨í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+		return "사용자 이름은 _을 하나만 포함할 수 있습니다.";
 	}
 }
 

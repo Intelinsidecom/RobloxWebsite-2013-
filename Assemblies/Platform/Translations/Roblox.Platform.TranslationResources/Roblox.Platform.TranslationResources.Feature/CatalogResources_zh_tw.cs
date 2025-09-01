@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CatalogResources_en_us to provide locale specific translations where possible,
@@ -10,67 +12,67 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// Key: "Action.BuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "è³¼è²· Robux";
+	public override string ActionBuyRobux => "購買 Robux";
 
 	/// <summary>
 	/// Key: "Action.Dialog.AddGearOk"
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionDialogAddGearOk => "ç¢ºå®š";
+	public override string ActionDialogAddGearOk => "確定";
 
 	/// <summary>
 	/// Key: "Action.Filter.Apply"
 	/// English String: "Apply"
 	/// </summary>
-	public override string ActionFilterApply => "å¥—ç”¨";
+	public override string ActionFilterApply => "套用";
 
 	/// <summary>
 	/// Key: "Action.Filter.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionFilterCancel => "å–æ¶ˆ";
+	public override string ActionFilterCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Go"
 	/// English String: "Go"
 	/// </summary>
-	public override string ActionGo => "é–‹å§‹";
+	public override string ActionGo => "開始";
 
 	/// <summary>
 	/// Key: "Action.ViewAllItems"
 	/// English String: "View All Items"
 	/// </summary>
-	public override string ActionViewAllItems => "æª¢è¦–æ‰€æœ‰é“å…·";
+	public override string ActionViewAllItems => "檢視所有道具";
 
 	/// <summary>
 	/// Key: "Description.Dialog.AddGearBody"
 	/// English String: "To add gear to your game, find an item in the catalog and click the Add to Game button. The item will automatically be allowed in game, and you'll receive a commission on every copy sold from your game page. (You can only add gear that's for sale.)"
 	/// </summary>
-	public override string DescriptionDialogAddGearBody => "è‹¥è¦åœ¨æ‚¨çš„éŠæˆ²åŠ å…¥è£å‚™ï¼Œè«‹åœ¨åž‹éŒ„ä¸­æ‰¾åˆ°é“å…·ï¼ŒæŒ‰ä¸‹ã€ŒåŠ åˆ°éŠæˆ²ã€æŒ‰éˆ•ã€‚æ­¤é“å…·æœƒè‡ªå‹•åœ¨éŠæˆ²ä¸­å…è¨±ä½¿ç”¨ï¼Œè€Œæ‚¨å¯ä»¥å¾žæ‚¨çš„éŠæˆ²è£¡è²©è³£çš„é“å…·æŠ½æˆï¼ˆåªå¯ä»¥åŠ å…¥è²©è³£ä¸­çš„è£å‚™ï¼‰ã€‚";
+	public override string DescriptionDialogAddGearBody => "若要在您的遊戲加入裝備，請在型錄中找到道具，按下「加到遊戲」按鈕。此道具會自動在遊戲中允許使用，而您可以從您的遊戲裡販賣的道具抽成（只可以加入販賣中的裝備）。";
 
 	/// <summary>
 	/// Key: "Heading.CatalogCategory"
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCatalogCategory => "é¡žåˆ¥";
+	public override string HeadingCatalogCategory => "類別";
 
 	/// <summary>
 	/// Key: "Heading.CatalogPage"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string HeadingCatalogPage => "åž‹éŒ„";
+	public override string HeadingCatalogPage => "型錄";
 
 	/// <summary>
 	/// Key: "Label.AllFeaturedItems"
 	/// English String: "View All Featured Items"
 	/// </summary>
-	public override string LabelAllFeaturedItems => "æª¢è¦–æ‰€æœ‰ç²¾é¸é …ç›®";
+	public override string LabelAllFeaturedItems => "檢視所有精選項目";
 
 	/// <summary>
 	/// Key: "Label.AllGenres"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelAllGenres => "æ‰€æœ‰é¡žåˆ¥";
+	public override string LabelAllGenres => "所有類別";
 
 	/// <summary>
 	/// Key: "Label.Amazon"
@@ -83,188 +85,188 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// Key: "Label.BreadCrumb.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelBreadCrumbFree => "å…è²»";
+	public override string LabelBreadCrumbFree => "免費";
 
 	/// <summary>
 	/// Key: "Label.BreadCrumb.Group"
 	/// English String: "Group:"
 	/// </summary>
-	public override string LabelBreadCrumbGroup => "ç¾¤çµ„ï¼š";
+	public override string LabelBreadCrumbGroup => "群組：";
 
 	/// <summary>
 	/// Key: "Label.Bundle"
 	/// Bundle
 	/// English String: "Bundle"
 	/// </summary>
-	public override string LabelBundle => "çµ„åˆ";
+	public override string LabelBundle => "組合";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// Bundles
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "çµ„åˆ";
+	public override string LabelBundles => "組合";
 
 	/// <summary>
 	/// Key: "Label.Card.CreatorBy"
 	/// English String: "By"
 	/// </summary>
-	public override string LabelCardCreatorBy => "å‰µä½œè€… :";
+	public override string LabelCardCreatorBy => "創作者 :";
 
 	/// <summary>
 	/// Key: "Label.Card.PriceWas"
 	/// English String: "Was"
 	/// </summary>
-	public override string LabelCardPriceWas => "åŽŸåƒ¹";
+	public override string LabelCardPriceWas => "原價";
 
 	/// <summary>
 	/// Key: "Label.Card.Remaining"
 	/// English String: "Remaining:"
 	/// </summary>
-	public override string LabelCardRemaining => "é‚„å‰©ï¼š";
+	public override string LabelCardRemaining => "還剩：";
 
 	/// <summary>
 	/// Key: "Label.CategoryAttributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelCategoryAttributes => "å±¬æ€§";
+	public override string LabelCategoryAttributes => "屬性";
 
 	/// <summary>
 	/// Key: "Label.CategoryType"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelCategoryType => "é¡žåž‹";
+	public override string LabelCategoryType => "類型";
 
 	/// <summary>
 	/// Key: "Label.CommunityCreations"
 	/// UGC items
 	/// English String: " Community Creations"
 	/// </summary>
-	public override string LabelCommunityCreations => "ç¤¾ç¾¤å‰µä½œ";
+	public override string LabelCommunityCreations => "社群創作";
 
 	/// <summary>
 	/// Key: "Label.Dialog.AddGearTitle"
 	/// English String: "Add Gear to Your Game"
 	/// </summary>
-	public override string LabelDialogAddGearTitle => "å°‡è£å‚™åŠ åˆ°æ‚¨çš„éŠæˆ²";
+	public override string LabelDialogAddGearTitle => "將裝備加到您的遊戲";
 
 	/// <summary>
 	/// Key: "Label.Emotes"
 	/// Emotes
 	/// English String: "Emotes"
 	/// </summary>
-	public override string LabelEmotes => "å‹•ä½œ";
+	public override string LabelEmotes => "動作";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "è¨­ç‚ºæœ€æ„›";
+	public override string LabelFavorites => "設為最愛";
 
 	/// <summary>
 	/// Key: "Label.FeaturedBundles"
 	/// Featured Bundles
 	/// English String: "Featured Bundles"
 	/// </summary>
-	public override string LabelFeaturedBundles => "ç²¾é¸çµ„åˆ";
+	public override string LabelFeaturedBundles => "精選組合";
 
 	/// <summary>
 	/// Key: "Label.FeaturedEmotes"
 	/// Featured Emotes
 	/// English String: "Featured Emotes"
 	/// </summary>
-	public override string LabelFeaturedEmotes => "ç²¾é¸å‹•ä½œ";
+	public override string LabelFeaturedEmotes => "精選動作";
 
 	/// <summary>
 	/// Key: "Label.Filter.ByTime"
 	/// English String: "By Time"
 	/// </summary>
-	public override string LabelFilterByTime => "ä¾æ™‚é–“";
+	public override string LabelFilterByTime => "依時間";
 
 	/// <summary>
 	/// Key: "Label.Filter.Category"
 	/// English String: "Category"
 	/// </summary>
-	public override string LabelFilterCategory => "é¡žåˆ¥";
+	public override string LabelFilterCategory => "類別";
 
 	/// <summary>
 	/// Key: "Label.Filter.Creator"
 	/// English String: "Creator"
 	/// </summary>
-	public override string LabelFilterCreator => "å‰µä½œè€…";
+	public override string LabelFilterCreator => "創作者";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filter"
 	/// English String: "Filter"
 	/// </summary>
-	public override string LabelFilterFilter => "ç¯©é¸";
+	public override string LabelFilterFilter => "篩選";
 
 	/// <summary>
 	/// Key: "Label.Filter.Filters"
 	/// English String: "Filters"
 	/// </summary>
-	public override string LabelFilterFilters => "ç¯©é¸æ¢ä»¶";
+	public override string LabelFilterFilters => "篩選條件";
 
 	/// <summary>
 	/// Key: "Label.Filter.Genre"
 	/// English String: "Genre"
 	/// </summary>
-	public override string LabelFilterGenre => "é¡žåˆ¥";
+	public override string LabelFilterGenre => "類別";
 
 	/// <summary>
 	/// Key: "Label.Filter.Hide"
 	/// English String: "Hide"
 	/// </summary>
-	public override string LabelFilterHide => "éš±è—";
+	public override string LabelFilterHide => "隱藏";
 
 	/// <summary>
 	/// Key: "Label.Filter.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelFilterPrice => "åƒ¹æ ¼";
+	public override string LabelFilterPrice => "價格";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMax"
 	/// English String: "Max"
 	/// </summary>
-	public override string LabelFilterPriceMax => "æœ€é«˜";
+	public override string LabelFilterPriceMax => "最高";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceMin"
 	/// English String: "Min"
 	/// </summary>
-	public override string LabelFilterPriceMin => "æœ€ä½Ž";
+	public override string LabelFilterPriceMin => "最低";
 
 	/// <summary>
 	/// Key: "Label.Filter.PriceTo"
 	/// English String: "To"
 	/// </summary>
-	public override string LabelFilterPriceTo => "åˆ°";
+	public override string LabelFilterPriceTo => "到";
 
 	/// <summary>
 	/// Key: "Label.Filter.Show"
 	/// English String: "Show"
 	/// </summary>
-	public override string LabelFilterShow => "é¡¯ç¤º";
+	public override string LabelFilterShow => "顯示";
 
 	/// <summary>
 	/// Key: "Label.Filter.Sorting"
 	/// English String: "Sorting"
 	/// </summary>
-	public override string LabelFilterSorting => "æŽ’åº";
+	public override string LabelFilterSorting => "排序";
 
 	/// <summary>
 	/// Key: "Label.Filter.UnavailableItems"
 	/// English String: "Unavailable Items"
 	/// </summary>
-	public override string LabelFilterUnavailableItems => "ä¸é–‹æ”¾çš„é“å…·";
+	public override string LabelFilterUnavailableItems => "不開放的道具";
 
 	/// <summary>
 	/// Key: "Label.GoogleOnly"
 	/// label
 	/// English String: "Google Only"
 	/// </summary>
-	public override string LabelGoogleOnly => "Google é™å®š";
+	public override string LabelGoogleOnly => "Google 限定";
 
 	/// <summary>
 	/// Key: "Label.Ios"
@@ -278,14 +280,14 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Mobile"
 	/// </summary>
-	public override string LabelMobile => "è¡Œå‹•é›»è¨Š";
+	public override string LabelMobile => "行動電訊";
 
 	/// <summary>
 	/// Key: "Label.New"
 	/// label
 	/// English String: "New"
 	/// </summary>
-	public override string LabelNew => "æ–°å¢ž";
+	public override string LabelNew => "新增";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -299,25 +301,25 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// label
 	/// English String: "Sale"
 	/// </summary>
-	public override string LabelSale => "ä¿ƒéŠ·";
+	public override string LabelSale => "促銷";
 
 	/// <summary>
 	/// Key: "Label.SearchField"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearchField => "æœå°‹";
+	public override string LabelSearchField => "搜尋";
 
 	/// <summary>
 	/// Key: "Label.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string LabelSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string LabelSeeAll => "查看全部";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ä½¿ç”¨è€…åç¨±";
+	public override string LabelUsername => "使用者名稱";
 
 	/// <summary>
 	/// Key: "Label.Xbox"
@@ -330,499 +332,499 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelAccessories"
 	/// English String: "Accessories"
 	/// </summary>
-	public override string LabelAccessories => "é£¾å“";
+	public override string LabelAccessories => "飾品";
 
 	/// <summary>
 	/// Key: "LabelAccessoryAll"
 	/// English String: "All Accessories"
 	/// </summary>
-	public override string LabelAccessoryAll => "æ‰€æœ‰é£¾å“";
+	public override string LabelAccessoryAll => "所有飾品";
 
 	/// <summary>
 	/// Key: "LabelAccessoryBack"
 	/// English String: "Back"
 	/// </summary>
-	public override string LabelAccessoryBack => "èƒŒé¢";
+	public override string LabelAccessoryBack => "背面";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFace"
 	/// English String: "Face"
 	/// </summary>
-	public override string LabelAccessoryFace => "è‡‰éƒ¨";
+	public override string LabelAccessoryFace => "臉部";
 
 	/// <summary>
 	/// Key: "LabelAccessoryFront"
 	/// English String: "Front"
 	/// </summary>
-	public override string LabelAccessoryFront => "æ­£é¢";
+	public override string LabelAccessoryFront => "正面";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHair"
 	/// English String: "Hair"
 	/// </summary>
-	public override string LabelAccessoryHair => "é«®åž‹";
+	public override string LabelAccessoryHair => "髮型";
 
 	/// <summary>
 	/// Key: "LabelAccessoryHats"
 	/// English String: "Hats"
 	/// </summary>
-	public override string LabelAccessoryHats => "å¸½å­";
+	public override string LabelAccessoryHats => "帽子";
 
 	/// <summary>
 	/// Key: "LabelAccessoryNeck"
 	/// English String: "Neck"
 	/// </summary>
-	public override string LabelAccessoryNeck => "é ¸éƒ¨";
+	public override string LabelAccessoryNeck => "頸部";
 
 	/// <summary>
 	/// Key: "LabelAccessoryShoulder"
 	/// English String: "Shoulder"
 	/// </summary>
-	public override string LabelAccessoryShoulder => "è‚©è†€";
+	public override string LabelAccessoryShoulder => "肩膀";
 
 	/// <summary>
 	/// Key: "LabelAccessoryWaist"
 	/// English String: "Waist"
 	/// </summary>
-	public override string LabelAccessoryWaist => "è…°éƒ¨";
+	public override string LabelAccessoryWaist => "腰部";
 
 	/// <summary>
 	/// Key: "LabelAll"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "å…¨éƒ¨";
+	public override string LabelAll => "全部";
 
 	/// <summary>
 	/// Key: "LabelAllBodyParts"
 	/// English String: "All Body Parts"
 	/// </summary>
-	public override string LabelAllBodyParts => "æ‰€æœ‰èº«é«”éƒ¨ä½";
+	public override string LabelAllBodyParts => "所有身體部位";
 
 	/// <summary>
 	/// Key: "LabelAllCategories"
 	/// English String: "All Categories"
 	/// </summary>
-	public override string LabelAllCategories => "æ‰€æœ‰é¡žåˆ¥";
+	public override string LabelAllCategories => "所有類別";
 
 	/// <summary>
 	/// Key: "LabelAllClothing"
 	/// English String: "All Clothing"
 	/// </summary>
-	public override string LabelAllClothing => "æ‰€æœ‰æœè£";
+	public override string LabelAllClothing => "所有服裝";
 
 	/// <summary>
 	/// Key: "LabelAllCollectibles"
 	/// English String: "All Collectibles"
 	/// </summary>
-	public override string LabelAllCollectibles => "æ‰€æœ‰æ”¶è—å“";
+	public override string LabelAllCollectibles => "所有收藏品";
 
 	/// <summary>
 	/// Key: "LabelAllCreators"
 	/// English String: "All Creators"
 	/// </summary>
-	public override string LabelAllCreators => "æ‰€æœ‰å‰µä½œè€…";
+	public override string LabelAllCreators => "所有創作者";
 
 	/// <summary>
 	/// Key: "LabelAllCurrency"
 	/// English String: "All Currency"
 	/// </summary>
-	public override string LabelAllCurrency => "æ‰€æœ‰è²¨å¹£";
+	public override string LabelAllCurrency => "所有貨幣";
 
 	/// <summary>
 	/// Key: "LabelAllFeatured"
 	/// English String: "All Featured Items"
 	/// </summary>
-	public override string LabelAllFeatured => "æ‰€æœ‰ç²¾é¸é“å…·";
+	public override string LabelAllFeatured => "所有精選道具";
 
 	/// <summary>
 	/// Key: "LabelAllTime"
 	/// English String: "All Time"
 	/// </summary>
-	public override string LabelAllTime => "æ­·ä¾†";
+	public override string LabelAllTime => "歷來";
 
 	/// <summary>
 	/// Key: "LabelAnimations"
 	/// English String: "Animations"
 	/// </summary>
-	public override string LabelAnimations => "å‹•ç•«";
+	public override string LabelAnimations => "動畫";
 
 	/// <summary>
 	/// Key: "LabelAnyPrice"
 	/// English String: "Any Price"
 	/// </summary>
-	public override string LabelAnyPrice => "ä»»ä½•åƒ¹æ ¼";
+	public override string LabelAnyPrice => "任何價格";
 
 	/// <summary>
 	/// Key: "LabelAvatarAnimations"
 	/// English String: "Avatar Animations"
 	/// </summary>
-	public override string LabelAvatarAnimations => "è™›æ“¬äººå¶å‹•ç•«";
+	public override string LabelAvatarAnimations => "虛擬人偶動畫";
 
 	/// <summary>
 	/// Key: "LabelBestselling"
 	/// English String: "Bestselling"
 	/// </summary>
-	public override string LabelBestselling => "æš¢éŠ·";
+	public override string LabelBestselling => "暢銷";
 
 	/// <summary>
 	/// Key: "LabelBodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "èº«é«”éƒ¨ä½";
+	public override string LabelBodyParts => "身體部位";
 
 	/// <summary>
 	/// Key: "LabelClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string LabelClothing => "æœè£";
+	public override string LabelClothing => "服裝";
 
 	/// <summary>
 	/// Key: "LabelCollectibleAccessories"
 	/// English String: "Collectible Accessories"
 	/// </summary>
-	public override string LabelCollectibleAccessories => "å¯æ”¶è—çš„é£¾å“";
+	public override string LabelCollectibleAccessories => "可收藏的飾品";
 
 	/// <summary>
 	/// Key: "LabelCollectibleFaces"
 	/// English String: "Collectible Faces"
 	/// </summary>
-	public override string LabelCollectibleFaces => "è‡‰éƒ¨æ”¶è—å“";
+	public override string LabelCollectibleFaces => "臉部收藏品";
 
 	/// <summary>
 	/// Key: "LabelCollectibleGear"
 	/// English String: "Collectible Gear"
 	/// </summary>
-	public override string LabelCollectibleGear => "è£å‚™æ”¶è—å“";
+	public override string LabelCollectibleGear => "裝備收藏品";
 
 	/// <summary>
 	/// Key: "LabelCollectibles"
 	/// English String: "Collectibles"
 	/// </summary>
-	public override string LabelCollectibles => "æ”¶è—å“";
+	public override string LabelCollectibles => "收藏品";
 
 	/// <summary>
 	/// Key: "LabelFaces"
 	/// English String: "Faces"
 	/// </summary>
-	public override string LabelFaces => "è‡‰éƒ¨";
+	public override string LabelFaces => "臉部";
 
 	/// <summary>
 	/// Key: "LabelFeatured"
 	/// English String: "Featured"
 	/// </summary>
-	public override string LabelFeatured => "ç²¾é¸";
+	public override string LabelFeatured => "精選";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAccesories"
 	/// English String: "Featured Accessories"
 	/// </summary>
-	public override string LabelFeaturedAccesories => "ç²¾é¸é£¾å“";
+	public override string LabelFeaturedAccesories => "精選飾品";
 
 	/// <summary>
 	/// Key: "LabelFeaturedAnimations"
 	/// English String: "Featured Animations"
 	/// </summary>
-	public override string LabelFeaturedAnimations => "ç²¾é¸å‹•ç•«";
+	public override string LabelFeaturedAnimations => "精選動畫";
 
 	/// <summary>
 	/// Key: "LabelFeaturedFaces"
 	/// English String: "Featured Faces"
 	/// </summary>
-	public override string LabelFeaturedFaces => "ç²¾é¸è¡¨æƒ…";
+	public override string LabelFeaturedFaces => "精選表情";
 
 	/// <summary>
 	/// Key: "LabelFeaturedGear"
 	/// English String: "Featured Gear"
 	/// </summary>
-	public override string LabelFeaturedGear => "ç²¾é¸è£å‚™";
+	public override string LabelFeaturedGear => "精選裝備";
 
 	/// <summary>
 	/// Key: "LabelFeaturedPackages"
 	/// English String: "Featured Packages"
 	/// </summary>
-	public override string LabelFeaturedPackages => "ç²¾é¸å¥—è£";
+	public override string LabelFeaturedPackages => "精選套裝";
 
 	/// <summary>
 	/// Key: "LabelFree"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "å…è²»";
+	public override string LabelFree => "免費";
 
 	/// <summary>
 	/// Key: "LabelGear"
 	/// English String: "Gear"
 	/// </summary>
-	public override string LabelGear => "è£å‚™";
+	public override string LabelGear => "裝備";
 
 	/// <summary>
 	/// Key: "LabelGearAll"
 	/// English String: "All Gear"
 	/// </summary>
-	public override string LabelGearAll => "æ‰€æœ‰è£å‚™";
+	public override string LabelGearAll => "所有裝備";
 
 	/// <summary>
 	/// Key: "LabelGearBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGearBuilding => "å»ºç¯‰";
+	public override string LabelGearBuilding => "建築";
 
 	/// <summary>
 	/// Key: "LabelGearExplosive"
 	/// English String: "Explosive"
 	/// </summary>
-	public override string LabelGearExplosive => "çˆ†è£‚";
+	public override string LabelGearExplosive => "爆裂";
 
 	/// <summary>
 	/// Key: "LabelGearMelee"
 	/// English String: "Melee"
 	/// </summary>
-	public override string LabelGearMelee => "è¿‘æˆ°";
+	public override string LabelGearMelee => "近戰";
 
 	/// <summary>
 	/// Key: "LabelGearMusical"
 	/// English String: "Musical"
 	/// </summary>
-	public override string LabelGearMusical => "éŸ³æ¨‚";
+	public override string LabelGearMusical => "音樂";
 
 	/// <summary>
 	/// Key: "LabelGearNavigation"
 	/// English String: "Navigation"
 	/// </summary>
-	public override string LabelGearNavigation => "å°Žèˆª";
+	public override string LabelGearNavigation => "導航";
 
 	/// <summary>
 	/// Key: "LabelGearPersonalTransport"
 	/// English String: "Transport"
 	/// </summary>
-	public override string LabelGearPersonalTransport => "é‹è¼¸";
+	public override string LabelGearPersonalTransport => "運輸";
 
 	/// <summary>
 	/// Key: "LabelGearPowerUps"
 	/// English String: "Power Up"
 	/// </summary>
-	public override string LabelGearPowerUps => "å¼·åŒ–";
+	public override string LabelGearPowerUps => "強化";
 
 	/// <summary>
 	/// Key: "LabelGearRanged"
 	/// English String: "Ranged"
 	/// </summary>
-	public override string LabelGearRanged => "é ç¨‹";
+	public override string LabelGearRanged => "遠程";
 
 	/// <summary>
 	/// Key: "LabelGearSocial"
 	/// English String: "Social"
 	/// </summary>
-	public override string LabelGearSocial => "ç¤¾äº¤";
+	public override string LabelGearSocial => "社交";
 
 	/// <summary>
 	/// Key: "LabelGenreAdventure"
 	/// English String: "Adventure"
 	/// </summary>
-	public override string LabelGenreAdventure => "æŽ¢éšª";
+	public override string LabelGenreAdventure => "探險";
 
 	/// <summary>
 	/// Key: "LabelGenreAll"
 	/// English String: "All Genres"
 	/// </summary>
-	public override string LabelGenreAll => "æ‰€æœ‰é¡žåˆ¥";
+	public override string LabelGenreAll => "所有類別";
 
 	/// <summary>
 	/// Key: "LabelGenreBuilding"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreBuilding => "å»ºé€ ";
+	public override string LabelGenreBuilding => "建造";
 
 	/// <summary>
 	/// Key: "LabelGenreComedy"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreComedy => "æžç¬‘";
+	public override string LabelGenreComedy => "搞笑";
 
 	/// <summary>
 	/// Key: "LabelGenreFantasy"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreFantasy => "ä¸­å¤";
+	public override string LabelGenreFantasy => "中古";
 
 	/// <summary>
 	/// Key: "LabelGenreFighting"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreFighting => "æ ¼é¬¥";
+	public override string LabelGenreFighting => "格鬥";
 
 	/// <summary>
 	/// Key: "LabelGenreFPS"
 	/// English String: "FPS"
 	/// </summary>
-	public override string LabelGenreFPS => "å°„æ“Š";
+	public override string LabelGenreFPS => "射擊";
 
 	/// <summary>
 	/// Key: "LabelGenreFunny"
 	/// English String: "Comedy"
 	/// </summary>
-	public override string LabelGenreFunny => "æžç¬‘";
+	public override string LabelGenreFunny => "搞笑";
 
 	/// <summary>
 	/// Key: "LabelGenreHorror"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreHorror => "ææ€–";
+	public override string LabelGenreHorror => "恐怖";
 
 	/// <summary>
 	/// Key: "LabelGenreMedieval"
 	/// English String: "Medieval"
 	/// </summary>
-	public override string LabelGenreMedieval => "ä¸­å¤";
+	public override string LabelGenreMedieval => "中古";
 
 	/// <summary>
 	/// Key: "LabelGenreMilitary"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreMilitary => "è»äº‹";
+	public override string LabelGenreMilitary => "軍事";
 
 	/// <summary>
 	/// Key: "LabelGenreNaval"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenreNaval => "æµ·æ´‹";
+	public override string LabelGenreNaval => "海洋";
 
 	/// <summary>
 	/// Key: "LabelGenreNinja"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelGenreNinja => "æ ¼é¬¥";
+	public override string LabelGenreNinja => "格鬥";
 
 	/// <summary>
 	/// Key: "LabelGenrePirate"
 	/// English String: "Naval"
 	/// </summary>
-	public override string LabelGenrePirate => "æµ·æ´‹";
+	public override string LabelGenrePirate => "海洋";
 
 	/// <summary>
 	/// Key: "LabelGenreRPG"
 	/// English String: "RPG"
 	/// </summary>
-	public override string LabelGenreRPG => "è§’è‰²æ‰®æ¼”";
+	public override string LabelGenreRPG => "角色扮演";
 
 	/// <summary>
 	/// Key: "LabelGenreScary"
 	/// English String: "Horror"
 	/// </summary>
-	public override string LabelGenreScary => "ææ€–";
+	public override string LabelGenreScary => "恐怖";
 
 	/// <summary>
 	/// Key: "LabelGenreSciFi"
 	/// English String: "Sci-Fi"
 	/// </summary>
-	public override string LabelGenreSciFi => "ç§‘å¹»";
+	public override string LabelGenreSciFi => "科幻";
 
 	/// <summary>
 	/// Key: "LabelGenreSports"
 	/// English String: "Sports"
 	/// </summary>
-	public override string LabelGenreSports => "é«”è‚²";
+	public override string LabelGenreSports => "體育";
 
 	/// <summary>
 	/// Key: "LabelGenreTownAndCity"
 	/// English String: "Town and City"
 	/// </summary>
-	public override string LabelGenreTownAndCity => "å¸‚éŽ®";
+	public override string LabelGenreTownAndCity => "市鎮";
 
 	/// <summary>
 	/// Key: "LabelGenreTutorial"
 	/// English String: "Building"
 	/// </summary>
-	public override string LabelGenreTutorial => "å»ºé€ ";
+	public override string LabelGenreTutorial => "建造";
 
 	/// <summary>
 	/// Key: "LabelGenreWar"
 	/// English String: "Military"
 	/// </summary>
-	public override string LabelGenreWar => "è»äº‹";
+	public override string LabelGenreWar => "軍事";
 
 	/// <summary>
 	/// Key: "LabelGenreWestern"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWestern => "è¥¿æ–¹";
+	public override string LabelGenreWestern => "西方";
 
 	/// <summary>
 	/// Key: "LabelGenreWildWest"
 	/// English String: "Western"
 	/// </summary>
-	public override string LabelGenreWildWest => "è¥¿æ–¹";
+	public override string LabelGenreWildWest => "西方";
 
 	/// <summary>
 	/// Key: "LabelHeads"
 	/// English String: "Heads"
 	/// </summary>
-	public override string LabelHeads => "é ­éƒ¨";
+	public override string LabelHeads => "頭部";
 
 	/// <summary>
 	/// Key: "LabelMostFavorited"
 	/// English String: "Most Favorited"
 	/// </summary>
-	public override string LabelMostFavorited => "æœ€å—å–œæ„›";
+	public override string LabelMostFavorited => "最受喜愛";
 
 	/// <summary>
 	/// Key: "LabelNoResellers"
 	/// English String: "No Resellers"
 	/// </summary>
-	public override string LabelNoResellers => "æ²’æœ‰äººè½‰è³£";
+	public override string LabelNoResellers => "沒有人轉賣";
 
 	/// <summary>
 	/// Key: "LabelOffSale"
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffSale => "ä¸‹æž¶";
+	public override string LabelOffSale => "下架";
 
 	/// <summary>
 	/// Key: "LabelPackages"
 	/// English String: "Packages"
 	/// </summary>
-	public override string LabelPackages => "å¥—è£";
+	public override string LabelPackages => "套裝";
 
 	/// <summary>
 	/// Key: "LabelPants"
 	/// English String: "Pants"
 	/// </summary>
-	public override string LabelPants => "è¤²å­";
+	public override string LabelPants => "褲子";
 
 	/// <summary>
 	/// Key: "LabelPastDay"
 	/// English String: "Past Day"
 	/// </summary>
-	public override string LabelPastDay => "å‰ä¸€æ—¥";
+	public override string LabelPastDay => "前一日";
 
 	/// <summary>
 	/// Key: "LabelPastWeek"
 	/// English String: "Past Week"
 	/// </summary>
-	public override string LabelPastWeek => "å‰ä¸€é€±";
+	public override string LabelPastWeek => "前一週";
 
 	/// <summary>
 	/// Key: "LabelPriceHighFirst"
 	/// English String: "Price (High to Low)"
 	/// </summary>
-	public override string LabelPriceHighFirst => "åƒ¹æ ¼ï¼ˆç”±é«˜åˆ°ä½Žï¼‰";
+	public override string LabelPriceHighFirst => "價格（由高到低）";
 
 	/// <summary>
 	/// Key: "LabelPriceLowFirst"
 	/// English String: "Price (Low to High)"
 	/// </summary>
-	public override string LabelPriceLowFirst => "åƒ¹æ ¼ï¼ˆç”±ä½Žåˆ°é«˜ï¼‰";
+	public override string LabelPriceLowFirst => "價格（由低到高）";
 
 	/// <summary>
 	/// Key: "LabelRecentlyUpdated"
 	/// English String: "Recently Updated"
 	/// </summary>
-	public override string LabelRecentlyUpdated => "æœ€è¿‘æ›´æ–°";
+	public override string LabelRecentlyUpdated => "最近更新";
 
 	/// <summary>
 	/// Key: "LabelRelevance"
 	/// English String: "Relevance"
 	/// </summary>
-	public override string LabelRelevance => "é—œè¯æ€§";
+	public override string LabelRelevance => "關聯性";
 
 	/// <summary>
 	/// Key: "LabelRoblox"
@@ -840,50 +842,50 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// Key: "LabelShirts"
 	/// English String: "Shirts"
 	/// </summary>
-	public override string LabelShirts => "è¥¯è¡«";
+	public override string LabelShirts => "襯衫";
 
 	/// <summary>
 	/// Key: "LabelTShirts"
 	/// English String: "T-Shirts"
 	/// </summary>
-	public override string LabelTShirts => "Tæ¤";
+	public override string LabelTShirts => "T恤";
 
 	/// <summary>
 	/// Key: "Response.Error.Filter"
 	/// English String: "Errors exist in Filter tab"
 	/// </summary>
-	public override string ResponseErrorFilter => "ç¯©é¸æ¨™ç±¤æœ‰éŒ¯èª¤";
+	public override string ResponseErrorFilter => "篩選標籤有錯誤";
 
 	/// <summary>
 	/// Key: "Response.GenericError"
 	/// English String: "An error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGenericError => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string ResponseGenericError => "發生錯誤，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.NoItemsFound"
 	/// English String: "No items found."
 	/// </summary>
-	public override string ResponseNoItemsFound => "æ‰¾ä¸åˆ°é“å…·ã€‚";
+	public override string ResponseNoItemsFound => "找不到道具。";
 
 	/// <summary>
 	/// Key: "Response.NoSaleItemsFromSearch"
 	/// English String: "Your search did not find items for sale. Unavailable items displayed below."
 	/// </summary>
-	public override string ResponseNoSaleItemsFromSearch => "æ‚¨çš„æœå°‹æ‰¾ä¸åˆ°è²©è³£ä¸­é“å…·ï¼Œä¸é–‹æ”¾çš„é“å…·é¡¯ç¤ºå¦‚ä¸‹ã€‚";
+	public override string ResponseNoSaleItemsFromSearch => "您的搜尋找不到販賣中道具，不開放的道具顯示如下。";
 
 	/// <summary>
 	/// Key: "Response.TemporarilyUnavailable"
 	/// English String: "Catalog temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string ResponseTemporarilyUnavailable => "æš«æ™‚ç„¡æ³•ä½¿ç”¨åž‹éŒ„ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string ResponseTemporarilyUnavailable => "暫時無法使用型錄，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.Throttled"
 	/// Shown to users when they have made too many requests in a minute and are being throttled.
 	/// English String: "You're going too fast! Try again in a minute."
 	/// </summary>
-	public override string ResponseThrottled => "è«‹æ±‚éŽæ–¼é »ç¹ï¼è«‹ 1 åˆ†é˜å¾Œå†è©¦ã€‚";
+	public override string ResponseThrottled => "請求過於頻繁！請 1 分鐘後再試。";
 
 	public CatalogResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -892,57 +894,57 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "è³¼è²· Robux";
+		return "購買 Robux";
 	}
 
 	protected override string _GetTemplateForActionDialogAddGearOk()
 	{
-		return "ç¢ºå®š";
+		return "確定";
 	}
 
 	protected override string _GetTemplateForActionFilterApply()
 	{
-		return "å¥—ç”¨";
+		return "套用";
 	}
 
 	protected override string _GetTemplateForActionFilterCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionGo()
 	{
-		return "é–‹å§‹";
+		return "開始";
 	}
 
 	protected override string _GetTemplateForActionViewAllItems()
 	{
-		return "æª¢è¦–æ‰€æœ‰é“å…·";
+		return "檢視所有道具";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogAddGearBody()
 	{
-		return "è‹¥è¦åœ¨æ‚¨çš„éŠæˆ²åŠ å…¥è£å‚™ï¼Œè«‹åœ¨åž‹éŒ„ä¸­æ‰¾åˆ°é“å…·ï¼ŒæŒ‰ä¸‹ã€ŒåŠ åˆ°éŠæˆ²ã€æŒ‰éˆ•ã€‚æ­¤é“å…·æœƒè‡ªå‹•åœ¨éŠæˆ²ä¸­å…è¨±ä½¿ç”¨ï¼Œè€Œæ‚¨å¯ä»¥å¾žæ‚¨çš„éŠæˆ²è£¡è²©è³£çš„é“å…·æŠ½æˆï¼ˆåªå¯ä»¥åŠ å…¥è²©è³£ä¸­çš„è£å‚™ï¼‰ã€‚";
+		return "若要在您的遊戲加入裝備，請在型錄中找到道具，按下「加到遊戲」按鈕。此道具會自動在遊戲中允許使用，而您可以從您的遊戲裡販賣的道具抽成（只可以加入販賣中的裝備）。";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogCategory()
 	{
-		return "é¡žåˆ¥";
+		return "類別";
 	}
 
 	protected override string _GetTemplateForHeadingCatalogPage()
 	{
-		return "åž‹éŒ„";
+		return "型錄";
 	}
 
 	protected override string _GetTemplateForLabelAllFeaturedItems()
 	{
-		return "æª¢è¦–æ‰€æœ‰ç²¾é¸é …ç›®";
+		return "檢視所有精選項目";
 	}
 
 	protected override string _GetTemplateForLabelAllGenres()
 	{
-		return "æ‰€æœ‰é¡žåˆ¥";
+		return "所有類別";
 	}
 
 	protected override string _GetTemplateForLabelAmazon()
@@ -952,7 +954,7 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelBreadCrumbFree()
 	{
-		return "å…è²»";
+		return "免費";
 	}
 
 	/// <summary>
@@ -961,12 +963,12 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreOrText(string genreName1, string genreName2)
 	{
-		return $"{genreName1}æˆ–{genreName2}";
+		return $"{genreName1}或{genreName2}";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreOrText()
 	{
-		return "{genreName1}æˆ–{genreName2}";
+		return "{genreName1}或{genreName2}";
 	}
 
 	/// <summary>
@@ -975,17 +977,17 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbGenreSelectedText(string genreCount)
 	{
-		return $"é¡žåˆ¥ï¼šå·²é¸æ“‡ {genreCount} ç¨®";
+		return $"類別：已選擇 {genreCount} 種";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGenreSelectedText()
 	{
-		return "é¡žåˆ¥ï¼šå·²é¸æ“‡ {genreCount} ç¨®";
+		return "類別：已選擇 {genreCount} 種";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbGroup()
 	{
-		return "ç¾¤çµ„ï¼š";
+		return "群組：";
 	}
 
 	/// <summary>
@@ -994,12 +996,12 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceAbove(string price)
 	{
-		return $"{price} åŠä»¥ä¸Š";
+		return $"{price} 及以上";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceAbove()
 	{
-		return "{price} åŠä»¥ä¸Š";
+		return "{price} 及以上";
 	}
 
 	/// <summary>
@@ -1008,12 +1010,12 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbPriceBelow(string price)
 	{
-		return $"{price} ä»¥ä¸‹";
+		return $"{price} 以下";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbPriceBelow()
 	{
-		return "{price} ä»¥ä¸‹";
+		return "{price} 以下";
 	}
 
 	/// <summary>
@@ -1022,22 +1024,22 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelBreadCrumbResultsCount(string startNumber, string endNumber, string resultsCount)
 	{
-		return $"{resultsCount} å€‹çµæžœä¸­çš„ç¬¬ {startNumber} - {endNumber} é …";
+		return $"{resultsCount} 個結果中的第 {startNumber} - {endNumber} 項";
 	}
 
 	protected override string _GetTemplateForLabelBreadCrumbResultsCount()
 	{
-		return "{resultsCount} å€‹çµæžœä¸­çš„ç¬¬ {startNumber} - {endNumber} é …";
+		return "{resultsCount} 個結果中的第 {startNumber} - {endNumber} 項";
 	}
 
 	protected override string _GetTemplateForLabelBundle()
 	{
-		return "çµ„åˆ";
+		return "組合";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "çµ„åˆ";
+		return "組合";
 	}
 
 	/// <summary>
@@ -1047,67 +1049,67 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelByCreatorLink(string linkStart, string creator, string linkEnd)
 	{
-		return $"å‰µä½œè€…ï¼š{linkStart}{creator}{linkEnd}";
+		return $"創作者：{linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelByCreatorLink()
 	{
-		return "å‰µä½œè€…ï¼š{linkStart}{creator}{linkEnd}";
+		return "創作者：{linkStart}{creator}{linkEnd}";
 	}
 
 	protected override string _GetTemplateForLabelCardCreatorBy()
 	{
-		return "å‰µä½œè€… :";
+		return "創作者 :";
 	}
 
 	protected override string _GetTemplateForLabelCardPriceWas()
 	{
-		return "åŽŸåƒ¹";
+		return "原價";
 	}
 
 	protected override string _GetTemplateForLabelCardRemaining()
 	{
-		return "é‚„å‰©ï¼š";
+		return "還剩：";
 	}
 
 	protected override string _GetTemplateForLabelCategoryAttributes()
 	{
-		return "å±¬æ€§";
+		return "屬性";
 	}
 
 	protected override string _GetTemplateForLabelCategoryType()
 	{
-		return "é¡žåž‹";
+		return "類型";
 	}
 
 	protected override string _GetTemplateForLabelCommunityCreations()
 	{
-		return "ç¤¾ç¾¤å‰µä½œ";
+		return "社群創作";
 	}
 
 	protected override string _GetTemplateForLabelDialogAddGearTitle()
 	{
-		return "å°‡è£å‚™åŠ åˆ°æ‚¨çš„éŠæˆ²";
+		return "將裝備加到您的遊戲";
 	}
 
 	protected override string _GetTemplateForLabelEmotes()
 	{
-		return "å‹•ä½œ";
+		return "動作";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "è¨­ç‚ºæœ€æ„›";
+		return "設為最愛";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedBundles()
 	{
-		return "ç²¾é¸çµ„åˆ";
+		return "精選組合";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedEmotes()
 	{
-		return "ç²¾é¸å‹•ä½œ";
+		return "精選動作";
 	}
 
 	/// <summary>
@@ -1116,87 +1118,87 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 	/// </summary>
 	public override string LabelFeaturedItemsOnRoblox(string spanStart, string roblox, string spanEnd)
 	{
-		return $"{spanStart}{roblox}{spanEnd} ç²¾é¸é“å…·";
+		return $"{spanStart}{roblox}{spanEnd} 精選道具";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedItemsOnRoblox()
 	{
-		return "{spanStart}{roblox}{spanEnd} ç²¾é¸é“å…·";
+		return "{spanStart}{roblox}{spanEnd} 精選道具";
 	}
 
 	protected override string _GetTemplateForLabelFilterByTime()
 	{
-		return "ä¾æ™‚é–“";
+		return "依時間";
 	}
 
 	protected override string _GetTemplateForLabelFilterCategory()
 	{
-		return "é¡žåˆ¥";
+		return "類別";
 	}
 
 	protected override string _GetTemplateForLabelFilterCreator()
 	{
-		return "å‰µä½œè€…";
+		return "創作者";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilter()
 	{
-		return "ç¯©é¸";
+		return "篩選";
 	}
 
 	protected override string _GetTemplateForLabelFilterFilters()
 	{
-		return "ç¯©é¸æ¢ä»¶";
+		return "篩選條件";
 	}
 
 	protected override string _GetTemplateForLabelFilterGenre()
 	{
-		return "é¡žåˆ¥";
+		return "類別";
 	}
 
 	protected override string _GetTemplateForLabelFilterHide()
 	{
-		return "éš±è—";
+		return "隱藏";
 	}
 
 	protected override string _GetTemplateForLabelFilterPrice()
 	{
-		return "åƒ¹æ ¼";
+		return "價格";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMax()
 	{
-		return "æœ€é«˜";
+		return "最高";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceMin()
 	{
-		return "æœ€ä½Ž";
+		return "最低";
 	}
 
 	protected override string _GetTemplateForLabelFilterPriceTo()
 	{
-		return "åˆ°";
+		return "到";
 	}
 
 	protected override string _GetTemplateForLabelFilterShow()
 	{
-		return "é¡¯ç¤º";
+		return "顯示";
 	}
 
 	protected override string _GetTemplateForLabelFilterSorting()
 	{
-		return "æŽ’åº";
+		return "排序";
 	}
 
 	protected override string _GetTemplateForLabelFilterUnavailableItems()
 	{
-		return "ä¸é–‹æ”¾çš„é“å…·";
+		return "不開放的道具";
 	}
 
 	protected override string _GetTemplateForLabelGoogleOnly()
 	{
-		return "Google é™å®š";
+		return "Google 限定";
 	}
 
 	protected override string _GetTemplateForLabelIos()
@@ -1206,12 +1208,12 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelMobile()
 	{
-		return "è¡Œå‹•é›»è¨Š";
+		return "行動電訊";
 	}
 
 	protected override string _GetTemplateForLabelNew()
 	{
-		return "æ–°å¢ž";
+		return "新增";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1221,22 +1223,22 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelSale()
 	{
-		return "ä¿ƒéŠ·";
+		return "促銷";
 	}
 
 	protected override string _GetTemplateForLabelSearchField()
 	{
-		return "æœå°‹";
+		return "搜尋";
 	}
 
 	protected override string _GetTemplateForLabelSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "查看全部";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ä½¿ç”¨è€…åç¨±";
+		return "使用者名稱";
 	}
 
 	protected override string _GetTemplateForLabelXbox()
@@ -1246,417 +1248,417 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelAccessories()
 	{
-		return "é£¾å“";
+		return "飾品";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryAll()
 	{
-		return "æ‰€æœ‰é£¾å“";
+		return "所有飾品";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryBack()
 	{
-		return "èƒŒé¢";
+		return "背面";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFace()
 	{
-		return "è‡‰éƒ¨";
+		return "臉部";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryFront()
 	{
-		return "æ­£é¢";
+		return "正面";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHair()
 	{
-		return "é«®åž‹";
+		return "髮型";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryHats()
 	{
-		return "å¸½å­";
+		return "帽子";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryNeck()
 	{
-		return "é ¸éƒ¨";
+		return "頸部";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryShoulder()
 	{
-		return "è‚©è†€";
+		return "肩膀";
 	}
 
 	protected override string _GetTemplateForLabelAccessoryWaist()
 	{
-		return "è…°éƒ¨";
+		return "腰部";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "å…¨éƒ¨";
+		return "全部";
 	}
 
 	protected override string _GetTemplateForLabelAllBodyParts()
 	{
-		return "æ‰€æœ‰èº«é«”éƒ¨ä½";
+		return "所有身體部位";
 	}
 
 	protected override string _GetTemplateForLabelAllCategories()
 	{
-		return "æ‰€æœ‰é¡žåˆ¥";
+		return "所有類別";
 	}
 
 	protected override string _GetTemplateForLabelAllClothing()
 	{
-		return "æ‰€æœ‰æœè£";
+		return "所有服裝";
 	}
 
 	protected override string _GetTemplateForLabelAllCollectibles()
 	{
-		return "æ‰€æœ‰æ”¶è—å“";
+		return "所有收藏品";
 	}
 
 	protected override string _GetTemplateForLabelAllCreators()
 	{
-		return "æ‰€æœ‰å‰µä½œè€…";
+		return "所有創作者";
 	}
 
 	protected override string _GetTemplateForLabelAllCurrency()
 	{
-		return "æ‰€æœ‰è²¨å¹£";
+		return "所有貨幣";
 	}
 
 	protected override string _GetTemplateForLabelAllFeatured()
 	{
-		return "æ‰€æœ‰ç²¾é¸é“å…·";
+		return "所有精選道具";
 	}
 
 	protected override string _GetTemplateForLabelAllTime()
 	{
-		return "æ­·ä¾†";
+		return "歷來";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
 	{
-		return "å‹•ç•«";
+		return "動畫";
 	}
 
 	protected override string _GetTemplateForLabelAnyPrice()
 	{
-		return "ä»»ä½•åƒ¹æ ¼";
+		return "任何價格";
 	}
 
 	protected override string _GetTemplateForLabelAvatarAnimations()
 	{
-		return "è™›æ“¬äººå¶å‹•ç•«";
+		return "虛擬人偶動畫";
 	}
 
 	protected override string _GetTemplateForLabelBestselling()
 	{
-		return "æš¢éŠ·";
+		return "暢銷";
 	}
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "èº«é«”éƒ¨ä½";
+		return "身體部位";
 	}
 
 	protected override string _GetTemplateForLabelClothing()
 	{
-		return "æœè£";
+		return "服裝";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleAccessories()
 	{
-		return "å¯æ”¶è—çš„é£¾å“";
+		return "可收藏的飾品";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleFaces()
 	{
-		return "è‡‰éƒ¨æ”¶è—å“";
+		return "臉部收藏品";
 	}
 
 	protected override string _GetTemplateForLabelCollectibleGear()
 	{
-		return "è£å‚™æ”¶è—å“";
+		return "裝備收藏品";
 	}
 
 	protected override string _GetTemplateForLabelCollectibles()
 	{
-		return "æ”¶è—å“";
+		return "收藏品";
 	}
 
 	protected override string _GetTemplateForLabelFaces()
 	{
-		return "è‡‰éƒ¨";
+		return "臉部";
 	}
 
 	protected override string _GetTemplateForLabelFeatured()
 	{
-		return "ç²¾é¸";
+		return "精選";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAccesories()
 	{
-		return "ç²¾é¸é£¾å“";
+		return "精選飾品";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedAnimations()
 	{
-		return "ç²¾é¸å‹•ç•«";
+		return "精選動畫";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedFaces()
 	{
-		return "ç²¾é¸è¡¨æƒ…";
+		return "精選表情";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedGear()
 	{
-		return "ç²¾é¸è£å‚™";
+		return "精選裝備";
 	}
 
 	protected override string _GetTemplateForLabelFeaturedPackages()
 	{
-		return "ç²¾é¸å¥—è£";
+		return "精選套裝";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "å…è²»";
+		return "免費";
 	}
 
 	protected override string _GetTemplateForLabelGear()
 	{
-		return "è£å‚™";
+		return "裝備";
 	}
 
 	protected override string _GetTemplateForLabelGearAll()
 	{
-		return "æ‰€æœ‰è£å‚™";
+		return "所有裝備";
 	}
 
 	protected override string _GetTemplateForLabelGearBuilding()
 	{
-		return "å»ºç¯‰";
+		return "建築";
 	}
 
 	protected override string _GetTemplateForLabelGearExplosive()
 	{
-		return "çˆ†è£‚";
+		return "爆裂";
 	}
 
 	protected override string _GetTemplateForLabelGearMelee()
 	{
-		return "è¿‘æˆ°";
+		return "近戰";
 	}
 
 	protected override string _GetTemplateForLabelGearMusical()
 	{
-		return "éŸ³æ¨‚";
+		return "音樂";
 	}
 
 	protected override string _GetTemplateForLabelGearNavigation()
 	{
-		return "å°Žèˆª";
+		return "導航";
 	}
 
 	protected override string _GetTemplateForLabelGearPersonalTransport()
 	{
-		return "é‹è¼¸";
+		return "運輸";
 	}
 
 	protected override string _GetTemplateForLabelGearPowerUps()
 	{
-		return "å¼·åŒ–";
+		return "強化";
 	}
 
 	protected override string _GetTemplateForLabelGearRanged()
 	{
-		return "é ç¨‹";
+		return "遠程";
 	}
 
 	protected override string _GetTemplateForLabelGearSocial()
 	{
-		return "ç¤¾äº¤";
+		return "社交";
 	}
 
 	protected override string _GetTemplateForLabelGenreAdventure()
 	{
-		return "æŽ¢éšª";
+		return "探險";
 	}
 
 	protected override string _GetTemplateForLabelGenreAll()
 	{
-		return "æ‰€æœ‰é¡žåˆ¥";
+		return "所有類別";
 	}
 
 	protected override string _GetTemplateForLabelGenreBuilding()
 	{
-		return "å»ºé€ ";
+		return "建造";
 	}
 
 	protected override string _GetTemplateForLabelGenreComedy()
 	{
-		return "æžç¬‘";
+		return "搞笑";
 	}
 
 	protected override string _GetTemplateForLabelGenreFantasy()
 	{
-		return "ä¸­å¤";
+		return "中古";
 	}
 
 	protected override string _GetTemplateForLabelGenreFighting()
 	{
-		return "æ ¼é¬¥";
+		return "格鬥";
 	}
 
 	protected override string _GetTemplateForLabelGenreFPS()
 	{
-		return "å°„æ“Š";
+		return "射擊";
 	}
 
 	protected override string _GetTemplateForLabelGenreFunny()
 	{
-		return "æžç¬‘";
+		return "搞笑";
 	}
 
 	protected override string _GetTemplateForLabelGenreHorror()
 	{
-		return "ææ€–";
+		return "恐怖";
 	}
 
 	protected override string _GetTemplateForLabelGenreMedieval()
 	{
-		return "ä¸­å¤";
+		return "中古";
 	}
 
 	protected override string _GetTemplateForLabelGenreMilitary()
 	{
-		return "è»äº‹";
+		return "軍事";
 	}
 
 	protected override string _GetTemplateForLabelGenreNaval()
 	{
-		return "æµ·æ´‹";
+		return "海洋";
 	}
 
 	protected override string _GetTemplateForLabelGenreNinja()
 	{
-		return "æ ¼é¬¥";
+		return "格鬥";
 	}
 
 	protected override string _GetTemplateForLabelGenrePirate()
 	{
-		return "æµ·æ´‹";
+		return "海洋";
 	}
 
 	protected override string _GetTemplateForLabelGenreRPG()
 	{
-		return "è§’è‰²æ‰®æ¼”";
+		return "角色扮演";
 	}
 
 	protected override string _GetTemplateForLabelGenreScary()
 	{
-		return "ææ€–";
+		return "恐怖";
 	}
 
 	protected override string _GetTemplateForLabelGenreSciFi()
 	{
-		return "ç§‘å¹»";
+		return "科幻";
 	}
 
 	protected override string _GetTemplateForLabelGenreSports()
 	{
-		return "é«”è‚²";
+		return "體育";
 	}
 
 	protected override string _GetTemplateForLabelGenreTownAndCity()
 	{
-		return "å¸‚éŽ®";
+		return "市鎮";
 	}
 
 	protected override string _GetTemplateForLabelGenreTutorial()
 	{
-		return "å»ºé€ ";
+		return "建造";
 	}
 
 	protected override string _GetTemplateForLabelGenreWar()
 	{
-		return "è»äº‹";
+		return "軍事";
 	}
 
 	protected override string _GetTemplateForLabelGenreWestern()
 	{
-		return "è¥¿æ–¹";
+		return "西方";
 	}
 
 	protected override string _GetTemplateForLabelGenreWildWest()
 	{
-		return "è¥¿æ–¹";
+		return "西方";
 	}
 
 	protected override string _GetTemplateForLabelHeads()
 	{
-		return "é ­éƒ¨";
+		return "頭部";
 	}
 
 	protected override string _GetTemplateForLabelMostFavorited()
 	{
-		return "æœ€å—å–œæ„›";
+		return "最受喜愛";
 	}
 
 	protected override string _GetTemplateForLabelNoResellers()
 	{
-		return "æ²’æœ‰äººè½‰è³£";
+		return "沒有人轉賣";
 	}
 
 	protected override string _GetTemplateForLabelOffSale()
 	{
-		return "ä¸‹æž¶";
+		return "下架";
 	}
 
 	protected override string _GetTemplateForLabelPackages()
 	{
-		return "å¥—è£";
+		return "套裝";
 	}
 
 	protected override string _GetTemplateForLabelPants()
 	{
-		return "è¤²å­";
+		return "褲子";
 	}
 
 	protected override string _GetTemplateForLabelPastDay()
 	{
-		return "å‰ä¸€æ—¥";
+		return "前一日";
 	}
 
 	protected override string _GetTemplateForLabelPastWeek()
 	{
-		return "å‰ä¸€é€±";
+		return "前一週";
 	}
 
 	protected override string _GetTemplateForLabelPriceHighFirst()
 	{
-		return "åƒ¹æ ¼ï¼ˆç”±é«˜åˆ°ä½Žï¼‰";
+		return "價格（由高到低）";
 	}
 
 	protected override string _GetTemplateForLabelPriceLowFirst()
 	{
-		return "åƒ¹æ ¼ï¼ˆç”±ä½Žåˆ°é«˜ï¼‰";
+		return "價格（由低到高）";
 	}
 
 	protected override string _GetTemplateForLabelRecentlyUpdated()
 	{
-		return "æœ€è¿‘æ›´æ–°";
+		return "最近更新";
 	}
 
 	protected override string _GetTemplateForLabelRelevance()
 	{
-		return "é—œè¯æ€§";
+		return "關聯性";
 	}
 
 	protected override string _GetTemplateForLabelRoblox()
@@ -1671,42 +1673,42 @@ internal class CatalogResources_zh_tw : CatalogResources_en_us, ICatalogResource
 
 	protected override string _GetTemplateForLabelShirts()
 	{
-		return "è¥¯è¡«";
+		return "襯衫";
 	}
 
 	protected override string _GetTemplateForLabelTShirts()
 	{
-		return "Tæ¤";
+		return "T恤";
 	}
 
 	protected override string _GetTemplateForResponseErrorFilter()
 	{
-		return "ç¯©é¸æ¨™ç±¤æœ‰éŒ¯èª¤";
+		return "篩選標籤有錯誤";
 	}
 
 	protected override string _GetTemplateForResponseGenericError()
 	{
-		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "發生錯誤，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseNoItemsFound()
 	{
-		return "æ‰¾ä¸åˆ°é“å…·ã€‚";
+		return "找不到道具。";
 	}
 
 	protected override string _GetTemplateForResponseNoSaleItemsFromSearch()
 	{
-		return "æ‚¨çš„æœå°‹æ‰¾ä¸åˆ°è²©è³£ä¸­é“å…·ï¼Œä¸é–‹æ”¾çš„é“å…·é¡¯ç¤ºå¦‚ä¸‹ã€‚";
+		return "您的搜尋找不到販賣中道具，不開放的道具顯示如下。";
 	}
 
 	protected override string _GetTemplateForResponseTemporarilyUnavailable()
 	{
-		return "æš«æ™‚ç„¡æ³•ä½¿ç”¨åž‹éŒ„ï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "暫時無法使用型錄，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseThrottled()
 	{
-		return "è«‹æ±‚éŽæ–¼é »ç¹ï¼è«‹ 1 åˆ†é˜å¾Œå†è©¦ã€‚";
+		return "請求過於頻繁！請 1 分鐘後再試。";
 	}
 }
 

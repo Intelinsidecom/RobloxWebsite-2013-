@@ -1,5 +1,5 @@
 namespace Roblox.Localization.Core {
-    internal interface ICoreLocalizationBuilder
+    public interface ICoreLocalizationBuilder
 
 {
 	/// <summary>

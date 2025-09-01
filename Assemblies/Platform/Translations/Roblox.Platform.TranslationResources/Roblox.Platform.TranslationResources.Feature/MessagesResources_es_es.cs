@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -28,19 +30,19 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Action.MarkAsRead"
 	/// English String: "Mark As Read"
 	/// </summary>
-	public override string ActionMarkAsRead => "Marcar como leÃ­do";
+	public override string ActionMarkAsRead => "Marcar como leído";
 
 	/// <summary>
 	/// Key: "Action.MarkAsUnread"
 	/// English String: "Mark As Unread"
 	/// </summary>
-	public override string ActionMarkAsUnread => "Marcar como no leÃ­do";
+	public override string ActionMarkAsUnread => "Marcar como no leído";
 
 	/// <summary>
 	/// Key: "Action.MoveToInbox"
 	/// English String: "Move To Inbox"
 	/// </summary>
-	public override string ActionMoveToInbox => "Mover al buzÃ³n";
+	public override string ActionMoveToInbox => "Mover al buzón";
 
 	/// <summary>
 	/// Key: "Action.Reply"
@@ -100,7 +102,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Label.Inbox"
 	/// English String: "Inbox"
 	/// </summary>
-	public override string LabelInbox => "BuzÃ³n";
+	public override string LabelInbox => "Buzón";
 
 	/// <summary>
 	/// Key: "Label.IncludeMessage"
@@ -148,7 +150,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.BodyCantBlank"
 	/// English String: "The message body can't be blank."
 	/// </summary>
-	public override string MessageBodyCantBlank => "El cuerpo del mensaje no puede estar vacÃ­o.";
+	public override string MessageBodyCantBlank => "El cuerpo del mensaje no puede estar vacío.";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
@@ -160,7 +162,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.IdTheftWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageIdTheftWarning => "Recuerda: el personal de Roblox nunca te pedirÃ¡ tu contraseÃ±a. Quien te pida tu contraseÃ±a te estÃ¡ intentando robar la cuenta.";
+	public override string MessageIdTheftWarning => "Recuerda: el personal de Roblox nunca te pedirá tu contraseña. Quien te pida tu contraseña te está intentando robar la cuenta.";
 
 	/// <summary>
 	/// Key: "Message.NoMessageExist"
@@ -178,13 +180,13 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.NoRecipient"
 	/// English String: "Recipient doesn't exist!"
 	/// </summary>
-	public override string MessageNoRecipient => "Â¡El destinatario no existe!";
+	public override string MessageNoRecipient => "¡El destinatario no existe!";
 
 	/// <summary>
 	/// Key: "Message.NotAuthorizeToManipulate"
 	/// English String: "Not authorized to manipulate message"
 	/// </summary>
-	public override string MessageNotAuthorizeToManipulate => "No hay autorizaciÃ³n para manipular el mensaje.";
+	public override string MessageNotAuthorizeToManipulate => "No hay autorización para manipular el mensaje.";
 
 	/// <summary>
 	/// Key: "Message.NotSendAndModerated"
@@ -196,19 +198,19 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.RecipientPrivacySettingsTooHigh"
 	/// English String: "The recipient's privacy settings prevent you from sending this message."
 	/// </summary>
-	public override string MessageRecipientPrivacySettingsTooHigh => "La configuraciÃ³n de privacidad del destinatario te impide enviar este mensaje.";
+	public override string MessageRecipientPrivacySettingsTooHigh => "La configuración de privacidad del destinatario te impide enviar este mensaje.";
 
 	/// <summary>
 	/// Key: "Message.ReplyHere"
 	/// English String: "Reply here..."
 	/// </summary>
-	public override string MessageReplyHere => "Responde aquÃ­...";
+	public override string MessageReplyHere => "Responde aquí...";
 
 	/// <summary>
 	/// Key: "Message.RobloxWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageRobloxWarning => "Recuerda: el personal de Roblox nunca te pedirÃ¡ tu contraseÃ±a. Quien te pida tu contraseÃ±a te estÃ¡ intentando robar la cuenta.";
+	public override string MessageRobloxWarning => "Recuerda: el personal de Roblox nunca te pedirá tu contraseña. Quien te pida tu contraseña te está intentando robar la cuenta.";
 
 	/// <summary>
 	/// Key: "Message.SendSuccessfully"
@@ -220,13 +222,13 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.SendTooManyMessages"
 	/// English String: "You're sending too many messages too quickly."
 	/// </summary>
-	public override string MessageSendTooManyMessages => "EstÃ¡s enviando demasiados mensajes demasiado deprisa.";
+	public override string MessageSendTooManyMessages => "Estás enviando demasiados mensajes demasiado deprisa.";
 
 	/// <summary>
 	/// Key: "Message.SubjectCantBlank"
 	/// English String: "The message subject can't be blank."
 	/// </summary>
-	public override string MessageSubjectCantBlank => "El asunto del mensaje no puede estar vacÃ­o.";
+	public override string MessageSubjectCantBlank => "El asunto del mensaje no puede estar vacío.";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
@@ -269,17 +271,17 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionMarkAsRead()
 	{
-		return "Marcar como leÃ­do";
+		return "Marcar como leído";
 	}
 
 	protected override string _GetTemplateForActionMarkAsUnread()
 	{
-		return "Marcar como no leÃ­do";
+		return "Marcar como no leído";
 	}
 
 	protected override string _GetTemplateForActionMoveToInbox()
 	{
-		return "Mover al buzÃ³n";
+		return "Mover al buzón";
 	}
 
 	protected override string _GetTemplateForActionReply()
@@ -329,7 +331,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelInbox()
 	{
-		return "BuzÃ³n";
+		return "Buzón";
 	}
 
 	protected override string _GetTemplateForLabelIncludeMessage()
@@ -383,7 +385,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageBodyCantBlank()
 	{
-		return "El cuerpo del mensaje no puede estar vacÃ­o.";
+		return "El cuerpo del mensaje no puede estar vacío.";
 	}
 
 	/// <summary>
@@ -392,12 +394,12 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageBodyTooLong(string maxLength)
 	{
-		return $"Acorta tu mensaje a {maxLength} caracteres o menos e intÃ©ntalo de nuevo.";
+		return $"Acorta tu mensaje a {maxLength} caracteres o menos e inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForMessageBodyTooLong()
 	{
-		return "Acorta tu mensaje a {maxLength} caracteres o menos e intÃ©ntalo de nuevo.";
+		return "Acorta tu mensaje a {maxLength} caracteres o menos e inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
@@ -407,7 +409,7 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageIdTheftWarning()
 	{
-		return "Recuerda: el personal de Roblox nunca te pedirÃ¡ tu contraseÃ±a. Quien te pida tu contraseÃ±a te estÃ¡ intentando robar la cuenta.";
+		return "Recuerda: el personal de Roblox nunca te pedirá tu contraseña. Quien te pida tu contraseña te está intentando robar la cuenta.";
 	}
 
 	protected override string _GetTemplateForMessageNoMessageExist()
@@ -422,12 +424,12 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageNoRecipient()
 	{
-		return "Â¡El destinatario no existe!";
+		return "¡El destinatario no existe!";
 	}
 
 	protected override string _GetTemplateForMessageNotAuthorizeToManipulate()
 	{
-		return "No hay autorizaciÃ³n para manipular el mensaje.";
+		return "No hay autorización para manipular el mensaje.";
 	}
 
 	protected override string _GetTemplateForMessageNotSendAndModerated()
@@ -437,17 +439,17 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageRecipientPrivacySettingsTooHigh()
 	{
-		return "La configuraciÃ³n de privacidad del destinatario te impide enviar este mensaje.";
+		return "La configuración de privacidad del destinatario te impide enviar este mensaje.";
 	}
 
 	protected override string _GetTemplateForMessageReplyHere()
 	{
-		return "Responde aquÃ­...";
+		return "Responde aquí...";
 	}
 
 	protected override string _GetTemplateForMessageRobloxWarning()
 	{
-		return "Recuerda: el personal de Roblox nunca te pedirÃ¡ tu contraseÃ±a. Quien te pida tu contraseÃ±a te estÃ¡ intentando robar la cuenta.";
+		return "Recuerda: el personal de Roblox nunca te pedirá tu contraseña. Quien te pida tu contraseña te está intentando robar la cuenta.";
 	}
 
 	/// <summary>
@@ -456,12 +458,12 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageSenderPrivacySettingTooHeight(string frontLink, string endLink)
 	{
-		return $"Tu {frontLink}configuraciÃ³n de privacidad{endLink} te impide enviar este mensaje.";
+		return $"Tu {frontLink}configuración de privacidad{endLink} te impide enviar este mensaje.";
 	}
 
 	protected override string _GetTemplateForMessageSenderPrivacySettingTooHeight()
 	{
-		return "Tu {frontLink}configuraciÃ³n de privacidad{endLink} te impide enviar este mensaje.";
+		return "Tu {frontLink}configuración de privacidad{endLink} te impide enviar este mensaje.";
 	}
 
 	protected override string _GetTemplateForMessageSendSuccessfully()
@@ -471,12 +473,12 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageSendTooManyMessages()
 	{
-		return "EstÃ¡s enviando demasiados mensajes demasiado deprisa.";
+		return "Estás enviando demasiados mensajes demasiado deprisa.";
 	}
 
 	protected override string _GetTemplateForMessageSubjectCantBlank()
 	{
-		return "El asunto del mensaje no puede estar vacÃ­o.";
+		return "El asunto del mensaje no puede estar vacío.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
@@ -495,12 +497,12 @@ internal class MessagesResources_es_es : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageVerifySenderEmail(string frontLink, string endLink)
 	{
-		return $"Debes verificar tu correo electrÃ³nico en la pÃ¡gina {frontLink}ConfiguraciÃ³n de cuenta{endLink} para poder enviar mensajes.";
+		return $"Debes verificar tu correo electrónico en la página {frontLink}Configuración de cuenta{endLink} para poder enviar mensajes.";
 	}
 
 	protected override string _GetTemplateForMessageVerifySenderEmail()
 	{
-		return "Debes verificar tu correo electrÃ³nico en la pÃ¡gina {frontLink}ConfiguraciÃ³n de cuenta{endLink} para poder enviar mensajes.";
+		return "Debes verificar tu correo electrónico en la página {frontLink}Configuración de cuenta{endLink} para poder enviar mensajes.";
 	}
 
 	protected override string _GetTemplateForMessageWriteYourMessage()

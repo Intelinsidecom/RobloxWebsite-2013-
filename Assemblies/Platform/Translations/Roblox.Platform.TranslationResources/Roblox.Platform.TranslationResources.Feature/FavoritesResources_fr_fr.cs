@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class FavoritesResources_fr_fr : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "Vous devez Ãªtre connectÃ©(e) afin d'ajouter ceci Ã  vos favoris. Veuillez vous connecter ou vous inscrire pour continuer.";
+	public override string DescriptionLoginRequired => "Vous devez être connecté(e) afin d'ajouter ceci à vos favoris. Veuillez vous connecter ou vous inscrire pour continuer.";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
@@ -86,7 +88,7 @@ internal class FavoritesResources_fr_fr : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "MessageAssetNotFoundError"
 	/// English String: "The asset you are trying to favorite cannot be found."
 	/// </summary>
-	public override string MessageAssetNotFoundError => "L'Ã©lÃ©ment que vous voulez ajouter aux favoris est introuvable.";
+	public override string MessageAssetNotFoundError => "L'élément que vous voulez ajouter aux favoris est introuvable.";
 
 	public FavoritesResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -115,7 +117,7 @@ internal class FavoritesResources_fr_fr : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Vous devez Ãªtre connectÃ©(e) afin d'ajouter ceci Ã  vos favoris. Veuillez vous connecter ou vous inscrire pour continuer.";
+		return "Vous devez être connecté(e) afin d'ajouter ceci à vos favoris. Veuillez vous connecter ou vous inscrire pour continuer.";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
@@ -170,7 +172,7 @@ internal class FavoritesResources_fr_fr : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()
 	{
-		return "L'Ã©lÃ©ment que vous voulez ajouter aux favoris est introuvable.";
+		return "L'élément que vous voulez ajouter aux favoris est introuvable.";
 	}
 }
 

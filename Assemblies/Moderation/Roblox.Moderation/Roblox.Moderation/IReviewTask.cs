@@ -1,8 +1,8 @@
-﻿using System;
-using Roblox.Platform.Localization.Core;
-using Roblox.Platform.Membership.Core;
-namespace Roblox.Moderationpublic {
-    interface IReviewTask
+using System;
+using Roblox.Localization.Core;
+using Roblox.Platform.MembershipCore;
+namespace Roblox.Moderation {
+    public interface IReviewTask
 
 {
 	/// <summary>
@@ -21,7 +21,7 @@ namespace Roblox.Moderationpublic {
 	DateTime? Reviewed { get; }
 
 	/// <summary>
-	/// The <see cref="T:Roblox.Platform.Localization.Core.ISupportedLocaleIdentifier">identifier</see> of the task's (supported) locale
+	/// The <see cref="T:Roblox.Localization.Core.ISupportedLocaleIdentifier">identifier</see> of the task's (supported) locale
 	/// </summary>
 	ISupportedLocaleIdentifier LocaleIdentifier { get; }
 }

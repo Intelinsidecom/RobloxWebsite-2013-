@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class GameGearOptionsDisplayResources_ja_jp : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«ã‚’è¨±å¯";
+	public override string LabelAllGenreAllowed => "すべてのジャンルを許可";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
 	/// English String: "No Gear Allowed"
 	/// </summary>
-	public override string LabelNoGear => "è¨±å¯ã•ã‚ŒãŸã‚®ã‚¢ã¯ã‚ã‚Šã¾ã›ã‚“";
+	public override string LabelNoGear => "許可されたギアはありません";
 
 	public GameGearOptionsDisplayResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -25,7 +27,7 @@ internal class GameGearOptionsDisplayResources_ja_jp : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "ã™ã¹ã¦ã®ã‚¸ãƒ£ãƒ³ãƒ«ã‚’è¨±å¯";
+		return "すべてのジャンルを許可";
 	}
 
 	/// <summary>
@@ -34,17 +36,17 @@ internal class GameGearOptionsDisplayResources_ja_jp : GameGearOptionsDisplayRes
 	/// </summary>
 	public override string LabelGearOnly(string GearName)
 	{
-		return $"{GearName} ã‚®ã‚¢ã®ã¿";
+		return $"{GearName} ギアのみ";
 	}
 
 	protected override string _GetTemplateForLabelGearOnly()
 	{
-		return "{GearName} ã‚®ã‚¢ã®ã¿";
+		return "{GearName} ギアのみ";
 	}
 
 	protected override string _GetTemplateForLabelNoGear()
 	{
-		return "è¨±å¯ã•ã‚ŒãŸã‚®ã‚¢ã¯ã‚ã‚Šã¾ã›ã‚“";
+		return "許可されたギアはありません";
 	}
 }
 

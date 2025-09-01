@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IWebUtilResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IWebUtilResources : ITranslationResources
 
 {
 	/// <summary>
@@ -96,3 +98,5 @@
 
 
 }
+
+

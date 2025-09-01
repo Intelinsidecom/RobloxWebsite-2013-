@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RedeemToyResources_en_us to provide locale specific translations where possible,
@@ -11,133 +13,133 @@ internal class RedeemToyResources_zh_tw : RedeemToyResources_en_us, IRedeemToyRe
 	/// button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.CantFindCode"
 	/// link text
 	/// English String: "Can't find your code?"
 	/// </summary>
-	public override string ActionCantFindCode => "æ‰¾ä¸åˆ°æ‚¨çš„ä»£ç¢¼ï¼Ÿ";
+	public override string ActionCantFindCode => "找不到您的代碼？";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "é—œé–‰";
+	public override string ActionClose => "關閉";
 
 	/// <summary>
 	/// Key: "Action.ContinueVideo"
 	/// button text
 	/// English String: "Continue to Video"
 	/// </summary>
-	public override string ActionContinueVideo => "å‰å¾€å½±ç‰‡";
+	public override string ActionContinueVideo => "前往影片";
 
 	/// <summary>
 	/// Key: "Action.HavePromoCode"
 	/// link text
 	/// English String: "Have a promo code? Click here"
 	/// </summary>
-	public override string ActionHavePromoCode => "æœ‰ä»£ç¢¼ï¼Ÿè«‹æŒ‰ä¸‹æ­¤è™•";
+	public override string ActionHavePromoCode => "有代碼？請按下此處";
 
 	/// <summary>
 	/// Key: "Action.HowToRedeem"
 	/// link text
 	/// English String: "How to redeem"
 	/// </summary>
-	public override string ActionHowToRedeem => "å…Œæ›æ–¹å¼";
+	public override string ActionHowToRedeem => "兌換方式";
 
 	/// <summary>
 	/// Key: "Action.Login"
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "ç™»å…¥";
+	public override string ActionLogin => "登入";
 
 	/// <summary>
 	/// Key: "Action.Redeem"
 	/// button text
 	/// English String: "Redeem"
 	/// </summary>
-	public override string ActionRedeem => "å…Œæ›";
+	public override string ActionRedeem => "兌換";
 
 	/// <summary>
 	/// Key: "Action.RedeemAnotherItem"
 	/// button text
 	/// English String: "Redeem Another Item"
 	/// </summary>
-	public override string ActionRedeemAnotherItem => "ç¹¼çºŒå…Œæ›é“å…·";
+	public override string ActionRedeemAnotherItem => "繼續兌換道具";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionSignUp => "è¨»å†Š";
+	public override string ActionSignUp => "註冊";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
 	/// button text
 	/// English String: "View Item"
 	/// </summary>
-	public override string ActionViewItem => "æª¢è¦–é“å…·";
+	public override string ActionViewItem => "檢視道具";
 
 	/// <summary>
 	/// Key: "Description.LeavingRoblox"
 	/// modal description text warning user that they are leaving Roblox main site
 	/// English String: "You are about to leave Roblox to view a video on Youtube. Youtube is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionLeavingRoblox => "æ‚¨å³å°‡é›¢é–‹ Robloxï¼Œä¸¦å‰å¾€ YouTube è§€çœ‹å½±ç‰‡ã€‚YouTube ä¸å±¬æ–¼ Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+	public override string DescriptionLeavingRoblox => "您即將離開 Roblox，並前往 YouTube 觀看影片。YouTube 不屬於 Roblox.com，受單獨的隱私權政策管理。";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.Success"
 	/// modal heading
 	/// English String: "Successfully Redeemed"
 	/// </summary>
-	public override string HeadingDialogSuccess => "å…Œæ›æˆåŠŸ";
+	public override string HeadingDialogSuccess => "兌換成功";
 
 	/// <summary>
 	/// Key: "Heading.RedeemVirtualItem"
 	/// page heading
 	/// English String: "Redeem Roblox Virtual Item"
 	/// </summary>
-	public override string HeadingRedeemVirtualItem => "å…Œæ› Roblox è™›æ“¬é“å…·";
+	public override string HeadingRedeemVirtualItem => "兌換 Roblox 虛擬道具";
 
 	/// <summary>
 	/// Key: "Heading.YoureLeavingRoblox"
 	/// modal heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingYoureLeavingRoblox => "æ‚¨å³å°‡é›¢é–‹ Roblox";
+	public override string HeadingYoureLeavingRoblox => "您即將離開 Roblox";
 
 	/// <summary>
 	/// Key: "Label.EnterToyCode"
 	/// label
 	/// English String: "Enter Toy Code"
 	/// </summary>
-	public override string LabelEnterToyCode => "è¼¸å…¥çŽ©å…·ä»£ç¢¼";
+	public override string LabelEnterToyCode => "輸入玩具代碼";
 
 	/// <summary>
 	/// Key: "Response.InvalidCodeTryAgain"
 	/// error message
 	/// English String: "Invalid code, please try again."
 	/// </summary>
-	public override string ResponseInvalidCodeTryAgain => "ä»£ç¢¼ç„¡æ•ˆï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+	public override string ResponseInvalidCodeTryAgain => "代碼無效，請重新嘗試。";
 
 	/// <summary>
 	/// Key: "Response.LoginRequiredToRedeem"
 	/// error message
 	/// English String: "You must be logged in to your Roblox account to redeem the code for your virtual item!"
 	/// </summary>
-	public override string ResponseLoginRequiredToRedeem => "è‹¥è¦ä½¿ç”¨ä»£ç¢¼å…Œæ›è™›æ“¬é“å…·ï¼Œè«‹å…ˆç™»å…¥ Roblox ï¼";
+	public override string ResponseLoginRequiredToRedeem => "若要使用代碼兌換虛擬道具，請先登入 Roblox ！";
 
 	/// <summary>
 	/// Key: "Response.RedeemSuccess"
 	/// success message
 	/// English String: "You have successfully redeemed your item."
 	/// </summary>
-	public override string ResponseRedeemSuccess => "æ‚¨å·²æˆåŠŸå…Œæ›é“å…·ã€‚";
+	public override string ResponseRedeemSuccess => "您已成功兌換道具。";
 
 	public RedeemToyResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -146,57 +148,57 @@ internal class RedeemToyResources_zh_tw : RedeemToyResources_en_us, IRedeemToyRe
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionCantFindCode()
 	{
-		return "æ‰¾ä¸åˆ°æ‚¨çš„ä»£ç¢¼ï¼Ÿ";
+		return "找不到您的代碼？";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "é—œé–‰";
+		return "關閉";
 	}
 
 	protected override string _GetTemplateForActionContinueVideo()
 	{
-		return "å‰å¾€å½±ç‰‡";
+		return "前往影片";
 	}
 
 	protected override string _GetTemplateForActionHavePromoCode()
 	{
-		return "æœ‰ä»£ç¢¼ï¼Ÿè«‹æŒ‰ä¸‹æ­¤è™•";
+		return "有代碼？請按下此處";
 	}
 
 	protected override string _GetTemplateForActionHowToRedeem()
 	{
-		return "å…Œæ›æ–¹å¼";
+		return "兌換方式";
 	}
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForActionRedeem()
 	{
-		return "å…Œæ›";
+		return "兌換";
 	}
 
 	protected override string _GetTemplateForActionRedeemAnotherItem()
 	{
-		return "ç¹¼çºŒå…Œæ›é“å…·";
+		return "繼續兌換道具";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "è¨»å†Š";
+		return "註冊";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
 	{
-		return "æª¢è¦–é“å…·";
+		return "檢視道具";
 	}
 
 	/// <summary>
@@ -206,52 +208,52 @@ internal class RedeemToyResources_zh_tw : RedeemToyResources_en_us, IRedeemToyRe
 	/// </summary>
 	public override string DescriptionDialogSuccess(string spanTagStart, string itemName, string spanTagEnd, string itemType, string creatorName)
 	{
-		return $"æ‚¨å·²æˆåŠŸå…Œæ› {creatorName} çš„ {spanTagStart}{itemName}{spanTagEnd}ï¼ˆ{itemType}ï¼‰ã€‚";
+		return $"您已成功兌換 {creatorName} 的 {spanTagStart}{itemName}{spanTagEnd}（{itemType}）。";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSuccess()
 	{
-		return "æ‚¨å·²æˆåŠŸå…Œæ› {creatorName} çš„ {spanTagStart}{itemName}{spanTagEnd}ï¼ˆ{itemType}ï¼‰ã€‚";
+		return "您已成功兌換 {creatorName} 的 {spanTagStart}{itemName}{spanTagEnd}（{itemType}）。";
 	}
 
 	protected override string _GetTemplateForDescriptionLeavingRoblox()
 	{
-		return "æ‚¨å³å°‡é›¢é–‹ Robloxï¼Œä¸¦å‰å¾€ YouTube è§€çœ‹å½±ç‰‡ã€‚YouTube ä¸å±¬æ–¼ Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+		return "您即將離開 Roblox，並前往 YouTube 觀看影片。YouTube 不屬於 Roblox.com，受單獨的隱私權政策管理。";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSuccess()
 	{
-		return "å…Œæ›æˆåŠŸ";
+		return "兌換成功";
 	}
 
 	protected override string _GetTemplateForHeadingRedeemVirtualItem()
 	{
-		return "å…Œæ› Roblox è™›æ“¬é“å…·";
+		return "兌換 Roblox 虛擬道具";
 	}
 
 	protected override string _GetTemplateForHeadingYoureLeavingRoblox()
 	{
-		return "æ‚¨å³å°‡é›¢é–‹ Roblox";
+		return "您即將離開 Roblox";
 	}
 
 	protected override string _GetTemplateForLabelEnterToyCode()
 	{
-		return "è¼¸å…¥çŽ©å…·ä»£ç¢¼";
+		return "輸入玩具代碼";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCodeTryAgain()
 	{
-		return "ä»£ç¢¼ç„¡æ•ˆï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+		return "代碼無效，請重新嘗試。";
 	}
 
 	protected override string _GetTemplateForResponseLoginRequiredToRedeem()
 	{
-		return "è‹¥è¦ä½¿ç”¨ä»£ç¢¼å…Œæ›è™›æ“¬é“å…·ï¼Œè«‹å…ˆç™»å…¥ Roblox ï¼";
+		return "若要使用代碼兌換虛擬道具，請先登入 Roblox ！";
 	}
 
 	protected override string _GetTemplateForResponseRedeemSuccess()
 	{
-		return "æ‚¨å·²æˆåŠŸå…Œæ›é“å…·ã€‚";
+		return "您已成功兌換道具。";
 	}
 }
 

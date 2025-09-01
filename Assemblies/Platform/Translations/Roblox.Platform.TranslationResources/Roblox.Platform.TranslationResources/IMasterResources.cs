@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResourcespublic {
-    interface IMasterResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources {
+    public interface IMasterResources
 
 {
 	IAuthenticationResources Authentication { get; }
@@ -23,3 +25,5 @@
 
 
 }
+
+

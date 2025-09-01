@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
@@ -113,3 +113,4 @@ public class FeedTypeDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "[dbo].[FeedTypes_GetFeedTypeByType]", queryParameters), BuildDAL);
 	}
 }
+

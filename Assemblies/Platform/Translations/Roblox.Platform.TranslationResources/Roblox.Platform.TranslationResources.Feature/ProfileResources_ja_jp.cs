@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
@@ -10,510 +12,510 @@ internal class ProfileResources_ja_jp : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "æ‰¿èªã™ã‚‹";
+	public override string ActionAccept => "承認する";
 
 	/// <summary>
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "å‹é”ã‚’è¿½åŠ ";
+	public override string ActionAddFriend => "友達を追加";
 
 	/// <summary>
 	/// Key: "Action.BlockUser"
 	/// English String: "Block User"
 	/// </summary>
-	public override string ActionBlockUser => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯";
+	public override string ActionBlockUser => "ユーザーをブロック";
 
 	/// <summary>
 	/// Key: "Action.CancelBlockUser"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancelBlockUser => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionCancelBlockUser => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "ãƒãƒ£ãƒƒãƒˆ";
+	public override string ActionChat => "チャット";
 
 	/// <summary>
 	/// Key: "Action.Close"
 	/// close modal
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "é–‰ã˜ã‚‹";
+	public override string ActionClose => "閉じる";
 
 	/// <summary>
 	/// Key: "Action.ConfirmBlockUser"
 	/// English String: "Block"
 	/// </summary>
-	public override string ActionConfirmBlockUser => "ãƒ–ãƒ­ãƒƒã‚¯";
+	public override string ActionConfirmBlockUser => "ブロック";
 
 	/// <summary>
 	/// Key: "Action.ConfirmUnblockUser"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string ActionConfirmUnblockUser => "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+	public override string ActionConfirmUnblockUser => "ブロックを解除";
 
 	/// <summary>
 	/// Key: "Action.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string ActionFavorites => "ãŠæ°—ã«å…¥ã‚Š";
+	public override string ActionFavorites => "お気に入り";
 
 	/// <summary>
 	/// Key: "Action.Follow"
 	/// English String: "Follow"
 	/// </summary>
-	public override string ActionFollow => "ãƒ•ã‚©ãƒ­ãƒ¼";
+	public override string ActionFollow => "フォロー";
 
 	/// <summary>
 	/// Key: "Action.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string ActionGridView => "ã‚°ãƒªãƒƒãƒ‰è¡¨ç¤º";
+	public override string ActionGridView => "グリッド表示";
 
 	/// <summary>
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "ãªã‚Šã™ã¾ã—ãƒ¦ãƒ¼ã‚¶ãƒ¼";
+	public override string ActionImpersonateUser => "なりすましユーザー";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+	public override string ActionInventory => "インベントリ";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string ActionJoinGame => "ã‚²ãƒ¼ãƒ ã«å‚åŠ ";
+	public override string ActionJoinGame => "ゲームに参加";
 
 	/// <summary>
 	/// Key: "Action.Message"
 	/// English String: "Message"
 	/// </summary>
-	public override string ActionMessage => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+	public override string ActionMessage => "メッセージ";
 
 	/// <summary>
 	/// Key: "Action.Pending"
 	/// English String: "Pending"
 	/// </summary>
-	public override string ActionPending => "ä¿ç•™ä¸­ã§ã™";
+	public override string ActionPending => "保留中です";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "ä¿å­˜";
+	public override string ActionSave => "保存";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "ã™ã¹ã¦è¦‹ã‚‹";
+	public override string ActionSeeAll => "すべて見る";
 
 	/// <summary>
 	/// Key: "Action.SeeLess"
 	/// English String: "See Less"
 	/// </summary>
-	public override string ActionSeeLess => "è¦‹ã‚‹æ•°ã‚’æ¸›ã‚‰ã™";
+	public override string ActionSeeLess => "見る数を減らす";
 
 	/// <summary>
 	/// Key: "Action.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string ActionSeeMore => "ã‚‚ã£ã¨è¦‹ã‚‹";
+	public override string ActionSeeMore => "もっと見る";
 
 	/// <summary>
 	/// Key: "Action.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string ActionSlideshowView => "ã‚¹ãƒ©ã‚¤ãƒ‰ã‚·ãƒ§ãƒ¼è¡¨ç¤º";
+	public override string ActionSlideshowView => "スライドショー表示";
 
 	/// <summary>
 	/// Key: "Action.Trade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string ActionTrade => "å–å¼•";
+	public override string ActionTrade => "取引";
 
 	/// <summary>
 	/// Key: "Action.TradeItems"
 	/// English String: "Trade Items"
 	/// </summary>
-	public override string ActionTradeItems => "å–å¼•ã‚¢ã‚¤ãƒ†ãƒ ";
+	public override string ActionTradeItems => "取引アイテム";
 
 	/// <summary>
 	/// Key: "Action.UnblockUser"
 	/// English String: "Unblock User"
 	/// </summary>
-	public override string ActionUnblockUser => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+	public override string ActionUnblockUser => "ユーザーのブロックを解除";
 
 	/// <summary>
 	/// Key: "Action.Unfollow"
 	/// English String: "Unfollow"
 	/// </summary>
-	public override string ActionUnfollow => "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
+	public override string ActionUnfollow => "フォローをやめる";
 
 	/// <summary>
 	/// Key: "Action.Unfriend"
 	/// English String: "Unfriend"
 	/// </summary>
-	public override string ActionUnfriend => "å‹é”è§£é™¤";
+	public override string ActionUnfriend => "友達解除";
 
 	/// <summary>
 	/// Key: "Action.UpdateStatus"
 	/// English String: "Update Status"
 	/// </summary>
-	public override string ActionUpdateStatus => "çŠ¶æ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
+	public override string ActionUpdateStatus => "状況をアップデート";
 
 	/// <summary>
 	/// Key: "Description.BlockUserFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string DescriptionBlockUserFooter => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã™ã‚‹ã¨ã€è‡ªåˆ†ã‹ã‚‰ã‚‚ç›¸æ‰‹ã‹ã‚‰ã‚‚ç›´æŽ¥ã‚³ãƒ³ã‚¿ã‚¯ãƒˆã‚’å–ã‚‹ã“ã¨ãŒã§ããªããªã‚Šã¾ã™ã€‚";
+	public override string DescriptionBlockUserFooter => "ユーザーをブロックすると、自分からも相手からも直接コンタクトを取ることができなくなります。";
 
 	/// <summary>
 	/// Key: "Description.BlockUserPrompt"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string DescriptionBlockUserPrompt => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string DescriptionBlockUserPrompt => "このユーザーをブロックしてよろしいですか？";
 
 	/// <summary>
 	/// Key: "Description.ChangeAlias"
 	/// English String: "Only you can see this information"
 	/// </summary>
-	public override string DescriptionChangeAlias => "ã“ã®æƒ…å ±ã¯è‡ªåˆ†ã ã‘ãŒè¦‹ã‚Œã‚‹ã‚‚ã®ã§ã™";
+	public override string DescriptionChangeAlias => "この情報は自分だけが見れるものです";
 
 	/// <summary>
 	/// Key: "Description.UnblockUserPrompt"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string DescriptionUnblockUserPrompt => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string DescriptionUnblockUserPrompt => "このユーザーのブロックを解除してよろしいですか？";
 
 	/// <summary>
 	/// Key: "Heading.AboutTab"
 	/// this is for the heading under About tab on profile page
 	/// English String: "About"
 	/// </summary>
-	public override string HeadingAboutTab => "æƒ…å ±";
+	public override string HeadingAboutTab => "情報";
 
 	/// <summary>
 	/// Key: "Heading.BlockUserTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string HeadingBlockUserTitle => "è­¦å‘Š";
+	public override string HeadingBlockUserTitle => "警告";
 
 	/// <summary>
 	/// Key: "Heading.Collections"
 	/// English String: "Collections"
 	/// </summary>
-	public override string HeadingCollections => "ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³";
+	public override string HeadingCollections => "コレクション";
 
 	/// <summary>
 	/// Key: "Heading.CurrentlyWearing"
 	/// English String: "Currently Wearing"
 	/// </summary>
-	public override string HeadingCurrentlyWearing => "è£…å‚™ä¸­";
+	public override string HeadingCurrentlyWearing => "装備中";
 
 	/// <summary>
 	/// Key: "Heading.FavoriteGames"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string HeadingFavoriteGames => "ãŠæ°—ã«å…¥ã‚Š";
+	public override string HeadingFavoriteGames => "お気に入り";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string HeadingFriends => "å‹é”";
+	public override string HeadingFriends => "友達";
 
 	/// <summary>
 	/// Key: "Heading.Games"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGames => "ã‚²ãƒ¼ãƒ ";
+	public override string HeadingGames => "ゲーム";
 
 	/// <summary>
 	/// Key: "Heading.GameTitle"
 	/// English String: "Games"
 	/// </summary>
-	public override string HeadingGameTitle => "ã‚²ãƒ¼ãƒ ";
+	public override string HeadingGameTitle => "ゲーム";
 
 	/// <summary>
 	/// Key: "Heading.Groups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingGroups => "ã‚°ãƒ«ãƒ¼ãƒ—";
+	public override string HeadingGroups => "グループ";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsBadges"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerAssetsBadges => "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒƒã‚¸";
+	public override string HeadingPlayerAssetsBadges => "プレイヤーバッジ";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsClothing"
 	/// English String: "Clothing"
 	/// </summary>
-	public override string HeadingPlayerAssetsClothing => "ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+	public override string HeadingPlayerAssetsClothing => "コスチューム";
 
 	/// <summary>
 	/// Key: "Heading.PlayerAssetsModels"
 	/// English String: "Models"
 	/// </summary>
-	public override string HeadingPlayerAssetsModels => "ãƒ¢ãƒ‡ãƒ«";
+	public override string HeadingPlayerAssetsModels => "モデル";
 
 	/// <summary>
 	/// Key: "Heading.PlayerBadge"
 	/// English String: "Player Badges"
 	/// </summary>
-	public override string HeadingPlayerBadge => "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒƒã‚¸";
+	public override string HeadingPlayerBadge => "プレイヤーバッジ";
 
 	/// <summary>
 	/// Key: "Heading.Profile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string HeadingProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«";
+	public override string HeadingProfile => "プロフィール";
 
 	/// <summary>
 	/// Key: "Heading.ProfileGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string HeadingProfileGroups => "ã‚°ãƒ«ãƒ¼ãƒ—";
+	public override string HeadingProfileGroups => "グループ";
 
 	/// <summary>
 	/// Key: "Heading.RobloxBadge"
 	/// English String: "Roblox Badges"
 	/// </summary>
-	public override string HeadingRobloxBadge => "Robloxãƒãƒƒã‚¸";
+	public override string HeadingRobloxBadge => "Robloxバッジ";
 
 	/// <summary>
 	/// Key: "Heading.Statistics"
 	/// English String: "Statistics"
 	/// </summary>
-	public override string HeadingStatistics => "çµ±è¨ˆ";
+	public override string HeadingStatistics => "統計";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "æƒ…å ±";
+	public override string LabelAbout => "情報";
 
 	/// <summary>
 	/// Key: "Label.Alias"
 	/// Friends Tag, nickname
 	/// English String: "Alias"
 	/// </summary>
-	public override string LabelAlias => "ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ";
+	public override string LabelAlias => "ニックネーム";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningBody"
 	/// English String: "Are you sure you want to block this user?"
 	/// </summary>
-	public override string LabelBlockWarningBody => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelBlockWarningBody => "このユーザーをブロックしてよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningConfirm"
 	/// English String: "Block"
 	/// </summary>
-	public override string LabelBlockWarningConfirm => "ãƒ–ãƒ­ãƒƒã‚¯";
+	public override string LabelBlockWarningConfirm => "ブロック";
 
 	/// <summary>
 	/// Key: "Label.BlockWarningFooter"
 	/// English String: "When you've blocked a user, neither of you can directly contact the other."
 	/// </summary>
-	public override string LabelBlockWarningFooter => "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã™ã‚‹ã¨ã€è‡ªåˆ†ã‹ã‚‰ã‚‚ç›¸æ‰‹ã‹ã‚‰ã‚‚ç›´æŽ¥ã‚³ãƒ³ã‚¿ã‚¯ãƒˆã‚’å–ã‚‹ã“ã¨ãŒã§ããªããªã‚Šã¾ã™ã€‚";
+	public override string LabelBlockWarningFooter => "ユーザーをブロックすると、自分からも相手からも直接コンタクトを取ることができなくなります。";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string LabelCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Label.ChangeAlias"
 	/// set nickname
 	/// English String: "Set Alias"
 	/// </summary>
-	public override string LabelChangeAlias => "ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã‚’è¨­å®š";
+	public override string LabelChangeAlias => "ニックネームを設定";
 
 	/// <summary>
 	/// Key: "Label.Creations"
 	/// English String: "Creations"
 	/// </summary>
-	public override string LabelCreations => "ä½œå“";
+	public override string LabelCreations => "作品";
 
 	/// <summary>
 	/// Key: "Label.Followers"
 	/// English String: "Followers"
 	/// </summary>
-	public override string LabelFollowers => "ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
+	public override string LabelFollowers => "フォロワー";
 
 	/// <summary>
 	/// Key: "Label.Following"
 	/// English String: "Following"
 	/// </summary>
-	public override string LabelFollowing => "ãƒ•ã‚©ãƒ­ãƒ¼ä¸­";
+	public override string LabelFollowing => "フォロー中";
 
 	/// <summary>
 	/// Key: "Label.ForumPosts"
 	/// English String: "Forum Posts"
 	/// </summary>
-	public override string LabelForumPosts => "ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã®æŠ•ç¨¿";
+	public override string LabelForumPosts => "フォーラムの投稿";
 
 	/// <summary>
 	/// Key: "Label.Friends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelFriends => "å‹é”";
+	public override string LabelFriends => "友達";
 
 	/// <summary>
 	/// Key: "Label.GridView"
 	/// English String: "Grid View"
 	/// </summary>
-	public override string LabelGridView => "ã‚°ãƒªãƒƒãƒ‰è¡¨ç¤º";
+	public override string LabelGridView => "グリッド表示";
 
 	/// <summary>
 	/// Key: "Label.JoinDate"
 	/// English String: "Join Date"
 	/// </summary>
-	public override string LabelJoinDate => "å‚åŠ æ—¥";
+	public override string LabelJoinDate => "参加日";
 
 	/// <summary>
 	/// Key: "Label.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string LabelLoadMore => "ã•ã‚‰ã«èª­ã¿è¾¼ã‚€";
+	public override string LabelLoadMore => "さらに読み込む";
 
 	/// <summary>
 	/// Key: "Label.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string LabelMembers => "ãƒ¡ãƒ³ãƒãƒ¼";
+	public override string LabelMembers => "メンバー";
 
 	/// <summary>
 	/// Key: "Label.PastUsername"
 	/// English String: "Past Usernames"
 	/// </summary>
-	public override string LabelPastUsername => "éŽåŽ»ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+	public override string LabelPastUsername => "過去のユーザーネーム";
 
 	/// <summary>
 	/// Key: "Label.PastUsernames"
 	/// English String: "Past usernames"
 	/// </summary>
-	public override string LabelPastUsernames => "éŽåŽ»ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+	public override string LabelPastUsernames => "過去のユーザーネーム";
 
 	/// <summary>
 	/// Key: "Label.PlaceVisits"
 	/// English String: "Place Visits"
 	/// </summary>
-	public override string LabelPlaceVisits => "ãƒ—ãƒ¬ãƒ¼ã‚¹ã®è¨ªå•æ•°";
+	public override string LabelPlaceVisits => "プレースの訪問数";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "ãƒ—ãƒ¬ã‚¤ä¸­";
+	public override string LabelPlaying => "プレイ中";
 
 	/// <summary>
 	/// Key: "Label.Rank"
 	/// English String: "Rank"
 	/// </summary>
-	public override string LabelRank => "ãƒ©ãƒ³ã‚¯";
+	public override string LabelRank => "ランク";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "ç¶šãã‚’èª­ã‚€";
+	public override string LabelReadMore => "続きを読む";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "è¦ç´„é•åã‚’å ±å‘Š";
+	public override string LabelReportAbuse => "規約違反を報告";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "è¡¨ç¤ºã‚’æ¸›ã‚‰ã™";
+	public override string LabelShowLess => "表示を減らす";
 
 	/// <summary>
 	/// Key: "Label.SlideshowView"
 	/// English String: "Slideshow View"
 	/// </summary>
-	public override string LabelSlideshowView => "ã‚¹ãƒ©ã‚¤ãƒ‰ã‚·ãƒ§ãƒ¼è¡¨ç¤º";
+	public override string LabelSlideshowView => "スライドショー表示";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningBody"
 	/// English String: "Are you sure you want to unblock this user?"
 	/// </summary>
-	public override string LabelUnblockWarningBody => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelUnblockWarningBody => "このユーザーのブロックを解除してよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.UnblockWarningConfirm"
 	/// English String: "Unblock"
 	/// </summary>
-	public override string LabelUnblockWarningConfirm => "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+	public override string LabelUnblockWarningConfirm => "ブロックを解除";
 
 	/// <summary>
 	/// Key: "Label.Visits"
 	/// English String: "Visits"
 	/// </summary>
-	public override string LabelVisits => "è¨ªå•æ•°";
+	public override string LabelVisits => "訪問数";
 
 	/// <summary>
 	/// Key: "Label.WarningTitle"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelWarningTitle => "è­¦å‘Š";
+	public override string LabelWarningTitle => "警告";
 
 	/// <summary>
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
+	public override string MessageAliasHasError => "エラーが発生しました。後でもう一度お試しください";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
 	/// English String: "Please avoid using full names or offensive language."
 	/// </summary>
-	public override string MessageAliasIsModerated => "ãƒ•ãƒ«ãƒãƒ¼ãƒ ã‚„ä¸é©åˆ‡ãªè¨€è‘‰ã‚’ä½¿ã‚ãªã„ã‚ˆã†ã«ã—ã¦ãã ã•ã„ã€‚";
+	public override string MessageAliasIsModerated => "フルネームや不適切な言葉を使わないようにしてください。";
 
 	/// <summary>
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "ä½•ã‚’ã—ã¾ã™ã‹ï¼Ÿ";
+	public override string MessageChangeStatus => "何をしますか？";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
 	/// English String: "Operation failed! You may have blocked too many people."
 	/// </summary>
-	public override string MessageErrorBlockLimit => "å®Ÿè¡Œã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒ–ãƒ­ãƒƒã‚¯ã—ãŸãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒå¤šã™ãŽã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
+	public override string MessageErrorBlockLimit => "実行できませんでした。ブロックしたユーザーが多すぎる可能性があります。";
 
 	/// <summary>
 	/// Key: "Message.ErrorGeneral"
 	/// English String: "Something went wrong. Please check back in a few minutes."
 	/// </summary>
-	public override string MessageErrorGeneral => "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string MessageErrorGeneral => "問題が発生しました。しばらくしてからもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Message.Sharing"
 	/// English String: "Sharing..."
 	/// </summary>
-	public override string MessageSharing => "ã‚·ã‚§ã‚¢ã—ã¦ã„ã¾ã™...";
+	public override string MessageSharing => "シェアしています...";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// flood error response
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttempts => "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™";
+	public override string ResponseTooManyAttempts => "試行回数が多すぎます";
 
 	public ProfileResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -522,187 +524,187 @@ internal class ProfileResources_ja_jp : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "æ‰¿èªã™ã‚‹";
+		return "承認する";
 	}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "å‹é”ã‚’è¿½åŠ ";
+		return "友達を追加";
 	}
 
 	protected override string _GetTemplateForActionBlockUser()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯";
+		return "ユーザーをブロック";
 	}
 
 	protected override string _GetTemplateForActionCancelBlockUser()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "ãƒãƒ£ãƒƒãƒˆ";
+		return "チャット";
 	}
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "é–‰ã˜ã‚‹";
+		return "閉じる";
 	}
 
 	protected override string _GetTemplateForActionConfirmBlockUser()
 	{
-		return "ãƒ–ãƒ­ãƒƒã‚¯";
+		return "ブロック";
 	}
 
 	protected override string _GetTemplateForActionConfirmUnblockUser()
 	{
-		return "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+		return "ブロックを解除";
 	}
 
 	protected override string _GetTemplateForActionFavorites()
 	{
-		return "ãŠæ°—ã«å…¥ã‚Š";
+		return "お気に入り";
 	}
 
 	protected override string _GetTemplateForActionFollow()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼";
+		return "フォロー";
 	}
 
 	protected override string _GetTemplateForActionGridView()
 	{
-		return "ã‚°ãƒªãƒƒãƒ‰è¡¨ç¤º";
+		return "グリッド表示";
 	}
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "ãªã‚Šã™ã¾ã—ãƒ¦ãƒ¼ã‚¶ãƒ¼";
+		return "なりすましユーザー";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return "インベントリ";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«å‚åŠ ";
+		return "ゲームに参加";
 	}
 
 	protected override string _GetTemplateForActionMessage()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+		return "メッセージ";
 	}
 
 	protected override string _GetTemplateForActionPending()
 	{
-		return "ä¿ç•™ä¸­ã§ã™";
+		return "保留中です";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "ä¿å­˜";
+		return "保存";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "ã™ã¹ã¦è¦‹ã‚‹";
+		return "すべて見る";
 	}
 
 	protected override string _GetTemplateForActionSeeLess()
 	{
-		return "è¦‹ã‚‹æ•°ã‚’æ¸›ã‚‰ã™";
+		return "見る数を減らす";
 	}
 
 	protected override string _GetTemplateForActionSeeMore()
 	{
-		return "ã‚‚ã£ã¨è¦‹ã‚‹";
+		return "もっと見る";
 	}
 
 	protected override string _GetTemplateForActionSlideshowView()
 	{
-		return "ã‚¹ãƒ©ã‚¤ãƒ‰ã‚·ãƒ§ãƒ¼è¡¨ç¤º";
+		return "スライドショー表示";
 	}
 
 	protected override string _GetTemplateForActionTrade()
 	{
-		return "å–å¼•";
+		return "取引";
 	}
 
 	protected override string _GetTemplateForActionTradeItems()
 	{
-		return "å–å¼•ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "取引アイテム";
 	}
 
 	protected override string _GetTemplateForActionUnblockUser()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+		return "ユーザーのブロックを解除";
 	}
 
 	protected override string _GetTemplateForActionUnfollow()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ã‚’ã‚„ã‚ã‚‹";
+		return "フォローをやめる";
 	}
 
 	protected override string _GetTemplateForActionUnfriend()
 	{
-		return "å‹é”è§£é™¤";
+		return "友達解除";
 	}
 
 	protected override string _GetTemplateForActionUpdateStatus()
 	{
-		return "çŠ¶æ³ã‚’ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ";
+		return "状況をアップデート";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserFooter()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã™ã‚‹ã¨ã€è‡ªåˆ†ã‹ã‚‰ã‚‚ç›¸æ‰‹ã‹ã‚‰ã‚‚ç›´æŽ¥ã‚³ãƒ³ã‚¿ã‚¯ãƒˆã‚’å–ã‚‹ã“ã¨ãŒã§ããªããªã‚Šã¾ã™ã€‚";
+		return "ユーザーをブロックすると、自分からも相手からも直接コンタクトを取ることができなくなります。";
 	}
 
 	protected override string _GetTemplateForDescriptionBlockUserPrompt()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このユーザーをブロックしてよろしいですか？";
 	}
 
 	protected override string _GetTemplateForDescriptionChangeAlias()
 	{
-		return "ã“ã®æƒ…å ±ã¯è‡ªåˆ†ã ã‘ãŒè¦‹ã‚Œã‚‹ã‚‚ã®ã§ã™";
+		return "この情報は自分だけが見れるものです";
 	}
 
 	protected override string _GetTemplateForDescriptionUnblockUserPrompt()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このユーザーのブロックを解除してよろしいですか？";
 	}
 
 	protected override string _GetTemplateForHeadingAboutTab()
 	{
-		return "æƒ…å ±";
+		return "情報";
 	}
 
 	protected override string _GetTemplateForHeadingBlockUserTitle()
 	{
-		return "è­¦å‘Š";
+		return "警告";
 	}
 
 	protected override string _GetTemplateForHeadingCollections()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³";
+		return "コレクション";
 	}
 
 	protected override string _GetTemplateForHeadingCurrentlyWearing()
 	{
-		return "è£…å‚™ä¸­";
+		return "装備中";
 	}
 
 	protected override string _GetTemplateForHeadingFavoriteGames()
 	{
-		return "ãŠæ°—ã«å…¥ã‚Š";
+		return "お気に入り";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()
 	{
-		return "å‹é”";
+		return "友達";
 	}
 
 	/// <summary>
@@ -711,252 +713,252 @@ internal class ProfileResources_ja_jp : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string HeadingFriendsNum(string friendsCount)
 	{
-		return $"å‹é”ï¼ˆ{friendsCount} äººï¼‰";
+		return $"友達（{friendsCount} 人）";
 	}
 
 	protected override string _GetTemplateForHeadingFriendsNum()
 	{
-		return "å‹é”ï¼ˆ{friendsCount} äººï¼‰";
+		return "友達（{friendsCount} 人）";
 	}
 
 	protected override string _GetTemplateForHeadingGames()
 	{
-		return "ã‚²ãƒ¼ãƒ ";
+		return "ゲーム";
 	}
 
 	protected override string _GetTemplateForHeadingGameTitle()
 	{
-		return "ã‚²ãƒ¼ãƒ ";
+		return "ゲーム";
 	}
 
 	protected override string _GetTemplateForHeadingGroups()
 	{
-		return "ã‚°ãƒ«ãƒ¼ãƒ—";
+		return "グループ";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsBadges()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒƒã‚¸";
+		return "プレイヤーバッジ";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsClothing()
 	{
-		return "ã‚³ã‚¹ãƒãƒ¥ãƒ¼ãƒ ";
+		return "コスチューム";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerAssetsModels()
 	{
-		return "ãƒ¢ãƒ‡ãƒ«";
+		return "モデル";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerBadge()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒãƒƒã‚¸";
+		return "プレイヤーバッジ";
 	}
 
 	protected override string _GetTemplateForHeadingProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«";
+		return "プロフィール";
 	}
 
 	protected override string _GetTemplateForHeadingProfileGroups()
 	{
-		return "ã‚°ãƒ«ãƒ¼ãƒ—";
+		return "グループ";
 	}
 
 	protected override string _GetTemplateForHeadingRobloxBadge()
 	{
-		return "Robloxãƒãƒƒã‚¸";
+		return "Robloxバッジ";
 	}
 
 	protected override string _GetTemplateForHeadingStatistics()
 	{
-		return "çµ±è¨ˆ";
+		return "統計";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "æƒ…å ±";
+		return "情報";
 	}
 
 	protected override string _GetTemplateForLabelAlias()
 	{
-		return "ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ";
+		return "ニックネーム";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningBody()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このユーザーをブロックしてよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningConfirm()
 	{
-		return "ãƒ–ãƒ­ãƒƒã‚¯";
+		return "ブロック";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarningFooter()
 	{
-		return "ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚’ãƒ–ãƒ­ãƒƒã‚¯ã™ã‚‹ã¨ã€è‡ªåˆ†ã‹ã‚‰ã‚‚ç›¸æ‰‹ã‹ã‚‰ã‚‚ç›´æŽ¥ã‚³ãƒ³ã‚¿ã‚¯ãƒˆã‚’å–ã‚‹ã“ã¨ãŒã§ããªããªã‚Šã¾ã™ã€‚";
+		return "ユーザーをブロックすると、自分からも相手からも直接コンタクトを取ることができなくなります。";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForLabelChangeAlias()
 	{
-		return "ãƒ‹ãƒƒã‚¯ãƒãƒ¼ãƒ ã‚’è¨­å®š";
+		return "ニックネームを設定";
 	}
 
 	protected override string _GetTemplateForLabelCreations()
 	{
-		return "ä½œå“";
+		return "作品";
 	}
 
 	protected override string _GetTemplateForLabelFollowers()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¯ãƒ¼";
+		return "フォロワー";
 	}
 
 	protected override string _GetTemplateForLabelFollowing()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ä¸­";
+		return "フォロー中";
 	}
 
 	protected override string _GetTemplateForLabelForumPosts()
 	{
-		return "ãƒ•ã‚©ãƒ¼ãƒ©ãƒ ã®æŠ•ç¨¿";
+		return "フォーラムの投稿";
 	}
 
 	protected override string _GetTemplateForLabelFriends()
 	{
-		return "å‹é”";
+		return "友達";
 	}
 
 	protected override string _GetTemplateForLabelGridView()
 	{
-		return "ã‚°ãƒªãƒƒãƒ‰è¡¨ç¤º";
+		return "グリッド表示";
 	}
 
 	protected override string _GetTemplateForLabelJoinDate()
 	{
-		return "å‚åŠ æ—¥";
+		return "参加日";
 	}
 
 	protected override string _GetTemplateForLabelLoadMore()
 	{
-		return "ã•ã‚‰ã«èª­ã¿è¾¼ã‚€";
+		return "さらに読み込む";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "ãƒ¡ãƒ³ãƒãƒ¼";
+		return "メンバー";
 	}
 
 	protected override string _GetTemplateForLabelPastUsername()
 	{
-		return "éŽåŽ»ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+		return "過去のユーザーネーム";
 	}
 
 	protected override string _GetTemplateForLabelPastUsernames()
 	{
-		return "éŽåŽ»ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒãƒ¼ãƒ ";
+		return "過去のユーザーネーム";
 	}
 
 	protected override string _GetTemplateForLabelPlaceVisits()
 	{
-		return "ãƒ—ãƒ¬ãƒ¼ã‚¹ã®è¨ªå•æ•°";
+		return "プレースの訪問数";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ä¸­";
+		return "プレイ中";
 	}
 
 	/// <summary>
 	/// Key: "Label.Quotation"
-	/// You only need to localize the quotation mark, e.g. ã€Œ{userStatus}ã€
+	/// You only need to localize the quotation mark, e.g. 「{userStatus}」
 	/// English String: "\"{userStatus}\""
 	/// </summary>
 	public override string LabelQuotation(string userStatus)
 	{
-		return $"ã€Œ{userStatus}ã€";
+		return $"「{userStatus}」";
 	}
 
 	protected override string _GetTemplateForLabelQuotation()
 	{
-		return "ã€Œ{userStatus}ã€";
+		return "「{userStatus}」";
 	}
 
 	protected override string _GetTemplateForLabelRank()
 	{
-		return "ãƒ©ãƒ³ã‚¯";
+		return "ランク";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "ç¶šãã‚’èª­ã‚€";
+		return "続きを読む";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "è¦ç´„é•åã‚’å ±å‘Š";
+		return "規約違反を報告";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "è¡¨ç¤ºã‚’æ¸›ã‚‰ã™";
+		return "表示を減らす";
 	}
 
 	protected override string _GetTemplateForLabelSlideshowView()
 	{
-		return "ã‚¹ãƒ©ã‚¤ãƒ‰ã‚·ãƒ§ãƒ¼è¡¨ç¤º";
+		return "スライドショー表示";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningBody()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã®ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このユーザーのブロックを解除してよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelUnblockWarningConfirm()
 	{
-		return "ãƒ–ãƒ­ãƒƒã‚¯ã‚’è§£é™¤";
+		return "ブロックを解除";
 	}
 
 	protected override string _GetTemplateForLabelVisits()
 	{
-		return "è¨ªå•æ•°";
+		return "訪問数";
 	}
 
 	protected override string _GetTemplateForLabelWarningTitle()
 	{
-		return "è­¦å‘Š";
+		return "警告";
 	}
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„";
+		return "エラーが発生しました。後でもう一度お試しください";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
 	{
-		return "ãƒ•ãƒ«ãƒãƒ¼ãƒ ã‚„ä¸é©åˆ‡ãªè¨€è‘‰ã‚’ä½¿ã‚ãªã„ã‚ˆã†ã«ã—ã¦ãã ã•ã„ã€‚";
+		return "フルネームや不適切な言葉を使わないようにしてください。";
 	}
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "ä½•ã‚’ã—ã¾ã™ã‹ï¼Ÿ";
+		return "何をしますか？";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()
 	{
-		return "å®Ÿè¡Œã§ãã¾ã›ã‚“ã§ã—ãŸã€‚ãƒ–ãƒ­ãƒƒã‚¯ã—ãŸãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒå¤šã™ãŽã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "実行できませんでした。ブロックしたユーザーが多すぎる可能性があります。";
 	}
 
 	protected override string _GetTemplateForMessageErrorGeneral()
 	{
-		return "å•é¡ŒãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã—ã°ã‚‰ãã—ã¦ã‹ã‚‰ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "問題が発生しました。しばらくしてからもう一度お試しください。";
 	}
 
 	/// <summary>
@@ -965,22 +967,22 @@ internal class ProfileResources_ja_jp : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string MessageNoCreation(string username)
 	{
-		return $"{username}ã«ã¯ä½œå“ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return $"{username}には作品がありません。";
 	}
 
 	protected override string _GetTemplateForMessageNoCreation()
 	{
-		return "{username}ã«ã¯ä½œå“ãŒã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "{username}には作品がありません。";
 	}
 
 	protected override string _GetTemplateForMessageSharing()
 	{
-		return "ã‚·ã‚§ã‚¢ã—ã¦ã„ã¾ã™...";
+		return "シェアしています...";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "è©¦è¡Œå›žæ•°ãŒå¤šã™ãŽã¾ã™";
+		return "試行回数が多すぎます";
 	}
 }
 

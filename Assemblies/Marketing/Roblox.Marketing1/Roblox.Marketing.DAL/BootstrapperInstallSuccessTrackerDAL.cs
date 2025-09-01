@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.MssqlDatabases;
 
 namespace Roblox.Marketing.DAL;
@@ -70,3 +70,4 @@ public class BootstrapperInstallSuccessTrackerDAL
 		throw new NotImplementedException();
 	}
 }
+

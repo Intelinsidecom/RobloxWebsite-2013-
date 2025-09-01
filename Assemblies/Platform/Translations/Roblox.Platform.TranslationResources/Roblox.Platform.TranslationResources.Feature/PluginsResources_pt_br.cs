@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PluginsResources_en_us to provide locale specific translations where possible,
@@ -52,13 +54,13 @@ internal class PluginsResources_pt_br : PluginsResources_en_us, IPluginsResource
 	/// Key: "Label.UpdateSuccessTitle"
 	/// English String: "Plugin Update"
 	/// </summary>
-	public override string LabelUpdateSuccessTitle => "AtualizaÃ§Ã£o de plugin";
+	public override string LabelUpdateSuccessTitle => "Atualização de plugin";
 
 	/// <summary>
 	/// Key: "Label.UpdateText"
 	/// English String: "Update"
 	/// </summary>
-	public override string LabelUpdateText => "AtualizaÃ§Ã£o";
+	public override string LabelUpdateText => "Atualização";
 
 	public PluginsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -120,22 +122,22 @@ internal class PluginsResources_pt_br : PluginsResources_en_us, IPluginsResource
 	/// </summary>
 	public override string LabelUpdateSuccessBody(string item)
 	{
-		return $"{item} foi atualizado com sucesso! Abra uma nova janela para que as alteraÃ§Ãµes tenham efeito.";
+		return $"{item} foi atualizado com sucesso! Abra uma nova janela para que as alterações tenham efeito.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessBody()
 	{
-		return "{item} foi atualizado com sucesso! Abra uma nova janela para que as alteraÃ§Ãµes tenham efeito.";
+		return "{item} foi atualizado com sucesso! Abra uma nova janela para que as alterações tenham efeito.";
 	}
 
 	protected override string _GetTemplateForLabelUpdateSuccessTitle()
 	{
-		return "AtualizaÃ§Ã£o de plugin";
+		return "Atualização de plugin";
 	}
 
 	protected override string _GetTemplateForLabelUpdateText()
 	{
-		return "AtualizaÃ§Ã£o";
+		return "Atualização";
 	}
 }
 

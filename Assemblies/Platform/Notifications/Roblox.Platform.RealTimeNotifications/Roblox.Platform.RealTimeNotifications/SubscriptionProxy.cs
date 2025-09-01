@@ -1,11 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Roblox.EventLog;
-using Roblox.RealTimeNotifications.Properties;
-namespace Roblox.Platform.RealTimeNotificationspublic {
+using Roblox.Platform.RealTimeNotifications.Properties;
+namespace Roblox.Platform.RealTimeNotifications
+{
     class SubscriptionProxy<TKeyInput, TSubscriberId, TPublishMessage> : ISubscriptionProxy<TKeyInput, TSubscriberId>
 
 {
@@ -222,6 +223,5 @@ namespace Roblox.Platform.RealTimeNotificationspublic {
 		}
 	}
 }
-
 
 }

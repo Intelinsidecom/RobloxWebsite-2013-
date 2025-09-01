@@ -1,6 +1,8 @@
-﻿using Roblox.TranslationResources.Purchasing;
-namespace Roblox.Platform.TranslationResourcespublic {
-    interface IPurchasingResources : ITranslationResourcesNamespacesGroup
+﻿using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Purchasing;
+namespace Roblox.Platform.TranslationResources {
+    public interface IPurchasingResources : ITranslationResourcesNamespacesGroup
 
 {
 	IPurchaseDialogResources PurchaseDialog { get; }
@@ -14,3 +16,5 @@ namespace Roblox.Platform.TranslationResourcespublic {
 
 
 }
+
+

@@ -822,7 +822,7 @@
       <returns>The column to be retrieved.</returns>
       <param name="ordinal">The column to be retrieved.</param>
       <typeparam name="T">Synchronously gets the value of the specified column as a type.</typeparam>
-      <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).Tried to read a previously-read column in sequential mode.There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
+      <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.The <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.There is no data ready to be read (for example, the first <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).Tried to read a previously-read column in sequential mode.There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> doesn’t match the type returned by SQL Server or cannot be cast.</exception>
@@ -957,7 +957,7 @@
     <member name="P:System.Data.Common.DbDataReader.IsClosed">
       <summary>Gets a value indicating whether the <see cref="T:System.Data.Common.DbDataReader" /> is closed.</summary>
       <returns>true if the <see cref="T:System.Data.Common.DbDataReader" /> is closed; otherwise false.</returns>
-      <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed. </exception>
+      <exception cref="T:System.InvalidOperationException">The <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> is closed. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

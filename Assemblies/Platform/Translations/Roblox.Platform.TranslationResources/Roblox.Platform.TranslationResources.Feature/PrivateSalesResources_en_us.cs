@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class PrivateSalesResources_en_us : TranslationResourcesBase, IPrivateSalesResources, ITranslationResources
 
 {
@@ -226,3 +226,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

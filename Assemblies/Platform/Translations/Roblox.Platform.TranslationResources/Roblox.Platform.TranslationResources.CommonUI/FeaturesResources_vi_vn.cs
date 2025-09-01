@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
@@ -10,20 +12,20 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "Vá» Ä‘áº§u trang";
+	public override string ActionBackToTop => "Về đầu trang";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// Purchase access to the place button
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "Mua quyá»n truy cáº­p";
+	public override string ActionBuyAccess => "Mua quyền truy cập";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Há»§y";
+	public override string ActionCancel => "Hủy";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -35,205 +37,205 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.sUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionsUpgradeNow => "NÃ¢ng cáº¥p ngay";
+	public override string ActionsUpgradeNow => "Nâng cấp ngay";
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, logo Roblox vÃ  Powering Imagination lÃ  cÃ¡c thÆ°Æ¡ng hiá»‡u Ä‘Ã£ Ä‘Äƒng kÃ½ vÃ  chÆ°a Ä‘Äƒng kÃ½ cá»§a chÃºng tÃ´i táº¡i Hoa Ká»³ vÃ  cÃ¡c quá»‘c gia khÃ¡c.";
+	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, logo Roblox và Powering Imagination là các thương hiệu đã đăng ký và chưa đăng ký của chúng tôi tại Hoa Kỳ và các quốc gia khác.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "Máº·c dÃ¹ má»™t sá»‘ trÃ² chÆ¡i cÃ³ thá»ƒ sá»­ dá»¥ng ngÃ´n ngá»¯ Ä‘Ã£ chá»n, nhÆ°ng ngÃ´n ngá»¯ nÃ y khÃ´ng Ä‘Æ°á»£c roblox.com há»— trá»£ Ä‘áº§y Ä‘á»§.";
+	public override string DescriptionUnsupportedLanguage => "Mặc dù một số trò chơi có thể sử dụng ngôn ngữ đã chọn, nhưng ngôn ngữ này không được roblox.com hỗ trợ đầy đủ.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// Purchase access to the place
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "Mua váº­t pháº©m";
+	public override string HeadingBuyItem => "Mua vật phẩm";
 
 	/// <summary>
 	/// Key: "Heading.UnsupportedLanguage"
 	/// English String: "Unsupported Language"
 	/// </summary>
-	public override string HeadingUnsupportedLanguage => "NgÃ´n ngá»¯ khÃ´ng Ä‘Æ°á»£c há»— trá»£";
+	public override string HeadingUnsupportedLanguage => "Ngôn ngữ không được hỗ trợ";
 
 	/// <summary>
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "Vá» chÃºng tÃ´i";
+	public override string LabelAboutUs => "Về chúng tôi";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "Lá»—i xÃ¡c thá»±c";
+	public override string LabelAuthenticationError => "Lỗi xác thực";
 
 	/// <summary>
 	/// Key: "Label.Badges"
 	/// page title
 	/// English String: "Badges"
 	/// </summary>
-	public override string LabelBadges => "Huy hiá»‡u";
+	public override string LabelBadges => "Huy hiệu";
 
 	/// <summary>
 	/// Key: "Label.Careers"
 	/// English String: "Careers"
 	/// </summary>
-	public override string LabelCareers => "Tuyá»ƒn dá»¥ng";
+	public override string LabelCareers => "Tuyển dụng";
 
 	/// <summary>
 	/// Key: "Label.Configure"
 	/// Configure
 	/// English String: "Configure"
 	/// </summary>
-	public override string LabelConfigure => "Thiáº¿t láº­p";
+	public override string LabelConfigure => "Thiết lập";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGame"
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "Thiáº¿t láº­p game";
+	public override string LabelConfigureGame => "Thiết lập game";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "Thiáº¿t láº­p Äá»‹a Ä‘iá»ƒm";
+	public override string LabelConfigurePlace => "Thiết lập Địa điểm";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "Thiáº¿t láº­p mÃ¡y chá»§ VIP";
+	public override string LabelConfigurePrivateServer => "Thiết lập máy chủ VIP";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "LiÃªn há»‡ chÃºng tÃ´i";
+	public override string LabelContactUs => "Liên hệ chúng tôi";
 
 	/// <summary>
 	/// Key: "Label.Create"
 	/// Alternate name for the "Develop" section of the website
 	/// English String: "Create"
 	/// </summary>
-	public override string LabelCreate => "Táº¡o";
+	public override string LabelCreate => "Tạo";
 
 	/// <summary>
 	/// Key: "Label.CreateGame"
 	/// Create Game
 	/// English String: "Create Game"
 	/// </summary>
-	public override string LabelCreateGame => "Táº¡o TrÃ² chÆ¡i";
+	public override string LabelCreateGame => "Tạo Trò chơi";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// Create Group
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "Táº¡o NhÃ³m";
+	public override string LabelCreateGroup => "Tạo Nhóm";
 
 	/// <summary>
 	/// Key: "Label.Discover"
 	/// English String: "Discover"
 	/// </summary>
-	public override string LabelDiscover => "KhÃ¡m phÃ¡";
+	public override string LabelDiscover => "Khám phá";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// Favorites
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "YÃªu thÃ­ch";
+	public override string LabelFavorites => "Yêu thích";
 
 	/// <summary>
 	/// Key: "Label.Feeds"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string LabelFeeds => "Nguá»“n tin cá»§a tÃ´i";
+	public override string LabelFeeds => "Nguồn tin của tôi";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Báº¡n Ä‘ang tÃ¬m Nguá»“n tin cá»§a tÃ´i? HÃ£y tÃ¬m trong menu cáº¡nh bÃªn";
+	public override string LabelFindMyFeed => "Bạn đang tìm Nguồn tin của tôi? Hãy tìm trong menu cạnh bên";
 
 	/// <summary>
 	/// Key: "Label.Help"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelHelp => "Trá»£ giÃºp";
+	public override string LabelHelp => "Trợ giúp";
 
 	/// <summary>
 	/// Key: "Label.Jobs"
 	/// jobs link in footer
 	/// English String: "Jobs"
 	/// </summary>
-	public override string LabelJobs => "Viá»‡c lÃ m";
+	public override string LabelJobs => "Việc làm";
 
 	/// <summary>
 	/// Key: "Label.Library"
 	/// search context for inventory search
 	/// English String: "Library"
 	/// </summary>
-	public override string LabelLibrary => "ThÆ° viá»‡n";
+	public override string LabelLibrary => "Thư viện";
 
 	/// <summary>
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "CÃ¡c mÃ³n hÃ ng";
+	public override string LabelMerch => "Các món hàng";
 
 	/// <summary>
 	/// Key: "Label.Parents"
 	/// English String: "Parents"
 	/// </summary>
-	public override string LabelParents => "Cha máº¹";
+	public override string LabelParents => "Cha mẹ";
 
 	/// <summary>
 	/// Key: "Label.PlaceStatistics"
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "Thá»‘ng kÃª vá» Ä‘á»‹a Ä‘iá»ƒm";
+	public override string LabelPlaceStatistics => "Thống kê về địa điểm";
 
 	/// <summary>
 	/// Key: "Label.Players"
 	/// search context for user search
 	/// English String: "Players"
 	/// </summary>
-	public override string LabelPlayers => "NgÆ°á»i chÆ¡i";
+	public override string LabelPlayers => "Người chơi";
 
 	/// <summary>
 	/// Key: "Label.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string LabelPrivacy => "RiÃªng tÆ°";
+	public override string LabelPrivacy => "Riêng tư";
 
 	/// <summary>
 	/// Key: "Label.RedeemRobloxCards"
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "Quy Ä‘á»•i Tháº» Roblox";
+	public override string LabelRedeemRobloxCards => "Quy đổi Thẻ Roblox";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
 	/// English String: "Avatar"
 	/// </summary>
-	public override string LabelsAvatar => "HÃ¬nh Ä‘áº¡i diá»‡n";
+	public override string LabelsAvatar => "Hình đại diện";
 
 	/// <summary>
 	/// Key: "Label.sBlog"
@@ -245,49 +247,49 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "Danh má»¥c";
+	public override string LabelsCatalog => "Danh mục";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelsDevelop => "PhÃ¡t triá»ƒn";
+	public override string LabelsDevelop => "Phát triển";
 
 	/// <summary>
 	/// Key: "Label.sEvents"
 	/// English String: "Events"
 	/// </summary>
-	public override string LabelsEvents => "Sá»± kiá»‡n";
+	public override string LabelsEvents => "Sự kiện";
 
 	/// <summary>
 	/// Key: "Label.sForum"
 	/// English String: "Forum"
 	/// </summary>
-	public override string LabelsForum => "Diá»…n Ä‘Ã n";
+	public override string LabelsForum => "Diễn đàn";
 
 	/// <summary>
 	/// Key: "Label.sFriends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelsFriends => "Báº¡n bÃ¨";
+	public override string LabelsFriends => "Bạn bè";
 
 	/// <summary>
 	/// Key: "Label.sGames"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelsGames => "TrÃ² chÆ¡i";
+	public override string LabelsGames => "Trò chơi";
 
 	/// <summary>
 	/// Key: "Label.sGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string LabelsGroups => "NhÃ³m";
+	public override string LabelsGroups => "Nhóm";
 
 	/// <summary>
 	/// Key: "Label.sHome"
 	/// English String: "Home"
 	/// </summary>
-	public override string LabelsHome => "Trang chá»§";
+	public override string LabelsHome => "Trang chủ";
 
 	/// <summary>
 	/// Key: "Label.sInventory"
@@ -299,19 +301,19 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "ÄÄƒng nháº­p";
+	public override string LabelsLogin => "Đăng nhập";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
 	/// English String: "Messages"
 	/// </summary>
-	public override string LabelsMessages => "Tin nháº¯n";
+	public override string LabelsMessages => "Tin nhắn";
 
 	/// <summary>
 	/// Key: "Label.sProfile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string LabelsProfile => "Há»“ sÆ¡";
+	public override string LabelsProfile => "Hồ sơ";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -323,65 +325,65 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sSearch"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelsSearch => "TÃ¬m kiáº¿m";
+	public override string LabelsSearch => "Tìm kiếm";
 
 	/// <summary>
 	/// Key: "Label.sShop"
 	/// English String: "Shop"
 	/// </summary>
-	public override string LabelsShop => "Cá»­a hÃ ng";
+	public override string LabelsShop => "Cửa hàng";
 
 	/// <summary>
 	/// Key: "Label.sSignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string LabelsSignUp => "ÄÄƒng kÃ½";
+	public override string LabelsSignUp => "Đăng ký";
 
 	/// <summary>
 	/// Key: "Label.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string LabelStore => "Cá»­a hÃ ng";
+	public override string LabelStore => "Cửa hàng";
 
 	/// <summary>
 	/// Key: "Label.sTrade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelsTrade => "Trao Ä‘á»•i";
+	public override string LabelsTrade => "Trao đổi";
 
 	/// <summary>
 	/// Key: "Label.Support"
 	/// page title
 	/// English String: "Support"
 	/// </summary>
-	public override string LabelSupport => "Há»— trá»£";
+	public override string LabelSupport => "Hỗ trợ";
 
 	/// <summary>
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "Äiá»u khoáº£n";
+	public override string LabelTerms => "Điều khoản";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Äiá»u khoáº£n sá»­ dá»¥ng";
+	public override string LabelTermsOfUse => "Điều khoản sử dụng";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
 	/// page title
 	/// English String: "Thanks"
 	/// </summary>
-	public override string LabelThanks => "Cáº£m Æ¡n";
+	public override string LabelThanks => "Cảm ơn";
 
 	/// <summary>
 	/// Key: "Label.Upgrade"
 	/// Upgrade
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string LabelUpgrade => "NÃ¢ng cáº¥p";
+	public override string LabelUpgrade => "Nâng cấp";
 
 	public FeaturesResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -390,17 +392,17 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "Vá» Ä‘áº§u trang";
+		return "Về đầu trang";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "Mua quyá»n truy cáº­p";
+		return "Mua quyền truy cập";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Há»§y";
+		return "Hủy";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -410,7 +412,7 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionsUpgradeNow()
 	{
-		return "NÃ¢ng cáº¥p ngay";
+		return "Nâng cấp ngay";
 	}
 
 	/// <summary>
@@ -419,37 +421,37 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"Báº¡n cÃ³ muá»‘n mua quyá»n truy cáº­p tá»›i Äá»‹a Ä‘iá»ƒm: {placeName} tá»« {creatorName} vá»›i giÃ¡ {robux} khÃ´ng?";
+		return $"Bạn có muốn mua quyền truy cập tới Địa điểm: {placeName} từ {creatorName} với giá {robux} không?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "Báº¡n cÃ³ muá»‘n mua quyá»n truy cáº­p tá»›i Äá»‹a Ä‘iá»ƒm: {placeName} tá»« {creatorName} vá»›i giÃ¡ {robux} khÃ´ng?";
+		return "Bạn có muốn mua quyền truy cập tới Địa điểm: {placeName} từ {creatorName} với giá {robux} không?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "Â©2018 Roblox Corporation. Roblox, logo Roblox vÃ  Powering Imagination lÃ  cÃ¡c thÆ°Æ¡ng hiá»‡u Ä‘Ã£ Ä‘Äƒng kÃ½ vÃ  chÆ°a Ä‘Äƒng kÃ½ cá»§a chÃºng tÃ´i táº¡i Hoa Ká»³ vÃ  cÃ¡c quá»‘c gia khÃ¡c.";
+		return "©2018 Roblox Corporation. Roblox, logo Roblox và Powering Imagination là các thương hiệu đã đăng ký và chưa đăng ký của chúng tôi tại Hoa Kỳ và các quốc gia khác.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"Â©{copyrightYear} Roblox Corporation. Roblox, logo Roblox vÃ  Powering Imagination lÃ  cÃ¡c nhÃ£n hiá»‡u Ä‘Ã£ Ä‘Äƒng kÃ½ vÃ  chÆ°a Ä‘Äƒng kÃ½ cá»§a chÃºng tÃ´i táº¡i Hoa Ká»³ vÃ  cÃ¡c quá»‘c gia khÃ¡c.";
+		return $"©{copyrightYear} Roblox Corporation. Roblox, logo Roblox và Powering Imagination là các nhãn hiệu đã đăng ký và chưa đăng ký của chúng tôi tại Hoa Kỳ và các quốc gia khác.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "Â©{copyrightYear} Roblox Corporation. Roblox, logo Roblox vÃ  Powering Imagination lÃ  cÃ¡c nhÃ£n hiá»‡u Ä‘Ã£ Ä‘Äƒng kÃ½ vÃ  chÆ°a Ä‘Äƒng kÃ½ cá»§a chÃºng tÃ´i táº¡i Hoa Ká»³ vÃ  cÃ¡c quá»‘c gia khÃ¡c.";
+		return "©{copyrightYear} Roblox Corporation. Roblox, logo Roblox và Powering Imagination là các nhãn hiệu đã đăng ký và chưa đăng ký của chúng tôi tại Hoa Kỳ và các quốc gia khác.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "Máº·c dÃ¹ má»™t sá»‘ trÃ² chÆ¡i cÃ³ thá»ƒ sá»­ dá»¥ng ngÃ´n ngá»¯ Ä‘Ã£ chá»n, nhÆ°ng ngÃ´n ngá»¯ nÃ y khÃ´ng Ä‘Æ°á»£c roblox.com há»— trá»£ Ä‘áº§y Ä‘á»§.";
+		return "Mặc dù một số trò chơi có thể sử dụng ngôn ngữ đã chọn, nhưng ngôn ngữ này không được roblox.com hỗ trợ đầy đủ.";
 	}
 
 	/// <summary>
@@ -458,152 +460,152 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"{userLanguage} hiá»‡n khÃ´ng kháº£ dá»¥ng trÃªn roblox.com. Báº¡n sáº½ tháº¥y ná»™i dung trong trÃ² chÆ¡i báº±ng {platformLanguage}, vÃ  roblox.com Ä‘Ã£ Ä‘Æ°á»£c Ä‘áº·t thÃ nh tiáº¿ng Anh.";
+		return $"{userLanguage} hiện không khả dụng trên roblox.com. Bạn sẽ thấy nội dung trong trò chơi bằng {platformLanguage}, và roblox.com đã được đặt thành tiếng Anh.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "{userLanguage} hiá»‡n khÃ´ng kháº£ dá»¥ng trÃªn roblox.com. Báº¡n sáº½ tháº¥y ná»™i dung trong trÃ² chÆ¡i báº±ng {platformLanguage}, vÃ  roblox.com Ä‘Ã£ Ä‘Æ°á»£c Ä‘áº·t thÃ nh tiáº¿ng Anh.";
+		return "{userLanguage} hiện không khả dụng trên roblox.com. Bạn sẽ thấy nội dung trong trò chơi bằng {platformLanguage}, và roblox.com đã được đặt thành tiếng Anh.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "Mua váº­t pháº©m";
+		return "Mua vật phẩm";
 	}
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
 	{
-		return "NgÃ´n ngá»¯ khÃ´ng Ä‘Æ°á»£c há»— trá»£";
+		return "Ngôn ngữ không được hỗ trợ";
 	}
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "Vá» chÃºng tÃ´i";
+		return "Về chúng tôi";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "Lá»—i xÃ¡c thá»±c";
+		return "Lỗi xác thực";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
 	{
-		return "Huy hiá»‡u";
+		return "Huy hiệu";
 	}
 
 	protected override string _GetTemplateForLabelCareers()
 	{
-		return "Tuyá»ƒn dá»¥ng";
+		return "Tuyển dụng";
 	}
 
 	protected override string _GetTemplateForLabelConfigure()
 	{
-		return "Thiáº¿t láº­p";
+		return "Thiết lập";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "Thiáº¿t láº­p game";
+		return "Thiết lập game";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "Thiáº¿t láº­p Äá»‹a Ä‘iá»ƒm";
+		return "Thiết lập Địa điểm";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "Thiáº¿t láº­p mÃ¡y chá»§ VIP";
+		return "Thiết lập máy chủ VIP";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "LiÃªn há»‡ chÃºng tÃ´i";
+		return "Liên hệ chúng tôi";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
 	{
-		return "Táº¡o";
+		return "Tạo";
 	}
 
 	protected override string _GetTemplateForLabelCreateGame()
 	{
-		return "Táº¡o TrÃ² chÆ¡i";
+		return "Tạo Trò chơi";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "Táº¡o NhÃ³m";
+		return "Tạo Nhóm";
 	}
 
 	protected override string _GetTemplateForLabelDiscover()
 	{
-		return "KhÃ¡m phÃ¡";
+		return "Khám phá";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "YÃªu thÃ­ch";
+		return "Yêu thích";
 	}
 
 	protected override string _GetTemplateForLabelFeeds()
 	{
-		return "Nguá»“n tin cá»§a tÃ´i";
+		return "Nguồn tin của tôi";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Báº¡n Ä‘ang tÃ¬m Nguá»“n tin cá»§a tÃ´i? HÃ£y tÃ¬m trong menu cáº¡nh bÃªn";
+		return "Bạn đang tìm Nguồn tin của tôi? Hãy tìm trong menu cạnh bên";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
 	{
-		return "Trá»£ giÃºp";
+		return "Trợ giúp";
 	}
 
 	protected override string _GetTemplateForLabelJobs()
 	{
-		return "Viá»‡c lÃ m";
+		return "Việc làm";
 	}
 
 	protected override string _GetTemplateForLabelLibrary()
 	{
-		return "ThÆ° viá»‡n";
+		return "Thư viện";
 	}
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "CÃ¡c mÃ³n hÃ ng";
+		return "Các món hàng";
 	}
 
 	protected override string _GetTemplateForLabelParents()
 	{
-		return "Cha máº¹";
+		return "Cha mẹ";
 	}
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "Thá»‘ng kÃª vá» Ä‘á»‹a Ä‘iá»ƒm";
+		return "Thống kê về địa điểm";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
 	{
-		return "NgÆ°á»i chÆ¡i";
+		return "Người chơi";
 	}
 
 	protected override string _GetTemplateForLabelPrivacy()
 	{
-		return "RiÃªng tÆ°";
+		return "Riêng tư";
 	}
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "Quy Ä‘á»•i Tháº» Roblox";
+		return "Quy đổi Thẻ Roblox";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
 	{
-		return "HÃ¬nh Ä‘áº¡i diá»‡n";
+		return "Hình đại diện";
 	}
 
 	protected override string _GetTemplateForLabelsBlog()
@@ -613,42 +615,42 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "Danh má»¥c";
+		return "Danh mục";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
 	{
-		return "PhÃ¡t triá»ƒn";
+		return "Phát triển";
 	}
 
 	protected override string _GetTemplateForLabelsEvents()
 	{
-		return "Sá»± kiá»‡n";
+		return "Sự kiện";
 	}
 
 	protected override string _GetTemplateForLabelsForum()
 	{
-		return "Diá»…n Ä‘Ã n";
+		return "Diễn đàn";
 	}
 
 	protected override string _GetTemplateForLabelsFriends()
 	{
-		return "Báº¡n bÃ¨";
+		return "Bạn bè";
 	}
 
 	protected override string _GetTemplateForLabelsGames()
 	{
-		return "TrÃ² chÆ¡i";
+		return "Trò chơi";
 	}
 
 	protected override string _GetTemplateForLabelsGroups()
 	{
-		return "NhÃ³m";
+		return "Nhóm";
 	}
 
 	protected override string _GetTemplateForLabelsHome()
 	{
-		return "Trang chá»§";
+		return "Trang chủ";
 	}
 
 	protected override string _GetTemplateForLabelsInventory()
@@ -658,17 +660,17 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "ÄÄƒng nháº­p";
+		return "Đăng nhập";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
 	{
-		return "Tin nháº¯n";
+		return "Tin nhắn";
 	}
 
 	protected override string _GetTemplateForLabelsProfile()
 	{
-		return "Há»“ sÆ¡";
+		return "Hồ sơ";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -678,7 +680,7 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsSearch()
 	{
-		return "TÃ¬m kiáº¿m";
+		return "Tìm kiếm";
 	}
 
 	/// <summary>
@@ -687,57 +689,57 @@ internal class FeaturesResources_vi_vn : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string LabelsSearchPhrase(string phrase, string location)
 	{
-		return $"TÃ¬m kiáº¿m \"{phrase}\" trong {location}";
+		return $"Tìm kiếm \"{phrase}\" trong {location}";
 	}
 
 	protected override string _GetTemplateForLabelsSearchPhrase()
 	{
-		return "TÃ¬m kiáº¿m \"{phrase}\" trong {location}";
+		return "Tìm kiếm \"{phrase}\" trong {location}";
 	}
 
 	protected override string _GetTemplateForLabelsShop()
 	{
-		return "Cá»­a hÃ ng";
+		return "Cửa hàng";
 	}
 
 	protected override string _GetTemplateForLabelsSignUp()
 	{
-		return "ÄÄƒng kÃ½";
+		return "Đăng ký";
 	}
 
 	protected override string _GetTemplateForLabelStore()
 	{
-		return "Cá»­a hÃ ng";
+		return "Cửa hàng";
 	}
 
 	protected override string _GetTemplateForLabelsTrade()
 	{
-		return "Trao Ä‘á»•i";
+		return "Trao đổi";
 	}
 
 	protected override string _GetTemplateForLabelSupport()
 	{
-		return "Há»— trá»£";
+		return "Hỗ trợ";
 	}
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "Äiá»u khoáº£n";
+		return "Điều khoản";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Äiá»u khoáº£n sá»­ dá»¥ng";
+		return "Điều khoản sử dụng";
 	}
 
 	protected override string _GetTemplateForLabelThanks()
 	{
-		return "Cáº£m Æ¡n";
+		return "Cảm ơn";
 	}
 
 	protected override string _GetTemplateForLabelUpgrade()
 	{
-		return "NÃ¢ng cáº¥p";
+		return "Nâng cấp";
 	}
 }
 

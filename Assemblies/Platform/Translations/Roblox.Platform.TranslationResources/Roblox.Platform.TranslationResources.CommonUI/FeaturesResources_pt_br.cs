@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
@@ -40,15 +42,15 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estÃ£o entre nossas marcas registradas e nÃ£o registradas nos EUA e outros paÃ­ses.";
+	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estão entre nossas marcas registradas e não registradas nos EUA e outros países.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "Embora alguns jogos usem o idioma selecionado, roblox.com nÃ£o tem suporte para ele.";
+	public override string DescriptionUnsupportedLanguage => "Embora alguns jogos usem o idioma selecionado, roblox.com não tem suporte para ele.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
@@ -61,20 +63,20 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Heading.UnsupportedLanguage"
 	/// English String: "Unsupported Language"
 	/// </summary>
-	public override string HeadingUnsupportedLanguage => "Idioma nÃ£o incluso";
+	public override string HeadingUnsupportedLanguage => "Idioma não incluso";
 
 	/// <summary>
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "Sobre nÃ³s";
+	public override string LabelAboutUs => "Sobre nós";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "Erro de autenticaÃ§Ã£o";
+	public override string LabelAuthenticationError => "Erro de autenticação";
 
 	/// <summary>
 	/// Key: "Label.Badges"
@@ -200,14 +202,14 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.Parents"
 	/// English String: "Parents"
 	/// </summary>
-	public override string LabelParents => "ResponsÃ¡veis";
+	public override string LabelParents => "Responsáveis";
 
 	/// <summary>
 	/// Key: "Label.PlaceStatistics"
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "EstatÃ­sticas do local";
+	public override string LabelPlaceStatistics => "Estatísticas do local";
 
 	/// <summary>
 	/// Key: "Label.Players"
@@ -227,7 +229,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "Usar cartÃµes Roblox";
+	public override string LabelRedeemRobloxCards => "Usar cartões Roblox";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
@@ -245,7 +247,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "CatÃ¡logo";
+	public override string LabelsCatalog => "Catálogo";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
@@ -263,7 +265,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sForum"
 	/// English String: "Forum"
 	/// </summary>
-	public override string LabelsForum => "FÃ³rum";
+	public override string LabelsForum => "Fórum";
 
 	/// <summary>
 	/// Key: "Label.sFriends"
@@ -287,13 +289,13 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sHome"
 	/// English String: "Home"
 	/// </summary>
-	public override string LabelsHome => "InÃ­cio";
+	public override string LabelsHome => "Início";
 
 	/// <summary>
 	/// Key: "Label.sInventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string LabelsInventory => "InventÃ¡rio";
+	public override string LabelsInventory => "Inventário";
 
 	/// <summary>
 	/// Key: "Label.sLogin"
@@ -429,27 +431,27 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "Â©2018 Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estÃ£o entre nossas marcas registradas e nÃ£o registradas nos EUA e outros paÃ­ses.";
+		return "©2018 Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estão entre nossas marcas registradas e não registradas nos EUA e outros países.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"Â©{copyrightYear} Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estÃ£o entre nossas marcas registradas e nÃ£o registradas nos EUA e outros paÃ­ses.";
+		return $"©{copyrightYear} Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estão entre nossas marcas registradas e não registradas nos EUA e outros países.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "Â©{copyrightYear} Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estÃ£o entre nossas marcas registradas e nÃ£o registradas nos EUA e outros paÃ­ses.";
+		return "©{copyrightYear} Roblox Corporation. Roblox, o logotipo Roblox e Powering Imagination estão entre nossas marcas registradas e não registradas nos EUA e outros países.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "Embora alguns jogos usem o idioma selecionado, roblox.com nÃ£o tem suporte para ele.";
+		return "Embora alguns jogos usem o idioma selecionado, roblox.com não tem suporte para ele.";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"{userLanguage} nÃ£o estÃ¡ disponÃ­vel no momento em roblox.com. VocÃª verÃ¡ o conteÃºdo no jogo em {platformLanguage} e roblox.com serÃ¡ exibido em inglÃªs.";
+		return $"{userLanguage} não está disponível no momento em roblox.com. Você verá o conteúdo no jogo em {platformLanguage} e roblox.com será exibido em inglês.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "{userLanguage} nÃ£o estÃ¡ disponÃ­vel no momento em roblox.com. VocÃª verÃ¡ o conteÃºdo no jogo em {platformLanguage} e roblox.com serÃ¡ exibido em inglÃªs.";
+		return "{userLanguage} não está disponível no momento em roblox.com. Você verá o conteúdo no jogo em {platformLanguage} e roblox.com será exibido em inglês.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
@@ -473,17 +475,17 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
 	{
-		return "Idioma nÃ£o incluso";
+		return "Idioma não incluso";
 	}
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "Sobre nÃ³s";
+		return "Sobre nós";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "Erro de autenticaÃ§Ã£o";
+		return "Erro de autenticação";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
@@ -578,12 +580,12 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelParents()
 	{
-		return "ResponsÃ¡veis";
+		return "Responsáveis";
 	}
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "EstatÃ­sticas do local";
+		return "Estatísticas do local";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
@@ -598,7 +600,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "Usar cartÃµes Roblox";
+		return "Usar cartões Roblox";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
@@ -613,7 +615,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "CatÃ¡logo";
+		return "Catálogo";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
@@ -628,7 +630,7 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsForum()
 	{
-		return "FÃ³rum";
+		return "Fórum";
 	}
 
 	protected override string _GetTemplateForLabelsFriends()
@@ -648,12 +650,12 @@ internal class FeaturesResources_pt_br : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsHome()
 	{
-		return "InÃ­cio";
+		return "Início";
 	}
 
 	protected override string _GetTemplateForLabelsInventory()
 	{
-		return "InventÃ¡rio";
+		return "Inventário";
 	}
 
 	protected override string _GetTemplateForLabelsLogin()

@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Assets.Properties;
@@ -123,3 +123,4 @@ internal class NamespaceDAL
 		return EntityHelper.GetOrCreateEntityDAL(new DbInfo(_DbConnectionString, "[dbo].[Namespaces_GetOrCreateNamespace]", queryParameters), BuildDAL);
 	}
 }
+

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 namespace Roblox.Platform.Permissions.Client {
 
@@ -97,7 +97,4 @@ namespace Roblox.Platform.Permissions.Client {
         public string PermissionType { get; set; }
         public long? PermissionTypeTargetId { get; set; }
     }
-}
-
-
 }

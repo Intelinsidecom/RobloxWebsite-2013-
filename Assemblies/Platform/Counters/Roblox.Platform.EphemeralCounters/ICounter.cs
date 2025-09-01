@@ -1,22 +1,20 @@
-﻿using System;
-namespace Roblox.Platform.EphemeralCounterspublic {
-    interface ICounter
-
+using System;
+namespace Roblox.Platform.EphemeralCounters
 {
-	long GetCount();
+    public interface ICounter
+    {
+        long GetCount();
 
-	long FlushCount();
+        long FlushCount();
 
-	void Increment(int amount = 1);
+        void Increment(int amount = 1);
 
-	void Decrement(int amount = 1);
+        void Decrement(int amount = 1);
 
-	void IncrementInBackground(int value = 1, Action<Exception> exceptionHandler = null);
+        void IncrementInBackground(int value = 1, Action<Exception> exceptionHandler = null);
 
-	void DecrementInBackground(int value = 1, Action<Exception> exceptionHandler = null);
+        void DecrementInBackground(int value = 1, Action<Exception> exceptionHandler = null);
 
-	void Delete();
-}
-
-
+        void Delete();
+    }
 }

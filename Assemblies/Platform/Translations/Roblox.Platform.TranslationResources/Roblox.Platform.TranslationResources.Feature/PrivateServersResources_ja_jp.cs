@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateServersResources_en_us to provide locale specific translations where possible,
@@ -10,82 +12,82 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// Key: "Action.CreateVipServer"
 	/// English String: "Create VIP Server"
 	/// </summary>
-	public override string ActionCreateVipServer => "VIPã‚µãƒ¼ãƒãƒ¼ã®ä½œæˆ";
+	public override string ActionCreateVipServer => "VIPサーバーの作成";
 
 	/// <summary>
 	/// Key: "Action.Refresh"
 	/// English String: "Refresh"
 	/// </summary>
-	public override string ActionRefresh => "ãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥";
+	public override string ActionRefresh => "リフレッシュ";
 
 	/// <summary>
 	/// Key: "Heading.InvalidLink"
 	/// Dialog title when the link to a VIP server is invalid
 	/// English String: "Invalid Link"
 	/// </summary>
-	public override string HeadingInvalidLink => "ç„¡åŠ¹ãªãƒªãƒ³ã‚¯";
+	public override string HeadingInvalidLink => "無効なリンク";
 
 	/// <summary>
 	/// Key: "Heading.VipServers"
 	/// English String: "VIP Servers"
 	/// </summary>
-	public override string HeadingVipServers => "VIPã‚µãƒ¼ãƒãƒ¼";
+	public override string HeadingVipServers => "VIPサーバー";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string LabelCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Label.GameJoinPrivateErrorTitle"
 	/// Title of error window when trying to join a private server user does not have access to.
 	/// English String: "Unable to join"
 	/// </summary>
-	public override string LabelGameJoinPrivateErrorTitle => "å‚åŠ ã§ãã¾ã›ã‚“";
+	public override string LabelGameJoinPrivateErrorTitle => "参加できません";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "ã‚²ãƒ¼ãƒ å";
+	public override string LabelGameName => "ゲーム名";
 
 	/// <summary>
 	/// Key: "Label.NoVipServers"
 	/// No VIP Server Instances Found.
 	/// English String: "No VIP Server Instances Found."
 	/// </summary>
-	public override string LabelNoVipServers => "VIPã‚µãƒ¼ãƒãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
+	public override string LabelNoVipServers => "VIPサーバーのインスタンスが見つかりません。";
 
 	/// <summary>
 	/// Key: "Label.PlayWithOthers"
 	/// English String: "Play this game with friends and other people you invite."
 	/// </summary>
-	public override string LabelPlayWithOthers => "å‹é”ã‚„æ‹›å¾…ã—ãŸãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨ä¸€ç·’ã«ã€ã“ã®ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã—ã‚ˆã†ã€‚";
+	public override string LabelPlayWithOthers => "友達や招待したプレイヤーと一緒に、このゲームをプレイしよう。";
 
 	/// <summary>
 	/// Key: "Label.Renew"
 	/// English String: "Renew"
 	/// </summary>
-	public override string LabelRenew => "æ›´æ–°";
+	public override string LabelRenew => "更新";
 
 	/// <summary>
 	/// Key: "Label.RenewPrivateServer"
 	/// English String: "Renew Private Server"
 	/// </summary>
-	public override string LabelRenewPrivateServer => "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆã‚µãƒ¼ãƒãƒ¼ã‚’æ›´æ–°";
+	public override string LabelRenewPrivateServer => "プライベートサーバーを更新";
 
 	/// <summary>
 	/// Key: "Label.ServerName"
 	/// English String: "Server Name"
 	/// </summary>
-	public override string LabelServerName => "ã‚µãƒ¼ãƒãƒ¼å";
+	public override string LabelServerName => "サーバー名";
 
 	/// <summary>
 	/// Key: "Label.Servers"
 	/// English String: "Servers"
 	/// </summary>
-	public override string LabelServers => "ã‚µãƒ¼ãƒãƒ¼";
+	public override string LabelServers => "サーバー";
 
 	/// <summary>
 	/// Key: "Label.VIPServerGameJoinErrorAcknowledgement"
@@ -99,20 +101,20 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// Error when user wants to join a VIP server when the game is marked private
 	/// English String: "You cannot join this VIP server because the game is private."
 	/// </summary>
-	public override string LabelVipServerJoinGamePrivateError => "ã‚²ãƒ¼ãƒ ãŒãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
+	public override string LabelVipServerJoinGamePrivateError => "ゲームがプライベート設定になっているため、このVIPサーバーに参加できません。";
 
 	/// <summary>
 	/// Key: "Label.VipServersAbout"
 	/// English String: "VIP servers let you play this game privately with friends, your clan, or people you invite!"
 	/// </summary>
-	public override string LabelVipServersAbout => "VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã“ã®ã‚²ãƒ¼ãƒ ã‚’å‹é”ã€ã‚¯ãƒ©ãƒ³ã€æ‹›å¾…ã—ãŸãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãªã©ã¨ä¸€ç·’ã«éžå…¬é–‹ã§ãƒ—ãƒ¬ã‚¤ã§ãã¾ã™ï¼";
+	public override string LabelVipServersAbout => "VIPサーバーは、このゲームを友達、クラン、招待したプレイヤーなどと一緒に非公開でプレイできます！";
 
 	/// <summary>
 	/// Key: "Message.InvalidLink"
 	/// Dialog content when the link to a VIP server is invalid
 	/// English String: "This VIP Server link is no longer valid."
 	/// </summary>
-	public override string MessageInvalidLink => "ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã®ãƒªãƒ³ã‚¯ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚";
+	public override string MessageInvalidLink => "このVIPサーバーのリンクは無効になりました。";
 
 	public PrivateServersResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -121,27 +123,27 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForActionCreateVipServer()
 	{
-		return "VIPã‚µãƒ¼ãƒãƒ¼ã®ä½œæˆ";
+		return "VIPサーバーの作成";
 	}
 
 	protected override string _GetTemplateForActionRefresh()
 	{
-		return "ãƒªãƒ•ãƒ¬ãƒƒã‚·ãƒ¥";
+		return "リフレッシュ";
 	}
 
 	protected override string _GetTemplateForHeadingInvalidLink()
 	{
-		return "ç„¡åŠ¹ãªãƒªãƒ³ã‚¯";
+		return "無効なリンク";
 	}
 
 	protected override string _GetTemplateForHeadingVipServers()
 	{
-		return "VIPã‚µãƒ¼ãƒãƒ¼";
+		return "VIPサーバー";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	/// <summary>
@@ -150,12 +152,12 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelConfirmEnableFuturePayments(string placeName, string creatorName)
 	{
-		return $"{creatorName} ã•ã‚“ãŒä½œã£ãŸ {placeName} ã®ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆVIPãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¸ã®ä»Šå¾Œã®æ”¯æ‰•ã„ã‚’æœ‰åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return $"{creatorName} さんが作った {placeName} のプライベートVIPバージョンへの今後の支払いを有効にしてよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelConfirmEnableFuturePayments()
 	{
-		return "{creatorName} ã•ã‚“ãŒä½œã£ãŸ {placeName} ã®ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆVIPãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¸ã®ä»Šå¾Œã®æ”¯æ‰•ã„ã‚’æœ‰åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "{creatorName} さんが作った {placeName} のプライベートVIPバージョンへの今後の支払いを有効にしてよろしいですか？";
 	}
 
 	/// <summary>
@@ -164,12 +166,12 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelCreateVipServerFor(string target)
 	{
-		return $"{target} ã®VIPã‚µãƒ¼ãƒãƒ¼ã‚’ä½œã‚Šã¾ã™ã‹ï¼Ÿ";
+		return $"{target} のVIPサーバーを作りますか？";
 	}
 
 	protected override string _GetTemplateForLabelCreateVipServerFor()
 	{
-		return "{target} ã®VIPã‚µãƒ¼ãƒãƒ¼ã‚’ä½œã‚Šã¾ã™ã‹ï¼Ÿ";
+		return "{target} のVIPサーバーを作りますか？";
 	}
 
 	/// <summary>
@@ -178,42 +180,42 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelFooterText(string robuxIcon)
 	{
-		return $"å–å¼•å¾Œã®æ®‹é«˜ã¯{robuxIcon}ã«ãªã‚Šã¾ã™ã€‚ã“ã‚Œã¯ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æ–¹å¼ã®æ©Ÿèƒ½ã§ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§ã€æ¯Žæœˆ1åº¦è‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
+		return $"取引後の残高は{robuxIcon}になります。これはサブスクリプション方式の機能です。サブスクリプションをキャンセルするまで、毎月1度自動更新されます。";
 	}
 
 	protected override string _GetTemplateForLabelFooterText()
 	{
-		return "å–å¼•å¾Œã®æ®‹é«˜ã¯{robuxIcon}ã«ãªã‚Šã¾ã™ã€‚ã“ã‚Œã¯ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³æ–¹å¼ã®æ©Ÿèƒ½ã§ã™ã€‚ã‚µãƒ–ã‚¹ã‚¯ãƒªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ã¾ã§ã€æ¯Žæœˆ1åº¦è‡ªå‹•æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
+		return "取引後の残高は{robuxIcon}になります。これはサブスクリプション方式の機能です。サブスクリプションをキャンセルするまで、毎月1度自動更新されます。";
 	}
 
 	protected override string _GetTemplateForLabelGameJoinPrivateErrorTitle()
 	{
-		return "å‚åŠ ã§ãã¾ã›ã‚“";
+		return "参加できません";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "ã‚²ãƒ¼ãƒ å";
+		return "ゲーム名";
 	}
 
 	protected override string _GetTemplateForLabelNoVipServers()
 	{
-		return "VIPã‚µãƒ¼ãƒãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚";
+		return "VIPサーバーのインスタンスが見つかりません。";
 	}
 
 	protected override string _GetTemplateForLabelPlayWithOthers()
 	{
-		return "å‹é”ã‚„æ‹›å¾…ã—ãŸãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨ä¸€ç·’ã«ã€ã“ã®ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã—ã‚ˆã†ã€‚";
+		return "友達や招待したプレイヤーと一緒に、このゲームをプレイしよう。";
 	}
 
 	protected override string _GetTemplateForLabelRenew()
 	{
-		return "æ›´æ–°";
+		return "更新";
 	}
 
 	protected override string _GetTemplateForLabelRenewPrivateServer()
 	{
-		return "ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆã‚µãƒ¼ãƒãƒ¼ã‚’æ›´æ–°";
+		return "プライベートサーバーを更新";
 	}
 
 	/// <summary>
@@ -222,22 +224,22 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelSeeAllServers(string serversLink)
 	{
-		return $"{serversLink} ã‚¿ãƒ–ã§ã€ã”è‡ªåˆ†ã®ã™ã¹ã¦ã®VIPã‚µãƒ¼ãƒãƒ¼ã‚’è¦‹ã‚Œã¾ã™ã€‚";
+		return $"{serversLink} タブで、ご自分のすべてのVIPサーバーを見れます。";
 	}
 
 	protected override string _GetTemplateForLabelSeeAllServers()
 	{
-		return "{serversLink} ã‚¿ãƒ–ã§ã€ã”è‡ªåˆ†ã®ã™ã¹ã¦ã®VIPã‚µãƒ¼ãƒãƒ¼ã‚’è¦‹ã‚Œã¾ã™ã€‚";
+		return "{serversLink} タブで、ご自分のすべてのVIPサーバーを見れます。";
 	}
 
 	protected override string _GetTemplateForLabelServerName()
 	{
-		return "ã‚µãƒ¼ãƒãƒ¼å";
+		return "サーバー名";
 	}
 
 	protected override string _GetTemplateForLabelServers()
 	{
-		return "ã‚µãƒ¼ãƒãƒ¼";
+		return "サーバー";
 	}
 
 	/// <summary>
@@ -246,12 +248,12 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelStartRenewingPrice(string price)
 	{
-		return $"ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ãªã„é™ã‚Šæ¯Žæœˆ{price}ã§æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
+		return $"このVIPサーバーは、キャンセルしない限り毎月{price}で更新されます。";
 	}
 
 	protected override string _GetTemplateForLabelStartRenewingPrice()
 	{
-		return "ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã—ãªã„é™ã‚Šæ¯Žæœˆ{price}ã§æ›´æ–°ã•ã‚Œã¾ã™ã€‚";
+		return "このVIPサーバーは、キャンセルしない限り毎月{price}で更新されます。";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerGameJoinErrorAcknowledgement()
@@ -261,12 +263,12 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 
 	protected override string _GetTemplateForLabelVipServerJoinGamePrivateError()
 	{
-		return "ã‚²ãƒ¼ãƒ ãŒãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã«å‚åŠ ã§ãã¾ã›ã‚“ã€‚";
+		return "ゲームがプライベート設定になっているため、このVIPサーバーに参加できません。";
 	}
 
 	protected override string _GetTemplateForLabelVipServersAbout()
 	{
-		return "VIPã‚µãƒ¼ãƒãƒ¼ã¯ã€ã“ã®ã‚²ãƒ¼ãƒ ã‚’å‹é”ã€ã‚¯ãƒ©ãƒ³ã€æ‹›å¾…ã—ãŸãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãªã©ã¨ä¸€ç·’ã«éžå…¬é–‹ã§ãƒ—ãƒ¬ã‚¤ã§ãã¾ã™ï¼";
+		return "VIPサーバーは、このゲームを友達、クラン、招待したプレイヤーなどと一緒に非公開でプレイできます！";
 	}
 
 	/// <summary>
@@ -275,17 +277,17 @@ internal class PrivateServersResources_ja_jp : PrivateServersResources_en_us, IP
 	/// </summary>
 	public override string LabelVipServersNotSupported(string vipServersLink)
 	{
-		return $"ã“ã®ã‚²ãƒ¼ãƒ ã¯ {vipServersLink} ã«å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return $"このゲームは {vipServersLink} に対応していません。";
 	}
 
 	protected override string _GetTemplateForLabelVipServersNotSupported()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ {vipServersLink} ã«å¯¾å¿œã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このゲームは {vipServersLink} に対応していません。";
 	}
 
 	protected override string _GetTemplateForMessageInvalidLink()
 	{
-		return "ã“ã®VIPã‚µãƒ¼ãƒãƒ¼ã®ãƒªãƒ³ã‚¯ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚";
+		return "このVIPサーバーのリンクは無効になりました。";
 	}
 }
 

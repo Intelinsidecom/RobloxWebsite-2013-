@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class DevexCashOutResources_en_us : TranslationResourcesBase, IDevexCashOutResources, ITranslationResources
 
 {
@@ -468,3 +468,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

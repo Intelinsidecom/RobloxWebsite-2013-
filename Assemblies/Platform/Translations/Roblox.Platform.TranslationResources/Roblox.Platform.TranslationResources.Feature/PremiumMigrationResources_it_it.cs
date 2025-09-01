@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PremiumMigrationResources_en_us to provide locale specific translations where possible,
@@ -92,6 +94,11 @@ internal class PremiumMigrationResources_it_it : PremiumMigrationResources_en_us
 	protected override string _GetTemplateForPopUpTitle()
 	{
 		return "Il Builders Club ora si chiama Roblox Premium";
+	}
+
+	public new string GetFullContentNamespaceName()
+	{
+		return "Feature.PremiumMigration";
 	}
 }
 

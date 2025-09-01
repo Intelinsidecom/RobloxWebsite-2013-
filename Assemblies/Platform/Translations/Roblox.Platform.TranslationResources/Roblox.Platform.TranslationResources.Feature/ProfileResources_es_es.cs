@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
@@ -476,7 +478,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.AliasHasError"
 	/// English String: "An error has occurred. Please try again later"
 	/// </summary>
-	public override string MessageAliasHasError => "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde";
+	public override string MessageAliasHasError => "Se ha producido un error. IntÃntalo de nuevo mÃ¡s tarde";
 
 	/// <summary>
 	/// Key: "Message.AliasIsModerated"
@@ -488,7 +490,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 	/// Key: "Message.ChangeStatus"
 	/// English String: "What are you up to?"
 	/// </summary>
-	public override string MessageChangeStatus => "Â¿QuÃ© cuentas?";
+	public override string MessageChangeStatus => "Â¿QuÃque cuentas?";
 
 	/// <summary>
 	/// Key: "Message.ErrorBlockLimit"
@@ -510,20 +512,21 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
-	/// flood error response
-	/// English String: "Too Many Attempts"
-	/// </summary>
-	public override string ResponseTooManyAttempts => "Demasiados intentos";
 
-	public ProfileResources_es_es(TranslationResourceState state)
-		: base(state)
-	{
-	}
+public ProfileResources_es_es(TranslationResourceState state)
+    : base(state)
+{
+}
 
-	protected override string _GetTemplateForActionAccept()
-	{
-		return "Aceptar";
-	}
+public new string GetFullContentNamespaceName()
+{
+    return "Feature.Profile";
+}
+
+protected override string _GetTemplateForActionAccept()
+{
+    return "Aceptar";
+}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
@@ -936,7 +939,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageAliasHasError()
 	{
-		return "Se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde";
+		return "Se ha producido un error. IntÃntalo de nuevo mÃ¡s tarde";
 	}
 
 	protected override string _GetTemplateForMessageAliasIsModerated()
@@ -946,7 +949,7 @@ internal class ProfileResources_es_es : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForMessageChangeStatus()
 	{
-		return "Â¿QuÃ© cuentas?";
+		return "Â¿QuÃque cuentas?";
 	}
 
 	protected override string _GetTemplateForMessageErrorBlockLimit()

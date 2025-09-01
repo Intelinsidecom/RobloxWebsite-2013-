@@ -1,25 +1,23 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.EphemeralCounterspublic {
-    interface IEphemeralCounterFactory
-
+namespace Roblox.Platform.EphemeralCounters
 {
-	ISequence GetSequence(string sequenceName);
+    public interface IEphemeralCounterFactory
+    {
+        ISequence GetSequence(string sequenceName);
 
-	ICounter GetCounter(string counterName);
+        ICounter GetCounter(string counterName);
 
-	void BatchIncrementCounters(IDictionary<string, long> entries);
+        void BatchIncrementCounters(IDictionary<string, long> entries);
 
-	void BatchIncrementCounters(IEnumerable<string> counterNames);
+        void BatchIncrementCounters(IEnumerable<string> counterNames);
 
-	void BatchIncrementCountersInBackground(IDictionary<string, long> entries, Action<Exception> exceptionHandler = null);
+        void BatchIncrementCountersInBackground(IDictionary<string, long> entries, Action<Exception> exceptionHandler = null);
 
-	void BatchIncrementCountersInBackground(IEnumerable<string> counterNames, Action<Exception> exceptionHandler = null);
+        void BatchIncrementCountersInBackground(IEnumerable<string> counterNames, Action<Exception> exceptionHandler = null);
 
-	void BatchAddToSequences(IDictionary<string, double> entries);
+        void BatchAddToSequences(IDictionary<string, double> entries);
 
-	void BatchAddToSequencesInBackground(IDictionary<string, double> entries, Action<Exception> exceptionHandler = null);
-}
-
-
+        void BatchAddToSequencesInBackground(IDictionary<string, double> entries, Action<Exception> exceptionHandler = null);
+    }
 }

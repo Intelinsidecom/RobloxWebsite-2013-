@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
@@ -24,7 +26,7 @@ internal class PlacesListResources_fr_fr : PlacesListResources_en_us, IPlacesLis
 	/// check game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "Voir les dÃ©tails";
+	public override string ActionViewDetails => "Voir les détails";
 
 	/// <summary>
 	/// Key: "Label.ContextMenuTitle"
@@ -56,7 +58,7 @@ internal class PlacesListResources_fr_fr : PlacesListResources_en_us, IPlacesLis
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "Voir les dÃ©tails";
+		return "Voir les détails";
 	}
 
 	protected override string _GetTemplateForLabelContextMenuTitle()

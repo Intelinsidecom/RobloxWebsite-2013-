@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasingpublic {
-    interface IRobloxProductsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
+    public interface IRobloxProductsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -23,3 +25,5 @@
 
 
 }
+
+

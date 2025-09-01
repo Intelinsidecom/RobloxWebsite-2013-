@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevexCashOutResources_en_us to provide locale specific translations where possible,
@@ -52,7 +54,7 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 	/// Key: "CashOutForm.YouGetLabel"
 	/// English String: "You get up to:"
 	/// </summary>
-	public override string CashOutFormYouGetLabel => "Du erhÃ¤ltst bis zu:";
+	public override string CashOutFormYouGetLabel => "Du erhältst bis zu:";
 
 	/// <summary>
 	/// Key: "Label.PasswordLabel"
@@ -100,19 +102,19 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.IncorrectCredentials"
 	/// English String: "Invalid password."
 	/// </summary>
-	public override string ResponseIncorrectCredentials => "UngÃ¼ltiges Passwort.";
+	public override string ResponseIncorrectCredentials => "Ungültiges Passwort.";
 
 	/// <summary>
 	/// Key: "Response.InsufficientFunds"
 	/// English String: "You do not have enough Robux to complete this transaction."
 	/// </summary>
-	public override string ResponseInsufficientFunds => "Du hast nicht genug Robux, um diese Transaktion abzuschlieÃŸen.";
+	public override string ResponseInsufficientFunds => "Du hast nicht genug Robux, um diese Transaktion abzuschließen.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmailErrorMessage"
 	/// English String: "Please enter a valid email address."
 	/// </summary>
-	public override string ResponseInvalidEmailErrorMessage => "Bitte gib eine gÃ¼ltige E-Mail-Adresse ein.";
+	public override string ResponseInvalidEmailErrorMessage => "Bitte gib eine gültige E-Mail-Adresse ein.";
 
 	/// <summary>
 	/// Key: "Response.LastNameRequiredErrorMessage"
@@ -148,13 +150,13 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 	/// Key: "Response.UserDoesNotHavePremium"
 	/// English String: "You need a Roblox Premium subscription to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHavePremium => "Du benÃ¶tigst ein Roblox-Premium-Abonnement, um auszahlen zu kÃ¶nnen.";
+	public override string ResponseUserDoesNotHavePremium => "Du benötigst ein Roblox-Premium-Abonnement, um auszahlen zu können.";
 
 	/// <summary>
 	/// Key: "Response.UserDoesNotHaveVerifiedEmail"
 	/// English String: "You need a verified email address to cash out."
 	/// </summary>
-	public override string ResponseUserDoesNotHaveVerifiedEmail => "Du benÃ¶tigst eine bestÃ¤tigte E-Mail-Adresse, um auszahlen zu kÃ¶nnen.";
+	public override string ResponseUserDoesNotHaveVerifiedEmail => "Du benötigst eine bestätigte E-Mail-Adresse, um auszahlen zu können.";
 
 	/// <summary>
 	/// Key: "Response.UserMustProvideFirstAndLastName"
@@ -184,12 +186,12 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 	/// </summary>
 	public override string CashOutFormDescription(string linkStart, string linkEnd)
 	{
-		return $"Bitte fÃ¼ll dieses Formular aus, um mit der Bearbeitung deiner Zahlung zu beginnen. Die unten angegebene Adresse muss mit der Adresse in deinem Roblox DevEx Portal-Konto Ã¼bereinstimmen. Wenn du Hilfe bei diesem Formular benÃ¶tigst, {linkStart}, besuche bitte unsere Hilfeseite. {linkEnd}";
+		return $"Bitte füll dieses Formular aus, um mit der Bearbeitung deiner Zahlung zu beginnen. Die unten angegebene Adresse muss mit der Adresse in deinem Roblox DevEx Portal-Konto übereinstimmen. Wenn du Hilfe bei diesem Formular benötigst, {linkStart}, besuche bitte unsere Hilfeseite. {linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormDescription()
 	{
-		return "Bitte fÃ¼ll dieses Formular aus, um mit der Bearbeitung deiner Zahlung zu beginnen. Die unten angegebene Adresse muss mit der Adresse in deinem Roblox DevEx Portal-Konto Ã¼bereinstimmen. Wenn du Hilfe bei diesem Formular benÃ¶tigst, {linkStart}, besuche bitte unsere Hilfeseite. {linkEnd}";
+		return "Bitte füll dieses Formular aus, um mit der Bearbeitung deiner Zahlung zu beginnen. Die unten angegebene Adresse muss mit der Adresse in deinem Roblox DevEx Portal-Konto übereinstimmen. Wenn du Hilfe bei diesem Formular benötigst, {linkStart}, besuche bitte unsere Hilfeseite. {linkEnd}";
 	}
 
 	protected override string _GetTemplateForCashOutFormEmailAddressLabel()
@@ -238,7 +240,7 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForCashOutFormYouGetLabel()
 	{
-		return "Du erhÃ¤ltst bis zu:";
+		return "Du erhältst bis zu:";
 	}
 
 	protected override string _GetTemplateForLabelPasswordLabel()
@@ -278,17 +280,17 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseIncorrectCredentials()
 	{
-		return "UngÃ¼ltiges Passwort.";
+		return "Ungültiges Passwort.";
 	}
 
 	protected override string _GetTemplateForResponseInsufficientFunds()
 	{
-		return "Du hast nicht genug Robux, um diese Transaktion abzuschlieÃŸen.";
+		return "Du hast nicht genug Robux, um diese Transaktion abzuschließen.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmailErrorMessage()
 	{
-		return "Bitte gib eine gÃ¼ltige E-Mail-Adresse ein.";
+		return "Bitte gib eine gültige E-Mail-Adresse ein.";
 	}
 
 	protected override string _GetTemplateForResponseLastNameRequiredErrorMessage()
@@ -318,12 +320,12 @@ internal class DevexCashOutResources_de_de : DevexCashOutResources_en_us, IDevex
 
 	protected override string _GetTemplateForResponseUserDoesNotHavePremium()
 	{
-		return "Du benÃ¶tigst ein Roblox-Premium-Abonnement, um auszahlen zu kÃ¶nnen.";
+		return "Du benötigst ein Roblox-Premium-Abonnement, um auszahlen zu können.";
 	}
 
 	protected override string _GetTemplateForResponseUserDoesNotHaveVerifiedEmail()
 	{
-		return "Du benÃ¶tigst eine bestÃ¤tigte E-Mail-Adresse, um auszahlen zu kÃ¶nnen.";
+		return "Du benötigst eine bestätigte E-Mail-Adresse, um auszahlen zu können.";
 	}
 
 	protected override string _GetTemplateForResponseUserMustProvideFirstAndLastName()

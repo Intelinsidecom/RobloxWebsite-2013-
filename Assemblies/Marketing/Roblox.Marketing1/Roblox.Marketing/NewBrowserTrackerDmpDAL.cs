@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -51,3 +51,4 @@ public class NewBrowserTrackerDmpDAL
 		ID = RobloxDatabase.RobloxMarketing.Insert<int>("NewBrowserTrackerDmps_InsertNewBrowserTrackerDmp", queryParameters);
 	}
 }
+

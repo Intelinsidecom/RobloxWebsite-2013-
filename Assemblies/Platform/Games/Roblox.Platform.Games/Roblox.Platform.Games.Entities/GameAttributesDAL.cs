@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.DataV2.Core;
 using Roblox.Entities.Mssql;
@@ -130,3 +130,4 @@ internal class GameAttributesDAL
 		return RobloxDatabase.RobloxGameAttributes.GetIDCollection<long>(storedProcedureName, queryParameters);
 	}
 }
+

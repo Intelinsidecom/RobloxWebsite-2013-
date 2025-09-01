@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Assets.Properties;
@@ -92,3 +92,4 @@ internal class ContextTypeDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(Settings.Default.DbConnectionString_RobloxAssetCreations, "[dbo].[ContextTypes_GetContextTypeByValue]", queryParameters), BuildDAL);
 	}
 }
+

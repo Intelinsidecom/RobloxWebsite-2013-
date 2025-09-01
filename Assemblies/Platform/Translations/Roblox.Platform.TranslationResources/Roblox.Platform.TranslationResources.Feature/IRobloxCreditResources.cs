@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IRobloxCreditResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IRobloxCreditResources : ITranslationResources
 
 {
 	/// <summary>
@@ -67,3 +69,5 @@
 
 
 }
+
+

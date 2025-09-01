@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
-using Roblox.Platform.Moderation.Entities;
+using Roblox.Localization.Core;
+using Roblox.Moderation.Entities;
+
 namespace Roblox.Moderation {
     /// <inheritdoc />
 
@@ -55,7 +56,17 @@ internal class ModerationLocaleFactory : IModerationLocaleFactory
 
 	internal virtual ISupportedLocaleIdentifier GetSupportedLocaleIdentifier(int supportedLocaleId)
 	{
-		return new SupportedLocaleIdentifier(supportedLocaleId);
+		return new SupportedLocaleIdentifierImpl(supportedLocaleId);
+	}
+
+	private sealed class SupportedLocaleIdentifierImpl : ISupportedLocaleIdentifier
+	{
+		public int Id { get; }
+
+		public SupportedLocaleIdentifierImpl(int id)
+		{
+			Id = id;
+		}
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -79,7 +81,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "Questi cookie sono necessari per alcune funzionalitÃ  del sito, come l'autenticazione dell'utente, la sicurezza del sistema o il salvataggio delle preferenze sui cookie.";
+	public override string MessageEssentialCookiesDescription => "Questi cookie sono necessari per alcune funzionalità del sito, come l'autenticazione dell'utente, la sicurezza del sistema o il salvataggio delle preferenze sui cookie.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -131,7 +133,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "C'Ã¨ stato un problema con la tua richiesta";
+	public override string ResponseBadRequestDescription => "C'è stato un problema con la tua richiesta";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
@@ -145,7 +147,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "Si Ã¨ verificato un errore imprevisto.";
+	public override string ResponseInternalServerErrorDescription => "Si è verificato un errore imprevisto.";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
@@ -159,7 +161,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "La pagina non Ã¨ stata trovata o Ã¨ stata rimossa";
+	public override string ResponsePageNotFoundDescrition => "La pagina non è stata trovata o è stata rimossa";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
@@ -173,7 +175,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "Qualcosa Ã¨ andato storto";
+	public override string ResponseSomethingWentWrong => "Qualcosa è andato storto";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
@@ -186,7 +188,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "Si Ã¨ verificato un errore imprevisto. Riprova piÃ¹ tardi.";
+	public override string ResponseUnexpectedError => "Si è verificato un errore imprevisto. Riprova più tardi.";
 
 	public MessagesResources_it_it(TranslationResourceState state)
 		: base(state)
@@ -210,12 +212,12 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalitÃ  relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
+		return $"Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalità relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalitÃ  relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
+		return "Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalità relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
 	}
 
 	/// <summary>
@@ -294,12 +296,12 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalitÃ  relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
+		return $"Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalità relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalitÃ  relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
+		return "Roblox utilizza i cookie per personalizzare il contenuto, fornire funzionalità relative ai social media e analizzare il traffico sul nostro sito. Per scoprire come utilizziamo i cookie e come puoi {startLink}gestire le preferenze dei cookie{endLink}, fai riferimento alla nostra {startLink2}Informativa sulla privacy e sui cookie{endLink2}.";
 	}
 
 	/// <summary>
@@ -323,7 +325,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "Questi cookie sono necessari per alcune funzionalitÃ  del sito, come l'autenticazione dell'utente, la sicurezza del sistema o il salvataggio delle preferenze sui cookie.";
+		return "Questi cookie sono necessari per alcune funzionalità del sito, come l'autenticazione dell'utente, la sicurezza del sistema o il salvataggio delle preferenze sui cookie.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -363,7 +365,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "C'Ã¨ stato un problema con la tua richiesta";
+		return "C'è stato un problema con la tua richiesta";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
@@ -373,7 +375,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "Si Ã¨ verificato un errore imprevisto.";
+		return "Si è verificato un errore imprevisto.";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
@@ -383,7 +385,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "La pagina non Ã¨ stata trovata o Ã¨ stata rimossa";
+		return "La pagina non è stata trovata o è stata rimossa";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
@@ -393,7 +395,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "Qualcosa Ã¨ andato storto";
+		return "Qualcosa è andato storto";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
@@ -403,7 +405,7 @@ internal class MessagesResources_it_it : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "Si Ã¨ verificato un errore imprevisto. Riprova piÃ¹ tardi.";
+		return "Si è verificato un errore imprevisto. Riprova più tardi.";
 	}
 }
 

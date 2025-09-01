@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sBuyRobux"
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string LabelsBuyRobux => "Robux SatÄ±n Al";
+	public override string LabelsBuyRobux => "Robux Satın Al";
 
 	/// <summary>
 	/// Key: "Label.sHelp"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelsHelp => "YardÄ±m";
+	public override string LabelsHelp => "Yardım";
 
 	/// <summary>
 	/// Key: "Label.sLogout"
 	/// English String: "Logout"
 	/// </summary>
-	public override string LabelsLogout => "Ã‡Ä±kÄ±ÅŸ Yap";
+	public override string LabelsLogout => "Çıkış Yap";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -43,17 +45,17 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsBuyRobux()
 	{
-		return "Robux SatÄ±n Al";
+		return "Robux Satın Al";
 	}
 
 	protected override string _GetTemplateForLabelsHelp()
 	{
-		return "YardÄ±m";
+		return "Yardım";
 	}
 
 	protected override string _GetTemplateForLabelsLogout()
 	{
-		return "Ã‡Ä±kÄ±ÅŸ Yap";
+		return "Çıkış Yap";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -63,7 +65,7 @@ internal class AlertsAndOptionsResources_tr_tr : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue}Â Robux"
+	/// English String: "{robuxValue} Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{

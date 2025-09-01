@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class FileUploadComponentResources_en_us : TranslationResourcesBase, IFileUploadComponentResources, ITranslationResources
 
 {
@@ -201,3 +201,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FavoritesResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "ActionAddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string ActionAddToFavorites => "Zu Favoriten hinzufÃ¼gen";
+	public override string ActionAddToFavorites => "Zu Favoriten hinzufügen";
 
 	/// <summary>
 	/// Key: "ActionCancel"
@@ -34,7 +36,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "DescriptionLoginRequired"
 	/// English String: "You must be logged in to add this to your favorites. Please Login or Register to continue"
 	/// </summary>
-	public override string DescriptionLoginRequired => "Du musst angemeldet sein, um das zu deinen Favoriten hinzufÃ¼gen zu kÃ¶nnen. Bitte melde dich an oder registriere dich, um fortzufahren.";
+	public override string DescriptionLoginRequired => "Du musst angemeldet sein, um das zu deinen Favoriten hinzufügen zu können. Bitte melde dich an oder registriere dich, um fortzufahren.";
 
 	/// <summary>
 	/// Key: "Heading.Favorites"
@@ -54,7 +56,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "Label.AddToFavorites"
 	/// English String: "Add to Favorites"
 	/// </summary>
-	public override string LabelAddToFavorites => "Zu Favoriten hinzufÃ¼gen";
+	public override string LabelAddToFavorites => "Zu Favoriten hinzufügen";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
@@ -86,7 +88,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 	/// Key: "MessageAssetNotFoundError"
 	/// English String: "The asset you are trying to favorite cannot be found."
 	/// </summary>
-	public override string MessageAssetNotFoundError => "Das Objekt, das du zu deinen Favoriten hinzufÃ¼gen mÃ¶chtest, kann nicht gefunden werden.";
+	public override string MessageAssetNotFoundError => "Das Objekt, das du zu deinen Favoriten hinzufügen möchtest, kann nicht gefunden werden.";
 
 	public FavoritesResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -95,7 +97,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForActionAddToFavorites()
 	{
-		return "Zu Favoriten hinzufÃ¼gen";
+		return "Zu Favoriten hinzufügen";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -115,7 +117,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Du musst angemeldet sein, um das zu deinen Favoriten hinzufÃ¼gen zu kÃ¶nnen. Bitte melde dich an oder registriere dich, um fortzufahren.";
+		return "Du musst angemeldet sein, um das zu deinen Favoriten hinzufügen zu können. Bitte melde dich an oder registriere dich, um fortzufahren.";
 	}
 
 	protected override string _GetTemplateForHeadingFavorites()
@@ -145,7 +147,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForLabelAddToFavorites()
 	{
-		return "Zu Favoriten hinzufÃ¼gen";
+		return "Zu Favoriten hinzufügen";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
@@ -170,7 +172,7 @@ internal class FavoritesResources_de_de : FavoritesResources_en_us, IFavoritesRe
 
 	protected override string _GetTemplateForMessageAssetNotFoundError()
 	{
-		return "Das Objekt, das du zu deinen Favoriten hinzufÃ¼gen mÃ¶chtest, kann nicht gefunden werden.";
+		return "Das Objekt, das du zu deinen Favoriten hinzufügen möchtest, kann nicht gefunden werden.";
 	}
 }
 

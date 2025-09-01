@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 	/// Cancel button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Facebook"
@@ -24,410 +26,410 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Action.ForgotPasswordOrUsernameQuestion"
 	/// English String: "Forgot password or username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestion => "å¿˜è¨˜å¯†ç¢¼æˆ–ä½¿ç”¨è€…åç¨±ï¼Ÿ";
+	public override string ActionForgotPasswordOrUsernameQuestion => "忘記密碼或使用者名稱？";
 
 	/// <summary>
 	/// Key: "Action.ForgotPasswordOrUsernameQuestionCapitalized"
 	/// link under login form
 	/// English String: "Forgot Password or Username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "å¿˜è¨˜å¯†ç¢¼æˆ–ä½¿ç”¨è€…åç¨±ï¼Ÿ";
+	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "忘記密碼或使用者名稱？";
 
 	/// <summary>
 	/// Key: "Action.Login"
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "ç™»å…¥";
+	public override string ActionLogin => "登入";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// login button label. please note this is different from 'Login' or 'Log in'.
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "ç™»å…¥";
+	public override string ActionLogInCapitalized => "登入";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// button text
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "ç¢ºå®š";
+	public override string ActionOk => "確定";
 
 	/// <summary>
 	/// Key: "Action.PlayAsGuest"
 	/// Play as Guest
 	/// English String: "Play as Guest"
 	/// </summary>
-	public override string ActionPlayAsGuest => "ä»¥è¨ªå®¢èº«åˆ†éŠçŽ©";
+	public override string ActionPlayAsGuest => "以訪客身分遊玩";
 
 	/// <summary>
 	/// Key: "Action.Resend"
 	/// button text for resending verification email
 	/// English String: "Resend"
 	/// </summary>
-	public override string ActionResend => "é‡æ–°å‚³é€";
+	public override string ActionResend => "重新傳送";
 
 	/// <summary>
 	/// Key: "Action.ResendEmail"
 	/// link that resends verification email to user
 	/// English String: "Resend Email"
 	/// </summary>
-	public override string ActionResendEmail => "é‡æ–°å‚³é€é›»å­éƒµä»¶";
+	public override string ActionResendEmail => "重新傳送電子郵件";
 
 	/// <summary>
 	/// Key: "Action.SendVerificationEmail"
 	/// button user can click to send a verification link to their email
 	/// English String: "Send Verification Email"
 	/// </summary>
-	public override string ActionSendVerificationEmail => "å‚³é€é©—è­‰é›»å­éƒµä»¶";
+	public override string ActionSendVerificationEmail => "傳送驗證電子郵件";
 
 	/// <summary>
 	/// Key: "Action.SignIn"
 	/// Sign In button text
 	/// English String: "Sign In"
 	/// </summary>
-	public override string ActionSignIn => "ç™»å…¥";
+	public override string ActionSignIn => "登入";
 
 	/// <summary>
 	/// Key: "Action.SignInWithFacebook"
 	/// Sign In with Facebook
 	/// English String: "Sign In with Facebook"
 	/// </summary>
-	public override string ActionSignInWithFacebook => "ä»¥ Facebook ç™»å…¥";
+	public override string ActionSignInWithFacebook => "以 Facebook 登入";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "è¨»å†Š";
+	public override string ActionSignUp => "註冊";
 
 	/// <summary>
 	/// Key: "Action.SignUpCapitalized"
 	/// link which takes user to sign up page
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionSignUpCapitalized => "è¨»å†Š";
+	public override string ActionSignUpCapitalized => "註冊";
 
 	/// <summary>
 	/// Key: "Action.WeChatLogin"
 	/// button text for logging in with WeChat
 	/// English String: "WeChat Login"
 	/// </summary>
-	public override string ActionWeChatLogin => "å¾®ä¿¡ç™»å…¥";
+	public override string ActionWeChatLogin => "微信登入";
 
 	/// <summary>
 	/// Key: "Heading.Login"
 	/// heading on the login page
 	/// English String: "Login"
 	/// </summary>
-	public override string HeadingLogin => "ç™»å…¥";
+	public override string HeadingLogin => "登入";
 
 	/// <summary>
 	/// Key: "Heading.LoginRoblox"
 	/// current login page heading
 	/// English String: "Login to Roblox"
 	/// </summary>
-	public override string HeadingLoginRoblox => "ç™»å…¥ Roblox";
+	public override string HeadingLoginRoblox => "登入 Roblox";
 
-	public override string HeadingSignUpMakeFriends => "è¨»å†Šå¸³è™Ÿï¼Œé–‹å§‹äº¤å‹å’Œå‰µä½œ";
+	public override string HeadingSignUpMakeFriends => "註冊帳號，開始交友和創作";
 
 	/// <summary>
 	/// Key: "Label.AccountNotNeeded"
 	/// You don't need an account to play Roblox
 	/// English String: "You don't need an account to play Roblox"
 	/// </summary>
-	public override string LabelAccountNotNeeded => "çŽ© Roblox ä¸éœ€è¦è¨»å†Šå¸³è™Ÿ";
+	public override string LabelAccountNotNeeded => "玩 Roblox 不需要註冊帳號";
 
 	/// <summary>
 	/// Key: "Label.EmailNeedsVerification"
 	/// modal header used for prompting user they need to verify their email in order to log in with it
 	/// English String: "Your email needs verification"
 	/// </summary>
-	public override string LabelEmailNeedsVerification => "æ‚¨çš„é›»å­éƒµä»¶åœ°å€éœ€è¦é©—è­‰";
+	public override string LabelEmailNeedsVerification => "您的電子郵件地址需要驗證";
 
 	/// <summary>
 	/// Key: "Label.FacebookCreatePasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookCreatePasswordWarning => "è‹¥æ‚¨ä»¥ Facebook ç™»å…¥ï¼Œè«‹è¨­å®šå¯†ç¢¼ã€‚";
+	public override string LabelFacebookCreatePasswordWarning => "若您以 Facebook 登入，請設定密碼。";
 
 	/// <summary>
 	/// Key: "Label.ForgotUsernamePassword"
 	/// landing page top right link for password reset
 	/// English String: "Forgot Username/Password?"
 	/// </summary>
-	public override string LabelForgotUsernamePassword => "å¿˜è¨˜ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ï¼Ÿ";
+	public override string LabelForgotUsernamePassword => "忘記使用者名稱或密碼？";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// learn more link text
 	/// English String: "Learn more"
 	/// </summary>
-	public override string LabelLearnMore => "äº†è§£æ›´å¤š";
+	public override string LabelLearnMore => "了解更多";
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging inâ€¦"
+	/// English String: "Logging in…"
 	/// </summary>
-	public override string LabelLoggingInSpinnerText => "æ­£åœ¨ç™»å…¥â€¦";
+	public override string LabelLoggingInSpinnerText => "正在登入…";
 
 	/// <summary>
 	/// Key: "Label.Login"
 	/// English String: "Log in"
 	/// </summary>
-	public override string LabelLogin => "ç™»å…¥";
+	public override string LabelLogin => "登入";
 
 	/// <summary>
 	/// Key: "Label.LoginWithYour"
 	/// Label for a partition line between login with email and facebook login. Please keep the text in lowercase for roman characters.
 	/// English String: "login with your"
 	/// </summary>
-	public override string LabelLoginWithYour => "ç™»å…¥æ–¹æ³•ï¼š";
+	public override string LabelLoginWithYour => "登入方法：";
 
 	/// <summary>
 	/// Key: "Label.NoAccount"
 	/// Don't have an account?
 	/// English String: "Don't have an account?"
 	/// </summary>
-	public override string LabelNoAccount => "æ²’æœ‰å¸³è™Ÿï¼Ÿ";
+	public override string LabelNoAccount => "沒有帳號？";
 
 	/// <summary>
 	/// Key: "Label.NonAMemberQuestion"
 	/// The question heading for the section on the login page to take use to sign up page.
 	/// English String: "Not a member?"
 	/// </summary>
-	public override string LabelNonAMemberQuestion => "ä¸æ˜¯æœƒå“¡ï¼Ÿ";
+	public override string LabelNonAMemberQuestion => "不是會員？";
 
 	/// <summary>
 	/// Key: "Label.NotReceived"
 	/// prompt for allowing users to resend verification email
 	/// English String: "Didn't receive it?"
 	/// </summary>
-	public override string LabelNotReceived => "æ²’æœ‰æ”¶åˆ°ï¼Ÿ";
+	public override string LabelNotReceived => "沒有收到？";
 
 	/// <summary>
 	/// Key: "Label.Or"
 	/// partition between email login and facebook login
 	/// English String: "Or"
 	/// </summary>
-	public override string LabelOr => "æˆ–";
+	public override string LabelOr => "或";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// Password
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "å¯†ç¢¼";
+	public override string LabelPassword => "密碼";
 
 	/// <summary>
 	/// Key: "Label.PasswordWithColumn"
 	/// label for the password field on the login page
 	/// English String: "Password:"
 	/// </summary>
-	public override string LabelPasswordWithColumn => "å¯†ç¢¼ï¼š";
+	public override string LabelPasswordWithColumn => "密碼：";
 
 	/// <summary>
 	/// Key: "Label.StartPlaying"
 	/// You can start playing right now, in guest mode!
 	/// English String: "You can start playing right now, in guest mode!"
 	/// </summary>
-	public override string LabelStartPlaying => "ç¾åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ï¼";
+	public override string LabelStartPlaying => "現在以訪客模式遊玩！";
 
 	/// <summary>
 	/// Key: "Label.UnverifiedEmailInstructions"
 	/// message shown in a modal when user logs in with unverified email
 	/// English String: "To log in with your email, it must be verified. You can also log in with your username."
 	/// </summary>
-	public override string LabelUnverifiedEmailInstructions => "è‹¥è¦ä»¥æ‚¨çš„é›»å­éƒµä»¶åœ°å€ç™»å…¥ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚æ‚¨ä¹Ÿèƒ½ä»¥ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+	public override string LabelUnverifiedEmailInstructions => "若要以您的電子郵件地址登入，請先驗證電子郵件地址。您也能以使用者名稱登入。";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "ä½¿ç”¨è€…åç¨±";
+	public override string LabelUsername => "使用者名稱";
 
 	/// <summary>
 	/// Key: "Label.UsernameEmail"
 	/// placeholder text for input field that accepts username or email
 	/// English String: "Username/Email"
 	/// </summary>
-	public override string LabelUsernameEmail => "ä½¿ç”¨è€…åç¨±ï¼é›»å­éƒµä»¶åœ°å€";
+	public override string LabelUsernameEmail => "使用者名稱／電子郵件地址";
 
 	/// <summary>
 	/// Key: "Label.UsernameEmailPhone"
 	/// placeholder text for input fields that accept username, email or phone
 	/// English String: "Username/Email/Phone"
 	/// </summary>
-	public override string LabelUsernameEmailPhone => "ä½¿ç”¨è€…åç¨±ï¼é›»å­éƒµä»¶åœ°å€ï¼æ‰‹æ©Ÿè™Ÿç¢¼";
+	public override string LabelUsernameEmailPhone => "使用者名稱／電子郵件地址／手機號碼";
 
 	/// <summary>
 	/// Key: "Label.UsernamePhone"
 	/// placeholder text for input field that accepts username or phone
 	/// English String: "Username/Phone"
 	/// </summary>
-	public override string LabelUsernamePhone => "ä½¿ç”¨è€…åç¨±ï¼æ‰‹æ©Ÿè™Ÿç¢¼";
+	public override string LabelUsernamePhone => "使用者名稱／手機號碼";
 
 	/// <summary>
 	/// Key: "Label.UsernameWithColumn"
 	/// label for username field on login page
 	/// English String: "Username:"
 	/// </summary>
-	public override string LabelUsernameWithColumn => "ä½¿ç”¨è€…åç¨±ï¼š";
+	public override string LabelUsernameWithColumn => "使用者名稱：";
 
 	/// <summary>
 	/// Key: "Label.VerificationEmailSent"
 	/// message telling user a verification email was sent to them
 	/// English String: "Verification Email Sent!"
 	/// </summary>
-	public override string LabelVerificationEmailSent => "é©—è­‰é›»å­éƒµä»¶å·²å‚³é€ï¼";
+	public override string LabelVerificationEmailSent => "驗證電子郵件已傳送！";
 
 	/// <summary>
 	/// Key: "Label.WeChatAntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string LabelWeChatAntiAddictionText => "æŠµåˆ¶åŠ£è³ªèˆ‡æŠ„è¥²éŠæˆ²ï¼çŽ©éŠæˆ²æœ‰ç›Šèº«å¿ƒï¼Œä½†éŽåº¦æ²‰è¿·æœƒå°èº«é«”é€ æˆå½±éŸ¿ã€‚æŽ§åˆ¶éŠæˆ²æ™‚é–“ï¼Œäº«å—å¥åº·äººç”Ÿï¼";
+	public override string LabelWeChatAntiAddictionText => "抵制劣質與抄襲遊戲！玩遊戲有益身心，但過度沉迷會對身體造成影響。控制遊戲時間，享受健康人生！";
 
 	/// <summary>
 	/// Key: "Message.UnknownErrorTryAgain"
 	/// An unknown error occurred. Please try again.
 	/// English String: "An unknown error occurred. Please try again."
 	/// </summary>
-	public override string MessageUnknownErrorTryAgain => "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
+	public override string MessageUnknownErrorTryAgain => "發生未知錯誤。請重新嘗試。";
 
 	/// <summary>
 	/// Key: "Message.UsernameAndPasswordRequired"
 	/// message shown to user when they attempt to login without entering a username or password
 	/// English String: "Username and password required"
 	/// </summary>
-	public override string MessageUsernameAndPasswordRequired => "ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ç©ºç™½";
+	public override string MessageUsernameAndPasswordRequired => "使用者名稱或密碼空白";
 
 	/// <summary>
 	/// Key: "Response.AccountIssueErrorContactSupport"
 	/// English String: "Account issue. Please contact Support."
 	/// </summary>
-	public override string ResponseAccountIssueErrorContactSupport => "å¸³è™Ÿç™¼ç”Ÿå•é¡Œï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
+	public override string ResponseAccountIssueErrorContactSupport => "帳號發生問題，請聯絡客服人員。";
 
 	/// <summary>
 	/// Key: "Response.AccountLockedRequestReset"
 	/// Account has been locked. Please request a password reset.
 	/// English String: "Account has been locked. Please request a password reset."
 	/// </summary>
-	public override string ResponseAccountLockedRequestReset => "å¸³è™Ÿå·²é­éŽ–å®šï¼Œè«‹é€²è¡Œå¯†ç¢¼é‡ç½®ã€‚";
+	public override string ResponseAccountLockedRequestReset => "帳號已遭鎖定，請進行密碼重置。";
 
 	/// <summary>
 	/// Key: "Response.AccountNotFound"
 	/// Account not found. Please try again.
 	/// English String: "Account not found. Please try again."
 	/// </summary>
-	public override string ResponseAccountNotFound => "æ‰¾ä¸åˆ°å¸³è™Ÿï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+	public override string ResponseAccountNotFound => "找不到帳號，請重新嘗試。";
 
 	/// <summary>
 	/// Key: "Response.EmailLinkedToMultipleAccountsLoginWithUsername"
 	/// error message displayed when user attempts to log in with an email that is linked to multiple accounts
 	/// English String: "Your email is associated with more than 1 username. Please login with your username."
 	/// </summary>
-	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "æœ‰å¤šçµ„å¸³è™ŸåŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "有多組帳號加入此電子郵件地址，請以您的使用者名稱登入。";
 
 	/// <summary>
 	/// Key: "Response.EmailSent"
 	/// response telling user that a verification email has been sent to them
 	/// English String: "Email sent!"
 	/// </summary>
-	public override string ResponseEmailSent => "é©—è­‰éƒµä»¶å·²å‚³é€ï¼";
+	public override string ResponseEmailSent => "驗證郵件已傳送！";
 
 	/// <summary>
 	/// Key: "Response.IncorrectEmailOrPassword"
 	/// error message displayed when user logs in with an invalid email or password
 	/// English String: "Incorrect email or password."
 	/// </summary>
-	public override string ResponseIncorrectEmailOrPassword => "é›»å­éƒµä»¶æˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+	public override string ResponseIncorrectEmailOrPassword => "電子郵件或密碼不正確。";
 
 	/// <summary>
 	/// Key: "Response.IncorrectPhoneOrPassword"
 	/// error message displayed when user logs in with an invalid phone or password
 	/// English String: "Incorrect phone or password."
 	/// </summary>
-	public override string ResponseIncorrectPhoneOrPassword => "æ‰‹æ©Ÿæˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+	public override string ResponseIncorrectPhoneOrPassword => "手機或密碼不正確。";
 
 	/// <summary>
 	/// Key: "Response.IncorrectUsernamePassword"
 	/// English String: "Incorrect username or password."
 	/// </summary>
-	public override string ResponseIncorrectUsernamePassword => "ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+	public override string ResponseIncorrectUsernamePassword => "使用者名稱或密碼不正確。";
 
 	/// <summary>
 	/// Key: "Response.LoginWithUsername"
 	/// error message shown when user attempts to login with method other than username and an error occurred
 	/// English String: "Something went wrong. Please login with your username."
 	/// </summary>
-	public override string ResponseLoginWithUsername => "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+	public override string ResponseLoginWithUsername => "發生錯誤，請以您的使用者名稱登入。";
 
 	/// <summary>
 	/// Key: "Response.PasswordNotProvided"
 	/// password field is empty
 	/// English String: "You must enter a password."
 	/// </summary>
-	public override string ResponsePasswordNotProvided => "å¿…é ˆè¼¸å…¥å¯†ç¢¼ã€‚";
+	public override string ResponsePasswordNotProvided => "必須輸入密碼。";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsPleaseWait"
 	/// English String: "Too many attempts. Please wait a bit."
 	/// </summary>
-	public override string ResponseTooManyAttemptsPleaseWait => "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+	public override string ResponseTooManyAttemptsPleaseWait => "嘗試次數過多，請稍後再試。";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Unknown Error"
 	/// </summary>
-	public override string ResponseUnknownError => "æœªçŸ¥éŒ¯èª¤";
+	public override string ResponseUnknownError => "未知錯誤";
 
 	/// <summary>
 	/// Key: "Response.UnknownLoginError"
 	/// Unknown login failure.
 	/// English String: "Unknown login failure."
 	/// </summary>
-	public override string ResponseUnknownLoginError => "ç™»å…¥æ™‚ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
+	public override string ResponseUnknownLoginError => "登入時發生未知錯誤。";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedEmailLoginWithUsername"
 	/// error message shown when user attempts to login with unverified email
 	/// English String: "Your email is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedEmailLoginWithUsername => "æ‚¨çš„é›»å­éƒµä»¶æœªé©—è­‰ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+	public override string ResponseUnverifiedEmailLoginWithUsername => "您的電子郵件未驗證，請以您的使用者名稱登入。";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedPhoneLoginWithUsername"
 	/// error message shown when user attempts to login with an unverified phone number
 	/// English String: "Your phone is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedPhoneLoginWithUsername => "æ‚¨çš„æ‰‹æ©Ÿæœªé©—è­‰ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+	public override string ResponseUnverifiedPhoneLoginWithUsername => "您的手機未驗證，請以您的使用者名稱登入。";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotProvided"
 	/// username field is empty
 	/// English String: "You must enter a username."
 	/// </summary>
-	public override string ResponseUsernameNotProvided => "å¿…é ˆè¼¸å…¥ä½¿ç”¨è€…åç¨±ã€‚";
+	public override string ResponseUsernameNotProvided => "必須輸入使用者名稱。";
 
 	/// <summary>
 	/// Key: "Response.UseSocialSignOn"
 	/// Unable to login. Please use Social Network sign on.
 	/// English String: "Unable to login. Please use Social Network sign on."
 	/// </summary>
-	public override string ResponseUseSocialSignOn => "ç„¡æ³•ç™»å…¥ï¼Œè«‹ä»¥ç¤¾äº¤ç¶²è·¯ç™»å…¥ã€‚";
+	public override string ResponseUseSocialSignOn => "無法登入，請以社交網路登入。";
 
 	/// <summary>
 	/// Key: "WeChat.AntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string WeChatAntiAddictionText => "æŠµåˆ¶åŠ£è³ªèˆ‡æŠ„è¥²éŠæˆ²ï¼çŽ©éŠæˆ²æœ‰ç›Šèº«å¿ƒï¼Œä½†éŽåº¦æ²‰è¿·æœƒå°èº«é«”é€ æˆå½±éŸ¿ã€‚æŽ§åˆ¶éŠæˆ²æ™‚é–“ï¼Œäº«å—å¥åº·äººç”Ÿï¼";
+	public override string WeChatAntiAddictionText => "抵制劣質與抄襲遊戲！玩遊戲有益身心，但過度沉迷會對身體造成影響。控制遊戲時間，享受健康人生！";
 
 	/// <summary>
 	/// Key: "WeChat.RealNameNotVerified"
 	/// English String: "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit https://jiazhang.qq.com/zk/home.html"
 	/// </summary>
-	public override string WeChatRealNameNotVerified => "æ‚¨çš„å¾®ä¿¡å°šæœªé€²è¡Œå¯¦åèªè­‰ï¼Œè«‹é€²è¡Œå¯¦åèªè­‰å†é‡æ–°å˜—è©¦ã€‚è«‹å‰å¾€ https://jiazhang.qq.com/zk/home.html";
+	public override string WeChatRealNameNotVerified => "您的微信尚未進行實名認證，請進行實名認證再重新嘗試。請前往 https://jiazhang.qq.com/zk/home.html";
 
 	public LoginResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -436,7 +438,7 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionFacebook()
@@ -446,107 +448,107 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestion()
 	{
-		return "å¿˜è¨˜å¯†ç¢¼æˆ–ä½¿ç”¨è€…åç¨±ï¼Ÿ";
+		return "忘記密碼或使用者名稱？";
 	}
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestionCapitalized()
 	{
-		return "å¿˜è¨˜å¯†ç¢¼æˆ–ä½¿ç”¨è€…åç¨±ï¼Ÿ";
+		return "忘記密碼或使用者名稱？";
 	}
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "ç¢ºå®š";
+		return "確定";
 	}
 
 	protected override string _GetTemplateForActionPlayAsGuest()
 	{
-		return "ä»¥è¨ªå®¢èº«åˆ†éŠçŽ©";
+		return "以訪客身分遊玩";
 	}
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "é‡æ–°å‚³é€";
+		return "重新傳送";
 	}
 
 	protected override string _GetTemplateForActionResendEmail()
 	{
-		return "é‡æ–°å‚³é€é›»å­éƒµä»¶";
+		return "重新傳送電子郵件";
 	}
 
 	protected override string _GetTemplateForActionSendVerificationEmail()
 	{
-		return "å‚³é€é©—è­‰é›»å­éƒµä»¶";
+		return "傳送驗證電子郵件";
 	}
 
 	protected override string _GetTemplateForActionSignIn()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForActionSignInWithFacebook()
 	{
-		return "ä»¥ Facebook ç™»å…¥";
+		return "以 Facebook 登入";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "è¨»å†Š";
+		return "註冊";
 	}
 
 	protected override string _GetTemplateForActionSignUpCapitalized()
 	{
-		return "è¨»å†Š";
+		return "註冊";
 	}
 
 	protected override string _GetTemplateForActionWeChatLogin()
 	{
-		return "å¾®ä¿¡ç™»å…¥";
+		return "微信登入";
 	}
 
 	protected override string _GetTemplateForHeadingLogin()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForHeadingLoginRoblox()
 	{
-		return "ç™»å…¥ Roblox";
+		return "登入 Roblox";
 	}
 
 	protected override string _GetTemplateForHeadingSignUpMakeFriends()
 	{
-		return "è¨»å†Šå¸³è™Ÿï¼Œé–‹å§‹äº¤å‹å’Œå‰µä½œ";
+		return "註冊帳號，開始交友和創作";
 	}
 
 	protected override string _GetTemplateForLabelAccountNotNeeded()
 	{
-		return "çŽ© Roblox ä¸éœ€è¦è¨»å†Šå¸³è™Ÿ";
+		return "玩 Roblox 不需要註冊帳號";
 	}
 
 	protected override string _GetTemplateForLabelEmailNeedsVerification()
 	{
-		return "æ‚¨çš„é›»å­éƒµä»¶åœ°å€éœ€è¦é©—è­‰";
+		return "您的電子郵件地址需要驗證";
 	}
 
 	protected override string _GetTemplateForLabelFacebookCreatePasswordWarning()
 	{
-		return "è‹¥æ‚¨ä»¥ Facebook ç™»å…¥ï¼Œè«‹è¨­å®šå¯†ç¢¼ã€‚";
+		return "若您以 Facebook 登入，請設定密碼。";
 	}
 
 	protected override string _GetTemplateForLabelForgotUsernamePassword()
 	{
-		return "å¿˜è¨˜ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ï¼Ÿ";
+		return "忘記使用者名稱或密碼？";
 	}
 
 	/// <summary>
@@ -556,202 +558,202 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string LabelGreetingForNewAccount(string username, string linkStartSignup, string linkEndSignup)
 	{
-		return $"æ‚¨å¥½ï¼Œ{username}ã€‚{linkStartSignup}ä¾†è¨»å†Šå¸³è™Ÿå§ï¼{linkEndSignup}";
+		return $"您好，{username}。{linkStartSignup}來註冊帳號吧！{linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelGreetingForNewAccount()
 	{
-		return "æ‚¨å¥½ï¼Œ{username}ã€‚{linkStartSignup}ä¾†è¨»å†Šå¸³è™Ÿå§ï¼{linkEndSignup}";
+		return "您好，{username}。{linkStartSignup}來註冊帳號吧！{linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "äº†è§£æ›´å¤š";
+		return "了解更多";
 	}
 
 	protected override string _GetTemplateForLabelLoggingInSpinnerText()
 	{
-		return "æ­£åœ¨ç™»å…¥â€¦";
+		return "正在登入…";
 	}
 
 	protected override string _GetTemplateForLabelLogin()
 	{
-		return "ç™»å…¥";
+		return "登入";
 	}
 
 	protected override string _GetTemplateForLabelLoginWithYour()
 	{
-		return "ç™»å…¥æ–¹æ³•ï¼š";
+		return "登入方法：";
 	}
 
 	protected override string _GetTemplateForLabelNoAccount()
 	{
-		return "æ²’æœ‰å¸³è™Ÿï¼Ÿ";
+		return "沒有帳號？";
 	}
 
 	protected override string _GetTemplateForLabelNonAMemberQuestion()
 	{
-		return "ä¸æ˜¯æœƒå“¡ï¼Ÿ";
+		return "不是會員？";
 	}
 
 	protected override string _GetTemplateForLabelNotReceived()
 	{
-		return "æ²’æœ‰æ”¶åˆ°ï¼Ÿ";
+		return "沒有收到？";
 	}
 
 	protected override string _GetTemplateForLabelOr()
 	{
-		return "æˆ–";
+		return "或";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "å¯†ç¢¼";
+		return "密碼";
 	}
 
 	protected override string _GetTemplateForLabelPasswordWithColumn()
 	{
-		return "å¯†ç¢¼ï¼š";
+		return "密碼：";
 	}
 
 	protected override string _GetTemplateForLabelStartPlaying()
 	{
-		return "ç¾åœ¨ä»¥è¨ªå®¢æ¨¡å¼éŠçŽ©ï¼";
+		return "現在以訪客模式遊玩！";
 	}
 
 	protected override string _GetTemplateForLabelUnverifiedEmailInstructions()
 	{
-		return "è‹¥è¦ä»¥æ‚¨çš„é›»å­éƒµä»¶åœ°å€ç™»å…¥ï¼Œè«‹å…ˆé©—è­‰é›»å­éƒµä»¶åœ°å€ã€‚æ‚¨ä¹Ÿèƒ½ä»¥ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+		return "若要以您的電子郵件地址登入，請先驗證電子郵件地址。您也能以使用者名稱登入。";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ä½¿ç”¨è€…åç¨±";
+		return "使用者名稱";
 	}
 
 	protected override string _GetTemplateForLabelUsernameEmail()
 	{
-		return "ä½¿ç”¨è€…åç¨±ï¼é›»å­éƒµä»¶åœ°å€";
+		return "使用者名稱／電子郵件地址";
 	}
 
 	protected override string _GetTemplateForLabelUsernameEmailPhone()
 	{
-		return "ä½¿ç”¨è€…åç¨±ï¼é›»å­éƒµä»¶åœ°å€ï¼æ‰‹æ©Ÿè™Ÿç¢¼";
+		return "使用者名稱／電子郵件地址／手機號碼";
 	}
 
 	protected override string _GetTemplateForLabelUsernamePhone()
 	{
-		return "ä½¿ç”¨è€…åç¨±ï¼æ‰‹æ©Ÿè™Ÿç¢¼";
+		return "使用者名稱／手機號碼";
 	}
 
 	protected override string _GetTemplateForLabelUsernameWithColumn()
 	{
-		return "ä½¿ç”¨è€…åç¨±ï¼š";
+		return "使用者名稱：";
 	}
 
 	protected override string _GetTemplateForLabelVerificationEmailSent()
 	{
-		return "é©—è­‰é›»å­éƒµä»¶å·²å‚³é€ï¼";
+		return "驗證電子郵件已傳送！";
 	}
 
 	protected override string _GetTemplateForLabelWeChatAntiAddictionText()
 	{
-		return "æŠµåˆ¶åŠ£è³ªèˆ‡æŠ„è¥²éŠæˆ²ï¼çŽ©éŠæˆ²æœ‰ç›Šèº«å¿ƒï¼Œä½†éŽåº¦æ²‰è¿·æœƒå°èº«é«”é€ æˆå½±éŸ¿ã€‚æŽ§åˆ¶éŠæˆ²æ™‚é–“ï¼Œäº«å—å¥åº·äººç”Ÿï¼";
+		return "抵制劣質與抄襲遊戲！玩遊戲有益身心，但過度沉迷會對身體造成影響。控制遊戲時間，享受健康人生！";
 	}
 
 	protected override string _GetTemplateForMessageUnknownErrorTryAgain()
 	{
-		return "ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚è«‹é‡æ–°å˜—è©¦ã€‚";
+		return "發生未知錯誤。請重新嘗試。";
 	}
 
 	protected override string _GetTemplateForMessageUsernameAndPasswordRequired()
 	{
-		return "ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ç©ºç™½";
+		return "使用者名稱或密碼空白";
 	}
 
 	protected override string _GetTemplateForResponseAccountIssueErrorContactSupport()
 	{
-		return "å¸³è™Ÿç™¼ç”Ÿå•é¡Œï¼Œè«‹è¯çµ¡å®¢æœäººå“¡ã€‚";
+		return "帳號發生問題，請聯絡客服人員。";
 	}
 
 	protected override string _GetTemplateForResponseAccountLockedRequestReset()
 	{
-		return "å¸³è™Ÿå·²é­éŽ–å®šï¼Œè«‹é€²è¡Œå¯†ç¢¼é‡ç½®ã€‚";
+		return "帳號已遭鎖定，請進行密碼重置。";
 	}
 
 	protected override string _GetTemplateForResponseAccountNotFound()
 	{
-		return "æ‰¾ä¸åˆ°å¸³è™Ÿï¼Œè«‹é‡æ–°å˜—è©¦ã€‚";
+		return "找不到帳號，請重新嘗試。";
 	}
 
 	protected override string _GetTemplateForResponseEmailLinkedToMultipleAccountsLoginWithUsername()
 	{
-		return "æœ‰å¤šçµ„å¸³è™ŸåŠ å…¥æ­¤é›»å­éƒµä»¶åœ°å€ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+		return "有多組帳號加入此電子郵件地址，請以您的使用者名稱登入。";
 	}
 
 	protected override string _GetTemplateForResponseEmailSent()
 	{
-		return "é©—è­‰éƒµä»¶å·²å‚³é€ï¼";
+		return "驗證郵件已傳送！";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectEmailOrPassword()
 	{
-		return "é›»å­éƒµä»¶æˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+		return "電子郵件或密碼不正確。";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectPhoneOrPassword()
 	{
-		return "æ‰‹æ©Ÿæˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+		return "手機或密碼不正確。";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectUsernamePassword()
 	{
-		return "ä½¿ç”¨è€…åç¨±æˆ–å¯†ç¢¼ä¸æ­£ç¢ºã€‚";
+		return "使用者名稱或密碼不正確。";
 	}
 
 	protected override string _GetTemplateForResponseLoginWithUsername()
 	{
-		return "ç™¼ç”ŸéŒ¯èª¤ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+		return "發生錯誤，請以您的使用者名稱登入。";
 	}
 
 	protected override string _GetTemplateForResponsePasswordNotProvided()
 	{
-		return "å¿…é ˆè¼¸å…¥å¯†ç¢¼ã€‚";
+		return "必須輸入密碼。";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsPleaseWait()
 	{
-		return "å˜—è©¦æ¬¡æ•¸éŽå¤šï¼Œè«‹ç¨å¾Œå†è©¦ã€‚";
+		return "嘗試次數過多，請稍後再試。";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "æœªçŸ¥éŒ¯èª¤";
+		return "未知錯誤";
 	}
 
 	protected override string _GetTemplateForResponseUnknownLoginError()
 	{
-		return "ç™»å…¥æ™‚ç™¼ç”ŸæœªçŸ¥éŒ¯èª¤ã€‚";
+		return "登入時發生未知錯誤。";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedEmailLoginWithUsername()
 	{
-		return "æ‚¨çš„é›»å­éƒµä»¶æœªé©—è­‰ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+		return "您的電子郵件未驗證，請以您的使用者名稱登入。";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedPhoneLoginWithUsername()
 	{
-		return "æ‚¨çš„æ‰‹æ©Ÿæœªé©—è­‰ï¼Œè«‹ä»¥æ‚¨çš„ä½¿ç”¨è€…åç¨±ç™»å…¥ã€‚";
+		return "您的手機未驗證，請以您的使用者名稱登入。";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotProvided()
 	{
-		return "å¿…é ˆè¼¸å…¥ä½¿ç”¨è€…åç¨±ã€‚";
+		return "必須輸入使用者名稱。";
 	}
 
 	protected override string _GetTemplateForResponseUseSocialSignOn()
 	{
-		return "ç„¡æ³•ç™»å…¥ï¼Œè«‹ä»¥ç¤¾äº¤ç¶²è·¯ç™»å…¥ã€‚";
+		return "無法登入，請以社交網路登入。";
 	}
 
 	/// <summary>
@@ -760,22 +762,22 @@ internal class LoginResources_zh_tw : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string ResponseWeChatNotRealNameVerified(string url)
 	{
-		return $"æ‚¨çš„å¾®ä¿¡å°šæœªé€²è¡Œå¯¦åèªè­‰ï¼Œè«‹é€²è¡Œå¯¦åèªè­‰å†é‡æ–°å˜—è©¦ã€‚è«‹å‰å¾€ {url}";
+		return $"您的微信尚未進行實名認證，請進行實名認證再重新嘗試。請前往 {url}";
 	}
 
 	protected override string _GetTemplateForResponseWeChatNotRealNameVerified()
 	{
-		return "æ‚¨çš„å¾®ä¿¡å°šæœªé€²è¡Œå¯¦åèªè­‰ï¼Œè«‹é€²è¡Œå¯¦åèªè­‰å†é‡æ–°å˜—è©¦ã€‚è«‹å‰å¾€ {url}";
+		return "您的微信尚未進行實名認證，請進行實名認證再重新嘗試。請前往 {url}";
 	}
 
 	protected override string _GetTemplateForWeChatAntiAddictionText()
 	{
-		return "æŠµåˆ¶åŠ£è³ªèˆ‡æŠ„è¥²éŠæˆ²ï¼çŽ©éŠæˆ²æœ‰ç›Šèº«å¿ƒï¼Œä½†éŽåº¦æ²‰è¿·æœƒå°èº«é«”é€ æˆå½±éŸ¿ã€‚æŽ§åˆ¶éŠæˆ²æ™‚é–“ï¼Œäº«å—å¥åº·äººç”Ÿï¼";
+		return "抵制劣質與抄襲遊戲！玩遊戲有益身心，但過度沉迷會對身體造成影響。控制遊戲時間，享受健康人生！";
 	}
 
 	protected override string _GetTemplateForWeChatRealNameNotVerified()
 	{
-		return "æ‚¨çš„å¾®ä¿¡å°šæœªé€²è¡Œå¯¦åèªè­‰ï¼Œè«‹é€²è¡Œå¯¦åèªè­‰å†é‡æ–°å˜—è©¦ã€‚è«‹å‰å¾€ https://jiazhang.qq.com/zk/home.html";
+		return "您的微信尚未進行實名認證，請進行實名認證再重新嘗試。請前往 https://jiazhang.qq.com/zk/home.html";
 	}
 }
 

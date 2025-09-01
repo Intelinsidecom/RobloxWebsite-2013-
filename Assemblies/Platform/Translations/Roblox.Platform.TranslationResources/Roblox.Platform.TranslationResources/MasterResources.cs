@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResourcespublic {
+namespace Roblox.Platform.TranslationResources {
     class MasterResources : IMasterResources
 
 {
@@ -56,3 +56,4 @@ namespace Roblox.Platform.TranslationResourcespublic {
 
 
 }
+

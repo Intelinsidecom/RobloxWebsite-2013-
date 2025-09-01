@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
@@ -514,6 +516,11 @@ internal class ProfileResources_de_de : ProfileResources_en_us, IProfileResource
 	/// English String: "Too Many Attempts"
 	/// </summary>
 	public override string ResponseTooManyAttempts => "Zu viele Versuche";
+
+	public string GetFullContentNamespaceName()
+	{
+		return "Feature.Profile";
+	}
 
 	public ProfileResources_de_de(TranslationResourceState state)
 		: base(state)

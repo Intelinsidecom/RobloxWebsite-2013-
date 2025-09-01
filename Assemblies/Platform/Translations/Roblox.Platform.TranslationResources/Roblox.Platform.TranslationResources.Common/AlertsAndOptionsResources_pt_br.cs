@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AlertsAndOptionsResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class AlertsAndOptionsResources_pt_br : AlertsAndOptionsResources_en_us
 	/// Key: "Label.sSettings"
 	/// English String: "Settings"
 	/// </summary>
-	public override string LabelsSettings => "ConfiguraÃ§Ãµes";
+	public override string LabelsSettings => "Configurações";
 
 	public AlertsAndOptionsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -63,7 +65,7 @@ internal class AlertsAndOptionsResources_pt_br : AlertsAndOptionsResources_en_us
 
 	/// <summary>
 	/// Key: "Label.sRobuxMessage"
-	/// English String: "{robuxValue}Â Robux"
+	/// English String: "{robuxValue} Robux"
 	/// </summary>
 	public override string LabelsRobuxMessage(string robuxValue)
 	{
@@ -77,7 +79,7 @@ internal class AlertsAndOptionsResources_pt_br : AlertsAndOptionsResources_en_us
 
 	protected override string _GetTemplateForLabelsSettings()
 	{
-		return "ConfiguraÃ§Ãµes";
+		return "Configurações";
 	}
 }
 

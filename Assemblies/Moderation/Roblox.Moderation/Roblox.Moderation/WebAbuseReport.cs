@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Web;
+using System.Net;
 
 namespace Roblox.Moderation;
 
@@ -43,7 +43,7 @@ public abstract class WebAbuseReport : AnyAbuseReport
 	{
 		if (_ReportContext is WebsiteContext webContext && !string.IsNullOrEmpty(webContext.ContextUrl))
 		{
-			ContextUrl.GetOrCreate(webContext.ContextUrl.Replace(ApplicationUrl, string.Empty).Replace(HttpUtility.UrlEncode(ApplicationUrl), string.Empty));
+			ContextUrl.GetOrCreate(webContext.ContextUrl.Replace(ApplicationUrl, string.Empty).Replace(WebUtility.UrlEncode(ApplicationUrl), string.Empty));
 			return webContext.ContextUrl;
 		}
 		return string.Empty;

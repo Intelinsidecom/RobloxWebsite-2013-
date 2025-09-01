@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Moderation {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Moderation {
     /// <summary>
 
 /// This class overrides ModeratorActionsResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class ModeratorActionsResources_ja_jp : ModeratorActionsResources_en_us
 	/// Key: "Label.ScrubText"
 	/// English String: "[ Content Deleted ]"
 	/// </summary>
-	public override string LabelScrubText => "[ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸ]";
+	public override string LabelScrubText => "[コンテンツが削除されました]";
 
 	public ModeratorActionsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -19,7 +21,7 @@ internal class ModeratorActionsResources_ja_jp : ModeratorActionsResources_en_us
 
 	protected override string _GetTemplateForLabelScrubText()
 	{
-		return "[ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãŒå‰Šé™¤ã•ã‚Œã¾ã—ãŸ]";
+		return "[コンテンツが削除されました]";
 	}
 }
 

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IAvatarResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IAvatarResources : ITranslationResources
 
 {
 	/// <summary>
@@ -1264,3 +1266,5 @@
 
 
 }
+
+

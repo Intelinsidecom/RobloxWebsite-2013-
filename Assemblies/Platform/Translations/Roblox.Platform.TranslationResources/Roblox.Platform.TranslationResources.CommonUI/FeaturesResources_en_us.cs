@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+namespace Roblox.Platform.TranslationResources.CommonUI {
     class FeaturesResources_en_us : TranslationResourcesBase, IFeaturesResources, ITranslationResources
 
 {
@@ -1008,3 +1008,4 @@ namespace Roblox.Platform.TranslationResources.CommonUIinternal {
 
 
 }
+

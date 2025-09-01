@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -117,3 +117,4 @@ public class GroupFeatureDAL
 		return RobloxDatabase.RobloxGroups.GetIDCollection<long>("GroupFeaturesV2_GetGroupFeatureV2IDsByGroupID_Paged", queryParameters);
 	}
 }
+

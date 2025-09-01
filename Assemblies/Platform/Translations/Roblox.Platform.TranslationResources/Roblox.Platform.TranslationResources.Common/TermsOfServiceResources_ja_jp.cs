@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
@@ -10,19 +12,19 @@ internal class TermsOfServiceResources_ja_jp : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosAgreementTitle"
 	/// English String: "TERMS OF USE AGREEMENT"
 	/// </summary>
-	public override string HeadingTosAgreementTitle => "åˆ©ç”¨è¦ç´„ã®åŒæ„";
+	public override string HeadingTosAgreementTitle => "利用規約の同意";
 
 	/// <summary>
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "åˆ©ç”¨è¦ç´„ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸ";
+	public override string HeadingTosHaveChangedTitle => "利用規約が変更されました";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
 	/// English String: "I AGREE"
 	/// </summary>
-	public override string LabelIAgree => "åŒæ„ã™ã‚‹";
+	public override string LabelIAgree => "同意する";
 
 	public TermsOfServiceResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -31,17 +33,17 @@ internal class TermsOfServiceResources_ja_jp : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosAgreementTitle()
 	{
-		return "åˆ©ç”¨è¦ç´„ã®åŒæ„";
+		return "利用規約の同意";
 	}
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "åˆ©ç”¨è¦ç´„ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸ";
+		return "利用規約が変更されました";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
 	{
-		return "åŒæ„ã™ã‚‹";
+		return "同意する";
 	}
 
 	/// <summary>
@@ -50,12 +52,12 @@ internal class TermsOfServiceResources_ja_jp : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€{tosLinkStart}åˆ©ç”¨è¦ç´„{tosLinkEnd} ã¨ {privacyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{legalChangesLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {privacyLinkEnd}ã“ã¡ã‚‰{legalChangesLinkStart} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return $"「同意する」をクリックすることで、{tosLinkStart}利用規約{tosLinkEnd} と {privacyLinkStart}プライバシーポリシー{legalChangesLinkEnd} に同意したものとみなされます。変更内容の詳細は、 {privacyLinkEnd}こちら{legalChangesLinkStart} で確認してください。";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€{tosLinkStart}åˆ©ç”¨è¦ç´„{tosLinkEnd} ã¨ {privacyLinkStart}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼ãƒãƒªã‚·ãƒ¼{legalChangesLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {privacyLinkEnd}ã“ã¡ã‚‰{legalChangesLinkStart} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return "「同意する」をクリックすることで、{tosLinkStart}利用規約{tosLinkEnd} と {privacyLinkStart}プライバシーポリシー{legalChangesLinkEnd} に同意したものとみなされます。変更内容の詳細は、 {privacyLinkEnd}こちら{legalChangesLinkStart} で確認してください。";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class TermsOfServiceResources_ja_jp : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€ {tosLinkStart}åˆ©ç”¨è¦ç´„{tosLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚ã“ã‚Œã«ã¯ã€ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã€ã‚ªãƒ•ãƒ©ã‚¤ãƒ³ï¼ˆæœ‰å½¢ã‚¢ã‚¤ãƒ†ãƒ ãªã©ï¼‰ã§ä½¿ç”¨ã™ã‚‹ãŸã‚ã«ã‚µãƒ¼ãƒ“ã‚¹ã«å¯¾ã—ã¦ã‚ãªãŸãŒæä¾›ã™ã‚‹Robloxã®éŽåŽ»ãŠã‚ˆã³å°†æ¥ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å«ã¿ã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {legalChangesLinkStart}ã“ã¡ã‚‰{legalChangesLinkEnd} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return $"「同意する」をクリックすることで、 {tosLinkStart}利用規約{tosLinkEnd} に同意したものとみなされます。これには、オンライン、オフライン（有形アイテムなど）で使用するためにサービスに対してあなたが提供するRobloxの過去および将来のコンテンツのライセンスを含みます。変更内容の詳細は、 {legalChangesLinkStart}こちら{legalChangesLinkEnd} で確認してください。";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€ {tosLinkStart}åˆ©ç”¨è¦ç´„{tosLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚ã“ã‚Œã«ã¯ã€ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã€ã‚ªãƒ•ãƒ©ã‚¤ãƒ³ï¼ˆæœ‰å½¢ã‚¢ã‚¤ãƒ†ãƒ ãªã©ï¼‰ã§ä½¿ç”¨ã™ã‚‹ãŸã‚ã«ã‚µãƒ¼ãƒ“ã‚¹ã«å¯¾ã—ã¦ã‚ãªãŸãŒæä¾›ã™ã‚‹Robloxã®éŽåŽ»ãŠã‚ˆã³å°†æ¥ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å«ã¿ã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {legalChangesLinkStart}ã“ã¡ã‚‰{legalChangesLinkEnd} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return "「同意する」をクリックすることで、 {tosLinkStart}利用規約{tosLinkEnd} に同意したものとみなされます。これには、オンライン、オフライン（有形アイテムなど）で使用するためにサービスに対してあなたが提供するRobloxの過去および将来のコンテンツのライセンスを含みます。変更内容の詳細は、 {legalChangesLinkStart}こちら{legalChangesLinkEnd} で確認してください。";
 	}
 
 	/// <summary>
@@ -78,12 +80,12 @@ internal class TermsOfServiceResources_ja_jp : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€ {tosLinkStart}Robloxã®åˆ©ç”¨è¦ç´„{tosLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚ã“ã‚Œã«ã¯ã€å½“ç¤¾ã®ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã€ã‚ªãƒ•ãƒ©ã‚¤ãƒ³ã€æœ‰å½¢ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚µãƒ¼ãƒ“ã‚¹ã«å¯¾ã—ã¦ã‚ãªãŸãŒæä¾›ã™ã‚‹Robloxã®éŽåŽ»ãŠã‚ˆã³å°†æ¥ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å«ã¿ã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {legalChangesLinkStart}ã“ã¡ã‚‰{legalChangesLinkEnd} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return $"「同意する」をクリックすることで、 {tosLinkStart}Robloxの利用規約{tosLinkEnd} に同意したものとみなされます。これには、当社のオンライン、オフライン、有形アイテムのサービスに対してあなたが提供するRobloxの過去および将来のコンテンツのライセンスを含みます。変更内容の詳細は、 {legalChangesLinkStart}こちら{legalChangesLinkEnd} で確認してください。";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "ã€ŒåŒæ„ã™ã‚‹ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã“ã¨ã§ã€ {tosLinkStart}Robloxã®åˆ©ç”¨è¦ç´„{tosLinkEnd} ã«åŒæ„ã—ãŸã‚‚ã®ã¨ã¿ãªã•ã‚Œã¾ã™ã€‚ã“ã‚Œã«ã¯ã€å½“ç¤¾ã®ã‚ªãƒ³ãƒ©ã‚¤ãƒ³ã€ã‚ªãƒ•ãƒ©ã‚¤ãƒ³ã€æœ‰å½¢ã‚¢ã‚¤ãƒ†ãƒ ã®ã‚µãƒ¼ãƒ“ã‚¹ã«å¯¾ã—ã¦ã‚ãªãŸãŒæä¾›ã™ã‚‹Robloxã®éŽåŽ»ãŠã‚ˆã³å°†æ¥ã®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã®ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã‚’å«ã¿ã¾ã™ã€‚å¤‰æ›´å†…å®¹ã®è©³ç´°ã¯ã€ {legalChangesLinkStart}ã“ã¡ã‚‰{legalChangesLinkEnd} ã§ç¢ºèªã—ã¦ãã ã•ã„ã€‚";
+		return "「同意する」をクリックすることで、 {tosLinkStart}Robloxの利用規約{tosLinkEnd} に同意したものとみなされます。これには、当社のオンライン、オフライン、有形アイテムのサービスに対してあなたが提供するRobloxの過去および将来のコンテンツのライセンスを含みます。変更内容の詳細は、 {legalChangesLinkStart}こちら{legalChangesLinkEnd} で確認してください。";
 	}
 }
 

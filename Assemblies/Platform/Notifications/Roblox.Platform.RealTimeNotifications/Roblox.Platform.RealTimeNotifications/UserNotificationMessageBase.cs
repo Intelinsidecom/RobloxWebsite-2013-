@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
-using Roblox.RealTimeNotifications.Properties;
-namespace Roblox.Platform.RealTimeNotificationspublic {
+using Newtonsoft.Json;
+using Roblox.Platform.RealTimeNotifications.Properties;
+namespace Roblox.Platform.RealTimeNotifications
+{
     abstract class UserNotificationMessageBase
 
 {
@@ -17,6 +18,5 @@ namespace Roblox.Platform.RealTimeNotificationspublic {
 		return Settings.Default.IsUserNotificationNamespaceSequenceEnabled;
 	}
 }
-
 
 }

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPanelResources_en_us to provide locale specific translations where possible,
@@ -11,77 +13,77 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// button text
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string ActionBuyRobux => "è´­ä¹° Robux";
+	public override string ActionBuyRobux => "购买 Robux";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.RedeemCard"
 	/// button text
 	/// English String: "Redeem Card"
 	/// </summary>
-	public override string ActionRedeemCard => "å…‘æ¢ç¤¼å“å¡";
+	public override string ActionRedeemCard => "兑换礼品卡";
 
 	/// <summary>
 	/// Key: "Action.UpdateCreditCard"
 	/// button text
 	/// English String: "Update Credit Card"
 	/// </summary>
-	public override string ActionUpdateCreditCard => "æ›´æ–°ä¿¡ç”¨å¡";
+	public override string ActionUpdateCreditCard => "更新信用卡";
 
 	/// <summary>
 	/// Key: "Action.WhereToBuy"
 	/// button text
 	/// English String: "Where to Buy"
 	/// </summary>
-	public override string ActionWhereToBuy => "è´­ä¹°æ¸ é“";
+	public override string ActionWhereToBuy => "购买渠道";
 
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
-	public override string DescriptionBuyRobux => "Robux æ˜¯æˆ‘ä»¬è®¸å¤šåœ¨çº¿æ¸¸æˆä¸­ä½¿ç”¨çš„è™šæ‹Ÿè´§å¸ã€‚ä½ å¯ä»¥ä½¿ç”¨ Robux æ‰“é€ ä¸ªæ€§åè¶³çš„è™šæ‹Ÿå½¢è±¡ã€èŽ·å–å¯ç”¨äºŽå¤šäººæ¸¸æˆæˆ˜æ–—ä¸­çš„é…·ç‚«è£…å¤‡ï¼Œå¹¶è´­ä¹°é™é‡ç‰©å“ä»¥å‡ºå”®å’Œäº¤æ˜“ã€‚è¦å®žçŽ°è¿™ä¸€åˆ‡ï¼Œä½ éƒ½å°†éœ€è¦ Robuxã€‚ä½ è¿˜åœ¨ç­‰ä»€ä¹ˆï¼Ÿ";
+	public override string DescriptionBuyRobux => "Robux 是我们许多在线游戏中使用的虚拟货币。你可以使用 Robux 打造个性十足的虚拟形象、获取可用于多人游戏战斗中的酷炫装备，并购买限量物品以出售和交易。要实现这一切，你都将需要 Robux。你还在等什么？";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
 	/// section heading
 	/// English String: "Buy Robux"
 	/// </summary>
-	public override string HeadingBuyRobux => "è´­ä¹° Robux";
+	public override string HeadingBuyRobux => "购买 Robux";
 
 	/// <summary>
 	/// Key: "Heading.Cancellations"
 	/// section heading
 	/// English String: "Cancellation"
 	/// </summary>
-	public override string HeadingCancellations => "å–æ¶ˆ";
+	public override string HeadingCancellations => "取消";
 
 	/// <summary>
 	/// Key: "Heading.GameCards"
 	/// section heading
 	/// English String: "Game Cards"
 	/// </summary>
-	public override string HeadingGameCards => "ç¤¼å“å¡";
+	public override string HeadingGameCards => "礼品卡";
 
 	/// <summary>
 	/// Key: "Heading.Parents"
 	/// section heading
 	/// English String: "Parents"
 	/// </summary>
-	public override string HeadingParents => "å®¶é•¿";
+	public override string HeadingParents => "家长";
 
 	/// <summary>
 	/// Key: "Label.BuyRobuxWith"
 	/// label - there are 2 images after the message about showing buying options
 	/// English String: "Buy Robux with"
 	/// </summary>
-	public override string LabelBuyRobuxWith => "å¯é€šè¿‡ä¸‹åˆ—æ¸ é“è´­ä¹° Robuxï¼š";
+	public override string LabelBuyRobuxWith => "可通过下列渠道购买 Robux：";
 
 	/// <summary>
 	/// Key: "Label.Itunes"
@@ -102,7 +104,7 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// label
 	/// English String: "Roblox Gamecards"
 	/// </summary>
-	public override string LabelRobloxGameCards => "Roblox ç¤¼å“å¡";
+	public override string LabelRobloxGameCards => "Roblox 礼品卡";
 
 	public BuildersClubPanelResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -111,27 +113,27 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 
 	protected override string _GetTemplateForActionBuyRobux()
 	{
-		return "è´­ä¹° Robux";
+		return "购买 Robux";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionRedeemCard()
 	{
-		return "å…‘æ¢ç¤¼å“å¡";
+		return "兑换礼品卡";
 	}
 
 	protected override string _GetTemplateForActionUpdateCreditCard()
 	{
-		return "æ›´æ–°ä¿¡ç”¨å¡";
+		return "更新信用卡";
 	}
 
 	protected override string _GetTemplateForActionWhereToBuy()
 	{
-		return "è´­ä¹°æ¸ é“";
+		return "购买渠道";
 	}
 
 	/// <summary>
@@ -141,17 +143,17 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string DescriptionBillingPaymentHelp(string emailLink)
 	{
-		return $"å…³äºŽè´¦å•ä¸Žä»˜æ¬¾é—®é¢˜ï¼Œè¯·è”ç³»ï¼š{emailLink}";
+		return $"关于账单与付款问题，请联系：{emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBillingPaymentHelp()
 	{
-		return "å…³äºŽè´¦å•ä¸Žä»˜æ¬¾é—®é¢˜ï¼Œè¯·è”ç³»ï¼š{emailLink}";
+		return "关于账单与付款问题，请联系：{emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobux()
 	{
-		return "Robux æ˜¯æˆ‘ä»¬è®¸å¤šåœ¨çº¿æ¸¸æˆä¸­ä½¿ç”¨çš„è™šæ‹Ÿè´§å¸ã€‚ä½ å¯ä»¥ä½¿ç”¨ Robux æ‰“é€ ä¸ªæ€§åè¶³çš„è™šæ‹Ÿå½¢è±¡ã€èŽ·å–å¯ç”¨äºŽå¤šäººæ¸¸æˆæˆ˜æ–—ä¸­çš„é…·ç‚«è£…å¤‡ï¼Œå¹¶è´­ä¹°é™é‡ç‰©å“ä»¥å‡ºå”®å’Œäº¤æ˜“ã€‚è¦å®žçŽ°è¿™ä¸€åˆ‡ï¼Œä½ éƒ½å°†éœ€è¦ Robuxã€‚ä½ è¿˜åœ¨ç­‰ä»€ä¹ˆï¼Ÿ";
+		return "Robux 是我们许多在线游戏中使用的虚拟货币。你可以使用 Robux 打造个性十足的虚拟形象、获取可用于多人游戏战斗中的酷炫装备，并购买限量物品以出售和交易。要实现这一切，你都将需要 Robux。你还在等什么？";
 	}
 
 	/// <summary>
@@ -161,12 +163,12 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string DescriptionCancellations(string linkStartTag, string linkEndTag)
 	{
-		return $"ä½ å¯ä»¥åœ¨ Builders Club ä¼šå‘˜èµ„æ ¼ç»­è®¢æ—¥æœŸä¹‹å‰éšæ—¶å…³é—­è‡ªåŠ¨ç»­è®¢ï¼Œå¹¶åœ¨å½“å‰å‰©ä½™çš„å·²ä»˜è´¹æœŸé™å†…ç»§ç»­äº«æœ‰ Builders Club çš„æƒç›Šã€‚è‹¥è¦å…³é—­ä¼šå‘˜è‡ªåŠ¨ç»­è®¢ï¼Œè¯·åœ¨è®¾ç½®é¡µé¢çš„{linkStartTag}è´¦å•{linkEndTag}æ ‡ç­¾ä¸­ç‚¹æŒ‰â€œå–æ¶ˆä¼šå‘˜èµ„æ ¼ç»­è®¢â€æŒ‰é’®ï¼Œç„¶åŽç¡®è®¤å–æ¶ˆã€‚";
+		return $"你可以在 Builders Club 会员资格续订日期之前随时关闭自动续订，并在当前剩余的已付费期限内继续享有 Builders Club 的权益。若要关闭会员自动续订，请在设置页面的{linkStartTag}账单{linkEndTag}标签中点按“取消会员资格续订”按钮，然后确认取消。";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellations()
 	{
-		return "ä½ å¯ä»¥åœ¨ Builders Club ä¼šå‘˜èµ„æ ¼ç»­è®¢æ—¥æœŸä¹‹å‰éšæ—¶å…³é—­è‡ªåŠ¨ç»­è®¢ï¼Œå¹¶åœ¨å½“å‰å‰©ä½™çš„å·²ä»˜è´¹æœŸé™å†…ç»§ç»­äº«æœ‰ Builders Club çš„æƒç›Šã€‚è‹¥è¦å…³é—­ä¼šå‘˜è‡ªåŠ¨ç»­è®¢ï¼Œè¯·åœ¨è®¾ç½®é¡µé¢çš„{linkStartTag}è´¦å•{linkEndTag}æ ‡ç­¾ä¸­ç‚¹æŒ‰â€œå–æ¶ˆä¼šå‘˜èµ„æ ¼ç»­è®¢â€æŒ‰é’®ï¼Œç„¶åŽç¡®è®¤å–æ¶ˆã€‚";
+		return "你可以在 Builders Club 会员资格续订日期之前随时关闭自动续订，并在当前剩余的已付费期限内继续享有 Builders Club 的权益。若要关闭会员自动续订，请在设置页面的{linkStartTag}账单{linkEndTag}标签中点按“取消会员资格续订”按钮，然后确认取消。";
 	}
 
 	/// <summary>
@@ -175,12 +177,12 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string DescriptionCancellationsPremium(string linkStartTag, string linkEndTag)
 	{
-		return $"ä½ å¯ä»¥åœ¨ Premium ä¼šå‘˜èµ„æ ¼ç»­è®¢æ—¥æœŸä¹‹å‰éšæ—¶å…³é—­è‡ªåŠ¨ç»­è®¢ï¼Œå¹¶åœ¨å½“å‰å‰©ä½™çš„å·²ä»˜è´¹æœŸé™å†…ç»§ç»­äº«æœ‰ Premium çš„ç¦åˆ©ã€‚è‹¥è¦å…³é—­ä¼šå‘˜è‡ªåŠ¨ç»­è®¢ï¼Œè¯·åœ¨è®¾ç½®é¡µé¢çš„{linkStartTag}è´¦å•{linkEndTag}æ ‡ç­¾ä¸­ç‚¹æŒ‰â€œå–æ¶ˆä¼šå‘˜èµ„æ ¼ç»­è®¢â€æŒ‰é’®ï¼Œç„¶åŽç¡®è®¤å–æ¶ˆã€‚";
+		return $"你可以在 Premium 会员资格续订日期之前随时关闭自动续订，并在当前剩余的已付费期限内继续享有 Premium 的福利。若要关闭会员自动续订，请在设置页面的{linkStartTag}账单{linkEndTag}标签中点按“取消会员资格续订”按钮，然后确认取消。";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellationsPremium()
 	{
-		return "ä½ å¯ä»¥åœ¨ Premium ä¼šå‘˜èµ„æ ¼ç»­è®¢æ—¥æœŸä¹‹å‰éšæ—¶å…³é—­è‡ªåŠ¨ç»­è®¢ï¼Œå¹¶åœ¨å½“å‰å‰©ä½™çš„å·²ä»˜è´¹æœŸé™å†…ç»§ç»­äº«æœ‰ Premium çš„ç¦åˆ©ã€‚è‹¥è¦å…³é—­ä¼šå‘˜è‡ªåŠ¨ç»­è®¢ï¼Œè¯·åœ¨è®¾ç½®é¡µé¢çš„{linkStartTag}è´¦å•{linkEndTag}æ ‡ç­¾ä¸­ç‚¹æŒ‰â€œå–æ¶ˆä¼šå‘˜èµ„æ ¼ç»­è®¢â€æŒ‰é’®ï¼Œç„¶åŽç¡®è®¤å–æ¶ˆã€‚";
+		return "你可以在 Premium 会员资格续订日期之前随时关闭自动续订，并在当前剩余的已付费期限内继续享有 Premium 的福利。若要关闭会员自动续订，请在设置页面的{linkStartTag}账单{linkEndTag}标签中点按“取消会员资格续订”按钮，然后确认取消。";
 	}
 
 	/// <summary>
@@ -190,12 +192,12 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string DescriptionLeanMoreKidsSafety(string startLinkTag, string endLinkTag)
 	{
-		return $"äº†è§£æ›´å¤šå…³äºŽ Builders Club åŠæˆ‘ä»¬å¦‚ä½•{startLinkTag}ä¿æŠ¤å„¿ç«¥å®‰å…¨{endLinkTag}çš„æ–¹å¼ã€‚";
+		return $"了解更多关于 Builders Club 及我们如何{startLinkTag}保护儿童安全{endLinkTag}的方式。";
 	}
 
 	protected override string _GetTemplateForDescriptionLeanMoreKidsSafety()
 	{
-		return "äº†è§£æ›´å¤šå…³äºŽ Builders Club åŠæˆ‘ä»¬å¦‚ä½•{startLinkTag}ä¿æŠ¤å„¿ç«¥å®‰å…¨{endLinkTag}çš„æ–¹å¼ã€‚";
+		return "了解更多关于 Builders Club 及我们如何{startLinkTag}保护儿童安全{endLinkTag}的方式。";
 	}
 
 	/// <summary>
@@ -204,37 +206,37 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string DescriptionLearnMoreKidsSafetyPremium(string startLinkTag, string endLinkTag)
 	{
-		return $"è¿›ä¸€æ­¥äº†è§£ Premium åŠæˆ‘ä»¬å¦‚ä½•{startLinkTag}ç»´æŠ¤å„¿ç«¥å®‰å…¨{endLinkTag}ã€‚";
+		return $"进一步了解 Premium 及我们如何{startLinkTag}维护儿童安全{endLinkTag}。";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreKidsSafetyPremium()
 	{
-		return "è¿›ä¸€æ­¥äº†è§£ Premium åŠæˆ‘ä»¬å¦‚ä½•{startLinkTag}ç»´æŠ¤å„¿ç«¥å®‰å…¨{endLinkTag}ã€‚";
+		return "进一步了解 Premium 及我们如何{startLinkTag}维护儿童安全{endLinkTag}。";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
 	{
-		return "è´­ä¹° Robux";
+		return "购买 Robux";
 	}
 
 	protected override string _GetTemplateForHeadingCancellations()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForHeadingGameCards()
 	{
-		return "ç¤¼å“å¡";
+		return "礼品卡";
 	}
 
 	protected override string _GetTemplateForHeadingParents()
 	{
-		return "å®¶é•¿";
+		return "家长";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobuxWith()
 	{
-		return "å¯é€šè¿‡ä¸‹åˆ—æ¸ é“è´­ä¹° Robuxï¼š";
+		return "可通过下列渠道购买 Robux：";
 	}
 
 	/// <summary>
@@ -244,12 +246,12 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 	/// </summary>
 	public override string LabelCreditBalance(string amount)
 	{
-		return $"ç‚¹æ•°ä½™é¢ï¼š{amount}";
+		return $"点数余额：{amount}";
 	}
 
 	protected override string _GetTemplateForLabelCreditBalance()
 	{
-		return "ç‚¹æ•°ä½™é¢ï¼š{amount}";
+		return "点数余额：{amount}";
 	}
 
 	protected override string _GetTemplateForLabelItunes()
@@ -264,7 +266,7 @@ internal class BuildersClubPanelResources_zh_cjv : BuildersClubPanelResources_en
 
 	protected override string _GetTemplateForLabelRobloxGameCards()
 	{
-		return "Roblox ç¤¼å“å¡";
+		return "Roblox 礼品卡";
 	}
 }
 

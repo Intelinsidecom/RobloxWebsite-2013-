@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class SocialShareResources_en_us : TranslationResourcesBase, ISocialShareResources, ITranslationResources
 
 {
@@ -41,3 +41,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

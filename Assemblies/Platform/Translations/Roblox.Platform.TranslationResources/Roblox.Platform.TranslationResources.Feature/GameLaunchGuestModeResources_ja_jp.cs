@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLaunchGuestModeResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "é–‰ã˜ã‚‹";
+	public override string ActionDialogClose => "閉じる";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Login"
 	/// button text
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionDialogLogin => "ãƒ­ã‚°ã‚¤ãƒ³";
+	public override string ActionDialogLogin => "ログイン";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Ok"
@@ -32,70 +34,70 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 	/// button text
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string ActionDialogSignUp => "æ–°è¦ç™»éŒ²";
+	public override string ActionDialogSignUp => "新規登録";
 
 	/// <summary>
 	/// Key: "Action.Dialog.SignUpNow"
 	/// button text
 	/// English String: "Sign up now!"
 	/// </summary>
-	public override string ActionDialogSignUpNow => "ä»Šã™ãæ–°è¦ç™»éŒ²ã—ã‚ˆã†ï¼";
+	public override string ActionDialogSignUpNow => "今すぐ新規登録しよう！";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpOrLogin"
 	/// modal body text
 	/// English String: "To play games, chat with friends, or customize your avatar, you'll need an account. Sign up for a free account or log in to play now."
 	/// </summary>
-	public override string DescriptionDialogSignUpOrLogin => "ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€å‹é”ã¨ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€ã‚¢ãƒã‚¿ãƒ¼ã®ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã‚’ã—ãŸã‚Šã™ã‚‹ã«ã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒå¿…è¦ã§ã™ã€‚ç„¡æ–™ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æ–°è¦ç™»éŒ²ã™ã‚‹ã‹ã€ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ï¼";
+	public override string DescriptionDialogSignUpOrLogin => "ゲームをプレイしたり、友達とチャットしたり、アバターのカスタマイズをしたりするにはアカウントが必要です。無料アカウントを新規登録するか、ログインしてください！";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpTodayOneDayRemaining"
 	/// description text
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than a day left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogSignUpTodayOneDayRemaining => "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€24æ™‚é–“ã‚’åˆ‡ã£ã¦ã„ã¾ã™ã€‚";
+	public override string DescriptionDialogSignUpTodayOneDayRemaining => "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、24時間を切っています。";
 
 	/// <summary>
 	/// Key: "Description.Dialog.TrialOver"
 	/// description
 	/// English String: "Your trial period has ended. Please sign up to play games - it's free!"
 	/// </summary>
-	public override string DescriptionDialogTrialOver => "ãƒˆãƒ©ã‚¤ã‚¢ãƒ«æœŸé–“ãŒçµ‚äº†ã—ã¾ã—ãŸã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã«ã¯ã€ç„¡æ–™ã®æ–°è¦ç™»éŒ²ã‚’è¡Œã£ã¦ãã ã•ã„ï¼";
+	public override string DescriptionDialogTrialOver => "トライアル期間が終了しました。ゲームをプレイするには、無料の新規登録を行ってください！";
 
 	/// <summary>
 	/// Key: "Description.Dialog.YouArePlayingOneDayRemaining"
 	/// description
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have 1 gameplay left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogYouArePlayingOneDayRemaining => "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€ã‚ã¨1å›žã®ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ãŒæ®‹ã£ã¦ã„ã¾ã™ã€‚";
+	public override string DescriptionDialogYouArePlayingOneDayRemaining => "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、あと1回のゲームプレイが残っています。";
 
 	/// <summary>
 	/// Key: "Heading.ChooseAvatar"
 	/// modal heading
 	/// English String: "Choose Your Avatar"
 	/// </summary>
-	public override string HeadingChooseAvatar => "ã‚¢ãƒã‚¿ãƒ¼ã‚’é¸ã¶";
+	public override string HeadingChooseAvatar => "アバターを選ぶ";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpOrLogin"
 	/// modal heading
 	/// English String: "Sign up for a free account or log in!"
 	/// </summary>
-	public override string HeadingDialogSignUpOrLogin => "ç„¡æ–™ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æ–°è¦ç™»éŒ²ã™ã‚‹ã‹ã€ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ï¼";
+	public override string HeadingDialogSignUpOrLogin => "無料アカウントを新規登録するか、ログインしてください！";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpToday"
 	/// modal heading
 	/// English String: "Sign Up Today!"
 	/// </summary>
-	public override string HeadingDialogSignUpToday => "ä»Šã™ãæ–°è¦ç™»éŒ²ã—ã‚ˆã†ï¼";
+	public override string HeadingDialogSignUpToday => "今すぐ新規登録しよう！";
 
 	/// <summary>
 	/// Key: "Label.HaveAccount"
 	/// label
 	/// English String: "I have an account"
 	/// </summary>
-	public override string LabelHaveAccount => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æŒã£ã¦ã„ã‚‹";
+	public override string LabelHaveAccount => "アカウントを持っている";
 
 	public GameLaunchGuestModeResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -104,12 +106,12 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "é–‰ã˜ã‚‹";
+		return "閉じる";
 	}
 
 	protected override string _GetTemplateForActionDialogLogin()
 	{
-		return "ãƒ­ã‚°ã‚¤ãƒ³";
+		return "ログイン";
 	}
 
 	protected override string _GetTemplateForActionDialogOk()
@@ -119,22 +121,22 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForActionDialogSignUp()
 	{
-		return "æ–°è¦ç™»éŒ²";
+		return "新規登録";
 	}
 
 	protected override string _GetTemplateForActionDialogSignUpNow()
 	{
-		return "ä»Šã™ãæ–°è¦ç™»éŒ²ã—ã‚ˆã†ï¼";
+		return "今すぐ新規登録しよう！";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpOrLogin()
 	{
-		return "ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã—ãŸã‚Šã€å‹é”ã¨ãƒãƒ£ãƒƒãƒˆã—ãŸã‚Šã€ã‚¢ãƒã‚¿ãƒ¼ã®ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚ºã‚’ã—ãŸã‚Šã™ã‚‹ã«ã¯ã‚¢ã‚«ã‚¦ãƒ³ãƒˆãŒå¿…è¦ã§ã™ã€‚ç„¡æ–™ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æ–°è¦ç™»éŒ²ã™ã‚‹ã‹ã€ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ï¼";
+		return "ゲームをプレイしたり、友達とチャットしたり、アバターのカスタマイズをしたりするにはアカウントが必要です。無料アカウントを新規登録するか、ログインしてください！";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodayOneDayRemaining()
 	{
-		return "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€24æ™‚é–“ã‚’åˆ‡ã£ã¦ã„ã¾ã™ã€‚";
+		return "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、24時間を切っています。";
 	}
 
 	/// <summary>
@@ -144,22 +146,22 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogSignUpTodaySomeDaysRemaining(string numDays)
 	{
-		return $"ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€{numDays} æ—¥ã‚’åˆ‡ã£ã¦ã„ã¾ã™ã€‚";
+		return $"ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、{numDays} 日を切っています。";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodaySomeDaysRemaining()
 	{
-		return "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€{numDays} æ—¥ã‚’åˆ‡ã£ã¦ã„ã¾ã™ã€‚";
+		return "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、{numDays} 日を切っています。";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogTrialOver()
 	{
-		return "ãƒˆãƒ©ã‚¤ã‚¢ãƒ«æœŸé–“ãŒçµ‚äº†ã—ã¾ã—ãŸã€‚ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã«ã¯ã€ç„¡æ–™ã®æ–°è¦ç™»éŒ²ã‚’è¡Œã£ã¦ãã ã•ã„ï¼";
+		return "トライアル期間が終了しました。ゲームをプレイするには、無料の新規登録を行ってください！";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingOneDayRemaining()
 	{
-		return "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ã†ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€ã‚ã¨1å›žã®ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ãŒæ®‹ã£ã¦ã„ã¾ã™ã€‚";
+		return "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使うには、アカウントを作る必要があります。無料の新規登録が必要になるまで、あと1回のゲームプレイが残っています。";
 	}
 
 	/// <summary>
@@ -169,32 +171,32 @@ internal class GameLaunchGuestModeResources_ja_jp : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogYouArePlayingSomeDaysRemaining(string numDays)
 	{
-		return $"ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ç”¨ã™ã‚‹ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€ã‚ã¨ {numDays} å›žã®ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ãŒæ®‹ã£ã¦ã„ã¾ã™ã€‚";
+		return $"ゲストモードでプレイしています。Robloxで利用できるすべての機能を使用するには、アカウントを作る必要があります。無料の新規登録が必要になるまで、あと {numDays} 回のゲームプレイが残っています。";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingSomeDaysRemaining()
 	{
-		return "ã‚²ã‚¹ãƒˆãƒ¢ãƒ¼ãƒ‰ã§ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ã¾ã™ã€‚Robloxã§åˆ©ç”¨ã§ãã‚‹ã™ã¹ã¦ã®æ©Ÿèƒ½ã‚’ä½¿ç”¨ã™ã‚‹ã«ã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ä½œã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚ç„¡æ–™ã®æ–°è¦ç™»éŒ²ãŒå¿…è¦ã«ãªã‚‹ã¾ã§ã€ã‚ã¨ {numDays} å›žã®ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ãŒæ®‹ã£ã¦ã„ã¾ã™ã€‚";
+		return "ゲストモードでプレイしています。Robloxで利用できるすべての機能を使用するには、アカウントを作る必要があります。無料の新規登録が必要になるまで、あと {numDays} 回のゲームプレイが残っています。";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAvatar()
 	{
-		return "ã‚¢ãƒã‚¿ãƒ¼ã‚’é¸ã¶";
+		return "アバターを選ぶ";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpOrLogin()
 	{
-		return "ç„¡æ–™ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æ–°è¦ç™»éŒ²ã™ã‚‹ã‹ã€ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ãã ã•ã„ï¼";
+		return "無料アカウントを新規登録するか、ログインしてください！";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpToday()
 	{
-		return "ä»Šã™ãæ–°è¦ç™»éŒ²ã—ã‚ˆã†ï¼";
+		return "今すぐ新規登録しよう！";
 	}
 
 	protected override string _GetTemplateForLabelHaveAccount()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’æŒã£ã¦ã„ã‚‹";
+		return "アカウントを持っている";
 	}
 }
 

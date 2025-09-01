@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameFollowsResources_en_us to provide locale specific translations where possible,
@@ -18,14 +20,14 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 	/// Login button label
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "Iniciar sesiÃ³n";
+	public override string ActionLogin => "Iniciar sesión";
 
 	/// <summary>
 	/// Key: "DescriptionLoginRequired"
 	/// Login dialog text for guest user
 	/// English String: "You must be logged in to follow this game. Please Login or Register to continue."
 	/// </summary>
-	public override string DescriptionLoginRequired => "Debes iniciar sesiÃ³n para seguir este juego. Inicia sesiÃ³n o regÃ­strate para continuar.";
+	public override string DescriptionLoginRequired => "Debes iniciar sesión para seguir este juego. Inicia sesión o regístrate para continuar.";
 
 	/// <summary>
 	/// Key: "LabelFollow"
@@ -46,7 +48,7 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 	/// Text for dialog for guest user to redirect to login
 	/// English String: "Login Required"
 	/// </summary>
-	public override string LabelLoginRequired => "Inicio de sesiÃ³n obligatorio";
+	public override string LabelLoginRequired => "Inicio de sesión obligatorio";
 
 	/// <summary>
 	/// Key: "TooltipFollowGame"
@@ -60,7 +62,7 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 	/// Tooltip for follow game button
 	/// English String: "Limit reached. Please unfollow other games to follow this one."
 	/// </summary>
-	public override string TooltipFollowLimitReached => "LÃ­mite alcanzado. Deja de seguir otros juegos para seguir este.";
+	public override string TooltipFollowLimitReached => "Límite alcanzado. Deja de seguir otros juegos para seguir este.";
 
 	/// <summary>
 	/// Key: "TooltipUnfollowGame"
@@ -81,12 +83,12 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "Iniciar sesiÃ³n";
+		return "Iniciar sesión";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginRequired()
 	{
-		return "Debes iniciar sesiÃ³n para seguir este juego. Inicia sesiÃ³n o regÃ­strate para continuar.";
+		return "Debes iniciar sesión para seguir este juego. Inicia sesión o regístrate para continuar.";
 	}
 
 	protected override string _GetTemplateForLabelFollow()
@@ -101,7 +103,7 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForLabelLoginRequired()
 	{
-		return "Inicio de sesiÃ³n obligatorio";
+		return "Inicio de sesión obligatorio";
 	}
 
 	protected override string _GetTemplateForTooltipFollowGame()
@@ -111,7 +113,7 @@ internal class GameFollowsResources_es_es : GameFollowsResources_en_us, IGameFol
 
 	protected override string _GetTemplateForTooltipFollowLimitReached()
 	{
-		return "LÃ­mite alcanzado. Deja de seguir otros juegos para seguir este.";
+		return "Límite alcanzado. Deja de seguir otros juegos para seguir este.";
 	}
 
 	protected override string _GetTemplateForTooltipUnfollowGame()

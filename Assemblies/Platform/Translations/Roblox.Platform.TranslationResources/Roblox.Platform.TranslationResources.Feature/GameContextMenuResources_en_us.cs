@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class GameContextMenuResources_en_us : TranslationResourcesBase, IGameContextMenuResources, ITranslationResources
 
 {
@@ -254,3 +254,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

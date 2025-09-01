@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -62,7 +64,7 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "NÃ£o";
+	public override string ActionNo => "Não";
 
 	/// <summary>
 	/// Key: "Action.OK"
@@ -147,7 +149,7 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "MarÃ§o";
+	public override string LabelMarch => "Março";
 
 	/// <summary>
 	/// Key: "Label.May"
@@ -160,13 +162,13 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "MÃªs";
+	public override string LabelMonth => "Mês";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "PrÃ³ximo";
+	public override string LabelNext => "Próximo";
 
 	/// <summary>
 	/// Key: "Label.November"
@@ -246,7 +248,7 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "NÃ£o";
+		return "Não";
 	}
 
 	protected override string _GetTemplateForActionOK()
@@ -291,12 +293,12 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"PÃ¡gina {currentPage}";
+		return $"Página {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "PÃ¡gina {currentPage}";
+		return "Página {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelDay()
@@ -331,7 +333,7 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "MarÃ§o";
+		return "Março";
 	}
 
 	protected override string _GetTemplateForLabelMay()
@@ -341,12 +343,12 @@ internal class ControlsResources_pt_br : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "MÃªs";
+		return "Mês";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "PrÃ³ximo";
+		return "Próximo";
 	}
 
 	protected override string _GetTemplateForLabelNovember()

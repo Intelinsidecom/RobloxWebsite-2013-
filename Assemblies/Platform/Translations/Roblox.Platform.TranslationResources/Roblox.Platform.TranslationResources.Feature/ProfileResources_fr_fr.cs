@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ProfileResources_en_us to provide locale specific translations where possible,
@@ -77,7 +79,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// Key: "Action.ImpersonateUser"
 	/// English String: "Impersonate User"
 	/// </summary>
-	public override string ActionImpersonateUser => "Usurpation d'identitÃ©";
+	public override string ActionImpersonateUser => "Usurpation d'identitÃ";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
@@ -515,6 +517,11 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 	/// </summary>
 	public override string ResponseTooManyAttempts => "Trop de tentatives";
 
+	public new string GetFullContentNamespaceName()
+	{
+		return "Feature.Profile";
+	}
+
 	public ProfileResources_fr_fr(TranslationResourceState state)
 		: base(state)
 	{
@@ -577,7 +584,7 @@ internal class ProfileResources_fr_fr : ProfileResources_en_us, IProfileResource
 
 	protected override string _GetTemplateForActionImpersonateUser()
 	{
-		return "Usurpation d'identitÃ©";
+		return "Usurpation d'identitÃ";
 	}
 
 	protected override string _GetTemplateForActionInventory()

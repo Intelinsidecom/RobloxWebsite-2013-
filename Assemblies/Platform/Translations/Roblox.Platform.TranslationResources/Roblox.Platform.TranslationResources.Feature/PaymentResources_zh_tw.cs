@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PaymentResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class PaymentResources_zh_tw : PaymentResources_en_us, IPaymentResource
 	/// Key: "Message.FraudBlockedPaymentCheckInfoErrorMessage"
 	/// English String: "Unfortunately we are unable to process your payment. Please confirm the billing information entered matches the card provided and try again. If this fails, please try another card or different payment method.\t"
 	/// </summary>
-	public override string MessageFraudBlockedPaymentCheckInfoErrorMessage => "æˆ‘å€‘ç„¡æ³•è™•ç†æ‚¨çš„ä»˜æ¬¾ï¼Œè«‹ç¢ºèªä»˜æ¬¾è³‡è¨Šå’Œæ‰€æä¾›çš„ä¿¡ç”¨å¡ç›¸ç¬¦é‡æ–°å˜—è©¦ã€‚è‹¥ä¾ç„¶å¤±æ•—ï¼Œè«‹å˜—è©¦å…¶å®ƒä¿¡ç”¨å¡æˆ–ä»˜æ¬¾æ–¹å¼ã€‚";
+	public override string MessageFraudBlockedPaymentCheckInfoErrorMessage => "我們無法處理您的付款，請確認付款資訊和所提供的信用卡相符重新嘗試。若依然失敗，請嘗試其它信用卡或付款方式。";
 
 	/// <summary>
 	/// Key: "Message.FraudWarningForUnder13WithCreditCard"
 	/// English String: "Make sure you have your parents permission before using their credit cards. Card owners may be contacted for confirmation. Using a card without permission will result in your account being deleted."
 	/// </summary>
-	public override string MessageFraudWarningForUnder13WithCreditCard => "åœ¨ä½¿ç”¨çˆ¶æ¯çš„ä¿¡ç”¨å¡ä¹‹å‰ï¼Œè«‹å…ˆç²å¾—ä»–å€‘çš„åŒæ„ï¼›æˆ‘å€‘å¯èƒ½æœƒå‘ä¿¡ç”¨å¡æŒæœ‰äººç¢ºèªæ­¤ç­†äº¤æ˜“ã€‚å¦‚æžœæŒæœ‰äººæ²’æœ‰æ ¸å‡†æ­¤ç­†äº¤æ˜“ï¼Œæˆ‘å€‘å°‡æœƒåˆªé™¤æ‚¨çš„å¸³è™Ÿã€‚";
+	public override string MessageFraudWarningForUnder13WithCreditCard => "在使用父母的信用卡之前，請先獲得他們的同意；我們可能會向信用卡持有人確認此筆交易。如果持有人沒有核准此筆交易，我們將會刪除您的帳號。";
 
 	public PaymentResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -25,7 +27,7 @@ internal class PaymentResources_zh_tw : PaymentResources_en_us, IPaymentResource
 
 	protected override string _GetTemplateForMessageFraudBlockedPaymentCheckInfoErrorMessage()
 	{
-		return "æˆ‘å€‘ç„¡æ³•è™•ç†æ‚¨çš„ä»˜æ¬¾ï¼Œè«‹ç¢ºèªä»˜æ¬¾è³‡è¨Šå’Œæ‰€æä¾›çš„ä¿¡ç”¨å¡ç›¸ç¬¦é‡æ–°å˜—è©¦ã€‚è‹¥ä¾ç„¶å¤±æ•—ï¼Œè«‹å˜—è©¦å…¶å®ƒä¿¡ç”¨å¡æˆ–ä»˜æ¬¾æ–¹å¼ã€‚";
+		return "我們無法處理您的付款，請確認付款資訊和所提供的信用卡相符重新嘗試。若依然失敗，請嘗試其它信用卡或付款方式。";
 	}
 
 	/// <summary>
@@ -34,12 +36,12 @@ internal class PaymentResources_zh_tw : PaymentResources_en_us, IPaymentResource
 	/// </summary>
 	public override string MessageFraudBlockedPaymentErrorMessage(string linkStart, string linkEnd)
 	{
-		return $"æ‚¨çš„ä»˜æ¬¾ç”±æ–¼å¯ç–‘è¡Œç‚ºé­åˆ°æ‹’çµ•ã€‚è‹¥æ‚¨èªç‚ºæœ‰èª¤ï¼Œè«‹å‰å¾€ {linkStart}roblox.com/support{linkEnd} è¯çµ¡æˆ‘å€‘ã€‚";
+		return $"您的付款由於可疑行為遭到拒絕。若您認為有誤，請前往 {linkStart}roblox.com/support{linkEnd} 聯絡我們。";
 	}
 
 	protected override string _GetTemplateForMessageFraudBlockedPaymentErrorMessage()
 	{
-		return "æ‚¨çš„ä»˜æ¬¾ç”±æ–¼å¯ç–‘è¡Œç‚ºé­åˆ°æ‹’çµ•ã€‚è‹¥æ‚¨èªç‚ºæœ‰èª¤ï¼Œè«‹å‰å¾€ {linkStart}roblox.com/support{linkEnd} è¯çµ¡æˆ‘å€‘ã€‚";
+		return "您的付款由於可疑行為遭到拒絕。若您認為有誤，請前往 {linkStart}roblox.com/support{linkEnd} 聯絡我們。";
 	}
 
 	/// <summary>
@@ -49,17 +51,17 @@ internal class PaymentResources_zh_tw : PaymentResources_en_us, IPaymentResource
 	/// </summary>
 	public override string MessageFraudForUnder13UsingCreditCard(string lineStart, string lineEnd)
 	{
-		return $"åœ¨ä½¿ç”¨çˆ¶æ¯çš„ä¿¡ç”¨å¡ä¹‹å‰ï¼Œè«‹å…ˆç²å¾—ä»–å€‘çš„åŒæ„ï¼›æˆ‘å€‘å¯èƒ½æœƒå‘ä¿¡ç”¨å¡æŒæœ‰äººç¢ºèªæ­¤ç­†äº¤æ˜“ã€‚{lineStart}å¦‚æžœæŒæœ‰äººæ²’æœ‰æ ¸å‡†æ­¤ç­†äº¤æ˜“ï¼Œæˆ‘å€‘å°‡æœƒåˆªé™¤æ‚¨çš„å¸³è™Ÿã€‚{lineEnd}";
+		return $"在使用父母的信用卡之前，請先獲得他們的同意；我們可能會向信用卡持有人確認此筆交易。{lineStart}如果持有人沒有核准此筆交易，我們將會刪除您的帳號。{lineEnd}";
 	}
 
 	protected override string _GetTemplateForMessageFraudForUnder13UsingCreditCard()
 	{
-		return "åœ¨ä½¿ç”¨çˆ¶æ¯çš„ä¿¡ç”¨å¡ä¹‹å‰ï¼Œè«‹å…ˆç²å¾—ä»–å€‘çš„åŒæ„ï¼›æˆ‘å€‘å¯èƒ½æœƒå‘ä¿¡ç”¨å¡æŒæœ‰äººç¢ºèªæ­¤ç­†äº¤æ˜“ã€‚{lineStart}å¦‚æžœæŒæœ‰äººæ²’æœ‰æ ¸å‡†æ­¤ç­†äº¤æ˜“ï¼Œæˆ‘å€‘å°‡æœƒåˆªé™¤æ‚¨çš„å¸³è™Ÿã€‚{lineEnd}";
+		return "在使用父母的信用卡之前，請先獲得他們的同意；我們可能會向信用卡持有人確認此筆交易。{lineStart}如果持有人沒有核准此筆交易，我們將會刪除您的帳號。{lineEnd}";
 	}
 
 	protected override string _GetTemplateForMessageFraudWarningForUnder13WithCreditCard()
 	{
-		return "åœ¨ä½¿ç”¨çˆ¶æ¯çš„ä¿¡ç”¨å¡ä¹‹å‰ï¼Œè«‹å…ˆç²å¾—ä»–å€‘çš„åŒæ„ï¼›æˆ‘å€‘å¯èƒ½æœƒå‘ä¿¡ç”¨å¡æŒæœ‰äººç¢ºèªæ­¤ç­†äº¤æ˜“ã€‚å¦‚æžœæŒæœ‰äººæ²’æœ‰æ ¸å‡†æ­¤ç­†äº¤æ˜“ï¼Œæˆ‘å€‘å°‡æœƒåˆªé™¤æ‚¨çš„å¸³è™Ÿã€‚";
+		return "在使用父母的信用卡之前，請先獲得他們的同意；我們可能會向信用卡持有人確認此筆交易。如果持有人沒有核准此筆交易，我們將會刪除您的帳號。";
 	}
 }
 

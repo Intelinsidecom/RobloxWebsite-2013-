@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides TwoStepVerificationResources_en_us to provide locale specific translations where possible,
@@ -10,33 +12,33 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "Ä°ptal Et";
+	public override string ActionCancel => "İptal Et";
 
 	/// <summary>
 	/// Key: "Action.Resend"
 	/// English String: "Resend Code"
 	/// </summary>
-	public override string ActionResend => "Kodu Tekrar GÃ¶nder";
+	public override string ActionResend => "Kodu Tekrar Gönder";
 
 	/// <summary>
 	/// Key: "Action.StartOver"
 	/// link text to restart verification
 	/// English String: "Start Over"
 	/// </summary>
-	public override string ActionStartOver => "Yeniden BaÅŸlat";
+	public override string ActionStartOver => "Yeniden Başlat";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// submit button text
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "GÃ¶nder";
+	public override string ActionSubmit => "Gönder";
 
 	/// <summary>
 	/// Key: "Action.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string ActionVerify => "DoÄŸrula";
+	public override string ActionVerify => "Doğrula";
 
 	/// <summary>
 	/// Key: "Label.Code"
@@ -49,7 +51,7 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// Key: "Label.DidNotReceive"
 	/// English String: "Didn't receive the code?"
 	/// </summary>
-	public override string LabelDidNotReceive => "Kodu almadÄ±n mÄ±?";
+	public override string LabelDidNotReceive => "Kodu almadın mı?";
 
 	/// <summary>
 	/// Key: "Label.EnterCode"
@@ -61,34 +63,34 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// Key: "Label.EnterEmailCode"
 	/// English String: "Enter the code we just sent you via email"
 	/// </summary>
-	public override string LabelEnterEmailCode => "E-posta ile gÃ¶nderdiÄŸimiz kodu gir";
+	public override string LabelEnterEmailCode => "E-posta ile gönderdiğimiz kodu gir";
 
 	/// <summary>
 	/// Key: "Label.EnterTextCode"
 	/// English String: "Enter the code we just sent you via text message"
 	/// </summary>
-	public override string LabelEnterTextCode => "SMS ile gÃ¶nderdiÄŸimiz kodu gir";
+	public override string LabelEnterTextCode => "SMS ile gönderdiğimiz kodu gir";
 
 	/// <summary>
 	/// Key: "Label.EnterTwoStepVerificationCode"
 	/// Enter your two step verification code.
 	/// English String: "Enter your two step verification code."
 	/// </summary>
-	public override string LabelEnterTwoStepVerificationCode => "Ä°ki aÅŸamalÄ± onay kodunu gir.";
+	public override string LabelEnterTwoStepVerificationCode => "İki aşamalı onay kodunu gir.";
 
 	/// <summary>
 	/// Key: "Label.FacebookPasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookPasswordWarning => "EÄŸer ÅŸimdiye kadar Facebook ile giriÅŸ yaptÄ±ysan bir ÅŸifre seÃ§melisin.";
+	public override string LabelFacebookPasswordWarning => "Eğer şimdiye kadar Facebook ile giriş yaptıysan bir şifre seçmelisin.";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
 	/// Learn More link text
 	/// English String: "Learn More"
 	/// </summary>
-	public override string LabelLearnMore => "Daha FazlasÄ±nÄ± Ã–ÄŸren";
+	public override string LabelLearnMore => "Daha Fazlasını Öğren";
 
 	/// <summary>
 	/// Key: "Label.NewCode"
@@ -101,56 +103,56 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// Key: "Label.RobloxSupport"
 	/// English String: "Roblox Support"
 	/// </summary>
-	public override string LabelRobloxSupport => "Roblox DesteÄŸi";
+	public override string LabelRobloxSupport => "Roblox Desteği";
 
 	/// <summary>
 	/// Key: "Label.TrustThisDevice"
 	/// English String: "Trust this device for 30 days"
 	/// </summary>
-	public override string LabelTrustThisDevice => "30 gÃ¼nlÃ¼ÄŸÃ¼ne bu cihaza gÃ¼ven";
+	public override string LabelTrustThisDevice => "30 günlüğüne bu cihaza güven";
 
 	/// <summary>
 	/// Key: "Label.TwoStepVerification"
 	/// English String: "2-Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "2-AdÄ±mlÄ± DoÄŸrulama";
+	public override string LabelTwoStepVerification => "2-Adımlı Doğrulama";
 
 	/// <summary>
 	/// Key: "Response.CodeSent"
 	/// English String: "Code Sent"
 	/// </summary>
-	public override string ResponseCodeSent => "Kod GÃ¶nderildi";
+	public override string ResponseCodeSent => "Kod Gönderildi";
 
 	/// <summary>
 	/// Key: "Response.FeatureNotAvailable"
 	/// English String: "Feature not available. Please contact support."
 	/// </summary>
-	public override string ResponseFeatureNotAvailable => "Ã–zellik kullanÄ±lamÄ±yor. LÃ¼tfen destek ile iletiÅŸime geÃ§.";
+	public override string ResponseFeatureNotAvailable => "Özellik kullanılamıyor. Lütfen destek ile iletişime geç.";
 
 	/// <summary>
 	/// Key: "Response.InvalidCode"
 	/// English String: "Invalid code."
 	/// </summary>
-	public override string ResponseInvalidCode => "GeÃ§ersiz kod.";
+	public override string ResponseInvalidCode => "Geçersiz kod.";
 
 	/// <summary>
 	/// Key: "Response.SystemErrorReturnToLogin"
 	/// English String: "System error. Please return to login screen."
 	/// </summary>
-	public override string ResponseSystemErrorReturnToLogin => "Sistem hatasÄ±. LÃ¼tfen giriÅŸ ekranÄ±na dÃ¶n.";
+	public override string ResponseSystemErrorReturnToLogin => "Sistem hatası. Lütfen giriş ekranına dön.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttempts"
 	/// English String: "Too many attempts. Please try again later."
 	/// </summary>
-	public override string ResponseTooManyAttempts => "Ã‡ok sayÄ±da deneme. LÃ¼tfen daha sonra tekrar dene.";
+	public override string ResponseTooManyAttempts => "Çok sayıda deneme. Lütfen daha sonra tekrar dene.";
 
 	/// <summary>
 	/// Key: "Response.TooManyCharacters"
 	/// error message
 	/// English String: "Too many characters"
 	/// </summary>
-	public override string ResponseTooManyCharacters => "Ã‡ok fazla karakter";
+	public override string ResponseTooManyCharacters => "Çok fazla karakter";
 
 	public TwoStepVerificationResources_tr_tr(TranslationResourceState state)
 		: base(state)
@@ -159,27 +161,27 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "Ä°ptal Et";
+		return "İptal Et";
 	}
 
 	protected override string _GetTemplateForActionResend()
 	{
-		return "Kodu Tekrar GÃ¶nder";
+		return "Kodu Tekrar Gönder";
 	}
 
 	protected override string _GetTemplateForActionStartOver()
 	{
-		return "Yeniden BaÅŸlat";
+		return "Yeniden Başlat";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "GÃ¶nder";
+		return "Gönder";
 	}
 
 	protected override string _GetTemplateForActionVerify()
 	{
-		return "DoÄŸrula";
+		return "Doğrula";
 	}
 
 	/// <summary>
@@ -189,12 +191,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabÄ±n iÃ§in 2-AdÄ±mlÄ± DoÄŸrulamayÄ± etkinleÅŸtirdin. Yeni bir cihazdan giriÅŸ yaptÄ±ÄŸÄ±nda Roblox'un e-postayla gÃ¶ndereceÄŸi 6 haneli gÃ¼venlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Roblox";
+		return $"Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı etkinleştirdin. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla göndereceği 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyOver13()
 	{
-		return "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabÄ±n iÃ§in 2-AdÄ±mlÄ± DoÄŸrulamayÄ± etkinleÅŸtirdin. Yeni bir cihazdan giriÅŸ yaptÄ±ÄŸÄ±nda Roblox'un e-postayla gÃ¶ndereceÄŸi 6 haneli gÃ¼venlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Roblox";
+		return "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı etkinleştirdin. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla göndereceği 6 haneli güvenlik kodunu girmen gerekecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -204,12 +206,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Merhaba,{lineBreak}{lineBreak}Ã‡ocuÄŸunuzun {accountName} adlÄ± Roblox hesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama etkinleÅŸtirildi. Yeni bir cihazdan giriÅŸ yaptÄ±ÄŸÄ±nda Roblox'un e-postayla size gÃ¶ndereceÄŸi 6 haneli gÃ¼venlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Roblox";
+		return $"Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için 2-Adımlı Doğrulama etkinleştirildi. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla size göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailBodyUnder13()
 	{
-		return "Merhaba,{lineBreak}{lineBreak}Ã‡ocuÄŸunuzun {accountName} adlÄ± Roblox hesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama etkinleÅŸtirildi. Yeni bir cihazdan giriÅŸ yaptÄ±ÄŸÄ±nda Roblox'un e-postayla size gÃ¶ndereceÄŸi 6 haneli gÃ¼venlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Roblox";
+		return "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabı için 2-Adımlı Doğrulama etkinleştirildi. Yeni bir cihazdan giriş yaptığında Roblox'un e-postayla size göndereceği 6 haneli güvenlik kodunu girmesi gerekecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -219,12 +221,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationActivationEmailSubject(string accountName)
 	{
-		return $"Roblox HesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama EtkinleÅŸtirildi: {accountName}";
+		return $"Roblox Hesabı için 2-Adımlı Doğrulama Etkinleştirildi: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationActivationEmailSubject()
 	{
-		return "Roblox HesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama EtkinleÅŸtirildi: {accountName}";
+		return "Roblox Hesabı için 2-Adımlı Doğrulama Etkinleştirildi: {accountName}";
 	}
 
 	/// <summary>
@@ -234,12 +236,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyOver13(string accountName, string lineBreak)
 	{
-		return $"Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabÄ±n iÃ§in 2-AdÄ±mlÄ± DoÄŸrulamayÄ± devre dÄ±ÅŸÄ± bÄ±raktÄ±n. HesabÄ±na giriÅŸ yaptÄ±ÄŸÄ±nda bir gÃ¼venlik kodu girmen gerekmeyecek.{lineBreak}{lineBreak}Roblox";
+		return $"Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı devre dışı bıraktın. Hesabına giriş yaptığında bir güvenlik kodu girmen gerekmeyecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyOver13()
 	{
-		return "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabÄ±n iÃ§in 2-AdÄ±mlÄ± DoÄŸrulamayÄ± devre dÄ±ÅŸÄ± bÄ±raktÄ±n. HesabÄ±na giriÅŸ yaptÄ±ÄŸÄ±nda bir gÃ¼venlik kodu girmen gerekmeyecek.{lineBreak}{lineBreak}Roblox";
+		return "Merhaba {accountName},{lineBreak}{lineBreak}Roblox hesabın için 2-Adımlı Doğrulamayı devre dışı bıraktın. Hesabına giriş yaptığında bir güvenlik kodu girmen gerekmeyecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -249,12 +251,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailBodyUnder13(string lineBreak, string accountName)
 	{
-		return $"Merhaba,{lineBreak}{lineBreak}Ã‡ocuÄŸunuzun {accountName} adlÄ± Roblox hesabÄ±nda 2-AdÄ±mlÄ± DoÄŸrulama devre dÄ±ÅŸÄ± bÄ±rakÄ±ldÄ±. Hesaba giriÅŸ yaptÄ±ÄŸÄ±nda bir gÃ¼venlik kodu girmesi gerekmeyecek.{lineBreak}{lineBreak}Roblox";
+		return $"Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabında 2-Adımlı Doğrulama devre dışı bırakıldı. Hesaba giriş yaptığında bir güvenlik kodu girmesi gerekmeyecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailBodyUnder13()
 	{
-		return "Merhaba,{lineBreak}{lineBreak}Ã‡ocuÄŸunuzun {accountName} adlÄ± Roblox hesabÄ±nda 2-AdÄ±mlÄ± DoÄŸrulama devre dÄ±ÅŸÄ± bÄ±rakÄ±ldÄ±. Hesaba giriÅŸ yaptÄ±ÄŸÄ±nda bir gÃ¼venlik kodu girmesi gerekmeyecek.{lineBreak}{lineBreak}Roblox";
+		return "Merhaba,{lineBreak}{lineBreak}Çocuğunuzun {accountName} adlı Roblox hesabında 2-Adımlı Doğrulama devre dışı bırakıldı. Hesaba giriş yaptığında bir güvenlik kodu girmesi gerekmeyecek.{lineBreak}{lineBreak}Roblox";
 	}
 
 	/// <summary>
@@ -264,12 +266,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationDeactivationEmailSubject(string accountName)
 	{
-		return $"Roblox HesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama Devre DÄ±ÅŸÄ± BÄ±rakÄ±ldÄ±: {accountName}";
+		return $"Roblox Hesabı için 2-Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationDeactivationEmailSubject()
 	{
-		return "Roblox HesabÄ± iÃ§in 2-AdÄ±mlÄ± DoÄŸrulama Devre DÄ±ÅŸÄ± BÄ±rakÄ±ldÄ±: {accountName}";
+		return "Roblox Hesabı için 2-Adımlı Doğrulama Devre Dışı Bırakıldı: {accountName}";
 	}
 
 	/// <summary>
@@ -279,12 +281,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1(string spanStartTagWithBold, string username, string region, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo1()
 	{
-		return "{spanStartTagWithBold}{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -294,12 +296,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2(string spanStartTagWithBold, string username, string country, string ipAddress, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country}, ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}{country}, ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo2()
 	{
-		return "{spanStartTagWithBold}{country}, ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}{country}, ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -309,12 +311,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3(string spanStartTagWithBold, string username, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{username} (Roblox Dahili) tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return $"{spanStartTagWithBold}{username} (Roblox Dahili) tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo3()
 	{
-		return "{spanStartTagWithBold}{username} (Roblox Dahili) tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}\t";
+		return "{spanStartTagWithBold}{username} (Roblox Dahili) tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}\t";
 	}
 
 	/// <summary>
@@ -324,12 +326,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4(string spanStartTagWithBold, string username, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo4()
 	{
-		return "{spanStartTagWithBold}{country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -339,12 +341,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5(string spanStartTagWithBold, string username, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo5()
 	{
-		return "{spanStartTagWithBold}{region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -354,12 +356,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6(string spanStartTagWithBold, string username, string city, string region, string country, string spanEndTag, string lineBreak)
 	{
-		return $"{spanStartTagWithBold}{city}, {region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return $"{spanStartTagWithBold}{city}, {region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlGeolocationInfo6()
 	{
-		return "{spanStartTagWithBold}{city}, {region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{spanEndTag}{lineBreak}{lineBreak}";
+		return "{spanStartTagWithBold}{city}, {region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{spanEndTag}{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -369,12 +371,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailHtmlBody(string geoLocationInformation, string spanStartTagWithBold, string accountName, string lineBreak, string code, string spanEndTag, string aTagStartWithHref, string ChangePasswordLink, string hrefEnd, string aTagEnd, string TwoStepVerificationArticleLink, string AccountSafetyArticleLink, string SupportLink)
 	{
-		return $"{geoLocationInformation}{spanStartTagWithBold}{accountName} iÃ§in giriÅŸ yapma kodu: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}GiriÅŸ yapma iÅŸlemini bitirmek iÃ§in bu kodu 2 AdÄ±mlÄ± DoÄŸrulama ekranÄ±na gir. Bu kodun sÃ¼resi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabÄ±nla Roblox'a yeni bir tarayÄ±cÄ±dan veya cihazdan girilmeye Ã§alÄ±ÅŸÄ±ldÄ±ÄŸÄ± iÃ§in gÃ¶nderildi. Roblox'a giriÅŸ yapmaya Ã§alÄ±ÅŸmadÄ±ysan hesabÄ±na eriÅŸmeye Ã§alÄ±ÅŸan baÅŸka biri olabilir. Bu isteÄŸi sen oluÅŸturmadÄ±ysan ÅŸifreni deÄŸiÅŸtirmen ÅŸiddetle tavsiye edilir.{lineBreak}{lineBreak}Kaynaklar:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Åžifreni DeÄŸiÅŸtir{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2 AdÄ±mlÄ± DoÄŸrulama Kodu HakkÄ±nda Daha FazlasÄ±nÄ± Ã–ÄŸren{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}HesabÄ±nÄ± GÃ¼vende Tutmak{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Genel Roblox DesteÄŸi{aTagEnd} {lineBreak}{lineBreak}TeÅŸekkÃ¼rler,{lineBreak}{lineBreak}Roblox Ekibi";
+		return $"{geoLocationInformation}{spanStartTagWithBold}{accountName} için giriş yapma kodu: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Giriş yapma işlemini bitirmek için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabınla Roblox'a yeni bir tarayıcıdan veya cihazdan girilmeye çalışıldığı için gönderildi. Roblox'a giriş yapmaya çalışmadıysan hesabına erişmeye çalışan başka biri olabilir. Bu isteği sen oluşturmadıysan şifreni değiştirmen şiddetle tavsiye edilir.{lineBreak}{lineBreak}Kaynaklar:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Şifreni Değiştir{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2 Adımlı Doğrulama Kodu Hakkında Daha Fazlasını Öğren{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Hesabını Güvende Tutmak{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Genel Roblox Desteği{aTagEnd} {lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailHtmlBody()
 	{
-		return "{geoLocationInformation}{spanStartTagWithBold}{accountName} iÃ§in giriÅŸ yapma kodu: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}GiriÅŸ yapma iÅŸlemini bitirmek iÃ§in bu kodu 2 AdÄ±mlÄ± DoÄŸrulama ekranÄ±na gir. Bu kodun sÃ¼resi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabÄ±nla Roblox'a yeni bir tarayÄ±cÄ±dan veya cihazdan girilmeye Ã§alÄ±ÅŸÄ±ldÄ±ÄŸÄ± iÃ§in gÃ¶nderildi. Roblox'a giriÅŸ yapmaya Ã§alÄ±ÅŸmadÄ±ysan hesabÄ±na eriÅŸmeye Ã§alÄ±ÅŸan baÅŸka biri olabilir. Bu isteÄŸi sen oluÅŸturmadÄ±ysan ÅŸifreni deÄŸiÅŸtirmen ÅŸiddetle tavsiye edilir.{lineBreak}{lineBreak}Kaynaklar:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Åžifreni DeÄŸiÅŸtir{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2 AdÄ±mlÄ± DoÄŸrulama Kodu HakkÄ±nda Daha FazlasÄ±nÄ± Ã–ÄŸren{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}HesabÄ±nÄ± GÃ¼vende Tutmak{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Genel Roblox DesteÄŸi{aTagEnd} {lineBreak}{lineBreak}TeÅŸekkÃ¼rler,{lineBreak}{lineBreak}Roblox Ekibi";
+		return "{geoLocationInformation}{spanStartTagWithBold}{accountName} için giriş yapma kodu: {lineBreak}{lineBreak}{code} {spanEndTag}{lineBreak}{lineBreak}Giriş yapma işlemini bitirmek için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabınla Roblox'a yeni bir tarayıcıdan veya cihazdan girilmeye çalışıldığı için gönderildi. Roblox'a giriş yapmaya çalışmadıysan hesabına erişmeye çalışan başka biri olabilir. Bu isteği sen oluşturmadıysan şifreni değiştirmen şiddetle tavsiye edilir.{lineBreak}{lineBreak}Kaynaklar:{lineBreak}{aTagStartWithHref}{ChangePasswordLink}{hrefEnd}Şifreni Değiştir{aTagEnd} {lineBreak}{aTagStartWithHref}{TwoStepVerificationArticleLink}{hrefEnd}2 Adımlı Doğrulama Kodu Hakkında Daha Fazlasını Öğren{aTagEnd} {lineBreak}{aTagStartWithHref}{AccountSafetyArticleLink}{hrefEnd}Hesabını Güvende Tutmak{aTagEnd} {lineBreak}{aTagStartWithHref}{SupportLink}{hrefEnd}Genel Roblox Desteği{aTagEnd} {lineBreak}{lineBreak}Teşekkürler,{lineBreak}{lineBreak}Roblox Ekibi";
 	}
 
 	/// <summary>
@@ -384,12 +386,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainBody(string geoLocationInformation, string accountName, string lineBreak, string code, string accountInfoPageLink, string twoStepVerificationHelpArticleLink, string keepAccountSafeArticleLink, string supportPageLink)
 	{
-		return $"{geoLocationInformation} {accountName} iÃ§in giriÅŸ yapma kodu: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}GiriÅŸ yapma iÅŸlemini bitirmek iÃ§in bu kodu 2 AdÄ±mlÄ± DoÄŸrulama ekranÄ±na gir. Bu kodun sÃ¼resi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabÄ±nla Roblox'a yeni bir tarayÄ±cÄ±dan veya cihazdan girilmeye Ã§alÄ±ÅŸÄ±ldÄ±ÄŸÄ± iÃ§in gÃ¶nderildi. Roblox'a giriÅŸ yapmaya Ã§alÄ±ÅŸmadÄ±ysan hesabÄ±na eriÅŸmeye Ã§alÄ±ÅŸan baÅŸka biri olabilir. Bu isteÄŸi sen oluÅŸturmadÄ±ysan ÅŸifreni deÄŸiÅŸtirmen ÅŸiddetle tavsiye edilir. {lineBreak}{lineBreak}Kaynaklar: {lineBreak}Åžifreni DeÄŸiÅŸtir [{accountInfoPageLink}] {lineBreak}2 AdÄ±mlÄ± DoÄŸrulama Kodu HakkÄ±nda Daha FazlasÄ±nÄ± Ã–ÄŸren [{twoStepVerificationHelpArticleLink}]{lineBreak}HesabÄ±nÄ± GÃ¼vende Tutmak [{keepAccountSafeArticleLink}] {lineBreak}Genel Roblox DesteÄŸi [{supportPageLink}] {lineBreak}{lineBreak}TeÅŸekkÃ¼rler, {lineBreak}{lineBreak}Roblox Ekibi";
+		return $"{geoLocationInformation} {accountName} için giriş yapma kodu: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Giriş yapma işlemini bitirmek için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabınla Roblox'a yeni bir tarayıcıdan veya cihazdan girilmeye çalışıldığı için gönderildi. Roblox'a giriş yapmaya çalışmadıysan hesabına erişmeye çalışan başka biri olabilir. Bu isteği sen oluşturmadıysan şifreni değiştirmen şiddetle tavsiye edilir. {lineBreak}{lineBreak}Kaynaklar: {lineBreak}Şifreni Değiştir [{accountInfoPageLink}] {lineBreak}2 Adımlı Doğrulama Kodu Hakkında Daha Fazlasını Öğren [{twoStepVerificationHelpArticleLink}]{lineBreak}Hesabını Güvende Tutmak [{keepAccountSafeArticleLink}] {lineBreak}Genel Roblox Desteği [{supportPageLink}] {lineBreak}{lineBreak}Teşekkürler, {lineBreak}{lineBreak}Roblox Ekibi";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainBody()
 	{
-		return "{geoLocationInformation} {accountName} iÃ§in giriÅŸ yapma kodu: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}GiriÅŸ yapma iÅŸlemini bitirmek iÃ§in bu kodu 2 AdÄ±mlÄ± DoÄŸrulama ekranÄ±na gir. Bu kodun sÃ¼resi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabÄ±nla Roblox'a yeni bir tarayÄ±cÄ±dan veya cihazdan girilmeye Ã§alÄ±ÅŸÄ±ldÄ±ÄŸÄ± iÃ§in gÃ¶nderildi. Roblox'a giriÅŸ yapmaya Ã§alÄ±ÅŸmadÄ±ysan hesabÄ±na eriÅŸmeye Ã§alÄ±ÅŸan baÅŸka biri olabilir. Bu isteÄŸi sen oluÅŸturmadÄ±ysan ÅŸifreni deÄŸiÅŸtirmen ÅŸiddetle tavsiye edilir. {lineBreak}{lineBreak}Kaynaklar: {lineBreak}Åžifreni DeÄŸiÅŸtir [{accountInfoPageLink}] {lineBreak}2 AdÄ±mlÄ± DoÄŸrulama Kodu HakkÄ±nda Daha FazlasÄ±nÄ± Ã–ÄŸren [{twoStepVerificationHelpArticleLink}]{lineBreak}HesabÄ±nÄ± GÃ¼vende Tutmak [{keepAccountSafeArticleLink}] {lineBreak}Genel Roblox DesteÄŸi [{supportPageLink}] {lineBreak}{lineBreak}TeÅŸekkÃ¼rler, {lineBreak}{lineBreak}Roblox Ekibi";
+		return "{geoLocationInformation} {accountName} için giriş yapma kodu: {lineBreak}{lineBreak} {code} {lineBreak}{lineBreak}Giriş yapma işlemini bitirmek için bu kodu 2 Adımlı Doğrulama ekranına gir. Bu kodun süresi 15 dakika sonra dolacak.{lineBreak}{lineBreak}Bu e-posta, hesabınla Roblox'a yeni bir tarayıcıdan veya cihazdan girilmeye çalışıldığı için gönderildi. Roblox'a giriş yapmaya çalışmadıysan hesabına erişmeye çalışan başka biri olabilir. Bu isteği sen oluşturmadıysan şifreni değiştirmen şiddetle tavsiye edilir. {lineBreak}{lineBreak}Kaynaklar: {lineBreak}Şifreni Değiştir [{accountInfoPageLink}] {lineBreak}2 Adımlı Doğrulama Kodu Hakkında Daha Fazlasını Öğren [{twoStepVerificationHelpArticleLink}]{lineBreak}Hesabını Güvende Tutmak [{keepAccountSafeArticleLink}] {lineBreak}Genel Roblox Desteği [{supportPageLink}] {lineBreak}{lineBreak}Teşekkürler, {lineBreak}{lineBreak}Roblox Ekibi";
 	}
 
 	/// <summary>
@@ -399,12 +401,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1(string username, string region, string country, string ipAddress, string lineBreak)
 	{
-		return $"{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo1()
 	{
-		return "{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{region}, {country} ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -414,12 +416,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2(string username, string country, string ipAddress, string lineBreak)
 	{
-		return $"{country}, ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{country}, ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo2()
 	{
-		return "{country}, ({ipAddress}) konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{country}, ({ipAddress}) konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -429,12 +431,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3(string username, string lineBreak)
 	{
-		return $"{username} (Roblox Dahili) tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{username} (Roblox Dahili) tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo3()
 	{
-		return "{username} (Roblox Dahili) tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{username} (Roblox Dahili) tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -444,12 +446,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4(string username, string country, string lineBreak)
 	{
-		return $"{country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo4()
 	{
-		return "{country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -459,12 +461,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5(string username, string region, string country, string lineBreak)
 	{
-		return $"{region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo5()
 	{
-		return "{region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -474,12 +476,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6(string username, string city, string region, string country, string lineBreak)
 	{
-		return $"{city}, {region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return $"{city}, {region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailPlainTextGeolocationInfo6()
 	{
-		return "{city}, {region}, {country} konumunda bulunan {username} tarafÄ±ndan bir giriÅŸ talebi alÄ±ndÄ±.{lineBreak}{lineBreak}";
+		return "{city}, {region}, {country} konumunda bulunan {username} tarafından bir giriş talebi alındı.{lineBreak}{lineBreak}";
 	}
 
 	/// <summary>
@@ -489,12 +491,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string DescriptionTwoStepVerificationLoginEmailSubject(string accountName)
 	{
-		return $"Roblox HesabÄ± iÃ§in DoÄŸrulama Kodu: {accountName}";
+		return $"Roblox Hesabı için Doğrulama Kodu: {accountName}";
 	}
 
 	protected override string _GetTemplateForDescriptionTwoStepVerificationLoginEmailSubject()
 	{
-		return "Roblox HesabÄ± iÃ§in DoÄŸrulama Kodu: {accountName}";
+		return "Roblox Hesabı için Doğrulama Kodu: {accountName}";
 	}
 
 	protected override string _GetTemplateForLabelCode()
@@ -519,7 +521,7 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelDidNotReceive()
 	{
-		return "Kodu almadÄ±n mÄ±?";
+		return "Kodu almadın mı?";
 	}
 
 	protected override string _GetTemplateForLabelEnterCode()
@@ -529,27 +531,27 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelEnterEmailCode()
 	{
-		return "E-posta ile gÃ¶nderdiÄŸimiz kodu gir";
+		return "E-posta ile gönderdiğimiz kodu gir";
 	}
 
 	protected override string _GetTemplateForLabelEnterTextCode()
 	{
-		return "SMS ile gÃ¶nderdiÄŸimiz kodu gir";
+		return "SMS ile gönderdiğimiz kodu gir";
 	}
 
 	protected override string _GetTemplateForLabelEnterTwoStepVerificationCode()
 	{
-		return "Ä°ki aÅŸamalÄ± onay kodunu gir.";
+		return "İki aşamalı onay kodunu gir.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookPasswordWarning()
 	{
-		return "EÄŸer ÅŸimdiye kadar Facebook ile giriÅŸ yaptÄ±ysan bir ÅŸifre seÃ§melisin.";
+		return "Eğer şimdiye kadar Facebook ile giriş yaptıysan bir şifre seçmelisin.";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
 	{
-		return "Daha FazlasÄ±nÄ± Ã–ÄŸren";
+		return "Daha Fazlasını Öğren";
 	}
 
 	/// <summary>
@@ -559,12 +561,12 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 	/// </summary>
 	public override string LabelNeedHelpContactSupport(string supportLink)
 	{
-		return $"YardÄ±m mÄ± lazÄ±m? {supportLink} ile iletiÅŸime geÃ§";
+		return $"Yardım mı lazım? {supportLink} ile iletişime geç";
 	}
 
 	protected override string _GetTemplateForLabelNeedHelpContactSupport()
 	{
-		return "YardÄ±m mÄ± lazÄ±m? {supportLink} ile iletiÅŸime geÃ§";
+		return "Yardım mı lazım? {supportLink} ile iletişime geç";
 	}
 
 	protected override string _GetTemplateForLabelNewCode()
@@ -574,47 +576,47 @@ internal class TwoStepVerificationResources_tr_tr : TwoStepVerificationResources
 
 	protected override string _GetTemplateForLabelRobloxSupport()
 	{
-		return "Roblox DesteÄŸi";
+		return "Roblox Desteği";
 	}
 
 	protected override string _GetTemplateForLabelTrustThisDevice()
 	{
-		return "30 gÃ¼nlÃ¼ÄŸÃ¼ne bu cihaza gÃ¼ven";
+		return "30 günlüğüne bu cihaza güven";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "2-AdÄ±mlÄ± DoÄŸrulama";
+		return "2-Adımlı Doğrulama";
 	}
 
 	protected override string _GetTemplateForResponseCodeSent()
 	{
-		return "Kod GÃ¶nderildi";
+		return "Kod Gönderildi";
 	}
 
 	protected override string _GetTemplateForResponseFeatureNotAvailable()
 	{
-		return "Ã–zellik kullanÄ±lamÄ±yor. LÃ¼tfen destek ile iletiÅŸime geÃ§.";
+		return "Özellik kullanılamıyor. Lütfen destek ile iletişime geç.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidCode()
 	{
-		return "GeÃ§ersiz kod.";
+		return "Geçersiz kod.";
 	}
 
 	protected override string _GetTemplateForResponseSystemErrorReturnToLogin()
 	{
-		return "Sistem hatasÄ±. LÃ¼tfen giriÅŸ ekranÄ±na dÃ¶n.";
+		return "Sistem hatası. Lütfen giriş ekranına dön.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttempts()
 	{
-		return "Ã‡ok sayÄ±da deneme. LÃ¼tfen daha sonra tekrar dene.";
+		return "Çok sayıda deneme. Lütfen daha sonra tekrar dene.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyCharacters()
 	{
-		return "Ã‡ok fazla karakter";
+		return "Çok fazla karakter";
 	}
 }
 

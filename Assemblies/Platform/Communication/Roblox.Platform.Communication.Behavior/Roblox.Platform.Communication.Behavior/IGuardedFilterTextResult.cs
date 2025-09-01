@@ -1,4 +1,5 @@
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.Communication.Behavior;
 
 namespace Roblox.Platform.Communication.Behavior;
 

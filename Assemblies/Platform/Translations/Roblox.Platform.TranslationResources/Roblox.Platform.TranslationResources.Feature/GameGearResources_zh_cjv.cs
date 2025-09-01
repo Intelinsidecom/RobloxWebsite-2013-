@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearResources_en_us to provide locale specific translations where possible,
@@ -10,73 +12,73 @@ internal class GameGearResources_zh_cjv : GameGearResources_en_us, IGameGearReso
 	/// Key: "Heading.GearForThisGame"
 	/// English String: "Gear"
 	/// </summary>
-	public override string HeadingGearForThisGame => "è£…å¤‡";
+	public override string HeadingGearForThisGame => "装备";
 
 	/// <summary>
 	/// Key: "Label.AddGear"
 	/// English String: "Add Gear"
 	/// </summary>
-	public override string LabelAddGear => "æ·»åŠ è£…å¤‡";
+	public override string LabelAddGear => "添加装备";
 
 	/// <summary>
 	/// Key: "Label.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string LabelBuy => "è´­ä¹°";
+	public override string LabelBuy => "购买";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "é”™è¯¯";
+	public override string LabelError => "错误";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccurred => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
+	public override string LabelErrorOccurred => "发生错误，请重试。";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "æ­¤ç‰©å“ä¸ºéžå–å“ã€‚";
+	public override string LabelNotForSale => "此物品为非卖品。";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "å¥½";
+	public override string LabelOk => "好";
 
 	/// <summary>
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "å·²æ‹¥æœ‰";
+	public override string LabelOwned => "已拥有";
 
 	/// <summary>
 	/// Key: "Label.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string LabelRent => "ç§Ÿç”¨";
+	public override string LabelRent => "租用";
 
 	/// <summary>
 	/// Key: "Label.ResourceRent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string LabelResourceRent => "ç§Ÿç”¨";
+	public override string LabelResourceRent => "租用";
 
 	/// <summary>
 	/// Key: "Label.Sorry"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorry => "æŠ±æ­‰ï¼Œæˆ‘ä»¬æ— æ³•ä»Žä½ çš„æ¸¸æˆä¸­ç§»é™¤æ­¤ç‰©å“ã€‚è¯·é‡è¯•ã€‚";
+	public override string LabelSorry => "抱歉，我们无法从你的游戏中移除此物品。请重试。";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "æˆåŠŸï¼";
+	public override string LabelSuccess => "成功！";
 
 	public GameGearResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -85,27 +87,27 @@ internal class GameGearResources_zh_cjv : GameGearResources_en_us, IGameGearReso
 
 	protected override string _GetTemplateForHeadingGearForThisGame()
 	{
-		return "è£…å¤‡";
+		return "装备";
 	}
 
 	protected override string _GetTemplateForLabelAddGear()
 	{
-		return "æ·»åŠ è£…å¤‡";
+		return "添加装备";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
 	{
-		return "è´­ä¹°";
+		return "购买";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "é”™è¯¯";
+		return "错误";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
+		return "发生错误，请重试。";
 	}
 
 	/// <summary>
@@ -114,12 +116,12 @@ internal class GameGearResources_zh_cjv : GameGearResources_en_us, IGameGearReso
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"ä½ å·²å°†â€œ{item}â€æ·»åŠ è‡³ä½ çš„æ¸¸æˆã€‚";
+		return $"你已将“{item}”添加至你的游戏。";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "ä½ å·²å°†â€œ{item}â€æ·»åŠ è‡³ä½ çš„æ¸¸æˆã€‚";
+		return "你已将“{item}”添加至你的游戏。";
 	}
 
 	/// <summary>
@@ -128,47 +130,47 @@ internal class GameGearResources_zh_cjv : GameGearResources_en_us, IGameGearReso
 	/// </summary>
 	public override string LabelItemRemovedFromGame(string item)
 	{
-		return $"ä½ å·²ä»Žæ¸¸æˆä¸­ç§»é™¤ {item}ã€‚";
+		return $"你已从游戏中移除 {item}。";
 	}
 
 	protected override string _GetTemplateForLabelItemRemovedFromGame()
 	{
-		return "ä½ å·²ä»Žæ¸¸æˆä¸­ç§»é™¤ {item}ã€‚";
+		return "你已从游戏中移除 {item}。";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "æ­¤ç‰©å“ä¸ºéžå–å“ã€‚";
+		return "此物品为非卖品。";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "å·²æ‹¥æœ‰";
+		return "已拥有";
 	}
 
 	protected override string _GetTemplateForLabelRent()
 	{
-		return "ç§Ÿç”¨";
+		return "租用";
 	}
 
 	protected override string _GetTemplateForLabelResourceRent()
 	{
-		return "ç§Ÿç”¨";
+		return "租用";
 	}
 
 	protected override string _GetTemplateForLabelSorry()
 	{
-		return "æŠ±æ­‰ï¼Œæˆ‘ä»¬æ— æ³•ä»Žä½ çš„æ¸¸æˆä¸­ç§»é™¤æ­¤ç‰©å“ã€‚è¯·é‡è¯•ã€‚";
+		return "抱歉，我们无法从你的游戏中移除此物品。请重试。";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "æˆåŠŸï¼";
+		return "成功！";
 	}
 }
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+namespace Roblox.Platform.TranslationResources.Purchasing {
     class RedeemGameCardResources_en_us : TranslationResourcesBase, IRedeemGameCardResources, ITranslationResources
 
 {
@@ -697,3 +697,4 @@ namespace Roblox.Platform.TranslationResources.Purchasinginternal {
 
 
 }
+

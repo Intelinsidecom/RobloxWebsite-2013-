@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides InventoryResources_en_us to provide locale specific translations where possible,
@@ -11,151 +13,151 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// Call to action button for the user to get more items or assets
 	/// English String: "Get More"
 	/// </summary>
-	public override string ActionGetMore => "ã•ã‚‰ã«ã‚²ãƒƒãƒˆ";
+	public override string ActionGetMore => "さらにゲット";
 
 	/// <summary>
 	/// Key: "Heading.Category"
 	/// These categories include different item and asset types such as Accessories, Meshes, Badges, Audio assets, and Pants
 	/// English String: "Category"
 	/// </summary>
-	public override string HeadingCategory => "ã‚«ãƒ†ã‚´ãƒª";
+	public override string HeadingCategory => "カテゴリ";
 
 	/// <summary>
 	/// Key: "Heading.Inventory"
 	/// This is the button that users will click on the navigation menu to go to the Inventory page, which contains items and assets that the user has to improve their appearance or use to develop games.
 	/// English String: "Inventory"
 	/// </summary>
-	public override string HeadingInventory => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+	public override string HeadingInventory => "インベントリ";
 
 	/// <summary>
 	/// Key: "Heading.MyInventory"
 	/// This is the page title referring to your own inventory. This page contains the user's items and assets.
 	/// English String: "My Inventory"
 	/// </summary>
-	public override string HeadingMyInventory => "ãƒžã‚¤ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+	public override string HeadingMyInventory => "マイインベントリ";
 
 	/// <summary>
 	/// Key: "Heading.Subcategory"
 	/// These subcategories include different sub-types of asset types. The subcategories under Accessories could be Hats, Hair, and Face.
 	/// English String: "Subcategory"
 	/// </summary>
-	public override string HeadingSubcategory => "ã‚µãƒ–ã‚«ãƒ†ã‚´ãƒª";
+	public override string HeadingSubcategory => "サブカテゴリ";
 
 	/// <summary>
 	/// Key: "Label.BodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+	public override string LabelBodyParts => "ボディパーツ";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
 	/// English String: "Bundles"
 	/// </summary>
-	public override string LabelBundles => "ãƒãƒ³ãƒ‰ãƒ«";
+	public override string LabelBundles => "バンドル";
 
 	/// <summary>
 	/// Key: "Label.CreatedByMe"
 	/// English String: "Created by Me"
 	/// </summary>
-	public override string LabelCreatedByMe => "ã‚ãªãŸãŒä½œæˆ";
+	public override string LabelCreatedByMe => "あなたが作成";
 
 	/// <summary>
 	/// Key: "Label.MyGames"
 	/// English String: "My Games"
 	/// </summary>
-	public override string LabelMyGames => "ãƒžã‚¤ã‚²ãƒ¼ãƒ ";
+	public override string LabelMyGames => "マイゲーム";
 
 	/// <summary>
 	/// Key: "Label.MyVipServers"
 	/// English String: "My VIP Servers"
 	/// </summary>
-	public override string LabelMyVipServers => "ãƒžã‚¤VIPã‚µãƒ¼ãƒãƒ¼";
+	public override string LabelMyVipServers => "マイVIPサーバー";
 
 	/// <summary>
 	/// Key: "Label.Offsale"
 	/// An item with this label is no longer on sale and cannot be obtained.
 	/// English String: "Offsale"
 	/// </summary>
-	public override string LabelOffsale => "éžå£²å“";
+	public override string LabelOffsale => "非売品";
 
 	/// <summary>
 	/// Key: "Label.OtherGames"
 	/// English String: "Other Games"
 	/// </summary>
-	public override string LabelOtherGames => "ãã®ä»–ã®ã‚²ãƒ¼ãƒ ";
+	public override string LabelOtherGames => "その他のゲーム";
 
 	/// <summary>
 	/// Key: "Label.OtherVipServers"
 	/// English String: "Other VIP Servers"
 	/// </summary>
-	public override string LabelOtherVipServers => "ãã®ä»–ã®VIPã‚µãƒ¼ãƒãƒ¼";
+	public override string LabelOtherVipServers => "その他のVIPサーバー";
 
 	/// <summary>
 	/// Key: "Label.OwnershipPreposition"
 	/// This word is used to show that an item was created "By" someone or some entity.
 	/// English String: "By"
 	/// </summary>
-	public override string LabelOwnershipPreposition => "ä½œï¼š";
+	public override string LabelOwnershipPreposition => "作：";
 
 	/// <summary>
 	/// Key: "Label.Places"
 	/// English String: "Places"
 	/// </summary>
-	public override string LabelPlaces => "ãƒ—ãƒ¬ãƒ¼ã‚¹";
+	public override string LabelPlaces => "プレース";
 
 	/// <summary>
 	/// Key: "Label.Purchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelPurchased => "è³¼å…¥æ¸ˆã¿";
+	public override string LabelPurchased => "購入済み";
 
 	/// <summary>
 	/// Key: "Label.VipServers"
 	/// English String: "VIP Servers"
 	/// </summary>
-	public override string LabelVipServers => "VIPã‚µãƒ¼ãƒãƒ¼";
+	public override string LabelVipServers => "VIPサーバー";
 
 	/// <summary>
 	/// Key: "Message.TryCatalogForItems"
 	/// English String: "Try using the catalog to find new items."
 	/// </summary>
-	public override string MessageTryCatalogForItems => "ã‚«ã‚¿ãƒ­ã‚°ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+	public override string MessageTryCatalogForItems => "カタログを使って新しいアイテムを見つけよう！";
 
 	/// <summary>
 	/// Key: "Message.TryLibraryForItems"
 	/// English String: "Try using the library to find new items."
 	/// </summary>
-	public override string MessageTryLibraryForItems => "ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+	public override string MessageTryLibraryForItems => "ライブラリを使って新しいアイテムを見つけよう！";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoFavoritesCategory"
 	/// English String: "This user has not favorited items in this category."
 	/// </summary>
-	public override string MessageUserHasNoFavoritesCategory => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string MessageUserHasNoFavoritesCategory => "このユーザーは、このカテゴリのアイテムをお気に入りに登録していません。";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoItemsCategory"
 	/// English String: "This user doesn't have items in this category."
 	/// </summary>
-	public override string MessageUserHasNoItemsCategory => "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string MessageUserHasNoItemsCategory => "このユーザーは、このカテゴリのアイテムを持っていません。";
 
 	/// <summary>
 	/// Key: "Message.UserInventoryHidden"
 	/// English String: "You cannot see this player's inventory."
 	/// </summary>
-	public override string MessageUserInventoryHidden => "ã“ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageUserInventoryHidden => "このプレイヤーのインベントリを見ることはできません。";
 
 	/// <summary>
 	/// Key: "Message.YouHaveNoFavoritesCategory"
 	/// English String: "You have not favorited items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoFavoritesCategory => "ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string MessageYouHaveNoFavoritesCategory => "このカテゴリのアイテムをお気に入りに登録していません。";
 
 	/// <summary>
 	/// Key: "Message.YouHaveNoItemsCategory"
 	/// English String: "You don't have items in this category."
 	/// </summary>
-	public override string MessageYouHaveNoItemsCategory => "ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string MessageYouHaveNoItemsCategory => "このカテゴリのアイテムを持っていません。";
 
 	public InventoryResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -164,27 +166,27 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForActionGetMore()
 	{
-		return "ã•ã‚‰ã«ã‚²ãƒƒãƒˆ";
+		return "さらにゲット";
 	}
 
 	protected override string _GetTemplateForHeadingCategory()
 	{
-		return "ã‚«ãƒ†ã‚´ãƒª";
+		return "カテゴリ";
 	}
 
 	protected override string _GetTemplateForHeadingInventory()
 	{
-		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return "インベントリ";
 	}
 
 	protected override string _GetTemplateForHeadingMyInventory()
 	{
-		return "ãƒžã‚¤ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return "マイインベントリ";
 	}
 
 	protected override string _GetTemplateForHeadingSubcategory()
 	{
-		return "ã‚µãƒ–ã‚«ãƒ†ã‚´ãƒª";
+		return "サブカテゴリ";
 	}
 
 	/// <summary>
@@ -194,67 +196,67 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string HeadingUserInventory(string username)
 	{
-		return $"{username}ã•ã‚“ã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return $"{username}さんのインベントリ";
 	}
 
 	protected override string _GetTemplateForHeadingUserInventory()
 	{
-		return "{username}ã•ã‚“ã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return "{username}さんのインベントリ";
 	}
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "ãƒœãƒ‡ã‚£ãƒ‘ãƒ¼ãƒ„";
+		return "ボディパーツ";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
 	{
-		return "ãƒãƒ³ãƒ‰ãƒ«";
+		return "バンドル";
 	}
 
 	protected override string _GetTemplateForLabelCreatedByMe()
 	{
-		return "ã‚ãªãŸãŒä½œæˆ";
+		return "あなたが作成";
 	}
 
 	protected override string _GetTemplateForLabelMyGames()
 	{
-		return "ãƒžã‚¤ã‚²ãƒ¼ãƒ ";
+		return "マイゲーム";
 	}
 
 	protected override string _GetTemplateForLabelMyVipServers()
 	{
-		return "ãƒžã‚¤VIPã‚µãƒ¼ãƒãƒ¼";
+		return "マイVIPサーバー";
 	}
 
 	protected override string _GetTemplateForLabelOffsale()
 	{
-		return "éžå£²å“";
+		return "非売品";
 	}
 
 	protected override string _GetTemplateForLabelOtherGames()
 	{
-		return "ãã®ä»–ã®ã‚²ãƒ¼ãƒ ";
+		return "その他のゲーム";
 	}
 
 	protected override string _GetTemplateForLabelOtherVipServers()
 	{
-		return "ãã®ä»–ã®VIPã‚µãƒ¼ãƒãƒ¼";
+		return "その他のVIPサーバー";
 	}
 
 	protected override string _GetTemplateForLabelOwnershipPreposition()
 	{
-		return "ä½œï¼š";
+		return "作：";
 	}
 
 	protected override string _GetTemplateForLabelPlaces()
 	{
-		return "ãƒ—ãƒ¬ãƒ¼ã‚¹";
+		return "プレース";
 	}
 
 	protected override string _GetTemplateForLabelPurchased()
 	{
-		return "è³¼å…¥æ¸ˆã¿";
+		return "購入済み";
 	}
 
 	/// <summary>
@@ -264,17 +266,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string LabelRentalExpireTime(string expireTime)
 	{
-		return $"æœŸé™: {expireTime}";
+		return $"期限: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelRentalExpireTime()
 	{
-		return "æœŸé™: {expireTime}";
+		return "期限: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelVipServers()
 	{
-		return "VIPã‚µãƒ¼ãƒãƒ¼";
+		return "VIPサーバー";
 	}
 
 	/// <summary>
@@ -284,12 +286,12 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageExploreCatalogForItems(string itemsPlural)
 	{
-		return $"ã‚«ã‚¿ãƒ­ã‚°ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã€{itemsPlural} ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return $"カタログをチェックして、{itemsPlural} を見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageExploreCatalogForItems()
 	{
-		return "ã‚«ã‚¿ãƒ­ã‚°ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã€{itemsPlural} ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "カタログをチェックして、{itemsPlural} を見つけよう！";
 	}
 
 	/// <summary>
@@ -299,17 +301,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageExploreLibraryForItems(string itemsPlural)
 	{
-		return $"ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã€{itemsPlural} ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return $"ライブラリをチェックして、{itemsPlural} を見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageExploreLibraryForItems()
 	{
-		return "ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦ã€{itemsPlural} ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "ライブラリをチェックして、{itemsPlural} を見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogForItems()
 	{
-		return "ã‚«ã‚¿ãƒ­ã‚°ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "カタログを使って新しいアイテムを見つけよう！";
 	}
 
 	/// <summary>
@@ -319,17 +321,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageTryCatalogLink(string startLink, string endLink)
 	{
-		return $"{startLink}ã‚«ã‚¿ãƒ­ã‚°{endLink}ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return $"{startLink}カタログ{endLink}を使って新しいアイテムを見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageTryCatalogLink()
 	{
-		return "{startLink}ã‚«ã‚¿ãƒ­ã‚°{endLink}ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "{startLink}カタログ{endLink}を使って新しいアイテムを見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageTryLibraryForItems()
 	{
-		return "ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "ライブラリを使って新しいアイテムを見つけよう！";
 	}
 
 	/// <summary>
@@ -339,17 +341,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageTryLibraryLink(string startLink, string endLink)
 	{
-		return $"{startLink}ãƒ©ã‚¤ãƒ–ãƒ©ãƒª{endLink}ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return $"{startLink}ライブラリ{endLink}を使って新しいアイテムを見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageTryLibraryLink()
 	{
-		return "{startLink}ãƒ©ã‚¤ãƒ–ãƒ©ãƒª{endLink}ã‚’ä½¿ã£ã¦æ–°ã—ã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’è¦‹ã¤ã‘ã‚ˆã†ï¼";
+		return "{startLink}ライブラリ{endLink}を使って新しいアイテムを見つけよう！";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoFavoritesCategory()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このユーザーは、このカテゴリのアイテムをお気に入りに登録していません。";
 	}
 
 	/// <summary>
@@ -359,22 +361,22 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageUserHasNoItems(string itemsPlural)
 	{
-		return $"ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€{itemsPlural}ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return $"このユーザーは、{itemsPlural}を持っていません。";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoItems()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€{itemsPlural}ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このユーザーは、{itemsPlural}を持っていません。";
 	}
 
 	protected override string _GetTemplateForMessageUserHasNoItemsCategory()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このユーザーは、このカテゴリのアイテムを持っていません。";
 	}
 
 	protected override string _GetTemplateForMessageUserInventoryHidden()
 	{
-		return "ã“ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‚’è¦‹ã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚";
+		return "このプレイヤーのインベントリを見ることはできません。";
 	}
 
 	/// <summary>
@@ -384,17 +386,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageUserNotFavoritedItems(string itemsPlural)
 	{
-		return $"ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€{itemsPlural}ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return $"このユーザーは、{itemsPlural}をお気に入りに登録していません。";
 	}
 
 	protected override string _GetTemplateForMessageUserNotFavoritedItems()
 	{
-		return "ã“ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã¯ã€{itemsPlural}ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このユーザーは、{itemsPlural}をお気に入りに登録していません。";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoFavoritesCategory()
 	{
-		return "ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã—ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このカテゴリのアイテムをお気に入りに登録していません。";
 	}
 
 	/// <summary>
@@ -404,17 +406,17 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageYouHaveNoItems(string itemsPlural)
 	{
-		return $"ã‚ãªãŸã¯{itemsPlural}ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return $"あなたは{itemsPlural}を持っていません。";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoItems()
 	{
-		return "ã‚ãªãŸã¯{itemsPlural}ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "あなたは{itemsPlural}を持っていません。";
 	}
 
 	protected override string _GetTemplateForMessageYouHaveNoItemsCategory()
 	{
-		return "ã“ã®ã‚«ãƒ†ã‚´ãƒªã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æŒã£ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このカテゴリのアイテムを持っていません。";
 	}
 
 	/// <summary>
@@ -424,12 +426,12 @@ internal class InventoryResources_ja_jp : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string MessageYouNotFavoritedItems(string itemsPlural)
 	{
-		return $"{itemsPlural}ã¯ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
+		return $"{itemsPlural}はお気に入りに登録されていません。";
 	}
 
 	protected override string _GetTemplateForMessageYouNotFavoritedItems()
 	{
-		return "{itemsPlural}ã¯ãŠæ°—ã«å…¥ã‚Šã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
+		return "{itemsPlural}はお気に入りに登録されていません。";
 	}
 }
 

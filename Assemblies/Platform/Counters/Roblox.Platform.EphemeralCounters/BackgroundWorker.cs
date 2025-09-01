@@ -1,35 +1,34 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
-namespace Roblox.Platform.EphemeralCountersinternal {
-    static class BackgroundWorker
 
+namespace Roblox.Platform.EphemeralCounters
 {
-	internal static void RunInBackground(Action action, Action<Exception> errorLogger = null)
-	{
-		Task.Factory.StartNew(delegate
-		{
-			try
-			{
-				action();
-			}
-			catch (Exception obj)
-			{
-				if (errorLogger != null)
-				{
-					try
-					{
-						errorLogger(obj);
-						return;
-					}
-					catch
-					{
-						return;
-					}
-				}
-			}
-		});
-	}
-}
-
-
+    static class BackgroundWorker
+    {
+        internal static void RunInBackground(Action action, Action<Exception> errorLogger = null)
+        {
+            Task.Factory.StartNew(delegate
+            {
+                try
+                {
+                    action();
+                }
+                catch (Exception obj)
+                {
+                    if (errorLogger != null)
+                    {
+                        try
+                        {
+                            errorLogger(obj);
+                            return;
+                        }
+                        catch
+                        {
+                            return;
+                        }
+                    }
+                }
+            });
+        }
+    }
 }

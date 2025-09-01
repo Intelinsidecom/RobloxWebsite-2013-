@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides RobloxCreditResources_en_us to provide locale specific translations where possible,
@@ -28,19 +30,19 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 	/// Key: "Heading.RobloxCredit"
 	/// English String: "Roblox credit"
 	/// </summary>
-	public override string HeadingRobloxCredit => "CrÃ©dit Roblox";
+	public override string HeadingRobloxCredit => "Crédit Roblox";
 
 	/// <summary>
 	/// Key: "Message.FailedDebitRobloxCredit"
 	/// English String: "There has been an issue processing your Roblox credit. Please try again later!"
 	/// </summary>
-	public override string MessageFailedDebitRobloxCredit => "Une erreur s'est produite lors du traitement de votre crÃ©dit Roblox. Veuillez rÃ©essayer plus tard.";
+	public override string MessageFailedDebitRobloxCredit => "Une erreur s'est produite lors du traitement de votre crédit Roblox. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Message.FailedGrantingRobux"
-	/// English String: "Weâ€™ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
+	/// English String: "We’ve credited your Roblox credits, but there was an issue processing your Robux grant. Please contact customer support to get your Robux."
 	/// </summary>
-	public override string MessageFailedGrantingRobux => "Nous vous avons crÃ©ditÃ© vos crÃ©dits Roblox, mais une erreur s'est produite lors de l'attribution des Robux. Veuillez contacter le service Ã  la clientÃ¨le pour obtenir vos Robux.";
+	public override string MessageFailedGrantingRobux => "Nous vous avons crédité vos crédits Roblox, mais une erreur s'est produite lors de l'attribution des Robux. Veuillez contacter le service à la clientèle pour obtenir vos Robux.";
 
 	public RobloxCreditResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -64,12 +66,12 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRedeemCreditForRobux(string balance, string robuxAmount)
 	{
-		return $"Activez votre crÃ©dit Roblox de {balance} en {robuxAmount}";
+		return $"Activez votre crédit Roblox de {balance} en {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRedeemCreditForRobux()
 	{
-		return "Activez votre crÃ©dit Roblox de {balance} en {robuxAmount}";
+		return "Activez votre crédit Roblox de {balance} en {robuxAmount}";
 	}
 
 	/// <summary>
@@ -78,12 +80,12 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string DescriptionConfirmRobloxCreditToRobuxRedemption(string balance, string iconRobux, string robuxAmount)
 	{
-		return $"Activez votre crÃ©dit Roblox de {balance} en {iconRobux} {robuxAmount}";
+		return $"Activez votre crédit Roblox de {balance} en {iconRobux} {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForDescriptionConfirmRobloxCreditToRobuxRedemption()
 	{
-		return "Activez votre crÃ©dit Roblox de {balance} en {iconRobux} {robuxAmount}";
+		return "Activez votre crédit Roblox de {balance} en {iconRobux} {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForHeadingGetRobux()
@@ -93,7 +95,7 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForHeadingRobloxCredit()
 	{
-		return "CrÃ©dit Roblox";
+		return "Crédit Roblox";
 	}
 
 	/// <summary>
@@ -113,12 +115,12 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 
 	protected override string _GetTemplateForMessageFailedDebitRobloxCredit()
 	{
-		return "Une erreur s'est produite lors du traitement de votre crÃ©dit Roblox. Veuillez rÃ©essayer plus tard.";
+		return "Une erreur s'est produite lors du traitement de votre crédit Roblox. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForMessageFailedGrantingRobux()
 	{
-		return "Nous vous avons crÃ©ditÃ© vos crÃ©dits Roblox, mais une erreur s'est produite lors de l'attribution des Robux. Veuillez contacter le service Ã  la clientÃ¨le pour obtenir vos Robux.";
+		return "Nous vous avons crédité vos crédits Roblox, mais une erreur s'est produite lors de l'attribution des Robux. Veuillez contacter le service à la clientèle pour obtenir vos Robux.";
 	}
 
 	/// <summary>
@@ -127,12 +129,12 @@ internal class RobloxCreditResources_fr_fr : RobloxCreditResources_en_us, IRoblo
 	/// </summary>
 	public override string MessageRobloxCreditToRobuxRedemptionConfirmation(string robuxAmount)
 	{
-		return $"Vous avez activÃ© vos {robuxAmount} Robux\u00a0!";
+		return $"Vous avez activé vos {robuxAmount} Robux\u00a0!";
 	}
 
 	protected override string _GetTemplateForMessageRobloxCreditToRobuxRedemptionConfirmation()
 	{
-		return "Vous avez activÃ© vos {robuxAmount} Robux\u00a0!";
+		return "Vous avez activé vos {robuxAmount} Robux\u00a0!";
 	}
 }
 

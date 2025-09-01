@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
 
@@ -85,3 +85,4 @@ internal class PlatformTypeDAL
 		return RobloxDatabase.RobloxPushNotifications.Lookup("PlatformTypes_GetPlatformTypeByValue", BuildDAL, queryParameters);
 	}
 }
+

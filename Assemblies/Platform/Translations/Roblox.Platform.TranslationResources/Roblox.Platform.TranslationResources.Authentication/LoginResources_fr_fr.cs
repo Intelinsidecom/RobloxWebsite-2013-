@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides LoginResources_en_us to provide locale specific translations where possible,
@@ -24,14 +26,14 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Action.ForgotPasswordOrUsernameQuestion"
 	/// English String: "Forgot password or username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestion => "Mot de passe ou nom d'utilisateur oubliÃ©\u00a0?";
+	public override string ActionForgotPasswordOrUsernameQuestion => "Mot de passe ou nom d'utilisateur oublié\u00a0?";
 
 	/// <summary>
 	/// Key: "Action.ForgotPasswordOrUsernameQuestionCapitalized"
 	/// link under login form
 	/// English String: "Forgot Password or Username?"
 	/// </summary>
-	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "Mot de passe ou nom d'utilisateur oubliÃ©\u00a0?";
+	public override string ActionForgotPasswordOrUsernameQuestionCapitalized => "Mot de passe ou nom d'utilisateur oublié\u00a0?";
 
 	/// <summary>
 	/// Key: "Action.Login"
@@ -58,7 +60,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// Play as Guest
 	/// English String: "Play as Guest"
 	/// </summary>
-	public override string ActionPlayAsGuest => "Jouer en tant qu'invitÃ©";
+	public override string ActionPlayAsGuest => "Jouer en tant qu'invité";
 
 	/// <summary>
 	/// Key: "Action.Resend"
@@ -79,7 +81,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// button user can click to send a verification link to their email
 	/// English String: "Send Verification Email"
 	/// </summary>
-	public override string ActionSendVerificationEmail => "Envoyer l'e-mail de vÃ©rification";
+	public override string ActionSendVerificationEmail => "Envoyer l'e-mail de vérification";
 
 	/// <summary>
 	/// Key: "Action.SignIn"
@@ -127,7 +129,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// current login page heading
 	/// English String: "Login to Roblox"
 	/// </summary>
-	public override string HeadingLoginRoblox => "Connexion Ã  Roblox";
+	public override string HeadingLoginRoblox => "Connexion à Roblox";
 
 	public override string HeadingSignUpMakeFriends => "Inscrivez-vous pour construire et vous faire des amis.";
 
@@ -136,28 +138,28 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// You don't need an account to play Roblox
 	/// English String: "You don't need an account to play Roblox"
 	/// </summary>
-	public override string LabelAccountNotNeeded => "Vous n'avez pas besoin de compte pour jouer Ã  Roblox.";
+	public override string LabelAccountNotNeeded => "Vous n'avez pas besoin de compte pour jouer à Roblox.";
 
 	/// <summary>
 	/// Key: "Label.EmailNeedsVerification"
 	/// modal header used for prompting user they need to verify their email in order to log in with it
 	/// English String: "Your email needs verification"
 	/// </summary>
-	public override string LabelEmailNeedsVerification => "Vous devez vÃ©rifier votre adresse e-mail";
+	public override string LabelEmailNeedsVerification => "Vous devez vérifier votre adresse e-mail";
 
 	/// <summary>
 	/// Key: "Label.FacebookCreatePasswordWarning"
 	/// If you have been signing in with Facebook, you must set a password.
 	/// English String: "If you have been signing in with Facebook, you must set a password."
 	/// </summary>
-	public override string LabelFacebookCreatePasswordWarning => "Si vous vous connectez via Facebook, vous devez dÃ©finir un mot de passe.";
+	public override string LabelFacebookCreatePasswordWarning => "Si vous vous connectez via Facebook, vous devez définir un mot de passe.";
 
 	/// <summary>
 	/// Key: "Label.ForgotUsernamePassword"
 	/// landing page top right link for password reset
 	/// English String: "Forgot Username/Password?"
 	/// </summary>
-	public override string LabelForgotUsernamePassword => "Nom d'utilisateur/mot de passe oubliÃ©\u00a0?";
+	public override string LabelForgotUsernamePassword => "Nom d'utilisateur/mot de passe oublié\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.LearnMore"
@@ -168,7 +170,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	/// <summary>
 	/// Key: "Label.LoggingInSpinnerText"
-	/// English String: "Logging inâ€¦"
+	/// English String: "Logging in…"
 	/// </summary>
 	public override string LabelLoggingInSpinnerText => "Connexion en cours...";
 
@@ -204,7 +206,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// prompt for allowing users to resend verification email
 	/// English String: "Didn't receive it?"
 	/// </summary>
-	public override string LabelNotReceived => "Vous n'avez pas reÃ§u d'e-mail\u00a0?";
+	public override string LabelNotReceived => "Vous n'avez pas reçu d'e-mail\u00a0?";
 
 	/// <summary>
 	/// Key: "Label.Or"
@@ -232,14 +234,14 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// You can start playing right now, in guest mode!
 	/// English String: "You can start playing right now, in guest mode!"
 	/// </summary>
-	public override string LabelStartPlaying => "Vous pouvez commencer Ã  jouer tout de suite en mode invitÃ©\u00a0!";
+	public override string LabelStartPlaying => "Vous pouvez commencer à jouer tout de suite en mode invité\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.UnverifiedEmailInstructions"
 	/// message shown in a modal when user logs in with unverified email
 	/// English String: "To log in with your email, it must be verified. You can also log in with your username."
 	/// </summary>
-	public override string LabelUnverifiedEmailInstructions => "Avant de vous connecter au moyen de votre adresse e-mail, celle-ci doit Ãªtre vÃ©rifiÃ©e. Vous pouvez Ã©galement vous connecter avec votre nom d'utilisateur.";
+	public override string LabelUnverifiedEmailInstructions => "Avant de vous connecter au moyen de votre adresse e-mail, celle-ci doit être vérifiée. Vous pouvez également vous connecter avec votre nom d'utilisateur.";
 
 	/// <summary>
 	/// Key: "Label.Username"
@@ -259,14 +261,14 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// placeholder text for input fields that accept username, email or phone
 	/// English String: "Username/Email/Phone"
 	/// </summary>
-	public override string LabelUsernameEmailPhone => "Identifiant/E-mail/TÃ©lÃ©phone";
+	public override string LabelUsernameEmailPhone => "Identifiant/E-mail/Téléphone";
 
 	/// <summary>
 	/// Key: "Label.UsernamePhone"
 	/// placeholder text for input field that accepts username or phone
 	/// English String: "Username/Phone"
 	/// </summary>
-	public override string LabelUsernamePhone => "Nom d'utilisateur/TÃ©lÃ©phone";
+	public override string LabelUsernamePhone => "Nom d'utilisateur/Téléphone";
 
 	/// <summary>
 	/// Key: "Label.UsernameWithColumn"
@@ -280,20 +282,20 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// message telling user a verification email was sent to them
 	/// English String: "Verification Email Sent!"
 	/// </summary>
-	public override string LabelVerificationEmailSent => "E-mail de vÃ©rification envoyÃ©\u00a0!";
+	public override string LabelVerificationEmailSent => "E-mail de vérification envoyé\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.WeChatAntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string LabelWeChatAntiAddictionText => "Boycottez les mauvais jeux, Ã©vitez les jeux piratÃ©s. Faites attention Ã  votre sÃ©curitÃ© et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire Ã  votre santÃ©. GÃ©rez votre temps convenablement et menez une vie saine.";
+	public override string LabelWeChatAntiAddictionText => "Boycottez les mauvais jeux, évitez les jeux piratés. Faites attention à votre sécurité et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire à votre santé. Gérez votre temps convenablement et menez une vie saine.";
 
 	/// <summary>
 	/// Key: "Message.UnknownErrorTryAgain"
 	/// An unknown error occurred. Please try again.
 	/// English String: "An unknown error occurred. Please try again."
 	/// </summary>
-	public override string MessageUnknownErrorTryAgain => "Une erreur inconnue est survenue. Veuillez rÃ©essayer.";
+	public override string MessageUnknownErrorTryAgain => "Une erreur inconnue est survenue. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Message.UsernameAndPasswordRequired"
@@ -306,35 +308,35 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// Key: "Response.AccountIssueErrorContactSupport"
 	/// English String: "Account issue. Please contact Support."
 	/// </summary>
-	public override string ResponseAccountIssueErrorContactSupport => "ProblÃ¨me de compte. Veuillez contacter l'assistance.";
+	public override string ResponseAccountIssueErrorContactSupport => "Problème de compte. Veuillez contacter l'assistance.";
 
 	/// <summary>
 	/// Key: "Response.AccountLockedRequestReset"
 	/// Account has been locked. Please request a password reset.
 	/// English String: "Account has been locked. Please request a password reset."
 	/// </summary>
-	public override string ResponseAccountLockedRequestReset => "Le compte a Ã©tÃ© verrouillÃ©. Veuillez faire une demande de rÃ©initialisation de mot de passe.";
+	public override string ResponseAccountLockedRequestReset => "Le compte a été verrouillé. Veuillez faire une demande de réinitialisation de mot de passe.";
 
 	/// <summary>
 	/// Key: "Response.AccountNotFound"
 	/// Account not found. Please try again.
 	/// English String: "Account not found. Please try again."
 	/// </summary>
-	public override string ResponseAccountNotFound => "Aucun compte n'a Ã©tÃ© trouvÃ©. Veuillez rÃ©essayer.";
+	public override string ResponseAccountNotFound => "Aucun compte n'a été trouvé. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Response.EmailLinkedToMultipleAccountsLoginWithUsername"
 	/// error message displayed when user attempts to log in with an email that is linked to multiple accounts
 	/// English String: "Your email is associated with more than 1 username. Please login with your username."
 	/// </summary>
-	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "Votre adresse e-mail est associÃ©e Ã  plus d'un nom d'utilisateur. Veuillez vous connecter avec votre nom d'utilisateur.";
+	public override string ResponseEmailLinkedToMultipleAccountsLoginWithUsername => "Votre adresse e-mail est associée à plus d'un nom d'utilisateur. Veuillez vous connecter avec votre nom d'utilisateur.";
 
 	/// <summary>
 	/// Key: "Response.EmailSent"
 	/// response telling user that a verification email has been sent to them
 	/// English String: "Email sent!"
 	/// </summary>
-	public override string ResponseEmailSent => "E-mail envoyÃ©\u00a0!";
+	public override string ResponseEmailSent => "E-mail envoyé\u00a0!";
 
 	/// <summary>
 	/// Key: "Response.IncorrectEmailOrPassword"
@@ -348,7 +350,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// error message displayed when user logs in with an invalid phone or password
 	/// English String: "Incorrect phone or password."
 	/// </summary>
-	public override string ResponseIncorrectPhoneOrPassword => "NumÃ©ro de tÃ©lÃ©phone ou mot de passe invalide.";
+	public override string ResponseIncorrectPhoneOrPassword => "Numéro de téléphone ou mot de passe invalide.";
 
 	/// <summary>
 	/// Key: "Response.IncorrectUsernamePassword"
@@ -361,7 +363,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// error message shown when user attempts to login with method other than username and an error occurred
 	/// English String: "Something went wrong. Please login with your username."
 	/// </summary>
-	public override string ResponseLoginWithUsername => "Un problÃ¨me est survenu. Veuillez vous connecter avec votre nom d'utilisateur.";
+	public override string ResponseLoginWithUsername => "Un problème est survenu. Veuillez vous connecter avec votre nom d'utilisateur.";
 
 	/// <summary>
 	/// Key: "Response.PasswordNotProvided"
@@ -387,21 +389,21 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// Unknown login failure.
 	/// English String: "Unknown login failure."
 	/// </summary>
-	public override string ResponseUnknownLoginError => "Ã‰chec de connexion inconnu.";
+	public override string ResponseUnknownLoginError => "Échec de connexion inconnu.";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedEmailLoginWithUsername"
 	/// error message shown when user attempts to login with unverified email
 	/// English String: "Your email is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedEmailLoginWithUsername => "Votre adresse e-mail n'a pas Ã©tÃ© confirmÃ©e. Veuillez vous connecter avec votre nom d'utilisateur.";
+	public override string ResponseUnverifiedEmailLoginWithUsername => "Votre adresse e-mail n'a pas été confirmée. Veuillez vous connecter avec votre nom d'utilisateur.";
 
 	/// <summary>
 	/// Key: "Response.UnverifiedPhoneLoginWithUsername"
 	/// error message shown when user attempts to login with an unverified phone number
 	/// English String: "Your phone is not verified. Please login with your username."
 	/// </summary>
-	public override string ResponseUnverifiedPhoneLoginWithUsername => "Votre numÃ©ro de tÃ©lÃ©phone n'a pas Ã©tÃ© confirmÃ©. Veuillez vous connecter avec votre nom d'utilisateur.";
+	public override string ResponseUnverifiedPhoneLoginWithUsername => "Votre numéro de téléphone n'a pas été confirmé. Veuillez vous connecter avec votre nom d'utilisateur.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotProvided"
@@ -415,19 +417,19 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// Unable to login. Please use Social Network sign on.
 	/// English String: "Unable to login. Please use Social Network sign on."
 	/// </summary>
-	public override string ResponseUseSocialSignOn => "Connexion impossible. Veuillez utiliser un rÃ©seau social pour vous connecter.";
+	public override string ResponseUseSocialSignOn => "Connexion impossible. Veuillez utiliser un réseau social pour vous connecter.";
 
 	/// <summary>
 	/// Key: "WeChat.AntiAddictionText"
 	/// English String: "Boycott bad games, refuse pirated games. Be aware of self-defense and being deceived. Playing games is good for your brain, but too much game play can harm your health. Manage your time well and enjoy a healthy lifestyle."
 	/// </summary>
-	public override string WeChatAntiAddictionText => "Boycottez les mauvais jeux, Ã©vitez les jeux piratÃ©s. Faites attention Ã  votre sÃ©curitÃ© et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire Ã  votre santÃ©. GÃ©rez votre temps convenablement et menez une vie saine.";
+	public override string WeChatAntiAddictionText => "Boycottez les mauvais jeux, évitez les jeux piratés. Faites attention à votre sécurité et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire à votre santé. Gérez votre temps convenablement et menez une vie saine.";
 
 	/// <summary>
 	/// Key: "WeChat.RealNameNotVerified"
 	/// English String: "Your WeChat is not real-name verified. Please use a real-name verified WeChat account and try again. Please visit https://jiazhang.qq.com/zk/home.html"
 	/// </summary>
-	public override string WeChatRealNameNotVerified => "Ton WeChat nâ€™est pas vÃ©rifiÃ©. Il faut utiliser un compte vÃ©rifiÃ© WeChat puis rÃ©essayer. Rends-toi ici : https://jiazhang.qq.com/zk/home.html";
+	public override string WeChatRealNameNotVerified => "Ton WeChat n’est pas vérifié. Il faut utiliser un compte vérifié WeChat puis réessayer. Rends-toi ici : https://jiazhang.qq.com/zk/home.html";
 
 	public LoginResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -446,12 +448,12 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestion()
 	{
-		return "Mot de passe ou nom d'utilisateur oubliÃ©\u00a0?";
+		return "Mot de passe ou nom d'utilisateur oublié\u00a0?";
 	}
 
 	protected override string _GetTemplateForActionForgotPasswordOrUsernameQuestionCapitalized()
 	{
-		return "Mot de passe ou nom d'utilisateur oubliÃ©\u00a0?";
+		return "Mot de passe ou nom d'utilisateur oublié\u00a0?";
 	}
 
 	protected override string _GetTemplateForActionLogin()
@@ -471,7 +473,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionPlayAsGuest()
 	{
-		return "Jouer en tant qu'invitÃ©";
+		return "Jouer en tant qu'invité";
 	}
 
 	protected override string _GetTemplateForActionResend()
@@ -486,7 +488,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForActionSendVerificationEmail()
 	{
-		return "Envoyer l'e-mail de vÃ©rification";
+		return "Envoyer l'e-mail de vérification";
 	}
 
 	protected override string _GetTemplateForActionSignIn()
@@ -521,7 +523,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForHeadingLoginRoblox()
 	{
-		return "Connexion Ã  Roblox";
+		return "Connexion à Roblox";
 	}
 
 	protected override string _GetTemplateForHeadingSignUpMakeFriends()
@@ -531,22 +533,22 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelAccountNotNeeded()
 	{
-		return "Vous n'avez pas besoin de compte pour jouer Ã  Roblox.";
+		return "Vous n'avez pas besoin de compte pour jouer à Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelEmailNeedsVerification()
 	{
-		return "Vous devez vÃ©rifier votre adresse e-mail";
+		return "Vous devez vérifier votre adresse e-mail";
 	}
 
 	protected override string _GetTemplateForLabelFacebookCreatePasswordWarning()
 	{
-		return "Si vous vous connectez via Facebook, vous devez dÃ©finir un mot de passe.";
+		return "Si vous vous connectez via Facebook, vous devez définir un mot de passe.";
 	}
 
 	protected override string _GetTemplateForLabelForgotUsernamePassword()
 	{
-		return "Nom d'utilisateur/mot de passe oubliÃ©\u00a0?";
+		return "Nom d'utilisateur/mot de passe oublié\u00a0?";
 	}
 
 	/// <summary>
@@ -556,12 +558,12 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string LabelGreetingForNewAccount(string username, string linkStartSignup, string linkEndSignup)
 	{
-		return $"Bonjour, {username}. {linkStartSignup}Nous allons vous crÃ©er un compte\u00a0!{linkEndSignup}";
+		return $"Bonjour, {username}. {linkStartSignup}Nous allons vous créer un compte\u00a0!{linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelGreetingForNewAccount()
 	{
-		return "Bonjour, {username}. {linkStartSignup}Nous allons vous crÃ©er un compte\u00a0!{linkEndSignup}";
+		return "Bonjour, {username}. {linkStartSignup}Nous allons vous créer un compte\u00a0!{linkEndSignup}";
 	}
 
 	protected override string _GetTemplateForLabelLearnMore()
@@ -596,7 +598,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelNotReceived()
 	{
-		return "Vous n'avez pas reÃ§u d'e-mail\u00a0?";
+		return "Vous n'avez pas reçu d'e-mail\u00a0?";
 	}
 
 	protected override string _GetTemplateForLabelOr()
@@ -616,12 +618,12 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelStartPlaying()
 	{
-		return "Vous pouvez commencer Ã  jouer tout de suite en mode invitÃ©\u00a0!";
+		return "Vous pouvez commencer à jouer tout de suite en mode invité\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelUnverifiedEmailInstructions()
 	{
-		return "Avant de vous connecter au moyen de votre adresse e-mail, celle-ci doit Ãªtre vÃ©rifiÃ©e. Vous pouvez Ã©galement vous connecter avec votre nom d'utilisateur.";
+		return "Avant de vous connecter au moyen de votre adresse e-mail, celle-ci doit être vérifiée. Vous pouvez également vous connecter avec votre nom d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
@@ -636,12 +638,12 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelUsernameEmailPhone()
 	{
-		return "Identifiant/E-mail/TÃ©lÃ©phone";
+		return "Identifiant/E-mail/Téléphone";
 	}
 
 	protected override string _GetTemplateForLabelUsernamePhone()
 	{
-		return "Nom d'utilisateur/TÃ©lÃ©phone";
+		return "Nom d'utilisateur/Téléphone";
 	}
 
 	protected override string _GetTemplateForLabelUsernameWithColumn()
@@ -651,17 +653,17 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForLabelVerificationEmailSent()
 	{
-		return "E-mail de vÃ©rification envoyÃ©\u00a0!";
+		return "E-mail de vérification envoyé\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelWeChatAntiAddictionText()
 	{
-		return "Boycottez les mauvais jeux, Ã©vitez les jeux piratÃ©s. Faites attention Ã  votre sÃ©curitÃ© et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire Ã  votre santÃ©. GÃ©rez votre temps convenablement et menez une vie saine.";
+		return "Boycottez les mauvais jeux, évitez les jeux piratés. Faites attention à votre sécurité et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire à votre santé. Gérez votre temps convenablement et menez une vie saine.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownErrorTryAgain()
 	{
-		return "Une erreur inconnue est survenue. Veuillez rÃ©essayer.";
+		return "Une erreur inconnue est survenue. Veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForMessageUsernameAndPasswordRequired()
@@ -671,27 +673,27 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseAccountIssueErrorContactSupport()
 	{
-		return "ProblÃ¨me de compte. Veuillez contacter l'assistance.";
+		return "Problème de compte. Veuillez contacter l'assistance.";
 	}
 
 	protected override string _GetTemplateForResponseAccountLockedRequestReset()
 	{
-		return "Le compte a Ã©tÃ© verrouillÃ©. Veuillez faire une demande de rÃ©initialisation de mot de passe.";
+		return "Le compte a été verrouillé. Veuillez faire une demande de réinitialisation de mot de passe.";
 	}
 
 	protected override string _GetTemplateForResponseAccountNotFound()
 	{
-		return "Aucun compte n'a Ã©tÃ© trouvÃ©. Veuillez rÃ©essayer.";
+		return "Aucun compte n'a été trouvé. Veuillez réessayer.";
 	}
 
 	protected override string _GetTemplateForResponseEmailLinkedToMultipleAccountsLoginWithUsername()
 	{
-		return "Votre adresse e-mail est associÃ©e Ã  plus d'un nom d'utilisateur. Veuillez vous connecter avec votre nom d'utilisateur.";
+		return "Votre adresse e-mail est associée à plus d'un nom d'utilisateur. Veuillez vous connecter avec votre nom d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForResponseEmailSent()
 	{
-		return "E-mail envoyÃ©\u00a0!";
+		return "E-mail envoyé\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectEmailOrPassword()
@@ -701,7 +703,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseIncorrectPhoneOrPassword()
 	{
-		return "NumÃ©ro de tÃ©lÃ©phone ou mot de passe invalide.";
+		return "Numéro de téléphone ou mot de passe invalide.";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectUsernamePassword()
@@ -711,7 +713,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseLoginWithUsername()
 	{
-		return "Un problÃ¨me est survenu. Veuillez vous connecter avec votre nom d'utilisateur.";
+		return "Un problème est survenu. Veuillez vous connecter avec votre nom d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordNotProvided()
@@ -731,17 +733,17 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseUnknownLoginError()
 	{
-		return "Ã‰chec de connexion inconnu.";
+		return "Échec de connexion inconnu.";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedEmailLoginWithUsername()
 	{
-		return "Votre adresse e-mail n'a pas Ã©tÃ© confirmÃ©e. Veuillez vous connecter avec votre nom d'utilisateur.";
+		return "Votre adresse e-mail n'a pas été confirmée. Veuillez vous connecter avec votre nom d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForResponseUnverifiedPhoneLoginWithUsername()
 	{
-		return "Votre numÃ©ro de tÃ©lÃ©phone n'a pas Ã©tÃ© confirmÃ©. Veuillez vous connecter avec votre nom d'utilisateur.";
+		return "Votre numéro de téléphone n'a pas été confirmé. Veuillez vous connecter avec votre nom d'utilisateur.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotProvided()
@@ -751,7 +753,7 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 
 	protected override string _GetTemplateForResponseUseSocialSignOn()
 	{
-		return "Connexion impossible. Veuillez utiliser un rÃ©seau social pour vous connecter.";
+		return "Connexion impossible. Veuillez utiliser un réseau social pour vous connecter.";
 	}
 
 	/// <summary>
@@ -760,22 +762,22 @@ internal class LoginResources_fr_fr : LoginResources_en_us, ILoginResources, ITr
 	/// </summary>
 	public override string ResponseWeChatNotRealNameVerified(string url)
 	{
-		return $"Votre compte WeChat n'a pas Ã©tÃ© vÃ©rifiÃ© Ã  l'aide de votre nom rÃ©el. Veuillez utiliser un compte WeChat vÃ©rifiÃ© et rÃ©essayer. Consultez la page {url}";
+		return $"Votre compte WeChat n'a pas été vérifié à l'aide de votre nom réel. Veuillez utiliser un compte WeChat vérifié et réessayer. Consultez la page {url}";
 	}
 
 	protected override string _GetTemplateForResponseWeChatNotRealNameVerified()
 	{
-		return "Votre compte WeChat n'a pas Ã©tÃ© vÃ©rifiÃ© Ã  l'aide de votre nom rÃ©el. Veuillez utiliser un compte WeChat vÃ©rifiÃ© et rÃ©essayer. Consultez la page {url}";
+		return "Votre compte WeChat n'a pas été vérifié à l'aide de votre nom réel. Veuillez utiliser un compte WeChat vérifié et réessayer. Consultez la page {url}";
 	}
 
 	protected override string _GetTemplateForWeChatAntiAddictionText()
 	{
-		return "Boycottez les mauvais jeux, Ã©vitez les jeux piratÃ©s. Faites attention Ã  votre sÃ©curitÃ© et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire Ã  votre santÃ©. GÃ©rez votre temps convenablement et menez une vie saine.";
+		return "Boycottez les mauvais jeux, évitez les jeux piratés. Faites attention à votre sécurité et ne vous faites pas berner. Jouer a des effets positifs sur le cerveau, mais en abuser risque de nuire à votre santé. Gérez votre temps convenablement et menez une vie saine.";
 	}
 
 	protected override string _GetTemplateForWeChatRealNameNotVerified()
 	{
-		return "Ton WeChat nâ€™est pas vÃ©rifiÃ©. Il faut utiliser un compte vÃ©rifiÃ© WeChat puis rÃ©essayer. Rends-toi ici : https://jiazhang.qq.com/zk/home.html";
+		return "Ton WeChat n’est pas vérifié. Il faut utiliser un compte vérifié WeChat puis réessayer. Rends-toi ici : https://jiazhang.qq.com/zk/home.html";
 	}
 }
 

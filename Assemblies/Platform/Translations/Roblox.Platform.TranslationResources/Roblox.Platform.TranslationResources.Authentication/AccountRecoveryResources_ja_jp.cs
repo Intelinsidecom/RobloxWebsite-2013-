@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides AccountRecoveryResources_en_us to provide locale specific translations where possible,
@@ -10,79 +12,79 @@ internal class AccountRecoveryResources_ja_jp : AccountRecoveryResources_en_us, 
 	/// Key: "ActionSubmit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "é€ä¿¡ã™ã‚‹";
+	public override string ActionSubmit => "送信する";
 
 	/// <summary>
 	/// Key: "DescriptionResetFollowing"
 	/// English String: "This will reset the following settings:"
 	/// </summary>
-	public override string DescriptionResetFollowing => "ä»¥ä¸‹ã®è¨­å®šãŒãƒªã‚»ãƒƒãƒˆã•ã‚Œã¾ã™:";
+	public override string DescriptionResetFollowing => "以下の設定がリセットされます:";
 
 	/// <summary>
 	/// Key: "DescriptionRevertAccount"
 	/// English String: "You are about to revert your account to a past state.\nTo revert your account you must set a new password."
 	/// </summary>
-	public override string DescriptionRevertAccount => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã®çŠ¶æ…‹ã«æˆ»ãã†ã¨ã—ã¦ã„ã¾ã™ã€‚\nã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã«æˆ»ã™ã«ã¯ã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¨­å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+	public override string DescriptionRevertAccount => "アカウントを元の状態に戻そうとしています。\nアカウントを元に戻すには、新しいパスワードを設定する必要があります。";
 
 	/// <summary>
 	/// Key: "HeadingAccountRecovery"
 	/// English String: "Reset Password"
 	/// </summary>
-	public override string HeadingAccountRecovery => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆ";
+	public override string HeadingAccountRecovery => "パスワードのリセット";
 
 	/// <summary>
 	/// Key: "HeadingChooseAccount"
 	/// English String: "Choose an Account"
 	/// </summary>
-	public override string HeadingChooseAccount => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’é¸ã¶";
+	public override string HeadingChooseAccount => "アカウントを選ぶ";
 
 	/// <summary>
 	/// Key: "HeadingRevertAccount"
 	/// English String: "Revert Account"
 	/// </summary>
-	public override string HeadingRevertAccount => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã«æˆ»ã™";
+	public override string HeadingRevertAccount => "アカウントを元に戻す";
 
 	/// <summary>
 	/// Key: "LabelConfirmNewPassword"
 	/// English String: "Confirm New Password"
 	/// </summary>
-	public override string LabelConfirmNewPassword => "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ç¢ºèª";
+	public override string LabelConfirmNewPassword => "新しいパスワードを確認";
 
 	/// <summary>
 	/// Key: "LabelEmail"
 	/// English String: "Email"
 	/// </summary>
-	public override string LabelEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
+	public override string LabelEmail => "メールアドレス";
 
 	/// <summary>
 	/// Key: "LabelNewPassword"
 	/// English String: "New Password"
 	/// </summary>
-	public override string LabelNewPassword => "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+	public override string LabelNewPassword => "新しいパスワード";
 
 	/// <summary>
 	/// Key: "LabelPassword"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+	public override string LabelPassword => "パスワード";
 
 	/// <summary>
 	/// Key: "LabelTwoStepVerification"
 	/// English String: "Two Step Verification"
 	/// </summary>
-	public override string LabelTwoStepVerification => "äºŒæ®µéšŽèªè¨¼";
+	public override string LabelTwoStepVerification => "二段階認証";
 
 	/// <summary>
 	/// Key: "MessageDisableTwoStepVerification"
 	/// English String: "This will disable two step verification."
 	/// </summary>
-	public override string MessageDisableTwoStepVerification => "äºŒæ®µéšŽèªè¨¼ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚";
+	public override string MessageDisableTwoStepVerification => "二段階認証が無効になります。";
 
 	/// <summary>
 	/// Key: "MessageRevertToUnverifiedEmail"
 	/// English String: "You are reverting your email to an unverified email."
 	/// </summary>
-	public override string MessageRevertToUnverifiedEmail => "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€èªè¨¼ã•ã‚Œã¦ã„ãªã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ãã†ã¨ã—ã¦ã„ã¾ã™ã€‚";
+	public override string MessageRevertToUnverifiedEmail => "メールアドレスを、認証されていないメールアドレスに戻そうとしています。";
 
 	public AccountRecoveryResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -91,57 +93,57 @@ internal class AccountRecoveryResources_ja_jp : AccountRecoveryResources_en_us, 
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "é€ä¿¡ã™ã‚‹";
+		return "送信する";
 	}
 
 	protected override string _GetTemplateForDescriptionResetFollowing()
 	{
-		return "ä»¥ä¸‹ã®è¨­å®šãŒãƒªã‚»ãƒƒãƒˆã•ã‚Œã¾ã™:";
+		return "以下の設定がリセットされます:";
 	}
 
 	protected override string _GetTemplateForDescriptionRevertAccount()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã®çŠ¶æ…‹ã«æˆ»ãã†ã¨ã—ã¦ã„ã¾ã™ã€‚\nã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã«æˆ»ã™ã«ã¯ã€æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’è¨­å®šã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "アカウントを元の状態に戻そうとしています。\nアカウントを元に戻すには、新しいパスワードを設定する必要があります。";
 	}
 
 	protected override string _GetTemplateForHeadingAccountRecovery()
 	{
-		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã®ãƒªã‚»ãƒƒãƒˆ";
+		return "パスワードのリセット";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAccount()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’é¸ã¶";
+		return "アカウントを選ぶ";
 	}
 
 	protected override string _GetTemplateForHeadingRevertAccount()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’å…ƒã«æˆ»ã™";
+		return "アカウントを元に戻す";
 	}
 
 	protected override string _GetTemplateForLabelConfirmNewPassword()
 	{
-		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ç¢ºèª";
+		return "新しいパスワードを確認";
 	}
 
 	protected override string _GetTemplateForLabelEmail()
 	{
-		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹";
+		return "メールアドレス";
 	}
 
 	protected override string _GetTemplateForLabelNewPassword()
 	{
-		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+		return "新しいパスワード";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰";
+		return "パスワード";
 	}
 
 	protected override string _GetTemplateForLabelTwoStepVerification()
 	{
-		return "äºŒæ®µéšŽèªè¨¼";
+		return "二段階認証";
 	}
 
 	/// <summary>
@@ -150,17 +152,17 @@ internal class AccountRecoveryResources_ja_jp : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageCreateNewPasswordDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ä½œã‚Šã¾ã™ã€‚å¤ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ {styleFront}ä½¿ã‚ãªã„{styleEnd} ã§ãã ã•ã„ã€‚";
+		return $"新しいパスワードを作ります。古いパスワードを {styleFront}使わない{styleEnd} でください。";
 	}
 
 	protected override string _GetTemplateForMessageCreateNewPasswordDontUseOldPassword()
 	{
-		return "æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ä½œã‚Šã¾ã™ã€‚å¤ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ {styleFront}ä½¿ã‚ãªã„{styleEnd} ã§ãã ã•ã„ã€‚";
+		return "新しいパスワードを作ります。古いパスワードを {styleFront}使わない{styleEnd} でください。";
 	}
 
 	protected override string _GetTemplateForMessageDisableTwoStepVerification()
 	{
-		return "äºŒæ®µéšŽèªè¨¼ãŒç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚";
+		return "二段階認証が無効になります。";
 	}
 
 	/// <summary>
@@ -169,17 +171,17 @@ internal class AccountRecoveryResources_ja_jp : AccountRecoveryResources_en_us, 
 	/// </summary>
 	public override string MessageDontUseOldPassword(string styleFront, string styleEnd)
 	{
-		return $"å¤ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ {styleFront}ä½¿ã‚ãªã„{styleEnd} ã§ãã ã•ã„ã€‚";
+		return $"古いパスワードを {styleFront}使わない{styleEnd} でください。";
 	}
 
 	protected override string _GetTemplateForMessageDontUseOldPassword()
 	{
-		return "å¤ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ {styleFront}ä½¿ã‚ãªã„{styleEnd} ã§ãã ã•ã„ã€‚";
+		return "古いパスワードを {styleFront}使わない{styleEnd} でください。";
 	}
 
 	protected override string _GetTemplateForMessageRevertToUnverifiedEmail()
 	{
-		return "ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã€èªè¨¼ã•ã‚Œã¦ã„ãªã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã«æˆ»ãã†ã¨ã—ã¦ã„ã¾ã™ã€‚";
+		return "メールアドレスを、認証されていないメールアドレスに戻そうとしています。";
 	}
 }
 

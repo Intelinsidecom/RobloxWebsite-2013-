@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class GameGearOptionsDisplayResources_ko_kr : GameGearOptionsDisplayRes
 	/// Key: "LabelAllGenreAllowed"
 	/// English String: "All Genres Allowed"
 	/// </summary>
-	public override string LabelAllGenreAllowed => "ëª¨ë“  ìž¥ë¥´ í—ˆìš©ë¨";
+	public override string LabelAllGenreAllowed => "모든 장르 허용됨";
 
 	/// <summary>
 	/// Key: "LabelNoGear"
 	/// English String: "No Gear Allowed"
 	/// </summary>
-	public override string LabelNoGear => "ìž¥ë¹„ ì‚¬ìš© ë¶ˆê°€";
+	public override string LabelNoGear => "장비 사용 불가";
 
 	public GameGearOptionsDisplayResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -25,7 +27,7 @@ internal class GameGearOptionsDisplayResources_ko_kr : GameGearOptionsDisplayRes
 
 	protected override string _GetTemplateForLabelAllGenreAllowed()
 	{
-		return "ëª¨ë“  ìž¥ë¥´ í—ˆìš©ë¨";
+		return "모든 장르 허용됨";
 	}
 
 	/// <summary>
@@ -34,17 +36,17 @@ internal class GameGearOptionsDisplayResources_ko_kr : GameGearOptionsDisplayRes
 	/// </summary>
 	public override string LabelGearOnly(string GearName)
 	{
-		return $"{GearName} ìž¥ë¹„ ì „ìš©";
+		return $"{GearName} 장비 전용";
 	}
 
 	protected override string _GetTemplateForLabelGearOnly()
 	{
-		return "{GearName} ìž¥ë¹„ ì „ìš©";
+		return "{GearName} 장비 전용";
 	}
 
 	protected override string _GetTemplateForLabelNoGear()
 	{
-		return "ìž¥ë¹„ ì‚¬ìš© ë¶ˆê°€";
+		return "장비 사용 불가";
 	}
 }
 

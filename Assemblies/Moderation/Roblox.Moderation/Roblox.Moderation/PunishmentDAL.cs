@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 
@@ -223,3 +223,4 @@ public class PunishmentDAL
 		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(Helper.DBConnectionString, "[dbo].[PunishmentsV2_GetPunishmentV2IDsByUserID_Paged]", queryParameters));
 	}
 }
+

@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Platform.Thumbnails.RequestValidationpublic {
-    class InvalidThumbnailSizeException : Exception
+using System;
+namespace Roblox.Platform.Thumbnails.RequestValidation {
+    public class InvalidThumbnailSizeException : Exception
 
 {
 	public InvalidThumbnailSizeException(string message)

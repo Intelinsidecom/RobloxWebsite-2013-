@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -10,109 +12,109 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// Key: "Action.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string ActionArchive => "ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–";
+	public override string ActionArchive => "アーカイブ";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "æˆ»ã‚‹";
+	public override string ActionBack => "戻る";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "ç ´æ£„";
+	public override string ActionDiscard => "破棄";
 
 	/// <summary>
 	/// Key: "Action.MarkAsRead"
 	/// English String: "Mark As Read"
 	/// </summary>
-	public override string ActionMarkAsRead => "æ—¢èª­ã«ã™ã‚‹";
+	public override string ActionMarkAsRead => "既読にする";
 
 	/// <summary>
 	/// Key: "Action.MarkAsUnread"
 	/// English String: "Mark As Unread"
 	/// </summary>
-	public override string ActionMarkAsUnread => "æœªèª­ã«ã™ã‚‹";
+	public override string ActionMarkAsUnread => "未読にする";
 
 	/// <summary>
 	/// Key: "Action.MoveToInbox"
 	/// English String: "Move To Inbox"
 	/// </summary>
-	public override string ActionMoveToInbox => "å—ä¿¡ãƒˆãƒ¬ã‚¤ã«ç§»å‹•";
+	public override string ActionMoveToInbox => "受信トレイに移動";
 
 	/// <summary>
 	/// Key: "Action.Reply"
 	/// English String: "Reply"
 	/// </summary>
-	public override string ActionReply => "è¿”ä¿¡";
+	public override string ActionReply => "返信";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "è¦ç´„é•åã‚’å ±å‘Š";
+	public override string ActionReportAbuse => "規約違反を報告";
 
 	/// <summary>
 	/// Key: "Action.Send"
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionSend => "é€ä¿¡";
+	public override string ActionSend => "送信";
 
 	/// <summary>
 	/// Key: "Action.SendReply"
 	/// English String: "Send Reply"
 	/// </summary>
-	public override string ActionSendReply => "è¿”ä¿¡";
+	public override string ActionSendReply => "返信";
 
 	/// <summary>
 	/// Key: "Heading.Message"
 	/// English String: "Messages"
 	/// </summary>
-	public override string HeadingMessage => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+	public override string HeadingMessage => "メッセージ";
 
 	/// <summary>
 	/// Key: "Heading.NewMessages"
 	/// English String: "New Message"
 	/// </summary>
-	public override string HeadingNewMessages => "æ–°ç€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+	public override string HeadingNewMessages => "新着メッセージ";
 
 	/// <summary>
 	/// Key: "Heading.Response"
 	/// English String: "Responses:"
 	/// </summary>
-	public override string HeadingResponse => "è¿”ä¿¡:";
+	public override string HeadingResponse => "返信:";
 
 	/// <summary>
 	/// Key: "Label.All"
 	/// English String: "All"
 	/// </summary>
-	public override string LabelAll => "ã™ã¹ã¦";
+	public override string LabelAll => "すべて";
 
 	/// <summary>
 	/// Key: "Label.Archive"
 	/// English String: "Archive"
 	/// </summary>
-	public override string LabelArchive => "ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–";
+	public override string LabelArchive => "アーカイブ";
 
 	/// <summary>
 	/// Key: "Label.Inbox"
 	/// English String: "Inbox"
 	/// </summary>
-	public override string LabelInbox => "å—ä¿¡ãƒˆãƒ¬ã‚¤";
+	public override string LabelInbox => "受信トレイ";
 
 	/// <summary>
 	/// Key: "Label.IncludeMessage"
 	/// English String: "Include Previous Message"
 	/// </summary>
-	public override string LabelIncludeMessage => "å‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å«ã‚ã‚‹";
+	public override string LabelIncludeMessage => "前のメッセージを含める";
 
 	/// <summary>
 	/// Key: "Label.News"
 	/// English String: "News"
 	/// </summary>
-	public override string LabelNews => "ãƒ‹ãƒ¥ãƒ¼ã‚¹";
+	public override string LabelNews => "ニュース";
 
 	/// <summary>
 	/// Key: "Label.Of"
@@ -124,128 +126,128 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// Key: "Label.Select"
 	/// English String: "Select..."
 	/// </summary>
-	public override string LabelSelect => "é¸æŠž...";
+	public override string LabelSelect => "選択...";
 
 	/// <summary>
 	/// Key: "Label.Sent"
 	/// English String: "Sent"
 	/// </summary>
-	public override string LabelSent => "é€ä¿¡æ¸ˆã¿";
+	public override string LabelSent => "送信済み";
 
 	/// <summary>
 	/// Key: "Label.Subject"
 	/// English String: "Subject:"
 	/// </summary>
-	public override string LabelSubject => "ä»¶å:";
+	public override string LabelSubject => "件名:";
 
 	/// <summary>
 	/// Key: "Label.To"
 	/// English String: "To:"
 	/// </summary>
-	public override string LabelTo => "å®›å…ˆ:";
+	public override string LabelTo => "宛先:";
 
 	/// <summary>
 	/// Key: "Message.BodyCantBlank"
 	/// English String: "The message body can't be blank."
 	/// </summary>
-	public override string MessageBodyCantBlank => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æœ¬æ–‡ã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageBodyCantBlank => "メッセージ本文は空白にできません。";
 
 	/// <summary>
 	/// Key: "Message.GeneralError"
 	/// English String: "Sorry, an error occurred sending your message."
 	/// </summary>
-	public override string MessageGeneralError => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸é€ä¿¡ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+	public override string MessageGeneralError => "申し訳ありませんが、メッセージ送信中にエラーが発生しました。";
 
 	/// <summary>
 	/// Key: "Message.IdTheftWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageIdTheftWarning => "Robloxã®ã‚¹ã‚¿ãƒƒãƒ•ãŒã€ã‚ãªãŸã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãå‡ºãã†ã¨ã™ã‚‹äººã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ç›—ã‚‚ã†ã¨ã—ã¦ã„ã‚‹ã®ã§ã”æ³¨æ„ãã ã•ã„ã€‚";
+	public override string MessageIdTheftWarning => "Robloxのスタッフが、あなたのパスワードを聞くことはありません。パスワードを聞き出そうとする人は、アカウントを盗もうとしているのでご注意ください。";
 
 	/// <summary>
 	/// Key: "Message.NoMessageExist"
 	/// English String: "Message doesn't exist"
 	/// </summary>
-	public override string MessageNoMessageExist => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå­˜åœ¨ã—ã¾ã›ã‚“";
+	public override string MessageNoMessageExist => "メッセージが存在しません";
 
 	/// <summary>
 	/// Key: "Message.NoNews"
 	/// English String: "You have no news."
 	/// </summary>
-	public override string MessageNoNews => "ãƒ‹ãƒ¥ãƒ¼ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+	public override string MessageNoNews => "ニュースはありません。";
 
 	/// <summary>
 	/// Key: "Message.NoRecipient"
 	/// English String: "Recipient doesn't exist!"
 	/// </summary>
-	public override string MessageNoRecipient => "é€ä¿¡å…ˆãŒå­˜åœ¨ã—ã¾ã›ã‚“ï¼";
+	public override string MessageNoRecipient => "送信先が存在しません！";
 
 	/// <summary>
 	/// Key: "Message.NotAuthorizeToManipulate"
 	/// English String: "Not authorized to manipulate message"
 	/// </summary>
-	public override string MessageNotAuthorizeToManipulate => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ“ä½œã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
+	public override string MessageNotAuthorizeToManipulate => "メッセージを操作する権限がありません";
 
 	/// <summary>
 	/// Key: "Message.NotSendAndModerated"
 	/// English String: "Your message was not sent because it was moderated."
 	/// </summary>
-	public override string MessageNotSendAndModerated => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯ã€è¦åˆ¶ã«ã‚ˆã‚Šé€ä¿¡ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
+	public override string MessageNotSendAndModerated => "メッセージは、規制により送信されませんでした。";
 
 	/// <summary>
 	/// Key: "Message.RecipientPrivacySettingsTooHigh"
 	/// English String: "The recipient's privacy settings prevent you from sending this message."
 	/// </summary>
-	public override string MessageRecipientPrivacySettingsTooHigh => "å—ä¿¡è€…ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã«ã‚ˆã‚Šã€ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageRecipientPrivacySettingsTooHigh => "受信者のプライバシー設定により、このメッセージを送信できません。";
 
 	/// <summary>
 	/// Key: "Message.ReplyHere"
 	/// English String: "Reply here..."
 	/// </summary>
-	public override string MessageReplyHere => "è¿”ä¿¡ã¯ã“ã¡ã‚‰...";
+	public override string MessageReplyHere => "返信はこちら...";
 
 	/// <summary>
 	/// Key: "Message.RobloxWarning"
 	/// English String: "Remember, Roblox staff will never ask you for your password. People who ask for your password are trying to steal your account."
 	/// </summary>
-	public override string MessageRobloxWarning => "Robloxã®ã‚¹ã‚¿ãƒƒãƒ•ãŒã€ã‚ãªãŸã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãå‡ºãã†ã¨ã™ã‚‹äººã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ç›—ã‚‚ã†ã¨ã—ã¦ã„ã‚‹ã®ã§ã”æ³¨æ„ãã ã•ã„ã€‚";
+	public override string MessageRobloxWarning => "Robloxのスタッフが、あなたのパスワードを聞くことはありません。パスワードを聞き出そうとする人は、アカウントを盗もうとしているのでご注意ください。";
 
 	/// <summary>
 	/// Key: "Message.SendSuccessfully"
 	/// English String: "Successfully sent message."
 	/// </summary>
-	public override string MessageSendSuccessfully => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
+	public override string MessageSendSuccessfully => "メッセージを送信しました。";
 
 	/// <summary>
 	/// Key: "Message.SendTooManyMessages"
 	/// English String: "You're sending too many messages too quickly."
 	/// </summary>
-	public override string MessageSendTooManyMessages => "é »ç¹ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã™ãŽã¦ã„ã¾ã™ã€‚";
+	public override string MessageSendTooManyMessages => "頻繁にメッセージを送信しすぎています。";
 
 	/// <summary>
 	/// Key: "Message.SubjectCantBlank"
 	/// English String: "The message subject can't be blank."
 	/// </summary>
-	public override string MessageSubjectCantBlank => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ä»¶åã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
+	public override string MessageSubjectCantBlank => "メッセージの件名は空白にできません。";
 
 	/// <summary>
 	/// Key: "Message.UnknownError"
 	/// English String: "Unknown error"
 	/// </summary>
-	public override string MessageUnknownError => "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+	public override string MessageUnknownError => "不明なエラーが発生しました";
 
 	/// <summary>
 	/// Key: "Message.UnknownMessageType"
 	/// This serves as the fallback string for when an message type is received that the web chat does not know how to render.
 	/// English String: "A message cannot be displayed"
 	/// </summary>
-	public override string MessageUnknownMessageType => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã§ãã¾ã›ã‚“";
+	public override string MessageUnknownMessageType => "メッセージを表示できません";
 
 	/// <summary>
 	/// Key: "Message.WriteYourMessage"
 	/// English String: "Write your message..."
 	/// </summary>
-	public override string MessageWriteYourMessage => "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å…¥åŠ›...";
+	public override string MessageWriteYourMessage => "メッセージを入力...";
 
 	public MessagesResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -254,92 +256,92 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionArchive()
 	{
-		return "ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–";
+		return "アーカイブ";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "æˆ»ã‚‹";
+		return "戻る";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "ç ´æ£„";
+		return "破棄";
 	}
 
 	protected override string _GetTemplateForActionMarkAsRead()
 	{
-		return "æ—¢èª­ã«ã™ã‚‹";
+		return "既読にする";
 	}
 
 	protected override string _GetTemplateForActionMarkAsUnread()
 	{
-		return "æœªèª­ã«ã™ã‚‹";
+		return "未読にする";
 	}
 
 	protected override string _GetTemplateForActionMoveToInbox()
 	{
-		return "å—ä¿¡ãƒˆãƒ¬ã‚¤ã«ç§»å‹•";
+		return "受信トレイに移動";
 	}
 
 	protected override string _GetTemplateForActionReply()
 	{
-		return "è¿”ä¿¡";
+		return "返信";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "è¦ç´„é•åã‚’å ±å‘Š";
+		return "規約違反を報告";
 	}
 
 	protected override string _GetTemplateForActionSend()
 	{
-		return "é€ä¿¡";
+		return "送信";
 	}
 
 	protected override string _GetTemplateForActionSendReply()
 	{
-		return "è¿”ä¿¡";
+		return "返信";
 	}
 
 	protected override string _GetTemplateForHeadingMessage()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+		return "メッセージ";
 	}
 
 	protected override string _GetTemplateForHeadingNewMessages()
 	{
-		return "æ–°ç€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸";
+		return "新着メッセージ";
 	}
 
 	protected override string _GetTemplateForHeadingResponse()
 	{
-		return "è¿”ä¿¡:";
+		return "返信:";
 	}
 
 	protected override string _GetTemplateForLabelAll()
 	{
-		return "ã™ã¹ã¦";
+		return "すべて";
 	}
 
 	protected override string _GetTemplateForLabelArchive()
 	{
-		return "ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–";
+		return "アーカイブ";
 	}
 
 	protected override string _GetTemplateForLabelInbox()
 	{
-		return "å—ä¿¡ãƒˆãƒ¬ã‚¤";
+		return "受信トレイ";
 	}
 
 	protected override string _GetTemplateForLabelIncludeMessage()
 	{
-		return "å‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å«ã‚ã‚‹";
+		return "前のメッセージを含める";
 	}
 
 	protected override string _GetTemplateForLabelNews()
 	{
-		return "ãƒ‹ãƒ¥ãƒ¼ã‚¹";
+		return "ニュース";
 	}
 
 	/// <summary>
@@ -348,12 +350,12 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string LabelNoMessagesInCategory(string activeTab)
 	{
-		return $"{activeTab} ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return $"{activeTab} のメッセージはありません。";
 	}
 
 	protected override string _GetTemplateForLabelNoMessagesInCategory()
 	{
-		return "{activeTab} ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "{activeTab} のメッセージはありません。";
 	}
 
 	protected override string _GetTemplateForLabelOf()
@@ -363,27 +365,27 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForLabelSelect()
 	{
-		return "é¸æŠž...";
+		return "選択...";
 	}
 
 	protected override string _GetTemplateForLabelSent()
 	{
-		return "é€ä¿¡æ¸ˆã¿";
+		return "送信済み";
 	}
 
 	protected override string _GetTemplateForLabelSubject()
 	{
-		return "ä»¶å:";
+		return "件名:";
 	}
 
 	protected override string _GetTemplateForLabelTo()
 	{
-		return "å®›å…ˆ:";
+		return "宛先:";
 	}
 
 	protected override string _GetTemplateForMessageBodyCantBlank()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æœ¬æ–‡ã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
+		return "メッセージ本文は空白にできません。";
 	}
 
 	/// <summary>
@@ -392,62 +394,62 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageBodyTooLong(string maxLength)
 	{
-		return $"ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ {maxLength} æ–‡å­—ä»¥ä¸‹ã«ã—ã¦ã€ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+		return $"メッセージを {maxLength} 文字以下にして、やり直してください。";
 	}
 
 	protected override string _GetTemplateForMessageBodyTooLong()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ {maxLength} æ–‡å­—ä»¥ä¸‹ã«ã—ã¦ã€ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„ã€‚";
+		return "メッセージを {maxLength} 文字以下にして、やり直してください。";
 	}
 
 	protected override string _GetTemplateForMessageGeneralError()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸é€ä¿¡ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚";
+		return "申し訳ありませんが、メッセージ送信中にエラーが発生しました。";
 	}
 
 	protected override string _GetTemplateForMessageIdTheftWarning()
 	{
-		return "Robloxã®ã‚¹ã‚¿ãƒƒãƒ•ãŒã€ã‚ãªãŸã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãå‡ºãã†ã¨ã™ã‚‹äººã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ç›—ã‚‚ã†ã¨ã—ã¦ã„ã‚‹ã®ã§ã”æ³¨æ„ãã ã•ã„ã€‚";
+		return "Robloxのスタッフが、あなたのパスワードを聞くことはありません。パスワードを聞き出そうとする人は、アカウントを盗もうとしているのでご注意ください。";
 	}
 
 	protected override string _GetTemplateForMessageNoMessageExist()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒå­˜åœ¨ã—ã¾ã›ã‚“";
+		return "メッセージが存在しません";
 	}
 
 	protected override string _GetTemplateForMessageNoNews()
 	{
-		return "ãƒ‹ãƒ¥ãƒ¼ã‚¹ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚";
+		return "ニュースはありません。";
 	}
 
 	protected override string _GetTemplateForMessageNoRecipient()
 	{
-		return "é€ä¿¡å…ˆãŒå­˜åœ¨ã—ã¾ã›ã‚“ï¼";
+		return "送信先が存在しません！";
 	}
 
 	protected override string _GetTemplateForMessageNotAuthorizeToManipulate()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ“ä½œã™ã‚‹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“";
+		return "メッセージを操作する権限がありません";
 	}
 
 	protected override string _GetTemplateForMessageNotSendAndModerated()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯ã€è¦åˆ¶ã«ã‚ˆã‚Šé€ä¿¡ã•ã‚Œã¾ã›ã‚“ã§ã—ãŸã€‚";
+		return "メッセージは、規制により送信されませんでした。";
 	}
 
 	protected override string _GetTemplateForMessageRecipientPrivacySettingsTooHigh()
 	{
-		return "å—ä¿¡è€…ã®ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®šã«ã‚ˆã‚Šã€ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
+		return "受信者のプライバシー設定により、このメッセージを送信できません。";
 	}
 
 	protected override string _GetTemplateForMessageReplyHere()
 	{
-		return "è¿”ä¿¡ã¯ã“ã¡ã‚‰...";
+		return "返信はこちら...";
 	}
 
 	protected override string _GetTemplateForMessageRobloxWarning()
 	{
-		return "Robloxã®ã‚¹ã‚¿ãƒƒãƒ•ãŒã€ã‚ãªãŸã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãã“ã¨ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’èžãå‡ºãã†ã¨ã™ã‚‹äººã¯ã€ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã‚’ç›—ã‚‚ã†ã¨ã—ã¦ã„ã‚‹ã®ã§ã”æ³¨æ„ãã ã•ã„ã€‚";
+		return "Robloxのスタッフが、あなたのパスワードを聞くことはありません。パスワードを聞き出そうとする人は、アカウントを盗もうとしているのでご注意ください。";
 	}
 
 	/// <summary>
@@ -456,37 +458,37 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageSenderPrivacySettingTooHeight(string frontLink, string endLink)
 	{
-		return $"ã‚ãªãŸã®{frontLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®š{endLink}ã«ã‚ˆã‚Šã€ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
+		return $"あなたの{frontLink}プライバシー設定{endLink}により、このメッセージを送信できません。";
 	}
 
 	protected override string _GetTemplateForMessageSenderPrivacySettingTooHeight()
 	{
-		return "ã‚ãªãŸã®{frontLink}ãƒ—ãƒ©ã‚¤ãƒã‚·ãƒ¼è¨­å®š{endLink}ã«ã‚ˆã‚Šã€ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã§ãã¾ã›ã‚“ã€‚";
+		return "あなたの{frontLink}プライバシー設定{endLink}により、このメッセージを送信できません。";
 	}
 
 	protected override string _GetTemplateForMessageSendSuccessfully()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã¾ã—ãŸã€‚";
+		return "メッセージを送信しました。";
 	}
 
 	protected override string _GetTemplateForMessageSendTooManyMessages()
 	{
-		return "é »ç¹ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã—ã™ãŽã¦ã„ã¾ã™ã€‚";
+		return "頻繁にメッセージを送信しすぎています。";
 	}
 
 	protected override string _GetTemplateForMessageSubjectCantBlank()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ä»¶åã¯ç©ºç™½ã«ã§ãã¾ã›ã‚“ã€‚";
+		return "メッセージの件名は空白にできません。";
 	}
 
 	protected override string _GetTemplateForMessageUnknownError()
 	{
-		return "ä¸æ˜Žãªã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+		return "不明なエラーが発生しました";
 	}
 
 	protected override string _GetTemplateForMessageUnknownMessageType()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã§ãã¾ã›ã‚“";
+		return "メッセージを表示できません";
 	}
 
 	/// <summary>
@@ -495,17 +497,17 @@ internal class MessagesResources_ja_jp : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageVerifySenderEmail(string frontLink, string endLink)
 	{
-		return $"ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã™ã‚‹å‰ã«ã€{frontLink}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®š{endLink}ãƒšãƒ¼ã‚¸ã§ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã‚’è¡Œã†å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return $"メッセージを送信する前に、{frontLink}アカウント設定{endLink}ページでメールアドレスの認証を行う必要があります。";
 	}
 
 	protected override string _GetTemplateForMessageVerifySenderEmail()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ä¿¡ã™ã‚‹å‰ã«ã€{frontLink}ã‚¢ã‚«ã‚¦ãƒ³ãƒˆè¨­å®š{endLink}ãƒšãƒ¼ã‚¸ã§ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®èªè¨¼ã‚’è¡Œã†å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "メッセージを送信する前に、{frontLink}アカウント設定{endLink}ページでメールアドレスの認証を行う必要があります。";
 	}
 
 	protected override string _GetTemplateForMessageWriteYourMessage()
 	{
-		return "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å…¥åŠ›...";
+		return "メッセージを入力...";
 	}
 }
 

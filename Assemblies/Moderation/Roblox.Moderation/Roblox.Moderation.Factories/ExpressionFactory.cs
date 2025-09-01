@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Core;
-using Roblox.Platform.Moderation.Entities;
-namespace Roblox.Moderation.Factoriesinternal {
+using Roblox.Platform.Core;
+using Roblox.Moderation.Entities;
+namespace Roblox.Moderation.Factories {
     class ExpressionFactory : IExpressionFactory
 
 {
@@ -18,7 +18,7 @@ namespace Roblox.Moderation.Factoriesinternal {
 			throw new PlatformArgumentException("value");
 		}
 		IExpressionEntity entity = _DomainFactories.ExpressionEntityFactory.GetOrCreate(value);
-		return new Expression(entity.Id, entity.Value);
+		return new Roblox.Platform.Moderation.Expression(entity.Id, entity.Value);
 	}
 
 	public IExpression Get(long id)
@@ -26,7 +26,7 @@ namespace Roblox.Moderation.Factoriesinternal {
 		IExpressionEntity entity = _DomainFactories.ExpressionEntityFactory.Get(id);
 		if (entity != null)
 		{
-			return new Expression(entity.Id, entity.Value);
+			return new Roblox.Platform.Moderation.Expression(entity.Id, entity.Value);
 		}
 		return null;
 	}
@@ -36,7 +36,7 @@ namespace Roblox.Moderation.Factoriesinternal {
 		IExpressionEntity entity = _DomainFactories.ExpressionEntityFactory.Get(value);
 		if (entity != null)
 		{
-			return new Expression(entity.Id, entity.Value);
+			return new Roblox.Platform.Moderation.Expression(entity.Id, entity.Value);
 		}
 		return null;
 	}

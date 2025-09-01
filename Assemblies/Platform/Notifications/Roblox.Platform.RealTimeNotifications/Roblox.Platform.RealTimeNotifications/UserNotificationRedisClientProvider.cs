@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.RealTimeNotifications.Properties;
+using Roblox.Platform.RealTimeNotifications.Properties;
 using Roblox.Redis;
-namespace Roblox.Platform.RealTimeNotificationspublic {
+namespace Roblox.Platform.RealTimeNotifications
+{
     static class UserNotificationRedisClientProvider
 
 {
@@ -36,6 +37,5 @@ namespace Roblox.Platform.RealTimeNotificationspublic {
 		}, "Roblox.Platform.Notifications.Redis", logger.Error);
 	}
 }
-
 
 }

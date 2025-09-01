@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Common.Properties;
 using Roblox.Data;
@@ -91,3 +91,4 @@ public class CancellationAuditLogDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(dbConnectionString_CancellationAuditLogDAL, "CancellationAuditLog_GetCancellationAuditLogByID", queryParameters), BuildDAL);
 	}
 }
+

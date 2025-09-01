@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IPlaceThumbnailsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IPlaceThumbnailsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -45,3 +47,5 @@
 
 
 }
+
+

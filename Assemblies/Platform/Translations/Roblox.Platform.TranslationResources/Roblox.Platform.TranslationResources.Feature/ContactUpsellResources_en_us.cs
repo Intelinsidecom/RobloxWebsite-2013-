@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class ContactUpsellResources_en_us : TranslationResourcesBase, IContactUpsellResources, ITranslationResources
 
 {
@@ -1140,3 +1140,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

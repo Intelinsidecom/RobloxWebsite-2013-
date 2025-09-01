@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides VIPServerResources_en_us to provide locale specific translations where possible,
@@ -6,191 +8,202 @@
 /// </summary>
 internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerResources, ITranslationResources
 {
+
+    public IReadOnlyDictionary<string, string> GetAllKeys()
+    {
+        return base.GetAllKeys();
+    }
+
+    public string GetFullContentNamespaceName()
+    {
+        return "Feature.VIPServer";
+    }
+
 	/// <summary>
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "æ·»åŠ ";
+	public override string ActionAdd => "Ã¦Â·Â»Ã¥Å Â ";
 
 	/// <summary>
 	/// Key: "Action.AddPlayers"
 	/// English String: "Add Players"
 	/// </summary>
-	public override string ActionAddPlayers => "æ·»åŠ çŽ©å®¶";
+	public override string ActionAddPlayers => "Ã¦Â·Â»Ã¥Å Â Ã§Å½Â©Ã¥Â®Â¶";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "Ã¥Ââ€“Ã¦Â¶Ë†";
 
 	/// <summary>
 	/// Key: "Action.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string ActionCancelPayments => "å–æ¶ˆä»˜æ¬¾";
+	public override string ActionCancelPayments => "Ã¥Ââ€“Ã¦Â¶Ë†Ã¤Â»ËœÃ¦Â¬Â¾";
 
 	/// <summary>
 	/// Key: "Action.ChangeName"
 	/// English String: "Change Name"
 	/// </summary>
-	public override string ActionChangeName => "æ›´æ”¹åç§°";
+	public override string ActionChangeName => "Ã¦â€ºÂ´Ã¦â€Â¹Ã¥ÂÂÃ§Â§Â°";
 
 	/// <summary>
 	/// Key: "Action.GoBack"
 	/// English String: "Go Back"
 	/// </summary>
-	public override string ActionGoBack => "è¿”å›ž";
+	public override string ActionGoBack => "Ã¨Â¿â€Ã¥â€ºÅ¾";
 
 	/// <summary>
 	/// Key: "Action.RegenerateJoinLink"
 	/// English String: "Regenerate"
 	/// </summary>
-	public override string ActionRegenerateJoinLink => "å†ç”Ÿ";
+	public override string ActionRegenerateJoinLink => "Ã¥â€ ÂÃ§â€Å¸";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "ç§»é™¤";
+	public override string ActionRemove => "Ã§Â§Â»Ã©â„¢Â¤";
 
 	/// <summary>
 	/// Key: "Action.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string ActionRenewVipServer => "ç»­è®¢ VIP æœåŠ¡å™¨";
+	public override string ActionRenewVipServer => "Ã§Â»Â­Ã¨Â®Â¢ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "æŸ¥çœ‹å…¨éƒ¨";
+	public override string ActionSeeAll => "Ã¦Å¸Â¥Ã§Å“â€¹Ã¥â€¦Â¨Ã©Æ’Â¨";
 
 	/// <summary>
 	/// Key: "Heading.CancelPayments"
 	/// English String: "Cancel Payments"
 	/// </summary>
-	public override string HeadingCancelPayments => "å–æ¶ˆä»˜æ¬¾";
+	public override string HeadingCancelPayments => "Ã¥Ââ€“Ã¦Â¶Ë†Ã¤Â»ËœÃ¦Â¬Â¾";
 
 	/// <summary>
 	/// Key: "Heading.ChangeName"
 	/// English String: "Change VIP Server Name"
 	/// </summary>
-	public override string HeadingChangeName => "æ›´æ”¹ VIP æœåŠ¡å™¨åç§°";
+	public override string HeadingChangeName => "Ã¦â€ºÂ´Ã¦â€Â¹ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥ÂÂÃ§Â§Â°";
 
 	/// <summary>
 	/// Key: "Heading.ConfigureVipServer"
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string HeadingConfigureVipServer => "é…ç½® VIP æœåŠ¡å™¨";
+	public override string HeadingConfigureVipServer => "Ã©â€¦ÂÃ§Â½Â® VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 
 	/// <summary>
 	/// Key: "Heading.RemovePlayer"
 	/// English String: "Remove Player"
 	/// </summary>
-	public override string HeadingRemovePlayer => "ç§»é™¤çŽ©å®¶";
+	public override string HeadingRemovePlayer => "Ã§Â§Â»Ã©â„¢Â¤Ã§Å½Â©Ã¥Â®Â¶";
 
 	/// <summary>
 	/// Key: "Heading.RenewVipServer"
 	/// English String: "Renew VIP Server"
 	/// </summary>
-	public override string HeadingRenewVipServer => "ç»­è®¢ VIP æœåŠ¡å™¨";
+	public override string HeadingRenewVipServer => "Ã§Â»Â­Ã¨Â®Â¢ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 
 	/// <summary>
 	/// Key: "Label.ChangeNamePlaceholder"
 	/// English String: "VIP Server Name (1-50 Characters)"
 	/// </summary>
-	public override string LabelChangeNamePlaceholder => "VIP æœåŠ¡å™¨åç§°ï¼ˆ1-50 ä¸ªå­—ç¬¦ï¼‰";
+	public override string LabelChangeNamePlaceholder => "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥ÂÂÃ§Â§Â°Ã¯Â¼Ë†1-50 Ã¤Â¸ÂªÃ¥Â­â€”Ã§Â¬Â¦Ã¯Â¼â€°";
 
 	/// <summary>
 	/// Key: "Label.ClanAccess"
 	/// English String: "Clan Access"
 	/// </summary>
-	public override string LabelClanAccess => "éƒ¨è½é€šè¡Œè¯";
+	public override string LabelClanAccess => "Ã©Æ’Â¨Ã¨ÂÂ½Ã©â‚¬Å¡Ã¨Â¡Å’Ã¨Â¯Â";
 
 	/// <summary>
 	/// Key: "Label.FriendsAllowed"
 	/// English String: "Friends Allowed"
 	/// </summary>
-	public override string LabelFriendsAllowed => "å…è®¸å¥½å‹";
+	public override string LabelFriendsAllowed => "Ã¥â€¦ÂÃ¨Â®Â¸Ã¥Â¥Â½Ã¥Ââ€¹";
 
 	/// <summary>
 	/// Key: "Label.GameName"
 	/// English String: "Game Name"
 	/// </summary>
-	public override string LabelGameName => "æ¸¸æˆåç§°";
+	public override string LabelGameName => "Ã¦Â¸Â¸Ã¦Ë†ÂÃ¥ÂÂÃ§Â§Â°";
 
 	/// <summary>
 	/// Key: "Label.JoinGameLink"
 	/// English String: "Join Game Link..."
 	/// </summary>
-	public override string LabelJoinGameLink => "åŠ å…¥æ¸¸æˆé“¾æŽ¥...";
+	public override string LabelJoinGameLink => "Ã¥Å Â Ã¥â€¦Â¥Ã¦Â¸Â¸Ã¦Ë†ÂÃ©â€œÂ¾Ã¦Å½Â¥...";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "æ— ";
+	public override string LabelNone => "Ã¦â€”Â ";
 
 	/// <summary>
 	/// Key: "Label.Off"
 	/// English String: "Off"
 	/// </summary>
-	public override string LabelOff => "å…³é—­";
+	public override string LabelOff => "Ã¥â€¦Â³Ã©â€”Â­";
 
 	/// <summary>
 	/// Key: "Label.On"
 	/// English String: "On"
 	/// </summary>
-	public override string LabelOn => "å¼€å¯";
+	public override string LabelOn => "Ã¥Â¼â‚¬Ã¥ÂÂ¯";
 
 	/// <summary>
 	/// Key: "Label.PickEnemyClan"
 	/// English String: "Pick Enemy Clan"
 	/// </summary>
-	public override string LabelPickEnemyClan => "æŒ‘é€‰æ•Œäººéƒ¨è½";
+	public override string LabelPickEnemyClan => "Ã¦Å’â€˜Ã©â‚¬â€°Ã¦â€¢Å’Ã¤ÂºÂºÃ©Æ’Â¨Ã¨ÂÂ½";
 
 	/// <summary>
 	/// Key: "Label.SearchForPlayers"
 	/// English String: "Search for Players"
 	/// </summary>
-	public override string LabelSearchForPlayers => "æœç´¢çŽ©å®¶";
+	public override string LabelSearchForPlayers => "Ã¦ÂÅ“Ã§Â´Â¢Ã§Å½Â©Ã¥Â®Â¶";
 
 	/// <summary>
 	/// Key: "Label.Server"
 	/// English String: "Server"
 	/// </summary>
-	public override string LabelServer => "æœåŠ¡å™¨";
+	public override string LabelServer => "Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 
 	/// <summary>
 	/// Key: "Label.ServerMembers"
 	/// English String: "Server Members"
 	/// </summary>
-	public override string LabelServerMembers => "æœåŠ¡å™¨æˆå‘˜";
+	public override string LabelServerMembers => "Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¦Ë†ÂÃ¥â€˜Ëœ";
 
 	/// <summary>
 	/// Key: "Label.SubscriptionStatus"
 	/// English String: "Subscription Status"
 	/// </summary>
-	public override string LabelSubscriptionStatus => "è®¢é˜…çŠ¶æ€";
+	public override string LabelSubscriptionStatus => "Ã¨Â®Â¢Ã©Ëœâ€¦Ã§Å Â¶Ã¦â‚¬Â";
 
 	/// <summary>
 	/// Key: "Label.VIPServerLink"
 	/// English String: "VIP Server Link"
 	/// </summary>
-	public override string LabelVIPServerLink => "VIP æœåŠ¡å™¨é“¾æŽ¥";
+	public override string LabelVIPServerLink => "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã©â€œÂ¾Ã¦Å½Â¥";
 
 	/// <summary>
 	/// Key: "Label.VIPServerStatus"
 	/// English String: "VIP Server Status"
 	/// </summary>
-	public override string LabelVIPServerStatus => "VIP æœåŠ¡å™¨çŠ¶æ€";
+	public override string LabelVIPServerStatus => "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å Â¶Ã¦â‚¬Â";
 
 	/// <summary>
 	/// Key: "Label.YourClan"
 	/// English String: "Your Clan"
 	/// </summary>
-	public override string LabelYourClan => "ä½ çš„éƒ¨è½";
+	public override string LabelYourClan => "Ã¤Â½Â Ã§Å¡â€žÃ©Æ’Â¨Ã¨ÂÂ½";
 
 	public VIPServerResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -199,77 +212,77 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "æ·»åŠ ";
+		return "Ã¦Â·Â»Ã¥Å Â ";
 	}
 
 	protected override string _GetTemplateForActionAddPlayers()
 	{
-		return "æ·»åŠ çŽ©å®¶";
+		return "Ã¦Â·Â»Ã¥Å Â Ã§Å½Â©Ã¥Â®Â¶";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "Ã¥Ââ€“Ã¦Â¶Ë†";
 	}
 
 	protected override string _GetTemplateForActionCancelPayments()
 	{
-		return "å–æ¶ˆä»˜æ¬¾";
+		return "Ã¥Ââ€“Ã¦Â¶Ë†Ã¤Â»ËœÃ¦Â¬Â¾";
 	}
 
 	protected override string _GetTemplateForActionChangeName()
 	{
-		return "æ›´æ”¹åç§°";
+		return "Ã¦â€ºÂ´Ã¦â€Â¹Ã¥ÂÂÃ§Â§Â°";
 	}
 
 	protected override string _GetTemplateForActionGoBack()
 	{
-		return "è¿”å›ž";
+		return "Ã¨Â¿â€Ã¥â€ºÅ¾";
 	}
 
 	protected override string _GetTemplateForActionRegenerateJoinLink()
 	{
-		return "å†ç”Ÿ";
+		return "Ã¥â€ ÂÃ§â€Å¸";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "ç§»é™¤";
+		return "Ã§Â§Â»Ã©â„¢Â¤";
 	}
 
 	protected override string _GetTemplateForActionRenewVipServer()
 	{
-		return "ç»­è®¢ VIP æœåŠ¡å™¨";
+		return "Ã§Â»Â­Ã¨Â®Â¢ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "æŸ¥çœ‹å…¨éƒ¨";
+		return "Ã¦Å¸Â¥Ã§Å“â€¹Ã¥â€¦Â¨Ã©Æ’Â¨";
 	}
 
 	protected override string _GetTemplateForHeadingCancelPayments()
 	{
-		return "å–æ¶ˆä»˜æ¬¾";
+		return "Ã¥Ââ€“Ã¦Â¶Ë†Ã¤Â»ËœÃ¦Â¬Â¾";
 	}
 
 	protected override string _GetTemplateForHeadingChangeName()
 	{
-		return "æ›´æ”¹ VIP æœåŠ¡å™¨åç§°";
+		return "Ã¦â€ºÂ´Ã¦â€Â¹ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥ÂÂÃ§Â§Â°";
 	}
 
 	protected override string _GetTemplateForHeadingConfigureVipServer()
 	{
-		return "é…ç½® VIP æœåŠ¡å™¨";
+		return "Ã©â€¦ÂÃ§Â½Â® VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 	}
 
 	protected override string _GetTemplateForHeadingRemovePlayer()
 	{
-		return "ç§»é™¤çŽ©å®¶";
+		return "Ã§Â§Â»Ã©â„¢Â¤Ã§Å½Â©Ã¥Â®Â¶";
 	}
 
 	protected override string _GetTemplateForHeadingRenewVipServer()
 	{
-		return "ç»­è®¢ VIP æœåŠ¡å™¨";
+		return "Ã§Â»Â­Ã¨Â®Â¢ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 	}
 
 	/// <summary>
@@ -278,57 +291,57 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelChangeNameBodyMessage(string name, string creator, string date)
 	{
-		return $"æ˜¯å¦ç¡®å®šè¦å–æ¶ˆâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€ç§äºº VIP æœåŠ¡å™¨çš„é¢„ä»˜æ¬¾ï¼Ÿå¦‚æžœå–æ¶ˆï¼Œä½ çš„ VIP æœåŠ¡å™¨å°†äºŽ {date} å¤±æ•ˆã€‚";
+		return $"Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¨Â¦ÂÃ¥Ââ€“Ã¦Â¶Ë†Ã¢â‚¬Å“{creator}Ã¢â‚¬ÂÃ¦â€°â‚¬Ã¥Ë†â€ºÃ¤Â½Å“Ã§Å¡â€žÃ¢â‚¬Å“{name}Ã¢â‚¬ÂÃ§Â§ÂÃ¤ÂºÂº VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å¡â€žÃ©Â¢â€žÃ¤Â»ËœÃ¦Â¬Â¾Ã¯Â¼Å¸Ã¥Â¦â€šÃ¦Å¾Å“Ã¥Ââ€“Ã¦Â¶Ë†Ã¯Â¼Å’Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥Â°â€ Ã¤ÂºÅ½ {date} Ã¥Â¤Â±Ã¦â€¢Ë†Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelChangeNameBodyMessage()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦å–æ¶ˆâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€ç§äºº VIP æœåŠ¡å™¨çš„é¢„ä»˜æ¬¾ï¼Ÿå¦‚æžœå–æ¶ˆï¼Œä½ çš„ VIP æœåŠ¡å™¨å°†äºŽ {date} å¤±æ•ˆã€‚";
+		return "Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¨Â¦ÂÃ¥Ââ€“Ã¦Â¶Ë†Ã¢â‚¬Å“{creator}Ã¢â‚¬ÂÃ¦â€°â‚¬Ã¥Ë†â€ºÃ¤Â½Å“Ã§Å¡â€žÃ¢â‚¬Å“{name}Ã¢â‚¬ÂÃ§Â§ÂÃ¤ÂºÂº VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å¡â€žÃ©Â¢â€žÃ¤Â»ËœÃ¦Â¬Â¾Ã¯Â¼Å¸Ã¥Â¦â€šÃ¦Å¾Å“Ã¥Ââ€“Ã¦Â¶Ë†Ã¯Â¼Å’Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥Â°â€ Ã¤ÂºÅ½ {date} Ã¥Â¤Â±Ã¦â€¢Ë†Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelChangeNamePlaceholder()
 	{
-		return "VIP æœåŠ¡å™¨åç§°ï¼ˆ1-50 ä¸ªå­—ç¬¦ï¼‰";
+		return "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥ÂÂÃ§Â§Â°Ã¯Â¼Ë†1-50 Ã¤Â¸ÂªÃ¥Â­â€”Ã§Â¬Â¦Ã¯Â¼â€°";
 	}
 
 	protected override string _GetTemplateForLabelClanAccess()
 	{
-		return "éƒ¨è½é€šè¡Œè¯";
+		return "Ã©Æ’Â¨Ã¨ÂÂ½Ã©â‚¬Å¡Ã¨Â¡Å’Ã¨Â¯Â";
 	}
 
 	protected override string _GetTemplateForLabelFriendsAllowed()
 	{
-		return "å…è®¸å¥½å‹";
+		return "Ã¥â€¦ÂÃ¨Â®Â¸Ã¥Â¥Â½Ã¥Ââ€¹";
 	}
 
 	protected override string _GetTemplateForLabelGameName()
 	{
-		return "æ¸¸æˆåç§°";
+		return "Ã¦Â¸Â¸Ã¦Ë†ÂÃ¥ÂÂÃ§Â§Â°";
 	}
 
 	protected override string _GetTemplateForLabelJoinGameLink()
 	{
-		return "åŠ å…¥æ¸¸æˆé“¾æŽ¥...";
+		return "Ã¥Å Â Ã¥â€¦Â¥Ã¦Â¸Â¸Ã¦Ë†ÂÃ©â€œÂ¾Ã¦Å½Â¥...";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "æ— ";
+		return "Ã¦â€”Â ";
 	}
 
 	protected override string _GetTemplateForLabelOff()
 	{
-		return "å…³é—­";
+		return "Ã¥â€¦Â³Ã©â€”Â­";
 	}
 
 	protected override string _GetTemplateForLabelOn()
 	{
-		return "å¼€å¯";
+		return "Ã¥Â¼â‚¬Ã¥ÂÂ¯";
 	}
 
 	protected override string _GetTemplateForLabelPickEnemyClan()
 	{
-		return "æŒ‘é€‰æ•Œäººéƒ¨è½";
+		return "Ã¦Å’â€˜Ã©â‚¬â€°Ã¦â€¢Å’Ã¤ÂºÂºÃ©Æ’Â¨Ã¨ÂÂ½";
 	}
 
 	/// <summary>
@@ -337,12 +350,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRemovePlayerBodyMessage(string name)
 	{
-		return $"æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„ VIP æœåŠ¡å™¨ç§»é™¤ {name}ï¼Ÿå¯¹æ–¹å°†æ— æ³•å†åŠ å…¥ä½ çš„ VIP æœåŠ¡å™¨ã€‚";
+		return $"Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¨Â¦ÂÃ¤Â»Å½Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Â§Â»Ã©â„¢Â¤ {name}Ã¯Â¼Å¸Ã¥Â¯Â¹Ã¦â€“Â¹Ã¥Â°â€ Ã¦â€”Â Ã¦Â³â€¢Ã¥â€ ÂÃ¥Å Â Ã¥â€¦Â¥Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelRemovePlayerBodyMessage()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„ VIP æœåŠ¡å™¨ç§»é™¤ {name}ï¼Ÿå¯¹æ–¹å°†æ— æ³•å†åŠ å…¥ä½ çš„ VIP æœåŠ¡å™¨ã€‚";
+		return "Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¨Â¦ÂÃ¤Â»Å½Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Â§Â»Ã©â„¢Â¤ {name}Ã¯Â¼Å¸Ã¥Â¯Â¹Ã¦â€“Â¹Ã¥Â°â€ Ã¦â€”Â Ã¦Â³â€¢Ã¥â€ ÂÃ¥Å Â Ã¥â€¦Â¥Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã£â‚¬â€š";
 	}
 
 	/// <summary>
@@ -351,12 +364,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageConfirmation(string name, string creator)
 	{
-		return $"æ˜¯å¦ç¡®å®šä¸ºâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€å¯ç”¨ç§äºº VIP æœåŠ¡å™¨ç‰ˆæœ¬é¢„ä»˜æ¬¾ï¼Ÿ";
+		return $"Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¤Â¸ÂºÃ¢â‚¬Å“{creator}Ã¢â‚¬ÂÃ¦â€°â‚¬Ã¥Ë†â€ºÃ¤Â½Å“Ã§Å¡â€žÃ¢â‚¬Å“{name}Ã¢â‚¬ÂÃ¥ÂÂ¯Ã§â€Â¨Ã§Â§ÂÃ¤ÂºÂº VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§â€°Ë†Ã¦Å“Â¬Ã©Â¢â€žÃ¤Â»ËœÃ¦Â¬Â¾Ã¯Â¼Å¸";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageConfirmation()
 	{
-		return "æ˜¯å¦ç¡®å®šä¸ºâ€œ{creator}â€æ‰€åˆ›ä½œçš„â€œ{name}â€å¯ç”¨ç§äºº VIP æœåŠ¡å™¨ç‰ˆæœ¬é¢„ä»˜æ¬¾ï¼Ÿ";
+		return "Ã¦ËœÂ¯Ã¥ÂÂ¦Ã§Â¡Â®Ã¥Â®Å¡Ã¤Â¸ÂºÃ¢â‚¬Å“{creator}Ã¢â‚¬ÂÃ¦â€°â‚¬Ã¥Ë†â€ºÃ¤Â½Å“Ã§Å¡â€žÃ¢â‚¬Å“{name}Ã¢â‚¬ÂÃ¥ÂÂ¯Ã§â€Â¨Ã§Â§ÂÃ¤ÂºÂº VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§â€°Ë†Ã¦Å“Â¬Ã©Â¢â€žÃ¤Â»ËœÃ¦Â¬Â¾Ã¯Â¼Å¸";
 	}
 
 	/// <summary>
@@ -365,22 +378,22 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelRenewVipServerBodyMessageStart(string date)
 	{
-		return $"æ­¤ VIP æœåŠ¡å™¨å°†äºŽæ¯æœˆ {date} ç»­è®¢ï¼Œç›´è‡³ä½ å–æ¶ˆã€‚";
+		return $"Ã¦Â­Â¤ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥Â°â€ Ã¤ÂºÅ½Ã¦Â¯ÂÃ¦Å“Ë† {date} Ã§Â»Â­Ã¨Â®Â¢Ã¯Â¼Å’Ã§â€ºÂ´Ã¨â€¡Â³Ã¤Â½Â Ã¥Ââ€“Ã¦Â¶Ë†Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelRenewVipServerBodyMessageStart()
 	{
-		return "æ­¤ VIP æœåŠ¡å™¨å°†äºŽæ¯æœˆ {date} ç»­è®¢ï¼Œç›´è‡³ä½ å–æ¶ˆã€‚";
+		return "Ã¦Â­Â¤ VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¥Â°â€ Ã¤ÂºÅ½Ã¦Â¯ÂÃ¦Å“Ë† {date} Ã§Â»Â­Ã¨Â®Â¢Ã¯Â¼Å’Ã§â€ºÂ´Ã¨â€¡Â³Ã¤Â½Â Ã¥Ââ€“Ã¦Â¶Ë†Ã£â‚¬â€š";
 	}
 
 	protected override string _GetTemplateForLabelSearchForPlayers()
 	{
-		return "æœç´¢çŽ©å®¶";
+		return "Ã¦ÂÅ“Ã§Â´Â¢Ã§Å½Â©Ã¥Â®Â¶";
 	}
 
 	protected override string _GetTemplateForLabelServer()
 	{
-		return "æœåŠ¡å™¨";
+		return "Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨";
 	}
 
 	/// <summary>
@@ -389,17 +402,17 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelServerExpirationDate(string date)
 	{
-		return $"ä½  VIP æœåŠ¡å™¨çš„å¤±æ•ˆæ—¥æœŸä¸º {date}";
+		return $"Ã¤Â½Â  VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å¡â€žÃ¥Â¤Â±Ã¦â€¢Ë†Ã¦â€”Â¥Ã¦Å“Å¸Ã¤Â¸Âº {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerExpirationDate()
 	{
-		return "ä½  VIP æœåŠ¡å™¨çš„å¤±æ•ˆæ—¥æœŸä¸º {date}";
+		return "Ã¤Â½Â  VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å¡â€žÃ¥Â¤Â±Ã¦â€¢Ë†Ã¦â€”Â¥Ã¦Å“Å¸Ã¤Â¸Âº {date}";
 	}
 
 	protected override string _GetTemplateForLabelServerMembers()
 	{
-		return "æœåŠ¡å™¨æˆå‘˜";
+		return "Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¦Ë†ÂÃ¥â€˜Ëœ";
 	}
 
 	/// <summary>
@@ -408,12 +421,12 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelSubscriptionChargeDate(string date)
 	{
-		return $"ä½ å°†äºŽ {date} è¢«å†æ¬¡æ”¶è´¹";
+		return $"Ã¤Â½Â Ã¥Â°â€ Ã¤ÂºÅ½ {date} Ã¨Â¢Â«Ã¥â€ ÂÃ¦Â¬Â¡Ã¦â€Â¶Ã¨Â´Â¹";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionChargeDate()
 	{
-		return "ä½ å°†äºŽ {date} è¢«å†æ¬¡æ”¶è´¹";
+		return "Ã¤Â½Â Ã¥Â°â€ Ã¤ÂºÅ½ {date} Ã¨Â¢Â«Ã¥â€ ÂÃ¦Â¬Â¡Ã¦â€Â¶Ã¨Â´Â¹";
 	}
 
 	/// <summary>
@@ -422,34 +435,35 @@ internal class VIPServerResources_zh_cjv : VIPServerResources_en_us, IVIPServerR
 	/// </summary>
 	public override string LabelSubscriptionMonthlyPaymentDue(string value)
 	{
-		return $"ä½ çš„ VIP æœåŠ¡å™¨æœˆè´¹ä¸º {value}";
+		return $"Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¦Å“Ë†Ã¨Â´Â¹Ã¤Â¸Âº {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionMonthlyPaymentDue()
 	{
-		return "ä½ çš„ VIP æœåŠ¡å™¨æœˆè´¹ä¸º {value}";
+		return "Ã¤Â½Â Ã§Å¡â€ž VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã¦Å“Ë†Ã¨Â´Â¹Ã¤Â¸Âº {value}";
 	}
 
 	protected override string _GetTemplateForLabelSubscriptionStatus()
 	{
-		return "è®¢é˜…çŠ¶æ€";
+		return "Ã¨Â®Â¢Ã©Ëœâ€¦Ã§Å Â¶Ã¦â‚¬Â";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerLink()
 	{
-		return "VIP æœåŠ¡å™¨é“¾æŽ¥";
+		return "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã©â€œÂ¾Ã¦Å½Â¥";
 	}
 
 	protected override string _GetTemplateForLabelVIPServerStatus()
 	{
-		return "VIP æœåŠ¡å™¨çŠ¶æ€";
+		return "VIP Ã¦Å“ÂÃ¥Å Â¡Ã¥â„¢Â¨Ã§Å Â¶Ã¦â‚¬Â";
 	}
 
 	protected override string _GetTemplateForLabelYourClan()
 	{
-		return "ä½ çš„éƒ¨è½";
+		return "Ã¤Â½Â Ã§Å¡â€žÃ©Æ’Â¨Ã¨ÂÂ½";
 	}
 }
 
 
 }
+

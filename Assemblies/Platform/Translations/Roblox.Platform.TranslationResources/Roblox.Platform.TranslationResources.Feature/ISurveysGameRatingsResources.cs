@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface ISurveysGameRatingsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface ISurveysGameRatingsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -229,3 +231,5 @@
 
 
 }
+
+

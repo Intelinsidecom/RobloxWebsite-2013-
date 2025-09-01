@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Text;
 using System.Web;
 using System.Web.Caching;
@@ -186,12 +186,12 @@ public class Comment : IRemoteCacheableObject, IRobloxEntity<long, CommentDAL>, 
 		return EntityHelper.GetEntityCollection(EntityCacheInfo, new CacheManager.CachePolicy(CacheManager.CacheScopeFilter.Qualified, cachedStateQualifier), collectionId, () => CommentDAL.GetAssetCommentIDsPaged(assetId, startRowIndex + 1, maximumRows), Get);
 	}
 
-	private static System.Data.SqlClient.SortOrder GetSqlClientSortOrder(Roblox.DataV2.Core.SortOrder sortOrder)
+	private static Microsoft.Data.SqlClient.SortOrder GetSqlClientSortOrder(Roblox.DataV2.Core.SortOrder sortOrder)
 	{
 		return sortOrder switch
 		{
-			Roblox.DataV2.Core.SortOrder.Asc => System.Data.SqlClient.SortOrder.Ascending, 
-			Roblox.DataV2.Core.SortOrder.Desc => System.Data.SqlClient.SortOrder.Descending, 
+			Roblox.DataV2.Core.SortOrder.Asc => Microsoft.Data.SqlClient.SortOrder.Ascending, 
+			Roblox.DataV2.Core.SortOrder.Desc => Microsoft.Data.SqlClient.SortOrder.Descending, 
 			_ => throw new Exception($"Bad sortorder. {sortOrder}"), 
 		};
 	}
@@ -255,3 +255,4 @@ public class Comment : IRemoteCacheableObject, IRobloxEntity<long, CommentDAL>, 
 		_EntityDAL = dal;
 	}
 }
+

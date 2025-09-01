@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ItemModelResources_en_us to provide locale specific translations where possible,
@@ -10,127 +12,127 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// Key: "Label.AmazonExclusiveItem"
 	/// English String: "This is an Amazon exclusive item."
 	/// </summary>
-	public override string LabelAmazonExclusiveItem => "Amazon ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelAmazonExclusiveItem => "Amazon 전용 아이템이에요.";
 
 	/// <summary>
 	/// Key: "Label.AudioAssetBlockedCopyright"
 	/// English String: "This audio asset has been blocked due to copyright violations.\n"
 	/// </summary>
-	public override string LabelAudioAssetBlockedCopyright => "ë³¸ ì˜¤ë””ì˜¤ ì• ì…‹ì€ ì €ìž‘ê¶Œ ìœ„ë°˜ìœ¼ë¡œ ì°¨ë‹¨ë˜ì—ˆìŠµë‹ˆë‹¤.\n";
+	public override string LabelAudioAssetBlockedCopyright => "본 오디오 애셋은 저작권 위반으로 차단되었습니다.\n";
 
 	/// <summary>
 	/// Key: "Label.GooglePlayExclusiveItem"
 	/// English String: "This is a Google Play exclusive item."
 	/// </summary>
-	public override string LabelGooglePlayExclusiveItem => "Google Play ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelGooglePlayExclusiveItem => "Google Play 전용 아이템이에요.";
 
 	/// <summary>
 	/// Key: "Label.IosDeviceExclusiveItem"
 	/// English String: "This is an iOS exclusive item."
 	/// </summary>
-	public override string LabelIosDeviceExclusiveItem => "iOS ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelIosDeviceExclusiveItem => "iOS 전용 아이템이에요.";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailableInventory"
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailableInventory => "ë³¸ ì•„ì´í…œì€ ì¸ë²¤í† ë¦¬ì—ì„œ ì°¾ì„ ìˆ˜ ìžˆì–´ìš”.";
+	public override string LabelItemAvailableInventory => "본 아이템은 인벤토리에서 찾을 수 있어요.";
 
 	/// <summary>
 	/// Key: "Label.ItemHasBeenModerated"
 	/// English String: "This item has been moderated."
 	/// </summary>
-	public override string LabelItemHasBeenModerated => "ë³¸ ì•„ì´í…œì€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+	public override string LabelItemHasBeenModerated => "본 아이템은 검열을 통과하지 못했습니다.";
 
 	/// <summary>
 	/// Key: "Label.ItemNoLongerForSale"
 	/// English String: "This item is no longer for sale."
 	/// </summary>
-	public override string LabelItemNoLongerForSale => "ë³¸ ì•„ì´í…œì€ ë” ì´ìƒ íŒë§¤í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+	public override string LabelItemNoLongerForSale => "본 아이템은 더 이상 판매하지 않습니다.";
 
 	/// <summary>
 	/// Key: "Label.ItemNotCurrentlyForSale"
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotCurrentlyForSale => "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
+	public override string LabelItemNotCurrentlyForSale => "판매 중인 아이템이 아닙니다.";
 
 	/// <summary>
 	/// Key: "Label.MobileDeviceExclusiveItem"
 	/// English String: "This is a mobile exclusive item."
 	/// </summary>
-	public override string LabelMobileDeviceExclusiveItem => "ëª¨ë°”ì¼ ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelMobileDeviceExclusiveItem => "모바일 전용 아이템이에요.";
 
 	/// <summary>
 	/// Key: "Label.NoDescriptionAvailable"
 	/// English String: "No description available."
 	/// </summary>
-	public override string LabelNoDescriptionAvailable => "ì„¤ëª… ì—†ìŒ.";
+	public override string LabelNoDescriptionAvailable => "설명 없음.";
 
 	/// <summary>
 	/// Key: "Label.NoOneCurrentlySelling"
 	/// English String: "There is no one currently selling this item."
 	/// </summary>
-	public override string LabelNoOneCurrentlySelling => "í˜„ìž¬ ë³¸ ì•„ì´í…œì„ íŒë§¤í•˜ëŠ” ì‚¬ëžŒì´ ì—†ì–´ìš”.";
+	public override string LabelNoOneCurrentlySelling => "현재 본 아이템을 판매하는 사람이 없어요.";
 
 	/// <summary>
 	/// Key: "Label.NoOtherSellers"
 	/// English String: "No other sellers."
 	/// </summary>
-	public override string LabelNoOtherSellers => "ë‹¤ë¥¸ íŒë§¤ìžê°€ ì—†ìŠµë‹ˆë‹¤.";
+	public override string LabelNoOtherSellers => "다른 판매자가 없습니다.";
 
 	/// <summary>
 	/// Key: "Label.NotAvailable"
 	/// English String: "N/A"
 	/// </summary>
-	public override string LabelNotAvailable => "í•´ë‹¹ ì—†ìŒ";
+	public override string LabelNotAvailable => "해당 없음";
 
 	/// <summary>
 	/// Key: "Label.PurchasingTemporarilyUnavailable"
 	/// English String: "Purchasing is temporarily unavailable. Please try again later."
 	/// </summary>
-	public override string LabelPurchasingTemporarilyUnavailable => "ì¼ì‹œì ìœ¼ë¡œ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+	public override string LabelPurchasingTemporarilyUnavailable => "일시적으로 구매할 수 없습니다. 나중에 다시 시도하세요.";
 
 	/// <summary>
 	/// Key: "Label.Resellers"
 	/// English String: "Resellers"
 	/// </summary>
-	public override string LabelResellers => "ìž¬íŒë§¤ìž";
+	public override string LabelResellers => "재판매자";
 
 	/// <summary>
 	/// Key: "Label.RobloxAsset"
 	/// English String: "Roblox Asset"
 	/// </summary>
-	public override string LabelRobloxAsset => "Roblox ì• ì…‹";
+	public override string LabelRobloxAsset => "Roblox 애셋";
 
 	/// <summary>
 	/// Key: "Label.TakeOff"
 	/// English String: "Take Off"
 	/// </summary>
-	public override string LabelTakeOff => "í•´ì œ";
+	public override string LabelTakeOff => "해제";
 
 	/// <summary>
 	/// Key: "Label.ToInstallOpenStudio"
 	/// English String: "To install, open this page in Roblox Studio."
 	/// </summary>
-	public override string LabelToInstallOpenStudio => "ì„¤ì¹˜í•˜ë ¤ë©´ Roblox Studioì—ì„œ ë³¸ íŽ˜ì´ì§€ë¥¼ ì—¬ì„¸ìš”.";
+	public override string LabelToInstallOpenStudio => "설치하려면 Roblox Studio에서 본 페이지를 여세요.";
 
 	/// <summary>
 	/// Key: "Label.Wear"
 	/// English String: "Wear"
 	/// </summary>
-	public override string LabelWear => "ì°©ìš©";
+	public override string LabelWear => "착용";
 
 	/// <summary>
 	/// Key: "Label.XboxOneExclusiveItem"
 	/// English String: "This is a Xbox One exclusive item."
 	/// </summary>
-	public override string LabelXboxOneExclusiveItem => "Xbox One ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelXboxOneExclusiveItem => "Xbox One 전용 아이템이에요.";
 
 	/// <summary>
 	/// Key: "Label.YouAreSelling"
 	/// English String: "You are selling this item."
 	/// </summary>
-	public override string LabelYouAreSelling => "íšŒì›ë‹˜ì´ íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ì—ìš”.";
+	public override string LabelYouAreSelling => "회원님이 판매 중인 아이템이에요.";
 
 	public ItemModelResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -139,7 +141,7 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelAmazonExclusiveItem()
 	{
-		return "Amazon ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "Amazon 전용 아이템이에요.";
 	}
 
 	/// <summary>
@@ -162,17 +164,17 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelAssetOptionRental(string assetOption)
 	{
-		return $"{assetOption} ë¹Œë¦¬ê¸°";
+		return $"{assetOption} 빌리기";
 	}
 
 	protected override string _GetTemplateForLabelAssetOptionRental()
 	{
-		return "{assetOption} ë¹Œë¦¬ê¸°";
+		return "{assetOption} 빌리기";
 	}
 
 	protected override string _GetTemplateForLabelAudioAssetBlockedCopyright()
 	{
-		return "ë³¸ ì˜¤ë””ì˜¤ ì• ì…‹ì€ ì €ìž‘ê¶Œ ìœ„ë°˜ìœ¼ë¡œ ì°¨ë‹¨ë˜ì—ˆìŠµë‹ˆë‹¤.\n";
+		return "본 오디오 애셋은 저작권 위반으로 차단되었습니다.\n";
 	}
 
 	/// <summary>
@@ -181,12 +183,12 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelBcRequirementExclusiveItem(string bcRequirementName)
 	{
-		return $"{bcRequirementName} ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return $"{bcRequirementName} 전용 아이템이에요.";
 	}
 
 	protected override string _GetTemplateForLabelBcRequirementExclusiveItem()
 	{
-		return "{bcRequirementName} ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "{bcRequirementName} 전용 아이템이에요.";
 	}
 
 	/// <summary>
@@ -195,42 +197,42 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelExpiresRentalTime(string rentalTime)
 	{
-		return $"ë§Œë£Œ: {rentalTime}";
+		return $"만료: {rentalTime}";
 	}
 
 	protected override string _GetTemplateForLabelExpiresRentalTime()
 	{
-		return "ë§Œë£Œ: {rentalTime}";
+		return "만료: {rentalTime}";
 	}
 
 	protected override string _GetTemplateForLabelGooglePlayExclusiveItem()
 	{
-		return "Google Play ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "Google Play 전용 아이템이에요.";
 	}
 
 	protected override string _GetTemplateForLabelIosDeviceExclusiveItem()
 	{
-		return "iOS ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "iOS 전용 아이템이에요.";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailableInventory()
 	{
-		return "ë³¸ ì•„ì´í…œì€ ì¸ë²¤í† ë¦¬ì—ì„œ ì°¾ì„ ìˆ˜ ìžˆì–´ìš”.";
+		return "본 아이템은 인벤토리에서 찾을 수 있어요.";
 	}
 
 	protected override string _GetTemplateForLabelItemHasBeenModerated()
 	{
-		return "ë³¸ ì•„ì´í…œì€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+		return "본 아이템은 검열을 통과하지 못했습니다.";
 	}
 
 	protected override string _GetTemplateForLabelItemNoLongerForSale()
 	{
-		return "ë³¸ ì•„ì´í…œì€ ë” ì´ìƒ íŒë§¤í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.";
+		return "본 아이템은 더 이상 판매하지 않습니다.";
 	}
 
 	protected override string _GetTemplateForLabelItemNotCurrentlyForSale()
 	{
-		return "íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ ì•„ë‹™ë‹ˆë‹¤.";
+		return "판매 중인 아이템이 아닙니다.";
 	}
 
 	/// <summary>
@@ -239,22 +241,22 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelLimitedQuantity(string amount)
 	{
-		return $"í•œì • ìˆ˜ëŸ‰: {amount}";
+		return $"한정 수량: {amount}";
 	}
 
 	protected override string _GetTemplateForLabelLimitedQuantity()
 	{
-		return "í•œì • ìˆ˜ëŸ‰: {amount}";
+		return "한정 수량: {amount}";
 	}
 
 	public override string LabelMetaDescriptionCatalog(string assetName, string assetTypeLabel)
 	{
-		return $"{assetName} ë° ìˆ˜ë§Žì€ ì•„ì´í…œìœ¼ë¡œ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”. ë³¸ {assetTypeLabel} ë° ë‹¤ë¥¸ ì•„ì´í…œì„ ì¡°í•©í•˜ì—¬ ë‚˜ë§Œì˜ ì•„ë°”íƒ€ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”!";
+		return $"{assetName} 및 수많은 아이템으로 아바타를 마음껏 꾸며보세요. 본 {assetTypeLabel} 및 다른 아이템을 조합하여 나만의 아바타를 만들어보세요!";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionCatalog()
 	{
-		return "{assetName} ë° ìˆ˜ë§Žì€ ì•„ì´í…œìœ¼ë¡œ ì•„ë°”íƒ€ë¥¼ ë§ˆìŒê» ê¾¸ë©°ë³´ì„¸ìš”. ë³¸ {assetTypeLabel} ë° ë‹¤ë¥¸ ì•„ì´í…œì„ ì¡°í•©í•˜ì—¬ ë‚˜ë§Œì˜ ì•„ë°”íƒ€ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”!";
+		return "{assetName} 및 수많은 아이템으로 아바타를 마음껏 꾸며보세요. 본 {assetTypeLabel} 및 다른 아이템을 조합하여 나만의 아바타를 만들어보세요!";
 	}
 
 	/// <summary>
@@ -263,12 +265,12 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibrary(string assetName, string assetTypeLabel)
 	{
-		return $"{assetName} ë° ë‹¤ì–‘í•œ {assetTypeLabel}ì„(ë¥¼) ì‚¬ìš©í•˜ì—¬ í¥ë¯¸ì§„ì§„í•œ ê²Œìž„ì´ë‚˜ ì½˜í…ì¸ ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”. ìƒìƒì„ í˜„ì‹¤ë¡œ ë§Œë“¤ì–´ ì¤„ ëª¨ë¸, ë°ì¹¼, ë©”ì‹œ, í”ŒëŸ¬ê·¸ì¸ í˜¹ì€ ì˜¤ë””ì˜¤ íŒŒì¼ì´ í•œê°€ë“ ì¤€ë¹„ë˜ì–´ ìžˆì–´ìš”.";
+		return $"{assetName} 및 다양한 {assetTypeLabel}을(를) 사용하여 흥미진진한 게임이나 콘텐츠를 만들어보세요. 상상을 현실로 만들어 줄 모델, 데칼, 메시, 플러그인 혹은 오디오 파일이 한가득 준비되어 있어요.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibrary()
 	{
-		return "{assetName} ë° ë‹¤ì–‘í•œ {assetTypeLabel}ì„(ë¥¼) ì‚¬ìš©í•˜ì—¬ í¥ë¯¸ì§„ì§„í•œ ê²Œìž„ì´ë‚˜ ì½˜í…ì¸ ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”. ìƒìƒì„ í˜„ì‹¤ë¡œ ë§Œë“¤ì–´ ì¤„ ëª¨ë¸, ë°ì¹¼, ë©”ì‹œ, í”ŒëŸ¬ê·¸ì¸ í˜¹ì€ ì˜¤ë””ì˜¤ íŒŒì¼ì´ í•œê°€ë“ ì¤€ë¹„ë˜ì–´ ìžˆì–´ìš”.";
+		return "{assetName} 및 다양한 {assetTypeLabel}을(를) 사용하여 흥미진진한 게임이나 콘텐츠를 만들어보세요. 상상을 현실로 만들어 줄 모델, 데칼, 메시, 플러그인 혹은 오디오 파일이 한가득 준비되어 있어요.";
 	}
 
 	/// <summary>
@@ -278,37 +280,37 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelMetaDescriptionLibraryV2(string assetName)
 	{
-		return $"{assetName} ë° ë‹¤ì–‘í•œ ì• ì…‹ì„ ì‚¬ìš©í•˜ì—¬ í¥ë¯¸ì§„ì§„í•œ ê²Œìž„ì´ë‚˜ ì½˜í…ì¸ ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”. ìƒìƒì„ í˜„ì‹¤ë¡œ ë§Œë“¤ì–´ ì¤„ ëª¨ë¸, ë°ì¹¼, ë©”ì‹œ, í”ŒëŸ¬ê·¸ì¸ í˜¹ì€ ì˜¤ë””ì˜¤ íŒŒì¼ì´ í•œê°€ë“ ì¤€ë¹„ë˜ì–´ ìžˆì–´ìš”.";
+		return $"{assetName} 및 다양한 애셋을 사용하여 흥미진진한 게임이나 콘텐츠를 만들어보세요. 상상을 현실로 만들어 줄 모델, 데칼, 메시, 플러그인 혹은 오디오 파일이 한가득 준비되어 있어요.";
 	}
 
 	protected override string _GetTemplateForLabelMetaDescriptionLibraryV2()
 	{
-		return "{assetName} ë° ë‹¤ì–‘í•œ ì• ì…‹ì„ ì‚¬ìš©í•˜ì—¬ í¥ë¯¸ì§„ì§„í•œ ê²Œìž„ì´ë‚˜ ì½˜í…ì¸ ë¥¼ ë§Œë“¤ì–´ë³´ì„¸ìš”. ìƒìƒì„ í˜„ì‹¤ë¡œ ë§Œë“¤ì–´ ì¤„ ëª¨ë¸, ë°ì¹¼, ë©”ì‹œ, í”ŒëŸ¬ê·¸ì¸ í˜¹ì€ ì˜¤ë””ì˜¤ íŒŒì¼ì´ í•œê°€ë“ ì¤€ë¹„ë˜ì–´ ìžˆì–´ìš”.";
+		return "{assetName} 및 다양한 애셋을 사용하여 흥미진진한 게임이나 콘텐츠를 만들어보세요. 상상을 현실로 만들어 줄 모델, 데칼, 메시, 플러그인 혹은 오디오 파일이 한가득 준비되어 있어요.";
 	}
 
 	protected override string _GetTemplateForLabelMobileDeviceExclusiveItem()
 	{
-		return "ëª¨ë°”ì¼ ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "모바일 전용 아이템이에요.";
 	}
 
 	protected override string _GetTemplateForLabelNoDescriptionAvailable()
 	{
-		return "ì„¤ëª… ì—†ìŒ.";
+		return "설명 없음.";
 	}
 
 	protected override string _GetTemplateForLabelNoOneCurrentlySelling()
 	{
-		return "í˜„ìž¬ ë³¸ ì•„ì´í…œì„ íŒë§¤í•˜ëŠ” ì‚¬ëžŒì´ ì—†ì–´ìš”.";
+		return "현재 본 아이템을 판매하는 사람이 없어요.";
 	}
 
 	protected override string _GetTemplateForLabelNoOtherSellers()
 	{
-		return "ë‹¤ë¥¸ íŒë§¤ìžê°€ ì—†ìŠµë‹ˆë‹¤.";
+		return "다른 판매자가 없습니다.";
 	}
 
 	protected override string _GetTemplateForLabelNotAvailable()
 	{
-		return "í•´ë‹¹ ì—†ìŒ";
+		return "해당 없음";
 	}
 
 	/// <summary>
@@ -317,27 +319,27 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelPriceChangedFrom(string robuxAmount)
 	{
-		return $"ê°€ê²© ë³€ê²½ë¨ - ì›ëž˜ ê°€ê²©: {robuxAmount}";
+		return $"가격 변경됨 - 원래 가격: {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForLabelPriceChangedFrom()
 	{
-		return "ê°€ê²© ë³€ê²½ë¨ - ì›ëž˜ ê°€ê²©: {robuxAmount}";
+		return "가격 변경됨 - 원래 가격: {robuxAmount}";
 	}
 
 	protected override string _GetTemplateForLabelPurchasingTemporarilyUnavailable()
 	{
-		return "ì¼ì‹œì ìœ¼ë¡œ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ë‚˜ì¤‘ì— ë‹¤ì‹œ ì‹œë„í•˜ì„¸ìš”.";
+		return "일시적으로 구매할 수 없습니다. 나중에 다시 시도하세요.";
 	}
 
 	protected override string _GetTemplateForLabelResellers()
 	{
-		return "ìž¬íŒë§¤ìž";
+		return "재판매자";
 	}
 
 	protected override string _GetTemplateForLabelRobloxAsset()
 	{
-		return "Roblox ì• ì…‹";
+		return "Roblox 애셋";
 	}
 
 	/// <summary>
@@ -346,12 +348,12 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 	/// </summary>
 	public override string LabelSeeMoreResellers(string resellers)
 	{
-		return $"{resellers} ë” ë³´ê¸°";
+		return $"{resellers} 더 보기";
 	}
 
 	protected override string _GetTemplateForLabelSeeMoreResellers()
 	{
-		return "{resellers} ë” ë³´ê¸°";
+		return "{resellers} 더 보기";
 	}
 
 	/// <summary>
@@ -370,27 +372,27 @@ internal class ItemModelResources_ko_kr : ItemModelResources_en_us, IItemModelRe
 
 	protected override string _GetTemplateForLabelTakeOff()
 	{
-		return "í•´ì œ";
+		return "해제";
 	}
 
 	protected override string _GetTemplateForLabelToInstallOpenStudio()
 	{
-		return "ì„¤ì¹˜í•˜ë ¤ë©´ Roblox Studioì—ì„œ ë³¸ íŽ˜ì´ì§€ë¥¼ ì—¬ì„¸ìš”.";
+		return "설치하려면 Roblox Studio에서 본 페이지를 여세요.";
 	}
 
 	protected override string _GetTemplateForLabelWear()
 	{
-		return "ì°©ìš©";
+		return "착용";
 	}
 
 	protected override string _GetTemplateForLabelXboxOneExclusiveItem()
 	{
-		return "Xbox One ì „ìš© ì•„ì´í…œì´ì—ìš”.";
+		return "Xbox One 전용 아이템이에요.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreSelling()
 	{
-		return "íšŒì›ë‹˜ì´ íŒë§¤ ì¤‘ì¸ ì•„ì´í…œì´ì—ìš”.";
+		return "회원님이 판매 중인 아이템이에요.";
 	}
 }
 

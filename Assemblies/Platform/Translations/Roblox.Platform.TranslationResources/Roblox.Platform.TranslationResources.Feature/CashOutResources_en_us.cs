@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class CashOutResources_en_us : TranslationResourcesBase, ICashOutResources, ITranslationResources
 
 {
@@ -590,3 +590,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

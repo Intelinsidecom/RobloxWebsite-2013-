@@ -1,16 +1,14 @@
-﻿using System;
-namespace Roblox.Platform.EphemeralCounterspublic {
-    interface ISequence
-
+using System;
+namespace Roblox.Platform.EphemeralCounters
 {
-	void Add(double value);
+    public interface ISequence
+    {
+        void Add(double value);
 
-	void AddInBackground(double value, Action<Exception> exceptionHandler = null);
+        void AddInBackground(double value, Action<Exception> exceptionHandler = null);
 
-	ISequenceStatistics GetStatistics();
+        ISequenceStatistics GetStatistics();
 
-	ISequenceStatistics FlushStatistics();
-}
-
-
+        ISequenceStatistics FlushStatistics();
+    }
 }

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "AÃ±adir amigo";
+	public override string ActionAddFriend => "Añadir amigo";
 
 	/// <summary>
 	/// Key: "Action.Chat"
@@ -46,13 +48,13 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "Sin conexiÃ³n";
+	public override string LabelOffline => "Sin conexión";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "En lÃ­nea";
+	public override string LabelOnline => "En línea";
 
 	/// <summary>
 	/// Key: "Label.Search"
@@ -64,13 +66,13 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 	/// Key: "Label.ThisIsYou"
 	/// English String: "This is you"
 	/// </summary>
-	public override string LabelThisIsYou => "Este eres tÃº";
+	public override string LabelThisIsYou => "Este eres tú";
 
 	/// <summary>
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "Has introducido una cadena no segura. Intenta hacer otra bÃºsqueda.";
+	public override string LabelUnsafeInput => "Has introducido una cadena no segura. Intenta hacer otra búsqueda.";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
@@ -96,7 +98,7 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "AÃ±adir amigo";
+		return "Añadir amigo";
 	}
 
 	protected override string _GetTemplateForActionChat()
@@ -153,22 +155,22 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"No hay resultados disponibles para Â«{keyword}Â».";
+		return $"No hay resultados disponibles para «{keyword}».";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "No hay resultados disponibles para Â«{keyword}Â».";
+		return "No hay resultados disponibles para «{keyword}».";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "Sin conexiÃ³n";
+		return "Sin conexión";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "En lÃ­nea";
+		return "En línea";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
@@ -192,12 +194,12 @@ internal class PlayerSearchResultsResources_es_es : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelThisIsYou()
 	{
-		return "Este eres tÃº";
+		return "Este eres tú";
 	}
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "Has introducido una cadena no segura. Intenta hacer otra bÃºsqueda.";
+		return "Has introducido una cadena no segura. Intenta hacer otra búsqueda.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()

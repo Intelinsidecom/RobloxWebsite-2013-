@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 	/// Key: "Heading.PriceChart"
 	/// English String: "Price Chart"
 	/// </summary>
-	public override string HeadingPriceChart => "Tabela de preÃ§os";
+	public override string HeadingPriceChart => "Tabela de preços";
 
 	/// <summary>
 	/// Key: "Heading.Resellers"
@@ -28,19 +30,19 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.AveragePrice"
 	/// English String: "Average Price"
 	/// </summary>
-	public override string LabelAveragePrice => "PreÃ§o mÃ©dio";
+	public override string LabelAveragePrice => "Preço médio";
 
 	/// <summary>
 	/// Key: "Label.NoHistoricalData"
 	/// English String: "No historical data to chart."
 	/// </summary>
-	public override string LabelNoHistoricalData => "Nenhum dado histÃ³rico para registrar.";
+	public override string LabelNoHistoricalData => "Nenhum dado histórico para registrar.";
 
 	/// <summary>
 	/// Key: "Label.OriginalPrice"
 	/// English String: "Original Price"
 	/// </summary>
-	public override string LabelOriginalPrice => "PreÃ§o original";
+	public override string LabelOriginalPrice => "Preço original";
 
 	/// <summary>
 	/// Key: "Label.QuantitySold"
@@ -52,14 +54,14 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.RecentAveragePrice"
 	/// English String: "Recent Average Price"
 	/// </summary>
-	public override string LabelRecentAveragePrice => "PreÃ§o mÃ©dio recente";
+	public override string LabelRecentAveragePrice => "Preço médio recente";
 
 	/// <summary>
 	/// Key: "Label.ResaleDataLoadFailure"
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "NÃ£o foi possÃ­vel carregar a tabela de preÃ§os e os revendedores. Tente novamente.";
+	public override string LabelResaleDataLoadFailure => "Não foi possível carregar a tabela de preços e os revendedores. Tente novamente.";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
@@ -77,7 +79,7 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 	/// Key: "Message.NoOneSelling"
 	/// English String: "Sorry, no one is reselling this item at the moment."
 	/// </summary>
-	public override string MessageNoOneSelling => "Infelizmente, ninguÃ©m estÃ¡ revendendo este item no momento.";
+	public override string MessageNoOneSelling => "Infelizmente, ninguém está revendendo este item no momento.";
 
 	public PrivateSalesResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -91,7 +93,7 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForHeadingPriceChart()
 	{
-		return "Tabela de preÃ§os";
+		return "Tabela de preços";
 	}
 
 	protected override string _GetTemplateForHeadingResellers()
@@ -101,17 +103,17 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelAveragePrice()
 	{
-		return "PreÃ§o mÃ©dio";
+		return "Preço médio";
 	}
 
 	protected override string _GetTemplateForLabelNoHistoricalData()
 	{
-		return "Nenhum dado histÃ³rico para registrar.";
+		return "Nenhum dado histórico para registrar.";
 	}
 
 	protected override string _GetTemplateForLabelOriginalPrice()
 	{
-		return "PreÃ§o original";
+		return "Preço original";
 	}
 
 	protected override string _GetTemplateForLabelQuantitySold()
@@ -121,12 +123,12 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelRecentAveragePrice()
 	{
-		return "PreÃ§o mÃ©dio recente";
+		return "Preço médio recente";
 	}
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "NÃ£o foi possÃ­vel carregar a tabela de preÃ§os e os revendedores. Tente novamente.";
+		return "Não foi possível carregar a tabela de preços e os revendedores. Tente novamente.";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
@@ -155,7 +157,7 @@ internal class PrivateSalesResources_pt_br : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForMessageNoOneSelling()
 	{
-		return "Infelizmente, ninguÃ©m estÃ¡ revendendo este item no momento.";
+		return "Infelizmente, ninguém está revendendo este item no momento.";
 	}
 }
 

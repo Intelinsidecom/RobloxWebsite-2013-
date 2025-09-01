@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IFavoritesResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IFavoritesResources : ITranslationResources
 
 {
 	/// <summary>
@@ -94,3 +96,5 @@
 
 
 }
+
+

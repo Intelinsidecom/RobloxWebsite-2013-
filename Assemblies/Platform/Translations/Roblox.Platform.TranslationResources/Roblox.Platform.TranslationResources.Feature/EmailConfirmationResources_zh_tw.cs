@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
@@ -11,35 +13,35 @@ internal class EmailConfirmationResources_zh_tw : EmailConfirmationResources_en_
 	/// button label
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "å®Œæˆ";
+	public override string ActionDone => "完成";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
 	/// button which takes user to item details page
 	/// English String: "View Item"
 	/// </summary>
-	public override string ActionViewItem => "æª¢è¦–é“å…·";
+	public override string ActionViewItem => "檢視道具";
 
 	/// <summary>
 	/// Key: "Heading.ThankYou"
 	/// heading
 	/// English String: "Thank You!"
 	/// </summary>
-	public override string HeadingThankYou => "è¬è¬ï¼";
+	public override string HeadingThankYou => "謝謝！";
 
 	/// <summary>
 	/// Key: "Message.EmailVerified"
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰";
+	public override string MessageEmailVerified => "您的電子郵件地址已驗證";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ï¼Œæ­å–œæ‚¨ç²å¾—ä¸€é ‚å¸½å­ï¼";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "您的電子郵件地址已驗證，恭喜您獲得一頂帽子！";
 
 	public EmailConfirmationResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -48,27 +50,27 @@ internal class EmailConfirmationResources_zh_tw : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "å®Œæˆ";
+		return "完成";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
 	{
-		return "æª¢è¦–é“å…·";
+		return "檢視道具";
 	}
 
 	protected override string _GetTemplateForHeadingThankYou()
 	{
-		return "è¬è¬ï¼";
+		return "謝謝！";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰";
+		return "您的電子郵件地址已驗證";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "æ‚¨çš„é›»å­éƒµä»¶åœ°å€å·²é©—è­‰ï¼Œæ­å–œæ‚¨ç²å¾—ä¸€é ‚å¸½å­ï¼";
+		return "您的電子郵件地址已驗證，恭喜您獲得一頂帽子！";
 	}
 }
 

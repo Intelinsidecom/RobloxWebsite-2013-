@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Data;
@@ -147,3 +147,4 @@ internal class ClanInvitationDAL
 		return EntityHelper.GetDataCount<int>(new DbInfo(ConnectionString, "dbo.ClanInvitations_GetTotalNumberOfClanInvitationsByGroupID", queryParameters));
 	}
 }
+

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IRecommendationsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IRecommendationsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -84,3 +86,5 @@
 
 
 }
+
+

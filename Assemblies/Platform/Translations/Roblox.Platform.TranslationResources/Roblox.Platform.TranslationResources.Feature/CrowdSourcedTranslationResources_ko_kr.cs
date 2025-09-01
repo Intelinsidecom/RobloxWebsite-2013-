@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CrowdSourcedTranslationResources_en_us to provide locale specific translations where possible,
@@ -10,311 +12,311 @@ internal class CrowdSourcedTranslationResources_ko_kr : CrowdSourcedTranslationR
 	/// Key: "Action.AddTranslationEntry"
 	/// English String: "Add New Entry"
 	/// </summary>
-	public override string ActionAddTranslationEntry => "ìƒˆ ì—”íŠ¸ë¦¬ ì¶”ê°€";
+	public override string ActionAddTranslationEntry => "새 엔트리 추가";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "ì‚­ì œ";
+	public override string ActionDelete => "삭제";
 
 	/// <summary>
 	/// Key: "Action.Dialog.DiscardChanges"
 	/// English String: "Discard Changes"
 	/// </summary>
-	public override string ActionDialogDiscardChanges => "ë³€ê²½ ì‚¬í•­ ì‚­ì œ";
+	public override string ActionDialogDiscardChanges => "변경 사항 삭제";
 
 	/// <summary>
 	/// Key: "Action.DownloadCSV"
 	/// button label
 	/// English String: "Download CSV"
 	/// </summary>
-	public override string ActionDownloadCSV => "CSV ë‹¤ìš´ë¡œë“œ";
+	public override string ActionDownloadCSV => "CSV 다운로드";
 
 	/// <summary>
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
+	public override string ActionLoadMore => "더 불러오기";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// button text
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "ì €ìž¥";
+	public override string ActionSave => "저장";
 
 	/// <summary>
 	/// Key: "Action.Saved"
 	/// button text when data is saved
 	/// English String: "Saved"
 	/// </summary>
-	public override string ActionSaved => "ì €ìž¥ ì™„ë£Œ";
+	public override string ActionSaved => "저장 완료";
 
 	/// <summary>
 	/// Key: "Action.Saving"
 	/// English String: "Saving"
 	/// </summary>
-	public override string ActionSaving => "ì €ìž¥í•˜ëŠ” ì¤‘";
+	public override string ActionSaving => "저장하는 중";
 
 	/// <summary>
 	/// Key: "Description.NoContent"
 	/// description for no content case
 	/// English String: "No source content found for this game. You can enable Auto-Scraping or manually upload content from Developer Studio to view and manage translations here."
 	/// </summary>
-	public override string DescriptionNoContent => "ë³¸ ê²Œìž„ì˜ ì†ŒìŠ¤ ì½˜í…ì¸ ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ìžë™ ì¶”ì¶œ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ê±°ë‚˜ í˜¹ì€ ë²ˆì—­ì„ ì½ê³  ê´€ë¦¬í•˜ê¸° ìœ„í•´ Developer Studioì—ì„œ ì§ì ‘ ì½˜í…ì¸ ë¥¼ ì—…ë¡œë“œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+	public override string DescriptionNoContent => "본 게임의 소스 콘텐츠를 찾을 수 없습니다. 자동 추출 기능을 활성화하거나 혹은 번역을 읽고 관리하기 위해 Developer Studio에서 직접 콘텐츠를 업로드할 수 있습니다.";
 
 	/// <summary>
 	/// Key: "Description.NoContentDeveloper"
 	/// English String: "No source content found for this game. Please contact the Developer if you think this is an error."
 	/// </summary>
-	public override string DescriptionNoContentDeveloper => "ì´ ê²Œìž„ì˜ ì†ŒìŠ¤ ì½˜í…ì¸ ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ì˜¤ë¥˜ë¼ê³  ìƒê°ë˜ë©´ ê°œë°œìžì—ê²Œ ì—°ë½í•´ ë³´ì„¸ìš”.";
+	public override string DescriptionNoContentDeveloper => "이 게임의 소스 콘텐츠를 찾을 수 없습니다. 오류라고 생각되면 개발자에게 연락해 보세요.";
 
 	/// <summary>
 	/// Key: "Description.NoEntriesFound"
 	/// message shown when no entries are found while doing a search or filter
 	/// English String: "No entries were found based on current search filters"
 	/// </summary>
-	public override string DescriptionNoEntriesFound => "í˜„ ê²€ìƒ‰ í•„í„°ì— ëŒ€í•œ ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ";
+	public override string DescriptionNoEntriesFound => "현 검색 필터에 대한 검색 결과 없음";
 
 	/// <summary>
 	/// Key: "Description.UnsavedChanges"
 	/// English String: "You have unsaved changes. Do you want to proceed?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ìžˆì–´ìš”. ê³„ì†í•˜ì‹œê² ì–´ìš”?";
+	public override string DescriptionUnsavedChanges => "저장하지 않은 변경 사항이 있어요. 계속하시겠어요?";
 
 	/// <summary>
 	/// Key: "Example.EnterTranslationHere"
 	/// placeholder text
 	/// English String: "Enter Translation Here"
 	/// </summary>
-	public override string ExampleEnterTranslationHere => "ì—¬ê¸°ì— ë²ˆì—­ ìž…ë ¥";
+	public override string ExampleEnterTranslationHere => "여기에 번역 입력";
 
 	/// <summary>
 	/// Key: "Heading.AddTranslationEntry"
 	/// English String: "Add a Translation Entry"
 	/// </summary>
-	public override string HeadingAddTranslationEntry => "ë²ˆì—­ ì—”íŠ¸ë¦¬ ì¶”ê°€";
+	public override string HeadingAddTranslationEntry => "번역 엔트리 추가";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.UnsavedChanges"
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingDialogUnsavedChanges => "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
+	public override string HeadingDialogUnsavedChanges => "저장하지 않은 변경 사항";
 
 	/// <summary>
 	/// Key: "Heading.ManageTranslations"
 	/// heading for the page
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "ë²ˆì—­ ê´€ë¦¬";
+	public override string HeadingManageTranslations => "번역 관리";
 
 	/// <summary>
 	/// Key: "Heading.Modal.DeleteEntry"
 	/// English String: "Are you sure you want to delete this entry?"
 	/// </summary>
-	public override string HeadingModalDeleteEntry => "ì´ ì—”íŠ¸ë¦¬ë¥¼ ì •ë§ë¡œ ì‚­ì œí• ê¹Œìš”?";
+	public override string HeadingModalDeleteEntry => "이 엔트리를 정말로 삭제할까요?";
 
 	/// <summary>
 	/// Key: "Heading.NoContent"
 	/// heading for section
 	/// English String: "No Content"
 	/// </summary>
-	public override string HeadingNoContent => "ì½˜í…ì¸  ì—†ìŒ";
+	public override string HeadingNoContent => "콘텐츠 없음";
 
 	/// <summary>
 	/// Key: "Heading.TranslationHistory"
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "ë²ˆì—­ ë‚´ì—­";
+	public override string HeadingTranslationHistory => "번역 내역";
 
 	/// <summary>
 	/// Key: "Label.ActionIrreversibleWarning"
 	/// English String: "Please note that this action is irreversible."
 	/// </summary>
-	public override string LabelActionIrreversibleWarning => "ì´ ìž‘ì—…ì€ ë˜ëŒë¦´ ìˆ˜ ì—†ìœ¼ë‹ˆ ì£¼ì˜í•˜ì„¸ìš”.";
+	public override string LabelActionIrreversibleWarning => "이 작업은 되돌릴 수 없으니 주의하세요.";
 
 	/// <summary>
 	/// Key: "Label.CompletedTranslations"
 	/// English String: "Completed Translations:"
 	/// </summary>
-	public override string LabelCompletedTranslations => "ì™„ì„±ëœ ë²ˆì—­:";
+	public override string LabelCompletedTranslations => "완성된 번역:";
 
 	/// <summary>
 	/// Key: "Label.Context"
 	/// form label - context of the translation text
 	/// English String: "Context:"
 	/// </summary>
-	public override string LabelContext => "ì»¨í…ìŠ¤íŠ¸:";
+	public override string LabelContext => "컨텍스트:";
 
 	/// <summary>
 	/// Key: "Label.Deleting"
 	/// English String: "Deleting"
 	/// </summary>
-	public override string LabelDeleting => "ì‚­ì œ ì¤‘";
+	public override string LabelDeleting => "삭제 중";
 
 	/// <summary>
 	/// Key: "Label.Example"
 	/// example text
 	/// English String: "Example:"
 	/// </summary>
-	public override string LabelExample => "ì˜ˆ:";
+	public override string LabelExample => "예:";
 
 	/// <summary>
 	/// Key: "Label.FollowingTranslationsDeleted"
 	/// English String: "The following translations will be deleted."
 	/// </summary>
-	public override string LabelFollowingTranslationsDeleted => "ë‹¤ìŒ ë²ˆì—­ì´ ì‚­ì œë©ë‹ˆë‹¤.";
+	public override string LabelFollowingTranslationsDeleted => "다음 번역이 삭제됩니다.";
 
 	/// <summary>
 	/// Key: "Label.Key"
 	/// label for the key of text to be translated
 	/// English String: "Key:"
 	/// </summary>
-	public override string LabelKey => "í‚¤:";
+	public override string LabelKey => "키:";
 
 	/// <summary>
 	/// Key: "Label.LastModified"
 	/// form label
 	/// English String: "Last Modified:"
 	/// </summary>
-	public override string LabelLastModified => "ë§ˆì§€ë§‰ ìˆ˜ì •:";
+	public override string LabelLastModified => "마지막 수정:";
 
 	/// <summary>
 	/// Key: "Label.LocationsInGame"
 	/// English String: "Locations in Game"
 	/// </summary>
-	public override string LabelLocationsInGame => "ê²Œìž„ ë‚´ ìœ„ì¹˜";
+	public override string LabelLocationsInGame => "게임 내 위치";
 
 	/// <summary>
 	/// Key: "Label.MoreInformation"
 	/// English String: "More Information"
 	/// </summary>
-	public override string LabelMoreInformation => "ë˜ ë‹¤ë¥¸ ì •ë³´";
+	public override string LabelMoreInformation => "또 다른 정보";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// placeholder label for a required field
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "í•„ìˆ˜";
+	public override string LabelRequired => "필수";
 
 	/// <summary>
 	/// Key: "Label.SearchPlaceholder"
 	/// placeholder text for a search field
 	/// English String: "Search..."
 	/// </summary>
-	public override string LabelSearchPlaceholder => "ê²€ìƒ‰...";
+	public override string LabelSearchPlaceholder => "검색...";
 
 	/// <summary>
 	/// Key: "Label.SortBy"
 	/// sorting drop down label
 	/// English String: "Sort By"
 	/// </summary>
-	public override string LabelSortBy => "ì •ë ¬ ê¸°ì¤€";
+	public override string LabelSortBy => "정렬 기준";
 
 	/// <summary>
 	/// Key: "Label.Sorting.Alphabetical"
 	/// sort type label
 	/// English String: "Alphabetical"
 	/// </summary>
-	public override string LabelSortingAlphabetical => "ì•ŒíŒŒë²³ ìˆœ";
+	public override string LabelSortingAlphabetical => "알파벳 순";
 
 	/// <summary>
 	/// Key: "Label.Sorting.UntranslatedFirst"
 	/// sorting label
 	/// English String: "Untranslated First"
 	/// </summary>
-	public override string LabelSortingUntranslatedFirst => "ë¯¸ë²ˆì—­ ìš°ì„ ";
+	public override string LabelSortingUntranslatedFirst => "미번역 우선";
 
 	/// <summary>
 	/// Key: "Label.SourceText"
 	/// English String: "Source Text:"
 	/// </summary>
-	public override string LabelSourceText => "ì†ŒìŠ¤ í…ìŠ¤íŠ¸:";
+	public override string LabelSourceText => "소스 텍스트:";
 
 	/// <summary>
 	/// Key: "Label.TextToTranslate"
 	/// form label
 	/// English String: "Text to Translate:"
 	/// </summary>
-	public override string LabelTextToTranslate => "ë²ˆì—­í•  í…ìŠ¤íŠ¸:";
+	public override string LabelTextToTranslate => "번역할 텍스트:";
 
 	/// <summary>
 	/// Key: "Label.Translated"
 	/// tooltip help text
 	/// English String: "Translated"
 	/// </summary>
-	public override string LabelTranslated => "ë²ˆì—­ë¨";
+	public override string LabelTranslated => "번역됨";
 
 	/// <summary>
 	/// Key: "Label.TranslationCleared"
 	/// English String: "Translation cleared"
 	/// </summary>
-	public override string LabelTranslationCleared => "ë²ˆì—­ì´ ì‚­ì œë¨";
+	public override string LabelTranslationCleared => "번역이 삭제됨";
 
 	/// <summary>
 	/// Key: "Label.Translator"
 	/// form label
 	/// English String: "Translator:"
 	/// </summary>
-	public override string LabelTranslator => "ë²ˆì—­ìž:";
+	public override string LabelTranslator => "번역자:";
 
 	/// <summary>
 	/// Key: "Label.Untranslated"
 	/// tooltip help text
 	/// English String: "Untranslated"
 	/// </summary>
-	public override string LabelUntranslated => "ë²ˆì—­ ì•ˆ ë¨";
+	public override string LabelUntranslated => "번역 안 됨";
 
 	/// <summary>
 	/// Key: "Response.AccessDenied"
 	/// message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "ë³¸ íŽ˜ì´ì§€ì— ëŒ€í•œ ì ‘ê·¼ ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
+	public override string ResponseAccessDenied => "본 페이지에 대한 접근 권한이 없습니다";
 
 	/// <summary>
 	/// Key: "Response.NoContextAvailable"
 	/// English String: "No context available"
 	/// </summary>
-	public override string ResponseNoContextAvailable => "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì»¨í…ìŠ¤íŠ¸ê°€ ì—†ì–´ìš”";
+	public override string ResponseNoContextAvailable => "사용할 수 있는 컨텍스트가 없어요";
 
 	/// <summary>
 	/// Key: "Response.NoExampleAvailable"
 	/// English String: "No example available"
 	/// </summary>
-	public override string ResponseNoExampleAvailable => "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì˜ˆì œê°€ ì—†ì–´ìš”";
+	public override string ResponseNoExampleAvailable => "사용할 수 있는 예제가 없어요";
 
 	/// <summary>
 	/// Key: "Response.NoGameLocationsAvailable"
 	/// English String: "No game locations have been auto-scraped."
 	/// </summary>
-	public override string ResponseNoGameLocationsAvailable => "ìžë™ ìŠ¤í¬ëž©í•œ ìœ„ì¹˜ê°€ ì—†ì–´ìš”.";
+	public override string ResponseNoGameLocationsAvailable => "자동 스크랩한 위치가 없어요.";
 
 	/// <summary>
 	/// Key: "Response.NoKeyAvailable"
 	/// English String: "No key available"
 	/// </summary>
-	public override string ResponseNoKeyAvailable => "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” í‚¤ê°€ ì—†ì–´ìš”";
+	public override string ResponseNoKeyAvailable => "사용할 수 있는 키가 없어요";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationHistory"
 	/// English String: "No translation history available."
 	/// </summary>
-	public override string ResponseNoTranslationHistory => "ë²ˆì—­ ê¸°ë¡ì´ ì—†ì–´ìš”.";
+	public override string ResponseNoTranslationHistory => "번역 기록이 없어요.";
 
 	/// <summary>
 	/// Key: "Response.ProblemDeletingEntry"
 	/// English String: "There was a problem deleting entry."
 	/// </summary>
-	public override string ResponseProblemDeletingEntry => "ì—”íŠ¸ë¦¬ë¥¼ ì‚­ì œí•˜ëŠ” ë° ë¬¸ì œê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.";
+	public override string ResponseProblemDeletingEntry => "엔트리를 삭제하는 데 문제가 발생했습니다.";
 
 	public CrowdSourcedTranslationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -323,152 +325,152 @@ internal class CrowdSourcedTranslationResources_ko_kr : CrowdSourcedTranslationR
 
 	protected override string _GetTemplateForActionAddTranslationEntry()
 	{
-		return "ìƒˆ ì—”íŠ¸ë¦¬ ì¶”ê°€";
+		return "새 엔트리 추가";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "ì‚­ì œ";
+		return "삭제";
 	}
 
 	protected override string _GetTemplateForActionDialogDiscardChanges()
 	{
-		return "ë³€ê²½ ì‚¬í•­ ì‚­ì œ";
+		return "변경 사항 삭제";
 	}
 
 	protected override string _GetTemplateForActionDownloadCSV()
 	{
-		return "CSV ë‹¤ìš´ë¡œë“œ";
+		return "CSV 다운로드";
 	}
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "ë” ë¶ˆëŸ¬ì˜¤ê¸°";
+		return "더 불러오기";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "ì €ìž¥";
+		return "저장";
 	}
 
 	protected override string _GetTemplateForActionSaved()
 	{
-		return "ì €ìž¥ ì™„ë£Œ";
+		return "저장 완료";
 	}
 
 	protected override string _GetTemplateForActionSaving()
 	{
-		return "ì €ìž¥í•˜ëŠ” ì¤‘";
+		return "저장하는 중";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContent()
 	{
-		return "ë³¸ ê²Œìž„ì˜ ì†ŒìŠ¤ ì½˜í…ì¸ ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ìžë™ ì¶”ì¶œ ê¸°ëŠ¥ì„ í™œì„±í™”í•˜ê±°ë‚˜ í˜¹ì€ ë²ˆì—­ì„ ì½ê³  ê´€ë¦¬í•˜ê¸° ìœ„í•´ Developer Studioì—ì„œ ì§ì ‘ ì½˜í…ì¸ ë¥¼ ì—…ë¡œë“œí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.";
+		return "본 게임의 소스 콘텐츠를 찾을 수 없습니다. 자동 추출 기능을 활성화하거나 혹은 번역을 읽고 관리하기 위해 Developer Studio에서 직접 콘텐츠를 업로드할 수 있습니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoContentDeveloper()
 	{
-		return "ì´ ê²Œìž„ì˜ ì†ŒìŠ¤ ì½˜í…ì¸ ë¥¼ ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ì˜¤ë¥˜ë¼ê³  ìƒê°ë˜ë©´ ê°œë°œìžì—ê²Œ ì—°ë½í•´ ë³´ì„¸ìš”.";
+		return "이 게임의 소스 콘텐츠를 찾을 수 없습니다. 오류라고 생각되면 개발자에게 연락해 보세요.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoEntriesFound()
 	{
-		return "í˜„ ê²€ìƒ‰ í•„í„°ì— ëŒ€í•œ ê²€ìƒ‰ ê²°ê³¼ ì—†ìŒ";
+		return "현 검색 필터에 대한 검색 결과 없음";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­ì´ ìžˆì–´ìš”. ê³„ì†í•˜ì‹œê² ì–´ìš”?";
+		return "저장하지 않은 변경 사항이 있어요. 계속하시겠어요?";
 	}
 
 	protected override string _GetTemplateForExampleEnterTranslationHere()
 	{
-		return "ì—¬ê¸°ì— ë²ˆì—­ ìž…ë ¥";
+		return "여기에 번역 입력";
 	}
 
 	protected override string _GetTemplateForHeadingAddTranslationEntry()
 	{
-		return "ë²ˆì—­ ì—”íŠ¸ë¦¬ ì¶”ê°€";
+		return "번역 엔트리 추가";
 	}
 
 	protected override string _GetTemplateForHeadingDialogUnsavedChanges()
 	{
-		return "ì €ìž¥í•˜ì§€ ì•Šì€ ë³€ê²½ ì‚¬í•­";
+		return "저장하지 않은 변경 사항";
 	}
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "ë²ˆì—­ ê´€ë¦¬";
+		return "번역 관리";
 	}
 
 	protected override string _GetTemplateForHeadingModalDeleteEntry()
 	{
-		return "ì´ ì—”íŠ¸ë¦¬ë¥¼ ì •ë§ë¡œ ì‚­ì œí• ê¹Œìš”?";
+		return "이 엔트리를 정말로 삭제할까요?";
 	}
 
 	protected override string _GetTemplateForHeadingNoContent()
 	{
-		return "ì½˜í…ì¸  ì—†ìŒ";
+		return "콘텐츠 없음";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "ë²ˆì—­ ë‚´ì—­";
+		return "번역 내역";
 	}
 
 	protected override string _GetTemplateForLabelActionIrreversibleWarning()
 	{
-		return "ì´ ìž‘ì—…ì€ ë˜ëŒë¦´ ìˆ˜ ì—†ìœ¼ë‹ˆ ì£¼ì˜í•˜ì„¸ìš”.";
+		return "이 작업은 되돌릴 수 없으니 주의하세요.";
 	}
 
 	protected override string _GetTemplateForLabelCompletedTranslations()
 	{
-		return "ì™„ì„±ëœ ë²ˆì—­:";
+		return "완성된 번역:";
 	}
 
 	protected override string _GetTemplateForLabelContext()
 	{
-		return "ì»¨í…ìŠ¤íŠ¸:";
+		return "컨텍스트:";
 	}
 
 	protected override string _GetTemplateForLabelDeleting()
 	{
-		return "ì‚­ì œ ì¤‘";
+		return "삭제 중";
 	}
 
 	protected override string _GetTemplateForLabelExample()
 	{
-		return "ì˜ˆ:";
+		return "예:";
 	}
 
 	protected override string _GetTemplateForLabelFollowingTranslationsDeleted()
 	{
-		return "ë‹¤ìŒ ë²ˆì—­ì´ ì‚­ì œë©ë‹ˆë‹¤.";
+		return "다음 번역이 삭제됩니다.";
 	}
 
 	protected override string _GetTemplateForLabelKey()
 	{
-		return "í‚¤:";
+		return "키:";
 	}
 
 	protected override string _GetTemplateForLabelLastModified()
 	{
-		return "ë§ˆì§€ë§‰ ìˆ˜ì •:";
+		return "마지막 수정:";
 	}
 
 	protected override string _GetTemplateForLabelLocationsInGame()
 	{
-		return "ê²Œìž„ ë‚´ ìœ„ì¹˜";
+		return "게임 내 위치";
 	}
 
 	protected override string _GetTemplateForLabelMoreInformation()
 	{
-		return "ë˜ ë‹¤ë¥¸ ì •ë³´";
+		return "또 다른 정보";
 	}
 
 	/// <summary>
@@ -477,102 +479,102 @@ internal class CrowdSourcedTranslationResources_ko_kr : CrowdSourcedTranslationR
 	/// </summary>
 	public override string LabelRemainingCharacters(string remainingCharacters)
 	{
-		return $"{remainingCharacters}ìž";
+		return $"{remainingCharacters}자";
 	}
 
 	protected override string _GetTemplateForLabelRemainingCharacters()
 	{
-		return "{remainingCharacters}ìž";
+		return "{remainingCharacters}자";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "í•„ìˆ˜";
+		return "필수";
 	}
 
 	protected override string _GetTemplateForLabelSearchPlaceholder()
 	{
-		return "ê²€ìƒ‰...";
+		return "검색...";
 	}
 
 	protected override string _GetTemplateForLabelSortBy()
 	{
-		return "ì •ë ¬ ê¸°ì¤€";
+		return "정렬 기준";
 	}
 
 	protected override string _GetTemplateForLabelSortingAlphabetical()
 	{
-		return "ì•ŒíŒŒë²³ ìˆœ";
+		return "알파벳 순";
 	}
 
 	protected override string _GetTemplateForLabelSortingUntranslatedFirst()
 	{
-		return "ë¯¸ë²ˆì—­ ìš°ì„ ";
+		return "미번역 우선";
 	}
 
 	protected override string _GetTemplateForLabelSourceText()
 	{
-		return "ì†ŒìŠ¤ í…ìŠ¤íŠ¸:";
+		return "소스 텍스트:";
 	}
 
 	protected override string _GetTemplateForLabelTextToTranslate()
 	{
-		return "ë²ˆì—­í•  í…ìŠ¤íŠ¸:";
+		return "번역할 텍스트:";
 	}
 
 	protected override string _GetTemplateForLabelTranslated()
 	{
-		return "ë²ˆì—­ë¨";
+		return "번역됨";
 	}
 
 	protected override string _GetTemplateForLabelTranslationCleared()
 	{
-		return "ë²ˆì—­ì´ ì‚­ì œë¨";
+		return "번역이 삭제됨";
 	}
 
 	protected override string _GetTemplateForLabelTranslator()
 	{
-		return "ë²ˆì—­ìž:";
+		return "번역자:";
 	}
 
 	protected override string _GetTemplateForLabelUntranslated()
 	{
-		return "ë²ˆì—­ ì•ˆ ë¨";
+		return "번역 안 됨";
 	}
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "ë³¸ íŽ˜ì´ì§€ì— ëŒ€í•œ ì ‘ê·¼ ê¶Œí•œì´ ì—†ìŠµë‹ˆë‹¤";
+		return "본 페이지에 대한 접근 권한이 없습니다";
 	}
 
 	protected override string _GetTemplateForResponseNoContextAvailable()
 	{
-		return "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì»¨í…ìŠ¤íŠ¸ê°€ ì—†ì–´ìš”";
+		return "사용할 수 있는 컨텍스트가 없어요";
 	}
 
 	protected override string _GetTemplateForResponseNoExampleAvailable()
 	{
-		return "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ì˜ˆì œê°€ ì—†ì–´ìš”";
+		return "사용할 수 있는 예제가 없어요";
 	}
 
 	protected override string _GetTemplateForResponseNoGameLocationsAvailable()
 	{
-		return "ìžë™ ìŠ¤í¬ëž©í•œ ìœ„ì¹˜ê°€ ì—†ì–´ìš”.";
+		return "자동 스크랩한 위치가 없어요.";
 	}
 
 	protected override string _GetTemplateForResponseNoKeyAvailable()
 	{
-		return "ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” í‚¤ê°€ ì—†ì–´ìš”";
+		return "사용할 수 있는 키가 없어요";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationHistory()
 	{
-		return "ë²ˆì—­ ê¸°ë¡ì´ ì—†ì–´ìš”.";
+		return "번역 기록이 없어요.";
 	}
 
 	protected override string _GetTemplateForResponseProblemDeletingEntry()
 	{
-		return "ì—”íŠ¸ë¦¬ë¥¼ ì‚­ì œí•˜ëŠ” ë° ë¬¸ì œê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.";
+		return "엔트리를 삭제하는 데 문제가 발생했습니다.";
 	}
 }
 

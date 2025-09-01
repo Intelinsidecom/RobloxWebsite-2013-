@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 	/// button label
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "TerminÃ©";
+	public override string ActionDone => "Terminé";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
@@ -32,14 +34,14 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "Ton adresse e-mail a bien Ã©tÃ© vÃ©rifiÃ©e";
+	public override string MessageEmailVerified => "Ton adresse e-mail a bien été vérifiée";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "Ton adresse e-mail a Ã©tÃ© vÃ©rifiÃ©e. Profite bien du chapeau gratuit\u00a0!";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "Ton adresse e-mail a été vérifiée. Profite bien du chapeau gratuit\u00a0!";
 
 	public EmailConfirmationResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -48,7 +50,7 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "TerminÃ©";
+		return "Terminé";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
@@ -63,12 +65,12 @@ internal class EmailConfirmationResources_fr_fr : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "Ton adresse e-mail a bien Ã©tÃ© vÃ©rifiÃ©e";
+		return "Ton adresse e-mail a bien été vérifiée";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "Ton adresse e-mail a Ã©tÃ© vÃ©rifiÃ©e. Profite bien du chapeau gratuit\u00a0!";
+		return "Ton adresse e-mail a été vérifiée. Profite bien du chapeau gratuit\u00a0!";
 	}
 }
 

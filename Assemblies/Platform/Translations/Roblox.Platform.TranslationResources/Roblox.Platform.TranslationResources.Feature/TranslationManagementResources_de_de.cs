@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslationManagementResources_en_us to provide locale specific translations where possible,
@@ -18,72 +20,72 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// Tell the developer what types of files their images should be for upload.
 	/// English String: "Acceptable files: jpg, jpeg, png"
 	/// </summary>
-	public override string DescriptionAcceptableFilesForIcon => "ZulÃ¤ssige Dateien: jpg, jpeg, png";
+	public override string DescriptionAcceptableFilesForIcon => "Zulässige Dateien: jpg, jpeg, png";
 
 	/// <summary>
 	/// Key: "Description.AcceptableFilesForThumbnail"
 	/// English String: "Acceptable files: jpg, jpeg, png"
 	/// </summary>
-	public override string DescriptionAcceptableFilesForThumbnail => "ZulÃ¤ssige Dateien: jpg, jpeg, png";
+	public override string DescriptionAcceptableFilesForThumbnail => "Zulässige Dateien: jpg, jpeg, png";
 
 	/// <summary>
 	/// Key: "Description.EnterTranslationHere"
 	/// Placeholder text for the input text area of name/description
 	/// English String: "Enter translation here"
 	/// </summary>
-	public override string DescriptionEnterTranslationHere => "Ãœbersetzung hier eingeben";
+	public override string DescriptionEnterTranslationHere => "Übersetzung hier eingeben";
 
 	/// <summary>
 	/// Key: "Description.IconWillBeReviewed"
 	/// Tell developers that their game icon image needs to be reviewed by moderators before the public can see it
 	/// English String: "Image will be reviewed by moderators before being made visible to other users"
 	/// </summary>
-	public override string DescriptionIconWillBeReviewed => "Datei wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor sie fÃ¼r andere Benutzer angezeigt wird";
+	public override string DescriptionIconWillBeReviewed => "Datei wird von unseren Moderatoren überprüft, bevor sie für andere Benutzer angezeigt wird";
 
 	/// <summary>
 	/// Key: "Description.ImageNotAvailable"
 	/// Message that tells the user their image is still being prepared
 	/// English String: "Image not available."
 	/// </summary>
-	public override string DescriptionImageNotAvailable => "Bild nicht verfÃ¼gbar.";
+	public override string DescriptionImageNotAvailable => "Bild nicht verfügbar.";
 
 	/// <summary>
 	/// Key: "Description.MaximumSizeForIcon"
 	/// The maximum file size for the icon
 	/// English String: "Maximum file size: 4 MB"
 	/// </summary>
-	public override string DescriptionMaximumSizeForIcon => "Maximale DateigrÃ¶ÃŸe: 4 MB";
+	public override string DescriptionMaximumSizeForIcon => "Maximale Dateigröße: 4 MB";
 
 	/// <summary>
 	/// Key: "Description.MaximumSizeForThumbnail"
 	/// English String: "Maximum file size: 4 MB"
 	/// </summary>
-	public override string DescriptionMaximumSizeForThumbnail => "Maximale DateigrÃ¶ÃŸe: 4 MB";
+	public override string DescriptionMaximumSizeForThumbnail => "Maximale Dateigröße: 4 MB";
 
 	/// <summary>
 	/// Key: "Description.NoGameProducts"
 	/// English String: "No game products found for this game"
 	/// </summary>
-	public override string DescriptionNoGameProducts => "Keine Spielartikel fÃ¼r dieses Spiel gefunden";
+	public override string DescriptionNoGameProducts => "Keine Spielartikel für dieses Spiel gefunden";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolution"
 	/// The recommended resolution for icon image
 	/// English String: "Recommended resolution: 512 x 512"
 	/// </summary>
-	public override string DescriptionRecommendedResolution => "Empfohlene AuflÃ¶sung: 512 x 512";
+	public override string DescriptionRecommendedResolution => "Empfohlene Auflösung: 512 x 512";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolutionForIcon"
 	/// English String: "Recommended resolution: 512 x 512"
 	/// </summary>
-	public override string DescriptionRecommendedResolutionForIcon => "Empfohlene AuflÃ¶sung: 512 x 512";
+	public override string DescriptionRecommendedResolutionForIcon => "Empfohlene Auflösung: 512 x 512";
 
 	/// <summary>
 	/// Key: "Description.RecommendedResolutionForThumbnail"
 	/// English String: "Recommended resolution: 1920 x 1080"
 	/// </summary>
-	public override string DescriptionRecommendedResolutionForThumbnail => "Empfohlene AuflÃ¶sung: 1920 x 1080";
+	public override string DescriptionRecommendedResolutionForThumbnail => "Empfohlene Auflösung: 1920 x 1080";
 
 	/// <summary>
 	/// Key: "Description.ScreenshotsLimitForThumbnail"
@@ -96,7 +98,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// The body of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Unsaved changes will be discarded. Are you sure?"
 	/// </summary>
-	public override string DescriptionUnsavedChanges => "Nicht gespeicherte Ã„nderungen gehen verloren. Bist du dir sicher?";
+	public override string DescriptionUnsavedChanges => "Nicht gespeicherte Änderungen gehen verloren. Bist du dir sicher?";
 
 	/// <summary>
 	/// Key: "Heading.BadgeDescription"
@@ -145,7 +147,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// heading of the manage translations page. Please reuse same translation as crowdsource localization page. We are still working on consolidating these two pages.
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string HeadingManageTranslations => "Ãœbersetzungen verwalten";
+	public override string HeadingManageTranslations => "Übersetzungen verwalten";
 
 	/// <summary>
 	/// Key: "Heading.NoContent"
@@ -165,21 +167,21 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// Heading for the translation history section of name/description
 	/// English String: "Translation History"
 	/// </summary>
-	public override string HeadingTranslationHistory => "Ãœbersetzungsverlauf";
+	public override string HeadingTranslationHistory => "Übersetzungsverlauf";
 
 	/// <summary>
 	/// Key: "Heading.TranslationManagement"
 	/// The title of the translation management page
 	/// English String: "Translation Management"
 	/// </summary>
-	public override string HeadingTranslationManagement => "Ãœbersetzungsverwaltung";
+	public override string HeadingTranslationManagement => "Übersetzungsverwaltung";
 
 	/// <summary>
 	/// Key: "Heading.UnsavedChanges"
 	/// The heading of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Unsaved Changes"
 	/// </summary>
-	public override string HeadingUnsavedChanges => "Nicht gespeicherte Ã„nderungen";
+	public override string HeadingUnsavedChanges => "Nicht gespeicherte Änderungen";
 
 	/// <summary>
 	/// Key: "Label.Description"
@@ -235,7 +237,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// Label for the source name/description text
 	/// English String: "Text to translate"
 	/// </summary>
-	public override string LabelTextToTranslate => "Text zum Ãœbersetzen";
+	public override string LabelTextToTranslate => "Text zum Übersetzen";
 
 	/// <summary>
 	/// Key: "Label.Thumbnails"
@@ -249,35 +251,35 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 	/// Message if user does not have permission to access the UI
 	/// English String: "You don't have permission to access this page"
 	/// </summary>
-	public override string ResponseAccessDenied => "Du hast nicht die nÃ¶tigen Rechte, um diese Seite aufzurufen";
+	public override string ResponseAccessDenied => "Du hast nicht die nötigen Rechte, um diese Seite aufzurufen";
 
 	/// <summary>
 	/// Key: "Response.ContentModerationError"
 	/// The error text when user's input does not pass the text filter
 	/// English String: "Could not save. Please check content for moderation and try again."
 	/// </summary>
-	public override string ResponseContentModerationError => "Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
+	public override string ResponseContentModerationError => "Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// Message for general errors
 	/// English String: "An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
+	public override string ResponseGeneralError => "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
 
 	/// <summary>
 	/// Key: "Response.IncorrectFormatOrSize"
 	/// Response shows to user when their icon image fails to save due to incorrect format or size too large
 	/// English String: "Could not save. Please make sure files are the correct size and format."
 	/// </summary>
-	public override string ResponseIncorrectFormatOrSize => "Konnte nicht gespeichert werden. Bitte stell sicher, dass die Dateien die richtige GrÃ¶ÃŸe und das richtige Format haben.";
+	public override string ResponseIncorrectFormatOrSize => "Konnte nicht gespeichert werden. Bitte stell sicher, dass die Dateien die richtige Größe und das richtige Format haben.";
 
 	/// <summary>
 	/// Key: "Response.NoTranslationLanguageAvailable"
 	/// The feedback when user trying to access the Translation Management page without adding a language other than their source language first
 	/// English String: "Translated content does not exist. Add a translation language in Configure Localization to translate game content."
 	/// </summary>
-	public override string ResponseNoTranslationLanguageAvailable => "Der Ã¼bersetzte Inhalt existiert nicht. FÃ¼ge in â€žLokalisierung konfigurierenâ€œ eine Ãœbersetzungssprache hinzu, um Spielinhalte zu Ã¼bersetzen.";
+	public override string ResponseNoTranslationLanguageAvailable => "Der übersetzte Inhalt existiert nicht. Füge in „Lokalisierung konfigurieren“ eine Übersetzungssprache hinzu, um Spielinhalte zu übersetzen.";
 
 	/// <summary>
 	/// Key: "Response.SaveFailure"
@@ -304,12 +306,12 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForDescriptionAcceptableFilesForIcon()
 	{
-		return "ZulÃ¤ssige Dateien: jpg, jpeg, png";
+		return "Zulässige Dateien: jpg, jpeg, png";
 	}
 
 	protected override string _GetTemplateForDescriptionAcceptableFilesForThumbnail()
 	{
-		return "ZulÃ¤ssige Dateien: jpg, jpeg, png";
+		return "Zulässige Dateien: jpg, jpeg, png";
 	}
 
 	/// <summary>
@@ -329,47 +331,47 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForDescriptionEnterTranslationHere()
 	{
-		return "Ãœbersetzung hier eingeben";
+		return "Übersetzung hier eingeben";
 	}
 
 	protected override string _GetTemplateForDescriptionIconWillBeReviewed()
 	{
-		return "Datei wird von unseren Moderatoren Ã¼berprÃ¼ft, bevor sie fÃ¼r andere Benutzer angezeigt wird";
+		return "Datei wird von unseren Moderatoren überprüft, bevor sie für andere Benutzer angezeigt wird";
 	}
 
 	protected override string _GetTemplateForDescriptionImageNotAvailable()
 	{
-		return "Bild nicht verfÃ¼gbar.";
+		return "Bild nicht verfügbar.";
 	}
 
 	protected override string _GetTemplateForDescriptionMaximumSizeForIcon()
 	{
-		return "Maximale DateigrÃ¶ÃŸe: 4 MB";
+		return "Maximale Dateigröße: 4 MB";
 	}
 
 	protected override string _GetTemplateForDescriptionMaximumSizeForThumbnail()
 	{
-		return "Maximale DateigrÃ¶ÃŸe: 4 MB";
+		return "Maximale Dateigröße: 4 MB";
 	}
 
 	protected override string _GetTemplateForDescriptionNoGameProducts()
 	{
-		return "Keine Spielartikel fÃ¼r dieses Spiel gefunden";
+		return "Keine Spielartikel für dieses Spiel gefunden";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolution()
 	{
-		return "Empfohlene AuflÃ¶sung: 512 x 512";
+		return "Empfohlene Auflösung: 512 x 512";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolutionForIcon()
 	{
-		return "Empfohlene AuflÃ¶sung: 512 x 512";
+		return "Empfohlene Auflösung: 512 x 512";
 	}
 
 	protected override string _GetTemplateForDescriptionRecommendedResolutionForThumbnail()
 	{
-		return "Empfohlene AuflÃ¶sung: 1920 x 1080";
+		return "Empfohlene Auflösung: 1920 x 1080";
 	}
 
 	protected override string _GetTemplateForDescriptionScreenshotsLimitForThumbnail()
@@ -379,7 +381,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForDescriptionUnsavedChanges()
 	{
-		return "Nicht gespeicherte Ã„nderungen gehen verloren. Bist du dir sicher?";
+		return "Nicht gespeicherte Änderungen gehen verloren. Bist du dir sicher?";
 	}
 
 	protected override string _GetTemplateForHeadingBadgeDescription()
@@ -414,7 +416,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForHeadingManageTranslations()
 	{
-		return "Ãœbersetzungen verwalten";
+		return "Übersetzungen verwalten";
 	}
 
 	protected override string _GetTemplateForHeadingNoContent()
@@ -429,17 +431,17 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForHeadingTranslationHistory()
 	{
-		return "Ãœbersetzungsverlauf";
+		return "Übersetzungsverlauf";
 	}
 
 	protected override string _GetTemplateForHeadingTranslationManagement()
 	{
-		return "Ãœbersetzungsverwaltung";
+		return "Übersetzungsverwaltung";
 	}
 
 	protected override string _GetTemplateForHeadingUnsavedChanges()
 	{
-		return "Nicht gespeicherte Ã„nderungen";
+		return "Nicht gespeicherte Änderungen";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
@@ -479,7 +481,7 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForLabelTextToTranslate()
 	{
-		return "Text zum Ãœbersetzen";
+		return "Text zum Übersetzen";
 	}
 
 	protected override string _GetTemplateForLabelThumbnails()
@@ -489,27 +491,27 @@ internal class TranslationManagementResources_de_de : TranslationManagementResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Du hast nicht die nÃ¶tigen Rechte, um diese Seite aufzurufen";
+		return "Du hast nicht die nötigen Rechte, um diese Seite aufzurufen";
 	}
 
 	protected override string _GetTemplateForResponseContentModerationError()
 	{
-		return "Konnte nicht speichern. Bitte Ã¼berprÃ¼fe den Inhalt auf Moderation und versuche es erneut.";
+		return "Konnte nicht speichern. Bitte überprüfe den Inhalt auf Moderation und versuche es erneut.";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Ein Fehler ist aufgetreten. Bitte versuche es spÃ¤ter erneut.";
+		return "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
 	}
 
 	protected override string _GetTemplateForResponseIncorrectFormatOrSize()
 	{
-		return "Konnte nicht gespeichert werden. Bitte stell sicher, dass die Dateien die richtige GrÃ¶ÃŸe und das richtige Format haben.";
+		return "Konnte nicht gespeichert werden. Bitte stell sicher, dass die Dateien die richtige Größe und das richtige Format haben.";
 	}
 
 	protected override string _GetTemplateForResponseNoTranslationLanguageAvailable()
 	{
-		return "Der Ã¼bersetzte Inhalt existiert nicht. FÃ¼ge in â€žLokalisierung konfigurierenâ€œ eine Ãœbersetzungssprache hinzu, um Spielinhalte zu Ã¼bersetzen.";
+		return "Der übersetzte Inhalt existiert nicht. Füge in „Lokalisierung konfigurieren“ eine Übersetzungssprache hinzu, um Spielinhalte zu übersetzen.";
 	}
 
 	protected override string _GetTemplateForResponseSaveFailure()

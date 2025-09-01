@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
@@ -10,79 +12,79 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 	/// Key: "Action.AcceptRequest"
 	/// English String: "Accept Request"
 	/// </summary>
-	public override string ActionAcceptRequest => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
+	public override string ActionAcceptRequest => "リクエストを承認する";
 
 	/// <summary>
 	/// Key: "Action.AddFriend"
 	/// English String: "Add Friend"
 	/// </summary>
-	public override string ActionAddFriend => "å‹é”ã‚’è¿½åŠ ";
+	public override string ActionAddFriend => "友達を追加";
 
 	/// <summary>
 	/// Key: "Action.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string ActionChat => "ãƒãƒ£ãƒƒãƒˆ";
+	public override string ActionChat => "チャット";
 
 	/// <summary>
 	/// Key: "Action.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string ActionJoinGame => "ã‚²ãƒ¼ãƒ ã«å‚åŠ ";
+	public override string ActionJoinGame => "ゲームに参加";
 
 	/// <summary>
 	/// Key: "Action.RequestSent"
 	/// English String: "Request Sent"
 	/// </summary>
-	public override string ActionRequestSent => "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ã¾ã—ãŸ";
+	public override string ActionRequestSent => "リクエストを送信しました";
 
 	/// <summary>
 	/// Key: "Label.AlsoKnownAsAbbreviation"
 	/// English String: "aka."
 	/// </summary>
-	public override string LabelAlsoKnownAsAbbreviation => "åˆ¥å";
+	public override string LabelAlsoKnownAsAbbreviation => "別名";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+	public override string LabelOffline => "オフライン";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+	public override string LabelOnline => "オンライン";
 
 	/// <summary>
 	/// Key: "Label.Search"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelSearch => "æ¤œç´¢";
+	public override string LabelSearch => "検索";
 
 	/// <summary>
 	/// Key: "Label.ThisIsYou"
 	/// English String: "This is you"
 	/// </summary>
-	public override string LabelThisIsYou => "ã“ã‚ŒãŒã‚ãªãŸã§ã™";
+	public override string LabelThisIsYou => "これがあなたです";
 
 	/// <summary>
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "å®‰å…¨ã§ãªã„å…¥åŠ›ãŒã‚ã‚Šã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦æ¤œç´¢ã—ã¦ãã ã•ã„ã€‚";
+	public override string LabelUnsafeInput => "安全でない入力がありました。もう一度検索してください。";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
 	/// English String: "You are following"
 	/// </summary>
-	public override string LabelYouAreFollowing => "ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã¾ã™";
+	public override string LabelYouAreFollowing => "フォローしています";
 
 	/// <summary>
 	/// Key: "Label.YouAreFriends"
 	/// English String: "You are friends"
 	/// </summary>
-	public override string LabelYouAreFriends => "å‹é”ã«ãªã‚Šã¾ã—ãŸ";
+	public override string LabelYouAreFriends => "友達になりました";
 
 	public PlayerSearchResultsResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -91,27 +93,27 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForActionAcceptRequest()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’æ‰¿èªã™ã‚‹";
+		return "リクエストを承認する";
 	}
 
 	protected override string _GetTemplateForActionAddFriend()
 	{
-		return "å‹é”ã‚’è¿½åŠ ";
+		return "友達を追加";
 	}
 
 	protected override string _GetTemplateForActionChat()
 	{
-		return "ãƒãƒ£ãƒƒãƒˆ";
+		return "チャット";
 	}
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«å‚åŠ ";
+		return "ゲームに参加";
 	}
 
 	protected override string _GetTemplateForActionRequestSent()
 	{
-		return "ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’é€ä¿¡ã—ã¾ã—ãŸ";
+		return "リクエストを送信しました";
 	}
 
 	/// <summary>
@@ -120,17 +122,17 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 	/// </summary>
 	public override string HeadingPlayerResultsFor(string startSpan, string keyword, string endSpan)
 	{
-		return $"{startSpan}{keyword}{endSpan} ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼æ¤œç´¢çµæžœ";
+		return $"{startSpan}{keyword}{endSpan} のプレイヤー検索結果";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerResultsFor()
 	{
-		return "{startSpan}{keyword}{endSpan} ã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼æ¤œç´¢çµæžœ";
+		return "{startSpan}{keyword}{endSpan} のプレイヤー検索結果";
 	}
 
 	protected override string _GetTemplateForLabelAlsoKnownAsAbbreviation()
 	{
-		return "åˆ¥å";
+		return "別名";
 	}
 
 	/// <summary>
@@ -139,12 +141,12 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelEnterMinCharacters(string keywordMinLength)
 	{
-		return $"{keywordMinLength}æ–‡å­—ä»¥ä¸Šå…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+		return $"{keywordMinLength}文字以上入力してください。";
 	}
 
 	protected override string _GetTemplateForLabelEnterMinCharacters()
 	{
-		return "{keywordMinLength}æ–‡å­—ä»¥ä¸Šå…¥åŠ›ã—ã¦ãã ã•ã„ã€‚";
+		return "{keywordMinLength}文字以上入力してください。";
 	}
 
 	/// <summary>
@@ -153,27 +155,27 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"ã€Œ{keyword}ã€ã«è©²å½“ã™ã‚‹ã‚‚ã®ã¯ã‚ã‚Šã¾ã›ã‚“";
+		return $"「{keyword}」に該当するものはありません";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "ã€Œ{keyword}ã€ã«è©²å½“ã™ã‚‹ã‚‚ã®ã¯ã‚ã‚Šã¾ã›ã‚“";
+		return "「{keyword}」に該当するものはありません";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+		return "オフライン";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+		return "オンライン";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
 	{
-		return "æ¤œç´¢";
+		return "検索";
 	}
 
 	/// <summary>
@@ -192,22 +194,22 @@ internal class PlayerSearchResultsResources_ja_jp : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelThisIsYou()
 	{
-		return "ã“ã‚ŒãŒã‚ãªãŸã§ã™";
+		return "これがあなたです";
 	}
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "å®‰å…¨ã§ãªã„å…¥åŠ›ãŒã‚ã‚Šã¾ã—ãŸã€‚ã‚‚ã†ä¸€åº¦æ¤œç´¢ã—ã¦ãã ã•ã„ã€‚";
+		return "安全でない入力がありました。もう一度検索してください。";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()
 	{
-		return "ãƒ•ã‚©ãƒ­ãƒ¼ã—ã¦ã„ã¾ã™";
+		return "フォローしています";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFriends()
 	{
-		return "å‹é”ã«ãªã‚Šã¾ã—ãŸ";
+		return "友達になりました";
 	}
 }
 

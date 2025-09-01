@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ItemResources_en_us to provide locale specific translations where possible,
@@ -11,353 +13,353 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// button label
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "æ·»åŠ ";
+	public override string ActionAdd => "添加";
 
 	/// <summary>
 	/// Key: "Action.AddToGame"
 	/// English String: "Add To Game"
 	/// </summary>
-	public override string ActionAddToGame => "æ·»åŠ è‡³æ¸¸æˆ";
+	public override string ActionAddToGame => "添加至游戏";
 
 	/// <summary>
 	/// Key: "Action.AddToProfile"
 	/// English String: "Add to Profile"
 	/// </summary>
-	public override string ActionAddToProfile => "æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+	public override string ActionAddToProfile => "添加至个人资料";
 
 	/// <summary>
 	/// Key: "Action.Advertise"
 	/// English String: "Advertise"
 	/// </summary>
-	public override string ActionAdvertise => "å¹¿å‘Š";
+	public override string ActionAdvertise => "广告";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "åŒæ„";
+	public override string ActionAgree => "同意";
 
 	/// <summary>
 	/// Key: "Action.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "è´­ä¹°";
+	public override string ActionBuy => "购买";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "é…ç½®";
+	public override string ActionConfigure => "配置";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "ç¡®è®¤";
+	public override string ActionConfirm => "确认";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "åˆ é™¤";
+	public override string ActionDelete => "删除";
 
 	/// <summary>
 	/// Key: "Action.DisableBadge"
 	/// English String: "Disable Badge"
 	/// </summary>
-	public override string ActionDisableBadge => "åœç”¨å¾½ç« ";
+	public override string ActionDisableBadge => "停用徽章";
 
 	/// <summary>
 	/// Key: "Action.EditAvatar"
 	/// English String: "Edit Avatar"
 	/// </summary>
-	public override string ActionEditAvatar => "ç¼–è¾‘è™šæ‹Ÿå½¢è±¡";
+	public override string ActionEditAvatar => "编辑虚拟形象";
 
 	/// <summary>
 	/// Key: "Action.EnableBadge"
 	/// English String: "Enable Badge"
 	/// </summary>
-	public override string ActionEnableBadge => "å¯ç”¨å¾½ç« ";
+	public override string ActionEnableBadge => "启用徽章";
 
 	/// <summary>
 	/// Key: "Action.Get"
 	/// English String: "Get"
 	/// </summary>
-	public override string ActionGet => "èŽ·å–";
+	public override string ActionGet => "获取";
 
 	/// <summary>
 	/// Key: "Action.Install"
 	/// English String: "Install"
 	/// </summary>
-	public override string ActionInstall => "å®‰è£…";
+	public override string ActionInstall => "安装";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "é“å…·";
+	public override string ActionInventory => "道具";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// button label
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "å¦";
+	public override string ActionNo => "否";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// button label
 	/// English String: "OK"
 	/// </summary>
-	public override string ActionOk => "å¥½";
+	public override string ActionOk => "好";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "ç§»é™¤";
+	public override string ActionRemove => "移除";
 
 	/// <summary>
 	/// Key: "Action.RemoveFromProfile"
 	/// English String: "Remove from Profile"
 	/// </summary>
-	public override string ActionRemoveFromProfile => "ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+	public override string ActionRemoveFromProfile => "从个人资料移除";
 
 	/// <summary>
 	/// Key: "Action.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string ActionRent => "ç§Ÿç”¨";
+	public override string ActionRent => "租用";
 
 	/// <summary>
 	/// Key: "Action.ReportItem"
 	/// English String: "Report Item"
 	/// </summary>
-	public override string ActionReportItem => "ä¸¾æŠ¥ç‰©å“";
+	public override string ActionReportItem => "举报物品";
 
 	/// <summary>
 	/// Key: "Action.Sell"
 	/// English String: "Sell"
 	/// </summary>
-	public override string ActionSell => "å‡ºå”®";
+	public override string ActionSell => "出售";
 
 	/// <summary>
 	/// Key: "Action.SellNow"
 	/// Sell Now
 	/// English String: "Sell Now"
 	/// </summary>
-	public override string ActionSellNow => "ç«‹å³å‡ºå”®";
+	public override string ActionSellNow => "立即出售";
 
 	/// <summary>
 	/// Key: "Action.TakeOff"
 	/// Action on context menu on owned item detail page.
 	/// English String: "Take Off"
 	/// </summary>
-	public override string ActionTakeOff => "è„±ä¸‹";
+	public override string ActionTakeOff => "脱下";
 
 	/// <summary>
 	/// Key: "Action.TakeOffSale"
 	/// English String: "Take Off Sale"
 	/// </summary>
-	public override string ActionTakeOffSale => "ä¸‹æž¶";
+	public override string ActionTakeOffSale => "下架";
 
 	/// <summary>
 	/// Key: "Action.TryOn"
 	/// English String: "Try On"
 	/// </summary>
-	public override string ActionTryOn => "è¯•ç©¿";
+	public override string ActionTryOn => "试穿";
 
 	/// <summary>
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "å‡çº§";
+	public override string ActionUpgrade => "升级";
 
 	/// <summary>
 	/// Key: "Action.Wear"
 	/// Action on context menu on owned item
 	/// English String: "Wear"
 	/// </summary>
-	public override string ActionWear => "ç©¿æˆ´";
+	public override string ActionWear => "穿戴";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// Yes
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "æ˜¯";
+	public override string ActionYes => "是";
 
 	/// <summary>
 	/// Key: "Heading.IncludedItems"
 	/// Included items for a bundle of items. User purchases a bundle and will receive all items that will show below this heading.
 	/// English String: "Included Items"
 	/// </summary>
-	public override string HeadingIncludedItems => "åŒ…å«é¡¹ç›®";
+	public override string HeadingIncludedItems => "包含项目";
 
 	/// <summary>
 	/// Key: "Heading.PromoteItem"
 	/// dialog heading
 	/// English String: "Promote Item"
 	/// </summary>
-	public override string HeadingPromoteItem => "æŽ¨å¹¿ç‰©å“";
+	public override string HeadingPromoteItem => "推广物品";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalAcceptText"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelAssetGrantedModalAcceptText => "å¥½";
+	public override string LabelAssetGrantedModalAcceptText => "好";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalMessage"
 	/// English String: "You just got this item courtesy of our sponsor."
 	/// </summary>
-	public override string LabelAssetGrantedModalMessage => "æˆ‘ä»¬çš„èµžåŠ©å•†é€ç»™ä½ æ­¤ç‰©å“ã€‚";
+	public override string LabelAssetGrantedModalMessage => "我们的赞助商送给你此物品。";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalTitle"
 	/// English String: "This item is now yours"
 	/// </summary>
-	public override string LabelAssetGrantedModalTitle => "ä½ å·²æ‹¥æœ‰æ­¤ç‰©å“";
+	public override string LabelAssetGrantedModalTitle => "你已拥有此物品";
 
 	/// <summary>
 	/// Key: "Label.Attributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelAttributes => "å±žæ€§";
+	public override string LabelAttributes => "属性";
 
 	/// <summary>
 	/// Key: "Label.BestPrice"
 	/// English String: "Best Price"
 	/// </summary>
-	public override string LabelBestPrice => "æœ€ä½³ä»·æ ¼";
+	public override string LabelBestPrice => "最佳价格";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubExclusive"
 	/// label for Builders Club requirement
 	/// English String: "Builders Club exclusive."
 	/// </summary>
-	public override string LabelBuildersClubExclusive => "Builders Club ä¸“å±žã€‚";
+	public override string LabelBuildersClubExclusive => "Builders Club 专属。";
 
 	/// <summary>
 	/// Key: "Label.DeleteFromInventoryConfirm"
 	/// confirmation message before deletion
 	/// English String: "Are you sure you want to permanently DELETE this item from your inventory?"
 	/// </summary>
-	public override string LabelDeleteFromInventoryConfirm => "æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„é“å…·ä¸­æ°¸ä¹…åˆ é™¤æ­¤ç‰©å“ï¼Ÿ";
+	public override string LabelDeleteFromInventoryConfirm => "是否确定要从你的道具中永久删除此物品？";
 
 	/// <summary>
 	/// Key: "Label.DeleteItem"
 	/// Delete Item
 	/// English String: "Delete Item"
 	/// </summary>
-	public override string LabelDeleteItem => "åˆ é™¤ç‰©å“";
+	public override string LabelDeleteItem => "删除物品";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "æè¿°";
+	public override string LabelDescription => "描述";
 
 	/// <summary>
 	/// Key: "Label.DisableBadgeConfirm"
 	/// Are you sure you want to disable this Badge?
 	/// English String: "Are you sure you want to disable this Badge?"
 	/// </summary>
-	public override string LabelDisableBadgeConfirm => "æ˜¯å¦ç¡®å®šè¦åœç”¨æ­¤å¾½ç« ï¼Ÿ";
+	public override string LabelDisableBadgeConfirm => "是否确定要停用此徽章？";
 
 	/// <summary>
 	/// Key: "Label.DiscontinuedItem"
 	/// label
 	/// English String: "Discontinued item, resellable."
 	/// </summary>
-	public override string LabelDiscontinuedItem => "ç»ç‰ˆç‰©å“ï¼Œå¯è½¬å”®ã€‚";
+	public override string LabelDiscontinuedItem => "绝版物品，可转售。";
 
 	/// <summary>
 	/// Key: "Label.EnableBadgeConfirm"
 	/// Are you sure you want to enable this Badge?
 	/// English String: "Are you sure you want to enable this Badge?"
 	/// </summary>
-	public override string LabelEnableBadgeConfirm => "æ˜¯å¦ç¡®å®šè¦å¯ç”¨æ­¤å¾½ç« ï¼Ÿ";
+	public override string LabelEnableBadgeConfirm => "是否确定要启用此徽章？";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "Error occurred"
 	/// </summary>
-	public override string LabelErrorOccurred => "å‘ç”Ÿé”™è¯¯";
+	public override string LabelErrorOccurred => "发生错误";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "å…è´¹";
+	public override string LabelFree => "免费";
 
 	/// <summary>
 	/// Key: "Label.Genres"
 	/// English String: "Genres"
 	/// </summary>
-	public override string LabelGenres => "ä¸»é¢˜";
+	public override string LabelGenres => "主题";
 
 	/// <summary>
 	/// Key: "Label.GetBuildersClub"
 	/// Only Builders Club members can re-sell collectible items. Get Builders Club today!
 	/// English String: "Only Builders Club members can re-sell collectible items. Get Builders Club today!"
 	/// </summary>
-	public override string LabelGetBuildersClub => "åªæœ‰ Builders Club ä¼šå‘˜æ‰èƒ½è½¬å”®æ”¶è—å“ã€‚ç«‹å³åŠ å…¥ Builders Club å§ï¼";
+	public override string LabelGetBuildersClub => "只有 Builders Club 会员才能转售收藏品。立即加入 Builders Club 吧！";
 
 	/// <summary>
 	/// Key: "Label.GetPremiumMembership"
 	/// English String: "Only Premium members can re-sell collectible items. Get Premium today!"
 	/// </summary>
-	public override string LabelGetPremiumMembership => "åªæœ‰ Premium ä¼šå‘˜æ‰èƒ½è½¬å”®æ”¶è—å“ã€‚ç«‹å³åŠ å…¥ Premium å§ï¼";
+	public override string LabelGetPremiumMembership => "只有 Premium 会员才能转售收藏品。立即加入 Premium 吧！";
 
 	/// <summary>
 	/// Key: "Label.InvalidPlace"
 	/// text label
 	/// English String: "Invalid Place."
 	/// </summary>
-	public override string LabelInvalidPlace => "åœ°ç‚¹æ— æ•ˆã€‚";
+	public override string LabelInvalidPlace => "地点无效。";
 
 	/// <summary>
 	/// Key: "Label.InvalidProduct"
 	/// label
 	/// English String: "Invalid Product."
 	/// </summary>
-	public override string LabelInvalidProduct => "äº§å“æ— æ•ˆã€‚";
+	public override string LabelInvalidProduct => "产品无效。";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailable"
 	/// User is looking at the details of an item which they already own in their inventory.
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailable => "æ­¤ç‰©å“åœ¨ä½ çš„é“å…·æ ä¸­ã€‚";
+	public override string LabelItemAvailable => "此物品在你的道具栏中。";
 
 	/// <summary>
 	/// Key: "Label.ItemNotForSale"
 	/// User is looking at the details of an item that cannot be purchased.
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotForSale => "æ­¤ç‰©å“ç›®å‰ä¸ºéžå–å“ã€‚";
+	public override string LabelItemNotForSale => "此物品目前为非卖品。";
 
 	/// <summary>
 	/// Key: "Label.ItemOwned"
 	/// English String: "Item Owned"
 	/// </summary>
-	public override string LabelItemOwned => "å·²æ‹¥æœ‰ç‰©å“";
+	public override string LabelItemOwned => "已拥有物品";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "æ— ";
+	public override string LabelNone => "无";
 
 	/// <summary>
 	/// Key: "Label.NotAvailable"
@@ -369,43 +371,43 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelPrice => "ä»·æ ¼";
+	public override string LabelPrice => "价格";
 
 	/// <summary>
 	/// Key: "Label.PriceIsInvalid"
 	/// English String: "Price is invalid"
 	/// </summary>
-	public override string LabelPriceIsInvalid => "ä»·æ ¼æ— æ•ˆ";
+	public override string LabelPriceIsInvalid => "价格无效";
 
 	/// <summary>
 	/// Key: "Label.PriceMinimumOne"
 	/// English String: "Price (minimum 1)"
 	/// </summary>
-	public override string LabelPriceMinimumOne => "ä»·æ ¼ï¼ˆæœ€ä½Ž 1ï¼‰";
+	public override string LabelPriceMinimumOne => "价格（最低 1）";
 
 	/// <summary>
 	/// Key: "Label.PurchaseCompleted"
 	/// English String: "Purchase Completed"
 	/// </summary>
-	public override string LabelPurchaseCompleted => "è´­ä¹°å·²å®Œæˆ";
+	public override string LabelPurchaseCompleted => "购买已完成";
 
 	/// <summary>
 	/// Key: "Label.Rarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "ç¨€æœ‰åº¦";
+	public override string LabelRarity => "稀有度";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "é˜…è¯»æ›´å¤š";
+	public override string LabelReadMore => "阅读更多";
 
 	/// <summary>
 	/// Key: "Label.RentingItem"
 	/// English String: "Renting Item"
 	/// </summary>
-	public override string LabelRentingItem => "ç§Ÿç”¨ç‰©å“";
+	public override string LabelRentingItem => "租用物品";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -419,170 +421,170 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// Sell Your Collectible Item
 	/// English String: "Sell Your Collectible Item"
 	/// </summary>
-	public override string LabelSellYourCollectibleItem => "å‡ºå”®ä½ çš„æ”¶è—å“";
+	public override string LabelSellYourCollectibleItem => "出售你的收藏品";
 
 	/// <summary>
 	/// Key: "Label.SerializedLimitedRelease"
 	/// label
 	/// English String: "Serialized limited release, resellable."
 	/// </summary>
-	public override string LabelSerializedLimitedRelease => "æŒ‰åºå·é™é‡å‘è¡Œï¼Œå¯è½¬å”®ã€‚";
+	public override string LabelSerializedLimitedRelease => "按序号限量发行，可转售。";
 
 	/// <summary>
 	/// Key: "Label.SerialNotAvailable"
 	/// English String: "Serial N/A"
 	/// </summary>
-	public override string LabelSerialNotAvailable => "æ— åºå·";
+	public override string LabelSerialNotAvailable => "无序号";
 
 	/// <summary>
 	/// Key: "Label.SerialNumber"
 	/// English String: "Serial Number"
 	/// </summary>
-	public override string LabelSerialNumber => "åºå·";
+	public override string LabelSerialNumber => "序号";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// Show Less
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "æ”¶èµ·";
+	public override string LabelShowLess => "收起";
 
 	/// <summary>
 	/// Key: "Label.Tags"
 	/// A label to indicate a list of tags on an item (i.e. "red, belt, shoes, denim" could be some tags for a Pants item that was red jeans with a belt and shoes)
 	/// English String: "Tags"
 	/// </summary>
-	public override string LabelTags => "æ ‡ç­¾";
+	public override string LabelTags => "标签";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSale"
 	/// Take off Sale
 	/// English String: "Take off Sale"
 	/// </summary>
-	public override string LabelTakeOffSale => "ä¸‹æž¶";
+	public override string LabelTakeOffSale => "下架";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSaleConfirm"
 	/// English String: "Are you sure you want to take the item off sale?"
 	/// </summary>
-	public override string LabelTakeOffSaleConfirm => "æ˜¯å¦ç¡®å®šè¦å°†æ­¤ç‰©å“ä¸‹æž¶ï¼Ÿ";
+	public override string LabelTakeOffSaleConfirm => "是否确定要将此物品下架？";
 
 	/// <summary>
 	/// Key: "Label.ThirteenPlusOnly"
 	/// label
 	/// English String: "13+ Only."
 	/// </summary>
-	public override string LabelThirteenPlusOnly => "ä»…é™ 13+ã€‚";
+	public override string LabelThirteenPlusOnly => "仅限 13+。";
 
 	/// <summary>
 	/// Key: "Label.Type"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelType => "ç±»åž‹";
+	public override string LabelType => "类型";
 
 	/// <summary>
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "å·²æ›´æ–°";
+	public override string LabelUpdated => "已更新";
 
 	/// <summary>
 	/// Key: "Label.YouGet"
 	/// Amount user gets after Marketplace fee deduction.
 	/// English String: "You get"
 	/// </summary>
-	public override string LabelYouGet => "ä½ èŽ·å¾—";
+	public override string LabelYouGet => "你获得";
 
 	/// <summary>
 	/// Key: "Response.AddedToProfile"
 	/// success message when item is added to profile
 	/// English String: "Added to your profile"
 	/// </summary>
-	public override string ResponseAddedToProfile => "å·²æ·»åŠ è‡³ä½ çš„ä¸ªäººèµ„æ–™";
+	public override string ResponseAddedToProfile => "已添加至你的个人资料";
 
 	/// <summary>
 	/// Key: "Response.AddedToYourAvater"
 	/// Added to your Avatar
 	/// English String: "Added to your Avatar"
 	/// </summary>
-	public override string ResponseAddedToYourAvater => "å·²æ·»åŠ è‡³ä½ çš„è™šæ‹Ÿå½¢è±¡";
+	public override string ResponseAddedToYourAvater => "已添加至你的虚拟形象";
 
 	/// <summary>
 	/// Key: "Response.AlreadyHaveMaxItems"
 	/// error message
 	/// English String: "You already have the maximum number of items on your game!"
 	/// </summary>
-	public override string ResponseAlreadyHaveMaxItems => "ä½ æ¸¸æˆä¸­çš„ç‰©å“æ•°é‡å·²è¾¾ä¸Šé™ï¼";
+	public override string ResponseAlreadyHaveMaxItems => "你游戏中的物品数量已达上限！";
 
 	/// <summary>
 	/// Key: "Response.DisabledBadge"
 	/// Successfully disabled the badge
 	/// English String: "Successfully disabled the badge"
 	/// </summary>
-	public override string ResponseDisabledBadge => "å·²æˆåŠŸåœç”¨å¾½ç« ";
+	public override string ResponseDisabledBadge => "已成功停用徽章";
 
 	/// <summary>
 	/// Key: "Response.EnabledBadge"
 	/// Successfully enabled the badge
 	/// English String: "Successfully enabled the badge"
 	/// </summary>
-	public override string ResponseEnabledBadge => "å·²æˆåŠŸå¯ç”¨å¾½ç« ";
+	public override string ResponseEnabledBadge => "已成功启用徽章";
 
 	/// <summary>
 	/// Key: "Response.FailedToAddToProfile"
 	/// error message when item could not be added to profile
 	/// English String: "Failed to add to profile"
 	/// </summary>
-	public override string ResponseFailedToAddToProfile => "æ— æ³•æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+	public override string ResponseFailedToAddToProfile => "无法添加至个人资料";
 
 	/// <summary>
 	/// Key: "Response.FailedToDeleteFromInventory"
 	/// Failed to delete item from inventory
 	/// English String: "Failed to delete item from inventory"
 	/// </summary>
-	public override string ResponseFailedToDeleteFromInventory => "æ— æ³•ä»Žé“å…·ä¸­åˆ é™¤æ­¤ç‰©å“";
+	public override string ResponseFailedToDeleteFromInventory => "无法从道具中删除此物品";
 
 	/// <summary>
 	/// Key: "Response.FailedToDisableBadge"
 	/// Failed to disable badge
 	/// English String: "Failed to disable badge"
 	/// </summary>
-	public override string ResponseFailedToDisableBadge => "æ— æ³•åœç”¨å¾½ç« ";
+	public override string ResponseFailedToDisableBadge => "无法停用徽章";
 
 	/// <summary>
 	/// Key: "Response.FailedToEnableBadge"
 	/// Failed to enable badge
 	/// English String: "Failed to enable badge"
 	/// </summary>
-	public override string ResponseFailedToEnableBadge => "æ— æ³•å¯ç”¨å¾½ç« ";
+	public override string ResponseFailedToEnableBadge => "无法启用徽章";
 
 	/// <summary>
 	/// Key: "Response.FailedToRemoveFromProfile"
 	/// error message when items could not be removed
 	/// English String: "Failed to remove from profile"
 	/// </summary>
-	public override string ResponseFailedToRemoveFromProfile => "æ— æ³•ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+	public override string ResponseFailedToRemoveFromProfile => "无法从个人资料移除";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromInventory"
 	/// Successfully removed from your inventory
 	/// English String: "Successfully removed from your inventory"
 	/// </summary>
-	public override string ResponseRemovedFromInventory => "å·²æˆåŠŸä»Žä½ çš„é“å…·ç§»é™¤";
+	public override string ResponseRemovedFromInventory => "已成功从你的道具移除";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromProfile"
 	/// message when an item is removed from profile
 	/// English String: "Removed from your profile"
 	/// </summary>
-	public override string ResponseRemovedFromProfile => "å·²ä»Žä½ çš„ä¸ªäººèµ„æ–™åˆ é™¤";
+	public override string ResponseRemovedFromProfile => "已从你的个人资料删除";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromYourAvater"
 	/// Removed from your Avatar
 	/// English String: "Removed from your Avatar"
 	/// </summary>
-	public override string ResponseRemovedFromYourAvater => "å·²ä»Žä½ çš„è™šæ‹Ÿå½¢è±¡ç§»é™¤";
+	public override string ResponseRemovedFromYourAvater => "已从你的虚拟形象移除";
 
 	public ItemResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -591,162 +593,162 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "æ·»åŠ ";
+		return "添加";
 	}
 
 	protected override string _GetTemplateForActionAddToGame()
 	{
-		return "æ·»åŠ è‡³æ¸¸æˆ";
+		return "添加至游戏";
 	}
 
 	protected override string _GetTemplateForActionAddToProfile()
 	{
-		return "æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+		return "添加至个人资料";
 	}
 
 	protected override string _GetTemplateForActionAdvertise()
 	{
-		return "å¹¿å‘Š";
+		return "广告";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "åŒæ„";
+		return "同意";
 	}
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è´­ä¹°";
+		return "购买";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "é…ç½®";
+		return "配置";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "ç¡®è®¤";
+		return "确认";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "åˆ é™¤";
+		return "删除";
 	}
 
 	protected override string _GetTemplateForActionDisableBadge()
 	{
-		return "åœç”¨å¾½ç« ";
+		return "停用徽章";
 	}
 
 	protected override string _GetTemplateForActionEditAvatar()
 	{
-		return "ç¼–è¾‘è™šæ‹Ÿå½¢è±¡";
+		return "编辑虚拟形象";
 	}
 
 	protected override string _GetTemplateForActionEnableBadge()
 	{
-		return "å¯ç”¨å¾½ç« ";
+		return "启用徽章";
 	}
 
 	protected override string _GetTemplateForActionGet()
 	{
-		return "èŽ·å–";
+		return "获取";
 	}
 
 	protected override string _GetTemplateForActionInstall()
 	{
-		return "å®‰è£…";
+		return "安装";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "é“å…·";
+		return "道具";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "å¦";
+		return "否";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "ç§»é™¤";
+		return "移除";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromProfile()
 	{
-		return "ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+		return "从个人资料移除";
 	}
 
 	protected override string _GetTemplateForActionRent()
 	{
-		return "ç§Ÿç”¨";
+		return "租用";
 	}
 
 	protected override string _GetTemplateForActionReportItem()
 	{
-		return "ä¸¾æŠ¥ç‰©å“";
+		return "举报物品";
 	}
 
 	protected override string _GetTemplateForActionSell()
 	{
-		return "å‡ºå”®";
+		return "出售";
 	}
 
 	protected override string _GetTemplateForActionSellNow()
 	{
-		return "ç«‹å³å‡ºå”®";
+		return "立即出售";
 	}
 
 	protected override string _GetTemplateForActionTakeOff()
 	{
-		return "è„±ä¸‹";
+		return "脱下";
 	}
 
 	protected override string _GetTemplateForActionTakeOffSale()
 	{
-		return "ä¸‹æž¶";
+		return "下架";
 	}
 
 	protected override string _GetTemplateForActionTryOn()
 	{
-		return "è¯•ç©¿";
+		return "试穿";
 	}
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "å‡çº§";
+		return "升级";
 	}
 
 	protected override string _GetTemplateForActionWear()
 	{
-		return "ç©¿æˆ´";
+		return "穿戴";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "æ˜¯";
+		return "是";
 	}
 
 	protected override string _GetTemplateForHeadingIncludedItems()
 	{
-		return "åŒ…å«é¡¹ç›®";
+		return "包含项目";
 	}
 
 	protected override string _GetTemplateForHeadingPromoteItem()
 	{
-		return "æŽ¨å¹¿ç‰©å“";
+		return "推广物品";
 	}
 
 	/// <summary>
@@ -755,42 +757,42 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelAllowPlayersPlusEarn(string affiliateSaleTotal)
 	{
-		return $"å…è®¸çŽ©å®¶åœ¨ä½ çš„æ¸¸æˆä¸­ä½¿ç”¨æ­¤è£…å¤‡ï¼›æ­¤å¤–ï¼Œå¦‚æžœæœ‰çŽ©å®¶ä»Žä½ çš„æ¸¸æˆé¡µé¢è´­ä¹°æ­¤è£…å¤‡ï¼Œä½ å¯èµšå– {affiliateSaleTotal}ã€‚";
+		return $"允许玩家在你的游戏中使用此装备；此外，如果有玩家从你的游戏页面购买此装备，你可赚取 {affiliateSaleTotal}。";
 	}
 
 	protected override string _GetTemplateForLabelAllowPlayersPlusEarn()
 	{
-		return "å…è®¸çŽ©å®¶åœ¨ä½ çš„æ¸¸æˆä¸­ä½¿ç”¨æ­¤è£…å¤‡ï¼›æ­¤å¤–ï¼Œå¦‚æžœæœ‰çŽ©å®¶ä»Žä½ çš„æ¸¸æˆé¡µé¢è´­ä¹°æ­¤è£…å¤‡ï¼Œä½ å¯èµšå– {affiliateSaleTotal}ã€‚";
+		return "允许玩家在你的游戏中使用此装备；此外，如果有玩家从你的游戏页面购买此装备，你可赚取 {affiliateSaleTotal}。";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalAcceptText()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalMessage()
 	{
-		return "æˆ‘ä»¬çš„èµžåŠ©å•†é€ç»™ä½ æ­¤ç‰©å“ã€‚";
+		return "我们的赞助商送给你此物品。";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalTitle()
 	{
-		return "ä½ å·²æ‹¥æœ‰æ­¤ç‰©å“";
+		return "你已拥有此物品";
 	}
 
 	protected override string _GetTemplateForLabelAttributes()
 	{
-		return "å±žæ€§";
+		return "属性";
 	}
 
 	protected override string _GetTemplateForLabelBestPrice()
 	{
-		return "æœ€ä½³ä»·æ ¼";
+		return "最佳价格";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExclusive()
 	{
-		return "Builders Club ä¸“å±žã€‚";
+		return "Builders Club 专属。";
 	}
 
 	/// <summary>
@@ -799,12 +801,12 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelBy(string creator)
 	{
-		return $"åˆ›ä½œè€… {creator}";
+		return $"创作者 {creator}";
 	}
 
 	protected override string _GetTemplateForLabelBy()
 	{
-		return "åˆ›ä½œè€… {creator}";
+		return "创作者 {creator}";
 	}
 
 	/// <summary>
@@ -814,37 +816,37 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelCountdownTimerDayHourMinute(string numberOfDays, string numberOfHours, string numberOfMinutes)
 	{
-		return $"{numberOfDays} å°æ—¶ {numberOfHours} åˆ† {numberOfMinutes} ç§’åŽä¸‹æž¶";
+		return $"{numberOfDays} 小时 {numberOfHours} 分 {numberOfMinutes} 秒后下架";
 	}
 
 	protected override string _GetTemplateForLabelCountdownTimerDayHourMinute()
 	{
-		return "{numberOfDays} å°æ—¶ {numberOfHours} åˆ† {numberOfMinutes} ç§’åŽä¸‹æž¶";
+		return "{numberOfDays} 小时 {numberOfHours} 分 {numberOfMinutes} 秒后下架";
 	}
 
 	protected override string _GetTemplateForLabelDeleteFromInventoryConfirm()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦ä»Žä½ çš„é“å…·ä¸­æ°¸ä¹…åˆ é™¤æ­¤ç‰©å“ï¼Ÿ";
+		return "是否确定要从你的道具中永久删除此物品？";
 	}
 
 	protected override string _GetTemplateForLabelDeleteItem()
 	{
-		return "åˆ é™¤ç‰©å“";
+		return "删除物品";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "æè¿°";
+		return "描述";
 	}
 
 	protected override string _GetTemplateForLabelDisableBadgeConfirm()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦åœç”¨æ­¤å¾½ç« ï¼Ÿ";
+		return "是否确定要停用此徽章？";
 	}
 
 	protected override string _GetTemplateForLabelDiscontinuedItem()
 	{
-		return "ç»ç‰ˆç‰©å“ï¼Œå¯è½¬å”®ã€‚";
+		return "绝版物品，可转售。";
 	}
 
 	/// <summary>
@@ -854,67 +856,67 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelEarnBadgeGameLink(string placeLink)
 	{
-		return $"åœ¨â€œ{placeLink}â€èµ¢å–æ­¤å¾½ç« ";
+		return $"在“{placeLink}”赢取此徽章";
 	}
 
 	protected override string _GetTemplateForLabelEarnBadgeGameLink()
 	{
-		return "åœ¨â€œ{placeLink}â€èµ¢å–æ­¤å¾½ç« ";
+		return "在“{placeLink}”赢取此徽章";
 	}
 
 	protected override string _GetTemplateForLabelEnableBadgeConfirm()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦å¯ç”¨æ­¤å¾½ç« ï¼Ÿ";
+		return "是否确定要启用此徽章？";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "å‘ç”Ÿé”™è¯¯";
+		return "发生错误";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "å…è´¹";
+		return "免费";
 	}
 
 	protected override string _GetTemplateForLabelGenres()
 	{
-		return "ä¸»é¢˜";
+		return "主题";
 	}
 
 	protected override string _GetTemplateForLabelGetBuildersClub()
 	{
-		return "åªæœ‰ Builders Club ä¼šå‘˜æ‰èƒ½è½¬å”®æ”¶è—å“ã€‚ç«‹å³åŠ å…¥ Builders Club å§ï¼";
+		return "只有 Builders Club 会员才能转售收藏品。立即加入 Builders Club 吧！";
 	}
 
 	protected override string _GetTemplateForLabelGetPremiumMembership()
 	{
-		return "åªæœ‰ Premium ä¼šå‘˜æ‰èƒ½è½¬å”®æ”¶è—å“ã€‚ç«‹å³åŠ å…¥ Premium å§ï¼";
+		return "只有 Premium 会员才能转售收藏品。立即加入 Premium 吧！";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPlace()
 	{
-		return "åœ°ç‚¹æ— æ•ˆã€‚";
+		return "地点无效。";
 	}
 
 	protected override string _GetTemplateForLabelInvalidProduct()
 	{
-		return "äº§å“æ— æ•ˆã€‚";
+		return "产品无效。";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailable()
 	{
-		return "æ­¤ç‰©å“åœ¨ä½ çš„é“å…·æ ä¸­ã€‚";
+		return "此物品在你的道具栏中。";
 	}
 
 	protected override string _GetTemplateForLabelItemNotForSale()
 	{
-		return "æ­¤ç‰©å“ç›®å‰ä¸ºéžå–å“ã€‚";
+		return "此物品目前为非卖品。";
 	}
 
 	protected override string _GetTemplateForLabelItemOwned()
 	{
-		return "å·²æ‹¥æœ‰ç‰©å“";
+		return "已拥有物品";
 	}
 
 	/// <summary>
@@ -923,12 +925,12 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemOwnedAmount(string amount)
 	{
-		return $"å·²æ‹¥æœ‰ç‰©å“ï¼ˆ{amount} ä»¶ï¼‰";
+		return $"已拥有物品（{amount} 件）";
 	}
 
 	protected override string _GetTemplateForLabelItemOwnedAmount()
 	{
-		return "å·²æ‹¥æœ‰ç‰©å“ï¼ˆ{amount} ä»¶ï¼‰";
+		return "已拥有物品（{amount} 件）";
 	}
 
 	/// <summary>
@@ -937,12 +939,12 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemRecentPrice(string name, string price)
 	{
-		return $"\"{name}\"çš„è¿‘æœŸå¹³å‡ä»·æ ¼ä¸º {price}ã€‚";
+		return $"\"{name}\"的近期平均价格为 {price}。";
 	}
 
 	protected override string _GetTemplateForLabelItemRecentPrice()
 	{
-		return "\"{name}\"çš„è¿‘æœŸå¹³å‡ä»·æ ¼ä¸º {price}ã€‚";
+		return "\"{name}\"的近期平均价格为 {price}。";
 	}
 
 	/// <summary>
@@ -952,17 +954,17 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelMarketplaceFee(string percent)
 	{
-		return $"å¸‚é›†è´¹ï¼ˆ{percent}%ï¼‰";
+		return $"市集费（{percent}%）";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "å¸‚é›†è´¹ï¼ˆ{percent}%ï¼‰";
+		return "市集费（{percent}%）";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "æ— ";
+		return "无";
 	}
 
 	protected override string _GetTemplateForLabelNotAvailable()
@@ -977,47 +979,47 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelOffsaleCountdownHourMinuteSecond(string numberOfHours, string numberOfMinutes, string numberOfSeconds)
 	{
-		return $"{numberOfHours} å°æ—¶ {numberOfMinutes} åˆ† {numberOfSeconds} ç§’åŽä¸‹æž¶";
+		return $"{numberOfHours} 小时 {numberOfMinutes} 分 {numberOfSeconds} 秒后下架";
 	}
 
 	protected override string _GetTemplateForLabelOffsaleCountdownHourMinuteSecond()
 	{
-		return "{numberOfHours} å°æ—¶ {numberOfMinutes} åˆ† {numberOfSeconds} ç§’åŽä¸‹æž¶";
+		return "{numberOfHours} 小时 {numberOfMinutes} 分 {numberOfSeconds} 秒后下架";
 	}
 
 	protected override string _GetTemplateForLabelPrice()
 	{
-		return "ä»·æ ¼";
+		return "价格";
 	}
 
 	protected override string _GetTemplateForLabelPriceIsInvalid()
 	{
-		return "ä»·æ ¼æ— æ•ˆ";
+		return "价格无效";
 	}
 
 	protected override string _GetTemplateForLabelPriceMinimumOne()
 	{
-		return "ä»·æ ¼ï¼ˆæœ€ä½Ž 1ï¼‰";
+		return "价格（最低 1）";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseCompleted()
 	{
-		return "è´­ä¹°å·²å®Œæˆ";
+		return "购买已完成";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "ç¨€æœ‰åº¦";
+		return "稀有度";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "é˜…è¯»æ›´å¤š";
+		return "阅读更多";
 	}
 
 	protected override string _GetTemplateForLabelRentingItem()
 	{
-		return "ç§Ÿç”¨ç‰©å“";
+		return "租用物品";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1031,32 +1033,32 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSellConfirm(string name, string price)
 	{
-		return $"æ˜¯å¦ç¡®å®šè¦ä»¥ {price} å‡ºå”®\"{name}\"ï¼Ÿ";
+		return $"是否确定要以 {price} 出售\"{name}\"？";
 	}
 
 	protected override string _GetTemplateForLabelSellConfirm()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦ä»¥ {price} å‡ºå”®\"{name}\"ï¼Ÿ";
+		return "是否确定要以 {price} 出售\"{name}\"？";
 	}
 
 	protected override string _GetTemplateForLabelSellYourCollectibleItem()
 	{
-		return "å‡ºå”®ä½ çš„æ”¶è—å“";
+		return "出售你的收藏品";
 	}
 
 	protected override string _GetTemplateForLabelSerializedLimitedRelease()
 	{
-		return "æŒ‰åºå·é™é‡å‘è¡Œï¼Œå¯è½¬å”®ã€‚";
+		return "按序号限量发行，可转售。";
 	}
 
 	protected override string _GetTemplateForLabelSerialNotAvailable()
 	{
-		return "æ— åºå·";
+		return "无序号";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumber()
 	{
-		return "åºå·";
+		return "序号";
 	}
 
 	/// <summary>
@@ -1065,47 +1067,47 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSerialNumberOfTotal(string number, string total)
 	{
-		return $"åºå· #{number} / {total}";
+		return $"序号 #{number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumberOfTotal()
 	{
-		return "åºå· #{number} / {total}";
+		return "序号 #{number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "æ”¶èµ·";
+		return "收起";
 	}
 
 	protected override string _GetTemplateForLabelTags()
 	{
-		return "æ ‡ç­¾";
+		return "标签";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSale()
 	{
-		return "ä¸‹æž¶";
+		return "下架";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSaleConfirm()
 	{
-		return "æ˜¯å¦ç¡®å®šè¦å°†æ­¤ç‰©å“ä¸‹æž¶ï¼Ÿ";
+		return "是否确定要将此物品下架？";
 	}
 
 	protected override string _GetTemplateForLabelThirteenPlusOnly()
 	{
-		return "ä»…é™ 13+ã€‚";
+		return "仅限 13+。";
 	}
 
 	protected override string _GetTemplateForLabelType()
 	{
-		return "ç±»åž‹";
+		return "类型";
 	}
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "å·²æ›´æ–°";
+		return "已更新";
 	}
 
 	/// <summary>
@@ -1114,12 +1116,12 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUpdatedBy(string link)
 	{
-		return $"ï¼ˆæ¥æºï¼š {link}ï¼‰";
+		return $"（来源： {link}）";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedBy()
 	{
-		return "ï¼ˆæ¥æºï¼š {link}ï¼‰";
+		return "（来源： {link}）";
 	}
 
 	/// <summary>
@@ -1129,67 +1131,67 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUseGamePassLink(string placeLink)
 	{
-		return $"å‰å¾€â€œ{placeLink}â€ä½¿ç”¨æ­¤æ¸¸æˆé€šè¡Œè¯";
+		return $"前往“{placeLink}”使用此游戏通行证";
 	}
 
 	protected override string _GetTemplateForLabelUseGamePassLink()
 	{
-		return "å‰å¾€â€œ{placeLink}â€ä½¿ç”¨æ­¤æ¸¸æˆé€šè¡Œè¯";
+		return "前往“{placeLink}”使用此游戏通行证";
 	}
 
 	protected override string _GetTemplateForLabelYouGet()
 	{
-		return "ä½ èŽ·å¾—";
+		return "你获得";
 	}
 
 	protected override string _GetTemplateForResponseAddedToProfile()
 	{
-		return "å·²æ·»åŠ è‡³ä½ çš„ä¸ªäººèµ„æ–™";
+		return "已添加至你的个人资料";
 	}
 
 	protected override string _GetTemplateForResponseAddedToYourAvater()
 	{
-		return "å·²æ·»åŠ è‡³ä½ çš„è™šæ‹Ÿå½¢è±¡";
+		return "已添加至你的虚拟形象";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyHaveMaxItems()
 	{
-		return "ä½ æ¸¸æˆä¸­çš„ç‰©å“æ•°é‡å·²è¾¾ä¸Šé™ï¼";
+		return "你游戏中的物品数量已达上限！";
 	}
 
 	protected override string _GetTemplateForResponseDisabledBadge()
 	{
-		return "å·²æˆåŠŸåœç”¨å¾½ç« ";
+		return "已成功停用徽章";
 	}
 
 	protected override string _GetTemplateForResponseEnabledBadge()
 	{
-		return "å·²æˆåŠŸå¯ç”¨å¾½ç« ";
+		return "已成功启用徽章";
 	}
 
 	protected override string _GetTemplateForResponseFailedToAddToProfile()
 	{
-		return "æ— æ³•æ·»åŠ è‡³ä¸ªäººèµ„æ–™";
+		return "无法添加至个人资料";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDeleteFromInventory()
 	{
-		return "æ— æ³•ä»Žé“å…·ä¸­åˆ é™¤æ­¤ç‰©å“";
+		return "无法从道具中删除此物品";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDisableBadge()
 	{
-		return "æ— æ³•åœç”¨å¾½ç« ";
+		return "无法停用徽章";
 	}
 
 	protected override string _GetTemplateForResponseFailedToEnableBadge()
 	{
-		return "æ— æ³•å¯ç”¨å¾½ç« ";
+		return "无法启用徽章";
 	}
 
 	protected override string _GetTemplateForResponseFailedToRemoveFromProfile()
 	{
-		return "æ— æ³•ä»Žä¸ªäººèµ„æ–™ç§»é™¤";
+		return "无法从个人资料移除";
 	}
 
 	/// <summary>
@@ -1199,12 +1201,12 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAddSuccess(string placeName)
 	{
-		return $"å·²å°† {placeName} æ·»åŠ è‡³ä½ çš„æ¸¸æˆã€‚";
+		return $"已将 {placeName} 添加至你的游戏。";
 	}
 
 	protected override string _GetTemplateForResponseGearAddSuccess()
 	{
-		return "å·²å°† {placeName} æ·»åŠ è‡³ä½ çš„æ¸¸æˆã€‚";
+		return "已将 {placeName} 添加至你的游戏。";
 	}
 
 	/// <summary>
@@ -1214,27 +1216,27 @@ internal class ItemResources_zh_cn : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAlreadyAdded(string placeName)
 	{
-		return $"ä½ å·²å°†æ­¤è£…å¤‡æ·»åŠ è‡³ {placeName}ã€‚";
+		return $"你已将此装备添加至 {placeName}。";
 	}
 
 	protected override string _GetTemplateForResponseGearAlreadyAdded()
 	{
-		return "ä½ å·²å°†æ­¤è£…å¤‡æ·»åŠ è‡³ {placeName}ã€‚";
+		return "你已将此装备添加至 {placeName}。";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromInventory()
 	{
-		return "å·²æˆåŠŸä»Žä½ çš„é“å…·ç§»é™¤";
+		return "已成功从你的道具移除";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromProfile()
 	{
-		return "å·²ä»Žä½ çš„ä¸ªäººèµ„æ–™åˆ é™¤";
+		return "已从你的个人资料删除";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromYourAvater()
 	{
-		return "å·²ä»Žä½ çš„è™šæ‹Ÿå½¢è±¡ç§»é™¤";
+		return "已从你的虚拟形象移除";
 	}
 }
 

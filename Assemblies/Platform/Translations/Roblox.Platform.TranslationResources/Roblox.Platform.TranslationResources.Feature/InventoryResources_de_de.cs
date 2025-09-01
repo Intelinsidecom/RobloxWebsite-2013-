@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides InventoryResources_en_us to provide locale specific translations where possible,
@@ -45,7 +47,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// Key: "Label.BodyParts"
 	/// English String: "Body Parts"
 	/// </summary>
-	public override string LabelBodyParts => "KÃ¶rperteile";
+	public override string LabelBodyParts => "Körperteile";
 
 	/// <summary>
 	/// Key: "Label.Bundles"
@@ -131,7 +133,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// Key: "Message.UserHasNoFavoritesCategory"
 	/// English String: "This user has not favorited items in this category."
 	/// </summary>
-	public override string MessageUserHasNoFavoritesCategory => "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefÃ¼gt.";
+	public override string MessageUserHasNoFavoritesCategory => "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefügt.";
 
 	/// <summary>
 	/// Key: "Message.UserHasNoItemsCategory"
@@ -204,7 +206,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForLabelBodyParts()
 	{
-		return "KÃ¶rperteile";
+		return "Körperteile";
 	}
 
 	protected override string _GetTemplateForLabelBundles()
@@ -264,12 +266,12 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 	/// </summary>
 	public override string LabelRentalExpireTime(string expireTime)
 	{
-		return $"LÃ¤uft ab: {expireTime}";
+		return $"Läuft ab: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelRentalExpireTime()
 	{
-		return "LÃ¤uft ab: {expireTime}";
+		return "Läuft ab: {expireTime}";
 	}
 
 	protected override string _GetTemplateForLabelVipServers()
@@ -349,7 +351,7 @@ internal class InventoryResources_de_de : InventoryResources_en_us, IInventoryRe
 
 	protected override string _GetTemplateForMessageUserHasNoFavoritesCategory()
 	{
-		return "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefÃ¼gt.";
+		return "Dieser Benutzer hat keine Artikel in dieser Kategorie zu seinen Favoriten hinzugefügt.";
 	}
 
 	/// <summary>

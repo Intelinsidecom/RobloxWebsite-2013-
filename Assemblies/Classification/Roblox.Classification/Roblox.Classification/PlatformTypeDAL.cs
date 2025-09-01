@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
@@ -190,3 +190,4 @@ public class PlatformTypeDAL
 		return EntityHelper.GetDataEntityIDCollection<byte>(new DbInfo(ConnectionString, "PlatformTypes_GetPlatformTypeIDsByDeviceTypeID_Paged", queryParameters));
 	}
 }
+

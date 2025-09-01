@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameGearOptionsDisplayResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class GameGearOptionsDisplayResources_de_de : GameGearOptionsDisplayRes
 	/// Key: "LabelNoGear"
 	/// English String: "No Gear Allowed"
 	/// </summary>
-	public override string LabelNoGear => "Keine AusrÃ¼stung erlaubt";
+	public override string LabelNoGear => "Keine Ausrüstung erlaubt";
 
 	public GameGearOptionsDisplayResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -34,17 +36,17 @@ internal class GameGearOptionsDisplayResources_de_de : GameGearOptionsDisplayRes
 	/// </summary>
 	public override string LabelGearOnly(string GearName)
 	{
-		return $"Nur â€ž{GearName}â€œ-AusrÃ¼stung";
+		return $"Nur „{GearName}“-Ausrüstung";
 	}
 
 	protected override string _GetTemplateForLabelGearOnly()
 	{
-		return "Nur â€ž{GearName}â€œ-AusrÃ¼stung";
+		return "Nur „{GearName}“-Ausrüstung";
 	}
 
 	protected override string _GetTemplateForLabelNoGear()
 	{
-		return "Keine AusrÃ¼stung erlaubt";
+		return "Keine Ausrüstung erlaubt";
 	}
 }
 

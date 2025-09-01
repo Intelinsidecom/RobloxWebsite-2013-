@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using Roblox.TrackingQueue;
-namespace Roblox.Moderationinternal {
+namespace Roblox.Moderation {
     class ReviewTaskDequeuer<TTask> : IReviewTaskDequeuer<TTask> where TTask : IReviewTask
 
 {

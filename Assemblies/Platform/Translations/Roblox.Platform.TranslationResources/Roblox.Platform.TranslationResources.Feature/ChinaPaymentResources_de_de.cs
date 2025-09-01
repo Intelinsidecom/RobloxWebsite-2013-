@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ChinaPaymentResources_en_us to provide locale specific translations where possible,
@@ -16,7 +18,7 @@ internal class ChinaPaymentResources_de_de : ChinaPaymentResources_en_us, IChina
 	/// Key: "Message.ScriptNotLoadError"
 	/// English String: "We have a problem loading the Midas script now. Please try again later"
 	/// </summary>
-	public override string MessageScriptNotLoadError => "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es spÃ¤ter erneut";
+	public override string MessageScriptNotLoadError => "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es später erneut";
 
 	/// <summary>
 	/// Key: "Message.SessionExpiredError"
@@ -36,7 +38,7 @@ internal class ChinaPaymentResources_de_de : ChinaPaymentResources_en_us, IChina
 
 	protected override string _GetTemplateForMessageScriptNotLoadError()
 	{
-		return "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es spÃ¤ter erneut";
+		return "Das Midas-Skript konnte nicht geladen werden. Bitte versuch es später erneut";
 	}
 
 	protected override string _GetTemplateForMessageSessionExpiredError()

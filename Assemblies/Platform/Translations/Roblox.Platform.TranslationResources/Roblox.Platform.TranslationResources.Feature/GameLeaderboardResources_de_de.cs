@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLeaderboardResources_en_us to provide locale specific translations where possible,
@@ -52,13 +54,13 @@ internal class GameLeaderboardResources_de_de : GameLeaderboardResources_en_us, 
 	/// Key: "Label.GoGetPoints"
 	/// English String: "You are not yet ranked for this time period. Go earn some Points!"
 	/// </summary>
-	public override string LabelGoGetPoints => "Du hast noch keinen Rang fÃ¼r diesen Zeitabschnitt. Hol dir ein paar Punkte!";
+	public override string LabelGoGetPoints => "Du hast noch keinen Rang für diesen Zeitabschnitt. Hol dir ein paar Punkte!";
 
 	/// <summary>
 	/// Key: "Label.Leader"
 	/// English String: "Leader"
 	/// </summary>
-	public override string LabelLeader => "AnfÃ¼hrer";
+	public override string LabelLeader => "Anführer";
 
 	/// <summary>
 	/// Key: "Label.Loading"
@@ -174,12 +176,12 @@ internal class GameLeaderboardResources_de_de : GameLeaderboardResources_en_us, 
 
 	protected override string _GetTemplateForLabelGoGetPoints()
 	{
-		return "Du hast noch keinen Rang fÃ¼r diesen Zeitabschnitt. Hol dir ein paar Punkte!";
+		return "Du hast noch keinen Rang für diesen Zeitabschnitt. Hol dir ein paar Punkte!";
 	}
 
 	protected override string _GetTemplateForLabelLeader()
 	{
-		return "AnfÃ¼hrer";
+		return "Anführer";
 	}
 
 	protected override string _GetTemplateForLabelLoading()

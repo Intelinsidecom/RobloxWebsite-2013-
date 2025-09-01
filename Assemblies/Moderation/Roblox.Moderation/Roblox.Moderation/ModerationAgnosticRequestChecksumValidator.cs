@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Linq.Expressions;
 using System.Security.Cryptography;
 using System.Text;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
-using Roblox.Platform.Moderation.Properties;
+using Roblox.Moderation.Properties;
 namespace Roblox.Moderation {
     /// <summary>
 

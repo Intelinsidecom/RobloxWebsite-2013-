@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class CaptchaResources_en_us : TranslationResourcesBase, ICaptchaResources, ITranslationResources
 
 {
@@ -40,3 +40,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CreditCardExpiringModalResources_en_us to provide locale specific translations where possible,
@@ -18,21 +20,21 @@ internal class CreditCardExpiringModalResources_fr_fr : CreditCardExpiringModalR
 	/// button text
 	/// English String: "Update Now"
 	/// </summary>
-	public override string ActionUpdateNow => "Mettre Ã  jour maintenant";
+	public override string ActionUpdateNow => "Mettre à jour maintenant";
 
 	/// <summary>
 	/// Key: "Description.UpdateYourCreditCard"
 	/// description text
 	/// English String: "Please update your credit card information to make sure your Builders Club membership doesn't expire!"
 	/// </summary>
-	public override string DescriptionUpdateYourCreditCard => "Veuillez mettre Ã  jour vos informations de carte de crÃ©dit afin de vous assurer que votre abonnement au Builders Club n'expire pas\u00a0!";
+	public override string DescriptionUpdateYourCreditCard => "Veuillez mettre à jour vos informations de carte de crédit afin de vous assurer que votre abonnement au Builders Club n'expire pas\u00a0!";
 
 	/// <summary>
 	/// Key: "Heading.CreditCardExpiration"
 	/// modal heading
 	/// English String: "Credit Card Expiration"
 	/// </summary>
-	public override string HeadingCreditCardExpiration => "Expiration de la carte de crÃ©dit";
+	public override string HeadingCreditCardExpiration => "Expiration de la carte de crédit";
 
 	public CreditCardExpiringModalResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -46,7 +48,7 @@ internal class CreditCardExpiringModalResources_fr_fr : CreditCardExpiringModalR
 
 	protected override string _GetTemplateForActionUpdateNow()
 	{
-		return "Mettre Ã  jour maintenant";
+		return "Mettre à jour maintenant";
 	}
 
 	/// <summary>
@@ -56,22 +58,22 @@ internal class CreditCardExpiringModalResources_fr_fr : CreditCardExpiringModalR
 	/// </summary>
 	public override string DescriptionCreditCardExpiration(string expirationDate)
 	{
-		return $"Votre carte de crÃ©dit expirera le {expirationDate}\u00a0!";
+		return $"Votre carte de crédit expirera le {expirationDate}\u00a0!";
 	}
 
 	protected override string _GetTemplateForDescriptionCreditCardExpiration()
 	{
-		return "Votre carte de crÃ©dit expirera le {expirationDate}\u00a0!";
+		return "Votre carte de crédit expirera le {expirationDate}\u00a0!";
 	}
 
 	protected override string _GetTemplateForDescriptionUpdateYourCreditCard()
 	{
-		return "Veuillez mettre Ã  jour vos informations de carte de crÃ©dit afin de vous assurer que votre abonnement au Builders Club n'expire pas\u00a0!";
+		return "Veuillez mettre à jour vos informations de carte de crédit afin de vous assurer que votre abonnement au Builders Club n'expire pas\u00a0!";
 	}
 
 	protected override string _GetTemplateForHeadingCreditCardExpiration()
 	{
-		return "Expiration de la carte de crÃ©dit";
+		return "Expiration de la carte de crédit";
 	}
 }
 

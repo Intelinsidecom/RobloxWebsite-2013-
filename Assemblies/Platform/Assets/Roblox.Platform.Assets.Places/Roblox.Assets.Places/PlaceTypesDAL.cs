@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Assets.Places.Properties;
 using Roblox.Common;
 using Roblox.Data;
@@ -68,3 +68,4 @@ public sealed class PlaceTypesDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(DBConnectionString_PlaceAttributeDAL, "PlaceTypes_GetPlaceTypeByType", queryParameters), BuildDAL);
 	}
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
@@ -40,15 +42,15 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros paÃ­ses.";
+	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros países.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "Aunque algunos juegos estÃ¡n disponibles en el idioma seleccionado, el que acabas de elegir no es totalmente compatible con roblox.com.";
+	public override string DescriptionUnsupportedLanguage => "Aunque algunos juegos están disponibles en el idioma seleccionado, el que acabas de elegir no es totalmente compatible con roblox.com.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
@@ -67,14 +69,14 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "QuiÃ©nes somos";
+	public override string LabelAboutUs => "Quiénes somos";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "Error de autenticaciÃ³n";
+	public override string LabelAuthenticationError => "Error de autenticación";
 
 	/// <summary>
 	/// Key: "Label.Badges"
@@ -101,7 +103,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "ConfiguraciÃ³n del juego";
+	public override string LabelConfigureGame => "Configuración del juego";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
@@ -115,14 +117,14 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "ConfiguraciÃ³n del servidor VIP";
+	public override string LabelConfigurePrivateServer => "Configuración del servidor VIP";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "ContÃ¡ctanos";
+	public override string LabelContactUs => "Contáctanos";
 
 	/// <summary>
 	/// Key: "Label.Create"
@@ -168,7 +170,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "Â¿EstÃ¡s buscando Mis noticias? Ahora encontrarÃ¡s el enlace en el menÃº lateral.";
+	public override string LabelFindMyFeed => "¿Estás buscando Mis noticias? Ahora encontrarás el enlace en el menú lateral.";
 
 	/// <summary>
 	/// Key: "Label.Help"
@@ -194,7 +196,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "MercancÃ­a";
+	public override string LabelMerch => "Mercancía";
 
 	/// <summary>
 	/// Key: "Label.Parents"
@@ -207,7 +209,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "EstadÃ­sticas del lugar";
+	public override string LabelPlaceStatistics => "Estadísticas del lugar";
 
 	/// <summary>
 	/// Key: "Label.Players"
@@ -245,7 +247,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "CatÃ¡logo";
+	public override string LabelsCatalog => "Catálogo";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
@@ -299,7 +301,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "Iniciar sesiÃ³n";
+	public override string LabelsLogin => "Iniciar sesión";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
@@ -354,20 +356,20 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// page title
 	/// English String: "Support"
 	/// </summary>
-	public override string LabelSupport => "Asistencia tÃ©cnica";
+	public override string LabelSupport => "Asistencia técnica";
 
 	/// <summary>
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "TÃ©rminos";
+	public override string LabelTerms => "Términos";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "TÃ©rminos de uso";
+	public override string LabelTermsOfUse => "Términos de uso";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
@@ -419,37 +421,37 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"Â¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
+		return $"¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "Â¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
+		return "¿Quieres comprarle el acceso al lugar: {placeName} de {creatorName} por {robux}?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "Â©2018 Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros paÃ­ses.";
+		return "©2018 Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros países.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"Â©{copyrightYear} Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros paÃ­ses.";
+		return $"©{copyrightYear} Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros países.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "Â©{copyrightYear} Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros paÃ­ses.";
+		return "©{copyrightYear} Roblox Corporation. Roblox, el logotipo de Roblox y Powering Imagination son algunas de nuestras marcas registradas y no registradas en los Estados Unidos y otros países.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "Aunque algunos juegos estÃ¡n disponibles en el idioma seleccionado, el que acabas de elegir no es totalmente compatible con roblox.com.";
+		return "Aunque algunos juegos están disponibles en el idioma seleccionado, el que acabas de elegir no es totalmente compatible con roblox.com.";
 	}
 
 	/// <summary>
@@ -458,12 +460,12 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"{userLanguage} no es actualmente compatible en roblox.com. VerÃ¡s el contenido en el juego en {platformLanguage} y roblox.com estÃ¡ en inglÃ©s.";
+		return $"{userLanguage} no es actualmente compatible en roblox.com. Verás el contenido en el juego en {platformLanguage} y roblox.com está en inglés.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "{userLanguage} no es actualmente compatible en roblox.com. VerÃ¡s el contenido en el juego en {platformLanguage} y roblox.com estÃ¡ en inglÃ©s.";
+		return "{userLanguage} no es actualmente compatible en roblox.com. Verás el contenido en el juego en {platformLanguage} y roblox.com está en inglés.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
@@ -478,12 +480,12 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "QuiÃ©nes somos";
+		return "Quiénes somos";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "Error de autenticaciÃ³n";
+		return "Error de autenticación";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
@@ -503,7 +505,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "ConfiguraciÃ³n del juego";
+		return "Configuración del juego";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
@@ -513,12 +515,12 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "ConfiguraciÃ³n del servidor VIP";
+		return "Configuración del servidor VIP";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "ContÃ¡ctanos";
+		return "Contáctanos";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
@@ -553,7 +555,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "Â¿EstÃ¡s buscando Mis noticias? Ahora encontrarÃ¡s el enlace en el menÃº lateral.";
+		return "¿Estás buscando Mis noticias? Ahora encontrarás el enlace en el menú lateral.";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
@@ -573,7 +575,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "MercancÃ­a";
+		return "Mercancía";
 	}
 
 	protected override string _GetTemplateForLabelParents()
@@ -583,7 +585,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "EstadÃ­sticas del lugar";
+		return "Estadísticas del lugar";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
@@ -613,7 +615,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "CatÃ¡logo";
+		return "Catálogo";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
@@ -658,7 +660,7 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "Iniciar sesiÃ³n";
+		return "Iniciar sesión";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
@@ -717,17 +719,17 @@ internal class FeaturesResources_es_es : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelSupport()
 	{
-		return "Asistencia tÃ©cnica";
+		return "Asistencia técnica";
 	}
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "TÃ©rminos";
+		return "Términos";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "TÃ©rminos de uso";
+		return "Términos de uso";
 	}
 
 	protected override string _GetTemplateForLabelThanks()

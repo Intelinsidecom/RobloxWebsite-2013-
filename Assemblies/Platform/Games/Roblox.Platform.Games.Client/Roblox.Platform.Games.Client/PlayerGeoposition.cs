@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class PlayerGeoposition
+namespace Roblox.Platform.Games.Client {
+    public class PlayerGeoposition
 
 {
 	public double Latitude { get; }

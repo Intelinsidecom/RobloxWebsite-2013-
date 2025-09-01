@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
@@ -28,7 +30,7 @@ internal class GameLanguagesResources_fr_fr : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "GÃ©rer traductions\u00a0";
+	public override string ActionManageTranslations => "Gérer traductions\u00a0";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
@@ -70,7 +72,7 @@ internal class GameLanguagesResources_fr_fr : GameLanguagesResources_en_us, IGam
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "Toutes les traductions pour cette langue seront supprimÃ©es. Cette action est irrÃ©versible.";
+	public override string MessageDeleteLanguageWarning => "Toutes les traductions pour cette langue seront supprimées. Cette action est irréversible.";
 
 	public GameLanguagesResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -94,7 +96,7 @@ internal class GameLanguagesResources_fr_fr : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "GÃ©rer traductions\u00a0";
+		return "Gérer traductions\u00a0";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
@@ -129,7 +131,7 @@ internal class GameLanguagesResources_fr_fr : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "Toutes les traductions pour cette langue seront supprimÃ©es. Cette action est irrÃ©versible.";
+		return "Toutes les traductions pour cette langue seront supprimées. Cette action est irréversible.";
 	}
 }
 

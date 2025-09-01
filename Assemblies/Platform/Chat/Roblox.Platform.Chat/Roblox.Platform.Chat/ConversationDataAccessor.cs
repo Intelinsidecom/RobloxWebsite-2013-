@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using Roblox.EventLog;
 using Roblox.Platform.Chat.Entities;
@@ -583,3 +583,4 @@ internal class ConversationDataAccessor : IConversationDataAccessor
 		return sqlException.Message.StartsWith("Cannot insert duplicate key");
 	}
 }
+

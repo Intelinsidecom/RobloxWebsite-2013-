@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
@@ -17,7 +19,7 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// Key: "Heading.Comments"
 	/// English String: "Comments"
 	/// </summary>
-	public override string HeadingComments => "ComentÃ¡rios";
+	public override string HeadingComments => "Comentários";
 
 	/// <summary>
 	/// Key: "Heading.LoginToComment"
@@ -49,7 +51,7 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// Feedback for user when their comment has been moderated
 	/// English String: "Your comment has been moderated."
 	/// </summary>
-	public override string LabelCommentModerated => "Seu comentÃ¡rio foi moderado.";
+	public override string LabelCommentModerated => "Seu comentário foi moderado.";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
@@ -61,37 +63,37 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "Esta funcionalidade nÃ£o estÃ¡ disponÃ­vel.";
+	public override string LabelFeatureNotAvailable => "Esta funcionalidade não está disponível.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "Os comentÃ¡rios devem ser sobre o item ou lugar do qual vocÃª estÃ¡ comentando. Links nÃ£o sÃ£o permitidos.";
+	public override string LabelLinksNotAllowedMessage => "Os comentários devem ser sobre o item ou lugar do qual você está comentando. Links não são permitidos.";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
 	/// English String: "Links Not Allowed"
 	/// </summary>
-	public override string LabelLinksNotAllowedTitle => "Links nÃ£o permitidos";
+	public override string LabelLinksNotAllowedTitle => "Links não permitidos";
 
 	/// <summary>
 	/// Key: "Label.MoreComments"
 	/// English String: "More Comments"
 	/// </summary>
-	public override string LabelMoreComments => "Mais comentÃ¡rios";
+	public override string LabelMoreComments => "Mais comentários";
 
 	/// <summary>
 	/// Key: "Label.NoCommentsFound"
 	/// English String: "No comments found."
 	/// </summary>
-	public override string LabelNoCommentsFound => "Nenhum comentÃ¡rio encontrado.";
+	public override string LabelNoCommentsFound => "Nenhum comentário encontrado.";
 
 	/// <summary>
 	/// Key: "Label.PostComment"
 	/// English String: "Post Comment"
 	/// </summary>
-	public override string LabelPostComment => "Publicar comentÃ¡rio";
+	public override string LabelPostComment => "Publicar comentário";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
@@ -140,20 +142,20 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "VocÃª estÃ¡ publicando comentÃ¡rios rÃ¡pido demais. Espere um pouco antes do seu prÃ³ximo comentÃ¡rio.";
+	public override string LabelUserFlooded => "Você está publicando comentários rápido demais. Espere um pouco antes do seu próximo comentário.";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "username"
 	/// </summary>
-	public override string LabelUsername => "nome de usuÃ¡rio";
+	public override string LabelUsername => "nome de usuário";
 
 	/// <summary>
 	/// Key: "Label.UserTooNew"
 	/// Feedback for user when they try to post a comments for an item with a newly registered account
 	/// English String: "Accounts must be older than 1 day to post comments."
 	/// </summary>
-	public override string LabelUserTooNew => "Contas devem existir hÃ¡ mais de 1 dia para publicarem comentÃ¡rios.";
+	public override string LabelUserTooNew => "Contas devem existir há mais de 1 dia para publicarem comentários.";
 
 	/// <summary>
 	/// Key: "Label.Verify"
@@ -165,7 +167,7 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// Key: "Label.WriteAComment"
 	/// English String: "Write a comment!"
 	/// </summary>
-	public override string LabelWriteAComment => "Escreva um comentÃ¡rio!";
+	public override string LabelWriteAComment => "Escreva um comentário!";
 
 	public CommentsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -184,17 +186,17 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string DescriptionLoginToComment(string linkStart, string linkEnd)
 	{
-		return $"VocÃª deve se conectar para comentar. {linkStart}Conecte-se ou cadastre-se{linkEnd} para continuar.";
+		return $"Você deve se conectar para comentar. {linkStart}Conecte-se ou cadastre-se{linkEnd} para continuar.";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginToComment()
 	{
-		return "VocÃª deve se conectar para comentar. {linkStart}Conecte-se ou cadastre-se{linkEnd} para continuar.";
+		return "Você deve se conectar para comentar. {linkStart}Conecte-se ou cadastre-se{linkEnd} para continuar.";
 	}
 
 	protected override string _GetTemplateForHeadingComments()
 	{
-		return "ComentÃ¡rios";
+		return "Comentários";
 	}
 
 	protected override string _GetTemplateForHeadingLoginToComment()
@@ -219,7 +221,7 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelCommentModerated()
 	{
-		return "Seu comentÃ¡rio foi moderado.";
+		return "Seu comentário foi moderado.";
 	}
 
 	/// <summary>
@@ -228,12 +230,12 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"VocÃª precisa validar o seu e-mail antes de poder comentar. VocÃª pode verificar seu e-mail na pÃ¡gina {accountPageLink}.";
+		return $"Você precisa validar o seu e-mail antes de poder comentar. Você pode verificar seu e-mail na página {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "VocÃª precisa validar o seu e-mail antes de poder comentar. VocÃª pode verificar seu e-mail na pÃ¡gina {accountPageLink}.";
+		return "Você precisa validar o seu e-mail antes de poder comentar. Você pode verificar seu e-mail na página {accountPageLink}.";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
@@ -243,32 +245,32 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "Esta funcionalidade nÃ£o estÃ¡ disponÃ­vel.";
+		return "Esta funcionalidade não está disponível.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "Os comentÃ¡rios devem ser sobre o item ou lugar do qual vocÃª estÃ¡ comentando. Links nÃ£o sÃ£o permitidos.";
+		return "Os comentários devem ser sobre o item ou lugar do qual você está comentando. Links não são permitidos.";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
 	{
-		return "Links nÃ£o permitidos";
+		return "Links não permitidos";
 	}
 
 	protected override string _GetTemplateForLabelMoreComments()
 	{
-		return "Mais comentÃ¡rios";
+		return "Mais comentários";
 	}
 
 	protected override string _GetTemplateForLabelNoCommentsFound()
 	{
-		return "Nenhum comentÃ¡rio encontrado.";
+		return "Nenhum comentário encontrado.";
 	}
 
 	protected override string _GetTemplateForLabelPostComment()
 	{
-		return "Publicar comentÃ¡rio";
+		return "Publicar comentário";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
@@ -308,17 +310,17 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "VocÃª estÃ¡ publicando comentÃ¡rios rÃ¡pido demais. Espere um pouco antes do seu prÃ³ximo comentÃ¡rio.";
+		return "Você está publicando comentários rápido demais. Espere um pouco antes do seu próximo comentário.";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "nome de usuÃ¡rio";
+		return "nome de usuário";
 	}
 
 	protected override string _GetTemplateForLabelUserTooNew()
 	{
-		return "Contas devem existir hÃ¡ mais de 1 dia para publicarem comentÃ¡rios.";
+		return "Contas devem existir há mais de 1 dia para publicarem comentários.";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
@@ -328,7 +330,7 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 
 	protected override string _GetTemplateForLabelWriteAComment()
 	{
-		return "Escreva um comentÃ¡rio!";
+		return "Escreva um comentário!";
 	}
 
 	/// <summary>
@@ -337,12 +339,12 @@ internal class CommentsResources_pt_br : CommentsResources_en_us, ICommentsResou
 	/// </summary>
 	public override string LabelXHoursAgo(string numberOfHours)
 	{
-		return $"HÃ¡ {numberOfHours} horas";
+		return $"Há {numberOfHours} horas";
 	}
 
 	protected override string _GetTemplateForLabelXHoursAgo()
 	{
-		return "HÃ¡ {numberOfHours} horas";
+		return "Há {numberOfHours} horas";
 	}
 }
 

@@ -1,7 +1,7 @@
-﻿using System;
-using Roblox.Platform.Membership.Core;
-using Roblox.Platform.Moderation.Properties;
-namespace Roblox.Moderationinternal {
+using System;
+using Roblox.Platform.MembershipCore;
+using Roblox.Moderation.Properties;
+namespace Roblox.Moderation {
     abstract class ModerationReviewTaskLeaseFactoryBase<TIReviewTask, TReviewTaskLease, TIReviewTaskLease_Internal, TIReviewTaskLease, TIReviewTaskLeaseEntity> where TIReviewTask : IReviewTask where TReviewTaskLease : TIReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease_Internal : IReviewTaskLease_Internal, TIReviewTaskLease where TIReviewTaskLease : IReviewTaskLease where TIReviewTaskLeaseEntity : IReviewTaskLeaseEntity
 
 {

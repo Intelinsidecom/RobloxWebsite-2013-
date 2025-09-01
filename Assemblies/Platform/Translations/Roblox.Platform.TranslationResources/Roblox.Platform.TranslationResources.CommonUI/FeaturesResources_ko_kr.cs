@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides FeaturesResources_en_us to provide locale specific translations where possible,
@@ -10,308 +12,308 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Action.BackToTop"
 	/// English String: "Back To Top"
 	/// </summary>
-	public override string ActionBackToTop => "ë§¨ ìœ„ë¡œ ëŒì•„ê°€ê¸°";
+	public override string ActionBackToTop => "맨 위로 돌아가기";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// Purchase access to the place button
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "ì´ìš©ê¶Œ êµ¬ë§¤";
+	public override string ActionBuyAccess => "이용권 구매";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Ok"
 	/// English String: "Ok"
 	/// </summary>
-	public override string ActionOk => "í™•ì¸";
+	public override string ActionOk => "확인";
 
 	/// <summary>
 	/// Key: "Action.sUpgradeNow"
 	/// English String: "Upgrade Now"
 	/// </summary>
-	public override string ActionsUpgradeNow => "ì—…ê·¸ë ˆì´ë“œ";
+	public override string ActionsUpgradeNow => "업그레이드";
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessage"
 	/// Copyright message at the bottom of the website
-	/// English String: "Â©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©2018 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
-	public override string DescriptionCopyRightMessage => "Â©2018 Roblox Corporation. Roblox, Roblox ë¡œê³  ë° Powering Imaginationì€ ë¯¸êµ­ ë° ê¸°íƒ€ êµ­ê°€ì—ì„œ ë“±ë¡ ë° ë¯¸ë“±ë¡ ìƒí‘œìž…ë‹ˆë‹¤.";
+	public override string DescriptionCopyRightMessage => "©2018 Roblox Corporation. Roblox, Roblox 로고 및 Powering Imagination은 미국 및 기타 국가에서 등록 및 미등록 상표입니다.";
 
 	/// <summary>
 	/// Key: "Description.UnsupportedLanguage"
 	/// English String: "While some games may use the selected language, it is not fully supported by roblox.com."
 	/// </summary>
-	public override string DescriptionUnsupportedLanguage => "ê°€ëŠ¥í•  ê²½ìš° ì–´ë–¤ ê²Œìž„ë“¤ì€ ì´ ì–¸ì–´ë¡œ ë‚˜ì˜¬ ê±°ì˜ˆìš”. í•˜ì§€ë§Œ roblox.comì—ì„œ ì „ì ìœ¼ë¡œ ì§€ì›í•˜ëŠ” ê²ƒì€ ì•„ë‹ˆëžë‹ˆë‹¤.";
+	public override string DescriptionUnsupportedLanguage => "가능할 경우 어떤 게임들은 이 언어로 나올 거예요. 하지만 roblox.com에서 전적으로 지원하는 것은 아니랍니다.";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// Purchase access to the place
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "ì•„ì´í…œ êµ¬ë§¤";
+	public override string HeadingBuyItem => "아이템 구매";
 
 	/// <summary>
 	/// Key: "Heading.UnsupportedLanguage"
 	/// English String: "Unsupported Language"
 	/// </summary>
-	public override string HeadingUnsupportedLanguage => "ì§€ì›í•˜ì§€ ì•ŠëŠ” ì–¸ì–´";
+	public override string HeadingUnsupportedLanguage => "지원하지 않는 언어";
 
 	/// <summary>
 	/// Key: "Label.AboutUs"
 	/// English String: "About Us"
 	/// </summary>
-	public override string LabelAboutUs => "íšŒì‚¬ ì†Œê°œ";
+	public override string LabelAboutUs => "회사 소개";
 
 	/// <summary>
 	/// Key: "Label.AuthenticationError"
 	/// page title
 	/// English String: "Authentication Error"
 	/// </summary>
-	public override string LabelAuthenticationError => "ì¸ì¦ ì˜¤ë¥˜";
+	public override string LabelAuthenticationError => "인증 오류";
 
 	/// <summary>
 	/// Key: "Label.Badges"
 	/// page title
 	/// English String: "Badges"
 	/// </summary>
-	public override string LabelBadges => "ë°°ì§€";
+	public override string LabelBadges => "배지";
 
 	/// <summary>
 	/// Key: "Label.Careers"
 	/// English String: "Careers"
 	/// </summary>
-	public override string LabelCareers => "ì¸ìž¬ì±„ìš©";
+	public override string LabelCareers => "인재채용";
 
 	/// <summary>
 	/// Key: "Label.Configure"
 	/// Configure
 	/// English String: "Configure"
 	/// </summary>
-	public override string LabelConfigure => "êµ¬ì„±";
+	public override string LabelConfigure => "구성";
 
 	/// <summary>
 	/// Key: "Label.ConfigureGame"
 	/// configure game page title
 	/// English String: "Configure Game"
 	/// </summary>
-	public override string LabelConfigureGame => "ê²Œìž„ êµ¬ì„±";
+	public override string LabelConfigureGame => "게임 구성";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePlace"
 	/// Configure Place
 	/// English String: "Configure Place"
 	/// </summary>
-	public override string LabelConfigurePlace => "ìž¥ì†Œ êµ¬ì„±";
+	public override string LabelConfigurePlace => "장소 구성";
 
 	/// <summary>
 	/// Key: "Label.ConfigurePrivateServer"
 	/// page title
 	/// English String: "Configure VIP Server"
 	/// </summary>
-	public override string LabelConfigurePrivateServer => "VIP ì„œë²„ êµ¬ì„±";
+	public override string LabelConfigurePrivateServer => "VIP 서버 구성";
 
 	/// <summary>
 	/// Key: "Label.ContactUs"
 	/// page title
 	/// English String: "Contact Us"
 	/// </summary>
-	public override string LabelContactUs => "ê³ ê°ì„¼í„°";
+	public override string LabelContactUs => "고객센터";
 
 	/// <summary>
 	/// Key: "Label.Create"
 	/// Alternate name for the "Develop" section of the website
 	/// English String: "Create"
 	/// </summary>
-	public override string LabelCreate => "ë§Œë“¤ê¸°";
+	public override string LabelCreate => "만들기";
 
 	/// <summary>
 	/// Key: "Label.CreateGame"
 	/// Create Game
 	/// English String: "Create Game"
 	/// </summary>
-	public override string LabelCreateGame => "ê²Œìž„ ë§Œë“¤ê¸°";
+	public override string LabelCreateGame => "게임 만들기";
 
 	/// <summary>
 	/// Key: "Label.CreateGroup"
 	/// Create Group
 	/// English String: "Create Group"
 	/// </summary>
-	public override string LabelCreateGroup => "ê·¸ë£¹ ë§Œë“¤ê¸°";
+	public override string LabelCreateGroup => "그룹 만들기";
 
 	/// <summary>
 	/// Key: "Label.Discover"
 	/// English String: "Discover"
 	/// </summary>
-	public override string LabelDiscover => "ì°¾ì•„ë³´ê¸°";
+	public override string LabelDiscover => "찾아보기";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// Favorites
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "ì¦ê²¨ì°¾ê¸°";
+	public override string LabelFavorites => "즐겨찾기";
 
 	/// <summary>
 	/// Key: "Label.Feeds"
 	/// English String: "My Feed"
 	/// </summary>
-	public override string LabelFeeds => "ë‚´ í”¼ë“œ";
+	public override string LabelFeeds => "내 피드";
 
 	/// <summary>
 	/// Key: "Label.FindMyFeed"
 	/// English String: "Looking for My Feed? It's now in side menu"
 	/// </summary>
-	public override string LabelFindMyFeed => "ë‚´ í”¼ë“œëŠ” ì‚¬ì´ë“œ ë©”ë‰´ë¥¼ í™•ì¸í•˜ì„¸ìš”";
+	public override string LabelFindMyFeed => "내 피드는 사이드 메뉴를 확인하세요";
 
 	/// <summary>
 	/// Key: "Label.Help"
 	/// English String: "Help"
 	/// </summary>
-	public override string LabelHelp => "ë„ì›€ë§";
+	public override string LabelHelp => "도움말";
 
 	/// <summary>
 	/// Key: "Label.Jobs"
 	/// jobs link in footer
 	/// English String: "Jobs"
 	/// </summary>
-	public override string LabelJobs => "ì¸ìž¬ì±„ìš©";
+	public override string LabelJobs => "인재채용";
 
 	/// <summary>
 	/// Key: "Label.Library"
 	/// search context for inventory search
 	/// English String: "Library"
 	/// </summary>
-	public override string LabelLibrary => "ë¼ì´ë¸ŒëŸ¬ë¦¬";
+	public override string LabelLibrary => "라이브러리";
 
 	/// <summary>
 	/// Key: "Label.Merch"
 	/// English String: "Merchandise"
 	/// </summary>
-	public override string LabelMerch => "ìºë¦­í„° ìƒí’ˆ";
+	public override string LabelMerch => "캐릭터 상품";
 
 	/// <summary>
 	/// Key: "Label.Parents"
 	/// English String: "Parents"
 	/// </summary>
-	public override string LabelParents => "ë³´í˜¸ìž ê°€ì´ë“œ";
+	public override string LabelParents => "보호자 가이드";
 
 	/// <summary>
 	/// Key: "Label.PlaceStatistics"
 	/// page title
 	/// English String: "Place Statistics"
 	/// </summary>
-	public override string LabelPlaceStatistics => "ìž¥ì†Œ í†µê³„";
+	public override string LabelPlaceStatistics => "장소 통계";
 
 	/// <summary>
 	/// Key: "Label.Players"
 	/// search context for user search
 	/// English String: "Players"
 	/// </summary>
-	public override string LabelPlayers => "í”Œë ˆì´ì–´";
+	public override string LabelPlayers => "플레이어";
 
 	/// <summary>
 	/// Key: "Label.Privacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string LabelPrivacy => "ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨";
+	public override string LabelPrivacy => "개인정보 처리방침";
 
 	/// <summary>
 	/// Key: "Label.RedeemRobloxCards"
 	/// page title
 	/// English String: "Redeem Roblox Cards"
 	/// </summary>
-	public override string LabelRedeemRobloxCards => "Roblox ì¹´ë“œ ì‚¬ìš©";
+	public override string LabelRedeemRobloxCards => "Roblox 카드 사용";
 
 	/// <summary>
 	/// Key: "Label.sAvatar"
 	/// English String: "Avatar"
 	/// </summary>
-	public override string LabelsAvatar => "ì•„ë°”íƒ€";
+	public override string LabelsAvatar => "아바타";
 
 	/// <summary>
 	/// Key: "Label.sBlog"
 	/// English String: "Blog"
 	/// </summary>
-	public override string LabelsBlog => "ë¸”ë¡œê·¸";
+	public override string LabelsBlog => "블로그";
 
 	/// <summary>
 	/// Key: "Label.sCatalog"
 	/// English String: "Catalog"
 	/// </summary>
-	public override string LabelsCatalog => "ì¹´íƒˆë¡œê·¸";
+	public override string LabelsCatalog => "카탈로그";
 
 	/// <summary>
 	/// Key: "Label.sDevelop"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelsDevelop => "ê°œë°œ";
+	public override string LabelsDevelop => "개발";
 
 	/// <summary>
 	/// Key: "Label.sEvents"
 	/// English String: "Events"
 	/// </summary>
-	public override string LabelsEvents => "ì´ë²¤íŠ¸";
+	public override string LabelsEvents => "이벤트";
 
 	/// <summary>
 	/// Key: "Label.sForum"
 	/// English String: "Forum"
 	/// </summary>
-	public override string LabelsForum => "í¬ëŸ¼";
+	public override string LabelsForum => "포럼";
 
 	/// <summary>
 	/// Key: "Label.sFriends"
 	/// English String: "Friends"
 	/// </summary>
-	public override string LabelsFriends => "ì¹œêµ¬";
+	public override string LabelsFriends => "친구";
 
 	/// <summary>
 	/// Key: "Label.sGames"
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelsGames => "ê²Œìž„";
+	public override string LabelsGames => "게임";
 
 	/// <summary>
 	/// Key: "Label.sGroups"
 	/// English String: "Groups"
 	/// </summary>
-	public override string LabelsGroups => "ê·¸ë£¹";
+	public override string LabelsGroups => "그룹";
 
 	/// <summary>
 	/// Key: "Label.sHome"
 	/// English String: "Home"
 	/// </summary>
-	public override string LabelsHome => "í™ˆ";
+	public override string LabelsHome => "홈";
 
 	/// <summary>
 	/// Key: "Label.sInventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string LabelsInventory => "ì¸ë²¤í† ë¦¬";
+	public override string LabelsInventory => "인벤토리";
 
 	/// <summary>
 	/// Key: "Label.sLogin"
 	/// English String: "Log In"
 	/// </summary>
-	public override string LabelsLogin => "ë¡œê·¸ì¸";
+	public override string LabelsLogin => "로그인";
 
 	/// <summary>
 	/// Key: "Label.sMessages"
 	/// English String: "Messages"
 	/// </summary>
-	public override string LabelsMessages => "ë©”ì‹œì§€";
+	public override string LabelsMessages => "메시지";
 
 	/// <summary>
 	/// Key: "Label.sProfile"
 	/// English String: "Profile"
 	/// </summary>
-	public override string LabelsProfile => "í”„ë¡œí•„";
+	public override string LabelsProfile => "프로필";
 
 	/// <summary>
 	/// Key: "Label.sRobux"
@@ -323,65 +325,65 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 	/// Key: "Label.sSearch"
 	/// English String: "Search"
 	/// </summary>
-	public override string LabelsSearch => "ê²€ìƒ‰";
+	public override string LabelsSearch => "검색";
 
 	/// <summary>
 	/// Key: "Label.sShop"
 	/// English String: "Shop"
 	/// </summary>
-	public override string LabelsShop => "êµ¬ë§¤";
+	public override string LabelsShop => "구매";
 
 	/// <summary>
 	/// Key: "Label.sSignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string LabelsSignUp => "íšŒì›ê°€ìž…";
+	public override string LabelsSignUp => "회원가입";
 
 	/// <summary>
 	/// Key: "Label.Store"
 	/// English String: "Store"
 	/// </summary>
-	public override string LabelStore => "ìƒì ";
+	public override string LabelStore => "상점";
 
 	/// <summary>
 	/// Key: "Label.sTrade"
 	/// English String: "Trade"
 	/// </summary>
-	public override string LabelsTrade => "ê±°ëž˜";
+	public override string LabelsTrade => "거래";
 
 	/// <summary>
 	/// Key: "Label.Support"
 	/// page title
 	/// English String: "Support"
 	/// </summary>
-	public override string LabelSupport => "ê³ ê°ì§€ì›";
+	public override string LabelSupport => "고객지원";
 
 	/// <summary>
 	/// Key: "Label.Terms"
 	/// English String: "Terms"
 	/// </summary>
-	public override string LabelTerms => "ì´ìš© ì•½ê´€";
+	public override string LabelTerms => "이용 약관";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "ì´ìš© ì•½ê´€";
+	public override string LabelTermsOfUse => "이용 약관";
 
 	/// <summary>
 	/// Key: "Label.Thanks"
 	/// page title
 	/// English String: "Thanks"
 	/// </summary>
-	public override string LabelThanks => "ê°ì‚¬í•©ë‹ˆë‹¤";
+	public override string LabelThanks => "감사합니다";
 
 	/// <summary>
 	/// Key: "Label.Upgrade"
 	/// Upgrade
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string LabelUpgrade => "ì—…ê·¸ë ˆì´ë“œ";
+	public override string LabelUpgrade => "업그레이드";
 
 	public FeaturesResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -390,27 +392,27 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForActionBackToTop()
 	{
-		return "ë§¨ ìœ„ë¡œ ëŒì•„ê°€ê¸°";
+		return "맨 위로 돌아가기";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "ì´ìš©ê¶Œ êµ¬ë§¤";
+		return "이용권 구매";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionOk()
 	{
-		return "í™•ì¸";
+		return "확인";
 	}
 
 	protected override string _GetTemplateForActionsUpgradeNow()
 	{
-		return "ì—…ê·¸ë ˆì´ë“œ";
+		return "업그레이드";
 	}
 
 	/// <summary>
@@ -419,37 +421,37 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string BuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"{creatorName}ì´(ê°€) ì œìž‘í•œ {placeName} ì´ìš©ê¶Œì„ {robux}ìœ¼(ë¡œ) êµ¬ë§¤í• ê¹Œìš”?";
+		return $"{creatorName}이(가) 제작한 {placeName} 이용권을 {robux}으(로) 구매할까요?";
 	}
 
 	protected override string _GetTemplateForBuyAccessToGameForModal()
 	{
-		return "{creatorName}ì´(ê°€) ì œìž‘í•œ {placeName} ì´ìš©ê¶Œì„ {robux}ìœ¼(ë¡œ) êµ¬ë§¤í• ê¹Œìš”?";
+		return "{creatorName}이(가) 제작한 {placeName} 이용권을 {robux}으(로) 구매할까요?";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessage()
 	{
-		return "Â©2018 Roblox Corporation. Roblox, Roblox ë¡œê³  ë° Powering Imaginationì€ ë¯¸êµ­ ë° ê¸°íƒ€ êµ­ê°€ì—ì„œ ë“±ë¡ ë° ë¯¸ë“±ë¡ ìƒí‘œìž…ë‹ˆë‹¤.";
+		return "©2018 Roblox Corporation. Roblox, Roblox 로고 및 Powering Imagination은 미국 및 기타 국가에서 등록 및 미등록 상표입니다.";
 	}
 
 	/// <summary>
 	/// Key: "Description.CopyRightMessageDynamicYear"
 	/// Footer copyright message with dynamic year value
-	/// English String: "Â©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+	/// English String: "©{copyrightYear} Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
 	/// </summary>
 	public override string DescriptionCopyRightMessageDynamicYear(string copyrightYear)
 	{
-		return $"Â©{copyrightYear} Roblox Corporation. Roblox, Roblox ë¡œê³  ë° Powering Imaginationì€ ë¯¸êµ­ ë° ê·¸ ì™¸ êµ­ê°€ì—ì„œ ë“±ë¡ ìƒí‘œ ë° ë¯¸ë“±ë¡ ìƒí‘œìž…ë‹ˆë‹¤.";
+		return $"©{copyrightYear} Roblox Corporation. Roblox, Roblox 로고 및 Powering Imagination은 미국 및 그 외 국가에서 등록 상표 및 미등록 상표입니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionCopyRightMessageDynamicYear()
 	{
-		return "Â©{copyrightYear} Roblox Corporation. Roblox, Roblox ë¡œê³  ë° Powering Imaginationì€ ë¯¸êµ­ ë° ê·¸ ì™¸ êµ­ê°€ì—ì„œ ë“±ë¡ ìƒí‘œ ë° ë¯¸ë“±ë¡ ìƒí‘œìž…ë‹ˆë‹¤.";
+		return "©{copyrightYear} Roblox Corporation. Roblox, Roblox 로고 및 Powering Imagination은 미국 및 그 외 국가에서 등록 상표 및 미등록 상표입니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguage()
 	{
-		return "ê°€ëŠ¥í•  ê²½ìš° ì–´ë–¤ ê²Œìž„ë“¤ì€ ì´ ì–¸ì–´ë¡œ ë‚˜ì˜¬ ê±°ì˜ˆìš”. í•˜ì§€ë§Œ roblox.comì—ì„œ ì „ì ìœ¼ë¡œ ì§€ì›í•˜ëŠ” ê²ƒì€ ì•„ë‹ˆëžë‹ˆë‹¤.";
+		return "가능할 경우 어떤 게임들은 이 언어로 나올 거예요. 하지만 roblox.com에서 전적으로 지원하는 것은 아니랍니다.";
 	}
 
 	/// <summary>
@@ -458,217 +460,217 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string DescriptionUnsupportedLanguageModal(string userLanguage, string platformLanguage)
 	{
-		return $"{userLanguage}ì€(ëŠ”) í˜„ìž¬ roblox.comì—ì„œ ì´ìš©í•  ìˆ˜ ì—†ì–´ìš”. ê²Œìž„ ë‚´ ì½˜í…ì¸ ëŠ” {platformLanguage}ë¡œ ë‚˜ì˜¤ê³ , roblox.comì€ ì˜ì–´ë¡œ ì„¤ì •ë˜ì–´ ìžˆì–´ìš”.";
+		return $"{userLanguage}은(는) 현재 roblox.com에서 이용할 수 없어요. 게임 내 콘텐츠는 {platformLanguage}로 나오고, roblox.com은 영어로 설정되어 있어요.";
 	}
 
 	protected override string _GetTemplateForDescriptionUnsupportedLanguageModal()
 	{
-		return "{userLanguage}ì€(ëŠ”) í˜„ìž¬ roblox.comì—ì„œ ì´ìš©í•  ìˆ˜ ì—†ì–´ìš”. ê²Œìž„ ë‚´ ì½˜í…ì¸ ëŠ” {platformLanguage}ë¡œ ë‚˜ì˜¤ê³ , roblox.comì€ ì˜ì–´ë¡œ ì„¤ì •ë˜ì–´ ìžˆì–´ìš”.";
+		return "{userLanguage}은(는) 현재 roblox.com에서 이용할 수 없어요. 게임 내 콘텐츠는 {platformLanguage}로 나오고, roblox.com은 영어로 설정되어 있어요.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "ì•„ì´í…œ êµ¬ë§¤";
+		return "아이템 구매";
 	}
 
 	protected override string _GetTemplateForHeadingUnsupportedLanguage()
 	{
-		return "ì§€ì›í•˜ì§€ ì•ŠëŠ” ì–¸ì–´";
+		return "지원하지 않는 언어";
 	}
 
 	protected override string _GetTemplateForLabelAboutUs()
 	{
-		return "íšŒì‚¬ ì†Œê°œ";
+		return "회사 소개";
 	}
 
 	protected override string _GetTemplateForLabelAuthenticationError()
 	{
-		return "ì¸ì¦ ì˜¤ë¥˜";
+		return "인증 오류";
 	}
 
 	protected override string _GetTemplateForLabelBadges()
 	{
-		return "ë°°ì§€";
+		return "배지";
 	}
 
 	protected override string _GetTemplateForLabelCareers()
 	{
-		return "ì¸ìž¬ì±„ìš©";
+		return "인재채용";
 	}
 
 	protected override string _GetTemplateForLabelConfigure()
 	{
-		return "êµ¬ì„±";
+		return "구성";
 	}
 
 	protected override string _GetTemplateForLabelConfigureGame()
 	{
-		return "ê²Œìž„ êµ¬ì„±";
+		return "게임 구성";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePlace()
 	{
-		return "ìž¥ì†Œ êµ¬ì„±";
+		return "장소 구성";
 	}
 
 	protected override string _GetTemplateForLabelConfigurePrivateServer()
 	{
-		return "VIP ì„œë²„ êµ¬ì„±";
+		return "VIP 서버 구성";
 	}
 
 	protected override string _GetTemplateForLabelContactUs()
 	{
-		return "ê³ ê°ì„¼í„°";
+		return "고객센터";
 	}
 
 	protected override string _GetTemplateForLabelCreate()
 	{
-		return "ë§Œë“¤ê¸°";
+		return "만들기";
 	}
 
 	protected override string _GetTemplateForLabelCreateGame()
 	{
-		return "ê²Œìž„ ë§Œë“¤ê¸°";
+		return "게임 만들기";
 	}
 
 	protected override string _GetTemplateForLabelCreateGroup()
 	{
-		return "ê·¸ë£¹ ë§Œë“¤ê¸°";
+		return "그룹 만들기";
 	}
 
 	protected override string _GetTemplateForLabelDiscover()
 	{
-		return "ì°¾ì•„ë³´ê¸°";
+		return "찾아보기";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "ì¦ê²¨ì°¾ê¸°";
+		return "즐겨찾기";
 	}
 
 	protected override string _GetTemplateForLabelFeeds()
 	{
-		return "ë‚´ í”¼ë“œ";
+		return "내 피드";
 	}
 
 	protected override string _GetTemplateForLabelFindMyFeed()
 	{
-		return "ë‚´ í”¼ë“œëŠ” ì‚¬ì´ë“œ ë©”ë‰´ë¥¼ í™•ì¸í•˜ì„¸ìš”";
+		return "내 피드는 사이드 메뉴를 확인하세요";
 	}
 
 	protected override string _GetTemplateForLabelHelp()
 	{
-		return "ë„ì›€ë§";
+		return "도움말";
 	}
 
 	protected override string _GetTemplateForLabelJobs()
 	{
-		return "ì¸ìž¬ì±„ìš©";
+		return "인재채용";
 	}
 
 	protected override string _GetTemplateForLabelLibrary()
 	{
-		return "ë¼ì´ë¸ŒëŸ¬ë¦¬";
+		return "라이브러리";
 	}
 
 	protected override string _GetTemplateForLabelMerch()
 	{
-		return "ìºë¦­í„° ìƒí’ˆ";
+		return "캐릭터 상품";
 	}
 
 	protected override string _GetTemplateForLabelParents()
 	{
-		return "ë³´í˜¸ìž ê°€ì´ë“œ";
+		return "보호자 가이드";
 	}
 
 	protected override string _GetTemplateForLabelPlaceStatistics()
 	{
-		return "ìž¥ì†Œ í†µê³„";
+		return "장소 통계";
 	}
 
 	protected override string _GetTemplateForLabelPlayers()
 	{
-		return "í”Œë ˆì´ì–´";
+		return "플레이어";
 	}
 
 	protected override string _GetTemplateForLabelPrivacy()
 	{
-		return "ê°œì¸ì •ë³´ ì²˜ë¦¬ë°©ì¹¨";
+		return "개인정보 처리방침";
 	}
 
 	protected override string _GetTemplateForLabelRedeemRobloxCards()
 	{
-		return "Roblox ì¹´ë“œ ì‚¬ìš©";
+		return "Roblox 카드 사용";
 	}
 
 	protected override string _GetTemplateForLabelsAvatar()
 	{
-		return "ì•„ë°”íƒ€";
+		return "아바타";
 	}
 
 	protected override string _GetTemplateForLabelsBlog()
 	{
-		return "ë¸”ë¡œê·¸";
+		return "블로그";
 	}
 
 	protected override string _GetTemplateForLabelsCatalog()
 	{
-		return "ì¹´íƒˆë¡œê·¸";
+		return "카탈로그";
 	}
 
 	protected override string _GetTemplateForLabelsDevelop()
 	{
-		return "ê°œë°œ";
+		return "개발";
 	}
 
 	protected override string _GetTemplateForLabelsEvents()
 	{
-		return "ì´ë²¤íŠ¸";
+		return "이벤트";
 	}
 
 	protected override string _GetTemplateForLabelsForum()
 	{
-		return "í¬ëŸ¼";
+		return "포럼";
 	}
 
 	protected override string _GetTemplateForLabelsFriends()
 	{
-		return "ì¹œêµ¬";
+		return "친구";
 	}
 
 	protected override string _GetTemplateForLabelsGames()
 	{
-		return "ê²Œìž„";
+		return "게임";
 	}
 
 	protected override string _GetTemplateForLabelsGroups()
 	{
-		return "ê·¸ë£¹";
+		return "그룹";
 	}
 
 	protected override string _GetTemplateForLabelsHome()
 	{
-		return "í™ˆ";
+		return "홈";
 	}
 
 	protected override string _GetTemplateForLabelsInventory()
 	{
-		return "ì¸ë²¤í† ë¦¬";
+		return "인벤토리";
 	}
 
 	protected override string _GetTemplateForLabelsLogin()
 	{
-		return "ë¡œê·¸ì¸";
+		return "로그인";
 	}
 
 	protected override string _GetTemplateForLabelsMessages()
 	{
-		return "ë©”ì‹œì§€";
+		return "메시지";
 	}
 
 	protected override string _GetTemplateForLabelsProfile()
 	{
-		return "í”„ë¡œí•„";
+		return "프로필";
 	}
 
 	protected override string _GetTemplateForLabelsRobux()
@@ -678,7 +680,7 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 
 	protected override string _GetTemplateForLabelsSearch()
 	{
-		return "ê²€ìƒ‰";
+		return "검색";
 	}
 
 	/// <summary>
@@ -687,57 +689,57 @@ internal class FeaturesResources_ko_kr : FeaturesResources_en_us, IFeaturesResou
 	/// </summary>
 	public override string LabelsSearchPhrase(string phrase, string location)
 	{
-		return $"{location}ì—ì„œ \"{phrase}\" ê²€ìƒ‰";
+		return $"{location}에서 \"{phrase}\" 검색";
 	}
 
 	protected override string _GetTemplateForLabelsSearchPhrase()
 	{
-		return "{location}ì—ì„œ \"{phrase}\" ê²€ìƒ‰";
+		return "{location}에서 \"{phrase}\" 검색";
 	}
 
 	protected override string _GetTemplateForLabelsShop()
 	{
-		return "êµ¬ë§¤";
+		return "구매";
 	}
 
 	protected override string _GetTemplateForLabelsSignUp()
 	{
-		return "íšŒì›ê°€ìž…";
+		return "회원가입";
 	}
 
 	protected override string _GetTemplateForLabelStore()
 	{
-		return "ìƒì ";
+		return "상점";
 	}
 
 	protected override string _GetTemplateForLabelsTrade()
 	{
-		return "ê±°ëž˜";
+		return "거래";
 	}
 
 	protected override string _GetTemplateForLabelSupport()
 	{
-		return "ê³ ê°ì§€ì›";
+		return "고객지원";
 	}
 
 	protected override string _GetTemplateForLabelTerms()
 	{
-		return "ì´ìš© ì•½ê´€";
+		return "이용 약관";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "ì´ìš© ì•½ê´€";
+		return "이용 약관";
 	}
 
 	protected override string _GetTemplateForLabelThanks()
 	{
-		return "ê°ì‚¬í•©ë‹ˆë‹¤";
+		return "감사합니다";
 	}
 
 	protected override string _GetTemplateForLabelUpgrade()
 	{
-		return "ì—…ê·¸ë ˆì´ë“œ";
+		return "업그레이드";
 	}
 }
 

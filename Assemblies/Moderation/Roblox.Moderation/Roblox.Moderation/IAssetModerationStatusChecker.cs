@@ -1,4 +1,4 @@
-﻿using Roblox.Platform.Assets;
+using Roblox.Platform.AssetsCore;
 namespace Roblox.Moderation {
     /// <summary>
 
@@ -9,7 +9,7 @@ public interface IAssetModerationStatusChecker
 	/// <summary>
 	/// Gets moderation status of an asset.
 	/// </summary>
-	AssetModerationStatus GetModerationStatus(IAsset asset);
+	AssetModerationStatus GetModerationStatus(IAssetIdentifier asset);
 }
 
 

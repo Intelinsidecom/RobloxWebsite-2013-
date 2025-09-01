@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface ITranslationRolesResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface ITranslationRolesResources : ITranslationResources
 
 {
 	/// <summary>
@@ -180,3 +182,5 @@
 
 
 }
+
+

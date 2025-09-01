@@ -822,7 +822,7 @@
       <returns>Получаемый столбец.</returns>
       <param name="ordinal">Получаемый столбец.</param>
       <typeparam name="T">Синхронно получает значение заданного столбца в виде типа.</typeparam>
-      <exception cref="T:System.InvalidOperationException">Соединение разъединяется или закрывается во время извлечения данных.Объект <see cref="T:System.Data.SqlClient.SqlDataReader" /> закрыт во время извлечения данных.Не существует данных, готовых для чтения (например, первый объект <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> не был вызван или вернул значение false).Сделана попытка чтения ранее считанного столбца в последовательном режиме.Выполнялась асинхронная операция.Относится ко всем методам Get* при работе в последовательном режиме, так как они могут вызываться при чтении потока.</exception>
+      <exception cref="T:System.InvalidOperationException">Соединение разъединяется или закрывается во время извлечения данных.Объект <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> закрыт во время извлечения данных.Не существует данных, готовых для чтения (например, первый объект <see cref="M:Microsoft.Data.SqlClient.SqlDataReader.Read" /> не был вызван или вернул значение false).Сделана попытка чтения ранее считанного столбца в последовательном режиме.Выполнялась асинхронная операция.Относится ко всем методам Get* при работе в последовательном режиме, так как они могут вызываться при чтении потока.</exception>
       <exception cref="T:System.IndexOutOfRangeException">Попытка чтения столбца, который не существует.</exception>
       <exception cref="T:System.InvalidCastException">
         <paramref name="T" /> не соответствует типу, возвращаемому SQL Server, или не может быть приведено.</exception>
@@ -957,7 +957,7 @@
     <member name="P:System.Data.Common.DbDataReader.IsClosed">
       <summary>Получает значение, указывается, является ли объект <see cref="T:System.Data.Common.DbDataReader" /> закрытым.</summary>
       <returns>Значение true, если объект <see cref="T:System.Data.Common.DbDataReader" /> закрыт; в противном случае — значение false.</returns>
-      <exception cref="T:System.InvalidOperationException">Объект <see cref="T:System.Data.SqlClient.SqlDataReader" /> закрыт. </exception>
+      <exception cref="T:System.InvalidOperationException">Объект <see cref="T:Microsoft.Data.SqlClient.SqlDataReader" /> закрыт. </exception>
       <filterpriority>1</filterpriority>
     </member>
     <member name="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)">

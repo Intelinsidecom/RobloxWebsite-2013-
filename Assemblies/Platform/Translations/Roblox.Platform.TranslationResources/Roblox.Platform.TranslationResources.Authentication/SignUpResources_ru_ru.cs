@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides SignUpResources_en_us to provide locale specific translations where possible,
@@ -11,252 +13,252 @@ internal class SignUpResources_ru_ru : SignUpResources_en_us, ISignUpResources, 
 	/// create account button label
 	/// English String: "Create Account"
 	/// </summary>
-	public override string ActionCreateAccount => "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ";
+	public override string ActionCreateAccount => "Создать учетную запись";
 
 	/// <summary>
 	/// Key: "Action.LinkAccount"
 	/// Button text to link 3rd Party Account to a Roblox Account
 	/// English String: "Link Account"
 	/// </summary>
-	public override string ActionLinkAccount => "ÐŸÑ€Ð¸Ð²ÑÐ·Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ";
+	public override string ActionLinkAccount => "Привязать учетную запись";
 
 	/// <summary>
 	/// Key: "Action.LogInCapitalized"
 	/// button label for capitalized words for Log In
 	/// English String: "Log In"
 	/// </summary>
-	public override string ActionLogInCapitalized => "Ð’Ñ…Ð¾Ð´";
+	public override string ActionLogInCapitalized => "Вход";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button label to return the user to home page
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Ð”Ð¾Ð¼Ð¾Ð¹";
+	public override string ActionReturnHome => "Домой";
 
 	/// <summary>
 	/// Key: "Action.SignUp"
 	/// English String: "Sign up"
 	/// </summary>
-	public override string ActionSignUp => "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
+	public override string ActionSignUp => "Регистрация";
 
-	public override string ActionSignupAndSync => "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð¸ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð°Ñ†Ð¸Ñ";
+	public override string ActionSignupAndSync => "Регистрация и синхронизация";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+	public override string ActionSubmit => "Отправить";
 
 	/// <summary>
 	/// Key: "Description.AccountLinkingWarning"
 	/// instructions for linking account on signup page for FB based account
 	/// English String: "To link to an existing Roblox account, sign in and link them on the account settings page."
 	/// </summary>
-	public override string DescriptionAccountLinkingWarning => "Ð§Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ñ‚ÑŒ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰ÑƒÑŽ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ Roblox, Ð²Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð¸ Ð¾Ñ‚ÐºÑ€Ð¾Ð¹Ñ‚Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸.";
+	public override string DescriptionAccountLinkingWarning => "Чтобы привязать существующую учетную запись Roblox, войдите и откройте страницу настроек учетной записи.";
 
 	/// <summary>
 	/// Key: "Description.NoRealName"
 	/// description
 	/// English String: "Do not use your real name."
 	/// </summary>
-	public override string DescriptionNoRealName => "ÐÐµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ.";
+	public override string DescriptionNoRealName => "Не используйте настоящее имя.";
 
 	/// <summary>
 	/// Key: "Description.PrivacyPolicy"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string DescriptionPrivacyPolicy => "ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸";
+	public override string DescriptionPrivacyPolicy => "Политику конфиденциальности";
 
 	/// <summary>
 	/// Key: "Description.TermsOfService"
 	/// English String: "Terms of Service"
 	/// </summary>
-	public override string DescriptionTermsOfService => "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑƒÑÐ»ÑƒÐ³";
+	public override string DescriptionTermsOfService => "Условия предоставления услуг";
 
 	/// <summary>
 	/// Key: "GuestSignUpAB.Action.SignUp"
 	/// English String: "Sign Up"
 	/// </summary>
-	public override string GuestSignUpABActionSignUp => "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
+	public override string GuestSignUpABActionSignUp => "Регистрация";
 
 	/// <summary>
 	/// Key: "Heading.ConnectFacebook"
 	/// section heading
 	/// English String: "Connect to Facebook"
 	/// </summary>
-	public override string HeadingConnectFacebook => "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº Facebook";
+	public override string HeadingConnectFacebook => "Подключиться к Facebook";
 
 	/// <summary>
 	/// Key: "Heading.CreateAnAccount"
 	/// should be capitalized if the language supports capitalization
 	/// English String: "CREATE AN ACCOUNT"
 	/// </summary>
-	public override string HeadingCreateAnAccount => "Ð¡ÐžÐ—Ð”ÐÐ¢Ð¬ Ð£Ð§Ð•Ð¢ÐÐ£Ð® Ð—ÐÐŸÐ˜Ð¡Ð¬";
+	public override string HeadingCreateAnAccount => "СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ";
 
 	/// <summary>
 	/// Key: "Heading.LoginHaveFun"
 	/// heading for login container
 	/// English String: "Log in and start having fun!"
 	/// </summary>
-	public override string HeadingLoginHaveFun => "Ð’Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð¸ Ð½Ð°ÑÐ»Ð°Ð¶Ð´Ð°Ð¹Ñ‚ÐµÑÑŒ Ð¸Ð³Ñ€Ð°Ð¼Ð¸!";
+	public override string HeadingLoginHaveFun => "Войдите и наслаждайтесь играми!";
 
 	/// <summary>
 	/// Key: "Heading.SignupHaveFun"
 	/// signup form heading
 	/// English String: "Sign up and start having fun!"
 	/// </summary>
-	public override string HeadingSignupHaveFun => "Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐ¹Ñ‚ÐµÑÑŒ Ð¸ Ð½Ð°ÑÐ»Ð°Ð¶Ð´Ð°Ð¹Ñ‚ÐµÑÑŒ Ð¸Ð³Ñ€Ð°Ð¼Ð¸!";
+	public override string HeadingSignupHaveFun => "Зарегистрируйтесь и наслаждайтесь играми!";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// About link on roller coaster page
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "Ð¡Ð²ÐµÐ´ÐµÐ½Ð¸Ñ";
+	public override string LabelAbout => "Сведения";
 
 	/// <summary>
 	/// Key: "Label.AlreadyHaveRobloxAccount"
 	/// English String: "Already have a Roblox account?"
 	/// </summary>
-	public override string LabelAlreadyHaveRobloxAccount => "Ð£Ð¶Ðµ ÐµÑÑ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Roblox?";
+	public override string LabelAlreadyHaveRobloxAccount => "Уже есть учетная запись Roblox?";
 
 	/// <summary>
 	/// Key: "Label.AlreadyRegistered"
 	/// label
 	/// English String: "Already registered?"
 	/// </summary>
-	public override string LabelAlreadyRegistered => "Ð£Ð¶Ðµ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹?";
+	public override string LabelAlreadyRegistered => "Уже зарегистрированы?";
 
 	/// <summary>
 	/// Key: "Label.Birthday"
 	/// English String: "Birthday"
 	/// </summary>
-	public override string LabelBirthday => "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ";
+	public override string LabelBirthday => "Дата рождения";
 
 	/// <summary>
 	/// Key: "Label.BirthdayWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Birthday:"
 	/// </summary>
-	public override string LabelBirthdayWithColumn => "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ:";
+	public override string LabelBirthdayWithColumn => "Дата рождения:";
 
 	/// <summary>
 	/// Key: "Label.ConfirmPassword"
 	/// English String: "Confirm password"
 	/// </summary>
-	public override string LabelConfirmPassword => "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ñ";
+	public override string LabelConfirmPassword => "Подтверждение пароля";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "Ð”ÐµÐ½ÑŒ";
+	public override string LabelDay => "День";
 
 	/// <summary>
 	/// Key: "Label.DesiredUsername"
 	/// should have a column if the language supports it
 	/// English String: "Desired Username:"
 	/// </summary>
-	public override string LabelDesiredUsername => "Ð–ÐµÐ»Ð°ÐµÐ¼Ð¾Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ:";
+	public override string LabelDesiredUsername => "Желаемое имя пользователя:";
 
 	/// <summary>
 	/// Key: "Label.FacebookNotLinked"
 	/// English String: "Your Facebook account is not linked to any Roblox account. Please sign up for a Roblox account."
 	/// </summary>
-	public override string LabelFacebookNotLinked => "â‚¬Ð’Ð°ÑˆÐ° ÑƒÑ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Facebook Ð½Ðµ Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ð½Ð° Ðº Roblox. ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ñ€Ð¸Ð²ÑÐ¶Ð¸Ñ‚Ðµ ÐµÐµ Ðº Roblox.";
+	public override string LabelFacebookNotLinked => "€Ваша учетная запись Facebook не привязана к Roblox. Пожалуйста, привяжите ее к Roblox.";
 
 	/// <summary>
 	/// Key: "Label.FacebookSignupUsername"
 	/// username field label for FB signup
 	/// English String: "Create Roblox username:"
 	/// </summary>
-	public override string LabelFacebookSignupUsername => "ÐŸÑ€Ð¸Ð´ÑƒÐ¼Ð°Ð¹Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Roblox:";
+	public override string LabelFacebookSignupUsername => "Придумайте имя пользователя Roblox:";
 
 	/// <summary>
 	/// Key: "Label.Female"
 	/// label
 	/// English String: "Female"
 	/// </summary>
-	public override string LabelFemale => "Ð–ÐµÐ½ÑÐºÐ¸Ð¹";
+	public override string LabelFemale => "Женский";
 
 	/// <summary>
 	/// Key: "Label.Gender"
 	/// English String: "Gender"
 	/// </summary>
-	public override string LabelGender => "ÐŸÐ¾Ð»";
+	public override string LabelGender => "Пол";
 
 	/// <summary>
 	/// Key: "Label.GenderRequired"
 	/// English String: "Gender is required."
 	/// </summary>
-	public override string LabelGenderRequired => "Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿Ð¾Ð».";
+	public override string LabelGenderRequired => "Требуется указать пол.";
 
 	/// <summary>
 	/// Key: "Label.GenderWithColumn"
 	/// should have column if the language supports it
 	/// English String: "Gender:"
 	/// </summary>
-	public override string LabelGenderWithColumn => "ÐŸÐ¾Ð»:";
+	public override string LabelGenderWithColumn => "Пол:";
 
 	/// <summary>
 	/// Key: "Label.Male"
 	/// label
 	/// English String: "Male"
 	/// </summary>
-	public override string LabelMale => "ÐœÑƒÐ¶ÑÐºÐ¾Ð¹";
+	public override string LabelMale => "Мужской";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "ÐœÐµÑÑÑ†";
+	public override string LabelMonth => "Месяц";
 
 	/// <summary>
 	/// Key: "Label.Password"
 	/// English String: "Password"
 	/// </summary>
-	public override string LabelPassword => "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";
+	public override string LabelPassword => "Пароль";
 
 	/// <summary>
 	/// Key: "Label.PasswordRequirements"
 	/// English String: "Password (min length 8)"
 	/// </summary>
-	public override string LabelPasswordRequirements => "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ (Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 8 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²)";
+	public override string LabelPasswordRequirements => "Пароль (не менее 8 символов)";
 
 	/// <summary>
 	/// Key: "Label.Platforms"
 	/// platforms link on roller coaster page
 	/// English String: "Platforms"
 	/// </summary>
-	public override string LabelPlatforms => "ÐŸÐ»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ñ‹";
+	public override string LabelPlatforms => "Платформы";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// Play link on roller coaster page
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "Ð˜Ð³Ñ€Ð°Ñ‚ÑŒ";
+	public override string LabelPlay => "Играть";
 
 	/// <summary>
 	/// Key: "Label.PleaseAgreeToTerms"
 	/// English String: "Please agree to our Terms of Use and Privacy Policy."
 	/// </summary>
-	public override string LabelPleaseAgreeToTerms => "ÐŸÑ€Ð¸Ð¼Ð¸Ñ‚Ðµ Ð½Ð°ÑˆÐ¸ Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑƒÑÐ»ÑƒÐ³ Ð¸ ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸.";
+	public override string LabelPleaseAgreeToTerms => "Примите наши Условия предоставления услуг и Политику конфиденциальности.";
 
 	/// <summary>
 	/// Key: "Label.Required"
 	/// Required
 	/// English String: "Required"
 	/// </summary>
-	public override string LabelRequired => "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾";
+	public override string LabelRequired => "Обязательно";
 
 	/// <summary>
 	/// Key: "Label.SignupButtonText"
 	/// sign up button text
 	/// English String: "Sign Up and Play!"
 	/// </summary>
-	public override string LabelSignupButtonText => "Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐ¹Ñ‚ÐµÑÑŒ Ð¸ Ð¸Ð³Ñ€Ð°Ð¹Ñ‚Ðµ!";
+	public override string LabelSignupButtonText => "Зарегистрируйтесь и играйте!";
 
 	/// <summary>
 	/// Key: "Label.SignUpWith"
@@ -268,288 +270,288 @@ internal class SignUpResources_ru_ru : SignUpResources_en_us, ISignUpResources, 
 	/// [facebook button]
 	/// English String: "or sign up with"
 	/// </summary>
-	public override string LabelSignUpWith => "Ð¸Ð»Ð¸ Ð²Ð¾Ð¹Ñ‚Ð¸ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ";
+	public override string LabelSignUpWith => "или войти с помощью";
 
 	/// <summary>
 	/// Key: "Label.TermsOfUse"
 	/// terms of use link label
 	/// English String: "Terms of Use"
 	/// </summary>
-	public override string LabelTermsOfUse => "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ";
+	public override string LabelTermsOfUse => "Условия использования";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "Username"
 	/// </summary>
-	public override string LabelUsername => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+	public override string LabelUsername => "Имя пользователя";
 
 	/// <summary>
 	/// Key: "Label.UsernameCharacterLimit"
 	/// label
 	/// English String: "3-20 alphanumeric characters, no spaces."
 	/// </summary>
-	public override string LabelUsernameCharacterLimit => "ÐžÑ‚ 3 Ð´Ð¾ 20 Ð±ÑƒÐºÐ² Ð¸Ð»Ð¸ Ñ†Ð¸Ñ„Ñ€ Ð±ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð¾Ð².";
+	public override string LabelUsernameCharacterLimit => "От 3 до 20 букв или цифр без пробелов.";
 
 	/// <summary>
 	/// Key: "Label.UsernameHint"
 	/// placeholder for username field
 	/// English String: "Username (don't use your real name)"
 	/// </summary>
-	public override string LabelUsernameHint => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ (Ð½Ðµ ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°Ð¹Ñ‚Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ)";
+	public override string LabelUsernameHint => "Имя пользователя (не указывайте настоящее имя)";
 
 	/// <summary>
 	/// Key: "Label.UsernameRequirements"
 	/// English String: "Username (length 3-20, _ is allowed)"
 	/// </summary>
-	public override string LabelUsernameRequirements => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ (3-20 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð², Ð´Ð¾Ð¿ÑƒÑÐºÐ°ÐµÑ‚ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð» _)";
+	public override string LabelUsernameRequirements => "Имя пользователя (3-20 символов, допускается символ _)";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "Ð“Ð¾Ð´";
+	public override string LabelYear => "Год";
 
 	/// <summary>
 	/// Key: "Message.Password.MinLength"
 	/// English String: "Min length 8"
 	/// </summary>
-	public override string MessagePasswordMinLength => "ÐÐµ Ð¼ÐµÐ½ÐµÐµ 8 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²";
+	public override string MessagePasswordMinLength => "Не менее 8 символов";
 
 	/// <summary>
 	/// Key: "Message.Username.NoRealNameUse"
 	/// English String: "Don't use your real name"
 	/// </summary>
-	public override string MessageUsernameNoRealNameUse => "ÐÐµ ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°Ð¹Ñ‚Ðµ ÑÐ²Ð¾Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ";
+	public override string MessageUsernameNoRealNameUse => "Не указывайте свое настоящее имя";
 
 	/// <summary>
 	/// Key: "Response.BadUsername"
 	/// English String: "Username not appropriate for Roblox."
 	/// </summary>
-	public override string ResponseBadUsername => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½Ðµ Ð¿Ð¾Ð´Ñ…Ð¾Ð´Ð¸Ñ‚ Ð´Ð»Ñ Roblox.";
+	public override string ResponseBadUsername => "Имя пользователя не подходит для Roblox.";
 
 	/// <summary>
 	/// Key: "Response.BadUsernameForWeChat"
 	/// message shown when signing up with an inappropriate username
 	/// English String: "Username is not appropriate"
 	/// </summary>
-	public override string ResponseBadUsernameForWeChat => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½Ðµ Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾";
+	public override string ResponseBadUsernameForWeChat => "Имя пользователя не разрешено";
 
 	/// <summary>
 	/// Key: "Response.BirthdayInvalid"
 	/// English String: "This birthday is invalid."
 	/// </summary>
-	public override string ResponseBirthdayInvalid => "ÐÐµÐ²ÐµÑ€Ð½Ð°Ñ Ð´Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+	public override string ResponseBirthdayInvalid => "Неверная дата рождения.";
 
 	/// <summary>
 	/// Key: "Response.BirthdayMustBeSetFirst"
 	/// English String: "Birthday must be set first."
 	/// </summary>
-	public override string ResponseBirthdayMustBeSetFirst => "Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+	public override string ResponseBirthdayMustBeSetFirst => "Сначала требуется указать дату рождения.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaMismatchError"
 	/// error message
 	/// English String: "Words do not match."
 	/// </summary>
-	public override string ResponseCaptchaMismatchError => "Ð¡Ð»Ð¾Ð²Ð° Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚.";
+	public override string ResponseCaptchaMismatchError => "Слова не совпадают.";
 
 	/// <summary>
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// validation error message
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ ÐºÐ°Ð¿Ñ‡Ñƒ";
+	public override string ResponseCaptchaNotEnteredError => "Пожалуйста, заполните капчу";
 
 	/// <summary>
 	/// Key: "Response.FacebookConnectionError"
 	/// error message
 	/// English String: "Error while retrieving values from Facebook."
 	/// </summary>
-	public override string ResponseFacebookConnectionError => "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾Ñ‚ Facebook.";
+	public override string ResponseFacebookConnectionError => "Ошибка при получении данных от Facebook.";
 
 	/// <summary>
 	/// Key: "Response.FacebookLoginAge"
 	/// English String: "Facebook login can only be used by users above 13."
 	/// </summary>
-	public override string ResponseFacebookLoginAge => "Ð’Ñ…Ð¾Ð´ Ñ‡ÐµÑ€ÐµÐ· Facebook Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÐ¼Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÑ‚Ð°Ñ€ÑˆÐµ 13 Ð»ÐµÑ‚.";
+	public override string ResponseFacebookLoginAge => "Вход через Facebook может быть произведен пользователями только старше 13 лет.";
 
 	/// <summary>
 	/// Key: "Response.InvalidBirthday"
 	/// English String: "Invalid birthday."
 	/// </summary>
-	public override string ResponseInvalidBirthday => "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð°Ñ Ð´Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+	public override string ResponseInvalidBirthday => "Недопустимая дата рождения.";
 
 	/// <summary>
 	/// Key: "Response.InvalidEmail"
 	/// English String: "Invalid email address."
 	/// </summary>
-	public override string ResponseInvalidEmail => "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ñ‹.";
+	public override string ResponseInvalidEmail => "Недопустимый адрес эл. почты.";
 
 	/// <summary>
 	/// Key: "Response.JavaScriptRequired"
 	/// error to show that JavaScipt is required for the form to work
 	/// English String: "JavaScript is required to submit this form."
 	/// </summary>
-	public override string ResponseJavaScriptRequired => "Ð”Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ JavaScript.";
+	public override string ResponseJavaScriptRequired => "Для отправки формы требуется JavaScript.";
 
 	/// <summary>
 	/// Key: "Response.PasswordComplexity"
 	/// English String: "Please create a more complex password."
 	/// </summary>
-	public override string ResponsePasswordComplexity => "ÐŸÑ€Ð¸Ð´ÑƒÐ¼Ð°Ð¹Ñ‚Ðµ Ð±Ð¾Ð»ÐµÐµ ÑÐ»Ð¾Ð¶Ð½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+	public override string ResponsePasswordComplexity => "Придумайте более сложный пароль.";
 
 	/// <summary>
 	/// Key: "Response.PasswordConfirmation"
 	/// validation message for password confirmation
 	/// English String: "Please enter a password confirmation."
 	/// </summary>
-	public override string ResponsePasswordConfirmation => "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+	public override string ResponsePasswordConfirmation => "Пожалуйста, подтвердите пароль.";
 
 	/// <summary>
 	/// Key: "Response.PasswordContainsUsernameError"
 	/// error when passsword has username in it
 	/// English String: "Password shouldn't match username."
 	/// </summary>
-	public override string ResponsePasswordContainsUsernameError => "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð½Ðµ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°Ñ‚ÑŒ Ñ Ð¸Ð¼ÐµÐ½ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+	public override string ResponsePasswordContainsUsernameError => "Пароль не должен совпадать с именем пользователя.";
 
 	/// <summary>
 	/// Key: "Response.PasswordMismatch"
 	/// English String: "Passwords do not match."
 	/// </summary>
-	public override string ResponsePasswordMismatch => "ÐŸÐ°Ñ€Ð¾Ð»Ð¸ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚.";
+	public override string ResponsePasswordMismatch => "Пароли не совпадают.";
 
 	/// <summary>
 	/// Key: "Response.PasswordWrongShort"
 	/// English String: "Passwords must be at least 8 characters long."
 	/// </summary>
-	public override string ResponsePasswordWrongShort => "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 8 Ð·Ð½Ð°ÐºÐ¾Ð².";
+	public override string ResponsePasswordWrongShort => "Пароль должен содержать не менее 8 знаков.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterPassword"
 	/// English String: "Please enter a password."
 	/// </summary>
-	public override string ResponsePleaseEnterPassword => "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+	public override string ResponsePleaseEnterPassword => "Введите пароль.";
 
 	/// <summary>
 	/// Key: "Response.PleaseEnterUsername"
 	/// English String: "Please enter a username."
 	/// </summary>
-	public override string ResponsePleaseEnterUsername => "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+	public override string ResponsePleaseEnterUsername => "Введите имя пользователя.";
 
 	/// <summary>
 	/// Key: "Response.SocialAccountCreationFailed"
 	/// error message
 	/// English String: "Account creation failed"
 	/// </summary>
-	public override string ResponseSocialAccountCreationFailed => "Ð£Ñ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð½Ð°";
+	public override string ResponseSocialAccountCreationFailed => "Учетная запись не создана";
 
 	/// <summary>
 	/// Key: "Response.SpaceOrSpecialCharaterError"
 	/// Spaces and special characters are not allowed error message
 	/// English String: "Spaces and special characters are not allowed."
 	/// </summary>
-	public override string ResponseSpaceOrSpecialCharaterError => "ÐÐµÐ»ÑŒÐ·Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð±ÐµÐ» Ð¸ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹.";
+	public override string ResponseSpaceOrSpecialCharaterError => "Нельзя использовать пробел и специальные символы.";
 
 	/// <summary>
 	/// Key: "Response.TooManyAccountsWithSameEmailError"
 	/// Too many accounts use this email error message
 	/// English String: "Too many accounts use this email."
 	/// </summary>
-	public override string ResponseTooManyAccountsWithSameEmailError => "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ ÑƒÑ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ ÑÑ‚Ð¾Ñ‚ Ð°Ð´Ñ€ÐµÑ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ñ‹.";
+	public override string ResponseTooManyAccountsWithSameEmailError => "Слишком много учетных записей используют этот адрес эл. почты.";
 
 	/// <summary>
 	/// Key: "Response.UnknownError"
 	/// English String: "Sorry! An unknown error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnknownError => "Ðš ÑÐ¾Ð¶Ð°Ð»ÐµÐ½Ð¸ÑŽ, Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ Ð¿Ð¾Ð·Ð¶Ðµ.";
+	public override string ResponseUnknownError => "К сожалению, произошла неизвестная ошибка. Повторите попытку позже.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAllowedCharactersError"
 	/// error showing which characters are allowed for username
 	/// English String: "Usernames may only contain letters, numbers, and _."
 	/// </summary>
-	public override string ResponseUsernameAllowedCharactersError => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐºÐ²Ñ‹, Ñ†Ð¸Ñ„Ñ€Ñ‹ Ð¸ Ð·Ð½Ð°Ðº _.";
+	public override string ResponseUsernameAllowedCharactersError => "Имя пользователя может содержать только буквы, цифры и знак _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameAlreadyInUse"
 	/// English String: "This username is already in use."
 	/// </summary>
-	public override string ResponseUsernameAlreadyInUse => "Ð­Ñ‚Ð¾ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚Ð¾.";
+	public override string ResponseUsernameAlreadyInUse => "Это имя пользователя уже занято.";
 
 	/// <summary>
 	/// Key: "Response.UsernameExplicit"
 	/// English String: "This username is not allowed, please try another."
 	/// </summary>
-	public override string ResponseUsernameExplicit => "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ. Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´Ñ€ÑƒÐ³Ð¾Ðµ.";
+	public override string ResponseUsernameExplicit => "Недопустимое имя. Выберите другое.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalid"
 	/// English String: "Please enter a valid username."
 	/// </summary>
-	public override string ResponseUsernameInvalid => "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+	public override string ResponseUsernameInvalid => "Введите допустимое имя пользователя.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidCharacters"
 	/// English String: "Only a-z, A-Z, 0-9 and _ are allowed."
 	/// </summary>
-	public override string ResponseUsernameInvalidCharacters => "Ð”Ð¾Ð¿ÑƒÑÐºÐ°ÑŽÑ‚ÑÑ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ aâ€“z, Aâ€“Z, 0-9 Ð¸ _.";
+	public override string ResponseUsernameInvalidCharacters => "Допускаются только символы a–z, A–Z, 0-9 и _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidLength"
 	/// English String: "Usernames can be 3 to 20 characters long."
 	/// </summary>
-	public override string ResponseUsernameInvalidLength => "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚ 3 Ð´Ð¾ 20 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð².";
+	public override string ResponseUsernameInvalidLength => "Введите от 3 до 20 символов.";
 
 	/// <summary>
 	/// Key: "Response.UsernameInvalidUnderscore"
 	/// English String: "Usernames cannot start or end with _."
 	/// </summary>
-	public override string ResponseUsernameInvalidUnderscore => "Ð˜Ð¼Ñ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ‚ÑŒÑÑ/Ð·Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°Ñ‚ÑŒÑÑ _.";
+	public override string ResponseUsernameInvalidUnderscore => "Имя не может начинаться/заканчиваться _.";
 
 	/// <summary>
 	/// Key: "Response.UsernameNotAvailable"
 	/// English String: "Username not available. Please try again."
 	/// </summary>
-	public override string ResponseUsernameNotAvailable => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ";
+	public override string ResponseUsernameNotAvailable => "Имя пользователя недоступно. Повторите попытку";
 
 	/// <summary>
 	/// Key: "Response.UsernameOrPasswordIncorrect"
 	/// Your username or password is incorrect
 	/// English String: "Your username or password is incorrect."
 	/// </summary>
-	public override string ResponseUsernameOrPasswordIncorrect => "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð¸Ð»Ð¸ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+	public override string ResponseUsernameOrPasswordIncorrect => "Неправильный пароль или имя пользователя.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePasswordRequired"
 	/// Username and Password are required error message
 	/// English String: "Username and Password are required."
 	/// </summary>
-	public override string ResponseUsernamePasswordRequired => "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+	public override string ResponseUsernamePasswordRequired => "Необходимо указать имя пользователя и пароль.";
 
 	/// <summary>
 	/// Key: "Response.UsernamePrivateInfo"
 	/// English String: "Username might contain private information."
 	/// </summary>
-	public override string ResponseUsernamePrivateInfo => "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ.";
+	public override string ResponseUsernamePrivateInfo => "Имя пользователя может содержать личные данные.";
 
 	/// <summary>
 	/// Key: "Response.UsernameRequired"
 	/// validation error message
 	/// English String: "Username is required."
 	/// </summary>
-	public override string ResponseUsernameRequired => "Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+	public override string ResponseUsernameRequired => "Требуется указать имя пользователя.";
 
 	/// <summary>
 	/// Key: "Response.UsernameTakenTryAgain"
 	/// English String: "This username is already taken! Please try a different one."
 	/// </summary>
-	public override string ResponseUsernameTakenTryAgain => "Ð­Ñ‚Ð¾ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚Ð¾!";
+	public override string ResponseUsernameTakenTryAgain => "Это имя пользователя уже занято!";
 
 	/// <summary>
 	/// Key: "Response.UsernameTooManyUnderscores"
 	/// English String: "Usernames can have at most one _."
 	/// </summary>
-	public override string ResponseUsernameTooManyUnderscores => "Ð˜Ð¼Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ Ð¾Ð´Ð½Ð¾Ð³Ð¾ _.";
+	public override string ResponseUsernameTooManyUnderscores => "Имя может содержать не более одного _.";
 
 	public SignUpResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -558,52 +560,52 @@ internal class SignUpResources_ru_ru : SignUpResources_en_us, ISignUpResources, 
 
 	protected override string _GetTemplateForActionCreateAccount()
 	{
-		return "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ";
+		return "Создать учетную запись";
 	}
 
 	protected override string _GetTemplateForActionLinkAccount()
 	{
-		return "ÐŸÑ€Ð¸Ð²ÑÐ·Ð°Ñ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ";
+		return "Привязать учетную запись";
 	}
 
 	protected override string _GetTemplateForActionLogInCapitalized()
 	{
-		return "Ð’Ñ…Ð¾Ð´";
+		return "Вход";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Ð”Ð¾Ð¼Ð¾Ð¹";
+		return "Домой";
 	}
 
 	protected override string _GetTemplateForActionSignUp()
 	{
-		return "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
+		return "Регистрация";
 	}
 
 	protected override string _GetTemplateForActionSignupAndSync()
 	{
-		return "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð¸ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð°Ñ†Ð¸Ñ";
+		return "Регистрация и синхронизация";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+		return "Отправить";
 	}
 
 	protected override string _GetTemplateForDescriptionAccountLinkingWarning()
 	{
-		return "Ð§Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ñ‚ÑŒ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰ÑƒÑŽ ÑƒÑ‡ÐµÑ‚Ð½ÑƒÑŽ Ð·Ð°Ð¿Ð¸ÑÑŒ Roblox, Ð²Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð¸ Ð¾Ñ‚ÐºÑ€Ð¾Ð¹Ñ‚Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸.";
+		return "Чтобы привязать существующую учетную запись Roblox, войдите и откройте страницу настроек учетной записи.";
 	}
 
 	protected override string _GetTemplateForDescriptionNoRealName()
 	{
-		return "ÐÐµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ.";
+		return "Не используйте настоящее имя.";
 	}
 
 	protected override string _GetTemplateForDescriptionPrivacyPolicy()
 	{
-		return "ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸";
+		return "Политику конфиденциальности";
 	}
 
 	/// <summary>
@@ -613,32 +615,32 @@ internal class SignUpResources_ru_ru : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string DescriptionSignUpAgreement(string spanStart, string spanEnd, string termsOfUseLink, string privacyPolicyLink)
 	{
-		return $"ÐÐ°Ð¶Ð°Ð² ÐºÐ½Ð¾Ð¿ÐºÑƒ {spanStart}Â«Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸ÑÂ»{spanEnd}, Ð²Ñ‹ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÐµÑ‚Ðµ ÑƒÑÐ»Ð¾Ð²Ð¸Ñ Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð²: {termsOfUseLink} Ð¸ {privacyPolicyLink}";
+		return $"Нажав кнопку {spanStart}«Регистрация»{spanEnd}, вы принимаете условия документов: {termsOfUseLink} и {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionSignUpAgreement()
 	{
-		return "ÐÐ°Ð¶Ð°Ð² ÐºÐ½Ð¾Ð¿ÐºÑƒ {spanStart}Â«Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸ÑÂ»{spanEnd}, Ð²Ñ‹ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÐµÑ‚Ðµ ÑƒÑÐ»Ð¾Ð²Ð¸Ñ Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð¾Ð²: {termsOfUseLink} Ð¸ {privacyPolicyLink}";
+		return "Нажав кнопку {spanStart}«Регистрация»{spanEnd}, вы принимаете условия документов: {termsOfUseLink} и {privacyPolicyLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionTermsOfService()
 	{
-		return "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑƒÑÐ»ÑƒÐ³";
+		return "Условия предоставления услуг";
 	}
 
 	protected override string _GetTemplateForGuestSignUpABActionSignUp()
 	{
-		return "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
+		return "Регистрация";
 	}
 
 	protected override string _GetTemplateForHeadingConnectFacebook()
 	{
-		return "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº Facebook";
+		return "Подключиться к Facebook";
 	}
 
 	protected override string _GetTemplateForHeadingCreateAnAccount()
 	{
-		return "Ð¡ÐžÐ—Ð”ÐÐ¢Ð¬ Ð£Ð§Ð•Ð¢ÐÐ£Ð® Ð—ÐÐŸÐ˜Ð¡Ð¬";
+		return "СОЗДАТЬ УЧЕТНУЮ ЗАПИСЬ";
 	}
 
 	/// <summary>
@@ -648,362 +650,362 @@ internal class SignUpResources_ru_ru : SignUpResources_en_us, ISignUpResources, 
 	/// </summary>
 	public override string HeadingFacebookSignupAlmostDone(string firstname)
 	{
-		return $"{firstname}, Ð’Ð« ÐŸÐžÐ§Ð¢Ð˜ Ð—ÐÐšÐžÐÐ§Ð˜Ð›Ð˜";
+		return $"{firstname}, ВЫ ПОЧТИ ЗАКОНЧИЛИ";
 	}
 
 	protected override string _GetTemplateForHeadingFacebookSignupAlmostDone()
 	{
-		return "{firstname}, Ð’Ð« ÐŸÐžÐ§Ð¢Ð˜ Ð—ÐÐšÐžÐÐ§Ð˜Ð›Ð˜";
+		return "{firstname}, ВЫ ПОЧТИ ЗАКОНЧИЛИ";
 	}
 
 	protected override string _GetTemplateForHeadingLoginHaveFun()
 	{
-		return "Ð’Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð¸ Ð½Ð°ÑÐ»Ð°Ð¶Ð´Ð°Ð¹Ñ‚ÐµÑÑŒ Ð¸Ð³Ñ€Ð°Ð¼Ð¸!";
+		return "Войдите и наслаждайтесь играми!";
 	}
 
 	protected override string _GetTemplateForHeadingSignupHaveFun()
 	{
-		return "Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐ¹Ñ‚ÐµÑÑŒ Ð¸ Ð½Ð°ÑÐ»Ð°Ð¶Ð´Ð°Ð¹Ñ‚ÐµÑÑŒ Ð¸Ð³Ñ€Ð°Ð¼Ð¸!";
+		return "Зарегистрируйтесь и наслаждайтесь играми!";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "Ð¡Ð²ÐµÐ´ÐµÐ½Ð¸Ñ";
+		return "Сведения";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyHaveRobloxAccount()
 	{
-		return "Ð£Ð¶Ðµ ÐµÑÑ‚ÑŒ ÑƒÑ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Roblox?";
+		return "Уже есть учетная запись Roblox?";
 	}
 
 	protected override string _GetTemplateForLabelAlreadyRegistered()
 	{
-		return "Ð£Ð¶Ðµ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹?";
+		return "Уже зарегистрированы?";
 	}
 
 	protected override string _GetTemplateForLabelBirthday()
 	{
-		return "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ";
+		return "Дата рождения";
 	}
 
 	protected override string _GetTemplateForLabelBirthdayWithColumn()
 	{
-		return "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ:";
+		return "Дата рождения:";
 	}
 
 	protected override string _GetTemplateForLabelConfirmPassword()
 	{
-		return "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð°Ñ€Ð¾Ð»Ñ";
+		return "Подтверждение пароля";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "Ð”ÐµÐ½ÑŒ";
+		return "День";
 	}
 
 	protected override string _GetTemplateForLabelDesiredUsername()
 	{
-		return "Ð–ÐµÐ»Ð°ÐµÐ¼Ð¾Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ:";
+		return "Желаемое имя пользователя:";
 	}
 
 	protected override string _GetTemplateForLabelFacebookNotLinked()
 	{
-		return "â‚¬Ð’Ð°ÑˆÐ° ÑƒÑ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Facebook Ð½Ðµ Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ð½Ð° Ðº Roblox. ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ñ€Ð¸Ð²ÑÐ¶Ð¸Ñ‚Ðµ ÐµÐµ Ðº Roblox.";
+		return "€Ваша учетная запись Facebook не привязана к Roblox. Пожалуйста, привяжите ее к Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelFacebookSignupUsername()
 	{
-		return "ÐŸÑ€Ð¸Ð´ÑƒÐ¼Ð°Ð¹Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Roblox:";
+		return "Придумайте имя пользователя Roblox:";
 	}
 
 	protected override string _GetTemplateForLabelFemale()
 	{
-		return "Ð–ÐµÐ½ÑÐºÐ¸Ð¹";
+		return "Женский";
 	}
 
 	protected override string _GetTemplateForLabelGender()
 	{
-		return "ÐŸÐ¾Ð»";
+		return "Пол";
 	}
 
 	protected override string _GetTemplateForLabelGenderRequired()
 	{
-		return "Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿Ð¾Ð».";
+		return "Требуется указать пол.";
 	}
 
 	protected override string _GetTemplateForLabelGenderWithColumn()
 	{
-		return "ÐŸÐ¾Ð»:";
+		return "Пол:";
 	}
 
 	protected override string _GetTemplateForLabelMale()
 	{
-		return "ÐœÑƒÐ¶ÑÐºÐ¾Ð¹";
+		return "Мужской";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "ÐœÐµÑÑÑ†";
+		return "Месяц";
 	}
 
 	protected override string _GetTemplateForLabelPassword()
 	{
-		return "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";
+		return "Пароль";
 	}
 
 	protected override string _GetTemplateForLabelPasswordRequirements()
 	{
-		return "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ (Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 8 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²)";
+		return "Пароль (не менее 8 символов)";
 	}
 
 	protected override string _GetTemplateForLabelPlatforms()
 	{
-		return "ÐŸÐ»Ð°Ñ‚Ñ„Ð¾Ñ€Ð¼Ñ‹";
+		return "Платформы";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "Ð˜Ð³Ñ€Ð°Ñ‚ÑŒ";
+		return "Играть";
 	}
 
 	protected override string _GetTemplateForLabelPleaseAgreeToTerms()
 	{
-		return "ÐŸÑ€Ð¸Ð¼Ð¸Ñ‚Ðµ Ð½Ð°ÑˆÐ¸ Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑƒÑÐ»ÑƒÐ³ Ð¸ ÐŸÐ¾Ð»Ð¸Ñ‚Ð¸ÐºÑƒ ÐºÐ¾Ð½Ñ„Ð¸Ð´ÐµÐ½Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸.";
+		return "Примите наши Условия предоставления услуг и Политику конфиденциальности.";
 	}
 
 	protected override string _GetTemplateForLabelRequired()
 	{
-		return "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾";
+		return "Обязательно";
 	}
 
 	protected override string _GetTemplateForLabelSignupButtonText()
 	{
-		return "Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐ¹Ñ‚ÐµÑÑŒ Ð¸ Ð¸Ð³Ñ€Ð°Ð¹Ñ‚Ðµ!";
+		return "Зарегистрируйтесь и играйте!";
 	}
 
 	protected override string _GetTemplateForLabelSignUpWith()
 	{
-		return "Ð¸Ð»Ð¸ Ð²Ð¾Ð¹Ñ‚Ð¸ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ";
+		return "или войти с помощью";
 	}
 
 	protected override string _GetTemplateForLabelTermsOfUse()
 	{
-		return "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ";
+		return "Условия использования";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+		return "Имя пользователя";
 	}
 
 	protected override string _GetTemplateForLabelUsernameCharacterLimit()
 	{
-		return "ÐžÑ‚ 3 Ð´Ð¾ 20 Ð±ÑƒÐºÐ² Ð¸Ð»Ð¸ Ñ†Ð¸Ñ„Ñ€ Ð±ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»Ð¾Ð².";
+		return "От 3 до 20 букв или цифр без пробелов.";
 	}
 
 	protected override string _GetTemplateForLabelUsernameHint()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ (Ð½Ðµ ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°Ð¹Ñ‚Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ)";
+		return "Имя пользователя (не указывайте настоящее имя)";
 	}
 
 	protected override string _GetTemplateForLabelUsernameRequirements()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ (3-20 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð², Ð´Ð¾Ð¿ÑƒÑÐºÐ°ÐµÑ‚ÑÑ ÑÐ¸Ð¼Ð²Ð¾Ð» _)";
+		return "Имя пользователя (3-20 символов, допускается символ _)";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "Ð“Ð¾Ð´";
+		return "Год";
 	}
 
 	protected override string _GetTemplateForMessagePasswordMinLength()
 	{
-		return "ÐÐµ Ð¼ÐµÐ½ÐµÐµ 8 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²";
+		return "Не менее 8 символов";
 	}
 
 	protected override string _GetTemplateForMessageUsernameNoRealNameUse()
 	{
-		return "ÐÐµ ÑƒÐºÐ°Ð·Ñ‹Ð²Ð°Ð¹Ñ‚Ðµ ÑÐ²Ð¾Ðµ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð¸Ð¼Ñ";
+		return "Не указывайте свое настоящее имя";
 	}
 
 	protected override string _GetTemplateForResponseBadUsername()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½Ðµ Ð¿Ð¾Ð´Ñ…Ð¾Ð´Ð¸Ñ‚ Ð´Ð»Ñ Roblox.";
+		return "Имя пользователя не подходит для Roblox.";
 	}
 
 	protected override string _GetTemplateForResponseBadUsernameForWeChat()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½Ðµ Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾";
+		return "Имя пользователя не разрешено";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayInvalid()
 	{
-		return "ÐÐµÐ²ÐµÑ€Ð½Ð°Ñ Ð´Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+		return "Неверная дата рождения.";
 	}
 
 	protected override string _GetTemplateForResponseBirthdayMustBeSetFirst()
 	{
-		return "Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+		return "Сначала требуется указать дату рождения.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaMismatchError()
 	{
-		return "Ð¡Ð»Ð¾Ð²Ð° Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚.";
+		return "Слова не совпадают.";
 	}
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ ÐºÐ°Ð¿Ñ‡Ñƒ";
+		return "Пожалуйста, заполните капчу";
 	}
 
 	protected override string _GetTemplateForResponseFacebookConnectionError()
 	{
-		return "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¾Ñ‚ Facebook.";
+		return "Ошибка при получении данных от Facebook.";
 	}
 
 	protected override string _GetTemplateForResponseFacebookLoginAge()
 	{
-		return "Ð’Ñ…Ð¾Ð´ Ñ‡ÐµÑ€ÐµÐ· Facebook Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÐ¼Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÑ‚Ð°Ñ€ÑˆÐµ 13 Ð»ÐµÑ‚.";
+		return "Вход через Facebook может быть произведен пользователями только старше 13 лет.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidBirthday()
 	{
-		return "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð°Ñ Ð´Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
+		return "Недопустимая дата рождения.";
 	}
 
 	protected override string _GetTemplateForResponseInvalidEmail()
 	{
-		return "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ñ‹.";
+		return "Недопустимый адрес эл. почты.";
 	}
 
 	protected override string _GetTemplateForResponseJavaScriptRequired()
 	{
-		return "Ð”Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ JavaScript.";
+		return "Для отправки формы требуется JavaScript.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordComplexity()
 	{
-		return "ÐŸÑ€Ð¸Ð´ÑƒÐ¼Ð°Ð¹Ñ‚Ðµ Ð±Ð¾Ð»ÐµÐµ ÑÐ»Ð¾Ð¶Ð½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+		return "Придумайте более сложный пароль.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordConfirmation()
 	{
-		return "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+		return "Пожалуйста, подтвердите пароль.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordContainsUsernameError()
 	{
-		return "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð½Ðµ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°Ñ‚ÑŒ Ñ Ð¸Ð¼ÐµÐ½ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+		return "Пароль не должен совпадать с именем пользователя.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordMismatch()
 	{
-		return "ÐŸÐ°Ñ€Ð¾Ð»Ð¸ Ð½Ðµ ÑÐ¾Ð²Ð¿Ð°Ð´Ð°ÑŽÑ‚.";
+		return "Пароли не совпадают.";
 	}
 
 	protected override string _GetTemplateForResponsePasswordWrongShort()
 	{
-		return "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 8 Ð·Ð½Ð°ÐºÐ¾Ð².";
+		return "Пароль должен содержать не менее 8 знаков.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterPassword()
 	{
-		return "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+		return "Введите пароль.";
 	}
 
 	protected override string _GetTemplateForResponsePleaseEnterUsername()
 	{
-		return "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+		return "Введите имя пользователя.";
 	}
 
 	protected override string _GetTemplateForResponseSocialAccountCreationFailed()
 	{
-		return "Ð£Ñ‡ÐµÑ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð½Ð°";
+		return "Учетная запись не создана";
 	}
 
 	protected override string _GetTemplateForResponseSpaceOrSpecialCharaterError()
 	{
-		return "ÐÐµÐ»ÑŒÐ·Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð±ÐµÐ» Ð¸ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹.";
+		return "Нельзя использовать пробел и специальные символы.";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAccountsWithSameEmailError()
 	{
-		return "Ð¡Ð»Ð¸ÑˆÐºÐ¾Ð¼ Ð¼Ð½Ð¾Ð³Ð¾ ÑƒÑ‡ÐµÑ‚Ð½Ñ‹Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ ÑÑ‚Ð¾Ñ‚ Ð°Ð´Ñ€ÐµÑ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ñ‹.";
+		return "Слишком много учетных записей используют этот адрес эл. почты.";
 	}
 
 	protected override string _GetTemplateForResponseUnknownError()
 	{
-		return "Ðš ÑÐ¾Ð¶Ð°Ð»ÐµÐ½Ð¸ÑŽ, Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ Ð¿Ð¾Ð·Ð¶Ðµ.";
+		return "К сожалению, произошла неизвестная ошибка. Повторите попытку позже.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAllowedCharactersError()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð±ÑƒÐºÐ²Ñ‹, Ñ†Ð¸Ñ„Ñ€Ñ‹ Ð¸ Ð·Ð½Ð°Ðº _.";
+		return "Имя пользователя может содержать только буквы, цифры и знак _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameAlreadyInUse()
 	{
-		return "Ð­Ñ‚Ð¾ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚Ð¾.";
+		return "Это имя пользователя уже занято.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameExplicit()
 	{
-		return "ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ. Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´Ñ€ÑƒÐ³Ð¾Ðµ.";
+		return "Недопустимое имя. Выберите другое.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalid()
 	{
-		return "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+		return "Введите допустимое имя пользователя.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidCharacters()
 	{
-		return "Ð”Ð¾Ð¿ÑƒÑÐºÐ°ÑŽÑ‚ÑÑ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ‹ aâ€“z, Aâ€“Z, 0-9 Ð¸ _.";
+		return "Допускаются только символы a–z, A–Z, 0-9 и _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidLength()
 	{
-		return "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚ 3 Ð´Ð¾ 20 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð².";
+		return "Введите от 3 до 20 символов.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameInvalidUnderscore()
 	{
-		return "Ð˜Ð¼Ñ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ‚ÑŒÑÑ/Ð·Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°Ñ‚ÑŒÑÑ _.";
+		return "Имя не может начинаться/заканчиваться _.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameNotAvailable()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð¾. ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ";
+		return "Имя пользователя недоступно. Повторите попытку";
 	}
 
 	protected override string _GetTemplateForResponseUsernameOrPasswordIncorrect()
 	{
-		return "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð¸Ð»Ð¸ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+		return "Неправильный пароль или имя пользователя.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePasswordRequired()
 	{
-		return "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ.";
+		return "Необходимо указать имя пользователя и пароль.";
 	}
 
 	protected override string _GetTemplateForResponseUsernamePrivateInfo()
 	{
-		return "Ð˜Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ.";
+		return "Имя пользователя может содержать личные данные.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameRequired()
 	{
-		return "Ð¢Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+		return "Требуется указать имя пользователя.";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTakenTryAgain()
 	{
-		return "Ð­Ñ‚Ð¾ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚Ð¾!";
+		return "Это имя пользователя уже занято!";
 	}
 
 	protected override string _GetTemplateForResponseUsernameTooManyUnderscores()
 	{
-		return "Ð˜Ð¼Ñ Ð¼Ð¾Ð¶ÐµÑ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ Ð¾Ð´Ð½Ð¾Ð³Ð¾ _.";
+		return "Имя может содержать не более одного _.";
 	}
 }
 

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    enum JoinType
+namespace Roblox.Platform.Games.Client {
+    public enum JoinType
 
 {
 	Unknown,

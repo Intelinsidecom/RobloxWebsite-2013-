@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IFileUploadComponentResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IFileUploadComponentResources : ITranslationResources
 
 {
 	/// <summary>
@@ -74,3 +76,5 @@
 
 
 }
+
+

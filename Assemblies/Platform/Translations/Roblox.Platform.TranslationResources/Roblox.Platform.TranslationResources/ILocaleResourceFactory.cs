@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResourcespublic {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources {
     interface ILocaleResourceFactory
 
 {
@@ -13,3 +15,4 @@
 
 
 }
+

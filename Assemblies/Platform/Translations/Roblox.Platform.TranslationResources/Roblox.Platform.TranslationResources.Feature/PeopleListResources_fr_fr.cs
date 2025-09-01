@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PeopleListResources_en_us to provide locale specific translations where possible,
@@ -25,7 +27,7 @@ internal class PeopleListResources_fr_fr : PeopleListResources_en_us, IPeopleLis
 	/// View game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "Afficher les dÃ©tails";
+	public override string ActionViewDetails => "Afficher les détails";
 
 	/// <summary>
 	/// Key: "Heading.Friends"
@@ -63,7 +65,7 @@ internal class PeopleListResources_fr_fr : PeopleListResources_en_us, IPeopleLis
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "Afficher les dÃ©tails";
+		return "Afficher les détails";
 	}
 
 	protected override string _GetTemplateForHeadingFriends()

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PrivateSalesResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 	/// Key: "Label.NoHistoricalData"
 	/// English String: "No historical data to chart."
 	/// </summary>
-	public override string LabelNoHistoricalData => "No hay datos histÃ³ricos para mostrar.";
+	public override string LabelNoHistoricalData => "No hay datos históricos para mostrar.";
 
 	/// <summary>
 	/// Key: "Label.OriginalPrice"
@@ -59,13 +61,13 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 	/// Price chart and resellers fail to load on the page.
 	/// English String: "Failed to load price chart and resellers. Try again"
 	/// </summary>
-	public override string LabelResaleDataLoadFailure => "Error al cargar la grÃ¡fica de precios y revendedores. IntÃ©ntalo de nuevo.";
+	public override string LabelResaleDataLoadFailure => "Error al cargar la gráfica de precios y revendedores. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "Ver mÃ¡s";
+	public override string LabelSeeMore => "Ver más";
 
 	/// <summary>
 	/// Key: "Label.Volume"
@@ -77,7 +79,7 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 	/// Key: "Message.NoOneSelling"
 	/// English String: "Sorry, no one is reselling this item at the moment."
 	/// </summary>
-	public override string MessageNoOneSelling => "En estos momentos nadie estÃ¡ revendiendo este objeto.";
+	public override string MessageNoOneSelling => "En estos momentos nadie está revendiendo este objeto.";
 
 	public PrivateSalesResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -106,7 +108,7 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelNoHistoricalData()
 	{
-		return "No hay datos histÃ³ricos para mostrar.";
+		return "No hay datos históricos para mostrar.";
 	}
 
 	protected override string _GetTemplateForLabelOriginalPrice()
@@ -126,12 +128,12 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 
 	protected override string _GetTemplateForLabelResaleDataLoadFailure()
 	{
-		return "Error al cargar la grÃ¡fica de precios y revendedores. IntÃ©ntalo de nuevo.";
+		return "Error al cargar la gráfica de precios y revendedores. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "Ver mÃ¡s";
+		return "Ver más";
 	}
 
 	protected override string _GetTemplateForLabelVolume()
@@ -145,17 +147,17 @@ internal class PrivateSalesResources_es_es : PrivateSalesResources_en_us, IPriva
 	/// </summary>
 	public override string LabelXDays(string numberOfDays)
 	{
-		return $"{numberOfDays} dÃ­as";
+		return $"{numberOfDays} días";
 	}
 
 	protected override string _GetTemplateForLabelXDays()
 	{
-		return "{numberOfDays} dÃ­as";
+		return "{numberOfDays} días";
 	}
 
 	protected override string _GetTemplateForMessageNoOneSelling()
 	{
-		return "En estos momentos nadie estÃ¡ revendiendo este objeto.";
+		return "En estos momentos nadie está revendiendo este objeto.";
 	}
 }
 

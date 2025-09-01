@@ -58,7 +58,10 @@
       <Project>
       </Project>
     </ProjectReference>
-    
+    <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter.Client\Roblox.Platform.TextFilter.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj">
       <Project>
       </Project>
@@ -112,23 +115,15 @@
       <Project>
       </Project>
     </ProjectReference>
-    
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
     <ProjectReference Include="..\..\Content\Roblox.Platform.ContentFilter.Client\Roblox.Platform.ContentFilter.Client.csproj">
       <Project>
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\Roblox.Platform.Assets.Client\Roblox.Assets.Client.csproj" />
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Assets\Roblox.Assets\Roblox.Assets.csproj" />
+    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj" />
     <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter\Roblox.Platform.TextFilter.csproj" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj" />
-    <ProjectReference Include="..\..\..\FloodCheckers\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj" />
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Paging\Roblox.Paging.csproj" />
-    <ProjectReference Include="..\..\Translations\Roblox.Platform.TranslationResources\Roblox.Platform.TranslationResources.csproj" />
-    <ProjectReference Include="..\..\..\Drawing\Roblox.Drawing\Roblox.Drawing.csproj" />
-    
-    <ProjectReference Include="..\Roblox.Platform.Assets.Client\Roblox.Assets.Client.csproj" />
+    <ProjectReference Include="..\..\TextFilter\Roblox.Platform.TextFilter.Client\Roblox.Platform.TextFilter.Client.csproj" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
   </ItemGroup>
 </Project>

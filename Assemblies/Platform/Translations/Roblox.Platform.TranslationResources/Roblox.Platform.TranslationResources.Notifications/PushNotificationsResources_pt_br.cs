@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notifications {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     /// <summary>
 
 /// This class overrides PushNotificationsResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// You have a been invited to a VIP server!
 	/// English String: "You have a been invited to a VIP server!"
 	/// </summary>
-	public override string MessageAddedToPrivateServerWhiteListDefault => "VocÃª foi convidado(a) para um servidor VIP!";
+	public override string MessageAddedToPrivateServerWhiteListDefault => "Você foi convidado(a) para um servidor VIP!";
 
 	/// <summary>
 	/// Key: "Message.DefaultSystemMessage.Body"
@@ -39,21 +41,21 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// You have a new friend request!
 	/// English String: "You have a new friend request!"
 	/// </summary>
-	public override string MessageFriendRequestReceivedDefault => "VocÃª tem um novo pedido de amizade!";
+	public override string MessageFriendRequestReceivedDefault => "Você tem um novo pedido de amizade!";
 
 	/// <summary>
 	/// Key: "Message.NewChatMessage.Default"
 	/// You have a new chat message.
 	/// English String: "You have a new chat message."
 	/// </summary>
-	public override string MessageNewChatMessageDefault => "VocÃª tem uma nova mensagem de chat.";
+	public override string MessageNewChatMessageDefault => "Você tem uma nova mensagem de chat.";
 
 	/// <summary>
 	/// Key: "Message.PartyInvitation.Default"
 	/// You are invited to a party!
 	/// English String: "You are invited to a party!"
 	/// </summary>
-	public override string MessagePartyInvitationDefault => "VocÃª foi convidado(a) para um time!";
+	public override string MessagePartyInvitationDefault => "Você foi convidado(a) para um time!";
 
 	/// <summary>
 	/// Key: "Message.PartyMembersJoined.Default"
@@ -67,14 +69,14 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// You have a new private message.
 	/// English String: "You have a new private message."
 	/// </summary>
-	public override string MessagePrivateMessageReceivedDefault => "VocÃª tem uma nova mensagem privada.";
+	public override string MessagePrivateMessageReceivedDefault => "Você tem uma nova mensagem privada.";
 
 	/// <summary>
 	/// Key: "Message.TeamCreateInvitation.Default"
 	/// A user invites another user to contribute to a team create game.
 	/// English String: "You are invited to edit a game!"
 	/// </summary>
-	public override string MessageTeamCreateInvitationDefault => "VocÃª foi convidado(a) para editar um jogo!";
+	public override string MessageTeamCreateInvitationDefault => "Você foi convidado(a) para editar um jogo!";
 
 	public PushNotificationsResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -88,17 +90,17 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageAddedToPrivateServerWhiteListAddedToWhiteListMessage(string vipInviter, string server, string place)
 	{
-		return $"{vipInviter} adicionou vocÃª ao seu servidor VIP, {server}, em {place}!";
+		return $"{vipInviter} adicionou você ao seu servidor VIP, {server}, em {place}!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListAddedToWhiteListMessage()
 	{
-		return "{vipInviter} adicionou vocÃª ao seu servidor VIP, {server}, em {place}!";
+		return "{vipInviter} adicionou você ao seu servidor VIP, {server}, em {place}!";
 	}
 
 	protected override string _GetTemplateForMessageAddedToPrivateServerWhiteListDefault()
 	{
-		return "VocÃª foi convidado(a) para um servidor VIP!";
+		return "Você foi convidado(a) para um servidor VIP!";
 	}
 
 	protected override string _GetTemplateForMessageDefaultSystemMessageBody()
@@ -138,17 +140,17 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedCompleteMessage(string friend)
 	{
-		return $"VocÃª agora tem uma amizade com: {friend}!";
+		return $"Você agora tem uma amizade com: {friend}!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedCompleteMessage()
 	{
-		return "VocÃª agora tem uma amizade com: {friend}!";
+		return "Você agora tem uma amizade com: {friend}!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedDefault()
 	{
-		return "VocÃª tem um novo pedido de amizade!";
+		return "Você tem um novo pedido de amizade!";
 	}
 
 	/// <summary>
@@ -158,17 +160,17 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageFriendRequestReceivedNewRequestMessage(string friend)
 	{
-		return $"{friend} enviou um pedido de amizade para vocÃª!";
+		return $"{friend} enviou um pedido de amizade para você!";
 	}
 
 	protected override string _GetTemplateForMessageFriendRequestReceivedNewRequestMessage()
 	{
-		return "{friend} enviou um pedido de amizade para vocÃª!";
+		return "{friend} enviou um pedido de amizade para você!";
 	}
 
 	protected override string _GetTemplateForMessageNewChatMessageDefault()
 	{
-		return "VocÃª tem uma nova mensagem de chat.";
+		return "Você tem uma nova mensagem de chat.";
 	}
 
 	/// <summary>
@@ -203,7 +205,7 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessagePartyInvitationDefault()
 	{
-		return "VocÃª foi convidado(a) para um time!";
+		return "Você foi convidado(a) para um time!";
 	}
 
 	/// <summary>
@@ -213,12 +215,12 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter} convidou vocÃª para um time!";
+		return $"{partyInviter} convidou você para um time!";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationPartyMessage()
 	{
-		return "{partyInviter} convidou vocÃª para um time!";
+		return "{partyInviter} convidou você para um time!";
 	}
 
 	/// <summary>
@@ -228,12 +230,12 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePartyInvitationXBoxPartyMessage(string partyInviter)
 	{
-		return $"{partyInviter} convidou vocÃª para um time do XBOX!";
+		return $"{partyInviter} convidou você para um time do XBOX!";
 	}
 
 	protected override string _GetTemplateForMessagePartyInvitationXBoxPartyMessage()
 	{
-		return "{partyInviter} convidou vocÃª para um time do XBOX!";
+		return "{partyInviter} convidou você para um time do XBOX!";
 	}
 
 	protected override string _GetTemplateForMessagePartyMembersJoinedDefault()
@@ -258,7 +260,7 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedDefault()
 	{
-		return "VocÃª tem uma nova mensagem privada.";
+		return "Você tem uma nova mensagem privada.";
 	}
 
 	/// <summary>
@@ -268,12 +270,12 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessagePrivateMessageReceivedMessageReceived(string messageSender)
 	{
-		return $"{messageSender} enviou uma mensagem privada para vocÃª.";
+		return $"{messageSender} enviou uma mensagem privada para você.";
 	}
 
 	protected override string _GetTemplateForMessagePrivateMessageReceivedMessageReceived()
 	{
-		return "{messageSender} enviou uma mensagem privada para vocÃª.";
+		return "{messageSender} enviou uma mensagem privada para você.";
 	}
 
 	/// <summary>
@@ -282,17 +284,17 @@ internal class PushNotificationsResources_pt_br : PushNotificationsResources_en_
 	/// </summary>
 	public override string MessageTeamCreateInvitation(string inviter, string gameName)
 	{
-		return $"{inviter} convidou vocÃª para editar o jogo: {gameName}!";
+		return $"{inviter} convidou você para editar o jogo: {gameName}!";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitation()
 	{
-		return "{inviter} convidou vocÃª para editar o jogo: {gameName}!";
+		return "{inviter} convidou você para editar o jogo: {gameName}!";
 	}
 
 	protected override string _GetTemplateForMessageTeamCreateInvitationDefault()
 	{
-		return "VocÃª foi convidado(a) para editar um jogo!";
+		return "Você foi convidado(a) para editar um jogo!";
 	}
 
 	/// <summary>

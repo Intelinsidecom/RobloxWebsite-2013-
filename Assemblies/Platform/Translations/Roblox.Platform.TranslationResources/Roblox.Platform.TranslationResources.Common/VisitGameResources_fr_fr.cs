@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides VisitGameResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// button label
 	/// English String: "Retry"
 	/// </summary>
-	public override string ActionRetry => "RÃ©essayer";
+	public override string ActionRetry => "Réessayer";
 
 	/// <summary>
 	/// Key: "Heading.ErrorStartingGame"
@@ -39,7 +41,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// We are checking if user has Roblox Studio installed
 	/// English String: "Checking for Roblox Studio..."
 	/// </summary>
-	public override string LabelCheckingForStudio => "VÃ©rification de Roblox Studio...";
+	public override string LabelCheckingForStudio => "Vérification de Roblox Studio...";
 
 	/// <summary>
 	/// Key: "Label.ClickHereForHelp"
@@ -59,21 +61,21 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// Key: "Label.DevelopPageTitle"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelDevelopPageTitle => "DÃ©velopper";
+	public override string LabelDevelopPageTitle => "Développer";
 
 	/// <summary>
 	/// Key: "Label.DownloadInstallRoblox"
 	/// Download and Install Roblox
 	/// English String: "Download and Install Roblox"
 	/// </summary>
-	public override string LabelDownloadInstallRoblox => "TÃ©lÃ©charger et installer Roblox";
+	public override string LabelDownloadInstallRoblox => "Télécharger et installer Roblox";
 
 	/// <summary>
 	/// Key: "Label.DownloadStudio"
 	/// Download Roblox Studio to start creating games
 	/// English String: "Download Studio"
 	/// </summary>
-	public override string LabelDownloadStudio => "TÃ©lÃ©charger Studio";
+	public override string LabelDownloadStudio => "Télécharger Studio";
 
 	/// <summary>
 	/// Key: "Label.GameConfigurePageTitle"
@@ -85,51 +87,51 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// Key: "Label.GameFreeSoothsayer"
 	/// English String: "Free because you are a soothsayer"
 	/// </summary>
-	public override string LabelGameFreeSoothsayer => "Gratuit car vous Ãªtes devin";
+	public override string LabelGameFreeSoothsayer => "Gratuit car vous êtes devin";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableAccountResrictions"
 	/// English String: "The game is unavailable due to account restrictions settings."
 	/// </summary>
-	public override string LabelGameUnavailableAccountResrictions => "Le jeu est indisponible en raison des paramÃ¨tres de limitation du compte.";
+	public override string LabelGameUnavailableAccountResrictions => "Le jeu est indisponible en raison des paramètres de limitation du compte.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCannotPlayGamesStudio"
 	/// English String: "You cannot play games from Studio. Please use a web browser to play this game."
 	/// </summary>
-	public override string LabelGameUnavailableCannotPlayGamesStudio => "Vous ne pouvez pas jouer depuis Studio. Veuillez utiliser un navigateur Internet pour jouer Ã  ce jeu.";
+	public override string LabelGameUnavailableCannotPlayGamesStudio => "Vous ne pouvez pas jouer depuis Studio. Veuillez utiliser un navigateur Internet pour jouer à ce jeu.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableClosedToVisitors"
 	/// English String: "Sorry, this place is currently closed to visitors."
 	/// </summary>
-	public override string LabelGameUnavailableClosedToVisitors => "DÃ©solÃ©, cet emplacement est actuellement fermÃ© aux visiteurs.";
+	public override string LabelGameUnavailableClosedToVisitors => "Désolé, cet emplacement est actuellement fermé aux visiteurs.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCurrentlyIsPrivateVisitor"
 	/// When a game is private, this message is shown to visitors.
 	/// English String: "Sorry, this game is private."
 	/// </summary>
-	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "DÃ©solÃ©, ce jeu est privÃ©.";
+	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "Désolé, ce jeu est privé.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableGameInsecure"
 	/// U13 users cannot play insecure games unless they are the creator or friends with the creator.
 	/// English String: "Sorry, your account is restricted from playing Experimental Games unless you are friends with the creator."
 	/// </summary>
-	public override string LabelGameUnavailableGameInsecure => "DÃ©solÃ©, ton compte est restreint et tu ne peux pas jouer aux jeux expÃ©rimentaux si tu n'es pas ami-e avec le crÃ©ateur.";
+	public override string LabelGameUnavailableGameInsecure => "Désolé, ton compte est restreint et tu ne peux pas jouer aux jeux expérimentaux si tu n'es pas ami-e avec le créateur.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePermissionLevels"
 	/// English String: "The permission levels on this place prevent you from entering."
 	/// </summary>
-	public override string LabelGameUnavailablePermissionLevels => "Les niveaux de permission de cet emplacement vous empÃªchent d'y entrer.";
+	public override string LabelGameUnavailablePermissionLevels => "Les niveaux de permission de cet emplacement vous empêchent d'y entrer.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlaceUnderReview"
 	/// English String: "Sorry, this place is currently under review. Try again later."
 	/// </summary>
-	public override string LabelGameUnavailablePlaceUnderReview => "DÃ©solÃ©, cet emplacement est actuellement en cours d'Ã©valuation. Veuillez rÃ©essayer plus tard.";
+	public override string LabelGameUnavailablePlaceUnderReview => "Désolé, cet emplacement est actuellement en cours d'évaluation. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlatform"
@@ -162,14 +164,14 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// Persuade user to begin developing their own games using Roblox Studio
 	/// English String: "Get started creating your own games!"
 	/// </summary>
-	public override string LabelPersuadeToDevelopRoblox => "Commencez Ã  crÃ©er vos propres jeux\u00a0!";
+	public override string LabelPersuadeToDevelopRoblox => "Commencez à créer vos propres jeux\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.PersuadeToInstallRoblox"
 	/// We are exciting the user about Roblox so that they will be persuaded to download and install it.
 	/// English String: "You're moments away from getting into the game!"
 	/// </summary>
-	public override string LabelPersuadeToInstallRoblox => "Vous n'Ãªtes qu'Ã  quelques pas d'entrer dans le jeu\u00a0!";
+	public override string LabelPersuadeToInstallRoblox => "Vous n'êtes qu'à quelques pas d'entrer dans le jeu\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.Play"
@@ -188,7 +190,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// Roblox is loading, so the user is getting excited to start playing a game
 	/// English String: "Roblox is now loading. Get ready to play!"
 	/// </summary>
-	public override string LabelRobloxLoadingToPlay => "Roblox est en cours de chargement. PrÃ©parez-vous Ã  jouer\u00a0!";
+	public override string LabelRobloxLoadingToPlay => "Roblox est en cours de chargement. Préparez-vous à jouer\u00a0!";
 
 	/// <summary>
 	/// Key: "Label.StartingRoblox"
@@ -223,35 +225,35 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// An error occurred trying to launch the game.  Please try again later.
 	/// English String: "An error occurred trying to launch the game.  Please try again later."
 	/// </summary>
-	public override string ResponseDialogErrorLaunching => "Une erreur est survenue lors du lancement du jeu. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseDialogErrorLaunching => "Une erreur est survenue lors du lancement du jeu. Veuillez réessayer plus tard.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.HavingTroubleInstallQuestion"
 	/// (Are you) having trouble installing Roblox?
 	/// English String: "Having trouble installing Roblox?"
 	/// </summary>
-	public override string ResponseDialogHavingTroubleInstallQuestion => "Vous rencontrez des difficultÃ©s pour installer Roblox\u00a0?";
+	public override string ResponseDialogHavingTroubleInstallQuestion => "Vous rencontrez des difficultés pour installer Roblox\u00a0?";
 
 	/// <summary>
 	/// Key: "Response.Dialog.MacChromeSecondInstruction"
 	/// Double-click the Roblox app icon to begin the installation process.
 	/// English String: "Double-click the Roblox app icon to begin the installation process."
 	/// </summary>
-	public override string ResponseDialogMacChromeSecondInstruction => "Double-cliquez sur l'icÃ´ne de l'application Roblox pour dÃ©marrer l'installation.";
+	public override string ResponseDialogMacChromeSecondInstruction => "Double-cliquez sur l'icône de l'application Roblox pour démarrer l'installation.";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ThanksForPlayingRoblox"
 	/// Thanks for playing Roblox
 	/// English String: "Thanks for playing Roblox"
 	/// </summary>
-	public override string ResponseDialogThanksForPlayingRoblox => "Merci de jouer Ã  Roblox";
+	public override string ResponseDialogThanksForPlayingRoblox => "Merci de jouer à Roblox";
 
 	/// <summary>
 	/// Key: "Response.GameTemporarilyUnavailable"
 	/// error message (will be followed by link with Action.Retry label)
 	/// English String: "Unable to verify that you have access to this game.  Please try again later."
 	/// </summary>
-	public override string ResponseGameTemporarilyUnavailable => "Impossible de vÃ©rifier que vous avez l'autorisation d'accÃ©der Ã  ce jeu. Veuillez rÃ©essayer plus tard.";
+	public override string ResponseGameTemporarilyUnavailable => "Impossible de vérifier que vous avez l'autorisation d'accéder à ce jeu. Veuillez réessayer plus tard.";
 
 	public VisitGameResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -274,7 +276,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForActionRetry()
 	{
-		return "RÃ©essayer";
+		return "Réessayer";
 	}
 
 	protected override string _GetTemplateForHeadingErrorStartingGame()
@@ -293,12 +295,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelBuyAccess(string robux)
 	{
-		return $"AccÃ©der pour {robux}\u00a0Robux";
+		return $"Accéder pour {robux}\u00a0Robux";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccess()
 	{
-		return "AccÃ©der pour {robux}\u00a0Robux";
+		return "Accéder pour {robux}\u00a0Robux";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -308,7 +310,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForLabelCheckingForStudio()
 	{
-		return "VÃ©rification de Roblox Studio...";
+		return "Vérification de Roblox Studio...";
 	}
 
 	protected override string _GetTemplateForLabelClickHereForHelp()
@@ -323,17 +325,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForLabelDevelopPageTitle()
 	{
-		return "DÃ©velopper";
+		return "Développer";
 	}
 
 	protected override string _GetTemplateForLabelDownloadInstallRoblox()
 	{
-		return "TÃ©lÃ©charger et installer Roblox";
+		return "Télécharger et installer Roblox";
 	}
 
 	protected override string _GetTemplateForLabelDownloadStudio()
 	{
-		return "TÃ©lÃ©charger Studio";
+		return "Télécharger Studio";
 	}
 
 	protected override string _GetTemplateForLabelGameConfigurePageTitle()
@@ -343,7 +345,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForLabelGameFreeSoothsayer()
 	{
-		return "Gratuit car vous Ãªtes devin";
+		return "Gratuit car vous êtes devin";
 	}
 
 	/// <summary>
@@ -353,12 +355,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByGroupOnly(string linkStart, string linkEnd)
 	{
-		return $"Seuls les dÃ©veloppeurs peuvent jouer Ã  ce jeu, car il est privÃ©. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
+		return $"Seuls les développeurs peuvent jouer à ce jeu, car il est privé. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByGroupOnly()
 	{
-		return "Seuls les dÃ©veloppeurs peuvent jouer Ã  ce jeu, car il est privÃ©. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
+		return "Seuls les développeurs peuvent jouer à ce jeu, car il est privé. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
 	}
 
 	/// <summary>
@@ -368,27 +370,27 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByOwnerOnly(string linkStart, string linkEnd)
 	{
-		return $"Vous seul pouvez jouer Ã  ce jeu car il est privÃ©. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
+		return $"Vous seul pouvez jouer à ce jeu car il est privé. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByOwnerOnly()
 	{
-		return "Vous seul pouvez jouer Ã  ce jeu car il est privÃ©. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
+		return "Vous seul pouvez jouer à ce jeu car il est privé. Rendez-le public depuis la page {linkStart}Configurer le jeu{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableAccountResrictions()
 	{
-		return "Le jeu est indisponible en raison des paramÃ¨tres de limitation du compte.";
+		return "Le jeu est indisponible en raison des paramètres de limitation du compte.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCannotPlayGamesStudio()
 	{
-		return "Vous ne pouvez pas jouer depuis Studio. Veuillez utiliser un navigateur Internet pour jouer Ã  ce jeu.";
+		return "Vous ne pouvez pas jouer depuis Studio. Veuillez utiliser un navigateur Internet pour jouer à ce jeu.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableClosedToVisitors()
 	{
-		return "DÃ©solÃ©, cet emplacement est actuellement fermÃ© aux visiteurs.";
+		return "Désolé, cet emplacement est actuellement fermé aux visiteurs.";
 	}
 
 	/// <summary>
@@ -398,12 +400,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateGroup(string linkStart, string linkEnd)
 	{
-		return $"Seuls les dÃ©veloppeurs peuvent jouer Ã  ce jeu, car il est privÃ©. Rendez-le public depuis la page {linkStart}DÃ©velopper{linkEnd}.";
+		return $"Seuls les développeurs peuvent jouer à ce jeu, car il est privé. Rendez-le public depuis la page {linkStart}Développer{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateGroup()
 	{
-		return "Seuls les dÃ©veloppeurs peuvent jouer Ã  ce jeu, car il est privÃ©. Rendez-le public depuis la page {linkStart}DÃ©velopper{linkEnd}.";
+		return "Seuls les développeurs peuvent jouer à ce jeu, car il est privé. Rendez-le public depuis la page {linkStart}Développer{linkEnd}.";
 	}
 
 	/// <summary>
@@ -413,17 +415,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateOwner(string linkStart, string linkEnd)
 	{
-		return $"Vous seul pouvez jouer Ã  ce jeu car il est privÃ©. Rendez-le public depuis la page {linkStart}DÃ©velopper{linkEnd}.";
+		return $"Vous seul pouvez jouer à ce jeu car il est privé. Rendez-le public depuis la page {linkStart}Développer{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateOwner()
 	{
-		return "Vous seul pouvez jouer Ã  ce jeu car il est privÃ©. Rendez-le public depuis la page {linkStart}DÃ©velopper{linkEnd}.";
+		return "Vous seul pouvez jouer à ce jeu car il est privé. Rendez-le public depuis la page {linkStart}Développer{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateVisitor()
 	{
-		return "DÃ©solÃ©, ce jeu est privÃ©.";
+		return "Désolé, ce jeu est privé.";
 	}
 
 	/// <summary>
@@ -433,17 +435,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyPrivate(string gameTypeName, string developPageLink)
 	{
-		return $"Ce jeu de type {gameTypeName} est actuellement privÃ©. Rendez-le public depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
+		return $"Ce jeu de type {gameTypeName} est actuellement privé. Rendez-le public depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyPrivate()
 	{
-		return "Ce jeu de type {gameTypeName} est actuellement privÃ©. Rendez-le public depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
+		return "Ce jeu de type {gameTypeName} est actuellement privé. Rendez-le public depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableGameInsecure()
 	{
-		return "DÃ©solÃ©, ton compte est restreint et tu ne peux pas jouer aux jeux expÃ©rimentaux si tu n'es pas ami-e avec le crÃ©ateur.";
+		return "Désolé, ton compte est restreint et tu ne peux pas jouer aux jeux expérimentaux si tu n'es pas ami-e avec le créateur.";
 	}
 
 	/// <summary>
@@ -452,17 +454,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableNoRootPlace(string gameConfigureLink)
 	{
-		return $"Cet emplacement fait partie d'un jeu qui n'a aucun emplacement racine. Ajoutez-en un Ã  un jeu depuis la page {gameConfigureLink} afin de permettre aux utilisateurs d'y jouer.";
+		return $"Cet emplacement fait partie d'un jeu qui n'a aucun emplacement racine. Ajoutez-en un à un jeu depuis la page {gameConfigureLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableNoRootPlace()
 	{
-		return "Cet emplacement fait partie d'un jeu qui n'a aucun emplacement racine. Ajoutez-en un Ã  un jeu depuis la page {gameConfigureLink} afin de permettre aux utilisateurs d'y jouer.";
+		return "Cet emplacement fait partie d'un jeu qui n'a aucun emplacement racine. Ajoutez-en un à un jeu depuis la page {gameConfigureLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePermissionLevels()
 	{
-		return "Les niveaux de permission de cet emplacement vous empÃªchent d'y entrer.";
+		return "Les niveaux de permission de cet emplacement vous empêchent d'y entrer.";
 	}
 
 	/// <summary>
@@ -471,17 +473,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailablePlaceNotPartOfGame(string developPageLink)
 	{
-		return $"Cet emplacement ne fait actuellement partie d'aucun jeu. Ajoutez-le Ã  un jeu depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
+		return $"Cet emplacement ne fait actuellement partie d'aucun jeu. Ajoutez-le à un jeu depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceNotPartOfGame()
 	{
-		return "Cet emplacement ne fait actuellement partie d'aucun jeu. Ajoutez-le Ã  un jeu depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
+		return "Cet emplacement ne fait actuellement partie d'aucun jeu. Ajoutez-le à un jeu depuis la page {developPageLink} afin de permettre aux utilisateurs d'y jouer.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceUnderReview()
 	{
-		return "DÃ©solÃ©, cet emplacement est actuellement en cours d'Ã©valuation. Veuillez rÃ©essayer plus tard.";
+		return "Désolé, cet emplacement est actuellement en cours d'évaluation. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlatform()
@@ -511,22 +513,22 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelOperaInstallSteps(string startBold, string endBold, string breakLine)
 	{
-		return $"1) Une fenÃªtre va s'ouvrir. Cliquez sur {startBold}Ouvrir{endBold}.{breakLine}2) Double-cliquez sur l'icÃ´ne de Roblox.";
+		return $"1) Une fenêtre va s'ouvrir. Cliquez sur {startBold}Ouvrir{endBold}.{breakLine}2) Double-cliquez sur l'icône de Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelOperaInstallSteps()
 	{
-		return "1) Une fenÃªtre va s'ouvrir. Cliquez sur {startBold}Ouvrir{endBold}.{breakLine}2) Double-cliquez sur l'icÃ´ne de Roblox.";
+		return "1) Une fenêtre va s'ouvrir. Cliquez sur {startBold}Ouvrir{endBold}.{breakLine}2) Double-cliquez sur l'icône de Roblox.";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToDevelopRoblox()
 	{
-		return "Commencez Ã  crÃ©er vos propres jeux\u00a0!";
+		return "Commencez à créer vos propres jeux\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToInstallRoblox()
 	{
-		return "Vous n'Ãªtes qu'Ã  quelques pas d'entrer dans le jeu\u00a0!";
+		return "Vous n'êtes qu'à quelques pas d'entrer dans le jeu\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
@@ -541,7 +543,7 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForLabelRobloxLoadingToPlay()
 	{
-		return "Roblox est en cours de chargement. PrÃ©parez-vous Ã  jouer\u00a0!";
+		return "Roblox est en cours de chargement. Préparez-vous à jouer\u00a0!";
 	}
 
 	protected override string _GetTemplateForLabelStartingRoblox()
@@ -566,12 +568,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRoblox(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"Cochez {startBold}Toujours ouvrir les liens pour Roblox{endBold} et cliquez sur {startBold2}Ouvrir Roblox{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return $"Cochez {startBold}Toujours ouvrir les liens pour Roblox{endBold} et cliquez sur {startBold2}Ouvrir Roblox{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRoblox()
 	{
-		return "Cochez {startBold}Toujours ouvrir les liens pour Roblox{endBold} et cliquez sur {startBold2}Ouvrir Roblox{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return "Cochez {startBold}Toujours ouvrir les liens pour Roblox{endBold} et cliquez sur {startBold2}Ouvrir Roblox{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	/// <summary>
@@ -581,12 +583,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRobloxURL(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"Cochez {startBold}Toujours ouvrir les liens pour l'URL\u00a0: Protocole Roblox{endBold} et cliquez sur {startBold2}Ouvrir l'URL\u00a0: Protocole Roblox{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return $"Cochez {startBold}Toujours ouvrir les liens pour l'URL\u00a0: Protocole Roblox{endBold} et cliquez sur {startBold2}Ouvrir l'URL\u00a0: Protocole Roblox{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRobloxURL()
 	{
-		return "Cochez {startBold}Toujours ouvrir les liens pour l'URL\u00a0: Protocole Roblox{endBold} et cliquez sur {startBold2}Ouvrir l'URL\u00a0: Protocole Roblox{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return "Cochez {startBold}Toujours ouvrir les liens pour l'URL\u00a0: Protocole Roblox{endBold} et cliquez sur {startBold2}Ouvrir l'URL\u00a0: Protocole Roblox{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	/// <summary>
@@ -596,12 +598,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckRememberMyChoiceOK(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"Cochez {startBold}Se souvenir de mon choix{endBold} et cliquez sur {startBold2}OK{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return $"Cochez {startBold}Se souvenir de mon choix{endBold} et cliquez sur {startBold2}OK{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseCheckRememberMyChoiceOK()
 	{
-		return "Cochez {startBold}Se souvenir de mon choix{endBold} et cliquez sur {startBold2}OK{endBold2} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return "Cochez {startBold}Se souvenir de mon choix{endBold} et cliquez sur {startBold2}OK{endBold2} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogClickHere()
@@ -611,27 +613,27 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 
 	protected override string _GetTemplateForResponseDialogErrorLaunching()
 	{
-		return "Une erreur est survenue lors du lancement du jeu. Veuillez rÃ©essayer plus tard.";
+		return "Une erreur est survenue lors du lancement du jeu. Veuillez réessayer plus tard.";
 	}
 
 	protected override string _GetTemplateForResponseDialogHavingTroubleInstallQuestion()
 	{
-		return "Vous rencontrez des difficultÃ©s pour installer Roblox\u00a0?";
+		return "Vous rencontrez des difficultés pour installer Roblox\u00a0?";
 	}
 
 	/// <summary>
 	/// Key: "Response.Dialog.InstallingMessageWithLink"
 	/// Note: For this translation, please move the linkStart and linkEnd variables with the translation for download now.
-	/// English String: "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}"
+	/// English String: "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}"
 	/// </summary>
 	public override string ResponseDialogInstallingMessageWithLink(string linkStart, string linkEnd)
 	{
-		return $"Le tÃ©lÃ©chargement de l'utilitaire d'installation de Roblox devrait bientÃ´t dÃ©marrer. Si ce n'est pas le cas, lancez le tÃ©lÃ©chargement {linkStart}en cliquant ici{linkEnd}.";
+		return $"Le téléchargement de l'utilitaire d'installation de Roblox devrait bientôt démarrer. Si ce n'est pas le cas, lancez le téléchargement {linkStart}en cliquant ici{linkEnd}.";
 	}
 
 	protected override string _GetTemplateForResponseDialogInstallingMessageWithLink()
 	{
-		return "Le tÃ©lÃ©chargement de l'utilitaire d'installation de Roblox devrait bientÃ´t dÃ©marrer. Si ce n'est pas le cas, lancez le tÃ©lÃ©chargement {linkStart}en cliquant ici{linkEnd}.";
+		return "Le téléchargement de l'utilitaire d'installation de Roblox devrait bientôt démarrer. Si ce n'est pas le cas, lancez le téléchargement {linkStart}en cliquant ici{linkEnd}.";
 	}
 
 	/// <summary>
@@ -641,12 +643,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFifthInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFifthInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
 	}
 
 	/// <summary>
@@ -656,12 +658,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}Roblox.dmg{endBold} pour exÃ©cuter l'utilitaire d'installation de Roblox que vous venez de tÃ©lÃ©charger.";
+		return $"Cliquez sur {startBold}Roblox.dmg{endBold} pour exécuter l'utilitaire d'installation de Roblox que vous venez de télécharger.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFirstInstruction()
 	{
-		return "Cliquez sur {startBold}Roblox.dmg{endBold} pour exÃ©cuter l'utilitaire d'installation de Roblox que vous venez de tÃ©lÃ©charger.";
+		return "Cliquez sur {startBold}Roblox.dmg{endBold} pour exécuter l'utilitaire d'installation de Roblox que vous venez de télécharger.";
 	}
 
 	/// <summary>
@@ -671,17 +673,17 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFourthInstruction()
 	{
-		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeSecondInstruction()
 	{
-		return "Double-cliquez sur l'icÃ´ne de l'application Roblox pour dÃ©marrer l'installation.";
+		return "Double-cliquez sur l'icône de l'application Roblox pour démarrer l'installation.";
 	}
 
 	/// <summary>
@@ -691,12 +693,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche Ã  l'Ã©cran.";
+		return $"Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche à l'écran.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeThirdInstruction()
 	{
-		return "Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche Ã  l'Ã©cran.";
+		return "Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche à l'écran.";
 	}
 
 	/// <summary>
@@ -721,12 +723,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFirstInstruction(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"SÃ©lectionnez {startBold}Ouvrir avec{endBold} et cliquez sur {startBold2}OK{endBold2}.";
+		return $"Sélectionnez {startBold}Ouvrir avec{endBold} et cliquez sur {startBold2}OK{endBold2}.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFirstInstruction()
 	{
-		return "SÃ©lectionnez {startBold}Ouvrir avec{endBold} et cliquez sur {startBold2}OK{endBold2}.";
+		return "Sélectionnez {startBold}Ouvrir avec{endBold} et cliquez sur {startBold2}OK{endBold2}.";
 	}
 
 	/// <summary>
@@ -736,12 +738,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFourthInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	/// <summary>
@@ -751,12 +753,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"Double-cliquez sur {startBold}l'icÃ´ne Roblox{endBold} pour dÃ©marrer l'installation.";
+		return $"Double-cliquez sur {startBold}l'icône Roblox{endBold} pour démarrer l'installation.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxSecondInstruction()
 	{
-		return "Double-cliquez sur {startBold}l'icÃ´ne Roblox{endBold} pour dÃ©marrer l'installation.";
+		return "Double-cliquez sur {startBold}l'icône Roblox{endBold} pour démarrer l'installation.";
 	}
 
 	/// <summary>
@@ -781,12 +783,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariFirstInstruction(string startBold, string endBold)
 	{
-		return $"Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}Roblox.dmg{endBold}.";
+		return $"Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}Roblox.dmg{endBold}.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFirstInstruction()
 	{
-		return "Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}Roblox.dmg{endBold}.";
+		return "Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}Roblox.dmg{endBold}.";
 	}
 
 	/// <summary>
@@ -796,12 +798,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariFourthInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFourthInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	/// <summary>
@@ -811,12 +813,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariSecondInstruction(string startBold, string endBold)
 	{
-		return $"Double-cliquez sur {startBold}l'icÃ´ne Roblox{endBold} pour dÃ©marrer l'installation.";
+		return $"Double-cliquez sur {startBold}l'icône Roblox{endBold} pour démarrer l'installation.";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariSecondInstruction()
 	{
-		return "Double-cliquez sur {startBold}l'icÃ´ne Roblox{endBold} pour dÃ©marrer l'installation.";
+		return "Double-cliquez sur {startBold}l'icône Roblox{endBold} pour démarrer l'installation.";
 	}
 
 	/// <summary>
@@ -841,12 +843,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}RobloxPlayer.exe{endBold} pour exÃ©cuter l'utilitaire d'installation de Roblox que vous venez de tÃ©lÃ©charger.";
+		return $"Cliquez sur {startBold}RobloxPlayer.exe{endBold} pour exécuter l'utilitaire d'installation de Roblox que vous venez de télécharger.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFirstInstruction()
 	{
-		return "Cliquez sur {startBold}RobloxPlayer.exe{endBold} pour exÃ©cuter l'utilitaire d'installation de Roblox que vous venez de tÃ©lÃ©charger.";
+		return "Cliquez sur {startBold}RobloxPlayer.exe{endBold} pour exécuter l'utilitaire d'installation de Roblox que vous venez de télécharger.";
 	}
 
 	/// <summary>
@@ -856,12 +858,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFourthInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} ci-dessous pour plonger dans l'action\u00a0!";
 	}
 
 	/// <summary>
@@ -871,12 +873,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeSecondInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche Ã  l'Ã©cran afin de lancer l'installation.";
+		return $"Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche à l'écran afin de lancer l'installation.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeSecondInstruction()
 	{
-		return "Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche Ã  l'Ã©cran afin de lancer l'installation.";
+		return "Cliquez sur {startBold}Ouvrir{endBold} lorsque l'invite s'affiche à l'écran afin de lancer l'installation.";
 	}
 
 	/// <summary>
@@ -886,12 +888,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeThirdInstruction()
 	{
-		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	/// <summary>
@@ -901,12 +903,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcEdgeFirstInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}Ouvrir{endBold} pour installer Roblox une fois le tÃ©lÃ©chargement terminÃ©.";
+		return $"Cliquez sur {startBold}Ouvrir{endBold} pour installer Roblox une fois le téléchargement terminé.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeFirstInstruction()
 	{
-		return "Cliquez sur {startBold}Ouvrir{endBold} pour installer Roblox une fois le tÃ©lÃ©chargement terminÃ©.";
+		return "Cliquez sur {startBold}Ouvrir{endBold} pour installer Roblox une fois le téléchargement terminé.";
 	}
 
 	/// <summary>
@@ -946,12 +948,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFifthInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}OK{endBold} lorsque l'avertissement apparaÃ®t.";
+		return $"Cliquez sur {startBold}OK{endBold} lorsque l'avertissement apparaît.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFifthInstruction()
 	{
-		return "Cliquez sur {startBold}OK{endBold} lorsque l'avertissement apparaÃ®t.";
+		return "Cliquez sur {startBold}OK{endBold} lorsque l'avertissement apparaît.";
 	}
 
 	/// <summary>
@@ -961,12 +963,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFirstInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}Enregistrer le fichier{endBold} lorsque la fenÃªtre de tÃ©lÃ©chargement apparaÃ®t.";
+		return $"Cliquez sur {startBold}Enregistrer le fichier{endBold} lorsque la fenêtre de téléchargement apparaît.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFirstInstruction()
 	{
-		return "Cliquez sur {startBold}Enregistrer le fichier{endBold} lorsque la fenÃªtre de tÃ©lÃ©chargement apparaÃ®t.";
+		return "Cliquez sur {startBold}Enregistrer le fichier{endBold} lorsque la fenêtre de téléchargement apparaît.";
 	}
 
 	/// <summary>
@@ -976,12 +978,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFourthInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	/// <summary>
@@ -991,12 +993,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
+		return $"Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxSecondInstruction()
 	{
-		return "Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
+		return "Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
 	}
 
 	/// <summary>
@@ -1066,12 +1068,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionTwo(string startBold, string endBold)
 	{
-		return $"Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
+		return $"Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionTwo()
 	{
-		return "Ouvrez le dossier TÃ©lÃ©chargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
+		return "Ouvrez le dossier Téléchargements et double-cliquez sur {startBold}RobloxPlayer.exe{endBold}.";
 	}
 
 	/// <summary>
@@ -1081,12 +1083,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIESecondInstruction(string startBold, string endBold)
 	{
-		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return $"Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIESecondInstruction()
 	{
-		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminÃ©e.";
+		return "Cliquez sur {startBold}OK{endBold} une fois l'installation de Roblox terminée.";
 	}
 
 	/// <summary>
@@ -1096,22 +1098,22 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIEThirdInstruction(string startBold, string endBold)
 	{
-		return $"Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return $"Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIEThirdInstruction()
 	{
-		return "Une fois l'installation terminÃ©e, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
+		return "Une fois l'installation terminée, cliquez sur {startBold}Jouer{endBold} pour plonger dans l'action\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseDialogThanksForPlayingRoblox()
 	{
-		return "Merci de jouer Ã  Roblox";
+		return "Merci de jouer à Roblox";
 	}
 
 	protected override string _GetTemplateForResponseGameTemporarilyUnavailable()
 	{
-		return "Impossible de vÃ©rifier que vous avez l'autorisation d'accÃ©der Ã  ce jeu. Veuillez rÃ©essayer plus tard.";
+		return "Impossible de vérifier que vous avez l'autorisation d'accéder à ce jeu. Veuillez réessayer plus tard.";
 	}
 
 	/// <summary>
@@ -1121,12 +1123,12 @@ internal class VisitGameResources_fr_fr : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseRememberMyChoiceAppLaunch(string startBold, string endBold, string appLaunchLink)
 	{
-		return $"Cochez {startBold}Se rappeler de mon choix{endBold} et cliquez sur {appLaunchLink} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return $"Cochez {startBold}Se rappeler de mon choix{endBold} et cliquez sur {appLaunchLink} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 
 	protected override string _GetTemplateForResponseRememberMyChoiceAppLaunch()
 	{
-		return "Cochez {startBold}Se rappeler de mon choix{endBold} et cliquez sur {appLaunchLink} dans la boÃ®te de dialogue ci-dessus afin de rejoindre des jeux plus rapidement Ã  l'avenir\u00a0!";
+		return "Cochez {startBold}Se rappeler de mon choix{endBold} et cliquez sur {appLaunchLink} dans la boîte de dialogue ci-dessus afin de rejoindre des jeux plus rapidement à l'avenir\u00a0!";
 	}
 }
 

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Moderationpublic {
-    enum CategoryType
+namespace Roblox.Moderation {
+    public enum CategoryType
 
 {
 	Language,

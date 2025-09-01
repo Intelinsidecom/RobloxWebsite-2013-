@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPageResources_en_us to provide locale specific translations where possible,
@@ -11,154 +13,154 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// description in small text about the disclaimer for signing bonus
 	/// English String: "* Signing bonus is for first time membership purchase only."
 	/// </summary>
-	public override string DescriptionSigningBonusDesclaimer => "* ê°€ìž… ë³´ë„ˆìŠ¤ëŠ” ë©¤ë²„ì‹­ ìµœì´ˆ êµ¬ë§¤ ì‹œë§Œ ì ìš©ë©ë‹ˆë‹¤.";
+	public override string DescriptionSigningBonusDesclaimer => "* 가입 보너스는 멤버십 최초 구매 시만 적용됩니다.";
 
 	/// <summary>
 	/// Key: "Heading.BuildersClubUpgrade"
 	/// page heading
 	/// English String: "Upgrade to Roblox Builders Club"
 	/// </summary>
-	public override string HeadingBuildersClubUpgrade => "Roblox Builders Clubìœ¼ë¡œ ì—…ê·¸ë ˆì´ë“œ";
+	public override string HeadingBuildersClubUpgrade => "Roblox Builders Club으로 업그레이드";
 
 	/// <summary>
 	/// Key: "Label.Annual"
 	/// label
 	/// English String: "Annual"
 	/// </summary>
-	public override string LabelAnnual => "ì—°ê°„";
+	public override string LabelAnnual => "연간";
 
 	/// <summary>
 	/// Key: "Label.Annually"
 	/// label
 	/// English String: "Annually"
 	/// </summary>
-	public override string LabelAnnually => "ì—°ê°„";
+	public override string LabelAnnually => "연간";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeAdFree"
 	/// label
 	/// English String: "Ad Free"
 	/// </summary>
-	public override string LabelBenefitTypeAdFree => "ê´‘ê³  ì œê±°";
+	public override string LabelBenefitTypeAdFree => "광고 제거";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBCBetaFeatures"
 	/// Label. Note: BC is acronym of Builders Club
 	/// English String: "BC Beta Features"
 	/// </summary>
-	public override string LabelBenefitTypeBCBetaFeatures => "BC ë² íƒ€ ê¸°ëŠ¥";
+	public override string LabelBenefitTypeBCBetaFeatures => "BC 베타 기능";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeBonusGear"
 	/// label
 	/// English String: "Bonus Gear"
 	/// </summary>
-	public override string LabelBenefitTypeBonusGear => "ë³´ë„ˆìŠ¤ ìž¥ë¹„";
+	public override string LabelBenefitTypeBonusGear => "보너스 장비";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeCreateGroups"
 	/// label
 	/// English String: "Create Groups"
 	/// </summary>
-	public override string LabelBenefitTypeCreateGroups => "ê·¸ë£¹ ë§Œë“¤ê¸°";
+	public override string LabelBenefitTypeCreateGroups => "그룹 만들기";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeDailyRobux"
 	/// label
 	/// English String: "Daily Robux"
 	/// </summary>
-	public override string LabelBenefitTypeDailyRobux => "ì¼ì¼ Robux";
+	public override string LabelBenefitTypeDailyRobux => "일일 Robux";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeJoinGroups"
 	/// label
 	/// English String: "Join Groups"
 	/// </summary>
-	public override string LabelBenefitTypeJoinGroups => "ê·¸ë£¹ ê°€ìž…";
+	public override string LabelBenefitTypeJoinGroups => "그룹 가입";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypePaidAccess"
 	/// label
 	/// English String: "Paid Access"
 	/// </summary>
-	public override string LabelBenefitTypePaidAccess => "ìœ ë£Œ ì´ìš©ê¶Œ";
+	public override string LabelBenefitTypePaidAccess => "유료 이용권";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeSellStuff"
 	/// label
 	/// English String: "Sell Stuff"
 	/// </summary>
-	public override string LabelBenefitTypeSellStuff => "ì•„ì´í…œ íŒë§¤";
+	public override string LabelBenefitTypeSellStuff => "아이템 판매";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeSigningBonus"
 	/// label - asterisk is used to show some terms message
 	/// English String: "Signing Bonus*"
 	/// </summary>
-	public override string LabelBenefitTypeSigningBonus => "ê°€ìž… ë³´ë„ˆìŠ¤*";
+	public override string LabelBenefitTypeSigningBonus => "가입 보너스*";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeTradeSystem"
 	/// label
 	/// English String: "Trade System"
 	/// </summary>
-	public override string LabelBenefitTypeTradeSystem => "ê±°ëž˜ ì‹œìŠ¤í…œ";
+	public override string LabelBenefitTypeTradeSystem => "거래 시스템";
 
 	/// <summary>
 	/// Key: "Label.BenefitTypeVirtualHat"
 	/// label
 	/// English String: "Virtual Hat"
 	/// </summary>
-	public override string LabelBenefitTypeVirtualHat => "ê°€ìƒ ëª¨ìž";
+	public override string LabelBenefitTypeVirtualHat => "가상 모자";
 
 	/// <summary>
 	/// Key: "Label.EverySixMonths"
 	/// label
 	/// English String: "Every 6 Months"
 	/// </summary>
-	public override string LabelEverySixMonths => "ë§¤ 6ê°œì›”";
+	public override string LabelEverySixMonths => "매 6개월";
 
 	/// <summary>
 	/// Key: "Label.Lifetime"
 	/// label
 	/// English String: "Lifetime"
 	/// </summary>
-	public override string LabelLifetime => "í‰ìƒ";
+	public override string LabelLifetime => "평생";
 
 	/// <summary>
 	/// Key: "Label.Membership"
 	/// label
 	/// English String: "Membership:"
 	/// </summary>
-	public override string LabelMembership => "ë©¤ë²„ì‹­:";
+	public override string LabelMembership => "멤버십:";
 
 	/// <summary>
 	/// Key: "Label.Monthly"
 	/// label
 	/// English String: "Monthly"
 	/// </summary>
-	public override string LabelMonthly => "ì›”ê°„";
+	public override string LabelMonthly => "월간";
 
 	/// <summary>
 	/// Key: "Label.No"
 	/// label
 	/// English String: "No"
 	/// </summary>
-	public override string LabelNo => "ì•„ë‹ˆìš”";
+	public override string LabelNo => "아니요";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// label
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "ì—†ìŒ";
+	public override string LabelNone => "없음";
 
 	/// <summary>
 	/// Key: "Label.YourCurrentPlan"
 	/// label
 	/// English String: "Your Current Plan"
 	/// </summary>
-	public override string LabelYourCurrentPlan => "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœ";
+	public override string LabelYourCurrentPlan => "회원님의 현재 플랜";
 
 	public BuildersClubPageResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -172,87 +174,87 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string DescriptionDowngradeWarning(string currentRenewalDays, string daysCreditCount)
 	{
-		return $"ë³¸ êµ¬ë§¤ë¡œ í˜„ìž¬ ë©¤ë²„ì‹­ì˜ ìž”ì—¬ {currentRenewalDays}ì¼ì´ ìƒˆ ë©¤ë²„ì‹­ì˜ {daysCreditCount}ì¼ë¡œ ì „í™˜ë˜ì–´ ìƒˆ ë©¤ë²„ì‹­ì— ì¶”ê°€ë©ë‹ˆë‹¤.";
+		return $"본 구매로 현재 멤버십의 잔여 {currentRenewalDays}일이 새 멤버십의 {daysCreditCount}일로 전환되어 새 멤버십에 추가됩니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionDowngradeWarning()
 	{
-		return "ë³¸ êµ¬ë§¤ë¡œ í˜„ìž¬ ë©¤ë²„ì‹­ì˜ ìž”ì—¬ {currentRenewalDays}ì¼ì´ ìƒˆ ë©¤ë²„ì‹­ì˜ {daysCreditCount}ì¼ë¡œ ì „í™˜ë˜ì–´ ìƒˆ ë©¤ë²„ì‹­ì— ì¶”ê°€ë©ë‹ˆë‹¤.";
+		return "본 구매로 현재 멤버십의 잔여 {currentRenewalDays}일이 새 멤버십의 {daysCreditCount}일로 전환되어 새 멤버십에 추가됩니다.";
 	}
 
 	protected override string _GetTemplateForDescriptionSigningBonusDesclaimer()
 	{
-		return "* ê°€ìž… ë³´ë„ˆìŠ¤ëŠ” ë©¤ë²„ì‹­ ìµœì´ˆ êµ¬ë§¤ ì‹œë§Œ ì ìš©ë©ë‹ˆë‹¤.";
+		return "* 가입 보너스는 멤버십 최초 구매 시만 적용됩니다.";
 	}
 
 	protected override string _GetTemplateForHeadingBuildersClubUpgrade()
 	{
-		return "Roblox Builders Clubìœ¼ë¡œ ì—…ê·¸ë ˆì´ë“œ";
+		return "Roblox Builders Club으로 업그레이드";
 	}
 
 	protected override string _GetTemplateForLabelAnnual()
 	{
-		return "ì—°ê°„";
+		return "연간";
 	}
 
 	protected override string _GetTemplateForLabelAnnually()
 	{
-		return "ì—°ê°„";
+		return "연간";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeAdFree()
 	{
-		return "ê´‘ê³  ì œê±°";
+		return "광고 제거";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBCBetaFeatures()
 	{
-		return "BC ë² íƒ€ ê¸°ëŠ¥";
+		return "BC 베타 기능";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeBonusGear()
 	{
-		return "ë³´ë„ˆìŠ¤ ìž¥ë¹„";
+		return "보너스 장비";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeCreateGroups()
 	{
-		return "ê·¸ë£¹ ë§Œë“¤ê¸°";
+		return "그룹 만들기";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeDailyRobux()
 	{
-		return "ì¼ì¼ Robux";
+		return "일일 Robux";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeJoinGroups()
 	{
-		return "ê·¸ë£¹ ê°€ìž…";
+		return "그룹 가입";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypePaidAccess()
 	{
-		return "ìœ ë£Œ ì´ìš©ê¶Œ";
+		return "유료 이용권";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeSellStuff()
 	{
-		return "ì•„ì´í…œ íŒë§¤";
+		return "아이템 판매";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeSigningBonus()
 	{
-		return "ê°€ìž… ë³´ë„ˆìŠ¤*";
+		return "가입 보너스*";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeTradeSystem()
 	{
-		return "ê±°ëž˜ ì‹œìŠ¤í…œ";
+		return "거래 시스템";
 	}
 
 	protected override string _GetTemplateForLabelBenefitTypeVirtualHat()
 	{
-		return "ê°€ìƒ ëª¨ìž";
+		return "가상 모자";
 	}
 
 	/// <summary>
@@ -262,17 +264,17 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelCurrentMembership(string currentPremiumFeatureName)
 	{
-		return $"í˜„ìž¬ ë©¤ë²„ì‹­: {currentPremiumFeatureName}";
+		return $"현재 멤버십: {currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentMembership()
 	{
-		return "í˜„ìž¬ ë©¤ë²„ì‹­: {currentPremiumFeatureName}";
+		return "현재 멤버십: {currentPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelEverySixMonths()
 	{
-		return "ë§¤ 6ê°œì›”";
+		return "매 6개월";
 	}
 
 	/// <summary>
@@ -282,27 +284,27 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelExpiresDate(string expirationDate)
 	{
-		return $"ë§Œë£Œ: {expirationDate}";
+		return $"만료: {expirationDate}";
 	}
 
 	protected override string _GetTemplateForLabelExpiresDate()
 	{
-		return "ë§Œë£Œ: {expirationDate}";
+		return "만료: {expirationDate}";
 	}
 
 	protected override string _GetTemplateForLabelLifetime()
 	{
-		return "í‰ìƒ";
+		return "평생";
 	}
 
 	protected override string _GetTemplateForLabelMembership()
 	{
-		return "ë©¤ë²„ì‹­:";
+		return "멤버십:";
 	}
 
 	protected override string _GetTemplateForLabelMonthly()
 	{
-		return "ì›”ê°„";
+		return "월간";
 	}
 
 	/// <summary>
@@ -312,22 +314,22 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelNewMembership(string newPremiumFeatureName)
 	{
-		return $"ìƒˆ ë©¤ë²„ì‹­: {newPremiumFeatureName}";
+		return $"새 멤버십: {newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNewMembership()
 	{
-		return "ìƒˆ ë©¤ë²„ì‹­: {newPremiumFeatureName}";
+		return "새 멤버십: {newPremiumFeatureName}";
 	}
 
 	protected override string _GetTemplateForLabelNo()
 	{
-		return "ì•„ë‹ˆìš”";
+		return "아니요";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "ì—†ìŒ";
+		return "없음";
 	}
 
 	/// <summary>
@@ -337,17 +339,17 @@ internal class BuildersClubPageResources_ko_kr : BuildersClubPageResources_en_us
 	/// </summary>
 	public override string LabelRenewsDate(string renewalDate)
 	{
-		return $"ê°±ì‹ : {renewalDate}";
+		return $"갱신: {renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelRenewsDate()
 	{
-		return "ê°±ì‹ : {renewalDate}";
+		return "갱신: {renewalDate}";
 	}
 
 	protected override string _GetTemplateForLabelYourCurrentPlan()
 	{
-		return "íšŒì›ë‹˜ì˜ í˜„ìž¬ í”Œëžœ";
+		return "회원님의 현재 플랜";
 	}
 }
 

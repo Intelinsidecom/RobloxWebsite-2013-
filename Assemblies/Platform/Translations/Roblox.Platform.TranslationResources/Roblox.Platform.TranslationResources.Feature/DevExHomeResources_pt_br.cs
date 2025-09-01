@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides DevExHomeResources_en_us to provide locale specific translations where possible,
@@ -119,6 +121,19 @@ internal class DevExHomeResources_pt_br : DevExHomeResources_en_us, IDevExHomeRe
 	/// English String: "You must verify your email before you can cash out."
 	/// </summary>
 	public override string GetLabelVerifiedEmailForCashout => "VocÃª precisa validar o seu e-mail antes de poder fazer uma retirada.";
+
+	public new string GetFullContentNamespaceName()
+	{
+		return "Feature.DevExHome";
+	}
+
+	public new IReadOnlyDictionary<string, string> GetAllKeys()
+	{
+		// Implementation depends on how translations are stored
+		return new Dictionary<string, string>();
+	}
+
+	public new string State { get; set; }
 
 	public DevExHomeResources_pt_br(TranslationResourceState state)
 		: base(state)

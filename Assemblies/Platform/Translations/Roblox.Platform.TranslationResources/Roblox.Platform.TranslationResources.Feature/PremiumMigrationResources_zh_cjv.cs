@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PremiumMigrationResources_en_us to provide locale specific translations where possible,
@@ -11,14 +13,14 @@ internal class PremiumMigrationResources_zh_cjv : PremiumMigrationResources_en_u
 	/// obsoleted
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string HeadingMigrationTitle => "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
+	public override string HeadingMigrationTitle => "Builders Club 现已更名为 Roblox Premium";
 
 	/// <summary>
 	/// Key: "PopUp.Title"
 	/// As in, "The program formerly known as Builder's Club is now called Premium."
 	/// English String: "Builders Club is now Roblox Premium"
 	/// </summary>
-	public override string PopUpTitle => "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
+	public override string PopUpTitle => "Builders Club 现已更名为 Roblox Premium";
 
 	public PremiumMigrationResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -28,70 +30,70 @@ internal class PremiumMigrationResources_zh_cjv : PremiumMigrationResources_en_u
 	/// <summary>
 	/// Key: "Description.MigrationBody"
 	/// obsoleted
-	/// English String: "Premium now gives you a monthly allowance of Robux all at once, instead of a daily allowance! Today weâ€™re giving you a one time payout of {robuxAmount}\n\nCheck your Roblox inbox to learn more about your Robux payout and Premium subscription. "
+	/// English String: "Premium now gives you a monthly allowance of Robux all at once, instead of a daily allowance! Today we’re giving you a one time payout of {robuxAmount}\n\nCheck your Roblox inbox to learn more about your Robux payout and Premium subscription. "
 	/// </summary>
 	public override string DescriptionMigrationBody(string robuxAmount)
 	{
-		return $"å’Œä»¥å¾€æ¯æ—¥å‘æ”¾ Robux ä¸åŒï¼ŒPremium å°†ä¼šæ¯æœˆä¸€æ¬¡æ€§å‘æ”¾æ•´ä¸ªæœˆçš„ Robux ç»™ä½ ï¼æˆ‘ä»¬ä»Šå¤©ä¼šä¸€æ¬¡æ€§æ”¯ä»˜ç»™ä½  {robuxAmount}ã€‚\n\nè‹¥è¦äº†è§£æ›´å¤šå…³äºŽ Robux æ”¯ä»˜ä¸Ž Premium è®¢é˜…çš„ä¿¡æ¯ï¼Œè¯·å‰å¾€ Roblox æ”¶ä»¶ç®±ã€‚ ";
+		return $"和以往每日发放 Robux 不同，Premium 将会每月一次性发放整个月的 Robux 给你！我们今天会一次性支付给你 {robuxAmount}。\n\n若要了解更多关于 Robux 支付与 Premium 订阅的信息，请前往 Roblox 收件箱。 ";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationBody()
 	{
-		return "å’Œä»¥å¾€æ¯æ—¥å‘æ”¾ Robux ä¸åŒï¼ŒPremium å°†ä¼šæ¯æœˆä¸€æ¬¡æ€§å‘æ”¾æ•´ä¸ªæœˆçš„ Robux ç»™ä½ ï¼æˆ‘ä»¬ä»Šå¤©ä¼šä¸€æ¬¡æ€§æ”¯ä»˜ç»™ä½  {robuxAmount}ã€‚\n\nè‹¥è¦äº†è§£æ›´å¤šå…³äºŽ Robux æ”¯ä»˜ä¸Ž Premium è®¢é˜…çš„ä¿¡æ¯ï¼Œè¯·å‰å¾€ Roblox æ”¶ä»¶ç®±ã€‚ ";
+		return "和以往每日发放 Robux 不同，Premium 将会每月一次性发放整个月的 Robux 给你！我们今天会一次性支付给你 {robuxAmount}。\n\n若要了解更多关于 Robux 支付与 Premium 订阅的信息，请前往 Roblox 收件箱。 ";
 	}
 
 	/// <summary>
 	/// Key: "Description.MigrationContent"
 	/// obsoleted
-	/// English String: "Premium now gives you a monthly allowance of Robux all at once, instead of a daily allowance! Today weâ€™re giving you a one time payout of {robuxAmount}.{newLine}{newLine}Check your Roblox inbox to learn more about your Robux payout and Premium subscription.  "
+	/// English String: "Premium now gives you a monthly allowance of Robux all at once, instead of a daily allowance! Today we’re giving you a one time payout of {robuxAmount}.{newLine}{newLine}Check your Roblox inbox to learn more about your Robux payout and Premium subscription.  "
 	/// </summary>
 	public override string DescriptionMigrationContent(string robuxAmount, string newLine)
 	{
-		return $"å’Œä»¥å¾€æ¯æ—¥å‘æ”¾ Robux ä¸åŒï¼ŒPremium å°†ä¼šæ¯æœˆä¸€æ¬¡æ€§å‘æ”¾æ•´ä¸ªæœˆçš„ Robux ç»™ä½ ï¼æˆ‘ä»¬ä»Šå¤©ä¼šä¸€æ¬¡æ€§æ”¯ä»˜ç»™ä½  {robuxAmount}ã€‚{newLine}{newLine}è‹¥è¦äº†è§£æ›´å¤šå…³äºŽ Robux æ”¯ä»˜ä¸Ž Premium è®¢é˜…çš„ä¿¡æ¯ï¼Œè¯·å‰å¾€ Roblox æ”¶ä»¶ç®±ã€‚  ";
+		return $"和以往每日发放 Robux 不同，Premium 将会每月一次性发放整个月的 Robux 给你！我们今天会一次性支付给你 {robuxAmount}。{newLine}{newLine}若要了解更多关于 Robux 支付与 Premium 订阅的信息，请前往 Roblox 收件箱。  ";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationContent()
 	{
-		return "å’Œä»¥å¾€æ¯æ—¥å‘æ”¾ Robux ä¸åŒï¼ŒPremium å°†ä¼šæ¯æœˆä¸€æ¬¡æ€§å‘æ”¾æ•´ä¸ªæœˆçš„ Robux ç»™ä½ ï¼æˆ‘ä»¬ä»Šå¤©ä¼šä¸€æ¬¡æ€§æ”¯ä»˜ç»™ä½  {robuxAmount}ã€‚{newLine}{newLine}è‹¥è¦äº†è§£æ›´å¤šå…³äºŽ Robux æ”¯ä»˜ä¸Ž Premium è®¢é˜…çš„ä¿¡æ¯ï¼Œè¯·å‰å¾€ Roblox æ”¶ä»¶ç®±ã€‚  ";
+		return "和以往每日发放 Robux 不同，Premium 将会每月一次性发放整个月的 Robux 给你！我们今天会一次性支付给你 {robuxAmount}。{newLine}{newLine}若要了解更多关于 Robux 支付与 Premium 订阅的信息，请前往 Roblox 收件箱。  ";
 	}
 
 	/// <summary>
 	/// Key: "Description.MigrationMesg"
 	/// obsoleted
-	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, weâ€™re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
+	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, we’re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n{newLine}{newLine}\nCheck your Roblox Inbox for more details.  "
 	/// </summary>
 	public override string DescriptionMigrationMesg(string robuxAmount, string newLine)
 	{
-		return $"å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚  ";
+		return $"即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。  ";
 	}
 
 	protected override string _GetTemplateForDescriptionMigrationMesg()
 	{
-		return "å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n{newLine}{newLine}\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚  ";
+		return "即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n{newLine}{newLine}\n要了解更多信息，请前往你的 Roblox 收件箱。  ";
 	}
 
 	protected override string _GetTemplateForHeadingMigrationTitle()
 	{
-		return "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
+		return "Builders Club 现已更名为 Roblox Premium";
 	}
 
 	/// <summary>
 	/// Key: "PopUp.Body"
-	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, weâ€™re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n\nCheck your Roblox Inbox for more details."
+	/// English String: "Moving forward, subscribers will be granted a monthly lump sum of Robux instead of receiving it in daily increments. Today, we’re depositing {robuxAmount} Robux in your account to make up for the remaining amount you would have earned this month.\n\nCheck your Roblox Inbox for more details."
 	/// </summary>
 	public override string PopUpBody(string robuxAmount)
 	{
-		return $"å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚";
+		return $"即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n\n要了解更多信息，请前往你的 Roblox 收件箱。";
 	}
 
 	protected override string _GetTemplateForPopUpBody()
 	{
-		return "å³æ—¥èµ·ï¼Œè®¢é˜…è€…å°†ç›´æŽ¥èŽ·å¾—ä¸€æ•´ä¸ªæœˆçš„ Robux é¢åº¦ï¼Œè€Œæ— éœ€ç­‰å¾…æ¯æ—¥å‘æ”¾çš„é¢åº¦ã€‚æˆ‘ä»¬ä»Šå¤©ä¼šç»™ä½  {robuxAmount} Robux ä»¥è¡¥å¿ä½ æœ¬æœˆå°šæœªèŽ·å¾—çš„é¢åº¦ã€‚\n\nè¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ä½ çš„ Roblox æ”¶ä»¶ç®±ã€‚";
+		return "即日起，订阅者将直接获得一整个月的 Robux 额度，而无需等待每日发放的额度。我们今天会给你 {robuxAmount} Robux 以补偿你本月尚未获得的额度。\n\n要了解更多信息，请前往你的 Roblox 收件箱。";
 	}
 
 	protected override string _GetTemplateForPopUpTitle()
 	{
-		return "Builders Club çŽ°å·²æ›´åä¸º Roblox Premium";
+		return "Builders Club 现已更名为 Roblox Premium";
 	}
 }
 

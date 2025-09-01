@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Roblox.GameLocalization.Client.GameLocalizationLanguageSettings
+namespace Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings
 {
     public enum LanguageType
     {

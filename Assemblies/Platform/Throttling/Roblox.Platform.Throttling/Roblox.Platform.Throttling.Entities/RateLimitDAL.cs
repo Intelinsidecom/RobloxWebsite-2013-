@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Platform.Throttling.Properties;
@@ -56,7 +56,7 @@ internal class RateLimitDAL
 		{
 			new SqlParameter("@ID", ID)
 		};
-		EntityHelper.DoEntityDALDelete(new DbInfo(_DbConnectionString, "RateLimits_DeleteRateLimitByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(_DbConnectionString, "RateLimits_DeleteRateLimitByID", queryParameters));
 	}
 
 	internal static RateLimitDAL Get(long id)
@@ -99,7 +99,7 @@ internal class RateLimitDAL
 			new SqlParameter("@Created", Created),
 			new SqlParameter("@Updated", Updated)
 		};
-		EntityHelper.DoEntityDALUpdate(new DbInfo(_DbConnectionString, "RateLimits_UpdateRateLimitByID", queryParameters));
+		EntityHelper.DoEntityDALAction(new DbInfo(_DbConnectionString, "RateLimits_UpdateRateLimitByID", queryParameters));
 	}
 
 	internal static RateLimitDAL GetRateLimitByNamespaceIDActionTypeID(long namespaceID, long actionTypeID)

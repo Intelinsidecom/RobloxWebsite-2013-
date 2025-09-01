@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.AddLanguage"
 	/// English String: "Add Language"
 	/// </summary>
-	public override string ActionAddLanguage => "AÃ±adir idioma";
+	public override string ActionAddLanguage => "Añadir idioma";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
@@ -34,7 +36,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "AÃ±ade idiomas compatibles con tu juego.";
+	public override string DescriptionNoLanguages => "Añade idiomas compatibles con tu juego.";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
@@ -52,7 +54,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 	/// Key: "Heading.TranslatedLanguages"
 	/// English String: "Translated Languages"
 	/// </summary>
-	public override string HeadingTranslatedLanguages => "Idiomas a los que estÃ¡ traducido";
+	public override string HeadingTranslatedLanguages => "Idiomas a los que está traducido";
 
 	/// <summary>
 	/// Key: "Label.Languages"
@@ -70,7 +72,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "Se borrarÃ¡n todas las traducciones disponibles para este idioma. Esta acciÃ³n es irreversible.";
+	public override string MessageDeleteLanguageWarning => "Se borrarán todas las traducciones disponibles para este idioma. Esta acción es irreversible.";
 
 	public GameLanguagesResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -79,7 +81,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionAddLanguage()
 	{
-		return "AÃ±adir idioma";
+		return "Añadir idioma";
 	}
 
 	protected override string _GetTemplateForActionCancel()
@@ -99,7 +101,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "AÃ±ade idiomas compatibles con tu juego.";
+		return "Añade idiomas compatibles con tu juego.";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
@@ -114,7 +116,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForHeadingTranslatedLanguages()
 	{
-		return "Idiomas a los que estÃ¡ traducido";
+		return "Idiomas a los que está traducido";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
@@ -129,7 +131,7 @@ internal class GameLanguagesResources_es_es : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "Se borrarÃ¡n todas las traducciones disponibles para este idioma. Esta acciÃ³n es irreversible.";
+		return "Se borrarán todas las traducciones disponibles para este idioma. Esta acción es irreversible.";
 	}
 }
 

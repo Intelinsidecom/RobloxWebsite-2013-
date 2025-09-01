@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class ChatResources_en_us : TranslationResourcesBase, IChatResources, ITranslationResources
 
 {
@@ -1982,3 +1982,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

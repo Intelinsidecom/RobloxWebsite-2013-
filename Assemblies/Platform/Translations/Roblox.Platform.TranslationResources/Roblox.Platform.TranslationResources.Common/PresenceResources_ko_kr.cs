@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class PresenceResources_ko_kr : PresenceResources_en_us, IPresenceResou
 	/// Key: "Label.Creating"
 	/// English String: "Creating"
 	/// </summary>
-	public override string LabelCreating => "ë§Œë“¤ê¸° ì¤‘";
+	public override string LabelCreating => "만들기 중";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ì˜¤í”„ë¼ì¸";
+	public override string LabelOffline => "오프라인";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ì˜¨ë¼ì¸";
+	public override string LabelOnline => "온라인";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "í”Œë ˆì´ ì¤‘";
+	public override string LabelPlaying => "플레이 중";
 
 	public PresenceResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -37,7 +39,7 @@ internal class PresenceResources_ko_kr : PresenceResources_en_us, IPresenceResou
 
 	protected override string _GetTemplateForLabelCreating()
 	{
-		return "ë§Œë“¤ê¸° ì¤‘";
+		return "만들기 중";
 	}
 
 	/// <summary>
@@ -46,27 +48,27 @@ internal class PresenceResources_ko_kr : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelCreatingGame(string placeName)
 	{
-		return $"{placeName} ë§Œë“¤ê¸° ì¤‘";
+		return $"{placeName} 만들기 중";
 	}
 
 	protected override string _GetTemplateForLabelCreatingGame()
 	{
-		return "{placeName} ë§Œë“¤ê¸° ì¤‘";
+		return "{placeName} 만들기 중";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ì˜¤í”„ë¼ì¸";
+		return "오프라인";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ì˜¨ë¼ì¸";
+		return "온라인";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "í”Œë ˆì´ ì¤‘";
+		return "플레이 중";
 	}
 
 	/// <summary>
@@ -75,12 +77,12 @@ internal class PresenceResources_ko_kr : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelPlayingGame(string placeName)
 	{
-		return $"{placeName} í”Œë ˆì´ ì¤‘";
+		return $"{placeName} 플레이 중";
 	}
 
 	protected override string _GetTemplateForLabelPlayingGame()
 	{
-		return "{placeName} í”Œë ˆì´ ì¤‘";
+		return "{placeName} 플레이 중";
 	}
 }
 

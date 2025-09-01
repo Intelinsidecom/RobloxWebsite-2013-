@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ChatResources_en_us to provide locale specific translations where possible,
@@ -10,571 +12,571 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// Key: "Action.Add"
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "ì¶”ê°€";
+	public override string ActionAdd => "추가";
 
 	/// <summary>
 	/// Key: "Action.BuyAccess"
 	/// English String: "Buy Access"
 	/// </summary>
-	public override string ActionBuyAccess => "ì´ìš©ê¶Œ êµ¬ë§¤";
+	public override string ActionBuyAccess => "이용권 구매";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Create"
 	/// English String: "Create"
 	/// </summary>
-	public override string ActionCreate => "ë§Œë“¤ê¸°";
+	public override string ActionCreate => "만들기";
 
 	/// <summary>
 	/// Key: "Action.Join"
 	/// join the voice chat conversation
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoin => "ê°€ìž…";
+	public override string ActionJoin => "가입";
 
 	/// <summary>
 	/// Key: "Action.Leave"
 	/// English String: "Leave"
 	/// </summary>
-	public override string ActionLeave => "ë‚˜ê°€ê¸°";
+	public override string ActionLeave => "나가기";
 
 	/// <summary>
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "ì‚­ì œ";
+	public override string ActionRemove => "삭제";
 
 	/// <summary>
 	/// Key: "Action.Report"
 	/// English String: "Report"
 	/// </summary>
-	public override string ActionReport => "ì‹ ê³ í•˜ê¸°";
+	public override string ActionReport => "신고하기";
 
 	/// <summary>
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "ì €ìž¥";
+	public override string ActionSave => "저장";
 
 	/// <summary>
 	/// Key: "Action.Send"
 	/// English String: "Send"
 	/// </summary>
-	public override string ActionSend => "ë³´ë‚´ê¸°";
+	public override string ActionSend => "보내기";
 
 	/// <summary>
 	/// Key: "Action.Set"
 	/// English String: "Set"
 	/// </summary>
-	public override string ActionSet => "ì„¤ì •";
+	public override string ActionSet => "설정";
 
 	/// <summary>
 	/// Key: "Action.StartParty"
 	/// button label
 	/// English String: "Start a Party"
 	/// </summary>
-	public override string ActionStartParty => "íŒŒí‹° ì‹œìž‘í•˜ê¸°";
+	public override string ActionStartParty => "파티 시작하기";
 
 	/// <summary>
 	/// Key: "Action.Stay"
 	/// English String: "Stay"
 	/// </summary>
-	public override string ActionStay => "ë¨¸ë¬¼ê¸°";
+	public override string ActionStay => "머물기";
 
 	/// <summary>
 	/// Key: "Action.TurnOn"
 	/// English String: "Turn On"
 	/// </summary>
-	public override string ActionTurnOn => "ì¼œê¸°";
+	public override string ActionTurnOn => "켜기";
 
 	/// <summary>
 	/// Key: "Heading.BuyItem"
 	/// English String: "Buy Item"
 	/// </summary>
-	public override string HeadingBuyItem => "ì•„ì´í…œ êµ¬ë§¤";
+	public override string HeadingBuyItem => "아이템 구매";
 
 	/// <summary>
 	/// Key: "Heading.Chat"
 	/// English String: "Chat"
 	/// </summary>
-	public override string HeadingChat => "ì±„íŒ…";
+	public override string HeadingChat => "채팅";
 
-	public override string HeadingChatAndParty => "ì±„íŒ… ë° íŒŒí‹°";
+	public override string HeadingChatAndParty => "채팅 및 파티";
 
 	/// <summary>
 	/// Key: "Heading.ConfirmLeaving"
 	/// English String: "Are you sure to leave this chat group?"
 	/// </summary>
-	public override string HeadingConfirmLeaving => "ì±„íŒ…ê·¸ë£¹ì„ ì •ë§ ë‚˜ê°€ì‹œê² ìŠµë‹ˆê¹Œ?";
+	public override string HeadingConfirmLeaving => "채팅그룹을 정말 나가시겠습니까?";
 
 	/// <summary>
 	/// Key: "Heading.ContinueToReport"
 	/// English String: "Continue to report?"
 	/// </summary>
-	public override string HeadingContinueToReport => "ì‹ ê³ ë¥¼ ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+	public override string HeadingContinueToReport => "신고를 계속 하시겠습니까?";
 
 	/// <summary>
 	/// Key: "Heading.CreateParty"
 	/// English String: "Create Party"
 	/// </summary>
-	public override string HeadingCreateParty => "íŒŒí‹° ë§Œë“¤ê¸°";
+	public override string HeadingCreateParty => "파티 만들기";
 
 	/// <summary>
 	/// Key: "Heading.LeaveChatGroup"
 	/// English String: "Leave Chat Group"
 	/// </summary>
-	public override string HeadingLeaveChatGroup => "ì±„íŒ…ê·¸ë£¹ ë‚˜ê°€ê¸°";
+	public override string HeadingLeaveChatGroup => "채팅그룹 나가기";
 
 	/// <summary>
 	/// Key: "Heading.LeaveChatGroupQ"
 	/// English String: "Leave Chat Group?"
 	/// </summary>
-	public override string HeadingLeaveChatGroupQ => "ì±„íŒ…ê·¸ë£¹ì„ ë‚˜ê°€ì‹œê² ìŠµë‹ˆê¹Œ?";
+	public override string HeadingLeaveChatGroupQ => "채팅그룹을 나가시겠습니까?";
 
 	/// <summary>
 	/// Key: "Heading.NewChatGroup"
 	/// English String: "New Chat Group"
 	/// </summary>
-	public override string HeadingNewChatGroup => "ìƒˆ ì±„íŒ…ê·¸ë£¹";
+	public override string HeadingNewChatGroup => "새 채팅그룹";
 
 	/// <summary>
 	/// Key: "Heading.RemoveUser"
 	/// English String: "Remove User?"
 	/// </summary>
-	public override string HeadingRemoveUser => "ì‚¬ìš©ìžë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+	public override string HeadingRemoveUser => "사용자를 삭제하시겠습니까?";
 
 	/// <summary>
 	/// Key: "Heading.Report"
 	/// heading for abuse report dialog
 	/// English String: "Report"
 	/// </summary>
-	public override string HeadingReport => "ì‹ ê³ í•˜ê¸°";
+	public override string HeadingReport => "신고하기";
 
 	/// <summary>
 	/// Key: "Label.AddFriends"
 	/// English String: "Add Friends"
 	/// </summary>
-	public override string LabelAddFriends => "ì¹œêµ¬ ì¶”ê°€";
+	public override string LabelAddFriends => "친구 추가";
 
 	/// <summary>
 	/// Key: "Label.BuyButton"
 	/// English String: "Buy"
 	/// </summary>
-	public override string LabelBuyButton => "êµ¬ë§¤";
+	public override string LabelBuyButton => "구매";
 
 	/// <summary>
 	/// Key: "Label.ChangeChatGroupName"
 	/// English String: "Change your chat group name"
 	/// </summary>
-	public override string LabelChangeChatGroupName => "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ë³€ê²½";
+	public override string LabelChangeChatGroupName => "채팅그룹 이름 변경";
 
 	/// <summary>
 	/// Key: "Label.ChatDetails"
 	/// English String: "Chat Details"
 	/// </summary>
-	public override string LabelChatDetails => "ì±„íŒ… ì •ë³´";
+	public override string LabelChatDetails => "채팅 정보";
 
 	/// <summary>
 	/// Key: "Label.ChatGroupName"
 	/// English String: "Chat Group Name"
 	/// </summary>
-	public override string LabelChatGroupName => "ì±„íŒ…ê·¸ë£¹ ì´ë¦„";
+	public override string LabelChatGroupName => "채팅그룹 이름";
 
 	/// <summary>
 	/// Key: "Label.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string LabelClose => "ë‹«ê¸°";
+	public override string LabelClose => "닫기";
 
 	/// <summary>
 	/// Key: "Label.ConversationNotifications"
 	/// conversation notification
 	/// English String: "Notifications"
 	/// </summary>
-	public override string LabelConversationNotifications => "ì•Œë¦¼";
+	public override string LabelConversationNotifications => "알림";
 
 	/// <summary>
 	/// Key: "Label.ConversationNotificationsOn"
 	/// conversation notification is on
 	/// English String: "On"
 	/// </summary>
-	public override string LabelConversationNotificationsOn => "ì¼œê¸°";
+	public override string LabelConversationNotificationsOn => "켜기";
 
 	/// <summary>
 	/// Key: "Label.Details.PlayTogether"
 	/// English String: "PlayTogether"
 	/// </summary>
-	public override string LabelDetailsPlayTogether => "í•¨ê»˜ í”Œë ˆì´";
+	public override string LabelDetailsPlayTogether => "함께 플레이";
 
 	/// <summary>
 	/// Key: "Label.FindGame"
 	/// English String: "Find Game"
 	/// </summary>
-	public override string LabelFindGame => "ê²Œìž„ ì°¾ê¸°";
+	public override string LabelFindGame => "게임 찾기";
 
 	/// <summary>
 	/// Key: "Label.GameNotAvailableButton"
 	/// English String: "Not Available"
 	/// </summary>
-	public override string LabelGameNotAvailableButton => "ì´ìš© ë¶ˆê°€";
+	public override string LabelGameNotAvailableButton => "이용 불가";
 
 	/// <summary>
 	/// Key: "Label.General"
 	/// English String: "General"
 	/// </summary>
-	public override string LabelGeneral => "ì¼ë°˜";
+	public override string LabelGeneral => "일반";
 
 	/// <summary>
 	/// Key: "Label.InGame"
 	/// English String: "In Game"
 	/// </summary>
-	public override string LabelInGame => "ê²Œìž„ ì¤‘";
+	public override string LabelInGame => "게임 중";
 
 	/// <summary>
 	/// Key: "Label.InputPlaceHolder.SearchForFriends"
 	/// English String: "Search for friends"
 	/// </summary>
-	public override string LabelInputPlaceHolderSearchForFriends => "ì¹œêµ¬ ì°¾ê¸°";
+	public override string LabelInputPlaceHolderSearchForFriends => "친구 찾기";
 
 	/// <summary>
 	/// Key: "Label.InputPlaceHolder.SendMessage"
 	/// English String: "Send a message"
 	/// </summary>
-	public override string LabelInputPlaceHolderSendMessage => "ë©”ì‹œì§€ ë³´ë‚´ê¸°";
+	public override string LabelInputPlaceHolderSendMessage => "메시지 보내기";
 
 	/// <summary>
 	/// Key: "Label.InStudio"
 	/// English String: "In Studio"
 	/// </summary>
-	public override string LabelInStudio => "Studio ì‚¬ìš© ì¤‘";
+	public override string LabelInStudio => "Studio 사용 중";
 
 	/// <summary>
 	/// Key: "Label.JoinButton"
 	/// English String: "Join"
 	/// </summary>
-	public override string LabelJoinButton => "ê°€ìž…";
+	public override string LabelJoinButton => "가입";
 
 	/// <summary>
 	/// Key: "Label.JoinGame"
 	/// English String: "Join Game"
 	/// </summary>
-	public override string LabelJoinGame => "ê²Œìž„ ì°¸ê°€";
+	public override string LabelJoinGame => "게임 참가";
 
 	/// <summary>
 	/// Key: "Label.JoinParty"
 	/// English String: "Join Party"
 	/// </summary>
-	public override string LabelJoinParty => "íŒŒí‹° ì°¸ê°€";
+	public override string LabelJoinParty => "파티 참가";
 
 	/// <summary>
 	/// Key: "Label.LeaveChatGroup"
 	/// English String: "Leave Chat Group"
 	/// </summary>
-	public override string LabelLeaveChatGroup => "ì±„íŒ…ê·¸ë£¹ ë‚˜ê°€ê¸°";
+	public override string LabelLeaveChatGroup => "채팅그룹 나가기";
 
 	/// <summary>
 	/// Key: "Label.LeaveParty"
 	/// English String: "Leave Party"
 	/// </summary>
-	public override string LabelLeaveParty => "íŒŒí‹° ë‚˜ê°€ê¸°";
+	public override string LabelLeaveParty => "파티 나가기";
 
 	/// <summary>
 	/// Key: "Label.Member"
 	/// English String: "Member"
 	/// </summary>
-	public override string LabelMember => "ë©¤ë²„";
+	public override string LabelMember => "멤버";
 
 	/// <summary>
 	/// Key: "Label.Members"
 	/// English String: "Members"
 	/// </summary>
-	public override string LabelMembers => "ë©¤ë²„";
+	public override string LabelMembers => "멤버";
 
 	/// <summary>
 	/// Key: "Label.Mute15Minutes"
 	/// mute conversation for 15 mins
 	/// English String: "For 15 minutes"
 	/// </summary>
-	public override string LabelMute15Minutes => "15ë¶„";
+	public override string LabelMute15Minutes => "15분";
 
 	/// <summary>
 	/// Key: "Label.Mute1Hour"
 	/// Mute conversation for 1 hour
 	/// English String: "For an hour"
 	/// </summary>
-	public override string LabelMute1Hour => "1ì‹œê°„";
+	public override string LabelMute1Hour => "1시간";
 
 	/// <summary>
 	/// Key: "Label.Mute24Hours"
 	/// Mute conversation for a day
 	/// English String: "For a day"
 	/// </summary>
-	public override string LabelMute24Hours => "í•˜ë£¨";
+	public override string LabelMute24Hours => "하루";
 
 	/// <summary>
 	/// Key: "Label.Mute8Hours"
 	/// Mute conversation for 8 hours
 	/// English String: "For 8 hours"
 	/// </summary>
-	public override string LabelMute8Hours => "8ì‹œê°„";
+	public override string LabelMute8Hours => "8시간";
 
 	/// <summary>
 	/// Key: "Label.MuteConversationNotificationsForGroup"
 	/// English String: "Mute notifications for this chat group"
 	/// </summary>
-	public override string LabelMuteConversationNotificationsForGroup => "ì±„íŒ…ê·¸ë£¹ ì•Œë¦¼ ìŒì†Œê±°";
+	public override string LabelMuteConversationNotificationsForGroup => "채팅그룹 알림 음소거";
 
 	/// <summary>
 	/// Key: "Label.MuteConversationNotificationsForOneToOne"
 	/// English String: "Mute notifications for this conversation"
 	/// </summary>
-	public override string LabelMuteConversationNotificationsForOneToOne => "ëŒ€í™” ì¤‘ ì•Œë¦¼ ìŒì†Œê±°";
+	public override string LabelMuteConversationNotificationsForOneToOne => "대화 중 알림 음소거";
 
 	/// <summary>
 	/// Key: "Label.MuteInfinite"
 	/// Mute conversation until user turns back
 	/// English String: "Until I turn them back on"
 	/// </summary>
-	public override string LabelMuteInfinite => "ë‹¤ì‹œ ì¼¤ ë•Œê¹Œì§€";
+	public override string LabelMuteInfinite => "다시 켤 때까지";
 
 	/// <summary>
 	/// Key: "Label.NameYourChangeGroup"
 	/// English String: "Name your change group"
 	/// </summary>
-	public override string LabelNameYourChangeGroup => "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ì„¤ì •";
+	public override string LabelNameYourChangeGroup => "채팅그룹 이름 설정";
 
 	/// <summary>
 	/// Key: "Label.NameYourChatGroup"
 	/// English String: "Name your chat group"
 	/// </summary>
-	public override string LabelNameYourChatGroup => "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ì„¤ì •";
+	public override string LabelNameYourChatGroup => "채팅그룹 이름 설정";
 
 	/// <summary>
 	/// Key: "Label.NotImplementedMessageType"
 	/// This message is displayed in chat when user receives message type that can't be rendered by current app version and update is not available, yet (e.g. latest version was rolled back, or in deprecated Android native chat)
 	/// English String: "This message could not be displayed."
 	/// </summary>
-	public override string LabelNotImplementedMessageType => "ì´ ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ì–´ìš”.";
+	public override string LabelNotImplementedMessageType => "이 메시지를 표시할 수 없어요.";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ì˜¤í”„ë¼ì¸";
+	public override string LabelOffline => "오프라인";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ì˜¨ë¼ì¸";
+	public override string LabelOnline => "온라인";
 
 	/// <summary>
 	/// Key: "Label.PinGameTooltip"
 	/// English String: "Pin Game"
 	/// </summary>
-	public override string LabelPinGameTooltip => "ê²Œìž„ í•€í•˜ê¸°";
+	public override string LabelPinGameTooltip => "게임 핀하기";
 
 	/// <summary>
 	/// Key: "Label.PinnedGame"
 	/// This is a title of card, means this game card is pinned game
 	/// English String: "Pinned Game"
 	/// </summary>
-	public override string LabelPinnedGame => "í•€í•œ ê²Œìž„";
+	public override string LabelPinnedGame => "핀한 게임";
 
 	/// <summary>
 	/// Key: "Label.PlayButton"
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlayButton => "í”Œë ˆì´";
+	public override string LabelPlayButton => "플레이";
 
 	/// <summary>
 	/// Key: "Label.PlayGames"
 	/// English String: "Play Games"
 	/// </summary>
-	public override string LabelPlayGames => "ê²Œìž„ í”Œë ˆì´";
+	public override string LabelPlayGames => "게임 플레이";
 
 	/// <summary>
 	/// Key: "Label.PlayTogether"
 	/// English String: "Play Together"
 	/// </summary>
-	public override string LabelPlayTogether => "í•¨ê»˜ í”Œë ˆì´";
+	public override string LabelPlayTogether => "함께 플레이";
 
 	/// <summary>
 	/// Key: "Label.RecommendedGames"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelRecommendedGames => "ì¶”ì²œ";
+	public override string LabelRecommendedGames => "추천";
 
 	/// <summary>
 	/// Key: "Label.SeeLess"
 	/// English String: "See Less"
 	/// </summary>
-	public override string LabelSeeLess => "ê°„ëžµížˆ ë³´ê¸°";
+	public override string LabelSeeLess => "간략히 보기";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "ë” ë³´ê¸°";
+	public override string LabelSeeMore => "더 보기";
 
 	/// <summary>
 	/// Key: "Label.ShowLessGames"
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLessGames => "ê°„ëžµížˆ ë³´ê¸°";
+	public override string LabelShowLessGames => "간략히 보기";
 
 	/// <summary>
 	/// Key: "Label.SpanTitle.CreateGroupNeeds2More"
 	/// English String: "Add at least 2 people to create chat group"
 	/// </summary>
-	public override string LabelSpanTitleCreateGroupNeeds2More => "2ëª… ì´ìƒì„ ì¶”ê°€í•´ì•¼ ì±„íŒ… ê·¸ë£¹ì„ ë§Œë“¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤";
+	public override string LabelSpanTitleCreateGroupNeeds2More => "2명 이상을 추가해야 채팅 그룹을 만들 수 있습니다";
 
 	/// <summary>
 	/// Key: "Label.SpanTitle.Loading"
 	/// English String: "loading ..."
 	/// </summary>
-	public override string LabelSpanTitleLoading => "ë¡œë“œ ì¤‘...";
+	public override string LabelSpanTitleLoading => "로드 중...";
 
 	/// <summary>
 	/// Key: "Label.TimestampOffUntilTomorrow"
 	/// English String: "Off until tomorrow"
 	/// </summary>
-	public override string LabelTimestampOffUntilTomorrow => "ë‚´ì¼ê¹Œì§€ ë„ê¸°";
+	public override string LabelTimestampOffUntilTomorrow => "내일까지 끄기";
 
 	/// <summary>
 	/// Key: "Label.TimestampOffUntilTurnedBackOn"
 	/// English String: "Off until turned back on\""
 	/// </summary>
-	public override string LabelTimestampOffUntilTurnedBackOn => "ë‹¤ì‹œ ì¼¤ ë•Œê¹Œì§€ ë„ê¸°\"";
+	public override string LabelTimestampOffUntilTurnedBackOn => "다시 켤 때까지 끄기\"";
 
 	/// <summary>
 	/// Key: "Label.TurnOnConversationNotificationsPrompt"
 	/// English String: "Do you want to turn on notifications?"
 	/// </summary>
-	public override string LabelTurnOnConversationNotificationsPrompt => "ì•Œë¦¼ì„ ì¼¤ê¹Œìš”?";
+	public override string LabelTurnOnConversationNotificationsPrompt => "알림을 켤까요?";
 
 	/// <summary>
 	/// Key: "Label.UnpinGameTooltip"
 	/// English String: "Unpin Game"
 	/// </summary>
-	public override string LabelUnpinGameTooltip => "ê²Œìž„ í•€ í•´ì œí•˜ê¸°";
+	public override string LabelUnpinGameTooltip => "게임 핀 해제하기";
 
 	/// <summary>
 	/// Key: "Label.ViewDetailsButton"
 	/// English String: "View Details"
 	/// </summary>
-	public override string LabelViewDetailsButton => "ìžì„¸ížˆ ë³´ê¸°";
+	public override string LabelViewDetailsButton => "자세히 보기";
 
 	/// <summary>
 	/// Key: "Label.ViewProfile"
 	/// English String: "View Profile"
 	/// </summary>
-	public override string LabelViewProfile => "í”„ë¡œí•„ ë³´ê¸°";
+	public override string LabelViewProfile => "프로필 보기";
 
 	/// <summary>
 	/// Key: "Label.Yesterday"
 	/// time stamp for chat message received yesterday
 	/// English String: "Yesterday"
 	/// </summary>
-	public override string LabelYesterday => "ì–´ì œ";
+	public override string LabelYesterday => "어제";
 
 	/// <summary>
 	/// Key: "Message.ConversationTitleModerated"
 	/// Chat group name was moderated.
 	/// English String: "Chat group name was moderated."
 	/// </summary>
-	public override string MessageConversationTitleModerated => "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ì´ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+	public override string MessageConversationTitleModerated => "채팅그룹 이름이 검열을 통과하지 못했습니다.";
 
 	/// <summary>
 	/// Key: "Message.Default"
 	/// English String: "Not everyone in this chat can see your message."
 	/// </summary>
-	public override string MessageDefault => "ì±„íŒ… ì°¸ê°€ìž ì¤‘ ì¼ë¶€ëŠ” íšŒì›ë‹˜ì˜ ë©”ì‹œì§€ë¥¼ ë³¼ ìˆ˜ ì—†ì–´ìš”.";
+	public override string MessageDefault => "채팅 참가자 중 일부는 회원님의 메시지를 볼 수 없어요.";
 
 	/// <summary>
 	/// Key: "Message.DefaultErrorMsg"
 	/// English String: "An error occurred"
 	/// </summary>
-	public override string MessageDefaultErrorMsg => "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
+	public override string MessageDefaultErrorMsg => "오류가 발생했어요";
 
 	/// <summary>
 	/// Key: "Message.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string MessageError => "ì˜¤ë¥˜";
+	public override string MessageError => "오류";
 
 	/// <summary>
 	/// Key: "Message.JoinPartyText"
 	/// English String: "The party leader is finding a game to play."
 	/// </summary>
-	public override string MessageJoinPartyText => "íŒŒí‹°ìž¥ì´ í”Œë ˆì´í•  ê²Œìž„ì„ ì°¾ê³  ìžˆì–´ìš”.";
+	public override string MessageJoinPartyText => "파티장이 플레이할 게임을 찾고 있어요.";
 
 	/// <summary>
 	/// Key: "Message.MakeFriendsToChatNPlay"
 	/// English String: "Make friends to start chatting and partying!"
 	/// </summary>
-	public override string MessageMakeFriendsToChatNPlay => "ì±„íŒ…ê³¼ íŒŒí‹° í™œë™ì„ ì‹œìž‘í•˜ë ¤ë©´ ì¹œêµ¬ë¥¼ ë§Œë“œì„¸ìš”!";
+	public override string MessageMakeFriendsToChatNPlay => "채팅과 파티 활동을 시작하려면 친구를 만드세요!";
 
 	/// <summary>
 	/// Key: "Message.MessageContentModerated"
 	/// English String: "Your message was moderated and not sent."
 	/// </summary>
-	public override string MessageMessageContentModerated => "ë©”ì‹œì§€ê°€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í•´ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+	public override string MessageMessageContentModerated => "메시지가 검열을 통과하지 못해 전송되지 않았어요.";
 
 	/// <summary>
 	/// Key: "Message.MessageFilterForReceivers"
 	/// English String: "Not everyone in this chat can see your message."
 	/// </summary>
-	public override string MessageMessageFilterForReceivers => "ì±„íŒ… ì°¸ê°€ìž ì¤‘ ì¼ë¶€ëŠ” íšŒì›ë‹˜ì˜ ë©”ì‹œì§€ë¥¼ ë³¼ ìˆ˜ ì—†ì–´ìš”.";
+	public override string MessageMessageFilterForReceivers => "채팅 참가자 중 일부는 회원님의 메시지를 볼 수 없어요.";
 
 	/// <summary>
 	/// Key: "Message.NoConnectionMsg"
 	/// English String: "Connecting..."
 	/// </summary>
-	public override string MessageNoConnectionMsg => "ì—°ê²° ì¤‘...";
+	public override string MessageNoConnectionMsg => "연결 중...";
 
 	/// <summary>
 	/// Key: "Message.PartyInviteMsg"
 	/// English String: "PARTY INVITE!"
 	/// </summary>
-	public override string MessagePartyInviteMsg => "íŒŒí‹° ì´ˆëŒ€!";
+	public override string MessagePartyInviteMsg => "파티 초대!";
 
 	/// <summary>
 	/// Key: "Message.PlayGameUpdate"
 	/// English String: " is playing the pinned game: "
 	/// </summary>
-	public override string MessagePlayGameUpdate => " ë‹˜ì´ í•€í•œ ê²Œìž„ í”Œë ˆì´ ì¤‘: ";
+	public override string MessagePlayGameUpdate => " 님이 핀한 게임 플레이 중: ";
 
 	/// <summary>
 	/// Key: "Message.TextTooLong"
 	/// English String: "Your message was too long and not sent."
 	/// </summary>
-	public override string MessageTextTooLong => "ë©”ì‹œì§€ê°€ ë„ˆë¬´ ê¸¸ì–´ì„œ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+	public override string MessageTextTooLong => "메시지가 너무 길어서 전송되지 않았어요.";
 
 	/// <summary>
 	/// Key: "Message.UnknownMessageType"
 	/// This serves as the fallback string for when an message type is received that the web chat does not know how to render.
 	/// English String: "A message cannot be displayed"
 	/// </summary>
-	public override string MessageUnknownMessageType => "ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ìŒ";
+	public override string MessageUnknownMessageType => "메시지를 표시할 수 없음";
 
 	/// <summary>
 	/// Key: "PlayButton"
 	/// English String: "Play"
 	/// </summary>
-	public override string PlayButton => "í”Œë ˆì´";
+	public override string PlayButton => "플레이";
 
 	/// <summary>
 	/// Key: "Response.PartyInvite"
 	/// notification message
 	/// English String: "You received a party Invite."
 	/// </summary>
-	public override string ResponsePartyInvite => "íŒŒí‹° ì´ˆëŒ€ë¥¼ ë°›ì•˜ì–´ìš”.";
+	public override string ResponsePartyInvite => "파티 초대를 받았어요.";
 
 	public ChatResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -583,132 +585,132 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "ì¶”ê°€";
+		return "추가";
 	}
 
 	protected override string _GetTemplateForActionBuyAccess()
 	{
-		return "ì´ìš©ê¶Œ êµ¬ë§¤";
+		return "이용권 구매";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionCreate()
 	{
-		return "ë§Œë“¤ê¸°";
+		return "만들기";
 	}
 
 	protected override string _GetTemplateForActionJoin()
 	{
-		return "ê°€ìž…";
+		return "가입";
 	}
 
 	protected override string _GetTemplateForActionLeave()
 	{
-		return "ë‚˜ê°€ê¸°";
+		return "나가기";
 	}
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "ì‚­ì œ";
+		return "삭제";
 	}
 
 	protected override string _GetTemplateForActionReport()
 	{
-		return "ì‹ ê³ í•˜ê¸°";
+		return "신고하기";
 	}
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "ì €ìž¥";
+		return "저장";
 	}
 
 	protected override string _GetTemplateForActionSend()
 	{
-		return "ë³´ë‚´ê¸°";
+		return "보내기";
 	}
 
 	protected override string _GetTemplateForActionSet()
 	{
-		return "ì„¤ì •";
+		return "설정";
 	}
 
 	protected override string _GetTemplateForActionStartParty()
 	{
-		return "íŒŒí‹° ì‹œìž‘í•˜ê¸°";
+		return "파티 시작하기";
 	}
 
 	protected override string _GetTemplateForActionStay()
 	{
-		return "ë¨¸ë¬¼ê¸°";
+		return "머물기";
 	}
 
 	protected override string _GetTemplateForActionTurnOn()
 	{
-		return "ì¼œê¸°";
+		return "켜기";
 	}
 
 	protected override string _GetTemplateForHeadingBuyItem()
 	{
-		return "ì•„ì´í…œ êµ¬ë§¤";
+		return "아이템 구매";
 	}
 
 	protected override string _GetTemplateForHeadingChat()
 	{
-		return "ì±„íŒ…";
+		return "채팅";
 	}
 
 	protected override string _GetTemplateForHeadingChatAndParty()
 	{
-		return "ì±„íŒ… ë° íŒŒí‹°";
+		return "채팅 및 파티";
 	}
 
 	protected override string _GetTemplateForHeadingConfirmLeaving()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ì„ ì •ë§ ë‚˜ê°€ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "채팅그룹을 정말 나가시겠습니까?";
 	}
 
 	protected override string _GetTemplateForHeadingContinueToReport()
 	{
-		return "ì‹ ê³ ë¥¼ ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "신고를 계속 하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForHeadingCreateParty()
 	{
-		return "íŒŒí‹° ë§Œë“¤ê¸°";
+		return "파티 만들기";
 	}
 
 	protected override string _GetTemplateForHeadingLeaveChatGroup()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ë‚˜ê°€ê¸°";
+		return "채팅그룹 나가기";
 	}
 
 	protected override string _GetTemplateForHeadingLeaveChatGroupQ()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ì„ ë‚˜ê°€ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "채팅그룹을 나가시겠습니까?";
 	}
 
 	protected override string _GetTemplateForHeadingNewChatGroup()
 	{
-		return "ìƒˆ ì±„íŒ…ê·¸ë£¹";
+		return "새 채팅그룹";
 	}
 
 	protected override string _GetTemplateForHeadingRemoveUser()
 	{
-		return "ì‚¬ìš©ìžë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?";
+		return "사용자를 삭제하시겠습니까?";
 	}
 
 	protected override string _GetTemplateForHeadingReport()
 	{
-		return "ì‹ ê³ í•˜ê¸°";
+		return "신고하기";
 	}
 
 	protected override string _GetTemplateForLabelAddFriends()
 	{
-		return "ì¹œêµ¬ ì¶”ê°€";
+		return "친구 추가";
 	}
 
 	/// <summary>
@@ -717,117 +719,117 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelBuyAccessToGameForModal(string placeName, string creatorName, string robux)
 	{
-		return $"{creatorName}ì´(ê°€) ë§Œë“  {placeName} ì´ìš©ê¶Œì„ {robux}ìœ¼(ë¡œ) êµ¬ë§¤í• ê¹Œìš”?";
+		return $"{creatorName}이(가) 만든 {placeName} 이용권을 {robux}으(로) 구매할까요?";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccessToGameForModal()
 	{
-		return "{creatorName}ì´(ê°€) ë§Œë“  {placeName} ì´ìš©ê¶Œì„ {robux}ìœ¼(ë¡œ) êµ¬ë§¤í• ê¹Œìš”?";
+		return "{creatorName}이(가) 만든 {placeName} 이용권을 {robux}으(로) 구매할까요?";
 	}
 
 	protected override string _GetTemplateForLabelBuyButton()
 	{
-		return "êµ¬ë§¤";
+		return "구매";
 	}
 
 	protected override string _GetTemplateForLabelChangeChatGroupName()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ë³€ê²½";
+		return "채팅그룹 이름 변경";
 	}
 
 	protected override string _GetTemplateForLabelChatDetails()
 	{
-		return "ì±„íŒ… ì •ë³´";
+		return "채팅 정보";
 	}
 
 	protected override string _GetTemplateForLabelChatGroupName()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì´ë¦„";
+		return "채팅그룹 이름";
 	}
 
 	protected override string _GetTemplateForLabelClose()
 	{
-		return "ë‹«ê¸°";
+		return "닫기";
 	}
 
 	protected override string _GetTemplateForLabelConversationNotifications()
 	{
-		return "ì•Œë¦¼";
+		return "알림";
 	}
 
 	protected override string _GetTemplateForLabelConversationNotificationsOn()
 	{
-		return "ì¼œê¸°";
+		return "켜기";
 	}
 
 	protected override string _GetTemplateForLabelDetailsPlayTogether()
 	{
-		return "í•¨ê»˜ í”Œë ˆì´";
+		return "함께 플레이";
 	}
 
 	protected override string _GetTemplateForLabelFindGame()
 	{
-		return "ê²Œìž„ ì°¾ê¸°";
+		return "게임 찾기";
 	}
 
 	protected override string _GetTemplateForLabelGameNotAvailableButton()
 	{
-		return "ì´ìš© ë¶ˆê°€";
+		return "이용 불가";
 	}
 
 	protected override string _GetTemplateForLabelGeneral()
 	{
-		return "ì¼ë°˜";
+		return "일반";
 	}
 
 	protected override string _GetTemplateForLabelInGame()
 	{
-		return "ê²Œìž„ ì¤‘";
+		return "게임 중";
 	}
 
 	protected override string _GetTemplateForLabelInputPlaceHolderSearchForFriends()
 	{
-		return "ì¹œêµ¬ ì°¾ê¸°";
+		return "친구 찾기";
 	}
 
 	protected override string _GetTemplateForLabelInputPlaceHolderSendMessage()
 	{
-		return "ë©”ì‹œì§€ ë³´ë‚´ê¸°";
+		return "메시지 보내기";
 	}
 
 	protected override string _GetTemplateForLabelInStudio()
 	{
-		return "Studio ì‚¬ìš© ì¤‘";
+		return "Studio 사용 중";
 	}
 
 	protected override string _GetTemplateForLabelJoinButton()
 	{
-		return "ê°€ìž…";
+		return "가입";
 	}
 
 	protected override string _GetTemplateForLabelJoinGame()
 	{
-		return "ê²Œìž„ ì°¸ê°€";
+		return "게임 참가";
 	}
 
 	protected override string _GetTemplateForLabelJoinParty()
 	{
-		return "íŒŒí‹° ì°¸ê°€";
+		return "파티 참가";
 	}
 
 	protected override string _GetTemplateForLabelLeaveChatGroup()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ë‚˜ê°€ê¸°";
+		return "채팅그룹 나가기";
 	}
 
 	protected override string _GetTemplateForLabelLeaveParty()
 	{
-		return "íŒŒí‹° ë‚˜ê°€ê¸°";
+		return "파티 나가기";
 	}
 
 	protected override string _GetTemplateForLabelMember()
 	{
-		return "ë©¤ë²„";
+		return "멤버";
 	}
 
 	/// <summary>
@@ -836,77 +838,77 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelMemberJoinText(string userName)
 	{
-		return $"{userName}ë‹˜ì´ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”";
+		return $"{userName}님이 파티에 참가했어요";
 	}
 
 	protected override string _GetTemplateForLabelMemberJoinText()
 	{
-		return "{userName}ë‹˜ì´ íŒŒí‹°ì— ì°¸ê°€í–ˆì–´ìš”";
+		return "{userName}님이 파티에 참가했어요";
 	}
 
 	protected override string _GetTemplateForLabelMembers()
 	{
-		return "ë©¤ë²„";
+		return "멤버";
 	}
 
 	protected override string _GetTemplateForLabelMute15Minutes()
 	{
-		return "15ë¶„";
+		return "15분";
 	}
 
 	protected override string _GetTemplateForLabelMute1Hour()
 	{
-		return "1ì‹œê°„";
+		return "1시간";
 	}
 
 	protected override string _GetTemplateForLabelMute24Hours()
 	{
-		return "í•˜ë£¨";
+		return "하루";
 	}
 
 	protected override string _GetTemplateForLabelMute8Hours()
 	{
-		return "8ì‹œê°„";
+		return "8시간";
 	}
 
 	protected override string _GetTemplateForLabelMuteConversationNotificationsForGroup()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì•Œë¦¼ ìŒì†Œê±°";
+		return "채팅그룹 알림 음소거";
 	}
 
 	protected override string _GetTemplateForLabelMuteConversationNotificationsForOneToOne()
 	{
-		return "ëŒ€í™” ì¤‘ ì•Œë¦¼ ìŒì†Œê±°";
+		return "대화 중 알림 음소거";
 	}
 
 	protected override string _GetTemplateForLabelMuteInfinite()
 	{
-		return "ë‹¤ì‹œ ì¼¤ ë•Œê¹Œì§€";
+		return "다시 켤 때까지";
 	}
 
 	protected override string _GetTemplateForLabelNameYourChangeGroup()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ì„¤ì •";
+		return "채팅그룹 이름 설정";
 	}
 
 	protected override string _GetTemplateForLabelNameYourChatGroup()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ ì„¤ì •";
+		return "채팅그룹 이름 설정";
 	}
 
 	protected override string _GetTemplateForLabelNotImplementedMessageType()
 	{
-		return "ì´ ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ì–´ìš”.";
+		return "이 메시지를 표시할 수 없어요.";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ì˜¤í”„ë¼ì¸";
+		return "오프라인";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ì˜¨ë¼ì¸";
+		return "온라인";
 	}
 
 	/// <summary>
@@ -915,12 +917,12 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPartyLeaderTooltip(string userName)
 	{
-		return $"{userName}ë‹˜ì´ íŒŒí‹°ìž¥ìž…ë‹ˆë‹¤";
+		return $"{userName}님이 파티장입니다";
 	}
 
 	protected override string _GetTemplateForLabelPartyLeaderTooltip()
 	{
-		return "{userName}ë‹˜ì´ íŒŒí‹°ìž¥ìž…ë‹ˆë‹¤";
+		return "{userName}님이 파티장입니다";
 	}
 
 	/// <summary>
@@ -929,12 +931,12 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPartyMemberTooltip(string userName)
 	{
-		return $"{userName}ë‹˜ì€ íŒŒí‹° ì†Œì†ì´ì—ìš”";
+		return $"{userName}님은 파티 소속이에요";
 	}
 
 	protected override string _GetTemplateForLabelPartyMemberTooltip()
 	{
-		return "{userName}ë‹˜ì€ íŒŒí‹° ì†Œì†ì´ì—ìš”";
+		return "{userName}님은 파티 소속이에요";
 	}
 
 	/// <summary>
@@ -943,12 +945,12 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPartyName(string title)
 	{
-		return $"íŒŒí‹°: {title}";
+		return $"파티: {title}";
 	}
 
 	protected override string _GetTemplateForLabelPartyName()
 	{
-		return "íŒŒí‹°: {title}";
+		return "파티: {title}";
 	}
 
 	/// <summary>
@@ -957,32 +959,32 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPendingMemberTooltip(string userName)
 	{
-		return $"{userName}ë‹˜ì€ íŒŒí‹° ì†Œì†ì´ ì•„ë‹ˆì—ìš”";
+		return $"{userName}님은 파티 소속이 아니에요";
 	}
 
 	protected override string _GetTemplateForLabelPendingMemberTooltip()
 	{
-		return "{userName}ë‹˜ì€ íŒŒí‹° ì†Œì†ì´ ì•„ë‹ˆì—ìš”";
+		return "{userName}님은 파티 소속이 아니에요";
 	}
 
 	protected override string _GetTemplateForLabelPinGameTooltip()
 	{
-		return "ê²Œìž„ í•€í•˜ê¸°";
+		return "게임 핀하기";
 	}
 
 	protected override string _GetTemplateForLabelPinnedGame()
 	{
-		return "í•€í•œ ê²Œìž„";
+		return "핀한 게임";
 	}
 
 	protected override string _GetTemplateForLabelPlayButton()
 	{
-		return "í”Œë ˆì´";
+		return "플레이";
 	}
 
 	protected override string _GetTemplateForLabelPlayGames()
 	{
-		return "ê²Œìž„ í”Œë ˆì´";
+		return "게임 플레이";
 	}
 
 	/// <summary>
@@ -991,37 +993,37 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelPlayingGame(string game)
 	{
-		return $"{game} í”Œë ˆì´ ì¤‘";
+		return $"{game} 플레이 중";
 	}
 
 	protected override string _GetTemplateForLabelPlayingGame()
 	{
-		return "{game} í”Œë ˆì´ ì¤‘";
+		return "{game} 플레이 중";
 	}
 
 	protected override string _GetTemplateForLabelPlayTogether()
 	{
-		return "í•¨ê»˜ í”Œë ˆì´";
+		return "함께 플레이";
 	}
 
 	protected override string _GetTemplateForLabelRecommendedGames()
 	{
-		return "ì¶”ì²œ";
+		return "추천";
 	}
 
 	protected override string _GetTemplateForLabelSeeLess()
 	{
-		return "ê°„ëžµížˆ ë³´ê¸°";
+		return "간략히 보기";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "ë” ë³´ê¸°";
+		return "더 보기";
 	}
 
 	protected override string _GetTemplateForLabelShowLessGames()
 	{
-		return "ê°„ëžµížˆ ë³´ê¸°";
+		return "간략히 보기";
 	}
 
 	/// <summary>
@@ -1030,22 +1032,22 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelShowMoreGames(string count)
 	{
-		return $"ë” ë³´ê¸° (+{count})";
+		return $"더 보기 (+{count})";
 	}
 
 	protected override string _GetTemplateForLabelShowMoreGames()
 	{
-		return "ë” ë³´ê¸° (+{count})";
+		return "더 보기 (+{count})";
 	}
 
 	protected override string _GetTemplateForLabelSpanTitleCreateGroupNeeds2More()
 	{
-		return "2ëª… ì´ìƒì„ ì¶”ê°€í•´ì•¼ ì±„íŒ… ê·¸ë£¹ì„ ë§Œë“¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤";
+		return "2명 이상을 추가해야 채팅 그룹을 만들 수 있습니다";
 	}
 
 	protected override string _GetTemplateForLabelSpanTitleLoading()
 	{
-		return "ë¡œë“œ ì¤‘...";
+		return "로드 중...";
 	}
 
 	/// <summary>
@@ -1054,47 +1056,47 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string LabelTimestampOffUntilCertainTime(string timestamp)
 	{
-		return $"{timestamp}ê¹Œì§€ ë„ê¸°";
+		return $"{timestamp}까지 끄기";
 	}
 
 	protected override string _GetTemplateForLabelTimestampOffUntilCertainTime()
 	{
-		return "{timestamp}ê¹Œì§€ ë„ê¸°";
+		return "{timestamp}까지 끄기";
 	}
 
 	protected override string _GetTemplateForLabelTimestampOffUntilTomorrow()
 	{
-		return "ë‚´ì¼ê¹Œì§€ ë„ê¸°";
+		return "내일까지 끄기";
 	}
 
 	protected override string _GetTemplateForLabelTimestampOffUntilTurnedBackOn()
 	{
-		return "ë‹¤ì‹œ ì¼¤ ë•Œê¹Œì§€ ë„ê¸°\"";
+		return "다시 켤 때까지 끄기\"";
 	}
 
 	protected override string _GetTemplateForLabelTurnOnConversationNotificationsPrompt()
 	{
-		return "ì•Œë¦¼ì„ ì¼¤ê¹Œìš”?";
+		return "알림을 켤까요?";
 	}
 
 	protected override string _GetTemplateForLabelUnpinGameTooltip()
 	{
-		return "ê²Œìž„ í•€ í•´ì œí•˜ê¸°";
+		return "게임 핀 해제하기";
 	}
 
 	protected override string _GetTemplateForLabelViewDetailsButton()
 	{
-		return "ìžì„¸ížˆ ë³´ê¸°";
+		return "자세히 보기";
 	}
 
 	protected override string _GetTemplateForLabelViewProfile()
 	{
-		return "í”„ë¡œí•„ ë³´ê¸°";
+		return "프로필 보기";
 	}
 
 	protected override string _GetTemplateForLabelYesterday()
 	{
-		return "ì–´ì œ";
+		return "어제";
 	}
 
 	/// <summary>
@@ -1103,12 +1105,12 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageChatPrivacySetting(string frontLink, string endLink)
 	{
-		return $"ì¹œêµ¬ì™€ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë ¤ë©´ {frontLink}ê°œì¸ì •ë³´ ì„¤ì •{endLink}ì—ì„œ ì±„íŒ…ì„ í™œì„±í™”í•˜ì„¸ìš”";
+		return $"친구와 이야기를 나누려면 {frontLink}개인정보 설정{endLink}에서 채팅을 활성화하세요";
 	}
 
 	protected override string _GetTemplateForMessageChatPrivacySetting()
 	{
-		return "ì¹œêµ¬ì™€ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ„ë ¤ë©´ {frontLink}ê°œì¸ì •ë³´ ì„¤ì •{endLink}ì—ì„œ ì±„íŒ…ì„ í™œì„±í™”í•˜ì„¸ìš”";
+		return "친구와 이야기를 나누려면 {frontLink}개인정보 설정{endLink}에서 채팅을 활성화하세요";
 	}
 
 	/// <summary>
@@ -1117,27 +1119,27 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageconversationTitleChangedText(string userName, string groupName)
 	{
-		return $"{userName}ë‹˜ì´ ì„¤ì •í•œ ì±„íŒ…ê·¸ë£¹ ì´ë¦„: {groupName}";
+		return $"{userName}님이 설정한 채팅그룹 이름: {groupName}";
 	}
 
 	protected override string _GetTemplateForMessageconversationTitleChangedText()
 	{
-		return "{userName}ë‹˜ì´ ì„¤ì •í•œ ì±„íŒ…ê·¸ë£¹ ì´ë¦„: {groupName}";
+		return "{userName}님이 설정한 채팅그룹 이름: {groupName}";
 	}
 
 	protected override string _GetTemplateForMessageConversationTitleModerated()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ì´ë¦„ì´ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.";
+		return "채팅그룹 이름이 검열을 통과하지 못했습니다.";
 	}
 
 	protected override string _GetTemplateForMessageDefault()
 	{
-		return "ì±„íŒ… ì°¸ê°€ìž ì¤‘ ì¼ë¶€ëŠ” íšŒì›ë‹˜ì˜ ë©”ì‹œì§€ë¥¼ ë³¼ ìˆ˜ ì—†ì–´ìš”.";
+		return "채팅 참가자 중 일부는 회원님의 메시지를 볼 수 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageDefaultErrorMsg()
 	{
-		return "ì˜¤ë¥˜ê°€ ë°œìƒí–ˆì–´ìš”";
+		return "오류가 발생했어요";
 	}
 
 	/// <summary>
@@ -1146,12 +1148,12 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageDefaultTitleForMsg(string userName)
 	{
-		return $"{userName}ë‹˜ì˜ ë§:";
+		return $"{userName}님의 말:";
 	}
 
 	protected override string _GetTemplateForMessageDefaultTitleForMsg()
 	{
-		return "{userName}ë‹˜ì˜ ë§:";
+		return "{userName}님의 말:";
 	}
 
 	/// <summary>
@@ -1160,17 +1162,17 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageDefaultTitleForPartyInvite(string userName)
 	{
-		return $"{userName}ë‹˜ì´ íŒŒí‹°ì— ì´ˆëŒ€í–ˆì–´ìš”";
+		return $"{userName}님이 파티에 초대했어요";
 	}
 
 	protected override string _GetTemplateForMessageDefaultTitleForPartyInvite()
 	{
-		return "{userName}ë‹˜ì´ íŒŒí‹°ì— ì´ˆëŒ€í–ˆì–´ìš”";
+		return "{userName}님이 파티에 초대했어요";
 	}
 
 	protected override string _GetTemplateForMessageError()
 	{
-		return "ì˜¤ë¥˜";
+		return "오류";
 	}
 
 	/// <summary>
@@ -1179,42 +1181,42 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageFindGameToPlay(string frontLink, string endLink)
 	{
-		return $"{frontLink}ê²Œìž„ ê²€ìƒ‰{endLink}ì„ í†µí•´ ì¹œêµ¬ì™€ ì¦ê¸¸ ê²Œìž„ì„ ì°¾ì•„ë³´ì„¸ìš”!";
+		return $"{frontLink}게임 검색{endLink}을 통해 친구와 즐길 게임을 찾아보세요!";
 	}
 
 	protected override string _GetTemplateForMessageFindGameToPlay()
 	{
-		return "{frontLink}ê²Œìž„ ê²€ìƒ‰{endLink}ì„ í†µí•´ ì¹œêµ¬ì™€ ì¦ê¸¸ ê²Œìž„ì„ ì°¾ì•„ë³´ì„¸ìš”!";
+		return "{frontLink}게임 검색{endLink}을 통해 친구와 즐길 게임을 찾아보세요!";
 	}
 
 	protected override string _GetTemplateForMessageJoinPartyText()
 	{
-		return "íŒŒí‹°ìž¥ì´ í”Œë ˆì´í•  ê²Œìž„ì„ ì°¾ê³  ìžˆì–´ìš”.";
+		return "파티장이 플레이할 게임을 찾고 있어요.";
 	}
 
 	protected override string _GetTemplateForMessageMakeFriendsToChatNPlay()
 	{
-		return "ì±„íŒ…ê³¼ íŒŒí‹° í™œë™ì„ ì‹œìž‘í•˜ë ¤ë©´ ì¹œêµ¬ë¥¼ ë§Œë“œì„¸ìš”!";
+		return "채팅과 파티 활동을 시작하려면 친구를 만드세요!";
 	}
 
 	protected override string _GetTemplateForMessageMessageContentModerated()
 	{
-		return "ë©”ì‹œì§€ê°€ ê²€ì—´ì„ í†µê³¼í•˜ì§€ ëª»í•´ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+		return "메시지가 검열을 통과하지 못해 전송되지 않았어요.";
 	}
 
 	protected override string _GetTemplateForMessageMessageFilterForReceivers()
 	{
-		return "ì±„íŒ… ì°¸ê°€ìž ì¤‘ ì¼ë¶€ëŠ” íšŒì›ë‹˜ì˜ ë©”ì‹œì§€ë¥¼ ë³¼ ìˆ˜ ì—†ì–´ìš”.";
+		return "채팅 참가자 중 일부는 회원님의 메시지를 볼 수 없어요.";
 	}
 
 	protected override string _GetTemplateForMessageNoConnectionMsg()
 	{
-		return "ì—°ê²° ì¤‘...";
+		return "연결 중...";
 	}
 
 	protected override string _GetTemplateForMessagePartyInviteMsg()
 	{
-		return "íŒŒí‹° ì´ˆëŒ€!";
+		return "파티 초대!";
 	}
 
 	/// <summary>
@@ -1224,22 +1226,22 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessagePinGameUpdate(string userName, string gameName)
 	{
-		return $"{userName}ë‹˜ì´ í•¨ê»˜ í”Œë ˆì´í•˜ê¸° ìœ„í•´ ì„ íƒí•œ ê²Œìž„: {gameName}";
+		return $"{userName}님이 함께 플레이하기 위해 선택한 게임: {gameName}";
 	}
 
 	protected override string _GetTemplateForMessagePinGameUpdate()
 	{
-		return "{userName}ë‹˜ì´ í•¨ê»˜ í”Œë ˆì´í•˜ê¸° ìœ„í•´ ì„ íƒí•œ ê²Œìž„: {gameName}";
+		return "{userName}님이 함께 플레이하기 위해 선택한 게임: {gameName}";
 	}
 
 	protected override string _GetTemplateForMessagePlayGameUpdate()
 	{
-		return " ë‹˜ì´ í•€í•œ ê²Œìž„ í”Œë ˆì´ ì¤‘: ";
+		return " 님이 핀한 게임 플레이 중: ";
 	}
 
 	protected override string _GetTemplateForMessageTextTooLong()
 	{
-		return "ë©”ì‹œì§€ê°€ ë„ˆë¬´ ê¸¸ì–´ì„œ ì „ì†¡ë˜ì§€ ì•Šì•˜ì–´ìš”.";
+		return "메시지가 너무 길어서 전송되지 않았어요.";
 	}
 
 	/// <summary>
@@ -1248,27 +1250,27 @@ internal class ChatResources_ko_kr : ChatResources_en_us, IChatResources, ITrans
 	/// </summary>
 	public override string MessageToastText(string friendNum)
 	{
-		return $"ì±„íŒ…ê·¸ë£¹ ìµœëŒ€ ì •ì›ì€ {friendNum}ëª…ìž…ë‹ˆë‹¤.";
+		return $"채팅그룹 최대 정원은 {friendNum}명입니다.";
 	}
 
 	protected override string _GetTemplateForMessageToastText()
 	{
-		return "ì±„íŒ…ê·¸ë£¹ ìµœëŒ€ ì •ì›ì€ {friendNum}ëª…ìž…ë‹ˆë‹¤.";
+		return "채팅그룹 최대 정원은 {friendNum}명입니다.";
 	}
 
 	protected override string _GetTemplateForMessageUnknownMessageType()
 	{
-		return "ë©”ì‹œì§€ë¥¼ í‘œì‹œí•  ìˆ˜ ì—†ìŒ";
+		return "메시지를 표시할 수 없음";
 	}
 
 	protected override string _GetTemplateForPlayButton()
 	{
-		return "í”Œë ˆì´";
+		return "플레이";
 	}
 
 	protected override string _GetTemplateForResponsePartyInvite()
 	{
-		return "íŒŒí‹° ì´ˆëŒ€ë¥¼ ë°›ì•˜ì–´ìš”.";
+		return "파티 초대를 받았어요.";
 	}
 }
 

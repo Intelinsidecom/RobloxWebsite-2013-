@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ReportAbuseResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Action.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "SchlieÃŸen";
+	public override string ActionClose => "Schließen";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "VerstoÃŸ melden";
+	public override string ActionReportAbuse => "Verstoß melden";
 
 	/// <summary>
 	/// Key: "Action.Submit"
@@ -34,7 +36,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Heading.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string HeadingReportAbuse => "VerstoÃŸ melden";
+	public override string HeadingReportAbuse => "Verstoß melden";
 
 	/// <summary>
 	/// Key: "Heading.Success"
@@ -52,25 +54,25 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.BlockWarning"
 	/// English String: "Users who don't follow the rules will get a warning at first but if they keep it up we may ask them to not come to Roblox anymore. That way we can keep Roblox fun and safe!"
 	/// </summary>
-	public override string LabelBlockWarning => "Benutzer, die gegen die Regeln verstoÃŸen, werden zuerst verwarnt. Sollten sie ihr Verhalten danach nicht Ã¤ndern, kÃ¶nnen wir sie dazu auffordern, Roblox nicht mehr zu benutzen. So bleibt Roblox unterhaltsam und sicher!";
+	public override string LabelBlockWarning => "Benutzer, die gegen die Regeln verstoßen, werden zuerst verwarnt. Sollten sie ihr Verhalten danach nicht ändern, können wir sie dazu auffordern, Roblox nicht mehr zu benutzen. So bleibt Roblox unterhaltsam und sicher!";
 
 	/// <summary>
 	/// Key: "Label.CategoryBullying"
 	/// English String: "Bullying, Harassment, Hate Speech"
 	/// </summary>
-	public override string LabelCategoryBullying => "Mobbing, BelÃ¤stigung, Hassbekundigungen";
+	public override string LabelCategoryBullying => "Mobbing, Belästigung, Hassbekundigungen";
 
 	/// <summary>
 	/// Key: "Label.CategoryBullyingV2"
 	/// English String: "Bullying, Harassment, Discrimination"
 	/// </summary>
-	public override string LabelCategoryBullyingV2 => "Mobbing, BelÃ¤stigung, Diskriminierung";
+	public override string LabelCategoryBullyingV2 => "Mobbing, Belästigung, Diskriminierung";
 
 	/// <summary>
 	/// Key: "Label.CategoryContent"
 	/// English String: "Inappropriate Content - Place, Image, Model"
 	/// </summary>
-	public override string LabelCategoryContent => "Unangemessene Inhalte\u00a0â€“ Ort, Bild, Modell";
+	public override string LabelCategoryContent => "Unangemessene Inhalte\u00a0– Ort, Bild, Modell";
 
 	/// <summary>
 	/// Key: "Label.CategoryDating"
@@ -78,19 +80,19 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// </summary>
 	public override string LabelCategoryDating => "Dating";
 
-	public override string LabelCategoryInappropriate => "Unangemessene Sprache â€“ KraftausdrÃ¼cke und nicht jugendfreie Inhalte";
+	public override string LabelCategoryInappropriate => "Unangemessene Sprache – Kraftausdrücke und nicht jugendfreie Inhalte";
 
 	/// <summary>
 	/// Key: "Label.CategoryOther"
 	/// English String: "Other rule violation"
 	/// </summary>
-	public override string LabelCategoryOther => "Anderer RegelverstoÃŸ";
+	public override string LabelCategoryOther => "Anderer Regelverstoß";
 
 	/// <summary>
 	/// Key: "Label.CategoryPrivateInfo"
 	/// English String: "Asking for or Giving Private Information"
 	/// </summary>
-	public override string LabelCategoryPrivateInfo => "Fragen nach oder Bereitstellung von persÃ¶nlichen Informationen";
+	public override string LabelCategoryPrivateInfo => "Fragen nach oder Bereitstellung von persönlichen Informationen";
 
 	/// <summary>
 	/// Key: "Label.CategoryScamming"
@@ -102,7 +104,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.CategoryTheft"
 	/// English String: "Account Theft - Phishing, Hacking, Trading"
 	/// </summary>
-	public override string LabelCategoryTheft => "Kontodiebstahl\u00a0â€“ Phishing, Hacking, Handel mit Konten";
+	public override string LabelCategoryTheft => "Kontodiebstahl\u00a0– Phishing, Hacking, Handel mit Konten";
 
 	public override string LabelCategoryThreats => "Bedrohungen in der realen Welt und Suizidandrohungen";
 
@@ -116,13 +118,13 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.DeletePost"
 	/// English String: "Delete Post (and any replies)"
 	/// </summary>
-	public override string LabelDeletePost => "Post (und sÃ¤mtliche Antworten) lÃ¶schen";
+	public override string LabelDeletePost => "Post (und sämtliche Antworten) löschen";
 
 	/// <summary>
 	/// Key: "Label.LeaveUnchanged"
 	/// English String: "Leave post unchanged"
 	/// </summary>
-	public override string LabelLeaveUnchanged => "Post unverÃ¤ndert lassen";
+	public override string LabelLeaveUnchanged => "Post unverändert lassen";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryAdultContent"
@@ -140,7 +142,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.ModCategoryHarrasment"
 	/// English String: "Harrasment"
 	/// </summary>
-	public override string LabelModCategoryHarrasment => "BelÃ¤stigung";
+	public override string LabelModCategoryHarrasment => "Belästigung";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryInappropriate"
@@ -164,7 +166,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.ModCategoryProfanity"
 	/// English String: "Profanity"
 	/// </summary>
-	public override string LabelModCategoryProfanity => "KraftausdrÃ¼cke";
+	public override string LabelModCategoryProfanity => "Kraftausdrücke";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryScamming"
@@ -182,13 +184,13 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.ModCategoryUnclassified"
 	/// English String: "Unclassified Mild"
 	/// </summary>
-	public override string LabelModCategoryUnclassified => "Nicht klassifiziert, gemÃ¤ÃŸigt";
+	public override string LabelModCategoryUnclassified => "Nicht klassifiziert, gemäßigt";
 
 	/// <summary>
 	/// Key: "Label.ModeratorNote"
 	/// English String: "NOTE: Deleting this post you will also delete replies. If you choose to scrub or delete the post, this report will skip the abuse queue and go directly to the user queue."
 	/// </summary>
-	public override string LabelModeratorNote => "HINWEIS: Wenn du diesen Post lÃ¶schst, werden auch die Antworten darauf gelÃ¶scht. Solltest du den Post bereinigen oder lÃ¶schen, Ã¼bergeht diese Meldung die Liste der VerstÃ¶ÃŸe und landet direkt in der Benutzerliste.";
+	public override string LabelModeratorNote => "HINWEIS: Wenn du diesen Post löschst, werden auch die Antworten darauf gelöscht. Solltest du den Post bereinigen oder löschen, übergeht diese Meldung die Liste der Verstöße und landet direkt in der Benutzerliste.";
 
 	/// <summary>
 	/// Key: "Label.NeedJavaScript"
@@ -200,7 +202,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.NotSureQuestion"
 	/// English String: "Not sure if the thing you are trying to report is really against the rules?"
 	/// </summary>
-	public override string LabelNotSureQuestion => "Du bist dir nicht sicher, ob die Sache, die du melden mÃ¶chtest, wirklich ein RegelverstoÃŸ ist?";
+	public override string LabelNotSureQuestion => "Du bist dir nicht sicher, ob die Sache, die du melden möchtest, wirklich ein Regelverstoß ist?";
 
 	/// <summary>
 	/// Key: "Label.PrivacyPolicyLink"
@@ -218,7 +220,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.Rules1"
 	/// English String: "No swear words"
 	/// </summary>
-	public override string LabelRules1 => "Keine SchimpfwÃ¶rter";
+	public override string LabelRules1 => "Keine Schimpfwörter";
 
 	/// <summary>
 	/// Key: "Label.Rules2"
@@ -230,19 +232,19 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.Rules3"
 	/// English String: "No dating - no asking for boyfriends or girlfriends"
 	/// </summary>
-	public override string LabelRules3 => "Kein Dating\u00a0â€“ Frage nicht, ob jemand dein Partner werden will";
+	public override string LabelRules3 => "Kein Dating\u00a0– Frage nicht, ob jemand dein Partner werden will";
 
 	/// <summary>
 	/// Key: "Label.Rules4"
 	/// English String: "No asking real life info about each other - no asking for phone numbers or email addresses"
 	/// </summary>
-	public override string LabelRules4 => "Keine Fragen nach persÃ¶nlichen Informationen wie Handynummern oder E-Mail-Adressen";
+	public override string LabelRules4 => "Keine Fragen nach persönlichen Informationen wie Handynummern oder E-Mail-Adressen";
 
 	/// <summary>
 	/// Key: "Label.RulesHeading"
 	/// English String: "Some of the basic rules of Roblox include the following:"
 	/// </summary>
-	public override string LabelRulesHeading => "Hier sind einige der Grundregeln fÃ¼r Roblox:";
+	public override string LabelRulesHeading => "Hier sind einige der Grundregeln für Roblox:";
 
 	/// <summary>
 	/// Key: "Label.SafetyHelpLink"
@@ -273,19 +275,19 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Label.SelectCategory"
 	/// English String: "Please select a category"
 	/// </summary>
-	public override string LabelSelectCategory => "Bitte wÃ¤hle eine Kategorie.";
+	public override string LabelSelectCategory => "Bitte wähle eine Kategorie.";
 
 	/// <summary>
 	/// Key: "Label.SelectMedia"
 	/// English String: "Select any inappropriate media:"
 	/// </summary>
-	public override string LabelSelectMedia => "WÃ¤hle alle unangemessenen Elemente:";
+	public override string LabelSelectMedia => "Wähle alle unangemessenen Elemente:";
 
 	/// <summary>
 	/// Key: "Label.SelectReason"
 	/// English String: "Select a reason for your moderation action:"
 	/// </summary>
-	public override string LabelSelectReason => "WÃ¤hle einen Grund fÃ¼r deine Aktion als Moderator:";
+	public override string LabelSelectReason => "Wähle einen Grund für deine Aktion als Moderator:";
 
 	/// <summary>
 	/// Key: "Label.Subject"
@@ -297,7 +299,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Key: "Message.ErrorMissingParams"
 	/// English String: "One or more required parameters are missing or invalid"
 	/// </summary>
-	public override string MessageErrorMissingParams => "Mindestens eine erforderliche Angabe fehlt oder ist ungÃ¼ltig.";
+	public override string MessageErrorMissingParams => "Mindestens eine erforderliche Angabe fehlt oder ist ungültig.";
 
 	/// <summary>
 	/// Key: "Message.ErrorReportingCategories"
@@ -328,13 +330,13 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// Thank you message to appear with confirmation of successful report. Followed by a link to the localized help page
 	/// English String: "Thank you for your report.  We will investigate further to determine if there has been a violation of our Terms of Use.  For more information check out "
 	/// </summary>
-	public override string MessageThankYou => "Vielen Dank fÃ¼r deine Meldung. Wir werden nachprÃ¼fen, ob ein VerstoÃŸ gegen unsere Nutzungsbedingungen vorliegt. Weitere Informationen findest du hier ";
+	public override string MessageThankYou => "Vielen Dank für deine Meldung. Wir werden nachprüfen, ob ein Verstoß gegen unsere Nutzungsbedingungen vorliegt. Weitere Informationen findest du hier ";
 
 	/// <summary>
 	/// Key: "Response.PermissionError"
 	/// English String: "This account does not have enough permissions"
 	/// </summary>
-	public override string ResponsePermissionError => "Dieses Konto verfÃ¼gt nicht Ã¼ber genÃ¼gend Berechtigungen.";
+	public override string ResponsePermissionError => "Dieses Konto verfügt nicht über genügend Berechtigungen.";
 
 	public ReportAbuseResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -343,12 +345,12 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "SchlieÃŸen";
+		return "Schließen";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "VerstoÃŸ melden";
+		return "Verstoß melden";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
@@ -363,7 +365,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForHeadingReportAbuse()
 	{
-		return "VerstoÃŸ melden";
+		return "Verstoß melden";
 	}
 
 	protected override string _GetTemplateForHeadingSuccess()
@@ -378,22 +380,22 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelBlockWarning()
 	{
-		return "Benutzer, die gegen die Regeln verstoÃŸen, werden zuerst verwarnt. Sollten sie ihr Verhalten danach nicht Ã¤ndern, kÃ¶nnen wir sie dazu auffordern, Roblox nicht mehr zu benutzen. So bleibt Roblox unterhaltsam und sicher!";
+		return "Benutzer, die gegen die Regeln verstoßen, werden zuerst verwarnt. Sollten sie ihr Verhalten danach nicht ändern, können wir sie dazu auffordern, Roblox nicht mehr zu benutzen. So bleibt Roblox unterhaltsam und sicher!";
 	}
 
 	protected override string _GetTemplateForLabelCategoryBullying()
 	{
-		return "Mobbing, BelÃ¤stigung, Hassbekundigungen";
+		return "Mobbing, Belästigung, Hassbekundigungen";
 	}
 
 	protected override string _GetTemplateForLabelCategoryBullyingV2()
 	{
-		return "Mobbing, BelÃ¤stigung, Diskriminierung";
+		return "Mobbing, Belästigung, Diskriminierung";
 	}
 
 	protected override string _GetTemplateForLabelCategoryContent()
 	{
-		return "Unangemessene Inhalte\u00a0â€“ Ort, Bild, Modell";
+		return "Unangemessene Inhalte\u00a0– Ort, Bild, Modell";
 	}
 
 	protected override string _GetTemplateForLabelCategoryDating()
@@ -403,17 +405,17 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelCategoryInappropriate()
 	{
-		return "Unangemessene Sprache â€“ KraftausdrÃ¼cke und nicht jugendfreie Inhalte";
+		return "Unangemessene Sprache – Kraftausdrücke und nicht jugendfreie Inhalte";
 	}
 
 	protected override string _GetTemplateForLabelCategoryOther()
 	{
-		return "Anderer RegelverstoÃŸ";
+		return "Anderer Regelverstoß";
 	}
 
 	protected override string _GetTemplateForLabelCategoryPrivateInfo()
 	{
-		return "Fragen nach oder Bereitstellung von persÃ¶nlichen Informationen";
+		return "Fragen nach oder Bereitstellung von persönlichen Informationen";
 	}
 
 	protected override string _GetTemplateForLabelCategoryScamming()
@@ -423,7 +425,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelCategoryTheft()
 	{
-		return "Kontodiebstahl\u00a0â€“ Phishing, Hacking, Handel mit Konten";
+		return "Kontodiebstahl\u00a0– Phishing, Hacking, Handel mit Konten";
 	}
 
 	protected override string _GetTemplateForLabelCategoryThreats()
@@ -438,12 +440,12 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelDeletePost()
 	{
-		return "Post (und sÃ¤mtliche Antworten) lÃ¶schen";
+		return "Post (und sämtliche Antworten) löschen";
 	}
 
 	protected override string _GetTemplateForLabelLeaveUnchanged()
 	{
-		return "Post unverÃ¤ndert lassen";
+		return "Post unverändert lassen";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryAdultContent()
@@ -458,7 +460,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelModCategoryHarrasment()
 	{
-		return "BelÃ¤stigung";
+		return "Belästigung";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryInappropriate()
@@ -478,7 +480,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelModCategoryProfanity()
 	{
-		return "KraftausdrÃ¼cke";
+		return "Kraftausdrücke";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryScamming()
@@ -493,12 +495,12 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelModCategoryUnclassified()
 	{
-		return "Nicht klassifiziert, gemÃ¤ÃŸigt";
+		return "Nicht klassifiziert, gemäßigt";
 	}
 
 	protected override string _GetTemplateForLabelModeratorNote()
 	{
-		return "HINWEIS: Wenn du diesen Post lÃ¶schst, werden auch die Antworten darauf gelÃ¶scht. Solltest du den Post bereinigen oder lÃ¶schen, Ã¼bergeht diese Meldung die Liste der VerstÃ¶ÃŸe und landet direkt in der Benutzerliste.";
+		return "HINWEIS: Wenn du diesen Post löschst, werden auch die Antworten darauf gelöscht. Solltest du den Post bereinigen oder löschen, übergeht diese Meldung die Liste der Verstöße und landet direkt in der Benutzerliste.";
 	}
 
 	protected override string _GetTemplateForLabelNeedJavaScript()
@@ -508,7 +510,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelNotSureQuestion()
 	{
-		return "Du bist dir nicht sicher, ob die Sache, die du melden mÃ¶chtest, wirklich ein RegelverstoÃŸ ist?";
+		return "Du bist dir nicht sicher, ob die Sache, die du melden möchtest, wirklich ein Regelverstoß ist?";
 	}
 
 	protected override string _GetTemplateForLabelPrivacyPolicyLink()
@@ -523,7 +525,7 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelRules1()
 	{
-		return "Keine SchimpfwÃ¶rter";
+		return "Keine Schimpfwörter";
 	}
 
 	protected override string _GetTemplateForLabelRules2()
@@ -533,17 +535,17 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelRules3()
 	{
-		return "Kein Dating\u00a0â€“ Frage nicht, ob jemand dein Partner werden will";
+		return "Kein Dating\u00a0– Frage nicht, ob jemand dein Partner werden will";
 	}
 
 	protected override string _GetTemplateForLabelRules4()
 	{
-		return "Keine Fragen nach persÃ¶nlichen Informationen wie Handynummern oder E-Mail-Adressen";
+		return "Keine Fragen nach persönlichen Informationen wie Handynummern oder E-Mail-Adressen";
 	}
 
 	protected override string _GetTemplateForLabelRulesHeading()
 	{
-		return "Hier sind einige der Grundregeln fÃ¼r Roblox:";
+		return "Hier sind einige der Grundregeln für Roblox:";
 	}
 
 	protected override string _GetTemplateForLabelSafetyHelpLink()
@@ -568,17 +570,17 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForLabelSelectCategory()
 	{
-		return "Bitte wÃ¤hle eine Kategorie.";
+		return "Bitte wähle eine Kategorie.";
 	}
 
 	protected override string _GetTemplateForLabelSelectMedia()
 	{
-		return "WÃ¤hle alle unangemessenen Elemente:";
+		return "Wähle alle unangemessenen Elemente:";
 	}
 
 	protected override string _GetTemplateForLabelSelectReason()
 	{
-		return "WÃ¤hle einen Grund fÃ¼r deine Aktion als Moderator:";
+		return "Wähle einen Grund für deine Aktion als Moderator:";
 	}
 
 	protected override string _GetTemplateForLabelSubject()
@@ -592,17 +594,17 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 	/// </summary>
 	public override string LabelTellUsHow(string creatorName)
 	{
-		return $"Bitte teile uns mit, warum du denkst, dass {creatorName} gegen die Regeln von Roblox verstÃ¶ÃŸt.";
+		return $"Bitte teile uns mit, warum du denkst, dass {creatorName} gegen die Regeln von Roblox verstößt.";
 	}
 
 	protected override string _GetTemplateForLabelTellUsHow()
 	{
-		return "Bitte teile uns mit, warum du denkst, dass {creatorName} gegen die Regeln von Roblox verstÃ¶ÃŸt.";
+		return "Bitte teile uns mit, warum du denkst, dass {creatorName} gegen die Regeln von Roblox verstößt.";
 	}
 
 	protected override string _GetTemplateForMessageErrorMissingParams()
 	{
-		return "Mindestens eine erforderliche Angabe fehlt oder ist ungÃ¼ltig.";
+		return "Mindestens eine erforderliche Angabe fehlt oder ist ungültig.";
 	}
 
 	protected override string _GetTemplateForMessageErrorReportingCategories()
@@ -627,12 +629,12 @@ internal class ReportAbuseResources_de_de : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForMessageThankYou()
 	{
-		return "Vielen Dank fÃ¼r deine Meldung. Wir werden nachprÃ¼fen, ob ein VerstoÃŸ gegen unsere Nutzungsbedingungen vorliegt. Weitere Informationen findest du hier ";
+		return "Vielen Dank für deine Meldung. Wir werden nachprüfen, ob ein Verstoß gegen unsere Nutzungsbedingungen vorliegt. Weitere Informationen findest du hier ";
 	}
 
 	protected override string _GetTemplateForResponsePermissionError()
 	{
-		return "Dieses Konto verfÃ¼gt nicht Ã¼ber genÃ¼gend Berechtigungen.";
+		return "Dieses Konto verfügt nicht über genügend Berechtigungen.";
 	}
 }
 

@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Notificationspublic {
-    interface IDesktopPushNotificationPromptsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
+    public interface IDesktopPushNotificationPromptsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -96,3 +98,5 @@
 
 
 }
+
+

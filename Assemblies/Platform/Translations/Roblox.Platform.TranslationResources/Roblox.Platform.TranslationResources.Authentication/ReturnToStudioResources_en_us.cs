@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Authenticationinternal {
+namespace Roblox.Platform.TranslationResources.Authentication {
     class ReturnToStudioResources_en_us : TranslationResourcesBase, IReturnToStudioResources, ITranslationResources
 
 {
@@ -146,3 +146,4 @@ namespace Roblox.Platform.TranslationResources.Authenticationinternal {
 
 
 }
+

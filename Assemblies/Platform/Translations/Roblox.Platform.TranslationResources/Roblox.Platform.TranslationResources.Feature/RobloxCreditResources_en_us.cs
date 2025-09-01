@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class RobloxCreditResources_en_us : TranslationResourcesBase, IRobloxCreditResources, ITranslationResources
 
 {
@@ -191,3 +191,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

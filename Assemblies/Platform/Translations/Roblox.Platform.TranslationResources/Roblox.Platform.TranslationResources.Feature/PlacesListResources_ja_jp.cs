@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlacesListResources_en_us to provide locale specific translations where possible,
@@ -11,33 +13,33 @@ internal class PlacesListResources_ja_jp : PlacesListResources_en_us, IPlacesLis
 	/// Join game
 	/// English String: "Join"
 	/// </summary>
-	public override string ActionJoinGame => "å‚åŠ ";
+	public override string ActionJoinGame => "参加";
 
 	/// <summary>
 	/// Key: "Action.SeeAll"
 	/// English String: "See All"
 	/// </summary>
-	public override string ActionSeeAll => "ã™ã¹ã¦è¦‹ã‚‹";
+	public override string ActionSeeAll => "すべて見る";
 
 	/// <summary>
 	/// Key: "Action.ViewDetails"
 	/// check game details page
 	/// English String: "View Details"
 	/// </summary>
-	public override string ActionViewDetails => "è©³ç´°ã‚’è¡¨ç¤º";
+	public override string ActionViewDetails => "詳細を表示";
 
 	/// <summary>
 	/// Key: "Label.ContextMenuTitle"
 	/// English String: "Game"
 	/// </summary>
-	public override string LabelContextMenuTitle => "ã‚²ãƒ¼ãƒ ";
+	public override string LabelContextMenuTitle => "ゲーム";
 
 	/// <summary>
 	/// Key: "Label.PlacesListName"
 	/// Title of game list
 	/// English String: "Games"
 	/// </summary>
-	public override string LabelPlacesListName => "ã‚²ãƒ¼ãƒ ";
+	public override string LabelPlacesListName => "ゲーム";
 
 	public PlacesListResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -46,22 +48,22 @@ internal class PlacesListResources_ja_jp : PlacesListResources_en_us, IPlacesLis
 
 	protected override string _GetTemplateForActionJoinGame()
 	{
-		return "å‚åŠ ";
+		return "参加";
 	}
 
 	protected override string _GetTemplateForActionSeeAll()
 	{
-		return "ã™ã¹ã¦è¦‹ã‚‹";
+		return "すべて見る";
 	}
 
 	protected override string _GetTemplateForActionViewDetails()
 	{
-		return "è©³ç´°ã‚’è¡¨ç¤º";
+		return "詳細を表示";
 	}
 
 	protected override string _GetTemplateForLabelContextMenuTitle()
 	{
-		return "ã‚²ãƒ¼ãƒ ";
+		return "ゲーム";
 	}
 
 	/// <summary>
@@ -70,17 +72,17 @@ internal class PlacesListResources_ja_jp : PlacesListResources_en_us, IPlacesLis
 	/// </summary>
 	public override string LabelCreatorBy(string creatorLink)
 	{
-		return $"ä½œï¼š{creatorLink}";
+		return $"作：{creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelCreatorBy()
 	{
-		return "ä½œï¼š{creatorLink}";
+		return "作：{creatorLink}";
 	}
 
 	protected override string _GetTemplateForLabelPlacesListName()
 	{
-		return "ã‚²ãƒ¼ãƒ ";
+		return "ゲーム";
 	}
 
 	/// <summary>
@@ -90,12 +92,12 @@ internal class PlacesListResources_ja_jp : PlacesListResources_en_us, IPlacesLis
 	/// </summary>
 	public override string LabelPlayingPhrase(string playerCount)
 	{
-		return $"{playerCount}äººãŒãƒ—ãƒ¬ã‚¤ä¸­";
+		return $"{playerCount}人がプレイ中";
 	}
 
 	protected override string _GetTemplateForLabelPlayingPhrase()
 	{
-		return "{playerCount}äººãŒãƒ—ãƒ¬ã‚¤ä¸­";
+		return "{playerCount}人がプレイ中";
 	}
 }
 

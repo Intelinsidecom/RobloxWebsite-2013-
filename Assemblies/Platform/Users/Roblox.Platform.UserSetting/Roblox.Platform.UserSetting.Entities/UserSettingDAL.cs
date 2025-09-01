@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Common;
 using Roblox.Entities.Mssql;
@@ -97,3 +97,4 @@ internal class UserSettingDAL
 		return RobloxDatabase.RobloxUserSettings.GetOrCreate("UserSettings_GetOrCreateUserSetting", BuildDAL, queryParameters);
 	}
 }
+

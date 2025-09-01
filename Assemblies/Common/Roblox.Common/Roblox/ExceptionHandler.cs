@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.EventLog;
 
@@ -167,3 +167,4 @@ public class ExceptionHandler
 		}
 	}
 }
+

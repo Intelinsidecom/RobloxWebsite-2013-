@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)magick.net-q8-anycpu\14.7.0\buildTransitive\netstandard20\Magick.NET-Q8-AnyCPU.targets" Condition="Exists('$(NuGetPackageRoot)magick.net-q8-anycpu\14.7.0\buildTransitive\netstandard20\Magick.NET-Q8-AnyCPU.targets')" />
+    <Import Project="$(NuGetPackageRoot)magick.net-q8-anycpu\14.8.1\buildTransitive\netstandard20\Magick.NET-Q8-AnyCPU.targets" Condition="Exists('$(NuGetPackageRoot)magick.net-q8-anycpu\14.8.1\buildTransitive\netstandard20\Magick.NET-Q8-AnyCPU.targets')" />
   </ImportGroup>
 </Project>

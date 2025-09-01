@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ServerListResources_en_us to provide locale specific translations where possible,
@@ -17,7 +19,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// Key: "Action.LoadMore"
 	/// English String: "Load More"
 	/// </summary>
-	public override string ActionLoadMore => "Cargar mÃ¡s";
+	public override string ActionLoadMore => "Cargar más";
 
 	/// <summary>
 	/// Key: "Heading.OtherServers"
@@ -35,7 +37,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// Key: "Heading.ServersMyFriendsAreIn"
 	/// English String: "Servers My Friends Are In"
 	/// </summary>
-	public override string HeadingServersMyFriendsAreIn => "Servidores en los que estÃ¡n mis amigos";
+	public override string HeadingServersMyFriendsAreIn => "Servidores en los que están mis amigos";
 
 	/// <summary>
 	/// Key: "Label.Inactive"
@@ -119,7 +121,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForActionLoadMore()
 	{
-		return "Cargar mÃ¡s";
+		return "Cargar más";
 	}
 
 	protected override string _GetTemplateForHeadingOtherServers()
@@ -134,7 +136,7 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 
 	protected override string _GetTemplateForHeadingServersMyFriendsAreIn()
 	{
-		return "Servidores en los que estÃ¡n mis amigos";
+		return "Servidores en los que están mis amigos";
 	}
 
 	/// <summary>
@@ -143,12 +145,12 @@ internal class ServerListResources_es_es : ServerListResources_en_us, IServerLis
 	/// </summary>
 	public override string LabelCurrentPlayerCount(string currentPlayers, string maximumAllowedPlayers)
 	{
-		return $"{currentPlayers} de un mÃ¡x. de {maximumAllowedPlayers} jugadores";
+		return $"{currentPlayers} de un máx. de {maximumAllowedPlayers} jugadores";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPlayerCount()
 	{
-		return "{currentPlayers} de un mÃ¡x. de {maximumAllowedPlayers} jugadores";
+		return "{currentPlayers} de un máx. de {maximumAllowedPlayers} jugadores";
 	}
 
 	protected override string _GetTemplateForLabelInactive()

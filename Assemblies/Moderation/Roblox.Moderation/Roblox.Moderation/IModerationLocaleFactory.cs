@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
+using System.Collections.Generic;
+using Roblox.Localization.Core;
 namespace Roblox.Moderation {
     /// <summary>
 

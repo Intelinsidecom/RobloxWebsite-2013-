@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides AssetTypesResources_en_us to provide locale specific translations where possible,
@@ -24,7 +26,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 	/// Asset type Animation, singular form
 	/// English String: "Animation"
 	/// </summary>
-	public override string LabelAnimation => "AnimaciÃ³n";
+	public override string LabelAnimation => "Animación";
 
 	/// <summary>
 	/// Key: "Label.Animations"
@@ -132,7 +134,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 	/// Key: "Label.Fall"
 	/// English String: "Fall"
 	/// </summary>
-	public override string LabelFall => "CaÃ­da";
+	public override string LabelFall => "Caída";
 
 	/// <summary>
 	/// Key: "Label.Front"
@@ -394,7 +396,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 	/// Asset type Solid Model, singular
 	/// English String: "Solid Model"
 	/// </summary>
-	public override string LabelSolidModel => "Modelo sÃ³lido";
+	public override string LabelSolidModel => "Modelo sólido";
 
 	/// <summary>
 	/// Key: "Label.Swim"
@@ -464,7 +466,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelAnimation()
 	{
-		return "AnimaciÃ³n";
+		return "Animación";
 	}
 
 	protected override string _GetTemplateForLabelAnimations()
@@ -549,7 +551,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelFall()
 	{
-		return "CaÃ­da";
+		return "Caída";
 	}
 
 	protected override string _GetTemplateForLabelFront()
@@ -754,7 +756,7 @@ internal class AssetTypesResources_es_es : AssetTypesResources_en_us, IAssetType
 
 	protected override string _GetTemplateForLabelSolidModel()
 	{
-		return "Modelo sÃ³lido";
+		return "Modelo sólido";
 	}
 
 	protected override string _GetTemplateForLabelSwim()

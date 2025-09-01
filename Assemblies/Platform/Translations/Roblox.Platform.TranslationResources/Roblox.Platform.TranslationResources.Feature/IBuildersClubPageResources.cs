@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IBuildersClubPageResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IBuildersClubPageResources : ITranslationResources
 
 {
 	/// <summary>
@@ -194,3 +196,5 @@
 
 
 }
+
+

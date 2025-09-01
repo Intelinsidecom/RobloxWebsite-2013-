@@ -1,6 +1,10 @@
-﻿using System;
+using System;
 using Roblox.Amazon.Sqs;
-namespace Roblox.Moderationinternal {
+using Roblox.Moderation; 
+using Roblox.Moderation.Interfaces; 
+
+namespace Roblox.Moderation
+{
     class SqsOpenTask : ISqsOpenTask, IOpenTask
 
 {

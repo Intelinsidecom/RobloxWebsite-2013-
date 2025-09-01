@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Text;
 using Roblox.Entities.Mssql;
@@ -126,3 +126,4 @@ internal class AssetSearchKeywordStatisticDAL
 		return Encoding.UTF8.GetBytes(value);
 	}
 }
+

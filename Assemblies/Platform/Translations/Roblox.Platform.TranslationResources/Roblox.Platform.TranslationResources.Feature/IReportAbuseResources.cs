@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IReportAbuseResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IReportAbuseResources : ITranslationResources
 
 {
 	/// <summary>
@@ -341,3 +343,5 @@
 
 
 }
+
+

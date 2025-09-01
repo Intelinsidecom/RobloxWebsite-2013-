@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLanguagesResources_en_us to provide locale specific translations where possible,
@@ -10,67 +12,67 @@ internal class GameLanguagesResources_ko_kr : GameLanguagesResources_en_us, IGam
 	/// Key: "Action.AddLanguage"
 	/// English String: "Add Language"
 	/// </summary>
-	public override string ActionAddLanguage => "ì–¸ì–´ ì¶”ê°€";
+	public override string ActionAddLanguage => "언어 추가";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ì·¨ì†Œ";
+	public override string ActionCancel => "취소";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "ì‚­ì œ";
+	public override string ActionDelete => "삭제";
 
 	/// <summary>
 	/// Key: "Action.ManageTranslations"
 	/// English String: "Manage Translations"
 	/// </summary>
-	public override string ActionManageTranslations => "ë²ˆì—­ ê´€ë¦¬";
+	public override string ActionManageTranslations => "번역 관리";
 
 	/// <summary>
 	/// Key: "Description.NoLanguages"
 	/// English String: "Please add languages you want your game to support."
 	/// </summary>
-	public override string DescriptionNoLanguages => "ë‚´ ê²Œìž„ì— ì§€ì›í•˜ê³  ì‹¶ì€ ì–¸ì–´ë¥¼ ì¶”ê°€í•˜ì„¸ìš”.";
+	public override string DescriptionNoLanguages => "내 게임에 지원하고 싶은 언어를 추가하세요.";
 
 	/// <summary>
 	/// Key: "Heading.DeleteLanguage"
 	/// English String: "Delete Language"
 	/// </summary>
-	public override string HeadingDeleteLanguage => "ì–¸ì–´ ì‚­ì œ";
+	public override string HeadingDeleteLanguage => "언어 삭제";
 
 	/// <summary>
 	/// Key: "Heading.SupportedLanguages"
 	/// English String: "Supported Languages"
 	/// </summary>
-	public override string HeadingSupportedLanguages => "ì§€ì› ì–¸ì–´";
+	public override string HeadingSupportedLanguages => "지원 언어";
 
 	/// <summary>
 	/// Key: "Heading.TranslatedLanguages"
 	/// English String: "Translated Languages"
 	/// </summary>
-	public override string HeadingTranslatedLanguages => "ë²ˆì—­ëœ ì–¸ì–´";
+	public override string HeadingTranslatedLanguages => "번역된 언어";
 
 	/// <summary>
 	/// Key: "Label.Languages"
 	/// English String: "Languages"
 	/// </summary>
-	public override string LabelLanguages => "ì–¸ì–´";
+	public override string LabelLanguages => "언어";
 
 	/// <summary>
 	/// Key: "Label.SelectLanguage"
 	/// English String: "Select Language"
 	/// </summary>
-	public override string LabelSelectLanguage => "ì–¸ì–´ ì„ íƒ";
+	public override string LabelSelectLanguage => "언어 선택";
 
 	/// <summary>
 	/// Key: "Message.DeleteLanguageWarning"
 	/// English String: "All translations for this language will be deleted. This action is irreversible."
 	/// </summary>
-	public override string MessageDeleteLanguageWarning => "í•´ë‹¹ ì–¸ì–´ë¡œì˜ ëª¨ë“  ë²ˆì—­ì´ ì‚­ì œë©ë‹ˆë‹¤. ì´ ìž‘ì—…ì€ ë˜ëŒë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+	public override string MessageDeleteLanguageWarning => "해당 언어로의 모든 번역이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.";
 
 	public GameLanguagesResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -79,57 +81,57 @@ internal class GameLanguagesResources_ko_kr : GameLanguagesResources_en_us, IGam
 
 	protected override string _GetTemplateForActionAddLanguage()
 	{
-		return "ì–¸ì–´ ì¶”ê°€";
+		return "언어 추가";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ì·¨ì†Œ";
+		return "취소";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "ì‚­ì œ";
+		return "삭제";
 	}
 
 	protected override string _GetTemplateForActionManageTranslations()
 	{
-		return "ë²ˆì—­ ê´€ë¦¬";
+		return "번역 관리";
 	}
 
 	protected override string _GetTemplateForDescriptionNoLanguages()
 	{
-		return "ë‚´ ê²Œìž„ì— ì§€ì›í•˜ê³  ì‹¶ì€ ì–¸ì–´ë¥¼ ì¶”ê°€í•˜ì„¸ìš”.";
+		return "내 게임에 지원하고 싶은 언어를 추가하세요.";
 	}
 
 	protected override string _GetTemplateForHeadingDeleteLanguage()
 	{
-		return "ì–¸ì–´ ì‚­ì œ";
+		return "언어 삭제";
 	}
 
 	protected override string _GetTemplateForHeadingSupportedLanguages()
 	{
-		return "ì§€ì› ì–¸ì–´";
+		return "지원 언어";
 	}
 
 	protected override string _GetTemplateForHeadingTranslatedLanguages()
 	{
-		return "ë²ˆì—­ëœ ì–¸ì–´";
+		return "번역된 언어";
 	}
 
 	protected override string _GetTemplateForLabelLanguages()
 	{
-		return "ì–¸ì–´";
+		return "언어";
 	}
 
 	protected override string _GetTemplateForLabelSelectLanguage()
 	{
-		return "ì–¸ì–´ ì„ íƒ";
+		return "언어 선택";
 	}
 
 	protected override string _GetTemplateForMessageDeleteLanguageWarning()
 	{
-		return "í•´ë‹¹ ì–¸ì–´ë¡œì˜ ëª¨ë“  ë²ˆì—­ì´ ì‚­ì œë©ë‹ˆë‹¤. ì´ ìž‘ì—…ì€ ë˜ëŒë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.";
+		return "해당 언어로의 모든 번역이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.";
 	}
 }
 

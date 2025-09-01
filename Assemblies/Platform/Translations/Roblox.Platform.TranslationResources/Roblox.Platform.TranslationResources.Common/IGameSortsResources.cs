@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IGameSortsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IGameSortsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -233,3 +235,5 @@
 
 
 }
+
+

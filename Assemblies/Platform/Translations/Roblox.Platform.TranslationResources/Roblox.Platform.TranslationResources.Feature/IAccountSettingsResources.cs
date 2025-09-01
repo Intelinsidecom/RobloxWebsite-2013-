@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IAccountSettingsResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IAccountSettingsResources : ITranslationResources
 
 {
 	/// <summary>
@@ -2416,3 +2418,5 @@
 
 
 }
+
+

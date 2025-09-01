@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Purchasinginternal {
+namespace Roblox.Platform.TranslationResources.Purchasing {
     class RixtyPinResources_en_us : TranslationResourcesBase, IRixtyPinResources, ITranslationResources
 
 {
@@ -619,3 +619,4 @@ namespace Roblox.Platform.TranslationResources.Purchasinginternal {
 
 
 }
+

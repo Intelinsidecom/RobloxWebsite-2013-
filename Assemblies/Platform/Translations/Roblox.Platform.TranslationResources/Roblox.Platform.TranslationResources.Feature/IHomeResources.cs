@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IHomeResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IHomeResources : ITranslationResources
 
 {
 	/// <summary>
@@ -149,3 +151,5 @@
 
 
 }
+
+

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class CreateLocationGroupMemberPostData
+namespace Roblox.Platform.Games.Client {
+    public class CreateLocationGroupMemberPostData
 
 {
 	public int LocationGroupId { get; set; }

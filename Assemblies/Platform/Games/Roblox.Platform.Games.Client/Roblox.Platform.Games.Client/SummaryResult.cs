@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Games.Clientpublic {
-    class SummaryResult
+namespace Roblox.Platform.Games.Client {
+    public class SummaryResult
 
 {
 	public int PlaceCount { get; set; }

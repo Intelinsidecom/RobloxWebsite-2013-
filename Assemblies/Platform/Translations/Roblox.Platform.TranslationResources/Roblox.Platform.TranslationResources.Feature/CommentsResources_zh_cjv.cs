@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CommentsResources_en_us to provide locale specific translations where possible,
@@ -11,161 +13,161 @@ internal class CommentsResources_zh_cjv : CommentsResources_en_us, ICommentsReso
 	/// button text
 	/// English String: "Login"
 	/// </summary>
-	public override string ActionLogin => "ç™»å½•";
+	public override string ActionLogin => "登录";
 
 	/// <summary>
 	/// Key: "Heading.Comments"
 	/// English String: "Comments"
 	/// </summary>
-	public override string HeadingComments => "è¯„è®º";
+	public override string HeadingComments => "评论";
 
 	/// <summary>
 	/// Key: "Heading.LoginToComment"
 	/// modal heading
 	/// English String: "Login to Comment"
 	/// </summary>
-	public override string HeadingLoginToComment => "å‘è¡¨è¯„è®ºå‰è¯·å…ˆç™»å½•";
+	public override string HeadingLoginToComment => "发表评论前请先登录";
 
 	/// <summary>
 	/// Key: "Label.AccountPageTitle"
 	/// English String: "Account"
 	/// </summary>
-	public override string LabelAccountPageTitle => "å¸æˆ·";
+	public override string LabelAccountPageTitle => "帐户";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "å–æ¶ˆ";
+	public override string LabelCancel => "取消";
 
 	/// <summary>
 	/// Key: "Label.CharactersRemaining"
 	/// English String: "characters remaining"
 	/// </summary>
-	public override string LabelCharactersRemaining => "ä¸ªå‰©ä½™å­—ç¬¦";
+	public override string LabelCharactersRemaining => "个剩余字符";
 
 	/// <summary>
 	/// Key: "Label.CommentModerated"
 	/// Feedback for user when their comment has been moderated
 	/// English String: "Your comment has been moderated."
 	/// </summary>
-	public override string LabelCommentModerated => "ä½ çš„è¯„è®ºå·²è¢«è¿‡æ»¤ã€‚";
+	public override string LabelCommentModerated => "你的评论已被过滤。";
 
 	/// <summary>
 	/// Key: "Label.EmailVerifiedTitle"
 	/// English String: "Verify Your Email"
 	/// </summary>
-	public override string LabelEmailVerifiedTitle => "éªŒè¯ä½ çš„ç”µå­é‚®ä»¶";
+	public override string LabelEmailVerifiedTitle => "验证你的电子邮件";
 
 	/// <summary>
 	/// Key: "Label.FeatureNotAvailable"
 	/// English String: "This feature is not available."
 	/// </summary>
-	public override string LabelFeatureNotAvailable => "æ­¤åŠŸèƒ½ä¸å¯ç”¨ã€‚";
+	public override string LabelFeatureNotAvailable => "此功能不可用。";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedMessage"
 	/// English String: "Comments should be about the item or place on which you are commenting. Links are not permitted."
 	/// </summary>
-	public override string LabelLinksNotAllowedMessage => "è¯„è®ºåº”å’Œä½ æ‰€è¯„è®ºçš„ç‰©å“æˆ–åœºæ™¯ç›¸å…³ã€‚ç¦æ­¢ä½¿ç”¨é“¾æŽ¥ã€‚";
+	public override string LabelLinksNotAllowedMessage => "评论应和你所评论的物品或场景相关。禁止使用链接。";
 
 	/// <summary>
 	/// Key: "Label.LinksNotAllowedTitle"
 	/// English String: "Links Not Allowed"
 	/// </summary>
-	public override string LabelLinksNotAllowedTitle => "ä¸å…è®¸ä½¿ç”¨é“¾æŽ¥";
+	public override string LabelLinksNotAllowedTitle => "不允许使用链接";
 
 	/// <summary>
 	/// Key: "Label.MoreComments"
 	/// English String: "More Comments"
 	/// </summary>
-	public override string LabelMoreComments => "æ›´å¤šè¯„è®º";
+	public override string LabelMoreComments => "更多评论";
 
 	/// <summary>
 	/// Key: "Label.NoCommentsFound"
 	/// English String: "No comments found."
 	/// </summary>
-	public override string LabelNoCommentsFound => "æœªæ‰¾åˆ°è¯„è®ºã€‚";
+	public override string LabelNoCommentsFound => "未找到评论。";
 
 	/// <summary>
 	/// Key: "Label.PostComment"
 	/// English String: "Post Comment"
 	/// </summary>
-	public override string LabelPostComment => "å‘å¸ƒè¯„è®º";
+	public override string LabelPostComment => "发布评论";
 
 	/// <summary>
 	/// Key: "Label.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string LabelReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+	public override string LabelReportAbuse => "报告滥用行为";
 
 	/// <summary>
 	/// Key: "Label.SeeMore"
 	/// English String: "See More"
 	/// </summary>
-	public override string LabelSeeMore => "æŸ¥çœ‹æ›´å¤š";
+	public override string LabelSeeMore => "查看更多";
 
 	/// <summary>
 	/// Key: "Label.SorryWrong"
 	/// English String: "Sorry, something went wrong."
 	/// </summary>
-	public override string LabelSorryWrong => "æŠ±æ­‰ï¼Œå‘ç”Ÿé”™è¯¯ã€‚";
+	public override string LabelSorryWrong => "抱歉，发生错误。";
 
 	/// <summary>
 	/// Key: "Label.Text"
 	/// English String: "text"
 	/// </summary>
-	public override string LabelText => "æ–‡æœ¬";
+	public override string LabelText => "文本";
 
 	/// <summary>
 	/// Key: "Label.TooManyChracters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyChracters => "å­—ç¬¦è¿‡å¤šï¼";
+	public override string LabelTooManyChracters => "字符过多！";
 
 	/// <summary>
 	/// Key: "Label.TooManyNewLines"
 	/// English String: "Too many newlines!"
 	/// </summary>
-	public override string LabelTooManyNewLines => "æ¢è¡Œç¬¦è¿‡å¤šï¼";
+	public override string LabelTooManyNewLines => "换行符过多！";
 
 	/// <summary>
 	/// Key: "Label.UnknownError"
 	/// English String: "Unknown error occurred."
 	/// </summary>
-	public override string LabelUnknownError => "å‘ç”ŸæœªçŸ¥é”™è¯¯ã€‚";
+	public override string LabelUnknownError => "发生未知错误。";
 
 	/// <summary>
 	/// Key: "Label.UserFlooded"
 	/// Feedback for users when they are flooded (both globally and per specific item) when posting comments for an item
 	/// English String: "You are posting comments too fast. Wait a while before your next comment."
 	/// </summary>
-	public override string LabelUserFlooded => "ä½ å‘å¸ƒè¯„è®ºçš„æ¬¡æ•°å¤ªé¢‘ç¹ã€‚è¯·ç¨å€™å†å‘è¡¨ä¸‹ä¸€æ¡è¯„è®ºã€‚";
+	public override string LabelUserFlooded => "你发布评论的次数太频繁。请稍候再发表下一条评论。";
 
 	/// <summary>
 	/// Key: "Label.Username"
 	/// English String: "username"
 	/// </summary>
-	public override string LabelUsername => "ç”¨æˆ·å";
+	public override string LabelUsername => "用户名";
 
 	/// <summary>
 	/// Key: "Label.UserTooNew"
 	/// Feedback for user when they try to post a comments for an item with a newly registered account
 	/// English String: "Accounts must be older than 1 day to post comments."
 	/// </summary>
-	public override string LabelUserTooNew => "å»ºç«‹å¸æˆ·åŽéœ€ç­‰å¾… 1 å¤©æ‰èƒ½å‘è¡¨è¯„è®ºã€‚";
+	public override string LabelUserTooNew => "建立帐户后需等待 1 天才能发表评论。";
 
 	/// <summary>
 	/// Key: "Label.Verify"
 	/// English String: "Verify"
 	/// </summary>
-	public override string LabelVerify => "éªŒè¯";
+	public override string LabelVerify => "验证";
 
 	/// <summary>
 	/// Key: "Label.WriteAComment"
 	/// English String: "Write a comment!"
 	/// </summary>
-	public override string LabelWriteAComment => "å†™ä¸‹è¯„è®ºï¼";
+	public override string LabelWriteAComment => "写下评论！";
 
 	public CommentsResources_zh_cjv(TranslationResourceState state)
 		: base(state)
@@ -174,7 +176,7 @@ internal class CommentsResources_zh_cjv : CommentsResources_en_us, ICommentsReso
 
 	protected override string _GetTemplateForActionLogin()
 	{
-		return "ç™»å½•";
+		return "登录";
 	}
 
 	/// <summary>
@@ -184,42 +186,42 @@ internal class CommentsResources_zh_cjv : CommentsResources_en_us, ICommentsReso
 	/// </summary>
 	public override string DescriptionLoginToComment(string linkStart, string linkEnd)
 	{
-		return $"ä½ å¿…é¡»å…ˆç™»å½•æ‰èƒ½å‘è¡¨è¯„è®ºã€‚è¯·{linkStart}ç™»å½•æˆ–æ³¨å†Œ{linkEnd}ä»¥ç»§ç»­ã€‚";
+		return $"你必须先登录才能发表评论。请{linkStart}登录或注册{linkEnd}以继续。";
 	}
 
 	protected override string _GetTemplateForDescriptionLoginToComment()
 	{
-		return "ä½ å¿…é¡»å…ˆç™»å½•æ‰èƒ½å‘è¡¨è¯„è®ºã€‚è¯·{linkStart}ç™»å½•æˆ–æ³¨å†Œ{linkEnd}ä»¥ç»§ç»­ã€‚";
+		return "你必须先登录才能发表评论。请{linkStart}登录或注册{linkEnd}以继续。";
 	}
 
 	protected override string _GetTemplateForHeadingComments()
 	{
-		return "è¯„è®º";
+		return "评论";
 	}
 
 	protected override string _GetTemplateForHeadingLoginToComment()
 	{
-		return "å‘è¡¨è¯„è®ºå‰è¯·å…ˆç™»å½•";
+		return "发表评论前请先登录";
 	}
 
 	protected override string _GetTemplateForLabelAccountPageTitle()
 	{
-		return "å¸æˆ·";
+		return "帐户";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForLabelCharactersRemaining()
 	{
-		return "ä¸ªå‰©ä½™å­—ç¬¦";
+		return "个剩余字符";
 	}
 
 	protected override string _GetTemplateForLabelCommentModerated()
 	{
-		return "ä½ çš„è¯„è®ºå·²è¢«è¿‡æ»¤ã€‚";
+		return "你的评论已被过滤。";
 	}
 
 	/// <summary>
@@ -228,107 +230,107 @@ internal class CommentsResources_zh_cjv : CommentsResources_en_us, ICommentsReso
 	/// </summary>
 	public override string LabelEmailVerifiedMessage(string accountPageLink)
 	{
-		return $"ä½ å¿…é¡»éªŒè¯ç”µå­é‚®ä»¶ï¼Œç„¶åŽæ‰èƒ½è¯„è®ºã€‚ä½ å¯ä»¥åœ¨ {accountPageLink} é¡µé¢éªŒè¯ä½ çš„ç”µå­é‚®ä»¶ã€‚";
+		return $"你必须验证电子邮件，然后才能评论。你可以在 {accountPageLink} 页面验证你的电子邮件。";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedMessage()
 	{
-		return "ä½ å¿…é¡»éªŒè¯ç”µå­é‚®ä»¶ï¼Œç„¶åŽæ‰èƒ½è¯„è®ºã€‚ä½ å¯ä»¥åœ¨ {accountPageLink} é¡µé¢éªŒè¯ä½ çš„ç”µå­é‚®ä»¶ã€‚";
+		return "你必须验证电子邮件，然后才能评论。你可以在 {accountPageLink} 页面验证你的电子邮件。";
 	}
 
 	protected override string _GetTemplateForLabelEmailVerifiedTitle()
 	{
-		return "éªŒè¯ä½ çš„ç”µå­é‚®ä»¶";
+		return "验证你的电子邮件";
 	}
 
 	protected override string _GetTemplateForLabelFeatureNotAvailable()
 	{
-		return "æ­¤åŠŸèƒ½ä¸å¯ç”¨ã€‚";
+		return "此功能不可用。";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedMessage()
 	{
-		return "è¯„è®ºåº”å’Œä½ æ‰€è¯„è®ºçš„ç‰©å“æˆ–åœºæ™¯ç›¸å…³ã€‚ç¦æ­¢ä½¿ç”¨é“¾æŽ¥ã€‚";
+		return "评论应和你所评论的物品或场景相关。禁止使用链接。";
 	}
 
 	protected override string _GetTemplateForLabelLinksNotAllowedTitle()
 	{
-		return "ä¸å…è®¸ä½¿ç”¨é“¾æŽ¥";
+		return "不允许使用链接";
 	}
 
 	protected override string _GetTemplateForLabelMoreComments()
 	{
-		return "æ›´å¤šè¯„è®º";
+		return "更多评论";
 	}
 
 	protected override string _GetTemplateForLabelNoCommentsFound()
 	{
-		return "æœªæ‰¾åˆ°è¯„è®ºã€‚";
+		return "未找到评论。";
 	}
 
 	protected override string _GetTemplateForLabelPostComment()
 	{
-		return "å‘å¸ƒè¯„è®º";
+		return "发布评论";
 	}
 
 	protected override string _GetTemplateForLabelReportAbuse()
 	{
-		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+		return "报告滥用行为";
 	}
 
 	protected override string _GetTemplateForLabelSeeMore()
 	{
-		return "æŸ¥çœ‹æ›´å¤š";
+		return "查看更多";
 	}
 
 	protected override string _GetTemplateForLabelSorryWrong()
 	{
-		return "æŠ±æ­‰ï¼Œå‘ç”Ÿé”™è¯¯ã€‚";
+		return "抱歉，发生错误。";
 	}
 
 	protected override string _GetTemplateForLabelText()
 	{
-		return "æ–‡æœ¬";
+		return "文本";
 	}
 
 	protected override string _GetTemplateForLabelTooManyChracters()
 	{
-		return "å­—ç¬¦è¿‡å¤šï¼";
+		return "字符过多！";
 	}
 
 	protected override string _GetTemplateForLabelTooManyNewLines()
 	{
-		return "æ¢è¡Œç¬¦è¿‡å¤šï¼";
+		return "换行符过多！";
 	}
 
 	protected override string _GetTemplateForLabelUnknownError()
 	{
-		return "å‘ç”ŸæœªçŸ¥é”™è¯¯ã€‚";
+		return "发生未知错误。";
 	}
 
 	protected override string _GetTemplateForLabelUserFlooded()
 	{
-		return "ä½ å‘å¸ƒè¯„è®ºçš„æ¬¡æ•°å¤ªé¢‘ç¹ã€‚è¯·ç¨å€™å†å‘è¡¨ä¸‹ä¸€æ¡è¯„è®ºã€‚";
+		return "你发布评论的次数太频繁。请稍候再发表下一条评论。";
 	}
 
 	protected override string _GetTemplateForLabelUsername()
 	{
-		return "ç”¨æˆ·å";
+		return "用户名";
 	}
 
 	protected override string _GetTemplateForLabelUserTooNew()
 	{
-		return "å»ºç«‹å¸æˆ·åŽéœ€ç­‰å¾… 1 å¤©æ‰èƒ½å‘è¡¨è¯„è®ºã€‚";
+		return "建立帐户后需等待 1 天才能发表评论。";
 	}
 
 	protected override string _GetTemplateForLabelVerify()
 	{
-		return "éªŒè¯";
+		return "验证";
 	}
 
 	protected override string _GetTemplateForLabelWriteAComment()
 	{
-		return "å†™ä¸‹è¯„è®ºï¼";
+		return "写下评论！";
 	}
 
 	/// <summary>
@@ -337,12 +339,12 @@ internal class CommentsResources_zh_cjv : CommentsResources_en_us, ICommentsReso
 	/// </summary>
 	public override string LabelXHoursAgo(string numberOfHours)
 	{
-		return $"{numberOfHours} å°æ—¶å‰";
+		return $"{numberOfHours} 小时前";
 	}
 
 	protected override string _GetTemplateForLabelXHoursAgo()
 	{
-		return "{numberOfHours} å°æ—¶å‰";
+		return "{numberOfHours} 小时前";
 	}
 }
 

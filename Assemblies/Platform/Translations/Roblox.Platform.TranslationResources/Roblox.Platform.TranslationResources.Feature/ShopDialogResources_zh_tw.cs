@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ShopDialogResources_en_us to provide locale specific translations where possible,
@@ -11,46 +13,46 @@ internal class ShopDialogResources_zh_tw : ShopDialogResources_en_us, IShopDialo
 	/// button text
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "å–æ¶ˆ";
+	public override string ActionCancel => "取消";
 
 	/// <summary>
 	/// Key: "Action.Continue"
 	/// English String: "Continue"
 	/// </summary>
-	public override string ActionContinue => "ç¹¼çºŒ";
+	public override string ActionContinue => "繼續";
 
 	/// <summary>
 	/// Key: "Action.ContinueToShop"
 	/// button text
 	/// English String: "Continue to Shop"
 	/// </summary>
-	public override string ActionContinueToShop => "å‰å¾€å•†åº—";
+	public override string ActionContinueToShop => "前往商店";
 
 	/// <summary>
 	/// Key: "Description.AgeWarning"
 	/// age warning message
 	/// English String: "Please note that you need to be over 18 to purchase products online. The Amazon store is not part of Roblox.com and is governed by a separate privacy policy."
 	/// </summary>
-	public override string DescriptionAgeWarning => "è«‹æ³¨æ„ï¼Œæ‚¨éœ€è¦ 18 æ­²ä»¥ä¸Šæ‰èƒ½åœ¨ç¶²è·¯ä¸Šè³¼è²·ç”¢å“ã€‚Amazon å•†åº—ä¸å±¬æ–¼ Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+	public override string DescriptionAgeWarning => "請注意，您需要 18 歲以上才能在網路上購買產品。Amazon 商店不屬於 Roblox.com，受單獨的隱私權政策管理。";
 
 	/// <summary>
 	/// Key: "Description.PurchaseAgeWarning"
 	/// English String: "Please note that you need to be over 18 to purchase products online. We hope to see you again soon!"
 	/// </summary>
-	public override string DescriptionPurchaseAgeWarning => "æ‚¨å¿…é ˆ 18 æ­²ä»¥ä¸Šæ‰èƒ½åœ¨ç¶²è·¯ä¸Šè³¼è²·å•†å“ã€‚ç¥æ‚¨è³¼ç‰©æ„‰å¿«ï¼";
+	public override string DescriptionPurchaseAgeWarning => "您必須 18 歲以上才能在網路上購買商品。祝您購物愉快！";
 
 	/// <summary>
 	/// Key: "Description.RetailWebsiteRedirect"
-	/// English String: "Heads up, Robloxian â€“ by clicking â€œcontinue,â€ you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
+	/// English String: "Heads up, Robloxian – by clicking “continue,” you will be redirected to a retail website that is not owned or operated by Roblox. They may have different terms and privacy policies."
 	/// </summary>
-	public override string DescriptionRetailWebsiteRedirect => "è«‹æ³¨æ„ï¼Œæ‚¨æŒ‰ä¸‹ã€Œç¹¼çºŒã€å¾Œå°‡æœƒå‰å¾€ Roblox ä»¥å¤–çš„è³¼ç‰©ç¶²ç«™ï¼Œè©²ç¶²ç«™æœ‰å…¶å€‹åˆ¥çš„æ¢æ¬¾æ¬Šæ”¿ç­–ã€‚";
+	public override string DescriptionRetailWebsiteRedirect => "請注意，您按下「繼續」後將會前往 Roblox 以外的購物網站，該網站有其個別的條款權政策。";
 
 	/// <summary>
 	/// Key: "Heading.LeavingRoblox"
 	/// dialog heading
 	/// English String: "You are leaving Roblox"
 	/// </summary>
-	public override string HeadingLeavingRoblox => "æ‚¨å³å°‡é›¢é–‹ Roblox";
+	public override string HeadingLeavingRoblox => "您即將離開 Roblox";
 
 	public ShopDialogResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -59,22 +61,22 @@ internal class ShopDialogResources_zh_tw : ShopDialogResources_en_us, IShopDialo
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForActionContinue()
 	{
-		return "ç¹¼çºŒ";
+		return "繼續";
 	}
 
 	protected override string _GetTemplateForActionContinueToShop()
 	{
-		return "å‰å¾€å•†åº—";
+		return "前往商店";
 	}
 
 	protected override string _GetTemplateForDescriptionAgeWarning()
 	{
-		return "è«‹æ³¨æ„ï¼Œæ‚¨éœ€è¦ 18 æ­²ä»¥ä¸Šæ‰èƒ½åœ¨ç¶²è·¯ä¸Šè³¼è²·ç”¢å“ã€‚Amazon å•†åº—ä¸å±¬æ–¼ Roblox.comï¼Œå—å–®ç¨çš„éš±ç§æ¬Šæ”¿ç­–ç®¡ç†ã€‚";
+		return "請注意，您需要 18 歲以上才能在網路上購買產品。Amazon 商店不屬於 Roblox.com，受單獨的隱私權政策管理。";
 	}
 
 	/// <summary>
@@ -84,27 +86,27 @@ internal class ShopDialogResources_zh_tw : ShopDialogResources_en_us, IShopDialo
 	/// </summary>
 	public override string DescriptionAmazonRedirect(string shopLink)
 	{
-		return $"æ‚¨å³å°‡å‰å¾€æˆ‘å€‘çš„ Amazon å•†åº—ã€‚æ‚¨å°‡æœƒé‡æ–°å°Žå‘è‡³ä½æ–¼ {shopLink} çš„ Roblox å•†åŸŽã€‚";
+		return $"您即將前往我們的 Amazon 商店。您將會重新導向至位於 {shopLink} 的 Roblox 商城。";
 	}
 
 	protected override string _GetTemplateForDescriptionAmazonRedirect()
 	{
-		return "æ‚¨å³å°‡å‰å¾€æˆ‘å€‘çš„ Amazon å•†åº—ã€‚æ‚¨å°‡æœƒé‡æ–°å°Žå‘è‡³ä½æ–¼ {shopLink} çš„ Roblox å•†åŸŽã€‚";
+		return "您即將前往我們的 Amazon 商店。您將會重新導向至位於 {shopLink} 的 Roblox 商城。";
 	}
 
 	protected override string _GetTemplateForDescriptionPurchaseAgeWarning()
 	{
-		return "æ‚¨å¿…é ˆ 18 æ­²ä»¥ä¸Šæ‰èƒ½åœ¨ç¶²è·¯ä¸Šè³¼è²·å•†å“ã€‚ç¥æ‚¨è³¼ç‰©æ„‰å¿«ï¼";
+		return "您必須 18 歲以上才能在網路上購買商品。祝您購物愉快！";
 	}
 
 	protected override string _GetTemplateForDescriptionRetailWebsiteRedirect()
 	{
-		return "è«‹æ³¨æ„ï¼Œæ‚¨æŒ‰ä¸‹ã€Œç¹¼çºŒã€å¾Œå°‡æœƒå‰å¾€ Roblox ä»¥å¤–çš„è³¼ç‰©ç¶²ç«™ï¼Œè©²ç¶²ç«™æœ‰å…¶å€‹åˆ¥çš„æ¢æ¬¾æ¬Šæ”¿ç­–ã€‚";
+		return "請注意，您按下「繼續」後將會前往 Roblox 以外的購物網站，該網站有其個別的條款權政策。";
 	}
 
 	protected override string _GetTemplateForHeadingLeavingRoblox()
 	{
-		return "æ‚¨å³å°‡é›¢é–‹ Roblox";
+		return "您即將離開 Roblox";
 	}
 }
 

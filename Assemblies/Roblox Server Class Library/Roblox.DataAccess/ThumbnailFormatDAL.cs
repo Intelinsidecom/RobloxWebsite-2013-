@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
@@ -200,3 +200,4 @@ public class ThumbnailFormatDAL
 		return new EntityHelper.GetOrCreateDALWrapper<ThumbnailFormatDAL>(createdNewEntity: false, dal);
 	}
 }
+

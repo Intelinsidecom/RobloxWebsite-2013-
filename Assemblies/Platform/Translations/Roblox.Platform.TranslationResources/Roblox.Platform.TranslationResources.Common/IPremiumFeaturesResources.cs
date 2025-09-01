@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IPremiumFeaturesResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IPremiumFeaturesResources : ITranslationResources
 
 {
 	/// <summary>
@@ -23,3 +25,5 @@
 
 
 }
+
+

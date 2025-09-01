@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides GameSortsResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class GameSortsResources_zh_tw : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Adventure"
 	/// English String: "Adventure"
 	/// </summary>
-	public override string LabelAdventure => "æŽ¢éšª";
+	public override string LabelAdventure => "探險";
 
 	/// <summary>
 	/// Key: "Label.BuildersClub"
@@ -22,211 +24,211 @@ internal class GameSortsResources_zh_tw : GameSortsResources_en_us, IGameSortsRe
 	/// Key: "Label.Contest"
 	/// English String: "Contest"
 	/// </summary>
-	public override string LabelContest => "æ¯”è³½";
+	public override string LabelContest => "比賽";
 
 	/// <summary>
 	/// Key: "Label.ContinuePlaying"
 	/// English String: "Continue Playing"
 	/// </summary>
-	public override string LabelContinuePlaying => "ç¹¼çºŒçŽ©";
+	public override string LabelContinuePlaying => "繼續玩";
 
 	/// <summary>
 	/// Key: "Label.Experimental"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelExperimental => "æŽ¨è–¦éŠæˆ²";
+	public override string LabelExperimental => "推薦遊戲";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
 	/// English String: "Favorites"
 	/// </summary>
-	public override string LabelFavorites => "æœ€æ„›";
+	public override string LabelFavorites => "最愛";
 
 	/// <summary>
 	/// Key: "Label.Featured"
 	/// English String: "Featured Rthro"
 	/// </summary>
-	public override string LabelFeatured => "ç²¾é¸ Rthro";
+	public override string LabelFeatured => "精選 Rthro";
 
 	/// <summary>
 	/// Key: "Label.Fighting"
 	/// English String: "Fighting"
 	/// </summary>
-	public override string LabelFighting => "æ ¼é¬¥";
+	public override string LabelFighting => "格鬥";
 
 	/// <summary>
 	/// Key: "Label.FriendActivity"
 	/// English String: "Friend Activity"
 	/// </summary>
-	public override string LabelFriendActivity => "å¥½å‹å‹•æ…‹";
+	public override string LabelFriendActivity => "好友動態";
 
 	/// <summary>
 	/// Key: "Label.FriendsPlaying"
 	/// English String: "Friends Playing"
 	/// </summary>
-	public override string LabelFriendsPlaying => "å¥½å‹åœ¨çŽ©";
+	public override string LabelFriendsPlaying => "好友在玩";
 
 	/// <summary>
 	/// Key: "Label.GamesForYou"
 	/// English String: "Games for You"
 	/// </summary>
-	public override string LabelGamesForYou => "çµ¦æ‚¨çš„éŠæˆ²";
+	public override string LabelGamesForYou => "給您的遊戲";
 
 	/// <summary>
 	/// Key: "Label.MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string LabelMoreResultsFor => "é¡¯ç¤ºä»¥ä¸‹æœå°‹æ›´å¤šçµæžœï¼š";
+	public override string LabelMoreResultsFor => "顯示以下搜尋更多結果：";
 
 	/// <summary>
 	/// Key: "Label.MostEngaging"
 	/// English String: "Most Engaging"
 	/// </summary>
-	public override string LabelMostEngaging => "äº’å‹•æ€§é«˜";
+	public override string LabelMostEngaging => "互動性高";
 
 	/// <summary>
 	/// Key: "Label.MyFavorite"
 	/// English String: "My Favorite"
 	/// </summary>
-	public override string LabelMyFavorite => "æˆ‘çš„æœ€æ„›";
+	public override string LabelMyFavorite => "我的最愛";
 
 	/// <summary>
 	/// Key: "Label.MyFavorites"
 	/// English String: "My Favorites"
 	/// </summary>
-	public override string LabelMyFavorites => "æˆ‘çš„æœ€æ„›";
+	public override string LabelMyFavorites => "我的最愛";
 
 	/// <summary>
 	/// Key: "Label.MyRecent"
 	/// English String: "My Recent"
 	/// </summary>
-	public override string LabelMyRecent => "æˆ‘çš„è¿‘æœŸæ´»å‹•";
+	public override string LabelMyRecent => "我的近期活動";
 
 	/// <summary>
 	/// Key: "Label.Obby"
 	/// English String: "Obby"
 	/// </summary>
-	public override string LabelObby => "éšœç¤™è³½";
+	public override string LabelObby => "障礙賽";
 
 	/// <summary>
 	/// Key: "Label.PersonalizedByLiked"
 	/// English String: "Because You Liked"
 	/// </summary>
-	public override string LabelPersonalizedByLiked => "ä¾æ‚¨å–œå¥½";
+	public override string LabelPersonalizedByLiked => "依您喜好";
 
 	/// <summary>
 	/// Key: "Label.PersonalServer"
 	/// English String: "Personal Server"
 	/// </summary>
-	public override string LabelPersonalServer => "å€‹äººä¼ºæœå™¨";
+	public override string LabelPersonalServer => "個人伺服器";
 
 	/// <summary>
 	/// Key: "Label.PlayersLove"
 	/// English String: "Players Love"
 	/// </summary>
-	public override string LabelPlayersLove => "çŽ©å®¶å–œæ„›";
+	public override string LabelPlayersLove => "玩家喜愛";
 
 	/// <summary>
 	/// Key: "Label.Popular"
 	/// English String: "Popular"
 	/// </summary>
-	public override string LabelPopular => "ç†±é–€éŠæˆ²";
+	public override string LabelPopular => "熱門遊戲";
 
 	/// <summary>
 	/// Key: "Label.PopularInVr"
 	/// English String: "Popular in VR"
 	/// </summary>
-	public override string LabelPopularInVr => "è™›æ“¬å¯¦å¢ƒç†±é–€";
+	public override string LabelPopularInVr => "虛擬實境熱門";
 
 	/// <summary>
 	/// Key: "Label.PopularNearYou"
 	/// English String: "Popular Near You"
 	/// </summary>
-	public override string LabelPopularNearYou => "é™„è¿‘ç†±é–€";
+	public override string LabelPopularNearYou => "附近熱門";
 
 	/// <summary>
 	/// Key: "Label.PopularWorldwide"
 	/// English String: "Popular Worldwide"
 	/// </summary>
-	public override string LabelPopularWorldwide => "å…¨çƒç†±é–€";
+	public override string LabelPopularWorldwide => "全球熱門";
 
 	/// <summary>
 	/// Key: "Label.Purchased"
 	/// English String: "Purchased"
 	/// </summary>
-	public override string LabelPurchased => "å·²è³¼è²·";
+	public override string LabelPurchased => "已購買";
 
 	/// <summary>
 	/// Key: "Label.Roleplay"
 	/// English String: "Roleplay"
 	/// </summary>
-	public override string LabelRoleplay => "è§’è‰²æ‰®æ¼”";
+	public override string LabelRoleplay => "角色扮演";
 
 	/// <summary>
 	/// Key: "Label.Simulator"
 	/// English String: "Simulator"
 	/// </summary>
-	public override string LabelSimulator => "æ¨¡æ“¬å™¨";
+	public override string LabelSimulator => "模擬器";
 
 	/// <summary>
 	/// Key: "Label.SuggestedGames"
 	/// English String: "Suggested Games"
 	/// </summary>
-	public override string LabelSuggestedGames => "æŽ¨è–¦éŠæˆ²";
+	public override string LabelSuggestedGames => "推薦遊戲";
 
 	/// <summary>
 	/// Key: "Label.TopFavorite"
 	/// English String: "Top Favorite"
 	/// </summary>
-	public override string LabelTopFavorite => "æœ€å—å–œæ„›";
+	public override string LabelTopFavorite => "最受喜愛";
 
 	/// <summary>
 	/// Key: "Label.TopGrossing"
 	/// English String: "Top Earning"
 	/// </summary>
-	public override string LabelTopGrossing => "ç‡Ÿåˆ©æœ€é«˜";
+	public override string LabelTopGrossing => "營利最高";
 
 	/// <summary>
 	/// Key: "Label.TopPaid"
 	/// English String: "Top Paid"
 	/// </summary>
-	public override string LabelTopPaid => "æ”¶ç›Šæœ€é«˜";
+	public override string LabelTopPaid => "收益最高";
 
 	/// <summary>
 	/// Key: "Label.TopRated"
 	/// English String: "Top Rated"
 	/// </summary>
-	public override string LabelTopRated => "è©•åƒ¹æœ€é«˜";
+	public override string LabelTopRated => "評價最高";
 
 	/// <summary>
 	/// Key: "Label.TopResult"
 	/// English String: "Top Result"
 	/// </summary>
-	public override string LabelTopResult => "æœ€ä½³æœå°‹çµæžœ";
+	public override string LabelTopResult => "最佳搜尋結果";
 
 	/// <summary>
 	/// Key: "Label.TopRetaining"
 	/// English String: "Recommended"
 	/// </summary>
-	public override string LabelTopRetaining => "æŽ¨è–¦éŠæˆ²";
+	public override string LabelTopRetaining => "推薦遊戲";
 
 	/// <summary>
 	/// Key: "Label.Tycoon"
 	/// English String: "Tycoon"
 	/// </summary>
-	public override string LabelTycoon => "å¤§äº¨";
+	public override string LabelTycoon => "大亨";
 
 	/// <summary>
 	/// Key: "Label.UpAndComing"
 	/// English String: "Up-and-Coming"
 	/// </summary>
-	public override string LabelUpAndComing => "è¿…é€Ÿå´›èµ·";
+	public override string LabelUpAndComing => "迅速崛起";
 
 	/// <summary>
 	/// Key: "MoreResultsFor"
 	/// English String: "More Results for"
 	/// </summary>
-	public override string MoreResultsFor => "é¡¯ç¤ºä»¥ä¸‹æœå°‹æ›´å¤šçµæžœï¼š";
+	public override string MoreResultsFor => "顯示以下搜尋更多結果：";
 
 	public GameSortsResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -235,7 +237,7 @@ internal class GameSortsResources_zh_tw : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelAdventure()
 	{
-		return "æŽ¢éšª";
+		return "探險";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClub()
@@ -245,97 +247,97 @@ internal class GameSortsResources_zh_tw : GameSortsResources_en_us, IGameSortsRe
 
 	protected override string _GetTemplateForLabelContest()
 	{
-		return "æ¯”è³½";
+		return "比賽";
 	}
 
 	protected override string _GetTemplateForLabelContinuePlaying()
 	{
-		return "ç¹¼çºŒçŽ©";
+		return "繼續玩";
 	}
 
 	protected override string _GetTemplateForLabelExperimental()
 	{
-		return "æŽ¨è–¦éŠæˆ²";
+		return "推薦遊戲";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
 	{
-		return "æœ€æ„›";
+		return "最愛";
 	}
 
 	protected override string _GetTemplateForLabelFeatured()
 	{
-		return "ç²¾é¸ Rthro";
+		return "精選 Rthro";
 	}
 
 	protected override string _GetTemplateForLabelFighting()
 	{
-		return "æ ¼é¬¥";
+		return "格鬥";
 	}
 
 	protected override string _GetTemplateForLabelFriendActivity()
 	{
-		return "å¥½å‹å‹•æ…‹";
+		return "好友動態";
 	}
 
 	protected override string _GetTemplateForLabelFriendsPlaying()
 	{
-		return "å¥½å‹åœ¨çŽ©";
+		return "好友在玩";
 	}
 
 	protected override string _GetTemplateForLabelGamesForYou()
 	{
-		return "çµ¦æ‚¨çš„éŠæˆ²";
+		return "給您的遊戲";
 	}
 
 	protected override string _GetTemplateForLabelMoreResultsFor()
 	{
-		return "é¡¯ç¤ºä»¥ä¸‹æœå°‹æ›´å¤šçµæžœï¼š";
+		return "顯示以下搜尋更多結果：";
 	}
 
 	protected override string _GetTemplateForLabelMostEngaging()
 	{
-		return "äº’å‹•æ€§é«˜";
+		return "互動性高";
 	}
 
 	protected override string _GetTemplateForLabelMyFavorite()
 	{
-		return "æˆ‘çš„æœ€æ„›";
+		return "我的最愛";
 	}
 
 	protected override string _GetTemplateForLabelMyFavorites()
 	{
-		return "æˆ‘çš„æœ€æ„›";
+		return "我的最愛";
 	}
 
 	protected override string _GetTemplateForLabelMyRecent()
 	{
-		return "æˆ‘çš„è¿‘æœŸæ´»å‹•";
+		return "我的近期活動";
 	}
 
 	protected override string _GetTemplateForLabelObby()
 	{
-		return "éšœç¤™è³½";
+		return "障礙賽";
 	}
 
 	protected override string _GetTemplateForLabelPersonalizedByLiked()
 	{
-		return "ä¾æ‚¨å–œå¥½";
+		return "依您喜好";
 	}
 
 	protected override string _GetTemplateForLabelPersonalServer()
 	{
-		return "å€‹äººä¼ºæœå™¨";
+		return "個人伺服器";
 	}
 
 	protected override string _GetTemplateForLabelPlayersLove()
 	{
-		return "çŽ©å®¶å–œæ„›";
+		return "玩家喜愛";
 	}
 
 	protected override string _GetTemplateForLabelPopular()
 	{
-		return "ç†±é–€éŠæˆ²";
+		return "熱門遊戲";
 	}
 
 	/// <summary>
@@ -344,92 +346,92 @@ internal class GameSortsResources_zh_tw : GameSortsResources_en_us, IGameSortsRe
 	/// </summary>
 	public override string LabelPopularInCountry(string CountryName)
 	{
-		return $"{CountryName}ç†±é–€";
+		return $"{CountryName}熱門";
 	}
 
 	protected override string _GetTemplateForLabelPopularInCountry()
 	{
-		return "{CountryName}ç†±é–€";
+		return "{CountryName}熱門";
 	}
 
 	protected override string _GetTemplateForLabelPopularInVr()
 	{
-		return "è™›æ“¬å¯¦å¢ƒç†±é–€";
+		return "虛擬實境熱門";
 	}
 
 	protected override string _GetTemplateForLabelPopularNearYou()
 	{
-		return "é™„è¿‘ç†±é–€";
+		return "附近熱門";
 	}
 
 	protected override string _GetTemplateForLabelPopularWorldwide()
 	{
-		return "å…¨çƒç†±é–€";
+		return "全球熱門";
 	}
 
 	protected override string _GetTemplateForLabelPurchased()
 	{
-		return "å·²è³¼è²·";
+		return "已購買";
 	}
 
 	protected override string _GetTemplateForLabelRoleplay()
 	{
-		return "è§’è‰²æ‰®æ¼”";
+		return "角色扮演";
 	}
 
 	protected override string _GetTemplateForLabelSimulator()
 	{
-		return "æ¨¡æ“¬å™¨";
+		return "模擬器";
 	}
 
 	protected override string _GetTemplateForLabelSuggestedGames()
 	{
-		return "æŽ¨è–¦éŠæˆ²";
+		return "推薦遊戲";
 	}
 
 	protected override string _GetTemplateForLabelTopFavorite()
 	{
-		return "æœ€å—å–œæ„›";
+		return "最受喜愛";
 	}
 
 	protected override string _GetTemplateForLabelTopGrossing()
 	{
-		return "ç‡Ÿåˆ©æœ€é«˜";
+		return "營利最高";
 	}
 
 	protected override string _GetTemplateForLabelTopPaid()
 	{
-		return "æ”¶ç›Šæœ€é«˜";
+		return "收益最高";
 	}
 
 	protected override string _GetTemplateForLabelTopRated()
 	{
-		return "è©•åƒ¹æœ€é«˜";
+		return "評價最高";
 	}
 
 	protected override string _GetTemplateForLabelTopResult()
 	{
-		return "æœ€ä½³æœå°‹çµæžœ";
+		return "最佳搜尋結果";
 	}
 
 	protected override string _GetTemplateForLabelTopRetaining()
 	{
-		return "æŽ¨è–¦éŠæˆ²";
+		return "推薦遊戲";
 	}
 
 	protected override string _GetTemplateForLabelTycoon()
 	{
-		return "å¤§äº¨";
+		return "大亨";
 	}
 
 	protected override string _GetTemplateForLabelUpAndComing()
 	{
-		return "è¿…é€Ÿå´›èµ·";
+		return "迅速崛起";
 	}
 
 	protected override string _GetTemplateForMoreResultsFor()
 	{
-		return "é¡¯ç¤ºä»¥ä¸‹æœå°‹æ›´å¤šçµæžœï¼š";
+		return "顯示以下搜尋更多結果：";
 	}
 }
 

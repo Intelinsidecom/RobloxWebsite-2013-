@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PromotedProductResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// Key: "Heading.GearForThisGame"
 	/// English String: "Gear for this game"
 	/// </summary>
-	public override string HeadingGearForThisGame => "Ã‰quipement pour ce jeu";
+	public override string HeadingGearForThisGame => "Équipement pour ce jeu";
 
 	/// <summary>
 	/// Key: "Label.AddGear"
 	/// English String: "Add Gear"
 	/// </summary>
-	public override string LabelAddGear => "Ajouter Ã©quipement";
+	public override string LabelAddGear => "Ajouter équipement";
 
 	/// <summary>
 	/// Key: "Label.Buy"
@@ -34,7 +36,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccurred => "Une erreur est survenue. Veuillez rÃ©essayer.";
+	public override string LabelErrorOccurred => "Une erreur est survenue. Veuillez réessayer.";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
@@ -47,7 +49,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// A shorter way to say an item is not for sale
 	/// English String: "Not for sale"
 	/// </summary>
-	public override string LabelNotForSaleShort => "Pas Ã  vendre";
+	public override string LabelNotForSaleShort => "Pas à vendre";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -59,7 +61,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// Key: "Label.Owned"
 	/// English String: "Owned"
 	/// </summary>
-	public override string LabelOwned => "PossÃ©dÃ©";
+	public override string LabelOwned => "Possédé";
 
 	/// <summary>
 	/// Key: "Label.Rent"
@@ -77,13 +79,13 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// Key: "Label.Sorry"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorry => "DÃ©solÃ©, l'objet n'a pas pu Ãªtre retirÃ© de ton jeu. RÃ©essaye.";
+	public override string LabelSorry => "Désolé, l'objet n'a pas pu être retiré de ton jeu. Réessaye.";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "SuccÃ¨s\u00a0!";
+	public override string LabelSuccess => "Succès\u00a0!";
 
 	public PromotedProductResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -92,12 +94,12 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForHeadingGearForThisGame()
 	{
-		return "Ã‰quipement pour ce jeu";
+		return "Équipement pour ce jeu";
 	}
 
 	protected override string _GetTemplateForLabelAddGear()
 	{
-		return "Ajouter Ã©quipement";
+		return "Ajouter équipement";
 	}
 
 	protected override string _GetTemplateForLabelBuy()
@@ -112,7 +114,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "Une erreur est survenue. Veuillez rÃ©essayer.";
+		return "Une erreur est survenue. Veuillez réessayer.";
 	}
 
 	/// <summary>
@@ -121,12 +123,12 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// </summary>
 	public override string LabelItemAddedToGame(string item)
 	{
-		return $"Tu as ajoutÃ© l'objet {item} Ã  ton jeu.";
+		return $"Tu as ajouté l'objet {item} à ton jeu.";
 	}
 
 	protected override string _GetTemplateForLabelItemAddedToGame()
 	{
-		return "Tu as ajoutÃ© l'objet {item} Ã  ton jeu.";
+		return "Tu as ajouté l'objet {item} à ton jeu.";
 	}
 
 	/// <summary>
@@ -135,12 +137,12 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 	/// </summary>
 	public override string LabelItemRemovedFromGame(string item)
 	{
-		return $"Tu as retirÃ© l'objet {item} de ton jeu.";
+		return $"Tu as retiré l'objet {item} de ton jeu.";
 	}
 
 	protected override string _GetTemplateForLabelItemRemovedFromGame()
 	{
-		return "Tu as retirÃ© l'objet {item} de ton jeu.";
+		return "Tu as retiré l'objet {item} de ton jeu.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
@@ -150,7 +152,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelNotForSaleShort()
 	{
-		return "Pas Ã  vendre";
+		return "Pas à vendre";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -160,7 +162,7 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelOwned()
 	{
-		return "PossÃ©dÃ©";
+		return "Possédé";
 	}
 
 	protected override string _GetTemplateForLabelRent()
@@ -175,12 +177,12 @@ internal class PromotedProductResources_fr_fr : PromotedProductResources_en_us, 
 
 	protected override string _GetTemplateForLabelSorry()
 	{
-		return "DÃ©solÃ©, l'objet n'a pas pu Ãªtre retirÃ© de ton jeu. RÃ©essaye.";
+		return "Désolé, l'objet n'a pas pu être retiré de ton jeu. Réessaye.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "SuccÃ¨s\u00a0!";
+		return "Succès\u00a0!";
 	}
 }
 

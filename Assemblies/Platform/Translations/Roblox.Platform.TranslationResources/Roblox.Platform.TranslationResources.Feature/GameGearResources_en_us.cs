@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class GameGearResources_en_us : TranslationResourcesBase, IGameGearResources, ITranslationResources
 
 {
@@ -243,3 +243,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

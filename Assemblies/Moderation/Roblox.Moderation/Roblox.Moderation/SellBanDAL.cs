@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Moderation.Properties;
@@ -101,3 +101,4 @@ public class SellBanDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "[dbo].[SellBansV2_GetSellBanV2ByUserID]", queryParameters), BuildDAL);
 	}
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides FileUploadComponentResources_en_us to provide locale specific translations where possible,
@@ -10,58 +12,58 @@ internal class FileUploadComponentResources_ja_jp : FileUploadComponentResources
 	/// Key: "Label.DragFile"
 	/// English String: "Drag a file here"
 	/// </summary>
-	public override string LabelDragFile => "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã“ã“ã«ãƒ‰ãƒ©ãƒƒã‚°";
+	public override string LabelDragFile => "ファイルをここにドラッグ";
 
 	/// <summary>
 	/// Key: "Label.DragImage"
 	/// English String: "Drag an image here"
 	/// </summary>
-	public override string LabelDragImage => "ç”»åƒã‚’ã“ã“ã«ãƒ‰ãƒ©ãƒƒã‚°";
+	public override string LabelDragImage => "画像をここにドラッグ";
 
 	/// <summary>
 	/// Key: "Label.DragImageOr"
 	/// English String: "Drag an image here or select a file to upload"
 	/// </summary>
-	public override string LabelDragImageOr => "ã“ã“ã«ç”»åƒã‚’ãƒ‰ãƒ©ãƒƒã‚°ã™ã‚‹ã‹ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠž";
+	public override string LabelDragImageOr => "ここに画像をドラッグするかアップロードするファイルを選択";
 
 	/// <summary>
 	/// Key: "Label.NoFileChosen"
 	/// English String: "No File Chosen"
 	/// </summary>
-	public override string LabelNoFileChosen => "ãƒ•ã‚¡ã‚¤ãƒ«ãŒé¸æŠžã•ã‚Œã¦ã„ã¾ã›ã‚“";
+	public override string LabelNoFileChosen => "ファイルが選択されていません";
 
 	/// <summary>
 	/// Key: "Label.Or"
 	/// label
 	/// English String: "Or"
 	/// </summary>
-	public override string LabelOr => "ã¾ãŸã¯";
+	public override string LabelOr => "または";
 
 	/// <summary>
 	/// Key: "Label.SelectFile"
 	/// English String: "Select a file"
 	/// </summary>
-	public override string LabelSelectFile => "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠž";
+	public override string LabelSelectFile => "ファイルを選択";
 
 	/// <summary>
 	/// Key: "Label.SelectFromComputer"
 	/// label
 	/// English String: "Select an image from your computer"
 	/// </summary>
-	public override string LabelSelectFromComputer => "ãƒ‘ã‚½ã‚³ãƒ³ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+	public override string LabelSelectFromComputer => "パソコンから画像を選択してください";
 
 	/// <summary>
 	/// Key: "Label.SelectFromDevice"
 	/// label
 	/// English String: "Select an image from your device"
 	/// </summary>
-	public override string LabelSelectFromDevice => "ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+	public override string LabelSelectFromDevice => "デバイスから画像を選択してください";
 
 	/// <summary>
 	/// Key: "Label.Upload"
 	/// English String: "Upload"
 	/// </summary>
-	public override string LabelUpload => "ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰";
+	public override string LabelUpload => "アップロード";
 
 	public FileUploadComponentResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -70,42 +72,42 @@ internal class FileUploadComponentResources_ja_jp : FileUploadComponentResources
 
 	protected override string _GetTemplateForLabelDragFile()
 	{
-		return "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã“ã“ã«ãƒ‰ãƒ©ãƒƒã‚°";
+		return "ファイルをここにドラッグ";
 	}
 
 	protected override string _GetTemplateForLabelDragImage()
 	{
-		return "ç”»åƒã‚’ã“ã“ã«ãƒ‰ãƒ©ãƒƒã‚°";
+		return "画像をここにドラッグ";
 	}
 
 	protected override string _GetTemplateForLabelDragImageOr()
 	{
-		return "ã“ã“ã«ç”»åƒã‚’ãƒ‰ãƒ©ãƒƒã‚°ã™ã‚‹ã‹ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠž";
+		return "ここに画像をドラッグするかアップロードするファイルを選択";
 	}
 
 	protected override string _GetTemplateForLabelNoFileChosen()
 	{
-		return "ãƒ•ã‚¡ã‚¤ãƒ«ãŒé¸æŠžã•ã‚Œã¦ã„ã¾ã›ã‚“";
+		return "ファイルが選択されていません";
 	}
 
 	protected override string _GetTemplateForLabelOr()
 	{
-		return "ã¾ãŸã¯";
+		return "または";
 	}
 
 	protected override string _GetTemplateForLabelSelectFile()
 	{
-		return "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸æŠž";
+		return "ファイルを選択";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromComputer()
 	{
-		return "ãƒ‘ã‚½ã‚³ãƒ³ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+		return "パソコンから画像を選択してください";
 	}
 
 	protected override string _GetTemplateForLabelSelectFromDevice()
 	{
-		return "ãƒ‡ãƒã‚¤ã‚¹ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+		return "デバイスから画像を選択してください";
 	}
 
 	/// <summary>
@@ -114,17 +116,17 @@ internal class FileUploadComponentResources_ja_jp : FileUploadComponentResources
 	/// </summary>
 	public override string LabelSelectImage(string deviceType)
 	{
-		return $"{deviceType} ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+		return $"{deviceType} から画像を選択してください";
 	}
 
 	protected override string _GetTemplateForLabelSelectImage()
 	{
-		return "{deviceType} ã‹ã‚‰ç”»åƒã‚’é¸æŠžã—ã¦ãã ã•ã„";
+		return "{deviceType} から画像を選択してください";
 	}
 
 	protected override string _GetTemplateForLabelUpload()
 	{
-		return "ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰";
+		return "アップロード";
 	}
 
 	/// <summary>
@@ -133,12 +135,12 @@ internal class FileUploadComponentResources_ja_jp : FileUploadComponentResources
 	/// </summary>
 	public override string MessageInvalidFile(string fileTypes)
 	{
-		return $"ç„¡åŠ¹ãªãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã§ã™ã€‚{fileTypes} ãƒ•ã‚¡ã‚¤ãƒ«ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return $"無効なファイルタイプです。{fileTypes} ファイルである必要があります。";
 	}
 
 	protected override string _GetTemplateForMessageInvalidFile()
 	{
-		return "ç„¡åŠ¹ãªãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã§ã™ã€‚{fileTypes} ãƒ•ã‚¡ã‚¤ãƒ«ã§ã‚ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "無効なファイルタイプです。{fileTypes} ファイルである必要があります。";
 	}
 }
 

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ReportAbuseResources_en_us to provide locale specific translations where possible,
@@ -10,331 +12,331 @@ internal class ReportAbuseResources_zh_cn : ReportAbuseResources_en_us, IReportA
 	/// Key: "Action.Close"
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionClose => "å…³é—­";
+	public override string ActionClose => "关闭";
 
 	/// <summary>
 	/// Key: "Action.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string ActionReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+	public override string ActionReportAbuse => "报告滥用行为";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "æäº¤";
+	public override string ActionSubmit => "提交";
 
 	/// <summary>
 	/// Key: "Example.Comment"
 	/// English String: "Comment (optional)..."
 	/// </summary>
-	public override string ExampleComment => "è¯„è®ºï¼ˆå¯é€‰ï¼‰...";
+	public override string ExampleComment => "评论（可选）...";
 
 	/// <summary>
 	/// Key: "Heading.ReportAbuse"
 	/// English String: "Report Abuse"
 	/// </summary>
-	public override string HeadingReportAbuse => "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+	public override string HeadingReportAbuse => "报告滥用行为";
 
 	/// <summary>
 	/// Key: "Heading.Success"
 	/// English String: "Thank You!"
 	/// </summary>
-	public override string HeadingSuccess => "è°¢è°¢ï¼";
+	public override string HeadingSuccess => "谢谢！";
 
 	/// <summary>
 	/// Key: "Label.AllRulesLink"
 	/// English String: "See all rules."
 	/// </summary>
-	public override string LabelAllRulesLink => "æŸ¥çœ‹æ‰€æœ‰è§„åˆ™";
+	public override string LabelAllRulesLink => "查看所有规则";
 
 	/// <summary>
 	/// Key: "Label.BlockWarning"
 	/// English String: "Users who don't follow the rules will get a warning at first but if they keep it up we may ask them to not come to Roblox anymore. That way we can keep Roblox fun and safe!"
 	/// </summary>
-	public override string LabelBlockWarning => "ä¸éµå®ˆè§„åˆ™çš„ç”¨æˆ·æœ€åˆä¼šæ”¶åˆ°è­¦å‘Šï¼Œä½†å¦‚æžœå±¡æ•™ä¸æ”¹ï¼Œæˆ‘ä»¬å°†ä¼šç¦æ­¢ä»–ä»¬å†æ¥ Robloxã€‚åªæœ‰è¿™æ ·ï¼Œæˆ‘ä»¬æ‰èƒ½ç¡®ä¿ Roblox çš„è¶£å‘³æ€§ä¸Žå®‰å…¨æ€§ã€‚";
+	public override string LabelBlockWarning => "不遵守规则的用户最初会收到警告，但如果屡教不改，我们将会禁止他们再来 Roblox。只有这样，我们才能确保 Roblox 的趣味性与安全性。";
 
 	/// <summary>
 	/// Key: "Label.CategoryBullying"
 	/// English String: "Bullying, Harassment, Hate Speech"
 	/// </summary>
-	public override string LabelCategoryBullying => "æ¬ºå‡Œã€éªšæ‰°ã€ä»‡æ¨è¨€è®º";
+	public override string LabelCategoryBullying => "欺凌、骚扰、仇恨言论";
 
 	/// <summary>
 	/// Key: "Label.CategoryBullyingV2"
 	/// English String: "Bullying, Harassment, Discrimination"
 	/// </summary>
-	public override string LabelCategoryBullyingV2 => "æ¬ºå‡Œã€éªšæ‰°ã€æ­§è§†";
+	public override string LabelCategoryBullyingV2 => "欺凌、骚扰、歧视";
 
 	/// <summary>
 	/// Key: "Label.CategoryContent"
 	/// English String: "Inappropriate Content - Place, Image, Model"
 	/// </summary>
-	public override string LabelCategoryContent => "å†…å®¹ä¸å½“ - æ¸¸æˆåœºæ™¯ã€å›¾åƒã€æ¨¡åž‹";
+	public override string LabelCategoryContent => "内容不当 - 游戏场景、图像、模型";
 
 	/// <summary>
 	/// Key: "Label.CategoryDating"
 	/// English String: "Dating"
 	/// </summary>
-	public override string LabelCategoryDating => "çº¦ä¼š";
+	public override string LabelCategoryDating => "约会";
 
-	public override string LabelCategoryInappropriate => "è¨€è¯­ä¸å½“ - è„è¯å’Œæˆäººå†…å®¹";
+	public override string LabelCategoryInappropriate => "言语不当 - 脏话和成人内容";
 
 	/// <summary>
 	/// Key: "Label.CategoryOther"
 	/// English String: "Other rule violation"
 	/// </summary>
-	public override string LabelCategoryOther => "å…¶ä»–è¿è§„è¡Œä¸º";
+	public override string LabelCategoryOther => "其他违规行为";
 
 	/// <summary>
 	/// Key: "Label.CategoryPrivateInfo"
 	/// English String: "Asking for or Giving Private Information"
 	/// </summary>
-	public override string LabelCategoryPrivateInfo => "è¯¢é—®æˆ–æä¾›ç§äººä¿¡æ¯";
+	public override string LabelCategoryPrivateInfo => "询问或提供私人信息";
 
 	/// <summary>
 	/// Key: "Label.CategoryScamming"
 	/// English String: "Exploiting, Cheating, Scamming"
 	/// </summary>
-	public override string LabelCategoryScamming => "å¤–æŒ‚ã€æ¬ºéª—ã€è¯ˆéª—";
+	public override string LabelCategoryScamming => "外挂、欺骗、诈骗";
 
 	/// <summary>
 	/// Key: "Label.CategoryTheft"
 	/// English String: "Account Theft - Phishing, Hacking, Trading"
 	/// </summary>
-	public override string LabelCategoryTheft => "å¸æˆ·ç›—çªƒ - ç½‘ç»œé’“é±¼ã€ç ´è§£ã€äº¤æ˜“";
+	public override string LabelCategoryTheft => "帐户盗窃 - 网络钓鱼、破解、交易";
 
-	public override string LabelCategoryThreats => "çŽ°å®žç”Ÿæ´»ä¸­çš„ç”Ÿå‘½å¨èƒæˆ–è‡ªæ€å¨èƒ";
+	public override string LabelCategoryThreats => "现实生活中的生命威胁或自杀威胁";
 
 	/// <summary>
 	/// Key: "Label.Comment"
 	/// English String: "Comment:"
 	/// </summary>
-	public override string LabelComment => "è¯„è®ºï¼š";
+	public override string LabelComment => "评论：";
 
 	/// <summary>
 	/// Key: "Label.DeletePost"
 	/// English String: "Delete Post (and any replies)"
 	/// </summary>
-	public override string LabelDeletePost => "åˆ é™¤å¸–å­ï¼ˆå’Œæ‰€æœ‰å›žå¤ï¼‰";
+	public override string LabelDeletePost => "删除帖子（和所有回复）";
 
 	/// <summary>
 	/// Key: "Label.LeaveUnchanged"
 	/// English String: "Leave post unchanged"
 	/// </summary>
-	public override string LabelLeaveUnchanged => "ä¿æŒå¸–å­ä¸å˜";
+	public override string LabelLeaveUnchanged => "保持帖子不变";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryAdultContent"
 	/// English String: "Adult Content"
 	/// </summary>
-	public override string LabelModCategoryAdultContent => "æˆäººå†…å®¹";
+	public override string LabelModCategoryAdultContent => "成人内容";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryAdvertisement"
 	/// English String: "Advertisement"
 	/// </summary>
-	public override string LabelModCategoryAdvertisement => "å¹¿å‘Š";
+	public override string LabelModCategoryAdvertisement => "广告";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryHarrasment"
 	/// English String: "Harrasment"
 	/// </summary>
-	public override string LabelModCategoryHarrasment => "éªšæ‰°";
+	public override string LabelModCategoryHarrasment => "骚扰";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryInappropriate"
 	/// English String: "Inappropriate"
 	/// </summary>
-	public override string LabelModCategoryInappropriate => "ä¸å½“";
+	public override string LabelModCategoryInappropriate => "不当";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryNone"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelModCategoryNone => "æ— ";
+	public override string LabelModCategoryNone => "无";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryPrivacy"
 	/// English String: "Privacy"
 	/// </summary>
-	public override string LabelModCategoryPrivacy => "éšç§";
+	public override string LabelModCategoryPrivacy => "隐私";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryProfanity"
 	/// English String: "Profanity"
 	/// </summary>
-	public override string LabelModCategoryProfanity => "è„è¯";
+	public override string LabelModCategoryProfanity => "脏话";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryScamming"
 	/// English String: "Scamming"
 	/// </summary>
-	public override string LabelModCategoryScamming => "è¯ˆéª—";
+	public override string LabelModCategoryScamming => "诈骗";
 
 	/// <summary>
 	/// Key: "Label.ModCategorySpam"
 	/// English String: "Spam"
 	/// </summary>
-	public override string LabelModCategorySpam => "åžƒåœ¾é‚®ä»¶";
+	public override string LabelModCategorySpam => "垃圾邮件";
 
 	/// <summary>
 	/// Key: "Label.ModCategoryUnclassified"
 	/// English String: "Unclassified Mild"
 	/// </summary>
-	public override string LabelModCategoryUnclassified => "æœªåˆ†ç±»è½»å¾®";
+	public override string LabelModCategoryUnclassified => "未分类轻微";
 
 	/// <summary>
 	/// Key: "Label.ModeratorNote"
 	/// English String: "NOTE: Deleting this post you will also delete replies. If you choose to scrub or delete the post, this report will skip the abuse queue and go directly to the user queue."
 	/// </summary>
-	public override string LabelModeratorNote => "æ³¨æ„ï¼šåˆ é™¤æ­¤å¸–ä¼šåŒæ—¶åˆ é™¤å›žå¤ã€‚å¦‚æžœä½ é€‰æ‹©æ¸…é™¤æˆ–åˆ é™¤æ­¤å¸–ï¼Œæœ¬æ¬¡ä¸¾æŠ¥ä¼šè·³è¿‡æ»¥ç”¨è¡Œä¸ºé˜Ÿåˆ—ï¼Œç›´æŽ¥è¿›å…¥ç”¨æˆ·é˜Ÿåˆ—ã€‚";
+	public override string LabelModeratorNote => "注意：删除此帖会同时删除回复。如果你选择清除或删除此帖，本次举报会跳过滥用行为队列，直接进入用户队列。";
 
 	/// <summary>
 	/// Key: "Label.NeedJavaScript"
 	/// English String: "You need JavaScript enabled to view this video."
 	/// </summary>
-	public override string LabelNeedJavaScript => "ä½ éœ€è¦å¯ç”¨ JavaScript æ‰èƒ½æŸ¥çœ‹æ­¤è§†é¢‘ã€‚";
+	public override string LabelNeedJavaScript => "你需要启用 JavaScript 才能查看此视频。";
 
 	/// <summary>
 	/// Key: "Label.NotSureQuestion"
 	/// English String: "Not sure if the thing you are trying to report is really against the rules?"
 	/// </summary>
-	public override string LabelNotSureQuestion => "ä¸ç¡®å®šä½ è¦ä¸¾æŠ¥çš„å†…å®¹æ˜¯å¦çš„ç¡®è¿åè§„åˆ™ï¼Ÿ";
+	public override string LabelNotSureQuestion => "不确定你要举报的内容是否的确违反规则？";
 
 	/// <summary>
 	/// Key: "Label.PrivacyPolicyLink"
 	/// English String: "Privacy Policy"
 	/// </summary>
-	public override string LabelPrivacyPolicyLink => "éšç§æ”¿ç­–";
+	public override string LabelPrivacyPolicyLink => "隐私政策";
 
 	/// <summary>
 	/// Key: "Label.Reason"
 	/// English String: "Reason"
 	/// </summary>
-	public override string LabelReason => "ç†ç”±";
+	public override string LabelReason => "理由";
 
 	/// <summary>
 	/// Key: "Label.Rules1"
 	/// English String: "No swear words"
 	/// </summary>
-	public override string LabelRules1 => "ç¦æ­¢éª‚è„è¯";
+	public override string LabelRules1 => "禁止骂脏话";
 
 	/// <summary>
 	/// Key: "Label.Rules2"
 	/// English String: "No account sharing or trading"
 	/// </summary>
-	public override string LabelRules2 => "ç¦æ­¢å¸æˆ·å…±äº«æˆ–äº¤æ˜“";
+	public override string LabelRules2 => "禁止帐户共享或交易";
 
 	/// <summary>
 	/// Key: "Label.Rules3"
 	/// English String: "No dating - no asking for boyfriends or girlfriends"
 	/// </summary>
-	public override string LabelRules3 => "ç¦æ­¢çº¦ä¼š - ä¸å¾—è¯¢é—®æ˜¯å¦å¯ä»¥åšç”·/å¥³æœ‹å‹";
+	public override string LabelRules3 => "禁止约会 - 不得询问是否可以做男/女朋友";
 
 	/// <summary>
 	/// Key: "Label.Rules4"
 	/// English String: "No asking real life info about each other - no asking for phone numbers or email addresses"
 	/// </summary>
-	public override string LabelRules4 => "ç¦æ­¢è¯¢é—®å¯¹æ–¹å…³äºŽçŽ°å®žç”Ÿæ´»ä¸­çš„ä¿¡æ¯ - ä¸å¾—è¯¢é—®ç”µè¯å·ç æˆ–ç”µå­é‚®ä»¶åœ°å€";
+	public override string LabelRules4 => "禁止询问对方关于现实生活中的信息 - 不得询问电话号码或电子邮件地址";
 
 	/// <summary>
 	/// Key: "Label.RulesHeading"
 	/// English String: "Some of the basic rules of Roblox include the following:"
 	/// </summary>
-	public override string LabelRulesHeading => "ä¸‹é¢åˆ—ä¸¾éƒ¨åˆ† Roblox çš„åŸºæœ¬è§„åˆ™ä»¥ä¾›å‚è€ƒï¼š";
+	public override string LabelRulesHeading => "下面列举部分 Roblox 的基本规则以供参考：";
 
 	/// <summary>
 	/// Key: "Label.SafetyHelpLink"
 	/// Display text for a link to the safety help page
 	/// English String: "Roblox Safety."
 	/// </summary>
-	public override string LabelSafetyHelpLink => "Roblox å®‰å…¨ã€‚";
+	public override string LabelSafetyHelpLink => "Roblox 安全。";
 
 	/// <summary>
 	/// Key: "Label.ScrubBody"
 	/// English String: "Scrub Body"
 	/// </summary>
-	public override string LabelScrubBody => "æ¸…é™¤æ­£æ–‡";
+	public override string LabelScrubBody => "清除正文";
 
 	/// <summary>
 	/// Key: "Label.ScrubSubjectAndBody"
 	/// English String: "Scrub Subject and Body"
 	/// </summary>
-	public override string LabelScrubSubjectAndBody => "æ¸…é™¤ä¸»é¢˜å’Œæ­£æ–‡";
+	public override string LabelScrubSubjectAndBody => "清除主题和正文";
 
 	/// <summary>
 	/// Key: "Label.SeeCommunityRules"
 	/// English String: "See Community Rules"
 	/// </summary>
-	public override string LabelSeeCommunityRules => "æŸ¥çœ‹ç¤¾åŒºè§„åˆ™";
+	public override string LabelSeeCommunityRules => "查看社区规则";
 
 	/// <summary>
 	/// Key: "Label.SelectCategory"
 	/// English String: "Please select a category"
 	/// </summary>
-	public override string LabelSelectCategory => "è¯·é€‰æ‹©ç±»åˆ«";
+	public override string LabelSelectCategory => "请选择类别";
 
 	/// <summary>
 	/// Key: "Label.SelectMedia"
 	/// English String: "Select any inappropriate media:"
 	/// </summary>
-	public override string LabelSelectMedia => "é€‰æ‹©ä»»æ„ä¸å½“åª’ä½“ï¼š";
+	public override string LabelSelectMedia => "选择任意不当媒体：";
 
 	/// <summary>
 	/// Key: "Label.SelectReason"
 	/// English String: "Select a reason for your moderation action:"
 	/// </summary>
-	public override string LabelSelectReason => "ä¸ºä½ çš„è¿‡æ»¤åŠ¨ä½œé€‰æ‹©åŽŸå› ï¼š";
+	public override string LabelSelectReason => "为你的过滤动作选择原因：";
 
 	/// <summary>
 	/// Key: "Label.Subject"
 	/// English String: "Subject:"
 	/// </summary>
-	public override string LabelSubject => "ä¸»é¢˜ï¼š";
+	public override string LabelSubject => "主题：";
 
 	/// <summary>
 	/// Key: "Message.ErrorMissingParams"
 	/// English String: "One or more required parameters are missing or invalid"
 	/// </summary>
-	public override string MessageErrorMissingParams => "ä¸€ä¸ªæˆ–å¤šä¸ªå¿…è¦å‚æ•°ç¼ºå¤±æˆ–æ— æ•ˆ";
+	public override string MessageErrorMissingParams => "一个或多个必要参数缺失或无效";
 
 	/// <summary>
 	/// Key: "Message.ErrorReportingCategories"
 	/// English String: "There was a problem loading reporting categories."
 	/// </summary>
-	public override string MessageErrorReportingCategories => "åŠ è½½ä¸¾æŠ¥ç±»åˆ«å‘ç”Ÿé—®é¢˜ã€‚";
+	public override string MessageErrorReportingCategories => "加载举报类别发生问题。";
 
 	/// <summary>
 	/// Key: "Message.ErrorSubmit"
 	/// English String: "There was a problem submitting your report."
 	/// </summary>
-	public override string MessageErrorSubmit => "æäº¤ä½ çš„ä¸¾æŠ¥æ—¶å‘ç”Ÿé—®é¢˜ã€‚";
+	public override string MessageErrorSubmit => "提交你的举报时发生问题。";
 
 	/// <summary>
 	/// Key: "Message.GenericError"
 	/// English String: "There was a problem with the page"
 	/// </summary>
-	public override string MessageGenericError => "æ­¤é¡µé¢å‘ç”Ÿé—®é¢˜";
+	public override string MessageGenericError => "此页面发生问题";
 
 	/// <summary>
 	/// Key: "Message.Success"
 	/// English String: "Your report has been sent."
 	/// </summary>
-	public override string MessageSuccess => "ä½ çš„ä¸¾æŠ¥å·²å‘é€ã€‚";
+	public override string MessageSuccess => "你的举报已发送。";
 
 	/// <summary>
 	/// Key: "Message.ThankYou"
 	/// Thank you message to appear with confirmation of successful report. Followed by a link to the localized help page
 	/// English String: "Thank you for your report.  We will investigate further to determine if there has been a violation of our Terms of Use.  For more information check out "
 	/// </summary>
-	public override string MessageThankYou => "è°¢è°¢ä½ çš„ä¸¾æŠ¥ã€‚æˆ‘ä»¬å°†è¿›ä¸€æ­¥ç¡®è®¤ä¸¾æŠ¥äº‹é¡¹æ˜¯å¦è¿åä½¿ç”¨æ¡æ¬¾ã€‚è¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ ";
+	public override string MessageThankYou => "谢谢你的举报。我们将进一步确认举报事项是否违反使用条款。要了解更多信息，请前往 ";
 
 	/// <summary>
 	/// Key: "Response.PermissionError"
 	/// English String: "This account does not have enough permissions"
 	/// </summary>
-	public override string ResponsePermissionError => "æ­¤å¸æˆ·æƒé™ä¸è¶³";
+	public override string ResponsePermissionError => "此帐户权限不足";
 
 	public ReportAbuseResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -343,247 +345,247 @@ internal class ReportAbuseResources_zh_cn : ReportAbuseResources_en_us, IReportA
 
 	protected override string _GetTemplateForActionClose()
 	{
-		return "å…³é—­";
+		return "关闭";
 	}
 
 	protected override string _GetTemplateForActionReportAbuse()
 	{
-		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+		return "报告滥用行为";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "æäº¤";
+		return "提交";
 	}
 
 	protected override string _GetTemplateForExampleComment()
 	{
-		return "è¯„è®ºï¼ˆå¯é€‰ï¼‰...";
+		return "评论（可选）...";
 	}
 
 	protected override string _GetTemplateForHeadingReportAbuse()
 	{
-		return "æŠ¥å‘Šæ»¥ç”¨è¡Œä¸º";
+		return "报告滥用行为";
 	}
 
 	protected override string _GetTemplateForHeadingSuccess()
 	{
-		return "è°¢è°¢ï¼";
+		return "谢谢！";
 	}
 
 	protected override string _GetTemplateForLabelAllRulesLink()
 	{
-		return "æŸ¥çœ‹æ‰€æœ‰è§„åˆ™";
+		return "查看所有规则";
 	}
 
 	protected override string _GetTemplateForLabelBlockWarning()
 	{
-		return "ä¸éµå®ˆè§„åˆ™çš„ç”¨æˆ·æœ€åˆä¼šæ”¶åˆ°è­¦å‘Šï¼Œä½†å¦‚æžœå±¡æ•™ä¸æ”¹ï¼Œæˆ‘ä»¬å°†ä¼šç¦æ­¢ä»–ä»¬å†æ¥ Robloxã€‚åªæœ‰è¿™æ ·ï¼Œæˆ‘ä»¬æ‰èƒ½ç¡®ä¿ Roblox çš„è¶£å‘³æ€§ä¸Žå®‰å…¨æ€§ã€‚";
+		return "不遵守规则的用户最初会收到警告，但如果屡教不改，我们将会禁止他们再来 Roblox。只有这样，我们才能确保 Roblox 的趣味性与安全性。";
 	}
 
 	protected override string _GetTemplateForLabelCategoryBullying()
 	{
-		return "æ¬ºå‡Œã€éªšæ‰°ã€ä»‡æ¨è¨€è®º";
+		return "欺凌、骚扰、仇恨言论";
 	}
 
 	protected override string _GetTemplateForLabelCategoryBullyingV2()
 	{
-		return "æ¬ºå‡Œã€éªšæ‰°ã€æ­§è§†";
+		return "欺凌、骚扰、歧视";
 	}
 
 	protected override string _GetTemplateForLabelCategoryContent()
 	{
-		return "å†…å®¹ä¸å½“ - æ¸¸æˆåœºæ™¯ã€å›¾åƒã€æ¨¡åž‹";
+		return "内容不当 - 游戏场景、图像、模型";
 	}
 
 	protected override string _GetTemplateForLabelCategoryDating()
 	{
-		return "çº¦ä¼š";
+		return "约会";
 	}
 
 	protected override string _GetTemplateForLabelCategoryInappropriate()
 	{
-		return "è¨€è¯­ä¸å½“ - è„è¯å’Œæˆäººå†…å®¹";
+		return "言语不当 - 脏话和成人内容";
 	}
 
 	protected override string _GetTemplateForLabelCategoryOther()
 	{
-		return "å…¶ä»–è¿è§„è¡Œä¸º";
+		return "其他违规行为";
 	}
 
 	protected override string _GetTemplateForLabelCategoryPrivateInfo()
 	{
-		return "è¯¢é—®æˆ–æä¾›ç§äººä¿¡æ¯";
+		return "询问或提供私人信息";
 	}
 
 	protected override string _GetTemplateForLabelCategoryScamming()
 	{
-		return "å¤–æŒ‚ã€æ¬ºéª—ã€è¯ˆéª—";
+		return "外挂、欺骗、诈骗";
 	}
 
 	protected override string _GetTemplateForLabelCategoryTheft()
 	{
-		return "å¸æˆ·ç›—çªƒ - ç½‘ç»œé’“é±¼ã€ç ´è§£ã€äº¤æ˜“";
+		return "帐户盗窃 - 网络钓鱼、破解、交易";
 	}
 
 	protected override string _GetTemplateForLabelCategoryThreats()
 	{
-		return "çŽ°å®žç”Ÿæ´»ä¸­çš„ç”Ÿå‘½å¨èƒæˆ–è‡ªæ€å¨èƒ";
+		return "现实生活中的生命威胁或自杀威胁";
 	}
 
 	protected override string _GetTemplateForLabelComment()
 	{
-		return "è¯„è®ºï¼š";
+		return "评论：";
 	}
 
 	protected override string _GetTemplateForLabelDeletePost()
 	{
-		return "åˆ é™¤å¸–å­ï¼ˆå’Œæ‰€æœ‰å›žå¤ï¼‰";
+		return "删除帖子（和所有回复）";
 	}
 
 	protected override string _GetTemplateForLabelLeaveUnchanged()
 	{
-		return "ä¿æŒå¸–å­ä¸å˜";
+		return "保持帖子不变";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryAdultContent()
 	{
-		return "æˆäººå†…å®¹";
+		return "成人内容";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryAdvertisement()
 	{
-		return "å¹¿å‘Š";
+		return "广告";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryHarrasment()
 	{
-		return "éªšæ‰°";
+		return "骚扰";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryInappropriate()
 	{
-		return "ä¸å½“";
+		return "不当";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryNone()
 	{
-		return "æ— ";
+		return "无";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryPrivacy()
 	{
-		return "éšç§";
+		return "隐私";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryProfanity()
 	{
-		return "è„è¯";
+		return "脏话";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryScamming()
 	{
-		return "è¯ˆéª—";
+		return "诈骗";
 	}
 
 	protected override string _GetTemplateForLabelModCategorySpam()
 	{
-		return "åžƒåœ¾é‚®ä»¶";
+		return "垃圾邮件";
 	}
 
 	protected override string _GetTemplateForLabelModCategoryUnclassified()
 	{
-		return "æœªåˆ†ç±»è½»å¾®";
+		return "未分类轻微";
 	}
 
 	protected override string _GetTemplateForLabelModeratorNote()
 	{
-		return "æ³¨æ„ï¼šåˆ é™¤æ­¤å¸–ä¼šåŒæ—¶åˆ é™¤å›žå¤ã€‚å¦‚æžœä½ é€‰æ‹©æ¸…é™¤æˆ–åˆ é™¤æ­¤å¸–ï¼Œæœ¬æ¬¡ä¸¾æŠ¥ä¼šè·³è¿‡æ»¥ç”¨è¡Œä¸ºé˜Ÿåˆ—ï¼Œç›´æŽ¥è¿›å…¥ç”¨æˆ·é˜Ÿåˆ—ã€‚";
+		return "注意：删除此帖会同时删除回复。如果你选择清除或删除此帖，本次举报会跳过滥用行为队列，直接进入用户队列。";
 	}
 
 	protected override string _GetTemplateForLabelNeedJavaScript()
 	{
-		return "ä½ éœ€è¦å¯ç”¨ JavaScript æ‰èƒ½æŸ¥çœ‹æ­¤è§†é¢‘ã€‚";
+		return "你需要启用 JavaScript 才能查看此视频。";
 	}
 
 	protected override string _GetTemplateForLabelNotSureQuestion()
 	{
-		return "ä¸ç¡®å®šä½ è¦ä¸¾æŠ¥çš„å†…å®¹æ˜¯å¦çš„ç¡®è¿åè§„åˆ™ï¼Ÿ";
+		return "不确定你要举报的内容是否的确违反规则？";
 	}
 
 	protected override string _GetTemplateForLabelPrivacyPolicyLink()
 	{
-		return "éšç§æ”¿ç­–";
+		return "隐私政策";
 	}
 
 	protected override string _GetTemplateForLabelReason()
 	{
-		return "ç†ç”±";
+		return "理由";
 	}
 
 	protected override string _GetTemplateForLabelRules1()
 	{
-		return "ç¦æ­¢éª‚è„è¯";
+		return "禁止骂脏话";
 	}
 
 	protected override string _GetTemplateForLabelRules2()
 	{
-		return "ç¦æ­¢å¸æˆ·å…±äº«æˆ–äº¤æ˜“";
+		return "禁止帐户共享或交易";
 	}
 
 	protected override string _GetTemplateForLabelRules3()
 	{
-		return "ç¦æ­¢çº¦ä¼š - ä¸å¾—è¯¢é—®æ˜¯å¦å¯ä»¥åšç”·/å¥³æœ‹å‹";
+		return "禁止约会 - 不得询问是否可以做男/女朋友";
 	}
 
 	protected override string _GetTemplateForLabelRules4()
 	{
-		return "ç¦æ­¢è¯¢é—®å¯¹æ–¹å…³äºŽçŽ°å®žç”Ÿæ´»ä¸­çš„ä¿¡æ¯ - ä¸å¾—è¯¢é—®ç”µè¯å·ç æˆ–ç”µå­é‚®ä»¶åœ°å€";
+		return "禁止询问对方关于现实生活中的信息 - 不得询问电话号码或电子邮件地址";
 	}
 
 	protected override string _GetTemplateForLabelRulesHeading()
 	{
-		return "ä¸‹é¢åˆ—ä¸¾éƒ¨åˆ† Roblox çš„åŸºæœ¬è§„åˆ™ä»¥ä¾›å‚è€ƒï¼š";
+		return "下面列举部分 Roblox 的基本规则以供参考：";
 	}
 
 	protected override string _GetTemplateForLabelSafetyHelpLink()
 	{
-		return "Roblox å®‰å…¨ã€‚";
+		return "Roblox 安全。";
 	}
 
 	protected override string _GetTemplateForLabelScrubBody()
 	{
-		return "æ¸…é™¤æ­£æ–‡";
+		return "清除正文";
 	}
 
 	protected override string _GetTemplateForLabelScrubSubjectAndBody()
 	{
-		return "æ¸…é™¤ä¸»é¢˜å’Œæ­£æ–‡";
+		return "清除主题和正文";
 	}
 
 	protected override string _GetTemplateForLabelSeeCommunityRules()
 	{
-		return "æŸ¥çœ‹ç¤¾åŒºè§„åˆ™";
+		return "查看社区规则";
 	}
 
 	protected override string _GetTemplateForLabelSelectCategory()
 	{
-		return "è¯·é€‰æ‹©ç±»åˆ«";
+		return "请选择类别";
 	}
 
 	protected override string _GetTemplateForLabelSelectMedia()
 	{
-		return "é€‰æ‹©ä»»æ„ä¸å½“åª’ä½“ï¼š";
+		return "选择任意不当媒体：";
 	}
 
 	protected override string _GetTemplateForLabelSelectReason()
 	{
-		return "ä¸ºä½ çš„è¿‡æ»¤åŠ¨ä½œé€‰æ‹©åŽŸå› ï¼š";
+		return "为你的过滤动作选择原因：";
 	}
 
 	protected override string _GetTemplateForLabelSubject()
 	{
-		return "ä¸»é¢˜ï¼š";
+		return "主题：";
 	}
 
 	/// <summary>
@@ -592,47 +594,47 @@ internal class ReportAbuseResources_zh_cn : ReportAbuseResources_en_us, IReportA
 	/// </summary>
 	public override string LabelTellUsHow(string creatorName)
 	{
-		return $"å‘Šè¯‰æˆ‘ä»¬ä½ è®¤ä¸ºâ€œ{creatorName}â€è¿å Roblox è§„åˆ™çš„ç†ç”±ã€‚";
+		return $"告诉我们你认为“{creatorName}”违反 Roblox 规则的理由。";
 	}
 
 	protected override string _GetTemplateForLabelTellUsHow()
 	{
-		return "å‘Šè¯‰æˆ‘ä»¬ä½ è®¤ä¸ºâ€œ{creatorName}â€è¿å Roblox è§„åˆ™çš„ç†ç”±ã€‚";
+		return "告诉我们你认为“{creatorName}”违反 Roblox 规则的理由。";
 	}
 
 	protected override string _GetTemplateForMessageErrorMissingParams()
 	{
-		return "ä¸€ä¸ªæˆ–å¤šä¸ªå¿…è¦å‚æ•°ç¼ºå¤±æˆ–æ— æ•ˆ";
+		return "一个或多个必要参数缺失或无效";
 	}
 
 	protected override string _GetTemplateForMessageErrorReportingCategories()
 	{
-		return "åŠ è½½ä¸¾æŠ¥ç±»åˆ«å‘ç”Ÿé—®é¢˜ã€‚";
+		return "加载举报类别发生问题。";
 	}
 
 	protected override string _GetTemplateForMessageErrorSubmit()
 	{
-		return "æäº¤ä½ çš„ä¸¾æŠ¥æ—¶å‘ç”Ÿé—®é¢˜ã€‚";
+		return "提交你的举报时发生问题。";
 	}
 
 	protected override string _GetTemplateForMessageGenericError()
 	{
-		return "æ­¤é¡µé¢å‘ç”Ÿé—®é¢˜";
+		return "此页面发生问题";
 	}
 
 	protected override string _GetTemplateForMessageSuccess()
 	{
-		return "ä½ çš„ä¸¾æŠ¥å·²å‘é€ã€‚";
+		return "你的举报已发送。";
 	}
 
 	protected override string _GetTemplateForMessageThankYou()
 	{
-		return "è°¢è°¢ä½ çš„ä¸¾æŠ¥ã€‚æˆ‘ä»¬å°†è¿›ä¸€æ­¥ç¡®è®¤ä¸¾æŠ¥äº‹é¡¹æ˜¯å¦è¿åä½¿ç”¨æ¡æ¬¾ã€‚è¦äº†è§£æ›´å¤šä¿¡æ¯ï¼Œè¯·å‰å¾€ ";
+		return "谢谢你的举报。我们将进一步确认举报事项是否违反使用条款。要了解更多信息，请前往 ";
 	}
 
 	protected override string _GetTemplateForResponsePermissionError()
 	{
-		return "æ­¤å¸æˆ·æƒé™ä¸è¶³";
+		return "此帐户权限不足";
 	}
 }
 

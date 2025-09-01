@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Authentication {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
     /// <summary>
 
 /// This class overrides CaptchaResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class CaptchaResources_ru_ru : CaptchaResources_en_us, ICaptchaResource
 	/// Key: "Response.CaptchaNotEnteredError"
 	/// English String: "Please fill out the Captcha"
 	/// </summary>
-	public override string ResponseCaptchaNotEnteredError => "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ ÐºÐ°Ð¿Ñ‡Ñƒ";
+	public override string ResponseCaptchaNotEnteredError => "Пожалуйста, заполните капчу";
 
 	public CaptchaResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -19,7 +21,7 @@ internal class CaptchaResources_ru_ru : CaptchaResources_en_us, ICaptchaResource
 
 	protected override string _GetTemplateForResponseCaptchaNotEnteredError()
 	{
-		return "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ ÐºÐ°Ð¿Ñ‡Ñƒ";
+		return "Пожалуйста, заполните капчу";
 	}
 }
 

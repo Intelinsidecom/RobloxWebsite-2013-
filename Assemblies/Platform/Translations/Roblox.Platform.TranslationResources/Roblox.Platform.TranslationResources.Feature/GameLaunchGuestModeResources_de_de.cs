@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameLaunchGuestModeResources_en_us to provide locale specific translations where possible,
@@ -11,7 +13,7 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 	/// button text
 	/// English String: "Close"
 	/// </summary>
-	public override string ActionDialogClose => "SchlieÃŸen";
+	public override string ActionDialogClose => "Schließen";
 
 	/// <summary>
 	/// Key: "Action.Dialog.Login"
@@ -46,42 +48,42 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 	/// modal body text
 	/// English String: "To play games, chat with friends, or customize your avatar, you'll need an account. Sign up for a free account or log in to play now."
 	/// </summary>
-	public override string DescriptionDialogSignUpOrLogin => "Du brauchst ein Konto, um Spiele zu spielen, mit Freunden zu chatten oder deinen Avatar anzupassen. Registriere dich fÃ¼r ein kostenloses Konto oder melde dich an, um sofort zu spielen.";
+	public override string DescriptionDialogSignUpOrLogin => "Du brauchst ein Konto, um Spiele zu spielen, mit Freunden zu chatten oder deinen Avatar anzupassen. Registriere dich für ein kostenloses Konto oder melde dich an, um sofort zu spielen.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.SignUpTodayOneDayRemaining"
 	/// description text
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than a day left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogSignUpTodayOneDayRemaining => "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du hast weniger als einen Tag Zeit, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+	public override string DescriptionDialogSignUpTodayOneDayRemaining => "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du hast weniger als einen Tag Zeit, bevor die kostenlose Registrierung durchgeführt werden muss.";
 
 	/// <summary>
 	/// Key: "Description.Dialog.TrialOver"
 	/// description
 	/// English String: "Your trial period has ended. Please sign up to play games - it's free!"
 	/// </summary>
-	public override string DescriptionDialogTrialOver => "Deine Demozeit ist vorbei. Bitte registriere dich, um spielen zu kÃ¶nnen. Es ist kostenlos!";
+	public override string DescriptionDialogTrialOver => "Deine Demozeit ist vorbei. Bitte registriere dich, um spielen zu können. Es ist kostenlos!";
 
 	/// <summary>
 	/// Key: "Description.Dialog.YouArePlayingOneDayRemaining"
 	/// description
 	/// English String: "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have 1 gameplay left before we require free sign up."
 	/// </summary>
-	public override string DescriptionDialogYouArePlayingOneDayRemaining => "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du kannst noch 1-mal spielen, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+	public override string DescriptionDialogYouArePlayingOneDayRemaining => "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du kannst noch 1-mal spielen, bevor die kostenlose Registrierung durchgeführt werden muss.";
 
 	/// <summary>
 	/// Key: "Heading.ChooseAvatar"
 	/// modal heading
 	/// English String: "Choose Your Avatar"
 	/// </summary>
-	public override string HeadingChooseAvatar => "WÃ¤hle deinen Avatar";
+	public override string HeadingChooseAvatar => "Wähle deinen Avatar";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpOrLogin"
 	/// modal heading
 	/// English String: "Sign up for a free account or log in!"
 	/// </summary>
-	public override string HeadingDialogSignUpOrLogin => "Registriere dich fÃ¼r ein kostenloses Konto oder melde dich an!";
+	public override string HeadingDialogSignUpOrLogin => "Registriere dich für ein kostenloses Konto oder melde dich an!";
 
 	/// <summary>
 	/// Key: "Heading.Dialog.SignUpToday"
@@ -104,7 +106,7 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForActionDialogClose()
 	{
-		return "SchlieÃŸen";
+		return "Schließen";
 	}
 
 	protected override string _GetTemplateForActionDialogLogin()
@@ -129,12 +131,12 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 
 	protected override string _GetTemplateForDescriptionDialogSignUpOrLogin()
 	{
-		return "Du brauchst ein Konto, um Spiele zu spielen, mit Freunden zu chatten oder deinen Avatar anzupassen. Registriere dich fÃ¼r ein kostenloses Konto oder melde dich an, um sofort zu spielen.";
+		return "Du brauchst ein Konto, um Spiele zu spielen, mit Freunden zu chatten oder deinen Avatar anzupassen. Registriere dich für ein kostenloses Konto oder melde dich an, um sofort zu spielen.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodayOneDayRemaining()
 	{
-		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du hast weniger als einen Tag Zeit, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du hast weniger als einen Tag Zeit, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	/// <summary>
@@ -144,22 +146,22 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogSignUpTodaySomeDaysRemaining(string numDays)
 	{
-		return $"Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du hast weniger als {numDays} Tage Zeit, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return $"Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du hast weniger als {numDays} Tage Zeit, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogSignUpTodaySomeDaysRemaining()
 	{
-		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du hast weniger als {numDays} Tage Zeit, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du hast weniger als {numDays} Tage Zeit, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogTrialOver()
 	{
-		return "Deine Demozeit ist vorbei. Bitte registriere dich, um spielen zu kÃ¶nnen. Es ist kostenlos!";
+		return "Deine Demozeit ist vorbei. Bitte registriere dich, um spielen zu können. Es ist kostenlos!";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingOneDayRemaining()
 	{
-		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du kannst noch 1-mal spielen, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du kannst noch 1-mal spielen, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	/// <summary>
@@ -169,22 +171,22 @@ internal class GameLaunchGuestModeResources_de_de : GameLaunchGuestModeResources
 	/// </summary>
 	public override string DescriptionDialogYouArePlayingSomeDaysRemaining(string numDays)
 	{
-		return $"Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du kannst noch {numDays}-mal spielen, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return $"Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du kannst noch {numDays}-mal spielen, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	protected override string _GetTemplateForDescriptionDialogYouArePlayingSomeDaysRemaining()
 	{
-		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu kÃ¶nnen, musst du ein Konto erstellen. Du kannst noch {numDays}-mal spielen, bevor die kostenlose Registrierung durchgefÃ¼hrt werden muss.";
+		return "Du spielst als Gast. Um alle Features von Roblox nutzen zu können, musst du ein Konto erstellen. Du kannst noch {numDays}-mal spielen, bevor die kostenlose Registrierung durchgeführt werden muss.";
 	}
 
 	protected override string _GetTemplateForHeadingChooseAvatar()
 	{
-		return "WÃ¤hle deinen Avatar";
+		return "Wähle deinen Avatar";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpOrLogin()
 	{
-		return "Registriere dich fÃ¼r ein kostenloses Konto oder melde dich an!";
+		return "Registriere dich für ein kostenloses Konto oder melde dich an!";
 	}
 
 	protected override string _GetTemplateForHeadingDialogSignUpToday()

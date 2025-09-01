@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides VisitGameResources_en_us to provide locale specific translations where possible,
@@ -11,247 +13,247 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// button label
 	/// English String: "Retry"
 	/// </summary>
-	public override string ActionRetry => "å†è©¦è¡Œ";
+	public override string ActionRetry => "再試行";
 
 	/// <summary>
 	/// Key: "Heading.ErrorStartingGame"
 	/// Error starting game
 	/// English String: "Error starting game"
 	/// </summary>
-	public override string HeadingErrorStartingGame => "ã‚²ãƒ¼ãƒ ã®èµ·å‹•ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+	public override string HeadingErrorStartingGame => "ゲームの起動中にエラーが発生しました";
 
 	/// <summary>
 	/// Key: "Heading.SwitchToDesktopToPlay"
 	/// Switch to Desktop Mode to Play Games
 	/// English String: "Switch to Desktop Mode to Play Games"
 	/// </summary>
-	public override string HeadingSwitchToDesktopToPlay => "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›¿ãˆã¦ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
+	public override string HeadingSwitchToDesktopToPlay => "デスクトップモードに切り替えてゲームをプレイする";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string LabelCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Label.CheckingForStudio"
 	/// We are checking if user has Roblox Studio installed
 	/// English String: "Checking for Roblox Studio..."
 	/// </summary>
-	public override string LabelCheckingForStudio => "Roblox Studioã‚’ç¢ºèªä¸­...";
+	public override string LabelCheckingForStudio => "Roblox Studioを確認中...";
 
 	/// <summary>
 	/// Key: "Label.ClickHereForHelp"
 	/// Click here for help
 	/// English String: "Click here for help"
 	/// </summary>
-	public override string LabelClickHereForHelp => "ãƒ˜ãƒ«ãƒ—ã¯ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯";
+	public override string LabelClickHereForHelp => "ヘルプはこちらをクリック";
 
 	/// <summary>
 	/// Key: "Label.ConnectingToPlayers"
 	/// Joining a game network with other players
 	/// English String: "Connecting to Players..."
 	/// </summary>
-	public override string LabelConnectingToPlayers => "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«æŽ¥ç¶šä¸­...";
+	public override string LabelConnectingToPlayers => "プレイヤーに接続中...";
 
 	/// <summary>
 	/// Key: "Label.DevelopPageTitle"
 	/// English String: "Develop"
 	/// </summary>
-	public override string LabelDevelopPageTitle => "é–‹ç™º";
+	public override string LabelDevelopPageTitle => "開発";
 
 	/// <summary>
 	/// Key: "Label.DownloadInstallRoblox"
 	/// Download and Install Roblox
 	/// English String: "Download and Install Roblox"
 	/// </summary>
-	public override string LabelDownloadInstallRoblox => "Robloxã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã¨ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
+	public override string LabelDownloadInstallRoblox => "Robloxのダウンロードとインストール";
 
 	/// <summary>
 	/// Key: "Label.DownloadStudio"
 	/// Download Roblox Studio to start creating games
 	/// English String: "Download Studio"
 	/// </summary>
-	public override string LabelDownloadStudio => "Studioã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰";
+	public override string LabelDownloadStudio => "Studioをダウンロード";
 
 	/// <summary>
 	/// Key: "Label.GameConfigurePageTitle"
 	/// English String: "Game Configure"
 	/// </summary>
-	public override string LabelGameConfigurePageTitle => "ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š";
+	public override string LabelGameConfigurePageTitle => "ゲーム環境設定";
 
 	/// <summary>
 	/// Key: "Label.GameFreeSoothsayer"
 	/// English String: "Free because you are a soothsayer"
 	/// </summary>
-	public override string LabelGameFreeSoothsayer => "ã‚ãªãŸã¯é­”æ³•ä½¿ã„ãªã®ã§ç„¡æ–™ã§ã™";
+	public override string LabelGameFreeSoothsayer => "あなたは魔法使いなので無料です";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableAccountResrictions"
 	/// English String: "The game is unavailable due to account restrictions settings."
 	/// </summary>
-	public override string LabelGameUnavailableAccountResrictions => "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®åˆ¶é™è¨­å®šã«ã‚ˆã‚Šã€ã“ã®ã‚²ãƒ¼ãƒ ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚";
+	public override string LabelGameUnavailableAccountResrictions => "アカウントの制限設定により、このゲームは利用できません。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCannotPlayGamesStudio"
 	/// English String: "You cannot play games from Studio. Please use a web browser to play this game."
 	/// </summary>
-	public override string LabelGameUnavailableCannotPlayGamesStudio => "Studioã§ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚ã“ã®ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã«ã¯ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚";
+	public override string LabelGameUnavailableCannotPlayGamesStudio => "Studioでゲームをプレイできません。このゲームをプレイするには、ウェブブラウザを使ってください。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableClosedToVisitors"
 	/// English String: "Sorry, this place is currently closed to visitors."
 	/// </summary>
-	public override string LabelGameUnavailableClosedToVisitors => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨è¨ªå•è€…ã‚’å—ã‘ä»˜ã‘ã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string LabelGameUnavailableClosedToVisitors => "申し訳ありませんが、このプレースは現在訪問者を受け付けていません。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableCurrentlyIsPrivateVisitor"
 	/// When a game is private, this message is shown to visitors.
 	/// English String: "Sorry, this game is private."
 	/// </summary>
-	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ã‚²ãƒ¼ãƒ ã¯ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã¾ã™ã€‚";
+	public override string LabelGameUnavailableCurrentlyIsPrivateVisitor => "申し訳ありませんが、このゲームはプライベート設定になっています。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailableGameInsecure"
 	/// U13 users cannot play insecure games unless they are the creator or friends with the creator.
 	/// English String: "Sorry, your account is restricted from playing Experimental Games unless you are friends with the creator."
 	/// </summary>
-	public override string LabelGameUnavailableGameInsecure => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚ãªãŸã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã€ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼ã¨å‹é”ã§ãªã„å ´åˆã€è©¦é¨“ã‚²ãƒ¼ãƒ ã®ãƒ—ãƒ¬ã‚¤ãŒåˆ¶é™ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+	public override string LabelGameUnavailableGameInsecure => "申し訳ありませんが、あなたのアカウントは、クリエーターと友達でない場合、試験ゲームのプレイが制限されています。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePermissionLevels"
 	/// English String: "The permission levels on this place prevent you from entering."
 	/// </summary>
-	public override string LabelGameUnavailablePermissionLevels => "ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã®è¨±å¯ãƒ¬ãƒ™ãƒ«ã«ã‚ˆã‚Šã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã«ã¯å…¥ã‚Œã¾ã›ã‚“ã€‚";
+	public override string LabelGameUnavailablePermissionLevels => "このプレースの許可レベルにより、このプレースには入れません。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlaceUnderReview"
 	/// English String: "Sorry, this place is currently under review. Try again later."
 	/// </summary>
-	public override string LabelGameUnavailablePlaceUnderReview => "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨ãƒ¬ãƒ“ãƒ¥ãƒ¼ä¸­ã§ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string LabelGameUnavailablePlaceUnderReview => "申し訳ありませんが、このプレースは現在レビュー中です。後でもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Label.GameUnavailablePlatform"
 	/// English String: "This game is not available on your platform.  Check the games page to see all playable games."
 	/// </summary>
-	public override string LabelGameUnavailablePlatform => "ã“ã®ã‚²ãƒ¼ãƒ ã¯ã‚ãªãŸã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚²ãƒ¼ãƒ ã«ã¤ã„ã¦ã¯ã€ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+	public override string LabelGameUnavailablePlatform => "このゲームはあなたのプラットフォームでは利用できません。プレイできるゲームについては、ゲームページでチェックしてください。";
 
 	/// <summary>
 	/// Key: "Label.GameWarning"
 	/// English String: "Warning"
 	/// </summary>
-	public override string LabelGameWarning => "è­¦å‘Š";
+	public override string LabelGameWarning => "警告";
 
 	/// <summary>
 	/// Key: "Label.InstallationInstructions"
 	/// Installation Instructions
 	/// English String: "Installation Instructions"
 	/// </summary>
-	public override string LabelInstallationInstructions => "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•";
+	public override string LabelInstallationInstructions => "インストール方法";
 
 	/// <summary>
 	/// Key: "Label.LaunchApplication"
 	/// Launch Application
 	/// English String: "Launch Application"
 	/// </summary>
-	public override string LabelLaunchApplication => "ã‚¢ãƒ—ãƒªã‚’èµ·å‹•";
+	public override string LabelLaunchApplication => "アプリを起動";
 
 	/// <summary>
 	/// Key: "Label.PersuadeToDevelopRoblox"
 	/// Persuade user to begin developing their own games using Roblox Studio
 	/// English String: "Get started creating your own games!"
 	/// </summary>
-	public override string LabelPersuadeToDevelopRoblox => "è‡ªåˆ†ã®ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ã¿ã‚ˆã†ï¼";
+	public override string LabelPersuadeToDevelopRoblox => "自分のゲームを制作してみよう！";
 
 	/// <summary>
 	/// Key: "Label.PersuadeToInstallRoblox"
 	/// We are exciting the user about Roblox so that they will be persuaded to download and install it.
 	/// English String: "You're moments away from getting into the game!"
 	/// </summary>
-	public override string LabelPersuadeToInstallRoblox => "ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã‚‹ã‚ˆã†ã«ãªã‚‹ã¾ã§ã€ã‚ã¨å°‘ã—ã§ã™ï¼";
+	public override string LabelPersuadeToInstallRoblox => "ゲームに参加できるようになるまで、あと少しです！";
 
 	/// <summary>
 	/// Key: "Label.Play"
 	/// English String: "Play"
 	/// </summary>
-	public override string LabelPlay => "ãƒ—ãƒ¬ã‚¤";
+	public override string LabelPlay => "プレイ";
 
 	/// <summary>
 	/// Key: "Label.PlayInApp"
 	/// English String: "Play in App"
 	/// </summary>
-	public override string LabelPlayInApp => "ã‚¢ãƒ—ãƒªã§ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
+	public override string LabelPlayInApp => "アプリでプレイする";
 
 	/// <summary>
 	/// Key: "Label.RobloxLoadingToPlay"
 	/// Roblox is loading, so the user is getting excited to start playing a game
 	/// English String: "Roblox is now loading. Get ready to play!"
 	/// </summary>
-	public override string LabelRobloxLoadingToPlay => "Robloxã‚’èª­ã¿è¾¼ã‚“ã§ã„ã¾ã™ã€‚ãƒ—ãƒ¬ã‚¤ã®æº–å‚™ã‚’ã—ã‚ˆã†ï¼";
+	public override string LabelRobloxLoadingToPlay => "Robloxを読み込んでいます。プレイの準備をしよう！";
 
 	/// <summary>
 	/// Key: "Label.StartingRoblox"
 	/// Game launch process has started
 	/// English String: "Starting Roblox..."
 	/// </summary>
-	public override string LabelStartingRoblox => "Robloxã‚’é–‹å§‹ä¸­...";
+	public override string LabelStartingRoblox => "Robloxを開始中...";
 
 	/// <summary>
 	/// Key: "Label.SwitchToDesktopMode"
 	/// Switch to Desktop Mode
 	/// English String: "Switch to Desktop Mode"
 	/// </summary>
-	public override string LabelSwitchToDesktopMode => "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›¿ãˆã‚‹";
+	public override string LabelSwitchToDesktopMode => "デスクトップモードに切り替える";
 
 	/// <summary>
 	/// Key: "Label.UniverseConfigurePageTitle"
 	/// The name of the universe configuration page
 	/// English String: "Universe Configuration"
 	/// </summary>
-	public override string LabelUniverseConfigurePageTitle => "ãƒ¦ãƒ‹ãƒãƒ¼ã‚¹ç’°å¢ƒè¨­å®š";
+	public override string LabelUniverseConfigurePageTitle => "ユニバース環境設定";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ClickHere"
 	/// Click here!
 	/// English String: "Click here!"
 	/// </summary>
-	public override string ResponseDialogClickHere => "ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ï¼";
+	public override string ResponseDialogClickHere => "こちらをクリックしてください！";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ErrorLaunching"
 	/// An error occurred trying to launch the game.  Please try again later.
 	/// English String: "An error occurred trying to launch the game.  Please try again later."
 	/// </summary>
-	public override string ResponseDialogErrorLaunching => "ã‚²ãƒ¼ãƒ ã®èµ·å‹•ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+	public override string ResponseDialogErrorLaunching => "ゲームの起動中にエラーが発生しました。後でもう一度お試しください。";
 
 	/// <summary>
 	/// Key: "Response.Dialog.HavingTroubleInstallQuestion"
 	/// (Are you) having trouble installing Roblox?
 	/// English String: "Having trouble installing Roblox?"
 	/// </summary>
-	public override string ResponseDialogHavingTroubleInstallQuestion => "Robloxã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒã§ããªã„å ´åˆã€‚";
+	public override string ResponseDialogHavingTroubleInstallQuestion => "Robloxのインストールができない場合。";
 
 	/// <summary>
 	/// Key: "Response.Dialog.MacChromeSecondInstruction"
 	/// Double-click the Roblox app icon to begin the installation process.
 	/// English String: "Double-click the Roblox app icon to begin the installation process."
 	/// </summary>
-	public override string ResponseDialogMacChromeSecondInstruction => "Robloxã‚¢ãƒ—ãƒªã‚¢ã‚¤ã‚³ãƒ³ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹ã€‚";
+	public override string ResponseDialogMacChromeSecondInstruction => "Robloxアプリアイコンをダブルクリックして、インストールプロセスを開始。";
 
 	/// <summary>
 	/// Key: "Response.Dialog.ThanksForPlayingRoblox"
 	/// Thanks for playing Roblox
 	/// English String: "Thanks for playing Roblox"
 	/// </summary>
-	public override string ResponseDialogThanksForPlayingRoblox => "Robloxã‚’ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ãŸã ãã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™";
+	public override string ResponseDialogThanksForPlayingRoblox => "Robloxをプレイしていただきありがとうございます";
 
 	/// <summary>
 	/// Key: "Response.GameTemporarilyUnavailable"
 	/// error message (will be followed by link with Action.Retry label)
 	/// English String: "Unable to verify that you have access to this game.  Please try again later."
 	/// </summary>
-	public override string ResponseGameTemporarilyUnavailable => "ã“ã®ã‚²ãƒ¼ãƒ ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹æ¨©ã‚’èªè¨¼ã§ãã¾ã›ã‚“ã€‚å¾Œã§å†è©¦è¡Œã—ã¦ãã ã•ã„ã€‚";
+	public override string ResponseGameTemporarilyUnavailable => "このゲームへのアクセス権を認証できません。後で再試行してください。";
 
 	public VisitGameResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -264,27 +266,27 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ActionGamePerformPoorly(string warning)
 	{
-		return $"{warning} ã“ã®ã‚²ãƒ¼ãƒ ã¯ã€ãŠä½¿ã„ã®ãƒ‡ãƒã‚¤ã‚¹ã§ã¯ã€ã†ã¾ãä½œå‹•ã—ãªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
+		return $"{warning} このゲームは、お使いのデバイスでは、うまく作動しない可能性があります。";
 	}
 
 	protected override string _GetTemplateForActionGamePerformPoorly()
 	{
-		return "{warning} ã“ã®ã‚²ãƒ¼ãƒ ã¯ã€ãŠä½¿ã„ã®ãƒ‡ãƒã‚¤ã‚¹ã§ã¯ã€ã†ã¾ãä½œå‹•ã—ãªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ã€‚";
+		return "{warning} このゲームは、お使いのデバイスでは、うまく作動しない可能性があります。";
 	}
 
 	protected override string _GetTemplateForActionRetry()
 	{
-		return "å†è©¦è¡Œ";
+		return "再試行";
 	}
 
 	protected override string _GetTemplateForHeadingErrorStartingGame()
 	{
-		return "ã‚²ãƒ¼ãƒ ã®èµ·å‹•ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+		return "ゲームの起動中にエラーが発生しました";
 	}
 
 	protected override string _GetTemplateForHeadingSwitchToDesktopToPlay()
 	{
-		return "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›¿ãˆã¦ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
+		return "デスクトップモードに切り替えてゲームをプレイする";
 	}
 
 	/// <summary>
@@ -293,57 +295,57 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelBuyAccess(string robux)
 	{
-		return $"{robux} Robux ã§ã‚¢ã‚¯ã‚»ã‚¹ã‚’è²·ã†";
+		return $"{robux} Robux でアクセスを買う";
 	}
 
 	protected override string _GetTemplateForLabelBuyAccess()
 	{
-		return "{robux} Robux ã§ã‚¢ã‚¯ã‚»ã‚¹ã‚’è²·ã†";
+		return "{robux} Robux でアクセスを買う";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForLabelCheckingForStudio()
 	{
-		return "Roblox Studioã‚’ç¢ºèªä¸­...";
+		return "Roblox Studioを確認中...";
 	}
 
 	protected override string _GetTemplateForLabelClickHereForHelp()
 	{
-		return "ãƒ˜ãƒ«ãƒ—ã¯ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯";
+		return "ヘルプはこちらをクリック";
 	}
 
 	protected override string _GetTemplateForLabelConnectingToPlayers()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«æŽ¥ç¶šä¸­...";
+		return "プレイヤーに接続中...";
 	}
 
 	protected override string _GetTemplateForLabelDevelopPageTitle()
 	{
-		return "é–‹ç™º";
+		return "開発";
 	}
 
 	protected override string _GetTemplateForLabelDownloadInstallRoblox()
 	{
-		return "Robloxã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã¨ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
+		return "Robloxのダウンロードとインストール";
 	}
 
 	protected override string _GetTemplateForLabelDownloadStudio()
 	{
-		return "Studioã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰";
+		return "Studioをダウンロード";
 	}
 
 	protected override string _GetTemplateForLabelGameConfigurePageTitle()
 	{
-		return "ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š";
+		return "ゲーム環境設定";
 	}
 
 	protected override string _GetTemplateForLabelGameFreeSoothsayer()
 	{
-		return "ã‚ãªãŸã¯é­”æ³•ä½¿ã„ãªã®ã§ç„¡æ–™ã§ã™";
+		return "あなたは魔法使いなので無料です";
 	}
 
 	/// <summary>
@@ -353,12 +355,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByGroupOnly(string linkStart, string linkEnd)
 	{
-		return $"ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€é–‹ç™ºè€…ã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"このゲームは現在、プライベート設定になっているため、開発者しかプレイできません。{linkStart}ゲーム環境設定{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByGroupOnly()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€é–‹ç™ºè€…ã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームは現在、プライベート設定になっているため、開発者しかプレイできません。{linkStart}ゲーム環境設定{linkEnd}ページで公開してください。";
 	}
 
 	/// <summary>
@@ -368,27 +370,27 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameIsPrivatePlayableByOwnerOnly(string linkStart, string linkEnd)
 	{
-		return $"ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã‚ãªãŸã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"このゲームは現在、プライベート設定になっているため、あなたしかプレイできません。{linkStart}ゲーム環境設定{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameIsPrivatePlayableByOwnerOnly()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã‚ãªãŸã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}ã‚²ãƒ¼ãƒ ç’°å¢ƒè¨­å®š{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームは現在、プライベート設定になっているため、あなたしかプレイできません。{linkStart}ゲーム環境設定{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableAccountResrictions()
 	{
-		return "ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã®åˆ¶é™è¨­å®šã«ã‚ˆã‚Šã€ã“ã®ã‚²ãƒ¼ãƒ ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚";
+		return "アカウントの制限設定により、このゲームは利用できません。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCannotPlayGamesStudio()
 	{
-		return "Studioã§ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚ã“ã®ã‚²ãƒ¼ãƒ ã‚’ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã«ã¯ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã‚’ä½¿ã£ã¦ãã ã•ã„ã€‚";
+		return "Studioでゲームをプレイできません。このゲームをプレイするには、ウェブブラウザを使ってください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableClosedToVisitors()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨è¨ªå•è€…ã‚’å—ã‘ä»˜ã‘ã¦ã„ã¾ã›ã‚“ã€‚";
+		return "申し訳ありませんが、このプレースは現在訪問者を受け付けていません。";
 	}
 
 	/// <summary>
@@ -398,12 +400,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateGroup(string linkStart, string linkEnd)
 	{
-		return $"ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€é–‹ç™ºè€…ã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}é–‹ç™º{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"このゲームは現在、プライベート設定になっているため、開発者しかプレイできません。{linkStart}開発{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateGroup()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€é–‹ç™ºè€…ã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}é–‹ç™º{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームは現在、プライベート設定になっているため、開発者しかプレイできません。{linkStart}開発{linkEnd}ページで公開してください。";
 	}
 
 	/// <summary>
@@ -413,17 +415,17 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyIsPrivateOwner(string linkStart, string linkEnd)
 	{
-		return $"ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã‚ãªãŸã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}é–‹ç™º{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"このゲームは現在、プライベート設定になっているため、あなたしかプレイできません。{linkStart}開発{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateOwner()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã‚‹ãŸã‚ã€ã‚ãªãŸã—ã‹ãƒ—ãƒ¬ã‚¤ã§ãã¾ã›ã‚“ã€‚{linkStart}é–‹ç™º{linkEnd}ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームは現在、プライベート設定になっているため、あなたしかプレイできません。{linkStart}開発{linkEnd}ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyIsPrivateVisitor()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ã‚²ãƒ¼ãƒ ã¯ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆè¨­å®šã«ãªã£ã¦ã„ã¾ã™ã€‚";
+		return "申し訳ありませんが、このゲームはプライベート設定になっています。";
 	}
 
 	/// <summary>
@@ -433,17 +435,17 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableCurrentlyPrivate(string gameTypeName, string developPageLink)
 	{
-		return $"{gameTypeName} ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆã«è¨­å®šã«ãªã£ã¦ã„ã¾ã™ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{developPageLink} ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"{gameTypeName} は現在、プライベートに設定になっています。プレイできるようにするには、{developPageLink} ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableCurrentlyPrivate()
 	{
-		return "{gameTypeName} ã¯ç¾åœ¨ã€ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆã«è¨­å®šã«ãªã£ã¦ã„ã¾ã™ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{developPageLink} ãƒšãƒ¼ã‚¸ã§å…¬é–‹ã—ã¦ãã ã•ã„ã€‚";
+		return "{gameTypeName} は現在、プライベートに設定になっています。プレイできるようにするには、{developPageLink} ページで公開してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableGameInsecure()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã‚ãªãŸã®ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã¯ã€ã‚¯ãƒªã‚¨ãƒ¼ã‚¿ãƒ¼ã¨å‹é”ã§ãªã„å ´åˆã€è©¦é¨“ã‚²ãƒ¼ãƒ ã®ãƒ—ãƒ¬ã‚¤ãŒåˆ¶é™ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+		return "申し訳ありませんが、あなたのアカウントは、クリエーターと友達でない場合、試験ゲームのプレイが制限されています。";
 	}
 
 	/// <summary>
@@ -452,17 +454,17 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailableNoRootPlace(string gameConfigureLink)
 	{
-		return $"ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ã€ãƒ«ãƒ¼ãƒˆãƒ—ãƒ¬ã‚¤ã‚¹ã®è¨­å®šã•ã‚Œã¦ã„ãªã„ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã§ã™ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{gameConfigureLink}ãƒšãƒ¼ã‚¸ã§ãƒ«ãƒ¼ãƒˆãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
+		return $"このプレースは、ルートプレイスの設定されていないゲームの一部です。プレイできるようにするには、{gameConfigureLink}ページでルートプレースを追加してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailableNoRootPlace()
 	{
-		return "ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ã€ãƒ«ãƒ¼ãƒˆãƒ—ãƒ¬ã‚¤ã‚¹ã®è¨­å®šã•ã‚Œã¦ã„ãªã„ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã§ã™ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{gameConfigureLink}ãƒšãƒ¼ã‚¸ã§ãƒ«ãƒ¼ãƒˆãƒ—ãƒ¬ãƒ¼ã‚¹ã‚’è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
+		return "このプレースは、ルートプレイスの設定されていないゲームの一部です。プレイできるようにするには、{gameConfigureLink}ページでルートプレースを追加してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePermissionLevels()
 	{
-		return "ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã®è¨±å¯ãƒ¬ãƒ™ãƒ«ã«ã‚ˆã‚Šã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã«ã¯å…¥ã‚Œã¾ã›ã‚“ã€‚";
+		return "このプレースの許可レベルにより、このプレースには入れません。";
 	}
 
 	/// <summary>
@@ -471,37 +473,37 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelGameUnavailablePlaceNotPartOfGame(string developPageLink)
 	{
-		return $"ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨ã€ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{developPageLink}ãƒšãƒ¼ã‚¸ã§ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
+		return $"このプレースは現在、ゲームの一部ではありません。プレイできるようにするには、{developPageLink}ページでゲームに追加してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceNotPartOfGame()
 	{
-		return "ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨ã€ã‚²ãƒ¼ãƒ ã®ä¸€éƒ¨ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹ã«ã¯ã€{developPageLink}ãƒšãƒ¼ã‚¸ã§ã‚²ãƒ¼ãƒ ã«è¿½åŠ ã—ã¦ãã ã•ã„ã€‚";
+		return "このプレースは現在、ゲームの一部ではありません。プレイできるようにするには、{developPageLink}ページでゲームに追加してください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlaceUnderReview()
 	{
-		return "ç”³ã—è¨³ã‚ã‚Šã¾ã›ã‚“ãŒã€ã“ã®ãƒ—ãƒ¬ãƒ¼ã‚¹ã¯ç¾åœ¨ãƒ¬ãƒ“ãƒ¥ãƒ¼ä¸­ã§ã™ã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "申し訳ありませんが、このプレースは現在レビュー中です。後でもう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForLabelGameUnavailablePlatform()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¯ã‚ãªãŸã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã§ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ã€‚ãƒ—ãƒ¬ã‚¤ã§ãã‚‹ã‚²ãƒ¼ãƒ ã«ã¤ã„ã¦ã¯ã€ã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§ãƒã‚§ãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームはあなたのプラットフォームでは利用できません。プレイできるゲームについては、ゲームページでチェックしてください。";
 	}
 
 	protected override string _GetTemplateForLabelGameWarning()
 	{
-		return "è­¦å‘Š";
+		return "警告";
 	}
 
 	protected override string _GetTemplateForLabelInstallationInstructions()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•";
+		return "インストール方法";
 	}
 
 	protected override string _GetTemplateForLabelLaunchApplication()
 	{
-		return "ã‚¢ãƒ—ãƒªã‚’èµ·å‹•";
+		return "アプリを起動";
 	}
 
 	/// <summary>
@@ -511,52 +513,52 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string LabelOperaInstallSteps(string startBold, string endBold, string breakLine)
 	{
-		return $"1) ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒé–‹ãã¾ã™ã€‚ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚{breakLine}2) Robloxã‚¢ã‚¤ã‚³ãƒ³ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return $"1) ウィンドウが開きます。「{startBold}開く{endBold}」をクリックします。{breakLine}2) Robloxアイコンをダブルクリックします。";
 	}
 
 	protected override string _GetTemplateForLabelOperaInstallSteps()
 	{
-		return "1) ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒé–‹ãã¾ã™ã€‚ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚{breakLine}2) Robloxã‚¢ã‚¤ã‚³ãƒ³ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return "1) ウィンドウが開きます。「{startBold}開く{endBold}」をクリックします。{breakLine}2) Robloxアイコンをダブルクリックします。";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToDevelopRoblox()
 	{
-		return "è‡ªåˆ†ã®ã‚²ãƒ¼ãƒ ã‚’åˆ¶ä½œã—ã¦ã¿ã‚ˆã†ï¼";
+		return "自分のゲームを制作してみよう！";
 	}
 
 	protected override string _GetTemplateForLabelPersuadeToInstallRoblox()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã‚‹ã‚ˆã†ã«ãªã‚‹ã¾ã§ã€ã‚ã¨å°‘ã—ã§ã™ï¼";
+		return "ゲームに参加できるようになるまで、あと少しです！";
 	}
 
 	protected override string _GetTemplateForLabelPlay()
 	{
-		return "ãƒ—ãƒ¬ã‚¤";
+		return "プレイ";
 	}
 
 	protected override string _GetTemplateForLabelPlayInApp()
 	{
-		return "ã‚¢ãƒ—ãƒªã§ãƒ—ãƒ¬ã‚¤ã™ã‚‹";
+		return "アプリでプレイする";
 	}
 
 	protected override string _GetTemplateForLabelRobloxLoadingToPlay()
 	{
-		return "Robloxã‚’èª­ã¿è¾¼ã‚“ã§ã„ã¾ã™ã€‚ãƒ—ãƒ¬ã‚¤ã®æº–å‚™ã‚’ã—ã‚ˆã†ï¼";
+		return "Robloxを読み込んでいます。プレイの準備をしよう！";
 	}
 
 	protected override string _GetTemplateForLabelStartingRoblox()
 	{
-		return "Robloxã‚’é–‹å§‹ä¸­...";
+		return "Robloxを開始中...";
 	}
 
 	protected override string _GetTemplateForLabelSwitchToDesktopMode()
 	{
-		return "ãƒ‡ã‚¹ã‚¯ãƒˆãƒƒãƒ—ãƒ¢ãƒ¼ãƒ‰ã«åˆ‡ã‚Šæ›¿ãˆã‚‹";
+		return "デスクトップモードに切り替える";
 	}
 
 	protected override string _GetTemplateForLabelUniverseConfigurePageTitle()
 	{
-		return "ãƒ¦ãƒ‹ãƒãƒ¼ã‚¹ç’°å¢ƒè¨­å®š";
+		return "ユニバース環境設定";
 	}
 
 	/// <summary>
@@ -566,12 +568,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRoblox(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"ã€Œ{startBold}Robloxã®ãƒªãƒ³ã‚¯ã¯å¸¸ã«é–‹ã{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}Robloxã‚’é–‹ã{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return $"「{startBold}Robloxのリンクは常に開く{endBold}」にチェックを付けて、上のダイアログの「{startBold2}Robloxを開く{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRoblox()
 	{
-		return "ã€Œ{startBold}Robloxã®ãƒªãƒ³ã‚¯ã¯å¸¸ã«é–‹ã{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}Robloxã‚’é–‹ã{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return "「{startBold}Robloxのリンクは常に開く{endBold}」にチェックを付けて、上のダイアログの「{startBold2}Robloxを開く{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	/// <summary>
@@ -581,12 +583,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckAlwaysOpenRobloxURL(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"ã€Œ{startBold}URL: Roblox Protocolã®ãƒªãƒ³ã‚¯ã¯å¸¸ã«é–‹ã{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}URL: Roblox Protocolã‚’é–‹ã{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return $"「{startBold}URL: Roblox Protocolのリンクは常に開く{endBold}」にチェックを付けて、上のダイアログの「{startBold2}URL: Roblox Protocolを開く{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	protected override string _GetTemplateForResponseCheckAlwaysOpenRobloxURL()
 	{
-		return "ã€Œ{startBold}URL: Roblox Protocolã®ãƒªãƒ³ã‚¯ã¯å¸¸ã«é–‹ã{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}URL: Roblox Protocolã‚’é–‹ã{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return "「{startBold}URL: Roblox Protocolのリンクは常に開く{endBold}」にチェックを付けて、上のダイアログの「{startBold2}URL: Roblox Protocolを開く{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	/// <summary>
@@ -596,42 +598,42 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseCheckRememberMyChoiceOK(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"ã€Œ{startBold}é¸æŠžã‚’è¨˜æ†¶ã™ã‚‹{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return $"「{startBold}選択を記憶する{endBold}」にチェックを付けて、上のダイアログの「{startBold2}OK{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	protected override string _GetTemplateForResponseCheckRememberMyChoiceOK()
 	{
-		return "ã€Œ{startBold}é¸æŠžã‚’è¨˜æ†¶ã™ã‚‹{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return "「{startBold}選択を記憶する{endBold}」にチェックを付けて、上のダイアログの「{startBold2}OK{endBold2}」をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	protected override string _GetTemplateForResponseDialogClickHere()
 	{
-		return "ã“ã¡ã‚‰ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ï¼";
+		return "こちらをクリックしてください！";
 	}
 
 	protected override string _GetTemplateForResponseDialogErrorLaunching()
 	{
-		return "ã‚²ãƒ¼ãƒ ã®èµ·å‹•ä¸­ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å¾Œã§ã‚‚ã†ä¸€åº¦ãŠè©¦ã—ãã ã•ã„ã€‚";
+		return "ゲームの起動中にエラーが発生しました。後でもう一度お試しください。";
 	}
 
 	protected override string _GetTemplateForResponseDialogHavingTroubleInstallQuestion()
 	{
-		return "Robloxã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒã§ããªã„å ´åˆã€‚";
+		return "Robloxのインストールができない場合。";
 	}
 
 	/// <summary>
 	/// Key: "Response.Dialog.InstallingMessageWithLink"
 	/// Note: For this translation, please move the linkStart and linkEnd variables with the translation for download now.
-	/// English String: "The Roblox installer should download shortly. If it doesnâ€™t, start the {linkStart}download now.{linkEnd}"
+	/// English String: "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}"
 	/// </summary>
 	public override string ResponseDialogInstallingMessageWithLink(string linkStart, string linkEnd)
 	{
-		return $"Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãŒã¾ã‚‚ãªãå§‹ã¾ã‚Šã¾ã™ã€‚å§‹ã¾ã‚‰ãªã„å ´åˆã¯ã€{linkStart}ä»Šã™ããƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰{linkEnd}ã§é–‹å§‹ã—ã¦ãã ã•ã„ã€‚";
+		return $"Robloxインストーラのダウンロードがまもなく始まります。始まらない場合は、{linkStart}今すぐダウンロード{linkEnd}で開始してください。";
 	}
 
 	protected override string _GetTemplateForResponseDialogInstallingMessageWithLink()
 	{
-		return "Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãŒã¾ã‚‚ãªãå§‹ã¾ã‚Šã¾ã™ã€‚å§‹ã¾ã‚‰ãªã„å ´åˆã¯ã€{linkStart}ä»Šã™ããƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰{linkEnd}ã§é–‹å§‹ã—ã¦ãã ã•ã„ã€‚";
+		return "Robloxインストーラのダウンロードがまもなく始まります。始まらない場合は、{linkStart}今すぐダウンロード{linkEnd}で開始してください。";
 	}
 
 	/// <summary>
@@ -641,12 +643,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFifthInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ä»¥ä¸‹ã®ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、以下の「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFifthInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ä»¥ä¸‹ã®ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、以下の「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	/// <summary>
@@ -656,12 +658,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}Roblox.dmg{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸã°ã‹ã‚Šã®Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚";
+		return $"「{startBold}Roblox.dmg{endBold}」をクリックすると、ウェブブラウザでダウンロードしたばかりのRobloxインストーラが実行されます。";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFirstInstruction()
 	{
-		return "ã€Œ{startBold}Roblox.dmg{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸã°ã‹ã‚Šã®Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚";
+		return "「{startBold}Roblox.dmg{endBold}」をクリックすると、ウェブブラウザでダウンロードしたばかりのRobloxインストーラが実行されます。";
 	}
 
 	/// <summary>
@@ -671,17 +673,17 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ä¸€å›žã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return $"Robloxを正常にインストールしたら「{startBold}OK{endBold}」を一回クリックしてください。";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeFourthInstruction()
 	{
-		return "Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ä¸€å›žã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return "Robloxを正常にインストールしたら「{startBold}OK{endBold}」を一回クリックしてください。";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeSecondInstruction()
 	{
-		return "Robloxã‚¢ãƒ—ãƒªã‚¢ã‚¤ã‚³ãƒ³ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹ã€‚";
+		return "Robloxアプリアイコンをダブルクリックして、インストールプロセスを開始。";
 	}
 
 	/// <summary>
@@ -691,12 +693,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"ç”»é¢ã®æŒ‡ç¤ºã«å¾“ã£ã¦ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return $"画面の指示に従って「{startBold}開く{endBold}」をクリックします。";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacChromeThirdInstruction()
 	{
-		return "ç”»é¢ã®æŒ‡ç¤ºã«å¾“ã£ã¦ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return "画面の指示に従って「{startBold}開く{endBold}」をクリックします。";
 	}
 
 	/// <summary>
@@ -706,12 +708,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFifthInstruction(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"æ¬¡ã«ã€Œ{startBold}é¸æŠžã‚’è¨˜æ†¶ã™ã‚‹...{endBold}ã€ã®ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã‚’é¸æŠžã—ã¦ã€ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"次に「{startBold}選択を記憶する...{endBold}」のチェックボックスを選択して、「{startBold2}OK{endBold2}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFifthInstruction()
 	{
-		return "æ¬¡ã«ã€Œ{startBold}é¸æŠžã‚’è¨˜æ†¶ã™ã‚‹...{endBold}ã€ã®ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã‚’é¸æŠžã—ã¦ã€ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "次に「{startBold}選択を記憶する...{endBold}」のチェックボックスを選択して、「{startBold2}OK{endBold2}」をクリックします";
 	}
 
 	/// <summary>
@@ -721,12 +723,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFirstInstruction(string startBold, string endBold, string startBold2, string endBold2)
 	{
-		return $"ã€Œ{startBold}ã§é–‹ã{endBold}ã€ã‚’é¸æŠžã—ã¦ã€ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「{startBold}で開く{endBold}」を選択して、「{startBold2}OK{endBold2}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFirstInstruction()
 	{
-		return "ã€Œ{startBold}ã§é–‹ã{endBold}ã€ã‚’é¸æŠžã—ã¦ã€ã€Œ{startBold2}OK{endBold2}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「{startBold}で開く{endBold}」を選択して、「{startBold2}OK{endBold2}」をクリックします";
 	}
 
 	/// <summary>
@@ -736,12 +738,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxFourthInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	/// <summary>
@@ -751,12 +753,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"{startBold}Robloxã‚¢ã‚¤ã‚³ãƒ³{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹";
+		return $"{startBold}Robloxアイコン{endBold}をダブルクリックして、インストールプロセスを開始";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxSecondInstruction()
 	{
-		return "{startBold}Robloxã‚¢ã‚¤ã‚³ãƒ³{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹";
+		return "{startBold}Robloxアイコン{endBold}をダブルクリックして、インストールプロセスを開始";
 	}
 
 	/// <summary>
@@ -766,12 +768,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacFirefoxThirdInstruction(string startBold, string endBold)
 	{
-		return $"è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"警告が表示されたら、「{startBold}開く{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacFirefoxThirdInstruction()
 	{
-		return "è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "警告が表示されたら、「{startBold}開く{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -781,12 +783,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariFirstInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}Roblox.dmg{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「ダウンロード」にアクセスして、{startBold}Roblox.dmg{endBold}をダブルクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFirstInstruction()
 	{
-		return "ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}Roblox.dmg{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「ダウンロード」にアクセスして、{startBold}Roblox.dmg{endBold}をダブルクリックします";
 	}
 
 	/// <summary>
@@ -796,12 +798,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariFourthInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariFourthInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	/// <summary>
@@ -811,12 +813,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariSecondInstruction(string startBold, string endBold)
 	{
-		return $"{startBold}Robloxã‚¢ã‚¤ã‚³ãƒ³{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹";
+		return $"{startBold}Robloxアイコン{endBold}をダブルクリックして、インストールプロセスを開始";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariSecondInstruction()
 	{
-		return "{startBold}Robloxã‚¢ã‚¤ã‚³ãƒ³{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹";
+		return "{startBold}Robloxアイコン{endBold}をダブルクリックして、インストールプロセスを開始";
 	}
 
 	/// <summary>
@@ -826,12 +828,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogMacSafariThirdInstruction(string startBold, string endBold)
 	{
-		return $"è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"警告が表示されたら、「{startBold}開く{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogMacSafariThirdInstruction()
 	{
-		return "è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}é–‹ã{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "警告が表示されたら、「{startBold}開く{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -841,12 +843,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeFirstInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}RobloxPlayer.exe{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸã°ã‹ã‚Šã®Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚";
+		return $"「{startBold}RobloxPlayer.exe{endBold}」をクリックすると、ウェブブラウザでダウンロードしたばかりのRobloxインストーラが実行されます。";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFirstInstruction()
 	{
-		return "ã€Œ{startBold}RobloxPlayer.exe{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã€ã‚¦ã‚§ãƒ–ãƒ–ãƒ©ã‚¦ã‚¶ã§ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸã°ã‹ã‚Šã®Robloxã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ãŒå®Ÿè¡Œã•ã‚Œã¾ã™ã€‚";
+		return "「{startBold}RobloxPlayer.exe{endBold}」をクリックすると、ウェブブラウザでダウンロードしたばかりのRobloxインストーラが実行されます。";
 	}
 
 	/// <summary>
@@ -856,12 +858,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeFourthInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ä»¥ä¸‹ã®ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、以下の「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeFourthInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ä»¥ä¸‹ã®ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、以下の「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	/// <summary>
@@ -871,12 +873,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeSecondInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹ã™ã‚‹ã‚ˆã†ã«ãƒ‘ã‚½ã‚³ãƒ³ã«æŒ‡ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return $"インストールプロセスを開始するようにパソコンに指示されたら、「{startBold}実行{endBold}」をクリックします。";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeSecondInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ—ãƒ­ã‚»ã‚¹ã‚’é–‹å§‹ã™ã‚‹ã‚ˆã†ã«ãƒ‘ã‚½ã‚³ãƒ³ã«æŒ‡ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™ã€‚";
+		return "インストールプロセスを開始するようにパソコンに指示されたら、「{startBold}実行{endBold}」をクリックします。";
 	}
 
 	/// <summary>
@@ -886,12 +888,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcChromeThirdInstruction(string startBold, string endBold)
 	{
-		return $"Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ä¸€å›žã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return $"Robloxを正常にインストールしたら「{startBold}OK{endBold}」を一回クリックしてください。";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcChromeThirdInstruction()
 	{
-		return "Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ä¸€å›žã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚";
+		return "Robloxを正常にインストールしたら「{startBold}OK{endBold}」を一回クリックしてください。";
 	}
 
 	/// <summary>
@@ -901,12 +903,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcEdgeFirstInstruction(string startBold, string endBold)
 	{
-		return $"ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãŒçµ‚ã‚ã£ãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦Robloxã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™";
+		return $"ダウンロードが終わったら、「{startBold}実行{endBold}」をクリックしてRobloxをインストールします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeFirstInstruction()
 	{
-		return "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãŒçµ‚ã‚ã£ãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦Robloxã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™";
+		return "ダウンロードが終わったら、「{startBold}実行{endBold}」をクリックしてRobloxをインストールします";
 	}
 
 	/// <summary>
@@ -916,12 +918,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcEdgeSecondInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦Robloxã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’å®Œäº†ã—ã¾ã™ã€‚";
+		return $"「{startBold}OK{endBold}」をクリックしてRobloxのインストールを完了します。";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeSecondInstruction()
 	{
-		return "ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦Robloxã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’å®Œäº†ã—ã¾ã™ã€‚";
+		return "「{startBold}OK{endBold}」をクリックしてRobloxのインストールを完了します。";
 	}
 
 	/// <summary>
@@ -931,12 +933,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcEdgeThirdInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚²ãƒ¼ãƒ ã«å‚åŠ ã—ã¾ã™ï¼";
+		return $"「{startBold}プレイ{endBold}」ボタンをクリックして、ゲームに参加します！";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcEdgeThirdInstruction()
 	{
-		return "ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ã€ã‚²ãƒ¼ãƒ ã«å‚åŠ ã—ã¾ã™ï¼";
+		return "「{startBold}プレイ{endBold}」ボタンをクリックして、ゲームに参加します！";
 	}
 
 	/// <summary>
@@ -946,12 +948,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFifthInstruction(string startBold, string endBold)
 	{
-		return $"è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"警告が表示されたら「{startBold}OK{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFifthInstruction()
 	{
-		return "è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "警告が表示されたら「{startBold}OK{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -961,12 +963,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFirstInstruction(string startBold, string endBold)
 	{
-		return $"ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒé–‹ã„ãŸã‚‰ã€Œ{startBold}ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿å­˜ã™ã‚‹{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"ダウンロードウィンドウが開いたら「{startBold}ファイルを保存する{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFirstInstruction()
 	{
-		return "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒé–‹ã„ãŸã‚‰ã€Œ{startBold}ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿å­˜ã™ã‚‹{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "ダウンロードウィンドウが開いたら「{startBold}ファイルを保存する{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -976,12 +978,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxFourthInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxFourthInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	/// <summary>
@@ -991,12 +993,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxSecondInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}RobloxPlayer.exe{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「ダウンロード」にアクセスして、{startBold}RobloxPlayer.exe{endBold}をダブルクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxSecondInstruction()
 	{
-		return "ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}RobloxPlayer.exe{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「ダウンロード」にアクセスして、{startBold}RobloxPlayer.exe{endBold}をダブルクリックします";
 	}
 
 	/// <summary>
@@ -1006,12 +1008,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcFirefoxThirdInstruction(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「{startBold}実行{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcFirefoxThirdInstruction()
 	{
-		return "ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「{startBold}実行{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -1021,12 +1023,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIEFirstInstruction(string startBold, string endBold)
 	{
-		return $"è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"警告が表示されたら、「{startBold}実行{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIEFirstInstruction()
 	{
-		return "è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "警告が表示されたら、「{startBold}実行{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -1036,12 +1038,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionOne(string startBold, string endBold)
 	{
-		return $"è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"警告が表示されたら、「{startBold}実行{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionOne()
 	{
-		return "è­¦å‘ŠãŒè¡¨ç¤ºã•ã‚ŒãŸã‚‰ã€ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "警告が表示されたら、「{startBold}実行{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -1051,12 +1053,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionThree(string startBold, string endBold)
 	{
-		return $"ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「{startBold}実行{endBold}」をクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionThree()
 	{
-		return "ã€Œ{startBold}å®Ÿè¡Œ{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「{startBold}実行{endBold}」をクリックします";
 	}
 
 	/// <summary>
@@ -1066,12 +1068,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIeInstructionTwo(string startBold, string endBold)
 	{
-		return $"ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}RobloxPlayer.exe{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return $"「ダウンロード」にアクセスして、{startBold}RobloxPlayer.exe{endBold}をダブルクリックします";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIeInstructionTwo()
 	{
-		return "ã€Œãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã€ã«ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦ã€{startBold}RobloxPlayer.exe{endBold}ã‚’ãƒ€ãƒ–ãƒ«ã‚¯ãƒªãƒƒã‚¯ã—ã¾ã™";
+		return "「ダウンロード」にアクセスして、{startBold}RobloxPlayer.exe{endBold}をダブルクリックします";
 	}
 
 	/// <summary>
@@ -1081,12 +1083,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIESecondInstruction(string startBold, string endBold)
 	{
-		return $"Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„";
+		return $"Robloxを正常にインストールしたら「{startBold}OK{endBold}」をクリックしてください";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIESecondInstruction()
 	{
-		return "Robloxã‚’æ­£å¸¸ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã‚‰ã€Œ{startBold}OK{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„";
+		return "Robloxを正常にインストールしたら「{startBold}OK{endBold}」をクリックしてください";
 	}
 
 	/// <summary>
@@ -1096,22 +1098,22 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseDialogPcIEThirdInstruction(string startBold, string endBold)
 	{
-		return $"ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return $"インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogPcIEThirdInstruction()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å¾Œã€ã€Œ{startBold}ãƒ—ãƒ¬ã‚¤{endBold}ã€ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦å‚åŠ ã—ã¾ã—ã‚‡ã†ï¼";
+		return "インストール後、「{startBold}プレイ{endBold}」をクリックして参加しましょう！";
 	}
 
 	protected override string _GetTemplateForResponseDialogThanksForPlayingRoblox()
 	{
-		return "Robloxã‚’ãƒ—ãƒ¬ã‚¤ã—ã¦ã„ãŸã ãã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™";
+		return "Robloxをプレイしていただきありがとうございます";
 	}
 
 	protected override string _GetTemplateForResponseGameTemporarilyUnavailable()
 	{
-		return "ã“ã®ã‚²ãƒ¼ãƒ ã¸ã®ã‚¢ã‚¯ã‚»ã‚¹æ¨©ã‚’èªè¨¼ã§ãã¾ã›ã‚“ã€‚å¾Œã§å†è©¦è¡Œã—ã¦ãã ã•ã„ã€‚";
+		return "このゲームへのアクセス権を認証できません。後で再試行してください。";
 	}
 
 	/// <summary>
@@ -1121,12 +1123,12 @@ internal class VisitGameResources_ja_jp : VisitGameResources_en_us, IVisitGameRe
 	/// </summary>
 	public override string ResponseRememberMyChoiceAppLaunch(string startBold, string endBold, string appLaunchLink)
 	{
-		return $"ã€Œ{startBold}é¸æŠžçŠ¶æ³ã‚’è¨˜æ†¶ã™ã‚‹{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®{appLaunchLink}ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return $"「{startBold}選択状況を記憶する{endBold}」にチェックを付けて、上のダイアログの{appLaunchLink}をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 
 	protected override string _GetTemplateForResponseRememberMyChoiceAppLaunch()
 	{
-		return "ã€Œ{startBold}é¸æŠžçŠ¶æ³ã‚’è¨˜æ†¶ã™ã‚‹{endBold}ã€ã«ãƒã‚§ãƒƒã‚¯ã‚’ä»˜ã‘ã¦ã€ä¸Šã®ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®{appLaunchLink}ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚Œã°ã€ä»Šå¾Œã¯ã™ãã«ã‚²ãƒ¼ãƒ ã«å‚åŠ ã§ãã¾ã™ï¼";
+		return "「{startBold}選択状況を記憶する{endBold}」にチェックを付けて、上のダイアログの{appLaunchLink}をクリックすれば、今後はすぐにゲームに参加できます！";
 	}
 }
 

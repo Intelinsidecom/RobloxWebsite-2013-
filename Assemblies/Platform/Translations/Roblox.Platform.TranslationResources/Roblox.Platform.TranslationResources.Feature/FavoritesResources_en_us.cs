@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class FavoritesResources_en_us : TranslationResourcesBase, IFavoritesResources, ITranslationResources
 
 {
@@ -245,3 +245,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides TranslationLanguageSwitchResources_en_us to provide locale specific translations where possible,
@@ -18,7 +20,7 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 	/// The body content for the modal which is used to change default language
 	/// English String: "What language do you want to set as default language?"
 	/// </summary>
-	public override string DescriptionChangeDefaultLanguage => "Â¿QuÃ© idioma quieres establecer como predeterminado?";
+	public override string DescriptionChangeDefaultLanguage => "¿Qué idioma quieres establecer como predeterminado?";
 
 	/// <summary>
 	/// Key: "Description.Delete"
@@ -32,63 +34,63 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 	/// The tooltip description to explain what the language switch is
 	/// English String: "You can specify default and localized language, so that user can see game title and description in their language."
 	/// </summary>
-	public override string DescriptionLanguageSwitch => "Puedes especificar el idioma predeterminado y localizado, para que el usuario vea el tÃ­tulo y la descripciÃ³n del juego en su idioma.";
+	public override string DescriptionLanguageSwitch => "Puedes especificar el idioma predeterminado y localizado, para que el usuario vea el título y la descripción del juego en su idioma.";
 
 	/// <summary>
 	/// Key: "Description.MissingTranslation"
 	/// The eror text when user has entered invalid information for some languages
 	/// English String: "Please add missing translations(s)"
 	/// </summary>
-	public override string DescriptionMissingTranslation => "AÃ±adir las traducciones faltantes";
+	public override string DescriptionMissingTranslation => "Añadir las traducciones faltantes";
 
 	/// <summary>
 	/// Key: "Description.RemoveLanguage"
 	/// The body content for the modal which is used to delete a language
 	/// English String: "All localized information will be deleted."
 	/// </summary>
-	public override string DescriptionRemoveLanguage => "Se eliminarÃ¡ toda la informaciÃ³n localizada.";
+	public override string DescriptionRemoveLanguage => "Se eliminará toda la información localizada.";
 
 	/// <summary>
 	/// Key: "Description.Save"
 	/// The content for save confirmation modal
 	/// English String: "You have unsaved changes. Are you sure you want to leave this page?"
 	/// </summary>
-	public override string DescriptionSave => "Hay cambios sin guardar. Â¿Seguro que quieres salir de esta pÃ¡gina?";
+	public override string DescriptionSave => "Hay cambios sin guardar. ¿Seguro que quieres salir de esta página?";
 
 	/// <summary>
 	/// Key: "Description.UseDefault"
 	/// The hint text in the body content of the model which is used to change default language
 	/// English String: "* If localized app information isn't available in an App Store territory, the information from your default language will be used instead."
 	/// </summary>
-	public override string DescriptionUseDefault => "* Si la informaciÃ³n localizada de la aplicaciÃ³n no estÃ¡ disponible en un territorio de App Store, se utilizarÃ¡ la informaciÃ³n de tu idioma predeterminado.";
+	public override string DescriptionUseDefault => "* Si la información localizada de la aplicación no está disponible en un territorio de App Store, se utilizará la información de tu idioma predeterminado.";
 
 	/// <summary>
 	/// Key: "Heading.AddLanguage"
 	/// The title for the modal which is used to add new languages
 	/// English String: "Add translations in other language(s)"
 	/// </summary>
-	public override string HeadingAddLanguage => "AÃ±adir traducciÃ³n en otros idiomas";
+	public override string HeadingAddLanguage => "Añadir traducción en otros idiomas";
 
 	/// <summary>
 	/// Key: "Heading.ChangeDefault"
 	/// The title for the modal which is used to change default language
 	/// English String: "Change the default language?"
 	/// </summary>
-	public override string HeadingChangeDefault => "Â¿Cambiar el idioma predeterminado?";
+	public override string HeadingChangeDefault => "¿Cambiar el idioma predeterminado?";
 
 	/// <summary>
 	/// Key: "Label.Add"
 	/// The label for the button in the modal which is used to add new languages
 	/// English String: "Add"
 	/// </summary>
-	public override string LabelAdd => "AÃ±adir";
+	public override string LabelAdd => "Añadir";
 
 	/// <summary>
 	/// Key: "Label.AddAnotherLanguage"
 	/// The label for the dropdown menu option that is used open up a modal for user to add new languages
 	/// English String: "Add another language"
 	/// </summary>
-	public override string LabelAddAnotherLanguage => "AÃ±adir otro idioma";
+	public override string LabelAddAnotherLanguage => "Añadir otro idioma";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
@@ -109,7 +111,7 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 	/// The label for the link which is used to open up a modal for user to add new languages
 	/// English String: "Change / add in other language(s)"
 	/// </summary>
-	public override string LabelChangeAddLanguages => "Cambiar / aÃ±adir otros idiomas";
+	public override string LabelChangeAddLanguages => "Cambiar / añadir otros idiomas";
 
 	/// <summary>
 	/// Key: "Label.ChooseLanguage"
@@ -179,14 +181,14 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 	/// The label for current language selection dropdown
 	/// English String: "View Game Info for language"
 	/// </summary>
-	public override string LabelViewGameInfoForLanguage => "Ver la informaciÃ³n del juego para compatibilidad de idiomas";
+	public override string LabelViewGameInfoForLanguage => "Ver la información del juego para compatibilidad de idiomas";
 
 	/// <summary>
 	/// Key: "Response.GeneralError"
 	/// The feedback for user when some general error, whose details should not concern the user, has occurred
 	/// English String: "Error: An error has occurred. Please try again later."
 	/// </summary>
-	public override string ResponseGeneralError => "Error: se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+	public override string ResponseGeneralError => "Error: se ha producido un error. Inténtalo de nuevo más tarde.";
 
 	public TranslationLanguageSwitchResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -200,7 +202,7 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionChangeDefaultLanguage()
 	{
-		return "Â¿QuÃ© idioma quieres establecer como predeterminado?";
+		return "¿Qué idioma quieres establecer como predeterminado?";
 	}
 
 	protected override string _GetTemplateForDescriptionDelete()
@@ -210,37 +212,37 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 
 	protected override string _GetTemplateForDescriptionLanguageSwitch()
 	{
-		return "Puedes especificar el idioma predeterminado y localizado, para que el usuario vea el tÃ­tulo y la descripciÃ³n del juego en su idioma.";
+		return "Puedes especificar el idioma predeterminado y localizado, para que el usuario vea el título y la descripción del juego en su idioma.";
 	}
 
 	protected override string _GetTemplateForDescriptionMissingTranslation()
 	{
-		return "AÃ±adir las traducciones faltantes";
+		return "Añadir las traducciones faltantes";
 	}
 
 	protected override string _GetTemplateForDescriptionRemoveLanguage()
 	{
-		return "Se eliminarÃ¡ toda la informaciÃ³n localizada.";
+		return "Se eliminará toda la información localizada.";
 	}
 
 	protected override string _GetTemplateForDescriptionSave()
 	{
-		return "Hay cambios sin guardar. Â¿Seguro que quieres salir de esta pÃ¡gina?";
+		return "Hay cambios sin guardar. ¿Seguro que quieres salir de esta página?";
 	}
 
 	protected override string _GetTemplateForDescriptionUseDefault()
 	{
-		return "* Si la informaciÃ³n localizada de la aplicaciÃ³n no estÃ¡ disponible en un territorio de App Store, se utilizarÃ¡ la informaciÃ³n de tu idioma predeterminado.";
+		return "* Si la información localizada de la aplicación no está disponible en un territorio de App Store, se utilizará la información de tu idioma predeterminado.";
 	}
 
 	protected override string _GetTemplateForHeadingAddLanguage()
 	{
-		return "AÃ±adir traducciÃ³n en otros idiomas";
+		return "Añadir traducción en otros idiomas";
 	}
 
 	protected override string _GetTemplateForHeadingChangeDefault()
 	{
-		return "Â¿Cambiar el idioma predeterminado?";
+		return "¿Cambiar el idioma predeterminado?";
 	}
 
 	/// <summary>
@@ -250,22 +252,22 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 	/// </summary>
 	public override string HeadingRemoveLanguage(string languageName)
 	{
-		return $"Â¿Eliminar la localizaciÃ³n en {languageName}?";
+		return $"¿Eliminar la localización en {languageName}?";
 	}
 
 	protected override string _GetTemplateForHeadingRemoveLanguage()
 	{
-		return "Â¿Eliminar la localizaciÃ³n en {languageName}?";
+		return "¿Eliminar la localización en {languageName}?";
 	}
 
 	protected override string _GetTemplateForLabelAdd()
 	{
-		return "AÃ±adir";
+		return "Añadir";
 	}
 
 	protected override string _GetTemplateForLabelAddAnotherLanguage()
 	{
-		return "AÃ±adir otro idioma";
+		return "Añadir otro idioma";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -280,7 +282,7 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelChangeAddLanguages()
 	{
-		return "Cambiar / aÃ±adir otros idiomas";
+		return "Cambiar / añadir otros idiomas";
 	}
 
 	protected override string _GetTemplateForLabelChooseLanguage()
@@ -345,12 +347,12 @@ internal class TranslationLanguageSwitchResources_es_es : TranslationLanguageSwi
 
 	protected override string _GetTemplateForLabelViewGameInfoForLanguage()
 	{
-		return "Ver la informaciÃ³n del juego para compatibilidad de idiomas";
+		return "Ver la información del juego para compatibilidad de idiomas";
 	}
 
 	protected override string _GetTemplateForResponseGeneralError()
 	{
-		return "Error: se ha producido un error. IntÃ©ntalo de nuevo mÃ¡s tarde.";
+		return "Error: se ha producido un error. Inténtalo de nuevo más tarde.";
 	}
 }
 

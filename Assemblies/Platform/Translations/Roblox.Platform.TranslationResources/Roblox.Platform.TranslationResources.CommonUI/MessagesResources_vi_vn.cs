@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides MessagesResources_en_us to provide locale specific translations where possible,
@@ -11,75 +13,75 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// button title
 	/// English String: "Go to the Previous Page"
 	/// </summary>
-	public override string ActionPreviousPage => "Trá»Ÿ láº¡i trang trÆ°á»›c";
+	public override string ActionPreviousPage => "Trở lại trang trước";
 
 	/// <summary>
 	/// Key: "Action.ReturnHome"
 	/// button title
 	/// English String: "Return Home"
 	/// </summary>
-	public override string ActionReturnHome => "Trá»Ÿ láº¡i Trang chá»§";
+	public override string ActionReturnHome => "Trở lại Trang chủ";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "Lá»—i";
+	public override string LabelError => "Lỗi";
 
 	/// <summary>
 	/// Key: "Label.ErrorImage"
 	/// alternate text shown for error image
 	/// English String: "Error Image"
 	/// </summary>
-	public override string LabelErrorImage => "áº¢nh lá»—i";
+	public override string LabelErrorImage => "Ảnh lỗi";
 
 	/// <summary>
 	/// Key: "Label.TooManyCharacters"
 	/// English String: "Too many characters!"
 	/// </summary>
-	public override string LabelTooManyCharacters => "QuÃ¡ nhiá»u kÃ½ tá»±!";
+	public override string LabelTooManyCharacters => "Quá nhiều ký tự!";
 
 	/// <summary>
 	/// Key: "Message.AlwaysAllowed"
 	/// English String: "Always allowed"
 	/// </summary>
-	public override string MessageAlwaysAllowed => "LuÃ´n cho phÃ©p";
+	public override string MessageAlwaysAllowed => "Luôn cho phép";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookies"
 	/// English String: "Analytics Cookies"
 	/// </summary>
-	public override string MessageAnalyiticsCookies => "Cookie PhÃ¢n tÃ­ch";
+	public override string MessageAnalyiticsCookies => "Cookie Phân tích";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesDescription"
 	/// English String: "These cookies used for improving site performance or understanding site usage."
 	/// </summary>
-	public override string MessageAnalyiticsCookiesDescription => "ÄÃ¢y lÃ  nhá»¯ng cookie Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ cáº£i tiáº¿n hiá»‡u nÄƒng cá»§a trang web hoáº·c Ä‘á»ƒ hiá»ƒu cÃ¡ch ngÆ°á»i dÃ¹ng sá»­ dá»¥ng trang web.";
+	public override string MessageAnalyiticsCookiesDescription => "Đây là những cookie được sử dụng để cải tiến hiệu năng của trang web hoặc để hiểu cách người dùng sử dụng trang web.";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem1"
 	/// English String: "Google Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem1 => "CÃ´ng cá»¥ Analytics cá»§a Google";
+	public override string MessageAnalyiticsCookiesItem1 => "Công cụ Analytics của Google";
 
 	/// <summary>
 	/// Key: "Message.AnalyiticsCookiesItem2"
 	/// English String: "Google Universal Analytics"
 	/// </summary>
-	public override string MessageAnalyiticsCookiesItem2 => "CÃ´ng cá»¥ Universal Analytics cá»§a Google";
+	public override string MessageAnalyiticsCookiesItem2 => "Công cụ Universal Analytics của Google";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookies"
 	/// English String: "Essential Cookies"
 	/// </summary>
-	public override string MessageEssentialCookies => "Cookie cáº§n thiáº¿t";
+	public override string MessageEssentialCookies => "Cookie cần thiết";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesDescription"
 	/// English String: "These cookies are required to provide the functionality on the site, such as for user authentication, securing the system or saving cookie preferences."
 	/// </summary>
-	public override string MessageEssentialCookiesDescription => "ÄÃ¢y lÃ  nhá»¯ng cookie cáº§n thiáº¿t Ä‘á»ƒ cung cáº¥p chá»©c nÄƒng trÃªn trang web nhÆ° xÃ¡c thá»±c ngÆ°á»i dÃ¹ng, báº£o Ä‘áº£m an ninh cho há»‡ thá»‘ng hoáº·c lÆ°u cÃ¡c tÃ¹y chá»n cookie.";
+	public override string MessageEssentialCookiesDescription => "Đây là những cookie cần thiết để cung cấp chức năng trên trang web như xác thực người dùng, bảo đảm an ninh cho hệ thống hoặc lưu các tùy chọn cookie.";
 
 	/// <summary>
 	/// Key: "Message.EssentialCookiesItem1"
@@ -97,7 +99,7 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// Key: "Message.ManageCookies"
 	/// English String: "Manage Cookies"
 	/// </summary>
-	public override string MessageManageCookies => "Quáº£n lÃ½ cookie";
+	public override string MessageManageCookies => "Quản lý cookie";
 
 	/// <summary>
 	/// Key: "MessageEssentialCookiesItem3"
@@ -110,83 +112,83 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// 403 error message
 	/// English String: "Access Denied"
 	/// </summary>
-	public override string ResponseAccessDenied => "Truy cáº­p bá»‹ tá»« chá»‘i";
+	public override string ResponseAccessDenied => "Truy cập bị từ chối";
 
 	/// <summary>
 	/// Key: "Response.AccessDeniedDescription"
 	/// 403 error message detail
 	/// English String: "You don't have permission to view this page"
 	/// </summary>
-	public override string ResponseAccessDeniedDescription => "Báº¡n khÃ´ng cÃ³ quyá»n xem trang nÃ y";
+	public override string ResponseAccessDeniedDescription => "Bạn không có quyền xem trang này";
 
 	/// <summary>
 	/// Key: "Response.BadRequest"
 	/// 400 error message title
 	/// English String: "Bad Request"
 	/// </summary>
-	public override string ResponseBadRequest => "YÃªu cáº§u khÃ´ng há»£p lá»‡";
+	public override string ResponseBadRequest => "Yêu cầu không hợp lệ";
 
 	/// <summary>
 	/// Key: "Response.BadRequestDescription"
 	/// error message detail for 400 error
 	/// English String: "There was a problem with your request"
 	/// </summary>
-	public override string ResponseBadRequestDescription => "ÄÃ£ xáº£y ra sá»± cá»‘ vá»›i yÃªu cáº§u cá»§a báº¡n";
+	public override string ResponseBadRequestDescription => "Đã xảy ra sự cố với yêu cầu của bạn";
 
 	/// <summary>
 	/// Key: "Response.InternalServerError"
 	/// 500 error message title
 	/// English String: "Internal Server Error"
 	/// </summary>
-	public override string ResponseInternalServerError => "Lá»—i bÃªn trong mÃ¡y chá»§";
+	public override string ResponseInternalServerError => "Lỗi bên trong máy chủ";
 
 	/// <summary>
 	/// Key: "Response.InternalServerErrorDescription"
 	/// 500 error message description
 	/// English String: "An unexpected error occurred"
 	/// </summary>
-	public override string ResponseInternalServerErrorDescription => "ÄÃ£ xáº£y ra lá»—i Ä‘á»™t xuáº¥t";
+	public override string ResponseInternalServerErrorDescription => "Đã xảy ra lỗi đột xuất";
 
 	/// <summary>
 	/// Key: "Response.PageNotFound"
 	/// 404 error message title
 	/// English String: "Page Not found"
 	/// </summary>
-	public override string ResponsePageNotFound => "KhÃ´ng tÃ¬m tháº¥y trang";
+	public override string ResponsePageNotFound => "Không tìm thấy trang";
 
 	/// <summary>
 	/// Key: "Response.PageNotFoundDescrition"
 	/// 404 error message description
 	/// English String: "Page cannot be found or no longer exists"
 	/// </summary>
-	public override string ResponsePageNotFoundDescrition => "KhÃ´ng tÃ¬m tháº¥y trang hoáº·c trang khÃ´ng cÃ²n tá»“n táº¡i";
+	public override string ResponsePageNotFoundDescrition => "Không tìm thấy trang hoặc trang không còn tồn tại";
 
 	/// <summary>
 	/// Key: "Response.RequestError"
 	/// error message for incorrect request
 	/// English String: "Error with your request"
 	/// </summary>
-	public override string ResponseRequestError => "ÄÃ£ xáº£y ra lá»—i vá»›i yÃªu cáº§u cá»§a báº¡n";
+	public override string ResponseRequestError => "Đã xảy ra lỗi với yêu cầu của bạn";
 
 	/// <summary>
 	/// Key: "Response.SomethingWentWrong"
 	/// default error message
 	/// English String: "Something went wrong"
 	/// </summary>
-	public override string ResponseSomethingWentWrong => "ÄÃ£ xáº£y ra sá»± cá»‘";
+	public override string ResponseSomethingWentWrong => "Đã xảy ra sự cố";
 
 	/// <summary>
 	/// Key: "Response.TooManyAttemptsText"
 	/// English String: "Too Many Attempts"
 	/// </summary>
-	public override string ResponseTooManyAttemptsText => "QuÃ¡ nhiá»u láº§n thá»­";
+	public override string ResponseTooManyAttemptsText => "Quá nhiều lần thử";
 
 	/// <summary>
 	/// Key: "Response.UnexpectedError"
 	/// default error description
 	/// English String: "An unexpected error occurred. Please try again later."
 	/// </summary>
-	public override string ResponseUnexpectedError => "ÄÃ£ xáº£y ra lá»—i Ä‘á»™t xuáº¥t. Vui lÃ²ng thá»­ láº¡i sau.";
+	public override string ResponseUnexpectedError => "Đã xảy ra lỗi đột xuất. Vui lòng thử lại sau.";
 
 	public MessagesResources_vi_vn(TranslationResourceState state)
 		: base(state)
@@ -195,12 +197,12 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForActionPreviousPage()
 	{
-		return "Trá»Ÿ láº¡i trang trÆ°á»›c";
+		return "Trở lại trang trước";
 	}
 
 	protected override string _GetTemplateForActionReturnHome()
 	{
-		return "Trá»Ÿ láº¡i Trang chá»§";
+		return "Trở lại Trang chủ";
 	}
 
 	/// <summary>
@@ -210,12 +212,12 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string CookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ cÃ¡ nhÃ¢n hÃ³a ná»™i dung, cung cáº¥p cÃ¡c tÃ­nh nÄƒng máº¡ng xÃ£ há»™i vÃ  phÃ¢n tÃ­ch lÆ°u lÆ°á»£ng truy cáº­p trÃªn trang web cá»§a chÃºng tÃ´i. Äá»ƒ tÃ¬m hiá»ƒu vá» cÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng cookie vÃ  cÃ¡ch báº¡n cÃ³ thá»ƒ {startLink}quáº£n lÃ½ tÃ¹y chá»n cookie{endLink}, vui lÃ²ng tham kháº£o {startLink2}ChÃ­nh sÃ¡ch Quyá»n riÃªng tÆ° vÃ  Cookie{endLink2} cá»§a chÃºng tÃ´i.";
+		return $"Roblox sử dụng cookie để cá nhân hóa nội dung, cung cấp các tính năng mạng xã hội và phân tích lưu lượng truy cập trên trang web của chúng tôi. Để tìm hiểu về cách chúng tôi sử dụng cookie và cách bạn có thể {startLink}quản lý tùy chọn cookie{endLink}, vui lòng tham khảo {startLink2}Chính sách Quyền riêng tư và Cookie{endLink2} của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForCookieLawNoticev2()
 	{
-		return "Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ cÃ¡ nhÃ¢n hÃ³a ná»™i dung, cung cáº¥p cÃ¡c tÃ­nh nÄƒng máº¡ng xÃ£ há»™i vÃ  phÃ¢n tÃ­ch lÆ°u lÆ°á»£ng truy cáº­p trÃªn trang web cá»§a chÃºng tÃ´i. Äá»ƒ tÃ¬m hiá»ƒu vá» cÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng cookie vÃ  cÃ¡ch báº¡n cÃ³ thá»ƒ {startLink}quáº£n lÃ½ tÃ¹y chá»n cookie{endLink}, vui lÃ²ng tham kháº£o {startLink2}ChÃ­nh sÃ¡ch Quyá»n riÃªng tÆ° vÃ  Cookie{endLink2} cá»§a chÃºng tÃ´i.";
+		return "Roblox sử dụng cookie để cá nhân hóa nội dung, cung cấp các tính năng mạng xã hội và phân tích lưu lượng truy cập trên trang web của chúng tôi. Để tìm hiểu về cách chúng tôi sử dụng cookie và cách bạn có thể {startLink}quản lý tùy chọn cookie{endLink}, vui lòng tham khảo {startLink2}Chính sách Quyền riêng tư và Cookie{endLink2} của chúng tôi.";
 	}
 
 	/// <summary>
@@ -225,52 +227,52 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string DescriptionContactCustomerService(string emailLink)
 	{
-		return $"Náº¿u báº¡n tiáº¿p tá»¥c nháº­n Ä‘Æ°á»£c trang nÃ y, vui lÃ²ng liÃªn há»‡ vá»›i bá»™ pháº­n chÄƒm sÃ³c khÃ¡ch hÃ ng theo {emailLink}";
+		return $"Nếu bạn tiếp tục nhận được trang này, vui lòng liên hệ với bộ phận chăm sóc khách hàng theo {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionContactCustomerService()
 	{
-		return "Náº¿u báº¡n tiáº¿p tá»¥c nháº­n Ä‘Æ°á»£c trang nÃ y, vui lÃ²ng liÃªn há»‡ vá»›i bá»™ pháº­n chÄƒm sÃ³c khÃ¡ch hÃ ng theo {emailLink}";
+		return "Nếu bạn tiếp tục nhận được trang này, vui lòng liên hệ với bộ phận chăm sóc khách hàng theo {emailLink}";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "Lá»—i";
+		return "Lỗi";
 	}
 
 	protected override string _GetTemplateForLabelErrorImage()
 	{
-		return "áº¢nh lá»—i";
+		return "Ảnh lỗi";
 	}
 
 	protected override string _GetTemplateForLabelTooManyCharacters()
 	{
-		return "QuÃ¡ nhiá»u kÃ½ tá»±!";
+		return "Quá nhiều ký tự!";
 	}
 
 	protected override string _GetTemplateForMessageAlwaysAllowed()
 	{
-		return "LuÃ´n cho phÃ©p";
+		return "Luôn cho phép";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookies()
 	{
-		return "Cookie PhÃ¢n tÃ­ch";
+		return "Cookie Phân tích";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesDescription()
 	{
-		return "ÄÃ¢y lÃ  nhá»¯ng cookie Ä‘Æ°á»£c sá»­ dá»¥ng Ä‘á»ƒ cáº£i tiáº¿n hiá»‡u nÄƒng cá»§a trang web hoáº·c Ä‘á»ƒ hiá»ƒu cÃ¡ch ngÆ°á»i dÃ¹ng sá»­ dá»¥ng trang web.";
+		return "Đây là những cookie được sử dụng để cải tiến hiệu năng của trang web hoặc để hiểu cách người dùng sử dụng trang web.";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem1()
 	{
-		return "CÃ´ng cá»¥ Analytics cá»§a Google";
+		return "Công cụ Analytics của Google";
 	}
 
 	protected override string _GetTemplateForMessageAnalyiticsCookiesItem2()
 	{
-		return "CÃ´ng cá»¥ Universal Analytics cá»§a Google";
+		return "Công cụ Universal Analytics của Google";
 	}
 
 	/// <summary>
@@ -280,12 +282,12 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNotice(string startLink, string endLink)
 	{
-		return $"Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ mang Ä‘áº¿n cho báº¡n tráº£i nghiá»‡m tá»‘t hÆ¡n. Äá»ƒ biáº¿t thÃªm thÃ´ng tin, bao gá»“m thÃ´ng tin vá» cÃ¡ch thu há»“i Ä‘á»“ng Ã½ vÃ  cÃ¡ch quáº£n lÃ½ viá»‡c sá»­ dá»¥ng cookie trÃªn Roblox, vui lÃ²ng tham kháº£o {startLink}ChÃ­nh sÃ¡ch riÃªng tÆ° vÃ  ChÃ­nh sÃ¡ch cookie{endLink} cá»§a chÃºng tÃ´i.";
+		return $"Roblox sử dụng cookie để mang đến cho bạn trải nghiệm tốt hơn. Để biết thêm thông tin, bao gồm thông tin về cách thu hồi đồng ý và cách quản lý việc sử dụng cookie trên Roblox, vui lòng tham khảo {startLink}Chính sách riêng tư và Chính sách cookie{endLink} của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNotice()
 	{
-		return "Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ mang Ä‘áº¿n cho báº¡n tráº£i nghiá»‡m tá»‘t hÆ¡n. Äá»ƒ biáº¿t thÃªm thÃ´ng tin, bao gá»“m thÃ´ng tin vá» cÃ¡ch thu há»“i Ä‘á»“ng Ã½ vÃ  cÃ¡ch quáº£n lÃ½ viá»‡c sá»­ dá»¥ng cookie trÃªn Roblox, vui lÃ²ng tham kháº£o {startLink}ChÃ­nh sÃ¡ch riÃªng tÆ° vÃ  ChÃ­nh sÃ¡ch cookie{endLink} cá»§a chÃºng tÃ´i.";
+		return "Roblox sử dụng cookie để mang đến cho bạn trải nghiệm tốt hơn. Để biết thêm thông tin, bao gồm thông tin về cách thu hồi đồng ý và cách quản lý việc sử dụng cookie trên Roblox, vui lòng tham khảo {startLink}Chính sách riêng tư và Chính sách cookie{endLink} của chúng tôi.";
 	}
 
 	/// <summary>
@@ -294,12 +296,12 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieLawNoticev2(string startLink, string endLink, string startLink2, string endLink2)
 	{
-		return $"Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ cÃ¡ nhÃ¢n hÃ³a ná»™i dung, cung cáº¥p cÃ¡c tÃ­nh nÄƒng máº¡ng xÃ£ há»™i vÃ  phÃ¢n tÃ­ch lÆ°u lÆ°á»£ng truy cáº­p trÃªn trang web cá»§a chÃºng tÃ´i. Äá»ƒ tÃ¬m hiá»ƒu vá» cÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng cookie vÃ  cÃ¡ch báº¡n cÃ³ thá»ƒ {startLink}quáº£n lÃ½ tÃ¹y chá»n cookie{endLink}, vui lÃ²ng tham kháº£o {startLink2}ChÃ­nh sÃ¡ch Quyá»n riÃªng tÆ° vÃ  Cookie{endLink2} cá»§a chÃºng tÃ´i.";
+		return $"Roblox sử dụng cookie để cá nhân hóa nội dung, cung cấp các tính năng mạng xã hội và phân tích lưu lượng truy cập trên trang web của chúng tôi. Để tìm hiểu về cách chúng tôi sử dụng cookie và cách bạn có thể {startLink}quản lý tùy chọn cookie{endLink}, vui lòng tham khảo {startLink2}Chính sách Quyền riêng tư và Cookie{endLink2} của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForMessageCookieLawNoticev2()
 	{
-		return "Roblox sá»­ dá»¥ng cookie Ä‘á»ƒ cÃ¡ nhÃ¢n hÃ³a ná»™i dung, cung cáº¥p cÃ¡c tÃ­nh nÄƒng máº¡ng xÃ£ há»™i vÃ  phÃ¢n tÃ­ch lÆ°u lÆ°á»£ng truy cáº­p trÃªn trang web cá»§a chÃºng tÃ´i. Äá»ƒ tÃ¬m hiá»ƒu vá» cÃ¡ch chÃºng tÃ´i sá»­ dá»¥ng cookie vÃ  cÃ¡ch báº¡n cÃ³ thá»ƒ {startLink}quáº£n lÃ½ tÃ¹y chá»n cookie{endLink}, vui lÃ²ng tham kháº£o {startLink2}ChÃ­nh sÃ¡ch Quyá»n riÃªng tÆ° vÃ  Cookie{endLink2} cá»§a chÃºng tÃ´i.";
+		return "Roblox sử dụng cookie để cá nhân hóa nội dung, cung cấp các tính năng mạng xã hội và phân tích lưu lượng truy cập trên trang web của chúng tôi. Để tìm hiểu về cách chúng tôi sử dụng cookie và cách bạn có thể {startLink}quản lý tùy chọn cookie{endLink}, vui lòng tham khảo {startLink2}Chính sách Quyền riêng tư và Cookie{endLink2} của chúng tôi.";
 	}
 
 	/// <summary>
@@ -308,22 +310,22 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 	/// </summary>
 	public override string MessageCookieModalText(string startLink, string endLink)
 	{
-		return $"Vui lÃ²ng chá»n cho phÃ©p trang nÃ y sá»­ dá»¥ng cookie hay khÃ´ng theo mÃ´ táº£ bÃªn dÆ°á»›i. Báº¡n cÃ³ thá»ƒ tÃ¬m hiá»ƒu thÃªm vá» cÃ¡ch thá»©c trang nÃ y sá»­ dá»¥ng cookie vÃ  cÃ¡c cÃ´ng nghá»‡ liÃªn quan báº±ng cÃ¡ch Ä‘á»c {startLink}chÃ­nh sÃ¡ch quyá»n riÃªng tÆ°{endLink} cá»§a chÃºng tÃ´i.";
+		return $"Vui lòng chọn cho phép trang này sử dụng cookie hay không theo mô tả bên dưới. Bạn có thể tìm hiểu thêm về cách thức trang này sử dụng cookie và các công nghệ liên quan bằng cách đọc {startLink}chính sách quyền riêng tư{endLink} của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForMessageCookieModalText()
 	{
-		return "Vui lÃ²ng chá»n cho phÃ©p trang nÃ y sá»­ dá»¥ng cookie hay khÃ´ng theo mÃ´ táº£ bÃªn dÆ°á»›i. Báº¡n cÃ³ thá»ƒ tÃ¬m hiá»ƒu thÃªm vá» cÃ¡ch thá»©c trang nÃ y sá»­ dá»¥ng cookie vÃ  cÃ¡c cÃ´ng nghá»‡ liÃªn quan báº±ng cÃ¡ch Ä‘á»c {startLink}chÃ­nh sÃ¡ch quyá»n riÃªng tÆ°{endLink} cá»§a chÃºng tÃ´i.";
+		return "Vui lòng chọn cho phép trang này sử dụng cookie hay không theo mô tả bên dưới. Bạn có thể tìm hiểu thêm về cách thức trang này sử dụng cookie và các công nghệ liên quan bằng cách đọc {startLink}chính sách quyền riêng tư{endLink} của chúng tôi.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookies()
 	{
-		return "Cookie cáº§n thiáº¿t";
+		return "Cookie cần thiết";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesDescription()
 	{
-		return "ÄÃ¢y lÃ  nhá»¯ng cookie cáº§n thiáº¿t Ä‘á»ƒ cung cáº¥p chá»©c nÄƒng trÃªn trang web nhÆ° xÃ¡c thá»±c ngÆ°á»i dÃ¹ng, báº£o Ä‘áº£m an ninh cho há»‡ thá»‘ng hoáº·c lÆ°u cÃ¡c tÃ¹y chá»n cookie.";
+		return "Đây là những cookie cần thiết để cung cấp chức năng trên trang web như xác thực người dùng, bảo đảm an ninh cho hệ thống hoặc lưu các tùy chọn cookie.";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem1()
@@ -338,7 +340,7 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForMessageManageCookies()
 	{
-		return "Quáº£n lÃ½ cookie";
+		return "Quản lý cookie";
 	}
 
 	protected override string _GetTemplateForMessageEssentialCookiesItem3()
@@ -348,62 +350,62 @@ internal class MessagesResources_vi_vn : MessagesResources_en_us, IMessagesResou
 
 	protected override string _GetTemplateForResponseAccessDenied()
 	{
-		return "Truy cáº­p bá»‹ tá»« chá»‘i";
+		return "Truy cập bị từ chối";
 	}
 
 	protected override string _GetTemplateForResponseAccessDeniedDescription()
 	{
-		return "Báº¡n khÃ´ng cÃ³ quyá»n xem trang nÃ y";
+		return "Bạn không có quyền xem trang này";
 	}
 
 	protected override string _GetTemplateForResponseBadRequest()
 	{
-		return "YÃªu cáº§u khÃ´ng há»£p lá»‡";
+		return "Yêu cầu không hợp lệ";
 	}
 
 	protected override string _GetTemplateForResponseBadRequestDescription()
 	{
-		return "ÄÃ£ xáº£y ra sá»± cá»‘ vá»›i yÃªu cáº§u cá»§a báº¡n";
+		return "Đã xảy ra sự cố với yêu cầu của bạn";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerError()
 	{
-		return "Lá»—i bÃªn trong mÃ¡y chá»§";
+		return "Lỗi bên trong máy chủ";
 	}
 
 	protected override string _GetTemplateForResponseInternalServerErrorDescription()
 	{
-		return "ÄÃ£ xáº£y ra lá»—i Ä‘á»™t xuáº¥t";
+		return "Đã xảy ra lỗi đột xuất";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFound()
 	{
-		return "KhÃ´ng tÃ¬m tháº¥y trang";
+		return "Không tìm thấy trang";
 	}
 
 	protected override string _GetTemplateForResponsePageNotFoundDescrition()
 	{
-		return "KhÃ´ng tÃ¬m tháº¥y trang hoáº·c trang khÃ´ng cÃ²n tá»“n táº¡i";
+		return "Không tìm thấy trang hoặc trang không còn tồn tại";
 	}
 
 	protected override string _GetTemplateForResponseRequestError()
 	{
-		return "ÄÃ£ xáº£y ra lá»—i vá»›i yÃªu cáº§u cá»§a báº¡n";
+		return "Đã xảy ra lỗi với yêu cầu của bạn";
 	}
 
 	protected override string _GetTemplateForResponseSomethingWentWrong()
 	{
-		return "ÄÃ£ xáº£y ra sá»± cá»‘";
+		return "Đã xảy ra sự cố";
 	}
 
 	protected override string _GetTemplateForResponseTooManyAttemptsText()
 	{
-		return "QuÃ¡ nhiá»u láº§n thá»­";
+		return "Quá nhiều lần thử";
 	}
 
 	protected override string _GetTemplateForResponseUnexpectedError()
 	{
-		return "ÄÃ£ xáº£y ra lá»—i Ä‘á»™t xuáº¥t. Vui lÃ²ng thá»­ láº¡i sau.";
+		return "Đã xảy ra lỗi đột xuất. Vui lòng thử lại sau.";
 	}
 }
 

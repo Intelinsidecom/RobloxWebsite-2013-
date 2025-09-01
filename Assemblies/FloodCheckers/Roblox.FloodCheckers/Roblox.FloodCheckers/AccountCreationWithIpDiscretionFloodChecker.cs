@@ -1,9 +1,8 @@
-﻿using Roblox.FloodCheckers.Core;
-using Roblox.Platform.IpAddresses;
-namespace Roblox.FloodCheckerspublic {
-    class AccountCreationWithIpDiscretionFloodChecker : IFloodChecker, IBasicFloodChecker
-
+using Roblox.FloodCheckers.Core;
+namespace Roblox.FloodCheckers
 {
+    public class AccountCreationWithIpDiscretionFloodChecker : IFloodChecker, IBasicFloodChecker
+    {
 	private IFloodChecker _AccountCreationFloodChecker;
 
 	private IFloodChecker _AccountCreationFloodCheckerForSuspiciousIps;
@@ -73,7 +72,6 @@ namespace Roblox.FloodCheckerspublic {
 			_AccountCreationFloodChecker.UpdateCount();
 		}
 	}
+    }
 }
 
-
-}

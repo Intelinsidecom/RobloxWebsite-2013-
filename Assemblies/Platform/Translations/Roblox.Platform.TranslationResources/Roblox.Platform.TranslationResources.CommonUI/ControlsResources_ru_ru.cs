@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.CommonUI {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.CommonUI {
     /// <summary>
 
 /// This class overrides ControlsResources_en_us to provide locale specific translations where possible,
@@ -10,59 +12,59 @@ internal class ControlsResources_ru_ru : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Accept"
 	/// English String: "Accept"
 	/// </summary>
-	public override string ActionAccept => "ÐŸÑ€Ð¸Ð½ÑÑ‚ÑŒ";
+	public override string ActionAccept => "Принять";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "Ð¡Ð¾Ð³Ð»Ð°ÑÐµÐ½";
+	public override string ActionAgree => "Согласен";
 
 	/// <summary>
 	/// Key: "Action.Allow"
 	/// Allow
 	/// English String: "Allow"
 	/// </summary>
-	public override string ActionAllow => "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ";
+	public override string ActionAllow => "Разрешить";
 
 	/// <summary>
 	/// Key: "Action.Back"
 	/// English String: "Back"
 	/// </summary>
-	public override string ActionBack => "ÐÐ°Ð·Ð°Ð´";
+	public override string ActionBack => "Назад";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ÐžÑ‚Ð¼ÐµÐ½Ð°";
+	public override string ActionCancel => "Отмена";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´Ð°ÑŽ";
+	public override string ActionConfirm => "Подтверждаю";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+	public override string ActionDelete => "Удалить";
 
 	/// <summary>
 	/// Key: "Action.Discard"
 	/// The button label of the modal that asks the user to confirm discarding unsaved changes
 	/// English String: "Discard"
 	/// </summary>
-	public override string ActionDiscard => "Ð¡Ð±Ñ€Ð¾Ñ";
+	public override string ActionDiscard => "Сброс";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "ÐÐµÑ‚";
+	public override string ActionNo => "Нет";
 
 	/// <summary>
 	/// Key: "Action.OK"
@@ -74,130 +76,130 @@ internal class ControlsResources_ru_ru : ControlsResources_en_us, IControlsResou
 	/// Key: "Action.Save"
 	/// English String: "Save"
 	/// </summary>
-	public override string ActionSave => "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+	public override string ActionSave => "Сохранить";
 
 	/// <summary>
 	/// Key: "Action.Submit"
 	/// English String: "Submit"
 	/// </summary>
-	public override string ActionSubmit => "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+	public override string ActionSubmit => "Отправить";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "Ð”Ð°";
+	public override string ActionYes => "Да";
 
 	/// <summary>
 	/// Key: "Birthdaypicker.Label.Date"
 	/// English String: "Date"
 	/// </summary>
-	public override string BirthdaypickerLabelDate => "Ð”Ð°Ñ‚Ð°";
+	public override string BirthdaypickerLabelDate => "Дата";
 
 	/// <summary>
 	/// Key: "Label.April"
 	/// English String: "April"
 	/// </summary>
-	public override string LabelApril => "ÐÐ¿Ñ€ÐµÐ»ÑŒ";
+	public override string LabelApril => "Апрель";
 
 	/// <summary>
 	/// Key: "Label.August"
 	/// English String: "August"
 	/// </summary>
-	public override string LabelAugust => "ÐÐ²Ð³ÑƒÑÑ‚";
+	public override string LabelAugust => "Август";
 
 	/// <summary>
 	/// Key: "Label.Day"
 	/// day of the month label
 	/// English String: "Day"
 	/// </summary>
-	public override string LabelDay => "Ð”ÐµÐ½ÑŒ";
+	public override string LabelDay => "День";
 
 	/// <summary>
 	/// Key: "Label.December"
 	/// English String: "December"
 	/// </summary>
-	public override string LabelDecember => "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ";
+	public override string LabelDecember => "Декабрь";
 
 	/// <summary>
 	/// Key: "Label.February"
 	/// English String: "February"
 	/// </summary>
-	public override string LabelFebruary => "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ";
+	public override string LabelFebruary => "Февраль";
 
 	/// <summary>
 	/// Key: "Label.January"
 	/// English String: "January"
 	/// </summary>
-	public override string LabelJanuary => "Ð¯Ð½Ð²Ð°Ñ€ÑŒ";
+	public override string LabelJanuary => "Январь";
 
 	/// <summary>
 	/// Key: "Label.July"
 	/// English String: "July"
 	/// </summary>
-	public override string LabelJuly => "Ð˜ÑŽÐ»ÑŒ";
+	public override string LabelJuly => "Июль";
 
 	/// <summary>
 	/// Key: "Label.June"
 	/// English String: "June"
 	/// </summary>
-	public override string LabelJune => "Ð˜ÑŽÐ½ÑŒ";
+	public override string LabelJune => "Июнь";
 
 	/// <summary>
 	/// Key: "Label.March"
 	/// English String: "March"
 	/// </summary>
-	public override string LabelMarch => "ÐœÐ°Ñ€Ñ‚";
+	public override string LabelMarch => "Март";
 
 	/// <summary>
 	/// Key: "Label.May"
 	/// English String: "May"
 	/// </summary>
-	public override string LabelMay => "ÐœÐ°Ð¹";
+	public override string LabelMay => "Май";
 
 	/// <summary>
 	/// Key: "Label.Month"
 	/// Month
 	/// English String: "Month"
 	/// </summary>
-	public override string LabelMonth => "ÐœÐµÑÑÑ†";
+	public override string LabelMonth => "Месяц";
 
 	/// <summary>
 	/// Key: "Label.Next"
 	/// English String: "Next"
 	/// </summary>
-	public override string LabelNext => "Ð”Ð°Ð»ÐµÐµ";
+	public override string LabelNext => "Далее";
 
 	/// <summary>
 	/// Key: "Label.November"
 	/// English String: "November"
 	/// </summary>
-	public override string LabelNovember => "ÐÐ¾ÑÐ±Ñ€ÑŒ";
+	public override string LabelNovember => "Ноябрь";
 
 	/// <summary>
 	/// Key: "Label.October"
 	/// English String: "October"
 	/// </summary>
-	public override string LabelOctober => "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ";
+	public override string LabelOctober => "Октябрь";
 
 	/// <summary>
 	/// Key: "Label.Previous"
 	/// English String: "Previous"
 	/// </summary>
-	public override string LabelPrevious => "ÐÐ°Ð·Ð°Ð´";
+	public override string LabelPrevious => "Назад";
 
 	/// <summary>
 	/// Key: "Label.September"
 	/// English String: "September"
 	/// </summary>
-	public override string LabelSeptember => "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ";
+	public override string LabelSeptember => "Сентябрь";
 
 	/// <summary>
 	/// Key: "Label.Year"
 	/// Year
 	/// English String: "Year"
 	/// </summary>
-	public override string LabelYear => "Ð“Ð¾Ð´";
+	public override string LabelYear => "Год";
 
 	public ControlsResources_ru_ru(TranslationResourceState state)
 		: base(state)
@@ -206,47 +208,47 @@ internal class ControlsResources_ru_ru : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionAccept()
 	{
-		return "ÐŸÑ€Ð¸Ð½ÑÑ‚ÑŒ";
+		return "Принять";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "Ð¡Ð¾Ð³Ð»Ð°ÑÐµÐ½";
+		return "Согласен";
 	}
 
 	protected override string _GetTemplateForActionAllow()
 	{
-		return "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ";
+		return "Разрешить";
 	}
 
 	protected override string _GetTemplateForActionBack()
 	{
-		return "ÐÐ°Ð·Ð°Ð´";
+		return "Назад";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ÐžÑ‚Ð¼ÐµÐ½Ð°";
+		return "Отмена";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´Ð°ÑŽ";
+		return "Подтверждаю";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+		return "Удалить";
 	}
 
 	protected override string _GetTemplateForActionDiscard()
 	{
-		return "Ð¡Ð±Ñ€Ð¾Ñ";
+		return "Сброс";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "ÐÐµÑ‚";
+		return "Нет";
 	}
 
 	protected override string _GetTemplateForActionOK()
@@ -256,32 +258,32 @@ internal class ControlsResources_ru_ru : ControlsResources_en_us, IControlsResou
 
 	protected override string _GetTemplateForActionSave()
 	{
-		return "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+		return "Сохранить";
 	}
 
 	protected override string _GetTemplateForActionSubmit()
 	{
-		return "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+		return "Отправить";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "Ð”Ð°";
+		return "Да";
 	}
 
 	protected override string _GetTemplateForBirthdaypickerLabelDate()
 	{
-		return "Ð”Ð°Ñ‚Ð°";
+		return "Дата";
 	}
 
 	protected override string _GetTemplateForLabelApril()
 	{
-		return "ÐÐ¿Ñ€ÐµÐ»ÑŒ";
+		return "Апрель";
 	}
 
 	protected override string _GetTemplateForLabelAugust()
 	{
-		return "ÐÐ²Ð³ÑƒÑÑ‚";
+		return "Август";
 	}
 
 	/// <summary>
@@ -291,87 +293,87 @@ internal class ControlsResources_ru_ru : ControlsResources_en_us, IControlsResou
 	/// </summary>
 	public override string LabelCurrentPage(string currentPage)
 	{
-		return $"Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° {currentPage}";
+		return $"Страница {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelCurrentPage()
 	{
-		return "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° {currentPage}";
+		return "Страница {currentPage}";
 	}
 
 	protected override string _GetTemplateForLabelDay()
 	{
-		return "Ð”ÐµÐ½ÑŒ";
+		return "День";
 	}
 
 	protected override string _GetTemplateForLabelDecember()
 	{
-		return "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ";
+		return "Декабрь";
 	}
 
 	protected override string _GetTemplateForLabelFebruary()
 	{
-		return "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ";
+		return "Февраль";
 	}
 
 	protected override string _GetTemplateForLabelJanuary()
 	{
-		return "Ð¯Ð½Ð²Ð°Ñ€ÑŒ";
+		return "Январь";
 	}
 
 	protected override string _GetTemplateForLabelJuly()
 	{
-		return "Ð˜ÑŽÐ»ÑŒ";
+		return "Июль";
 	}
 
 	protected override string _GetTemplateForLabelJune()
 	{
-		return "Ð˜ÑŽÐ½ÑŒ";
+		return "Июнь";
 	}
 
 	protected override string _GetTemplateForLabelMarch()
 	{
-		return "ÐœÐ°Ñ€Ñ‚";
+		return "Март";
 	}
 
 	protected override string _GetTemplateForLabelMay()
 	{
-		return "ÐœÐ°Ð¹";
+		return "Май";
 	}
 
 	protected override string _GetTemplateForLabelMonth()
 	{
-		return "ÐœÐµÑÑÑ†";
+		return "Месяц";
 	}
 
 	protected override string _GetTemplateForLabelNext()
 	{
-		return "Ð”Ð°Ð»ÐµÐµ";
+		return "Далее";
 	}
 
 	protected override string _GetTemplateForLabelNovember()
 	{
-		return "ÐÐ¾ÑÐ±Ñ€ÑŒ";
+		return "Ноябрь";
 	}
 
 	protected override string _GetTemplateForLabelOctober()
 	{
-		return "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ";
+		return "Октябрь";
 	}
 
 	protected override string _GetTemplateForLabelPrevious()
 	{
-		return "ÐÐ°Ð·Ð°Ð´";
+		return "Назад";
 	}
 
 	protected override string _GetTemplateForLabelSeptember()
 	{
-		return "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ";
+		return "Сентябрь";
 	}
 
 	protected override string _GetTemplateForLabelYear()
 	{
-		return "Ð“Ð¾Ð´";
+		return "Год";
 	}
 }
 

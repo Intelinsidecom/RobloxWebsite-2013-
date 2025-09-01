@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using Roblox.Entities;
-namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     interface IReviewTaskLeaseEntity : IUpdateableEntity<long>, IEntity<long>
 
 {

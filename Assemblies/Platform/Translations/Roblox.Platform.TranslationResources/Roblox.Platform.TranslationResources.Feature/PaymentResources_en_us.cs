@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class PaymentResources_en_us : TranslationResourcesBase, IPaymentResources, ITranslationResources
 
 {
@@ -94,3 +94,4 @@ namespace Roblox.Platform.TranslationResources.Featureinternal {
 
 
 }
+

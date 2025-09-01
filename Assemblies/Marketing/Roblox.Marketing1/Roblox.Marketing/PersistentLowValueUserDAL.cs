@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Marketing.Properties;
@@ -112,3 +112,4 @@ public class PersistentLowValueUserDAL
 		return EntityHelper.GetOrCreateEntityDAL(new DbInfo(_DbConnectionString, "PersistentLowValueUsers_GetOrCreatePersistentLowValueUser", queryParameters), BuildDAL);
 	}
 }
+

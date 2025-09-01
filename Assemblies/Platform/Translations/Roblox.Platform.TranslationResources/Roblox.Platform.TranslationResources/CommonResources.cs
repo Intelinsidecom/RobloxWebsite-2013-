@@ -1,7 +1,9 @@
-﻿using System;
-using Roblox.TranslationResources.Common;
-namespace Roblox.Platform.TranslationResourcesinternal {
-    class CommonResources : ICommonResources, ITranslationResourcesNamespacesGroup
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Common;
+namespace Roblox.Platform.TranslationResources
+{
+    internal class CommonResources : ICommonResources, ITranslationResourcesNamespacesGroup
 
 {
 	private readonly Lazy<IAlertsAndOptionsResources> _IAlertsAndOptionsResources;

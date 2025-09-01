@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides PresenceResources_en_us to provide locale specific translations where possible,
@@ -10,25 +12,25 @@ internal class PresenceResources_ja_jp : PresenceResources_en_us, IPresenceResou
 	/// Key: "Label.Creating"
 	/// English String: "Creating"
 	/// </summary>
-	public override string LabelCreating => "ä½œæˆä¸­";
+	public override string LabelCreating => "作成中";
 
 	/// <summary>
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+	public override string LabelOffline => "オフライン";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+	public override string LabelOnline => "オンライン";
 
 	/// <summary>
 	/// Key: "Label.Playing"
 	/// English String: "Playing"
 	/// </summary>
-	public override string LabelPlaying => "ãƒ—ãƒ¬ã‚¤ä¸­";
+	public override string LabelPlaying => "プレイ中";
 
 	public PresenceResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -37,7 +39,7 @@ internal class PresenceResources_ja_jp : PresenceResources_en_us, IPresenceResou
 
 	protected override string _GetTemplateForLabelCreating()
 	{
-		return "ä½œæˆä¸­";
+		return "作成中";
 	}
 
 	/// <summary>
@@ -46,27 +48,27 @@ internal class PresenceResources_ja_jp : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelCreatingGame(string placeName)
 	{
-		return $"{placeName} ã‚’ä½œæˆä¸­";
+		return $"{placeName} を作成中";
 	}
 
 	protected override string _GetTemplateForLabelCreatingGame()
 	{
-		return "{placeName} ã‚’ä½œæˆä¸­";
+		return "{placeName} を作成中";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "ã‚ªãƒ•ãƒ©ã‚¤ãƒ³";
+		return "オフライン";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ã‚ªãƒ³ãƒ©ã‚¤ãƒ³";
+		return "オンライン";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ä¸­";
+		return "プレイ中";
 	}
 
 	/// <summary>
@@ -75,12 +77,12 @@ internal class PresenceResources_ja_jp : PresenceResources_en_us, IPresenceResou
 	/// </summary>
 	public override string LabelPlayingGame(string placeName)
 	{
-		return $"{placeName} ã‚’ãƒ—ãƒ¬ã‚¤ä¸­";
+		return $"{placeName} をプレイ中";
 	}
 
 	protected override string _GetTemplateForLabelPlayingGame()
 	{
-		return "{placeName} ã‚’ãƒ—ãƒ¬ã‚¤ä¸­";
+		return "{placeName} をプレイ中";
 	}
 }
 

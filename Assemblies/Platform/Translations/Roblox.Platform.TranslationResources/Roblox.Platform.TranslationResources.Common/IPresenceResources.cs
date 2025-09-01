@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Commonpublic {
-    interface IPresenceResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
+    public interface IPresenceResources : ITranslationResources
 
 {
 	/// <summary>
@@ -41,3 +43,5 @@
 
 
 }
+
+

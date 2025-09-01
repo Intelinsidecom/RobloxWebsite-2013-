@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
@@ -28,7 +30,7 @@ internal class EngagementPayoutResources_de_de : EngagementPayoutResources_en_us
 	/// Key: "Label.Weekly"
 	/// English String: "Weekly"
 	/// </summary>
-	public override string LabelWeekly => "WÃ¶chentlich";
+	public override string LabelWeekly => "Wöchentlich";
 
 	public EngagementPayoutResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -52,7 +54,7 @@ internal class EngagementPayoutResources_de_de : EngagementPayoutResources_en_us
 
 	protected override string _GetTemplateForLabelWeekly()
 	{
-		return "WÃ¶chentlich";
+		return "Wöchentlich";
 	}
 }
 

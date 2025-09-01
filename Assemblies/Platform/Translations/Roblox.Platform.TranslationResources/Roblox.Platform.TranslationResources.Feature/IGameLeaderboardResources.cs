@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IGameLeaderboardResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IGameLeaderboardResources : ITranslationResources
 
 {
 	/// <summary>
@@ -131,3 +133,5 @@
 
 
 }
+
+

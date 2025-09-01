@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Common {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Common {
     /// <summary>
 
 /// This class overrides TermsOfServiceResources_en_us to provide locale specific translations where possible,
@@ -10,13 +12,13 @@ internal class TermsOfServiceResources_es_es : TermsOfServiceResources_en_us, IT
 	/// Key: "Heading.TosAgreementTitle"
 	/// English String: "TERMS OF USE AGREEMENT"
 	/// </summary>
-	public override string HeadingTosAgreementTitle => "CONTRATO DE TÃ‰RMINOS DE USO";
+	public override string HeadingTosAgreementTitle => "CONTRATO DE TÉRMINOS DE USO";
 
 	/// <summary>
 	/// Key: "Heading.TosHaveChangedTitle"
 	/// English String: "TERMS OF USE HAVE CHANGED"
 	/// </summary>
-	public override string HeadingTosHaveChangedTitle => "SE HAN MODIFICADO LOS TÃ‰RMINOS DE USO";
+	public override string HeadingTosHaveChangedTitle => "SE HAN MODIFICADO LOS TÉRMINOS DE USO";
 
 	/// <summary>
 	/// Key: "Label.IAgree"
@@ -31,12 +33,12 @@ internal class TermsOfServiceResources_es_es : TermsOfServiceResources_en_us, IT
 
 	protected override string _GetTemplateForHeadingTosAgreementTitle()
 	{
-		return "CONTRATO DE TÃ‰RMINOS DE USO";
+		return "CONTRATO DE TÉRMINOS DE USO";
 	}
 
 	protected override string _GetTemplateForHeadingTosHaveChangedTitle()
 	{
-		return "SE HAN MODIFICADO LOS TÃ‰RMINOS DE USO";
+		return "SE HAN MODIFICADO LOS TÉRMINOS DE USO";
 	}
 
 	protected override string _GetTemplateForLabelIAgree()
@@ -50,12 +52,12 @@ internal class TermsOfServiceResources_es_es : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageAgreeToTosAndPrivacyBody(string tosLinkStart, string tosLinkEnd, string privacyLinkStart, string privacyLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso{tosLinkEnd} y la {privacyLinkStart}PolÃ­tica de privacidad{privacyLinkEnd}. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso{tosLinkEnd} y la {privacyLinkStart}Política de privacidad{privacyLinkEnd}. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageAgreeToTosAndPrivacyBody()
 	{
-		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso{tosLinkEnd} y la {privacyLinkStart}PolÃ­tica de privacidad{privacyLinkEnd}. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso{tosLinkEnd} y la {privacyLinkStart}Política de privacidad{privacyLinkEnd}. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -64,12 +66,12 @@ internal class TermsOfServiceResources_es_es : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreeChangeBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso{tosLinkEnd}, incluso la cesiÃ³n a Roblox del derecho de uso en lÃ­nea y sin conexiÃ³n (por ejemplo, en objetos tangibles) de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso{tosLinkEnd}, incluso la cesión a Roblox del derecho de uso en línea y sin conexión (por ejemplo, en objetos tangibles) de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreeChangeBody()
 	{
-		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso{tosLinkEnd}, incluso la cesiÃ³n a Roblox del derecho de uso en lÃ­nea y sin conexiÃ³n (por ejemplo, en objetos tangibles) de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso{tosLinkEnd}, incluso la cesión a Roblox del derecho de uso en línea y sin conexión (por ejemplo, en objetos tangibles) de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 
 	/// <summary>
@@ -78,12 +80,12 @@ internal class TermsOfServiceResources_es_es : TermsOfServiceResources_en_us, IT
 	/// </summary>
 	public override string MessageTosAgreementBody(string tosLinkStart, string tosLinkEnd, string legalChangesLinkStart, string legalChangesLinkEnd)
 	{
-		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso de Roblox{tosLinkEnd}. Esto incluye la cesiÃ³n a Roblox del derecho de uso en lÃ­nea, sin conexiÃ³n y en objetos tangibles de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return $"Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso de Roblox{tosLinkEnd}. Esto incluye la cesión a Roblox del derecho de uso en línea, sin conexión y en objetos tangibles de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 
 	protected override string _GetTemplateForMessageTosAgreementBody()
 	{
-		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}TÃ©rminos de uso de Roblox{tosLinkEnd}. Esto incluye la cesiÃ³n a Roblox del derecho de uso en lÃ­nea, sin conexiÃ³n y en objetos tangibles de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener mÃ¡s informaciÃ³n sobre lo que estÃ¡ cambiando {legalChangesLinkStart}aquÃ­{legalChangesLinkEnd}.";
+		return "Al hacer clic en \"Acepto\", aceptas los {tosLinkStart}Términos de uso de Roblox{tosLinkEnd}. Esto incluye la cesión a Roblox del derecho de uso en línea, sin conexión y en objetos tangibles de todo contenido pasado y futuro que proporciones al servicio. Puedes obtener más información sobre lo que está cambiando {legalChangesLinkStart}aquí{legalChangesLinkEnd}.";
 	}
 }
 

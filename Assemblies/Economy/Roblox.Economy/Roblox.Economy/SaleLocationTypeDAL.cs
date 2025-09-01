@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Economy.Common;
@@ -92,3 +92,4 @@ public class SaleLocationTypeDAL
 		return EntityHelper.GetEntityDAL(new DbInfo(ConnectionString, "SaleLocationTypes_GetSaleLocationTypeByValue", queryParameters), BuildDAL);
 	}
 }
+

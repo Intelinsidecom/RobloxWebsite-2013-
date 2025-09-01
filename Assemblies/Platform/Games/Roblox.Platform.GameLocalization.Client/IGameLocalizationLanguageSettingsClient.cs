@@ -4,8 +4,8 @@ namespace Roblox.Platform.GameLocalization.Client
 {
     public interface IGameLocalizationLanguageSettingsClient
     {
-        GameLocalizationLanguageSettings.LanguageSettingsResponse GetLanguageSettings(GameLocalizationLanguageSettings.GetLanguageSettingsRequest request);
-        void AddLanguageSettings(GameLocalizationLanguageSettings.SetLanguageSettingsRequest request);
-        void RemoveLanguageSettings(GameLocalizationLanguageSettings.SetLanguageSettingsRequest request);
+        Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings.LanguageSettingsResponse GetLanguageSettings(Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings.GetLanguageSettingsRequest request);
+        void AddLanguageSettings(Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings.SetLanguageSettingsRequest request);
+        void RemoveLanguageSettings(Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings.SetLanguageSettingsRequest request);
     }
 }

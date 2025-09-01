@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EmailConfirmationResources_en_us to provide locale specific translations where possible,
@@ -11,35 +13,35 @@ internal class EmailConfirmationResources_ko_kr : EmailConfirmationResources_en_
 	/// button label
 	/// English String: "Done"
 	/// </summary>
-	public override string ActionDone => "ì™„ë£Œ";
+	public override string ActionDone => "완료";
 
 	/// <summary>
 	/// Key: "Action.ViewItem"
 	/// button which takes user to item details page
 	/// English String: "View Item"
 	/// </summary>
-	public override string ActionViewItem => "ì•„ì´í…œ ë³´ê¸°";
+	public override string ActionViewItem => "아이템 보기";
 
 	/// <summary>
 	/// Key: "Heading.ThankYou"
 	/// heading
 	/// English String: "Thank You!"
 	/// </summary>
-	public override string HeadingThankYou => "ê°ì‚¬í•©ë‹ˆë‹¤!";
+	public override string HeadingThankYou => "감사합니다!";
 
 	/// <summary>
 	/// Key: "Message.EmailVerified"
 	/// success message confirmation
 	/// English String: "Your email has been verified"
 	/// </summary>
-	public override string MessageEmailVerified => "ì´ë©”ì¼ì´ ì¸ì¦ë˜ì—ˆìŠµë‹ˆë‹¤";
+	public override string MessageEmailVerified => "이메일이 인증되었습니다";
 
 	/// <summary>
 	/// Key: "Message.EmailVerifiedEnjoyFreeHat"
 	/// success message confirmation notifying user they have verified their email and have received a free hat
 	/// English String: "Your email has been verified. Enjoy the free hat!"
 	/// </summary>
-	public override string MessageEmailVerifiedEnjoyFreeHat => "ì´ë©”ì¼ ì¸ì¦ë˜ì—ˆìŠµë‹ˆë‹¤. ë¬´ë£Œ ëª¨ìžë¥¼ ì°©ìš©í•  ìˆ˜ ìžˆì–´ìš”!";
+	public override string MessageEmailVerifiedEnjoyFreeHat => "이메일 인증되었습니다. 무료 모자를 착용할 수 있어요!";
 
 	public EmailConfirmationResources_ko_kr(TranslationResourceState state)
 		: base(state)
@@ -48,27 +50,27 @@ internal class EmailConfirmationResources_ko_kr : EmailConfirmationResources_en_
 
 	protected override string _GetTemplateForActionDone()
 	{
-		return "ì™„ë£Œ";
+		return "완료";
 	}
 
 	protected override string _GetTemplateForActionViewItem()
 	{
-		return "ì•„ì´í…œ ë³´ê¸°";
+		return "아이템 보기";
 	}
 
 	protected override string _GetTemplateForHeadingThankYou()
 	{
-		return "ê°ì‚¬í•©ë‹ˆë‹¤!";
+		return "감사합니다!";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerified()
 	{
-		return "ì´ë©”ì¼ì´ ì¸ì¦ë˜ì—ˆìŠµë‹ˆë‹¤";
+		return "이메일이 인증되었습니다";
 	}
 
 	protected override string _GetTemplateForMessageEmailVerifiedEnjoyFreeHat()
 	{
-		return "ì´ë©”ì¼ ì¸ì¦ë˜ì—ˆìŠµë‹ˆë‹¤. ë¬´ë£Œ ëª¨ìžë¥¼ ì°©ìš©í•  ìˆ˜ ìžˆì–´ìš”!";
+		return "이메일 인증되었습니다. 무료 모자를 착용할 수 있어요!";
 	}
 }
 

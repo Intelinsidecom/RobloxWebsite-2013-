@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
@@ -10,85 +12,85 @@ internal class CreatePlaceProductPromotionResources_zh_cn : CreatePlaceProductPr
 	/// Key: "Label.AddToGame"
 	/// English String: "Add to Game"
 	/// </summary>
-	public override string LabelAddToGame => "æ·»åŠ è‡³æ¸¸æˆ";
+	public override string LabelAddToGame => "添加至游戏";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
 	/// English String: "Cancel"
 	/// </summary>
-	public override string LabelCancel => "å–æ¶ˆ";
+	public override string LabelCancel => "取消";
 
 	/// <summary>
 	/// Key: "Label.Error"
 	/// English String: "Error"
 	/// </summary>
-	public override string LabelError => "é”™è¯¯";
+	public override string LabelError => "错误";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccured"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccured => "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
+	public override string LabelErrorOccured => "发生错误，请重试。";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "æ­¤ç‰©å“ä¸ºéžå–å“ã€‚";
+	public override string LabelNotForSale => "此物品为非卖品。";
 
 	/// <summary>
 	/// Key: "Label.Ok"
 	/// English String: "OK"
 	/// </summary>
-	public override string LabelOk => "å¥½";
+	public override string LabelOk => "好";
 
 	/// <summary>
 	/// Key: "Label.PromoteOnYourGame"
 	/// English String: "Promote on your Game"
 	/// </summary>
-	public override string LabelPromoteOnYourGame => "åœ¨ä½ çš„æ¸¸æˆä¸ŠæŽ¨å¹¿";
+	public override string LabelPromoteOnYourGame => "在你的游戏上推广";
 
 	/// <summary>
 	/// Key: "Label.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string LabelRent => "ç§Ÿç”¨";
+	public override string LabelRent => "租用";
 
 	/// <summary>
 	/// Key: "Label.SelectGroup"
 	/// English String: "Select Group"
 	/// </summary>
-	public override string LabelSelectGroup => "é€‰æ‹©ç¾¤ç»„";
+	public override string LabelSelectGroup => "选择群组";
 
 	/// <summary>
 	/// Key: "Label.SelectNone"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelSelectNone => "æ— ";
+	public override string LabelSelectNone => "无";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGame"
 	/// English String: "Select Your Game"
 	/// </summary>
-	public override string LabelSelectYourGame => "é€‰æ‹©ä½ çš„æ¸¸æˆ";
+	public override string LabelSelectYourGame => "选择你的游戏";
 
 	/// <summary>
 	/// Key: "Label.SelectYourGameSemicolon"
 	/// English String: "Select Your Game:"
 	/// </summary>
-	public override string LabelSelectYourGameSemicolon => "é€‰æ‹©ä½ çš„æ¸¸æˆï¼š";
+	public override string LabelSelectYourGameSemicolon => "选择你的游戏：";
 
 	/// <summary>
 	/// Key: "Label.SorryWeCouldnt"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorryWeCouldnt => "æŠ±æ­‰ï¼Œæˆ‘ä»¬æ— æ³•ä»Žä½ çš„æ¸¸æˆä¸­ç§»é™¤æ­¤ç‰©å“ã€‚è¯·é‡è¯•ã€‚";
+	public override string LabelSorryWeCouldnt => "抱歉，我们无法从你的游戏中移除此物品。请重试。";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "æˆåŠŸï¼";
+	public override string LabelSuccess => "成功！";
 
 	public CreatePlaceProductPromotionResources_zh_cn(TranslationResourceState state)
 		: base(state)
@@ -97,72 +99,72 @@ internal class CreatePlaceProductPromotionResources_zh_cn : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelAddToGame()
 	{
-		return "æ·»åŠ è‡³æ¸¸æˆ";
+		return "添加至游戏";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
 	{
-		return "å–æ¶ˆ";
+		return "取消";
 	}
 
 	protected override string _GetTemplateForLabelError()
 	{
-		return "é”™è¯¯";
+		return "错误";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccured()
 	{
-		return "å‘ç”Ÿé”™è¯¯ï¼Œè¯·é‡è¯•ã€‚";
+		return "发生错误，请重试。";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "æ­¤ç‰©å“ä¸ºéžå–å“ã€‚";
+		return "此物品为非卖品。";
 	}
 
 	protected override string _GetTemplateForLabelOk()
 	{
-		return "å¥½";
+		return "好";
 	}
 
 	protected override string _GetTemplateForLabelPromoteOnYourGame()
 	{
-		return "åœ¨ä½ çš„æ¸¸æˆä¸ŠæŽ¨å¹¿";
+		return "在你的游戏上推广";
 	}
 
 	protected override string _GetTemplateForLabelRent()
 	{
-		return "ç§Ÿç”¨";
+		return "租用";
 	}
 
 	protected override string _GetTemplateForLabelSelectGroup()
 	{
-		return "é€‰æ‹©ç¾¤ç»„";
+		return "选择群组";
 	}
 
 	protected override string _GetTemplateForLabelSelectNone()
 	{
-		return "æ— ";
+		return "无";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGame()
 	{
-		return "é€‰æ‹©ä½ çš„æ¸¸æˆ";
+		return "选择你的游戏";
 	}
 
 	protected override string _GetTemplateForLabelSelectYourGameSemicolon()
 	{
-		return "é€‰æ‹©ä½ çš„æ¸¸æˆï¼š";
+		return "选择你的游戏：";
 	}
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
 	{
-		return "æŠ±æ­‰ï¼Œæˆ‘ä»¬æ— æ³•ä»Žä½ çš„æ¸¸æˆä¸­ç§»é™¤æ­¤ç‰©å“ã€‚è¯·é‡è¯•ã€‚";
+		return "抱歉，我们无法从你的游戏中移除此物品。请重试。";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "æˆåŠŸï¼";
+		return "成功！";
 	}
 
 	/// <summary>
@@ -171,12 +173,12 @@ internal class CreatePlaceProductPromotionResources_zh_cn : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"åœ¨æ¸¸æˆä¸­æ·»åŠ è£…å¤‡ä¼šæ€Žä¹ˆæ ·ï¼Ÿè¯¥ç‰©å“å°†æ˜¾ç¤ºåœ¨ä½ çš„æ¸¸æˆé¡µé¢ï¼Œå¹¶è‡ªåŠ¨å…è®¸åœ¨æ¸¸æˆä¸­ä½¿ç”¨ã€‚å¦‚æžœæœ‰äººä»Žä½ çš„æ¸¸æˆé¡µé¢è´­ä¹°æ­¤ç‰©å“ï¼Œä½ å°±èƒ½èµšå– {affiliateSaleTotal} Robuxï¼";
+		return $"在游戏中添加装备会怎么样？该物品将显示在你的游戏页面，并自动允许在游戏中使用。如果有人从你的游戏页面购买此物品，你就能赚取 {affiliateSaleTotal} Robux！";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "åœ¨æ¸¸æˆä¸­æ·»åŠ è£…å¤‡ä¼šæ€Žä¹ˆæ ·ï¼Ÿè¯¥ç‰©å“å°†æ˜¾ç¤ºåœ¨ä½ çš„æ¸¸æˆé¡µé¢ï¼Œå¹¶è‡ªåŠ¨å…è®¸åœ¨æ¸¸æˆä¸­ä½¿ç”¨ã€‚å¦‚æžœæœ‰äººä»Žä½ çš„æ¸¸æˆé¡µé¢è´­ä¹°æ­¤ç‰©å“ï¼Œä½ å°±èƒ½èµšå– {affiliateSaleTotal} Robuxï¼";
+		return "在游戏中添加装备会怎么样？该物品将显示在你的游戏页面，并自动允许在游戏中使用。如果有人从你的游戏页面购买此物品，你就能赚取 {affiliateSaleTotal} Robux！";
 	}
 }
 

@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Common.Properties;
 using Roblox.Data;
@@ -147,3 +147,4 @@ public class ProductDAL
 		return EntityHelper.GetDataCount<int>(new DbInfo(dbConnectionString_ProductDAL, "Products_GetTotalNumberOfProducts", queryParameters));
 	}
 }
+

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.CommonUIinternal {
+namespace Roblox.Platform.TranslationResources.CommonUI {
     class ControlsResources_en_us : TranslationResourcesBase, IControlsResources, ITranslationResources
 
 {
@@ -518,3 +518,4 @@ namespace Roblox.Platform.TranslationResources.CommonUIinternal {
 
 
 }
+

@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides EngagementPayoutResources_en_us to provide locale specific translations where possible,
@@ -10,55 +12,55 @@ internal class EngagementPayoutResources_zh_tw : EngagementPayoutResources_en_us
 	/// Key: "Description.EngagementPayoutSubtitle"
 	/// English String: "Engagement score and payout based on engagement of monetized users."
 	/// </summary>
-	public override string DescriptionEngagementPayoutSubtitle => "äº’å‹•åˆ†æ•¸èˆ‡æ”¯ä»˜ä¾æ“šèª²é‡‘ä½¿ç”¨è€…çš„äº’å‹•ã€‚";
+	public override string DescriptionEngagementPayoutSubtitle => "互動分數與支付依據課金使用者的互動。";
 
 	/// <summary>
 	/// Key: "Description.EngagementRobuxEarned"
 	/// English String: "Engagement Robux Earned"
 	/// </summary>
-	public override string DescriptionEngagementRobuxEarned => "å·²è³ºå¾—çš„äº’å‹• Robux";
+	public override string DescriptionEngagementRobuxEarned => "已賺得的互動 Robux";
 
 	/// <summary>
 	/// Key: "Description.EngagementScore"
 	/// English String: "Engagement Score"
 	/// </summary>
-	public override string DescriptionEngagementScore => "äº’å‹•åˆ†æ•¸";
+	public override string DescriptionEngagementScore => "互動分數";
 
 	/// <summary>
 	/// Key: "Heading.EngagementPayout"
 	/// English String: "Engagement and Payout"
 	/// </summary>
-	public override string HeadingEngagementPayout => "äº’å‹•èˆ‡æ”¯ä»˜";
+	public override string HeadingEngagementPayout => "互動與支付";
 
 	/// <summary>
 	/// Key: "Label.Custom"
 	/// English String: "Custom"
 	/// </summary>
-	public override string LabelCustom => "è‡ªè¨‚";
+	public override string LabelCustom => "自訂";
 
 	/// <summary>
 	/// Key: "Label.EngagementBasedPayout"
 	/// English String: "Engagement based payout"
 	/// </summary>
-	public override string LabelEngagementBasedPayout => "äº’å‹•ä¾æ“šæ”¯ä»˜";
+	public override string LabelEngagementBasedPayout => "互動依據支付";
 
 	/// <summary>
 	/// Key: "Label.EngagementScore"
 	/// English String: "Engagement score"
 	/// </summary>
-	public override string LabelEngagementScore => "äº’å‹•åˆ†æ•¸";
+	public override string LabelEngagementScore => "互動分數";
 
 	/// <summary>
 	/// Key: "Label.Monthly"
 	/// English String: "Monthly"
 	/// </summary>
-	public override string LabelMonthly => "æ¯æœˆ";
+	public override string LabelMonthly => "每月";
 
 	/// <summary>
 	/// Key: "Label.Weekly"
 	/// English String: "Weekly"
 	/// </summary>
-	public override string LabelWeekly => "æ¯é€±";
+	public override string LabelWeekly => "每週";
 
 	public EngagementPayoutResources_zh_tw(TranslationResourceState state)
 		: base(state)
@@ -67,47 +69,47 @@ internal class EngagementPayoutResources_zh_tw : EngagementPayoutResources_en_us
 
 	protected override string _GetTemplateForDescriptionEngagementPayoutSubtitle()
 	{
-		return "äº’å‹•åˆ†æ•¸èˆ‡æ”¯ä»˜ä¾æ“šèª²é‡‘ä½¿ç”¨è€…çš„äº’å‹•ã€‚";
+		return "互動分數與支付依據課金使用者的互動。";
 	}
 
 	protected override string _GetTemplateForDescriptionEngagementRobuxEarned()
 	{
-		return "å·²è³ºå¾—çš„äº’å‹• Robux";
+		return "已賺得的互動 Robux";
 	}
 
 	protected override string _GetTemplateForDescriptionEngagementScore()
 	{
-		return "äº’å‹•åˆ†æ•¸";
+		return "互動分數";
 	}
 
 	protected override string _GetTemplateForHeadingEngagementPayout()
 	{
-		return "äº’å‹•èˆ‡æ”¯ä»˜";
+		return "互動與支付";
 	}
 
 	protected override string _GetTemplateForLabelCustom()
 	{
-		return "è‡ªè¨‚";
+		return "自訂";
 	}
 
 	protected override string _GetTemplateForLabelEngagementBasedPayout()
 	{
-		return "äº’å‹•ä¾æ“šæ”¯ä»˜";
+		return "互動依據支付";
 	}
 
 	protected override string _GetTemplateForLabelEngagementScore()
 	{
-		return "äº’å‹•åˆ†æ•¸";
+		return "互動分數";
 	}
 
 	protected override string _GetTemplateForLabelMonthly()
 	{
-		return "æ¯æœˆ";
+		return "每月";
 	}
 
 	protected override string _GetTemplateForLabelWeekly()
 	{
-		return "æ¯é€±";
+		return "每週";
 	}
 }
 

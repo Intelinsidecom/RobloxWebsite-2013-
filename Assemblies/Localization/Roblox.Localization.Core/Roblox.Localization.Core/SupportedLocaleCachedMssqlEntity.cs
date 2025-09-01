@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
 namespace Roblox.Localization.Core {
@@ -27,9 +27,9 @@ internal class SupportedLocaleCachedMssqlEntity : ISupportedLocaleEntity, IUpdat
 		{
 			throw new InvalidOperationException("Attempted update on unpersisted entity.");
 		}
-		cal.Locale = Locale;
-		cal.Name = Name;
-		cal.NativeName = NativeName;
+		cal.InternalLocale = Locale;
+		cal.InternalName = Name;
+		cal.InternalNativeName = NativeName;
 		cal.LanguageID = LanguageId;
 		cal.Save();
 		Updated = cal.Updated;

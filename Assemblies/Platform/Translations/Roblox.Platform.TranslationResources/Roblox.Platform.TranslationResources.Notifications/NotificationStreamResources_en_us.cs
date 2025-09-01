@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+namespace Roblox.Platform.TranslationResources.Notifications {
     class NotificationStreamResources_en_us : TranslationResourcesBase, INotificationStreamResources, ITranslationResources
 
 {
@@ -650,3 +650,4 @@ namespace Roblox.Platform.TranslationResources.Notificationsinternal {
 
 
 }
+

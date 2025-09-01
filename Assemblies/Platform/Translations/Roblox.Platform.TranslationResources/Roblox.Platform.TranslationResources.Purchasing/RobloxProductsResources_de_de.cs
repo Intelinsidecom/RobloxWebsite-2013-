@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Purchasing {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Purchasing {
     /// <summary>
 
 /// This class overrides RobloxProductsResources_en_us to provide locale specific translations where possible,
@@ -22,7 +24,7 @@ internal class RobloxProductsResources_de_de : RobloxProductsResources_en_us, IR
 	/// Key: "Message.TryAgainLater"
 	/// English String: "Robux purchases are temporarily disabled. Please try again later."
 	/// </summary>
-	public override string MessageTryAgainLater => "Robux-KÃ¤ufe sind derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
+	public override string MessageTryAgainLater => "Robux-Käufe sind derzeit deaktiviert. Bitte versuche es später erneut.";
 
 	public RobloxProductsResources_de_de(TranslationResourceState state)
 		: base(state)
@@ -41,7 +43,7 @@ internal class RobloxProductsResources_de_de : RobloxProductsResources_en_us, IR
 
 	protected override string _GetTemplateForMessageTryAgainLater()
 	{
-		return "Robux-KÃ¤ufe sind derzeit deaktiviert. Bitte versuche es spÃ¤ter erneut.";
+		return "Robux-Käufe sind derzeit deaktiviert. Bitte versuche es später erneut.";
 	}
 }
 

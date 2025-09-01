@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Featurepublic {
-    interface IPrivateServersResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
+    public interface IPrivateServersResources : ITranslationResources
 
 {
 	/// <summary>
@@ -149,3 +151,5 @@
 
 
 }
+
+

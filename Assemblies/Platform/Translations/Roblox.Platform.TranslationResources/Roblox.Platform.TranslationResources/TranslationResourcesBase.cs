@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources {
     /// <summary>
 
 /// Base class for all resource implementation classes.

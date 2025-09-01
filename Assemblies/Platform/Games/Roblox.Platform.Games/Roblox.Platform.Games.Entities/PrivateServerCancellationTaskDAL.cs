@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Entities.Mssql;
@@ -117,3 +117,4 @@ internal class PrivateServerCancellationTaskDAL
 		return EntityHelper.GetDataEntityIDCollection<long>(new DbInfo(RobloxDatabase.RobloxGames.GetConnectionString(), "PrivateServerCancellationTasks_LeaseTasks", queryParameters));
 	}
 }
+

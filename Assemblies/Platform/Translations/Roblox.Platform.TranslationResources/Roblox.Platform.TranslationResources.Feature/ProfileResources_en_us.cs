@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Featureinternal {
+namespace Roblox.Platform.TranslationResources.Feature {
     class ProfileResources_en_us : TranslationResourcesBase, IProfileResources, ITranslationResources
 
 {

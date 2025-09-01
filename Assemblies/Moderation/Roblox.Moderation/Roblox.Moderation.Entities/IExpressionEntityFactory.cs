@@ -1,4 +1,4 @@
-﻿namespace Roblox.Moderation.Entitiesinternal {
+namespace Roblox.Moderation.Entities {
     interface IExpressionEntityFactory
 
 {

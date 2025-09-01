@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Notificationsinternal {
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Notifications {
     static class DesktopPushNotificationPromptsResourceFactory
 
 {
@@ -25,3 +27,4 @@
 
 
 }
+

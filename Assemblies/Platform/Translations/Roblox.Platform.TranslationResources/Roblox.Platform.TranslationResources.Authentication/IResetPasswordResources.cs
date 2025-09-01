@@ -1,5 +1,7 @@
-﻿namespace Roblox.Platform.TranslationResources.Authenticationpublic {
-    interface IResetPasswordResources : ITranslationResources
+﻿using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Authentication {
+    public interface IResetPasswordResources : ITranslationResources
 
 {
 	/// <summary>
@@ -473,3 +475,5 @@
 
 
 }
+
+

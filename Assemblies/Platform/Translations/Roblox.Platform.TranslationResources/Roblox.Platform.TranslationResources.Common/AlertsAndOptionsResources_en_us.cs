@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace Roblox.Platform.TranslationResources.Commoninternal {
+namespace Roblox.Platform.TranslationResources.Common {
     class AlertsAndOptionsResources_en_us : TranslationResourcesBase, IAlertsAndOptionsResources, ITranslationResources
 
 {
@@ -120,3 +120,4 @@ namespace Roblox.Platform.TranslationResources.Commoninternal {
 
 
 }
+

@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
 
@@ -171,3 +171,4 @@ public class CommentDAL
 		return Convert.ToInt32(dbHelper.ExecuteSQLScalar("[dbo].[CommentsV2_GetTotalNumberOfCommentsV2ByAssetID]", CommandType.StoredProcedure));
 	}
 }
+

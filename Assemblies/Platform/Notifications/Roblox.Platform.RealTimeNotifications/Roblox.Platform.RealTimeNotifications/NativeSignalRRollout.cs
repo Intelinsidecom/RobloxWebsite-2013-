@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.RealTimeNotifications.Properties;
-namespace Roblox.Platform.RealTimeNotificationspublic {
+using System;
+using Roblox.Platform.RealTimeNotifications.Properties;
+namespace Roblox.Platform.RealTimeNotifications
+{
     static class NativeSignalRRollout
 
 {
@@ -18,6 +19,5 @@ namespace Roblox.Platform.RealTimeNotificationspublic {
 		return userId.Value % 100 < Settings.Default.NativeSignalREnabledOnIOSRolloutPercentage;
 	}
 }
-
 
 }

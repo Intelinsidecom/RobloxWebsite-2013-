@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides GameDetailsResources_en_us to provide locale specific translations where possible,
@@ -22,13 +24,13 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Key: "Heading.RecommendedGames"
 	/// English String: "Recommended Games"
 	/// </summary>
-	public override string HeadingRecommendedGames => "Jeux recommandÃ©s";
+	public override string HeadingRecommendedGames => "Jeux recommandés";
 
 	/// <summary>
 	/// Key: "Label.About"
 	/// English String: "About"
 	/// </summary>
-	public override string LabelAbout => "Ã€ propos";
+	public override string LabelAbout => "À propos";
 
 	/// <summary>
 	/// Key: "Label.AllowCopyingCheckbox"
@@ -41,7 +43,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.AllowedGear"
 	/// English String: "Allowed Gear"
 	/// </summary>
-	public override string LabelAllowedGear => "Ã‰quipement autorisÃ©";
+	public override string LabelAllowedGear => "Équipement autorisé";
 
 	/// <summary>
 	/// Key: "Label.By"
@@ -60,13 +62,13 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.Created"
 	/// English String: "Created"
 	/// </summary>
-	public override string LabelCreated => "CrÃ©Ã©";
+	public override string LabelCreated => "Créé";
 
 	/// <summary>
 	/// Key: "Label.ExperimentalMode"
 	/// English String: "Experimental Mode"
 	/// </summary>
-	public override string LabelExperimentalMode => "Mode expÃ©rimental";
+	public override string LabelExperimentalMode => "Mode expérimental";
 
 	/// <summary>
 	/// Key: "Label.Favorites"
@@ -91,7 +93,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.GameRequiresBuildersClub"
 	/// English String: "This Game requires Builders Club"
 	/// </summary>
-	public override string LabelGameRequiresBuildersClub => "Ce jeu nÃ©cessite le Builders Club.";
+	public override string LabelGameRequiresBuildersClub => "Ce jeu nécessite le Builders Club.";
 
 	/// <summary>
 	/// Key: "Label.Genre"
@@ -122,7 +124,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Message displayed on a place details page if the place allows copying.
 	/// English String: "This game's source can be copied."
 	/// </summary>
-	public override string LabelPlaceCopyingAllowed => "La source de ce jeu peut Ãªtre copiÃ©e.";
+	public override string LabelPlaceCopyingAllowed => "La source de ce jeu peut être copiée.";
 
 	/// <summary>
 	/// Key: "Label.Playing"
@@ -135,21 +137,21 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Name of the option to set a game's source as private.
 	/// English String: "Private Source"
 	/// </summary>
-	public override string LabelPrivateSource => "Source privÃ©e";
+	public override string LabelPrivateSource => "Source privée";
 
 	/// <summary>
 	/// Key: "Label.PrivateSourceDescription"
 	/// Player-facing description for a game with private source. This shows up under a game's description.
 	/// English String: "This game's source is private"
 	/// </summary>
-	public override string LabelPrivateSourceDescription => "La source de ce jeu est privÃ©e.";
+	public override string LabelPrivateSourceDescription => "La source de ce jeu est privée.";
 
 	/// <summary>
 	/// Key: "Label.PublicPrivateSourceCheckBox"
 	/// Details the effects of making a game's source public.
 	/// English String: "By leaving this checkbox checked, you are agreeing to allow every other user of Roblox the right to use (in various ways) the content you are now making available, as set out in the Terms. If you do not want to grant this right, please uncheck this box."
 	/// </summary>
-	public override string LabelPublicPrivateSourceCheckBox => "En cochant cette case, vous autorisez tous les autres utilisateurs de Roblox Ã  utiliser (de plusieurs faÃ§ons) le contenu que vous rendez disponible, tel qu'indiquÃ© dans les Conditions d'utilisation. Si vous ne souhaitez pas leur accorder ce droit, veuillez dÃ©cocher cette case.";
+	public override string LabelPublicPrivateSourceCheckBox => "En cochant cette case, vous autorisez tous les autres utilisateurs de Roblox à utiliser (de plusieurs façons) le contenu que vous rendez disponible, tel qu'indiqué dans les Conditions d'utilisation. Si vous ne souhaitez pas leur accorder ce droit, veuillez décocher cette case.";
 
 	/// <summary>
 	/// Key: "Label.PublicSource"
@@ -187,7 +189,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "Mis Ã  jour";
+	public override string LabelUpdated => "Mis à jour";
 
 	/// <summary>
 	/// Key: "Label.Visits"
@@ -211,12 +213,12 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// </summary>
 	public override string DescriptionAllowCopyingDisclaimer(string boldTagStart, string boldTagEnd, string boldTagStart2, string boldTagEnd2, string linkStart, string linkEnd)
 	{
-		return $"En cochant cette case, {boldTagStart}vous autorisez tous les autres utilisateurs de Roblox Ã  utiliser{boldTagEnd} (de plusieurs faÃ§ons) le contenu que vous rendez disponible. {boldTagStart2}Si vous ne souhaitez pas leur accorder ce droit, veuillez dÃ©cocher cette case{boldTagEnd2}. Pour plus d'informations Ã  propos du partage de contenu, veuillez consulter les {linkStart}Conditions d'utilisation{linkEnd} de Roblox.";
+		return $"En cochant cette case, {boldTagStart}vous autorisez tous les autres utilisateurs de Roblox à utiliser{boldTagEnd} (de plusieurs façons) le contenu que vous rendez disponible. {boldTagStart2}Si vous ne souhaitez pas leur accorder ce droit, veuillez décocher cette case{boldTagEnd2}. Pour plus d'informations à propos du partage de contenu, veuillez consulter les {linkStart}Conditions d'utilisation{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForDescriptionAllowCopyingDisclaimer()
 	{
-		return "En cochant cette case, {boldTagStart}vous autorisez tous les autres utilisateurs de Roblox Ã  utiliser{boldTagEnd} (de plusieurs faÃ§ons) le contenu que vous rendez disponible. {boldTagStart2}Si vous ne souhaitez pas leur accorder ce droit, veuillez dÃ©cocher cette case{boldTagEnd2}. Pour plus d'informations Ã  propos du partage de contenu, veuillez consulter les {linkStart}Conditions d'utilisation{linkEnd} de Roblox.";
+		return "En cochant cette case, {boldTagStart}vous autorisez tous les autres utilisateurs de Roblox à utiliser{boldTagEnd} (de plusieurs façons) le contenu que vous rendez disponible. {boldTagStart2}Si vous ne souhaitez pas leur accorder ce droit, veuillez décocher cette case{boldTagEnd2}. Pour plus d'informations à propos du partage de contenu, veuillez consulter les {linkStart}Conditions d'utilisation{linkEnd} de Roblox.";
 	}
 
 	protected override string _GetTemplateForHeadingDescription()
@@ -226,12 +228,12 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForHeadingRecommendedGames()
 	{
-		return "Jeux recommandÃ©s";
+		return "Jeux recommandés";
 	}
 
 	protected override string _GetTemplateForLabelAbout()
 	{
-		return "Ã€ propos";
+		return "À propos";
 	}
 
 	protected override string _GetTemplateForLabelAllowCopyingCheckbox()
@@ -241,7 +243,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelAllowedGear()
 	{
-		return "Ã‰quipement autorisÃ©";
+		return "Équipement autorisé";
 	}
 
 	protected override string _GetTemplateForLabelBy()
@@ -270,12 +272,12 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelCreated()
 	{
-		return "CrÃ©Ã©";
+		return "Créé";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalMode()
 	{
-		return "Mode expÃ©rimental";
+		return "Mode expérimental";
 	}
 
 	/// <summary>
@@ -284,12 +286,12 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 	/// </summary>
 	public override string LabelExperimentalWarning(string aTagStartWithHref, string ExperimentalGamesInfoLink, string hrefEnd, string aTagEnd)
 	{
-		return $"{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Ce jeu peut comporter des erreurs.{aTagEnd} Le dÃ©veloppeur doit mettre Ã  jour sa version du jeu.";
+		return $"{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Ce jeu peut comporter des erreurs.{aTagEnd} Le développeur doit mettre à jour sa version du jeu.";
 	}
 
 	protected override string _GetTemplateForLabelExperimentalWarning()
 	{
-		return "{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Ce jeu peut comporter des erreurs.{aTagEnd} Le dÃ©veloppeur doit mettre Ã  jour sa version du jeu.";
+		return "{aTagStartWithHref}{ExperimentalGamesInfoLink}{hrefEnd}Ce jeu peut comporter des erreurs.{aTagEnd} Le développeur doit mettre à jour sa version du jeu.";
 	}
 
 	protected override string _GetTemplateForLabelFavorites()
@@ -309,7 +311,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelGameRequiresBuildersClub()
 	{
-		return "Ce jeu nÃ©cessite le Builders Club.";
+		return "Ce jeu nécessite le Builders Club.";
 	}
 
 	protected override string _GetTemplateForLabelGenre()
@@ -334,7 +336,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelPlaceCopyingAllowed()
 	{
-		return "La source de ce jeu peut Ãªtre copiÃ©e.";
+		return "La source de ce jeu peut être copiée.";
 	}
 
 	protected override string _GetTemplateForLabelPlaying()
@@ -344,17 +346,17 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelPrivateSource()
 	{
-		return "Source privÃ©e";
+		return "Source privée";
 	}
 
 	protected override string _GetTemplateForLabelPrivateSourceDescription()
 	{
-		return "La source de ce jeu est privÃ©e.";
+		return "La source de ce jeu est privée.";
 	}
 
 	protected override string _GetTemplateForLabelPublicPrivateSourceCheckBox()
 	{
-		return "En cochant cette case, vous autorisez tous les autres utilisateurs de Roblox Ã  utiliser (de plusieurs faÃ§ons) le contenu que vous rendez disponible, tel qu'indiquÃ© dans les Conditions d'utilisation. Si vous ne souhaitez pas leur accorder ce droit, veuillez dÃ©cocher cette case.";
+		return "En cochant cette case, vous autorisez tous les autres utilisateurs de Roblox à utiliser (de plusieurs façons) le contenu que vous rendez disponible, tel qu'indiqué dans les Conditions d'utilisation. Si vous ne souhaitez pas leur accorder ce droit, veuillez décocher cette case.";
 	}
 
 	protected override string _GetTemplateForLabelPublicSource()
@@ -384,7 +386,7 @@ internal class GameDetailsResources_fr_fr : GameDetailsResources_en_us, IGameDet
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "Mis Ã  jour";
+		return "Mis à jour";
 	}
 
 	protected override string _GetTemplateForLabelVisits()

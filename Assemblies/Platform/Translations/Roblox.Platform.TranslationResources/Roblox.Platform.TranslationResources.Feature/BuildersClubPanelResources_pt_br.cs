@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides BuildersClubPanelResources_en_us to provide locale specific translations where possible,
@@ -25,14 +27,14 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// button text
 	/// English String: "Redeem Card"
 	/// </summary>
-	public override string ActionRedeemCard => "Usar cartÃ£o";
+	public override string ActionRedeemCard => "Usar cartão";
 
 	/// <summary>
 	/// Key: "Action.UpdateCreditCard"
 	/// button text
 	/// English String: "Update Credit Card"
 	/// </summary>
-	public override string ActionUpdateCreditCard => "Atualizar cartÃ£o de crÃ©dito";
+	public override string ActionUpdateCreditCard => "Atualizar cartão de crédito";
 
 	/// <summary>
 	/// Key: "Action.WhereToBuy"
@@ -44,9 +46,9 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// <summary>
 	/// Key: "Description.BuyRobux"
 	/// description text
-	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. Youâ€™ll need Robux to make it all happen. What are you waiting for?"
+	/// English String: "Robux is the virtual currency used in many of our online games. You can also use Robux for finding a great look for your avatar. Get cool gear to take into multiplayer battles. Buy Limited items to sell and trade. You’ll need Robux to make it all happen. What are you waiting for?"
 	/// </summary>
-	public override string DescriptionBuyRobux => "Robux Ã© uma moeda virtual usada em muitos dos nossos jogos online. Por exemplo, vocÃª pode usar Robux para encontrar um Ã³timo visual para seu avatar, comprar equipamentos bacanas para usar em batalhas multijogador e adquirir itens limitados para vender e trocar. VocÃª vai precisar de Robux para fazer tudo isso. O que estÃ¡ esperando?";
+	public override string DescriptionBuyRobux => "Robux é uma moeda virtual usada em muitos dos nossos jogos online. Por exemplo, você pode usar Robux para encontrar um ótimo visual para seu avatar, comprar equipamentos bacanas para usar em batalhas multijogador e adquirir itens limitados para vender e trocar. Você vai precisar de Robux para fazer tudo isso. O que está esperando?";
 
 	/// <summary>
 	/// Key: "Heading.BuyRobux"
@@ -67,14 +69,14 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// section heading
 	/// English String: "Game Cards"
 	/// </summary>
-	public override string HeadingGameCards => "CartÃµes do jogo";
+	public override string HeadingGameCards => "Cartões do jogo";
 
 	/// <summary>
 	/// Key: "Heading.Parents"
 	/// section heading
 	/// English String: "Parents"
 	/// </summary>
-	public override string HeadingParents => "ResponsÃ¡veis";
+	public override string HeadingParents => "Responsáveis";
 
 	/// <summary>
 	/// Key: "Label.BuyRobuxWith"
@@ -102,7 +104,7 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// label
 	/// English String: "Roblox Gamecards"
 	/// </summary>
-	public override string LabelRobloxGameCards => "CartÃµes do jogo do Roblox";
+	public override string LabelRobloxGameCards => "Cartões do jogo do Roblox";
 
 	public BuildersClubPanelResources_pt_br(TranslationResourceState state)
 		: base(state)
@@ -121,12 +123,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForActionRedeemCard()
 	{
-		return "Usar cartÃ£o";
+		return "Usar cartão";
 	}
 
 	protected override string _GetTemplateForActionUpdateCreditCard()
 	{
-		return "Atualizar cartÃ£o de crÃ©dito";
+		return "Atualizar cartão de crédito";
 	}
 
 	protected override string _GetTemplateForActionWhereToBuy()
@@ -141,17 +143,17 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionBillingPaymentHelp(string emailLink)
 	{
-		return $"Para dÃºvidas sobre cobranÃ§a e pagamento: {emailLink}";
+		return $"Para dúvidas sobre cobrança e pagamento: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBillingPaymentHelp()
 	{
-		return "Para dÃºvidas sobre cobranÃ§a e pagamento: {emailLink}";
+		return "Para dúvidas sobre cobrança e pagamento: {emailLink}";
 	}
 
 	protected override string _GetTemplateForDescriptionBuyRobux()
 	{
-		return "Robux Ã© uma moeda virtual usada em muitos dos nossos jogos online. Por exemplo, vocÃª pode usar Robux para encontrar um Ã³timo visual para seu avatar, comprar equipamentos bacanas para usar em batalhas multijogador e adquirir itens limitados para vender e trocar. VocÃª vai precisar de Robux para fazer tudo isso. O que estÃ¡ esperando?";
+		return "Robux é uma moeda virtual usada em muitos dos nossos jogos online. Por exemplo, você pode usar Robux para encontrar um ótimo visual para seu avatar, comprar equipamentos bacanas para usar em batalhas multijogador e adquirir itens limitados para vender e trocar. Você vai precisar de Robux para fazer tudo isso. O que está esperando?";
 	}
 
 	/// <summary>
@@ -161,12 +163,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellations(string linkStartTag, string linkEndTag)
 	{
-		return $"VocÃª poderÃ¡ cancelar a renovaÃ§Ã£o automÃ¡tica da assinatura a qualquer momento antes da data de renovaÃ§Ã£o e continuarÃ¡ a receber os privilÃ©gios do Builders Club atÃ© o fim do perÃ­odo do pagamento atual. Para desligar a renovaÃ§Ã£o automÃ¡tica, clique no botÃ£o â€˜Cancelar renovaÃ§Ã£o de assinatura' na aba {linkStartTag}CobranÃ§a{linkEndTag} da pÃ¡gina de ConfiguraÃ§Ãµes e confirme o cancelamento.";
+		return $"Você poderá cancelar a renovação automática da assinatura a qualquer momento antes da data de renovação e continuará a receber os privilégios do Builders Club até o fim do período do pagamento atual. Para desligar a renovação automática, clique no botão ‘Cancelar renovação de assinatura' na aba {linkStartTag}Cobrança{linkEndTag} da página de Configurações e confirme o cancelamento.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellations()
 	{
-		return "VocÃª poderÃ¡ cancelar a renovaÃ§Ã£o automÃ¡tica da assinatura a qualquer momento antes da data de renovaÃ§Ã£o e continuarÃ¡ a receber os privilÃ©gios do Builders Club atÃ© o fim do perÃ­odo do pagamento atual. Para desligar a renovaÃ§Ã£o automÃ¡tica, clique no botÃ£o â€˜Cancelar renovaÃ§Ã£o de assinatura' na aba {linkStartTag}CobranÃ§a{linkEndTag} da pÃ¡gina de ConfiguraÃ§Ãµes e confirme o cancelamento.";
+		return "Você poderá cancelar a renovação automática da assinatura a qualquer momento antes da data de renovação e continuará a receber os privilégios do Builders Club até o fim do período do pagamento atual. Para desligar a renovação automática, clique no botão ‘Cancelar renovação de assinatura' na aba {linkStartTag}Cobrança{linkEndTag} da página de Configurações e confirme o cancelamento.";
 	}
 
 	/// <summary>
@@ -175,12 +177,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionCancellationsPremium(string linkStartTag, string linkEndTag)
 	{
-		return $"VocÃª poderÃ¡ cancelar a renovaÃ§Ã£o automÃ¡tica da assinatura a qualquer momento antes da data de renovaÃ§Ã£o e continuarÃ¡ a receber os privilÃ©gios do Premium atÃ© o fim do perÃ­odo do pagamento atual. Para desligar a renovaÃ§Ã£o automÃ¡tica, clique no botÃ£o â€˜Cancelar renovaÃ§Ã£o de assinatura' na aba {linkStartTag}CobranÃ§a{linkEndTag} da pÃ¡gina de ConfiguraÃ§Ãµes e confirme o cancelamento.";
+		return $"Você poderá cancelar a renovação automática da assinatura a qualquer momento antes da data de renovação e continuará a receber os privilégios do Premium até o fim do período do pagamento atual. Para desligar a renovação automática, clique no botão ‘Cancelar renovação de assinatura' na aba {linkStartTag}Cobrança{linkEndTag} da página de Configurações e confirme o cancelamento.";
 	}
 
 	protected override string _GetTemplateForDescriptionCancellationsPremium()
 	{
-		return "VocÃª poderÃ¡ cancelar a renovaÃ§Ã£o automÃ¡tica da assinatura a qualquer momento antes da data de renovaÃ§Ã£o e continuarÃ¡ a receber os privilÃ©gios do Premium atÃ© o fim do perÃ­odo do pagamento atual. Para desligar a renovaÃ§Ã£o automÃ¡tica, clique no botÃ£o â€˜Cancelar renovaÃ§Ã£o de assinatura' na aba {linkStartTag}CobranÃ§a{linkEndTag} da pÃ¡gina de ConfiguraÃ§Ãµes e confirme o cancelamento.";
+		return "Você poderá cancelar a renovação automática da assinatura a qualquer momento antes da data de renovação e continuará a receber os privilégios do Premium até o fim do período do pagamento atual. Para desligar a renovação automática, clique no botão ‘Cancelar renovação de assinatura' na aba {linkStartTag}Cobrança{linkEndTag} da página de Configurações e confirme o cancelamento.";
 	}
 
 	/// <summary>
@@ -190,12 +192,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLeanMoreKidsSafety(string startLinkTag, string endLinkTag)
 	{
-		return $"Saiba mais sobre o Builders Club e sobre como {startLinkTag}protegemos as crianÃ§as{endLinkTag}.";
+		return $"Saiba mais sobre o Builders Club e sobre como {startLinkTag}protegemos as crianças{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLeanMoreKidsSafety()
 	{
-		return "Saiba mais sobre o Builders Club e sobre como {startLinkTag}protegemos as crianÃ§as{endLinkTag}.";
+		return "Saiba mais sobre o Builders Club e sobre como {startLinkTag}protegemos as crianças{endLinkTag}.";
 	}
 
 	/// <summary>
@@ -204,12 +206,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string DescriptionLearnMoreKidsSafetyPremium(string startLinkTag, string endLinkTag)
 	{
-		return $"Saiba mais sobre o Premium e sobre como {startLinkTag}protegemos as crianÃ§as{endLinkTag}.";
+		return $"Saiba mais sobre o Premium e sobre como {startLinkTag}protegemos as crianças{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForDescriptionLearnMoreKidsSafetyPremium()
 	{
-		return "Saiba mais sobre o Premium e sobre como {startLinkTag}protegemos as crianÃ§as{endLinkTag}.";
+		return "Saiba mais sobre o Premium e sobre como {startLinkTag}protegemos as crianças{endLinkTag}.";
 	}
 
 	protected override string _GetTemplateForHeadingBuyRobux()
@@ -224,12 +226,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForHeadingGameCards()
 	{
-		return "CartÃµes do jogo";
+		return "Cartões do jogo";
 	}
 
 	protected override string _GetTemplateForHeadingParents()
 	{
-		return "ResponsÃ¡veis";
+		return "Responsáveis";
 	}
 
 	protected override string _GetTemplateForLabelBuyRobuxWith()
@@ -244,12 +246,12 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 	/// </summary>
 	public override string LabelCreditBalance(string amount)
 	{
-		return $"Saldo de crÃ©ditos: {amount}";
+		return $"Saldo de créditos: {amount}";
 	}
 
 	protected override string _GetTemplateForLabelCreditBalance()
 	{
-		return "Saldo de crÃ©ditos: {amount}";
+		return "Saldo de créditos: {amount}";
 	}
 
 	protected override string _GetTemplateForLabelItunes()
@@ -264,7 +266,7 @@ internal class BuildersClubPanelResources_pt_br : BuildersClubPanelResources_en_
 
 	protected override string _GetTemplateForLabelRobloxGameCards()
 	{
-		return "CartÃµes do jogo do Roblox";
+		return "Cartões do jogo do Roblox";
 	}
 }
 

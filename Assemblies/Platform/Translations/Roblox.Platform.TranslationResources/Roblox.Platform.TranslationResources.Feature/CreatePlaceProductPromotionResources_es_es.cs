@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides CreatePlaceProductPromotionResources_en_us to provide locale specific translations where possible,
@@ -10,7 +12,7 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 	/// Key: "Label.AddToGame"
 	/// English String: "Add to Game"
 	/// </summary>
-	public override string LabelAddToGame => "AÃ±adir al juego";
+	public override string LabelAddToGame => "Añadir al juego";
 
 	/// <summary>
 	/// Key: "Label.Cancel"
@@ -28,13 +30,13 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 	/// Key: "Label.ErrorOccured"
 	/// English String: "An error occurred, please try again."
 	/// </summary>
-	public override string LabelErrorOccured => "Se ha producido un error. IntÃ©ntalo de nuevo.";
+	public override string LabelErrorOccured => "Se ha producido un error. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Label.NotForSale"
 	/// English String: "This item is not for sale."
 	/// </summary>
-	public override string LabelNotForSale => "Este objeto no estÃ¡ en venta.";
+	public override string LabelNotForSale => "Este objeto no está en venta.";
 
 	/// <summary>
 	/// Key: "Label.Ok"
@@ -82,13 +84,13 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 	/// Key: "Label.SorryWeCouldnt"
 	/// English String: "Sorry, we couldn't remove the item from your game. Please try again."
 	/// </summary>
-	public override string LabelSorryWeCouldnt => "No hemos podido eliminar el objeto de tu juego. IntÃ©ntalo de nuevo.";
+	public override string LabelSorryWeCouldnt => "No hemos podido eliminar el objeto de tu juego. Inténtalo de nuevo.";
 
 	/// <summary>
 	/// Key: "Label.Success"
 	/// English String: "Success!"
 	/// </summary>
-	public override string LabelSuccess => "Â¡Hecho!";
+	public override string LabelSuccess => "¡Hecho!";
 
 	public CreatePlaceProductPromotionResources_es_es(TranslationResourceState state)
 		: base(state)
@@ -97,7 +99,7 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelAddToGame()
 	{
-		return "AÃ±adir al juego";
+		return "Añadir al juego";
 	}
 
 	protected override string _GetTemplateForLabelCancel()
@@ -112,12 +114,12 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelErrorOccured()
 	{
-		return "Se ha producido un error. IntÃ©ntalo de nuevo.";
+		return "Se ha producido un error. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForLabelNotForSale()
 	{
-		return "Este objeto no estÃ¡ en venta.";
+		return "Este objeto no está en venta.";
 	}
 
 	protected override string _GetTemplateForLabelOk()
@@ -157,12 +159,12 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 
 	protected override string _GetTemplateForLabelSorryWeCouldnt()
 	{
-		return "No hemos podido eliminar el objeto de tu juego. IntÃ©ntalo de nuevo.";
+		return "No hemos podido eliminar el objeto de tu juego. Inténtalo de nuevo.";
 	}
 
 	protected override string _GetTemplateForLabelSuccess()
 	{
-		return "Â¡Hecho!";
+		return "¡Hecho!";
 	}
 
 	/// <summary>
@@ -171,12 +173,12 @@ internal class CreatePlaceProductPromotionResources_es_es : CreatePlaceProductPr
 	/// </summary>
 	public override string MessageWhatIsAddingGear(string affiliateSaleTotal)
 	{
-		return $"Â¿QuÃ© es aÃ±adir equipamiento a un juego? Este objeto aparece en la pÃ¡gina de tu juego y se permite automÃ¡ticamente en Ã©l. Si alguien compra este objeto en la pÃ¡gina de tu juego, Â¡ganarÃ¡s {affiliateSaleTotal} Robux!";
+		return $"¿Qué es añadir equipamiento a un juego? Este objeto aparece en la página de tu juego y se permite automáticamente en él. Si alguien compra este objeto en la página de tu juego, ¡ganarás {affiliateSaleTotal} Robux!";
 	}
 
 	protected override string _GetTemplateForMessageWhatIsAddingGear()
 	{
-		return "Â¿QuÃ© es aÃ±adir equipamiento a un juego? Este objeto aparece en la pÃ¡gina de tu juego y se permite automÃ¡ticamente en Ã©l. Si alguien compra este objeto en la pÃ¡gina de tu juego, Â¡ganarÃ¡s {affiliateSaleTotal} Robux!";
+		return "¿Qué es añadir equipamiento a un juego? Este objeto aparece en la página de tu juego y se permite automáticamente en él. Si alguien compra este objeto en la página de tu juego, ¡ganarás {affiliateSaleTotal} Robux!";
 	}
 }
 

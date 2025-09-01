@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides ItemResources_en_us to provide locale specific translations where possible,
@@ -11,107 +13,107 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// button label
 	/// English String: "Add"
 	/// </summary>
-	public override string ActionAdd => "è¿½åŠ ";
+	public override string ActionAdd => "追加";
 
 	/// <summary>
 	/// Key: "Action.AddToGame"
 	/// English String: "Add To Game"
 	/// </summary>
-	public override string ActionAddToGame => "ã‚²ãƒ¼ãƒ ã«è¿½åŠ ";
+	public override string ActionAddToGame => "ゲームに追加";
 
 	/// <summary>
 	/// Key: "Action.AddToProfile"
 	/// English String: "Add to Profile"
 	/// </summary>
-	public override string ActionAddToProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ";
+	public override string ActionAddToProfile => "プロフィールに追加";
 
 	/// <summary>
 	/// Key: "Action.Advertise"
 	/// English String: "Advertise"
 	/// </summary>
-	public override string ActionAdvertise => "å®£ä¼";
+	public override string ActionAdvertise => "宣伝";
 
 	/// <summary>
 	/// Key: "Action.Agree"
 	/// button label
 	/// English String: "Agree"
 	/// </summary>
-	public override string ActionAgree => "åŒæ„ã™ã‚‹";
+	public override string ActionAgree => "同意する";
 
 	/// <summary>
 	/// Key: "Action.Buy"
 	/// English String: "Buy"
 	/// </summary>
-	public override string ActionBuy => "è²·ã†";
+	public override string ActionBuy => "買う";
 
 	/// <summary>
 	/// Key: "Action.Cancel"
 	/// Cancel
 	/// English String: "Cancel"
 	/// </summary>
-	public override string ActionCancel => "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+	public override string ActionCancel => "キャンセル";
 
 	/// <summary>
 	/// Key: "Action.Configure"
 	/// English String: "Configure"
 	/// </summary>
-	public override string ActionConfigure => "ç’°å¢ƒè¨­å®šã™ã‚‹";
+	public override string ActionConfigure => "環境設定する";
 
 	/// <summary>
 	/// Key: "Action.Confirm"
 	/// button label
 	/// English String: "Confirm"
 	/// </summary>
-	public override string ActionConfirm => "ç¢ºèª";
+	public override string ActionConfirm => "確認";
 
 	/// <summary>
 	/// Key: "Action.Delete"
 	/// English String: "Delete"
 	/// </summary>
-	public override string ActionDelete => "å‰Šé™¤";
+	public override string ActionDelete => "削除";
 
 	/// <summary>
 	/// Key: "Action.DisableBadge"
 	/// English String: "Disable Badge"
 	/// </summary>
-	public override string ActionDisableBadge => "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã™ã‚‹";
+	public override string ActionDisableBadge => "バッジを無効にする";
 
 	/// <summary>
 	/// Key: "Action.EditAvatar"
 	/// English String: "Edit Avatar"
 	/// </summary>
-	public override string ActionEditAvatar => "ã‚¢ãƒã‚¿ãƒ¼ã‚’ç·¨é›†";
+	public override string ActionEditAvatar => "アバターを編集";
 
 	/// <summary>
 	/// Key: "Action.EnableBadge"
 	/// English String: "Enable Badge"
 	/// </summary>
-	public override string ActionEnableBadge => "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
+	public override string ActionEnableBadge => "バッジを有効にする";
 
 	/// <summary>
 	/// Key: "Action.Get"
 	/// English String: "Get"
 	/// </summary>
-	public override string ActionGet => "ã‚²ãƒƒãƒˆã™ã‚‹";
+	public override string ActionGet => "ゲットする";
 
 	/// <summary>
 	/// Key: "Action.Install"
 	/// English String: "Install"
 	/// </summary>
-	public override string ActionInstall => "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
+	public override string ActionInstall => "インストール";
 
 	/// <summary>
 	/// Key: "Action.Inventory"
 	/// English String: "Inventory"
 	/// </summary>
-	public override string ActionInventory => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+	public override string ActionInventory => "インベントリ";
 
 	/// <summary>
 	/// Key: "Action.No"
 	/// button label
 	/// English String: "No"
 	/// </summary>
-	public override string ActionNo => "ã„ã„ãˆ";
+	public override string ActionNo => "いいえ";
 
 	/// <summary>
 	/// Key: "Action.Ok"
@@ -124,91 +126,91 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Action.Remove"
 	/// English String: "Remove"
 	/// </summary>
-	public override string ActionRemove => "å‰Šé™¤";
+	public override string ActionRemove => "削除";
 
 	/// <summary>
 	/// Key: "Action.RemoveFromProfile"
 	/// English String: "Remove from Profile"
 	/// </summary>
-	public override string ActionRemoveFromProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤";
+	public override string ActionRemoveFromProfile => "プロフィールから削除";
 
 	/// <summary>
 	/// Key: "Action.Rent"
 	/// English String: "Rent"
 	/// </summary>
-	public override string ActionRent => "ãƒ¬ãƒ³ã‚¿ãƒ«";
+	public override string ActionRent => "レンタル";
 
 	/// <summary>
 	/// Key: "Action.ReportItem"
 	/// English String: "Report Item"
 	/// </summary>
-	public override string ActionReportItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å ±å‘Š";
+	public override string ActionReportItem => "アイテムを報告";
 
 	/// <summary>
 	/// Key: "Action.Sell"
 	/// English String: "Sell"
 	/// </summary>
-	public override string ActionSell => "å£²ã‚‹";
+	public override string ActionSell => "売る";
 
 	/// <summary>
 	/// Key: "Action.SellNow"
 	/// Sell Now
 	/// English String: "Sell Now"
 	/// </summary>
-	public override string ActionSellNow => "ä»Šã™ãå£²ã‚‹";
+	public override string ActionSellNow => "今すぐ売る";
 
 	/// <summary>
 	/// Key: "Action.TakeOff"
 	/// Action on context menu on owned item detail page.
 	/// English String: "Take Off"
 	/// </summary>
-	public override string ActionTakeOff => "å¤–ã™";
+	public override string ActionTakeOff => "外す";
 
 	/// <summary>
 	/// Key: "Action.TakeOffSale"
 	/// English String: "Take Off Sale"
 	/// </summary>
-	public override string ActionTakeOffSale => "éžå£²å“ã«ã™ã‚‹";
+	public override string ActionTakeOffSale => "非売品にする";
 
 	/// <summary>
 	/// Key: "Action.TryOn"
 	/// English String: "Try On"
 	/// </summary>
-	public override string ActionTryOn => "è£…å‚™ã—ã¦ã¿ã‚‹";
+	public override string ActionTryOn => "装備してみる";
 
 	/// <summary>
 	/// Key: "Action.Upgrade"
 	/// English String: "Upgrade"
 	/// </summary>
-	public override string ActionUpgrade => "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
+	public override string ActionUpgrade => "アップグレード";
 
 	/// <summary>
 	/// Key: "Action.Wear"
 	/// Action on context menu on owned item
 	/// English String: "Wear"
 	/// </summary>
-	public override string ActionWear => "è£…å‚™";
+	public override string ActionWear => "装備";
 
 	/// <summary>
 	/// Key: "Action.Yes"
 	/// Yes
 	/// English String: "Yes"
 	/// </summary>
-	public override string ActionYes => "ã¯ã„";
+	public override string ActionYes => "はい";
 
 	/// <summary>
 	/// Key: "Heading.IncludedItems"
 	/// Included items for a bundle of items. User purchases a bundle and will receive all items that will show below this heading.
 	/// English String: "Included Items"
 	/// </summary>
-	public override string HeadingIncludedItems => "å«ã¾ã‚Œã‚‹ã‚¢ã‚¤ãƒ†ãƒ ";
+	public override string HeadingIncludedItems => "含まれるアイテム";
 
 	/// <summary>
 	/// Key: "Heading.PromoteItem"
 	/// dialog heading
 	/// English String: "Promote Item"
 	/// </summary>
-	public override string HeadingPromoteItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å®£ä¼ã™ã‚‹";
+	public override string HeadingPromoteItem => "アイテムを宣伝する";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalAcceptText"
@@ -220,192 +222,192 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// Key: "Label.AssetGrantedModalMessage"
 	/// English String: "You just got this item courtesy of our sponsor."
 	/// </summary>
-	public override string LabelAssetGrantedModalMessage => "ã‚¹ãƒãƒ³ã‚µãƒ¼ã®ã”åŽšæ„ã«ã‚ˆã‚Šã€ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æ‰‹ã«å…¥ã‚Œã¾ã—ãŸã€‚";
+	public override string LabelAssetGrantedModalMessage => "スポンサーのご厚意により、このアイテムを手に入れました。";
 
 	/// <summary>
 	/// Key: "Label.AssetGrantedModalTitle"
 	/// English String: "This item is now yours"
 	/// </summary>
-	public override string LabelAssetGrantedModalTitle => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã€ã‚ãªãŸã®ã‚‚ã®ã§ã™";
+	public override string LabelAssetGrantedModalTitle => "このアイテムは、あなたのものです";
 
 	/// <summary>
 	/// Key: "Label.Attributes"
 	/// English String: "Attributes"
 	/// </summary>
-	public override string LabelAttributes => "å±žæ€§";
+	public override string LabelAttributes => "属性";
 
 	/// <summary>
 	/// Key: "Label.BestPrice"
 	/// English String: "Best Price"
 	/// </summary>
-	public override string LabelBestPrice => "ãŠè²·ã„å¾—";
+	public override string LabelBestPrice => "お買い得";
 
 	/// <summary>
 	/// Key: "Label.BuildersClubExclusive"
 	/// label for Builders Club requirement
 	/// English String: "Builders Club exclusive."
 	/// </summary>
-	public override string LabelBuildersClubExclusive => "Builders Clubé™å®šã€‚";
+	public override string LabelBuildersClubExclusive => "Builders Club限定。";
 
 	/// <summary>
 	/// Key: "Label.DeleteFromInventoryConfirm"
 	/// confirmation message before deletion
 	/// English String: "Are you sure you want to permanently DELETE this item from your inventory?"
 	/// </summary>
-	public override string LabelDeleteFromInventoryConfirm => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰æ°¸ä¹…ã«å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelDeleteFromInventoryConfirm => "このアイテムをインベントリから永久に削除してよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.DeleteItem"
 	/// Delete Item
 	/// English String: "Delete Item"
 	/// </summary>
-	public override string LabelDeleteItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤";
+	public override string LabelDeleteItem => "アイテムを削除";
 
 	/// <summary>
 	/// Key: "Label.Description"
 	/// English String: "Description"
 	/// </summary>
-	public override string LabelDescription => "è©³ç´°";
+	public override string LabelDescription => "詳細";
 
 	/// <summary>
 	/// Key: "Label.DisableBadgeConfirm"
 	/// Are you sure you want to disable this Badge?
 	/// English String: "Are you sure you want to disable this Badge?"
 	/// </summary>
-	public override string LabelDisableBadgeConfirm => "ã“ã®ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelDisableBadgeConfirm => "このバッジを無効にしてよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.DiscontinuedItem"
 	/// label
 	/// English String: "Discontinued item, resellable."
 	/// </summary>
-	public override string LabelDiscontinuedItem => "å…¬é–‹ãŒçµ‚äº†ã—ãŸã‚¢ã‚¤ãƒ†ãƒ ã§ã™ã€‚å†è²©å¯èƒ½ã€‚";
+	public override string LabelDiscontinuedItem => "公開が終了したアイテムです。再販可能。";
 
 	/// <summary>
 	/// Key: "Label.EnableBadgeConfirm"
 	/// Are you sure you want to enable this Badge?
 	/// English String: "Are you sure you want to enable this Badge?"
 	/// </summary>
-	public override string LabelEnableBadgeConfirm => "ã“ã®ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelEnableBadgeConfirm => "このバッジを有効にしてよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.ErrorOccurred"
 	/// English String: "Error occurred"
 	/// </summary>
-	public override string LabelErrorOccurred => "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+	public override string LabelErrorOccurred => "エラーが発生しました";
 
 	/// <summary>
 	/// Key: "Label.Free"
 	/// English String: "Free"
 	/// </summary>
-	public override string LabelFree => "ç„¡æ–™";
+	public override string LabelFree => "無料";
 
 	/// <summary>
 	/// Key: "Label.Genres"
 	/// English String: "Genres"
 	/// </summary>
-	public override string LabelGenres => "ã‚¸ãƒ£ãƒ³ãƒ«";
+	public override string LabelGenres => "ジャンル";
 
 	/// <summary>
 	/// Key: "Label.GetBuildersClub"
 	/// Only Builders Club members can re-sell collectible items. Get Builders Club today!
 	/// English String: "Only Builders Club members can re-sell collectible items. Get Builders Club today!"
 	/// </summary>
-	public override string LabelGetBuildersClub => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚’å†è²©ã§ãã‚‹ã®ã¯ã€Builders Clubã®ãƒ¡ãƒ³ãƒãƒ¼ã ã‘ã§ã™ã€‚ä»Šã™ãBuilders Clubå‚åŠ ã—ã‚ˆã†ï¼";
+	public override string LabelGetBuildersClub => "コレクタブルを再販できるのは、Builders Clubのメンバーだけです。今すぐBuilders Club参加しよう！";
 
 	/// <summary>
 	/// Key: "Label.GetPremiumMembership"
 	/// English String: "Only Premium members can re-sell collectible items. Get Premium today!"
 	/// </summary>
-	public override string LabelGetPremiumMembership => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©ã§ãã‚‹ã®ã¯ã€Premiumãƒ¡ãƒ³ãƒãƒ¼ã ã‘ã§ã™ã€‚ä»Šã™ãPremiumã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼";
+	public override string LabelGetPremiumMembership => "コレクタブルアイテムを再販できるのは、Premiumメンバーだけです。今すぐPremiumをゲットしよう！";
 
 	/// <summary>
 	/// Key: "Label.InvalidPlace"
 	/// text label
 	/// English String: "Invalid Place."
 	/// </summary>
-	public override string LabelInvalidPlace => "ãƒ—ãƒ¬ãƒ¼ã‚¹ãŒç„¡åŠ¹ã§ã™ã€‚";
+	public override string LabelInvalidPlace => "プレースが無効です。";
 
 	/// <summary>
 	/// Key: "Label.InvalidProduct"
 	/// label
 	/// English String: "Invalid Product."
 	/// </summary>
-	public override string LabelInvalidProduct => "è£½å“ãŒç„¡åŠ¹ã§ã™ã€‚";
+	public override string LabelInvalidProduct => "製品が無効です。";
 
 	/// <summary>
 	/// Key: "Label.ItemAvailable"
 	/// User is looking at the details of an item which they already own in their inventory.
 	/// English String: "This item is available in your inventory."
 	/// </summary>
-	public override string LabelItemAvailable => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã§åˆ©ç”¨ã§ãã¾ã™ã€‚";
+	public override string LabelItemAvailable => "このアイテムはインベントリで利用できます。";
 
 	/// <summary>
 	/// Key: "Label.ItemNotForSale"
 	/// User is looking at the details of an item that cannot be purchased.
 	/// English String: "This item is not currently for sale."
 	/// </summary>
-	public override string LabelItemNotForSale => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ç¾åœ¨å£²ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
+	public override string LabelItemNotForSale => "このアイテムは現在売られていません。";
 
 	/// <summary>
 	/// Key: "Label.ItemOwned"
 	/// English String: "Item Owned"
 	/// </summary>
-	public override string LabelItemOwned => "æ‰€æœ‰ã—ã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ";
+	public override string LabelItemOwned => "所有しているアイテム";
 
 	/// <summary>
 	/// Key: "Label.None"
 	/// English String: "None"
 	/// </summary>
-	public override string LabelNone => "ãªã—";
+	public override string LabelNone => "なし";
 
 	/// <summary>
 	/// Key: "Label.NotAvailable"
 	/// English String: "N/A"
 	/// </summary>
-	public override string LabelNotAvailable => "è©²å½“ãªã—";
+	public override string LabelNotAvailable => "該当なし";
 
 	/// <summary>
 	/// Key: "Label.Price"
 	/// English String: "Price"
 	/// </summary>
-	public override string LabelPrice => "ä¾¡æ ¼";
+	public override string LabelPrice => "価格";
 
 	/// <summary>
 	/// Key: "Label.PriceIsInvalid"
 	/// English String: "Price is invalid"
 	/// </summary>
-	public override string LabelPriceIsInvalid => "ä¾¡æ ¼ãŒç„¡åŠ¹ã§ã™";
+	public override string LabelPriceIsInvalid => "価格が無効です";
 
 	/// <summary>
 	/// Key: "Label.PriceMinimumOne"
 	/// English String: "Price (minimum 1)"
 	/// </summary>
-	public override string LabelPriceMinimumOne => "ä¾¡æ ¼ï¼ˆæœ€ä½Ž1ï¼‰";
+	public override string LabelPriceMinimumOne => "価格（最低1）";
 
 	/// <summary>
 	/// Key: "Label.PurchaseCompleted"
 	/// English String: "Purchase Completed"
 	/// </summary>
-	public override string LabelPurchaseCompleted => "è³¼å…¥ãŒå®Œäº†ã—ã¾ã—ãŸ";
+	public override string LabelPurchaseCompleted => "購入が完了しました";
 
 	/// <summary>
 	/// Key: "Label.Rarity"
 	/// English String: "Rarity"
 	/// </summary>
-	public override string LabelRarity => "ãƒ¬ã‚¢åº¦";
+	public override string LabelRarity => "レア度";
 
 	/// <summary>
 	/// Key: "Label.ReadMore"
 	/// English String: "Read More"
 	/// </summary>
-	public override string LabelReadMore => "ç¶šãã‚’èª­ã‚€";
+	public override string LabelReadMore => "続きを読む";
 
 	/// <summary>
 	/// Key: "Label.RentingItem"
 	/// English String: "Renting Item"
 	/// </summary>
-	public override string LabelRentingItem => "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãƒ¬ãƒ³ã‚¿ãƒ«ä¸­";
+	public override string LabelRentingItem => "アイテムをレンタル中";
 
 	/// <summary>
 	/// Key: "Label.Rthro"
@@ -419,170 +421,170 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// Sell Your Collectible Item
 	/// English String: "Sell Your Collectible Item"
 	/// </summary>
-	public override string LabelSellYourCollectibleItem => "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¤ãƒ†ãƒ ã‚’å£²ã‚‹";
+	public override string LabelSellYourCollectibleItem => "コレクタブルアイテムを売る";
 
 	/// <summary>
 	/// Key: "Label.SerializedLimitedRelease"
 	/// label
 	/// English String: "Serialized limited release, resellable."
 	/// </summary>
-	public override string LabelSerializedLimitedRelease => "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ä»˜ãé™å®šå…¬é–‹ã€‚å†è²©å¯èƒ½ã€‚";
+	public override string LabelSerializedLimitedRelease => "シリアルナンバー付き限定公開。再販可能。";
 
 	/// <summary>
 	/// Key: "Label.SerialNotAvailable"
 	/// English String: "Serial N/A"
 	/// </summary>
-	public override string LabelSerialNotAvailable => "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ãªã—";
+	public override string LabelSerialNotAvailable => "シリアルナンバーなし";
 
 	/// <summary>
 	/// Key: "Label.SerialNumber"
 	/// English String: "Serial Number"
 	/// </summary>
-	public override string LabelSerialNumber => "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼";
+	public override string LabelSerialNumber => "シリアルナンバー";
 
 	/// <summary>
 	/// Key: "Label.ShowLess"
 	/// Show Less
 	/// English String: "Show Less"
 	/// </summary>
-	public override string LabelShowLess => "è¡¨ç¤ºã‚’æ¸›ã‚‰ã™";
+	public override string LabelShowLess => "表示を減らす";
 
 	/// <summary>
 	/// Key: "Label.Tags"
 	/// A label to indicate a list of tags on an item (i.e. "red, belt, shoes, denim" could be some tags for a Pants item that was red jeans with a belt and shoes)
 	/// English String: "Tags"
 	/// </summary>
-	public override string LabelTags => "ã‚¿ã‚°";
+	public override string LabelTags => "タグ";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSale"
 	/// Take off Sale
 	/// English String: "Take off Sale"
 	/// </summary>
-	public override string LabelTakeOffSale => "éžå£²å“ã«ã™ã‚‹";
+	public override string LabelTakeOffSale => "非売品にする";
 
 	/// <summary>
 	/// Key: "Label.TakeOffSaleConfirm"
 	/// English String: "Are you sure you want to take the item off sale?"
 	/// </summary>
-	public override string LabelTakeOffSaleConfirm => "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éžå£²å“ã«ã—ã¦ã‚‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+	public override string LabelTakeOffSaleConfirm => "このアイテムを非売品にしてもよろしいですか？";
 
 	/// <summary>
 	/// Key: "Label.ThirteenPlusOnly"
 	/// label
 	/// English String: "13+ Only."
 	/// </summary>
-	public override string LabelThirteenPlusOnly => "13æ­³ä»¥ä¸Šé™å®šã€‚";
+	public override string LabelThirteenPlusOnly => "13歳以上限定。";
 
 	/// <summary>
 	/// Key: "Label.Type"
 	/// English String: "Type"
 	/// </summary>
-	public override string LabelType => "ã‚¿ã‚¤ãƒ—";
+	public override string LabelType => "タイプ";
 
 	/// <summary>
 	/// Key: "Label.Updated"
 	/// English String: "Updated"
 	/// </summary>
-	public override string LabelUpdated => "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+	public override string LabelUpdated => "アップデート済み";
 
 	/// <summary>
 	/// Key: "Label.YouGet"
 	/// Amount user gets after Marketplace fee deduction.
 	/// English String: "You get"
 	/// </summary>
-	public override string LabelYouGet => "ç²å¾—:";
+	public override string LabelYouGet => "獲得:";
 
 	/// <summary>
 	/// Key: "Response.AddedToProfile"
 	/// success message when item is added to profile
 	/// English String: "Added to your profile"
 	/// </summary>
-	public override string ResponseAddedToProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ã—ã¾ã—ãŸ";
+	public override string ResponseAddedToProfile => "プロフィールに追加しました";
 
 	/// <summary>
 	/// Key: "Response.AddedToYourAvater"
 	/// Added to your Avatar
 	/// English String: "Added to your Avatar"
 	/// </summary>
-	public override string ResponseAddedToYourAvater => "ã‚¢ãƒã‚¿ãƒ¼ã«è¿½åŠ ã—ã¾ã—ãŸ";
+	public override string ResponseAddedToYourAvater => "アバターに追加しました";
 
 	/// <summary>
 	/// Key: "Response.AlreadyHaveMaxItems"
 	/// error message
 	/// English String: "You already have the maximum number of items on your game!"
 	/// </summary>
-	public override string ResponseAlreadyHaveMaxItems => "ã‚²ãƒ¼ãƒ ã®ã‚¢ã‚¤ãƒ†ãƒ æ•°ã®ä¸Šé™ã«åˆ°é”ã—ã¦ã„ã¾ã™ï¼";
+	public override string ResponseAlreadyHaveMaxItems => "ゲームのアイテム数の上限に到達しています！";
 
 	/// <summary>
 	/// Key: "Response.DisabledBadge"
 	/// Successfully disabled the badge
 	/// English String: "Successfully disabled the badge"
 	/// </summary>
-	public override string ResponseDisabledBadge => "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¾ã—ãŸ";
+	public override string ResponseDisabledBadge => "バッジを無効にしました";
 
 	/// <summary>
 	/// Key: "Response.EnabledBadge"
 	/// Successfully enabled the badge
 	/// English String: "Successfully enabled the badge"
 	/// </summary>
-	public override string ResponseEnabledBadge => "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã—ã¾ã—ãŸ";
+	public override string ResponseEnabledBadge => "バッジを有効にしました";
 
 	/// <summary>
 	/// Key: "Response.FailedToAddToProfile"
 	/// error message when item could not be added to profile
 	/// English String: "Failed to add to profile"
 	/// </summary>
-	public override string ResponseFailedToAddToProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ã§ãã¾ã›ã‚“";
+	public override string ResponseFailedToAddToProfile => "プロフィールに追加できません";
 
 	/// <summary>
 	/// Key: "Response.FailedToDeleteFromInventory"
 	/// Failed to delete item from inventory
 	/// English String: "Failed to delete item from inventory"
 	/// </summary>
-	public override string ResponseFailedToDeleteFromInventory => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸ";
+	public override string ResponseFailedToDeleteFromInventory => "インベントリからアイテムを削除できませんでした";
 
 	/// <summary>
 	/// Key: "Response.FailedToDisableBadge"
 	/// Failed to disable badge
 	/// English String: "Failed to disable badge"
 	/// </summary>
-	public override string ResponseFailedToDisableBadge => "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã§ãã¾ã›ã‚“";
+	public override string ResponseFailedToDisableBadge => "バッジを無効にできません";
 
 	/// <summary>
 	/// Key: "Response.FailedToEnableBadge"
 	/// Failed to enable badge
 	/// English String: "Failed to enable badge"
 	/// </summary>
-	public override string ResponseFailedToEnableBadge => "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã§ãã¾ã›ã‚“";
+	public override string ResponseFailedToEnableBadge => "バッジを有効にできません";
 
 	/// <summary>
 	/// Key: "Response.FailedToRemoveFromProfile"
 	/// error message when items could not be removed
 	/// English String: "Failed to remove from profile"
 	/// </summary>
-	public override string ResponseFailedToRemoveFromProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤ã§ãã¾ã›ã‚“";
+	public override string ResponseFailedToRemoveFromProfile => "プロフィールから削除できません";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromInventory"
 	/// Successfully removed from your inventory
 	/// English String: "Successfully removed from your inventory"
 	/// </summary>
-	public override string ResponseRemovedFromInventory => "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+	public override string ResponseRemovedFromInventory => "インベントリから削除しました";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromProfile"
 	/// message when an item is removed from profile
 	/// English String: "Removed from your profile"
 	/// </summary>
-	public override string ResponseRemovedFromProfile => "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+	public override string ResponseRemovedFromProfile => "プロフィールから削除しました";
 
 	/// <summary>
 	/// Key: "Response.RemovedFromYourAvater"
 	/// Removed from your Avatar
 	/// English String: "Removed from your Avatar"
 	/// </summary>
-	public override string ResponseRemovedFromYourAvater => "ã‚¢ãƒã‚¿ãƒ¼ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+	public override string ResponseRemovedFromYourAvater => "アバターから削除しました";
 
 	public ItemResources_ja_jp(TranslationResourceState state)
 		: base(state)
@@ -591,87 +593,87 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionAdd()
 	{
-		return "è¿½åŠ ";
+		return "追加";
 	}
 
 	protected override string _GetTemplateForActionAddToGame()
 	{
-		return "ã‚²ãƒ¼ãƒ ã«è¿½åŠ ";
+		return "ゲームに追加";
 	}
 
 	protected override string _GetTemplateForActionAddToProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ";
+		return "プロフィールに追加";
 	}
 
 	protected override string _GetTemplateForActionAdvertise()
 	{
-		return "å®£ä¼";
+		return "宣伝";
 	}
 
 	protected override string _GetTemplateForActionAgree()
 	{
-		return "åŒæ„ã™ã‚‹";
+		return "同意する";
 	}
 
 	protected override string _GetTemplateForActionBuy()
 	{
-		return "è²·ã†";
+		return "買う";
 	}
 
 	protected override string _GetTemplateForActionCancel()
 	{
-		return "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
+		return "キャンセル";
 	}
 
 	protected override string _GetTemplateForActionConfigure()
 	{
-		return "ç’°å¢ƒè¨­å®šã™ã‚‹";
+		return "環境設定する";
 	}
 
 	protected override string _GetTemplateForActionConfirm()
 	{
-		return "ç¢ºèª";
+		return "確認";
 	}
 
 	protected override string _GetTemplateForActionDelete()
 	{
-		return "å‰Šé™¤";
+		return "削除";
 	}
 
 	protected override string _GetTemplateForActionDisableBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã™ã‚‹";
+		return "バッジを無効にする";
 	}
 
 	protected override string _GetTemplateForActionEditAvatar()
 	{
-		return "ã‚¢ãƒã‚¿ãƒ¼ã‚’ç·¨é›†";
+		return "アバターを編集";
 	}
 
 	protected override string _GetTemplateForActionEnableBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã™ã‚‹";
+		return "バッジを有効にする";
 	}
 
 	protected override string _GetTemplateForActionGet()
 	{
-		return "ã‚²ãƒƒãƒˆã™ã‚‹";
+		return "ゲットする";
 	}
 
 	protected override string _GetTemplateForActionInstall()
 	{
-		return "ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«";
+		return "インストール";
 	}
 
 	protected override string _GetTemplateForActionInventory()
 	{
-		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒª";
+		return "インベントリ";
 	}
 
 	protected override string _GetTemplateForActionNo()
 	{
-		return "ã„ã„ãˆ";
+		return "いいえ";
 	}
 
 	protected override string _GetTemplateForActionOk()
@@ -681,72 +683,72 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForActionRemove()
 	{
-		return "å‰Šé™¤";
+		return "削除";
 	}
 
 	protected override string _GetTemplateForActionRemoveFromProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤";
+		return "プロフィールから削除";
 	}
 
 	protected override string _GetTemplateForActionRent()
 	{
-		return "ãƒ¬ãƒ³ã‚¿ãƒ«";
+		return "レンタル";
 	}
 
 	protected override string _GetTemplateForActionReportItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å ±å‘Š";
+		return "アイテムを報告";
 	}
 
 	protected override string _GetTemplateForActionSell()
 	{
-		return "å£²ã‚‹";
+		return "売る";
 	}
 
 	protected override string _GetTemplateForActionSellNow()
 	{
-		return "ä»Šã™ãå£²ã‚‹";
+		return "今すぐ売る";
 	}
 
 	protected override string _GetTemplateForActionTakeOff()
 	{
-		return "å¤–ã™";
+		return "外す";
 	}
 
 	protected override string _GetTemplateForActionTakeOffSale()
 	{
-		return "éžå£²å“ã«ã™ã‚‹";
+		return "非売品にする";
 	}
 
 	protected override string _GetTemplateForActionTryOn()
 	{
-		return "è£…å‚™ã—ã¦ã¿ã‚‹";
+		return "装備してみる";
 	}
 
 	protected override string _GetTemplateForActionUpgrade()
 	{
-		return "ã‚¢ãƒƒãƒ—ã‚°ãƒ¬ãƒ¼ãƒ‰";
+		return "アップグレード";
 	}
 
 	protected override string _GetTemplateForActionWear()
 	{
-		return "è£…å‚™";
+		return "装備";
 	}
 
 	protected override string _GetTemplateForActionYes()
 	{
-		return "ã¯ã„";
+		return "はい";
 	}
 
 	protected override string _GetTemplateForHeadingIncludedItems()
 	{
-		return "å«ã¾ã‚Œã‚‹ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "含まれるアイテム";
 	}
 
 	protected override string _GetTemplateForHeadingPromoteItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å®£ä¼ã™ã‚‹";
+		return "アイテムを宣伝する";
 	}
 
 	/// <summary>
@@ -755,12 +757,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelAllowPlayersPlusEarn(string affiliateSaleTotal)
 	{
-		return $"ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã‚²ãƒ¼ãƒ ã§ã“ã®ã‚®ã‚¢ã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã—ã¾ã™ã€‚èª°ã‹ãŒã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§è²·ã£ã¦ãã‚Œã‚‹ã¨{affiliateSaleTotal}ãŒæ‰‹ã«å…¥ã‚Šã¾ã™ã€‚";
+		return $"プレイヤーがゲームでこのギアを使えるようにします。誰かがゲームページで買ってくれると{affiliateSaleTotal}が手に入ります。";
 	}
 
 	protected override string _GetTemplateForLabelAllowPlayersPlusEarn()
 	{
-		return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã‚²ãƒ¼ãƒ ã§ã“ã®ã‚®ã‚¢ã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã—ã¾ã™ã€‚èª°ã‹ãŒã‚²ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã§è²·ã£ã¦ãã‚Œã‚‹ã¨{affiliateSaleTotal}ãŒæ‰‹ã«å…¥ã‚Šã¾ã™ã€‚";
+		return "プレイヤーがゲームでこのギアを使えるようにします。誰かがゲームページで買ってくれると{affiliateSaleTotal}が手に入ります。";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalAcceptText()
@@ -770,27 +772,27 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 
 	protected override string _GetTemplateForLabelAssetGrantedModalMessage()
 	{
-		return "ã‚¹ãƒãƒ³ã‚µãƒ¼ã®ã”åŽšæ„ã«ã‚ˆã‚Šã€ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’æ‰‹ã«å…¥ã‚Œã¾ã—ãŸã€‚";
+		return "スポンサーのご厚意により、このアイテムを手に入れました。";
 	}
 
 	protected override string _GetTemplateForLabelAssetGrantedModalTitle()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã€ã‚ãªãŸã®ã‚‚ã®ã§ã™";
+		return "このアイテムは、あなたのものです";
 	}
 
 	protected override string _GetTemplateForLabelAttributes()
 	{
-		return "å±žæ€§";
+		return "属性";
 	}
 
 	protected override string _GetTemplateForLabelBestPrice()
 	{
-		return "ãŠè²·ã„å¾—";
+		return "お買い得";
 	}
 
 	protected override string _GetTemplateForLabelBuildersClubExclusive()
 	{
-		return "Builders Clubé™å®šã€‚";
+		return "Builders Club限定。";
 	}
 
 	/// <summary>
@@ -799,12 +801,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelBy(string creator)
 	{
-		return $"ä½œï¼š{creator}";
+		return $"作：{creator}";
 	}
 
 	protected override string _GetTemplateForLabelBy()
 	{
-		return "ä½œï¼š{creator}";
+		return "作：{creator}";
 	}
 
 	/// <summary>
@@ -814,37 +816,37 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelCountdownTimerDayHourMinute(string numberOfDays, string numberOfHours, string numberOfMinutes)
 	{
-		return $"ã‚ã¨ {numberOfDays} æ—¥ {numberOfHours} æ™‚é–“ {numberOfMinutes} åˆ†ã§éžå£²å“ã¨ãªã‚Šã¾ã™";
+		return $"あと {numberOfDays} 日 {numberOfHours} 時間 {numberOfMinutes} 分で非売品となります";
 	}
 
 	protected override string _GetTemplateForLabelCountdownTimerDayHourMinute()
 	{
-		return "ã‚ã¨ {numberOfDays} æ—¥ {numberOfHours} æ™‚é–“ {numberOfMinutes} åˆ†ã§éžå£²å“ã¨ãªã‚Šã¾ã™";
+		return "あと {numberOfDays} 日 {numberOfHours} 時間 {numberOfMinutes} 分で非売品となります";
 	}
 
 	protected override string _GetTemplateForLabelDeleteFromInventoryConfirm()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰æ°¸ä¹…ã«å‰Šé™¤ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このアイテムをインベントリから永久に削除してよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelDeleteItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤";
+		return "アイテムを削除";
 	}
 
 	protected override string _GetTemplateForLabelDescription()
 	{
-		return "è©³ç´°";
+		return "詳細";
 	}
 
 	protected override string _GetTemplateForLabelDisableBadgeConfirm()
 	{
-		return "ã“ã®ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このバッジを無効にしてよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelDiscontinuedItem()
 	{
-		return "å…¬é–‹ãŒçµ‚äº†ã—ãŸã‚¢ã‚¤ãƒ†ãƒ ã§ã™ã€‚å†è²©å¯èƒ½ã€‚";
+		return "公開が終了したアイテムです。再販可能。";
 	}
 
 	/// <summary>
@@ -854,67 +856,67 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelEarnBadgeGameLink(string placeLink)
 	{
-		return $"æ¬¡ã®å ´æ‰€ã§ã“ã®ãƒãƒƒã‚¸ã‚’æ‰‹ã«å…¥ã‚Œã‚ˆã†: {placeLink}";
+		return $"次の場所でこのバッジを手に入れよう: {placeLink}";
 	}
 
 	protected override string _GetTemplateForLabelEarnBadgeGameLink()
 	{
-		return "æ¬¡ã®å ´æ‰€ã§ã“ã®ãƒãƒƒã‚¸ã‚’æ‰‹ã«å…¥ã‚Œã‚ˆã†: {placeLink}";
+		return "次の場所でこのバッジを手に入れよう: {placeLink}";
 	}
 
 	protected override string _GetTemplateForLabelEnableBadgeConfirm()
 	{
-		return "ã“ã®ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã—ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このバッジを有効にしてよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelErrorOccurred()
 	{
-		return "ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸ";
+		return "エラーが発生しました";
 	}
 
 	protected override string _GetTemplateForLabelFree()
 	{
-		return "ç„¡æ–™";
+		return "無料";
 	}
 
 	protected override string _GetTemplateForLabelGenres()
 	{
-		return "ã‚¸ãƒ£ãƒ³ãƒ«";
+		return "ジャンル";
 	}
 
 	protected override string _GetTemplateForLabelGetBuildersClub()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚’å†è²©ã§ãã‚‹ã®ã¯ã€Builders Clubã®ãƒ¡ãƒ³ãƒãƒ¼ã ã‘ã§ã™ã€‚ä»Šã™ãBuilders Clubå‚åŠ ã—ã‚ˆã†ï¼";
+		return "コレクタブルを再販できるのは、Builders Clubのメンバーだけです。今すぐBuilders Club参加しよう！";
 	}
 
 	protected override string _GetTemplateForLabelGetPremiumMembership()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¤ãƒ†ãƒ ã‚’å†è²©ã§ãã‚‹ã®ã¯ã€Premiumãƒ¡ãƒ³ãƒãƒ¼ã ã‘ã§ã™ã€‚ä»Šã™ãPremiumã‚’ã‚²ãƒƒãƒˆã—ã‚ˆã†ï¼";
+		return "コレクタブルアイテムを再販できるのは、Premiumメンバーだけです。今すぐPremiumをゲットしよう！";
 	}
 
 	protected override string _GetTemplateForLabelInvalidPlace()
 	{
-		return "ãƒ—ãƒ¬ãƒ¼ã‚¹ãŒç„¡åŠ¹ã§ã™ã€‚";
+		return "プレースが無効です。";
 	}
 
 	protected override string _GetTemplateForLabelInvalidProduct()
 	{
-		return "è£½å“ãŒç„¡åŠ¹ã§ã™ã€‚";
+		return "製品が無効です。";
 	}
 
 	protected override string _GetTemplateForLabelItemAvailable()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã§åˆ©ç”¨ã§ãã¾ã™ã€‚";
+		return "このアイテムはインベントリで利用できます。";
 	}
 
 	protected override string _GetTemplateForLabelItemNotForSale()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã¯ç¾åœ¨å£²ã‚‰ã‚Œã¦ã„ã¾ã›ã‚“ã€‚";
+		return "このアイテムは現在売られていません。";
 	}
 
 	protected override string _GetTemplateForLabelItemOwned()
 	{
-		return "æ‰€æœ‰ã—ã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ";
+		return "所有しているアイテム";
 	}
 
 	/// <summary>
@@ -923,12 +925,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemOwnedAmount(string amount)
 	{
-		return $"æ‰€æœ‰ã—ã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ï¼ˆ{amount}ï¼‰";
+		return $"所有しているアイテム（{amount}）";
 	}
 
 	protected override string _GetTemplateForLabelItemOwnedAmount()
 	{
-		return "æ‰€æœ‰ã—ã¦ã„ã‚‹ã‚¢ã‚¤ãƒ†ãƒ ï¼ˆ{amount}ï¼‰";
+		return "所有しているアイテム（{amount}）";
 	}
 
 	/// <summary>
@@ -937,12 +939,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelItemRecentPrice(string name, string price)
 	{
-		return $"{name}ã®æœ€è¿‘ã®å¹³å‡ä¾¡æ ¼ã¯{price}ã§ã™ã€‚";
+		return $"{name}の最近の平均価格は{price}です。";
 	}
 
 	protected override string _GetTemplateForLabelItemRecentPrice()
 	{
-		return "{name}ã®æœ€è¿‘ã®å¹³å‡ä¾¡æ ¼ã¯{price}ã§ã™ã€‚";
+		return "{name}の最近の平均価格は{price}です。";
 	}
 
 	/// <summary>
@@ -952,22 +954,22 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelMarketplaceFee(string percent)
 	{
-		return $"ãƒžãƒ¼ã‚±ãƒƒãƒˆãƒ—ãƒ¬ãƒ¼ã‚¹ä½¿ç”¨æ–™ï¼ˆ{percent}%ï¼‰";
+		return $"マーケットプレース使用料（{percent}%）";
 	}
 
 	protected override string _GetTemplateForLabelMarketplaceFee()
 	{
-		return "ãƒžãƒ¼ã‚±ãƒƒãƒˆãƒ—ãƒ¬ãƒ¼ã‚¹ä½¿ç”¨æ–™ï¼ˆ{percent}%ï¼‰";
+		return "マーケットプレース使用料（{percent}%）";
 	}
 
 	protected override string _GetTemplateForLabelNone()
 	{
-		return "ãªã—";
+		return "なし";
 	}
 
 	protected override string _GetTemplateForLabelNotAvailable()
 	{
-		return "è©²å½“ãªã—";
+		return "該当なし";
 	}
 
 	/// <summary>
@@ -977,47 +979,47 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelOffsaleCountdownHourMinuteSecond(string numberOfHours, string numberOfMinutes, string numberOfSeconds)
 	{
-		return $"ã‚ã¨ {numberOfHours} æ™‚é–“ {numberOfMinutes} åˆ† {numberOfSeconds} ç§’ã§éžå£²å“ã¨ãªã‚Šã¾ã™";
+		return $"あと {numberOfHours} 時間 {numberOfMinutes} 分 {numberOfSeconds} 秒で非売品となります";
 	}
 
 	protected override string _GetTemplateForLabelOffsaleCountdownHourMinuteSecond()
 	{
-		return "ã‚ã¨ {numberOfHours} æ™‚é–“ {numberOfMinutes} åˆ† {numberOfSeconds} ç§’ã§éžå£²å“ã¨ãªã‚Šã¾ã™";
+		return "あと {numberOfHours} 時間 {numberOfMinutes} 分 {numberOfSeconds} 秒で非売品となります";
 	}
 
 	protected override string _GetTemplateForLabelPrice()
 	{
-		return "ä¾¡æ ¼";
+		return "価格";
 	}
 
 	protected override string _GetTemplateForLabelPriceIsInvalid()
 	{
-		return "ä¾¡æ ¼ãŒç„¡åŠ¹ã§ã™";
+		return "価格が無効です";
 	}
 
 	protected override string _GetTemplateForLabelPriceMinimumOne()
 	{
-		return "ä¾¡æ ¼ï¼ˆæœ€ä½Ž1ï¼‰";
+		return "価格（最低1）";
 	}
 
 	protected override string _GetTemplateForLabelPurchaseCompleted()
 	{
-		return "è³¼å…¥ãŒå®Œäº†ã—ã¾ã—ãŸ";
+		return "購入が完了しました";
 	}
 
 	protected override string _GetTemplateForLabelRarity()
 	{
-		return "ãƒ¬ã‚¢åº¦";
+		return "レア度";
 	}
 
 	protected override string _GetTemplateForLabelReadMore()
 	{
-		return "ç¶šãã‚’èª­ã‚€";
+		return "続きを読む";
 	}
 
 	protected override string _GetTemplateForLabelRentingItem()
 	{
-		return "ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãƒ¬ãƒ³ã‚¿ãƒ«ä¸­";
+		return "アイテムをレンタル中";
 	}
 
 	protected override string _GetTemplateForLabelRthro()
@@ -1031,32 +1033,32 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSellConfirm(string name, string price)
 	{
-		return $"{name}ã‚’{price}ã§å£²ã£ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return $"{name}を{price}で売ってよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelSellConfirm()
 	{
-		return "{name}ã‚’{price}ã§å£²ã£ã¦ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "{name}を{price}で売ってよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelSellYourCollectibleItem()
 	{
-		return "ã‚³ãƒ¬ã‚¯ã‚¿ãƒ–ãƒ«ã‚¢ã‚¤ãƒ†ãƒ ã‚’å£²ã‚‹";
+		return "コレクタブルアイテムを売る";
 	}
 
 	protected override string _GetTemplateForLabelSerializedLimitedRelease()
 	{
-		return "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ä»˜ãé™å®šå…¬é–‹ã€‚å†è²©å¯èƒ½ã€‚";
+		return "シリアルナンバー付き限定公開。再販可能。";
 	}
 
 	protected override string _GetTemplateForLabelSerialNotAvailable()
 	{
-		return "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ãªã—";
+		return "シリアルナンバーなし";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumber()
 	{
-		return "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼";
+		return "シリアルナンバー";
 	}
 
 	/// <summary>
@@ -1065,47 +1067,47 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelSerialNumberOfTotal(string number, string total)
 	{
-		return $"ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ #{number} / {total}";
+		return $"シリアルナンバー #{number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelSerialNumberOfTotal()
 	{
-		return "ã‚·ãƒªã‚¢ãƒ«ãƒŠãƒ³ãƒãƒ¼ #{number} / {total}";
+		return "シリアルナンバー #{number} / {total}";
 	}
 
 	protected override string _GetTemplateForLabelShowLess()
 	{
-		return "è¡¨ç¤ºã‚’æ¸›ã‚‰ã™";
+		return "表示を減らす";
 	}
 
 	protected override string _GetTemplateForLabelTags()
 	{
-		return "ã‚¿ã‚°";
+		return "タグ";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSale()
 	{
-		return "éžå£²å“ã«ã™ã‚‹";
+		return "非売品にする";
 	}
 
 	protected override string _GetTemplateForLabelTakeOffSaleConfirm()
 	{
-		return "ã“ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éžå£²å“ã«ã—ã¦ã‚‚ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ";
+		return "このアイテムを非売品にしてもよろしいですか？";
 	}
 
 	protected override string _GetTemplateForLabelThirteenPlusOnly()
 	{
-		return "13æ­³ä»¥ä¸Šé™å®šã€‚";
+		return "13歳以上限定。";
 	}
 
 	protected override string _GetTemplateForLabelType()
 	{
-		return "ã‚¿ã‚¤ãƒ—";
+		return "タイプ";
 	}
 
 	protected override string _GetTemplateForLabelUpdated()
 	{
-		return "ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆæ¸ˆã¿";
+		return "アップデート済み";
 	}
 
 	/// <summary>
@@ -1114,12 +1116,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUpdatedBy(string link)
 	{
-		return $"ï¼ˆæ›´æ–°è€…{link}ï¼‰";
+		return $"（更新者{link}）";
 	}
 
 	protected override string _GetTemplateForLabelUpdatedBy()
 	{
-		return "ï¼ˆæ›´æ–°è€…{link}ï¼‰";
+		return "（更新者{link}）";
 	}
 
 	/// <summary>
@@ -1129,67 +1131,67 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string LabelUseGamePassLink(string placeLink)
 	{
-		return $"æ¬¡ã®å ´æ‰€ã§ã“ã®ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½¿ãŠã†: {placeLink}";
+		return $"次の場所でこのゲームパスを使おう: {placeLink}";
 	}
 
 	protected override string _GetTemplateForLabelUseGamePassLink()
 	{
-		return "æ¬¡ã®å ´æ‰€ã§ã“ã®ã‚²ãƒ¼ãƒ ãƒ‘ã‚¹ã‚’ä½¿ãŠã†: {placeLink}";
+		return "次の場所でこのゲームパスを使おう: {placeLink}";
 	}
 
 	protected override string _GetTemplateForLabelYouGet()
 	{
-		return "ç²å¾—:";
+		return "獲得:";
 	}
 
 	protected override string _GetTemplateForResponseAddedToProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ã—ã¾ã—ãŸ";
+		return "プロフィールに追加しました";
 	}
 
 	protected override string _GetTemplateForResponseAddedToYourAvater()
 	{
-		return "ã‚¢ãƒã‚¿ãƒ¼ã«è¿½åŠ ã—ã¾ã—ãŸ";
+		return "アバターに追加しました";
 	}
 
 	protected override string _GetTemplateForResponseAlreadyHaveMaxItems()
 	{
-		return "ã‚²ãƒ¼ãƒ ã®ã‚¢ã‚¤ãƒ†ãƒ æ•°ã®ä¸Šé™ã«åˆ°é”ã—ã¦ã„ã¾ã™ï¼";
+		return "ゲームのアイテム数の上限に到達しています！";
 	}
 
 	protected override string _GetTemplateForResponseDisabledBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã—ã¾ã—ãŸ";
+		return "バッジを無効にしました";
 	}
 
 	protected override string _GetTemplateForResponseEnabledBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã—ã¾ã—ãŸ";
+		return "バッジを有効にしました";
 	}
 
 	protected override string _GetTemplateForResponseFailedToAddToProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã«è¿½åŠ ã§ãã¾ã›ã‚“";
+		return "プロフィールに追加できません";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDeleteFromInventory()
 	{
-		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’å‰Šé™¤ã§ãã¾ã›ã‚“ã§ã—ãŸ";
+		return "インベントリからアイテムを削除できませんでした";
 	}
 
 	protected override string _GetTemplateForResponseFailedToDisableBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’ç„¡åŠ¹ã«ã§ãã¾ã›ã‚“";
+		return "バッジを無効にできません";
 	}
 
 	protected override string _GetTemplateForResponseFailedToEnableBadge()
 	{
-		return "ãƒãƒƒã‚¸ã‚’æœ‰åŠ¹ã«ã§ãã¾ã›ã‚“";
+		return "バッジを有効にできません";
 	}
 
 	protected override string _GetTemplateForResponseFailedToRemoveFromProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤ã§ãã¾ã›ã‚“";
+		return "プロフィールから削除できません";
 	}
 
 	/// <summary>
@@ -1199,12 +1201,12 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAddSuccess(string placeName)
 	{
-		return $"ã‚²ãƒ¼ãƒ {placeName}ã«è¿½åŠ ã—ã¾ã—ãŸ";
+		return $"ゲーム{placeName}に追加しました";
 	}
 
 	protected override string _GetTemplateForResponseGearAddSuccess()
 	{
-		return "ã‚²ãƒ¼ãƒ {placeName}ã«è¿½åŠ ã—ã¾ã—ãŸ";
+		return "ゲーム{placeName}に追加しました";
 	}
 
 	/// <summary>
@@ -1214,27 +1216,27 @@ internal class ItemResources_ja_jp : ItemResources_en_us, IItemResources, ITrans
 	/// </summary>
 	public override string ResponseGearAlreadyAdded(string placeName)
 	{
-		return $"ã“ã®ã‚®ã‚¢ã¯ã™ã§ã«{placeName}ã«è¿½åŠ ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+		return $"このギアはすでに{placeName}に追加されています。";
 	}
 
 	protected override string _GetTemplateForResponseGearAlreadyAdded()
 	{
-		return "ã“ã®ã‚®ã‚¢ã¯ã™ã§ã«{placeName}ã«è¿½åŠ ã•ã‚Œã¦ã„ã¾ã™ã€‚";
+		return "このギアはすでに{placeName}に追加されています。";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromInventory()
 	{
-		return "ã‚¤ãƒ³ãƒ™ãƒ³ãƒˆãƒªã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+		return "インベントリから削除しました";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromProfile()
 	{
-		return "ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+		return "プロフィールから削除しました";
 	}
 
 	protected override string _GetTemplateForResponseRemovedFromYourAvater()
 	{
-		return "ã‚¢ãƒã‚¿ãƒ¼ã‹ã‚‰å‰Šé™¤ã—ã¾ã—ãŸ";
+		return "アバターから削除しました";
 	}
 }
 

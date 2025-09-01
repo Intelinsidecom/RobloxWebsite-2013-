@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using Roblox.TrackingQueue;
-namespace Roblox.Moderationpublic {
+namespace Roblox.Moderation {
     class ReviewTaskDequererFactory : IReviewTaskDequeuerFactory
 
 {

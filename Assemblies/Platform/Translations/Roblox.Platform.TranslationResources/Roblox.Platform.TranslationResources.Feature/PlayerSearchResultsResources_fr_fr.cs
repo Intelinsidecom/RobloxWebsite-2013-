@@ -1,4 +1,6 @@
-﻿namespace Roblox.Platform.TranslationResources.Feature {
+using System;
+using System.Collections.Generic;
+namespace Roblox.Platform.TranslationResources.Feature {
     /// <summary>
 
 /// This class overrides PlayerSearchResultsResources_en_us to provide locale specific translations where possible,
@@ -34,7 +36,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// Key: "Action.RequestSent"
 	/// English String: "Request Sent"
 	/// </summary>
-	public override string ActionRequestSent => "Demande envoyÃ©e";
+	public override string ActionRequestSent => "Demande envoyée";
 
 	/// <summary>
 	/// Key: "Label.AlsoKnownAsAbbreviation"
@@ -46,13 +48,13 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// Key: "Label.Offline"
 	/// English String: "Offline"
 	/// </summary>
-	public override string LabelOffline => "DÃ©connectÃ©";
+	public override string LabelOffline => "Déconnecté";
 
 	/// <summary>
 	/// Key: "Label.Online"
 	/// English String: "Online"
 	/// </summary>
-	public override string LabelOnline => "ConnectÃ©";
+	public override string LabelOnline => "Connecté";
 
 	/// <summary>
 	/// Key: "Label.Search"
@@ -70,7 +72,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// Key: "Label.UnsafeInput"
 	/// English String: "You have entered unsafe input. Please try your search again."
 	/// </summary>
-	public override string LabelUnsafeInput => "Saisie non conforme au rÃ¨glement. Recommence ta recherche.";
+	public override string LabelUnsafeInput => "Saisie non conforme au règlement. Recommence ta recherche.";
 
 	/// <summary>
 	/// Key: "Label.YouAreFollowing"
@@ -82,7 +84,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// Key: "Label.YouAreFriends"
 	/// English String: "You are friends"
 	/// </summary>
-	public override string LabelYouAreFriends => "Vous Ãªtes amis";
+	public override string LabelYouAreFriends => "Vous êtes amis";
 
 	public PlayerSearchResultsResources_fr_fr(TranslationResourceState state)
 		: base(state)
@@ -111,7 +113,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForActionRequestSent()
 	{
-		return "Demande envoyÃ©e";
+		return "Demande envoyée";
 	}
 
 	/// <summary>
@@ -120,12 +122,12 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// </summary>
 	public override string HeadingPlayerResultsFor(string startSpan, string keyword, string endSpan)
 	{
-		return $"RÃ©sultats de joueurs pour {startSpan}{keyword}{endSpan}";
+		return $"Résultats de joueurs pour {startSpan}{keyword}{endSpan}";
 	}
 
 	protected override string _GetTemplateForHeadingPlayerResultsFor()
 	{
-		return "RÃ©sultats de joueurs pour {startSpan}{keyword}{endSpan}";
+		return "Résultats de joueurs pour {startSpan}{keyword}{endSpan}";
 	}
 
 	protected override string _GetTemplateForLabelAlsoKnownAsAbbreviation()
@@ -139,12 +141,12 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelEnterMinCharacters(string keywordMinLength)
 	{
-		return $"Veuillez saisir au moins {keywordMinLength}\u00a0caractÃ¨res.";
+		return $"Veuillez saisir au moins {keywordMinLength}\u00a0caractères.";
 	}
 
 	protected override string _GetTemplateForLabelEnterMinCharacters()
 	{
-		return "Veuillez saisir au moins {keywordMinLength}\u00a0caractÃ¨res.";
+		return "Veuillez saisir au moins {keywordMinLength}\u00a0caractères.";
 	}
 
 	/// <summary>
@@ -153,22 +155,22 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 	/// </summary>
 	public override string LabelNoMatchesAvailable(string keyword)
 	{
-		return $"Aucun rÃ©sultat disponible pour Â«\u00a0{keyword}\u00a0Â».";
+		return $"Aucun résultat disponible pour «\u00a0{keyword}\u00a0».";
 	}
 
 	protected override string _GetTemplateForLabelNoMatchesAvailable()
 	{
-		return "Aucun rÃ©sultat disponible pour Â«\u00a0{keyword}\u00a0Â».";
+		return "Aucun résultat disponible pour «\u00a0{keyword}\u00a0».";
 	}
 
 	protected override string _GetTemplateForLabelOffline()
 	{
-		return "DÃ©connectÃ©";
+		return "Déconnecté";
 	}
 
 	protected override string _GetTemplateForLabelOnline()
 	{
-		return "ConnectÃ©";
+		return "Connecté";
 	}
 
 	protected override string _GetTemplateForLabelSearch()
@@ -197,7 +199,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelUnsafeInput()
 	{
-		return "Saisie non conforme au rÃ¨glement. Recommence ta recherche.";
+		return "Saisie non conforme au règlement. Recommence ta recherche.";
 	}
 
 	protected override string _GetTemplateForLabelYouAreFollowing()
@@ -207,7 +209,7 @@ internal class PlayerSearchResultsResources_fr_fr : PlayerSearchResultsResources
 
 	protected override string _GetTemplateForLabelYouAreFriends()
 	{
-		return "Vous Ãªtes amis";
+		return "Vous êtes amis";
 	}
 }
 

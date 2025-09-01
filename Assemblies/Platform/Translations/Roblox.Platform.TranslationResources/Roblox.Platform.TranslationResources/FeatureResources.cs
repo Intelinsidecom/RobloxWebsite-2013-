@@ -1,6 +1,7 @@
-﻿using System;
-using Roblox.TranslationResources.Feature;
-namespace Roblox.Platform.TranslationResourcesinternal {
+using System;
+using System.Collections.Generic;
+using Roblox.Platform.TranslationResources.Feature;
+namespace Roblox.Platform.TranslationResources {
     class FeatureResources : IFeatureResources, ITranslationResourcesNamespacesGroup
 
 {
@@ -497,3 +498,4 @@ namespace Roblox.Platform.TranslationResourcesinternal {
 
 
 }
+
