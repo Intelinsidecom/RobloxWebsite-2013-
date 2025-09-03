@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Audit;
+using Roblox.Localization.Audit;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountsinternal {
+namespace Roblox.Localization.Accounts {
     class AccountCountriesAuditCompositeEntry : IAccountCountriesAuditCompositeEntry
 
 {

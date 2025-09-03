@@ -149,7 +149,7 @@
           "dependencies": {
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.7.500.11, )"
+              "version": "[3.7.500.13, )"
             },
             "AWSSDK.DAX": {
               "target": "Package",

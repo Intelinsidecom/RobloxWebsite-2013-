@@ -1,5 +1,5 @@
 using Roblox.Platform.Membership;
-using Roblox.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources.Communication;
 
 namespace Roblox.Platform.TwoStepVerification;
 
@@ -13,6 +13,6 @@ public interface ITwoStepVerificationEmailNotifier
 	/// <param name="emailType">Email type.</param>
 	/// <param name="plainBody">Email plain body.</param>
 	/// <param name="htmlBody">Email HTML body.</param>
-	/// <param name="commonEmailResources">The <see cref="T:Roblox.TranslationResources.Communication.ICommonEmailResources" />.</param>
+	/// <param name="commonEmailResources">The <see cref="T:Roblox.Platform.TranslationResources.Communication.ICommonEmailResources" />.</param>
 	void SendEmail(IUser user, string subject, string emailType, string plainBody, string htmlBody, ICommonEmailResources commonEmailResources);
 }

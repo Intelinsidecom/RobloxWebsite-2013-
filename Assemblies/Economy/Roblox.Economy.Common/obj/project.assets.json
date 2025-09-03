@@ -512,22 +512,6 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Data.SqlClient/4.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net462/_._": {}
-        }
-      },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -994,12 +978,12 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Common.NetStandard": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.dll": {}
@@ -1151,8 +1135,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Sentinels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Mssql.dll": {}
@@ -1169,8 +1152,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.MssqlDatabases.dll": {}
@@ -2026,39 +2008,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.SqlClient/4.9.0": {
-      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.9.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Data.SqlClient.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
-        "lib/net462/System.Data.SqlClient.dll",
-        "lib/net462/System.Data.SqlClient.xml",
-        "lib/net6.0/System.Data.SqlClient.dll",
-        "lib/net6.0/System.Data.SqlClient.xml",
-        "lib/net8.0/System.Data.SqlClient.dll",
-        "lib/net8.0/System.Data.SqlClient.xml",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.9.0.nupkg.sha512",
-        "system.data.sqlclient.nuspec"
-      ]
-    },
     "System.Diagnostics.DiagnosticSource/6.0.1": {
       "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
       "type": "package",
@@ -2854,6 +2803,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "Microsoft.Data.SqlClient >= 5.2.2",
       "Roblox.Caching >= 1.0.0",
       "Roblox.Common >= 1.0.0",
       "Roblox.Configuration >= 1.0.0",
@@ -2862,8 +2812,7 @@
       "Roblox.MssqlDatabases >= 1.0.0",
       "Roblox.Platform.VirtualCurrency >= 1.0.0",
       "Roblox.TransactionEvents >= 1.0.0",
-      "System.Configuration.ConfigurationManager >= 7.0.0",
-      "System.Data.SqlClient >= 4.9.0"
+      "System.Configuration.ConfigurationManager >= 7.0.0"
     ]
   },
   "packageFolders": {
@@ -2942,13 +2891,13 @@
       "net472": {
         "targetAlias": "net472",
         "dependencies": {
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[7.0.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.9.0, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

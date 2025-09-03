@@ -1,6 +1,6 @@
 using Roblox.Platform.AssetOwnership;
 using Roblox.Platform.Assets.Properties;
-using Roblox.Users.Properties;
+using Roblox.Platform.Users.Properties;
 
 namespace Roblox.Platform.Assets;
 
@@ -80,7 +80,7 @@ public class AccessChecker : IAccessChecker
 
 	private bool HasAccessBecauseLegacyScript(IAsset asset)
 	{
-		if (asset.TypeId == 5 && asset.CreatorType == CreatorType.User && asset.CreatorTargetId == Roblox.Users.Properties.Settings.Default.RobloxUserId)
+		if (asset.TypeId == 5 && asset.CreatorType == CreatorType.User && asset.CreatorTargetId == Roblox.Platform.Users.Properties.Settings.Default.RobloxUserId)
 		{
 			return true;
 		}

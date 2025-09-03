@@ -7,6 +7,7 @@ using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Platform.AssetOwnership;
 using Roblox;
+using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
     class GrantedAssetListActivationTask : IRobloxEntity<long, GrantedAssetListActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask

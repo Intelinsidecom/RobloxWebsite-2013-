@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Core;
+using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
-namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     class AccountCountryInitializer : IAccountCountryInitializer
 
 {

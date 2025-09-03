@@ -3,7 +3,7 @@
 
 /// An interface that contains details about the filtered text.
 /// </summary>
-/// <seealso cref="T:Roblox.TextFilter.ITextFilterResultModerationDetails" />
+/// <seealso cref="T:Roblox.Platform.TextFilter.ITextFilterResultModerationDetails" />
 public interface ITextFilterRuleResult : ITextFilterResultModerationDetails
 {
 	/// <summary>

@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using System.Linq;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
-using Roblox.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
 
 namespace Roblox.PremiumFeatures;
 

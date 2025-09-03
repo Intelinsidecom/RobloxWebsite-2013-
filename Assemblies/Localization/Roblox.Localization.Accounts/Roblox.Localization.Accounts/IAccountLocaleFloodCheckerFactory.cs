@@ -1,5 +1,5 @@
-﻿using Roblox.FloodCheckers.Core;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.FloodCheckers.Core;
+namespace Roblox.Localization.Accounts {
     interface IAccountLocaleFloodCheckerFactory
 
 {

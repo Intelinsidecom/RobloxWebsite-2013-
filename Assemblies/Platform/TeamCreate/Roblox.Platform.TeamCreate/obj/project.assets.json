@@ -650,6 +650,39 @@
           }
         }
       },
+      "protobuf-net/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "protobuf-net.Core": "3.2.30"
+        },
+        "compile": {
+          "lib/net462/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/protobuf-net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "protobuf-net.Core/3.2.30": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0",
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net462/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/protobuf-net.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "StackExchange.Redis/2.6.66": {
         "type": "package",
         "dependencies": {
@@ -753,22 +786,6 @@
         },
         "runtime": {
           "lib/net462/System.Configuration.ConfigurationManager.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net462/_._": {}
-        }
-      },
-      "System.Data.SqlClient/4.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net462/System.Data.SqlClient.dll": {
             "related": ".xml"
           }
         },
@@ -1407,10 +1424,16 @@
           "Roblox.Moderation": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Passwords.Client": "1.0.0",
+          "Roblox.Platform.AssetOwnership": "1.0.0",
+          "Roblox.Platform.ContentRatings": "1.0.0",
+          "Roblox.Platform.UserCacheMigrationSettings": "1.0.0",
+          "Roblox.Platform.Users": "1.0.0",
+          "Roblox.Platform.Users.Client": "1.0.0",
           "Roblox.Redis": "1.0.0",
           "Roblox.Redis.Lru": "1.0.0",
           "Roblox.RequestContext": "1.0.0",
-          "StackExchange.Redis": "2.6.66",
+          "Roblox.Web.SEO": "1.0.0",
+          "StackExchange.Redis": "1.2.6",
           "System.Resources.Extensions": "7.0.0"
         },
         "compile": {
@@ -1436,8 +1459,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Users.Client": "1.0.0",
           "Roblox.RequestContext": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Agents.dll": {}
@@ -1604,6 +1626,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Google.Apis.Core": "1.61.0",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "PdfSharp": "1.50.5147",
           "Roblox.BillingTransactionEventPublisher": "1.0.0",
@@ -1632,8 +1655,7 @@
           "Roblox.Platform.PremiumFeatures": "1.0.0",
           "Roblox.Platform.PremiumFeatures.Models": "1.0.0",
           "Roblox.Platform.Users": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Billing.dll": {}
@@ -1719,6 +1741,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
@@ -1728,8 +1751,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Users": "1.0.0",
           "Roblox.Segmentation.Client": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Classification.dll": {}
@@ -1756,12 +1778,12 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Common.NetStandard": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.dll": {}
@@ -1886,8 +1908,7 @@
           "Roblox.Data": "1.0.0",
           "Roblox.Entities.Mssql": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Demographics.dll": {}
@@ -1962,6 +1983,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -1970,8 +1992,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.VirtualCurrency": "1.0.0",
           "Roblox.TransactionEvents": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Economy.Common.dll": {}
@@ -1996,8 +2017,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Data": "1.0.0",
-          "Roblox.MssqlDatabases": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.MssqlDatabases": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Entities.Mssql.dll": {}
@@ -2035,6 +2055,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Amazon.Sqs": "1.0.0",
           "Roblox.Caching": "1.0.0",
@@ -2043,8 +2064,7 @@
           "Roblox.Data": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Events.dll": {}
@@ -2141,6 +2161,29 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.FloodCheckers.Redis.dll": {}
+        }
+      },
+      "Roblox.GameInstances.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Http": "1.0.0",
+          "Roblox.Http.Client": "1.0.0",
+          "Roblox.Http.ServiceClient": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.RequestContext": "1.0.0",
+          "Roblox.Sentinels": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0",
+          "protobuf-net": "3.2.30"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.GameInstances.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.GameInstances.Client.dll": {}
         }
       },
       "Roblox.GoogleAPI.Interfaces/1.0.0": {
@@ -2252,7 +2295,7 @@
           "Roblox.Redis.Lru": "1.0.0",
           "Roblox.RestClientBase": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
-          "StackExchange.Redis": "2.6.66",
+          "StackExchange.Redis": "1.2.6",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
@@ -2281,6 +2324,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -2296,8 +2340,7 @@
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Platform.TranslationResources": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Localization.Accounts.dll": {}
@@ -2310,6 +2353,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -2320,7 +2364,6 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0",
           "System.Net.Http": "4.3.4"
         },
         "compile": {
@@ -2350,18 +2393,21 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox Server Class Library": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Common.Web": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
+          "Roblox.Entities": "1.0.0",
           "Roblox.Entities.Mssql": "1.0.0",
           "Roblox.FloodCheckers": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
+          "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Web": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Marketing.dll": {}
@@ -2408,6 +2454,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Agents": "1.0.0",
           "Roblox.Amazon.Sqs": "1.0.0",
@@ -2426,8 +2473,7 @@
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.TrackingQueue": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Moderation.dll": {}
@@ -2442,8 +2488,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Sentinels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Mssql.dll": {}
@@ -2460,8 +2505,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.MssqlDatabases.dll": {}
@@ -2559,6 +2603,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -2567,9 +2612,7 @@
           "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
-          "Roblox.Platform.Core": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Platform.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.AbTesting.Core.dll": {}
@@ -2662,6 +2705,7 @@
           "Roblox.Platform.AssetsCore": "1.0.0",
           "Roblox.Platform.ContentFilter.Client": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
+          "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.Membership.UserDataAuditCore": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Platform.TextFilter": "1.0.0",
@@ -2680,6 +2724,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
@@ -2691,8 +2736,7 @@
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Assets.Places.dll": {}
@@ -2715,6 +2759,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -2732,8 +2777,7 @@
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Platform.TwoStepVerification": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Authentication.dll": {}
@@ -2746,6 +2790,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
@@ -2753,8 +2798,7 @@
           "Roblox.Entities.Mssql": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Authentication.AccountSecurityTickets.dll": {}
@@ -2845,6 +2889,23 @@
           "bin/placeholder/Roblox.Platform.ContentFilter.Client.dll": {}
         }
       },
+      "Roblox.Platform.ContentRatings/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.ContentRatings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.ContentRatings.dll": {}
+        }
+      },
       "Roblox.Platform.Core/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
@@ -2918,7 +2979,6 @@
           "Roblox.Platform.TranslationStorage": "1.0.0",
           "Roblox.Platform.Users": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0",
           "libphonenumber-csharp": "9.0.12"
         },
         "compile": {
@@ -2932,6 +2992,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Classification": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -2942,8 +3003,7 @@
           "Roblox.EventLog": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Devices.dll": {}
@@ -2957,6 +3017,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "DnsClient": "1.7.0",
+          "Roblox Server Class Library": "1.0.0",
           "Roblox.BriteVerify": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Entities": "1.0.0",
@@ -3082,6 +3143,7 @@
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.FloodCheckers": "1.0.0",
+          "Roblox.GameInstances.Client": "1.0.0",
           "Roblox.Hashing": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
@@ -3100,6 +3162,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox Server Class Library": "1.0.0",
           "Roblox.Agents": "1.0.0",
@@ -3140,8 +3203,7 @@
           "Roblox.Platform.Universes.Client": "1.0.0",
           "Roblox.Platform.VirtualCurrency": "1.0.0",
           "Roblox.Web.ElevatedActions": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Games.dll": {}
@@ -3188,6 +3250,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox Server Class Library": "1.0.0",
           "Roblox.Caching": "1.0.0",
@@ -3211,8 +3274,7 @@
           "Roblox.Platform.PremiumFeatures": "1.0.0",
           "Roblox.Platform.TextFilter": "1.0.0",
           "Roblox.Platform.Users": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Groups.dll": {}
@@ -3271,6 +3333,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Billing": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common.NetStandard": "1.0.0",
@@ -3288,8 +3351,7 @@
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Web.Devices": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Marketing.dll": {}
@@ -3333,6 +3395,7 @@
           "Roblox Server Class Library": "1.0.0",
           "Roblox.Agents": "1.0.0",
           "Roblox.Amazon.Core": "1.0.0",
+          "Roblox.Amazon.Sns": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -3361,6 +3424,7 @@
         "dependencies": {
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
+          "Roblox.Platform.PremiumFeatures": "1.0.0",
           "Roblox.Platform.TextFilter": "1.0.0",
           "Roblox.Platform.TextFilter.Client": "1.0.0"
         },
@@ -3410,6 +3474,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Common.NetStandard": "1.0.0",
@@ -3429,8 +3494,7 @@
           "Roblox.Platform.Notifications.Stream": "1.0.0",
           "Roblox.Redis": "1.0.0",
           "StackExchange.Redis": "2.6.66",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Notifications.dll": {}
@@ -3463,6 +3527,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Amazon.Sqs": "1.0.0",
           "Roblox.Caching": "1.0.0",
@@ -3475,8 +3540,7 @@
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Notifications.Core.dll": {}
@@ -3491,6 +3555,7 @@
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
           "AWSSDK.SimpleNotificationService": "3.7.0",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Amazon.Sns": "1.0.0",
           "Roblox.Amazon.Sqs": "1.0.0",
@@ -3520,9 +3585,8 @@
           "Roblox.Platform.Privacy": "1.0.0",
           "Roblox.Platform.TranslationResources": "1.0.0",
           "Roblox.Redis": "1.0.0",
-          "StackExchange.Redis": "2.6.66",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "StackExchange.Redis": "1.2.6",
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Notifications.Push.dll": {}
@@ -3691,6 +3755,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Common.Web": "1.0.0",
@@ -3706,8 +3771,7 @@
           "Roblox.Platform.Demographics": "1.0.0",
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.PremiumFeatures.Models": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.PremiumFeatures.dll": {}
@@ -3781,7 +3845,7 @@
           "Roblox.EventLog": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Redis": "1.0.0",
-          "StackExchange.Redis": "2.6.66",
+          "StackExchange.Redis": "1.2.6",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
@@ -3815,6 +3879,7 @@
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "AWSSDK.Core": "3.7.500.11",
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Amazon.Sns": "1.0.0",
           "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Caching": "1.0.0",
@@ -3846,8 +3911,7 @@
           "Roblox.RequestContext": "1.0.0",
           "Roblox.Sentinels": "1.0.0",
           "StackExchange.Redis": "2.6.66",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Social.dll": {}
@@ -3860,6 +3924,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -3873,8 +3938,7 @@
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.Math": "1.0.0",
           "Roblox.Platform.Universes": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Studio.dll": {}
@@ -4032,6 +4096,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -4055,8 +4120,7 @@
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Platform.TranslationResources": "1.0.0",
           "Roblox.Sms.Client": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.TwoStepVerification.dll": {}
@@ -4129,16 +4193,31 @@
           "bin/placeholder/Roblox.Platform.UserBlock.Core.dll": {}
         }
       },
+      "Roblox.Platform.UserCacheMigrationSettings/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.UserCacheMigrationSettings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.UserCacheMigrationSettings.dll": {}
+        }
+      },
       "Roblox.Platform.Users/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Users.dll": {}
@@ -4420,6 +4499,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox Server Class Library": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
@@ -4435,8 +4515,7 @@
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.Sms.Client": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Web.ElevatedActions.dll": {}
@@ -5255,6 +5334,46 @@
         "prometheus-net.nuspec"
       ]
     },
+    "protobuf-net/3.2.30": {
+      "sha512": "C/UTlmxEJHAHpqm8xQK1UyJKaIynVCSNG4mVrbLgnZ7ccH28nN49O8iMJvKEodTgVbnimvy+3mIiAdW6mATwnw==",
+      "type": "package",
+      "path": "protobuf-net/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.dll",
+        "lib/net462/protobuf-net.xml",
+        "lib/net6.0/protobuf-net.dll",
+        "lib/net6.0/protobuf-net.xml",
+        "lib/netstandard2.0/protobuf-net.dll",
+        "lib/netstandard2.0/protobuf-net.xml",
+        "lib/netstandard2.1/protobuf-net.dll",
+        "lib/netstandard2.1/protobuf-net.xml",
+        "protobuf-net.3.2.30.nupkg.sha512",
+        "protobuf-net.nuspec",
+        "protobuf-net.png"
+      ]
+    },
+    "protobuf-net.Core/3.2.30": {
+      "sha512": "v2ZxxYrz+X212ukSx+uqkLuPu414bvmSAnTyf+PBUKR9ENJxO4P/csorA/27456MCp1JNoMssDj/f91RDiwBfQ==",
+      "type": "package",
+      "path": "protobuf-net.core/3.2.30",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/protobuf-net.Core.dll",
+        "lib/net462/protobuf-net.Core.xml",
+        "lib/net6.0/protobuf-net.Core.dll",
+        "lib/net6.0/protobuf-net.Core.xml",
+        "lib/netstandard2.0/protobuf-net.Core.dll",
+        "lib/netstandard2.0/protobuf-net.Core.xml",
+        "lib/netstandard2.1/protobuf-net.Core.dll",
+        "lib/netstandard2.1/protobuf-net.Core.xml",
+        "protobuf-net.core.3.2.30.nupkg.sha512",
+        "protobuf-net.core.nuspec",
+        "protobuf-net.png"
+      ]
+    },
     "StackExchange.Redis/2.6.66": {
       "sha512": "owEqq2PG1TFU1qUh3UH35BqlMjrR/AB2rlR26tGbUWW9LIeu99ArGg2iCgDj/aCSE+juClFJQhwg8i1pONlVDw==",
       "type": "package",
@@ -5448,39 +5567,6 @@
         "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Data.SqlClient/4.9.0": {
-      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.9.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Data.SqlClient.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
-        "lib/net462/System.Data.SqlClient.dll",
-        "lib/net462/System.Data.SqlClient.xml",
-        "lib/net6.0/System.Data.SqlClient.dll",
-        "lib/net6.0/System.Data.SqlClient.xml",
-        "lib/net8.0/System.Data.SqlClient.dll",
-        "lib/net8.0/System.Data.SqlClient.xml",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.9.0.nupkg.sha512",
-        "system.data.sqlclient.nuspec"
       ]
     },
     "System.Diagnostics.DiagnosticSource/6.0.1": {
@@ -6888,6 +6974,11 @@
       "path": "../../../FloodCheckers/Roblox.FloodCheckers.Redis/Roblox.FloodCheckers.Redis.csproj",
       "msbuildProject": "../../../FloodCheckers/Roblox.FloodCheckers.Redis/Roblox.FloodCheckers.Redis.csproj"
     },
+    "Roblox.GameInstances.Client/1.0.0": {
+      "type": "project",
+      "path": "../../Games/Roblox.Platform.GameInstances.Client/Roblox.Platform.GameInstances.Client.csproj",
+      "msbuildProject": "../../Games/Roblox.Platform.GameInstances.Client/Roblox.Platform.GameInstances.Client.csproj"
+    },
     "Roblox.GoogleAPI.Interfaces/1.0.0": {
       "type": "project",
       "path": "../../../Google/Roblox.GoogleAPI.Interfaces/Roblox.GoogleAPI.Interfaces.csproj",
@@ -7072,6 +7163,11 @@
       "type": "project",
       "path": "../../Content/Roblox.Platform.ContentFilter.Client/Roblox.Platform.ContentFilter.Client.csproj",
       "msbuildProject": "../../Content/Roblox.Platform.ContentFilter.Client/Roblox.Platform.ContentFilter.Client.csproj"
+    },
+    "Roblox.Platform.ContentRatings/1.0.0": {
+      "type": "project",
+      "path": "../../Content/Roblox.Platform.ContentRatings/Roblox.Platform.ContentRatings.csproj",
+      "msbuildProject": "../../Content/Roblox.Platform.ContentRatings/Roblox.Platform.ContentRatings.csproj"
     },
     "Roblox.Platform.Core/1.0.0": {
       "type": "project",
@@ -7367,6 +7463,11 @@
       "type": "project",
       "path": "../../Users/Roblox.Platform.UserBlock.Core/Roblox.Platform.UserBlock.Core.csproj",
       "msbuildProject": "../../Users/Roblox.Platform.UserBlock.Core/Roblox.Platform.UserBlock.Core.csproj"
+    },
+    "Roblox.Platform.UserCacheMigrationSettings/1.0.0": {
+      "type": "project",
+      "path": "../../Users/Roblox.Platform.UserCacheMigrationSettings/Roblox.Platform.UserCacheMigrationSettings.csproj",
+      "msbuildProject": "../../Users/Roblox.Platform.UserCacheMigrationSettings/Roblox.Platform.UserCacheMigrationSettings.csproj"
     },
     "Roblox.Platform.Users/1.0.0": {
       "type": "project",

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Agents;
@@ -10,8 +10,8 @@ using Roblox.Platform.AssetsCore;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.MembershipCore;
-using Roblox.TextFilter;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Assets;
 

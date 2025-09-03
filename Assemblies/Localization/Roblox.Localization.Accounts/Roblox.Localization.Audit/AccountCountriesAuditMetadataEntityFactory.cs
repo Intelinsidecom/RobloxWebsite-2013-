@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 namespace Roblox.Localization.Audit {
     [ExcludeFromCodeCoverage]
 

@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.GameInstances.Clientpublic {
-    enum DetailedBotCheckSignalValue
+namespace Roblox.Platform.GameInstances.Client {
+    public enum DetailedBotCheckSignalValue
 
 {
 	Unrecognized,

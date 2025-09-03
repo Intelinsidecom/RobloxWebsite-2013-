@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using Roblox.Common;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Audit;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Audit;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountsinternal {
+namespace Roblox.Localization.Accounts {
     class AuditParameterValidator : IAuditParameterValidator
 
 {

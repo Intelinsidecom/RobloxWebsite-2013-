@@ -31,6 +31,22 @@
           }
         }
       },
+      "AWSSDK.SimpleNotificationService/3.7.0": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.0, 3.8.0)"
+        },
+        "compile": {
+          "lib/net45/AWSSDK.SimpleNotificationService.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/AWSSDK.SimpleNotificationService.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "AWSSDK.SQS/3.7.200": {
         "type": "package",
         "dependencies": {
@@ -126,7 +142,7 @@
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.4"
@@ -135,9 +151,7 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
+          "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
           "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -454,22 +468,6 @@
           "lib/net40/Owin.dll": {}
         }
       },
-      "Pipelines.Sockets.Unofficial/2.2.2": {
-        "type": "package",
-        "dependencies": {
-          "System.IO.Pipelines": "5.0.1"
-        },
-        "compile": {
-          "lib/net472/Pipelines.Sockets.Unofficial.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Pipelines.Sockets.Unofficial.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "prometheus-net/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -486,25 +484,20 @@
           }
         }
       },
-      "StackExchange.Redis/2.6.66": {
+      "StackExchange.Redis/1.2.6": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "5.0.0",
-          "Pipelines.Sockets.Unofficial": "2.2.2",
-          "System.Diagnostics.PerformanceCounter": "5.0.0",
-          "System.IO.Compression": "4.3.0",
-          "System.Threading.Channels": "5.0.0"
-        },
         "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
           "System.IO.Compression"
         ],
         "compile": {
-          "lib/net472/StackExchange.Redis.dll": {
+          "lib/net46/StackExchange.Redis.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net472/StackExchange.Redis.dll": {
+          "lib/net46/StackExchange.Redis.dll": {
             "related": ".xml"
           }
         }
@@ -576,22 +569,6 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Data.SqlClient/4.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net462/_._": {}
-        }
-      },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -605,24 +582,6 @@
         },
         "runtime": {
           "lib/net461/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Diagnostics.PerformanceCounter/5.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Diagnostics.PerformanceCounter.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Diagnostics.PerformanceCounter.dll": {
             "related": ".xml"
           }
         }
@@ -657,29 +616,6 @@
           "lib/net462/System.IO.dll": {}
         }
       },
-      "System.IO.Compression/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.IO.Compression.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.Compression.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net46/System.IO.Compression.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.IO.FileSystem.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -703,27 +639,6 @@
           "runtimes/win/lib/net461/System.IO.FileSystem.AccessControl.dll": {
             "assetType": "runtime",
             "rid": "win"
-          }
-        }
-      },
-      "System.IO.Pipelines/5.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.IO.Pipelines.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.IO.Pipelines.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -1144,25 +1059,6 @@
           }
         }
       },
-      "System.Threading.Channels/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Threading.Channels.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "dependencies": {
@@ -1223,10 +1119,16 @@
           "Roblox.Moderation": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Passwords.Client": "1.0.0",
+          "Roblox.Platform.AssetOwnership": "1.0.0",
+          "Roblox.Platform.ContentRatings": "1.0.0",
+          "Roblox.Platform.UserCacheMigrationSettings": "1.0.0",
+          "Roblox.Platform.Users": "1.0.0",
+          "Roblox.Platform.Users.Client": "1.0.0",
           "Roblox.Redis": "1.0.0",
           "Roblox.Redis.Lru": "1.0.0",
           "Roblox.RequestContext": "1.0.0",
-          "StackExchange.Redis": "2.6.66",
+          "Roblox.Web.SEO": "1.0.0",
+          "StackExchange.Redis": "1.2.6",
           "System.Resources.Extensions": "7.0.0"
         },
         "compile": {
@@ -1252,8 +1154,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Users.Client": "1.0.0",
           "Roblox.RequestContext": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Agents.dll": {}
@@ -1314,6 +1215,26 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.Amazon.Firehose.dll": {}
+        }
+      },
+      "Roblox.Amazon.Sns/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AWSSDK.Core": "3.7.500.11",
+          "AWSSDK.SimpleNotificationService": "3.7.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Roblox.Amazon.Core": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Sentinels": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Amazon.Sns.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Amazon.Sns.dll": {}
         }
       },
       "Roblox.Amazon.Sqs/1.0.0": {
@@ -1432,12 +1353,12 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Common.NetStandard": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.dll": {}
@@ -1572,6 +1493,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -1580,8 +1502,7 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.VirtualCurrency": "1.0.0",
           "Roblox.TransactionEvents": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Economy.Common.dll": {}
@@ -1606,8 +1527,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Data": "1.0.0",
-          "Roblox.MssqlDatabases": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.MssqlDatabases": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Entities.Mssql.dll": {}
@@ -1785,6 +1705,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -1795,7 +1716,6 @@
           "Roblox.MssqlDatabases": "1.0.0",
           "Roblox.Platform.Core": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0",
           "System.Net.Http": "4.3.4"
         },
         "compile": {
@@ -1840,6 +1760,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Newtonsoft.Json": "13.0.3",
           "Roblox.Agents": "1.0.0",
           "Roblox.Amazon.Sqs": "1.0.0",
@@ -1858,8 +1779,7 @@
           "Roblox.Platform.Core": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
           "Roblox.TrackingQueue": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Moderation.dll": {}
@@ -1874,8 +1794,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Sentinels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Mssql.dll": {}
@@ -1892,8 +1811,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.MssqlDatabases.dll": {}
@@ -1942,6 +1860,40 @@
           "bin/placeholder/Roblox.Pipeline.dll": {}
         }
       },
+      "Roblox.Platform.AssetInstances.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "compile": {
+          "bin/placeholder/Roblox.Platform.AssetInstances.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.AssetInstances.Client.dll": {}
+        }
+      },
+      "Roblox.Platform.AssetOwnership/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Common": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0",
+          "Roblox.Instrumentation": "1.0.0",
+          "Roblox.Platform.AssetInstances.Client": "1.0.0",
+          "Roblox.Platform.Core": "1.0.0",
+          "Roblox.Platform.MembershipCore": "1.0.0",
+          "Roblox.Platform.Ownership.Client": "1.0.0",
+          "Roblox.Platform.OwnershipV2": "1.0.0",
+          "Roblox.Platform.OwnershipV2.Client": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.AssetOwnership.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.AssetOwnership.dll": {}
+        }
+      },
       "Roblox.Platform.AssetsCore/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1950,6 +1902,23 @@
         },
         "runtime": {
           "bin/placeholder/Roblox.Platform.AssetsCore.dll": {}
+        }
+      },
+      "Roblox.Platform.ContentRatings/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "Roblox.Data": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.ContentRatings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.ContentRatings.dll": {}
         }
       },
       "Roblox.Platform.Core/1.0.0": {
@@ -2016,16 +1985,75 @@
           "bin/placeholder/Roblox.Platform.MembershipCore.dll": {}
         }
       },
-      "Roblox.Platform.Users/1.0.0": {
+      "Roblox.Platform.Ownership.Client/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
           "Roblox.Caching": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.Ownership.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.Ownership.Client.dll": {}
+        }
+      },
+      "Roblox.Platform.OwnershipV2/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0",
+          "Roblox.Platform.Core": "1.0.0",
+          "Roblox.Platform.OwnershipV2.Client": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.OwnershipV2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.OwnershipV2.dll": {}
+        }
+      },
+      "Roblox.Platform.OwnershipV2.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Roblox.ApiClientBase": "1.0.0",
+          "Roblox.DataV2.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.OwnershipV2.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.OwnershipV2.Client.dll": {}
+        }
+      },
+      "Roblox.Platform.UserCacheMigrationSettings/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Roblox.Caching": "1.0.0",
+          "Roblox.Configuration": "1.0.0",
+          "System.Configuration.ConfigurationManager": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Roblox.Platform.UserCacheMigrationSettings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Platform.UserCacheMigrationSettings.dll": {}
+        }
+      },
+      "Roblox.Platform.Users/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
+          "Roblox.Caching": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.Data": "1.0.0",
           "Roblox.MssqlDatabases": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Platform.Users.dll": {}
@@ -2219,6 +2247,16 @@
           "bin/placeholder/Roblox.TransactionEvents.dll": {}
         }
       },
+      "Roblox.Web.SEO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Roblox.Web.SEO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Roblox.Web.SEO.dll": {}
+        }
+      },
       "Roblox.WebsiteSettings/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
@@ -2290,6 +2328,33 @@
         "lib/netstandard2.0/AWSSDK.KinesisFirehose.dll",
         "lib/netstandard2.0/AWSSDK.KinesisFirehose.pdb",
         "lib/netstandard2.0/AWSSDK.KinesisFirehose.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.SimpleNotificationService/3.7.0": {
+      "sha512": "ai2NPlh9Ya6W592S24a7j4/kbosvyCmhEfgePJUzSZ4BoiWZ4QeqBVdk3DEeeY2kcttJ7wIy2dhJ5owbb/xWHg==",
+      "type": "package",
+      "path": "awssdk.simplenotificationservice/3.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
+        "awssdk.simplenotificationservice.3.7.0.nupkg.sha512",
+        "awssdk.simplenotificationservice.nuspec",
+        "lib/net35/AWSSDK.SimpleNotificationService.dll",
+        "lib/net35/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net35/AWSSDK.SimpleNotificationService.xml",
+        "lib/net45/AWSSDK.SimpleNotificationService.dll",
+        "lib/net45/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net45/AWSSDK.SimpleNotificationService.xml",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.xml",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -2401,10 +2466,10 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
-      "sha512": "W8DPQjkMScOMTtJbPwmPyj9c3zYSFGawDW3jwlBOOsnY+EzZFLgNQ/UMkK35JmkNOVPdCyPr2Tw7Vv9N+KA3ZQ==",
+    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+      "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/5.0.0",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2417,8 +2482,11 @@
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2816,29 +2884,6 @@
         "owin.nuspec"
       ]
     },
-    "Pipelines.Sockets.Unofficial/2.2.2": {
-      "sha512": "Bhk0FWxH1paI+18zr1g5cTL+ebeuDcBCR+rRFO+fKEhretgjs7MF2Mc1P64FGLecWp4zKCUOPzngBNrqVyY7Zg==",
-      "type": "package",
-      "path": "pipelines.sockets.unofficial/2.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/Pipelines.Sockets.Unofficial.dll",
-        "lib/net461/Pipelines.Sockets.Unofficial.xml",
-        "lib/net472/Pipelines.Sockets.Unofficial.dll",
-        "lib/net472/Pipelines.Sockets.Unofficial.xml",
-        "lib/net5.0/Pipelines.Sockets.Unofficial.dll",
-        "lib/net5.0/Pipelines.Sockets.Unofficial.xml",
-        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll",
-        "lib/netcoreapp3.1/Pipelines.Sockets.Unofficial.xml",
-        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.dll",
-        "lib/netstandard2.0/Pipelines.Sockets.Unofficial.xml",
-        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.dll",
-        "lib/netstandard2.1/Pipelines.Sockets.Unofficial.xml",
-        "pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
-        "pipelines.sockets.unofficial.nuspec"
-      ]
-    },
     "prometheus-net/4.2.0": {
       "sha512": "1u9aEPHnp3qrY9KsJRTZ1FmaBiOxEzEeEuHzmTyEnudd0KKB5KSG9enkEIeyaptFVu/B43pLwLwS1FqF/fXdCg==",
       "type": "package",
@@ -2866,24 +2911,20 @@
         "prometheus-net.nuspec"
       ]
     },
-    "StackExchange.Redis/2.6.66": {
-      "sha512": "owEqq2PG1TFU1qUh3UH35BqlMjrR/AB2rlR26tGbUWW9LIeu99ArGg2iCgDj/aCSE+juClFJQhwg8i1pONlVDw==",
+    "StackExchange.Redis/1.2.6": {
+      "sha512": "uBzdFmPmsCJWZ/Iau85+2Ogal6nPiY5gT8pl2gA7R4dQ14GwRpwyTGkTuD1+hgHVuBW+zkCSnysmWc7h277r/g==",
       "type": "package",
-      "path": "stackexchange.redis/2.6.66",
+      "path": "stackexchange.redis/1.2.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net461/StackExchange.Redis.dll",
-        "lib/net461/StackExchange.Redis.xml",
-        "lib/net472/StackExchange.Redis.dll",
-        "lib/net472/StackExchange.Redis.xml",
-        "lib/net5.0/StackExchange.Redis.dll",
-        "lib/net5.0/StackExchange.Redis.xml",
-        "lib/netcoreapp3.1/StackExchange.Redis.dll",
-        "lib/netcoreapp3.1/StackExchange.Redis.xml",
-        "lib/netstandard2.0/StackExchange.Redis.dll",
-        "lib/netstandard2.0/StackExchange.Redis.xml",
-        "stackexchange.redis.2.6.66.nupkg.sha512",
+        "lib/net45/StackExchange.Redis.dll",
+        "lib/net45/StackExchange.Redis.xml",
+        "lib/net46/StackExchange.Redis.dll",
+        "lib/net46/StackExchange.Redis.xml",
+        "lib/netstandard1.5/StackExchange.Redis.dll",
+        "lib/netstandard1.5/StackExchange.Redis.xml",
+        "stackexchange.redis.1.2.6.nupkg.sha512",
         "stackexchange.redis.nuspec"
       ]
     },
@@ -3031,39 +3072,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Data.SqlClient/4.9.0": {
-      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.9.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Data.SqlClient.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
-        "lib/net462/System.Data.SqlClient.dll",
-        "lib/net462/System.Data.SqlClient.xml",
-        "lib/net6.0/System.Data.SqlClient.dll",
-        "lib/net6.0/System.Data.SqlClient.xml",
-        "lib/net8.0/System.Data.SqlClient.dll",
-        "lib/net8.0/System.Data.SqlClient.xml",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.9.0.nupkg.sha512",
-        "system.data.sqlclient.nuspec"
-      ]
-    },
     "System.Diagnostics.DiagnosticSource/6.0.1": {
       "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
       "type": "package",
@@ -3087,44 +3095,6 @@
         "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Diagnostics.PerformanceCounter/5.0.0": {
-      "sha512": "kcQWWtGVC3MWMNXdMDWfrmIlFZZ2OdoeT6pSNVRtk9+Sa7jwdPiMlNwb0ZQcS7NRlT92pCfmjRtkSWUW3RAKwg==",
-      "type": "package",
-      "path": "system.diagnostics.performancecounter/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net461/System.Diagnostics.PerformanceCounter.xml",
-        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.Diagnostics.PerformanceCounter.dll",
-        "ref/net461/System.Diagnostics.PerformanceCounter.xml",
-        "ref/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
-        "ref/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.xml",
-        "system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
-        "system.diagnostics.performancecounter.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.IdentityModel.Tokens.Jwt/6.35.0": {
@@ -3231,77 +3201,6 @@
         "system.io.nuspec"
       ]
     },
-    "System.IO.Compression/4.3.0": {
-      "sha512": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
-      "type": "package",
-      "path": "system.io.compression/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net46/System.IO.Compression.dll",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net46/System.IO.Compression.dll",
-        "ref/netcore50/System.IO.Compression.dll",
-        "ref/netcore50/System.IO.Compression.xml",
-        "ref/netcore50/de/System.IO.Compression.xml",
-        "ref/netcore50/es/System.IO.Compression.xml",
-        "ref/netcore50/fr/System.IO.Compression.xml",
-        "ref/netcore50/it/System.IO.Compression.xml",
-        "ref/netcore50/ja/System.IO.Compression.xml",
-        "ref/netcore50/ko/System.IO.Compression.xml",
-        "ref/netcore50/ru/System.IO.Compression.xml",
-        "ref/netcore50/zh-hans/System.IO.Compression.xml",
-        "ref/netcore50/zh-hant/System.IO.Compression.xml",
-        "ref/netstandard1.1/System.IO.Compression.dll",
-        "ref/netstandard1.1/System.IO.Compression.xml",
-        "ref/netstandard1.1/de/System.IO.Compression.xml",
-        "ref/netstandard1.1/es/System.IO.Compression.xml",
-        "ref/netstandard1.1/fr/System.IO.Compression.xml",
-        "ref/netstandard1.1/it/System.IO.Compression.xml",
-        "ref/netstandard1.1/ja/System.IO.Compression.xml",
-        "ref/netstandard1.1/ko/System.IO.Compression.xml",
-        "ref/netstandard1.1/ru/System.IO.Compression.xml",
-        "ref/netstandard1.1/zh-hans/System.IO.Compression.xml",
-        "ref/netstandard1.1/zh-hant/System.IO.Compression.xml",
-        "ref/netstandard1.3/System.IO.Compression.dll",
-        "ref/netstandard1.3/System.IO.Compression.xml",
-        "ref/netstandard1.3/de/System.IO.Compression.xml",
-        "ref/netstandard1.3/es/System.IO.Compression.xml",
-        "ref/netstandard1.3/fr/System.IO.Compression.xml",
-        "ref/netstandard1.3/it/System.IO.Compression.xml",
-        "ref/netstandard1.3/ja/System.IO.Compression.xml",
-        "ref/netstandard1.3/ko/System.IO.Compression.xml",
-        "ref/netstandard1.3/ru/System.IO.Compression.xml",
-        "ref/netstandard1.3/zh-hans/System.IO.Compression.xml",
-        "ref/netstandard1.3/zh-hant/System.IO.Compression.xml",
-        "ref/portable-net45+win8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll",
-        "runtimes/win/lib/net46/System.IO.Compression.dll",
-        "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll",
-        "system.io.compression.4.3.0.nupkg.sha512",
-        "system.io.compression.nuspec"
-      ]
-    },
     "System.IO.FileSystem.AccessControl/5.0.0": {
       "sha512": "SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
       "type": "package",
@@ -3342,32 +3241,6 @@
         "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.xml",
         "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
         "system.io.filesystem.accesscontrol.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.IO.Pipelines/5.0.1": {
-      "sha512": "qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
-      "type": "package",
-      "path": "system.io.pipelines/5.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.IO.Pipelines.dll",
-        "lib/net461/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.0/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.0/System.IO.Pipelines.xml",
-        "lib/netstandard1.3/System.IO.Pipelines.dll",
-        "lib/netstandard1.3/System.IO.Pipelines.xml",
-        "lib/netstandard2.0/System.IO.Pipelines.dll",
-        "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "ref/netcoreapp2.0/System.IO.Pipelines.dll",
-        "ref/netcoreapp2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.5.0.1.nupkg.sha512",
-        "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -4157,32 +4030,6 @@
         "version.txt"
       ]
     },
-    "System.Threading.Channels/5.0.0": {
-      "sha512": "RLBIxntLaG9pRmmuVDwY1kc8Bvp/FQzSxPU+19VekkScKkWtVP9r8bLhm28ama3usc816UBrmkg3vv3jUea/hw==",
-      "type": "package",
-      "path": "system.threading.channels/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Threading.Channels.dll",
-        "lib/net461/System.Threading.Channels.xml",
-        "lib/netcoreapp3.0/System.Threading.Channels.dll",
-        "lib/netcoreapp3.0/System.Threading.Channels.xml",
-        "lib/netstandard1.3/System.Threading.Channels.dll",
-        "lib/netstandard1.3/System.Threading.Channels.xml",
-        "lib/netstandard2.0/System.Threading.Channels.dll",
-        "lib/netstandard2.0/System.Threading.Channels.xml",
-        "lib/netstandard2.1/System.Threading.Channels.dll",
-        "lib/netstandard2.1/System.Threading.Channels.xml",
-        "system.threading.channels.5.0.0.nupkg.sha512",
-        "system.threading.channels.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "type": "package",
@@ -4288,6 +4135,11 @@
       "type": "project",
       "path": "../../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj",
       "msbuildProject": "../../../Amazon/Roblox.Amazon.Firehose/Roblox.Amazon.Firehose.csproj"
+    },
+    "Roblox.Amazon.Sns/1.0.0": {
+      "type": "project",
+      "path": "../../../Amazon/Roblox.Amazon.Sns/Roblox.Amazon.Sns.csproj",
+      "msbuildProject": "../../../Amazon/Roblox.Amazon.Sns/Roblox.Amazon.Sns.csproj"
     },
     "Roblox.Amazon.Sqs/1.0.0": {
       "type": "project",
@@ -4479,10 +4331,25 @@
       "path": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj",
       "msbuildProject": "../../../Roblox/Roblox.Pipeline/Roblox.Pipeline.csproj"
     },
+    "Roblox.Platform.AssetInstances.Client/1.0.0": {
+      "type": "project",
+      "path": "../../Assets/Roblox.Platform.AssetInstances.Client/Roblox.Platform.AssetInstances.Client.csproj",
+      "msbuildProject": "../../Assets/Roblox.Platform.AssetInstances.Client/Roblox.Platform.AssetInstances.Client.csproj"
+    },
+    "Roblox.Platform.AssetOwnership/1.0.0": {
+      "type": "project",
+      "path": "../../Assets/Roblox.Platform.AssetOwnership/Roblox.Platform.AssetOwnership.csproj",
+      "msbuildProject": "../../Assets/Roblox.Platform.AssetOwnership/Roblox.Platform.AssetOwnership.csproj"
+    },
     "Roblox.Platform.AssetsCore/1.0.0": {
       "type": "project",
       "path": "../../Assets/Roblox.Platform.AssetsCore/Roblox.Platform.AssetsCore.csproj",
       "msbuildProject": "../../Assets/Roblox.Platform.AssetsCore/Roblox.Platform.AssetsCore.csproj"
+    },
+    "Roblox.Platform.ContentRatings/1.0.0": {
+      "type": "project",
+      "path": "../../Content/Roblox.Platform.ContentRatings/Roblox.Platform.ContentRatings.csproj",
+      "msbuildProject": "../../Content/Roblox.Platform.ContentRatings/Roblox.Platform.ContentRatings.csproj"
     },
     "Roblox.Platform.Core/1.0.0": {
       "type": "project",
@@ -4503,6 +4370,26 @@
       "type": "project",
       "path": "../Roblox.Platform.Membership.Core/Roblox.Platform.Membership.Core.csproj",
       "msbuildProject": "../Roblox.Platform.Membership.Core/Roblox.Platform.Membership.Core.csproj"
+    },
+    "Roblox.Platform.Ownership.Client/1.0.0": {
+      "type": "project",
+      "path": "../../Ownership/Roblox.Platform.Ownership.Client/Roblox.Platform.Ownership.Client.csproj",
+      "msbuildProject": "../../Ownership/Roblox.Platform.Ownership.Client/Roblox.Platform.Ownership.Client.csproj"
+    },
+    "Roblox.Platform.OwnershipV2/1.0.0": {
+      "type": "project",
+      "path": "../../Ownership/Roblox.Platform.OwnershipV2/Roblox.Platform.OwnershipV2.csproj",
+      "msbuildProject": "../../Ownership/Roblox.Platform.OwnershipV2/Roblox.Platform.OwnershipV2.csproj"
+    },
+    "Roblox.Platform.OwnershipV2.Client/1.0.0": {
+      "type": "project",
+      "path": "../../Ownership/Roblox.Platform.OwnershipV2.Client/Roblox.Platform.OwnershipV2.Client.csproj",
+      "msbuildProject": "../../Ownership/Roblox.Platform.OwnershipV2.Client/Roblox.Platform.OwnershipV2.Client.csproj"
+    },
+    "Roblox.Platform.UserCacheMigrationSettings/1.0.0": {
+      "type": "project",
+      "path": "../../Users/Roblox.Platform.UserCacheMigrationSettings/Roblox.Platform.UserCacheMigrationSettings.csproj",
+      "msbuildProject": "../../Users/Roblox.Platform.UserCacheMigrationSettings/Roblox.Platform.UserCacheMigrationSettings.csproj"
     },
     "Roblox.Platform.Users/1.0.0": {
       "type": "project",
@@ -4569,6 +4456,11 @@
       "path": "../../../Transactions/Roblox.TransactionEvents/Roblox.TransactionEvents.csproj",
       "msbuildProject": "../../../Transactions/Roblox.TransactionEvents/Roblox.TransactionEvents.csproj"
     },
+    "Roblox.Web.SEO/1.0.0": {
+      "type": "project",
+      "path": "../../../Web/Roblox.Web.SEO/Roblox.Web.SEO.csproj",
+      "msbuildProject": "../../../Web/Roblox.Web.SEO/Roblox.Web.SEO.csproj"
+    },
     "Roblox.WebsiteSettings/1.0.0": {
       "type": "project",
       "path": "../../../Web/Roblox.WebsiteSettings/Roblox.WebsiteSettings.csproj",
@@ -4580,6 +4472,7 @@
       "Roblox Server Class Library >= 1.0.0",
       "Roblox.Agents >= 1.0.0",
       "Roblox.Amazon.Core >= 1.0.0",
+      "Roblox.Amazon.Sns >= 1.0.0",
       "Roblox.Caching >= 1.0.0",
       "Roblox.Common >= 1.0.0",
       "Roblox.Configuration >= 1.0.0",
@@ -4634,6 +4527,9 @@
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Core\\Roblox.Amazon.Core.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Core\\Roblox.Amazon.Core.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj"
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj"

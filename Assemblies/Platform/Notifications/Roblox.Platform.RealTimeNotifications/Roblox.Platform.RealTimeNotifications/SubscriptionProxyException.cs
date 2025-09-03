@@ -1,13 +1,11 @@
-﻿using System;
-namespace Roblox.Platform.RealTimeNotificationsinternal {
-    class SubscriptionProxyException : Exception
-
+using System;
+namespace Roblox.Platform.RealTimeNotifications
 {
-	public SubscriptionProxyException(string message)
-		: base(message)
-	{
-	}
-}
-
-
+    public class SubscriptionProxyException : Exception
+    {
+        public SubscriptionProxyException(string message)
+            : base(message)
+        {
+        }
+    }
 }

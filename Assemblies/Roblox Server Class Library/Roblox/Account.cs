@@ -15,8 +15,8 @@ using Roblox.DataV2.Core;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Properties;
-using Roblox.UserCacheMigrationSettings.Properties;
-using Roblox.Users.Client;
+using Roblox.Platform.UserCacheMigrationSettings.Properties;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox;
 
@@ -156,7 +156,7 @@ public class Account : MembershipUser, IRobloxEntity<long, AccountDAL>, ICacheab
 	static Account()
 	{
 		_EmptyRoleSetNames = new string[0];
-		_MigrationCacheabilitySettings = new MigrationCacheabilitySettings(Roblox.UserCacheMigrationSettings.Properties.Settings.Default.ToSingleSetting((Roblox.UserCacheMigrationSettings.Properties.Settings s) => s.UserMigrationGroupName), Roblox.UserCacheMigrationSettings.Properties.Settings.Default.ToSingleSetting((Roblox.UserCacheMigrationSettings.Properties.Settings s) => s.UserMigrationState));
+		_MigrationCacheabilitySettings = new MigrationCacheabilitySettings(Roblox.Platform.UserCacheMigrationSettings.Properties.Settings.Default.ToSingleSetting((Roblox.Platform.UserCacheMigrationSettings.Properties.Settings s) => s.UserMigrationGroupName), Roblox.Platform.UserCacheMigrationSettings.Properties.Settings.Default.ToSingleSetting((Roblox.Platform.UserCacheMigrationSettings.Properties.Settings s) => s.UserMigrationState));
 		_RefreshAheadLastUpdated = DateTime.MinValue;
 		_AccountIdToRoleSetSummariesLazy = new LazyWithRetry<RefreshAhead<Dictionary<long, RoleSetSummary>>>(() => RefreshAhead<Dictionary<long, RoleSetSummary>>.ConstructAndPopulate(Roblox.Properties.Settings.Default.AccountRoleSetSummariesRefreshAheadInterval, delegate(Dictionary<long, RoleSetSummary> oldValue)
 		{

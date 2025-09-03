@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Localization.Audit;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Audit;
+namespace Roblox.Localization.Accounts {
     interface IAccountLocalesAuditCompositeEntryFactory
 
 {

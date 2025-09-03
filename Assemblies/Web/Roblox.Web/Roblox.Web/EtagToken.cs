@@ -19,8 +19,9 @@ public class EtagToken
 	/// <returns>encoded etag string</returns>
 	public string Encode()
 	{
-		string serialized = $"{Key.ToString()}%{IP}%{Timestamp.ToString()}";
-		return MachineKey.Encode(Encoding.UTF8.GetBytes(serialized), MachineKeyProtection.Validation);
+		string serialized = $"{Key.ToString()}%{IP}%{Timestamp.ToString("o", CultureInfo.InvariantCulture)}";
+		byte[] protectedBytes = MachineKey.Protect(Encoding.UTF8.GetBytes(serialized), "EtagToken");
+		return Convert.ToBase64String(protectedBytes);
 	}
 
 	/// <summary>
@@ -33,11 +34,17 @@ public class EtagToken
 	{
 		try
 		{
-			byte[] decodedBytes = MachineKey.Decode(data, MachineKeyProtection.Validation);
+			byte[] protectedBytes = Convert.FromBase64String(data);
+			byte[] decodedBytes = MachineKey.Unprotect(protectedBytes, "EtagToken");
+			if (decodedBytes == null)
+			{
+				token = null;
+				return false;
+			}
 			string[] array = Encoding.UTF8.GetString(decodedBytes).Split('%');
 			Guid tokenKey = Guid.Parse(array[0]);
 			string tokenIp = array[1];
-			DateTime tokenTimestamp = DateTime.Parse(array[2], CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal | DateTimeStyles.AssumeUniversal);
+			DateTime tokenTimestamp = DateTime.Parse(array[2], CultureInfo.InvariantCulture, DateTimeStyles.RoundtripKind);
 			token = new EtagToken
 			{
 				Key = tokenKey,

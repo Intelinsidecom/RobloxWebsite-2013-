@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -12,8 +12,8 @@ using System.Runtime.Versioning;
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 [assembly: AssemblyCompany("Roblox")]
 [assembly: AssemblyConfiguration("Release")]
-[assembly: AssemblyCopyright("Copyright © Roblox 2013")]
-[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Coordination, Roblox.Entities, Roblox.EventLog, Roblox.Hashing, Roblox.Random, Roblox.Instrumentation, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.ApiClientBase, Roblox.MssqlDatabases, Roblox.ContentFilter.Client, Roblox.Amazon.Sns, Roblox.Common, Roblox.Platform.MembershipCore, Roblox.Caching, Roblox.Roles.Client, Roblox.Data, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Users.Client, Roblox.Common.Web, Roblox.Passwords.Client, Roblox.Agents, Roblox Server Class Library, Roblox.TextFilter\n\nORIGINAL CHANGE TRIGGERS\n\n")]
+[assembly: AssemblyCopyright("Copyright Â© Roblox 2013")]
+[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Coordination, Roblox.Entities, Roblox.EventLog, Roblox.Hashing, Roblox.Random, Roblox.Instrumentation, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.ApiClientBase, Roblox.MssqlDatabases, Roblox.ContentFilter.Client, Roblox.Amazon.Sns, Roblox.Common, Roblox.Platform.MembershipCore, Roblox.Caching, Roblox.Roles.Client, Roblox.Data, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Users.Client, Roblox.Common.Web, Roblox.Passwords.Client, Roblox.Agents, Roblox Server Class Library, Roblox.Platform.TextFilter\n\nORIGINAL CHANGE TRIGGERS\n\n")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0")]
 [assembly: AssemblyProduct("Roblox.Platform.Membership")]

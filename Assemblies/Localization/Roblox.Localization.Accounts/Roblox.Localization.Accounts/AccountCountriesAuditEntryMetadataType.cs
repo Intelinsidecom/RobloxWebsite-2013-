@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Accountspublic {
-    enum AccountCountriesAuditEntryMetadataType : byte
+﻿namespace Roblox.Localization.Accounts {
+    public enum AccountCountriesAuditEntryMetadataType : byte
 
 {
 	CountrySetOrChanged

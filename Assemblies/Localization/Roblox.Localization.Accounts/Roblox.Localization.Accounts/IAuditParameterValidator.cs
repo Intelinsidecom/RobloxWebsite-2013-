@@ -1,4 +1,4 @@
-﻿namespace Roblox.Localization.Accountsinternal {
+namespace Roblox.Localization.Accounts {
     interface IAuditParameterValidator
 
 {

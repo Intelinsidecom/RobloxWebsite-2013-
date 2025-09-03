@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -9,7 +9,7 @@ using Roblox.Platform.TextFilter.Properties;
 namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Represents an <see cref="T:Roblox.TextFilter.ITextFilter" /> that performs basic text filtering.
+/// Represents an <see cref="T:Roblox.Platform.TextFilter.ITextFilter" /> that performs basic text filtering.
 /// </summary>
 internal class BasicTextFilter : ITextFilter
 {
@@ -42,7 +42,7 @@ internal class BasicTextFilter : ITextFilter
 	private int LongTextSizeCutoff => _Settings.LongTextSizeCutoff;
 
 	/// <summary>
-	/// Initializes a new instance of the <see cref="T:Roblox.TextFilter.BasicTextFilter" /> class.
+	/// Initializes a new instance of the <see cref="T:Roblox.Platform.TextFilter.BasicTextFilter" /> class.
 	/// This is the constructor that we should use going forward.
 	/// </summary>
 	/// <param name="settings"></param>
@@ -60,10 +60,10 @@ internal class BasicTextFilter : ITextFilter
 	/// <summary>
 	/// Filters the given text for the given user.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	/// <exception cref="T:System.ArgumentNullException"></exception>
-	/// <returns>The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /> for the <paramref name="request" />.</returns>
+	/// <returns>The <see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /> for the <paramref name="request" />.</returns>
 	public ITextFilterRuleResult FilterText(IModeratedTextRequest request)
 	{
 		if (request == null)
@@ -108,10 +108,10 @@ internal class BasicTextFilter : ITextFilter
 	/// <summary>
 	/// Filters the given text for the given user.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	/// <exception cref="T:System.ArgumentNullException"></exception>
-	/// <returns>The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /> for the <paramref name="request" />.</returns>
+	/// <returns>The <see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /> for the <paramref name="request" />.</returns>
 	public ITextFilterRuleResult FilterTextNoContext(IModeratedTextRequest request)
 	{
 		if (request == null)
@@ -157,9 +157,9 @@ internal class BasicTextFilter : ITextFilter
 	/// Filter the given request by the given author targeted at the given recipient.
 	/// An empty Author or Recipient will be treated either as a U13.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest" /> containing the text, author and recipient.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IModerateTextForRecipientRequest" /> containing the text, author and recipient.</param>
 	/// <returns></returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
 	public ITextFilterRuleResult FilterTextForRecipient(IModerateTextForRecipientRequest request)
 	{
 		if (request == null)
@@ -221,9 +221,9 @@ internal class BasicTextFilter : ITextFilter
 	///     }
 	/// }
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.ModeratedTextRequest" /> for the text to filter.</param>
 	/// <exception cref="T:System.ArgumentNullException"></exception>
-	/// <returns><seealso cref="T:Roblox.TextFilter.TextFilterResults" /></returns>
+	/// <returns><seealso cref="T:Roblox.Platform.TextFilter.TextFilterResults" /></returns>
 	public ITextFilterResults FilterLiveText(IModeratedTextRequest request)
 	{
 		if (request == null)
@@ -274,12 +274,12 @@ internal class BasicTextFilter : ITextFilter
 	/// <summary>
 	/// Validates the keyword for the search query against the filtering rules.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the keyword.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the keyword.</param>
 	/// <returns>
-	/// The <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationResults" />.
+	/// The <see cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationResults" />.
 	/// </returns>
 	/// <exception cref="T:System.ArgumentNullException">request</exception>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Failed to connect to CommunitySift</exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException">Failed to connect to CommunitySift</exception>
 	public IKeywordSearchQueryValidationResults ValidateKeywordSearchQuery(IKeywordSearchQueryValidationRequest request)
 	{
 		try
@@ -324,7 +324,7 @@ internal class BasicTextFilter : ITextFilter
 		return _UsernameFilter.EvaluateU13Username(request.RequestedName);
 	}
 
-	/// <inheritdoc cref="M:Roblox.TextFilter.ITextFilter.ValidateObjectName(Roblox.TextFilter.IObjectNameValidationRequest)" />
+	/// <inheritdoc cref="M:Roblox.Platform.TextFilter.ITextFilter.ValidateObjectName(Roblox.Platform.TextFilter.IObjectNameValidationRequest)" />
 	public IObjectNameValidationResult ValidateObjectName(IObjectNameValidationRequest request)
 	{
 		if (request == null)

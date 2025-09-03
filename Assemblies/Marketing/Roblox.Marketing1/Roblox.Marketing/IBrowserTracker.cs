@@ -1,6 +1,6 @@
-﻿using System;
-namespace Roblox.Marketingpublic {
-    interface IBrowserTracker
+using System;
+namespace Roblox.Marketing {
+    public interface IBrowserTracker
 
 {
 	long Id { get; }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using System.Net;
@@ -85,7 +85,7 @@ public static class MarketingHelper
 		}
 		else
 		{
-			browserTrackerId = BrowserTracker.CreateNew().ID;
+			browserTrackerId = Roblox.Marketing.BLL.BrowserTracker.CreateNew().ID;
 			isBrowserTrackerCreated = true;
 		}
 		if (accountId.HasValue)

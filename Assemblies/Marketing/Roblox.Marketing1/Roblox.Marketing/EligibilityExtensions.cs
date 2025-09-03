@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using Roblox.Platform.Membership;
-namespace Roblox.Marketinginternal {
+namespace Roblox.Marketing {
     static class EligibilityExtensions
 
 {

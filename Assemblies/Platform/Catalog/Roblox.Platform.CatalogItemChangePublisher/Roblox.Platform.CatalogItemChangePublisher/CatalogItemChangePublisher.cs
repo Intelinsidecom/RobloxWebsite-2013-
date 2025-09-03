@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using Newtonsoft.Json;
 using Roblox.Amazon.Sqs;
-using Roblox.CatalogItemChangePublisher.Properties;
-namespace Roblox.Platform.CatalogItemChangePublisherpublic {
-    class CatalogItemChangePublisher : ICatalogItemChangePublisher
-
+using Roblox.Platform.CatalogItemChangePublisher.Properties;
+namespace Roblox.Platform.CatalogItemChangePublisher
 {
+    class CatalogItemChangePublisher : ICatalogItemChangePublisher
+    {
 	private static SqsBatchSender _DelayedBatchSender;
 
 	private static SqsBatchSender _BatchSender;
@@ -97,13 +97,11 @@ namespace Roblox.Platform.CatalogItemChangePublisherpublic {
 		(useDelay ? _DelayedBatchSender : _BatchSender).SendMessage(message);
 	}
 
-	public void Publish(long targetId, CatalogItemType catalogItemType, bool useDelay = false)
-	{
-		EnsureSendersAreInitializedAndIncrementEnqueueCount();
-		string message = JsonConvert.SerializeObject(new CatalogItemChangeEvent(targetId, catalogItemType));
-		(useDelay ? _DelayedBatchSender : _BatchSender).SendMessage(message);
-	}
-}
-
-
+        public void Publish(long targetId, CatalogItemType catalogItemType, bool useDelay = false)
+        {
+            EnsureSendersAreInitializedAndIncrementEnqueueCount();
+            string message = JsonConvert.SerializeObject(new CatalogItemChangeEvent(targetId, catalogItemType));
+            (useDelay ? _DelayedBatchSender : _BatchSender).SendMessage(message);
+        }
+    }
 }

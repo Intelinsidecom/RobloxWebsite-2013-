@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Roblox.ApiClientBase;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
@@ -11,8 +11,8 @@ using Roblox.Platform.Membership.Extensions;
 using Roblox.Platform.TranslationStorage;
 using Roblox.Platform.UniverseDisplayInformation.Properties;
 using Roblox.Platform.Universes;
-using Roblox.TextFilter;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 
@@ -56,7 +56,7 @@ public class UniverseDisplayInformationBuilder : IUniverseDisplayInformationBuil
 	/// </summary>
 	/// <param name="translationStorageAccessor">The <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor" />.</param>
 	/// <param name="translationStorageBuilder">The <see cref="T:Roblox.Platform.TranslationStorage.ITranslationStorageAccessor" />.</param>
-	/// <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" />.</param>
+	/// <param name="textFilterClientV2">The <see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" />.</param>
 	/// <param name="changeAgentFactory">The <see cref="T:Roblox.Platform.TranslationStorage.IChangeAgentFactory" />.</param>
 	/// <param name="gameLocalizationSettingsAuthority">The <see cref="T:Roblox.Platform.GameLocalization.IGameLocalizationSettingsAuthority" />.</param>
 	/// <param name="coreLocalizationAccessor">The <see cref="T:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor" />.</param>

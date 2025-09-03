@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using PhoneNumbers;
 using Roblox.Configuration;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Authentication.AccountSecurityTickets;
 using Roblox.Platform.Core;
 using Roblox.Platform.Demographics.Entities;

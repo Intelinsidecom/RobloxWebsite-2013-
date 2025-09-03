@@ -29,5 +29,10 @@
       <Project>
       </Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\Premium\Roblox.Platform.PremiumFeatures\Roblox.Platform.PremiumFeatures.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox.Platform.PremiumFeatures</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

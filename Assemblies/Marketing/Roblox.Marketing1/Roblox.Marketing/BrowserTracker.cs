@@ -1,5 +1,5 @@
-﻿using System;
-namespace Roblox.Marketingpublic {
+using System;
+namespace Roblox.Marketing {
     class BrowserTracker : IBrowserTracker
 
 {

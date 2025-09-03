@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Roblox.Localization.Accounts.Propertiesinternal {
+namespace Roblox.Localization.Accounts.Properties {
     interface ISettings
 
 {

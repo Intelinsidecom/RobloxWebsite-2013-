@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 using ProtoBuf;
 using Roblox.ApiClientBase;
 using Roblox.Configuration;
-using Roblox.GameInstances.Client.Properties;
+using Roblox.Platform.GameInstances.Client.Properties;
 using Roblox.GameInstances.Interfaces;
 using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class GameInstancesClient : GuardedApiClientBase
+namespace Roblox.Platform.GameInstances.Client {
+    public class GameInstancesClient : GuardedApiClientBase
 
 {
 	private const string _ProtobufContentType = "application/vnd.google.protobuf";

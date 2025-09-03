@@ -1,8 +1,8 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Groups.Entities;
 using Roblox.Platform.Groups.Events;
 using Roblox.Platform.Groups.Properties;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 

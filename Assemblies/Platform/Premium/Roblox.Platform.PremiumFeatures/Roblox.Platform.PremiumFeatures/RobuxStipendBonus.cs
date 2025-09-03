@@ -1,5 +1,5 @@
 using System;
-using Roblox.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
 
 namespace Roblox.PremiumFeatures;
 

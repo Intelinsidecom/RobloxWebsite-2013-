@@ -100,7 +100,7 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 				return currentPublishedVersion;
 			}
 		}
-		CreatorRef creatorRef = LoadCreatorRef(creatorType, creatorTargetId);
+		Roblox.CreatorRef creatorRef = LoadCreatorRef(creatorType, creatorTargetId);
 		Roblox.AssetVersion assetVersionEntity = CreateAssetVersionForAssetAndCreator(asset, rawContent, parentAssetVersion, creatingUniverseId, creatorRef);
 		UpdateCreationContextForAsset(asset, creatorType, creatorTargetId, creatingUniverseId, creationContext);
 		if (_DomainFactories.Settings.IsAssetVersionIdSetToZeroLoggingEnabled)
@@ -508,12 +508,12 @@ public class AssetVersionFactory : IAssetVersionFactory_Internal, IAssetVersionF
 		}).ToList();
 	}
 
-	private static CreatorRef LoadCreatorRef(CreatorType creatorType, long creatorTargetId)
+	private static Roblox.CreatorRef LoadCreatorRef(CreatorType creatorType, long creatorTargetId)
 	{
-		return CreatorRef.CreateNewRefFromAgentId(AgentFactory.GetByAgentTypeAndAgentTargetId(creatorType.ToAgentType(), creatorTargetId).Id);
+		return Roblox.CreatorRef.CreateNewRefFromAgentId(AgentFactory.GetByAgentTypeAndAgentTargetId(creatorType.ToAgentType(), creatorTargetId).Id);
 	}
 
-	private static Roblox.AssetVersion CreateAssetVersionForAssetAndCreator(IAsset asset, IRawContent rawContent, IAssetVersion parentAssetVersion, long? creatingUniverseId, CreatorRef creatorRef)
+	private static Roblox.AssetVersion CreateAssetVersionForAssetAndCreator(IAsset asset, IRawContent rawContent, IAssetVersion parentAssetVersion, long? creatingUniverseId, Roblox.CreatorRef creatorRef)
 	{
 		Roblox.Asset assetEntity = Roblox.Asset.MustGet(asset.Id);
 		if (parentAssetVersion != null)

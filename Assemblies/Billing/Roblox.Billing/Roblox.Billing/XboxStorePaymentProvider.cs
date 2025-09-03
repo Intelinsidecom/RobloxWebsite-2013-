@@ -5,7 +5,7 @@ using Roblox.Billing.Properties;
 using Roblox.Billing.XboxStoreExceptions;
 using Roblox.Classification;
 using Roblox.EventLog;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 

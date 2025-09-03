@@ -180,7 +180,7 @@ public class BrowserTrackerCookie : RobloxCookieBase
 		}
 		if (cookie.BrowserTrackerID == 0L)
 		{
-			cookie.BrowserTrackerID = BrowserTracker.CreateNew().ID;
+			cookie.BrowserTrackerID = Roblox.Marketing.BLL.BrowserTracker.CreateNew().ID;
 			needsSave = true;
 		}
 		if (cookie.CreateDate == DateTime.MinValue)

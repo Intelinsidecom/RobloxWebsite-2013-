@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Platform.ContentRatingspublic {
-    class AssetContentRating : IRobloxEntity<long, AssetContentRatingDAL>, ICacheableObject<long>, ICacheableObject
-
+namespace Roblox.Platform.ContentRatings
 {
+    public class AssetContentRating : IRobloxEntity<long, AssetContentRatingDAL>, ICacheableObject<long>, ICacheableObject
+    {
 	private AssetContentRatingDAL _EntityDAL;
 
 	public static CacheInfo EntityCacheInfo = new CacheInfo(new CacheabilitySettings(collectionsAreCacheable: true, countsAreCacheable: true, entityIsCacheable: true, idLookupsAreCacheable: true), "Roblox.Assets.AssetContentRating", isNullCacheable: true);
@@ -121,7 +121,5 @@ namespace Roblox.Platform.ContentRatingspublic {
 	{
 		yield break;
 	}
-}
-
-
+    }
 }

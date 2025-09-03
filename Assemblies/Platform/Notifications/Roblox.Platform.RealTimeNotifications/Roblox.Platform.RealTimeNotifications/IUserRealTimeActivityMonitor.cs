@@ -1,13 +1,11 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface IUserRealTimeActivityMonitor
-
+namespace Roblox.Platform.RealTimeNotifications
 {
-	void RecordUserRealTimeConnectionActive(long userId);
+    public interface IUserRealTimeActivityMonitor
+    {
+        void RecordUserRealTimeConnectionActive(long userId);
 
-	bool IsUserActiveNow(long userId);
+        bool IsUserActiveNow(long userId);
 
-	bool HasUserBeenActiveRecently(long userId);
-}
-
-
+        bool HasUserBeenActiveRecently(long userId);
+    }
 }

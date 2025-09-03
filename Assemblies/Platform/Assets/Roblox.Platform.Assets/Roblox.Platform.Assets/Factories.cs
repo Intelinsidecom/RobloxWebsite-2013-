@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Agents;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Assets;
 

@@ -4,7 +4,8 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-using Roblox.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
+using Roblox.PremiumFeatures;
 using Roblox;
 namespace Roblox.Platform.PremiumFeatures
 {

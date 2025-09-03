@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Badges.Properties;
 using Roblox.Platform.Core;
 using Roblox.Platform.MembershipCore;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Badges;
 

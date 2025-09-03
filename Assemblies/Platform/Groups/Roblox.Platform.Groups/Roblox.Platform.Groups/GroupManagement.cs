@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Script.Serialization;
 using Roblox.Common;
 using Roblox.Data;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
@@ -14,9 +14,9 @@ using Roblox.Platform.Groups.Properties;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Extensions;
 using Roblox.Platform.PremiumFeatures.Interfaces;
-using Roblox.PremiumFeatures.Implementation;
-using Roblox.PremiumFeatures.Interfaces;
-using Roblox.TextFilter;
+using Roblox.Platform.PremiumFeatures.Implementation;
+using Roblox.Platform.PremiumFeatures.Interfaces;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 
@@ -642,11 +642,11 @@ public static class GroupManagement
 	/// <param name="groupEventPublisher">The <see cref="T:Roblox.Platform.Groups.Events.IGroupEventPublisher" /></param>
 	/// <param name="groupFloodCheckerFactory">The <see cref="T:Roblox.Platform.Groups.IGroupFloodCheckerFactory" /></param>
 	/// <param name="premiumFeaturesUser">The <see cref="T:Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser" /></param>
-	/// <param name="ephemeralCounterFactory">Optional <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory" /></param>
+	/// <param name="ephemeralCounterFactory">Optional <see cref="T:Roblox.Platform.EphemeralCounters.IEphemeralCounterFactory" /></param>
 	/// <param name="bypassRestrictions">If true, the user will bypass any user or group restrictions e.g. user has max # of groups, group is private or BC-only</param>
 	/// <exception cref="T:Roblox.Platform.Groups.JoinGroupException">User failed to join the group. Exception has a Reason enum that contains more information.</exception>
 	/// <exception cref="T:Roblox.Common.OperationUnavailableException">Group memberships are in read-only mode.</exception>
-	public static void JoinGroup(long userID, long groupId, long roleSetID, IGroupFactory groupFactory, IGroupCounter groupCounter, IGroupEventPublisher groupEventPublisher, IGroupFloodCheckerFactory groupFloodCheckerFactory, IPremiumFeaturesUser premiumFeaturesUser, IEphemeralCounterFactory ephemeralCounterFactory = null, bool bypassRestrictions = false)
+	public static void JoinGroup(long userID, long groupId, long roleSetID, Roblox.Platform.Groups.IGroupFactory groupFactory, Roblox.Platform.Groups.Counters.IGroupCounter groupCounter, Roblox.Platform.Groups.Events.IGroupEventPublisher groupEventPublisher, Roblox.Platform.Groups.IGroupFloodCheckerFactory groupFloodCheckerFactory, Roblox.Platform.PremiumFeatures.Interfaces.IPremiumFeaturesUser premiumFeaturesUser, Roblox.Platform.EphemeralCounters.IEphemeralCounterFactory ephemeralCounterFactory = null, bool bypassRestrictions = false)
 	{
 		if (IsMemberOfGroup(userID, groupId))
 		{

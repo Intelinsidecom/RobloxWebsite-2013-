@@ -129,7 +129,7 @@ public class WebThrottlingManager : IThrottlingManager
 		{
 			100 => true, 
 			0 => false, 
-			_ => new Random(new object().GetHashCode()).Next(0, 100) <= throttlePercentage, 
+			_ => new global::System.Random(new object().GetHashCode()).Next(0, 100) <= throttlePercentage, 
 		};
 	}
 

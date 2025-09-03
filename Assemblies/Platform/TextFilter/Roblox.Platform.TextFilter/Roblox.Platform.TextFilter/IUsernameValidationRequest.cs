@@ -1,7 +1,7 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// An interface representing a request to validate text submitted for a username against the <see cref="T:Roblox.TextFilter.IUsernameFilter" />
+/// An interface representing a request to validate text submitted for a username against the <see cref="T:Roblox.Platform.TextFilter.IUsernameFilter" />
 /// </summary>
 public interface IUsernameValidationRequest
 {

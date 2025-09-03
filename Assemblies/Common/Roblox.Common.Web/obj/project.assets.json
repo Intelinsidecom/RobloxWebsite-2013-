@@ -496,22 +496,6 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "System.Data.SqlClient/4.9.0": {
-        "type": "package",
-        "compile": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net462/System.Data.SqlClient.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net462/_._": {}
-        }
-      },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -1061,12 +1045,12 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Common.NetStandard": "1.0.0",
           "Roblox.Configuration": "1.0.0",
           "Roblox.EventLog": "1.0.0",
           "Roblox.Hashing": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Common.dll": {}
@@ -1143,8 +1127,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Data": "1.0.0",
-          "Roblox.MssqlDatabases": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.MssqlDatabases": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Entities.Mssql.dll": {}
@@ -1207,8 +1190,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Sentinels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.Mssql.dll": {}
@@ -1225,8 +1207,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
           "bin/placeholder/Roblox.MssqlDatabases.dll": {}
@@ -1968,39 +1949,6 @@
         "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Data.SqlClient/4.9.0": {
-      "sha512": "j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.9.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "PACKAGE.md",
-        "buildTransitive/net461/System.Data.SqlClient.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.SqlClient.targets",
-        "lib/net462/System.Data.SqlClient.dll",
-        "lib/net462/System.Data.SqlClient.xml",
-        "lib/net6.0/System.Data.SqlClient.dll",
-        "lib/net6.0/System.Data.SqlClient.xml",
-        "lib/net8.0/System.Data.SqlClient.dll",
-        "lib/net8.0/System.Data.SqlClient.xml",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/net8.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net6.0/System.Data.SqlClient.xml",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net8.0/System.Data.SqlClient.xml",
-        "system.data.sqlclient.4.9.0.nupkg.sha512",
-        "system.data.sqlclient.nuspec"
       ]
     },
     "System.Diagnostics.DiagnosticSource/6.0.1": {

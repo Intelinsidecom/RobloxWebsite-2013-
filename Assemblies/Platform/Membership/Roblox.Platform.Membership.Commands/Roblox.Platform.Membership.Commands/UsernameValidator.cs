@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Roblox.Common;
@@ -6,7 +6,7 @@ using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.Membership.Properties;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Membership.Commands;
 
@@ -39,7 +39,7 @@ public class UsernameValidator : IUsernameValidator
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.Membership.Commands.UsernameValidator" /> class.
 	/// </summary>
-	/// <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" />.</param>
+	/// <param name="textFilterClientV2">The <see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" />.</param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	/// <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory" />.</param>
 	/// <param name="accountNameHistoryEntityFactory">The <see cref="T:Roblox.Platform.Membership.Entities.IAccountNameHistoryEntityFactory" />.</param>

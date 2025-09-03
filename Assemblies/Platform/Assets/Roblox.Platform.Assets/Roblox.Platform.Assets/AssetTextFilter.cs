@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using Roblox.Platform.Assets.Properties;
 using Roblox.Platform.Core;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Assets;
 

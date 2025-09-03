@@ -1,9 +1,9 @@
 ﻿using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Implementations;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Accounts.Implementations;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
-using Roblox.TranslationResources;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Platform.TranslationResources;
+namespace Roblox.Localization.Accounts {
     class AccountLocaleAccessor : IAccountLocaleAccessor
 
 {
@@ -26,7 +26,7 @@ namespace Roblox.Localization.Accountsinternal {
 		}
 		ISupportedLocale supportedLocale = _SupportedLocaleAndLanguageMapper.MapSupportedLocale(accountLocaleEntity);
 		ILanguageFamily language = _SupportedLocaleAndLanguageMapper.MapLangauge(accountLocaleEntity);
-		return new Roblox.Platform.Localization.Accounts.Implementations.AccountLocale
+		return new Roblox.Localization.Accounts.Implementations.AccountLocale
 		{
 			AccountId = accountLocaleEntity.AccountId,
 			NativeLanguage = language,

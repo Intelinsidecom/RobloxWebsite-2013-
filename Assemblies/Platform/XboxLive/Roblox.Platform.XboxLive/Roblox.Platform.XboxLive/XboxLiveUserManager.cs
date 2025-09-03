@@ -8,7 +8,7 @@ using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Commands;
 using Roblox.Platform.XboxLive.Entities;
 using Roblox.Platform.XboxLive.Properties;
-using Roblox.Users.Client;
+using Roblox.Platform.Users.Client;
 
 namespace Roblox.Platform.XboxLive;
 

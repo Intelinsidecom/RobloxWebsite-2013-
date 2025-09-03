@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using Roblox.Marketing.BLL;
-namespace Roblox.Marketingpublic {
+namespace Roblox.Marketing {
     class BrowserTrackerFactory : IBrowserTrackerFactory
 
 {

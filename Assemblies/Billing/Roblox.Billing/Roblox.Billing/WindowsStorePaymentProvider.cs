@@ -4,7 +4,7 @@ using System.Linq;
 using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Billing.Properties;
 using Roblox.EventLog;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 

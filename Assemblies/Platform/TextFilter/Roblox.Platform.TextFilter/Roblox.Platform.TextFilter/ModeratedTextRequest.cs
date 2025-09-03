@@ -1,7 +1,7 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Default implementation of <see cref="T:Roblox.TextFilter.IModeratedTextRequest" />.
+/// Default implementation of <see cref="T:Roblox.Platform.TextFilter.IModeratedTextRequest" />.
 /// </summary>
 public class ModeratedTextRequest : IModeratedTextRequest
 {
@@ -38,10 +38,10 @@ public class ModeratedTextRequest : IModeratedTextRequest
 	/// <summary>
 	/// Default constructor with required arguments.
 	/// </summary>
-	/// <param name="user"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Author" /><see cref="T:Roblox.TextFilter.TextAuthor" /> who is submitting this text.</param>
-	/// <param name="text"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Text" />Original text value entered by the user.</param>
-	/// <param name="server"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Server" /></param>
-	/// <param name="room"><see cref="P:Roblox.TextFilter.ModeratedTextRequest.Room" /></param>
+	/// <param name="user"><see cref="P:Roblox.Platform.TextFilter.ModeratedTextRequest.Author" /><see cref="T:Roblox.Platform.TextFilter.TextAuthor" /> who is submitting this text.</param>
+	/// <param name="text"><see cref="P:Roblox.Platform.TextFilter.ModeratedTextRequest.Text" />Original text value entered by the user.</param>
+	/// <param name="server"><see cref="P:Roblox.Platform.TextFilter.ModeratedTextRequest.Server" /></param>
+	/// <param name="room"><see cref="P:Roblox.Platform.TextFilter.ModeratedTextRequest.Room" /></param>
 	public ModeratedTextRequest(ITextAuthor user, string text, string server = null, string room = null, string client = null, bool trackDetailedClientStatistics = false)
 	{
 		Author = user;

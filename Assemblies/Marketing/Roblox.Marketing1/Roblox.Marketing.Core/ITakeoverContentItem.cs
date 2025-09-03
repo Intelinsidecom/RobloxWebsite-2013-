@@ -1,6 +1,7 @@
-﻿using System;
-namespace Roblox.Marketing.Corepublic {
-    interface ITakeoverContentItem
+using System;
+using Roblox.Marketing;
+namespace Roblox.Marketing.Core {
+    public interface ITakeoverContentItem
 
 {
 	int Id { get; }

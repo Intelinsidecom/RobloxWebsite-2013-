@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.TextFilter.Properties;
 namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Decorates an <see cref="T:Roblox.TextFilter.ITextFilter" /> instance and records metrics about the results that it returns.
+/// Decorates an <see cref="T:Roblox.Platform.TextFilter.ITextFilter" /> instance and records metrics about the results that it returns.
 /// It passes through the results of the internal ITextFilter unaltered
 /// </summary>
 internal class MetricTrackingTextFilterDecorator : ITextFilter

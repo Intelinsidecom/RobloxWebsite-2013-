@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Roblox.Common.NetStandard;
 using Roblox.Platform.Marketing.Core.Entities;
-namespace Roblox.Marketing.Corepublic {
+namespace Roblox.Marketing.Core {
     class TakeoverContentItemFactory : ITakeoverContentItemFactory
 
 {

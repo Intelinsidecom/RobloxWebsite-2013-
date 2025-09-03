@@ -11,8 +11,9 @@ using Roblox.Platform.Assets.Events;
 using Roblox.Platform.Assets.Properties;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-using Roblox.TextFilter;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter;
+using Roblox.Platform.TextFilter.Client;
+using Roblox;
 
 namespace Roblox.Platform.Assets;
 
@@ -195,7 +196,7 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor - only using deprecated TextFilter
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
 	/// <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
@@ -209,7 +210,7 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor - only using TextFilterClientV2
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
 	/// <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
@@ -222,8 +223,8 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
 	/// <remarks>The <see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /> and <see cref="T:Roblox.Platform.Assets.AssetArchivalEventsPublisher" /> are not passed in by default, which is ppropriate for all cases except testing or when you must disable events to SNS.</remarks>
@@ -236,7 +237,7 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor - only using deprecated TextFilter
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
@@ -251,7 +252,7 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor - only using TextFilterClientV2
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
@@ -265,8 +266,8 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
@@ -280,8 +281,8 @@ public class AssetDomainFactories : DomainFactoriesBase
 	/// AssetDomainFactories constructor - With settings as a parameter. For internal testing only.
 	/// </summary>
 	/// <param name="agentFactory"><see cref="T:Roblox.Agents.IAgentFactory" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="assetEventsObserver"><see cref="T:Roblox.Platform.Assets.Events.AssetEventsPublisher" /></param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>

@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Platform.Badges.Exceptions;
 using Roblox.Platform.Badges.Properties;
 using Roblox.Platform.Core;
-using Roblox.TextFilter.Client;
-using Roblox.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client.Models.Common;
 
 namespace Roblox.Platform.Badges;
 
@@ -83,9 +83,9 @@ public class BadgeTextFilter : IBadgeTextFilter
 		};
 	}
 
-	private static Roblox.TextFilter.Client.TextFilterUsage GetDefaultTextFilterUsage()
+	private static Roblox.Platform.TextFilter.Client.TextFilterUsage GetDefaultTextFilterUsage()
 	{
 		// Default underlying enum value (0) is used to avoid depending on specific enum members
-		return default(Roblox.TextFilter.Client.TextFilterUsage);
+		return default(Roblox.Platform.TextFilter.Client.TextFilterUsage);
 	}
 }

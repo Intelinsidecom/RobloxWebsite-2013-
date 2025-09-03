@@ -1,5 +1,5 @@
-﻿using Roblox.Entities;
-namespace Roblox.Marketinginternal {
+using Roblox.Entities;
+namespace Roblox.Marketing {
     interface IAccountBrowserTrackerEntity : IUpdateableEntity<long>, IEntity<long>
 
 {

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Entities.Mssql;
@@ -9,7 +9,7 @@ using Roblox.Platform.Membership.Commands.Audit;
 using Roblox.Platform.Membership.Commands.Properties;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.Membership.Properties;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 using Roblox.Platform.Users.Client;
 
 namespace Roblox.Platform.Membership.Commands;

@@ -1,8 +1,8 @@
 ﻿using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
-using Roblox.Platform.Localization.Accounts.Implementations;
+using Roblox.Localization.Accounts.Implementations;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountsinternal {
+namespace Roblox.Localization.Accounts {
     class AccountCountryAccessor : IAccountCountryAccessor
 
 {
@@ -43,7 +43,7 @@ namespace Roblox.Localization.Accountsinternal {
 	{
 		if (accountCountryEntity != null)
 		{
-			return new Roblox.Platform.Localization.Accounts.Implementations.AccountCountry
+			return new Roblox.Localization.Accounts.Implementations.AccountCountry
 			{
 				AccountId = accountCountryEntity.AccountId,
 				CountryId = ((!accountCountryEntity.CountryId.HasValue) ? null : new CountryIdentifier(accountCountryEntity.CountryId.Value)),

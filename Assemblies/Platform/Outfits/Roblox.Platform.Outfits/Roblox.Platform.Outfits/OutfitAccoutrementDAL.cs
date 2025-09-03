@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.Outfits.Properties;
-namespace Roblox.Platform.Outfitspublic {
-    class OutfitAccoutrementDAL
-
+namespace Roblox.Outfits
 {
+    public class OutfitAccoutrementDAL
+    {
 	public long ID { get; set; }
 
 	public long OutfitID { get; set; }
@@ -126,8 +126,6 @@ namespace Roblox.Platform.Outfitspublic {
 		};
 		return EntityHelper.GetEntityDAL(new DbInfo(_DbConnectionString, "OutfitAccoutrements_GetOutfitAccoutrementByID", queryParameters), BuildDAL);
 	}
-}
-
-
+    }
 }
 

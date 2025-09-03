@@ -7,7 +7,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.Caching.Shared;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-using Roblox.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
 
 namespace Roblox.PremiumFeatures;
 

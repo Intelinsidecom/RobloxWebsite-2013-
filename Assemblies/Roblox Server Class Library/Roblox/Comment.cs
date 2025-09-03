@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.Data.SqlClient;
 using System.Text;
@@ -146,7 +146,7 @@ public class Comment : IRemoteCacheableObject, IRobloxEntity<long, CommentDAL>, 
 
 	private static void VerifyCommentsCounter(AssetCounter counter)
 	{
-		if (_CommentsCounterVerificationPercentage != 0.0 && !(new Random().NextDouble() >= _CommentsCounterVerificationPercentage))
+		if (_CommentsCounterVerificationPercentage != 0.0 && !(new System.Random().NextDouble() >= _CommentsCounterVerificationPercentage))
 		{
 			SynchronizeCommentsCounter(counter);
 		}

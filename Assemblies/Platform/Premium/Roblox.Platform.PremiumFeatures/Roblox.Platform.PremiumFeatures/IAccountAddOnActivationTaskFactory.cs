@@ -2,7 +2,7 @@ using System;
 using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
-    interface IAccountAddOnActivationTaskFactory
+    public interface IAccountAddOnActivationTaskFactory
 
 {
 	DateTime CalculateBuildersClubUpgradeExpiration(AccountAddOn currentBuildersClubMembershipAddOn, int newPremiumFeatureId, bool isBaseExpiration = false);

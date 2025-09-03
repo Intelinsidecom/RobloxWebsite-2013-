@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Core;
+using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-namespace Roblox.Marketingpublic {
+namespace Roblox.Marketing {
     class ExperimentEnrollmentNotFoundException : PlatformException
 
 {

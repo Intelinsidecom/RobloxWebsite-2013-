@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Api = Roblox.Permissions.Client;
+using Api = Roblox.Platform.Permissions.Client;
 
 namespace Roblox.Platform.Permissions.Core;
 

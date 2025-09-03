@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.GameInstances.Clientpublic {
+using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Client {
     struct UpdateResult
 
 {

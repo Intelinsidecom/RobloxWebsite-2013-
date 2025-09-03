@@ -3,10 +3,10 @@ using Microsoft.Data.SqlClient;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Implementations;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Accounts.Implementations;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Core;
+namespace Roblox.Localization.Accounts {
     class AccountLocaleBuilder : IAccountLocaleBuilder
 
 {
@@ -128,7 +128,7 @@ namespace Roblox.Localization.Accountsinternal {
 		}
 		ISupportedLocale mappedSupportedLocale = _SupportedLocaleAndLanguageMapper.MapSupportedLocale(accountLocaleEntity);
 		ILanguageFamily language = _SupportedLocaleAndLanguageMapper.MapLangauge(accountLocaleEntity);
-		return new Roblox.Platform.Localization.Accounts.Implementations.AccountLocale
+		return new Roblox.Localization.Accounts.Implementations.AccountLocale
 		{
 			AccountId = accountId,
 			SupportedLocale = mappedSupportedLocale,

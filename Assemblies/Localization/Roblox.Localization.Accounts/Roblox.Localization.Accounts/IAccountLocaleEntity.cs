@@ -1,5 +1,5 @@
-﻿using Roblox.Entities;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Entities;
+namespace Roblox.Localization.Accounts {
     interface IAccountLocaleEntity : IUpdateableEntity<long>, IEntity<long>
 
 {

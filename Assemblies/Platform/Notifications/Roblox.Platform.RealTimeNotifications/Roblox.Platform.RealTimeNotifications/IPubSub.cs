@@ -1,8 +1,6 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface IPubSub<TKeyInput, TPublishMessage> : IPublisher<TKeyInput, TPublishMessage>, ISubscriber<TKeyInput, TPublishMessage>
-
+namespace Roblox.Platform.RealTimeNotifications
 {
-}
-
-
+    public interface IPubSub<TKeyInput, TPublishMessage> : IPublisher<TKeyInput, TPublishMessage>, ISubscriber<TKeyInput, TPublishMessage>
+    {
+    }
 }

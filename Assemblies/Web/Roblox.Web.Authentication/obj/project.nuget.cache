@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5hKBC/P/HCk=",
+  "dgSpecHash": "EZS8BnNqNOE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.Authentication\\Roblox.Web.Authentication.csproj",
   "expectedPackageFiles": [
@@ -35,13 +35,14 @@
     "C:\\Users\\Intel\\.nuget\\packages\\pdfsharp\\1.50.5147\\pdfsharp.1.50.5147.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\prometheus-net\\4.2.0\\prometheus-net.4.2.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\protobuf-net\\3.2.30\\protobuf-net.3.2.30.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\protobuf-net.core\\3.2.30\\protobuf-net.core.3.2.30.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\stackexchange.redis\\2.6.66\\stackexchange.redis.2.6.66.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",

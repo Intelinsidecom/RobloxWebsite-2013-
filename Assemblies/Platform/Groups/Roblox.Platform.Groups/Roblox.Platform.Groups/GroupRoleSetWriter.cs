@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Groups.Entities.GroupRoleSets;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 
@@ -17,7 +17,7 @@ public class GroupRoleSetWriter : IGroupRoleSetWriter
 	/// <summary>
 	/// Class for writing to <see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /> objects
 	/// </summary>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
 	/// <param name="groupRoleSetAccessor"><see cref="T:Roblox.Platform.Groups.IGroupRoleSetAccessor" /></param>
 	/// <param name="groupRoleSetEntityFactory"><see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntityFactory" /></param>
 	internal GroupRoleSetWriter(ITextFilter textFilter, IGroupRoleSetAccessor groupRoleSetAccessor, IGroupRoleSetEntityFactory groupRoleSetEntityFactory)
@@ -117,8 +117,8 @@ public class GroupRoleSetWriter : IGroupRoleSetWriter
 	/// </summary>
 	/// <param name="groupRoleSet"><see cref="T:Roblox.Platform.Groups.IGroupRoleSet" /></param>
 	/// <param name="text">the text to filter</param>
-	/// <param name="author"><see cref="T:Roblox.TextFilter.ITextAuthor" /></param>
-	/// <returns><see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /></returns>
+	/// <param name="author"><see cref="T:Roblox.Platform.TextFilter.ITextAuthor" /></param>
+	/// <returns><see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /></returns>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException"></exception>
 	private ITextFilterRuleResult FilterText(IGroupRoleSet groupRoleSet, string text, ITextAuthor author)
 	{

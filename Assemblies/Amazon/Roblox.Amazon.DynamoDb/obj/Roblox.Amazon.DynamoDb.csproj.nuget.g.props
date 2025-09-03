@@ -14,8 +14,8 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.core\3.7.500.11</PkgAWSSDK_Core>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.core\3.7.500.13</PkgAWSSDK_Core>
     <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.dynamodbv2\3.7.102</PkgAWSSDK_DynamoDBv2>
-    <PkgAWSSDK_DAX Condition=" '$(PkgAWSSDK_DAX)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.dax\3.7.500.11</PkgAWSSDK_DAX>
+    <PkgAWSSDK_DAX Condition=" '$(PkgAWSSDK_DAX)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.dax\3.7.500.13</PkgAWSSDK_DAX>
   </PropertyGroup>
 </Project>

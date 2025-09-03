@@ -22,7 +22,8 @@ namespace Roblox.Platform.Marketplace.Client
         {
             return new PurchaseProductResult
             {
-                Status = (int)TransactionStatus.Success,
+                // Using literal success code to avoid dependency on missing TransactionStatus enum
+                Status = 0,
                 SaleId = 1
             };
         }

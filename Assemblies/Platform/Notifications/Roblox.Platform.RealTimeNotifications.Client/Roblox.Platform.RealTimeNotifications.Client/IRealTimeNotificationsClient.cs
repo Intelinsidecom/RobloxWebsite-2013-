@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-namespace Roblox.Platform.RealTimeNotifications.Clientpublic {
-    interface IRealTimeNotificationsClient
-
+namespace Roblox.Platform.RealTimeNotifications.Client
 {
+    public interface IRealTimeNotificationsClient
+    {
 	PublishUserNotificationResult PublishUserNotification(long userId, JObject message, string notificationNamespace);
 
 	Task<PublishUserNotificationResult> PublishUserNotificationAsync(long userId, JObject message, string notificationNamespace, CancellationToken cancellationToken);
@@ -17,7 +17,5 @@ namespace Roblox.Platform.RealTimeNotifications.Clientpublic {
 	PublishUserNotificationResult PublishBulkUserNotification(long userId, ICollection<JObject> messages, string notificationNamespace);
 
 	Task<PublishUserNotificationResult> PublishBulkUserNotificationAsync(long userId, ICollection<JObject> messages, string notificationNamespace, CancellationToken cancellationToken);
-}
-
-
+    }
 }

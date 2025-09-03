@@ -8,7 +8,7 @@ using Roblox;
 using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
-    class PremiumFeatureActivationTask : IRobloxEntity<long, PremiumFeatureActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
+    public class PremiumFeatureActivationTask : IRobloxEntity<long, PremiumFeatureActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask
 
 {
 	public delegate void GrantedItemListActivationEventHandler(long premiumFeatureActivationTaskId, EventArgs e);

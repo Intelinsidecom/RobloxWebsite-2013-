@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.Common;
-using Roblox.ContentRatings.Properties;
+using Roblox.Platform.ContentRatings.Properties;
 
 namespace Roblox.Platform.ContentRatings
 {

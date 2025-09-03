@@ -1,4 +1,4 @@
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.TranslationStorage;
 
 namespace Roblox.Platform.Demographics;

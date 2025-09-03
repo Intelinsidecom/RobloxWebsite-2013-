@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Roblox.GameInstances.Interfaces;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class PlaceSummary : IPlaceSummary
+namespace Roblox.Platform.GameInstances.Client {
+    public class PlaceSummary : IPlaceSummary
 
 {
 	public long Id { get; set; }

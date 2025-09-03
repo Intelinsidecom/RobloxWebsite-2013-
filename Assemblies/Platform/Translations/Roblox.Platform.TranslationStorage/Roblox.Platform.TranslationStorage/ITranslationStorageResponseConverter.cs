@@ -1,10 +1,10 @@
-using Roblox.TranslationStorage.Client;
+using Roblox.Platform.TranslationStorage.Client;
 
 namespace Roblox.Platform.TranslationStorage;
 
 internal interface ITranslationStorageResponseConverter
 {
-	DeleteTranslationResponse ConvertDeleteTranslationResponse(Roblox.TranslationStorage.Client.DeleteTranslationResponse clientRespone);
+    DeleteTranslationResponse ConvertDeleteTranslationResponse(Roblox.Platform.TranslationStorage.Client.DeleteTranslationResponse clientResponse);
 
-	CreateOrUpdateTranslationStatus ConvertCreateOrUpdateTranslationResponse(Roblox.TranslationStorage.Client.CreateOrUpdateTranslationResponse clientResponse);
+    CreateOrUpdateTranslationStatus ConvertCreateOrUpdateTranslationResponse(Roblox.Platform.TranslationStorage.Client.CreateOrUpdateTranslationResponse clientResponse);
 }

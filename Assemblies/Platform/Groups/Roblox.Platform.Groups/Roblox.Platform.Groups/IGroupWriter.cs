@@ -1,4 +1,4 @@
-using Roblox.TextFilter;
+﻿using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 
@@ -12,7 +12,7 @@ public interface IGroupWriter
 	/// </summary>
 	/// <param name="group"><see cref="T:Roblox.Platform.Groups.IGroup" /></param>
 	/// <param name="newName">the new name</param>
-	/// <param name="textAuthor"><see cref="T:Roblox.TextFilter.ITextAuthor" /></param>
+	/// <param name="textAuthor"><see cref="T:Roblox.Platform.TextFilter.ITextAuthor" /></param>
 	void UpdateName(IGroup group, string newName, ITextAuthor textAuthor);
 
 	/// <summary>
@@ -20,7 +20,7 @@ public interface IGroupWriter
 	/// </summary>
 	/// <param name="group"><see cref="T:Roblox.Platform.Groups.IGroup" /></param>
 	/// <param name="newDescription">the new description</param>
-	/// <param name="textAuthor"><see cref="T:Roblox.TextFilter.ITextAuthor" /></param>
+	/// <param name="textAuthor"><see cref="T:Roblox.Platform.TextFilter.ITextAuthor" /></param>
 	void UpdateDescription(IGroup group, string newDescription, ITextAuthor textAuthor);
 
 	void UpdateEmblem(IGroup group, long emblemId);

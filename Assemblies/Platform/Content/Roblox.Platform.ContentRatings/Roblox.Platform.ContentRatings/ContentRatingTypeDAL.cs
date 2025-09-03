@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
+using Roblox.Platform.ContentRatings.Properties;
 
 namespace Roblox.Platform.ContentRatings
 {
@@ -71,7 +72,7 @@ namespace Roblox.Platform.ContentRatings
         {
             List<SqlParameter> queryParameters = new List<SqlParameter>();
             queryParameters.Add(new SqlParameter("@ID", _ID));
-            EntityHelper.DoEntityDALDelete(new DbInfo(dbConnectionString_ContentRatingTypeDAL, "ContentRatingTypes_DeleteContentRatingTypeByID", queryParameters));
+            EntityHelper.DoEntityDALAction(new DbInfo(dbConnectionString_ContentRatingTypeDAL, "ContentRatingTypes_DeleteContentRatingTypeByID", queryParameters));
         }
 
         public static ContentRatingTypeDAL Get(byte id)

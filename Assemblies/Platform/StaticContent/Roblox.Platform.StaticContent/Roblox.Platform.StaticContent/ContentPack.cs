@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.StaticContent.Client;
+using Roblox.Platform.StaticContent.Client;
 
 namespace Roblox.Platform.StaticContent;
 

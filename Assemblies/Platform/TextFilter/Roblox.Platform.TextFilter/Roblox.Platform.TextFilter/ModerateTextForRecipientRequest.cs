@@ -1,7 +1,7 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Default implementation of <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest" />
+/// Default implementation of <see cref="T:Roblox.Platform.TextFilter.IModerateTextForRecipientRequest" />
 /// </summary>
 public class ModerateTextForRecipientRequest : ModeratedTextRequest, IModerateTextForRecipientRequest, IModeratedTextRequest
 {

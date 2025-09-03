@@ -1,6 +1,7 @@
 using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Marketing.Core.Entities;
+using ContentItemTypeEnum = Roblox.Marketing.ContentItemType;
 
 namespace Roblox.Platform.Marketing.Core;
 
@@ -10,7 +11,7 @@ internal class TakeoverContentItem : ITakeoverContentItem
 
 	public int TakeoverId { get; internal set; }
 
-	public ContentItemType ContentItemType { get; internal set; }
+	public ContentItemTypeEnum ContentItemType { get; internal set; }
 
 	public long ContentItemTargetId { get; internal set; }
 
@@ -22,7 +23,7 @@ internal class TakeoverContentItem : ITakeoverContentItem
 	{
 	}
 
-	internal TakeoverContentItem(int takeoverId, ContentItemType contentItemType, long contentItemTargetID)
+	internal TakeoverContentItem(int takeoverId, ContentItemTypeEnum contentItemType, long contentItemTargetID)
 	{
 		TakeoverId = takeoverId;
 		ContentItemType = contentItemType;
@@ -37,7 +38,7 @@ internal class TakeoverContentItem : ITakeoverContentItem
 		}
 		Id = entity.ID;
 		TakeoverId = entity.TakeoverID;
-		ContentItemType = (ContentItemType)Enum.Parse(typeof(ContentItemType), entity.ContentItemTypeID.ToString());
+		ContentItemType = (ContentItemTypeEnum)Enum.Parse(typeof(ContentItemTypeEnum), entity.ContentItemTypeID.ToString());
 		ContentItemTargetId = entity.ContentItemTargetID;
 		Created = entity.Created;
 		Updated = entity.Updated;

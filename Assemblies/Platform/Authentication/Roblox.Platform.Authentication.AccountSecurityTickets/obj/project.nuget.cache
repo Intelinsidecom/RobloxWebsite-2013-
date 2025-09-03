@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qFcHdBEOWWQ=",
+  "dgSpecHash": "4aFgqeJOqXw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Authentication\\Roblox.Platform.Authentication.AccountSecurityTickets\\Roblox.Platform.Authentication.AccountSecurityTickets.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,6 @@
     "C:\\Users\\Intel\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",

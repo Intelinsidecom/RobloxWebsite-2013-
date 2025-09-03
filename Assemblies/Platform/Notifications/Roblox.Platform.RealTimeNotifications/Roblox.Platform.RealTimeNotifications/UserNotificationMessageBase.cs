@@ -2,9 +2,8 @@ using Newtonsoft.Json;
 using Roblox.Platform.RealTimeNotifications.Properties;
 namespace Roblox.Platform.RealTimeNotifications
 {
-    abstract class UserNotificationMessageBase
-
-{
+    public abstract class UserNotificationMessageBase
+    {
 	public abstract string Type { get; set; }
 
 	public long SequenceNumber { get; internal set; }
@@ -17,6 +16,5 @@ namespace Roblox.Platform.RealTimeNotifications
 	{
 		return Settings.Default.IsUserNotificationNamespaceSequenceEnabled;
 	}
-}
-
+    }
 }

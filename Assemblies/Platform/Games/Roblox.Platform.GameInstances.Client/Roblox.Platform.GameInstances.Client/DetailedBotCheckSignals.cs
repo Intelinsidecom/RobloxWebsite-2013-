@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.GameInstances.Interfaces;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class DetailedBotCheckSignals : Dictionary<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue>, IDetailedBotCheckSignals
+namespace Roblox.Platform.GameInstances.Client {
+    public class DetailedBotCheckSignals : Dictionary<DetailedBotCheckSignalKey, DetailedBotCheckSignalValue>, IDetailedBotCheckSignals
 
 {
 	public DetailedBotCheckSignals()

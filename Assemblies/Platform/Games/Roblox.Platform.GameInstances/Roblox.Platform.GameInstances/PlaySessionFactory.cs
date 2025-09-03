@@ -1,5 +1,12 @@
 using System;
-using Roblox.GameInstances.Client;
+using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json;
+using Roblox.ApiClientBase;
+using Roblox.Caching.Shared;
+using Roblox.Configuration;
+using Roblox.Platform.GameInstances.Client;
+using Roblox.Platform.Core.ExclusiveStartPaging;
 using Roblox.Instrumentation;
 
 namespace Roblox.Platform.GameInstances;
@@ -18,7 +25,7 @@ public class PlaySessionFactory
 
 	public IPlaySession StartPlaySession(long universeId, long placeId, Guid gameId, long playerId, Guid sessionId, string ipAddress, int platformId, long browserTrackerId, Guid? partyId, double? age, double? latitude, double? longitude, int? countryId, int? policyCountryId, string joinType)
 	{
-		Roblox.GameInstances.Client.PlaySession clientPlaySession = _Client.StartPlaySession(universeId, placeId, gameId, playerId, sessionId, ipAddress, platformId, browserTrackerId, partyId, age, latitude, longitude, countryId, policyCountryId, joinType, PlaySessionFlags.None);
+		Roblox.Platform.GameInstances.Client.PlaySession clientPlaySession = _Client.StartPlaySession(universeId, placeId, gameId, playerId, sessionId, ipAddress, platformId, browserTrackerId, partyId, age, latitude, longitude, countryId, policyCountryId, joinType, PlaySessionFlags.None);
 		PlaySession result = new PlaySession
 		{
 			Id = clientPlaySession.Id,

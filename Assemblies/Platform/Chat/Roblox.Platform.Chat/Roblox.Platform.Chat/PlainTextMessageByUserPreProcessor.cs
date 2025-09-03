@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Universes;
 using Roblox.Redis;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Chat;
 

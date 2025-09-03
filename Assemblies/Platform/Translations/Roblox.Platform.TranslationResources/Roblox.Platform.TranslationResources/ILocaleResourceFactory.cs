@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 namespace Roblox.Platform.TranslationResources {
-    interface ILocaleResourceFactory
+    public interface ILocaleResourceFactory
 
 {
 	/// <summary>

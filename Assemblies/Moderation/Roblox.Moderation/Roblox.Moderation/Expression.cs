@@ -176,7 +176,7 @@ namespace Roblox.Moderation
 
 namespace Roblox.Platform.Moderation
 {
-    internal class Expression : IExpression
+    internal class Expression : Roblox.Moderation.IExpression
     {
         public string Value { get; }
 

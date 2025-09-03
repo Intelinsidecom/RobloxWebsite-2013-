@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Localization.Core;
+﻿using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
-using Roblox.TranslationResources;
+using Roblox.Platform.TranslationResources;
 namespace Roblox.Localization.Accounts {
     /// <summary>
 

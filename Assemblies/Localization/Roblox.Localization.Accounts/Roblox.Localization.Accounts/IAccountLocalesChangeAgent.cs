@@ -6,7 +6,7 @@
 public interface IAccountLocalesChangeAgent
 {
 	/// <summary>
-	/// The <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType" />.
+	/// The <see cref="T:Roblox.Localization.Accounts.AccountLocalesChangeAgentType" />.
 	/// </summary>
 	AccountLocalesChangeAgentType ChangeAgentType { get; }
 

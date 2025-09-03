@@ -1,11 +1,11 @@
 using Roblox.Platform.Core;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Platform.Demographics;
 
 public class CountryConverter : ICountryConverter
 {
-	public ICountry ConvertFromUserCountry(Roblox.Users.Country country)
+	public ICountry ConvertFromUserCountry(Roblox.Platform.Users.Country country)
 	{
 		if (country == null)
 		{

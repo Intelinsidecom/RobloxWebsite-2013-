@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Platform.Core;
 using Roblox.Platform.Groups.Entities;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Extensions;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 

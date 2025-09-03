@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.Common.NetStandard;
 using Roblox.Platform.Marketing.Core.Entities;
+using ContentItemTypeEnum = Roblox.Marketing.ContentItemType;
 
 namespace Roblox.Platform.Marketing.Core;
 
@@ -26,7 +27,7 @@ public class TakeoverContentItemFactory : ITakeoverContentItemFactory
 		return null;
 	}
 
-	public ITakeoverContentItem GetByTakeoverIdContentItemTypeAndContentItemTargetId(int takeoverId, ContentItemType contentItemType, long contentItemTargetId)
+	public ITakeoverContentItem GetByTakeoverIdContentItemTypeAndContentItemTargetId(int takeoverId, ContentItemTypeEnum contentItemType, long contentItemTargetId)
 	{
 		Roblox.Platform.Marketing.Core.Entities.TakeoverContentItem entity = Roblox.Platform.Marketing.Core.Entities.TakeoverContentItem.GetByTakeoverIDContentItemTypeIDAndContentItemTargetID(takeoverId, (byte)contentItemType, contentItemTargetId);
 		if (entity != null)
@@ -42,13 +43,13 @@ public class TakeoverContentItemFactory : ITakeoverContentItemFactory
 			select new TakeoverContentItem(ent);
 	}
 
-	public IEnumerable<ITakeoverContentItem> GetTakeoverContentItemsByContentItemTypeAndContentItemTargetId(ContentItemType contentItemType, long contentItemTargetId)
+	public IEnumerable<ITakeoverContentItem> GetTakeoverContentItemsByContentItemTypeAndContentItemTargetId(ContentItemTypeEnum contentItemType, long contentItemTargetId)
 	{
 		return from ent in CollectionsHelper.GetAllPaged((int start, int max) => Roblox.Platform.Marketing.Core.Entities.TakeoverContentItem.GetTakeoverContentItemsByContentItemTypeIDAndContentItemTargetIDPaged((byte)contentItemType, contentItemTargetId, start, max), 10)
 			select new TakeoverContentItem(ent);
 	}
 
-	public ITakeoverContentItem CreateTakeoverContentItem(int takeoverId, ContentItemType contentItemType, long contentItemTargetId)
+	public ITakeoverContentItem CreateTakeoverContentItem(int takeoverId, ContentItemTypeEnum contentItemType, long contentItemTargetId)
 	{
 		TakeoverContentItem takeoverContentItem = new TakeoverContentItem(takeoverId, contentItemType, contentItemTargetId);
 		takeoverContentItem.Save();

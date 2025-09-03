@@ -1,6 +1,6 @@
 using System;
 using Roblox.Platform.Core;
-using Client = Roblox.TranslationStorage.Client;
+using Client = Roblox.Platform.TranslationStorage.Client;
 
 namespace Roblox.Platform.TranslationStorage;
 

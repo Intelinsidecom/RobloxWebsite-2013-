@@ -1,4 +1,4 @@
-﻿namespace Roblox.Localization.Auditinternal {
+﻿namespace Roblox.Localization.Audit {
     interface IAccountLocalesChangeAgentTypeEntityFactory
 
 {

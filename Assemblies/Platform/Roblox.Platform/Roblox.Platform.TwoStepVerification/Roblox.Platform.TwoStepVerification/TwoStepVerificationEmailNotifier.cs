@@ -3,7 +3,7 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Email.User;
 using Roblox.Platform.Membership;
-using Roblox.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources.Communication;
 
 namespace Roblox.Platform.TwoStepVerification;
 

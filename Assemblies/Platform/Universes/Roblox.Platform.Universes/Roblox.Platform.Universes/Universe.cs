@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using Roblox.Platform.Universes.Events;
 using Roblox.Platform.Universes.Properties;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 using Roblox.Universes.Client;
 using ClientUniverse = Roblox.Universes.Client.Universe;
 
@@ -63,7 +63,7 @@ internal class Universe : IUniverse
 		StudioAccessToApisAllowed = clientUniverse.StudioAccessToApisAllowed;
 	}
 
-	/// <inheritdoc cref="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescription(System.String,System.String,Roblox.TextFilter.Client.IClientTextAuthor,System.Boolean)" />
+	/// <inheritdoc cref="M:Roblox.Platform.Universes.IUniverse.UpdateNameDescription(System.String,System.String,Roblox.Platform.TextFilter.Client.IClientTextAuthor,System.Boolean)" />
 	public void UpdateNameDescription(string newName, string newDescription, IClientTextAuthor clientTextAuthor, bool allowPartiallyModerated = true)
 	{
 		if (string.IsNullOrWhiteSpace(newName) || newName.Length > Settings.Default.UniverseNameMaxLength)

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Roblox.Marketplace.Client;
 using Roblox.Platform.Games;
@@ -7,7 +7,7 @@ using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Extensions;
 using Roblox.Platform.Universes;
 using Roblox.Platform.UserSetting;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 using Roblox.Web.Devices;
 
 namespace Roblox.Web.Code;

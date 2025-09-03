@@ -12,7 +12,7 @@ using Roblox.Billing.Exceptions;
 using Roblox.Billing.Properties;
 using Roblox.Billing.Providers;
 using Roblox.Common.Properties;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.PayPal.Common.Properties;
 using Roblox.Platform.Email.Delivery;
 

@@ -34,6 +34,10 @@ param(
   [switch] $Commit,
   [switch] $Build,
 
+  # Optional: limit scanning to a specific subdirectory under repo root, e.g. 'Assemblies/Moderation'
+  [Parameter(Mandatory = $false)]
+  [string] $SearchRoot,
+
   [Parameter(Mandatory = $false)]
   [ValidateSet('Debug','Release')]
   [string] $Configuration = 'Debug'
@@ -96,11 +100,17 @@ if ($WordBoundary) {
 $regex = [System.Text.RegularExpressions.Regex]::new($pattern)
 
 Write-Info "Root: $repoRoot"
+if ([string]::IsNullOrWhiteSpace($SearchRoot)) {
+  $effectiveRoot = $repoRoot
+} else {
+  $effectiveRoot = Join-Path $repoRoot $SearchRoot
+}
+Write-Info "Search Root: $effectiveRoot"
 Write-Info "Renaming: '$FromType' -> '$ToType'"
 Write-Info "WordBoundary: $WordBoundary  DryRun: $DryRun  Commit: $Commit  Build: $Build"
 
-# Gather all files under repo and filter with include/exclude regex (supports ** globs)
-$allFiles = Get-ChildItem -Path $repoRoot -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }
+# Gather all files under effective root and filter with include/exclude regex (supports ** globs)
+$allFiles = Get-ChildItem -Path $effectiveRoot -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }
 
 function Convert-GlobToRegex([string]$glob) {
   # Normalize to forward slashes, handle ** BEFORE escaping

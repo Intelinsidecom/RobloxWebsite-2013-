@@ -3,7 +3,7 @@ using Roblox.Platform.Groups.Entities;
 using Roblox.Platform.Groups.Entities.GroupRoleSets;
 using Roblox.Platform.Groups.Events;
 using Roblox.Platform.Membership;
-using Roblox.Users.Properties;
+using Roblox.Platform.Users.Properties;
 
 namespace Roblox.Platform.Groups;
 

@@ -4,8 +4,8 @@ using System.Linq;
 using Roblox.Common;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
-using Client = Roblox.TranslationStorage.Client;
+using Roblox.Localization.Core;
+using Client = Roblox.Platform.TranslationStorage.Client;
 
 namespace Roblox.Platform.TranslationStorage;
 

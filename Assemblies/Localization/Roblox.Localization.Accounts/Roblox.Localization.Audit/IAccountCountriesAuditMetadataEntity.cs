@@ -1,6 +1,6 @@
 ﻿using System;
 using Roblox.Entities;
-namespace Roblox.Localization.Auditpublic {
+namespace Roblox.Localization.Audit {
     interface IAccountCountriesAuditMetadataEntity : IEntity<long>
 
 {

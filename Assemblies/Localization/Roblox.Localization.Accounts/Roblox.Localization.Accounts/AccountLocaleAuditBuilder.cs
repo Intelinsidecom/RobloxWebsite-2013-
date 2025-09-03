@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Audit;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Audit;
+namespace Roblox.Localization.Accounts {
     class AccountLocaleAuditBuilder : IAccountLocaleAuditBuilder
 
 {

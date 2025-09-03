@@ -373,7 +373,7 @@ public class Message : IRobloxEntity<long, MessageDAL>, ICacheableObject<long>, 
 
 	private static void VerifyUnreadMessagesCounter(UserCounter unreadMessagesCounter)
 	{
-		if ((_UnreadMessagesCounterVerificationPercentage != 0.0 || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold) && (new Random().NextDouble() <= _UnreadMessagesCounterVerificationPercentage || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold))
+		if ((_UnreadMessagesCounterVerificationPercentage != 0.0 || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold) && (new System.Random().NextDouble() <= _UnreadMessagesCounterVerificationPercentage || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold))
 		{
 			SynchronizeUnreadMessagesCounter(unreadMessagesCounter);
 		}
@@ -407,7 +407,7 @@ public class Message : IRobloxEntity<long, MessageDAL>, ICacheableObject<long>, 
 
 	private static void VerifyUnreadUnarchivedMessagesCounter(UserCounter unreadMessagesCounter)
 	{
-		if ((_UnreadMessagesCounterVerificationPercentage != 0.0 || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold) && (new Random().NextDouble() <= _UnreadMessagesCounterVerificationPercentage || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold))
+		if ((_UnreadMessagesCounterVerificationPercentage != 0.0 || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold) && (new System.Random().NextDouble() <= _UnreadMessagesCounterVerificationPercentage || unreadMessagesCounter.Value <= _UnreadMessagesCounterAutoSyncThreshold))
 		{
 			SynchronizeUnreadUnarchivedMessagesCounter(unreadMessagesCounter);
 		}

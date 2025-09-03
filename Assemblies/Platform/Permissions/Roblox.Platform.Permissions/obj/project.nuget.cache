@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ni6QGopjA1I=",
+  "dgSpecHash": "izIdtJtJQG0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Permissions\\Roblox.Platform.Permissions\\Roblox.Platform.Permissions.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,6 @@
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
-    "C:\\Users\\Intel\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
     "C:\\Users\\Intel\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",

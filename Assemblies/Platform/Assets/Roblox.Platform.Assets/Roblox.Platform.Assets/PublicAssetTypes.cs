@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Roblox.Platform.Core;
-using Roblox.TranslationResources.Common;
+using Roblox.Platform.TranslationResources.Common;
 
 namespace Roblox.Platform.Assets;
 

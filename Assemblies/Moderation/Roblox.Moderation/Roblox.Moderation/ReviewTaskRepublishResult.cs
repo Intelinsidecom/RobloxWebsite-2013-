@@ -1,18 +1,24 @@
 using System;
 using System.Collections.Generic;
 using Roblox.Localization.Core;
-using Roblox.Moderation.Interfaces;
 
 namespace Roblox.Moderation
 {
-    public class ReviewTaskRepublishResult : IReviewTaskRepublishResult<IReviewTask>
+    public class ReviewTaskRepublishResult<TTask> : IReviewTaskRepublishResult<TTask> where TTask : IReviewTask
     {
-        public bool Success { get; set; }
-        public Exception Error { get; set; }
-        public string ErrorMessage { get; set; }
+        public bool Success { get; }
 
-        public IReadOnlyCollection<IReviewTask> TasksRepublishedForDesiredLocale { get; set; }
+        public IReadOnlyCollection<TTask> TasksRepublishedForDesiredLocale { get; }
 
-        public IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> AllTasksRepublishedByLocaleIdentifier { get; set; }
+        public IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> AllTasksRepublishedByLocaleIdentifier { get; }
+
+        public ReviewTaskRepublishResult(bool success,
+            IReadOnlyCollection<TTask> tasksRepublishedForDesiredLocale,
+            IReadOnlyDictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>> allTasksRepublishedByLocaleIdentifier)
+        {
+            Success = success;
+            TasksRepublishedForDesiredLocale = tasksRepublishedForDesiredLocale ?? Array.Empty<TTask>();
+            AllTasksRepublishedByLocaleIdentifier = allTasksRepublishedByLocaleIdentifier ?? new Dictionary<ISupportedLocaleIdentifier, IReadOnlyCollection<IReviewTask>>();
+        }
     }
 }

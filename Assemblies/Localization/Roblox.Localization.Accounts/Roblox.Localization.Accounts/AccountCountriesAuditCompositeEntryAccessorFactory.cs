@@ -1,8 +1,8 @@
 ﻿using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Audit;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Audit;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     class AccountCountriesAuditCompositeEntryAccessorFactory
 
 {
@@ -15,9 +15,9 @@ namespace Roblox.Localization.Accountspublic {
 	private readonly IAccountCountriesAuditCompositeEntryFactory _AuditCompositeEntryFactory;
 
 	/// <summary>
-	/// Initializes a factory to get an <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.
+	/// Initializes a factory to get an <see cref="T:Roblox.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.
 	/// </summary>
-	/// <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory" /> needed for <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.</param>
+	/// <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory" /> needed for <see cref="T:Roblox.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.</param>
 	public AccountCountriesAuditCompositeEntryAccessorFactory(IUserFactory userFactory)
 	{
 		_UserFactory = userFactory.AssignOrThrowIfNull("userFactory");
@@ -30,10 +30,10 @@ namespace Roblox.Localization.Accountspublic {
 	}
 
 	/// <summary>
-	/// An accessor for <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.
+	/// An accessor for <see cref="T:Roblox.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.
 	/// </summary>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
-	/// <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.</returns>
+	/// <returns>An <see cref="T:Roblox.Localization.Accounts.IAccountCountriesAuditCompositeEntryAccessor" />.</returns>
 	public IAccountCountriesAuditCompositeEntryAccessor GetAccountCountriesAuditCompositeEntryAccessor()
 	{
 		return new AccountCountriesAuditCompositeEntryAccessor(new AccountCountriesAuditMetadataEntityFactory(_MetadataTypeConverter, _ChangeAgentTypeConverter), new AccountCountriesAuditEntryEntityFactory(), new AccountCountryEntityFactory(), new Settings(), _AuditCompositeEntryFactory, _MetadataTypeConverter);

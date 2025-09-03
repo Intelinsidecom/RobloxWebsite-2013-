@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using GraphemeSplitter;
@@ -16,7 +16,7 @@ using Roblox.Platform.Social;
 using Roblox.Platform.TeamCreate;
 using Roblox.Platform.Universes;
 using Roblox.Redis;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Chat;
 

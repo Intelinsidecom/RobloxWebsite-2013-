@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Marketing</AssemblyName>
@@ -10,7 +10,11 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Remove="Roblox.Platform.MarketingTodo\**\*.cs" />
+    <None Remove="Roblox.Platform.MarketingTodo\**\*" />
+    <EmbeddedResource Remove="Roblox.Platform.MarketingTodo\**\*" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Data" />
     <Reference Include="System.Web" />
@@ -50,15 +54,27 @@
       <Project>
       </Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
     <ProjectReference Include="..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj">
+    <ProjectReference Include="..\..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.9.0" />
+    <ProjectReference Include="..\..\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
 </Project>

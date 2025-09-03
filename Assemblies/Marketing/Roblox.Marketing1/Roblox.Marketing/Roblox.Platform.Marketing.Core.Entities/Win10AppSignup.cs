@@ -4,6 +4,7 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+using Roblox.Marketing.Core.Entities;
 
 namespace Roblox.Platform.Marketing.Core.Entities;
 

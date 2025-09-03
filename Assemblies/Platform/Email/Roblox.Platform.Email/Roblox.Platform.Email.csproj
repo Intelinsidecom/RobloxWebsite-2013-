@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Email</AssemblyName>
@@ -31,7 +31,11 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj">
       <Project>
       </Project>
     </ProjectReference>

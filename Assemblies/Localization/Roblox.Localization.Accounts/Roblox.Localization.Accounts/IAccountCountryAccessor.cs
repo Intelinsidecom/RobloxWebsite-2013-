@@ -1,6 +1,6 @@
 ﻿using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     interface IAccountCountryAccessor
 
 {
@@ -8,7 +8,7 @@ namespace Roblox.Localization.Accountspublic {
 	/// Get IAccountCountry associated with account id.
 	/// </summary>
 	/// <param name="accountId"></param>
-	/// <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry" />.</returns>
+	/// <returns>An <see cref="T:Roblox.Localization.Accounts.IAccountCountry" />.</returns>
 	IAccountCountry GetAccountCountry(long accountId);
 
 	/// <summary>

@@ -15,7 +15,7 @@ public static class Extensions
 		{
 			return false;
 		}
-		if (user.AgeBracket == AgeBracket.AgeUnder13)
+		if (user.AgeBracket == Roblox.Platform.Membership.AgeBracket.AgeUnder13)
 		{
 			return false;
 		}
@@ -108,7 +108,7 @@ public static class Extensions
 		{
 			return false;
 		}
-		if (user.AgeBracket == AgeBracket.AgeUnder13)
+		if (user.AgeBracket == Roblox.Platform.Membership.AgeBracket.AgeUnder13)
 		{
 			return false;
 		}

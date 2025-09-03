@@ -1,5 +1,4 @@
-﻿namespace extern {
-    alias ConfMan;
+extern alias ConfMan;
 
 using System;
 using System.CodeDom.Compiler;

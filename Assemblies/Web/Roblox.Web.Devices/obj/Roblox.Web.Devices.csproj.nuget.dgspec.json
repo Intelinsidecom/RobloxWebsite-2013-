@@ -353,13 +353,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -655,13 +655,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1310,10 +1310,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -1394,10 +1390,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -1791,13 +1783,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -2045,13 +2037,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -2378,10 +2370,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [

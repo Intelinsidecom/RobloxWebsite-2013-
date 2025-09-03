@@ -1,7 +1,7 @@
 using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.TranslationStorage.Client;
+using Roblox.Platform.TranslationStorage.Client;
 
 namespace Roblox.Platform.TranslationStorage;
 

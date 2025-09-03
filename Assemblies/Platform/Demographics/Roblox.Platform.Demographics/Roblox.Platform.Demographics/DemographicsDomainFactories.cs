@@ -1,5 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.Authentication.AccountSecurityTickets;
 using Roblox.Platform.Core;

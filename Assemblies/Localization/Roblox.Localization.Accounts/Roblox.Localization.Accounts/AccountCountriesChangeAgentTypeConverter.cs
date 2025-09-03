@@ -1,7 +1,7 @@
-﻿using Roblox.Common;
+using Roblox.Common;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Audit;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Audit;
+namespace Roblox.Localization.Accounts {
     class AccountCountriesChangeAgentTypeConverter : IAccountCountriesChangeAgentTypeConverter
 
 {

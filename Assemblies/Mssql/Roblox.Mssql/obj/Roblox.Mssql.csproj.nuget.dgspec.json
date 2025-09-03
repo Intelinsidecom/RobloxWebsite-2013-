@@ -140,10 +140,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [

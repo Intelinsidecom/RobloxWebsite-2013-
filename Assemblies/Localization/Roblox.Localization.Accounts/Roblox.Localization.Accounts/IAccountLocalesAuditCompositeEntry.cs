@@ -27,7 +27,7 @@ public interface IAccountLocalesAuditCompositeEntry
 	AccountLocalesChangeAgentType ChangeAgentType { get; }
 
 	/// <summary>
-	/// [Metadata] The target Id with respect to the <see cref="T:Roblox.Platform.Localization.Accounts.AccountLocalesChangeAgentType" />.
+	/// [Metadata] The target Id with respect to the <see cref="T:Roblox.Localization.Accounts.AccountLocalesChangeAgentType" />.
 	/// </summary>
 	long? ChangeAgentTargetId { get; }
 

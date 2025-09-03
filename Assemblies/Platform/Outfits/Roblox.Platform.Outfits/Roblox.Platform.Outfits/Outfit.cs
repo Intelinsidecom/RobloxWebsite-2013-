@@ -5,7 +5,8 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 
-namespace Roblox.Platform.Outfits;
+namespace Roblox.Platform.Outfits
+{
 
 internal class Outfit : IOutfit
 {
@@ -42,6 +43,8 @@ internal class Outfit : IOutfit
 		PlayerAvatarTypeId = playerAvatarTypeId;
 		_OutfitDomainFactories = outfitDomainFactories;
 	}
+}
+
 }
 
 // Merge-in of the source entity to avoid separate files.

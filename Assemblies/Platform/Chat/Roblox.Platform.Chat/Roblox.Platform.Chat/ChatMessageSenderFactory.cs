@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using Amazon.DynamoDBv2;
 using Roblox.Common;
 using Roblox.EventLog;
 using Roblox.Platform.Chat.Properties;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Universes;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 using Roblox.Time;
 
 namespace Roblox.Platform.Chat;

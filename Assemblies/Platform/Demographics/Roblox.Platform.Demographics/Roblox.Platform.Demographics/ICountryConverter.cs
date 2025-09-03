@@ -1,4 +1,4 @@
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Platform.Demographics;
 
@@ -8,10 +8,10 @@ namespace Roblox.Platform.Demographics;
 public interface ICountryConverter
 {
 	/// <summary>
-	/// Converts <see cref="T:Roblox.Users.Country" /> to <see cref="T:Roblox.Platform.Demographics.ICountry" />.
+	/// Converts <see cref="T:Roblox.Platform.Users.Country" /> to <see cref="T:Roblox.Platform.Demographics.ICountry" />.
 	/// </summary>
-	/// <param name="country">The <see cref="T:Roblox.Users.Country" /> that needs to be converted.</param>
+	/// <param name="country">The <see cref="T:Roblox.Platform.Users.Country" /> that needs to be converted.</param>
 	/// <returns>An converted country that implements <see cref="T:Roblox.Platform.Demographics.ICountry" />.</returns>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"><paramref name="country" /></exception>
-	ICountry ConvertFromUserCountry(Roblox.Users.Country country);
+	ICountry ConvertFromUserCountry(Roblox.Platform.Users.Country country);
 }

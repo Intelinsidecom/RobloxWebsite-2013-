@@ -1,5 +1,5 @@
 ﻿using Roblox.Platform.Demographics;
-namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     interface IAccountCountryBuilder
 
 {
@@ -14,7 +14,7 @@ namespace Roblox.Localization.Accountspublic {
 	/// </summary>
 	/// <param name="accountId">The account id of user.</param>
 	/// <param name="countryIdentifier">The country identifier that needs to set for account id. countryIdentifier cannot be negative or null.</param>
-	/// <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent" /> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType" /> and target id.</param>
+	/// <param name="changeAgent">The <see cref="T:Roblox.Localization.Accounts.IAccountCountriesChangeAgent" /> which contains the <see cref="T:Roblox.Localization.Accounts.AccountCountriesChangeAgentType" /> and target id.</param>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformException">This is thrown when changeAgent is not properly validated.</exception>
 	void SetCountryVerifiedByUser(long accountId, ICountryIdentifier countryIdentifier, IAccountCountriesChangeAgent changeAgent);
 
@@ -26,7 +26,7 @@ namespace Roblox.Localization.Accountspublic {
 	/// </summary>
 	/// <param name="accountId">The account id of the user whose country was changed.</param>
 	/// <param name="countryId">The country identifier that needs to set for account id. countryIdentifier cannot be negative but null is allowed.</param>
-	/// <param name="changeAgent">The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountriesChangeAgent" /> which contains the <see cref="T:Roblox.Platform.Localization.Accounts.AccountCountriesChangeAgentType" /> and target id.</param>
+	/// <param name="changeAgent">The <see cref="T:Roblox.Localization.Accounts.IAccountCountriesChangeAgent" /> which contains the <see cref="T:Roblox.Localization.Accounts.AccountCountriesChangeAgentType" /> and target id.</param>
 	/// /// <exception cref="T:Roblox.Platform.Core.PlatformException">This is thrown when changeAgent is not properly validated.</exception>
 	void SetDerivedCountry(long accountId, ICountryIdentifier countryId, IAccountCountriesChangeAgent changeAgent);
 }

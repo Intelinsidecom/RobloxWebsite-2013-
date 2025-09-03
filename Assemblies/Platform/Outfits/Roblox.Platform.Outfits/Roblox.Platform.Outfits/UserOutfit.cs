@@ -5,9 +5,10 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.Platform.Core;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
-namespace Roblox.Platform.Outfits;
+namespace Roblox.Platform.Outfits
+{
 
 /// <summary>
 /// An implementation of <see cref="T:Roblox.Platform.Outfits.IUserOutfit" />
@@ -81,7 +82,7 @@ internal class UserOutfit : IUserOutfit
 		}
 	}
 
-	/// <inheritdoc cref="M:Roblox.Platform.Outfits.IUserOutfit.Rename(System.String,Roblox.TextFilter.Client.IClientTextAuthor,Roblox.TextFilter.Client.ITextFilterClientV2)" />&gt;
+	/// <inheritdoc cref="M:Roblox.Platform.Outfits.IUserOutfit.Rename(System.String,Roblox.Platform.TextFilter.Client.IClientTextAuthor,Roblox.Platform.TextFilter.Client.ITextFilterClientV2)" />&gt;
 	public void Rename(string name, IClientTextAuthor author, ITextFilterClientV2 textFilterClientV2)
 	{
 		if (!_DomainFactories.OutfitRulesManager.IsValidName(name))
@@ -132,8 +133,8 @@ internal class UserOutfit : IUserOutfit
 		_DomainFactories.UserOutfitEntityFactory.OnDeleted(this);
 	}
 }
+}
 
-// Merge-in of the source entity to avoid separate files.
 namespace Roblox.Outfits
 {
     public class UserOutfit : IRobloxEntity<long, UserOutfitDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject

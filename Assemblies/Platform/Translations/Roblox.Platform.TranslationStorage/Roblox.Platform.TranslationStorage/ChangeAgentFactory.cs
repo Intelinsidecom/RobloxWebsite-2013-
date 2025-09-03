@@ -2,7 +2,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-using Roblox.TranslationStorage.Client;
+using Roblox.Platform.TranslationStorage.Client;
 
 namespace Roblox.Platform.TranslationStorage;
 

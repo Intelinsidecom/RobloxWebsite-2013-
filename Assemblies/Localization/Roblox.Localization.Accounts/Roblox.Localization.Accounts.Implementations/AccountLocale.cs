@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Localization.Core;
-namespace Roblox.Localization.Accounts.Implementationsinternal {
+﻿using Roblox.Localization.Core;
+namespace Roblox.Localization.Accounts.Implementations {
     class AccountLocale : IAccountLocale
 
 {

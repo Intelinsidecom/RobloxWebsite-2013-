@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface IUserNotificationPublisher<T> where T : UserNotificationMessageBase
-
+using System.Collections.Generic;
+namespace Roblox.Platform.RealTimeNotifications
 {
+    public interface IUserNotificationPublisher<T> where T : UserNotificationMessageBase
+    {
 	/// <summary>
 	/// Publishes a notification for the specified message. Returns true if there were any subscriptions active for that user
 	/// </summary>
@@ -34,7 +34,5 @@ namespace Roblox.Platform.RealTimeNotificationspublic {
 	/// <param name="sequenceNumberToPublishMessageWith">Null by default, will increment the sequence number in that case</param>
 	/// <returns></returns>
 	UserNotificationPublishResult Publish(long userId, string serializedMessage, out long? sequenceNumberForPublishedMessage, long? sequenceNumberToPublishMessageWith = null);
-}
-
-
+    }
 }

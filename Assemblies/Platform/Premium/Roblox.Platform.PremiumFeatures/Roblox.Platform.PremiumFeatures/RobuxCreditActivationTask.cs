@@ -6,6 +6,7 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.Economy.Common;
 using Roblox;
+using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
     class RobuxCreditActivationTask : IRobloxEntity<long, RobuxCreditActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask

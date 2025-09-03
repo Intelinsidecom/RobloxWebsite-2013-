@@ -1,13 +1,11 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    enum AppType
-
+namespace Roblox.Platform.RealTimeNotifications
 {
-	Unknown,
-	RobloxNative,
-	Studio,
-	Player,
-	Browser
-}
-
-
+    public enum AppType
+    {
+        Unknown,
+        RobloxNative,
+        Studio,
+        Player,
+        Browser
+    }
 }

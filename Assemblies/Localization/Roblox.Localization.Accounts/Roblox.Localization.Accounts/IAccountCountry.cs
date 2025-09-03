@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Demographics;
-namespace Roblox.Localization.Accountspublic {
+using Roblox.Platform.Demographics;
+namespace Roblox.Localization.Accounts {
     interface IAccountCountry
 
 {

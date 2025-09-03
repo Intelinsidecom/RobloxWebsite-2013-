@@ -1,5 +1,5 @@
 ﻿using Roblox.Platform.Demographics;
-namespace Roblox.Localization.Accounts.Implementationsinternal {
+namespace Roblox.Localization.Accounts.Implementations {
     class AccountCountry : IAccountCountry
 
 {

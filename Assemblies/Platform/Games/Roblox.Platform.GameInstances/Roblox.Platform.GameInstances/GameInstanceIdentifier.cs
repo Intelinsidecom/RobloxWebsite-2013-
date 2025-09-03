@@ -1,5 +1,5 @@
 using System;
-using Roblox.GameInstances.Client;
+using Roblox.Platform.GameInstances.Client;
 
 namespace Roblox.Platform.GameInstances;
 

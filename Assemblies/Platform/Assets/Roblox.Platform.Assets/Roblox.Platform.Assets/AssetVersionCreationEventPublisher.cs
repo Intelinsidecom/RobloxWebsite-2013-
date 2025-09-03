@@ -1,6 +1,6 @@
 using System;
 using Amazon;
-using Roblox.Amazon.Sns;
+using Roblox.Platform.Assets.Sns;
 using Roblox.Configuration;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets.Properties;

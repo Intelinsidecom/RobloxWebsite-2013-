@@ -1,28 +1,28 @@
-﻿using Roblox.Platform.Localization.Core;
+﻿using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
-using Roblox.TranslationResources;
+using Roblox.Platform.TranslationResources;
 namespace Roblox.Localization.Accounts {
-    /// <inheritdoc cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" />.
+    /// <inheritdoc cref="T:Roblox.Localization.Accounts.ILocalizationResourceProvider" />.
 
 /// <summary>
-/// An implementation of <see cref="T:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider" /> that is not aware of the context.
+/// An implementation of <see cref="T:Roblox.Localization.Accounts.ILocalizationResourceProvider" /> that is not aware of the context.
 /// This needs to be used in all places where context cannot be loaded.
 /// For all the places that can load HttpContext, use Roblox.Web.LocalizationResourceProvider.
 /// </summary>
-/// <seealso cref="T:Roblox.Platform.Localization.Accounts.LocalizationResourceProviderBase" />
+/// <seealso cref="T:Roblox.Localization.Accounts.LocalizationResourceProviderBase" />
 public class ContextAgnosticLocalizationResourceProvider : LocalizationResourceProviderBase
 {
 	/// <summary>
-	/// Instantiate an object of <see cref="T:Roblox.Platform.Localization.Accounts.ContextAgnosticLocalizationResourceProvider" />.
+	/// Instantiate an object of <see cref="T:Roblox.Localization.Accounts.ContextAgnosticLocalizationResourceProvider" />.
 	/// </summary>
 	/// <param name="localeResourceFactory"><see cref="T:Roblox.TranslationResources.ILocaleResourceFactory" /></param>
-	/// <param name="accountLocaleAccessor"><see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor" /></param>
+	/// <param name="accountLocaleAccessor"><see cref="T:Roblox.Localization.Accounts.IAccountLocaleAccessor" /></param>
 	public ContextAgnosticLocalizationResourceProvider(ILocaleResourceFactory localeResourceFactory, IAccountLocaleAccessor accountLocaleAccessor)
 		: base(localeResourceFactory, accountLocaleAccessor)
 	{
 	}
 
-	/// <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)" />.
+	/// <inheritdoc cref="M:Roblox.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResources(Roblox.Platform.Membership.IUser)" />.
 	public override IMasterResources GetLocalizationResources(IUser user)
 	{
 		if (user == null)
@@ -33,7 +33,7 @@ public class ContextAgnosticLocalizationResourceProvider : LocalizationResourceP
 		return LocaleResourceFactory.GetMasterResources(resourceLocale, AccountLocaleAccessor.GetTranslationResourcesState(user));
 	}
 
-	/// <inheritdoc cref="M:Roblox.Platform.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)" />.
+	/// <inheritdoc cref="M:Roblox.Localization.Accounts.ILocalizationResourceProvider.GetLocalizationResourcesForSpecificLocale(Roblox.Platform.Membership.IUser,Roblox.Platform.Localization.Core.SupportedLocaleEnum)" />.
 	public override IMasterResources GetLocalizationResourcesForSpecificLocale(IUser user, SupportedLocaleEnum locale)
 	{
 		TranslationResourceLocale resourceLocale = MapToResourceLocale(locale);

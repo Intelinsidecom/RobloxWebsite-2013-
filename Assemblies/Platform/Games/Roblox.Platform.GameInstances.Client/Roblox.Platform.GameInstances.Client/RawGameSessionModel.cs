@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using Newtonsoft.Json;
 using Roblox.GameInstances.Interfaces;
-namespace Roblox.Platform.GameInstances.Clientpublic {
+namespace Roblox.Platform.GameInstances.Client
+{
     class RawGameSessionModel : IRawGameSessionModel
 
 {

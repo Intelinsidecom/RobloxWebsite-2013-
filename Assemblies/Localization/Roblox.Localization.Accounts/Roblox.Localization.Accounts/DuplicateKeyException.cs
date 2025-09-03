@@ -1,5 +1,5 @@
-﻿using System;
-namespace Roblox.Localization.Accountspublic {
+using System;
+namespace Roblox.Localization.Accounts {
     class DuplicateKeyException : InvalidOperationException
 
 {

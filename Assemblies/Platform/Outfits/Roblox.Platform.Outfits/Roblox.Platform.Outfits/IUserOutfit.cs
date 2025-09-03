@@ -1,5 +1,5 @@
-using System;
-using Roblox.TextFilter.Client;
+﻿using System;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Outfits;
 
@@ -77,8 +77,8 @@ public interface IUserOutfit
 	/// Rename the current <see cref="T:Roblox.Platform.Outfits.IUserOutfit" /> with validation from TextFilter service
 	/// </summary>
 	/// <param name="name">The new name for the <see cref="T:Roblox.Platform.Outfits.IUserOutfit" /></param>
-	/// <param name="author">The <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor" /> of the new name</param>
-	/// <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /> used for filtering</param>
+	/// <param name="author">The <see cref="T:Roblox.Platform.TextFilter.Client.IClientTextAuthor" /> of the new name</param>
+	/// <param name="textFilterClientV2">The <see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /> used for filtering</param>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentException">Thrown if the outfit name is invalid.</exception>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if text filter service is unavailable.</exception>
 	/// <exception cref="T:Roblox.Platform.Outfits.PlatformOutfitTextFullyModeratedException">Thrown if the input name got fully moderated.</exception>

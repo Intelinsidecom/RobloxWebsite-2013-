@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Localization.Core;
-namespace Roblox.Localization.Accountspublic {
-    interface IAccountLocale
+using Roblox.Localization.Core;
+namespace Roblox.Localization.Accounts {
+    public interface IAccountLocale
 
 {
 	/// <summary>

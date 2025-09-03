@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Roblox.GameInstances.Client;
+using Roblox.Platform.GameInstances.Client;
 
 namespace Roblox.Platform.GameInstances;
 
@@ -31,7 +31,7 @@ internal class UniverseSummary : IUniverseSummary
 	{
 	}
 
-	public UniverseSummary(Roblox.GameInstances.Client.UniverseSummary universeSummary)
+	public UniverseSummary(Roblox.Platform.GameInstances.Client.UniverseSummary universeSummary)
 	{
 		Id = universeSummary.UniverseId;
 		GameCount = universeSummary.GameCount;

@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Localization.Core;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Core;
+namespace Roblox.Localization.Accounts {
     interface ISupportedLocaleAndLanguageMapper
 
 {

@@ -6,6 +6,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.PremiumFeatures;
+using Roblox.Platform.PremiumFeatures;
 
 namespace Roblox.Billing;
 

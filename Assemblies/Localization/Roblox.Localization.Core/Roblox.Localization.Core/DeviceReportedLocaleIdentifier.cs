@@ -1,5 +1,5 @@
 namespace Roblox.Localization.Core {
-    internal class DeviceReportedLocaleIdentifier : IDeviceReportedLocaleIdentifier
+    public class DeviceReportedLocaleIdentifier : IDeviceReportedLocaleIdentifier
 
 {
 	public int Id { get; }

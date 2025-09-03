@@ -1,4 +1,5 @@
 using System;
+using Roblox.Marketing;
 
 namespace Roblox.Platform.Marketing.Core;
 

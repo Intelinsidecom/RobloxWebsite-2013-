@@ -11,12 +11,13 @@ using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Billing.Exceptions;
 using Roblox.Billing.Properties;
 using Roblox.Common;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Locking;
 using Roblox.Platform.AssetOwnership;
 using Roblox.Platform.Assets;
 using Roblox.PremiumFeatures;
+using Roblox.Platform.PremiumFeatures;
 
 namespace Roblox.Billing;
 

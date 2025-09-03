@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "AWSSDK.Core/3.7.500.11": {
+      "AWSSDK.Core/3.7.500.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
@@ -18,10 +18,10 @@
           }
         }
       },
-      "AWSSDK.DAX/3.7.500.11": {
+      "AWSSDK.DAX/3.7.500.13": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.500.11, 4.0.0)"
+          "AWSSDK.Core": "[3.7.500.13, 4.0.0)"
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.DAX.dll": {
@@ -296,15 +296,15 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.7.500.11": {
-      "sha512": "mKWo09X/l6oKvtUs902CxhM3/YTqEfhkcfBtremdd6DNWLd1Xg0fLbhOOJvdKUlt8gKDWF6nVfi6LORx9dU7Ow==",
+    "AWSSDK.Core/3.7.500.13": {
+      "sha512": "K+tXd3pzWwqNRFFA4qJavc9ZhdKH8o8yCSrClaxGzS3PY+JFLdWIuBoazzxUy1kgOGJ0yNUzxPVOh2EWQFlV7g==",
       "type": "package",
-      "path": "awssdk.core/3.7.500.11",
+      "path": "awssdk.core/3.7.500.13",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.7.500.11.nupkg.sha512",
+        "awssdk.core.3.7.500.13.nupkg.sha512",
         "awssdk.core.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.Core.dll",
@@ -325,17 +325,17 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DAX/3.7.500.11": {
-      "sha512": "fcuIhs/UbPUitpDJO3AsxddRtl7ct1n2Cu3Oh6/JqI+jDJEMvl9uifFkKuS95oJ3P2mhL8PgYxmWeMX1az7NtA==",
+    "AWSSDK.DAX/3.7.500.13": {
+      "sha512": "3ngo2mOrgMwaLrBFrzKztu9RF51m8Vyq4gE8uErfwGbv60bsspPTMATqaj+6JdW3QRNQXObPteJGQA1M+Ggm7w==",
       "type": "package",
-      "path": "awssdk.dax/3.7.500.11",
+      "path": "awssdk.dax/3.7.500.13",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DAX.CodeAnalysis.dll",
         "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.dax.3.7.500.11.nupkg.sha512",
+        "awssdk.dax.3.7.500.13.nupkg.sha512",
         "awssdk.dax.nuspec",
         "images/AWSLogo.png",
         "lib/net35/AWSSDK.DAX.dll",
@@ -872,7 +872,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "AWSSDK.Core >= 3.7.500.11",
+      "AWSSDK.Core >= 3.7.500.13",
       "AWSSDK.DAX >= 3.7.*",
       "AWSSDK.DynamoDBv2 >= 3.7.102",
       "NETStandard.Library >= 2.0.3",
@@ -952,7 +952,7 @@
         "dependencies": {
           "AWSSDK.Core": {
             "target": "Package",
-            "version": "[3.7.500.11, )"
+            "version": "[3.7.500.13, )"
           },
           "AWSSDK.DAX": {
             "target": "Package",

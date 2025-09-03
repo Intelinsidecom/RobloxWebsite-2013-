@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Roblox.BriteVerify;
 using Roblox.Configuration;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Instrumentation;
 using Roblox.Kickbox;
 using Roblox.Platform.Authentication.AccountSecurityTickets;
@@ -13,12 +13,12 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Email.Properties;
 using Roblox.Platform.Email.User.Entities;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Properties;
-using Roblox.TranslationResources;
-using Roblox.TranslationResources.Communication;
-using Roblox.TranslationResources.Feature;
+using Roblox.Platform.TranslationResources;
+using Roblox.Platform.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources.Feature;
 
 namespace Roblox.Platform.Email.User;
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.EventLog;
-using Roblox.PremiumFeatures;
+using Roblox.Platform.PremiumFeatures;
 
 namespace Roblox.Billing;
 

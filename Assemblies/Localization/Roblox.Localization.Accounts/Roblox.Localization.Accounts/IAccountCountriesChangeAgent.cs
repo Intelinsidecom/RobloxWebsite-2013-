@@ -1,4 +1,4 @@
-﻿namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     interface IAccountCountriesChangeAgent
 
 {

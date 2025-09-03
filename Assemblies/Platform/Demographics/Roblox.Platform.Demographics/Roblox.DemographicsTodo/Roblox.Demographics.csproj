@@ -14,7 +14,6 @@
   <ItemGroup>
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <ProjectReference Include="..\..\..\..\Data\Roblox.Data\Roblox.Data.csproj">

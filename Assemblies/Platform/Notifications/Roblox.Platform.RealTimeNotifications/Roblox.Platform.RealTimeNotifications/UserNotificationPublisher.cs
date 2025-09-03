@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using Roblox.EventLog;
-using Roblox.RealTimeNotifications.Properties;
+using Roblox.Platform.RealTimeNotifications.Properties;
 using Roblox.Redis;
 
 namespace Roblox.Platform.RealTimeNotifications

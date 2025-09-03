@@ -30,7 +30,6 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Ec
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.Buffers.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.ClientModel.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.Configuration.ConfigurationManager.dll
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.Data.SqlClient.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Economy\Roblox.Economy\bin\Debug\net472\System.IO.FileSystem.AccessControl.dll

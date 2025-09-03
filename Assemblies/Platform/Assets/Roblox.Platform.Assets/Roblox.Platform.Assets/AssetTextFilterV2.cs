@@ -1,8 +1,8 @@
 using System;
 using Roblox.Platform.Assets.Properties;
 using Roblox.Platform.Core;
-using Roblox.TextFilter.Client;
-using Roblox.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client.Models.Common;
 
 namespace Roblox.Platform.Assets;
 

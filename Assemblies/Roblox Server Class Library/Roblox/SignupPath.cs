@@ -23,7 +23,7 @@ public static class SignupPath
 		{
 			return Under13EmailRequired;
 		}
-		if (new Random().Next(1, 100) > PercentEmailRequired)
+		if (new System.Random().Next(1, 100) > PercentEmailRequired)
 		{
 			return Under13EmailOptional;
 		}

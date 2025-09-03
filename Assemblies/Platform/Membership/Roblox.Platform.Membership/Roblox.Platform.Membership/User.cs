@@ -2,6 +2,7 @@ using System;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.MembershipCore;
 using Roblox.Platform.Users.Client;
+using Roblox;
 
 namespace Roblox.Platform.Membership;
 
@@ -95,7 +96,7 @@ internal class User : Visitor, IUser, IVisitor, IVisitorIdentifier, IUserIdentif
 				_ => false, 
 			};
 		}
-		return PremiumFeatureHelper.IsAnyBuildersClubMember(AccountId);
+		return BcMembership.Service.IsAnyBuildersClubMember(AccountId);
 	}
 
 	internal AgeBracket TranslateAgeBracket(UserAgeBracket ageBracket)

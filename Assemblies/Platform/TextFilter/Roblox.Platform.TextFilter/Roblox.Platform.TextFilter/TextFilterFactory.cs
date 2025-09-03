@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using Roblox.CommunitySift;
 using Roblox.ContentFilterApi.Client;
 using Roblox.Platform.TextFilter.Properties;
 namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Factory for generating <see cref="T:Roblox.TextFilter.ITextFilter" /> objects.
+/// Factory for generating <see cref="T:Roblox.Platform.TextFilter.ITextFilter" /> objects.
 /// </summary>
 public class TextFilterFactory : ITextFilterFactory
 {

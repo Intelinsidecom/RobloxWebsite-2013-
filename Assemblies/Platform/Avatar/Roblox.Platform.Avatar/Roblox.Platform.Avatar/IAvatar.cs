@@ -1,7 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Outfits;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Avatar;
 

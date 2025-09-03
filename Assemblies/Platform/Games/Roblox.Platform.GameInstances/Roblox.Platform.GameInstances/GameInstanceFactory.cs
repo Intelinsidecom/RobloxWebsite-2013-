@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Roblox.ApiClientBase;
 using Roblox.Caching.Shared;
 using Roblox.Configuration;
-using Roblox.GameInstances.Client;
+using Roblox.Platform.GameInstances.Client;
 using Roblox.Hashing;
 using Roblox.Platform.Core.ExclusiveStartPaging;
 using Roblox.Platform.Devices;

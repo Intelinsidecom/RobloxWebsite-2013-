@@ -1,12 +1,12 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// A public implementation of <see cref="T:Roblox.TextFilter.IObjectNameValidationRequest" /> to be instantiated by consumers making username validation requests.
+/// A public implementation of <see cref="T:Roblox.Platform.TextFilter.IObjectNameValidationRequest" /> to be instantiated by consumers making username validation requests.
 /// </summary>
 public class ObjectNameValidationRequest : IObjectNameValidationRequest
 {
 	/// <summary>
-	/// <inheritdoc cref="P:Roblox.TextFilter.IUsernameValidationRequest.RequestedName" />
+	/// <inheritdoc cref="P:Roblox.Platform.TextFilter.IUsernameValidationRequest.RequestedName" />
 	/// </summary>
 	public string RequestedName { get; }
 

@@ -1,4 +1,4 @@
-﻿namespace Roblox.Localization.Accounts.Propertiespublic {
+﻿namespace Roblox.Localization.Accounts.Properties {
     interface IUgcLocaleRolloutSettings
 
 {

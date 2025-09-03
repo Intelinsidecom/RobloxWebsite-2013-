@@ -1,7 +1,7 @@
-using Roblox.Platform.Core;
+﻿using Roblox.Platform.Core;
 using Roblox.Platform.Groups.Entities.GroupRoleSets;
 using Roblox.Platform.Groups.Interfaces;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 
@@ -21,7 +21,7 @@ public class GroupRoleSetFactory : IGroupRoleSetFactory
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.Groups.GroupRoleSetFactory" /> class.
 	/// </summary>
 	/// <param name="groupRoleSetAccessor"><see cref="T:Roblox.Platform.Groups.IGroupRoleSetAccessor" /></param>
-	/// <param name="textFilter"><see cref="T:Roblox.TextFilter.ITextFilter" /></param>
+	/// <param name="textFilter"><see cref="T:Roblox.Platform.TextFilter.ITextFilter" /></param>
 	/// <param name="groupRoleSetEntityFactory"><see cref="T:Roblox.Platform.Groups.Entities.GroupRoleSets.IGroupRoleSetEntity" /></param>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException"></exception>
 	internal GroupRoleSetFactory(IGroupRoleSetAccessorInternal groupRoleSetAccessor, ITextFilter textFilter, IGroupRoleSetEntityFactory groupRoleSetEntityFactory)

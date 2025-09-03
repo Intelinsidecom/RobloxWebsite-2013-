@@ -102,7 +102,7 @@ internal class TwoStepVerificationChallengeFactory : ITwoStepVerificationChallen
 
 	private string GenerateCode()
 	{
-		Random random = new Random();
+		System.Random random = new System.Random();
 		StringBuilder codeBuilder = new StringBuilder();
 		for (int i = 0; i < _CodeLength; i++)
 		{

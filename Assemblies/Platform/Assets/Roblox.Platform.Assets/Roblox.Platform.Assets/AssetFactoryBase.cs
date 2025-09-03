@@ -37,7 +37,7 @@ public abstract class AssetFactoryBase<T> : IAssetFactoryBase<T> where T : IAsse
 	{
 		Roblox.AssetType assetTypeEntity = Roblox.AssetType.MustGet(AssetTypeId);
 		IAgent creatorAgent = DomainFactories.AgentFactory.GetByAgentTypeAndAgentTargetId(assetCreatorInfo.CreatorType.ToAgentType(), assetCreatorInfo.CreatorTargetId);
-		ICreator creator = CreatorRef.CreateNewRefFromAgentId(creatorAgent.Id).GetCreator();
+		ICreator creator = Roblox.CreatorRef.CreateNewRefFromAgentId(creatorAgent.Id).GetCreator();
 		IAssetHashEntity assetHash = DomainFactories.AssetHashEntityFactory.GetOrCreate(assetTypeEntity.ID, rawContent.Md5Hash, creator);
 		DataUpdateResult<IAssetEntity, IAssetsAuditEntryEntity> result = DomainFactories.AssetEntityFactory.Create(assetTypeEntity, assetHash, trustedAssetTextInfo, creatorAgent);
 		OnCreated(result.AuditEntryEntity, actorUserIdentity);

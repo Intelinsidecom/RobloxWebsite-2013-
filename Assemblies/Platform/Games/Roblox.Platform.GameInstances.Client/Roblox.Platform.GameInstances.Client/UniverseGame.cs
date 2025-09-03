@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.GameInstances.Interfaces;
-namespace Roblox.Platform.GameInstances.Clientpublic {
+namespace Roblox.Platform.GameInstances.Client {
     class UniverseGame : IGame
 
 {

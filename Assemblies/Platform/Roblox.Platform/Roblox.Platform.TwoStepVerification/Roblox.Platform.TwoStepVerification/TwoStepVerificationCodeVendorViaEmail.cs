@@ -6,12 +6,12 @@ using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.IpAddresses;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Platform.TwoStepVerification.Properties;
-using Roblox.TranslationResources;
-using Roblox.TranslationResources.Authentication;
-using Roblox.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources;
+using Roblox.Platform.TranslationResources.Authentication;
+using Roblox.Platform.TranslationResources.Communication;
 
 namespace Roblox.Platform.TwoStepVerification;
 

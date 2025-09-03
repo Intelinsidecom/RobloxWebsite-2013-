@@ -7,7 +7,7 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.EventLog;
 using Roblox.Locking;
-using Roblox.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
 using Roblox;
 using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures {

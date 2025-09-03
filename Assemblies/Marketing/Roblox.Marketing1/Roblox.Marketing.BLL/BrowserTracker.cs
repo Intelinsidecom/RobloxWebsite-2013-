@@ -16,7 +16,7 @@ public class BrowserTracker : IRobloxEntity<long, BrowserTrackerDAL>, ICacheable
 {
 	private BrowserTrackerDAL _EntityDAL;
 
-	private static readonly Random _Random = new Random(Guid.NewGuid().GetHashCode());
+	private static readonly global::System.Random _Random = new global::System.Random(Guid.NewGuid().GetHashCode());
 
 	public static CacheInfo EntityCacheInfo = new CacheInfo(new CacheabilitySettings(collectionsAreCacheable: false, countsAreCacheable: false, entityIsCacheable: true, idLookupsAreCacheable: true), "Roblox.BrowserTrackerNew", isNullCacheable: true, null, new RemoteCachabilitySettings(Settings.Default.ToSingleSetting((Settings s) => s.MemcachedGroupName)), new MigrationCacheabilitySettings(Settings.Default.ToSingleSetting((Settings s) => s.MemcachedMigrationGroupName), Settings.Default.ToSingleSetting((Settings s) => s.MemcachedMigrationState)));
 

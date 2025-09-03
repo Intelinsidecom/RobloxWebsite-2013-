@@ -1,5 +1,5 @@
 namespace Roblox.Localization.Core {
-    internal class SupportedLocaleIdentifier : ISupportedLocaleIdentifier
+    public class SupportedLocaleIdentifier : ISupportedLocaleIdentifier
 
 {
 	public int Id { get; }

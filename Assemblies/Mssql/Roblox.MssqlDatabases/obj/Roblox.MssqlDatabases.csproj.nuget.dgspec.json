@@ -297,10 +297,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -381,10 +377,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [

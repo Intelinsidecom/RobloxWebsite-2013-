@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -10,7 +10,7 @@ using Roblox.Platform.Groups.Interfaces;
 using Roblox.Platform.Groups.Properties;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Extensions;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Groups;
 

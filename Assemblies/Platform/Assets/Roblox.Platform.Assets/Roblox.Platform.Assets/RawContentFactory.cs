@@ -70,7 +70,7 @@ internal class RawContentFactory : IRawContentFactory
 		{
 			throw new ArgumentException(string.Format("{0} does not exist for the provided arguments: {1} = {2}; {3} = {4}", "agentEntity", "creatorType", creatorType, "creatorTargetId", creatorTargetId));
 		}
-		ICreator creator = CreatorRef.CreateNewRefFromAgentId(agentEntity.Id).GetCreator();
+		ICreator creator = Roblox.CreatorRef.CreateNewRefFromAgentId(agentEntity.Id).GetCreator();
 		IAssetHashEntity assetHashEntity = _AssetHashEntityFactory.GetOrCreate(assetTypeId, contentMd5Hash, creator);
 		return GetRawContent(assetHashEntity);
 	}

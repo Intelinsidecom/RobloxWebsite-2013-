@@ -841,6 +841,10 @@
               "target": "Package",
               "version": "[3.7.500.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -848,10 +852,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

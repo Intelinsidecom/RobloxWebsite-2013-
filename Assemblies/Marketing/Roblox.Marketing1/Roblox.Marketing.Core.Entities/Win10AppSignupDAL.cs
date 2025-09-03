@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using Roblox.Entities.Mssql;
 using Roblox.MssqlDatabases;
-namespace Roblox.Marketing.Core.Entitiesinternal {
+namespace Roblox.Marketing.Core.Entities {
     class Win10AppSignupDAL
 
 {

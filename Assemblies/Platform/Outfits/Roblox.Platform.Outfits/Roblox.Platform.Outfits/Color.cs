@@ -6,7 +6,8 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.Outfits;
 
-namespace Roblox.Platform.Outfits;
+namespace Roblox.Platform.Outfits
+{
 
 public class Color : IColor
 {
@@ -58,6 +59,8 @@ public class Color : IColor
 		G = g;
 		B = b;
 	}
+}
+
 }
 
 // Merge-in of the source entity to avoid separate files.

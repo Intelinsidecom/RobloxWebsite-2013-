@@ -14,8 +14,7 @@
           "Roblox.Configuration": "1.0.0",
           "Roblox.Instrumentation": "1.0.0",
           "Roblox.Mssql": "1.0.0",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "runtime": {
           "Roblox.MssqlDatabases.dll": {}
@@ -312,14 +311,6 @@
           }
         }
       },
-      "System.Data.SqlClient/4.9.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assemblyVersion": "4.6.1.6",
-            "fileVersion": "4.900.24.56208"
-          }
-        }
-      },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -603,8 +594,7 @@
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.2.2",
           "Roblox.Instrumentation": "1.0.0",
-          "Roblox.Sentinels": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "Roblox.Sentinels": "1.0.0"
         },
         "runtime": {
           "Roblox.Mssql.dll": {
@@ -796,13 +786,6 @@
       "sha512": "sha512-WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
       "path": "system.configuration.configurationmanager/7.0.0",
       "hashPath": "system.configuration.configurationmanager.7.0.0.nupkg.sha512"
-    },
-    "System.Data.SqlClient/4.9.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-j4KJO+vC62NyUtNHz854njEqXbT8OmAa5jb1nrGfYWBOcggyYUQE0w/snXeaCjdvkSKWuUD+hfvlbN8pTrJTXg==",
-      "path": "system.data.sqlclient/4.9.0",
-      "hashPath": "system.data.sqlclient.4.9.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/6.0.1": {
       "type": "package",

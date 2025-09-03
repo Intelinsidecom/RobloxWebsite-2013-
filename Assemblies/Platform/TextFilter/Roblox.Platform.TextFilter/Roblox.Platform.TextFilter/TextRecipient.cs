@@ -1,7 +1,7 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Default implementation of the <see cref="T:Roblox.TextFilter.ITextRecipient" />
+/// Default implementation of the <see cref="T:Roblox.Platform.TextFilter.ITextRecipient" />
 /// </summary>
 public class TextRecipient : ITextRecipient
 {

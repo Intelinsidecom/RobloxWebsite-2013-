@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
-namespace Roblox.Localization.Accountspublic {
+namespace Roblox.Localization.Accounts {
     class AccountCountryAccessorFactory
 
 {

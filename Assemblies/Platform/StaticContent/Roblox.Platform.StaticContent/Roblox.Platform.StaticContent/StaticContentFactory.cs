@@ -8,7 +8,7 @@ using Roblox.DataV2.Core;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Core.ExclusiveStartPaging;
-using Roblox.StaticContent.Client;
+using Roblox.Platform.StaticContent.Client;
 
 namespace Roblox.Platform.StaticContent;
 
@@ -25,7 +25,7 @@ public class StaticContentFactory : IStaticContentFactory
 	/// Initializes a new <see cref="T:Roblox.Platform.StaticContent.StaticContentFactory" />.
 	/// </summary>
 	/// <param name="counterRegistry">An <see cref="T:Roblox.Instrumentation.ICounterRegistry" />.</param>
-	/// <param name="staticContentClient">An <see cref="T:Roblox.StaticContent.Client.IStaticContentClient" />.</param>
+	/// <param name="staticContentClient">An <see cref="T:Roblox.Platform.StaticContent.Client.IStaticContentClient" />.</param>
 	/// <param name="logger">An <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	/// <param name="durableCache">An <see cref="T:Roblox.Caching.Shared.ISharedCacheClient" />.</param>
 	/// <param name="cacheOperationFactory">An <see cref="T:Roblox.CachingV2.Core.ICacheOperationFactory" />.</param>

@@ -8,7 +8,9 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Centralize package versions to avoid downgrades across projects -->
+    <PackageReference Update="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Update="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <!-- If any legacy projects still reference System.Data.SqlClient, keep this pin. Ideally migrate to Microsoft.Data.SqlClient. -->
     <PackageReference Update="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Update="AWSSDK.Core" Version="3.7.300.27" />
   </ItemGroup>

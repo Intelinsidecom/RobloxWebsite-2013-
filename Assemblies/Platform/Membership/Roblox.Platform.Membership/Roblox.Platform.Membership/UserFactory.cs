@@ -42,7 +42,7 @@ public class UserFactory : IUserFactory
 
 	private static readonly Lazy<MembershipDomainFactories> _DomainFactoriesSingletonForStaticFunctions;
 
-	private long RobloxSystemUserId => Roblox.Users.Properties.Settings.Default.RobloxUserId;
+	private long RobloxSystemUserId => Roblox.Platform.Users.Properties.Settings.Default.RobloxUserId;
 
 	[Obsolete("Use (new MembershipDomainFactories(new TextFilterFactory().GetTextFilter()).UserFactory instead")]
 	public UserFactory()

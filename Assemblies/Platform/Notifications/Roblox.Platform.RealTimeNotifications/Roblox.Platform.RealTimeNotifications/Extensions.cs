@@ -1,7 +1,7 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    static class Extensions
-
+namespace Roblox.Platform.RealTimeNotifications
 {
+    public static class Extensions
+    {
 	public static bool IsSuccess(this UserNotificationPublishResult userNotificationPublishResult)
 	{
 		return userNotificationPublishResult == UserNotificationPublishResult.UserReceivedNotification;
@@ -11,7 +11,5 @@
 	{
 		return UserNotificationPublishResult.ErrorPublishingNotification == userNotificationPublishResult;
 	}
-}
-
-
+    }
 }

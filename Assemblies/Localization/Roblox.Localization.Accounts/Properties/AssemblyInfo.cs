@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -11,7 +11,7 @@ using System.Runtime.Versioning;
 [assembly: AssemblyCompany("Roblox.Platform.Localization.Accounts")]
 [assembly: AssemblyConfiguration("Release")]
 [assembly: AssemblyCopyright("Copyright  2017")]
-[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Entities, Roblox.EventLog, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.Membership.Core, Roblox.MssqlDatabases, Roblox.Common, Roblox.EventLog.Windows, Roblox.TranslationResources, Roblox.Caching, Roblox.Data, Roblox.FloodCheckers, Roblox.Entities.Mssql, Roblox.Platform.Localization.Core, Roblox.TextFilter, Roblox.Platform.Membership, Roblox.Platform.Demographics\n\nORIGINAL CHANGE TRIGGERS\n\n")]
+[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Entities, Roblox.EventLog, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.Membership.Core, Roblox.MssqlDatabases, Roblox.Common, Roblox.EventLog.Windows, Roblox.TranslationResources, Roblox.Caching, Roblox.Data, Roblox.FloodCheckers, Roblox.Entities.Mssql, Roblox.Platform.Localization.Core, Roblox.Platform.TextFilter, Roblox.Platform.Membership, Roblox.Platform.Demographics\n\nORIGINAL CHANGE TRIGGERS\n\n")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0")]
 [assembly: AssemblyProduct("Roblox.Localization.Accounts")]

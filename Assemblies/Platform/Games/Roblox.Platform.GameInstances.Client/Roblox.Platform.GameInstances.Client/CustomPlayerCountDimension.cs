@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class CustomPlayerCountDimension
+using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Client {
+    public class CustomPlayerCountDimension
 
 {
 	public CustomPlayerDimension Dimension { get; set; }

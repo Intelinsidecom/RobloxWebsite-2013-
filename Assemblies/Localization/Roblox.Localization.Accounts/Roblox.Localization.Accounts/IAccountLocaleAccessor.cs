@@ -1,14 +1,14 @@
 ﻿using Roblox.Platform.Membership;
-using Roblox.TranslationResources;
-namespace Roblox.Localization.Accountspublic {
-    interface IAccountLocaleAccessor
+using Roblox.Platform.TranslationResources;
+namespace Roblox.Localization.Accounts {
+    public interface IAccountLocaleAccessor
 
 {
 	/// <summary>
-	/// Get <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> for given account id.
+	/// Get <see cref="T:Roblox.Localization.Accounts.IAccountLocale" /> for given account id.
 	/// </summary>
 	/// <param name="accountId">The account id.</param>
-	/// <returns>The <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocale" /> if present, null otherwise.</returns>
+	/// <returns>The <see cref="T:Roblox.Localization.Accounts.IAccountLocale" /> if present, null otherwise.</returns>
 	IAccountLocale GetAccountLocale(long accountId);
 
 	/// <summary>

@@ -6,7 +6,7 @@ using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
 namespace Roblox.Platform.Users {
-    class GenderTypeDAL
+    public class GenderTypeDAL
 
 {
 	private byte _ID;

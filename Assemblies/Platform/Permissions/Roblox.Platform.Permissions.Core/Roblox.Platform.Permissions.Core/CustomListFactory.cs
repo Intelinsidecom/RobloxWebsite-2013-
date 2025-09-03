@@ -1,5 +1,5 @@
 using System;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 
 namespace Roblox.Platform.Permissions.Core;
 
@@ -10,7 +10,7 @@ public class CustomListFactory : ICustomListFactory
 	/// <summary>
 	/// Constructor for <see cref="T:Roblox.Platform.Permissions.Core.CustomListFactory" />
 	/// </summary>
-	/// <param name="permissionsApiClient">An <see cref="T:Roblox.Permissions.Client.IPermissionsClient" /></param>
+	/// <param name="permissionsApiClient">An <see cref="T:Roblox.Platform.Permissions.Client.IPermissionsClient" /></param>
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="permissionsApiClient" /></exception>
 	public CustomListFactory(IPermissionsClient permissionsApiClient)
 	{

@@ -1,6 +1,6 @@
 using System;
 using Roblox.BriteVerify;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Instrumentation;
@@ -10,8 +10,8 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Email.Properties;
 using Roblox.Platform.Email.User.Entities;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.EventStream;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 
 namespace Roblox.Platform.Email.User;

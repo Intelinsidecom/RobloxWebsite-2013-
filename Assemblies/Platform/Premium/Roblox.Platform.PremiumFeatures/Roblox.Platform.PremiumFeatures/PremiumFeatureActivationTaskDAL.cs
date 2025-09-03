@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
@@ -7,7 +7,7 @@ using Roblox.Data;
 using Roblox.MssqlDatabases;
 namespace Roblox.Platform.PremiumFeatures
 {
-    class PremiumFeatureActivationTaskDAL
+    public class PremiumFeatureActivationTaskDAL
 
 {
 	private long _ID;

@@ -5,6 +5,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox;
+using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
     class AccountFeatureSetActivationTask : IRobloxEntity<long, AccountFeatureSetActivationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask

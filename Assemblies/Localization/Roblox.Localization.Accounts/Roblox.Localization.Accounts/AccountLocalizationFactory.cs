@@ -2,9 +2,9 @@
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Audit;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Audit;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 namespace Roblox.Localization.Accounts {
     [ExcludeFromCodeCoverage]
@@ -59,18 +59,18 @@ public class AccountLocalizationFactory
 	}
 
 	/// <summary>
-	/// Gets a <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor" />.
+	/// Gets a <see cref="T:Roblox.Localization.Accounts.IAccountLocaleAccessor" />.
 	/// </summary>
-	/// <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleAccessor" />.</returns>
+	/// <returns>An <see cref="T:Roblox.Localization.Accounts.IAccountLocaleAccessor" />.</returns>
 	public IAccountLocaleAccessor GetAccountLocaleAccessor()
 	{
 		return new AccountLocaleAccessor(_AccountLocaleEntityFactory, _SupportedLocaleAndLanguageMapper);
 	}
 
 	/// <summary>
-	/// Gets <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder" />.
+	/// Gets <see cref="T:Roblox.Localization.Accounts.IAccountLocaleBuilder" />.
 	/// </summary>
-	/// <returns>An <see cref="T:Roblox.Platform.Localization.Accounts.IAccountLocaleBuilder" /></returns>
+	/// <returns>An <see cref="T:Roblox.Localization.Accounts.IAccountLocaleBuilder" /></returns>
 	public IAccountLocaleBuilder GetAccountLocaleBuilder()
 	{
 		return new AccountLocaleBuilder(_AccountLocaleEntityFactory, _SupportedLocaleAndLanguageMapper, _AccountLocaleFloodCheckerFactory, _Settings, _AccountLocaleAuditBuilder, _AccountLocalesAuditParameterValidator, _CoreLocalizationBuilder, _Logger);

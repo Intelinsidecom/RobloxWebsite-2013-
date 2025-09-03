@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using Roblox.Agents;
 using Roblox.Platform.AssetsCore;
 using Roblox.Platform.Membership;
 using Roblox.Platform.MembershipCore;
-using Roblox.TextFilter;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Assets;
 

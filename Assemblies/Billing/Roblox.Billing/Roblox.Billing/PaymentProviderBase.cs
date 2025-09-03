@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using Roblox.Billing.Properties;
 using Roblox.BillingTransactionEventPublisher;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 
 namespace Roblox.Billing;
@@ -22,7 +22,7 @@ public abstract class PaymentProviderBase
 	/// </summary>
 	/// <param name="cancelExistingActiveMembershipSale"></param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" /> to be used to log any exceptions. Can be null.</param>
-	/// <param name="counterFactory">The <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory" /> to be used to count any exceptions. Can be null.</param>
+	/// <param name="counterFactory">The <see cref="T:Roblox.Platform.EphemeralCounters.IEphemeralCounterFactory" /> to be used to count any exceptions. Can be null.</param>
 	protected PaymentProviderBase(CancelExistingActiveMembershipSaleHandler cancelExistingActiveMembershipSale, ILogger logger = null, IEphemeralCounterFactory counterFactory = null)
 	{
 		CancelExsitingActiveMembershipSaleAction = cancelExistingActiveMembershipSale ?? throw new ArgumentNullException("cancelExistingActiveMembershipSale");
@@ -55,7 +55,7 @@ public abstract class PaymentProviderBase
 	/// </summary>
 	/// <param name="sale">The <see cref="T:Roblox.Billing.Sale" /> to be published.</param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" /> to be used to log any exceptions. Can be null.</param>
-	/// <param name="counterFactory">The <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory" /> to be used to count any exceptions. Can be null.</param>
+	/// <param name="counterFactory">The <see cref="T:Roblox.Platform.EphemeralCounters.IEphemeralCounterFactory" /> to be used to count any exceptions. Can be null.</param>
 	public static bool TryToPublishBillingTransactionEvent(Sale sale, ILogger logger = null, IEphemeralCounterFactory counterFactory = null)
 	{
 		try

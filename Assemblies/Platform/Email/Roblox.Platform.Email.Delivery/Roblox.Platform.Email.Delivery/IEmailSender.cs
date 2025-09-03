@@ -1,4 +1,4 @@
-using Roblox.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources.Communication;
 
 namespace Roblox.Platform.Email.Delivery;
 

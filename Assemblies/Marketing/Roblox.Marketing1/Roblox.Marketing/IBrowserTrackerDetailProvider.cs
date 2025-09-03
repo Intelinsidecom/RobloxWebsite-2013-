@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Membership;
-namespace Roblox.Marketingpublic {
+using Roblox.Platform.Membership;
+namespace Roblox.Marketing {
     interface IBrowserTrackerDetailProvider
 
 {

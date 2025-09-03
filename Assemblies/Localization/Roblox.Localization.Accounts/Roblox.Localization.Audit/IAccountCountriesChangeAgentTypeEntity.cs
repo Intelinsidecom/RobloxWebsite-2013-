@@ -1,5 +1,5 @@
 ﻿using Roblox.Entities;
-namespace Roblox.Localization.Auditinternal {
+namespace Roblox.Localization.Audit {
     interface IAccountCountriesChangeAgentTypeEntity : IUpdateableEntity<byte>, IEntity<byte>
 
 {

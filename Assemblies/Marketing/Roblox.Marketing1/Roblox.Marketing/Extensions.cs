@@ -1,4 +1,4 @@
-﻿namespace Roblox.Marketingpublic {
+namespace Roblox.Marketing {
     static class Extensions
 
 {

@@ -1,12 +1,10 @@
-﻿namespace Roblox.Platform.GameInstances.Clientpublic {
-    enum CustomPlayerDimension
-
+namespace Roblox.Platform.GameInstances.Client
 {
-	Unrecognized,
-	CountryId,
-	PlatformId,
-	IsUnder13
-}
-
-
+    public enum CustomPlayerDimension
+    {
+        Unrecognized,
+        CountryId,
+        PlatformId,
+        IsUnder13
+    }
 }

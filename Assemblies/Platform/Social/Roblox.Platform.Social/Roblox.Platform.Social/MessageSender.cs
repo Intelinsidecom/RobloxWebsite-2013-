@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Membership;
@@ -7,8 +7,8 @@ using Roblox.Platform.Membership.Properties;
 using Roblox.Platform.Social.Events;
 using Roblox.Platform.Social.Messages;
 using Roblox.Platform.Social.Properties;
-using Roblox.TextFilter.Client;
-using Roblox.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client.Models.Common;
 
 namespace Roblox.Platform.Social;
 
@@ -85,7 +85,7 @@ public class MessageSender
 	/// Constructs a new MessageSender.
 	/// </summary>
 	/// <param name="userFactory">The <see cref="T:Roblox.Platform.Membership.IUserFactory" /> for loading related users.</param>
-	/// <param name="textFilterClientV2">The <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /> to use to filter a message's body and subject.</param>
+	/// <param name="textFilterClientV2">The <see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /> to use to filter a message's body and subject.</param>
 	/// <param name="messagePrivacyAuthority">Used <see cref="T:Roblox.Platform.Social.Messages.IMessagePrivacyAuthority" /> for identifying if the Message can be sent between the users.</param>
 	/// <param name="messageEventPublisher">The <see cref="T:Roblox.Platform.Social.Events.IMessageEventPublisher" /> to use to publish message events. 
 	/// Uses a <see cref="T:Roblox.Platform.Social.Events.MessageEventPublisher" /> if left null</param>

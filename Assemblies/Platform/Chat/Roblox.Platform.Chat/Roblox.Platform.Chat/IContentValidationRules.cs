@@ -1,5 +1,5 @@
-using Roblox.Platform.Membership;
-using Roblox.TextFilter.Client;
+﻿using Roblox.Platform.Membership;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Chat;
 

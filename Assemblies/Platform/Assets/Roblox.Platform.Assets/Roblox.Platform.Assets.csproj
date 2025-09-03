@@ -4,7 +4,7 @@
     <AssemblyName>Roblox.Platform.Assets</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net472</TargetFramework>
-    <NoWarn>$(NoWarn);0618</NoWarn>
+    <NoWarn>$(NoWarn);0618;1668;0436;0067</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -115,7 +115,16 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
+    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox.Platform.Membership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+      <Project>
+      </Project>
+      <Name>Roblox Server Class Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Content\Roblox.Platform.ContentFilter.Client\Roblox.Platform.ContentFilter.Client.csproj">
       <Project>
       </Project>

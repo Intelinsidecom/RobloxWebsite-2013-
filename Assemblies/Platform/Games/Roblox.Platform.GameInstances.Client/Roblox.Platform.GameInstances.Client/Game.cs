@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using ProtoBuf;
 using Roblox.GameInstances.Interfaces;
 namespace Roblox.Platform.GameInstances.Client {

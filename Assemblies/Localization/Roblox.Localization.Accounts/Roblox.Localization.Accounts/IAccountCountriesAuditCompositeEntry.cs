@@ -27,27 +27,27 @@ public interface IAccountCountriesAuditCompositeEntry
 	AccountCountriesChangeAgentType ChangeAgentType { get; }
 
 	/// <summary>
-	/// [Metadata] The target Id with respect to the <see cref="P:Roblox.Platform.Localization.Accounts.IAccountCountriesAuditCompositeEntry.ChangeAgentType" />.
+	/// [Metadata] The target Id with respect to the <see cref="P:Roblox.Localization.Accounts.IAccountCountriesAuditCompositeEntry.ChangeAgentType" />.
 	/// </summary>
 	long? ChangeAgentTargetId { get; }
 
 	/// <summary>
-	/// Value of "CountryId" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry" />
+	/// Value of "CountryId" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Localization.Accounts.IAccountCountry" />
 	/// </summary>
 	int? AuditCountryId { get; }
 
 	/// <summary>
-	/// Value of "Updated" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry" />
+	/// Value of "Updated" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Localization.Accounts.IAccountCountry" />
 	/// </summary>
 	DateTime? AuditUpdated { get; }
 
 	/// <summary>
-	/// Value of "Created" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry" />
+	/// Value of "Created" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Localization.Accounts.IAccountCountry" />
 	/// </summary>
 	DateTime? AuditCreated { get; }
 
 	/// <summary>
-	/// Value of "AccountID" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Platform.Localization.Accounts.IAccountCountry" />
+	/// Value of "AccountID" field of the AccountCountries record at the audit event. <seealso cref="T:Roblox.Localization.Accounts.IAccountCountry" />
 	/// </summary>
 	long? AuditAccountID { get; }
 

@@ -33,6 +33,7 @@
     <ProjectReference Include="..\..\..\Passwords\Roblox.Passwords.Client\Roblox.Passwords.Client.csproj" />
     
     <ProjectReference Include="..\..\..\Amazon\Roblox.Amazon.Core\Roblox.Amazon.Core.csproj" />
+    <ProjectReference Include="..\..\..\Amazon\Roblox.Amazon.Sns\Roblox.Amazon.Sns.csproj" />
     <ProjectReference Include="..\..\..\Random\Roblox.Random\Roblox.Random.csproj" />
     <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj" />
     <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj" />

@@ -7,7 +7,7 @@ using Roblox.Data.Interfaces;
 
 namespace Roblox.Platform.Users
 {
-    class GenderType : IRobloxEntity<byte, GenderTypeDAL>, ICacheableObject<byte>, ICacheableObject
+    public class GenderType : IRobloxEntity<byte, GenderTypeDAL>, ICacheableObject<byte>, ICacheableObject
     {
         private GenderTypeDAL _EntityDAL;
 

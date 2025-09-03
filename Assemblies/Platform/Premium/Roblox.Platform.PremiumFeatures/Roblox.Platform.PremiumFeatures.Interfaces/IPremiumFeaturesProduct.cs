@@ -1,5 +1,5 @@
-using Roblox.PremiumFeatures.Models.Enums;
-using Roblox.PremiumFeatures.Models.Responses;
+using Roblox.Platform.PremiumFeatures.Models.Enums;
+using Roblox.Platform.PremiumFeatures.Models.Responses;
 
 namespace Roblox.Platform.PremiumFeatures.Interfaces;
 

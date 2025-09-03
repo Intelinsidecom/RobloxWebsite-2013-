@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Roblox.ApiClientBase;
 using Roblox.Configuration;
+using Roblox.Platform.Games.Client.Properties;
 
 namespace Roblox.Platform.Games.Client
 {

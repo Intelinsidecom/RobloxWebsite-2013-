@@ -92,10 +92,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -927,6 +923,10 @@
               "target": "Package",
               "version": "[1.61.0, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -938,10 +938,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1207,13 +1203,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -1509,13 +1505,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -2163,13 +2159,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -2606,6 +2602,10 @@
               "target": "Package",
               "version": "[3.7.500.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -2613,10 +2613,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -3605,7 +3601,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -3852,13 +3848,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -3940,13 +3936,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             },
             "System.Net.Http": {
               "target": "Package",
@@ -4093,8 +4089,17 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web\\Roblox.Web.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web\\Roblox.Web.csproj"
@@ -4118,13 +4123,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -4230,13 +4235,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -4342,6 +4347,10 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -4349,10 +4358,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -4429,10 +4434,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -4513,10 +4514,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -4833,13 +4830,9 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
-            "System.Configuration.ConfigurationManager": {
+            "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
+              "version": "[5.2.2, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -4996,13 +4989,14 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
+              "version": "[7.0.0, )",
+              "aliases": "ConfMan"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -5390,13 +5384,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -5558,6 +5552,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.UserDataAuditCore\\Roblox.Platform.Membership.UserDataAuditCore.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.UserDataAuditCore\\Roblox.Platform.Membership.UserDataAuditCore.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj"
               },
@@ -5679,13 +5676,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -5739,8 +5736,8 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj"
               },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Roblox.Platform\\Roblox.Platform.TwoStepVerification\\Roblox.Platform.TwoStepVerification.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Roblox.Platform\\Roblox.Platform.TwoStepVerification\\Roblox.Platform.TwoStepVerification.csproj"
               }
             }
           }
@@ -5869,13 +5866,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -6017,6 +6014,10 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.66, )"
@@ -6024,10 +6025,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -6558,6 +6555,76 @@
         }
       }
     },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj",
+        "projectName": "Roblox.Platform.ContentRatings",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -6975,10 +7042,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -7055,10 +7118,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -7187,10 +7246,6 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
             "libphonenumber-csharp": {
               "target": "Package",
               "version": "[9.0.12, )"
@@ -7278,13 +7333,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -7530,6 +7585,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.BriteVerify\\Roblox.BriteVerify.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.BriteVerify\\Roblox.BriteVerify.csproj"
               },
@@ -7622,6 +7680,112 @@
         }
       }
     },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj",
+        "projectName": "Roblox.GameInstances.Client",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http\\Roblox.Http.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Http\\Roblox.Http\\Roblox.Http.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "protobuf-net": {
+              "target": "Package",
+              "version": "[3.2.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances\\Roblox.Platform.GameInstances.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -7674,6 +7838,9 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Devices\\Roblox.Platform.Devices\\Roblox.Platform.Devices.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Devices\\Roblox.Platform.Devices\\Roblox.Platform.Devices.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Games\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj"
               }
             }
           }
@@ -8077,6 +8244,10 @@
               "target": "Package",
               "version": "[3.7.500.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -8084,10 +8255,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -8275,6 +8442,10 @@
               "target": "Package",
               "version": "[3.7.500.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -8282,10 +8453,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -8544,13 +8711,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -8641,6 +8808,9 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures\\Roblox.Platform.PremiumFeatures.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures\\Roblox.Platform.PremiumFeatures.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter.Client\\Roblox.Platform.TextFilter.Client.csproj"
@@ -8815,6 +8985,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Core\\Roblox.Amazon.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Core\\Roblox.Amazon.Core.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj"
               },
@@ -8954,7 +9127,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -9064,13 +9237,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             },
             "System.Resources.Extensions": {
               "target": "Package",
@@ -9703,13 +9876,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -10146,13 +10319,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -10378,6 +10551,10 @@
               "target": "Package",
               "version": "[3.7.500.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.66, )"
@@ -10385,10 +10562,6 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -10974,13 +11147,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -11169,9 +11342,90 @@
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
+              "version": "[7.0.0, )",
+              "aliases": "ConfMan"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj",
+        "projectName": "Roblox.Platform.UserCacheMigrationSettings",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Caching\\Roblox.Caching\\Roblox.Caching.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
               "version": "[7.0.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
@@ -11333,13 +11587,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -11523,13 +11777,13 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -11951,6 +12205,21 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Passwords\\Roblox.Passwords.Client\\Roblox.Passwords.Client.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Passwords\\Roblox.Passwords.Client\\Roblox.Passwords.Client.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Content\\Roblox.Platform.ContentRatings\\Roblox.Platform.ContentRatings.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.UserCacheMigrationSettings\\Roblox.Platform.UserCacheMigrationSettings.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users.Client\\Roblox.Platform.Users.Client.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users.Client\\Roblox.Platform.Users.Client.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Redis\\Roblox.Redis.Lru\\Roblox.Redis.Lru.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Redis\\Roblox.Redis.Lru\\Roblox.Redis.Lru.csproj"
               },
@@ -11965,6 +12234,9 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj"
               }
             }
           }
@@ -11991,7 +12263,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Resources.Extensions": {
               "target": "Package",
@@ -12204,10 +12476,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -13493,15 +13761,84 @@
         "net472": {
           "targetAlias": "net472",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.9.0, )"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj",
+        "projectName": "Roblox.Web.SEO",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }

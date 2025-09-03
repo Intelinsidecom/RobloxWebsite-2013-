@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Roblox.GameInstances.Client;
+using Roblox.Platform.GameInstances.Client;
 
 namespace Roblox.Platform.GameInstances;
 
@@ -31,7 +31,7 @@ internal class PlaceSummary : IPlaceSummary
 	{
 	}
 
-	public PlaceSummary(Roblox.GameInstances.Client.PlaceSummary placeSummary)
+	public PlaceSummary(Roblox.Platform.GameInstances.Client.PlaceSummary placeSummary)
 	{
 		Id = placeSummary.Id;
 		GameCount = placeSummary.GameCount;

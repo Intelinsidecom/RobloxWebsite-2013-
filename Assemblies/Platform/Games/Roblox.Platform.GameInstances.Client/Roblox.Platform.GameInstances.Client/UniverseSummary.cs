@@ -1,16 +1,17 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Roblox.GameInstances.Interfaces;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class UniverseSummary : IUniverseSummary
 
+namespace Roblox.Platform.GameInstances.Client
 {
-	public static readonly UniverseSummary Empty = new UniverseSummary();
+    public class UniverseSummary : IUniverseSummary
+    {
+        public static readonly UniverseSummary Empty = new UniverseSummary();
 
-	public long Id { get; set; }
+        public long Id { get; set; }
 
-	public long UniverseId { get; set; }
+        public long UniverseId { get; set; }
 
-	public int GameCount { get; set; }
+        public int GameCount { get; set; }
 
 	public int PlayerCount { get; set; }
 

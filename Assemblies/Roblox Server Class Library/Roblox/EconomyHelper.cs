@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using Roblox.Agents;
-using Roblox.ContentRatings;
+using Roblox.Platform.ContentRatings;
 using Roblox.Economy;
 using Roblox.Economy.Business_Logic;
 using Roblox.Economy.Common;

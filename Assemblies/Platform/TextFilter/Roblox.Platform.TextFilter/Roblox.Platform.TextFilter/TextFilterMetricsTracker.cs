@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Diagnostics;
@@ -26,8 +26,8 @@ namespace Roblox.Platform.TextFilter {
 	internal TextFilterMetricsTracker(ISimpleCounterCategoryFactory simpleCounterCategoryFactory)
 	{
 		_SimpleCounterCategoryFactory = simpleCounterCategoryFactory;
-		_ModerationLevelCounters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory("Roblox.TextFilter.ModerationLevelByClient", GenerateAllModerationLevelCounterNames());
-		_ModerationCategoryCounters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory("Roblox.TextFilter.ModerationCategories", GenerateAllModerationCategoryCounterNames());
+		_ModerationLevelCounters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory("Roblox.Platform.TextFilter.ModerationLevelByClient", GenerateAllModerationLevelCounterNames());
+		_ModerationCategoryCounters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory("Roblox.Platform.TextFilter.ModerationCategories", GenerateAllModerationCategoryCounterNames());
 	}
 
 	public void RecordTextFilterResult(IModeratedTextRequest request, ITextFilterResultModerationDetails result, TextAudience? audience)
@@ -63,7 +63,7 @@ namespace Roblox.Platform.TextFilter {
 			{
 				return _ClientCounterCategories[client];
 			}
-			ISimpleCounterCategory counters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory($"Roblox.TextFilter.Clients.{client}", GenerateAllModerationCategoryCounterNames());
+			ISimpleCounterCategory counters = _SimpleCounterCategoryFactory.CreateSimplePerfmonCounterCategory($"Roblox.Platform.TextFilter.Clients.{client}", GenerateAllModerationCategoryCounterNames());
 			_ClientCounterCategories[client] = counters;
 			return counters;
 		}

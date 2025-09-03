@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Platform.Outfitspublic {
-    class OutfitAccoutrement : IRobloxEntity<long, OutfitAccoutrementDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
-
+namespace Roblox.Outfits
 {
+    public class OutfitAccoutrement : IRobloxEntity<long, OutfitAccoutrementDAL>, ICacheableObject<long>, ICacheableObject, IRemoteCacheableObject
+    {
 	private OutfitAccoutrementDAL _EntityDAL;
 
 	public static CacheInfo EntityCacheInfo = new CacheInfo(new CacheabilitySettings(collectionsAreCacheable: true, countsAreCacheable: true, entityIsCacheable: true, idLookupsAreCacheable: false, hasUnqualifiedCollections: false), typeof(OutfitAccoutrement).ToString(), isNullCacheable: true);
@@ -102,38 +102,36 @@ namespace Roblox.Platform.Outfitspublic {
 		return EntityHelper.GetEntity<long, OutfitAccoutrementDAL, OutfitAccoutrement>(EntityCacheInfo, id, () => OutfitAccoutrementDAL.Get(id));
 	}
 
-	public static ICollection<OutfitAccoutrement> GetOutfitAccoutrementsByOutfitIDPaged(long outfitId, int startRowIndex, int maximumRows)
-	{
-		string collectionId = $"GetOutfitAccoutrementIDsByOutfitIDPaged_OutfitID:{outfitId}_StartRowIndex:{startRowIndex}_MaximumRows:{maximumRows}";
-		return EntityHelper.GetEntityCollection(EntityCacheInfo, new CacheManager.CachePolicy(CacheManager.CacheScopeFilter.Qualified, $"OutfitID:{outfitId}"), collectionId, () => OutfitAccoutrementDAL.GetOutfitAccoutrementIDsByOutfitIDPaged(outfitId, startRowIndex, maximumRows), Get);
-	}
+        public static ICollection<OutfitAccoutrement> GetOutfitAccoutrementsByOutfitIDPaged(long outfitId, int startRowIndex, int maximumRows)
+        {
+            string collectionId = $"GetOutfitAccoutrementIDsByOutfitIDPaged_OutfitID:{outfitId}_StartRowIndex:{startRowIndex}_MaximumRows:{maximumRows}";
+            return EntityHelper.GetEntityCollection(EntityCacheInfo, new CacheManager.CachePolicy(CacheManager.CacheScopeFilter.Qualified, $"OutfitID:{outfitId}"), collectionId, () => OutfitAccoutrementDAL.GetOutfitAccoutrementIDsByOutfitIDPaged(outfitId, startRowIndex, maximumRows), Get);
+        }
 
-	public static int GetTotalNumberOfOutfitAccoutrementsByOutfitID(long outfitId)
-	{
-		string countId = $"GetTotalNumberOfOutfitAccoutrementsByOutfitID:{outfitId}";
-		return EntityHelper.GetEntityCount(EntityCacheInfo, new CacheManager.CachePolicy(CacheManager.CacheScopeFilter.Qualified, $"OutfitID:{outfitId}"), countId, () => OutfitAccoutrementDAL.GetTotalNumberOfOutfitAccoutrementsByOutfitID(outfitId));
-	}
+        public static int GetTotalNumberOfOutfitAccoutrementsByOutfitID(long outfitId)
+        {
+            string countId = $"GetTotalNumberOfOutfitAccoutrementsByOutfitID:{outfitId}";
+            return EntityHelper.GetEntityCount(EntityCacheInfo, new CacheManager.CachePolicy(CacheManager.CacheScopeFilter.Qualified, $"OutfitID:{outfitId}"), countId, () => OutfitAccoutrementDAL.GetTotalNumberOfOutfitAccoutrementsByOutfitID(outfitId));
+        }
 
-	public object GetSerializable()
-	{
-		return _EntityDAL;
-	}
+        public object GetSerializable()
+        {
+            return _EntityDAL;
+        }
 
-	public void Construct(OutfitAccoutrementDAL dal)
-	{
-		_EntityDAL = dal;
-	}
+        public void Construct(OutfitAccoutrementDAL dal)
+        {
+            _EntityDAL = dal;
+        }
 
-	public IEnumerable<string> BuildEntityIDLookups()
-	{
-		yield break;
-	}
+        public IEnumerable<string> BuildEntityIDLookups()
+        {
+            yield break;
+        }
 
-	public IEnumerable<StateToken> BuildStateTokenCollection()
-	{
-		yield return new StateToken($"OutfitID:{OutfitID}");
-	}
-}
-
-
+        public IEnumerable<StateToken> BuildStateTokenCollection()
+        {
+            yield return new StateToken($"OutfitID:{OutfitID}");
+        }
+    }
 }

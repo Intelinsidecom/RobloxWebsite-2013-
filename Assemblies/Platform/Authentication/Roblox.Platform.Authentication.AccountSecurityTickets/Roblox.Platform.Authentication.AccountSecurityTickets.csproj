@@ -46,6 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
   </ItemGroup>
 </Project>

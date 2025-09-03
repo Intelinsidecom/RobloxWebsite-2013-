@@ -470,13 +470,13 @@ public class BrickColor
 
 	public static BrickColor GetRandom()
 	{
-		int i = new Random().Next(_PrimaryColors.Length - 1);
+		int i = new System.Random().Next(_PrimaryColors.Length - 1);
 		return _PrimaryColors[i];
 	}
 
 	public static BrickColor GetRandomHeadColor()
 	{
-		int i = new Random().Next(_HeadColors.Length - 1);
+		int i = new System.Random().Next(_HeadColors.Length - 1);
 		return _HeadColors[i];
 	}
 }

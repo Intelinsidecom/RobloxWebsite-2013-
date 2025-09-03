@@ -70,7 +70,7 @@ public class GroupCounter : IRobloxEntity<long, GroupCounterDAL>, ICacheableObje
 	public void Increment()
 	{
 		Increment(1L);
-		if (new Random().Next(100) == 0)
+		if (new System.Random().Next(100) == 0)
 		{
 			RobloxThreadPool.QueueUserWorkItem(ReaggregateCounter);
 		}

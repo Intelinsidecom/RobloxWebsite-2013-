@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Diagnostics;
 using Roblox.EventLog;
-using Roblox.RealTimeNotifications.Properties;
+using Roblox.Platform.RealTimeNotifications.Properties;
 using StackExchange.Redis;
 namespace Roblox.Platform.RealTimeNotifications {
     /// <summary>

@@ -13,11 +13,15 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
+    <ProjectReference Include="..\..\..\Common\Roblox.Common\Roblox.Common.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>

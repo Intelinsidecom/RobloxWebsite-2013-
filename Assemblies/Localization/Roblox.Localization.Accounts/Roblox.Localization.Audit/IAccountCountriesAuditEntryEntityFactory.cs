@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Roblox.Platform.Localization.Accounts;
-namespace Roblox.Localization.Auditinternal {
+using Roblox.Localization.Accounts;
+namespace Roblox.Localization.Audit {
     interface IAccountCountriesAuditEntryEntityFactory
 
 {
@@ -37,7 +37,7 @@ namespace Roblox.Localization.Auditinternal {
 	IReadOnlyCollection<IAccountCountriesAuditEntryEntity> GetByAuditIdEnumerative(long auditId, int count, long? exclusiveStartId = null);
 
 	/// <summary>
-	/// Creates a new audit entry record based on the given <see cref="T:Roblox.Platform.Localization.Accounts.IAccountCountryEntity" />.
+	/// Creates a new audit entry record based on the given <see cref="T:Roblox.Localization.Accounts.IAccountCountryEntity" />.
 	/// </summary>
 	/// <param name="entity">The entity to base the audit on.</param>
 	/// <returns>The newly created <see cref="T:Roblox.Platform.Localization.Audit.IAccountCountriesAuditEntryEntity" />.</returns>

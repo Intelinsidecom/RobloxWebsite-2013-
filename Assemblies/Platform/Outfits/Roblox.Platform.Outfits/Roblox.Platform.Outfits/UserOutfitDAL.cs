@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
@@ -6,10 +6,10 @@ using System.Linq;
 using Roblox.Common;
 using Roblox.Data;
 using Roblox.MssqlDatabases;
-namespace Roblox.Platform.Outfitspublic {
-    class UserOutfitDAL
-
+namespace Roblox.Outfits
 {
+    public class UserOutfitDAL
+    {
 	public long ID { get; set; }
 
 	public long OutfitID { get; set; }
@@ -188,8 +188,6 @@ namespace Roblox.Platform.Outfitspublic {
 	{
 		return EntityHelper.GetEntityDALCollection(new DbInfo(_DbConnectionString, "UserOutfits_GetUserOutfitsByIDs"), ids, BuildDALCollection);
 	}
-}
-
-
+    }
 }
 

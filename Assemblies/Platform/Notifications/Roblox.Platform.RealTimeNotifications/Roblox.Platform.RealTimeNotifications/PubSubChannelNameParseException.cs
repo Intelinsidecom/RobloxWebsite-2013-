@@ -1,13 +1,11 @@
-﻿using System;
-namespace Roblox.Platform.RealTimeNotificationsinternal {
-    class PubSubChannelNameParseException : Exception
-
+using System;
+namespace Roblox.Platform.RealTimeNotifications
 {
-	public PubSubChannelNameParseException(string message)
-		: base(message)
-	{
-	}
-}
-
-
+    public class PubSubChannelNameParseException : Exception
+    {
+        public PubSubChannelNameParseException(string message)
+            : base(message)
+        {
+        }
+    }
 }

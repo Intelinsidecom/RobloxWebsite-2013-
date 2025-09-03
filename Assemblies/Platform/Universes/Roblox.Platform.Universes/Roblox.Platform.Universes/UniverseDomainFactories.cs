@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Roblox.CatalogItemChangePublisher;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Universes.Events;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 using Roblox.Universes.Client;
 
 namespace Roblox.Platform.Universes;
@@ -36,7 +36,7 @@ public class UniverseDomainFactories
 	/// The normal <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories" /> constructor
 	/// </summary>
 	/// <param name="universesClient"><see cref="T:Roblox.Universes.Client.IUniversesClient" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="logger"><see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <param name="catalogPublisher"></param>
 	/// <param name="placeFactory"><see cref="T:Roblox.Platform.Assets.IPlaceFactory" /></param>
@@ -50,7 +50,7 @@ public class UniverseDomainFactories
 	/// Specialized <see cref="T:Roblox.Platform.Universes.UniverseDomainFactories" /> constructor
 	/// </summary>
 	/// <param name="universesClient"><see cref="T:Roblox.Universes.Client.IUniversesClient" /></param>
-	/// <param name="textFilterClientV2"><see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" /></param>
+	/// <param name="textFilterClientV2"><see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" /></param>
 	/// <param name="catalogPublisher"></param>
 	/// <param name="universeEventsObserver">Inject a custom <see cref="T:Roblox.Platform.Universes.Events.IUniverseEventsObserver" /> for testing or a very good reason.</param>
 	/// <param name="placeFactory"><see cref="T:Roblox.Platform.Assets.IPlaceFactory" /></param>

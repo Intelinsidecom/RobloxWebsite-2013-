@@ -1,0 +1,12 @@
+{
+  "\\bRoblox\\.TextFilter\\b": "Roblox.Platform.TextFilter",
+  "\\bRoblox\\.TextFilter\\.Client\\b": "Roblox.Platform.TextFilter.Client",
+  "\\bIRoleSet\\b": "IRoleset",
+  "\\bIRoleSetReader\\b": "IRoleSetValidator",
+  "\\bIUserEmail\\b": "IAccountEmail",
+  "\\bCredentials\\b": "UserCredentials",
+  "\\bRoblox\\.Users\\.Client\\b": "Roblox.Platform.Users.Client",
+  "\\bRoblox\\.UserCacheMigrationSettings\\b": "Roblox.Platform.UserCacheMigrationSettings",
+  "\\bRoblox\\.ContentRatings\\b": "Roblox.Platform.ContentRatings",
+  "\\bRoblox\\.PremiumFeatures\\b": "Roblox.Platform.PremiumFeatures"
+}

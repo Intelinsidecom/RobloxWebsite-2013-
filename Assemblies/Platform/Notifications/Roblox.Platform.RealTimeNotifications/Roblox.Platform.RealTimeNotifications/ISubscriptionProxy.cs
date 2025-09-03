@@ -1,11 +1,9 @@
-﻿namespace Roblox.Platform.RealTimeNotificationspublic {
-    interface ISubscriptionProxy<in TKeyInput, in TSubscriptionId>
-
+namespace Roblox.Platform.RealTimeNotifications
 {
-	string Subscribe(TKeyInput key, TSubscriptionId uniqueSubscriptionId, bool isReconnect);
+    public interface ISubscriptionProxy<in TKeyInput, in TSubscriptionId>
+    {
+        string Subscribe(TKeyInput key, TSubscriptionId uniqueSubscriptionId, bool isReconnect);
 
-	void Unsubscribe(TKeyInput key, TSubscriptionId uniqueSubscriptionId);
-}
-
-
+        void Unsubscribe(TKeyInput key, TSubscriptionId uniqueSubscriptionId);
+    }
 }

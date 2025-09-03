@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.GameInstances.Clientpublic {
-    class CustomPlayerCountResult
+using System.Collections.Generic;
+namespace Roblox.Platform.GameInstances.Client {
+    public class CustomPlayerCountResult
 
 {
 	public IReadOnlyCollection<string> DimensionValues { get; set; }

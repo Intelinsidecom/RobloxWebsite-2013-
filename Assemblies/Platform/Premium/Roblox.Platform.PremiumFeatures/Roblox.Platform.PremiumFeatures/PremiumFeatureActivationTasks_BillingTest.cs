@@ -4,6 +4,7 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
+using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
     class PremiumFeatureActivationTasks_BillingTest : IRobloxEntity<long, PremiumFeatureActivationTasks_BillingTestDAL>, ICacheableObject<long>, ICacheableObject

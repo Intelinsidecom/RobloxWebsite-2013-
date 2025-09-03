@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Api = Roblox.Permissions.Client;
+using Api = Roblox.Platform.Permissions.Client;
 
 namespace Roblox.Platform.Permissions.Core;
 
@@ -12,9 +12,9 @@ public class PermissionGroupFactory : IPermissionGroupFactory
 	/// <summary>
 	/// Constructor for <see cref="T:Roblox.Platform.Permissions.Core.PermissionGroupFactory" />
 	/// </summary>
-	/// <param name="permissionsApiClient">An <see cref="T:Roblox.Permissions.Client.IPermissionsClient" /></param>
+	/// <param name="permissionsApiClient">An <see cref="T:Roblox.Platform.Permissions.Client.IPermissionsClient" /></param>
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="permissionsApiClient" /></exception>
-	public PermissionGroupFactory(Api.IPermissionsClient permissionsApiClient)
+	public PermissionGroupFactory(Roblox.Platform.Permissions.Client.IPermissionsClient permissionsApiClient)
 	{
 		_PermissionsApiClient = permissionsApiClient ?? throw new ArgumentNullException("permissionsApiClient");
 	}

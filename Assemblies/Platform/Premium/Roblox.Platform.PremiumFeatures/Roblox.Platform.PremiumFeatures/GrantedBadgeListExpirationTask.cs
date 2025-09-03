@@ -6,6 +6,8 @@ using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox;
+using Roblox.PremiumFeatures;
+
 namespace Roblox.Platform.PremiumFeatures
 {
     class GrantedBadgeListExpirationTask : IRobloxEntity<long, GrantedBadgeListExpirationTaskDAL>, ICacheableObject<long>, ICacheableObject, IParallelWorkTask

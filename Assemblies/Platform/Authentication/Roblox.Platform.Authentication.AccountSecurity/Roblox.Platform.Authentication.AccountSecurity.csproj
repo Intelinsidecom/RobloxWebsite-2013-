@@ -27,15 +27,15 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
+    <ProjectReference Include="..\..\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
+    <ProjectReference Include="..\..\Roblox.Platform\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\..\Counters\Roblox.Platform.EphemeralCounters\Roblox.Platform.EphemeralCounters.csproj">
       <Project>
       </Project>
     </ProjectReference>

@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -10,8 +10,8 @@ using System.Runtime.Versioning;
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 [assembly: AssemblyCompany("Roblox")]
 [assembly: AssemblyConfiguration("Release")]
-[assembly: AssemblyCopyright("Copyright © Roblox 2014")]
-[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Coordination, Roblox.Entities, Roblox.Instrumentation, Roblox.Platform.AssetsCore, Roblox.Time, Roblox.EventLog, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.MembershipCore, Roblox.MssqlDatabases, Roblox.Diagnostics, Roblox.Amazon.DynamoDb, Roblox.Amazon.Sns, Roblox.Common, Roblox.Redis, Roblox.LeasedLocks.Client, Roblox.RealTimeNotifications, Roblox.Caching, Roblox.EphemeralCounters, Roblox.Redis.Lru, Roblox.Locking, Roblox.Data, Roblox.FloodCheckers, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Platform.Devices, Roblox.Assets.Client, Roblox.TextFilter.Client, Roblox.Platform.Communication.Behavior, Roblox Server Class Library, Roblox.Platform.Membership, Roblox.Platform.Membership.Extensions, Roblox.Platform.Groups, Roblox.Platform.Assets, Roblox.Platform.GroupAssets, Roblox.Platform.Universes, Roblox.Platform.Social, Roblox.Platform.CloudEdit.Permissions, Roblox.Platform.TeamCreate\n\nORIGINAL CHANGE TRIGGERS\n\n")]
+[assembly: AssemblyCopyright("Copyright Â© Roblox 2014")]
+[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.Coordination, Roblox.Entities, Roblox.Instrumentation, Roblox.Platform.AssetsCore, Roblox.Time, Roblox.EventLog, Roblox.Sentinels, Roblox.Platform.Core, Roblox.Configuration, Roblox.Platform.MembershipCore, Roblox.MssqlDatabases, Roblox.Diagnostics, Roblox.Amazon.DynamoDb, Roblox.Amazon.Sns, Roblox.Common, Roblox.Redis, Roblox.LeasedLocks.Client, Roblox.RealTimeNotifications, Roblox.Caching, Roblox.EphemeralCounters, Roblox.Redis.Lru, Roblox.Locking, Roblox.Data, Roblox.FloodCheckers, Roblox.Amazon.Sqs, Roblox.Moderation, Roblox.Users, Roblox.Entities.Mssql, Roblox.Platform.Devices, Roblox.Assets.Client, Roblox.Platform.TextFilter.Client, Roblox.Platform.Communication.Behavior, Roblox Server Class Library, Roblox.Platform.Membership, Roblox.Platform.Membership.Extensions, Roblox.Platform.Groups, Roblox.Platform.Assets, Roblox.Platform.GroupAssets, Roblox.Platform.Universes, Roblox.Platform.Social, Roblox.Platform.CloudEdit.Permissions, Roblox.Platform.TeamCreate\n\nORIGINAL CHANGE TRIGGERS\n\n")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0")]
 [assembly: AssemblyProduct("Roblox.Platform.Chat")]

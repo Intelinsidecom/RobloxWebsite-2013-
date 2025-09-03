@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.ApiClientBase;
-using Api = Roblox.Permissions.Client;
+using Api = Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.MembershipCore;
@@ -26,7 +26,7 @@ public static class UserExtensions
     /// Gets Custom Lists for the <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" /> provided.
     /// </summary>
     /// <param name="user">The <see cref="T:Roblox.Platform.MembershipCore.IUserIdentifier" />.</param>
-    /// <param name="permissionsApiClient">The <see cref="T:Roblox.Permissions.Client.IPermissionsClient" /> client.</param>
+    /// <param name="permissionsApiClient">The <see cref="T:Roblox.Platform.Permissions.Client.IPermissionsClient" /> client.</param>
     /// <returns>An <see cref="T:System.Collections.IEnumerable" /> of lists.</returns>
     /// <exception cref="T:Roblox.Platform.Core.PlatformOperationUnavailableException">Thrown if the operation is not available, but may become available later.</exception>
     public static IEnumerable<ICustomList> GetCustomLists(this IUserIdentifier user, Api.IPermissionsClient permissionsApiClient)

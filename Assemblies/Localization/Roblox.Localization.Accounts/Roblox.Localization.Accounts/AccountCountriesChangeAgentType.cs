@@ -1,5 +1,5 @@
-﻿namespace Roblox.Localization.Accountspublic {
-    enum AccountCountriesChangeAgentType : byte
+﻿namespace Roblox.Localization.Accounts {
+    public enum AccountCountriesChangeAgentType : byte
 
 {
 	User,

@@ -6,7 +6,7 @@ using System.Xml;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Core;
 using Roblox.Platform.Outfits.Properties;
-using Roblox.Users.Properties;
+using Roblox.Platform.Users.Properties;
 
 namespace Roblox.Platform.Outfits;
 
@@ -160,7 +160,7 @@ public class BodyColorsXmlSerializer : IBodyColorsXmlSerializer
 	/// <inheritdoc />
 	public string UploadXmlDocument(XmlDocument bodyColorsXmlDocument)
 	{
-		ICreator creator = CreatorRef.CreateNewUserRef(Roblox.Users.Properties.Settings.Default.RobloxUserId).GetCreator();
+		ICreator creator = CreatorRef.CreateNewUserRef(Roblox.Platform.Users.Properties.Settings.Default.RobloxUserId).GetCreator();
 		using MemoryStream memoryStream = new MemoryStream();
 		using (XmlWriter xmlWriter = XmlWriter.Create(memoryStream))
 		{

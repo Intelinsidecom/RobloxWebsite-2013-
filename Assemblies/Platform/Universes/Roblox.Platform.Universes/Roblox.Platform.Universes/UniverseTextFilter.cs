@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Universes.Properties;
-using Roblox.TextFilter.Client;
-using Roblox.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client.Models.Common;
 
 namespace Roblox.Platform.Universes;
 
@@ -16,7 +16,7 @@ internal class UniverseTextFilter : IUniverseTextFilter
 	/// <summary>
 	/// Constructs an instance of <see cref="T:Roblox.Platform.Universes.UniverseTextFilter" />
 	/// </summary>
-	/// <param name="textFilterClientV2">A <see cref="T:Roblox.TextFilter.Client.ITextFilterClientV2" />.</param>
+	/// <param name="textFilterClientV2">A <see cref="T:Roblox.Platform.TextFilter.Client.ITextFilterClientV2" />.</param>
 	/// <exception cref="T:System.ArgumentNullException">
 	/// - <paramref name="textFilterClient" />
 	/// - <paramref name="textFilterClientV2" />

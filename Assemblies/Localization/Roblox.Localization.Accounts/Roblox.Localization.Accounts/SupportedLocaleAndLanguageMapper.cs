@@ -1,7 +1,7 @@
-﻿using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Core;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Platform.Core;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Core;
+namespace Roblox.Localization.Accounts {
     class SupportedLocaleAndLanguageMapper : ISupportedLocaleAndLanguageMapper
 
 {

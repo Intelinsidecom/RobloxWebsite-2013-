@@ -1,14 +1,14 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// Default implementation of <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" />.
+/// Default implementation of <see cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationRequest" />.
 /// </summary>
 public class KeywordSearchQueryValidationRequest : IKeywordSearchQueryValidationRequest
 {
-	/// <inheritdoc cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" />
+	/// <inheritdoc cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationRequest" />
 	public string Keyword { get; }
 
-	/// <inheritdoc cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" />
+	/// <inheritdoc cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationRequest" />
 	public ITextAuthor Author { get; }
 
 	/// <summary>

@@ -1,4 +1,4 @@
-﻿namespace Roblox.Marketinginternal {
+namespace Roblox.Marketing {
     interface IAccountBrowserTrackerEntityFactory
 
 {

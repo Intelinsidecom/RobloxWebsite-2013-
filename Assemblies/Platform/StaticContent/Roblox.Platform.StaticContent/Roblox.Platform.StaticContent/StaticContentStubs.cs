@@ -1,16 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Roblox.Platform.StaticContent.Properties
-{
-    public interface ISettings
-    {
-        TimeSpan StaticContentCacheExpiry { get; }
-        TimeSpan StaticContentDurableCacheExpiry { get; }
-        string ComponentSuffix { get; set; }
-        TimeSpan ComponentSuffixMaxAge { get; }
-    }
-}
+// Note: ISettings lives in Roblox.Platform.StaticContent.Properties (separate file). Do not redefine here.
 
 namespace Roblox.Web.StaticContent.Properties
 {
@@ -46,7 +37,7 @@ namespace Roblox.StaticContent.Client
 namespace Roblox.Web.StaticContent
 {
     using Roblox.Platform.StaticContent.Properties;
-    using Roblox.StaticContent.Client;
+    using Roblox.Platform.StaticContent.Client;
     using Roblox.Web.StaticContent.Properties;
 
     public enum StaticContentComponent

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
 using Roblox.Platform.Authentication;
 using Roblox.Platform.Core;
@@ -8,7 +8,7 @@ using Roblox.Platform.Membership.Commands.Properties;
 using Roblox.Platform.Membership.Entities;
 using Roblox.Platform.Membership.Events;
 using Roblox.Properties;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Membership.Commands;
 

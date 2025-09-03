@@ -1,14 +1,12 @@
-﻿namespace Roblox.Platform.RealTimeNotifications.Clientpublic {
-    enum PublishUserNotificationError
-
+namespace Roblox.Platform.RealTimeNotifications.Client
 {
+    public enum PublishUserNotificationError
+    {
 	Unknown = 1,
 	InvalidUser,
 	ErrorPublishingNotification,
 	InvalidRequest,
 	InvalidNotificationNamespace,
 	UserNotificationPublisherCreationException
-}
-
-
+    }
 }

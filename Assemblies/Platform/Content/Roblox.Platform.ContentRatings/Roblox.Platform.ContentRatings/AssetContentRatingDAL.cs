@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
 using Roblox.Common;
 using Roblox.Data;
+using Roblox.Platform.ContentRatings.Properties;
 
 namespace Roblox.Platform.ContentRatings
 {

@@ -1,7 +1,7 @@
 using Roblox.PremiumFeatures;
 namespace Roblox.Platform.PremiumFeatures
 {
-    interface IPremiumFeatureActivationTaskFactory
+    public interface IPremiumFeatureActivationTaskFactory
 
 {
     PremiumFeature RequestPremiumFeatureActivation(long accountId, int premiumFeatureId);

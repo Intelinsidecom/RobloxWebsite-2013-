@@ -1,14 +1,14 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching.Shared;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Email.User;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Platform.MembershipCore;
 using Roblox.Platform.TwoStepVerification.Entities;

@@ -1,5 +1,5 @@
 using System;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Devices;
 
 namespace Roblox.Web.Devices;

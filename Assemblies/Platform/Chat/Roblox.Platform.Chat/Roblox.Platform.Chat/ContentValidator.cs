@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Roblox.Http;
 using Roblox.Platform.Communication.Behavior;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-using Roblox.TextFilter.Client;
-using Roblox.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client.Models.Common;
 
 namespace Roblox.Platform.Chat;
 

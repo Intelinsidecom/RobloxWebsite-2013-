@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-namespace Roblox.Marketing.Core.Entitiesinternal {
+namespace Roblox.Marketing.Core.Entities {
     class Win10AppSignup : IRobloxEntity<long, Win10AppSignupDAL>, ICacheableObject<long>, ICacheableObject
 
 {

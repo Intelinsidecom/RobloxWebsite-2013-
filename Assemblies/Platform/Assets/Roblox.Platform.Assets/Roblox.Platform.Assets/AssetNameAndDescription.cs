@@ -1,6 +1,6 @@
 using Roblox.Platform.Membership;
-using Roblox.TextFilter;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Assets;
 
@@ -10,12 +10,12 @@ namespace Roblox.Platform.Assets;
 public class AssetNameAndDescription : IAssetNameAndDescription, INameAndDescription
 {
 	/// <summary>
-	/// The <see cref="T:Roblox.TextFilter.ITextAuthor" /> who is attempting to make the change.
+	/// The <see cref="T:Roblox.Platform.TextFilter.ITextAuthor" /> who is attempting to make the change.
 	/// </summary>
 	public ITextAuthor TextAuthor { get; }
 
 	/// <summary>
-	/// The <see cref="T:Roblox.TextFilter.Client.IClientTextAuthor" /> who is attempting to make the change.
+	/// The <see cref="T:Roblox.Platform.TextFilter.Client.IClientTextAuthor" /> who is attempting to make the change.
 	/// </summary>
 	public IClientTextAuthor ClientTextAuthor { get; }
 
@@ -36,11 +36,11 @@ public class AssetNameAndDescription : IAssetNameAndDescription, INameAndDescrip
 	/// <param name="name"></param>
 	/// <param name="description"></param>
 	public AssetNameAndDescription(IUser user, string name, string description)
-		: this(new Roblox.TextFilter.Client.TextAuthor
+		: this(new Roblox.Platform.TextFilter.Client.TextAuthor
 		{
 			Id = user.Id,
 			Name = user.Name,
-			IsUnder13 = user.IsUnder13
+			IsUnder13 = user.IsUnder13()
 		}, name, description)
 	{
 	}
@@ -56,11 +56,16 @@ public class AssetNameAndDescription : IAssetNameAndDescription, INameAndDescrip
 		TextAuthor = textAuthor;
 		Name = name;
 		Description = description;
-		ClientTextAuthor = new Roblox.TextFilter.Client.TextAuthor
+		bool isUnder13 = false;
+		if (textAuthor is IUser user)
+		{
+			isUnder13 = user.IsUnder13();
+		}
+		ClientTextAuthor = new Roblox.Platform.TextFilter.Client.TextAuthor
 		{
 			Id = textAuthor.Id,
 			Name = textAuthor.Name,
-			IsUnder13 = textAuthor.IsUnder13
+			IsUnder13 = isUnder13
 		};
 	}
 
@@ -75,6 +80,6 @@ public class AssetNameAndDescription : IAssetNameAndDescription, INameAndDescrip
 		ClientTextAuthor = clientTextAuthor;
 		Name = name;
 		Description = description;
-		TextAuthor = new Roblox.TextFilter.TextAuthor(clientTextAuthor.Id, clientTextAuthor.Name, clientTextAuthor.IsUnder13);
+		TextAuthor = new Roblox.Platform.TextFilter.TextAuthor(clientTextAuthor.Id, clientTextAuthor.Name, clientTextAuthor.IsUnder13);
 	}
 }

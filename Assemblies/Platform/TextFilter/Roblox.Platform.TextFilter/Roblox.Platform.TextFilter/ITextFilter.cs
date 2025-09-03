@@ -8,33 +8,33 @@ public interface ITextFilter
 	/// <summary>
 	/// Filters the given request for the given user.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
 	/// <returns>
-	/// An <see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
+	/// An <see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
 	/// </returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
 	ITextFilterRuleResult FilterText(IModeratedTextRequest request);
 
 	/// <summary>
 	/// Filters the given request for the given user.
 	/// Does not update the UserContext meaning that it will not respect vertical filtering.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
 	/// <returns>
-	/// An <see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
+	/// An <see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
 	/// </returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
 	ITextFilterRuleResult FilterTextNoContext(IModeratedTextRequest request);
 
 	/// <summary>
 	/// Filter the given request by the given author targeted at the given recipient.
 	/// An empty Author or Recipient will be treated either as a U13.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IModerateTextForRecipientRequest" /> containing the text, author and recipient.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IModerateTextForRecipientRequest" /> containing the text, author and recipient.</param>
 	/// <returns>
-	/// The <see cref="T:Roblox.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
+	/// The <see cref="T:Roblox.Platform.TextFilter.ITextFilterRuleResult" /> corresponding to the passed in <paramref request="request" />.
 	/// </returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException">Filtering is unavailable for some reason.</exception>
 	ITextFilterRuleResult FilterTextForRecipient(IModerateTextForRecipientRequest request);
 
 	/// <summary>
@@ -68,37 +68,37 @@ public interface ITextFilter
 	///     }
 	/// }
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IModeratedTextRequest" /> for the text to filter.</param>
 	/// <returns>
-	/// The <see cref="T:Roblox.TextFilter.ITextFilterResults" />.
+	/// The <see cref="T:Roblox.Platform.TextFilter.ITextFilterResults" />.
 	/// </returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	ITextFilterResults FilterLiveText(IModeratedTextRequest request);
 
 	/// <summary>
 	/// Validates the given search keyword for U13 and 13+.
 	/// </summary>
-	/// <param name="request">A <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the Keyword.</param>
+	/// <param name="request">A <see cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationRequest" /> containing the Keyword.</param>
 	/// <returns>
-	/// The <see cref="T:Roblox.TextFilter.IKeywordSearchQueryValidationResults" />.
+	/// The <see cref="T:Roblox.Platform.TextFilter.IKeywordSearchQueryValidationResults" />.
 	/// </returns>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	IKeywordSearchQueryValidationResults ValidateKeywordSearchQuery(IKeywordSearchQueryValidationRequest request);
 
 	/// <summary>
 	/// Validates the given text is allowed to be a username.
 	/// </summary>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	IUsernameValidationResult ValidateUsername(IUsernameValidationRequest request);
 
 	/// <summary>
 	/// Validate the given text is allowed to be an Object Name.
 	/// </summary>
-	/// <exception cref="T:Roblox.TextFilter.TextFilterOperationUnavailableException"></exception>
+	/// <exception cref="T:Roblox.Platform.TextFilter.TextFilterOperationUnavailableException"></exception>
 	IObjectNameValidationResult ValidateObjectName(IObjectNameValidationRequest request);
 
 	/// <summary>
-	/// Returns the <see cref="T:Roblox.TextFilter.ModerationLevel" /> based on the given Original Text and Filtered Text.
+	/// Returns the <see cref="T:Roblox.Platform.TextFilter.ModerationLevel" /> based on the given Original Text and Filtered Text.
 	/// </summary>
 	/// <param name="originalText">Original Text that was sent to be filtered</param>
 	/// <param name="filteredText">Text that has been filtered for comparison</param>

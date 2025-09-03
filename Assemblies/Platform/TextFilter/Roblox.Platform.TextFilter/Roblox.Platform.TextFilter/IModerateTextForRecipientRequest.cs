@@ -1,8 +1,8 @@
 ﻿namespace Roblox.Platform.TextFilter {
     /// <summary>
 
-/// A <see cref="T:Roblox.TextFilter.IModeratedTextRequest" /> that also includes recipient information in
-/// a <see cref="T:Roblox.TextFilter.ITextRecipient" />
+/// A <see cref="T:Roblox.Platform.TextFilter.IModeratedTextRequest" /> that also includes recipient information in
+/// a <see cref="T:Roblox.Platform.TextFilter.ITextRecipient" />
 /// </summary>
 public interface IModerateTextForRecipientRequest : IModeratedTextRequest
 {

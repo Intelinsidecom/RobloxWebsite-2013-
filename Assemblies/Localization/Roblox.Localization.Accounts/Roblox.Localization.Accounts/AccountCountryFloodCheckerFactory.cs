@@ -1,16 +1,16 @@
 ﻿using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Accounts.Properties;
+namespace Roblox.Localization.Accounts {
     class AccountCountryFloodCheckerFactory : IAccountCountryFloodCheckerFactory
 
 {
-	private const string _AccountCountryBuilderFullName = "Roblox.Platform.Localization.Accounts.AccountLocaleBuilder";
+	private const string _AccountCountryBuilderFullName = "Roblox.Localization.Accounts.AccountLocaleBuilder";
 
 	private const string _AccountCountrypdateFloodCheckerKeyPrefix = "AccountCountryUpdateFloodChecker_AccountId";
 
-	private const string _AccountLocaleAccessorFullName = "Roblox.Platform.Localization.Accounts.AccountCountryAccessor";
+	private const string _AccountLocaleAccessorFullName = "Roblox.Localization.Accounts.AccountCountryAccessor";
 
 	private readonly IFloodCheckerFactory<IFloodChecker> _FloodCheckerFactory;
 
@@ -27,7 +27,7 @@ namespace Roblox.Localization.Accountsinternal {
 
 	public IFloodChecker GetAccountCountryUpdateFloodChecker(long accountId)
 	{
-		return _FloodCheckerFactory.GetFloodChecker("Roblox.Platform.Localization.Accounts.AccountCountryAccessor", string.Format("{0}:{1}", "AccountCountryUpdateFloodChecker_AccountId", accountId), () => _Settings.AccountCountryUpdateForUserFloodCheckerLimit, () => _Settings.AccountCountryUpdateForUserFloodCheckerExpiry, () => true, () => false, _Logger);
+		return _FloodCheckerFactory.GetFloodChecker("Roblox.Localization.Accounts.AccountCountryAccessor", string.Format("{0}:{1}", "AccountCountryUpdateFloodChecker_AccountId", accountId), () => _Settings.AccountCountryUpdateForUserFloodCheckerLimit, () => _Settings.AccountCountryUpdateForUserFloodCheckerExpiry, () => true, () => false, _Logger);
 	}
 }
 

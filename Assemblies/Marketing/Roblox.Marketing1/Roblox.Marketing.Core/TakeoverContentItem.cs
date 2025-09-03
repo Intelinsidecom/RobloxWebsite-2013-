@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using Roblox.Platform.Core;
 using Roblox.Platform.Marketing.Core.Entities;
-namespace Roblox.Marketing.Coreinternal {
+namespace Roblox.Marketing.Core {
     class TakeoverContentItem : ITakeoverContentItem
 
 {

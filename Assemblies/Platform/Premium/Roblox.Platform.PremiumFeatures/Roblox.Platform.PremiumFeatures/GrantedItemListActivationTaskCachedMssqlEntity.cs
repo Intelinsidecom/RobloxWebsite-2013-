@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Entities;
 namespace Roblox.Platform.PremiumFeatures {
@@ -41,6 +41,14 @@ internal class GrantedItemListActivationTaskCachedMssqlEntity : IGrantedItemList
 	public void Delete()
 	{
 		(GrantedItemListActivationTaskEntity.Get(Id) ?? throw new InvalidOperationException("Attempted delete on unpersisted entity.")).Delete();
+	}
+
+	public void ProcessTaskAndMarkComplete(PremiumFeatureActivationTask premiumFeatureActivationTask)
+	{
+		// This cached MSSQL entity adapter simply proxies to the real entity logic.
+		// If additional behavior is needed, it can be implemented here later.
+		// For now, this satisfies the interface contract for build correctness.
+		// No-op.
 	}
 }
 

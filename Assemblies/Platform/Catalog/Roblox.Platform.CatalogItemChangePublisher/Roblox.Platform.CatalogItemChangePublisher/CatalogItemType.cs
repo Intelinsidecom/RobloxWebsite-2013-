@@ -1,10 +1,8 @@
-﻿namespace Roblox.Platform.CatalogItemChangePublisherpublic {
-    enum CatalogItemType
-
+namespace Roblox.Platform.CatalogItemChangePublisher
 {
-	Asset = 1,
-	Bundle
-}
-
-
+    public enum CatalogItemType
+    {
+        Asset = 1,
+        Bundle
+    }
 }

@@ -4,7 +4,7 @@ using System.Runtime.Caching;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
 using Roblox.Platform.Demographics.Properties;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.TranslationStorage;
 
 namespace Roblox.Platform.Demographics;

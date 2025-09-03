@@ -1,16 +1,16 @@
 ﻿using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts.Properties;
-namespace Roblox.Localization.Accountsinternal {
+using Roblox.Localization.Accounts.Properties;
+namespace Roblox.Localization.Accounts {
     class AccountLocaleFloodCheckerFactory : IAccountLocaleFloodCheckerFactory
 
 {
-	private const string _AccountLocaleBuilderFullName = "Roblox.Platform.Localization.Accounts.AccountLocaleBuilder";
+	private const string _AccountLocaleBuilderFullName = "Roblox.Localization.Accounts.AccountLocaleBuilder";
 
 	private const string _AccountLocaleUpdateFloodCheckerKeyPrefix = "AccountLocaleUpdateFloodChecker_AccountId";
 
-	private const string _AccountLocaleAccessorFullName = "Roblox.Platform.Localization.Accounts.AccountLocaleAccessor";
+	private const string _AccountLocaleAccessorFullName = "Roblox.Localization.Accounts.AccountLocaleAccessor";
 
 	private const string _AccountLocaleObservedLocaleUpdateFloodCheckerKeyPrefix = "AccountLocaleUpdateFloodCheckerOnObservedLocaleUpdate_AccountId";
 
@@ -29,12 +29,12 @@ namespace Roblox.Localization.Accountsinternal {
 
 	public IFloodChecker GetSupportedLocaleUpdateFloodChecker(long accountId)
 	{
-		return _FloodCheckerFactory.GetFloodChecker("Roblox.Platform.Localization.Accounts.AccountLocaleBuilder", string.Format("{0}:{1}", "AccountLocaleUpdateFloodChecker_AccountId", accountId), () => _Settings.AccountLocaleUpdateUserIdFloodCheckerLimit, () => _Settings.AccountLocaleUpdateUserIdFloodCheckerExpiry, () => true, () => false, _Logger);
+		return _FloodCheckerFactory.GetFloodChecker("Roblox.Localization.Accounts.AccountLocaleBuilder", string.Format("{0}:{1}", "AccountLocaleUpdateFloodChecker_AccountId", accountId), () => _Settings.AccountLocaleUpdateUserIdFloodCheckerLimit, () => _Settings.AccountLocaleUpdateUserIdFloodCheckerExpiry, () => true, () => false, _Logger);
 	}
 
 	public IFloodChecker GetObservedLocaleUpdateFloodChecker(long accountId)
 	{
-		return _FloodCheckerFactory.GetFloodChecker("Roblox.Platform.Localization.Accounts.AccountLocaleAccessor", string.Format("{0}:{1}", "AccountLocaleUpdateFloodCheckerOnObservedLocaleUpdate_AccountId", accountId), () => _Settings.AccountLocaleUpdateForObservedLocaleFloodCheckerLimit, () => _Settings.AccountLocaleUpdateForObservedLocaleFloodCheckerExpiry, () => true, () => false, _Logger);
+		return _FloodCheckerFactory.GetFloodChecker("Roblox.Localization.Accounts.AccountLocaleAccessor", string.Format("{0}:{1}", "AccountLocaleUpdateFloodCheckerOnObservedLocaleUpdate_AccountId", accountId), () => _Settings.AccountLocaleUpdateForObservedLocaleFloodCheckerLimit, () => _Settings.AccountLocaleUpdateForObservedLocaleFloodCheckerExpiry, () => true, () => false, _Logger);
 	}
 }
 

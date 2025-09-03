@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-using Roblox.PremiumFeatures.Properties;
+using Roblox.Platform.PremiumFeatures.Properties;
 namespace Roblox.Platform.PremiumFeatures {
     [ExcludeFromCodeCoverage]
 

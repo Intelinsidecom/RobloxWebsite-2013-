@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using Roblox.Billing.Providers;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 
 namespace Roblox.Billing;
 

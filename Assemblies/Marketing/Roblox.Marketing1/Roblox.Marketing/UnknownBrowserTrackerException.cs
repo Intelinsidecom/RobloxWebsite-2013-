@@ -1,5 +1,5 @@
-﻿using Roblox.Platform.Core;
-namespace Roblox.Marketingpublic {
+using Roblox.Platform.Core;
+namespace Roblox.Marketing {
     class UnknownBrowserTrackerException : PlatformException
 
 {

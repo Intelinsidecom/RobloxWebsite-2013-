@@ -3,7 +3,7 @@ using Roblox.Common.Properties;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Core;
-using Roblox.TranslationResources.Communication;
+using Roblox.Platform.TranslationResources.Communication;
 
 namespace Roblox.Platform.Email.Delivery;
 

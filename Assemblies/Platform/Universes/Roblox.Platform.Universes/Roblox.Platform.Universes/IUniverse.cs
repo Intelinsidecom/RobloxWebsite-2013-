@@ -1,5 +1,5 @@
-using System;
-using Roblox.TextFilter.Client;
+﻿using System;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Universes;
 

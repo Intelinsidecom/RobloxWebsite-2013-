@@ -6,7 +6,8 @@ using Roblox.Common;
 using Roblox.Data.Interfaces;
 using Roblox.Outfits;
 
-namespace Roblox.Platform.Outfits;
+namespace Roblox.Platform.Outfits
+{
 
 internal class BodyColorSet : IBodyColorSet
 {
@@ -64,6 +65,8 @@ internal class BodyColorSet : IBodyColorSet
 	{
 		return Roblox.Outfits.BodyColorSet.GetByHash(hash).Translate();
 	}
+}
+
 }
 
 // Merge-in of the source entity to avoid separate files.

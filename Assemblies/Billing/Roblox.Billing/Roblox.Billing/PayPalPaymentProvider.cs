@@ -10,10 +10,10 @@ using Roblox.Billing.Properties;
 using Roblox.Billing.Providers;
 using Roblox.Common;
 using Roblox.Demographics;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.PayPal.Client;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 

@@ -1,6 +1,6 @@
-﻿using Roblox.Platform.Localization.Core;
-using Roblox.TranslationResources;
-namespace Roblox.Localization.Accountspublic {
+﻿using Roblox.Localization.Core;
+using Roblox.Platform.TranslationResources;
+namespace Roblox.Localization.Accounts {
     static class TranslationResourceLocaleMapper
 
 {

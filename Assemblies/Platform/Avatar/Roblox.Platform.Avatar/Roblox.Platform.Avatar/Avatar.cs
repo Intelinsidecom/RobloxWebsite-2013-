@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
@@ -13,7 +13,7 @@ using Roblox.Platform.EventStream.WebEvents;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Membership.Extensions;
 using Roblox.Platform.Outfits;
-using Roblox.TextFilter.Client;
+using Roblox.Platform.TextFilter.Client;
 
 namespace Roblox.Platform.Avatar;
 

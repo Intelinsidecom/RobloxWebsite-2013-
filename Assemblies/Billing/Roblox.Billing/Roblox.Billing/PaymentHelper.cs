@@ -12,6 +12,7 @@ using Roblox.FloodCheckers;
 using Roblox.Instrumentation;
 using Roblox.Platform.Email.Delivery;
 using Roblox.PremiumFeatures;
+using Roblox.Platform.PremiumFeatures;
 
 namespace Roblox.Billing;
 
