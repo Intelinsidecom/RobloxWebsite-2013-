@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.Ownership.Client", "Roblox.Platform.Ownership.Client\Roblox.Platform.Ownership.Client.csproj", "{56E16B66-EBA6-4018-BACA-A34036F41046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.OwnershipV2.Client", "Roblox.Platform.OwnershipV2.Client\Roblox.Platform.OwnershipV2.Client.csproj", "{878AF78C-5EC3-4439-9085-167E8EF3FF30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.OwnershipV2", "Roblox.Platform.OwnershipV2\Roblox.Platform.OwnershipV2.csproj", "{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|x64.Build.0 = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Debug|x86.Build.0 = Debug|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|x64.ActiveCfg = Release|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|x64.Build.0 = Release|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|x86.ActiveCfg = Release|Any CPU
+		{56E16B66-EBA6-4018-BACA-A34036F41046}.Release|x86.Build.0 = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|x64.Build.0 = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Debug|x86.Build.0 = Debug|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|x64.ActiveCfg = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|x64.Build.0 = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|x86.ActiveCfg = Release|Any CPU
+		{878AF78C-5EC3-4439-9085-167E8EF3FF30}.Release|x86.Build.0 = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|x64.Build.0 = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC04ADA7-09B8-459B-AEDB-E1E3BAC13544}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
