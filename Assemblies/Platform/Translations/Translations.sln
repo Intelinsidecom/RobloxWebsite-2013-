@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.TranslationResources", "Roblox.Platform.TranslationResources\Roblox.Platform.TranslationResources.csproj", "{617CEBC4-A8FB-4A99-8E09-7750F3823741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.TranslationStorage.Client", "Roblox.Platform.TranslationStorage.Client\Roblox.Platform.TranslationStorage.Client.csproj", "{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.TranslationStorage", "Roblox.Platform.TranslationStorage\Roblox.Platform.TranslationStorage.csproj", "{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|x64.Build.0 = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Debug|x86.Build.0 = Debug|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|x64.ActiveCfg = Release|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|x64.Build.0 = Release|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|x86.ActiveCfg = Release|Any CPU
+		{617CEBC4-A8FB-4A99-8E09-7750F3823741}.Release|x86.Build.0 = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|x64.Build.0 = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{12B54D69-798D-4ADB-8F7B-863EAD80E8EA}.Release|x86.Build.0 = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|x64.Build.0 = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|x64.ActiveCfg = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|x64.Build.0 = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CC7D8B3-D07B-46BF-8589-5F0D955D428F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
