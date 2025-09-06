@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Permissions.Core;
+using Api = Roblox.Platform.Permissions.Client;
 
 namespace Roblox.Platform.AssetPermissions;
 
@@ -27,7 +28,7 @@ public static class PlaceExtensions
         throw new UnknownPlaceVisitationPermissionTypeException();
     }
 
-    public static IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> GetPlaceVisitationPermissionGroups(this IPlace place, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
+    public static IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> GetPlaceVisitationPermissionGroups(this IPlace place, Api.IPermissionsClient permissionsApiClient)
     {
         place.VerifyIsNotNull();
         return ActionTypeFactory.GetActionType("VisitPlace").GetPermissionGroups(place.Id, permissionsApiClient);

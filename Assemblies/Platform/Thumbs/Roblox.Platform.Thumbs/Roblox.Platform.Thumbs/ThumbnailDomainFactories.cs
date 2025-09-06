@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets;
@@ -7,12 +7,13 @@ using Roblox.Platform.Badges;
 using Roblox.Platform.Core;
 using Roblox.Platform.Thumbnails.Repository;
 using Roblox.Platform.Universes;
-using Roblox.Thumbnails.Client;
-using Roblox.Thumbnails.RequestValidation;
-using Roblox.Thumbs.Properties;
+using Roblox.Platform.Thumbnails.Client;
+using Roblox.Platform.Thumbnails.RequestValidation;
+using Roblox.Platform.Thumbs.Properties;
 using Roblox.Web.Thumbnails;
-namespace Roblox.Platform.Thumbspublic {
-    class ThumbnailDomainFactories : DomainFactoriesBase
+namespace Roblox.Platform.Thumbs
+{
+    public class ThumbnailDomainFactories : DomainFactoriesBase
 
 {
 	private ICounterRegistry _CounterRegistry;

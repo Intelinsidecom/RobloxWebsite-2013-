@@ -80,10 +80,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
     <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
       <Project>
       </Project>
@@ -125,10 +121,6 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
-      <Project>
-      </Project>
-    </ProjectReference>
-    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj">
       <Project>
       </Project>
     </ProjectReference>

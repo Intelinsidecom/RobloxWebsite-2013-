@@ -6,7 +6,7 @@ using Roblox.Platform.GameLocalization.Client;
 using Roblox.Platform.GameLocalization.Client.GameLocalizationSettings;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Events;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Universes;
 
 namespace Roblox.Platform.GameLocalization;
@@ -21,11 +21,21 @@ public class GameLocalizationSettingsAuthority : IGameLocalizationSettingsAuthor
 
 	private readonly IGameLocalizationChangeReporter _Reporter;
 
+	// Proxy to avoid referencing inaccessible LanguageFamilyIdentifier from Localization.Core
+	private sealed class LanguageFamilyIdentifierProxy : ILanguageFamilyIdentifier
+	{
+		public int Id { get; }
+		public LanguageFamilyIdentifierProxy(int id)
+		{
+			Id = id;
+		}
+	}
+
 	/// <summary>
 	/// Initializes a new instance of the <see cref="T:Roblox.Platform.GameLocalization.GameLocalizationSettingsAuthority" /> class.
 	/// </summary>
-	/// <param name="coreLocalizationAccessor">The <see cref="T:Roblox.Platform.Localization.Core.ICoreLocalizationAccessor" />.</param>
-	/// <param name="client">The <see cref="T:Roblox.GameLocalization.Client.IGameLocalizationSettingsClient" />.</param>
+	/// <param name="coreLocalizationAccessor">The <see cref="T:Roblox.Localization.Core.ICoreLocalizationAccessor" />.</param>
+	/// <param name="client">The <see cref="T:Roblox.Platform.GameLocalization.Client.IGameLocalizationSettingsClient" />.</param>
 	/// <param name="publisher">The <see cref="T:Roblox.Platform.GameLocalization.IGameLocalizationChangeEventsPublisher" />.</param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	public GameLocalizationSettingsAuthority(ICoreLocalizationAccessor coreLocalizationAccessor, IGameLocalizationSettingsClient client, IGameLocalizationChangeEventsPublisher publisher, ILogger logger)
@@ -107,6 +117,6 @@ public class GameLocalizationSettingsAuthority : IGameLocalizationSettingsAuthor
 		{
 			return null;
 		}
-		return _CoreLocalizationAccessor.GetLanguageFamily(new LanguageFamilyIdentifier(Convert.ToInt32(id.Value)));
+		return _CoreLocalizationAccessor.GetLanguageFamily(new LanguageFamilyIdentifierProxy(Convert.ToInt32(id.Value)));
 	}
 }

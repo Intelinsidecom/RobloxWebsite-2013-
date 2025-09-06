@@ -1,0 +1,4 @@
+{
+  "\\busing\\s+Roblox\\.Platform\\.EventStream\\.WebEvents\\s*;": "using Roblox.EventStream.WebEvents;",
+  "\\busing\\s+Roblox\\.Platform\\.EventStream\\s*;": "using Roblox.EventStream;"
+}

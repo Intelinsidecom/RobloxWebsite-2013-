@@ -1,8 +1,8 @@
 using System;
 using System.Drawing.Imaging;
-using Roblox.AssetMedia.Entities;
+using Roblox.Platform.AssetMedia.Entities;
 using Roblox.Platform.Core;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -27,7 +27,7 @@ public class PlaceIcon : IPlaceIcon
 		_PlaceIconThumbnailGetter = placeIconThumbnailGetter ?? throw new PlatformArgumentNullException("placeIconThumbnailGetter");
 	}
 
-	internal PlaceIcon(Roblox.AssetMedia.Entities.PlaceIcon placeIconEntity, IPlaceIconThumbnailGetter placeIconThumbnailGetter)
+	internal PlaceIcon(Roblox.Platform.AssetMedia.Entities.PlaceIcon placeIconEntity, IPlaceIconThumbnailGetter placeIconThumbnailGetter)
 	{
 		Id = placeIconEntity.ID;
 		PlaceId = placeIconEntity.PlaceID;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Roblox.FloodCheckers;
 using Roblox.Locking;
@@ -7,9 +7,10 @@ using Roblox.Platform.Avatar;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Outfits;
-using Roblox.Thumbnails.Client;
+using Roblox.Platform.Thumbnails.Client;
 using Roblox.WebsiteSettings.Properties;
-namespace Roblox.Platform.Thumbspublic {
+namespace Roblox.Platform.Thumbs
+{
     class AvatarThumbnail : DomainObjectBase<ThumbnailDomainFactories>, IAvatarThumbnail
 
 {

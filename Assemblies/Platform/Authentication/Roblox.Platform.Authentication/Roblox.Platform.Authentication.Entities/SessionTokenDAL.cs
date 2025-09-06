@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
@@ -9,7 +9,7 @@ using Roblox.MssqlDatabases;
 namespace Roblox.Platform.Authentication.Entities;
 
 [ExcludeFromCodeCoverage]
-internal class SessionTokenDAL
+public class SessionTokenDAL
 {
 	private const RobloxDatabase _Database = RobloxDatabase.RobloxAuthentication;
 

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Roblox.Billing;
 using Roblox.Billing.Business_Logic_Layer;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Platform.Billing;
 

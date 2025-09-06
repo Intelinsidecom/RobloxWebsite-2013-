@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
-using Roblox.GameLocalization.Client;
-using Roblox.GameLocalization.Client.AutoLocalization;
-using Roblox.GameLocalization.Client.GameLocalizationRoles;
+using Roblox.Platform.GameLocalization.Client;
+using Roblox.Platform.GameLocalization.Client.AutoLocalization;
+using Roblox.Platform.GameLocalization.Client.GameLocalizationRoles;
 using Roblox.InGameContentTables.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Authorization.Properties;

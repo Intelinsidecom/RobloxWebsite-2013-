@@ -1,13 +1,8 @@
-﻿namespace Roblox.Platform.Thumbspublic {
-    interface IThumbnailDependenciesInvalidator
-
+namespace Roblox.Platform.Thumbs
 {
-	ThumbnailDomainFactories DomainFactories { get; }
-
-	void AddAssetIdToTemporaryThumbnailInvalidationSkipList(long assetId);
-
-	void Register();
-}
-
-
+    public interface IThumbnailDependenciesInvalidator
+    {
+        void AddAssetIdToTemporaryThumbnailInvalidationSkipList(long assetId);
+        void Register();
+    }
 }

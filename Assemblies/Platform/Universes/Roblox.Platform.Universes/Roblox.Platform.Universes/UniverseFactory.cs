@@ -94,7 +94,7 @@ internal class UniverseFactory : IUniverseFactory
 	[Obsolete("Please use GetCreatorUniverses instead.")]
 	public IEnumerable<IUniverse> GetCreatorUniversesPaged(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, int page, out long totalCount)
 	{
-		PagedResult<long, ClientUniverse> universePagedResult = _Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, (int?)page, false);
+		var universePagedResult = _Client.GetCreatorUniverses(creatorType.ToString(), creatorTargetId, (int?)page, false);
 		IEnumerable<IUniverse> result = universePagedResult.PageItems.Select(ConvertClientToPlatformUniverse);
 		totalCount = universePagedResult.Count;
 		return result;
@@ -120,7 +120,7 @@ internal class UniverseFactory : IUniverseFactory
 
 	public IEnumerable<IUniverse> GetCreatorPublicUniversesPaged(Roblox.Platform.Core.CreatorType creatorType, long creatorTargetId, int page, out long totalCount)
 	{
-		PagedResult<long, ClientUniverse> universePagedResult = _Client.GetCreatorPublicUniversesPaged(creatorType.ToString(), creatorTargetId, (int?)page, false);
+		var universePagedResult = _Client.GetCreatorPublicUniversesPaged(creatorType.ToString(), creatorTargetId, (int?)page, false);
 		IEnumerable<IUniverse> result = universePagedResult.PageItems.Select(ConvertClientToPlatformUniverse);
 		totalCount = universePagedResult.Count;
 		return result;
@@ -224,7 +224,7 @@ internal class UniverseFactory : IUniverseFactory
 	[Obsolete("Please use GetUniversePlaces, or GetUniverseCreationPlaces instead.")]
 	public IEnumerable<long> GetUniversePlaceIdsPaged(long universeId, int page, out long totalCount, bool isUniverseCreation)
 	{
-		PagedResult<long, long> pagedResult = _Client.GetUniversePlaces(universeId, (int?)page, isUniverseCreation);
+		var pagedResult = _Client.GetUniversePlaces(universeId, (int?)page, isUniverseCreation);
 		totalCount = pagedResult.Count;
 		return pagedResult.PageItems.ToArray();
 	}
@@ -232,7 +232,7 @@ internal class UniverseFactory : IUniverseFactory
 	[Obsolete("Please use GetUniversePlaces, or GetUniverseCreationPlaces instead.")]
 	public IEnumerable<IPlace> GetUniversePlacesPaged(long universeId, int page, out long totalCount, bool isUniverseCreation)
 	{
-		PagedResult<long, long> pagedResult = _Client.GetUniversePlaces(universeId, (int?)page, isUniverseCreation);
+		var pagedResult = _Client.GetUniversePlaces(universeId, (int?)page, isUniverseCreation);
 		totalCount = pagedResult.Count;
 		return pagedResult.PageItems.ToArray().Select(_UniverseDomainFactories.PlaceFactory.Get).ToArray();
 	}

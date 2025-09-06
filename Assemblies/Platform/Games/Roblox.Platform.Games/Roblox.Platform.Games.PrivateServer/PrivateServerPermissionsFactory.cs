@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.Permissions.Client;
+using PermissionsClient = Roblox.Platform.Permissions.Client.IPermissionsClient;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Groups;
 using Roblox.Platform.Membership;
@@ -26,7 +26,7 @@ public class PrivateServerPermissionsFactory : IPrivateServerPermissionsFactory
 
 	private static readonly IReadOnlyCollection<long> _EmptyClanIdsCollection = new List<long>();
 
-	internal IPermissionsClient _PermissionsClient { get; }
+	internal PermissionsClient _PermissionsClient { get; }
 
 	internal PrivateServerDomainFactories _PrivateServerDomainFactories { get; }
 
@@ -43,12 +43,12 @@ public class PrivateServerPermissionsFactory : IPrivateServerPermissionsFactory
 	/// <param name="privateServerDomainFactories">A <see cref="T:Roblox.Platform.Games.PrivateServer.PrivateServerDomainFactories" /></param>
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="permissionsClient" /></exception>
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="privateServerDomainFactories" /></exception>
-	public PrivateServerPermissionsFactory(IPermissionsClient permissionsClient, PrivateServerDomainFactories privateServerDomainFactories)
+	public PrivateServerPermissionsFactory(PermissionsClient permissionsClient, PrivateServerDomainFactories privateServerDomainFactories)
 		: this(permissionsClient, privateServerDomainFactories, new PermissionGroupFactory(permissionsClient), new CustomListFactory(permissionsClient), new ActionFactory(permissionsClient))
 	{
 	}
 
-	internal PrivateServerPermissionsFactory(IPermissionsClient permissionsClient, PrivateServerDomainFactories privateServerDomainFactories, IPermissionGroupFactory permissionGroupFactory, ICustomListFactory customListFactory, ActionFactory actionFactory)
+	internal PrivateServerPermissionsFactory(PermissionsClient permissionsClient, PrivateServerDomainFactories privateServerDomainFactories, IPermissionGroupFactory permissionGroupFactory, ICustomListFactory customListFactory, ActionFactory actionFactory)
 	{
 		_PermissionsClient = permissionsClient ?? throw new ArgumentNullException("permissionsClient");
 		_PrivateServerDomainFactories = privateServerDomainFactories ?? throw new ArgumentNullException("privateServerDomainFactories");

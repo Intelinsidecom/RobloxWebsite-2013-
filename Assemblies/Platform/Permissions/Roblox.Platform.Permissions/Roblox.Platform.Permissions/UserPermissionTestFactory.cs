@@ -1,9 +1,9 @@
 using System;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Authentication;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Groups;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Permissions.Core;
 using Roblox.Platform.Permissions.Properties;

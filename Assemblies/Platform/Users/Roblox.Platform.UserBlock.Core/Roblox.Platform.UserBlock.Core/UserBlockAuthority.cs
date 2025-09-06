@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Caching.Shared;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Permissions.Core;
 using Roblox.Platform.UserBlock.Core.Properties;

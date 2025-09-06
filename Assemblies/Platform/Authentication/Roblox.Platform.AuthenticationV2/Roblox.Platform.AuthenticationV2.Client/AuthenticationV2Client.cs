@@ -1,5 +1,5 @@
-﻿using System;
-using Roblox.AuthenticationV2.Client.Properties;
+using System;
+using Roblox.Platform.AuthenticationV2.Client.Properties;
 using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Instrumentation;

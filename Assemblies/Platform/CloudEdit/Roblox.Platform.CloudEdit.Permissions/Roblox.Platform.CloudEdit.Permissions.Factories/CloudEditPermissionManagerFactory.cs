@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Roblox.ApiClientBase;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.CloudEdit.Permissions.Exceptions;
 using Roblox.Platform.CloudEdit.Permissions.Implementation;
 using Roblox.Platform.CloudEdit.Permissions.Properties;

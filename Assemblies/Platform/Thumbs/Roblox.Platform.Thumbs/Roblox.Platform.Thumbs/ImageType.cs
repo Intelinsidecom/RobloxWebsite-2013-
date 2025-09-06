@@ -1,5 +1,6 @@
-﻿namespace Roblox.Platform.Thumbspublic {
-    enum ImageType
+namespace Roblox.Platform.Thumbs
+{
+    public enum ImageType
 
 {
 	ItemSmall,

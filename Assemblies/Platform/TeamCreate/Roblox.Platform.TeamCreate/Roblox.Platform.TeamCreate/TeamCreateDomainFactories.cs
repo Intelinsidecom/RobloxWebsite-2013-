@@ -2,7 +2,6 @@ using System.Diagnostics.CodeAnalysis;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.PermissionResolution.Client;
-using Roblox.Permissions.Client;
 using Roblox.Platform.Assets;
 using Roblox.Platform.CloudEdit.Permissions;
 using Roblox.Platform.CloudEdit.Permissions.Factories;
@@ -56,13 +55,13 @@ public class TeamCreateDomainFactories : DomainFactoriesBase
 	/// <param name="universePermissionsVerifier">The <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier" />.</param>
 	/// <param name="friendshipFactory">The <see cref="T:Roblox.Platform.Social.IFriendshipFactory" />.</param>
 	/// <param name="userPermissionsChecker">The <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker" />.</param>
-	/// <param name="permissionsClient">The <see cref="T:Roblox.Permissions.Client.IPermissionsClient" />.</param>
+	/// <param name="permissionsClient">The <see cref="T:Roblox.Platform.Permissions.Client.IPermissionsClient" />.</param>
 	/// <param name="systemMessageSender">The <see cref="T:Roblox.Platform.Social.Messages.ISystemMessageSender" />.</param>
 	/// <param name="placeFactory">The <see cref="T:Roblox.Platform.Assets.IPlaceFactory" />.</param>
 	/// <param name="permissionResolutionClient">The <see cref="T:Roblox.PermissionResolution.Client.IPermissionResolutionClient" />.</param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
-	public TeamCreateDomainFactories(ITeamCreateClient teamCreateClient, IUniverseFactory universeFactory, IUserFactory userFactory, IUniversePermissionsVerifier universePermissionsVerifier, IFriendshipFactory friendshipFactory, IUserPermissionsChecker userPermissionsChecker, IPermissionsClient permissionsClient, ISystemMessageSender systemMessageSender, IPlaceFactory placeFactory, IPermissionResolutionClient permissionResolutionClient, ILogger logger, ICounterRegistry counterRegistry)
+	public TeamCreateDomainFactories(ITeamCreateClient teamCreateClient, IUniverseFactory universeFactory, IUserFactory userFactory, IUniversePermissionsVerifier universePermissionsVerifier, IFriendshipFactory friendshipFactory, IUserPermissionsChecker userPermissionsChecker, Roblox.Platform.Permissions.Client.IPermissionsClient permissionsClient, ISystemMessageSender systemMessageSender, IPlaceFactory placeFactory, IPermissionResolutionClient permissionResolutionClient, ILogger logger, ICounterRegistry counterRegistry)
 		: this(teamCreateClient, universeFactory, userFactory, universePermissionsVerifier, friendshipFactory, userPermissionsChecker, permissionsClient, systemMessageSender, placeFactory, new TeamCreateEventsPublisher(logger, counterRegistry), permissionResolutionClient, logger, counterRegistry)
 	{
 	}
@@ -76,14 +75,14 @@ public class TeamCreateDomainFactories : DomainFactoriesBase
 	/// <param name="universePermissionsVerifier">The <see cref="T:Roblox.Platform.Universes.IUniversePermissionsVerifier" />.</param>
 	/// <param name="friendshipFactory">The <see cref="T:Roblox.Platform.Social.IFriendshipFactory" />.</param>
 	/// <param name="userPermissionsChecker">The <see cref="T:Roblox.Platform.Permissions.IUserPermissionsChecker" />.</param>
-	/// <param name="permissionsClient">The <see cref="T:Roblox.Permissions.Client.IPermissionsClient" />.</param>
+	/// <param name="permissionsClient">The <see cref="T:Roblox.Platform.Permissions.Client.IPermissionsClient" />.</param>
 	/// <param name="systemMessageSender">The <see cref="T:Roblox.Platform.Social.Messages.ISystemMessageSender" />.</param>
 	/// <param name="placeFactory">The <see cref="T:Roblox.Platform.Assets.IPlaceFactory" />.</param>
 	/// <param name="teamCreateEventsObserver">The <see cref="T:Roblox.Platform.TeamCreate.Events.ITeamCreateEventsObserver" />.</param>
 	/// <param name="permissionResolutionClient">The <see cref="T:Roblox.PermissionResolution.Client.IPermissionResolutionClient" />.</param>
 	/// <param name="logger">The <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	/// <param name="counterRegistry">the counter registry (used by the <see cref="T:Roblox.Instrumentation.ICounterReporter" /> for telemetry)</param>
-	public TeamCreateDomainFactories(ITeamCreateClient teamCreateClient, IUniverseFactory universeFactory, IUserFactory userFactory, IUniversePermissionsVerifier universePermissionsVerifier, IFriendshipFactory friendshipFactory, IUserPermissionsChecker userPermissionsChecker, IPermissionsClient permissionsClient, ISystemMessageSender systemMessageSender, IPlaceFactory placeFactory, ITeamCreateEventsObserver teamCreateEventsObserver, IPermissionResolutionClient permissionResolutionClient, ILogger logger, ICounterRegistry counterRegistry)
+	public TeamCreateDomainFactories(ITeamCreateClient teamCreateClient, IUniverseFactory universeFactory, IUserFactory userFactory, IUniversePermissionsVerifier universePermissionsVerifier, IFriendshipFactory friendshipFactory, IUserPermissionsChecker userPermissionsChecker, Roblox.Platform.Permissions.Client.IPermissionsClient permissionsClient, ISystemMessageSender systemMessageSender, IPlaceFactory placeFactory, ITeamCreateEventsObserver teamCreateEventsObserver, IPermissionResolutionClient permissionResolutionClient, ILogger logger, ICounterRegistry counterRegistry)
 	{
 		if (teamCreateClient == null)
 		{

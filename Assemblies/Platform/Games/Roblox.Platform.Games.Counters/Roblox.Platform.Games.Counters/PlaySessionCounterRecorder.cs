@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.Currency.Client;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.Currency.Client;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Avatar;

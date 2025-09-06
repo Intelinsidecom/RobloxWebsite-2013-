@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using Roblox.EventLog;
-using Roblox.GameLocalization.Client;
-using Roblox.GameLocalization.Client.AutoLocalization;
-using Roblox.GameLocalization.Client.GameLocalizationRoles;
+using Roblox.Platform.GameLocalization.Client;
+using Roblox.Platform.GameLocalization.Client.AutoLocalization;
+using Roblox.Platform.GameLocalization.Client.GameLocalizationRoles;
 using Roblox.InGameContentTables.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Authorization.Properties;
@@ -213,7 +213,7 @@ internal class GroupOwnedTableAuthorizer : IGameLocalizationAuthorizer
 		try
 		{
 			IUser user = actor.Actor as IUser;
-			if (group.GetGroupRoleSetByUserId(user).HasPermission(GroupRoleSetPermissionType.CanManageGroupGames))
+			if (group.GetGroupRoleSetByUserId(user).HasPermission(Roblox.Platform.Groups.GroupRoleSetPermissionType.CanManageGroupGames))
 			{
 				return true;
 			}

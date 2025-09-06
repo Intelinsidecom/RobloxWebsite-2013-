@@ -7478,7 +7478,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -7597,7 +7597,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",

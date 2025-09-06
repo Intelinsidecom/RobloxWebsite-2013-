@@ -1,4 +1,3 @@
-﻿using System.Net;
 namespace Roblox.Platform.AuthenticationV2 {
     /// <summary>
 
@@ -12,7 +11,7 @@ public interface IIPAddressHasher
 	/// <param name="ip">The <see cref="T:System.Net.IPAddress" /> to hash.</param>
 	/// <returns>A Base64 encoded SHA256 hash of <paramref name="ip" /></returns>
 	/// <exception cref="T:System.ArgumentNullException"><paramref name="ip" /></exception>
-	string SHA256(IPAddress ip);
+	string SHA256(System.Net.IPAddress ip);
 }
 
 

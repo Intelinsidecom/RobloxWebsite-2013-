@@ -1,12 +1,10 @@
-﻿namespace Roblox.Platform.Thumbspublic {
-    interface IAssetAudioPropertyProvider
-
+namespace Roblox.Platform.Thumbs
 {
-	/// <summary>
-	/// Get value of the property "AudioPlaybackEnabled"
-	/// </summary>
-	bool GetAudioPlaybackEnabledValue();
-}
-
-
+    public interface IAssetAudioPropertyProvider
+    {
+        /// <summary>
+        /// Get value of the property "AudioPlaybackEnabled"
+        /// </summary>
+        bool GetAudioPlaybackEnabledValue();
+    }
 }

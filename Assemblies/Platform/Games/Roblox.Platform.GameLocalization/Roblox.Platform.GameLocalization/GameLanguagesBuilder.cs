@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Authorization;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Universes;
 
 namespace Roblox.Platform.GameLocalization;

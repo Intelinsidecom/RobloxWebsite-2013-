@@ -1,7 +1,7 @@
 using Roblox.EventLog;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Outfits;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Avatar.Notifications;
 

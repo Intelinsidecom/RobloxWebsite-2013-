@@ -1,5 +1,5 @@
 using System;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Authentication;
 using Roblox.Platform.Email.User;
 

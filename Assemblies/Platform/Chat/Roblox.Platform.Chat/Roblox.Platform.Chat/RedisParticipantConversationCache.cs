@@ -29,7 +29,7 @@ internal class RedisParticipantConversationCache
 
 	private readonly ILogger _Logger;
 
-	private readonly Random _Random = new Random();
+	private readonly System.Random _Random = new System.Random();
 
 	private readonly object _RandomLock = new object();
 

@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Net;
 using System.Web;
-using Roblox.AuthenticationV2.Client;
-using Roblox.AuthenticationV2.Properties;
+using Roblox.Platform.AuthenticationV2.Client;
+using Roblox.Platform.AuthenticationV2.Properties;
 using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Http.Client;
@@ -60,9 +60,6 @@ public class AuthenticationV2Synchronizer : IAuthenticationV2Synchronizer
 		_RoleSetValidator = roleSetValidator ?? throw new ArgumentNullException("roleSetValidator");
 		_WebAuthenticator = webAuthenticator ?? throw new ArgumentNullException("webAuthenticator");
 		_IPAddressHasher = ipAddressHasher ?? throw new ArgumentNullException("ipAddressHasher");
-		_WebAuthenticator.OnRobloxUserSessionDestroyed += DeleteRobloxUserSession;
-		_WebAuthenticator.OnUserSignedOutFromAllSessions += DeleteAllRobloxUserSessions;
-		_WebAuthenticator.OnRobloxUserSessionRequiresSynchronization += SyncRobloxUserSession;
 	}
 
 	/// <inheritdoc />
@@ -70,8 +67,12 @@ public class AuthenticationV2Synchronizer : IAuthenticationV2Synchronizer
 	{
 		if (request != null && response != null)
 		{
-			CookieValidationStatus cookieValidationStatus;
-			RobloxAuthenticationCookie authCookie = RobloxAuthenticationCookie.GetCurrent(out cookieValidationStatus);
+            CookieValidationStatus cookieValidationStatus = CookieValidationStatus.CookieRetrievalFailed;
+            RobloxAuthenticationCookie authCookie = RobloxAuthenticationCookie.GetCurrent();
+            if (authCookie != null)
+            {
+                cookieValidationStatus = CookieValidationStatus.Success;
+            }
 			if (authCookie != null && cookieValidationStatus == CookieValidationStatus.Success && !request.Cookies.AllKeys.ToList().Contains(_Settings.AuthenticationV2CookieName) && !response.Cookies.AllKeys.ToList().Contains(_Settings.AuthenticationV2CookieName))
 			{
 				SyncRobloxUserSession(authCookie);
@@ -117,13 +118,13 @@ public class AuthenticationV2Synchronizer : IAuthenticationV2Synchronizer
 			_AuthenticationV2Telemetry.Increment(Counter.SyncRobloxUserSession, Instance.SessionWithoutExpiration);
 			return;
 		}
-		if (!IPAddress.TryParse(authCookie.IP, out var ipAddress))
-		{
-			_AuthenticationV2Telemetry.Increment(Counter.SyncRobloxUserSession, Instance.BadIpAddress);
-			return;
-		}
-		TimeSpan timeToLive = _WebAuthenticator.GetTimeToLiveForSessionType(authCookie.SessionType);
-		string ipAddressHash = _IPAddressHasher.SHA256(ipAddress);
+		        if (!System.Net.IPAddress.TryParse(authCookie.IP, out var ipAddress))
+        {
+            _AuthenticationV2Telemetry.Increment(Counter.SyncRobloxUserSession, Instance.BadIpAddress);
+            return;
+        }
+        TimeSpan timeToLive = _WebAuthenticator.GetTimeToLiveForSessionType(authCookie.SessionType);
+        string ipAddressHash = _IPAddressHasher.SHA256(ipAddress);
 		try
 		{
 			string encodedJwt = _AuthenticationV2Client.SyncRobloxUserSession(_Settings.RobloxUserClaimType, user.Id.ToString(), session.Token, session.Expiration.Value, ipAddressHash, timeToLive);

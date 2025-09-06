@@ -1,5 +1,5 @@
-using System.IO;
-using Roblox.Platform.Localization.Core;
+﻿using System.IO;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Universes;
 

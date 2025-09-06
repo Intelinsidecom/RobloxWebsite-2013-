@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Web;
 using Roblox.Common;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Authentication;
 using Roblox.FloodCheckers;

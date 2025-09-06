@@ -1,4 +1,4 @@
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 
 namespace Roblox.Platform.Captcha;
 

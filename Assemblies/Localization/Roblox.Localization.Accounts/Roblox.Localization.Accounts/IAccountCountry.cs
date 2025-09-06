@@ -1,6 +1,6 @@
 using Roblox.Platform.Demographics;
 namespace Roblox.Localization.Accounts {
-    interface IAccountCountry
+    public interface IAccountCountry
 
 {
 	/// <summary>

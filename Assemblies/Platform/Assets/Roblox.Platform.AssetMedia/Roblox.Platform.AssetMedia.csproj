@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.AssetMedia</AssemblyName>
@@ -123,6 +123,10 @@
       <Project>
       </Project>
     </ProjectReference>
+    <ProjectReference Include="..\\..\\Thumbs\\Roblox.Platform.Thumbs\\Roblox.Platform.Thumbs.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
     <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
       <Project>
       </Project>
@@ -140,6 +144,8 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0">
+      <Aliases>ConfMan</Aliases>
+    </PackageReference>
   </ItemGroup>
 </Project>

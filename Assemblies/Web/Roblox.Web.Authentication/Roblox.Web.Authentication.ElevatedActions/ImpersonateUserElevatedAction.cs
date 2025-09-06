@@ -5,7 +5,7 @@ using Roblox.EventLog;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Membership;
 using Roblox.Properties;
-using Roblox.Users.Properties;
+using Roblox.Platform.Users.Properties;
 using Roblox.Web.Authentication.Properties;
 using Roblox.Web.ElevatedActions.Base;
 using Roblox.Web.ElevatedActions.BLL;
@@ -64,6 +64,6 @@ public class ImpersonateUserElevatedAction : RobloxElevatedActionBase
 		{
 			return false;
 		}
-		return _TargetUser.AccountId != Roblox.Users.Properties.Settings.Default.RobloxUserId;
+		return _TargetUser.AccountId != Roblox.Platform.Users.Properties.Settings.Default.RobloxUserId;
 	}
 }

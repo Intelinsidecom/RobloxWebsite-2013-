@@ -1,4 +1,4 @@
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.Avatar;
 using Roblox.Platform.Core;

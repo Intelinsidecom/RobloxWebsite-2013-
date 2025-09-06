@@ -9,7 +9,7 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Devices;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Universes;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Chat.Events;
 

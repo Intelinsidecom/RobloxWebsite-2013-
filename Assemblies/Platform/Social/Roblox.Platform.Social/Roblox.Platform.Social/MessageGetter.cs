@@ -172,7 +172,7 @@ public class MessageGetter
 		{
 			return false;
 		}
-		if (!(new Random().NextDouble() <= UnreadMessagesCounterVerificationPercentage))
+		if (!(new System.Random().NextDouble() <= UnreadMessagesCounterVerificationPercentage))
 		{
 			return unreadMessagesCounter.Value <= UnreadMessagesCounterAutoSyncThreshold;
 		}

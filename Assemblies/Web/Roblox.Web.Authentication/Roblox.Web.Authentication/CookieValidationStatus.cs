@@ -1,6 +1,6 @@
 namespace Roblox.Web.Authentication;
 
-internal enum CookieValidationStatus
+public enum CookieValidationStatus
 {
 	CookieRetrievalFailed = 0,
 	CookieVersionMismatch = 1,

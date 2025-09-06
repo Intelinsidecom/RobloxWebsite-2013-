@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 

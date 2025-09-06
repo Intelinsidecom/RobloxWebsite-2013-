@@ -6,7 +6,7 @@ namespace Roblox.Platform.GroupAssets;
 
 public static class AssetExtensions
 {
-	public static long GetCreatorAgentId(this IAsset asset, IGroupFactory factory)
+	public static long GetCreatorAgentId(this Roblox.Platform.Assets.IAsset asset, IGroupFactory factory)
 	{
 		asset.VerifyIsNotNull();
 		if (asset.CreatorType == Roblox.Platform.Assets.CreatorType.Group)

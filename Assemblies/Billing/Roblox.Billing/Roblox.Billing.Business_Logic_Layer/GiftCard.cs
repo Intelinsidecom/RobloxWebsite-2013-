@@ -424,7 +424,7 @@ public class GiftCard : IRobloxEntity<int, GiftCardDAL>, ICacheableObject<int>, 
 		{
 			return null;
 		}
-		int randomPostfix = new Random().Next(10, 99);
+		int randomPostfix = new System.Random().Next(10, 99);
 		return (id * _RedemptionCodeSaltPrime % _RedemptionCodeBoundingPrime + _RedemptionCodeBoundingPrime).ToString().ToString() + randomPostfix;
 	}
 

@@ -265,7 +265,7 @@ internal class EmoteConfigurationRedisCache : IEmoteConfigurationCache
 			new HashEntry("Id", entity.Id),
 			new HashEntry("AssetId", entity.AssetId),
 			new HashEntry("UserId", entity.UserId),
-			new HashEntry("Position", entity.Position),
+			new HashEntry("Position", (int)entity.Position),
 			new HashEntry("CreatedTicks", entity.Created.Ticks),
 			new HashEntry("UpdatedTicks", entity.Updated.Ticks)
 		};
@@ -285,7 +285,7 @@ internal class EmoteConfigurationRedisCache : IEmoteConfigurationCache
 		{
 			if (cachedEntity != null)
 			{
-				hashEntries.Add(new HashEntry(cachedEntity.Position, cachedEntity.Id));
+				hashEntries.Add(new HashEntry((int)cachedEntity.Position, cachedEntity.Id));
 			}
 		}
 		return hashEntries.ToArray();

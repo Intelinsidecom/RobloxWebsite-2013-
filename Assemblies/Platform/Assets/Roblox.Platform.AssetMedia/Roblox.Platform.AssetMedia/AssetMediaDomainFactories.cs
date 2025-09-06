@@ -1,12 +1,12 @@
-using System;
-using Roblox.EphemeralCounters;
+﻿using System;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.AssetMedia.Properties;
 using Roblox.Platform.AssetOwnership;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Assets.Interface;
 using Roblox.Platform.Core;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 

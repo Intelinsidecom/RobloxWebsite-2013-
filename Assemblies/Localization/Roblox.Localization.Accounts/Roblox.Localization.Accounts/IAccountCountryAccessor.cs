@@ -1,7 +1,7 @@
-﻿using Roblox.Platform.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
 namespace Roblox.Localization.Accounts {
-    interface IAccountCountryAccessor
+    public interface IAccountCountryAccessor
 
 {
 	/// <summary>

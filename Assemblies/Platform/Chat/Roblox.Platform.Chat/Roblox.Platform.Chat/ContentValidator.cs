@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using Roblox.Http;
 using Roblox.Platform.Communication.Behavior;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.TextFilter.Client;
 using Roblox.Platform.TextFilter.Client.Models.Common;
+using Roblox.Platform.TextFilter;
 
 namespace Roblox.Platform.Chat;
 
@@ -59,7 +60,7 @@ internal class ContentValidator : IContentValidator
 		try
 		{
 			ITextFilterClientV2 textFilterClientV = _TextFilterClientV2;
-			TextAuthor obj = new TextAuthor
+			Roblox.Platform.TextFilter.Client.TextAuthor obj = new Roblox.Platform.TextFilter.Client.TextAuthor
 			{
 				Id = (sender?.Id ?? 0)
 			};
@@ -69,7 +70,7 @@ internal class ContentValidator : IContentValidator
 				_ = sender.AgeBracket;
 				if (0 == 0)
 				{
-					isUnder = ((sender.AgeBracket == AgeBracket.AgeUnder13) ? 1 : 0);
+					isUnder = ((sender.AgeBracket == Roblox.Platform.Membership.AgeBracket.AgeUnder13) ? 1 : 0);
 					goto IL_0047;
 				}
 			}
@@ -78,7 +79,7 @@ internal class ContentValidator : IContentValidator
 			IL_0047:
 			obj.IsUnder13 = (byte)isUnder != 0;
 			obj.Name = sender?.Name ?? string.Empty;
-			FilterLiveTextResult filterLiveTextResult = textFilterClientV.FilterLiveText(rawContent, (IClientTextAuthor)obj, usage, TextFilterServerType.WebChat, conversation.Id.ToString());
+			FilterLiveTextResult filterLiveTextResult = textFilterClientV.FilterLiveText(rawContent, (IClientTextAuthor)obj, usage, Roblox.Platform.TextFilter.TextFilterServerType.WebChat, conversation.Id.ToString());
 			if (filterLiveTextResult == null || filterLiveTextResult.FilteredResult == null || filterLiveTextResult.FilteredResultUnderage == null || !_ContentValidationRules.IsTextAppropriateToSend(filterLiveTextResult, sender, conversation))
 			{
 				return new MessageContentValidationResult

@@ -1,6 +1,6 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.GameLocalization;
 

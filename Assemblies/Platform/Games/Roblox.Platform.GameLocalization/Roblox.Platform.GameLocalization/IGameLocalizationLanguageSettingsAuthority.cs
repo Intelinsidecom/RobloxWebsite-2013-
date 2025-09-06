@@ -1,5 +1,5 @@
-using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
+﻿using System.Collections.Generic;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.GameLocalization;
 
@@ -12,7 +12,7 @@ internal interface IGameLocalizationLanguageSettingsAuthority
 	/// Gets the list of supported languages for a particular universe.
 	/// </summary>
 	/// <param name="universeId">The universeId.</param>
-	/// <returns>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <see cref="T:Roblox.Platform.Localization.Core.ILanguageFamily" />.</returns>
+	/// <returns>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1" /> of <see cref="T:Roblox.Localization.Core.ILanguageFamily" />.</returns>
 	IReadOnlyCollection<ILanguageFamily> GetSupportedLanguageFamiliesForGame(long universeId);
 
 	/// <summary>

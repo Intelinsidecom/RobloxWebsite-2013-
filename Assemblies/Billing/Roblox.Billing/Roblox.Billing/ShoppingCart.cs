@@ -7,9 +7,10 @@ using Roblox.Caching;
 using Roblox.Caching.Interfaces;
 using Roblox.Common;
 using Roblox.Data.Interfaces;
-using Roblox.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.PremiumFeatures;
 using Roblox.Platform.PremiumFeatures;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 

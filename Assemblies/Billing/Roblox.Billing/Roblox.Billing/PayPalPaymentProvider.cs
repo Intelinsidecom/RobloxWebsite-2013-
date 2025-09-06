@@ -9,7 +9,7 @@ using Roblox.Billing.Exceptions;
 using Roblox.Billing.Properties;
 using Roblox.Billing.Providers;
 using Roblox.Common;
-using Roblox.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.PayPal.Client;
@@ -100,7 +100,7 @@ public class PayPalPaymentProvider : PaymentProviderBase, IAsyncPaymentProvider,
 	public PayPalPaymentProvider(Func<FraudDetectionData, IFraudDetectorResult> fraudDetectionAction, EphemeralCounterFactory ephemeralCounterFactory, CancelExistingActiveMembershipSaleHandler cancelExistingActiveMembershipSale, ILogger logger)
 		: base(cancelExistingActiveMembershipSale, logger, ephemeralCounterFactory)
 	{
-		_CountryCurrency = CountryCurrency.GetByCountryTypeIDAndCurrencyTypeID(Roblox.Users.Country.GetUSACountry().ID, CurrencyType.GetUSDCurrencyTypeID);
+		_CountryCurrency = CountryCurrency.GetByCountryTypeIDAndCurrencyTypeID(Country.GetUSACountry().ID, CurrencyType.GetUSDCurrencyTypeID);
 		_FraudDetectionProvider = new FraudDetectionProvider(fraudDetectionAction);
 		_EphemeralCounterFactory = ephemeralCounterFactory;
 	}
@@ -735,7 +735,7 @@ public class PayPalPaymentProvider : PaymentProviderBase, IAsyncPaymentProvider,
 
 	private CountryCurrency GetPayPalSupportedCountryCurrency(CountryCurrency countryCurrency, string payPalSupportedCurrencyCodes)
 	{
-		CountryCurrency usaCountryCurrency = CountryCurrency.GetByCountryTypeIDAndCurrencyTypeID(Roblox.Demographics.Country.GetUSACountry().ID, CurrencyType.GetUSDCurrencyTypeID);
+		CountryCurrency usaCountryCurrency = CountryCurrency.GetByCountryTypeIDAndCurrencyTypeID(Country.GetUSACountry().ID, CurrencyType.GetUSDCurrencyTypeID);
 		if (countryCurrency == null || countryCurrency.ID == usaCountryCurrency.ID)
 		{
 			return usaCountryCurrency;

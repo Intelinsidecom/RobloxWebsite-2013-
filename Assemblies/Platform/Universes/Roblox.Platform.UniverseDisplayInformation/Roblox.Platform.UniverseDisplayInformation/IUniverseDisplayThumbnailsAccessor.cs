@@ -1,5 +1,5 @@
-using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
+﻿using System.Collections.Generic;
+using Roblox.Localization.Core;
 using Roblox.Platform.Universes;
 
 namespace Roblox.Platform.UniverseDisplayInformation;

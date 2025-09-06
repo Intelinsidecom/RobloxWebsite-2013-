@@ -1,6 +1,6 @@
 using Roblox.EventLog;
 using Roblox.Platform.Party.Entities;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Party;
 

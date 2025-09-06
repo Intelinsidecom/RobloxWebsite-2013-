@@ -1,5 +1,6 @@
-﻿namespace Roblox.Platform.Thumbspublic {
-    enum AvatarImageType
+namespace Roblox.Platform.Thumbs
+{
+    public enum AvatarImageType
 
 {
 	Normal,

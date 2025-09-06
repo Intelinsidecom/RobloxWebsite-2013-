@@ -8,11 +8,12 @@ using Roblox.Economy.Common;
 using Roblox.EventLog;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
-using Roblox.Games.Client;
+using Roblox.Platform.Games.Client;
 using Roblox.Instrumentation;
-using Roblox.Marketplace.Client;
-using Roblox.Platform.Events;
-using Roblox.Platform.Floodcheckers;
+using PlatformMarketplace = Roblox.Platform.Marketplace.Client;
+using LegacyMarketplace = Roblox.Marketplace.Client;
+using Roblox.Platform.Marketplace.Client.Models;
+using Roblox.Events;
 using Roblox.Platform.GameInstances;
 using Roblox.Platform.Games.Entities;
 using Roblox.Platform.Games.Events;
@@ -32,7 +33,7 @@ public class PrivateServerFactory : IPrivateServerFactory
 
 	private const string _PrivateServerNameErrorText = "The name of a VIP Server cannot be blank and can be no more than {0} characters.";
 
-	private readonly MarketplaceAuthority _MarketplaceAuthority;
+	private readonly PlatformMarketplace.MarketplaceAuthority _MarketplaceAuthority;
 
 	private readonly IUserPermissionsChecker _UserPermissionsChecker;
 
@@ -80,7 +81,7 @@ public class PrivateServerFactory : IPrivateServerFactory
 		};
 	}
 
-	public PrivateServerFactory(MarketplaceAuthority marketplaceAuthority, GamesAuthority gamesAuthority, IUserPermissionsChecker userPermissionsChecker, IUniverseFactory universeFactory, GameInstanceFactory gameInstanceFactory, IGroupFactory groupFactory, IUniversePrivateServersSettingsManager universePrivateServersSettingsManager, PrivateServerConfigurationActionCounters privateServerConfigurationActionCounters, IRecurringTransactionFactory recurringTransactionFactory, ILogger logger, IUserFactory userFactory, ICounterRegistry counterRegistry)
+	public PrivateServerFactory(PlatformMarketplace.MarketplaceAuthority marketplaceAuthority, GamesAuthority gamesAuthority, IUserPermissionsChecker userPermissionsChecker, IUniverseFactory universeFactory, GameInstanceFactory gameInstanceFactory, IGroupFactory groupFactory, IUniversePrivateServersSettingsManager universePrivateServersSettingsManager, PrivateServerConfigurationActionCounters privateServerConfigurationActionCounters, IRecurringTransactionFactory recurringTransactionFactory, ILogger logger, IUserFactory userFactory, ICounterRegistry counterRegistry)
 	{
 		_MarketplaceAuthority = marketplaceAuthority;
 		_UserPermissionsChecker = userPermissionsChecker;
@@ -191,7 +192,7 @@ public class PrivateServerFactory : IPrivateServerFactory
 		return PrivateServerUserAccess.GetTotalNumberOfPrivateServerUserAccessesByUserIdAndUniverseId(userId, universeId);
 	}
 
-	private void DoPurchasePrivateServer(long ownerUserId, long expectedPrice, IUniverse universe, byte platformTypeId, out TransactionStatus transactionStatus, out PurchaseProductResult purchaseResult, IPrivateServer existingPrivateServer = null)
+	private void DoPurchasePrivateServer(long ownerUserId, long expectedPrice, IUniverse universe, byte platformTypeId, out LegacyMarketplace.TransactionStatus transactionStatus, out Roblox.Platform.Marketplace.Client.Models.PurchaseProductResult purchaseResult, IPrivateServer existingPrivateServer = null)
 	{
 		//IL_0079: Unknown result type (might be due to invalid IL or missing references)
 		Product product = _UniversePrivateServersSettingsManager.GetPrivateServerProduct(universe);
@@ -209,10 +210,10 @@ public class PrivateServerFactory : IPrivateServerFactory
 		{
 			throw new PrivateServersOperationUnavailableException("We are having a problem completing your purchase. Please try again in a few minutes.");
 		}
-		transactionStatus = (TransactionStatus)purchaseResult.Status;
+		transactionStatus = (LegacyMarketplace.TransactionStatus)purchaseResult.Status;
 	}
 
-	public IPrivateServer PurchasePrivateServer(long universeId, long ownerUserId, string serverName, long expectedPrice, byte platformTypeId, IPrivateServerPermissionsFactory privateServerPermissionsFactory, out TransactionStatus transactionStatus)
+	public IPrivateServer PurchasePrivateServer(long universeId, long ownerUserId, string serverName, long expectedPrice, byte platformTypeId, IPrivateServerPermissionsFactory privateServerPermissionsFactory, out LegacyMarketplace.TransactionStatus transactionStatus)
 	{
 		IUniverse universe = _UniverseFactory.GetUniverse(universeId);
 		_UniversePrivateServersSettingsManager.VerifyPrivateServerConfigurePermissions(universe);

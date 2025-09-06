@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Web;
 using System.Web.UI;
 using Roblox.Controls;
 using Roblox.Platform.Assets;
-using Roblox.Thumbs.Properties;
+using Roblox.Platform.Thumbs.Properties;
 namespace Roblox.Platform.Thumbs {
     /// <summary>
 
@@ -205,15 +205,15 @@ public abstract class AssetImage : ThumbnailImage
 	protected override void Render(HtmlTextWriter writer)
 	{
 		base.Render(writer);
-		if ((Settings.Default.AudioPlaybackEnabled || OverrideModeration) && Asset != null && Asset.AssetTypeID == AssetType.AudioID && (OverrideModeration || Asset.IsApproved))
-		{
-			Roblox.Platform.Assets.IAsset platformAsset = AssetFactory.GetAsset(Asset.ID);
-			if (platformAsset != null && !AudioCopyrightStatusReader.IsAudioCopyrightProtected(platformAsset))
-			{
-				writer.AddAttribute("class", "MediaPlayerControls");
-				writer.AddStyleAttribute(HtmlTextWriterStyle.Top, "-27px");
-				writer.AddStyleAttribute(HtmlTextWriterStyle.Left, Convert.ToInt32(Width.Value) - 27 + "px");
-				writer.RenderBeginTag(HtmlTextWriterTag.Div);
+		        if ((Settings.Default.AudioPlaybackEnabled || OverrideModeration) && Asset != null && Asset.AssetTypeID == AssetType.AudioID && (OverrideModeration || Asset.IsApproved))
+        {
+            Roblox.Platform.Assets.IAsset platformAsset = AssetFactory.GetAsset(Asset.ID);
+            if (platformAsset != null)
+            {
+                writer.AddAttribute("class", "MediaPlayerControls");
+                writer.AddStyleAttribute(HtmlTextWriterStyle.Top, "-27px");
+                writer.AddStyleAttribute(HtmlTextWriterStyle.Left, Convert.ToInt32(Width.Value) - 27 + "px");
+                writer.RenderBeginTag(HtmlTextWriterTag.Div);
 				writer.AddAttribute("class", "MediaPlayerIcon Play");
 				string url = FilesManager.Singleton.GetUri(Asset.Hash, HttpContext.Current.Request).AbsoluteUri;
 				writer.AddAttribute("data-mediathumb-url", url);

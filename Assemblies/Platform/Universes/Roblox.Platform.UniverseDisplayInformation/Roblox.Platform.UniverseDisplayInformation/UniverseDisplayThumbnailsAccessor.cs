@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -6,7 +6,7 @@ using Roblox.EventLog;
 using Roblox.Platform.AssetMedia;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.TranslationStorage;
 using Roblox.Platform.UniverseDisplayInformation.Properties;
 using Roblox.Platform.Universes;

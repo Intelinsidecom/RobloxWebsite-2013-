@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.DataV2.Core;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.TranslationStorage;
 using Roblox.Platform.UniverseDisplayInformation.Properties;
 using Roblox.Platform.Universes;

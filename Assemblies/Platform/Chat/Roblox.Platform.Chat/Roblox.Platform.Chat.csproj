@@ -138,9 +138,9 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.102" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.13" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.14" />
   </ItemGroup>
 </Project>

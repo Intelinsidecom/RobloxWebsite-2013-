@@ -1,7 +1,7 @@
 using System;
 using Roblox.EventLog;
 using Roblox.Platform.Notifications.Core;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Notifications.Stream.Events;
 

@@ -1,6 +1,3 @@
-﻿namespace extern {
-    alias ConfMan;
-
 using System.CodeDom.Compiler;
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -13,14 +10,14 @@ namespace Roblox.Platform.Universes.Properties;
 /// <summary>
 /// Configuration that uses Roblox.Configuration.Provider
 /// </summary>
-[ConfMan::System.Configuration.SettingsProvider(typeof(Provider))]
+[System.Configuration.SettingsProvider(typeof(Provider))]
 [CompilerGenerated]
 [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
-internal sealed class Settings : ConfMan::System.Configuration.ApplicationSettingsBase, ISettings
+internal sealed class Settings : System.Configuration.ApplicationSettingsBase, ISettings
 {
 	private readonly ConcurrentDictionary<string, object> _Properties = new ConcurrentDictionary<string, object>();
 
-	private static Settings defaultInstance = (Settings)ConfMan::System.Configuration.SettingsBase.Synchronized(new Settings());
+	private static Settings defaultInstance = (Settings)System.Configuration.SettingsBase.Synchronized(new Settings());
 
 	public override object this[string propertyName]
 	{
@@ -36,59 +33,59 @@ internal sealed class Settings : ConfMan::System.Configuration.ApplicationSettin
 
 	public static Settings Default => defaultInstance;
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("False")]
+	[System.Configuration.DefaultSettingValue("False")]
 	public bool IsPublishToCatalogItemChangeQueueEnabled => (bool)this["IsPublishToCatalogItemChangeQueueEnabled"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("False")]
+	[System.Configuration.DefaultSettingValue("False")]
 	public bool IsPublishToUniverseChangeTopicEnabled => (bool)this["IsPublishToUniverseChangeTopicEnabled"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("")]
+	[System.Configuration.DefaultSettingValue("")]
 	public string AwsUniverseChangeTopicAccessKeyIdAndSecretCsv => (string)this["AwsUniverseChangeTopicAccessKeyIdAndSecretCsv"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("")]
+	[System.Configuration.DefaultSettingValue("")]
 	public string AwsUniverseChangeSnsTopicArn => (string)this["AwsUniverseChangeSnsTopicArn"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("False")]
+	[System.Configuration.DefaultSettingValue("False")]
 	public bool IsSettingUniversePrivacyTypeToPrivateOnMissingRootPlaceIdEnabled => (bool)this["IsSettingUniversePrivacyTypeToPrivateOnMissingRootPlaceIdEnabled"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("Private")]
+	[System.Configuration.DefaultSettingValue("Private")]
 	public string DefaultUniversePrivacyType => (string)this["DefaultUniversePrivacyType"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("50")]
+	[System.Configuration.DefaultSettingValue("50")]
 	public int UniverseNameMaxLength => (int)this["UniverseNameMaxLength"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("False")]
+	[System.Configuration.DefaultSettingValue("False")]
 	public bool PermissionsV2ReadsEnabled => (bool)this["PermissionsV2ReadsEnabled"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("0")]
+	[System.Configuration.DefaultSettingValue("0")]
 	public double PermissionsV2ReadsPercentage => (double)this["PermissionsV2ReadsPercentage"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("False")]
+	[System.Configuration.DefaultSettingValue("False")]
 	public bool PermissionsV2PlayReadsEnabled => (bool)this["PermissionsV2PlayReadsEnabled"];
 
-	[ConfMan::System.Configuration.ApplicationScopedSetting]
+	[System.Configuration.ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	[ConfMan::System.Configuration.DefaultSettingValue("0")]
+	[System.Configuration.DefaultSettingValue("0")]
 	public double PermissionsV2PlayReadsPercentage => (double)this["PermissionsV2PlayReadsPercentage"];
 
 	internal Settings()
@@ -99,7 +96,7 @@ internal sealed class Settings : ConfMan::System.Configuration.ApplicationSettin
 		};
 	}
 
-	protected override void OnSettingsLoaded(object sender, ConfMan::System.Configuration.SettingsLoadedEventArgs e)
+	protected override void OnSettingsLoaded(object sender, System.Configuration.SettingsLoadedEventArgs e)
 	{
 		base.OnSettingsLoaded(sender, e);
 		Provider.RegisterSettings(e, this);

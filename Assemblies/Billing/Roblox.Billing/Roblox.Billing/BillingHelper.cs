@@ -301,14 +301,14 @@ public static class BillingHelper
 	public static string GetTestVisaNumber()
 	{
 		string[] testVisaCreditCardNumbers = new string[10] { "4024007150608148", "4916320476623944", "4532227575572563", "4532716367598117", "4485381055735799", "4554044664665502", "4716675623601735", "4539315701020269", "4416596820242870", "4485987788221483" };
-		return testVisaCreditCardNumbers[new Random().Next(0, testVisaCreditCardNumbers.Length)];
+		return testVisaCreditCardNumbers[new System.Random().Next(0, testVisaCreditCardNumbers.Length)];
 	}
 
 	public static string MakeRandomAmExNumber()
 	{
 		string toReturn = "37";
 		int luhn = 8;
-		Random ran = new Random();
+		System.Random ran = new System.Random();
 		int nextDigit;
 		for (int i = 2; i < 14; i++)
 		{

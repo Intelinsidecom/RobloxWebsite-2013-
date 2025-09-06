@@ -1,4 +1,4 @@
-﻿using Roblox.Thumbs.Properties;
+using Roblox.Platform.Thumbs.Properties;
 namespace Roblox.Platform.Thumbs {
     /// <summary>
 

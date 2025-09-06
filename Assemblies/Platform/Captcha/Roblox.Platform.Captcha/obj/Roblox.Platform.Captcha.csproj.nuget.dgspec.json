@@ -2501,6 +2501,9 @@
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj"
               },
@@ -5299,10 +5302,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
-            },
-            "StackExchange.Redis": {
-              "target": "Package",
-              "version": "[2.6.66, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -9611,7 +9610,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -10317,7 +10316,8 @@
           "dependencies": {
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.0, )",
+              "aliases": "global,ConfMan"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

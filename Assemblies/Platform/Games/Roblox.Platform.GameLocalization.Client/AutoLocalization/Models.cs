@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace Roblox.GameLocalization.Client.AutoLocalization
+namespace Roblox.Platform.GameLocalization.Client.AutoLocalization
 {
     public class GetAutoLocalizationSettingsRequest
     {

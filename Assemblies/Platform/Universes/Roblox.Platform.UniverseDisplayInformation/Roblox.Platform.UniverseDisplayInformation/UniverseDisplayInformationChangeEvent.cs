@@ -1,5 +1,5 @@
-using System.Runtime.Serialization;
-using Roblox.Platform.Localization.Core;
+﻿using System.Runtime.Serialization;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 

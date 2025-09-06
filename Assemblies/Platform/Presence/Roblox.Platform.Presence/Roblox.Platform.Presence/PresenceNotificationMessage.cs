@@ -1,5 +1,5 @@
 using Roblox.Platform.Presence.Properties;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Presence;
 

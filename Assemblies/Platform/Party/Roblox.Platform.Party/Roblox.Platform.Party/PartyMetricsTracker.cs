@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.Devices;
 
@@ -8,7 +8,7 @@ namespace Roblox.Platform.Party;
 
 public class PartyMetricsTracker : IPartyMetricsTracker
 {
-	private readonly EphemeralCounterFactory _EphemeralCounterFactory;
+	private readonly IEphemeralCounterFactory _EphemeralCounterFactory;
 
 	private readonly ILogger _Logger;
 
@@ -22,7 +22,7 @@ public class PartyMetricsTracker : IPartyMetricsTracker
 
 	private const string _PerformanceCategory = "Roblox.Platform.Party";
 
-	public PartyMetricsTracker(EphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
+	public PartyMetricsTracker(IEphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
 	{
 		_EphemeralCounterFactory = ephemeralCounterFactory;
 		_Logger = logger;

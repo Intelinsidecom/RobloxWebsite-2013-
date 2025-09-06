@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Notifications</AssemblyName>
@@ -14,6 +14,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <!-- Align StackExchange.Redis with Roblox.Redis (1.2.6) to avoid type version mismatch (IDatabase/IReconnectRetryPolicy) -->
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Core" />
@@ -90,6 +92,5 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
   </ItemGroup>
 </Project>

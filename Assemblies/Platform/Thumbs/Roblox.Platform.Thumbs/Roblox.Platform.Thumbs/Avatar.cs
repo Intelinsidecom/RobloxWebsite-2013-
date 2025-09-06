@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.Script.Services;
 using System.Web.Services;
@@ -40,3 +40,5 @@ public class Avatar : WebService
 }
 
 
+
+}

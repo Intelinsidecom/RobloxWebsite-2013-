@@ -1,6 +1,6 @@
 using Roblox.EventLog;
 using Roblox.Platform.Presence.Events;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Presence.Implementation;
 

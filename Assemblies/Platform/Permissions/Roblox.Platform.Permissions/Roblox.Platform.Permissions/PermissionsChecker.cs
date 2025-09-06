@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Roblox.ApiClientBase;
 using Roblox.EventLog;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.CallContext;
 using Roblox.Platform.Permissions.Core;
 using Roblox.Platform.Permissions.Core.Properties;
@@ -57,19 +57,19 @@ public class PermissionsChecker : IPermissionsChecker
 				actionParams.TryGetValue("targetId", out var targetIdObject);
 				targetIdValue = targetIdObject as long?;
 			}
-			ICollection<PermissionGroup> permissionGroups = _PermissionsClient.GetPermissions(action, targetIdValue);
+			ICollection<Roblox.Platform.Permissions.Client.PermissionGroup> permissionGroups = _PermissionsClient.GetPermissions(action, targetIdValue);
 			if (IsNullOrEmpty(permissionGroups))
 			{
 				return PermissionsStatus.Success();
 			}
-			foreach (PermissionGroup permissionGroup in permissionGroups)
+			foreach (Roblox.Platform.Permissions.Client.PermissionGroup permissionGroup in permissionGroups)
 			{
 				if (IsNullOrEmpty(permissionGroup.Permissions))
 				{
 					return PermissionsStatus.Success();
 				}
 				bool isAllowed = false;
-				foreach (Permission permissionDefinition in permissionGroup.Permissions)
+				foreach (Roblox.Platform.Permissions.Client.Permission permissionDefinition in permissionGroup.Permissions)
 				{
 					IPermissionTester permissionTester = _PermissionTesterFactory.GetPermissionTester((IPermission)(object)permissionDefinition);
 					if (permissionTester == null)

@@ -316,8 +316,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.Authenticat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.Authentication.AccountSecurity", "Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj", "{4AB2288F-F167-4DE8-9090-B489875F8533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.AudioRightsManagement", "Roblox.Platform.AudioRightsManagement\Roblox.Platform.AudioRightsManagement.csproj", "{F1C12C2D-8E61-42F9-AFE7-427E20C5A0D5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.AssetsCore", "Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj", "{15D327B6-CE28-4B6D-BC87-266792EEBB86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Platform.Assets.Places", "Roblox.Platform.Assets.Places\Roblox.Platform.Assets.Places.csproj", "{11FDD16B-D394-44AD-A2FB-66A55497E7B8}"
@@ -1048,10 +1046,6 @@ Global
 		{4AB2288F-F167-4DE8-9090-B489875F8533}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
 		{4AB2288F-F167-4DE8-9090-B489875F8533}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
 		{4AB2288F-F167-4DE8-9090-B489875F8533}.Release|AnyCPU.Build.0 = Release|AnyCPU
-		{F1C12C2D-8E61-42F9-AFE7-427E20C5A0D5}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
-		{F1C12C2D-8E61-42F9-AFE7-427E20C5A0D5}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
-		{F1C12C2D-8E61-42F9-AFE7-427E20C5A0D5}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
-		{F1C12C2D-8E61-42F9-AFE7-427E20C5A0D5}.Release|AnyCPU.Build.0 = Release|AnyCPU
 		{15D327B6-CE28-4B6D-BC87-266792EEBB86}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
 		{15D327B6-CE28-4B6D-BC87-266792EEBB86}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
 		{15D327B6-CE28-4B6D-BC87-266792EEBB86}.Release|AnyCPU.ActiveCfg = Release|AnyCPU

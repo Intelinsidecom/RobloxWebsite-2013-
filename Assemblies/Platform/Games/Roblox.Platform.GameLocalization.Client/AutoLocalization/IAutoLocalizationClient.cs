@@ -1,4 +1,4 @@
-namespace Roblox.GameLocalization.Client.AutoLocalization
+﻿namespace Roblox.Platform.GameLocalization.Client.AutoLocalization
 {
     public interface IAutoLocalizationClient
     {

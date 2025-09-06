@@ -47,7 +47,7 @@ internal class ImageApprovalStatusGetter : IImageApprovalStatusGetter
 		}
 		try
 		{
-			foreach (IAsset asset in _AssetFactory.GetAssets(imageIdsToCheck))
+			foreach (Roblox.Platform.Assets.IAsset asset in _AssetFactory.GetAssets(imageIdsToCheck))
 			{
 				resultDictionary[asset.Id] = GetStatusForAsset(asset);
 			}
@@ -60,16 +60,16 @@ internal class ImageApprovalStatusGetter : IImageApprovalStatusGetter
 	}
 
 	[ExcludeFromCodeCoverage]
-	internal virtual long GetAssetHashId(IAsset asset)
+	internal virtual long GetAssetHashId(Roblox.Platform.Assets.IAsset asset)
 	{
 		return asset.GetAssetHashId();
 	}
 
-	private bool GetStatusForAsset(IAsset asset)
+	private bool GetStatusForAsset(Roblox.Platform.Assets.IAsset asset)
 	{
 		try
 		{
-			AssetType? assetType = _AssetTypeFactory.GetAssetType(asset.TypeId);
+			Roblox.Platform.Assets.AssetType? assetType = _AssetTypeFactory.GetAssetType(asset.TypeId);
 			if (!assetType.HasValue)
 			{
 				return false;

@@ -4,7 +4,7 @@ using System.Linq;
 using Roblox.Billing;
 using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Billing.Properties;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Locking;
 using Roblox.Platform.Billing.Properties;
@@ -12,8 +12,8 @@ using Roblox.Platform.Core;
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
 using Roblox.Platform.PremiumFeatures.Interfaces;
+using Roblox.Platform.Users;
 using Roblox.PremiumFeatures;
-using Roblox.Users;
 
 namespace Roblox.Platform.Billing;
 

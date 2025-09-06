@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Membership;
 
 namespace Roblox.Platform.UserBlock.Core;

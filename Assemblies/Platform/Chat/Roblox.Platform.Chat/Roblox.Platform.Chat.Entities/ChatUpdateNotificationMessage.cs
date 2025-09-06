@@ -1,4 +1,4 @@
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Chat.Entities;
 

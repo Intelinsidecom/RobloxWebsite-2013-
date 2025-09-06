@@ -3,11 +3,11 @@ using System.Collections.Specialized;
 using System.Web;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
-using Roblox.Platform.EventStream.WebEvents.EventArgs;
-using Roblox.Platform.EventStream.WebEvents.Events;
-using Roblox.Thumbnails.Client;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
+using Roblox.EventStream.WebEvents.EventArgs;
+using Roblox.EventStream.WebEvents.Events;
+using Roblox.Platform.Thumbnails.Client;
 using Roblox.Web.Thumbnails.Properties;
 
 namespace Roblox.Web.Thumbnails;

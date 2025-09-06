@@ -1,29 +1,29 @@
-﻿using System;
+using System;
 using Roblox.Platform.Assets;
-namespace Roblox.Platform.Thumbspublic {
-    interface IAssetThumbnail
-
+namespace Roblox.Platform.Thumbs
 {
-	ThumbnailDomainFactories DomainFactories { get; }
+    public interface IAssetThumbnail
+    {
+        ThumbnailDomainFactories DomainFactories { get; }
 
-	bool IsSupported3DAssetType(int assetTypeId);
+        bool IsSupported3DAssetType(int assetTypeId);
 
-	bool IsSupportedAnimatedAssetType(int assetTypeId);
+        bool IsSupportedAnimatedAssetType(int assetTypeId);
 
-	/// <summary>
-	/// Returns Thumb Result for 3D thumbnail request for moderation purposes (moderation agnostic)
-	/// </summary>
-	/// <param name="assetHashId">asset hash id</param>
-	/// <returns>A <see cref="T:Roblox.Thumbs.ThumbResult" /> for specified assetHashId</returns>
-	ThumbResult GetModerationAgnostic3DThumbnailUrlForAssetHash(long assetHashId);
+        /// <summary>
+        /// Returns Thumb Result for 3D thumbnail request for moderation purposes (moderation agnostic)
+        /// </summary>
+        /// <param name="assetHashId">asset hash id</param>
+        /// <returns>A <see cref="T:Roblox.Thumbs.ThumbResult" /> for specified assetHashId</returns>
+        ThumbResult GetModerationAgnostic3DThumbnailUrlForAssetHash(long assetHashId);
 
-	/// <summary>
-	/// Returns Thumb Result for 2D thumbnail request for moderation purposes (moderation agnostic)
-	/// </summary>
-	/// <param name="assetHashId">asset hash id</param>
-	/// <param name="imageParameters">A <see cref="T:Roblox.Thumbs.ImageParameters" /> (contains format, width, height, etc.)</param>
-	/// <returns>A <see cref="T:Roblox.Thumbs.ThumbResult" /> for specified assetHashId and imageParameters</returns>
-	ThumbResult GetModerationAgnosticThumbnailUrlForAssetHash(long assetHashId, ImageParameters imageParameters);
+        /// <summary>
+        /// Returns Thumb Result for 2D thumbnail request for moderation purposes (moderation agnostic)
+        /// </summary>
+        /// <param name="assetHashId">asset hash id</param>
+        /// <param name="imageParameters">A <see cref="T:Roblox.Thumbs.ImageParameters" /> (contains format, width, height, etc.)</param>
+        /// <returns>A <see cref="T:Roblox.Thumbs.ThumbResult" /> for specified assetHashId and imageParameters</returns>
+        ThumbResult GetModerationAgnosticThumbnailUrlForAssetHash(long assetHashId, ImageParameters imageParameters);
 
 	ThumbResult GetAsset3DThumbnailUrl(long assetId, string imageFormat = "Obj");
 

@@ -17,10 +17,12 @@ internal class UniverseAvatarAssetOverrideFactory : IUniverseAvatarAssetOverride
 
 	private readonly UniverseAvatarAssetOverrideEntityFactory _UniverseAvatarAssetOverrideEntityFactory;
 
+	private ICollection<Roblox.Platform.Assets.AssetType> _AllowedAssetTypes;
+
 	/// <summary>
 	/// A collection of asset types allowed to be overridden
 	/// </summary>
-	public ICollection<AssetType> AllowedAssetTypes { get; set; }
+	public ICollection<Roblox.Platform.Assets.AssetType> AllowedAssetTypes => _AllowedAssetTypes;
 
 	/// <summary>
 	/// Constructs a new UniverseAvatarAssetOverrideFactory
@@ -45,7 +47,7 @@ internal class UniverseAvatarAssetOverrideFactory : IUniverseAvatarAssetOverride
 	/// <param name="isPlayerChoice">Whteher or not the Avatar Asset Override Player Choice</param>
 	public virtual void CreateOrUpdate(long universeId, long assetId, int assetTypeId, bool isPlayerChoice)
 	{
-		AssetType? assetType = EnumUtils.StrictTryParseEnum<AssetType>(assetTypeId.ToString());
+		Roblox.Platform.Assets.AssetType? assetType = EnumUtils.StrictTryParseEnum<Roblox.Platform.Assets.AssetType>(assetTypeId.ToString());
 		if (!assetType.HasValue || !AllowedAssetTypes.Contains(assetType.Value))
 		{
 			throw new PlatformArgumentException($"The asset type {assetType} is not allowed to be overridden.");
@@ -105,17 +107,17 @@ internal class UniverseAvatarAssetOverrideFactory : IUniverseAvatarAssetOverride
 
 	private void UpdateAllowedAssetTypes(string csvValue)
 	{
-		List<AssetType> result = new List<AssetType>();
+		List<Roblox.Platform.Assets.AssetType> result = new List<Roblox.Platform.Assets.AssetType>();
 		char[] chArray = new char[1] { ',' };
 		string[] array = csvValue.Split(chArray);
 		for (int i = 0; i < array.Length; i++)
 		{
-			AssetType? toAdd = EnumUtils.StrictTryParseEnum<AssetType>(array[i]);
+			Roblox.Platform.Assets.AssetType? toAdd = EnumUtils.StrictTryParseEnum<Roblox.Platform.Assets.AssetType>(array[i]);
 			if (toAdd.HasValue)
 			{
 				result.Add(toAdd.Value);
 			}
 		}
-		AllowedAssetTypes = result;
+		_AllowedAssetTypes = result;
 	}
 }

@@ -1,6 +1,6 @@
 using System;
 using System.Web;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Captcha.Properties;
 using Roblox.Platform.Counters;
 using Roblox.Platform.Games.Counters;

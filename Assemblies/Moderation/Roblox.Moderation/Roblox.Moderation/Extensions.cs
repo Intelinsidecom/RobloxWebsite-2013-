@@ -4,7 +4,7 @@ using Roblox.Moderation;
 using Roblox.Platform.AssetsCore;
 using Roblox.Platform.MembershipCore;
 namespace Roblox.Moderation {
-    static class Extensions
+    public static class Extensions
 
 {
 	private static AssetModerationStatus GetAssetModerationStatus(this ItemStatus itemStatusEntity)

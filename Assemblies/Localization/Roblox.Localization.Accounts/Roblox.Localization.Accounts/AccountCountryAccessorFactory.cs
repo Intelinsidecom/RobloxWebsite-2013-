@@ -1,7 +1,7 @@
 using Roblox.Platform.Demographics;
 using Roblox.Platform.Membership;
 namespace Roblox.Localization.Accounts {
-    class AccountCountryAccessorFactory
+    public class AccountCountryAccessorFactory
 
 {
 	public static IAccountCountryAccessor GetAccountCountryAccessor(IUserFactory userFactory)

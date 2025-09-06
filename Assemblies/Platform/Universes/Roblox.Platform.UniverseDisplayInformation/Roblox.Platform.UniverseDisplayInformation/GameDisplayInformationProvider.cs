@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.UniverseDisplayInformation.Properties;
 using Roblox.Platform.Universes;
 

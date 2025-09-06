@@ -581,7 +581,7 @@ public class WebAuthenticator : IWebAuthenticator
 		return AuthenticationSessionType.Website;
 	}
 
-	internal virtual TimeSpan GetTimeToLiveForSessionType(AuthenticationSessionType sessionType)
+	public virtual TimeSpan GetTimeToLiveForSessionType(AuthenticationSessionType sessionType)
 	{
 		if ((uint)sessionType > 1u && sessionType == AuthenticationSessionType.Game)
 		{

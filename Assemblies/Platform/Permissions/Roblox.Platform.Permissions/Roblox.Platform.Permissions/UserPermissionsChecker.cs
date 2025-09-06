@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Roblox.ApiClientBase;
 using Roblox.EventLog;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Permissions.Core;
 using Roblox.Platform.Permissions.Core.Properties;
@@ -71,10 +71,10 @@ internal class UserPermissionsChecker : IUserPermissionsChecker
 			PermissionType? permissionFailureType = null;
 			try
 			{
-				ICollection<PermissionGroup> permissionGroups = _PermissionsClient.GetPermissions(action, targetId);
-				foreach (PermissionGroup permissionGroup in permissionGroups)
+				ICollection<Roblox.Platform.Permissions.Client.PermissionGroup> permissionGroups = _PermissionsClient.GetPermissions(action, targetId);
+				foreach (Roblox.Platform.Permissions.Client.PermissionGroup permissionGroup in permissionGroups)
 				{
-					foreach (Permission permissionDefinition in permissionGroup.Permissions)
+					foreach (Roblox.Platform.Permissions.Client.Permission permissionDefinition in permissionGroup.Permissions)
 					{
 						IUserPermissionTest permissionTest = _UserPermissionTestFactory.GetPermissionTest((IPermission)(object)permissionDefinition, user, targetId);
 						if (permissionTest != null)

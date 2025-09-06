@@ -1,7 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 using Roblox.Platform.Demographics;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Permissions.Core;
 using Roblox.Platform.Permissions.Properties;

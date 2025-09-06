@@ -1,4 +1,5 @@
-﻿namespace Roblox.Platform.Thumbspublic {
+namespace Roblox.Platform.Thumbs
+{
     class Overlay
 
 {

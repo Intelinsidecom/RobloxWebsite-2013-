@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using GraphemeSplitter;
@@ -78,7 +78,7 @@ public class ConversationBuilder : IConversationBuilder, ISystemInitiatedConvers
 	}
 
 	private ConversationBuilder(IRedisClient redisClient, IFriendshipFactory friendshipFactory, ILogger logger, IGroupMembershipFactory groupMembershipFactory, IAssetFactoryBase<IPlace> placeFactory, IRedisLeasedLockFactory redisLeasedLockFactory, ITeamCreatePermissionsVerifier teamCreatePermissionsVerifier, IUniverseFactory universeFactory, IParticipantUtilities participantUtilities, IContentValidator contentValidator, IConversationDataAccessor conversationDataAccessor, IUniqueConversationCache uniqueConversationCache)
-		: this(logger, groupMembershipFactory, placeFactory, redisLeasedLockFactory, contentValidator, participantUtilities, conversationDataAccessor, new ConversationParticipantValidator(friendshipFactory, conversationDataAccessor, teamCreatePermissionsVerifier, universeFactory), new ConversationTitleBuilder(redisClient, contentValidator, participantUtilities, logger), Settings.Default, new ChatFloodCheckerFactory(new FloodCheckerFactory(), logger, Settings.Default), uniqueConversationCache)
+		: this(logger, groupMembershipFactory, placeFactory, redisLeasedLockFactory, contentValidator, participantUtilities, conversationDataAccessor, new ConversationParticipantValidator(friendshipFactory, conversationDataAccessor, teamCreatePermissionsVerifier, universeFactory), new ConversationTitleBuilder(redisClient, contentValidator, participantUtilities, logger), Settings.Default, new ChatFloodCheckerFactory(new FloodCheckerFactory(new StubSuspiciousIpChecker()), logger, Settings.Default), uniqueConversationCache)
 	{
 	}
 

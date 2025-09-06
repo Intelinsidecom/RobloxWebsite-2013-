@@ -4,7 +4,7 @@ using Roblox.EventLog;
 using Roblox.Platform.Chat.Entities;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Chat;
 

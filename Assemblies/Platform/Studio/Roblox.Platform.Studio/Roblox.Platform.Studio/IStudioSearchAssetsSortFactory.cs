@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Roblox.Platform.Assets;
+using IAsset = Roblox.Platform.Assets.IAsset;
 using Roblox.Platform.Core;
 using Roblox.Platform.Math.Statistics;
 

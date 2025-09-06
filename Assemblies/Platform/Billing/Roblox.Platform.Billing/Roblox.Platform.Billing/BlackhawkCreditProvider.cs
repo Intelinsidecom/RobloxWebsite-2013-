@@ -6,7 +6,7 @@ using Roblox.Billing;
 using Roblox.Billing.Client;
 using Roblox.Billing.Client.Enums;
 using Roblox.Billing.Client.Model;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Locking;

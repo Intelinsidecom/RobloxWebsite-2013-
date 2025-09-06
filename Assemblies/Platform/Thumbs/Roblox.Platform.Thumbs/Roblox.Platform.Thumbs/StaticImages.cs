@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using Roblox.Platform.Core;
-using Roblox.Thumbnails.Client;
-using Roblox.Thumbs.Properties;
-namespace Roblox.Platform.Thumbspublic {
-    class StaticImages : DomainObjectBase<ThumbnailDomainFactories>, IStaticImages
+using Roblox.Platform.Thumbnails.Client;
+using Roblox.Platform.Thumbs.Properties;
+namespace Roblox.Platform.Thumbs
+{
+    public class StaticImages : DomainObjectBase<ThumbnailDomainFactories>, IStaticImages
 
 {
 	private const int _StaticImagePseudoAssetHashId = -1000;
@@ -158,6 +159,4 @@ namespace Roblox.Platform.Thumbspublic {
 		return url;
 	}
 }
-
-
 }

@@ -11,7 +11,7 @@ using Roblox.Platform.Billing.Properties;
 using Roblox.Platform.Core;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Membership;
-using Roblox.Users;
+using Roblox.Platform.Users;
 
 namespace Roblox.Platform.Billing;
 

@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing.Imaging;
 using System.IO;
 using Roblox.ApiClientBase;
 using Roblox.Drawing;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.AssetMedia.Properties;
@@ -13,11 +13,11 @@ using Roblox.Platform.AssetOwnership;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Assets.Interface;
 using Roblox.Platform.Core;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
-using Roblox.Platform.EventStream.WebEvents.Events;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
+using Roblox.EventStream.WebEvents.Events;
 using Roblox.Platform.Membership;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -51,12 +51,12 @@ public class PlaceIconUploader : IPlaceIconUploader
 	/// <summary>
 	/// Constructs the place icon uploader.
 	/// </summary>
-	/// <param name="assetThumbnail">An <see cref="T:Roblox.Thumbs.IAssetThumbnail" /></param>
+	/// <param name="assetThumbnail">An <see cref="T:Roblox.Platform.Thumbs.IAssetThumbnail" /></param>
 	/// <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority" /></param>
 	/// <param name="placeIconFactory">An <see cref="T:Roblox.Platform.AssetMedia.IPlaceIconFactory" /></param>
-	/// <param name="ephemeralCounterFactory">An <see cref="T:Roblox.EphemeralCounters.IEphemeralCounterFactory" /></param>
+	/// <param name="ephemeralCounterFactory">An <see cref="T:Roblox.Platform.EphemeralCounters.IEphemeralCounterFactory" /></param>
 	/// <param name="imageFactory">An <see cref="T:Roblox.Platform.Assets.IImageFactory" /></param>
-	/// <param name="eventStreamer">An <see cref="T:Roblox.Platform.EventStream.IEventStreamer" /></param>
+	/// <param name="eventStreamer">An <see cref="T:Roblox.EventStream.IEventStreamer" /></param>
 	/// <param name="uploadFloodcheckerFactory">An <see cref="T:Roblox.Platform.Assets.Interface.IUploadFloodcheckerFactory" /></param>
 	/// <exception cref="T:System.ArgumentNullException">
 	/// - <paramref name="assetThumbnail" />

@@ -5,7 +5,7 @@ using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Social.Properties;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Social.Events;
 

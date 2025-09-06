@@ -2415,6 +2415,7 @@
           "Roblox.Platform.InGameContentTables.Client": "1.0.0",
           "Roblox.Platform.Membership": "1.0.0",
           "Roblox.Platform.MembershipCore": "1.0.0",
+          "Roblox.Platform.Universes": "1.0.0",
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {

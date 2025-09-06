@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.Economy;
 using Roblox.EventLog;
-using Roblox.Marketplace.Client;
+using Roblox.Platform.Marketplace.Client;
 using Roblox.Platform.Games.Entities;
 using Roblox.Platform.VirtualCurrency;
 

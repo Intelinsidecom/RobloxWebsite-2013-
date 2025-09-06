@@ -1,7 +1,8 @@
-using System;
+﻿using System;
+using System.Drawing.Imaging;
 using Roblox.Platform.Core;
+using Roblox.Platform.Thumbs;
 using Roblox.Platform.Universes;
-using Roblox.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -11,12 +12,12 @@ namespace Roblox.Platform.AssetMedia;
 public static class UniverseExtensions
 {
 	/// <summary>
-	/// Gets the <see cref="T:Roblox.Thumbs.ThumbResult" /> for the <see cref="T:Roblox.Platform.Universes.IUniverse" />'s icon .
+	/// Gets the <see cref="T:Roblox.Platform.Thumbs.ThumbResult" /> for the <see cref="T:Roblox.Platform.Universes.IUniverse" />'s icon .
 	/// </summary>
 	/// <param name="universe">The <see cref="T:Roblox.Platform.Universes.IUniverse" /> to get the icon for.</param>
-	/// <param name="imageParameters">The <see cref="T:Roblox.Thumbs.ImageParameters" />.</param>
+	/// <param name="imageParameters">The <see cref="T:Roblox.Platform.Thumbs.ImageParameters" />.</param>
 	/// <param name="placeIconFactory">The <see cref="T:Roblox.Platform.AssetMedia.IPlaceIconFactory" /> factory to use to get <see cref="T:Roblox.Platform.AssetMedia.IPlaceIcon" />s.</param>
-	/// <returns>The <see cref="T:Roblox.Thumbs.ThumbResult" /> for the <see cref="T:Roblox.Platform.Universes.IUniverse" />'s icon.</returns>
+	/// <returns>The <see cref="T:Roblox.Platform.Thumbs.ThumbResult" /> for the <see cref="T:Roblox.Platform.Universes.IUniverse" />'s icon.</returns>
 	/// <exception cref="T:System.NullReferenceException">Thrown if <paramref name="universe" /> is null.</exception>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="imageParameters" /> is null.</exception>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">Thrown if <paramref name="placeIconFactory" /> is null.</exception>

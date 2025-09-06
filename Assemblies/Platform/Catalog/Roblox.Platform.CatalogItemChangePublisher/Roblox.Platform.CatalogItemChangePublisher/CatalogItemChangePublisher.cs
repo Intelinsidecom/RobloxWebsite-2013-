@@ -6,7 +6,7 @@ using Roblox.Amazon.Sqs;
 using Roblox.Platform.CatalogItemChangePublisher.Properties;
 namespace Roblox.Platform.CatalogItemChangePublisher
 {
-    class CatalogItemChangePublisher : ICatalogItemChangePublisher
+    public class CatalogItemChangePublisher : ICatalogItemChangePublisher
     {
 	private static SqsBatchSender _DelayedBatchSender;
 

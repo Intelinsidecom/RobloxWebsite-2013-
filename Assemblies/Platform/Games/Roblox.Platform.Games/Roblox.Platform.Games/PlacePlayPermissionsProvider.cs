@@ -4,7 +4,7 @@ using Roblox.Platform.Assets;
 using Roblox.Platform.Core;
 using Roblox.Platform.Groups;
 using Roblox.Platform.Membership;
-using Roblox.Platform.Moderation;
+using Roblox.Moderation;
 using Roblox.Platform.Universes;
 using Roblox.Universes.Client;
 using Roblox.Platform.Privacy;
@@ -19,7 +19,7 @@ internal static class PlacePlayPermissionsProvider
 {
 	internal static bool CanPlay(IUser user, IPlace place, IAssetPermissionsVerifier assetPermissionsVerifier)
 	{
-		AssetModerationStatus moderationStatus = place.GetModerationStatus();
+		AssetModerationStatus moderationStatus = new AssetModerationStatusChecker().GetModerationStatus(place);
 		if (user == null)
 		{
 			return moderationStatus == AssetModerationStatus.Green;
@@ -40,7 +40,7 @@ internal static class PlacePlayPermissionsProvider
 
 	internal static bool CanBeUpdated(IPlace place)
 	{
-		AssetModerationStatus moderationStatus = place.GetModerationStatus();
+		AssetModerationStatus moderationStatus = new AssetModerationStatusChecker().GetModerationStatus(place);
 		return moderationStatus switch
 		{
 			AssetModerationStatus.Green => true, 

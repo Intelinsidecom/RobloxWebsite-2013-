@@ -1,6 +1,6 @@
 using Roblox.Billing.Client;
 using Roblox.Common;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.FloodCheckers.Core;
 using Roblox.Locking;

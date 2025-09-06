@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -6,13 +6,13 @@ using System.Threading;
 using Roblox.ApiClientBase;
 using Roblox.AssetMedia;
 using Roblox.Drawing;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.FloodCheckers.Core;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Assets.Interface;
 using Roblox.Platform.Core;
 using Roblox.Platform.Membership;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 

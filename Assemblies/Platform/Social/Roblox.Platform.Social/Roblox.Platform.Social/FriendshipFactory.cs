@@ -1135,7 +1135,7 @@ public class FriendshipFactory : FriendshipProducerBase, IFriendshipFactory
 
 	private static int GetRandomRolloutPercentage()
 	{
-		return new Random(new object().GetHashCode()).Next(100);
+		return new System.Random(new object().GetHashCode()).Next(100);
 	}
 
 }

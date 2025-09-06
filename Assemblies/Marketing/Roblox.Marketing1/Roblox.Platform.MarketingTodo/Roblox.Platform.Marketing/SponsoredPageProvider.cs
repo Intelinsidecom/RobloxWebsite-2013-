@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Roblox.Demographics;
 using Roblox.Marketing;
-using Roblox.Platform.Demographics;
 using Roblox.Platform.Devices;
 using Roblox.Platform.Marketing.Properties;
 using Roblox.Web.Devices;
+using Roblox.Platform.Demographics;
 
 namespace Roblox.Platform.Marketing;
 
@@ -38,7 +37,8 @@ public class SponsoredPageProvider : ISponsoredPageProvider
 	public ICollection<ISponsoredPageNavigation> GetAllAvailableSponsoredPagesForUser(string ip, string userAgent)
 	{
 		ICollection<ISponsoredPageNavigation> sponsoredPages = new List<ISponsoredPageNavigation>();
-		int countryId = _GeolocationFactory.GetOrCreateGeolocation(ip).CountryId ?? Country.GetUSACountry().ID;
+		        // Fallback to USA country id = 1 if geolocation is unavailable, to avoid cross-assembly Country type access
+        int countryId = _GeolocationFactory.GetOrCreateGeolocation(ip).CountryId ?? 1;
 		DeviceType deviceType = _ClientDeviceIdentifier.GetDeviceType(userAgent);
 		foreach (SponsoredPage page in FilterViewableSponsoredPagesForCountryAndDevice(SponsoredPage.GetAllSponsoredPages(), countryId, deviceType))
 		{

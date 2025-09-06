@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Agents;
 using Roblox.EventLog;
-using Roblox.Games.Client;
+using Roblox.Platform.Games.Client;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Core;

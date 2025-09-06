@@ -6,13 +6,14 @@ using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Billing.Properties;
 using Roblox.Common;
 using Roblox.Data;
-using Roblox.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.EventLog;
 using Roblox.FloodCheckers;
 using Roblox.Instrumentation;
 using Roblox.Platform.Email.Delivery;
 using Roblox.PremiumFeatures;
 using Roblox.Platform.PremiumFeatures;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 
@@ -29,6 +30,19 @@ public static class PaymentHelper
 		Day,
 		Week,
 		Month
+	}
+
+	private static string MaskCreditCardNumber(string creditCardNumber)
+	{
+		if (string.IsNullOrEmpty(creditCardNumber))
+		{
+			return creditCardNumber;
+		}
+		if (creditCardNumber.Length > 7)
+		{
+			return $"{creditCardNumber.Substring(0, 4).PadRight(creditCardNumber.Length - 8, 'X')}{creditCardNumber.Substring(creditCardNumber.Length - 4, 4)}";
+		}
+		return creditCardNumber;
 	}
 
 	private static readonly ILogger Logger = StaticLoggerRegistry.Instance;
@@ -98,7 +112,7 @@ public static class PaymentHelper
 		{
 			return;
 		}
-		string maskedCreditCardNumber = CreditCardPaymentProvider.MaskCreditCardNumber(creditCardNumber);
+		string maskedCreditCardNumber = MaskCreditCardNumber(creditCardNumber);
 		if ((from x in TransactionLog.GetTransactionLogsByMaskedCreditCardNumber(maskedCreditCardNumber, DateTime.Today)
 			where (x.PaymentStatusTypeID == PaymentStatusType.Complete.ID || x.PaymentStatusTypeID == PaymentStatusType.Pending.ID) && x.TransactionDate.HasValue && x.TransactionDate.Value >= DateTime.Today
 			select x).Count() >= _DailyCreditCardTransactionCountLimit)

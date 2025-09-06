@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.IO;
@@ -10,11 +10,11 @@ using Roblox.Platform.Assets;
 using Roblox.Platform.Assets.Interface;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.Platform.TranslationStorage;
 using Roblox.Platform.Universes;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 

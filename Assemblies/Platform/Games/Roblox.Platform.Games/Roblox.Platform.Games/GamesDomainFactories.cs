@@ -1,5 +1,5 @@
 using System;
-using Roblox.CatalogItemChangePublisher;
+using Roblox.Platform.CatalogItemChangePublisher;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Assets;

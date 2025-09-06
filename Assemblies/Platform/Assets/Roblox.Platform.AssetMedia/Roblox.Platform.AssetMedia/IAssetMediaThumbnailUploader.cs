@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Membership;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 

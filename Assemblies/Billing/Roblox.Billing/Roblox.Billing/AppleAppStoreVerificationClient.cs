@@ -8,10 +8,11 @@ using System.Web.Script.Serialization;
 using Roblox.Billing.AppleAppStoreExceptions;
 using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Billing.Properties;
-using Roblox.Demographics;
+using Roblox.Platform.Demographics;
 using Roblox.FloodCheckers;
 using Roblox.Platform.Email.Delivery;
 using Roblox.Platform.Membership;
+using Roblox.Platform.Users;
 
 namespace Roblox.Billing;
 

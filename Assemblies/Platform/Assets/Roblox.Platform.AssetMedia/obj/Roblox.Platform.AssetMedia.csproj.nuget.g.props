@@ -16,7 +16,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.core\3.7.500.11</PkgAWSSDK_Core>
     <PkgAWSSDK_KinesisFirehose Condition=" '$(PkgAWSSDK_KinesisFirehose)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.kinesisfirehose\3.7.200</PkgAWSSDK_KinesisFirehose>
-    <PkgAWSSDK_SQS Condition=" '$(PkgAWSSDK_SQS)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.sqs\3.7.200</PkgAWSSDK_SQS>
+    <PkgAWSSDK_SQS Condition=" '$(PkgAWSSDK_SQS)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.sqs\3.7.200.10</PkgAWSSDK_SQS>
     <PkgAWSSDK_SimpleNotificationService Condition=" '$(PkgAWSSDK_SimpleNotificationService)' == '' ">C:\Users\Intel\.nuget\packages\awssdk.simplenotificationservice\3.7.0</PkgAWSSDK_SimpleNotificationService>
   </PropertyGroup>
 </Project>

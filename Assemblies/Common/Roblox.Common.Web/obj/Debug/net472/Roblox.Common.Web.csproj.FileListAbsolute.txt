@@ -69,9 +69,9 @@ C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Com
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Sentinels.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.ServiceDiscovery.dll
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.WebsiteSettings.dll
+C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Platform.Infrastructure.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Diagnostics.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Common.pdb
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Platform.Infrastructure.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Configuration.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.WebsiteSettings.pdb
 C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Assemblies\Common\Roblox.Common.Web\bin\Debug\net472\Roblox.Caching.pdb

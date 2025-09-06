@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.EventLog;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 using Roblox.Redis;
 
 namespace Roblox.Platform.Presence;

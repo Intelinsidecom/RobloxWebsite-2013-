@@ -1,5 +1,5 @@
-using System;
-using Roblox.Platform.Localization.Core;
+﻿using System;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 

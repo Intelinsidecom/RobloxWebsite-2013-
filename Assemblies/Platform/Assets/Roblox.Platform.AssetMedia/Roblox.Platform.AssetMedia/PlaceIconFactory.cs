@@ -1,6 +1,6 @@
-using Roblox.AssetMedia.Entities;
+using Roblox.Platform.AssetMedia.Entities;
 using Roblox.Platform.Core;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -19,7 +19,7 @@ public class PlaceIconFactory : IPlaceIconFactory
 
 	public bool ContainsPlaceIcon(long placeId)
 	{
-		if (Roblox.AssetMedia.Entities.PlaceIcon.GetByPlaceID(placeId) == null)
+		if (Roblox.Platform.AssetMedia.Entities.PlaceIcon.GetByPlaceID(placeId) == null)
 		{
 			return false;
 		}
@@ -28,7 +28,7 @@ public class PlaceIconFactory : IPlaceIconFactory
 
 	public IPlaceIcon GetPlaceIconByPlaceId(long placeId)
 	{
-		Roblox.AssetMedia.Entities.PlaceIcon placeIconEntity = Roblox.AssetMedia.Entities.PlaceIcon.GetByPlaceID(placeId);
+		Roblox.Platform.AssetMedia.Entities.PlaceIcon placeIconEntity = Roblox.Platform.AssetMedia.Entities.PlaceIcon.GetByPlaceID(placeId);
 		if (placeIconEntity != null)
 		{
 			return new PlaceIcon(placeIconEntity, _PlaceIconThumbnailGetter);
@@ -42,7 +42,7 @@ public class PlaceIconFactory : IPlaceIconFactory
 		{
 			throw new PlatformArgumentNullException();
 		}
-		Roblox.AssetMedia.Entities.PlaceIcon.Get(placeIcon.Id)?.Delete();
+		Roblox.Platform.AssetMedia.Entities.PlaceIcon.Get(placeIcon.Id)?.Delete();
 		placeIcon = new PlaceIcon(placeIcon.PlaceId, _PlaceIconThumbnailGetter);
 	}
 
@@ -56,10 +56,10 @@ public class PlaceIconFactory : IPlaceIconFactory
 		{
 			throw new PlatformArgumentException("Attempted to save a PlaceIcon with a null ImageId.");
 		}
-		Roblox.AssetMedia.Entities.PlaceIcon placeIconEntity = Roblox.AssetMedia.Entities.PlaceIcon.Get(placeIcon.Id);
+		Roblox.Platform.AssetMedia.Entities.PlaceIcon placeIconEntity = Roblox.Platform.AssetMedia.Entities.PlaceIcon.Get(placeIcon.Id);
 		if (placeIconEntity == null)
 		{
-			placeIconEntity = new Roblox.AssetMedia.Entities.PlaceIcon();
+			placeIconEntity = new Roblox.Platform.AssetMedia.Entities.PlaceIcon();
 		}
 		placeIconEntity.PlaceID = placeIcon.PlaceId;
 		placeIconEntity.ImageID = placeIcon.ImageId.Value;

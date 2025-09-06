@@ -1,7 +1,7 @@
 using System;
 using Roblox.ApiClientBase;
 using Roblox.Caching.Shared;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Core;
 using Roblox.Platform.Counters;
 using Roblox.Platform.Games.Counters.Properties;

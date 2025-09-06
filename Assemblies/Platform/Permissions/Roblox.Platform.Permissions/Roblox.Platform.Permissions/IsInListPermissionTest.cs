@@ -1,4 +1,4 @@
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.Permissions.Core;
 
 namespace Roblox.Platform.Permissions;

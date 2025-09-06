@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using Roblox.Currency.Client;
+using Roblox.Platform.Currency.Client;
 using Roblox.Economy;
 using Roblox.Economy.Common;
 using Roblox.EventLog;
@@ -41,7 +41,7 @@ public class YouTubeVideoBroker : IYouTubeVideoBroker
 	/// <summary>
 	/// Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.YouTubeVideoBroker" />.
 	/// </summary>
-	/// <param name="currencyAuthority">An <see cref="T:Roblox.Currency.Client.ICurrencyAuthority" />.</param>
+	/// <param name="currencyAuthority">An <see cref="T:Roblox.Platform.Currency.Client.ICurrencyAuthority" />.</param>
 	/// <param name="assetOwnershipAuthority">An <see cref="T:Roblox.Platform.AssetOwnership.IAssetOwnershipAuthority" />.</param>
 	/// <param name="logger">An <see cref="T:Roblox.EventLog.ILogger" /></param>
 	/// <exception cref="T:System.ArgumentNullException">

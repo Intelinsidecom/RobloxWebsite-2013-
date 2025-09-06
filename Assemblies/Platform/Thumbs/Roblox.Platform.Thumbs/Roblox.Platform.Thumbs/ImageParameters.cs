@@ -1,147 +1,148 @@
-﻿using System;
+using System;
 using System.Drawing.Imaging;
 using System.Web;
 using System.Web.UI.WebControls;
-namespace Roblox.Platform.Thumbspublic {
-    class ImageParameters : IEquatable<ImageParameters>, IComparable<ImageParameters>
 
+namespace Roblox.Platform.Thumbs
 {
-	private static readonly ImageParameters _ImageParameters110X110 = new ImageParameters(110, 110, ImageFormat.Png);
+    public class ImageParameters : IEquatable<ImageParameters>, IComparable<ImageParameters>
+    {
+        private static readonly ImageParameters _ImageParameters110X110 = new ImageParameters(110, 110, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters420X420 = new ImageParameters(420, 420, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters420X420 = new ImageParameters(420, 420, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters75X75 = new ImageParameters(75, 75, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters75X75 = new ImageParameters(75, 75, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters48X48 = new ImageParameters(48, 48, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters48X48 = new ImageParameters(48, 48, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters100X100 = new ImageParameters(100, 100, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters100X100 = new ImageParameters(100, 100, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters150X200 = new ImageParameters(150, 200, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters150X200 = new ImageParameters(150, 200, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters352X352 = new ImageParameters(352, 352, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters352X352 = new ImageParameters(352, 352, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters160X100 = new ImageParameters(160, 100, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters160X100 = new ImageParameters(160, 100, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters420X230 = new ImageParameters(420, 230, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters420X230 = new ImageParameters(420, 230, ImageFormat.Png);
 
-	private static readonly ImageParameters _ImageParameters140x140 = new ImageParameters(140, 140, ImageFormat.Png);
+        private static readonly ImageParameters _ImageParameters140x140 = new ImageParameters(140, 140, ImageFormat.Png);
 
-	public int Width { get; private set; }
+        public int Width { get; private set; }
 
-	public int Height { get; private set; }
+        public int Height { get; private set; }
 
-	public ImageFormat Format { get; private set; }
+        public ImageFormat Format { get; private set; }
 
-	public int ThumbnailFormatID { get; private set; }
+        public int ThumbnailFormatID { get; private set; }
 
-	public string FileExtension => Format.ToString();
+        public string FileExtension => Format.ToString();
 
-	public string MimeType
-	{
-		get
-		{
-			if (Format == ImageFormat.Jpeg)
-			{
-				return "image/jpg";
-			}
-			if (Format == ImageFormat.Png)
-			{
-				return "image/png";
-			}
-			if (Format == ImageFormat.Bmp)
-			{
-				return "image/bmp";
-			}
-			if (Format == ImageFormat.Gif)
-			{
-				return "image/gif";
-			}
-			if (Format == ImageFormat.Tiff)
-			{
-				return "image/tiff";
-			}
-			return "image";
-		}
-	}
+        public string MimeType
+        {
+            get
+            {
+                if (Format == ImageFormat.Jpeg)
+                {
+                    return "image/jpg";
+                }
+                if (Format == ImageFormat.Png)
+                {
+                    return "image/png";
+                }
+                if (Format == ImageFormat.Bmp)
+                {
+                    return "image/bmp";
+                }
+                if (Format == ImageFormat.Gif)
+                {
+                    return "image/gif";
+                }
+                if (Format == ImageFormat.Tiff)
+                {
+                    return "image/tiff";
+                }
+                return "image";
+            }
+        }
 
-	public ImageParameters(Unit width, Unit height, ImageFormat format)
-		: this(width, height, format, 0)
-	{
-	}
+        public ImageParameters(Unit width, Unit height, ImageFormat format)
+            : this(width, height, format, 0)
+        {
+        }
 
-	public ImageParameters(Unit width, Unit height, ImageFormat format, int thumbnailFormatId)
-	{
-		Width = (int)width.Value;
-		Height = (int)height.Value;
-		Format = format;
-		ThumbnailFormatID = thumbnailFormatId;
-		CheckArguments();
-	}
+        public ImageParameters(Unit width, Unit height, ImageFormat format, int thumbnailFormatId)
+        {
+            Width = (int)width.Value;
+            Height = (int)height.Value;
+            Format = format;
+            ThumbnailFormatID = thumbnailFormatId;
+            CheckArguments();
+        }
 
-	/// <summary>
-	/// Make sure given width/height equals given thumbnailformat.width/height
-	/// </summary>
-	private bool CheckThumbnailFormatIntegrity(ref string failureMessage)
-	{
-		if (ThumbnailFormatID > 0)
-		{
-			ThumbnailFormat tf = ThumbnailFormat.Get(ThumbnailFormatID);
-			if (tf == null)
-			{
-				failureMessage = $"ThumbnailFormatID: {ThumbnailFormatID} was not found";
-				return false;
-			}
-			if (Width > 0 && tf.Width != Width)
-			{
-				failureMessage = $"ThumbnailFormat.Width({tf.Width}) does not equal Width given in Querystring({Width})";
-				return false;
-			}
-			if (Height > 0 && tf.Height != Height)
-			{
-				failureMessage = $"ThumbnailFormat.Height({tf.Height}) does not equal Height given in Querystring({Height})";
-				return false;
-			}
-		}
-		return true;
-	}
+        /// <summary>
+        /// Make sure given width/height equals given thumbnailformat.width/height
+        /// </summary>
+        private bool CheckThumbnailFormatIntegrity(ref string failureMessage)
+        {
+            if (ThumbnailFormatID > 0)
+            {
+                ThumbnailFormat tf = ThumbnailFormat.Get(ThumbnailFormatID);
+                if (tf == null)
+                {
+                    failureMessage = $"ThumbnailFormatID: {ThumbnailFormatID} was not found";
+                    return false;
+                }
+                if (Width > 0 && tf.Width != Width)
+                {
+                    failureMessage = $"ThumbnailFormat.Width({tf.Width}) does not equal Width given in Querystring({Width})";
+                    return false;
+                }
+                if (Height > 0 && tf.Height != Height)
+                {
+                    failureMessage = $"ThumbnailFormat.Height({tf.Height}) does not equal Height given in Querystring({Height})";
+                    return false;
+                }
+            }
+            return true;
+        }
 
-	private void CheckArguments(bool checkThumbnailFormatIntegrity = false)
-	{
-		if (Width <= 0)
-		{
-			throw new ArgumentOutOfRangeException("width", Width, "Must be > 0");
-		}
-		if (Height <= 0)
-		{
-			throw new ArgumentOutOfRangeException("height", Height, "Must be > 0");
-		}
-		if (Width > 2048)
-		{
-			throw new ArgumentOutOfRangeException("width", Width, "Must be <= 2048");
-		}
-		if (Height > 2048)
-		{
-			throw new ArgumentOutOfRangeException("height", Height, "Must be <= 2048");
-		}
-		string message = "";
-		if (checkThumbnailFormatIntegrity && !CheckThumbnailFormatIntegrity(ref message))
-		{
-			throw new ArgumentException(message);
-		}
-	}
+        private void CheckArguments(bool checkThumbnailFormatIntegrity = false)
+        {
+            if (Width <= 0)
+            {
+                throw new ArgumentOutOfRangeException("width", Width, "Must be > 0");
+            }
+            if (Height <= 0)
+            {
+                throw new ArgumentOutOfRangeException("height", Height, "Must be > 0");
+            }
+            if (Width > 2048)
+            {
+                throw new ArgumentOutOfRangeException("width", Width, "Must be <= 2048");
+            }
+            if (Height > 2048)
+            {
+                throw new ArgumentOutOfRangeException("height", Height, "Must be <= 2048");
+            }
+            string message = "";
+            if (checkThumbnailFormatIntegrity && !CheckThumbnailFormatIntegrity(ref message))
+            {
+                throw new ArgumentException(message);
+            }
+        }
 
-	public ImageParameters(int width, int height, ImageFormat format)
-		: this(width, height, format, 0)
-	{
-	}
+        public ImageParameters(int width, int height, ImageFormat format)
+            : this(width, height, format, 0)
+        {
+        }
 
-	public ImageParameters(int width, int height, ImageFormat format, int thumbnailFormatId)
-	{
-		Width = width;
-		Height = height;
-		Format = format;
-		ThumbnailFormatID = thumbnailFormatId;
-	}
+        public ImageParameters(int width, int height, ImageFormat format, int thumbnailFormatId)
+        {
+            Width = width;
+            Height = height;
+            Format = format;
+            ThumbnailFormatID = thumbnailFormatId;
+        }
 
 	public ImageParameters(int width, int height, string format)
 		: this(width, height, format, 0)

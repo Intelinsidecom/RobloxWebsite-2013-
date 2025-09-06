@@ -2,6 +2,7 @@ using Roblox.Platform.Assets;
 using Roblox.Platform.Avatar;
 using Roblox.Platform.Devices;
 using Roblox.Platform.Outfits;
+using Roblox.EventStream.WebEvents;
 
 namespace Roblox.Platform.EventStream.WebEvents;
 

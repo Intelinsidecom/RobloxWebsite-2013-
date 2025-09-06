@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.AssetMedia.Properties;
 using Roblox.Platform.Assets;
+using PlatformAssetType = Roblox.Platform.Assets.AssetType;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -12,7 +13,7 @@ public class AssetMediaManager
 		return GetAssetMediaItemsByAssetID(assetId).FirstOrDefault();
 	}
 
-	public static AssetMediaItem AddAssetMedia(long assetId, long uploadedMediaAssetId, long uploaderUserId, AssetType? assetType = null)
+	public static AssetMediaItem AddAssetMedia(long assetId, long uploadedMediaAssetId, long uploaderUserId, PlatformAssetType? assetType = null)
 	{
 		List<AssetMediaItem> mediaItems = new List<AssetMediaItem>(GetAssetMediaItemsByAssetID(assetId));
 		AssetMediaItem newPrimary = AssetMediaItem.CreateNew(assetId, uploadedMediaAssetId, uploaderUserId);
@@ -53,14 +54,14 @@ public class AssetMediaManager
 		}
 	}
 
-	private static int GetMaximumAssetMedia(AssetType? assetType)
+	private static int GetMaximumAssetMedia(PlatformAssetType? assetType)
 	{
 		if (!assetType.HasValue)
 		{
 			return Settings.Default.MaximumPlaceMediaItemsPerPlace;
 		}
-		AssetType value = assetType.Value;
-		if (value == AssetType.Plugin)
+		PlatformAssetType value = assetType.Value;
+		if (value == PlatformAssetType.Plugin)
 		{
 			return Settings.Default.MaximumPluginAssetMediaCount;
 		}

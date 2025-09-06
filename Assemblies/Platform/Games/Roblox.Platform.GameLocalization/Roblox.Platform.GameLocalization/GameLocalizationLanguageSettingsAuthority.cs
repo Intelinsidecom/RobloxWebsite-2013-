@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.EventLog;
-using Roblox.GameLocalization.Client;
-using Roblox.GameLocalization.Client.GameLocalizationLanguageSettings;
+using Roblox.Platform.GameLocalization.Client;
+using Roblox.Platform.GameLocalization.Client.GameLocalizationLanguageSettings;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 
 namespace Roblox.Platform.GameLocalization;
 
@@ -16,6 +16,16 @@ internal class GameLocalizationLanguageSettingsAuthority : IGameLocalizationLang
 	private readonly ICoreLocalizationAccessor _CoreLocalizationAccessor;
 
 	private readonly ILogger _Logger;
+
+	// Proxy to avoid referencing inaccessible LanguageFamilyIdentifier from Localization.Core
+	private sealed class LanguageFamilyIdentifierProxy : ILanguageFamilyIdentifier
+	{
+		public int Id { get; }
+		public LanguageFamilyIdentifierProxy(int id)
+		{
+			Id = id;
+		}
+	}
 
 	public GameLocalizationLanguageSettingsAuthority(IGameLocalizationLanguageSettingsClient client, ICoreLocalizationAccessor coreLocalizationAccessor, ILogger logger)
 	{
@@ -156,6 +166,6 @@ internal class GameLocalizationLanguageSettingsAuthority : IGameLocalizationLang
 		{
 			throw new PlatformArgumentException($"A language id provided was 0. LanguageId: {languageId}.");
 		}
-		return _CoreLocalizationAccessor.GetLanguageFamily(new LanguageFamilyIdentifier(languageId)) ?? throw new PlatformArgumentException($"A language id could not be found. LanguageId: {languageId}.");
+		return _CoreLocalizationAccessor.GetLanguageFamily(new LanguageFamilyIdentifierProxy(languageId)) ?? throw new PlatformArgumentException($"A language id could not be found. LanguageId: {languageId}.");
 	}
 }

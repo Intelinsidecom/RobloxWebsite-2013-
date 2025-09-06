@@ -2466,6 +2466,9 @@
           "net472": {
             "targetAlias": "net472",
             "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sqs\\Roblox.Amazon.Sqs.csproj"
               },
@@ -4369,6 +4372,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter\\Roblox.Platform.TextFilter.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\TextFilter\\Roblox.Platform.TextFilter\\Roblox.Platform.TextFilter.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Thumbs\\Roblox.Platform.Thumbs\\Roblox.Platform.Thumbs.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Thumbs\\Roblox.Platform.Thumbs\\Roblox.Platform.Thumbs.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj"
               },
@@ -4406,7 +4412,8 @@
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.0, )",
+              "aliases": "ConfMan"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
@@ -4967,88 +4974,6 @@
         }
       }
     },
-    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj",
-        "projectName": "Roblox.Platform.AudioRightsManagement",
-        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj",
-        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net472"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net472": {
-            "targetAlias": "net472",
-            "projectReferences": {
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Amazon\\Roblox.Amazon.Sns\\Roblox.Amazon.Sns.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Catalog\\Roblox.Platform.CatalogItemChangePublisher\\Roblox.Platform.CatalogItemChangePublisher.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Catalog\\Roblox.Platform.CatalogItemChangePublisher\\Roblox.Platform.CatalogItemChangePublisher.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net472": {
-          "targetAlias": "net472",
-          "dependencies": {
-            "AWSSDK.Core": {
-              "target": "Package",
-              "version": "[3.7.500.11, )"
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Authentication\\Roblox.Platform.Authentication.AccountSecurityTickets\\Roblox.Platform.Authentication.AccountSecurityTickets.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -5381,10 +5306,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
-            },
-            "StackExchange.Redis": {
-              "target": "Package",
-              "version": "[2.6.66, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -6997,6 +6918,9 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj"
               }
             }
           }
@@ -9680,7 +9604,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.6.66, )"
+              "version": "[1.2.6, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -10108,17 +10032,11 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Locking\\Roblox.Locking\\Roblox.Locking.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Locking\\Roblox.Locking\\Roblox.Locking.csproj"
               },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetMedia\\Roblox.Platform.AssetMedia.csproj"
-              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.AssetsCore\\Roblox.Platform.AssetsCore.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Assets\\Roblox.Platform.Assets\\Roblox.Platform.Assets.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\AudioRights\\Roblox.Platform.AudioRightsManagement\\Roblox.Platform.AudioRightsManagement.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Avatar\\Roblox.Platform.Avatar\\Roblox.Platform.Avatar.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Avatar\\Roblox.Platform.Avatar\\Roblox.Platform.Avatar.csproj"
@@ -10863,7 +10781,7 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )",
-              "aliases": "ConfMan"
+              "aliases": "global,ConfMan"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"

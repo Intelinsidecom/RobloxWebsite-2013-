@@ -1,14 +1,15 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using Roblox.Agents;
-using Roblox.CatalogItemChangePublisher;
-using Roblox.Games.Client;
+using Roblox.Platform.CatalogItemChangePublisher;
+using Roblox.Platform.Games.Client;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Core;
 using Roblox.Platform.Games;
 using Roblox.Platform.Groups;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Moderation;
+using Roblox.Moderation;
 using Roblox.Platform.Universes;
 using Roblox.Platform.UniverseSettings.Properties;
 
@@ -135,7 +136,7 @@ internal class UniverseAccessChanger : IUniverseAccessChanger
 	{
 		if (Settings.Default.IsPublishToPlaceActiveDeactiveEnabled)
 		{
-			Roblox.CatalogItemChangePublisher.CatalogItemChangePublisher.Singleton.Publish(assetId);
+			Roblox.Platform.CatalogItemChangePublisher.CatalogItemChangePublisher.Singleton.Publish(assetId);
 		}
 	}
 }

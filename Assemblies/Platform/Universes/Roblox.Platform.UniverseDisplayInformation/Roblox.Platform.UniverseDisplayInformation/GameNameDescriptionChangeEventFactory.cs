@@ -1,6 +1,6 @@
-using Roblox.Platform.Core;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
+﻿using Roblox.Platform.Core;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
 
 namespace Roblox.Platform.UniverseDisplayInformation;
 

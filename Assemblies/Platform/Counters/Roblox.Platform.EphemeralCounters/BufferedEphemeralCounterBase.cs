@@ -6,7 +6,7 @@ using Roblox.EventLog;
 
 namespace Roblox.Platform.EphemeralCounters
 {
-    internal abstract class BufferedEphemeralCounterBase : BufferedCounterBase<string>
+    public abstract class BufferedEphemeralCounterBase : BufferedCounterBase<string>
     {
         private readonly ILogger _Logger;
 

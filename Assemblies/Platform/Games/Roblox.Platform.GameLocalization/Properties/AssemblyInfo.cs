@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -10,8 +10,8 @@ using System.Runtime.Versioning;
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 [assembly: AssemblyCompany("Roblox.Platform.GameLocalization")]
 [assembly: AssemblyConfiguration("Release")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.EventLog, Roblox.Instrumentation, Roblox.Platform.Core, Roblox.Configuration, Roblox.InGameContentTables.Client, Roblox.Amazon.Sns, Roblox.Common, Roblox.EventLog.Windows, Roblox.GameLocalization.Client, Roblox.Platform.Localization.Core, Roblox.Assets.Client, Roblox.Platform.Universes, Roblox.Platform.GameLocalization.Authorization\n\nORIGINAL CHANGE TRIGGERS\n\n")]
+[assembly: AssemblyCopyright("Copyright Â©  2018")]
+[assembly: AssemblyDescription("\nDIRECT DEPENDENCY TRIGGERS\nRoblox.EventLog, Roblox.Instrumentation, Roblox.Platform.Core, Roblox.Configuration, Roblox.InGameContentTables.Client, Roblox.Amazon.Sns, Roblox.Common, Roblox.EventLog.Windows, Roblox.Platform.GameLocalization.Client, Roblox.Localization.Core, Roblox.Assets.Client, Roblox.Platform.Universes, Roblox.Platform.GameLocalization.Authorization\n\nORIGINAL CHANGE TRIGGERS\n\n")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyInformationalVersion("1.0.0")]
 [assembly: AssemblyProduct("Roblox.Platform.GameLocalization")]

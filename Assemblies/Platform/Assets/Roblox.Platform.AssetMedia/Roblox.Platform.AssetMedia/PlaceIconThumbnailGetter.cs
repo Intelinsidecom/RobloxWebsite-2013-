@@ -1,7 +1,7 @@
-using System.Drawing.Imaging;
+﻿using System.Drawing.Imaging;
 using Roblox.Platform.AssetMedia.Properties;
 using Roblox.Platform.Core;
-using Roblox.Thumbs;
+using Roblox.Platform.Thumbs;
 
 namespace Roblox.Platform.AssetMedia;
 
@@ -13,7 +13,7 @@ public class PlaceIconThumbnailGetter : IPlaceIconThumbnailGetter
 	/// <summary>
 	/// Constructs an instance of <see cref="T:Roblox.Platform.AssetMedia.PlaceIconThumbnailGetter" />.
 	/// </summary>
-	/// <param name="assetThumbnail">An <see cref="T:Roblox.Thumbs.IAssetThumbnail" />.</param>
+	/// <param name="assetThumbnail">An <see cref="T:Roblox.Platform.Thumbs.IAssetThumbnail" />.</param>
 	/// <exception cref="T:Roblox.Platform.Core.PlatformArgumentNullException">
 	/// - <paramref name="assetThumbnail" />
 	/// </exception>

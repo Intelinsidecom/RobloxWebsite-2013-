@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Net;
-using Roblox.AuthenticationV2.Client.Properties;
+using Roblox.Platform.AuthenticationV2.Client.Properties;
 using Roblox.Http;
 using Roblox.Http.Client;
 using Roblox.Http.Client.Monitoring;

@@ -27,6 +27,20 @@ namespace Roblox.Platform.CatalogItemChangePublisher
 		Product.EntityUpdated += CatalogItemModification_Product;
 		ProductOption.EntityCreated += CatalogItemModification_ProductOption;
 		ProductOption.EntityUpdated += CatalogItemModification_ProductOption;
+	}
+
+	/// <summary>
+	/// Handles creation and updates for legacy Asset entities and publishes catalog item changes.
+	/// </summary>
+	/// <param name="asset">The legacy Asset entity.</param>
+	/// <param name="e">Event args.</param>
+	private static void CatalogItemModification_Asset(Asset asset, EventArgs e)
+	{
+		if (asset != null && asset.AssetTypeID != AssetType.PlaceID)
+		{
+			CatalogItemChangePublisher.Singleton.Publish(asset.ID, useDelay: true);
+		}
+	}
 
         private static void CatalogItemModification_Product(Product product, EventArgs e)
         {

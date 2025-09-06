@@ -1,19 +1,19 @@
 using System;
 using System.Threading.Tasks;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 
 namespace Roblox.Platform.Notifications.Push;
 
 internal class EphemeralCounters
 {
-	private readonly EphemeralCounterFactory _EphemeralCounterFactory;
+	private readonly IEphemeralCounterFactory _EphemeralCounterFactory;
 
 	private readonly ILogger _Logger;
 
 	private readonly string _PerformanceCategory;
 
-	public EphemeralCounters(string performanceCategory, EphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
+	public EphemeralCounters(string performanceCategory, IEphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
 	{
 		_PerformanceCategory = performanceCategory;
 		_EphemeralCounterFactory = ephemeralCounterFactory;

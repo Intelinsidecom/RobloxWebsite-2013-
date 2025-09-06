@@ -1,5 +1,5 @@
 using System;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.EventStream;
@@ -15,7 +15,7 @@ public class PushMetricsTracker : IPushMetricsTracker
 
 	private readonly EventStreamer _Streamer;
 
-	public PushMetricsTracker(ICounterRegistry counterRegistry, string performanceCategoryPrefix, EphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
+	public PushMetricsTracker(ICounterRegistry counterRegistry, string performanceCategoryPrefix, IEphemeralCounterFactory ephemeralCounterFactory, ILogger logger)
 	{
 		if (counterRegistry == null)
 		{

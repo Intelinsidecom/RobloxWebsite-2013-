@@ -2,7 +2,7 @@ using System;
 using Roblox.EventLog;
 using Roblox.Platform.CloudEdit.Permissions.Properties;
 using Roblox.Platform.Core;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.CloudEdit.Permissions;
 

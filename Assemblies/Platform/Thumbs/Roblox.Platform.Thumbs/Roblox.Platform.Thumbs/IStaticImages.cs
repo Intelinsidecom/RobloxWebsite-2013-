@@ -1,7 +1,7 @@
-﻿namespace Roblox.Platform.Thumbspublic {
-    interface IStaticImages
-
+namespace Roblox.Platform.Thumbs
 {
+    public interface IStaticImages
+    {
 	ThumbnailDomainFactories DomainFactories { get; }
 
 	ThumbResult GetUnavailableThumbResult(int width, int height, string format);
@@ -34,6 +34,4 @@
 	/// <returns>Returns the game media item thumbanil result by given size, format and index.</returns>
 	ThumbResult GetGameMediaItemThumbResult(int width, int height, string format, int index);
 }
-
-
 }

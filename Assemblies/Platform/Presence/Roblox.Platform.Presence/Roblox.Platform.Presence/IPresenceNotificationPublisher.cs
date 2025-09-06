@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Roblox.RealTimeNotifications;
+using Roblox.Platform.RealTimeNotifications;
 
 namespace Roblox.Platform.Presence;
 

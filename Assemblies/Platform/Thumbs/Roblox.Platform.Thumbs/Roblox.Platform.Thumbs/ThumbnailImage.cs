@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Imaging;
@@ -9,7 +9,6 @@ using System.Web.UI.WebControls;
 using Roblox.Common;
 using Roblox.Controls;
 using Roblox.Platform.Assets;
-using Roblox.Platform.AudioRightsManagement;
 namespace Roblox.Platform.Thumbs {
     /// <summary>
 
@@ -30,8 +29,6 @@ public abstract class ThumbnailImage : Roblox.Controls.Image, IScriptControl
 	protected abstract string ControlClientClass { get; }
 
 	public abstract ThumbnailDomainFactories ThumbnailDomainFactories { get; }
-
-	public abstract IAudioCopyrightStatusReader AudioCopyrightStatusReader { get; }
 
 	public abstract IAssetFactory AssetFactory { get; }
 

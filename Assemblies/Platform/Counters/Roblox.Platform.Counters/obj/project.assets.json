@@ -556,11 +556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
+      "projectUniqueName": "c:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
       "projectName": "Roblox.Platform.Counters",
-      "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
+      "projectPath": "c:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\Roblox.Platform.Counters.csproj",
       "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\obj\\",
+      "outputPath": "c:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Counters\\Roblox.Platform.Counters\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

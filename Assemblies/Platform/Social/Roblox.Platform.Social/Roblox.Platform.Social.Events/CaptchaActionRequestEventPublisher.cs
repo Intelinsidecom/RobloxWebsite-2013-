@@ -2,7 +2,7 @@ using System;
 using Roblox.EventLog;
 using Roblox.Instrumentation;
 using Roblox.Platform.Core;
-using Roblox.Platform.EventStream;
+using Roblox.EventStream;
 using Roblox.Platform.Social.Friendship;
 using Roblox.Platform.Social.Properties;
 

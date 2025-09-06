@@ -1,7 +1,7 @@
 using System;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.Platform.EventStream;
+using Roblox.EventStream;
 using Roblox.Platform.Social.Events;
 
 namespace Roblox.Platform.Social.Friendship;

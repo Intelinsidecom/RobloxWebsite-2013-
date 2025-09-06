@@ -4,7 +4,7 @@ using System.Linq;
 using Roblox.ApiClientBase;
 using Roblox.FloodCheckers;
 using Roblox.FloodCheckers.Core;
-using Roblox.Permissions.Client;
+using Roblox.Platform.Permissions.Client;
 using Roblox.Platform.CloudEdit.Permissions.Exceptions;
 using Roblox.Platform.CloudEdit.Permissions.Properties;
 using Roblox.Platform.Core;
@@ -95,7 +95,7 @@ internal class CloudEditPermissionManager : ICloudEditPermissionManager
 			bool? isCloudEditEnabled = _UniverseCloudEditStatusProvider.IsCloudEditEnabled(_Universe.Id);
 			if (!isCloudEditEnabled.HasValue || !isCloudEditEnabled.Value)
 			{
-				IPermissionGroup permissionGroup = GetPermissionGroup();
+				Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup = GetPermissionGroup();
 				if (permissionGroup == null)
 				{
 					long ownerId = _Universe.CreatorTargetId;
@@ -207,18 +207,6 @@ internal class CloudEditPermissionManager : ICloudEditPermissionManager
 		}
 	}
 
-	public void RemoveUserFromEditorsList(IUser user)
-	{
-		try
-		{
-			GetWhitelist().RemoveMember(user.Id);
-		}
-		catch (ApiClientException e)
-		{
-			throw new CloudEditPermissionsPlatformException(e);
-		}
-	}
-
 	public IEnumerable<long> GetEditorsListPage(int page)
 	{
 		try
@@ -231,14 +219,26 @@ internal class CloudEditPermissionManager : ICloudEditPermissionManager
 		}
 	}
 
+	public void RemoveUserFromEditorsList(IUser user)
+	{
+		try
+		{
+			GetWhitelist().RemoveMember(user.Id);
+		}
+		catch (ApiClientException e)
+		{
+			throw new CloudEditPermissionsPlatformException(e);
+		}
+	}
+
 	protected virtual IFloodChecker GetAddCloudEditorFloodChecker(long inviterId, long universeId)
 	{
 		return new AddCloudEditorFloodChecker(inviterId, universeId);
 	}
 
-	private IPermissionGroup GetPermissionGroup()
+	private Roblox.Platform.Permissions.Core.IPermissionGroup GetPermissionGroup()
 	{
-		IEnumerable<IPermissionGroup> permissionGroups = _PermissionGroupFactory.GetPermissionGroupsByAction("CloudEditor", _Universe.Id);
+		IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> permissionGroups = _PermissionGroupFactory.GetPermissionGroupsByAction(_CloudEditActionType, _Universe.Id);
 		if (!permissionGroups.Any())
 		{
 			return null;
@@ -253,12 +253,12 @@ internal class CloudEditPermissionManager : ICloudEditPermissionManager
 	private ICustomList GetWhitelist()
 	{
 		bool? isCloudEditEnabled = _UniverseCloudEditStatusProvider.IsCloudEditEnabled(_Universe.Id);
-		IPermissionGroup permissionGroup = GetPermissionGroup();
+		Roblox.Platform.Permissions.Core.IPermissionGroup permissionGroup = GetPermissionGroup();
 		if ((isCloudEditEnabled.HasValue && !isCloudEditEnabled.Value) || permissionGroup == null)
 		{
 			throw new CloudEditPermissionsPlatformException("CloudEdit not enabled");
 		}
-		IEnumerable<IPermission> permissions = permissionGroup.GetPermissions(1);
+		IEnumerable<Roblox.Platform.Permissions.Core.IPermission> permissions = permissionGroup.GetPermissions(1);
 		if (!permissions.Any())
 		{
 			throw new CloudEditPermissionsPlatformException($"Empty permission group {permissionGroup.Id} for universe {_Universe.Id}");
@@ -267,8 +267,8 @@ internal class CloudEditPermissionManager : ICloudEditPermissionManager
 		{
 			throw new CloudEditPermissionsPlatformException($"Multiple permissions exist for universe {_Universe.Id} in permission group {permissionGroup.Id}");
 		}
-		IPermission permission = permissions.FirstOrDefault();
-		if (permission.PermissionType != "IsInList")
+		Roblox.Platform.Permissions.Core.IPermission permission = permissions.FirstOrDefault();
+		if (permission.PermissionType != _IsInListPermissionType)
 		{
 			throw new CloudEditPermissionsPlatformException("Permission not a whitelist");
 		}

@@ -128,7 +128,7 @@ public static class MembershipExtensions
 	{
 		PrerollSettingsProvider prerollSettingsProvider = new PrerollSettingsProvider();
 		double chanceToGetPreroll = (isAdServedFromDfp ? prerollSettingsProvider.PrerollSimplePercentageChanceForDFP : prerollSettingsProvider.PrerollSimplePercentageChance);
-		if (new Random().NextDouble() >= chanceToGetPreroll)
+		if (new System.Random().NextDouble() >= chanceToGetPreroll)
 		{
 			reason = PrerollDeclineReasonType.RandomChance;
 			return false;

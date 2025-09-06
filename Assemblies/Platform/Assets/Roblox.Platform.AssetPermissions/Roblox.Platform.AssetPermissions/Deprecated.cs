@@ -5,6 +5,7 @@ using Roblox.Platform.AssetPermissions.Properties;
 using Roblox.Platform.Assets;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Permissions.Core;
+using Api = Roblox.Platform.Permissions.Client;
 
 namespace Roblox.Platform.AssetPermissions;
 
@@ -33,7 +34,7 @@ public static class Deprecated
 		throw new UnknownPlaceVisitationPermissionTypeException();
 	}
 
-	private static void AddAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup newPermissionGroup, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
+	private static void AddAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup newPermissionGroup, Api.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -68,7 +69,7 @@ public static class Deprecated
 		return permissionGroup.Name == accessType.ToString();
 	}
 
-	private static void RemoveAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup currentPermissionGroup, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory)
+	private static void RemoveAccessGroup(this IUser user, IPlace place, IActionType actionType, Roblox.Platform.Permissions.Core.IPermissionGroup currentPermissionGroup, Api.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -92,13 +93,13 @@ public static class Deprecated
 		};
 	}
 
-	private static Roblox.Platform.Permissions.Core.IPermissionGroup Translate(this PlaceVisitationPermissionType accessType, IUser user, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, long? placeId = null)
+	private static Roblox.Platform.Permissions.Core.IPermissionGroup Translate(this PlaceVisitationPermissionType accessType, IUser user, Api.IPermissionsClient permissionsApiClient, long? placeId = null)
 	{
 		user.VerifyIsNotNull();
 		return user.GetPermissionGroups(permissionsApiClient, 1).FirstOrDefault((Roblox.Platform.Permissions.Core.IPermissionGroup p) => p.Is(accessType, placeId));
 	}
 
-	private static void UpdateWhitelist(this IUser user, ICustomList whitelist, IEnumerable<long> currentUserIds, IEnumerable<long> newUserIds, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
+	private static void UpdateWhitelist(this IUser user, ICustomList whitelist, IEnumerable<long> currentUserIds, IEnumerable<long> newUserIds, Api.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		List<long> userIdsToAdd = newUserIds.Except(currentUserIds).ToList();
@@ -118,7 +119,7 @@ public static class Deprecated
 		}
 	}
 
-	public static Roblox.Platform.Permissions.Core.IPermissionGroup CreateAccessPermissionGroup(this IUser user, PlaceVisitationPermissionType accessType, long placeId, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
+	public static Roblox.Platform.Permissions.Core.IPermissionGroup CreateAccessPermissionGroup(this IUser user, PlaceVisitationPermissionType accessType, long placeId, Api.IPermissionsClient permissionsApiClient)
 	{
 		if (accessType == PlaceVisitationPermissionType.Everyone)
 		{
@@ -136,7 +137,7 @@ public static class Deprecated
 		return newPermissionGroup;
 	}
 
-	public static IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> GetPlaceVisitationPermissionGroups(IUser user, IPlace place, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient)
+	public static IEnumerable<Roblox.Platform.Permissions.Core.IPermissionGroup> GetPlaceVisitationPermissionGroups(IUser user, IPlace place, Api.IPermissionsClient permissionsApiClient)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();
@@ -165,7 +166,7 @@ public static class Deprecated
 		return count > MaxUsersInWhiteList;
 	}
 
-	public static void SetAccess(IUser user, IPlace place, PlaceVisitationPermissionType newAccessType, Roblox.Permissions.Client.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory, IEnumerable<long> whiteListUserIds = null)
+	public static void SetAccess(IUser user, IPlace place, PlaceVisitationPermissionType newAccessType, Api.IPermissionsClient permissionsApiClient, CustomListFactory customListFactory, IEnumerable<long> whiteListUserIds = null)
 	{
 		user.VerifyIsNotNull();
 		place.VerifyIsNotNull();

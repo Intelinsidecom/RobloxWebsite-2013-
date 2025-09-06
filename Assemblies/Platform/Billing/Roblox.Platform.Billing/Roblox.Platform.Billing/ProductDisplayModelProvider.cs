@@ -5,7 +5,7 @@ using Roblox.Billing;
 using Roblox.Billing.Business_Logic_Layer;
 using Roblox.Platform.Billing.Properties;
 using Roblox.PremiumFeatures;
-using Roblox.PremiumFeatures.Models.Core;
+using Roblox.Platform.PremiumFeatures.Models.Core;
 
 namespace Roblox.Platform.Billing;
 

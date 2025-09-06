@@ -12,7 +12,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.13" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.14" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +78,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
   </ItemGroup>
 </Project>

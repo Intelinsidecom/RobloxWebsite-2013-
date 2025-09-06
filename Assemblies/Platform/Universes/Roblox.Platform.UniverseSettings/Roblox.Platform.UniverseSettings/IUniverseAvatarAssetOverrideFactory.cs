@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using Roblox.Platform.Assets;
 
 namespace Roblox.Platform.UniverseSettings;
 
 public interface IUniverseAvatarAssetOverrideFactory
 {
-	ICollection<AssetType> AllowedAssetTypes { get; }
+	ICollection<Roblox.Platform.Assets.AssetType> AllowedAssetTypes { get; }
 
 	void CreateOrUpdate(long universeId, long assetId, int assetTypeId, bool isPlayerChoice);
 

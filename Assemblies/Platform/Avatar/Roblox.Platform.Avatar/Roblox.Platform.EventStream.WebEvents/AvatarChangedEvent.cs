@@ -1,3 +1,6 @@
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
+
 namespace Roblox.Platform.EventStream.WebEvents;
 
 public class AvatarChangedEvent : WebEventBase

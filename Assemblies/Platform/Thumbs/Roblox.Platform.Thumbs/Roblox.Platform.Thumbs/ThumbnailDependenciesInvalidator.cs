@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using Amazon;
@@ -6,8 +6,9 @@ using Amazon.SQS;
 using Roblox.Amazon.Sqs;
 using Roblox.Configuration;
 using Roblox.Platform.Core;
-using Roblox.Thumbs.Properties;
-namespace Roblox.Platform.Thumbspublic {
+using Roblox.Platform.Thumbs.Properties;
+namespace Roblox.Platform.Thumbs
+{
     class ThumbnailDependenciesInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailDependenciesInvalidator
 
 {

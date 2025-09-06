@@ -1,13 +1,14 @@
 using System;
 
+#if false
 namespace Roblox.Platform.Currency.Client
 {
-    // Minimal stub to satisfy Roblox.Groups usage.
+    // Disabled stub: real implementation is provided by Roblox.Platform.Currency.Client project.
     public interface ICurrencyAuthority
     {
         long GetRobuxBalance(long agentId);
         long CreditRobux(long agentId, long amount);
         bool TryDebitRobux(long agentId, long amount);
-        // Add other members if compilation reveals additional requirements.
     }
 }
+#endif

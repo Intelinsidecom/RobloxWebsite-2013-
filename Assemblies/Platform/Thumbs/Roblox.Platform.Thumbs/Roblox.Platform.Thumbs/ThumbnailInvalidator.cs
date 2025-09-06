@@ -1,5 +1,6 @@
-﻿using Roblox.Platform.Core;
-namespace Roblox.Platform.Thumbspublic {
+using Roblox.Platform.Core;
+namespace Roblox.Platform.Thumbs
+{
     class ThumbnailInvalidator : DomainObjectBase<ThumbnailDomainFactories>, IThumbnailInvalidator
 
 {

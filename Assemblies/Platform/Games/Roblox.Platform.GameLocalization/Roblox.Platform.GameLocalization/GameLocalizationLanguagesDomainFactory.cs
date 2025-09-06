@@ -1,8 +1,8 @@
-using Roblox.EventLog;
-using Roblox.GameLocalization.Client;
+﻿using Roblox.EventLog;
+using Roblox.Platform.GameLocalization.Client;
 using Roblox.Platform.Core;
 using Roblox.Platform.GameLocalization.Authorization;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Universes;
 
 namespace Roblox.Platform.GameLocalization;
