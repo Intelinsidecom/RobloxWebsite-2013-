@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Roblox.Caching.Interfaces;
-using Roblox.Platform.Localization.Accounts;
+using Roblox.Localization.Accounts;
 using Roblox.Platform.Membership;
 using Roblox.Platform.StaticContent;
-using Roblox.StaticContent.Client;
-using Roblox.TranslationResources;
+using Roblox.Platform.StaticContent.Client;
+using Roblox.Platform.TranslationResources;
 using Roblox.Web.Authentication;
 using Roblox.Web.Code;
 using Roblox.Web.Code.Interfaces;
@@ -63,7 +63,7 @@ public class StaticContentRenderer : IStaticContentRenderer
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.StaticContent.IStaticContentRenderer.GetContentHtmlTags(Roblox.Platform.StaticContent.StaticContentComponent,Roblox.StaticContent.Client.StaticContentContentType)" />
-	public string GetContentHtmlTags(StaticContentComponent component, StaticContentContentType contentType)
+	public string GetContentHtmlTags(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType)
 	{
 		if (HasComponentBeenRendered(component, contentType))
 		{
@@ -73,26 +73,26 @@ public class StaticContentRenderer : IStaticContentRenderer
 		StringBuilder tagBuilder = new StringBuilder();
 		if (_StaticContentSettings.ComponentDependencyLoadingEnabled)
 		{
-			foreach (StaticContentComponent componentDependency in _StaticContentResolver.GetComponentDependencies(component))
+			foreach (Roblox.Platform.StaticContent.StaticContentComponent componentDependency in _StaticContentResolver.GetComponentDependencies(component))
 			{
 				tagBuilder.Append(GetContentHtmlTags(componentDependency, contentType));
 			}
 		}
-		if (contentType == StaticContentContentType.Css || contentType == StaticContentContentType.JavaScript)
+		if (contentType == Roblox.Platform.StaticContent.Client.StaticContentContentType.Css || contentType == Roblox.Platform.StaticContent.Client.StaticContentContentType.JavaScript)
 		{
 			foreach (Uri uri in _StaticContentResolver.GetStaticContentUrls(component, contentType))
 			{
 				switch (contentType)
 				{
-				case StaticContentContentType.Css:
+				case Roblox.Platform.StaticContent.Client.StaticContentContentType.Css:
 					tagBuilder.AppendLine(RobloxCSS.RenderWebAppStylesheetTag(uri.AbsoluteUri, component.ToString()));
 					break;
-				case StaticContentContentType.JavaScript:
+				case Roblox.Platform.StaticContent.Client.StaticContentContentType.JavaScript:
 					tagBuilder.AppendLine(RobloxScripts.RenderWebAppScriptTag(uri.AbsoluteUri, component.ToString()));
 					break;
 				}
 			}
-			if (contentType == StaticContentContentType.JavaScript)
+			if (contentType == Roblox.Platform.StaticContent.Client.StaticContentContentType.JavaScript)
 			{
 				AddTranslationResources(component);
 			}
@@ -101,7 +101,7 @@ public class StaticContentRenderer : IStaticContentRenderer
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.StaticContent.IStaticContentRenderer.AddTranslationResources(Roblox.Platform.StaticContent.StaticContentComponent)" />
-	public void AddTranslationResources(StaticContentComponent component)
+	public void AddTranslationResources(Roblox.Platform.StaticContent.StaticContentComponent component)
 	{
 		ISet<string> translationResourceNamespaces = _StaticContentResolver.GetTranslationResourceNamespaces(component);
 		if (!translationResourceNamespaces.Any())
@@ -128,7 +128,7 @@ public class StaticContentRenderer : IStaticContentRenderer
 		}
 	}
 
-	private bool HasComponentBeenRendered(StaticContentComponent component, StaticContentContentType contentType)
+	private bool HasComponentBeenRendered(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType)
 	{
 		string cacheKey = GetRenderedCacheKey(component, contentType);
 		if (_RequestCache.Get<bool>(cacheKey, out var rendered))
@@ -138,13 +138,13 @@ public class StaticContentRenderer : IStaticContentRenderer
 		return false;
 	}
 
-	private void SetComponentHasRendered(StaticContentComponent component, StaticContentContentType contentType)
+	private void SetComponentHasRendered(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType)
 	{
 		string cacheKey = GetRenderedCacheKey(component, contentType);
 		_RequestCache.Set(cacheKey, value: true);
 	}
 
-	private string GetRenderedCacheKey(StaticContentComponent component, StaticContentContentType contentType)
+	private string GetRenderedCacheKey(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType)
 	{
 		return string.Format("{0}:{1}:{2}", "Roblox.Web.StaticContent.StaticContentRenderer.HasComponentBeenRendered", component, contentType);
 	}

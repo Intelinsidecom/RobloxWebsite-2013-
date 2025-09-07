@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Web;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.EventLog;
 using Roblox.Platform.Avatar;
 using Roblox.Platform.Avatar.Properties;
 using Roblox.Platform.Core;
 using Roblox.Platform.Devices;
-using Roblox.Platform.EventStream;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
 using Roblox.Platform.EventStream.WebEvents;
 using Roblox.Web.Code.EventStream.WebEvents;
 using Roblox.Web.Devices;

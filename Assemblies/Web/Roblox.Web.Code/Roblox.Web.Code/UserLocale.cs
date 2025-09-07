@@ -1,5 +1,5 @@
-using Roblox.Platform.Localization.Accounts;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Accounts;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 
 namespace Roblox.Web.Code;

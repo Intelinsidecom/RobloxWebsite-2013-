@@ -1,6 +1,6 @@
 using System;
 using System.Web;
-using Roblox.EphemeralCounters;
+using Roblox.Platform.EphemeralCounters;
 using Roblox.Platform.Captcha;
 using Roblox.Platform.Captcha.Implementations;
 using Roblox.Platform.Counters;
@@ -16,7 +16,7 @@ public class CaptchaUtility : ICaptchaUtility
 {
 	private readonly IClientDeviceIdentifier _ClientDeviceIdentifier;
 
-	private readonly EphemeralCounterFactory _EphemeralCounterFactory;
+	private readonly IEphemeralCounterFactory _EphemeralCounterFactory;
 
 	private readonly IWebAuthenticationReader _WebAuthenticationReader;
 
@@ -26,7 +26,7 @@ public class CaptchaUtility : ICaptchaUtility
 
 	private readonly IWebDeviceHandleInspector _WebDeviceHandleInspector;
 
-	public CaptchaUtility(IClientDeviceIdentifier clientDeviceIdentifier, IWebDeviceHandleInspector webDeviceHandleInspector, EphemeralCounterFactory ephemeralCounterFactory, IWebAuthenticationReader webAuthenticationReader, Factories captchaFactory, IDurableCounterFactory durableCounterFactory)
+	public CaptchaUtility(IClientDeviceIdentifier clientDeviceIdentifier, IWebDeviceHandleInspector webDeviceHandleInspector, IEphemeralCounterFactory ephemeralCounterFactory, IWebAuthenticationReader webAuthenticationReader, Factories captchaFactory, IDurableCounterFactory durableCounterFactory)
 	{
 		_WebDeviceHandleInspector = webDeviceHandleInspector ?? throw new ArgumentNullException("webDeviceHandleInspector");
 		_ClientDeviceIdentifier = clientDeviceIdentifier ?? throw new ArgumentNullException("clientDeviceIdentifier");

@@ -16,19 +16,19 @@
   <ItemGroup>
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj">
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj">
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj">
+    <ProjectReference Include="..\\..\\..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj">
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
       <Project>
       </Project>
     </ProjectReference>

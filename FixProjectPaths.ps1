@@ -40,6 +40,7 @@ function Find-Csproj([string]$asmName) {
 
 # NuGet package map (assembly -> version)
 $nugetPackages = @{
+    # Common
     "Newtonsoft.Json"      = "13.0.3";
     "StackExchange.Redis"  = "2.6.66";
     "AWSSDK.Core"          = "3.7.102";
@@ -51,11 +52,50 @@ $nugetPackages = @{
     "System.Net.Http" = "4.3.4";
     # Assembly name Prometheus.NetStandard comes from package prometheus-net
     "Prometheus.NetStandard" = "4.2.0";
+
+    # Website-specific external deps to convert to PackageReference
+    "Antlr3.Runtime" = "3.5.0.2";                               # Antlr
+    "BCrypt.Net-Next" = "4.0.3";                               # BCrypt.Net-Next
+    "Microsoft.AspNetCore.Cryptography.Internal" = "6.0.3";
+    "Microsoft.Bcl.AsyncInterfaces" = "5.0.0";
+    "Microsoft.Bcl.HashCode" = "1.1.1";
+    "Microsoft.CodeDom.Providers.DotNetCompilerPlatform" = "2.0.1";
+    "Microsoft.Data.Sqlite" = "3.1.32";                        # Microsoft.Data.Sqlite.Core
+    "Microsoft.DotNet.PlatformAbstractions" = "3.1.6";
+    "Microsoft.EntityFrameworkCore" = "3.1.32";
+    "Microsoft.EntityFrameworkCore.Abstractions" = "3.1.32";
+    "Microsoft.EntityFrameworkCore.Relational" = "3.1.32";
+    "Microsoft.EntityFrameworkCore.Sqlite" = "3.1.32";          # Microsoft.EntityFrameworkCore.Sqlite.Core
+    "Microsoft.EntityFrameworkCore.SqlServer" = "3.1.32";
+    "Microsoft.Extensions.Caching.Abstractions" = "3.1.32";
+    "Microsoft.Extensions.Caching.Memory" = "3.1.32";
+    "Microsoft.Extensions.Configuration" = "3.1.32";
+    "Microsoft.Extensions.Configuration.Abstractions" = "3.1.32";
+    "Microsoft.Extensions.Configuration.Binder" = "3.1.32";
+    "Microsoft.Extensions.DependencyInjection" = "3.1.32";
+    "Microsoft.Extensions.DependencyModel" = "3.1.25";
+    "Microsoft.Extensions.Logging" = "3.1.32";
+    "Microsoft.Extensions.Logging.Abstractions" = "3.1.32";
+    "Microsoft.Extensions.Options" = "3.1.32";
+    "Microsoft.Extensions.Primitives" = "3.1.32";
+    "Microsoft.Identity.Client" = "3.0.8";
+    "Microsoft.IdentityModel.JsonWebTokens" = "5.5.0";
+    "Microsoft.IdentityModel.Logging" = "5.5.0";
+    "Microsoft.IdentityModel.Protocols" = "5.5.0";
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect" = "5.5.0";
+    "Microsoft.IdentityModel.Tokens" = "5.5.0";
+    "Microsoft.Web.Infrastructure" = "1.0.0";
+    "MySqlConnector" = "0.69.10";
+    "Pomelo.EntityFrameworkCore.MySql" = "3.2.7";
+    "Pomelo.JsonObject" = "2.2.1";
 }
 
 # Map assembly name -> NuGet package ID when it differs
 $nugetPackageIdOverride = @{
-    "Prometheus.NetStandard" = "prometheus-net"
+    "Prometheus.NetStandard" = "prometheus-net";
+    "Antlr3.Runtime" = "Antlr";
+    "Microsoft.Data.Sqlite" = "Microsoft.Data.Sqlite.Core";
+    "Microsoft.EntityFrameworkCore.Sqlite" = "Microsoft.EntityFrameworkCore.Sqlite.Core";
 }
 
 # Map legacy/misnamed assembly identifiers to the actual project assembly names
@@ -363,15 +403,8 @@ foreach ($proj in $csprojFiles) {
             continue
         }
         
-        # Replace 'full' paths with correct relative paths
-        $patternMatch = $hintPath -like "*..\..\full\*"
-        
-        # Also check for other 'full' path patterns
-        if (-not $patternMatch) {
-            $patternMatch = $hintPath -like "*D:\full\*"
-        }
-        
-        if ($patternMatch) {
+        # Replace legacy 'full' paths with correct relative paths (match any path containing '\full\')
+        if ($hintPath -match "(?i)\\full\\") {
             # Extract filename, handling both ..\..\full\ and D:\full\ patterns
             $fileName = Split-Path $hintPath -Leaf
             # Search specifically for this DLL in Website\bin and other bin directories

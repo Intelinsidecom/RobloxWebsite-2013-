@@ -1,11 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Globalization;
-namespace using {
-    Roblox.Website.ViewModels.Users.Shared; // temporary?
-
+using Roblox.Website.ViewModels.Users.Shared;
 using Roblox.Platform.Membership;
 
 namespace Roblox.Website.ViewModels.Users
@@ -145,4 +143,3 @@ namespace Roblox.Website.ViewModels.Users
         }
     }
 }
-

@@ -42,6 +42,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -62,9 +65,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
               }
             }
           }
@@ -1829,6 +1829,155 @@
         }
       }
     },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
+        "projectName": "Roblox.Entities.Mssql",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj",
+        "projectName": "Roblox.Entities",
+        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -2816,6 +2965,12 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -2824,12 +2979,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               }
             }
           }
@@ -3000,6 +3149,12 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -3020,12 +3175,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.TrackingQueue\\Roblox.TrackingQueue.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.TrackingQueue\\Roblox.TrackingQueue.csproj"
@@ -3644,17 +3793,17 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               }
             }
           }
@@ -4166,6 +4315,12 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -4210,12 +4365,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Users\\Roblox.Platform.Users\\Roblox.Platform.Users.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.MaxMind.GeoIP2\\Roblox.MaxMind.GeoIP2.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.MaxMind.GeoIP2\\Roblox.MaxMind.GeoIP2.csproj"
@@ -4375,6 +4524,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -4392,9 +4544,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Redis\\Roblox.Redis\\Roblox.Redis.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Redis\\Roblox.Redis\\Roblox.Redis.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
               }
             }
           }
@@ -5063,6 +5212,12 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -5083,12 +5238,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Premium\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               }
             }
           }
@@ -5157,14 +5306,14 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox Server Class Library\\Roblox Server Class Library.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.MaxMind.GeoIP2\\Roblox.MaxMind.GeoIP2.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.MaxMind.GeoIP2\\Roblox.MaxMind.GeoIP2.csproj"
@@ -6251,6 +6400,9 @@
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Economy\\Roblox.Economy\\Roblox.Economy.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Economy\\Roblox.Economy\\Roblox.Economy.csproj"
               },
+              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+              },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj"
               },
@@ -6295,9 +6447,6 @@
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.BucketStore\\Roblox.BucketStore.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.BucketStore\\Roblox.BucketStore.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
               },
               "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj": {
                 "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.SEO\\Roblox.Web.SEO.csproj"
@@ -6397,155 +6546,6 @@
               "version": "[7.0.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
-        "projectName": "Roblox.Entities.Mssql",
-        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj",
-        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
-              },
-              "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj": {
-                "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.2.2, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj",
-        "projectName": "Roblox.Entities",
-        "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj",
-        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }

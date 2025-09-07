@@ -14,11 +14,11 @@
   <ItemGroup>
     <!-- Version centralized in Directory.Build.props -->
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
-    <ProjectReference Include="..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj">
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Sentinels\Roblox.Sentinels\Roblox.Sentinels.csproj">
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
       <Project>
       </Project>
     </ProjectReference>

@@ -25,7 +25,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -65,7 +65,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
       <Project>
       </Project>
     </ProjectReference>

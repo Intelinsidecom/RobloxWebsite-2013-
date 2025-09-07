@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Roblox.WebAppUploader</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\\..\\Platform\\StaticContent\\Roblox.Platform.StaticContent\\Roblox.Platform.StaticContent.csproj" />
+    <ProjectReference Include="..\\Roblox.Web.StaticContentV2\\Roblox.Web.StaticContentV2.csproj" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Core" />
+    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Http\\Roblox.Http.ServiceClient\\Roblox.Http.ServiceClient.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Http\\Roblox.Http.Client\\Roblox.Http.Client.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\RequestContext\\Roblox.RequestContext\\Roblox.RequestContext.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\..\\DataV2\\Core\\Roblox.DataV2.Core\\Roblox.DataV2.Core.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

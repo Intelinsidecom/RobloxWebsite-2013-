@@ -5,7 +5,7 @@ using Roblox.Caching.Interfaces;
 using Roblox.EventLog;
 using Roblox.Platform.Membership;
 using Roblox.Platform.StaticContent;
-using Roblox.StaticContent.Client;
+using Roblox.Platform.StaticContent.Client;
 using Roblox.Web.Authentication;
 using Roblox.Web.StaticContent.Properties;
 
@@ -54,15 +54,15 @@ public class StaticContentResolver : IStaticContentResolver
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.StaticContent.IStaticContentResolver.GetStaticContentUrls(Roblox.Platform.StaticContent.StaticContentComponent,Roblox.StaticContent.Client.StaticContentContentType)" />
-	public ISet<Uri> GetStaticContentUrls(StaticContentComponent component, StaticContentContentType contentType)
+	public ISet<Uri> GetStaticContentUrls(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType)
 	{
-		if (!Enum.IsDefined(typeof(StaticContentComponent), component))
+		if (!Enum.IsDefined(typeof(Roblox.Platform.StaticContent.StaticContentComponent), component))
 		{
-			throw new InvalidEnumArgumentException("component", (int)component, typeof(StaticContentComponent));
+			throw new InvalidEnumArgumentException("component", (int)component, typeof(Roblox.Platform.StaticContent.StaticContentComponent));
 		}
-		if (!Enum.IsDefined(typeof(StaticContentContentType), contentType))
+		if (!Enum.IsDefined(typeof(Roblox.Platform.StaticContent.Client.StaticContentContentType), contentType))
 		{
-			throw new InvalidEnumArgumentException("contentType", (int)contentType, typeof(StaticContentContentType));
+			throw new InvalidEnumArgumentException("contentType", (int)contentType, typeof(Roblox.Platform.StaticContent.Client.StaticContentContentType));
 		}
 		IUser authenticatedUser = _WebAuthenticationReader.GetAuthenticatedUser();
 		IContentPack contentPack = GetLatestContentPack(component, authenticatedUser);
@@ -70,9 +70,9 @@ public class StaticContentResolver : IStaticContentResolver
 		{
 			switch (contentType)
 			{
-			case StaticContentContentType.Css:
+			case Roblox.Platform.StaticContent.Client.StaticContentContentType.Css:
 				return contentPack.CssCdnUrls;
-			case StaticContentContentType.JavaScript:
+			case Roblox.Platform.StaticContent.Client.StaticContentContentType.JavaScript:
 				return contentPack.JavaScriptCdnUrls;
 			}
 		}
@@ -80,26 +80,28 @@ public class StaticContentResolver : IStaticContentResolver
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.StaticContent.IStaticContentResolver.GetTranslationResourceNamespaces(Roblox.Platform.StaticContent.StaticContentComponent)" />
-	public ISet<string> GetTranslationResourceNamespaces(StaticContentComponent component)
+	public ISet<string> GetTranslationResourceNamespaces(Roblox.Platform.StaticContent.StaticContentComponent component)
 	{
 		IUser authenticatedUser = _WebAuthenticationReader.GetAuthenticatedUser();
-		return GetLatestContentPack(component, authenticatedUser)?.TranslationResourceNamespaces ?? new HashSet<string>();
+		var pack = GetLatestContentPack(component, authenticatedUser);
+		return (pack != null && pack.TranslationResourceNamespaces != null) ? pack.TranslationResourceNamespaces : new HashSet<string>();
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.StaticContent.IStaticContentResolver.GetComponentDependencies(Roblox.Platform.StaticContent.StaticContentComponent)" />
-	public ISet<StaticContentComponent> GetComponentDependencies(StaticContentComponent component)
+	public ISet<Roblox.Platform.StaticContent.StaticContentComponent> GetComponentDependencies(Roblox.Platform.StaticContent.StaticContentComponent component)
 	{
 		IUser authenticatedUser = _WebAuthenticationReader.GetAuthenticatedUser();
-		return GetLatestContentPack(component, authenticatedUser)?.ComponentDependencies ?? new HashSet<StaticContentComponent>();
+		var pack = GetLatestContentPack(component, authenticatedUser);
+		return (pack != null && pack.ComponentDependencies != null) ? pack.ComponentDependencies : new HashSet<Roblox.Platform.StaticContent.StaticContentComponent>();
 	}
 
-	internal virtual IContentPack GetLatestContentPack(StaticContentComponent component, IUser authenticatedUser)
+	internal virtual IContentPack GetLatestContentPack(Roblox.Platform.StaticContent.StaticContentComponent component, IUser authenticatedUser)
 	{
 		string cacheKey = string.Format("{0}:{1}:{2}", "Roblox.Web.StaticContent.StaticContentResolver.GetLatestContentPack", component, authenticatedUser?.Id);
 		return _RequestCache.Get(cacheKey, () => LoadLatestContentPack(component, authenticatedUser));
 	}
 
-	internal IContentPack LoadLatestContentPack(StaticContentComponent component, IUser authenticatedUser)
+	internal IContentPack LoadLatestContentPack(Roblox.Platform.StaticContent.StaticContentComponent component, IUser authenticatedUser)
 	{
 		try
 		{

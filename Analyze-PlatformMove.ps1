@@ -2,7 +2,8 @@ param(
     [string]$Root = $PSScriptRoot,
     [string]$ReportPath,
     [switch]$Verbose,
-    [switch]$ScanScripts # optional: include scanning of script files for literal .csproj paths
+    [switch]$ScanScripts, # optional: include scanning of script files for literal .csproj paths
+    [switch]$Fix          # when set, rewrite broken paths where a unique candidate is found
 )
 
 $ErrorActionPreference = 'Stop'
@@ -11,6 +12,19 @@ $ErrorActionPreference = 'Stop'
 try {
     # If Root is empty, default to script directory
     if (-not $Root -or [string]::IsNullOrWhiteSpace($Root)) { $Root = $PSScriptRoot }
+
+function Get-RelativePath {
+    param(
+        [Parameter(Mandatory=$true)][string]$FromFile,
+        [Parameter(Mandatory=$true)][string]$ToFile
+    )
+    $fromDir = [System.IO.Path]::GetDirectoryName($FromFile)
+    $uriFrom = New-Object System.Uri(($fromDir.TrimEnd([System.IO.Path]::DirectorySeparatorChar) + [System.IO.Path]::DirectorySeparatorChar))
+    $uriTo   = New-Object System.Uri($ToFile)
+    $relUri  = $uriFrom.MakeRelativeUri($uriTo)
+    $relPath = [System.Uri]::UnescapeDataString($relUri.ToString())
+    return ($relPath -replace '/', '\\')
+}
     # If Root points to a file, use its parent directory
     if (Test-Path -LiteralPath $Root -PathType Leaf) { $Root = Split-Path -LiteralPath $Root -Parent }
     $rootResolved = Resolve-Path -LiteralPath $Root -ErrorAction Stop
@@ -91,6 +105,21 @@ foreach ($csproj in $allProjects) {
             }) | Out-Null
             Write-Host "Missing ProjectReference ->" -NoNewline; Write-Host " $($csproj.FullName) :: $inc" -ForegroundColor Yellow
             if ($candidates.Count -gt 0) { Write-Host "  Suggested: $($candidates -join '; ')" -ForegroundColor DarkYellow }
+
+            # Attempt auto-fix when requested
+            if ($Fix -and $candidates.Count -ge 1) {
+                # Prefer the first candidate; compute relative path
+                $target = $candidates[0]
+                try {
+                    $newRel = Get-RelativePath -FromFile $csproj.FullName -ToFile $target
+                    if ($Verbose) { Write-Host "  Rewriting -> $newRel" -ForegroundColor Cyan }
+                    $n.Include = $newRel
+                    $xml.Save($csproj.FullName)
+                    Write-Host "  Fixed ProjectReference in: $($csproj.FullName)" -ForegroundColor Green
+                } catch {
+                    Write-Warning "  Failed to rewrite ProjectReference in $($csproj.FullName): $($_.Exception.Message)"
+                }
+            }
         } elseif ($Verbose) {
             Write-Host "OK ProjectReference -> $($csproj.FullName) :: $inc" -ForegroundColor DarkGreen
         }
@@ -122,6 +151,18 @@ foreach ($sln in $slnFiles) {
                 }) | Out-Null
                 Write-Host "Missing .sln project ->" -NoNewline; Write-Host " $($sln.FullName) :: $rel" -ForegroundColor Yellow
                 if ($candidates.Count -gt 0) { Write-Host "  Suggested: $($candidates -join '; ')" -ForegroundColor DarkYellow }
+
+                if ($Fix -and $candidates.Count -ge 1) {
+                    try {
+                        $target = $candidates[0]
+                        $newRel = Get-RelativePath -FromFile $sln.FullName -ToFile $target
+                        $lines[$i] = $line -replace [regex]::Escape($rel), ($newRel -replace '\\','/')
+                        Set-Content -LiteralPath $sln.FullName -Value $lines -Encoding UTF8
+                        Write-Host "  Fixed .sln entry in: $($sln.FullName)" -ForegroundColor Green
+                    } catch {
+                        Write-Warning "  Failed to rewrite .sln entry in $($sln.FullName): $($_.Exception.Message)"
+                    }
+                }
             } elseif ($Verbose) {
                 Write-Host "OK .sln project -> $($sln.FullName) :: $rel" -ForegroundColor DarkGreen
             }
@@ -228,3 +269,22 @@ $null = $sb.AppendLine("Done.")
 $sb.ToString() | Out-File -FilePath $ReportPath -Encoding UTF8 -Force
 
 Write-Host "\nReport written to: $ReportPath" -ForegroundColor Green
+
+# Targeted regex patch for known folder moves (optional extra safety)
+if ($Fix) {
+    Write-Host "\nApplying targeted path rewrites for known moves (Entities) ..." -ForegroundColor Cyan
+    Get-ChildItem -LiteralPath $rootPath -Recurse -File -Filter *.csproj -Force | ForEach-Object {
+        try {
+            $p = $_.FullName
+            $txt = Get-Content -LiteralPath $p -Raw
+            $new = $txt -replace 'Roblox[\\/]+Roblox\.Entities\.Mssql', 'Entities/Roblox.Entities.Mssql' `
+                          -replace 'Roblox[\\/]+Roblox\.Entities',       'Entities/Roblox.Entities'
+            if ($new -ne $txt) {
+                Set-Content -LiteralPath $p -Value $new -Encoding UTF8 -NoNewline
+                Write-Host "  Updated: $p" -ForegroundColor Green
+            }
+        } catch {
+            Write-Warning "  Failed path rewrite for $($_.FullName): $($_.Exception.Message)"
+        }
+    }
+}

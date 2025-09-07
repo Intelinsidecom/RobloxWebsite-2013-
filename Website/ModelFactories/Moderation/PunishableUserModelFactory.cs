@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Roblox.Platform.Membership;
-using Roblox.Platform.Email;
-using Roblox.Platform.Membership;
-using Roblox.Website.Factories;
 using Roblox.Website.Models.Moderation;
 
 namespace Roblox.Website.ModelFactories.Moderation
@@ -13,22 +10,19 @@ namespace Roblox.Website.ModelFactories.Moderation
     public class PunishableUserModelFactory
     {
         private static IUserFactory _userFactory;
-        private static IUserEmailFactory _userEmailFactory;
         private static readonly IRoleSetValidator _roleSetReader;
 
         static PunishableUserModelFactory()
         {
             _userFactory = Global.MembershipDomainFactories.UserFactory;
             _roleSetReader = new RolesDomainFactories().RoleSetReader;
-            _userEmailFactory = new StubUserEmailFactory();
         }
 
         public static PunishableUserModel PopulatePunishableUserModel(IUser user)
         {
 
             var roleSet = _roleSetReader.GetHighestRoleSetForAccountId(user.AccountId);
-            var userEmail = _userEmailFactory.GetCurrentVerified(user);
-            var emailAddress = userEmail != null ? userEmail.Email : null;
+            string emailAddress = null; // TODO: wire Roblox.Platform.Email.User to retrieve verified email
 
             var model = new PunishableUserModel
             {

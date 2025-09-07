@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Roblox.EventLog;
 using Roblox.Platform.Assets;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Presence;
 using Roblox.Platform.Universes;
 using Roblox.Time;

@@ -5,7 +5,7 @@ using Roblox.Platform.GameInstances;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Presence;
 using Roblox.Platform.Social;
-using Roblox.TranslationResources.Common;
+using Roblox.Platform.TranslationResources.Common;
 using Roblox.Web.Presence;
 using Roblox.WebsiteSettings.Properties;
 

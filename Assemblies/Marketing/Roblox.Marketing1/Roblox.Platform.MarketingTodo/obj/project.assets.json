@@ -5421,13 +5421,13 @@
     },
     "Roblox.Entities/1.0.0": {
       "type": "project",
-      "path": "../../../Roblox/Roblox.Entities/Roblox.Entities.csproj",
-      "msbuildProject": "../../../Roblox/Roblox.Entities/Roblox.Entities.csproj"
+      "path": "../../../Entities/Roblox.Entities/Roblox.Entities.csproj",
+      "msbuildProject": "../../../Entities/Roblox.Entities/Roblox.Entities.csproj"
     },
     "Roblox.Entities.Mssql/1.0.0": {
       "type": "project",
-      "path": "../../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
-      "msbuildProject": "../../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
+      "path": "../../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
+      "msbuildProject": "../../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
     },
     "Roblox.EventLog/1.0.0": {
       "type": "project",
@@ -5896,6 +5896,12 @@
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Data\\Roblox.Data\\Roblox.Data.csproj"
             },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
+            },
+            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj": {
+              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Entities\\Roblox.Entities\\Roblox.Entities.csproj"
+            },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj"
             },
@@ -5922,12 +5928,6 @@
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj"
-            },
-            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj": {
-              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj"
-            },
-            "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj": {
-              "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj"
             },
             "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.Devices\\Roblox.Web.Devices.csproj": {
               "projectPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Web\\Roblox.Web.Devices\\Roblox.Web.Devices.csproj"

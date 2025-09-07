@@ -1,0 +1,79 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Roblox.LightUtils/3.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "prometheus-net.AspNetCore": "4.2.0"
+        },
+        "runtime": {
+          "Roblox.LightUtils.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "prometheus-net/4.2.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Prometheus.NetCore.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.2.0.0"
+          },
+          "lib/netcoreapp2.1/Prometheus.NetStandard.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      },
+      "prometheus-net.AspNetCore/4.2.0": {
+        "dependencies": {
+          "prometheus-net": "4.2.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Prometheus.AspNetCore.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Roblox.LightUtils/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "prometheus-net/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1u9aEPHnp3qrY9KsJRTZ1FmaBiOxEzEeEuHzmTyEnudd0KKB5KSG9enkEIeyaptFVu/B43pLwLwS1FqF/fXdCg==",
+      "path": "prometheus-net/4.2.0",
+      "hashPath": "prometheus-net.4.2.0.nupkg.sha512"
+    },
+    "prometheus-net.AspNetCore/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NRVI8l6UUQcT+pB/NukoGbsSB8/BZ1NQUQiHpnpErwCZ+CjCYHGmu+GTHuIqKgVf3ifn96D2gvRl5N7Q6xLUeQ==",
+      "path": "prometheus-net.aspnetcore/4.2.0",
+      "hashPath": "prometheus-net.aspnetcore.4.2.0.nupkg.sha512"
+    }
+  }
+}

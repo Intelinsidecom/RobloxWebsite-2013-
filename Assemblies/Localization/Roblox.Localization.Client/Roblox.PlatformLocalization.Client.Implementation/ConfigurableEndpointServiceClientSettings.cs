@@ -1,10 +1,10 @@
 using System;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
-using Roblox.Localization.Client.Properties;
+using Roblox.Platform.Localization.Client.Properties;
 using Roblox.Sentinels.CircuitBreakerPolicy;
 
-namespace Roblox.Localization.Client.Implementation;
+namespace Roblox.Platform.Localization.Client.Implementation;
 
 internal class ConfigurableEndpointServiceClientSettings : IServiceClientSettings, IHttpClientSettings, IDefaultCircuitBreakerPolicyConfig
 {

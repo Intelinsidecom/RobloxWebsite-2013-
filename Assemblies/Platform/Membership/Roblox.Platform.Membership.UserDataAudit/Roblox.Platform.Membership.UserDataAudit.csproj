@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Membership.UserDataAudit</AssemblyName>
@@ -13,16 +13,16 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+    <ProjectReference Include="..\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
       <Project>
       </Project>
       <Name>Roblox.Platform.Membership.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Roblox.Platform.Membership.UserDataAuditCore\Roblox.Platform.Membership.UserDataAuditCore.csproj">
+    <ProjectReference Include="..\\Roblox.Platform.Membership.UserDataAuditCore\\Roblox.Platform.Membership.UserDataAuditCore.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
       <Project>
       </Project>
     </ProjectReference>

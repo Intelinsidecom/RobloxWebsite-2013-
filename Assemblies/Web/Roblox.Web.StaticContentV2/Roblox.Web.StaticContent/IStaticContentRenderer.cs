@@ -1,5 +1,5 @@
 using Roblox.Platform.StaticContent;
-using Roblox.StaticContent.Client;
+using Roblox.Platform.StaticContent.Client;
 
 namespace Roblox.Web.StaticContent;
 
@@ -18,13 +18,13 @@ public interface IStaticContentRenderer
 	/// This call will also contain html tags for any registered dependencies of <paramref name="component" />.
 	/// </remarks>
 	/// <param name="component">The <see cref="T:Roblox.Platform.StaticContent.StaticContentComponent" />.</param>
-	/// <param name="contentType">The <see cref="T:Roblox.StaticContent.Client.StaticContentContentType" />.</param>
+	/// <param name="contentType">The <see cref="T:Roblox.Platform.StaticContent.Client.StaticContentContentType" />.</param>
 	/// <returns>The HTML tag string.</returns>
-	string GetContentHtmlTags(StaticContentComponent component, StaticContentContentType contentType);
+	string GetContentHtmlTags(Roblox.Platform.StaticContent.StaticContentComponent component, Roblox.Platform.StaticContent.Client.StaticContentContentType contentType);
 
 	/// <summary>
 	/// Adds the <see cref="T:Roblox.TranslationResources.ITranslationResources" /> to the page for that are included with an <see cref="T:Roblox.Platform.StaticContent.StaticContentComponent" />.
 	/// </summary>
 	/// <param name="component">The <see cref="T:Roblox.Platform.StaticContent.StaticContentComponent" />.</param>
-	void AddTranslationResources(StaticContentComponent component);
+	void AddTranslationResources(Roblox.Platform.StaticContent.StaticContentComponent component);
 }

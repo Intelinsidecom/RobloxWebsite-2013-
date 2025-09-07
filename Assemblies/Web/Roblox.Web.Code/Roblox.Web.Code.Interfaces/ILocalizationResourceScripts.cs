@@ -1,4 +1,4 @@
-using Roblox.TranslationResources;
+using Roblox.Platform.TranslationResources;
 
 namespace Roblox.Web.Code.Interfaces;
 

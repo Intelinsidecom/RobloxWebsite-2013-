@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Platform.Assets;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Presence;
 using Roblox.Platform.UniverseDisplayInformation;
 using Roblox.Platform.Universes;

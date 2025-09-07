@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.UniverseSettings</AssemblyName>
@@ -29,7 +29,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities\\Roblox.Entities.csproj">
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities\\Roblox.Entities.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -89,7 +89,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
       <Project>
       </Project>
     </ProjectReference>

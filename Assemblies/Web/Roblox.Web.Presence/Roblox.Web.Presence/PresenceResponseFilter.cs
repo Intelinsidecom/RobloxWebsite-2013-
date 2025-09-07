@@ -6,7 +6,7 @@ using Roblox.Platform.Membership;
 using Roblox.Platform.Presence;
 using Roblox.Platform.Social;
 using Roblox.Platform.Social.Follow;
-using Roblox.TranslationResources.Common;
+using Roblox.Platform.TranslationResources.Common;
 using Roblox.Web.Authentication;
 
 namespace Roblox.Web.Presence;

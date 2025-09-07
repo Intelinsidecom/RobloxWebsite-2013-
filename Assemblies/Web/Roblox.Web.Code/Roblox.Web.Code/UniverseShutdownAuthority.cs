@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.EventLog;
-using Roblox.Games.Client;
+using Roblox.Platform.Games.Client;
 using Roblox.Platform.AssetPermissions;
 using Roblox.Platform.Assets;
 using Roblox.Platform.GameInstances;

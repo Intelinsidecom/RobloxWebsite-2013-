@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -51,312 +51,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=6.0.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNetCore.Cryptography.Internal.6.0.3\lib\net461\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Data.Sqlite, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Data.Sqlite.Core.3.1.32\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=3.1.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.DotNet.PlatformAbstractions.3.1.6\lib\net45\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Sqlite, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.Sqlite.Core.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Sqlite.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.EntityFrameworkCore.SqlServer.3.1.32\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Caching.Memory.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Binder.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.3.1.32\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyModel, Version=3.1.25.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.DependencyModel.3.1.25\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Logging.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Options, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Options.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Extensions.Primitives.3.1.32\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Identity.Client, Version=3.0.8.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Identity.Client.3.0.8\lib\net45\Microsoft.Identity.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.JsonWebTokens.5.5.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Logging.5.5.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Protocols, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.5.5.0\lib\net461\Microsoft.IdentityModel.Protocols.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.5.0\lib\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.IdentityModel.Tokens.5.5.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MySqlConnector, Version=0.69.10.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MySqlConnector.0.69.10\lib\net471\MySqlConnector.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Pomelo.EntityFrameworkCore.MySql, Version=3.2.7.0, Culture=neutral, PublicKeyToken=2cc498582444921b, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Pomelo.EntityFrameworkCore.MySql.3.2.7\lib\netstandard2.0\Pomelo.EntityFrameworkCore.MySql.dll</HintPath>
-    </Reference>
-    <Reference Include="Pomelo.JsonObject, Version=2.2.1.0, Culture=neutral, PublicKeyToken=2cc498582444921b, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Pomelo.JsonObject.2.2.1\lib\netstandard2.0\Pomelo.JsonObject.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox Server Class Library">
-      <HintPath>..\..\Website\Source\bin\Roblox Server Class Library.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Agents">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Agents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.DynamoDb">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.DynamoDb.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Firehose">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.Firehose.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Sns">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.Sns.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Amazon.Sqs">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Amazon.Sqs.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Analytics">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ApiClientBase">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.ApiClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.AssetMedia">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.AssetMedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.AssetMedia.Entities">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.AssetMedia.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Assets">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Assets.Places">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Assets.Places.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.AuthenticationV2">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.AuthenticationV2.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Billing">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Billing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.BillingTransactionEventPublisher">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.BillingTransactionEventPublisher.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.BriteVerify">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.BriteVerify.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.BucketStore">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.BucketStore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Caching">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Caching.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CachingV2.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.CachingV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CachingV2.Diagnostics">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.CachingV2.Diagnostics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CachingV2.MemoryCache">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.CachingV2.MemoryCache.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Captcha.Entities">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Captcha.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CatalogItemChangePublisher">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.CatalogItemChangePublisher.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Classification">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Classification.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Collections">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common.NetStandard">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Common.NetStandard.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Common.Web">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Common.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.CommunitySift">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.CommunitySift.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Configuration.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Configuration.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ContentRatings">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.ContentRatings.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Controls">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Controls.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Coordination">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Coordination.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Data">
-      <HintPath>..\..\Website\Source\bin\Roblox.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.DataV2.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.DataV2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Demographics">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Demographics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Diagnostics">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Diagnostics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Drawing">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Drawing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Economy.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Economy.Common">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Economy.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Entities.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Entities.Mssql">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Entities.Mssql.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EphemeralCounters">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.EphemeralCounters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EphemeralCounters.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.EphemeralCounters.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.EventLog.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.EventLog.Windows">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.EventLog.Windows.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Farms">
       <HintPath>..\..\..\old\-----------\--\Petko\bin\Roblox.Farms.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Files.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Files.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.FloodCheckers.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.FloodCheckers.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.FloodCheckers.Redis">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.FloodCheckers.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.GameInstances.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.GameInstances.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Games.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Games.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Gigya">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Gigya.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.GoogleAPI.Interfaces">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.GoogleAPI.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Groups">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Hashing">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Hashing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Http.Client.ApiControlPlane">
       <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.Client.ApiControlPlane.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Http.Client.Monitoring">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.Client.Monitoring.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Http.Service">
       <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.Service.dll</HintPath>
@@ -364,513 +64,57 @@
     <Reference Include="Roblox.Http.Service.ApiControlPlane">
       <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.Service.ApiControlPlane.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Http.ServiceClient">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Http.ServiceClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Identities.Models">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Identities.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Instrumentation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.IpGeolocation.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.IpGeolocation.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Kickbox">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Kickbox.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.LeasedLocks.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.LeasedLocks.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.LiveGamer">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.LiveGamer.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Localization.Client">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Localization.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Locking">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Locking.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Marketing">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Marketing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.MaxMind.GeoIP2">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.MaxMind.GeoIP2.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.MemCachedClient">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.MemCachedClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Moderation">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AbTesting">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.AbTesting.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AbTesting.Core">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.AbTesting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AccountPins">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.AccountPins.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetMedia">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.AssetMedia.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetOwnership">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.AssetOwnership.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetPermissions">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.AssetPermissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Assets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Assets.Places">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Assets.Places.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AssetsCore">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.AssetsCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.AudioRightsManagement">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.AudioRightsManagement.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication.AccountSecurity">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Authentication.AccountSecurity.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Authentication.AccountSecurityTickets">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Authentication.AccountSecurityTickets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Avatar">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Avatar.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Badges">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Badges.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Billing">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Billing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.CallContext">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.CallContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Captcha">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Captcha.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Chat">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.Chat.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.CloudEdit.Permissions">
-      <HintPath>..\..\..\old\-----------\--\assemblies\full\Roblox.Platform.CloudEdit.Permissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Communication.Behavior">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Communication.Behavior.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Core">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Counters">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Counters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.CurrencyBudgets">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.CurrencyBudgets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Demographics">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Demographics.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Devices">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Devices.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Email">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Email.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Email.Delivery">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Email.Delivery.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Email.User">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Email.User.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Events">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Events.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.EventStream.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.EventStream.WebEvents">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.EventStream.WebEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Floodcheckers">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Floodcheckers.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GameInstances">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.GameInstances.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GameLocalization">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.GameLocalization.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GameLocalization.Authorization">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.GameLocalization.Authorization.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Games">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Games.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Games.Counters">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Games.Counters.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.GroupAssets">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.GroupAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Groups">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Groups.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Infractions">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Infractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Infrastructure">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.IpAddresses">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.IpAddresses.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Accounts">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Localization.Accounts.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Localization.Core">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Localization.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Marketing">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Marketing.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Math">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Math.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership.Commands">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.Commands.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership.Extensions">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership.UserDataAudit">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.UserDataAudit.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership.UserDataAuditCore">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.UserDataAuditCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.MembershipCore">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.MembershipCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Membership">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Membership.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Platform.Roles">
       <HintPath>..\..\Website\Source\bin\Roblox.Platform.Roles.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Moderation">
-      <HintPath>..\..\Website\Source\bin\Roblox.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Moderation">
-      <HintPath>..\..\Assemblies\Roblox.Platform.Moderation\Roblox.Platform.Moderation\Roblox.Platform.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Users">
-      <HintPath>..\..\Website\Source\bin\Roblox.Users.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Roles">
       <HintPath>..\..\WWWSite\bin\Roblox.Roles.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Platform.Moderation">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Moderation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Notifications">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Notifications.AbTesting">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.AbTesting.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Notifications.Core">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Notifications.Push">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Push.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Notifications.Stream">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Notifications.Stream.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Outfits">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Outfits.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.OwnershipV2">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.OwnershipV2.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Party">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Party.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Permissions">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Permissions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Permissions.Core">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Permissions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.PolicyLookup">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.PolicyLookup.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.PremiumFeatures">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.PremiumFeatures.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Presence">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Presence.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Privacy">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Privacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Security">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Social">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Social.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Studio">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Studio.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.TeamCreate">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TeamCreate.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.TeamCreate.Notifications">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TeamCreate.Notifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Throttling">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Throttling.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Thumbnails.Repository">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Thumbnails.Repository.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.TranslationStorage">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TranslationStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.TwoStepVerification">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.TwoStepVerification.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.UniverseDisplayInformation">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UniverseDisplayInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.Universes">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.Universes.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.UniverseSettings">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UniverseSettings.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.UserBlock.Core">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UserBlock.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.UserSetting">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.UserSetting.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.VirtualCurrency">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.VirtualCurrency.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Platform.XboxLive">
-      <HintPath>..\..\Website\Source\bin\Roblox.Platform.XboxLive.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.PremiumFeatures">
-      <HintPath>..\..\Website\Source\bin\Roblox.PremiumFeatures.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.PremiumFeatures.Models">
-      <HintPath>..\..\Website\Source\bin\Roblox.PremiumFeatures.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Random">
-      <HintPath>..\..\Website\Source\bin\Roblox.Random.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RealTimeNotifications">
-      <HintPath>..\..\Website\Source\bin\Roblox.RealTimeNotifications.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RealTimeNotifications.Client">
-      <HintPath>..\..\Website\Source\bin\Roblox.RealTimeNotifications.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Redis">
-      <HintPath>..\..\Website\Source\bin\Roblox.Redis.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Redis.Lru">
-      <HintPath>..\..\Website\Source\bin\Roblox.Redis.Lru.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RequestContext">
-      <HintPath>..\..\Website\Source\bin\Roblox.RequestContext.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.RestClientBase">
-      <HintPath>..\..\Website\Source\bin\Roblox.RestClientBase.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Segmentation.Client">
-      <HintPath>..\..\Website\Source\bin\Roblox.Segmentation.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Sentinels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Website\Source\bin\Roblox.Sentinels.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Serialization.Json">
-      <HintPath>..\..\Website\Source\bin\Roblox.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.ServiceDiscovery">
-      <HintPath>..\..\Website\Source\bin\Roblox.ServiceDiscovery.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.StaticContent.Client">
-      <HintPath>..\..\Website\Source\bin\Roblox.StaticContent.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TextFilter">
-      <HintPath>..\..\Website\Source\bin\Roblox.TextFilter.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TextFilter.Client">
-      <HintPath>..\..\Website\Source\bin\Roblox.TextFilter.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Thumbnails.RequestValidation">
       <HintPath>..\..\Website\Source\bin\Roblox.Thumbnails.RequestValidation.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Thumbs">
-      <HintPath>..\..\Website\Source\bin\Roblox.Thumbs.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Time">
-      <HintPath>..\..\Website\Source\bin\Roblox.Time.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TrackingQueue">
-      <HintPath>..\..\Website\Source\bin\Roblox.TrackingQueue.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TransactionEvents">
-      <HintPath>..\..\Website\Source\bin\Roblox.TransactionEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.TranslationResources">
-      <HintPath>..\..\Website\Source\bin\Roblox.TranslationResources.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.UserCacheMigrationSettings">
-      <HintPath>..\..\Website\Source\bin\Roblox.UserCacheMigrationSettings.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Users">
-      <HintPath>..\..\Website\Source\bin\Roblox.Users.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Users.Client">
-      <HintPath>..\..\Website\Source\bin\Roblox.Users.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Attributes">
       <HintPath>..\..\Website\Source\bin\Roblox.Web.Attributes.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Web.Authentication">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Authentication.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Code">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Code.dll</HintPath>
-    </Reference>
     <Reference Include="Roblox.Web.Core">
       <HintPath>..\..\Website\Source\bin\Roblox.Web.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Devices">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Devices.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.ElevatedActions">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.ElevatedActions.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Metrics">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Metrics.dll</HintPath>
     </Reference>
     <Reference Include="Roblox.Web.Mvc">
       <HintPath>..\..\Website\Source\bin\Roblox.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Roblox.Web.Presence">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Presence.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.SEO">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.SEO.dll</HintPath>
-    </Reference>
+<ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email\Roblox.Platform.Email.csproj">
+  <Name>Roblox.Platform.Email</Name>
+</ProjectReference>
+<ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj">
+  <Name>Roblox.Platform.Email.User</Name>
+</ProjectReference>
     <Reference Include="Roblox.Web.StaticContent">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.StaticContent.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.Web.Thumbnails">
-      <HintPath>..\..\Website\Source\bin\Roblox.Web.Thumbnails.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.WebsiteSettings">
-      <HintPath>..\..\Website\Source\bin\Roblox.WebsiteSettings.dll</HintPath>
-    </Reference>
-    <Reference Include="Roblox.YouTube">
-      <HintPath>..\..\Website\Source\bin\Roblox.YouTube.dll</HintPath>
+      <HintPath>..\\Assemblies\\Web\\Roblox.WebAppUploader\\bin\\Debug\\net472\\Roblox.Web.StaticContent.dll</HintPath>
     </Reference>
     <Reference Include="Roblox">
       <HintPath>..\..\Assemblies\Roblox Server Class Library\Roblox\Roblox.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>E:\Configuration.Site\ConfigurationWebsite\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.OracleClient" />
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
-    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.IdentityModel.Tokens.Jwt.5.5.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+      <HintPath>..\\Assemblies\\Youtube\\Roblox.YouTube\\bin\\Debug\\net472\\System.Security.AccessControl.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Permissions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Security.Permissions.7.0.0\lib\net462\System.Security.Permissions.dll</HintPath>
+      <HintPath>..\\Assemblies\\Youtube\\Roblox.YouTube\\bin\\Debug\\net472\\System.Security.Permissions.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+      <HintPath>..\\Assemblies\\Youtube\\Roblox.YouTube\\bin\\Debug\\net472\\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceProcess" />
-    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Transactions" />
-    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -878,33 +122,13 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\\packages\\Microsoft.AspNet.Mvc.5.2.9\\lib\\net45\\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\\Assemblies\\Web\\Roblox.WebAppUploader\\bin\\Debug\\net472\\System.Web.WebPages.Deployment.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Windows.Forms" />
@@ -916,13 +140,73 @@
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="WindowsBase" />
+    <PackageReference Include="Antlr" Version="3.5.0.2" xmlns="" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" xmlns="" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.Internal" Version="6.0.3" xmlns="" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" xmlns="" />
+    <PackageReference Include="Microsoft.Bcl.HashCode" Version="1.1.1" xmlns="" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" xmlns="" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" xmlns="" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="3.1.25" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.1.32" xmlns="" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="3.0.8" xmlns="" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="5.5.0" xmlns="" />
+    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="5.5.0" xmlns="" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="5.5.0" xmlns="" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="5.5.0" xmlns="" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.5.0" xmlns="" />
+    <PackageReference Include="Microsoft.Web.Infrastructure" Version="1.0.0" xmlns="" />
+    <PackageReference Include="MySqlConnector" Version="0.69.10" xmlns="" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" xmlns="" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.7" xmlns="" />
+    <PackageReference Include="Pomelo.JsonObject" Version="2.2.1" xmlns="" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" xmlns="" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
+    <PackageReference Include="System.Buffers" Version="4.5.1" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+    <PackageReference Include="System.Data.Common" Version="4.3.0" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.7.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="5.0.1" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="WebGrease" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9" />
+    <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\IUserEmailFactory.cs" />
+    <Compile Include="Factories\EmailDomainFactories.cs" />
+    <Compile Include="Factories\RolesDomainFactories.cs" />
+    <Compile Include="Factories\SecurityDomainFactories.cs" />
+    <Compile Include="Factories\MembershipDomainFactories.cs" />
+    <Compile Include="Factories\AuthenticationDomainFactories.cs" />
+    <Compile Include="Factories\AuthenticationStubs.cs" />
+    <Compile Include="KeepAlives\KeepAlive.cs" />
     <Compile Include="Admi\AdmiSimple.Master.cs">
       <DependentUpon>AdmiSimple.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1689,20 +973,9 @@
     <Compile Include="WebCode\Core\ExceptionHandlerListener.cs" />
     <Compile Include="WebCode\Core\RazorPartialBridge.cs" />
     <Compile Include="WebCode\Core\RobloxWebsiteLogger.cs" />
-    <Compile Include="WebCode\Resources\RobloxResourceSet.cs" />
     <Compile Include="Showcases\Entities\Showcase.cs" />
     <Compile Include="Showcases\Entities\ShowcaseItem.cs" />
     <Compile Include="Showcases\Entities\ShowcaseType.cs" />
-    <Compile Include="Entities\Account.cs" />
-    <Compile Include="Entities\AccountStatus.cs" />
-    <Compile Include="Factories\RolesDomainFactories.cs" />
-    <Compile Include="Factories\IUserEmailFactory.cs" />
-    <Compile Include="Factories\ICredentialValidator.cs" />
-    <Compile Include="Factories\CredentialValidator.cs" />
-    <Compile Include="Factories\AuthenticationDomainFactories.cs" />
-    <Compile Include="Factories\MembershipDomainFactories.cs" />
-    <Compile Include="Factories\EmailDomainFactories.cs" />
-    <Compile Include="Factories\SecurityDomainFactories.cs" />
     <Compile Include="WebCode\StaticContent.cs" />
     <Compile Include="WebCode\RobloxScripts.cs" />
     <Compile Include="WebCode\RobloxCSS.cs" />

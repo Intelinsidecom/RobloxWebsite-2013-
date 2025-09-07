@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.TranslationStorage</AssemblyName>
@@ -12,34 +12,34 @@
   <PropertyGroup />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Platform.TranslationStorage.Client\Roblox.Platform.TranslationStorage.Client.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.TranslationStorage.Client\\Roblox.Platform.TranslationStorage.Client.csproj" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Events\Roblox.EventLog\Roblox.EventLog.csproj">
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Localization\Roblox.Localization.Core\Roblox.Localization.Core.csproj">
+    <ProjectReference Include="..\\..\\..\\Localization\\Roblox.Localization.Core\\Roblox.Localization.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj">
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj">
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Common\Roblox.Common\Roblox.Common.csproj">
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
       <Project>
       </Project>
     </ProjectReference>

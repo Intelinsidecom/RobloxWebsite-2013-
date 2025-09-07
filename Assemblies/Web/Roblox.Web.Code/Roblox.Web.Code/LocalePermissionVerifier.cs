@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.Web.Code.Properties;
 using Roblox.Web.Devices;
@@ -12,74 +12,74 @@ namespace Roblox.Web.Code;
 
 internal class LocalePermissionVerifier : ILocalePermissionVerifier
 {
-	private readonly ILocaleRolloutSettings _LocaleRolloutSettings;
+    private readonly LocaleRolloutSettings _LocaleRolloutSettings;
 
-	private readonly ILocaleSettingsMapper _LocaleSettingsMapper;
+    private readonly ILocaleSettingsMapper _LocaleSettingsMapper;
 
-	private readonly IClientDeviceIdentifier _ClientDeviceIdentifier;
+    private readonly IClientDeviceIdentifier _ClientDeviceIdentifier;
 
-	private readonly IRoleSetValidator _RoleSetValidator;
+    private readonly IRoleSetValidator _RoleSetValidator;
 
-	public LocalePermissionVerifier(ILocaleRolloutSettings localeRolloutSettings, ILocaleSettingsMapper localeSettingsMapper, IClientDeviceIdentifier clientDeviceIdentifier, IRoleSetValidator roleSetValidator)
-		: this(localeRolloutSettings, localeSettingsMapper, clientDeviceIdentifier, roleSetValidator, Settings.Default)
-	{
-	}
+    public LocalePermissionVerifier(LocaleRolloutSettings localeRolloutSettings, ILocaleSettingsMapper localeSettingsMapper, IClientDeviceIdentifier clientDeviceIdentifier, IRoleSetValidator roleSetValidator)
+        : this(localeRolloutSettings, localeSettingsMapper, clientDeviceIdentifier, roleSetValidator, Settings.Default)
+    {
+    }
 
-	internal LocalePermissionVerifier(ILocaleRolloutSettings localeRolloutSettings, ILocaleSettingsMapper localeSettingsMapper, IClientDeviceIdentifier clientDeviceIdentifier, IRoleSetValidator roleSetValidator, IAccountLocaleInitializerSettings settings)
-	{
-		_LocaleRolloutSettings = localeRolloutSettings ?? throw new ArgumentNullException("localeRolloutSettings");
-		_LocaleSettingsMapper = localeSettingsMapper ?? throw new ArgumentNullException("localeSettingsMapper");
-		_ClientDeviceIdentifier = clientDeviceIdentifier ?? throw new ArgumentNullException("clientDeviceIdentifier");
-		_RoleSetValidator = roleSetValidator ?? throw new ArgumentNullException("roleSetValidator");
-	}
+    internal LocalePermissionVerifier(LocaleRolloutSettings localeRolloutSettings, ILocaleSettingsMapper localeSettingsMapper, IClientDeviceIdentifier clientDeviceIdentifier, IRoleSetValidator roleSetValidator, IAccountLocaleInitializerSettings settings)
+    {
+        _LocaleRolloutSettings = localeRolloutSettings ?? throw new ArgumentNullException("localeRolloutSettings");
+        _LocaleSettingsMapper = localeSettingsMapper ?? throw new ArgumentNullException("localeSettingsMapper");
+        _ClientDeviceIdentifier = clientDeviceIdentifier ?? throw new ArgumentNullException("clientDeviceIdentifier");
+        _RoleSetValidator = roleSetValidator ?? throw new ArgumentNullException("roleSetValidator");
+    }
 
-	public bool IsUserLocaleEnabledForFullExperience(IUser user, ISupportedLocale supportedLocale, string userAgent)
-	{
-		ILocaleSettings localeSettings = _LocaleSettingsMapper.GetLocaleSettings(supportedLocale?.Locale);
-		if (localeSettings == null)
-		{
-			return false;
-		}
-		if (localeSettings.IsLocaleEnabledForAll())
-		{
-			return true;
-		}
-		if (localeSettings.IsLocaleEnabledForSoothsayers() && user != null && _RoleSetValidator.IsSoothsayer(user))
-		{
-			return true;
-		}
-		if (_ClientDeviceIdentifier.IsRobloxIOSApp(userAgent))
-		{
-			return IsRobloxAppVersionAtLeast(localeSettings.MinIOSAppVersionToEnableFullExperience(), userAgent);
-		}
-		if (_ClientDeviceIdentifier.IsRobloxAndroidApp(userAgent))
-		{
-			return IsRobloxAppVersionAtLeast(localeSettings.MinAndroidAppVersionToEnableFullExperience(), userAgent);
-		}
-		return localeSettings.IsLocaleEnabledOnDesktopForFullExperience();
-	}
+    public bool IsUserLocaleEnabledForFullExperience(IUser user, ISupportedLocale supportedLocale, string userAgent)
+    {
+        ILocaleSettings localeSettings = _LocaleSettingsMapper.GetLocaleSettings(supportedLocale?.Locale);
+        if (localeSettings == null)
+        {
+            return false;
+        }
+        if (localeSettings.IsLocaleEnabledForAll())
+        {
+            return true;
+        }
+        if (localeSettings.IsLocaleEnabledForSoothsayers() && user != null && _RoleSetValidator.IsSoothsayer(user))
+        {
+            return true;
+        }
+        if (_ClientDeviceIdentifier.IsRobloxIOSApp(userAgent))
+        {
+            return IsRobloxAppVersionAtLeast(localeSettings.MinIOSAppVersionToEnableFullExperience(), userAgent);
+        }
+        if (_ClientDeviceIdentifier.IsRobloxAndroidApp(userAgent))
+        {
+            return IsRobloxAppVersionAtLeast(localeSettings.MinAndroidAppVersionToEnableFullExperience(), userAgent);
+        }
+        return localeSettings.IsLocaleEnabledOnDesktopForFullExperience();
+    }
 
-	public bool IsUserLocaleEnabledForSignupAndLogin(ISupportedLocale supportedLocale, string userAgent)
-	{
-		ILocaleSettings localeSettings = _LocaleSettingsMapper.GetLocaleSettings(supportedLocale?.Locale);
-		if (localeSettings == null)
-		{
-			return false;
-		}
-		if (localeSettings.IsLocaleEnabledForAll())
-		{
-			return true;
-		}
-		if (_ClientDeviceIdentifier.IsRobloxIOSApp(userAgent))
-		{
-			return IsRobloxAppVersionAtLeast(localeSettings.MinIOSAppVersionToEnableSignAndLogin(), userAgent);
-		}
-		if (_ClientDeviceIdentifier.IsRobloxAndroidApp(userAgent))
-		{
-			return IsRobloxAppVersionAtLeast(localeSettings.MinAndroidAppVersionToEnableSignAndLogin(), userAgent);
-		}
-		return localeSettings.IsLocaleEnabledOnDesktopForSignupAndLogin();
-	}
+    public bool IsUserLocaleEnabledForSignupAndLogin(ISupportedLocale supportedLocale, string userAgent)
+    {
+        ILocaleSettings localeSettings = _LocaleSettingsMapper.GetLocaleSettings(supportedLocale?.Locale);
+        if (localeSettings == null)
+        {
+            return false;
+        }
+        if (localeSettings.IsLocaleEnabledForAll())
+        {
+            return true;
+        }
+        if (_ClientDeviceIdentifier.IsRobloxIOSApp(userAgent))
+        {
+            return IsRobloxAppVersionAtLeast(localeSettings.MinIOSAppVersionToEnableSignAndLogin(), userAgent);
+        }
+        if (_ClientDeviceIdentifier.IsRobloxAndroidApp(userAgent))
+        {
+            return IsRobloxAppVersionAtLeast(localeSettings.MinAndroidAppVersionToEnableSignAndLogin(), userAgent);
+        }
+        return localeSettings.IsLocaleEnabledOnDesktopForSignupAndLogin();
+    }
 
 	public bool IsUserLocaleEnabledForUgc(IUser user, ISupportedLocale supportedLocale)
 	{

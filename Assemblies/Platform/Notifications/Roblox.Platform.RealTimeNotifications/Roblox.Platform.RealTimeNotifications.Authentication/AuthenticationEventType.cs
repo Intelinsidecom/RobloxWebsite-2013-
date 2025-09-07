@@ -1,10 +1,8 @@
-﻿namespace Roblox.Platform.RealTimeNotifications.Authenticationpublic {
-    enum AuthenticationEventType
-
+namespace Roblox.Platform.RealTimeNotifications.Authentication
 {
-	SignOut,
-	SignIn
-}
-
-
+    public enum AuthenticationEventType
+    {
+        SignOut,
+        SignIn
+    }
 }

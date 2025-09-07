@@ -1,34 +1,31 @@
-using System;
-using Roblox.EventLog;
-using Roblox.Platform.Core;
 using Roblox.Platform.Email.User;
-using Roblox.Website.Factories;
+using Roblox.Platform.Membership;
 
-namespace Roblox.Platform.Email
+namespace Roblox.Website.Factories
 {
-    /// <summary>
-    /// A class holding the factories for the Platform.Email domain.
-    /// </summary>
-    public class EmailDomainFactories : DomainFactoriesBase
+    public class EmailDomainFactories
     {
-        /// <summary>
-        /// Gets the logger.
-        /// </summary>
-        public virtual ILogger Logger { get; }
-
-        /// <summary>
-        /// Gets the user email factory.
-        /// </summary>
-        public virtual IUserEmailFactory UserEmailFactory { get; }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="EmailDomainFactories" /> class.
-        /// </summary>
-        /// <param name="logger">The logger.</param>
-        public EmailDomainFactories(ILogger logger)
+        public EmailDomainFactories(RobloxWebsiteLogger logger)
         {
-            Logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            UserEmailFactory = new Roblox.Platform.Email.UserEmailFactory();
+            Logger = logger;
+            UserEmailFactory = new DefaultUserEmailFactory();
+        }
+
+        public RobloxWebsiteLogger Logger { get; }
+
+        public IUserEmailFactory UserEmailFactory { get; }
+
+        private class DefaultUserEmailFactory : IUserEmailFactory
+        {
+            public IUserEmail GetByEmail(string email)
+            {
+                return null;
+            }
+
+            public IUserEmail GetCurrentVerified(IUser user)
+            {
+                return null;
+            }
         }
     }
 }

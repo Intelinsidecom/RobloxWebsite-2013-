@@ -5,7 +5,7 @@ using System.IO;
 using System.Text;
 using System.Web;
 using Newtonsoft.Json;
-using Roblox.TranslationResources;
+using Roblox.Platform.TranslationResources;
 using Roblox.Web.Code.Interfaces;
 
 namespace Roblox.Web.Code.Implementations;

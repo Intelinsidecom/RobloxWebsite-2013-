@@ -1,5 +1,5 @@
-﻿namespace Roblox.Platform.Localization.Clientpublic {
-    enum MapDeviceReportedLocaleToSupportedLocaleResult
+namespace Roblox.Platform.Localization.Client {
+    public enum MapDeviceReportedLocaleToSupportedLocaleResult
 
 {
 	Unknown,

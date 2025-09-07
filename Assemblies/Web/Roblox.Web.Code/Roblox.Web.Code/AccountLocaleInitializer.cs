@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Web;
 using Roblox.EventLog;
 using Roblox.Platform.Core;
-using Roblox.Platform.Localization.Accounts;
-using Roblox.Platform.Localization.Accounts.Properties;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Accounts;
+using Roblox.Localization.Accounts.Properties;
+using Roblox.Localization.Core;
 using Roblox.Platform.Membership;
 using Roblox.Random;
 using Roblox.RequestContext;
@@ -32,18 +32,16 @@ public class AccountLocaleInitializer : IAccountLocaleInitializer
 
 	private readonly IRequestContextLoader _RequestContextLoader;
 
-	private readonly IAccountLocalesChangeAgentFactory _AccountLocalesChangeAgentFactory;
-
 	private readonly IRandom _Random;
 
 	private readonly ILogger _Logger;
 
 	public AccountLocaleInitializer(ICoreLocalizationAccessor coreLocalizationAccessor, ICoreLocalizationBuilder coreLocalizationBuilder, IAccountLocaleBuilder accountLocaleBuilder, IAccountLocaleAccessor accountLocaleAccessor, IClientDeviceIdentifier clientDeviceIdentifier, IRoleSetValidator roleSetValidator, IRequestContextLoader requestContextLoader, ILogger logger)
-		: this(coreLocalizationAccessor, coreLocalizationBuilder, accountLocaleBuilder, accountLocaleAccessor, new LocalePermissionVerifier(LocaleRolloutSettings.Default, new LocaleSettingsMapper(LocaleRolloutSettings.Default, UgcLocaleRolloutSettings.Default), clientDeviceIdentifier, roleSetValidator), Settings.Default, requestContextLoader, new AccountLocalesChangeAgentFactory(), new RandomFactory().GetDefaultRandom(), logger)
+		: this(coreLocalizationAccessor, coreLocalizationBuilder, accountLocaleBuilder, accountLocaleAccessor, new LocalePermissionVerifier(LocaleRolloutSettings.Default, new LocaleSettingsMapper(LocaleRolloutSettings.Default, UgcLocaleRolloutSettings.Default), clientDeviceIdentifier, roleSetValidator), Settings.Default, requestContextLoader, new RandomFactory().GetDefaultRandom(), logger)
 	{
 	}
 
-	internal AccountLocaleInitializer(ICoreLocalizationAccessor coreLocalizationAccessor, ICoreLocalizationBuilder coreLocalizationBuilder, IAccountLocaleBuilder accountLocaleBuilder, IAccountLocaleAccessor accountLocaleAccessor, ILocalePermissionVerifier localePermissionVerifier, IAccountLocaleInitializerSettings settings, IRequestContextLoader requestContextLoader, IAccountLocalesChangeAgentFactory accountLocalesChangeAgentFactory, IRandom random, ILogger logger)
+	internal AccountLocaleInitializer(ICoreLocalizationAccessor coreLocalizationAccessor, ICoreLocalizationBuilder coreLocalizationBuilder, IAccountLocaleBuilder accountLocaleBuilder, IAccountLocaleAccessor accountLocaleAccessor, ILocalePermissionVerifier localePermissionVerifier, IAccountLocaleInitializerSettings settings, IRequestContextLoader requestContextLoader, IRandom random, ILogger logger)
 	{
 		_CoreLocalizationAccessor = coreLocalizationAccessor ?? throw new ArgumentNullException("coreLocalizationAccessor");
 		_CoreLocalizationBuilder = coreLocalizationBuilder ?? throw new ArgumentNullException("coreLocalizationBuilder");
@@ -52,7 +50,6 @@ public class AccountLocaleInitializer : IAccountLocaleInitializer
 		_LocalePermissionVerifier = localePermissionVerifier ?? throw new ArgumentNullException("localePermissionVerifier");
 		_Settings = settings ?? throw new ArgumentNullException("settings");
 		_RequestContextLoader = requestContextLoader ?? throw new ArgumentNullException("requestContextLoader");
-		_AccountLocalesChangeAgentFactory = accountLocalesChangeAgentFactory ?? throw new ArgumentNullException("accountLocalesChangeAgentFactory");
 		_Random = random ?? throw new ArgumentNullException("random");
 		_Logger = logger ?? throw new ArgumentNullException("logger");
 	}
@@ -75,7 +72,7 @@ public class AccountLocaleInitializer : IAccountLocaleInitializer
 			{
 				_AccountLocaleBuilder.CreateAccountLocale(user.AccountId, deviceReportedLocaleIdentifier, null, changeAgent);
 			}
-			catch (DuplicateKeyException)
+			catch (Exception)
 			{
 				_AccountLocaleBuilder.SetObservedLocale(user.AccountId, deviceReportedLocaleIdentifier, changeAgent);
 			}
@@ -133,7 +130,7 @@ public class AccountLocaleInitializer : IAccountLocaleInitializer
 				{
 					_AccountLocaleBuilder.CreateAccountLocale(user.AccountId, deviceReportedLocaleIdentifier, supportedLocale, changeAgent);
 				}
-				catch (DuplicateKeyException)
+				catch (Exception)
 				{
 					_AccountLocaleBuilder.SetSupportedLocale(user.AccountId, supportedLocale, changeAgent);
 				}
@@ -309,18 +306,16 @@ public class AccountLocaleInitializer : IAccountLocaleInitializer
 			{
 				try
 				{
-					IAccountLocalesChangeAgent changeAgent2 = _AccountLocalesChangeAgentFactory.CreateChangeAgentForAutomation(AccountLocalesAutomationType.LocaleCreation);
-					accountLocale = _AccountLocaleBuilder.CreateAccountLocale(user.AccountId, deviceReportedLocale, null, changeAgent2);
+					accountLocale = _AccountLocaleBuilder.CreateAccountLocale(user.AccountId, deviceReportedLocale, null, null);
 				}
-				catch (DuplicateKeyException)
+				catch (Exception)
 				{
 					accountLocale = _AccountLocaleAccessor.GetAccountLocale(user.AccountId);
 				}
 			}
 			else
 			{
-				IAccountLocalesChangeAgent changeAgent = _AccountLocalesChangeAgentFactory.CreateChangeAgentForAutomation(AccountLocalesAutomationType.DeviceLocaleUpdate);
-				_AccountLocaleBuilder.SetObservedLocale(user.AccountId, deviceReportedLocale, changeAgent);
+				_AccountLocaleBuilder.SetObservedLocale(user.AccountId, deviceReportedLocale, null);
 			}
 		}
 		catch (Exception e)

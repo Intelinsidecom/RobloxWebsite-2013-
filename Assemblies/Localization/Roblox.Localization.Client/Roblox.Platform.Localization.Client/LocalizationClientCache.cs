@@ -1,18 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Roblox.Collections;
 using Roblox.EventLog;
-using Roblox.Localization.Client.Properties;
-namespace Roblox.Platform.Localization.Clientpublic {
-    class LocalizationClientCache : ILocalizationClientCache
+using Roblox.Platform.Localization.Client.Properties;
 
+namespace Roblox.Platform.Localization.Client
 {
-	private const string _AllSupportedLocaleKey = "AllSupportedLocaleKey";
+    public class LocalizationClientCache : ILocalizationClientCache
+    {
+        private const string _AllSupportedLocaleKey = "AllSupportedLocaleKey";
 
-	private readonly ILogger _Logger;
+        private readonly ILogger _Logger;
 
-	private readonly ISettings _Settings;
+        private readonly ISettings _Settings;
 
 	private readonly ExpirableDictionary<int, LanguageFamily> _LanguageFamilyCacheById;
 

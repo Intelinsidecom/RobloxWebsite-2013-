@@ -1,7 +1,7 @@
 using System.Web;
 using Roblox.Platform.Devices;
-using Roblox.Platform.EventStream;
-using Roblox.Platform.EventStream.WebEvents;
+using Roblox.EventStream;
+using Roblox.EventStream.WebEvents;
 using Roblox.Random;
 using Roblox.Web.Code.EventStream.WebEvents;
 using Roblox.Web.Code.Properties;

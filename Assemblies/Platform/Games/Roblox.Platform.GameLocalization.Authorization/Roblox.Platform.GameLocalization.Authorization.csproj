@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.GameLocalization.Authorization</AssemblyName>
@@ -17,39 +17,39 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Configuration" />
     <Reference Include="Microsoft.CSharp" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
       <Project>
       </Project>
       <Name>Roblox.Platform.Membership.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Groups\Roblox.Platform.Groups\Roblox.Platform.Groups.csproj">
+    <ProjectReference Include="..\\..\\Groups\\Roblox.Platform.Groups\\Roblox.Platform.Groups.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Events\Roblox.EventLog\Roblox.EventLog.csproj">
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj">
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Universes\Roblox.Platform.Universes\Roblox.Platform.Universes.csproj">
+    <ProjectReference Include="..\\..\\Universes\\Roblox.Platform.Universes\\Roblox.Platform.Universes.csproj">
       <Project>
       </Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Roblox.Platform.GameLocalization.Client\Roblox.Platform.GameLocalization.Client.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.InGameContentTables.Client\Roblox.Platform.InGameContentTables.Client.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.GameLocalization.Client\\Roblox.Platform.GameLocalization.Client.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.InGameContentTables.Client\\Roblox.Platform.InGameContentTables.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />

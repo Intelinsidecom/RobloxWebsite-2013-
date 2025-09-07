@@ -3086,6 +3086,7 @@
           "Newtonsoft.Json": "13.0.3",
           "Roblox Server Class Library": "1.0.0",
           "Roblox.Agents": "1.0.0",
+          "Roblox.ApiClientBase": "1.0.0",
           "Roblox.Caching": "1.0.0",
           "Roblox.Common": "1.0.0",
           "Roblox.Configuration": "1.0.0",
@@ -6732,13 +6733,13 @@
     },
     "Roblox.Entities/1.0.0": {
       "type": "project",
-      "path": "../../../Roblox/Roblox.Entities/Roblox.Entities.csproj",
-      "msbuildProject": "../../../Roblox/Roblox.Entities/Roblox.Entities.csproj"
+      "path": "../../../Entities/Roblox.Entities/Roblox.Entities.csproj",
+      "msbuildProject": "../../../Entities/Roblox.Entities/Roblox.Entities.csproj"
     },
     "Roblox.Entities.Mssql/1.0.0": {
       "type": "project",
-      "path": "../../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
-      "msbuildProject": "../../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
+      "path": "../../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
+      "msbuildProject": "../../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
     },
     "Roblox.EventLog/1.0.0": {
       "type": "project",

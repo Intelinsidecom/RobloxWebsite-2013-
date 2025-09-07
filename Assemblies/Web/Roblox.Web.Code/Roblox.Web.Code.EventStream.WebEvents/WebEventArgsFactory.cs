@@ -1,10 +1,10 @@
 using System;
 using System.Web;
 using Roblox.Common;
-using Roblox.Marketing;
 using Roblox.Platform.Devices;
-using Roblox.Platform.EventStream.WebEvents;
+using Roblox.EventStream.WebEvents;
 using Roblox.Platform.Marketing;
+using Roblox.Marketing;
 using Roblox.Platform.Membership;
 using Roblox.Web.Authentication;
 using Roblox.Web.Code.Marketing;
@@ -25,10 +25,10 @@ public class WebEventArgsFactory : IWebEventArgsFactory
 	/// Creates a new instance of <see cref="T:Roblox.Web.Code.EventStream.WebEvents.IWebEventArgsFactory" />.
 	/// </summary>
 	/// <param name="webAuthenticator">The <see cref="T:Roblox.Web.Authentication.IWebAuthenticator" />.</param>
-	/// <param name="defaultEventTarget">The <see cref="T:Roblox.Platform.EventStream.WebEvents.EventTarget" />.</param>
+	/// <param name="defaultEventTarget">The <see cref="T:Roblox.EventStream.WebEvents.EventTarget" />.</param>
 	/// <param name="clientDeviceIdentifier">The <see cref="T:Roblox.Web.Devices.IClientDeviceIdentifier" />.</param>
 	/// <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="webAuthenticator" /> or <paramref name="clientDeviceIdentifier" /> is null.</exception>
-	public WebEventArgsFactory(IWebAuthenticator webAuthenticator, EventTarget defaultEventTarget, IClientDeviceIdentifier clientDeviceIdentifier)
+	public WebEventArgsFactory(IWebAuthenticator webAuthenticator, Roblox.EventStream.WebEvents.EventTarget defaultEventTarget, IClientDeviceIdentifier clientDeviceIdentifier)
 	{
 		if (webAuthenticator == null)
 		{
@@ -59,7 +59,7 @@ public class WebEventArgsFactory : IWebEventArgsFactory
 			throw new ArgumentNullException("httpContext");
 		}
 		TWebEventArgs webEventArgs = GetBasicArgsWithoutBrowserTrackerId<TWebEventArgs>(httpContext);
-		IBrowserTracker browserTracker = PlatformMarketingHelper.GetBrowserTracker(httpContext);
+		Roblox.Platform.Marketing.IBrowserTracker browserTracker = PlatformMarketingHelper.GetBrowserTracker(httpContext);
 		if (browserTracker != null)
 		{
 			webEventArgs.BrowserTrackerId = browserTracker.Id;

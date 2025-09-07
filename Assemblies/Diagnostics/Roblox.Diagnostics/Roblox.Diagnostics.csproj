@@ -13,11 +13,11 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj" />
+    <ProjectReference Include="..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />

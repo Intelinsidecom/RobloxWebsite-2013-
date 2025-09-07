@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Games</AssemblyName>
@@ -63,7 +63,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -87,7 +87,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
       <Project>
       </Project>
     </ProjectReference>
@@ -155,7 +155,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\..\\Roblox\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj">
       <Project>
       </Project>
     </ProjectReference>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.GameInstances</AssemblyName>
@@ -16,39 +16,39 @@
   <ItemGroup>
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <ProjectReference Include="..\Roblox.Platform.GameInstances.Client\Roblox.Platform.GameInstances.Client.csproj">
+    <ProjectReference Include="..\\Roblox.Platform.GameInstances.Client\\Roblox.Platform.GameInstances.Client.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Devices\Roblox.Platform.Devices\Roblox.Platform.Devices.csproj">
+    <ProjectReference Include="..\\..\\Devices\\Roblox.Platform.Devices\\Roblox.Platform.Devices.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj">
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj">
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj">
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Instrumentation\Roblox.Instrumentation\Roblox.Instrumentation.csproj">
+    <ProjectReference Include="..\\..\\..\\Instrumentation\\Roblox.Instrumentation\\Roblox.Instrumentation.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\FloodCheckers\Roblox.FloodCheckers\Roblox.FloodCheckers.csproj">
+    <ProjectReference Include="..\\..\\..\\FloodCheckers\\Roblox.FloodCheckers\\Roblox.FloodCheckers.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Hashing\Roblox.Hashing\Roblox.Hashing.csproj">
+    <ProjectReference Include="..\\..\\..\\Hashing\\Roblox.Hashing\\Roblox.Hashing.csproj">
       <Project>
       </Project>
     </ProjectReference>

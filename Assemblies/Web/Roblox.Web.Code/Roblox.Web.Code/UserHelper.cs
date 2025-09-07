@@ -1,6 +1,6 @@
 using System;
 using Roblox.Properties;
-using Roblox.Users;
+using Roblox.Platform.Users;
 using Roblox.Web.Authentication;
 
 namespace Roblox.Web.Code;

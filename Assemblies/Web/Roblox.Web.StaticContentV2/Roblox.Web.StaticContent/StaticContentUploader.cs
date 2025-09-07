@@ -6,7 +6,7 @@ using System.Linq;
 using Roblox.EventLog;
 using Roblox.Platform.StaticContent;
 using Roblox.Platform.StaticContent.Properties;
-using Roblox.StaticContent.Client;
+using Roblox.Platform.StaticContent.Client;
 using Roblox.Web.Code;
 using Roblox.Web.StaticContent.Properties;
 

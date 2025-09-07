@@ -3068,8 +3068,8 @@
     },
     "Roblox.Entities.Mssql/1.0.0": {
       "type": "project",
-      "path": "../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
-      "msbuildProject": "../../Roblox/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
+      "path": "../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj",
+      "msbuildProject": "../../Entities/Roblox.Entities.Mssql/Roblox.Entities.Mssql.csproj"
     },
     "Roblox.EventLog/1.0.0": {
       "type": "project",

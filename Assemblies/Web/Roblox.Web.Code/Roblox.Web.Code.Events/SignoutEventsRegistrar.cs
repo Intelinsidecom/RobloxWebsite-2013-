@@ -7,7 +7,7 @@ using Roblox.Platform.Devices;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Party.Interface;
 using Roblox.Platform.Presence;
-using Roblox.RealTimeNotifications.Authentication;
+using Roblox.Platform.RealTimeNotifications.Authentication;
 using Roblox.Web.Authentication;
 
 namespace Roblox.Web.Code.Events;

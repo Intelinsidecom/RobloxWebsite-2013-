@@ -85,7 +85,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Roblox Server Class Library\Roblox Server Class Library.csproj">
+    <ProjectReference Include="..\\..\\..\\Roblox Server Class Library\\Roblox Server Class Library.csproj">
       <Project>
       </Project>
     </ProjectReference>

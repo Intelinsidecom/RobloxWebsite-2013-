@@ -4,10 +4,7 @@ using System.Web;
 using System.Net;
 using System.Web.Mvc;
 using System.Collections.Generic;
-using Roblox.Web.Mvc;
 using Roblox.Platform.Membership;
-using Roblox.Platform.Email;
-using Roblox.Website.Factories;
 using Roblox;
 
 namespace Roblox.Website.Controllers
@@ -18,7 +15,6 @@ namespace Roblox.Website.Controllers
     public class UserCheckController : Controller
     {
         private readonly IUserFactory _userFactory = Global.MembershipDomainFactories.UserFactory;
-        private readonly IUserEmailFactory _emailAddressFactory = Global.EmailDomainFactories.UserEmailFactory;
 
         // UserCheck/CheckIfEmailIsBlacklisted
         public JsonResult CheckIfEmailIsBlacklisted(string email)
@@ -26,9 +22,9 @@ namespace Roblox.Website.Controllers
             var success = false;
             if (!string.IsNullOrWhiteSpace(email))
             {
-                var emailAddress = _emailAddressFactory.GetByEmail(email);
-                if (emailAddress != null)
-                    success = emailAddress.IsBlacklisted;
+                // Use the existing Roblox BLL (from referenced DLLs) to check if email is blacklisted
+                var entity = Roblox.EmailAddress.Get(email);
+                success = entity != null && entity.IsBlacklisted;
             }
 
             return Json(

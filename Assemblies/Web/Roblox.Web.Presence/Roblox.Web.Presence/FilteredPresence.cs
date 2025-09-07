@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Roblox.Platform.Presence;
-using Roblox.TranslationResources.Common;
+using Roblox.Platform.TranslationResources.Common;
 
 namespace Roblox.Web.Presence;
 

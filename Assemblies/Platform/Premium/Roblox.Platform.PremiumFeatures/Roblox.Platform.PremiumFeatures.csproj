@@ -18,21 +18,21 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj" />
-    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj" />
-    <ProjectReference Include="..\..\..\Common\Roblox.Common.Web\Roblox.Common.Web.csproj" />
-    <ProjectReference Include="..\..\..\Locking\Roblox.Locking\Roblox.Locking.csproj" />
-    <ProjectReference Include="..\..\Assets\Roblox.Platform.AssetOwnership\Roblox.Platform.AssetOwnership.csproj" />
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities\Roblox.Entities.csproj" />
-    <ProjectReference Include="..\..\..\Mssql\Roblox.MssqlDatabases\Roblox.MssqlDatabases.csproj" />
-    <ProjectReference Include="..\..\..\Events\Roblox.EventLog\Roblox.EventLog.csproj" />
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj" />
-    <ProjectReference Include="..\..\..\Common\Roblox.Common\Roblox.Common.csproj" />
-    <ProjectReference Include="..\..\..\Roblox\Roblox.Entities.Mssql\Roblox.Entities.Mssql.csproj" />
-    <ProjectReference Include="..\..\..\Economy\Roblox.Economy.Common\Roblox.Economy.Common.csproj" />
-    <ProjectReference Include="..\..\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj" />
-    <ProjectReference Include="..\Roblox.Platform.PremiumFeatures.Models\Roblox.Platform.PremiumFeatures.Models.csproj" />
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj" />
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj" />
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj" />
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common.Web\\Roblox.Common.Web.csproj" />
+    <ProjectReference Include="..\\..\\..\\Locking\\Roblox.Locking\\Roblox.Locking.csproj" />
+    <ProjectReference Include="..\\..\\Assets\\Roblox.Platform.AssetOwnership\\Roblox.Platform.AssetOwnership.csproj" />
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities\\Roblox.Entities.csproj" />
+    <ProjectReference Include="..\\..\\..\\Mssql\\Roblox.MssqlDatabases\\Roblox.MssqlDatabases.csproj" />
+    <ProjectReference Include="..\\..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj" />
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj" />
+    <ProjectReference Include="..\\..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj" />
+    <ProjectReference Include="..\\..\\..\\Entities\\Roblox.Entities.Mssql\\Roblox.Entities.Mssql.csproj" />
+    <ProjectReference Include="..\\..\\..\\Economy\\Roblox.Economy.Common\\Roblox.Economy.Common.csproj" />
+    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj" />
+    <ProjectReference Include="..\\Roblox.Platform.PremiumFeatures.Models\\Roblox.Platform.PremiumFeatures.Models.csproj" />
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership\\Roblox.Platform.Membership.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Roblox.PremiumFeatures.Models\**\*.cs" />

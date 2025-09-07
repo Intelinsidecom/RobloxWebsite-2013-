@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-namespace Roblox.Platform.Localization.Clientpublic {
-    interface ILocalizationClient
+namespace Roblox.Platform.Localization.Client
+{
+    public interface ILocalizationClient
 
 {
 	GetLanguageFamilyByIdResponse GetLanguageFamilyById(int id);

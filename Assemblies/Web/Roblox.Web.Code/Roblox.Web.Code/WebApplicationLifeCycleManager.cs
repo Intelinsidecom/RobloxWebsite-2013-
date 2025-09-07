@@ -1,6 +1,5 @@
 using System;
 using System.Web;
-using Roblox.AuthenticationV2;
 using Roblox.EventLog;
 using Roblox.Web.Authentication;
 using Roblox.Web.Metrics;
@@ -16,21 +15,17 @@ public class WebApplicationLifeCycleManager : IWebApplicationLifeCycleManager
 
 	private readonly ILogger _Logger;
 
-	private readonly IAuthenticationV2Synchronizer _AuthenticationV2Synchronizer;
-
 	/// <summary>
 	/// Initializes a <see cref="T:Roblox.Web.Code.WebApplicationLifeCycleManager" />
 	/// </summary>
 	/// <param name="logger">An <see cref="T:Roblox.EventLog.ILogger" />.</param>
 	/// <param name="webAuthenticator">A <see cref="T:Roblox.Web.Authentication.IWebAuthenticator" />.</param>
 	/// <param name="webRequestStatisticsTracker">An <see cref="T:Roblox.Web.Metrics.IWebRequestStatisticsTracker" />.</param>
-	/// <param name="authenticationV2Synchronizer">An <see cref="T:Roblox.AuthenticationV2.IAuthenticationV2Synchronizer" />.</param>
-	public WebApplicationLifeCycleManager(ILogger logger, IWebAuthenticator webAuthenticator, IWebRequestStatisticsTracker webRequestStatisticsTracker, IAuthenticationV2Synchronizer authenticationV2Synchronizer)
+	public WebApplicationLifeCycleManager(ILogger logger, IWebAuthenticator webAuthenticator, IWebRequestStatisticsTracker webRequestStatisticsTracker)
 	{
 		_Logger = logger ?? throw new ArgumentNullException("logger");
 		_WebRequestStatisticsTracker = webRequestStatisticsTracker ?? throw new ArgumentNullException("webRequestStatisticsTracker");
 		_WebAuthenticator = webAuthenticator ?? throw new ArgumentNullException("webAuthenticator");
-		_AuthenticationV2Synchronizer = authenticationV2Synchronizer ?? throw new ArgumentNullException("authenticationV2Synchronizer");
 	}
 
 	/// <inheritdoc cref="M:Roblox.Web.Code.IWebApplicationLifeCycleManager.AuthenticateRequest(System.Web.HttpRequest)" />
@@ -73,9 +68,8 @@ public class WebApplicationLifeCycleManager : IWebApplicationLifeCycleManager
 	{
 		try
 		{
-			HttpRequestWrapper requestBase = new HttpRequestWrapper(request);
-			HttpResponseWrapper responseBase = new HttpResponseWrapper(response);
-			_AuthenticationV2Synchronizer.PreSendRequestHeaders(requestBase, responseBase);
+			// No-op: AuthenticationV2 synchronizer not available in this build.
+			// Maintain method for compatibility; nothing to do here.
 		}
 		catch (Exception ex)
 		{

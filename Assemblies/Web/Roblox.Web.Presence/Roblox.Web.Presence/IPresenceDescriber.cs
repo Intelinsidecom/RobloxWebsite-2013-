@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Roblox.Platform.Localization.Core;
+using Roblox.Localization.Core;
 using Roblox.Platform.Presence;
 using Roblox.Platform.Universes;
 

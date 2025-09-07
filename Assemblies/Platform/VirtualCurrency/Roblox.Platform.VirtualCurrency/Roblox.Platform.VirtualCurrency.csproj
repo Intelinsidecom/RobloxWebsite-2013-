@@ -12,26 +12,26 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Currency\Roblox.Platform.Currency.Client\Roblox.Platform.Currency.Client.csproj" />
+    <ProjectReference Include="..\\..\\Currency\\Roblox.Platform.Currency.Client\\Roblox.Platform.Currency.Client.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+    <ProjectReference Include="..\\..\\Membership\\Roblox.Platform.Membership.Core\\Roblox.Platform.Membership.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\ApiClientBase\Roblox.ApiClientBase\Roblox.ApiClientBase.csproj">
+    <ProjectReference Include="..\\..\\..\\ApiClientBase\\Roblox.ApiClientBase\\Roblox.ApiClientBase.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Core\Roblox.Platform.Core\Roblox.Platform.Core.csproj">
+    <ProjectReference Include="..\\..\\Core\\Roblox.Platform.Core\\Roblox.Platform.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Sentinels\Roblox.Sentinels\Roblox.Sentinels.csproj">
+    <ProjectReference Include="..\\..\\..\\Sentinels\\Roblox.Sentinels\\Roblox.Sentinels.csproj">
       <Project>
       </Project>
     </ProjectReference>

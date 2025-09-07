@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.EventStream.WebEvents</AssemblyName>
@@ -13,19 +13,19 @@
   <ItemGroup />
   <ItemGroup>
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\Roblox.EventStream\Roblox.EventStream.csproj">
+    <ProjectReference Include="..\\Roblox.EventStream\\Roblox.EventStream.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Time\Roblox.Time\Roblox.Time.csproj">
+    <ProjectReference Include="..\\..\\Time\\Roblox.Time\\Roblox.Time.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Common\Roblox.Common\Roblox.Common.csproj">
+    <ProjectReference Include="..\\..\\Common\\Roblox.Common\\Roblox.Common.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Collections\Roblox.Collections\Roblox.Collections.csproj">
+    <ProjectReference Include="..\\..\\Collections\\Roblox.Collections\\Roblox.Collections.csproj">
       <Project>
       </Project>
     </ProjectReference>

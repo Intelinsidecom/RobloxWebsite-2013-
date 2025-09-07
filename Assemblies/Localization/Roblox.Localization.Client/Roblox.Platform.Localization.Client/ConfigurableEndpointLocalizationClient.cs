@@ -1,33 +1,32 @@
-﻿using System;
+using System;
 using System.Net;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
-using Roblox.Localization.Client.Implementation;
-using Roblox.Localization.Client.Properties;
+using Roblox.Platform.Localization.Client.Implementation;
+using Roblox.Platform.Localization.Client.Properties;
 using Roblox.RequestContext;
-namespace Roblox.Platform.Localization.Clientpublic {
-    class ConfigurableEndpointLocalizationClient : LocalizationClient
 
+namespace Roblox.Platform.Localization.Client
 {
-    public ConfigurableEndpointLocalizationClient(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, string endpoint, IRequestContextLoader requestContextLoader = null)
-        : base(CreateHttpClientBuilder(counterRegistry, apiKeyGetter, requestContextLoader), new ConfigurableEndpointServiceClientSettings(endpoint))
+    public class ConfigurableEndpointLocalizationClient : LocalizationClient
     {
-    }
-
-    private static bool ApiKeyViaHeaderEnabled()
-    {
-        return Settings.Default.ApiKeyViaHeaderEnabled;
-    }
-
-    private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
-    {
-        return new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (CookieContainer)null, requestContextLoader)
+        public ConfigurableEndpointLocalizationClient(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, string endpoint, IRequestContextLoader requestContextLoader = null)
+            : base(CreateHttpClientBuilder(counterRegistry, apiKeyGetter, requestContextLoader), new ConfigurableEndpointServiceClientSettings(endpoint))
         {
-            ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled
-        };
+        }
+
+        private static bool ApiKeyViaHeaderEnabled()
+        {
+            return Settings.Default.ApiKeyViaHeaderEnabled;
+        }
+
+        private static IHttpClientBuilder CreateHttpClientBuilder(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader)
+        {
+            return new Roblox.Http.ServiceClient.HttpClientBuilder((IServiceClientSettings)Settings.Default, counterRegistry, apiKeyGetter, (CookieContainer)null, requestContextLoader)
+            {
+                ApiKeyViaHeaderEnabled = ApiKeyViaHeaderEnabled
+            };
+        }
     }
-}
-
-
 }

@@ -1,5 +1,5 @@
 using System.Web;
-using Roblox.Platform.EventStream.WebEvents;
+using Roblox.EventStream.WebEvents;
 
 namespace Roblox.Web.Code.EventStream.WebEvents;
 

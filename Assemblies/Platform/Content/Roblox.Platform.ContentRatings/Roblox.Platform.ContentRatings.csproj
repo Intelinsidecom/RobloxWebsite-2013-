@@ -15,15 +15,15 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Data" />
-    <ProjectReference Include="..\..\..\Data\Roblox.Data\Roblox.Data.csproj">
+    <ProjectReference Include="..\\..\\..\\Data\\Roblox.Data\\Roblox.Data.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Caching\Roblox.Caching\Roblox.Caching.csproj">
+    <ProjectReference Include="..\\..\\..\\Caching\\Roblox.Caching\\Roblox.Caching.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>

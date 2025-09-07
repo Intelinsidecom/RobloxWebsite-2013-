@@ -8,5 +8,9 @@
   "\\bRoblox\\.Users\\.Client\\b": "Roblox.Platform.Users.Client",
   "\\bRoblox\\.UserCacheMigrationSettings\\b": "Roblox.Platform.UserCacheMigrationSettings",
   "\\bRoblox\\.ContentRatings\\b": "Roblox.Platform.ContentRatings",
-  "\\bRoblox\\.PremiumFeatures\\b": "Roblox.Platform.PremiumFeatures"
+  "\\bRoblox\\.PremiumFeatures\\b": "Roblox.Platform.PremiumFeatures",
+  "\\bRoblox\\.StaticContent\\.Client\\b": "Roblox.Platform.StaticContent.Client",
+  "\\bRoblox\\.TranslationResources\\b": "Roblox.Platform.TranslationResources",
+  "Roblox\\\\Roblox\\.Entities\\.Mssql": "Entities\\\\Roblox.Entities.Mssql",
+  "Roblox\\\\Roblox\\.Entities": "Entities\\\\Roblox.Entities"
 }

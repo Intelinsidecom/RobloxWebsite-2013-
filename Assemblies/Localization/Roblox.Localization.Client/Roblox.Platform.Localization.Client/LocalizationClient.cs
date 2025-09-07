@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading;
@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 using Roblox.Http.Client;
 using Roblox.Http.ServiceClient;
 using Roblox.Instrumentation;
-using Roblox.Localization.Client.Properties;
+using Roblox.Platform.Localization.Client.Properties;
 using Roblox.RequestContext;
-namespace Roblox.Platform.Localization.Clientpublic {
-    class LocalizationClient : ILocalizationClient
 
+namespace Roblox.Platform.Localization.Client
 {
-    private readonly IServiceRequestSender _ServiceRequestSender;
-
-    public LocalizationClient(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader = null)
-        : this(CreateHttpClientBuilder(counterRegistry, apiKeyGetter, requestContextLoader), Settings.Default)
+    public class LocalizationClient : ILocalizationClient
     {
-    }
+        private readonly IServiceRequestSender _ServiceRequestSender;
+
+        public LocalizationClient(ICounterRegistry counterRegistry, Func<string> apiKeyGetter, IRequestContextLoader requestContextLoader = null)
+            : this(CreateHttpClientBuilder(counterRegistry, apiKeyGetter, requestContextLoader), Settings.Default)
+        {
+        }
 
     public LocalizationClient(IHttpClientBuilder httpClientBuilder, IServiceClientSettings serviceClientSettings)
     {

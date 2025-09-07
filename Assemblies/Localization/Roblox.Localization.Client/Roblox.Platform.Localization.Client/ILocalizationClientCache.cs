@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-namespace Roblox.Platform.Localization.Clientpublic {
-    interface ILocalizationClientCache
+using System.Collections.Generic;
+namespace Roblox.Platform.Localization.Client
+{
+    public interface ILocalizationClientCache
 
 {
 	bool TryGetLanguageFamilyById(int id, out LanguageFamily languageFamily);

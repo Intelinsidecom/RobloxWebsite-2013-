@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Authentication.AccountSecurity</AssemblyName>
@@ -27,15 +27,15 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Demographics\Roblox.Platform.Demographics\Roblox.Platform.Demographics.csproj">
+    <ProjectReference Include="..\\..\\Demographics\\Roblox.Platform.Demographics\\Roblox.Platform.Demographics.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Roblox.Platform\Roblox.Platform.TwoStepVerification\Roblox.Platform.TwoStepVerification.csproj">
+    <ProjectReference Include="..\\..\\Roblox.Platform\\Roblox.Platform.TwoStepVerification\\Roblox.Platform.TwoStepVerification.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Counters\Roblox.Platform.EphemeralCounters\Roblox.Platform.EphemeralCounters.csproj">
+    <ProjectReference Include="..\\..\\Counters\\Roblox.Platform.EphemeralCounters\\Roblox.Platform.EphemeralCounters.csproj">
       <Project>
       </Project>
     </ProjectReference>

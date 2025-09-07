@@ -13,11 +13,11 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="System.Runtime.Caching" Version="6.0.0" />
-    <ProjectReference Include="..\Roblox.CachingV2.Core\Roblox.CachingV2.Core.csproj">
+    <ProjectReference Include="..\\Roblox.CachingV2.Core\\Roblox.CachingV2.Core.csproj">
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+    <ProjectReference Include="..\\..\\Configuration\\Roblox.Configuration\\Roblox.Configuration.csproj">
       <Project>
       </Project>
     </ProjectReference>
