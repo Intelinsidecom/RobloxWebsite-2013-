@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Roblox.Platform.Membership;
+using Roblox.Platform.Assets;
 
 namespace Roblox.Website.ViewModels.Users
 {

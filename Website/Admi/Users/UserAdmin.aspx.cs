@@ -15,7 +15,6 @@ using Roblox.Website.Models.Moderation;
 using Roblox.Website.ModelFactories.Moderation;
 using Roblox.Website.ViewModels.Admi.UserAdmin;
 
-using AccountEntity = Roblox.Platform.Membership.Entities.AccountEntity;
 using AccountStatusEntity = Roblox.AccountStatus;
 
 namespace Roblox.Website.Admi.Users
@@ -71,7 +70,7 @@ namespace Roblox.Website.Admi.Users
             {
                 ID = IUser.Id,
                 Name = IUser.Name,
-                ModerationStatus = AccountStatusEntity.Get(IUser.AccountStatus.TranslateToByte()).Value,
+                ModerationStatus = IUser.AccountStatus.ToString(),
                 IsPremiumUser = false,
                 MembershipType = "N/A",
                 MembershipExpirationDate = "N/A",
@@ -106,7 +105,6 @@ namespace Roblox.Website.Admi.Users
             var emailAddress = _userEmailFactory.GetCurrentVerified(IUser);
             var userEmail = _userEmailFactory.GetByEmail(emailAddress != null ? emailAddress.EmailAddress.Address : "");
             // HACK: Do we even need IsApproved anymore?
-            var account = AccountEntity.Get(IUser.AccountId);
 
             rbxUpdateUserPane.Model = new UpdateUserViewModel()
             {
@@ -117,7 +115,7 @@ namespace Roblox.Website.Admi.Users
                 Created = IUser.Created,
                 LastLocation = null,
                 LastActivityDate = null,
-                IsApproved = account.AccountStatus == AccountStatusEntity.Ok,
+                IsApproved = IUser.AccountStatus == Roblox.Platform.Membership.AccountStatus.Ok,
             };
         }
 

@@ -1,5 +1,0 @@
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\obj\Debug\Roblox.Website.csproj.AssemblyReference.cache
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\obj\Debug\Roblox.Website.App_LocalResources.RobloxDefaultErrorPage.aspx.resources
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\obj\Debug\Roblox.Website.App_GlobalResources.Authentication.ResetPassword.resources
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\obj\Debug\Roblox.Website.csproj.GenerateResource.cache
-C:\Users\Intel\Documents\GitHub\RobloxWebsite-2013-\Website\obj\Debug\Roblox.Website.csproj.CoreCompileInputs.cache

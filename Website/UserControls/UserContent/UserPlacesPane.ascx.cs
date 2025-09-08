@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using Roblox.Website.ViewModels.Users;
 using Roblox.Website.ViewModels.Catalog;
 using Roblox.Showcases.Entities;
-using Roblox;
+using Roblox.Platform.Assets;
 
 namespace Roblox.Website.UserControls.UserContent
 {

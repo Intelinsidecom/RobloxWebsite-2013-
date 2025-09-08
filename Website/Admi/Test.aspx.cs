@@ -4,15 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Roblox.Platform.Membership;
+using Roblox.Website.Factories;
 using Roblox.Platform.Membership;
 using Roblox.Platform.Email;
+using Roblox;
 
 namespace Roblox.Website.Admi
 {
     public partial class Test : System.Web.UI.Page
     {
-        private static MembershipDomainFactories _factories;
+        private static Roblox.Website.Factories.MembershipDomainFactories _factories;
 
         public IUser IUser { get; private set; }
         public Roblox.Platform.Membership.IRoleset _roleSet { get; private set; }
@@ -34,7 +35,7 @@ namespace Roblox.Website.Admi
 
             GridView1.DataSource = new List<IUser> { IUser };
 
-            _roleSet = (Roblox.Platform.Roles.IRoleset)_factories.RoleSetValidator.GetHighestRoleSet(IUser);
+            _roleSet = (Roblox.Platform.Membership.IRoleset)_factories.RoleSetValidator.GetHighestRoleSet(IUser);
             var roleSets = _factories.RoleSetValidator.GetRoleSets(IUser);
 
             //IUserEmail = "N/a";

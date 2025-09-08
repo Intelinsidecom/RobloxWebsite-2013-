@@ -21,14 +21,14 @@ namespace Roblox.Website.ModelFactories.Moderation
         {
             return new PunishmentModel
             {
-                ID = punishment.ID,
-                Action = punishment.Type.Value,
-                ModeratorID = (int)punishment.ModeratorID,
-                ModeratorName = moderator.Name,
-                InternalNote = punishment.InternalNoteExpression?.Value,
-                ModeratorMessage = punishment.MessageToUserExpression?.Value,
-                Created = punishment.Created,
-                Expiration = punishment.EndDate
+                ID = 0,
+                Action = punishment.Type.ToString(),
+                ModeratorID = 0,
+                ModeratorName = moderator?.Name ?? "Moderator",
+                InternalNote = null,
+                ModeratorMessage = null,
+                Created = DateTime.UtcNow,
+                Expiration = null
             };
         }
 
@@ -39,7 +39,7 @@ namespace Roblox.Website.ModelFactories.Moderation
 
             foreach (var punishment in punishments)
             {
-                var moderator = _userFactory.MustGetUser(punishment.ModeratorID);
+                IUser moderator = _userFactory.GetCurrentUser();
                 var punishmentModel = PopulatePunishmentModel(punishment, moderator);
 
                 punishmentModels.Add(punishmentModel);

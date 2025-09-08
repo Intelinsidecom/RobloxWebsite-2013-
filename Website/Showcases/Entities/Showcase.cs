@@ -2,11 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Roblox;
+using Roblox.Platform.Assets;
 
 namespace Roblox.Showcases.Entities
 {

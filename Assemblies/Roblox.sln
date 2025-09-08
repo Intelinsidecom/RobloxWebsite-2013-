@@ -675,7 +675,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Web.Thumbnails", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Web", "Web\Roblox.Web\Roblox.Web.csproj", "{29AE4D52-2C3C-4424-AFD6-D01B7BB1AA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.WebsiteSettings", "Web\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj", "{6146A2E2-A94C-4774-B794-44556B666F93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.WebsiteSettings", "Website//Roblox.WebsiteSettings//Roblox.WebsiteSettings.csproj", "{6146A2E2-A94C-4774-B794-44556B666F93}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Youtube", "Youtube", "{7573E4A4-6689-7319-7328-FBF17DC2301E}"
 EndProject

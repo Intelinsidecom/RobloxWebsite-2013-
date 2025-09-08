@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,7 +17,7 @@ namespace Roblox.Website.Admi
         private IUser _IUser;
         private IUserFactory _userFactory;
 
-        public ICollection<PunishmentType> GetPunishmentTypes() => PunishmentType.AllPunishmentTypes;
+        public ICollection<PunishmentType> GetPunishmentTypes() => Roblox.Moderation.PunishmentTypeExtensions.AllPunishmentTypes;
 
         protected void Page_Init(object sender, EventArgs e)
         {

@@ -21,6 +21,23 @@ namespace Roblox.Web.Code
                 Url = "/bundles/scripts.js"
             };
         }
+
+        // Overload used by StaticContent to bundle a set of files
+        public static BundleCreationResult CreateBundle(string name, IEnumerable<string> files, bool minify)
+        {
+            var contents = string.Join("\n", files ?? Enumerable.Empty<string>());
+            return new BundleCreationResult
+            {
+                FileName = (name ?? "bundle") + ".js",
+                Contents = contents,
+                Url = "/bundles/" + (name ?? "bundle") + ".js"
+            };
+        }
+
+        public static BundleCreationResult CreateBundle(string name, string[] files, bool minify)
+        {
+            return CreateBundle(name, (IEnumerable<string>)files, minify);
+        }
     }
 
     public class BundleCreationResult

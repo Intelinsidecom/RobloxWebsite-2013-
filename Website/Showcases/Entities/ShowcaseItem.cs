@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Roblox.Assets;
+using Roblox.Platform.Assets;
 
 namespace Roblox.Showcases.Entities
 {

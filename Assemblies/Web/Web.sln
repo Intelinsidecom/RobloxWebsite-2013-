@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Web.Thumbnails", "Ro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.Web", "Roblox.Web\Roblox.Web.csproj", "{9E8100BB-52A7-4DDF-B36D-D18A41926784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.WebsiteSettings", "Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj", "{3F6AE1C0-9BFB-43F2-AF96-003B8CFF4DE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.WebsiteSettings", "..//Website//Roblox.WebsiteSettings//Roblox.WebsiteSettings.csproj", "{3F6AE1C0-9BFB-43F2-AF96-003B8CFF4DE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roblox.WebAppUploader", "Roblox.WebAppUploader\Roblox.WebAppUploader.csproj", "{DEF2B6A6-98D0-44FD-B83B-43044A125B72}"
 EndProject

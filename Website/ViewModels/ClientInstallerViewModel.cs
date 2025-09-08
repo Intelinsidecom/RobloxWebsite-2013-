@@ -1,4 +1,4 @@
-﻿using Roblox.Website.WebCode;
+using Roblox.Website.WebCode;
 
 namespace Roblox.Website.ViewModels
 {
@@ -14,7 +14,7 @@ namespace Roblox.Website.ViewModels
         public int BrowserVersion = 0; // [Xbox] [Windows] (Trident) (rv:0) | [Xbox] [Windows] (Chrome/32) // [ROBLOX iOS] [Intel Mac OS X] (Mozilla Safari AppleWebKit)
         public bool UseBrowserSwitch = true;
         public bool IsGameLaunchAttemptLoggingEnabled = true;
-        public bool UseUpdatedModal = WebsiteSettings.Properties.Layout.Default.IsUpdatedInstallationInstructionsModalEnabled;
+        public bool UseUpdatedModal = Roblox.WebsiteSettings.Properties.Layout.Default.IsUpdatedInstallationInstructionsModalEnabled;
 
         public string SkipUrl;
         public string CLSID;
@@ -62,8 +62,8 @@ namespace Roblox.Website.ViewModels
             {
                 if (Browser != null)
                 {
-                    CLSID = GlobalProperties.CLSID32Bit;
-                    InstallHost = WebsiteSettings.Properties.Settings.Default.ClientInstallHost;
+                    CLSID = Roblox.Website.WebCode.GlobalProperties.CLSID32Bit;
+                    InstallHost = Roblox.WebsiteSettings.Properties.Settings.Default.ClientInstallHost;
                     ImplementsProxy = true;
                     SilentModeEnabled = true;
                     EventStreamLoggingEnabled = true;

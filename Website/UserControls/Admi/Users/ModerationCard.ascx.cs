@@ -43,7 +43,7 @@ namespace Roblox.Website.UserControls.Admi.Users
             MembershipText = "Free Member";
             OnlineStatusImageUrl = "~/images/offline.png";
             LocationText = "[ Offline ]";
-            ModerationStatus = AccountStatus.MustGet((byte)user.AccountStatus).Value;
+            ModerationStatus = user.AccountStatus.ToString();
             MessageCount = 0;
             CreatedDate = user.Created;
             AgeBracket = user.AgeBracket == Roblox.Platform.Membership.AgeBracket.Age13OrOver ? "Over 13" : "Under 13";

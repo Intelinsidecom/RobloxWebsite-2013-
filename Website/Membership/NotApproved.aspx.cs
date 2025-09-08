@@ -40,7 +40,21 @@ namespace Roblox.Website
                 Punishment = _punishments.Last();
                 var punishType = Punishment.Type;
 
-                var days = punishType.DurationInDays;
+                int? days = null;
+                switch (punishType)
+                {
+                    case PunishmentType.DeleteAccount:
+                    case PunishmentType.PoisonMachine:
+                        days = null;
+                        break;
+                    case PunishmentType.Remind:
+                    case PunishmentType.Warn:
+                        days = 0;
+                        break;
+                    default:
+                        days = null;
+                        break;
+                }
                 if (days.HasValue && days > 0)
                 {
                     PunishmentDurationString = $"{days} Day";
@@ -93,7 +107,7 @@ namespace Roblox.Website
 
         protected void ButtonAgree_Click(object sender, EventArgs e)
         {
-            if (_account.AccountStatusID != AccountStatus.OkId)
+            if (_account.AccountStatusID != Roblox.AccountStatus.OkId)
             {
                 var activePunsihmentsCount = Punishment.GetTotalNumberOfActiveUserPunishments(_user);
 

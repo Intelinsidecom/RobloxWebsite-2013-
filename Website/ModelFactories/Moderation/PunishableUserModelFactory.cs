@@ -15,13 +15,13 @@ namespace Roblox.Website.ModelFactories.Moderation
         static PunishableUserModelFactory()
         {
             _userFactory = Global.MembershipDomainFactories.UserFactory;
-            _roleSetReader = new RolesDomainFactories().RoleSetReader;
+            _roleSetReader = Global.MembershipDomainFactories.RoleSetValidator;
         }
 
         public static PunishableUserModel PopulatePunishableUserModel(IUser user)
         {
 
-            var roleSet = _roleSetReader.GetHighestRoleSetForAccountId(user.AccountId);
+            var roleSet = _roleSetReader.GetHighestRoleSet(user);
             string emailAddress = null; // TODO: wire Roblox.Platform.Email.User to retrieve verified email
 
             var model = new PunishableUserModel

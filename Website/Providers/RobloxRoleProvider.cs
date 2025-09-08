@@ -63,7 +63,8 @@ namespace Roblox.Website.Providers
             try
             {
                 var user = _UserFactory.GetUserByName(username);
-                result = _RoleSetValidator.IsInRole(user, roleName);
+                var roleSets = _RoleSetValidator.GetRoleSets(user);
+                result = roleSets != null && roleSets.Any(rs => string.Equals(rs.Name, roleName, StringComparison.OrdinalIgnoreCase));
             }
             catch
             {

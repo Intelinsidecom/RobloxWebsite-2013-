@@ -2,31 +2,47 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Roblox.EventLog;
-using Roblox.EventLog.Windows;
 
 namespace Roblox.Website
 {
-    public class RobloxWebsiteLogger : Logger
-	{
-		public RobloxWebsiteLogger(bool removeLineBreaks = false)
-			: base(
-				  WebsiteSettings.Properties.WebsiteBootstrapSettings.Default.GeneralEventLogSource,
-				  () => WebsiteSettings.Properties.WebsiteBootstrapSettings.Default.GeneralEventLogLevel,
-				  removeLineBreaks
-			)
-		{
-		}
+    public class RobloxWebsiteLogger
+    {
+        public RobloxWebsiteLogger(bool removeLineBreaks = false)
+        {
+            // removeLineBreaks is ignored in this minimal implementation
+        }
 
-		protected override void Log(LogLevel logLevel, string format, params object[] args)
-		{
-			/*string message = string.Format(
-				"Error Detail:\r\n{0}\r\nException:\r\n{1}\r\nInner Exception:{2}\r\nException Source:\r\n{3}\r\nException TargetSite:\r\n{4}\r\nException Data:\r\n{5}",
-				
-			);*/
-			string text = ((args != null && args.Length != 0) ? string.Format(format, args) : format);
+        public void Info(string format, params object[] args)
+        {
+            WriteLine("INFO", format, args);
+        }
 
-			base.Log(logLevel, format, args);
-		}
-	}
+        public void Warning(string format, params object[] args)
+        {
+            WriteLine("WARN", format, args);
+        }
+
+        public void Error(Exception ex)
+        {
+            WriteLine("ERROR", ex?.ToString() ?? string.Empty);
+        }
+
+        public void Error(string format, params object[] args)
+        {
+            WriteLine("ERROR", format, args);
+        }
+
+        private static void WriteLine(string level, string format, params object[] args)
+        {
+            string message = (args != null && args.Length > 0) ? string.Format(format, args) : format;
+            try
+            {
+                Console.WriteLine($"{DateTime.Now:O} [{level}] {message}");
+            }
+            catch
+            {
+                // Swallow logging exceptions to avoid breaking the site
+            }
+        }
+    }
 }

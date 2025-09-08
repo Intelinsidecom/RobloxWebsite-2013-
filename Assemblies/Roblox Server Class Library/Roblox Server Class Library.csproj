@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox Server Class Library</AssemblyName>
@@ -144,6 +144,10 @@
       </Project>
     </ProjectReference>
     <ProjectReference Include="..\\Coordination\\Roblox.Coordination\\Roblox.Coordination.csproj">
+      <Project>
+      </Project>
+    </ProjectReference>
+    <ProjectReference Include="..\\Website\\Roblox.WebsiteSettings\\Roblox.WebsiteSettings.csproj">
       <Project>
       </Project>
     </ProjectReference>

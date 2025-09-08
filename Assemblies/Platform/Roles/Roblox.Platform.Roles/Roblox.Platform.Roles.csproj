@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <RootNamespace>Roblox.Platform.Roles</RootNamespace>
+    <AssemblyName>Roblox.Platform.Roles</AssemblyName>
+  </PropertyGroup>
+</Project>

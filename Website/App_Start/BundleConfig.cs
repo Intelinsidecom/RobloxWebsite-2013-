@@ -1,5 +1,4 @@
 using System.Web;
-using System.Web.Optimization;
 using Roblox.Web.Code;
 using Roblox.Web.StaticContent;
 
@@ -7,24 +6,13 @@ namespace Roblox.Website {
 	public class BundleConfig
 	{
 		// For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
-		public static void RegisterBundles(BundleCollection bundles)
+		public static void RegisterBundles()
 		{
 
-			BundleTable.EnableOptimizations = true;
-			RobloxScripts.MergeFiles = WebsiteSettings.Properties.Settings.Default.MergeJavaScriptFiles;
-			RobloxCSS.MergeFiles = WebsiteSettings.Properties.Settings.Default.MergeCSS;
+			RobloxScripts.MergeFiles = Roblox.WebsiteSettings.Properties.Settings.Default.MergeJavaScriptFiles;
+			RobloxCSS.MergeFiles = Roblox.WebsiteSettings.Properties.Settings.Default.MergeCSS;
 
-			bundles.UseCdn = true;   // enable CDN support
-
-			bundles.Add(new ScriptBundle("~/Js/M/Default").Include(
-			   "~/js/jquery/jquery-1.7.2.min.js",
-			   "~/js/Microsoft/MicrosoftAjax.js",
-			   "~/js/jquery/jquery-ui-1.9.2.min.js"));
-
-			bundles.Add(new ScriptBundle("~/Bundles/jQuery", "//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js").Include(
-			   "~/js/jquery/jquery-1.7.2.min.js"));
-			bundles.Add(new ScriptBundle("~/Bundles/Ajax", "//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js").Include(
-			   "~/js/Microsoft/MicrosoftAjax.js"));
+			// System.Web.Optimization is not used in this project setup. CDN and ScriptBundle registrations removed.
 
 			StaticContent.CreateScriptBundle(
 				"master",
@@ -248,19 +236,7 @@ namespace Roblox.Website {
 					"~/CSS/YUIReset.css"
 			);
 
-			/*bundles.Add(new StyleBundle("~/App_Themes/RobloxDefault").Include(
-				"~/App_Themes/RobloxDefault/Badges.css",
-				"~/App_Themes/RobloxDefault/Frontpage.css",
-				"~/App_Themes/RobloxDefault/Inbox.css",
-				"~/App_Themes/RobloxDefault/Info.css",
-				"~/App_Themes/RobloxDefault/Install.css",
-				"~/App_Themes/RobloxDefault/Membership.css",
-				"~/App_Themes/RobloxDefault/Message.css",
-				"~/App_Themes/RobloxDefault/Profile.css",
-				"~/App_Themes/RobloxDefault/ShareRoblox.css",
-				"~/App_Themes/RobloxDefault/Splash.css",
-				"~/App_Themes/RobloxDefault/Toolbox.css",
-				"~/App_Themes/RobloxDefault/User.css"));*/
+			/* StyleBundle registrations removed along with System.Web.Optimization dependency. */
 		}
 	}
 }

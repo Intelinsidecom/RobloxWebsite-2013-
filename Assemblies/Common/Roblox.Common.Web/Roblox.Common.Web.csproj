@@ -31,7 +31,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <ProjectReference Include="..\\..\\Web\\Roblox.WebsiteSettings\\Roblox.WebsiteSettings.csproj">
+    <ProjectReference Include="..\\..\\Website\\Roblox.WebsiteSettings\\Roblox.WebsiteSettings.csproj">
       <Project>
       </Project>
     </ProjectReference>

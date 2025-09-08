@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -46,7 +46,7 @@ namespace Roblox.Website.Admi.Users
         protected void PopulateDataFields()
         {
             pnlPageHeader.DataBind();
-            rblModerationAction.DataSource = PunishmentType.AllPunishmentTypes;
+            rblModerationAction.DataSource = Roblox.Moderation.PunishmentTypeExtensions.AllPunishmentTypes;
             rblModerationAction.DataBind();
             tblModerationControls.DataBind();
             rbxModerationCard.DataBind();

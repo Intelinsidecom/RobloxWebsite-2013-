@@ -1,7 +1,6 @@
 using System;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.UI.WebControls;
 using System.Net;
@@ -20,11 +19,11 @@ namespace Roblox.Website
     public class Global : HttpApplication
     {
         private static RobloxWebsiteLogger _logger;
-        private static RolesDomainFactories _rolesDomainFactories;
-        private static EmailDomainFactories _emailDomainFactories;
-        private static MembershipDomainFactories _membershipDomainFactories;
-        private static SecurityDomainFactories _securityDomainFactories;
-        private static CredentialValidator _credentialValidator;
+        private static Roblox.Website.Factories.RolesDomainFactories _rolesDomainFactories;
+        private static Roblox.Website.Factories.EmailDomainFactories _emailDomainFactories;
+        private static Roblox.Website.Factories.MembershipDomainFactories _membershipDomainFactories;
+        private static Roblox.Website.Factories.SecurityDomainFactories _securityDomainFactories;
+        private static Roblox.Platform.Authentication.ICredentialValidator _credentialValidator;
 
         public static RobloxWebsiteLogger Logger
         {
@@ -38,26 +37,26 @@ namespace Roblox.Website
             }
         }
 
-        public static RolesDomainFactories RolesDomainFactories
+        public static Roblox.Website.Factories.RolesDomainFactories RolesDomainFactories
         {
             get
             {
                 if (_rolesDomainFactories == null)
                 {
-                    _rolesDomainFactories = new RolesDomainFactories();
+                    _rolesDomainFactories = new Roblox.Website.Factories.RolesDomainFactories();
                 }
                 return _rolesDomainFactories;
             }
             private set { _rolesDomainFactories = value; }
         }
 
-        public static EmailDomainFactories EmailDomainFactories
+        public static Roblox.Website.Factories.EmailDomainFactories EmailDomainFactories
         {
             get
             {
                 if (_emailDomainFactories == null)
                 {
-                    _emailDomainFactories = new EmailDomainFactories(
+                    _emailDomainFactories = new Roblox.Website.Factories.EmailDomainFactories(
                         logger: Logger
                     );
                 }
@@ -66,13 +65,13 @@ namespace Roblox.Website
             private set { _emailDomainFactories = value; }
         }
 
-        public static MembershipDomainFactories MembershipDomainFactories
+        public static Roblox.Website.Factories.MembershipDomainFactories MembershipDomainFactories
         {
             get
             {
                 if (_membershipDomainFactories == null)
                 {
-                    _membershipDomainFactories = new MembershipDomainFactories(
+                    _membershipDomainFactories = new Roblox.Website.Factories.MembershipDomainFactories(
                         logger: Logger,
                         rolesDomainFactories: RolesDomainFactories,
                         emailDomainFactories: EmailDomainFactories
@@ -83,13 +82,13 @@ namespace Roblox.Website
             private set { _membershipDomainFactories = value; }
         }
 
-        public static SecurityDomainFactories SecurityDomainFactories
+        public static Roblox.Website.Factories.SecurityDomainFactories SecurityDomainFactories
         {
             get
             {
                 if (_securityDomainFactories == null)
                 {
-                    _securityDomainFactories = new SecurityDomainFactories(
+                    _securityDomainFactories = new Roblox.Website.Factories.SecurityDomainFactories(
                         logger: Logger
                     );
                 }
@@ -98,15 +97,15 @@ namespace Roblox.Website
             private set { _securityDomainFactories = value; }
         }
 
-        private static AuthenticationDomainFactories _authenticationDomainFactories;
+        private static Roblox.Website.Factories.AuthenticationDomainFactories _authenticationDomainFactories;
 
-        public static AuthenticationDomainFactories AuthenticationDomainFactories
+        public static Roblox.Website.Factories.AuthenticationDomainFactories AuthenticationDomainFactories
         {
             get
             {
                 if (_authenticationDomainFactories == null)
                 {
-                    _authenticationDomainFactories = new AuthenticationDomainFactories(
+                    _authenticationDomainFactories = new Roblox.Website.Factories.AuthenticationDomainFactories(
                         logger: Logger,
                         securityDomainFactories: SecurityDomainFactories,
                         membershipDomainFactories: MembershipDomainFactories,
@@ -122,7 +121,7 @@ namespace Roblox.Website
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BundleConfig.RegisterBundles();
 
             CreateLogger();
             ConfigureDomainFactories();

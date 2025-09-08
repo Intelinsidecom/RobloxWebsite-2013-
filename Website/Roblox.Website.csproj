@@ -1,34 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{80B33E79-ACA5-495F-9FA2-5B1BBCE90347}</ProjectGuid>
+    <ProjectGuid>{2FC88E65-2E83-45CE-9B1E-7A66C28B6C5D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Roblox.Website</RootNamespace>
     <AssemblyName>Roblox.Website</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <LangVersion>8.0</LangVersion>
-    <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
-    <IISExpressSSLPort>44352</IISExpressSSLPort>
+    <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
-    <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
-    <TargetFrameworkProfile />
-    <LangVersion>10.0</LangVersion>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <NoWarn>0436;1668</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,12 +73,12 @@
     <Reference Include="Roblox.Web.Mvc">
       <HintPath>..\..\Website\Source\bin\Roblox.Web.Mvc.dll</HintPath>
     </Reference>
-<ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email\Roblox.Platform.Email.csproj">
-  <Name>Roblox.Platform.Email</Name>
-</ProjectReference>
-<ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj">
-  <Name>Roblox.Platform.Email.User</Name>
-</ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email\Roblox.Platform.Email.csproj">
+      <Name>Roblox.Platform.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Email\Roblox.Platform.Email.User\Roblox.Platform.Email.User.csproj">
+      <Name>Roblox.Platform.Email.User</Name>
+    </ProjectReference>
     <Reference Include="Roblox.Web.StaticContent">
       <HintPath>..\\Assemblies\\Web\\Roblox.WebAppUploader\\bin\\Debug\\net472\\Roblox.Web.StaticContent.dll</HintPath>
     </Reference>
@@ -147,6 +138,7 @@
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="5.0.0" xmlns="" />
     <PackageReference Include="Microsoft.Bcl.HashCode" Version="1.1.1" xmlns="" />
     <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.1" xmlns="" />
+    <PackageReference Include="Microsoft.AspNet.Web.Optimization" Version="1.1.3" xmlns="" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.32" xmlns="" />
     <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" xmlns="" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" xmlns="" />
@@ -199,13 +191,45 @@
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factories\IUserEmailFactory.cs" />
-    <Compile Include="Factories\EmailDomainFactories.cs" />
-    <Compile Include="Factories\RolesDomainFactories.cs" />
-    <Compile Include="Factories\SecurityDomainFactories.cs" />
-    <Compile Include="Factories\MembershipDomainFactories.cs" />
-    <Compile Include="Factories\AuthenticationDomainFactories.cs" />
-    <Compile Include="Factories\AuthenticationStubs.cs" />
+    <ProjectReference Include="..\Assemblies\Platform\Assets\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj">
+      <Name>Roblox.Platform.AssetsCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Assets\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj">
+      <Name>Roblox.Platform.Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
+      <Name>Roblox.Platform.Membership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Roles\Roblox.Platform.Roles\Roblox.Platform.Roles.csproj">
+      <Name>Roblox.Platform.Roles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Authentication\Roblox.Platform.Authentication\Roblox.Platform.Authentication.csproj">
+      <Name>Roblox.Platform.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Authentication\Roblox.Platform.Authentication.AccountSecurity\Roblox.Platform.Authentication.AccountSecurity.csproj">
+      <Name>Roblox.Platform.Authentication.AccountSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Security\Roblox.Platform.Security\Roblox.Platform.Security.csproj">
+      <Name>Roblox.Platform.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Platform\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+      <Name>Roblox.Platform.Membership.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Website\Roblox.Website.Factories\Roblox.Website.Factories.csproj">
+      <Name>Roblox.Website.Factories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
+      <Name>Roblox.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assemblies\Events\Roblox.EventLog\Roblox.EventLog.csproj">
+      <Name>Roblox.EventLog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebCode\StaticFilesManager.cs" />
+    <Compile Include="WebCode\LegacyStubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="KeepAlives\KeepAlive.cs" />
     <Compile Include="Admi\AdmiSimple.Master.cs">
       <DependentUpon>AdmiSimple.Master</DependentUpon>
@@ -408,6 +432,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="WebsiteSettings.cs" />
+    <Compile Include="WebCode\StaticContentSettings.cs" />
+    <Compile Include="WebCode\CookieConstraint\CookieConstraintStubs.cs" />
+    <Compile Include="WebCode\Util\Abbreviate.cs" />
+    <Compile Include="WebCode\GlobalProperties.cs" />
     <Compile Include="Help\Builderman.aspx.cs">
       <DependentUpon>Builderman.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -486,12 +515,9 @@
     <Compile Include="Membership\NotApproved.aspx.designer.cs">
       <DependentUpon>NotApproved.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModelFactories\Item\BundleItemModelFactory.cs" />
-    <Compile Include="ModelFactories\Item\BundleThumbnailModelFactory.cs" />
-    <Compile Include="ModelFactories\Item\ItemModelFactory.cs" />
+    <Compile Include="Models\Request\ValidateMachineRequest.cs" />
     <Compile Include="ModelFactories\Moderation\PunishableUserModelFactory.cs" />
     <Compile Include="ModelFactories\Moderation\PunishmentModelFactory.cs" />
-    <Compile Include="Models\Request\ValidateMachineRequest.cs" />
     <Compile Include="My\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

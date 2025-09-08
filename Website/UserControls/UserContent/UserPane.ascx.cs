@@ -65,7 +65,7 @@ namespace Roblox.Website.UserControls.UserContent
             {
                 // TODO: Use AssetImage class in Roblox.Thumbs
                 //PrimaryGroupAssetImage.AssetID = profile.PrimaryGroupId; // TODO: Get Group Emblem from Group ID
-                PrimaryGroupAssetImage.NavigateUrl = String.Format(PrimaryGroupAssetImage.NavigateUrl, UserProfile.PrimaryGroupId);
+                // PrimaryGroupAssetImage is an Image control and does not support NavigateUrl; using HyperLink instead
                 HyperLink1.NavigateUrl = String.Format(HyperLink1.NavigateUrl, UserProfile.PrimaryGroupId);
             }
 
