@@ -1,5 +1,6 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Simple.Master.cs" Inherits="Roblox.Website.Simple" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Simple.Master.cs" Inherits="Roblox.Website.Simple" %>
 <%@ Import Namespace="System.Web.Optimization" %>
+<%@ Import Namespace="Roblox.Web.Code" %>
 <%@ Import Namespace="Roblox.Web.StaticContent" %>
 
 <%@ Register Src="~/UserControls/Navigation/Footer.ascx" TagName="Footer" TagPrefix="rbx"%>
@@ -17,8 +18,8 @@
 <head runat="server">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
     <title><%=Page.Title%></title>
-    <%: RobloxCSS.RenderBundle("main") %>
-    <%: RobloxCSS.Render(StaticContent.GetPageCSSBundle()) %>
+    <%: RobloxCSSShim.RenderBundle("main") %>
+    <%: RobloxCSSShim.Render(StaticContent.GetPageCSSBundle()) %>
 
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -32,10 +33,10 @@
 <script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")</script>
 <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
 <script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
-    <%: RobloxScripts.RenderBundle("simple") %>
+    <%: RobloxScriptsShim.RenderBundle("simple") %>
 
     <rbx:JavascriptErrorTracker runat="server" />
-    <%: RobloxScripts.Render(StaticContent.GetPageScriptBundle()) %>
+    <%: RobloxScriptsShim.Render(StaticContent.GetPageScriptBundle()) %>
 	<script type="text/javascript">
         $(function () {
             $('.tooltip').tipsy();

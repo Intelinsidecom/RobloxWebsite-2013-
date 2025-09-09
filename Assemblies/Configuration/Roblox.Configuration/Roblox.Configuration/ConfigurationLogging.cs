@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using Roblox.EventLog;
 
 namespace Roblox.Configuration;
@@ -20,35 +21,39 @@ public static class ConfigurationLogging
 
 	internal static void Error(string format, params object[] args)
 	{
-		if (_OverrideOnError == null)
-		{
-			SafelyLogViaStaticLoggerRegistry(format, args);
-		}
-		else
+		if (_OverrideOnError != null)
 		{
 			Log(_OverrideOnError, format, args);
+			return;
 		}
+		// Avoid initializing StaticLoggerRegistry during configuration bootstrap to prevent recursion/StackOverflow
+		try { Debug.WriteLine(string.Format(format, args)); } catch { }
 	}
 
 	internal static void Warning(string format, params object[] args)
 	{
-		Log(_OverrideOnWarning, format, args);
+		if (_OverrideOnWarning != null)
+		{
+			Log(_OverrideOnWarning, format, args);
+			return;
+		}
+		try { Debug.WriteLine(string.Format(format, args)); } catch { }
 	}
 
 	internal static void Info(string format, params object[] args)
 	{
-		Log(_OverrideOnInformation, format, args);
+		if (_OverrideOnInformation != null)
+		{
+			Log(_OverrideOnInformation, format, args);
+			return;
+		}
+		try { Debug.WriteLine(string.Format(format, args)); } catch { }
 	}
 
 	private static void SafelyLogViaStaticLoggerRegistry(string format, params object[] args)
 	{
-		try
-		{
-			StaticLoggerRegistry.Instance.Error(format, args);
-		}
-		catch (UninitializedLoggerException)
-		{
-		}
+		// Deprecated: Avoid using StaticLoggerRegistry by default to prevent bootstrap recursion
+		try { Debug.WriteLine(string.Format(format, args)); } catch { }
 	}
 
 	private static void Log(Action<string> overrideLogger, string format, params object[] args)

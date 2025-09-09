@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,11 +11,18 @@ namespace Roblox.Website {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapMvcAttributeRoutes();
 
-            /*routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );*/
+            // Ensure MVC handles extensionless URLs like /Landing/Animated and root '/'
+            // Root path -> Landing/Animated
+            routes.MapRoute(
+                name: "Root",
+                url: string.Empty,
+                defaults: new { controller = "Landing", action = "Animated" }
+            );
+            routes.MapRoute(
+                name: "LandingAnimated",
+                url: "Landing/Animated",
+                defaults: new { controller = "Landing", action = "Animated" }
+            );
 
             routes.MapRoute(
                 name: "FetchCSS",
@@ -29,11 +36,11 @@ namespace Roblox.Website {
                 defaults: new { controller = "ReplicatedCss", action = "GetFile" }
             );
 
-            /*routes.MapRoute(
-                name: "DefaultView",
-                url: "{folder}/{view}",
-                defaults: new { controller = "Default", action = "FetchView", view = UrlParameter.Optional }
-            );*/
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Landing", action = "Animated", id = UrlParameter.Optional }
+            );
         }
     }
 }

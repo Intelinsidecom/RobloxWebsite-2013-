@@ -38,5 +38,33 @@ namespace Roblox.Web.Code
         {
             return CreateBundle(name, (IEnumerable<string>)files, minify);
         }
+
+        // Renders a named bundle reference. For development, we inline an empty or generated bundle as <style> to avoid extra HTTP requests.
+        public static string RenderBundle(string name)
+        {
+            try
+            {
+                var result = CreateBundle(name, Array.Empty<string>(), minify: false);
+                // If we eventually have a URL, we could emit a <link>. For now, inline contents to keep startup simple.
+                var css = result?.Contents ?? string.Empty;
+                if (string.IsNullOrWhiteSpace(css))
+                {
+                    css = $"/* CSS bundle '{name}' (empty in dev) */";
+                }
+                return "<style>" + css + "</style>";
+            }
+            catch
+            {
+                return $"<!-- Failed to render CSS bundle '{name}' -->";
+            }
+        }
+
+        // Renders a specific CSS bundle created via StaticContent.GetPageCSSBundle().
+        public static string Render(Roblox.Web.StaticContent.RobloxCssBundle bundle)
+        {
+            if (bundle == null) return string.Empty;
+            var css = bundle.Contents ?? string.Empty;
+            return "<style>" + css + "</style>";
+        }
     }
 }

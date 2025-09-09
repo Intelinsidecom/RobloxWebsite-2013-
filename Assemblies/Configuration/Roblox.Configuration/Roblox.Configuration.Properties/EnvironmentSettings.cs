@@ -20,11 +20,13 @@ internal sealed class EnvironmentSettings : ApplicationSettingsBase
 	{
 		get
 		{
-			return _Properties.GetOrAdd(propertyName, (string propName) => ((ApplicationSettingsBase)this)[propName]);
+			// Use base[...] to avoid virtual dispatch back into this override which caused a StackOverflowException
+			return _Properties.GetOrAdd(propertyName, (string propName) => base[propName]);
 		}
 		set
 		{
-			((ApplicationSettingsBase)this)[propertyName] = value;
+			// Set via base to avoid recursive call into this override
+			base[propertyName] = value;
 		}
 	}
 
@@ -33,116 +35,116 @@ internal sealed class EnvironmentSettings : ApplicationSettingsBase
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string EnvironmentAbbreviation => (string)((SettingsBase)this)["EnvironmentAbbreviation"];
+	public string EnvironmentAbbreviation => (string)base["EnvironmentAbbreviation"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string EnvironmentName => (string)((SettingsBase)this)["EnvironmentName"];
+	public string EnvironmentName => (string)base["EnvironmentName"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
-	public int EnvironmentId => (int)((SettingsBase)this)["EnvironmentId"];
-
-	[ApplicationScopedSetting]
-	[DebuggerNonUserCode]
-	[DefaultSettingValue("")]
-	public string ApplicationDomain => (string)((SettingsBase)this)["ApplicationDomain"];
+	public int EnvironmentId => (int)base["EnvironmentId"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string InternalServicesProtocol => (string)((SettingsBase)this)["InternalServicesProtocol"];
+	public string ApplicationDomain => (string)base["ApplicationDomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string CdnDomain => (string)((SettingsBase)this)["CdnDomain"];
+	public string InternalServicesProtocol => (string)base["InternalServicesProtocol"];
+
+	[ApplicationScopedSetting]
+	[DebuggerNonUserCode]
+	[DefaultSettingValue("")]
+	public string CdnDomain => (string)base["CdnDomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("chat")]
-	public string ChatApiPrefix => (string)((SettingsBase)this)["ChatApiPrefix"];
+	public string ChatApiPrefix => (string)base["ChatApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("locale")]
-	public string LocaleApiPrefix => (string)((SettingsBase)this)["LocaleApiPrefix"];
+	public string LocaleApiPrefix => (string)base["LocaleApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("friendsite")]
-	public string FriendsAppSitePrefix => (string)((SettingsBase)this)["FriendsAppSitePrefix"];
+	public string FriendsAppSitePrefix => (string)base["FriendsAppSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("translations")]
-	public string TranslationsApiSitePrefix => (string)((SettingsBase)this)["TranslationsApiSitePrefix"];
+	public string TranslationsApiSitePrefix => (string)base["TranslationsApiSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("abtesting")]
-	public string AbTestingApiPrefix => (string)((SettingsBase)this)["AbTestingApiPrefix"];
+	public string AbTestingApiPrefix => (string)base["AbTestingApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("authsite")]
-	public string AuthAppSitePrefix => (string)((SettingsBase)this)["AuthAppSitePrefix"];
+	public string AuthAppSitePrefix => (string)base["AuthAppSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("gameinternationalization")]
-	public string GameInternationalizationApiSitePrefix => (string)((SettingsBase)this)["GameInternationalizationApiSitePrefix"];
+	public string GameInternationalizationApiSitePrefix => (string)base["GameInternationalizationApiSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string InternalServicesDomain => (string)((SettingsBase)this)["InternalServicesDomain"];
+	public string InternalServicesDomain => (string)base["InternalServicesDomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("")]
-	public string ChinaBaseDomain => (string)((SettingsBase)this)["ChinaBaseDomain"];
+	public string ChinaBaseDomain => (string)base["ChinaBaseDomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("translationroles")]
-	public string TranslationRolesApiSitePrefix => (string)((SettingsBase)this)["TranslationRolesApiSitePrefix"];
+	public string TranslationRolesApiSitePrefix => (string)base["TranslationRolesApiSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("metrics")]
-	public string MetricsApiSiteSubdomain => (string)((SettingsBase)this)["MetricsApiSiteSubdomain"];
+	public string MetricsApiSiteSubdomain => (string)base["MetricsApiSiteSubdomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("contacts")]
-	public string ContactsApiSitePrefix => (string)((SettingsBase)this)["ContactsApiSitePrefix"];
+	public string ContactsApiSitePrefix => (string)base["ContactsApiSitePrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("midas")]
-	public string MidasApiPrefix => (string)((SettingsBase)this)["MidasApiPrefix"];
+	public string MidasApiPrefix => (string)base["MidasApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("discussions")]
-	public string DiscussionsApiPrefix => (string)((SettingsBase)this)["DiscussionsApiPrefix"];
+	public string DiscussionsApiPrefix => (string)base["DiscussionsApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("rbxcdn.qq.com")]
-	public string ChinaCdnDomain => (string)((SettingsBase)this)["ChinaCdnDomain"];
+	public string ChinaCdnDomain => (string)base["ChinaCdnDomain"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("localizationtables")]
-	public string LocalizationTablesApiPrefix => (string)((SettingsBase)this)["LocalizationTablesApiPrefix"];
+	public string LocalizationTablesApiPrefix => (string)base["LocalizationTablesApiPrefix"];
 
 	[ApplicationScopedSetting]
 	[DebuggerNonUserCode]
 	[DefaultSettingValue("itemconfiguration")]
-	public string ItemConfigurationApiSitePrefix => (string)((SettingsBase)this)["ItemConfigurationApiSitePrefix"];
+	public string ItemConfigurationApiSitePrefix => (string)base["ItemConfigurationApiSitePrefix"];
 
 	internal EnvironmentSettings()
 	{

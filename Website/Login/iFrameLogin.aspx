@@ -1,5 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="iFrameLogin.aspx.cs" Inherits="Roblox.Website.Login.iFrameLogin" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="iFrameLogin.aspx.cs" Inherits="Roblox.Website.Login.iFrameLogin" %>
 <%@ Import Namespace="Roblox.Web.StaticContent" %>
+<%@ Import Namespace="Roblox.Web.Code" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -20,7 +21,7 @@
         window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")
     </script>
 
-    <%: RobloxScripts.RenderBundle("iframelogin") %>
+    <%: RobloxScriptsShim.RenderBundle("iframelogin") %>
 
     <style>
         html 

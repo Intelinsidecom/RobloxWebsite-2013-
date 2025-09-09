@@ -19,7 +19,7 @@ namespace Roblox.Website
 {
     public class Global : HttpApplication
     {
-        private static RobloxWebsiteLogger _logger;
+        private static Logger _logger;
         private static Roblox.Website.Factories.RolesDomainFactories _rolesDomainFactories;
         private static Roblox.Website.Factories.EmailDomainFactories _emailDomainFactories;
         private static Roblox.Website.Factories.MembershipDomainFactories _membershipDomainFactories;
@@ -28,13 +28,13 @@ namespace Roblox.Website
         private static Roblox.Platform.Authentication.ICredentialValidator _credentialValidator;
         #pragma warning restore 0169
 
-        public static RobloxWebsiteLogger Logger
+        public static Logger Logger
         {
             get
             {
                 if (_logger == null)
                 {
-                    _logger = new RobloxWebsiteLogger();
+                    _logger = new Logger();
                 }
                 return _logger;
             }
@@ -136,7 +136,7 @@ namespace Roblox.Website
                 catch (Exception ex)
                 {
                     // Don't block startup during development if bundling fails
-                    Logger.Warn("Bundle registration failed during startup; continuing. Exception: " + ex);
+                    Logger.Error("Bundle registration failed during startup; continuing. Exception: " + ex);
                 }
             }
 

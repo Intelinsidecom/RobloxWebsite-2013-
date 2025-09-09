@@ -54,6 +54,9 @@ public class Provider : SettingsProvider
 
 	private static readonly ConcurrentDictionary<string, Provider> _RegisteredProviders;
 
+	[ThreadStatic]
+	private static bool _InitReentryGuard;
+
 	public override string Description => "A service-backed SettingsProvider that synchronizes assembly settings from a common repository.";
 
 	public override string ApplicationName { get; set; }
@@ -137,11 +140,23 @@ public class Provider : SettingsProvider
 
 	public override void Initialize(string name, NameValueCollection col)
 	{
-		if (string.IsNullOrEmpty(name))
+		if (_InitReentryGuard)
 		{
-			name = ((object)this).GetType().FullName;
+			return;
 		}
-		((ProviderBase)this).Initialize(name, col);
+		_InitReentryGuard = true;
+		try
+		{
+			if (string.IsNullOrEmpty(name))
+			{
+				name = GetType().FullName;
+			}
+			base.Initialize(name, col);
+		}
+		finally
+		{
+			_InitReentryGuard = false;
+		}
 	}
 
 	public override SettingsPropertyValueCollection GetPropertyValues(SettingsContext context, SettingsPropertyCollection collection)

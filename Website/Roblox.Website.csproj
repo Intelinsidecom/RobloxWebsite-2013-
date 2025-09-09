@@ -172,7 +172,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" xmlns="" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.7" xmlns="" />
     <PackageReference Include="Pomelo.JsonObject" Version="2.2.1" xmlns="" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" xmlns="" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" xmlns="" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" />
     <PackageReference Include="System.Buffers" Version="4.5.1" />
     <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
@@ -608,6 +608,7 @@
     <Compile Include="Thumbs\UserAvatar.ashx.cs">
       <DependentUpon>UserAvatar.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\Logger.cs" />
     <Compile Include="Upgrades\BuildersClubMemberships.aspx.cs">
       <DependentUpon>BuildersClubMemberships.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1008,11 +1009,13 @@
     <Compile Include="WebCode\UserAdUtils.cs" />
     <Compile Include="WebCode\Core\ExceptionHandlerListener.cs" />
     <Compile Include="WebCode\Core\RazorPartialBridge.cs" />
-    <Compile Include="WebCode\Core\RobloxWebsiteLogger.cs" />
+    <Compile Include="WebCode\Core\Logger.cs" />
     <Compile Include="Showcases\Entities\Showcase.cs" />
     <Compile Include="Showcases\Entities\ShowcaseItem.cs" />
     <Compile Include="Showcases\Entities\ShowcaseType.cs" />
     <Compile Include="WebCode\StaticContent.cs" />
+    <Compile Include="WebCode\RobloxCSSShim.cs" />
+    <Compile Include="WebCode\RobloxScriptsShim.cs" />
     <!-- Excluded duplicates: use implementations from Roblox.Web.Code assembly -->
     <!-- <Compile Include="WebCode\RobloxScripts.cs" /> -->
     <!-- <Compile Include="WebCode\RobloxCSS.cs" /> -->

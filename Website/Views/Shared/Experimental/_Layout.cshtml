@@ -1,4 +1,5 @@
-﻿@{ 
+@using Roblox.Web.Code
+@{ 
     RobloxScripts.PageScripts.Add("Landing/BlueCity/Animation.js");
     RobloxScripts.PageScripts.Add("Landing/BlueCity/Animated.js");
 }
@@ -8,9 +9,9 @@
 <head>
     <!-- MachineID: @ViewBag.MachineID -->
     <title>@(!String.IsNullOrEmpty(ViewBag.Title) ? ViewBag.Title + " - ROBLOX" : "ROBLOX")</title>
-    @RobloxCSS.RenderBundle("reset")
-    @RobloxCSS.RenderBundle("main")
-    @RobloxCSS.Render(StaticContent.GetPageCSSBundle())
+    @RobloxCSSShim.RenderBundle("reset")
+    @RobloxCSSShim.RenderBundle("main")
+    @RobloxCSSShim.Render(StaticContent.GetPageCSSBundle())
     @Html.Partial("~/UserControls/TrackingPixels/GoogleAnalytics.ascx")
     @Html.Partial("~/Views/Tracker/GoogleAnalytics.cshtml")
     @* Function that creates AJAX and jQuery HTML goes here *@
@@ -19,7 +20,7 @@
     <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
     <script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
     @* No tabs here *@
-    @RobloxScripts.RenderBundle("base")
+    @RobloxScriptsShim.RenderBundle("base")
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="/CSS/PartialViews/Navigation.css">
     @Html.Partial("~/Views/Shared/PageMetaTags.cshtml", (MetaTagListViewModel)ViewBag.MetaTagListViewModel)
