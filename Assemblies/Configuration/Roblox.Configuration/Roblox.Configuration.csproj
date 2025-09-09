@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Configuration</AssemblyName>
@@ -10,11 +10,14 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <!-- Exclude duplicate provider we added at the project root; use the implementation under Roblox.Configuration/ -->
+    <Compile Remove="Provider.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <ProjectReference Include="..\\..\\Events\\Roblox.EventLog\\Roblox.EventLog.csproj">
+    <ProjectReference Include="..\..\Events\Roblox.EventLog\Roblox.EventLog.csproj">
       <Project>
       </Project>
     </ProjectReference>

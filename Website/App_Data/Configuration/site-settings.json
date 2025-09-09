@@ -1,0 +1,13 @@
+{
+  "Bundling": {
+    "MergeJavaScriptFiles": false,
+    "MergeCSS": false
+  },
+  "Navigation": {
+    "UseMvcNavBar": false
+  },
+  "Installer": {
+    "UseUpdatedInstallationInstructionsModal": false,
+    "ClientInstallHost": "localhost"
+  }
+}

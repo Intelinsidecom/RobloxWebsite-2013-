@@ -56,10 +56,11 @@ namespace Roblox.Web.StaticContent
 
         public static RobloxScriptBundle GetPageScriptBundle()
         {
-            if (Roblox.Web.Code.RobloxScripts.PageScripts.Count <= 0)
+            var files = Roblox.Web.Code.RobloxScripts.PageScripts.ToList();
+            if (files.Count <= 0)
                 return null;
 
-            RobloxScriptBundle bundle = CreateScriptBundle("page", Roblox.Web.Code.RobloxScripts.PageScripts);
+            RobloxScriptBundle bundle = CreateScriptBundle("page", files);
             return bundle;
         }
 
@@ -110,10 +111,11 @@ namespace Roblox.Web.StaticContent
 
         public static RobloxCssBundle GetPageCSSBundle()
         {
-            if (Roblox.Web.Code.RobloxCSS.PageCSS.Count <= 0)
+            var files = Roblox.Web.Code.RobloxCSS.PageCSS.ToList();
+            if (files.Count <= 0)
                 return null;
 
-            RobloxCssBundle bundle = CreateCSSBundle("page", Roblox.Web.Code.RobloxCSS.PageCSS);
+            RobloxCssBundle bundle = CreateCSSBundle("page", files);
             return bundle;
         }
     }

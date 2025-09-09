@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GoogleAnalytics.ascx.cs" Inherits="Roblox.Website.UserControls.GoogleAnalytics" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GoogleAnalytics.ascx.cs" Inherits="Roblox.Website.UserControls.GoogleAnalytics" %>
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
@@ -9,7 +9,7 @@
 
 
 
-        _gaq.push(['b._setAccount', '<%=Roblox.WebsiteSettings.Properties.GoogleAnalytics.Default.GoogleAnalyticsAccountCode%>']);
+        _gaq.push(['b._setAccount', '<%=Roblox.Web.Code.SiteConfig.Current.Analytics.GoogleAnalyticsAccountCode%>']);
         _gaq.push(['b._setCampSourceKey', 'rbx_source']);
         _gaq.push(['b._setCampMediumKey', 'rbx_medium']);
         _gaq.push(['b._setCampContentKey', 'rbx_campaign']);

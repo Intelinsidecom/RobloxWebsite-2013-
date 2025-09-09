@@ -136,6 +136,23 @@ namespace Roblox.Moderation
             PunishmentType.Warn
         };
     }
+
+    // Minimal stub for user moderation notes used by admin pages
+    public class UserModerationNote
+    {
+        public int ID { get; set; }
+        public int UserID { get; set; }
+        public int ModeratorID { get; set; }
+        public string Value { get; set; }
+        public DateTime Created { get; set; } = DateTime.UtcNow;
+
+        public void Save() { /* no-op stub */ }
+
+        public static IList<UserModerationNote> GetUserModerationNotesByUserID(int userId)
+        {
+            return new List<UserModerationNote>();
+        }
+    }
 }
 
 namespace Roblox.Hashing

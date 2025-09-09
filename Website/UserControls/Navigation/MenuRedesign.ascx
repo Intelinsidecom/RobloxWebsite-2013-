@@ -1,7 +1,7 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuRedesign.ascx.cs" Inherits="Roblox.Website.UserControls.Navigation.MenuRedesign" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuRedesign.ascx.cs" Inherits="Roblox.Website.UserControls.Navigation.MenuRedesign" %>
 
 
-<% if (Roblox.WebsiteSettings.Properties.Layout.Default.UseMVCNavBar) {%>
+<% if (Roblox.Web.Code.SiteConfig.Current.Navigation.UseMvcNavBar) { %>
 <%-- MVC Navigation Behavior --%>
 <%@ Import Namespace="Roblox.Website" %>
 <%@ Import Namespace="Roblox.Website.ViewModels.Navigation" %>

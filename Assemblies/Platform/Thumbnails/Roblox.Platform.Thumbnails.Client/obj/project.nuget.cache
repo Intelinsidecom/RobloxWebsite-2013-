@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ivl5nrbeBSo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Platform\\Thumbnails\\Roblox.Platform.Thumbnails.Client\\Roblox.Platform.Thumbnails.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel\\.nuget\\packages\\prometheus-net\\4.2.0\\prometheus-net.4.2.0.nupkg.sha512",
+    "C:\\Users\\Intel\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

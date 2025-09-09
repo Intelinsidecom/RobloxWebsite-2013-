@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.UI.WebControls;
 using System.Net;
+using System.Configuration;
 using Roblox.Configuration;
 using Roblox.EventLog;
 using Roblox.Platform.Membership;
@@ -23,7 +24,9 @@ namespace Roblox.Website
         private static Roblox.Website.Factories.EmailDomainFactories _emailDomainFactories;
         private static Roblox.Website.Factories.MembershipDomainFactories _membershipDomainFactories;
         private static Roblox.Website.Factories.SecurityDomainFactories _securityDomainFactories;
+        #pragma warning disable 0169 // Field is never used
         private static Roblox.Platform.Authentication.ICredentialValidator _credentialValidator;
+        #pragma warning restore 0169
 
         public static RobloxWebsiteLogger Logger
         {
@@ -121,7 +124,21 @@ namespace Roblox.Website
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles();
+            // FastStartup: set to true in Web.config appSettings to skip heavy bundle registration during dev.
+            bool fastStartup = false;
+            bool.TryParse(ConfigurationManager.AppSettings["FastStartup"], out fastStartup);
+            if (!fastStartup)
+            {
+                try
+                {
+                    BundleConfig.RegisterBundles();
+                }
+                catch (Exception ex)
+                {
+                    // Don't block startup during development if bundling fails
+                    Logger.Warn("Bundle registration failed during startup; continuing. Exception: " + ex);
+                }
+            }
 
             CreateLogger();
             ConfigureDomainFactories();

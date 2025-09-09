@@ -9,8 +9,6 @@ namespace Roblox.Website {
 		public static void RegisterBundles()
 		{
 
-			RobloxScripts.MergeFiles = Roblox.WebsiteSettings.Properties.Settings.Default.MergeJavaScriptFiles;
-			RobloxCSS.MergeFiles = Roblox.WebsiteSettings.Properties.Settings.Default.MergeCSS;
 
 			// System.Web.Optimization is not used in this project setup. CDN and ScriptBundle registrations removed.
 
