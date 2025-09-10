@@ -62,7 +62,17 @@ internal class RedisCacheInvalidator : ICacheInvalidator
 
 	private void TryRegisterNewEntity(string entityType)
 	{
+		// Ensure initialization has been attempted at least once.
 		InitializeOnce();
+
+		// If the subscriber failed to initialize (e.g., no pub-sub handles available),
+		// avoid throwing a NullReferenceException and notify the exception handler.
+		if (_Subscriber == null)
+		{
+			_ExceptionHandler?.Invoke(new Exception($"Redis subscriber not initialized; cannot register entity '{entityType}'."));
+			return;
+		}
+
 		lock (_RegisteredEntities)
 		{
 			if (_RegisteredEntities.Contains(entityType))
@@ -70,13 +80,15 @@ internal class RedisCacheInvalidator : ICacheInvalidator
 				return;
 			}
 		}
-		if (_Subscriber.RegisterEntity(entityType))
+
+		if (_Subscriber != null && _Subscriber.RegisterEntity(entityType))
 		{
 			lock (_RegisteredEntities)
 			{
 				_RegisteredEntities.Add(entityType);
 			}
 		}
+
 		lock (_RegistrationAttemptedEntities)
 		{
 			if (!_RegistrationAttemptedEntities.Contains(entityType))

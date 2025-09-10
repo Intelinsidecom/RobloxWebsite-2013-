@@ -121,6 +121,9 @@ namespace Roblox.Website
 
         protected void Application_Start()
         {
+            // Initialize logging FIRST
+            CreateLogger();
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -140,7 +143,6 @@ namespace Roblox.Website
                 }
             }
 
-            CreateLogger();
             ConfigureDomainFactories();
             DoOtherConfig();
 
@@ -158,6 +160,16 @@ namespace Roblox.Website
 
                 if (exc.GetType() == typeof(HttpException))
                 {
+#if DEBUG
+                    // In DEBUG builds, do not redirect to the friendly error page.
+                    // Let ASP.NET show the detailed error page instead.
+                    return;
+#endif
+                    // If custom errors are disabled (e.g., local debugging), let ASP.NET show the detailed error page
+                    if (Context != null && !Context.IsCustomErrorEnabled)
+                    {
+                        return;
+                    }
                     if (Response.IsClientConnected)
                         Response.Redirect("~/RobloxDefaultErrorPage.aspx?code=" + ((HttpException)exc).GetHttpCode(), true);
                 }
@@ -169,6 +181,14 @@ namespace Roblox.Website
             else
             {
                 // Something went very wrong
+#if DEBUG
+                // In DEBUG builds, do not redirect; show detailed error.
+                return;
+#endif
+                if (Context != null && !Context.IsCustomErrorEnabled)
+                {
+                    return;
+                }
                 if (Response.IsClientConnected)
                     Response.Redirect("~/RobloxDefaultErrorPage.aspx?code=500", true);
             }
@@ -209,7 +229,13 @@ namespace Roblox.Website
         /// </summary>
         private void CreateLogger()
         {
-
+            // Ensure a logger is available for all components that rely on StaticLoggerRegistry
+            var defaultLogger = new Roblox.EventLog.NoOpLogger
+            {
+                MaxLogLevel = () => Roblox.EventLog.LogLevel.Error,
+                LogThreadID = false,
+                IsDefaultLog = true
+            };
         }
 
         private void ConfigureDomainFactories()

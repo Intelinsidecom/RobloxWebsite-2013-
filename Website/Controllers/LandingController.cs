@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using System.Web.Security;
 using Roblox.Web.Mvc;
 using Roblox.Website.WebCode;
+using System.Text;
+using Roblox.Web.Code;
 
 namespace Roblox.Website.Controllers
 {
@@ -46,5 +48,26 @@ namespace Roblox.Website.Controllers
 
             return Redirect(_helper.GetRedirectUrlForSignupStatus(status));
         }
+
+#if DEBUG
+        [HttpGet]
+        public ContentResult Ping()
+        {
+            return Content("pong", "text/plain");
+        }
+
+        [HttpGet]
+        public ActionResult DebugLinks()
+        {
+            var links = SiteConfig.Current.DebugLinks ?? new List<string>();
+            var sb = new StringBuilder();
+            sb.AppendLine("Debug Links:");
+            foreach (var l in links)
+            {
+                if (!string.IsNullOrWhiteSpace(l)) sb.AppendLine(l);
+            }
+            return Content(sb.ToString(), "text/plain");
+        }
+#endif
     }
 }

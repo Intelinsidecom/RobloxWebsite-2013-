@@ -4,6 +4,7 @@
 <%@ Import Namespace="Roblox.Web.StaticContent" %>
 
 <%@ Register Src="~/UserControls/Navigation/Footer.ascx" TagName="Footer" TagPrefix="rbx"%>
+<%@ Register Src="~/UserControls/Navigation/MenuRedesign.ascx" TagName="MenuRedesign" TagPrefix="rbx"%>
 
 <%@ Register Src="~/UserControls/TrackingPixels/GoogleAnalytics.ascx" TagName="GoogleAnalytics" TagPrefix="rbx"%>
 <%@ Register Src="~/UserControls/TrackingPixels/JavascriptErrorTracker.ascx" TagName="JavascriptErrorTracker" TagPrefix="rbx"%>
@@ -12,14 +13,20 @@
 <%@ Register Src="~/UserControls/Modals/ConfirmationModal.ascx" TagName="ConfirmationModal" TagPrefix="rbx"%>
 <%@ Register Src="~/UserControls/Modals/UpsellAdModal.ascx" TagName="UpsellAdModal" TagPrefix="rbx"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" id="www-roblox-com">
 <!-- MachineID: <%: Environment.MachineName %> -->
 <head runat="server">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
     <title><%=Page.Title%></title>
-    <%: RobloxCSSShim.RenderBundle("main") %>
-    <%: RobloxCSSShim.Render(StaticContent.GetPageCSSBundle()) %>
+    <!-- Core CSS (dev-safe explicit links) -->
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/Base/CSS/Roblox.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/Base/CSS/Header.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/Base/CSS/MenuRedesign.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/Base/CSS/IframeHeader.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/Base/CSS/Footer.css") %>" />
+    <link rel="stylesheet" type="text/css" href="<%= Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/RBX2/CSS/Roblox.css") %>" />
+    <%= RobloxCSSShim.Render(StaticContent.GetPageCSSBundle()) %>
 
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,25 +35,30 @@
     <meta name="keywords" content="<%=MetaTagListViewModel.Keywords %>" />
     <meta name="robots" content="all" />
 
-	<rbx:GoogleAnalytics runat="server" />
-<script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
-<script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")</script>
-<script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
-<script type='text/javascript'>window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")</script>
-    <%: RobloxScriptsShim.RenderBundle("simple") %>
-
+    <rbx:GoogleAnalytics runat="server" />
+    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
+    <script type='text/javascript'>window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\\/script>")</script>
+    <%= RobloxScriptsShim.RenderBundle("master") %>
+    <%= RobloxScriptsShim.RenderBundle("simple") %>
     <rbx:JavascriptErrorTracker runat="server" />
-    <%: RobloxScriptsShim.Render(StaticContent.GetPageScriptBundle()) %>
-	<script type="text/javascript">
-        $(function () {
-            $('.tooltip').tipsy();
-            $('.tooltip-top').tipsy({ gravity: 's' });
-            $('.tooltip-right').tipsy({ gravity: 'w' });
-            $('.tooltip-left').tipsy({ gravity: 'e' });
-            $('.tooltip-bottom').tipsy({ gravity: 'n' });
-            $('.tooltip-right-html').tipsy({ gravity: 'w', html: true, delayOut: 1000 });
-            $('.tooltip-left-html').tipsy({ gravity: 'e', html: true, delayOut: 1000 });
-        });
+    <%= RobloxScriptsShim.Render(StaticContent.GetPageScriptBundle()) %>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                if ($ && $.fn && $.fn.tipsy) {
+                    $('.tooltip').tipsy();
+                    $('.tooltip-top').tipsy({ gravity: 's' });
+                    $('.tooltip-right').tipsy({ gravity: 'w' });
+                    $('.tooltip-left').tipsy({ gravity: 'e' });
+                    $('.tooltip-bottom').tipsy({ gravity: 'n' });
+                    $('.tooltip-right-html').tipsy({ gravity: 'w', html: true, delayOut: 1000 });
+                    $('.tooltip-left-html').tipsy({ gravity: 'e', html: true, delayOut: 1000 });
+                }
+                if (window.Roblox && Roblox.JSErrorTracker && typeof Roblox.JSErrorTracker.initialize === 'function') {
+                    try { Roblox.JSErrorTracker.initialize(); } catch (e) { }
+                }
+            });
+        })(window.jQuery || window.$);
     </script>
 </head>
 <body class="">
@@ -57,8 +69,9 @@
     <div id="Container">
         
         <div class="site-header">
-		    <div id="navigation-container">
+            <div id="navigation-container">
                 <a href="/Default.aspx" class="btn-logo"></a>
+                <rbx:MenuRedesign ID="MenuRedesign" runat="server" />
             </div>
         </div>
         

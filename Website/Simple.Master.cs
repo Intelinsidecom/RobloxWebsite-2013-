@@ -23,7 +23,7 @@ namespace Roblox.Website
 
         private void SetupBundles()
         {
-            RobloxCSS.PageCSS.Add("PartialViews/Navigation.css");
+            RobloxCSS.PageCSS.Add("CSS/PartialViews/Navigation.css");
         }
 
         private void SetupMetadata(MetaTagListViewModel metaTagModel)

@@ -2,7 +2,7 @@
 <%@ Import Namespace="Roblox.Web.StaticContent" %>
 <%@ Import Namespace="Roblox.Web.Code" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><title>
@@ -16,12 +16,7 @@
     <script type='text/javascript'>
         window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.7.2.min.js'><\/script>")
     </script>
-    <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js'></script>
-    <script type='text/javascript'>
-        window.Sys || document.write("<script type='text/javascript' src='/js/Microsoft/MicrosoftAjax.js'><\/script>")
-    </script>
-
-    <%: RobloxScriptsShim.RenderBundle("iframelogin") %>
+    <%= RobloxScriptsShim.RenderBundle("iframelogin") %>
 
     <style>
         html 

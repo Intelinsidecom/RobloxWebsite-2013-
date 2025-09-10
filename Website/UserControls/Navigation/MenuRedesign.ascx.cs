@@ -13,7 +13,7 @@ namespace Roblox.Website.UserControls.Navigation
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            RobloxCSS.PageCSS.Add("PartialViews/Navigation.css");
+            RobloxCSS.PageCSS.Add("CSS/PartialViews/Navigation.css");
         }
     }
 }

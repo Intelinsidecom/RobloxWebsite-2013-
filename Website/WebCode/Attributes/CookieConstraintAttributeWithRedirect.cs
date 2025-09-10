@@ -14,8 +14,8 @@ namespace Roblox.Website
                 // Check if the request has the required cookie
                 if (!CookieConstraintValidator.HasConstrainedCookie(System.Web.HttpContext.Current.Request))
                 {
-                    // Redirect to the cookie constraint page
-                    filterContext.Result = new RedirectResult("/CookieConstraint");
+                    // Redirect to an existing page that instructs users how to fulfill the constraint
+                    filterContext.Result = new RedirectResult("/Login/FulfillConstraint.aspx");
                     return;
                 }
             }

@@ -12,7 +12,6 @@
     @RobloxCSSShim.RenderBundle("reset")
     @RobloxCSSShim.RenderBundle("main")
     @RobloxCSSShim.Render(StaticContent.GetPageCSSBundle())
-    @Html.Partial("~/UserControls/TrackingPixels/GoogleAnalytics.ascx")
     @Html.Partial("~/Views/Tracker/GoogleAnalytics.cshtml")
     @* Function that creates AJAX and jQuery HTML goes here *@
     <script type='text/javascript' src='//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js'></script>
@@ -22,7 +21,6 @@
     @* No tabs here *@
     @RobloxScriptsShim.RenderBundle("base")
     <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/CSS/PartialViews/Navigation.css">
     @Html.Partial("~/Views/Shared/PageMetaTags.cshtml", (MetaTagListViewModel)ViewBag.MetaTagListViewModel)
 
 </head>
@@ -42,7 +40,6 @@
         <div id="Body" style="width:970px">
             @RenderBody()
             @Html.Partial("~/Views/Tracking/GoogleAdWordsConversionTracker.cshtml")
-            @Html.Partial("~/UserControls/Modals/ConfirmationModal.ascx")
         </div>
         @Html.Partial("~/Views/Shared/Experimental/_Footer.cshtml")
     </div>
@@ -51,8 +48,8 @@
     @Html.Partial("~/Views/Tracker/GoogleAnalytics.cshtml")
 
     @Html.Partial("~/Views/Tracking/JavascriptErrorTracker.cshtml", (JavascriptErrorTrackerViewModel)ViewBag.JavascriptErrorTrackerViewModel)
-    @RobloxScripts.RenderBundle("simple-mvc")
-    @RobloxScripts.Render(StaticContent.GetPageScriptBundle())
+    @RobloxScriptsShim.RenderBundle("simple-mvc")
+    @RobloxScriptsShim.Render(StaticContent.GetPageScriptBundle())
     @Html.Partial("~/Views/Tracking/VendorSpecificSignupTrackingPixel.cshtml")
     <script type="text/javascript">
         $(function () {

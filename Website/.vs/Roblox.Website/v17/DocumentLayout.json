@@ -1,52 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Website\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Intel\\AppData\\Local\\SourceServer\\ce38ec7281a018406a827e1af20e09b04dc6204890913ba74713c3a53d69a106\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Provider.cs",
-              "DocumentMoniker": "C:\\Users\\Intel\\AppData\\Local\\SourceServer\\ce38ec7281a018406a827e1af20e09b04dc6204890913ba74713c3a53d69a106\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ce38ec7281a018406a827e1af20e09b04dc6204890913ba74713c3a53d69a106\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "ToolTip": "C:\\Users\\Intel\\AppData\\Local\\SourceServer\\ce38ec7281a018406a827e1af20e09b04dc6204890913ba74713c3a53d69a106\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\ce38ec7281a018406a827e1af20e09b04dc6204890913ba74713c3a53d69a106\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAASwIoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:22:16.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Provider.cs",
-              "DocumentMoniker": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "RelativeDocumentMoniker": "..\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "ToolTip": "C:\\Users\\Intel\\Documents\\GitHub\\RobloxWebsite-2013-\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "RelativeToolTip": "..\\Assemblies\\Configuration\\Roblox.Configuration\\Roblox.Configuration\\Provider.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAiwK4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:18:11.142Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

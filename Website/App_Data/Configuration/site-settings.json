@@ -9,5 +9,9 @@
   "Installer": {
     "UseUpdatedInstallationInstructionsModal": false,
     "ClientInstallHost": "localhost"
-  }
+  },
+  "DebugLinks": [
+    "ping",
+    "debug/links"
+  ]
 }

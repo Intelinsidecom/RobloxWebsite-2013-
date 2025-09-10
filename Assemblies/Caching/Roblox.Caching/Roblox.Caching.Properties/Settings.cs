@@ -24,11 +24,11 @@ internal sealed class Settings : ApplicationSettingsBase, ISettings, INotifyProp
 	{
 		get
 		{
-			return _Properties.GetOrAdd(propertyName, (string propName) => ((ApplicationSettingsBase)this)[propName]);
+			return _Properties.GetOrAdd(propertyName, (string propName) => base[propName]);
 		}
 		set
 		{
-			((ApplicationSettingsBase)this)[propertyName] = value;
+			base[propertyName] = value;
 		}
 	}
 

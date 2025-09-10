@@ -1016,6 +1016,7 @@
     <Compile Include="WebCode\StaticContent.cs" />
     <Compile Include="WebCode\RobloxCSSShim.cs" />
     <Compile Include="WebCode\RobloxScriptsShim.cs" />
+    <Compile Include="WebCode\Properties\Settings.cs" />
     <!-- Excluded duplicates: use implementations from Roblox.Web.Code assembly -->
     <!-- <Compile Include="WebCode\RobloxScripts.cs" /> -->
     <!-- <Compile Include="WebCode\RobloxCSS.cs" /> -->

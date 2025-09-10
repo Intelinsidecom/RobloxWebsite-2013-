@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Web.Script.Serialization;
+using System.Collections.Generic;
 
 namespace Roblox.Web.Code
 {
@@ -10,6 +11,8 @@ namespace Roblox.Web.Code
         public NavigationSettings Navigation { get; set; } = new NavigationSettings();
         public InstallerSettings Installer { get; set; } = new InstallerSettings();
         public AnalyticsSettings Analytics { get; set; } = new AnalyticsSettings();
+        // Debug-only links that should only be available when building in DEBUG
+        public List<string> DebugLinks { get; set; } = new List<string>();
 
         public sealed class BundlingSettings
         {
