@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Roblox.Master" AutoEventWireup="true" CodeBehind="NewEmailPlz.aspx.cs" Inherits="Roblox.Website.Login.NewEmailPlz" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Roblox.Master" AutoEventWireup="true" CodeBehind="NewEmailPlz.aspx.cs" Inherits="Roblox.Website.Login.NewEmailPlz" %>
 <%@ Register Src="~/UserControls/BonusRoundJavaScript.ascx" TagName="BonusRoundJavaScript" TagPrefix="rbx"%>
 <asp:Content ID="Content" ContentPlaceHolderID="cphRoblox" runat="server">
     <asp:Panel CssClass="Registration" BackColor="Transparent" BorderStyle="None" runat="server">
@@ -32,7 +32,7 @@
                         <div><asp:RegularExpressionValidator ID="EmailRegularExpressionValidator"
                             ErrorMessage="Please enter a valid email address."
                             ForeColor="Red" Display="Dynamic"
-                            ValidationExpression="<%# Roblox.EmailAddresses.Properties.Settings.Default.ValidEmailAddressRegex %>"
+                            ValidationExpression="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
                             ControlToValidate="EmailTextBox"
                             runat="server" /></div>
                         <div><asp:RequiredFieldValidator ID="EmailRequiredFieldValidator"

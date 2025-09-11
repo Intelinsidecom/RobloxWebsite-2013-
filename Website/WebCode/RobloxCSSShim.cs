@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Text;
+using System.Web;
 // Note: avoid 'using Roblox.Web.StaticContent;' to prevent namespace/type ambiguity with StaticContent
 
 namespace Roblox.Web.Code
@@ -9,7 +10,13 @@ namespace Roblox.Web.Code
     // implementation inside the Roblox.Web.Code assembly.
     public static class RobloxCSSShim
     {
+        // Back-compat: primary API returns string
         public static string RenderBundle(string name)
+        {
+            return RenderBundleHtml(name).ToHtmlString();
+        }
+
+        public static IHtmlString RenderBundleHtml(string name)
         {
             try
             {
@@ -27,7 +34,7 @@ namespace Roblox.Web.Code
                           .Append(href)
                           .Append("\" />");
                     }
-                    return sb.ToString();
+                    return new HtmlString(sb.ToString());
                 }
 
                 // Fallback: emit conservative core styles for known bundles if registry is empty
@@ -39,7 +46,7 @@ namespace Roblox.Web.Code
                         var href = global::Roblox.Web.StaticContent.StaticContent.GetUrl("~/CSS/YUIReset.css");
                         sbFallback.Append("<link rel=\"stylesheet\" type=\"text/css\" href=\"")
                                   .Append(href).Append("\" />");
-                        return sbFallback.ToString();
+                        return new HtmlString(sbFallback.ToString());
                     }
                     if (string.Equals(name, "main", StringComparison.OrdinalIgnoreCase))
                     {
@@ -56,21 +63,27 @@ namespace Roblox.Web.Code
                             sbFallback.Append("<link rel=\"stylesheet\" type=\"text/css\" href=\"")
                                       .Append(href).Append("\" />");
                         }
-                        return sbFallback.ToString();
+                        return new HtmlString(sbFallback.ToString());
                     }
                 }
                 // Last resort
-                return $"<style>/* CSS bundle '{name}' (empty in dev) */</style>";
+                return new HtmlString($"<style>/* CSS bundle '{name}' (empty in dev) */</style>");
             }
             catch
             {
-                return $"<!-- Failed to render CSS bundle '{name}' -->";
+                return new HtmlString($"<!-- Failed to render CSS bundle '{name}' -->");
             }
         }
 
+        // Back-compat: primary API returns string
         public static string Render(Roblox.Web.StaticContent.RobloxCssBundle bundle)
         {
-            if (bundle == null) return string.Empty;
+            return RenderHtml(bundle).ToHtmlString();
+        }
+
+        public static IHtmlString RenderHtml(Roblox.Web.StaticContent.RobloxCssBundle bundle)
+        {
+            if (bundle == null) return new HtmlString(string.Empty);
             // Try to render recorded files for the page bundle
             try
             {
@@ -86,14 +99,14 @@ namespace Roblox.Web.Code
                           .Append(href)
                           .Append("\" />");
                     }
-                    return sb.ToString();
+                    return new HtmlString(sb.ToString());
                 }
             }
             catch { /* fallback below */ }
 
             // Fallback: inline whatever the bundle carried
             var css = bundle.Contents ?? string.Empty;
-            return "<style>" + css + "</style>";
+            return new HtmlString("<style>" + css + "</style>");
         }
     }
 }

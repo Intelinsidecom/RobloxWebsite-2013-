@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BonusRoundJavaScript.ascx.cs" Inherits="Roblox.Website.UserControls.BonusRoundJavaScript" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BonusRoundJavaScript.ascx.cs" Inherits="Roblox.Website.UserControls.BonusRoundJavaScript" %>
     <script type="text/javascript">
         var referrerIsValid = true;
         function check_code() {
@@ -9,12 +9,12 @@
                     success: function(data) {
 
                         if (data == "false") {
-                            $("#code_checker").html("<img src='<%# StaticContent.GetUrl("~/images/cross.png") %>' />");
+                            $("#code_checker").html("<img src='<%= ResolveUrl("~/images/cross.png") %>' />");
                             referrerIsValid = false;
 
                         }
                         else if (data == "true") {
-                            $("#code_checker").html("<img src='<%# StaticContent.GetUrl("~/images/accept.png") %>' />");
+                            $("#code_checker").html("<img src='<%= ResolveUrl("~/images/accept.png") %>' />");
                             referrerIsValid = true;
                         }
                     }
@@ -28,12 +28,12 @@
         function initiate_waiting() {
             var input_code = $("#<%#Parent.FindControl("referral_code").ClientID %>").val();
             if (input_code != "") {
-                $("#code_checker").html("<img src='<%# StaticContent.GetUrl("~/images/waiting.gif") %>' />");
+                $("#code_checker").html("<img src='<%= ResolveUrl("~/images/waiting.gif") %>' />");
                 if (input_code.length > 3 && input_code.length < 20) {
                     check_code();
                 }
                 else {
-                    $("#code_checker").html("<img src='<%# StaticContent.GetUrl("~/images/cross.png") %>' />");
+                    $("#code_checker").html("<img src='<%= ResolveUrl("~/images/cross.png") %>' />");
                     referrerIsValid = false;
                 }
             }

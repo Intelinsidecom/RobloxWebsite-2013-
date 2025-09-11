@@ -29,7 +29,7 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.13" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.17" />
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.102" />
   </ItemGroup>
   <ItemGroup />

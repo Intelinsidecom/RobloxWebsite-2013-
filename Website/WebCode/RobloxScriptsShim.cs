@@ -13,14 +13,20 @@ namespace Roblox.Web.Code
     // implementation inside the Roblox.Web.Code assembly.
     public static class RobloxScriptsShim
     {
-        public static string RenderBundle(string name)
+        // Primary API expected by compiled pages
+        public static IHtmlString RenderBundle(string name)
+        {
+            return RenderBundleHtml(name);
+        }
+
+        public static IHtmlString RenderBundleHtml(string name)
         {
             try
             {
                 var ctx0 = HttpContext.Current;
                 if (ctx0?.Response?.StatusCode >= 400)
                 {
-                    return string.Empty;
+                    return new HtmlString(string.Empty);
                 }
                 // Ensure bundle registry is populated
                 global::Roblox.Web.StaticContent.StaticContent.EnsureBundlesRegistered();
@@ -39,7 +45,7 @@ namespace Roblox.Web.Code
                             var src = global::Roblox.Web.StaticContent.StaticContent.GetUrl(v);
                             sbDev.Append("<script src=\"").Append(src).Append("\"></script>");
                         }
-                        return sbDev.ToString();
+                        return new HtmlString(sbDev.ToString());
                     }
                 }
                 var files = global::Roblox.Web.StaticContent.StaticContent.GetScriptBundleFiles(name);
@@ -52,7 +58,7 @@ namespace Roblox.Web.Code
                         var bundle = global::Roblox.Web.StaticContent.StaticContent.CreateScriptBundle(name, filtered);
                         var js = bundle?.Contents ?? string.Empty;
                         js = EscapeInlineScript(js);
-                        return "<script>" + js + "</script>";
+                        return new HtmlString("<script>" + js + "</script>");
                     }
                     catch { /* fall back below */ }
                 }
@@ -70,28 +76,34 @@ namespace Roblox.Web.Code
                         var src = global::Roblox.Web.StaticContent.StaticContent.GetUrl(v);
                         sbAll.Append("<script src=\"").Append(src).Append("\"></script>");
                     }
-                    return sbAll.ToString();
+                    return new HtmlString(sbAll.ToString());
                 }
 
                 // Last resort
-                return $"<script>/* JS bundle '{name}' (empty in dev) */</script>";
+                return new HtmlString($"<script>/* JS bundle '{name}' (empty in dev) */</script>");
             }
             catch
             {
-                return $"<!-- Failed to render JS bundle '{name}' -->";
+                return new HtmlString($"<!-- Failed to render JS bundle '{name}' -->");
             }
         }
 
-        public static string Render(Roblox.Web.StaticContent.RobloxScriptBundle bundle)
+        // Primary API expected by compiled pages
+        public static IHtmlString Render(Roblox.Web.StaticContent.RobloxScriptBundle bundle)
         {
-            if (bundle == null) return string.Empty;
+            return RenderHtml(bundle);
+        }
+
+        public static IHtmlString RenderHtml(Roblox.Web.StaticContent.RobloxScriptBundle bundle)
+        {
+            if (bundle == null) return new HtmlString(string.Empty);
             // Try to render recorded files for the 'page' bundle
             try
             {
                 var ctx1 = HttpContext.Current;
                 if (ctx1?.Response?.StatusCode >= 400)
                 {
-                    return string.Empty;
+                    return new HtmlString(string.Empty);
                 }
                 global::Roblox.Web.StaticContent.StaticContent.EnsureBundlesRegistered();
                 // If dev flag is on, ignore bundles and load all js
@@ -109,7 +121,7 @@ namespace Roblox.Web.Code
                             var src = global::Roblox.Web.StaticContent.StaticContent.GetUrl(v);
                             sbDev.Append("<script src=\"").Append(src).Append("\"></script>");
                         }
-                        return sbDev.ToString();
+                        return new HtmlString(sbDev.ToString());
                     }
                 }
                 var files = global::Roblox.Web.StaticContent.StaticContent.GetScriptBundleFiles("page");
@@ -122,7 +134,7 @@ namespace Roblox.Web.Code
                         var bundleBuilt = global::Roblox.Web.StaticContent.StaticContent.CreateScriptBundle("page", filteredPage);
                         var jsBuilt = bundleBuilt?.Contents ?? string.Empty;
                         jsBuilt = EscapeInlineScript(jsBuilt);
-                        return "<script>" + jsBuilt + "</script>";
+                        return new HtmlString("<script>" + jsBuilt + "</script>");
                     }
                     catch { /* fallback below */ }
                 }
@@ -142,11 +154,11 @@ namespace Roblox.Web.Code
                     var src = global::Roblox.Web.StaticContent.StaticContent.GetUrl(v);
                     sbAll.Append("<script src=\"").Append(src).Append("\"></script>");
                 }
-                return sbAll.ToString();
+                return new HtmlString(sbAll.ToString());
             }
 
             var js = bundle.Contents ?? string.Empty;
-            return "<script>" + js + "</script>";
+            return new HtmlString("<script>" + js + "</script>");
         }
 
         private static string[] EnumerateAllJs()

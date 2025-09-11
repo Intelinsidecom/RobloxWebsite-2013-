@@ -123,10 +123,10 @@ if (Model.IsIE)
 <div id="pluginObjDiv" style="height:1px;width:1px;visibility:hidden;position: absolute;top: 0;"></div>
 <iframe id="downloadInstallerIFrame" style="visibility:hidden;height:0;width:1px;position:absolute"></iframe>
 
-@RobloxScriptsShim.RenderBundle("clientinstaller")
-
-<script type="text/javascript">
-    Roblox.Client._skip = @Html.Raw(Model.SkipUrl != null ? $"'{Model.SkipUrl}'" : "null");
+    @RobloxScriptsShim.RenderBundle("clientinstaller")
+    
+    <script type="text/javascript">
+    Roblox.Client._skip = @Html.Raw(Model.SkipUrl != null ? "'" + Model.SkipUrl + "'" : "null");
     Roblox.Client._CLSID = '@Model.CLSID';
     Roblox.Client._installHost = '@Model.InstallHost';
     Roblox.Client.ImplementsProxy = @Model.ImplementsProxy.ToString().ToLower();

@@ -19,7 +19,7 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="WebMarkupMin.Core" Version="2.12.0" />
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.15" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.17" />
     <PackageReference Include="AjaxMin" Version="5.14.5506.26202" />
   </ItemGroup>
   <ItemGroup>

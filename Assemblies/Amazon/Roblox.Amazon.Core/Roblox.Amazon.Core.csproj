@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Amazon.Core</AssemblyName>
@@ -20,6 +20,6 @@
       <Project>
       </Project>
     </ProjectReference>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.17" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +15,9 @@ namespace Roblox.Website
             if (Request.IsAuthenticated)
                 Response.Redirect("~/My/Home.aspx", true);
 
-            Response.Redirect("~/Landing/Animated", true);
+            // Unauthenticated: serve the signup page content but keep the root URL
+            // This mirrors the old behavior where '/' shows signup without changing the address bar.
+            Server.Transfer("~/Login/Signup.aspx", true);
         }
 
         protected void Page_Load(object sender, EventArgs e)

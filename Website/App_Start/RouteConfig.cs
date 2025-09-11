@@ -8,12 +8,15 @@ using System.Web.Routing;
 namespace Roblox.Website {
     public class RouteConfig {
         public static void RegisterRoutes(RouteCollection routes) {
-            // Allow MVC to process URLs that map to existing physical files or directories
-            // This fixes scenarios where a physical directory (e.g. 'Landing') exists on disk, but we
-            // still want routes like '/Landing/Animated' to be handled by MVC controllers.
-            routes.RouteExistingFiles = true;
+            // Do NOT route existing physical files; let WebForms and handlers serve them.
+            // MVC routes still work for extensionless URLs like /Landing/Animated.
+            routes.RouteExistingFiles = false;
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            // IMPORTANT: Do not let MVC hijack WebForms/Handlers; allow their handlers to process them.
+            routes.IgnoreRoute("{*allaspx}", new { allaspx = @".*\.aspx(/.*)?" });
+            routes.IgnoreRoute("{*allasmx}", new { allasmx = @".*\.asmx(/.*)?" });
+            routes.IgnoreRoute("{*allashx}", new { allashx = @".*\.ashx(/.*)?" });
             routes.MapMvcAttributeRoutes();
 
 #if DEBUG

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>Roblox.Platform.Notifications.Push</AssemblyName>
@@ -13,7 +13,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <PackageReference Include="AWSSDK.Core" Version="3.7.500.11" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.500.17" />
     <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />

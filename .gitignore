@@ -1,0 +1,17 @@
+
+# MSBuild / .NET build artifacts
+**/bin/
+**/obj/
+
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages

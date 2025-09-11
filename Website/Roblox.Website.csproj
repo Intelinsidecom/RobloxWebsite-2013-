@@ -377,6 +377,7 @@
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MobileAppApiController.cs" />
+    <Compile Include="Controllers\LandingController.cs" />
     <Compile Include="Controllers\NewLoginController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ReferenceController.cs" />
@@ -1016,6 +1017,7 @@
     <Compile Include="WebCode\StaticContent.cs" />
     <Compile Include="WebCode\RobloxCSSShim.cs" />
     <Compile Include="WebCode\RobloxScriptsShim.cs" />
+    <Compile Include="WebCode\PageTitleProvider.cs" />
     <Compile Include="WebCode\Properties\Settings.cs" />
     <!-- Excluded duplicates: use implementations from Roblox.Web.Code assembly -->
     <!-- <Compile Include="WebCode\RobloxScripts.cs" /> -->
