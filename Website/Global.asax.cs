@@ -160,11 +160,7 @@ namespace Roblox.Website
 
                 if (exc.GetType() == typeof(HttpException))
                 {
-#if DEBUG
-                    // In DEBUG builds, do not redirect to the friendly error page.
-                    // Let ASP.NET show the detailed error page instead.
-                    return;
-#endif
+                    // Redirect to the friendly error page even in DEBUG builds to match release behavior.
                     // If custom errors are disabled (e.g., local debugging), let ASP.NET show the detailed error page
                     if (Context != null && !Context.IsCustomErrorEnabled)
                     {
@@ -181,10 +177,7 @@ namespace Roblox.Website
             else
             {
                 // Something went very wrong
-#if DEBUG
-                // In DEBUG builds, do not redirect; show detailed error.
-                return;
-#endif
+                // Redirect to the friendly error page even in DEBUG builds to match release behavior.
                 if (Context != null && !Context.IsCustomErrorEnabled)
                 {
                     return;

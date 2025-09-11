@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using System.Data;
 
-using Roblox.Platform.Email;
+using Roblox.Platform.Email.User;
 using Roblox.Platform.Membership;
 using Roblox.Website.Factories;
 
@@ -103,15 +103,15 @@ namespace Roblox.Website.Admi.Users
         protected void PopulateUpdateUserPane()
         {
             var emailAddress = _userEmailFactory.GetCurrentVerified(IUser);
-            var userEmail = _userEmailFactory.GetByEmail(emailAddress != null ? emailAddress.EmailAddress.Address : "");
+            var userEmail = _userEmailFactory.GetByEmail(emailAddress != null ? emailAddress.Email : "");
             // HACK: Do we even need IsApproved anymore?
 
             rbxUpdateUserPane.Model = new UpdateUserViewModel()
             {
                 ID = IUser.Id,
                 Blurb = IUser.Description,
-                EmailAddress = emailAddress != null ? emailAddress.EmailAddress.Address : "",
-                IsEmailVerified = emailAddress != null ? emailAddress.IsValid : false,
+                EmailAddress = emailAddress != null ? emailAddress.Email : "",
+                IsEmailVerified = emailAddress != null ? emailAddress.IsVerified : false,
                 Created = IUser.Created,
                 LastLocation = null,
                 LastActivityDate = null,

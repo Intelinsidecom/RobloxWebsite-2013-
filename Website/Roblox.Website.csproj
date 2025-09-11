@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <NoWarn>0436;1668</NoWarn>
+    <LangVersion>11.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.7.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Roblox.Farms">
       <HintPath>..\..\..\old\-----------\--\Petko\bin\Roblox.Farms.dll</HintPath>
     </Reference>
@@ -200,8 +205,8 @@
     <ProjectReference Include="..\Assemblies\Platform\Assets\Roblox.Platform.Assets\Roblox.Platform.Assets.csproj">
       <Name>Roblox.Platform.Assets</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Assemblies\Platform\Membership\Roblox.Platform.Membership\Roblox.Platform.Membership.csproj">
-      <Name>Roblox.Platform.Membership</Name>
+    <ProjectReference Include="..\Assemblies\Platform\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
+      <Name>Roblox.Platform.Membership.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Assemblies\Platform\Roles\Roblox.Platform.Roles\Roblox.Platform.Roles.csproj">
       <Name>Roblox.Platform.Roles</Name>
@@ -218,12 +223,6 @@
     <ProjectReference Include="..\Assemblies\Platform\Membership\Roblox.Platform.Membership.Core\Roblox.Platform.Membership.Core.csproj">
       <Name>Roblox.Platform.Membership.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Assemblies\Website\Roblox.Website.Factories\Roblox.Website.Factories.csproj">
-      <Name>Roblox.Website.Factories</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Assemblies\Website\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj">
-      <Name>Roblox.WebsiteSettings</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Assemblies\Configuration\Roblox.Configuration\Roblox.Configuration.csproj">
       <Name>Roblox.Configuration</Name>
     </ProjectReference>
@@ -231,9 +230,22 @@
       <Name>Roblox.EventLog</Name>
     </ProjectReference>
   </ItemGroup>
+  <!-- Include Roblox.WebsiteSettings source files directly into this project -->
+  <ItemGroup>
+    <Compile Include="..\Assemblies\Website\Roblox.WebsiteSettings\Roblox.WebsiteSettings.Properties\**\*.cs">
+      <Link>WebCode\Settings\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Compile>
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="WebCode\StaticFilesManager.cs" />
     <Compile Include="WebCode\LegacyStubs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\AuthenticationDomainFactories.cs" />
+    <Compile Include="Factories\EmailDomainFactories.cs" />
+    <Compile Include="Factories\MembershipDomainFactories.cs" />
+    <Compile Include="Factories\RolesDomainFactories.cs" />
+    <Compile Include="Factories\SecurityDomainFactories.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KeepAlives\KeepAlive.cs" />

@@ -3,26 +3,29 @@ using Roblox.Platform.Membership;
 
 namespace Roblox.Website.Factories
 {
+    public interface IUserEmailFactory
+    {
+        IAccountEmail GetByEmail(string email);
+        IAccountEmail GetCurrentVerified(IUser user);
+    }
+
     public class EmailDomainFactories
     {
-        public EmailDomainFactories(RobloxWebsiteLogger logger)
+        public EmailDomainFactories(object logger = null)
         {
-            Logger = logger;
             UserEmailFactory = new DefaultUserEmailFactory();
         }
-
-        public RobloxWebsiteLogger Logger { get; }
 
         public IUserEmailFactory UserEmailFactory { get; }
 
         private class DefaultUserEmailFactory : IUserEmailFactory
         {
-            public IUserEmail GetByEmail(string email)
+            public IAccountEmail GetByEmail(string email)
             {
                 return null;
             }
 
-            public IUserEmail GetCurrentVerified(IUser user)
+            public IAccountEmail GetCurrentVerified(IUser user)
             {
                 return null;
             }

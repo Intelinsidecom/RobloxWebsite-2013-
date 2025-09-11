@@ -1,5 +1,4 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Roblox.Master.cs" Inherits="Roblox.Website.RobloxMaster" %>
-<%@ Import Namespace="System.Web.Optimization" %>
 <%@ Import Namespace="Roblox.Website" %>
 <%@ Import Namespace="Roblox.Website.ViewModels" %>
 <%@ Import Namespace="Roblox.Web.StaticContent" %>
