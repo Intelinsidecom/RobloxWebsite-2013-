@@ -1,4 +1,0 @@
-{
-  "\\busing\\s+Roblox\\.Platform\\.Localization\\.Core\\s*;": "using Roblox.Localization.Core;",
-  "\\busing\\s+Roblox\\.Thumbs\\s*;": "using Roblox.Platform.Thumbs;"
-}
