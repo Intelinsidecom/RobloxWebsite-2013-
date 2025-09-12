@@ -2,10 +2,22 @@
 setlocal
 
 rem Wrapper to run PowerShell launcher and pause to display any errors
-set "SCRIPT=%~dp0launch.ps1"
+rem Check for Administrator privileges; if missing, relaunch elevated (UAC)
+net session >nul 2>&1
+if not %errorlevel%==0 (
+  echo [INFO] Requesting Administrator privileges...
+  if "%~1"=="" (
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process -FilePath '%~f0' -Verb RunAs"
+  ) else (
+    powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process -FilePath '%~f0' -ArgumentList @('%*') -Verb RunAs"
+  )
+  exit /b
+)
+
+set "SCRIPT=%~dp0scripts\launch.ps1"
 if not exist "%SCRIPT%" (
   echo [ERROR] Missing PowerShell script: "%SCRIPT%"
-  echo Ensure launch.ps1 exists in the same folder.
+  echo Ensure launch.ps1 exists under the 'scripts' folder next to this file.
   pause
   exit /b 1
 )

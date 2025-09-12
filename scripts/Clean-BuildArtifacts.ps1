@@ -8,6 +8,11 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+# By default, include Website/bin in cleanup unless caller explicitly set the switch
+if (-not $PSBoundParameters.ContainsKey('IncludeWebsiteBin')) {
+    $IncludeWebsiteBin = $true
+}
+
 function Get-FolderSizeBytes {
     param([string]$Path)
     try {
@@ -53,8 +58,10 @@ $defaultExcludePatterns = @(
     "\\node_modules\\"
 )
 
-# Protect Website/bin unless explicitly included
-$websiteBinRegex = [regex]::Escape("\Website\") + ".*" + [regex]::Escape("\bin") + "(\\|$)"
+# Protect only the repo-root Website\bin unless explicitly included
+$websiteBinPath = Join-Path $rootPath 'Website\bin'
+$websiteBinResolved = $null
+try { $websiteBinResolved = (Resolve-Path -LiteralPath $websiteBinPath -ErrorAction Stop).Path.TrimEnd('\\') } catch {}
 
 # Compile exclusions
 $allExcludePatterns = @()
@@ -74,7 +81,10 @@ $targets = @()
 foreach ($dir in $candidates) {
     $p = $dir.FullName
     if (Test-ExcludedPath -Path $p) { continue }
-    if (-not $IncludeWebsiteBin -and ($p -match $websiteBinRegex)) { continue }
+    if (-not $IncludeWebsiteBin -and $websiteBinResolved) {
+        $currentResolved = (Resolve-Path -LiteralPath $p -ErrorAction SilentlyContinue).Path.TrimEnd('\\')
+        if ($currentResolved -and ($currentResolved -ieq $websiteBinResolved)) { continue }
+    }
     $targets += $dir
 }
 
@@ -100,9 +110,6 @@ Write-Host "\nThe following bin/obj/packages folders would be deleted:" -Foregro
 $preview | Sort-Object SizeBytes -Descending | Select-Object Path, Items, Size | Format-Table -AutoSize | Out-Host
 Write-Host ("Total folders: {0}" -f $preview.Count)
 Write-Host ("Total size:   {0}" -f (Format-Bytes $totBytes))
-if (-not $IncludeWebsiteBin) {
-    Write-Host "Note: Website/bin is protected by default. Use -IncludeWebsiteBin to include it." -ForegroundColor DarkYellow
-}
 
 # Confirm
 $shouldDelete = $false

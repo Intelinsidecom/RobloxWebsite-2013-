@@ -7,13 +7,29 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
+# Ensure we have a script path on all PS versions
+if (-not $PSCommandPath) { $PSCommandPath = $MyInvocation.MyCommand.Path }
+
+# Elevate if not running as Administrator (will trigger Windows UAC dialog)
+$identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+$principal = New-Object Security.Principal.WindowsPrincipal($identity)
+if (-not $principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)) {
+    Write-Host "[INFO] Requesting Administrator privileges..." -ForegroundColor Yellow
+    Start-Process -FilePath 'powershell' -ArgumentList @(
+        '-NoProfile','-ExecutionPolicy','Bypass','-File',"`"$PSCommandPath`"",'-Port',"$Port"
+    ) -Verb RunAs
+    exit
+}
+
 try {
-    $repoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+    # Resolve repository root as the parent of this script directory (scripts/..)
+    $scriptRoot = Split-Path -Parent $PSCommandPath
+    $repoRoot = (Resolve-Path (Join-Path $scriptRoot '..')).Path
     $webroot = Join-Path $repoRoot 'Website'
 
     if (-not (Test-Path (Join-Path $webroot 'web.config'))) {
         Write-Host "[ERROR] Web root not found or missing web.config at: '$webroot'" -ForegroundColor Red
-        Write-Host "Ensure this script is in the repo root next to the 'Website' directory."
+        Write-Host "This script is expected to live under the 'scripts' folder, with 'Website' at the repo root (one level up)."
         Read-Host "Press Enter to exit"
         exit 1
     }
@@ -35,7 +51,9 @@ try {
         exit 1
     }
 
-    Write-Host "[INFO] Starting IIS Express on http://localhost:$Port with web root: '$webroot'" -ForegroundColor Cyan
+    Write-Host "[INFO] Starting IIS Express on http://localhost:$Port" -ForegroundColor Cyan
+    Write-Host "       Repo root: '$repoRoot'" -ForegroundColor DarkCyan
+    Write-Host "       Web root:  '$webroot'" -ForegroundColor DarkCyan
 
     $iisArgs = @(
         "/path:`"$webroot`"",
