@@ -14,11 +14,10 @@ Current Timelapses:
 - 2016 (Main Recreation Target)
 - 2013 (Just as an  starting point, works but i wont focus on it)
 
-## Notes
+## Backstory
 
-- This is a work in progress reconstruction
-- Many components are stubbed implementations
-- The goal is to create a functional website that resembles the 2013 Roblox website
+I wanted to make my own Roblox like Website and more and using other ones like ECS and those cheap in-php written revival source codes wasnt perfect for many reasons, like Security issues, unorganised code and just the fact they dont feel roblox at all and more, so i decided to make my own that backend and frontend for my own revival and i want to make it special.
+I decided to use the same systems Roblox have used or maybe still use like ASP Net websites and recreate the same internal sites they might have used back then and use leaked arbiters and so on to match everything to Roblox as much as possible and i want to support all sort of clients and even custom ones Written and Compiled by Community. 
 
 # Building Instructions
   
