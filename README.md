@@ -3,7 +3,7 @@
 <p align="center">
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website-2016-">
 <img alt="GitHub Release" src="https://img.shields.io/github/v/release/Intelinsidecom/Roblox-Website-2016-?color=violet">
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website-2016-/master">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website-2016-/2016">
 </p>
 
 # Roblox Website Recreation
