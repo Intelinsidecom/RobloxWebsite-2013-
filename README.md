@@ -24,8 +24,8 @@ Current Timelapses:
 
 ## Backstory
 
-I wanted to make my own Roblox like Website and more and using other ones like ECS and those cheap in-php written revival source codes wasnt perfect for many reasons, like Security issues, unorganised code and just the fact they dont feel roblox at all and more, so i decided to make my own that backend and frontend for my own revival and i want to make it special.
-I decided to use the same systems Roblox have used or maybe still use like ASP Net websites and recreate the same internal sites they might have used back then and use leaked arbiters and so on to match everything to Roblox as much as possible and i want to support all sort of clients and even custom ones Written and Compiled by Community. 
+I wanted to make my own Roblox like Website and more and using other ones like ECS and those cheap in-php written revival source codes wasnt perfect for many reasons like security issues, unorganised code and just the fact they dont feel roblox at all. Thats why i decided to make my own that backend and frontend for my own revival and i want to make it special.
+I decided to use the same systems Roblox have used or maybe still use like ASP Net websites and recreate the same backend and frontend sites they might have used back then and make them as accurate as to roblox ones.
 
 # Building Instructions
   
