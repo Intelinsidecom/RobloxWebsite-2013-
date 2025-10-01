@@ -1,9 +1,9 @@
-![Roblox Website Logo](https://github.com/user-attachments/assets/ced623cd-6692-4759-8e46-e9453f5454fc)
+![Roblox Website Banner](https://github.com/user-attachments/assets/ced623cd-6692-4759-8e46-e9453f5454fc)
 
 <p align="center">
-<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website-2016-">
-<img alt="GitHub Release" src="https://img.shields.io/github/v/release/Intelinsidecom/Roblox-Website-2016-?color=violet">
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website-2016-/2016">
+<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website">
+<img alt="GitHub Release" src="https://img.shields.io/github/v/release/Intelinsidecom/Roblox-Website?color=violet">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website/2016">
 </p>
 
 # Roblox Website Recreation
