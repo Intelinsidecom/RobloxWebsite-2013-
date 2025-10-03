@@ -1,45 +1,55 @@
-# Roblox Website (2013)
+![Roblox Website Banner](https://github.com/user-attachments/assets/ced623cd-6692-4759-8e46-e9453f5454fc)
 
-Warning: This repo is Vide coded, i let you hate for it
+<p align="center">
+<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website">
+<img alt="GitHub Release" src="https://img.shields.io/github/v/release/Intelinsidecom/Roblox-Website?color=violet">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website/2016">
+</p>
 
-This is a recreation of the Roblox website from 2013.
+# Roblox Website Recreation
 
-## Notes
+Current Scopes:
 
-- This is a work in progress reconstruction
-- Many components are stubbed implementations
-- The goal is to create a functional website that resembles the 2013 Roblox website
+- Frontend
+- Backend
+- Arbiters
+- Moderation platform
+- Analytics Platform and Stuff like that
+- Server Deployer tools
 
-## Build Instructions
+Current Timelapses:
 
-Visual Studio way:
-    Open the solution in Visual Studio,
-    Restore NuGet packages if needed,
-    Build the solution,
-    Profit.
+- 2016 (Main Recreation Target)
+- 2013 (Just as an  starting point, works but i wont focus on it)
 
-Terminal way:
-    Launch build.bat,
-    Profit.
+## Backstory
 
-## Running the website
+I wanted to make my own Roblox like Website and more and using other ones like ECS and those cheap in-php written revival source codes wasnt perfect for many reasons like security issues, unorganised code and just the fact they dont feel roblox at all. Thats why i decided to make my own that backend and frontend for my own revival and i want to make it special.
+I decided to use the same systems Roblox have used or maybe still use like ASP Net websites and recreate the same backend and frontend sites they might have used back then and make them as accurate as to roblox ones.
 
-# Prerequisities
+# Building Instructions
+  
+## Prerequisities
 
  1. Windows 10+
  2. Net SDK 4.8.1 Dev Pack or 4.7.2 and Older ones just in case
  3. Visual Studio 2022 (For Debugging)
  4. Asp Net 4.8 Enabled (Through Add or Remove Features Pop Up)
 
-# In order to actually run this website and use it you will first need to check if you have everything to run it properly (Step 1)
-    Quick way:
-    Run the launch.bat,
-    profit.
+## Building And Running the Website
 
-    Proper Way:
-    1. Open IIS Manager.
-    2. Create New Application Pool, name it Roblox or whatewer and set .NET CLR version to the latest one and set Pipeline Mode to Integrated and press Ok.
-    3. Create New Website named Roblox or whatewer you feel like and make it use the newly created Application Pool.
-    4. Set the physical path to the Roblox Website source code and set the port to whatewer you like.
-    5. Set the Host Name to whatewer you like too, try avoiding real websites maybe.
-    6. Start The Application Pool and the website itself and profit.
+First you need to build the website and all assemblies, for that, just launch build.bat.
+
+After its done you might want to actually run the website, here's some quick ways on how to do that:
+
+Quick way:
+ 1. Run the launch.bat
+ 2. profit
+
+Proper Way:
+1. Open IIS Manager.
+2. Create New Application Pool, name it Roblox or whatewer and set .NET CLR version to the latest one and set Pipeline Mode to Integrated and press Ok.
+3. Create New Website named Roblox or whatewer you feel like and make it use the newly created Application Pool.
+4. Set the physical path to the Roblox Website source code and set the port to whatewer you like.
+5. Set the Host Name to whatewer you like too, try avoiding real websites maybe.
+6. Start The Application Pool and the website itself and profit.
