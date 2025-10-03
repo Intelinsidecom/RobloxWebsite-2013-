@@ -1,8 +1,6 @@
 @echo off
 setlocal
 
-rem Wrapper to run PowerShell launcher and pause to display any errors
-rem Check for Administrator privileges; if missing, relaunch elevated (UAC)
 net session >nul 2>&1
 if not %errorlevel%==0 (
   echo [INFO] Requesting Administrator privileges...
