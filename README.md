@@ -1,11 +1,10 @@
-![Roblox Website Banner](Extras/RobloxWebsiteBanner.png)
-
 <p align="center">
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website">
 <img alt="GitHub Release" src="https://img.shields.io/github/v/release/Intelinsidecom/Roblox-Website?color=violet">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Intelinsidecom/Roblox-Website/2016">
 </p>
 
+![Roblox Website Banner](Extras/RobloxWebsiteBanner.png)
 # Roblox Website Recreation
 
 Current Scopes:
