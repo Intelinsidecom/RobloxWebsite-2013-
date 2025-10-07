@@ -1,4 +1,4 @@
-![Roblox Website Banner](https://https://github.com/Intelinsidecom/Roblox-Website/blob/2016/Extras/RobloxWebsiteBanner.png)
+![Roblox Website Banner](Extras/RobloxWebsiteBanner.png)
 
 <p align="center">
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website">
