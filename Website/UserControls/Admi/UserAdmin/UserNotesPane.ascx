@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserNotesPane.ascx.cs" Inherits="Roblox.Website.UserControls.Admi.UserAdmin.UserNotesPane" %>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserNotesPane.ascx.cs" Inherits="Roblox.Website.UserControls.Admi.UserAdmin.UserNotesPane" %>
 
 <asp:UpdatePanel ID="UserNotesUpdatePanel" UpdateMode="Conditional" runat="server">
     <ContentTemplate>
@@ -12,13 +12,13 @@
                     CssClass="ua_component_col2_div UserNotesContainer"
                     BorderWidth="1"
                     Style="line-height: 10px" runat="server">
-                    <asp:Label ID="lblTimestamp" Font-Size="Smaller" Style="float: right" Text='<%# Item.Created %>' runat="server" />
+                    <asp:Label ID="lblTimestamp" Font-Size="Smaller" Style="float: right" Text='<%# Item.Created.ToString() %>' runat="server" />
                     <br />
                     <br />
-                    <asp:Label ID="lblUserNote" Font-Bold="True" Text='<%# $"\"{Item.Text}\"" %>' Style="line-height: 12px" runat="server" />
+                    <asp:Label ID="lblUserNote" Font-Bold="True" Text='<%# string.Format("\"{0}\"", Item.Text) %>' Style="line-height: 12px" runat="server" />
                     <br />
                     <br />
-                    <asp:HyperLink ID="lblModeratorName" Font-Size="Smaller" Text='<%# $"-{Item.ModeratorName}" %>' NavigateUrl='<%# $"~/Admi/Users/UserAdmin.aspx?ID={Item.ModeratorID}" %>' runat="server" />
+                    <asp:HyperLink ID="lblModeratorName" Font-Size="Smaller" Text='<%# "-" + Item.ModeratorName %>' NavigateUrl='<%# string.Format("~/Admi/Users/UserAdmin.aspx?ID={0}", Item.ModeratorID.ToString()) %>' runat="server" />
                 </asp:Panel>
             </ItemTemplate>
         </asp:Repeater>

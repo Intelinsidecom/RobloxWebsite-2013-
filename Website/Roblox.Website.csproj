@@ -199,6 +199,11 @@
     <PackageReference Include="Microsoft.AspNet.WebPages" Version="3.2.9" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Assemblies\Website\Roblox.WebsiteSettings\Roblox.WebsiteSettings.csproj">
+      <Name>Roblox.WebsiteSettings</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Assemblies\Platform\Assets\Roblox.Platform.AssetsCore\Roblox.Platform.AssetsCore.csproj">
       <Name>Roblox.Platform.AssetsCore</Name>
     </ProjectReference>
@@ -230,12 +235,7 @@
       <Name>Roblox.EventLog</Name>
     </ProjectReference>
   </ItemGroup>
-  <!-- Include Roblox.WebsiteSettings source files directly into this project -->
-  <ItemGroup>
-    <Compile Include="..\Assemblies\Website\Roblox.WebsiteSettings\Roblox.WebsiteSettings.Properties\**\*.cs">
-      <Link>WebCode\Settings\%(RecursiveDir)%(Filename)%(Extension)</Link>
-    </Compile>
-  </ItemGroup>
+  
   <ItemGroup>
     <Compile Include="WebCode\StaticFilesManager.cs" />
     <Compile Include="WebCode\LegacyStubs.cs" />
