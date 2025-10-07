@@ -1,4 +1,4 @@
-![Roblox Website Banner](https://github.com/user-attachments/assets/ced623cd-6692-4759-8e46-e9453f5454fc)
+![Roblox Website Banner](https://https://github.com/Intelinsidecom/Roblox-Website/blob/2016/Extras/RobloxWebsiteBanner.png)
 
 <p align="center">
 <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/Intelinsidecom/Roblox-Website">
