@@ -7,6 +7,8 @@
 ![Roblox Website Banner](Extras/RobloxWebsiteBanner.png)
 # Roblox Website Recreation
 
+!!! All code is just recreations of the backend and frontend and is all similiarities to the actual code at Roblox is just an coincidence !!!
+
 Current Scopes:
 
 - Frontend
