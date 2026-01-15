@@ -39,12 +39,12 @@ I decided to use the same systems Roblox have used or maybe still use like ASP N
 
 ## Building And Running the Website
 
-First you need to build the website and all assemblies, for that, just launch build.bat.
+First you need to build the website and all assemblies, for that, just launch build.cmd.
 
 After its done you might want to actually run the website, here's some quick ways on how to do that:
 
 Quick way:
- 1. Run the launch.bat
+ 1. Run the launch.cmd
  2. profit
 
 Proper Way:
