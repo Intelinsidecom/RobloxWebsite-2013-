@@ -7,6 +7,8 @@
 ![Roblox Website Banner](Extras/RobloxWebsiteBanner.png)
 # Roblox Website Recreation
 
+Originally made by Brent with some code from Roblox Testing site Stacktraces, Leaked assemblies, tried to be fixed by ErringPaladin (Brr Brr Patapim) and was finished to enough to run state by Intel
+
 !!! All code is just recreations of the backend and frontend and is all similiarities to the actual code at Roblox is just an coincidence !!!
 
 Current Scopes:
